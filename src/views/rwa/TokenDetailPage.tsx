@@ -62,6 +62,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
           </>
         }
         title={token.symbol ?? `CMC #${token.id}`}
+        logo={token.logo}
         subtitle={
           <>
             {token.name} · Issuer:{' '}

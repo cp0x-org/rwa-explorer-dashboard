@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import SubCard from 'ui-component/cards/SubCard';
 import { TokenIcon } from 'components/TokenIcon';
+import { logoUrl } from 'api/rwa';
 
 export interface Stat {
   label: string;
@@ -40,13 +41,14 @@ export function StatGrid({ stats }: { stats: Stat[] }) {
 interface DetailHeaderProps {
   caption: ReactNode;
   title: string;
+  logo?: string | null;
   subtitle?: ReactNode;
   chips?: ReactNode;
   stats: Stat[];
 }
 
 // Same structure as the template's vault details header: caption, large title, stat cards.
-export default function DetailHeader({ caption, title, subtitle, chips, stats }: DetailHeaderProps) {
+export default function DetailHeader({ caption, title, logo, subtitle, chips, stats }: DetailHeaderProps) {
   const theme = useTheme();
   return (
     <Box
@@ -61,7 +63,7 @@ export default function DetailHeader({ caption, title, subtitle, chips, stats }:
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2.5, paddingTop: '20px', marginBottom: 3, flexWrap: 'wrap' }}>
-        <TokenIcon symbol={title} avatarProps={{ sx: { width: 45, height: 45 } }} />
+        <TokenIcon symbol={title} src={logoUrl(logo)} avatarProps={{ sx: { width: 45, height: 45 } }} />
         <Box sx={{ minWidth: 0 }}>
           <Typography variant="h4" component="span" sx={{ display: 'block', fontSize: '16px', color: theme.palette.grey[500] }}>
             {caption}

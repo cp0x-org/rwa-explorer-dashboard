@@ -11,7 +11,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import { isReportedYield, relationRows, RwaIndex } from 'api/rwa';
+import { isReportedYield, logoUrl, relationRows, RwaIndex } from 'api/rwa';
+import { TokenIcon } from 'components/TokenIcon';
 import { Breakdown, Issuer, Token } from 'types/rwa';
 import { categoryLabel, fmtNum, fmtPct, fmtUsd, networkName } from 'utils/rwa';
 import BreakdownTable from './components/BreakdownTable';
@@ -55,6 +56,7 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
           </Link>
         }
         title={issuer.name ?? 'Unknown issuer'}
+        logo={issuer.logo}
         subtitle={
           <>
             {issuer.website && (
@@ -114,12 +116,21 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
               <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>{t.ticker}</TableCell>
                 <TableCell>
-                  <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                    {t.symbol}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {t.name}
-                  </Typography>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <TokenIcon
+                      symbol={t.symbol ?? '?'}
+                      src={logoUrl(t.logo)}
+                      avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                    />
+                    <Box>
+                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                        {t.symbol}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {t.name}
+                      </Typography>
+                    </Box>
+                  </Box>
                 </TableCell>
                 <TableCell>
                   #{t.rank_in_underlying} of {index.underlyingById.get(t.underlying_id)?.versions_count ?? '—'}

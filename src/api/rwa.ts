@@ -12,6 +12,9 @@ const fetcher = async (url: string): Promise<RwaExport> => {
   return res.json();
 };
 
+// Logos are published next to the data by the pipeline (public/logos/...).
+export const logoUrl = (path: string | null | undefined): string | undefined => (path ? `${import.meta.env.BASE_URL}${path}` : undefined);
+
 export interface RwaIndex {
   data: RwaExport;
   underlyingById: Map<string, Underlying>;

@@ -10,8 +10,9 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 import { relationRows, RwaIndex } from 'api/rwa';
-import { categoryLabel, networkName } from 'utils/rwa';
+import { categoryLabel, fmtPct, fmtUsd, networkName } from 'utils/rwa';
 import DataGate from './components/DataGate';
+import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
@@ -43,6 +44,7 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
     [index]
   );
   const platformNames = useMemo(() => new Map(allRows.map((r) => [r.opportunity.platform, r.opportunity.platform_name])), [allRows]);
+  const { settings: s } = index.data;
   const issuerNames = new Map(index.data.issuers.map((i) => [i.id, i.name ?? i.id]));
 
   const query = search.trim().toLowerCase();
@@ -144,6 +146,55 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
       <Typography variant="body2" color="text.secondary">
         Showing {rows.length} token–position links ({distinctPositions} distinct positions)
       </Typography>
+
+      <Legend
+        items={[
+          {
+            term: 'Position',
+            description:
+              'A DeFi position indexed by Portals: pool, vault, lending market or yield market. Click a row for details: composition, ' +
+              'link path, APY breakdown, volume and flags.'
+          },
+          {
+            term: 'Token',
+            description:
+              'Tokenized version used by the position, with its underlying ticker and issuer. A pool with two tracked versions appears ' +
+              'once per version.'
+          },
+          { term: 'Protocol', description: 'DeFi protocol of the position (Portals platform).' },
+          { term: 'Network', description: 'Blockchain where the position lives.' },
+          {
+            term: 'Category',
+            description:
+              'DEX LP: liquidity in a pool with the token. Lending supply: the token supplied to a lending market. Vault: a vault or ' +
+              'strategy holding the token or its LP. Yield market: PT/YT and similar markets. Wrapper: a wrapped token, not a use-case.'
+          },
+          {
+            term: 'Link',
+            description:
+              'Direct: the position holds the token itself. Indirect (n): it holds the token through other positions, n levels deep ' +
+              '(e.g. vault → LP → token); hover for the path. Symbol match: the name matches, but the token address is not in the ' +
+              'composition — unconfirmed and never counted.'
+          },
+          {
+            term: 'Liquidity',
+            description: 'Pool TVL or vault deposits reported by Portals, in USD. Values of nested positions are never summed.'
+          },
+          {
+            term: 'Reported APY',
+            description:
+              `Total APY reported by Portals for this position (base + rewards): a snapshot, not an expected return. ⚠ marks APY above ` +
+              `${fmtPct(s.yield_apy_review_threshold_percent, 0)}, excluded from yield statistics. Borrow APY is a cost and is shown only in the details.`
+          },
+          { term: 'Updated', description: 'How long ago Portals last updated the data of this position.' },
+          {
+            term: 'Status',
+            description:
+              `Eligible: counted in the ratings. Low liquidity: below ${fmtUsd(s.min_eligible_liquidity_usd)}. Stale: source data older ` +
+              `than ${s.max_position_age_hours}h at collection. Not a use-case: wrapper or unknown category. Unconfirmed: symbol match only.`
+          }
+        ]}
+      />
     </Box>
   );
 }

@@ -87,8 +87,8 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
           {
             term: 'Underlying',
             description:
-              'Ticker of the underlying stock or ETF and, below it, the rank of the version among versions of the same underlying ' +
-              'by Score (ties: protocols, networks, direct positions). Click a row to open the version details.'
+              'Ticker of the underlying stock or ETF. Click a row to open the version details; the rank of a version among versions of ' +
+              'the same underlying is shown on the underlying and issuer pages.'
           },
           {
             term: 'Version',

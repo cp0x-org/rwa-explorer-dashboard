@@ -12,6 +12,8 @@ import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
+import { logoUrl } from 'api/rwa';
+import { TokenIcon } from 'components/TokenIcon';
 import { Token } from 'types/rwa';
 import { compareNullable, DEPLOYMENT_STATUS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import SortHeader, { SortOrder, useSort } from './SortHeader';
@@ -98,11 +100,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, paginate
         >
           <TableHead>
             <TableRow>
-              <TableCell>
-                {showUnderlying
-                  ? header('ticker', 'Underlying', 'Underlying ticker and rank among its versions; click to sort by ticker')
-                  : '#'}
-              </TableCell>
+              <TableCell>{showUnderlying ? header('ticker', 'Underlying') : '#'}</TableCell>
               <TableCell>Version</TableCell>
               <TableCell>Issuer</TableCell>
               <TableCell>Networks</TableCell>
@@ -127,23 +125,26 @@ export default function VersionsTable({ tokens, showUnderlying = false, paginate
               <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>
                   {showUnderlying ? (
-                    <>
-                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {t.ticker}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        #{t.rank_in_underlying}
-                      </Typography>
-                    </>
+                    <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                      {t.ticker}
+                    </Typography>
                   ) : (
                     t.rank_in_underlying
                   )}
                 </TableCell>
                 <TableCell>
                   <Tooltip title={t.name ?? ''} arrow>
-                    <Typography variant="body2" component="div" sx={{ fontWeight: 500, whiteSpace: 'nowrap' }}>
-                      {t.symbol} {t.kind === 'wrapper' && <Chip size="small" label="Wrapper" sx={{ marginLeft: 0.5 }} />}
-                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, whiteSpace: 'nowrap' }}>
+                      <TokenIcon
+                        symbol={t.symbol ?? '?'}
+                        src={logoUrl(t.logo)}
+                        avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                      />
+                      <Typography variant="body2" component="span" sx={{ fontWeight: 500 }}>
+                        {t.symbol}
+                      </Typography>
+                      {t.kind === 'wrapper' && <Chip size="small" label="Wrapper" />}
+                    </Box>
                   </Tooltip>
                 </TableCell>
                 <TableCell>{t.issuer_name ?? '—'}</TableCell>

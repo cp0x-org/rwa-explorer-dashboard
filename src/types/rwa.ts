@@ -68,6 +68,7 @@ export interface Token {
   market_cap_usd: Decimal;
   volume_24h_usd: Decimal;
   cmc_slug: string | null;
+  logo: string | null; // path under public/, e.g. logos/tokens/42461.png
   deployments: Deployment[];
   coverage: Coverage;
   fetched_at: string | null;
@@ -109,6 +110,7 @@ export interface Issuer extends OpportunityCounts {
   name: string | null;
   cmc_label: string | null;
   website: string | null;
+  logo: string | null; // path under public/, e.g. logos/issuers/<id>.png
   metadata_status: 'cmc' | 'unknown';
   roster_size: number | null;
   underlying_ids: string[];

@@ -10,7 +10,8 @@ import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { RwaIndex } from 'api/rwa';
+import { logoUrl, RwaIndex } from 'api/rwa';
+import { TokenIcon } from 'components/TokenIcon';
 import { RelationRow } from 'types/rwa';
 import { categoryLabel, compareNullable, FLAG_LABELS, fmtAge, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import { EligibilityChip } from './StatusChip';
@@ -123,10 +124,19 @@ export default function OpportunityTable({
                   </TableCell>
                   {showToken && (
                     <TableCell>
-                      <Typography variant="body2">{row.token.symbol}</Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {row.token.ticker} · {row.token.issuer_name}
-                      </Typography>
+                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                        <TokenIcon
+                          symbol={row.token.symbol ?? '?'}
+                          src={logoUrl(row.token.logo)}
+                          avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                        />
+                        <Box>
+                          <Typography variant="body2">{row.token.symbol}</Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            {row.token.ticker} · {row.token.issuer_name}
+                          </Typography>
+                        </Box>
+                      </Box>
                     </TableCell>
                   )}
                   <TableCell>{o.platform_name}</TableCell>

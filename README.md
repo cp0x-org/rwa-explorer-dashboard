@@ -8,6 +8,7 @@ versions and issuers. Based on the Berry MUI template (React 19 + Vite + MUI 7).
 The site reads one static file, `public/data/rwa.json`, produced by `../rwa-data-pipeline`
 (`uv run rwa-pipeline sync` / `uv run rwa-pipeline build`). The browser never calls CMC or Portals.
 Types of the file: `src/types/rwa.ts`; loading: `src/api/rwa.ts`.
+Token and issuer logos are published by the pipeline to `public/logos/`.
 
 ## Pages
 
