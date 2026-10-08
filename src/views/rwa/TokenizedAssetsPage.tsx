@@ -27,6 +27,7 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
     () => index.data.underlyings.flatMap((u) => u.token_ids.map((id) => index.tokenById.get(id)).filter((t): t is Token => !!t)),
     [index]
   );
+  const underlyingLogos = useMemo(() => new Map(index.data.underlyings.map((u) => [u.ticker, u.logo])), [index]);
   const issuerNames = new Map(index.data.issuers.map((i) => [i.id, i.name ?? i.id]));
 
   const query = search.trim().toLowerCase();
@@ -77,7 +78,7 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
         </Grid>
       </Grid>
 
-      <VersionsTable tokens={tokens} showUnderlying paginate />
+      <VersionsTable tokens={tokens} showUnderlying underlyingLogos={underlyingLogos} paginate />
       <Typography variant="body2" color="text.secondary">
         Showing {tokens.length} of {allTokens.length} tokenized versions{filtered ? ' (filtered)' : ''}
       </Typography>

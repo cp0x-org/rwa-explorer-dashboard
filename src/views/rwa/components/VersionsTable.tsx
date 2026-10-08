@@ -69,11 +69,12 @@ export function NetworkChips({ token }: { token: Token }) {
 interface VersionsTableProps {
   tokens: Token[];
   showUnderlying?: boolean; // one table for many underlyings
+  underlyingLogos?: Map<string, string | null>; // ticker -> logo path, for showUnderlying
   paginate?: boolean;
 }
 
 // Comparison of tokenized versions, ranked by usefulness score.
-export default function VersionsTable({ tokens, showUnderlying = false, paginate = false }: VersionsTableProps) {
+export default function VersionsTable({ tokens, showUnderlying = false, underlyingLogos, paginate = false }: VersionsTableProps) {
   const navigate = useNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('score');
   const [page, setPage] = useState(1);
@@ -94,10 +95,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, paginate
   return (
     <>
       <TableContainer component={Paper} sx={{ marginBottom: paginate ? 2 : 4 }}>
-        <Table
-          sx={{ minWidth: 650, ...(showUnderlying && { '& .MuiTableCell-root': { paddingX: 1.5 } }) }}
-          aria-label="tokenized versions table"
-        >
+        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized versions table">
           <TableHead>
             <TableRow>
               <TableCell>{showUnderlying ? header('ticker', 'Underlying') : '#'}</TableCell>
@@ -125,9 +123,16 @@ export default function VersionsTable({ tokens, showUnderlying = false, paginate
               <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>
                   {showUnderlying ? (
-                    <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                      {t.ticker}
-                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <TokenIcon
+                        symbol={t.ticker}
+                        src={logoUrl(underlyingLogos?.get(t.ticker))}
+                        avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                      />
+                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                        {t.ticker}
+                      </Typography>
+                    </Box>
                   ) : (
                     t.rank_in_underlying
                   )}

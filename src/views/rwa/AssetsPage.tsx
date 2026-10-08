@@ -12,7 +12,7 @@ import TableRow from '@mui/material/TableRow';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-import { RwaIndex } from 'api/rwa';
+import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Underlying } from 'types/rwa';
 import { compareNullable, fmtAge, fmtNum, fmtUsd, num, UNDERLYING_STATUS } from 'utils/rwa';
@@ -111,7 +111,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
               <TableRow key={u.id} hover onClick={() => navigate(`/assets/${u.ticker}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <TokenIcon symbol={u.ticker} />
+                    <TokenIcon symbol={u.ticker} src={logoUrl(u.logo)} />
                     <Box>
                       <Typography variant="body2" sx={{ fontWeight: 500 }}>
                         {u.ticker}

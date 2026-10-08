@@ -103,6 +103,8 @@ export interface Underlying extends OpportunityCounts {
   coverage: Coverage;
   search_terms: string[];
   search_complete: boolean;
+  website: string | null; // official site from CMC RWA metadata
+  logo: string | null; // path under public/, e.g. logos/underlyings/<ISIN>.png
 }
 
 export interface Issuer extends OpportunityCounts {

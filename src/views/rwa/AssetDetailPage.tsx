@@ -38,7 +38,20 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           </Link>
         }
         title={u.ticker}
-        subtitle={`${u.cmc_name ?? u.name} · ISIN ${u.isin ?? '—'} · ${u.asset_type.toUpperCase()}`}
+        logo={u.logo}
+        subtitle={
+          <>
+            {`${u.cmc_name ?? u.name} · ISIN ${u.isin ?? '—'} · ${u.asset_type.toUpperCase()}`}
+            {u.website && (
+              <>
+                {' · '}
+                <Link href={u.website} target="_blank" rel="noopener noreferrer" underline="hover">
+                  {u.website.replace(/^https?:\/\/(www\.)?/, '')}
+                </Link>
+              </>
+            )}
+          </>
+        }
         chips={
           u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : <Chip size="small" label={UNDERLYING_STATUS[u.status] ?? u.status} />
         }
