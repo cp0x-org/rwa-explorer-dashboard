@@ -1,21 +1,23 @@
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
-RUN npm install -g pnpm
+# pnpm version comes from "packageManager" in package.json
+RUN corepack enable
 
 COPY pnpm-lock.yaml package.json ./
-RUN pnpm install
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
+# Site data (public/data, public/logos) is baked into dist: rebuild the image after `rwa-pipeline sync`
 RUN pnpm run build
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
-RUN npm install -g serve
+RUN npm install -g serve@14.2.4
 
 COPY --from=builder /app/dist ./dist
 

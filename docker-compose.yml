@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+    image: cp0x/pi-rwa-interface:${VERSION:-latest}
+    # The server runs Linux on x86_64: build and run linux/amd64 even on an Apple Silicon Mac (emulated there).
+    platform: linux/amd64
+    ports:
+      - "${PORT:-3301}:4173"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:4173/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
