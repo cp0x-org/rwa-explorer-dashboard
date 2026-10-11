@@ -290,6 +290,34 @@ export default function componentStyleOverrides(theme: Theme, borderRadius: numb
             fontSize: '0.875rem',
             color: mode === ThemeMode.DARK ? theme.palette.grey[600] : theme.palette.grey[900],
             fontWeight: 500
+          },
+          // phones: denser cells so more than two columns fit on screen
+          [theme.breakpoints.down('sm')]: {
+            paddingLeft: 8,
+            paddingRight: 8,
+            fontSize: '0.8125rem',
+            '&:not(.MuiTableCell-sizeSmall)': { paddingTop: 10, paddingBottom: 10 },
+            '&.MuiTableCell-head': { fontSize: '0.8125rem', whiteSpace: 'nowrap' }
+          }
+        }
+      }
+    },
+    MuiTableContainer: {
+      styleOverrides: {
+        root: {
+          // phones: a soft edge appears on the side where a wide table has more columns to scroll to
+          [theme.breakpoints.down('sm')]: {
+            backgroundColor: theme.palette.background.paper,
+            backgroundImage: [
+              `linear-gradient(to right, ${theme.palette.background.paper} 30%, ${alpha(theme.palette.background.paper, 0)})`,
+              `linear-gradient(to left, ${theme.palette.background.paper} 30%, ${alpha(theme.palette.background.paper, 0)})`,
+              `radial-gradient(farthest-side at 0 50%, ${alpha(theme.palette.text.primary, 0.16)}, transparent)`,
+              `radial-gradient(farthest-side at 100% 50%, ${alpha(theme.palette.text.primary, 0.16)}, transparent)`
+            ].join(', '),
+            backgroundPosition: 'left center, right center, left center, right center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '40px 100%, 40px 100%, 14px 100%, 14px 100%',
+            backgroundAttachment: 'local, local, scroll, scroll'
           }
         }
       }

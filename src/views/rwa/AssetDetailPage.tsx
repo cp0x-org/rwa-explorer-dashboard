@@ -20,6 +20,7 @@ import MethodNote from './components/MethodNote';
 import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import VersionsTable from './components/VersionsTable';
+import { stickyColumn } from './components/tableSx';
 
 function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string }) {
   const u = index.underlyingByTicker.get(ticker.toUpperCase());
@@ -86,7 +87,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
             Excluded From Ranking
           </Typography>
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={stickyColumn(1)}>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="excluded tokens table">
               <TableHead>
                 <TableRow>

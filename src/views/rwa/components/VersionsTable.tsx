@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 
 import { logoUrl } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
+import { stickyColumn } from './tableSx';
 import { Token } from 'types/rwa';
 import { compareNullable, DEPLOYMENT_STATUS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import SortHeader, { SortOrder, useSort } from './SortHeader';
@@ -94,7 +95,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
 
   return (
     <>
-      <TableContainer component={Paper} sx={{ marginBottom: paginate ? 2 : 4 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized versions table">
           <TableHead>
             <TableRow>

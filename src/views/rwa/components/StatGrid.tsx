@@ -19,11 +19,14 @@ export interface Stat {
 export function StatGrid({ stats }: { stats: Stat[] }) {
   const theme = useTheme();
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={{ xs: 1, sm: 2 }}>
       {stats.map((s) => (
         <Grid key={s.label} size={{ xs: 6, sm: 4, md: 3 }}>
-          <SubCard sx={{ border: 'none', backgroundColor: 'transparent', ':hover': { boxShadow: 'none' } }}>
-            <Stack spacing={1}>
+          <SubCard
+            sx={{ border: 'none', backgroundColor: 'transparent', ':hover': { boxShadow: 'none' } }}
+            contentSX={{ p: { xs: 1, sm: 2.5 }, '&:last-child': { pb: { xs: 1, sm: 2.5 } } }}
+          >
+            <Stack spacing={{ xs: 0.5, sm: 1 }}>
               <Typography variant="h3">{s.value}</Typography>
               <Tooltip title={s.hint ?? ''} arrow disableHoverListener={!s.hint}>
                 <Typography variant="h6" sx={{ fontWeight: 400, color: theme.palette.grey[500], cursor: s.hint ? 'help' : 'default' }}>
@@ -53,16 +56,25 @@ export default function DetailHeader({ caption, title, logo, subtitle, chips, st
   return (
     <Box
       sx={{
-        padding: '10px 20px',
+        padding: { xs: '4px 12px', sm: '10px 20px' },
         display: 'flex',
         flexDirection: 'column',
-        marginBottom: 4,
+        marginBottom: { xs: 3, sm: 4 },
         width: '100%',
         backgroundColor: 'background.default',
         borderRadius: '12px'
       }}
     >
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2.5, paddingTop: '20px', marginBottom: 3, flexWrap: 'wrap' }}>
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: { xs: 1.5, sm: 2.5 },
+          paddingTop: { xs: 1.5, sm: '20px' },
+          marginBottom: { xs: 1, sm: 3 },
+          flexWrap: 'wrap'
+        }}
+      >
         <TokenIcon symbol={title} src={logoUrl(logo)} avatarProps={{ sx: { width: 45, height: 45 } }} />
         <Box sx={{ minWidth: 0 }}>
           <Typography variant="h4" component="span" sx={{ display: 'block', fontSize: '16px', color: theme.palette.grey[500] }}>

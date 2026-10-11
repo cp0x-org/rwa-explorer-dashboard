@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Link as RouterLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
@@ -8,6 +8,7 @@ import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
+import ButtonBase from '@mui/material/ButtonBase';
 
 // project imports
 import Footer from './Footer';
@@ -74,6 +75,32 @@ const AntTab = styled((props: TabProps) => <Tab disableRipple {...props} />)(({ 
     backgroundColor: theme.palette.secondary.main
   }
 }));
+// below md every section stays visible instead of a sideways-scrolling tab strip: phones 3 + 2 grid, tablets one row
+const SectionGrid = styled('nav')(({ theme }) => ({
+  display: 'grid',
+  gap: '1px', // hairline dividers: the grid background shows between the cells
+  backgroundColor: '#3F3F3F',
+  border: '1px solid #3F3F3F',
+  borderRadius: '12px',
+  overflow: 'hidden',
+  '& .section-link': {
+    minHeight: 46,
+    padding: theme.spacing(0.5, 1),
+    fontFamily: 'Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif',
+    fontSize: '15px',
+    lineHeight: 1.2,
+    textAlign: 'center',
+    color: theme.palette.grey[100],
+    backgroundColor: theme.palette.mode === ThemeMode.DARK ? theme.palette.dark[800] : theme.palette.primary.light,
+    '&[aria-current="page"]': {
+      color: theme.palette.background.default,
+      backgroundColor: theme.palette.secondary.main,
+      fontWeight: theme.typography.fontWeightMedium
+    },
+    '&.Mui-focusVisible': { outline: `2px solid ${theme.palette.secondary.main}`, outlineOffset: -2 }
+  }
+}));
+
 export default function MainLayout() {
   const theme = useTheme();
   const downMD = useMediaQuery(theme.breakpoints.down('md'));
@@ -83,10 +110,11 @@ export default function MainLayout() {
   const drawerOpen = menuMaster?.isDashboardDrawerOpened;
 
   const tabs = [
-    { label: 'Underlying assets', path: 'assets', match: ['/assets'], iconPosition: 'top' },
-    { label: 'Tokenized assets', path: 'tokenized', match: ['/tokenized', '/tokens'], iconPosition: 'top' },
-    { label: 'Issuers', path: 'issuers', match: ['/issuers'], iconPosition: 'top' },
-    { label: 'Positions', path: 'opportunities', match: ['/opportunities'], iconPosition: 'top' }
+    { label: 'Underlying assets', short: 'Underlying', path: 'assets', match: ['/assets'], iconPosition: 'top' },
+    { label: 'Tokenized assets', short: 'Tokenized', path: 'tokenized', match: ['/tokenized', '/tokens'], iconPosition: 'top' },
+    { label: 'Issuers', short: 'Issuers', path: 'issuers', match: ['/issuers'], iconPosition: 'top' },
+    { label: 'Positions', short: 'Positions', path: 'opportunities', match: ['/opportunities'], iconPosition: 'top' },
+    { label: 'Summary', short: 'Summary', path: 'summary', match: ['/summary'], iconPosition: 'top' }
   ];
 
   const navigate = useNavigate();
@@ -142,25 +170,49 @@ export default function MainLayout() {
           {/*<Outlet />*/}
 
           {/*<MainCard>*/}
-          <MainCard>
-            <AntTabs value={currentTabIndex === -1 ? false : currentTabIndex} onChange={handleChange} centered>
-              {tabs.map((tab, index) => (
-                <AntTab
-                  wrapped={true}
-                  key={tab.path}
-                  label={tab.label}
-                  onClick={() => {
-                    const tabPath = `/${tab.path}`;
-                    // клик на активный таб
-                    if (currentTabIndex === index) {
-                      navigate(tabPath, { replace: true, state: { refresh: Date.now() } });
-                    } else {
-                      navigate(tabPath);
-                    }
-                  }}
-                />
-              ))}
-            </AntTabs>
+          <MainCard sx={{ borderRadius: { xs: 0, sm: `${borderRadius}px` } }} contentSX={{ p: { xs: 2, sm: 3 } }}>
+            {downMD ? (
+              <SectionGrid
+                aria-label="Sections"
+                sx={{ gridTemplateColumns: { xs: 'repeat(6, minmax(0, 1fr))', sm: `repeat(${tabs.length}, minmax(0, 1fr))` } }}
+              >
+                {tabs.map((tab, index) => {
+                  const lastRow = tabs.length % 3 || 3; // items in the last row share it evenly
+                  return (
+                    <ButtonBase
+                      key={tab.path}
+                      component={RouterLink}
+                      to={`/${tab.path}`}
+                      replace={currentTabIndex === index}
+                      aria-current={currentTabIndex === index ? 'page' : undefined}
+                      className="section-link"
+                      sx={{ gridColumn: { xs: `span ${index < tabs.length - lastRow ? 2 : 6 / lastRow}`, sm: 'span 1' } }}
+                    >
+                      {tab.short}
+                    </ButtonBase>
+                  );
+                })}
+              </SectionGrid>
+            ) : (
+              <AntTabs value={currentTabIndex === -1 ? false : currentTabIndex} onChange={handleChange} centered>
+                {tabs.map((tab, index) => (
+                  <AntTab
+                    wrapped={true}
+                    key={tab.path}
+                    label={tab.label}
+                    onClick={() => {
+                      const tabPath = `/${tab.path}`;
+                      // клик на активный таб
+                      if (currentTabIndex === index) {
+                        navigate(tabPath, { replace: true, state: { refresh: Date.now() } });
+                      } else {
+                        navigate(tabPath);
+                      }
+                    }}
+                  />
+                ))}
+              </AntTabs>
+            )}
             <Box sx={{ pt: 3 }}>
               <Outlet />
             </Box>

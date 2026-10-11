@@ -28,6 +28,8 @@ import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip, DeploymentChip } from './components/StatusChip';
+import { stickyColumn } from './components/tableSx';
+import FilterPanel from './components/FilterPanel';
 
 function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
   const [networkFilter, setNetworkFilter] = useState<string[]>([]);
@@ -127,7 +129,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
         Deployments
       </Typography>
-      <TableContainer component={Paper} sx={{ marginBottom: 4 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: 4 }, stickyColumn(1)]}>
         <Table sx={{ minWidth: 650 }} aria-label="deployments table">
           <TableHead>
             <TableRow>
@@ -184,45 +186,49 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
         Positions
       </Typography>
-      <Grid container spacing={2} sx={{ marginBottom: 2 }}>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <MultiFilter
-            label="Filter By Network"
-            options={networks}
-            value={networkFilter}
-            onChange={setNetworkFilter}
-            getLabel={networkName}
-          />
+      <FilterPanel
+        active={[networkFilter, categoryFilter].filter((f) => f.length > 0).length + (status !== 'all' ? 1 : 0) + (link !== 'all' ? 1 : 0)}
+      >
+        <Grid container spacing={2} sx={{ marginBottom: 2 }}>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <MultiFilter
+              label="Filter By Network"
+              options={networks}
+              value={networkFilter}
+              onChange={setNetworkFilter}
+              getLabel={networkName}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <MultiFilter
+              label="Filter By Category"
+              options={categories}
+              value={categoryFilter}
+              onChange={setCategoryFilter}
+              getLabel={categoryLabel}
+            />
+          </Grid>
+          <Grid size={{ xs: 6, md: 3 }}>
+            <FormControl size="small" fullWidth>
+              <InputLabel>Status</InputLabel>
+              <Select value={status} label="Status" onChange={(e) => setStatus(e.target.value as typeof status)}>
+                <MenuItem value="all">All confirmed</MenuItem>
+                <MenuItem value="eligible">Eligible only</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid size={{ xs: 6, md: 3 }}>
+            <FormControl size="small" fullWidth>
+              <InputLabel>Link</InputLabel>
+              <Select value={link} label="Link" onChange={(e) => setLink(e.target.value as typeof link)}>
+                <MenuItem value="all">Direct and indirect</MenuItem>
+                <MenuItem value="direct">Direct</MenuItem>
+                <MenuItem value="indirect">Indirect</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
         </Grid>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <MultiFilter
-            label="Filter By Category"
-            options={categories}
-            value={categoryFilter}
-            onChange={setCategoryFilter}
-            getLabel={categoryLabel}
-          />
-        </Grid>
-        <Grid size={{ xs: 6, md: 3 }}>
-          <FormControl size="small" fullWidth>
-            <InputLabel>Status</InputLabel>
-            <Select value={status} label="Status" onChange={(e) => setStatus(e.target.value as typeof status)}>
-              <MenuItem value="all">All confirmed</MenuItem>
-              <MenuItem value="eligible">Eligible only</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-        <Grid size={{ xs: 6, md: 3 }}>
-          <FormControl size="small" fullWidth>
-            <InputLabel>Link</InputLabel>
-            <Select value={link} label="Link" onChange={(e) => setLink(e.target.value as typeof link)}>
-              <MenuItem value="all">Direct and indirect</MenuItem>
-              <MenuItem value="direct">Direct</MenuItem>
-              <MenuItem value="indirect">Indirect</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
+      </FilterPanel>
       <OpportunityTable index={index} rows={rows} />
 
       {unconfirmed.length > 0 && (

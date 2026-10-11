@@ -40,7 +40,7 @@ const MobileMenu = () => {
 
   return (
     <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-      <IconButton color="inherit" onClick={handleToggleDrawer} edge="start" size="large">
+      <IconButton color="inherit" onClick={handleToggleDrawer} edge="end" size="large" aria-label="Open menu">
         <IconMenu2 />
       </IconButton>
 

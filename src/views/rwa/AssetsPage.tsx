@@ -22,6 +22,7 @@ import SortHeader, { useSort } from './components/SortHeader';
 import { StatGrid } from './components/StatGrid';
 import { CoverageChip } from './components/StatusChip';
 import Legend from './components/Legend';
+import { stickyColumn } from './components/tableSx';
 
 type Field = 'ticker' | 'versions' | 'issuers' | 'eligible' | 'raw' | 'protocols' | 'mcap';
 
@@ -90,7 +91,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
         </Grid>
       </Grid>
 
-      <TableContainer component={Paper} sx={{ marginBottom: 2 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
         <Table sx={{ minWidth: 650 }} aria-label="underlying assets table">
           <TableHead>
             <TableRow>

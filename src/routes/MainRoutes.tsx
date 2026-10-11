@@ -7,6 +7,7 @@ import TokenizedAssetsPage from 'views/rwa/TokenizedAssetsPage';
 import IssuersPage from 'views/rwa/IssuersPage';
 import IssuerDetailPage from 'views/rwa/IssuerDetailPage';
 import OpportunitiesPage from 'views/rwa/OpportunitiesPage';
+import SummaryPage from 'views/rwa/SummaryPage';
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -45,6 +46,10 @@ const MainRoutes = {
     {
       path: '/opportunities',
       element: <OpportunitiesPage />
+    },
+    {
+      path: '/summary',
+      element: <SummaryPage />
     }
   ]
 };

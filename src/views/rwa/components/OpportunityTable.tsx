@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
+import { stickyColumn } from './tableSx';
 import { RelationRow } from 'types/rwa';
 import { categoryLabel, compareNullable, FLAG_LABELS, fmtAge, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import { EligibilityChip } from './StatusChip';
@@ -70,7 +71,7 @@ export default function OpportunityTable({
 
   return (
     <Box>
-      <TableContainer component={Paper} sx={{ marginBottom: 2 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
         <Table sx={{ minWidth: 650 }} aria-label="positions table">
           <TableHead>
             <TableRow>

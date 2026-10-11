@@ -23,7 +23,7 @@ export default function Header() {
       </Box>
 
       {/*menu */}
-      <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-start' }}>
+      <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: { xs: 'flex-end', md: 'flex-start' } }}>
         <HeaderMenu />
       </Box>
     </>

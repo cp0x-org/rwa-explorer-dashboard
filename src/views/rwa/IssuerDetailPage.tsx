@@ -22,6 +22,7 @@ import MethodNote from './components/MethodNote';
 import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import { NetworkChips } from './components/VersionsTable';
+import { stickyColumn } from './components/tableSx';
 import { RELATIVE_HINT } from './IssuersPage';
 
 function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }) {
@@ -95,7 +96,7 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
         Versions In Basket
       </Typography>
-      <TableContainer component={Paper} sx={{ marginBottom: 4 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: 4 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650 }} aria-label="issuer tokens table">
           <TableHead>
             <TableRow>

@@ -16,6 +16,7 @@ import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
+import FilterPanel from './components/FilterPanel';
 
 type Status = 'eligible' | 'confirmed' | 'all';
 type LinkFilter = 'all' | 'direct' | 'indirect';
@@ -72,75 +73,84 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
       </Typography>
       <MethodNote data={index.data} />
 
-      <Grid container spacing={2} sx={{ marginBottom: 2 }}>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MultiFilter
-            label="Filter By Underlying"
-            options={index.data.underlyings.map((u) => u.ticker)}
-            value={underlyings}
-            onChange={setUnderlyings}
-          />
+      <FilterPanel
+        active={
+          [underlyings, issuers, networks, categories, platforms].filter((f) => f.length > 0).length +
+          (search.trim() ? 1 : 0) +
+          (status !== 'eligible' ? 1 : 0) +
+          (link !== 'all' ? 1 : 0)
+        }
+      >
+        <Grid container spacing={2} sx={{ marginBottom: 2 }}>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <MultiFilter
+              label="Filter By Underlying"
+              options={index.data.underlyings.map((u) => u.ticker)}
+              value={underlyings}
+              onChange={setUnderlyings}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <MultiFilter
+              label="Filter By Issuer"
+              options={index.data.issuers.map((i) => i.id)}
+              value={issuers}
+              onChange={setIssuers}
+              getLabel={(id) => issuerNames.get(id) ?? id}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <MultiFilter
+              label="Filter By Network"
+              options={uniqueSorted(allRows.map((r) => r.opportunity.network))}
+              value={networks}
+              onChange={setNetworks}
+              getLabel={networkName}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <MultiFilter
+              label="Filter By Category"
+              options={uniqueSorted(allRows.map((r) => r.opportunity.category))}
+              value={categories}
+              onChange={setCategories}
+              getLabel={categoryLabel}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <MultiFilter
+              label="Filter By Protocol"
+              options={uniqueSorted(allRows.map((r) => r.opportunity.platform))}
+              value={platforms}
+              onChange={setPlatforms}
+              getLabel={(p) => platformNames.get(p) ?? p}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <TextField label="Filter By Name" value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
+          </Grid>
+          <Grid size={{ xs: 6, md: 4 }}>
+            <FormControl size="small" fullWidth>
+              <InputLabel>Status</InputLabel>
+              <Select value={status} label="Status" onChange={(e) => setStatus(e.target.value as Status)}>
+                <MenuItem value="eligible">Eligible</MenuItem>
+                <MenuItem value="confirmed">All confirmed (raw)</MenuItem>
+                <MenuItem value="all">Incl. unconfirmed symbol matches</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid size={{ xs: 6, md: 4 }}>
+            <FormControl size="small" fullWidth>
+              <InputLabel>Link</InputLabel>
+              <Select value={link} label="Link" onChange={(e) => setLink(e.target.value as LinkFilter)}>
+                <MenuItem value="all">Direct and indirect</MenuItem>
+                <MenuItem value="direct">Direct</MenuItem>
+                <MenuItem value="indirect">Indirect</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MultiFilter
-            label="Filter By Issuer"
-            options={index.data.issuers.map((i) => i.id)}
-            value={issuers}
-            onChange={setIssuers}
-            getLabel={(id) => issuerNames.get(id) ?? id}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MultiFilter
-            label="Filter By Network"
-            options={uniqueSorted(allRows.map((r) => r.opportunity.network))}
-            value={networks}
-            onChange={setNetworks}
-            getLabel={networkName}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MultiFilter
-            label="Filter By Category"
-            options={uniqueSorted(allRows.map((r) => r.opportunity.category))}
-            value={categories}
-            onChange={setCategories}
-            getLabel={categoryLabel}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <MultiFilter
-            label="Filter By Protocol"
-            options={uniqueSorted(allRows.map((r) => r.opportunity.platform))}
-            value={platforms}
-            onChange={setPlatforms}
-            getLabel={(p) => platformNames.get(p) ?? p}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 4 }}>
-          <TextField label="Filter By Name" value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
-        </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
-          <FormControl size="small" fullWidth>
-            <InputLabel>Status</InputLabel>
-            <Select value={status} label="Status" onChange={(e) => setStatus(e.target.value as Status)}>
-              <MenuItem value="eligible">Eligible</MenuItem>
-              <MenuItem value="confirmed">All confirmed (raw)</MenuItem>
-              <MenuItem value="all">Incl. unconfirmed symbol matches</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
-          <FormControl size="small" fullWidth>
-            <InputLabel>Link</InputLabel>
-            <Select value={link} label="Link" onChange={(e) => setLink(e.target.value as LinkFilter)}>
-              <MenuItem value="all">Direct and indirect</MenuItem>
-              <MenuItem value="direct">Direct</MenuItem>
-              <MenuItem value="indirect">Indirect</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
+      </FilterPanel>
 
       <OpportunityTable index={index} rows={rows} showToken defaultRows={25} />
       <Typography variant="body2" color="text.secondary">

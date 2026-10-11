@@ -12,6 +12,7 @@ import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import VersionsTable, { deploymentLabel } from './components/VersionsTable';
+import FilterPanel from './components/FilterPanel';
 
 const uniqueSorted = (values: string[]) => Array.from(new Set(values)).sort();
 
@@ -47,36 +48,38 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
       </Typography>
       <MethodNote data={index.data} />
 
-      <Grid container spacing={2} sx={{ marginBottom: 2 }}>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <MultiFilter
-            label="Filter By Underlying"
-            options={index.data.underlyings.map((u) => u.ticker)}
-            value={underlyings}
-            onChange={setUnderlyings}
-          />
+      <FilterPanel active={[underlyings, issuers, networks].filter((f) => f.length > 0).length + (search.trim() ? 1 : 0)}>
+        <Grid container spacing={2} sx={{ marginBottom: 2 }}>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <MultiFilter
+              label="Filter By Underlying"
+              options={index.data.underlyings.map((u) => u.ticker)}
+              value={underlyings}
+              onChange={setUnderlyings}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <MultiFilter
+              label="Filter By Issuer"
+              options={uniqueSorted(allTokens.map((t) => t.issuer_id).filter((id): id is string => !!id))}
+              value={issuers}
+              onChange={setIssuers}
+              getLabel={(id) => issuerNames.get(id) ?? id}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <MultiFilter
+              label="Filter By Network"
+              options={uniqueSorted(allTokens.flatMap((t) => t.deployments.map(deploymentLabel)))}
+              value={networks}
+              onChange={setNetworks}
+            />
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <TextField label="Filter By Symbol or Name" value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
+          </Grid>
         </Grid>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <MultiFilter
-            label="Filter By Issuer"
-            options={uniqueSorted(allTokens.map((t) => t.issuer_id).filter((id): id is string => !!id))}
-            value={issuers}
-            onChange={setIssuers}
-            getLabel={(id) => issuerNames.get(id) ?? id}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <MultiFilter
-            label="Filter By Network"
-            options={uniqueSorted(allTokens.flatMap((t) => t.deployments.map(deploymentLabel)))}
-            value={networks}
-            onChange={setNetworks}
-          />
-        </Grid>
-        <Grid size={{ xs: 12, md: 3 }}>
-          <TextField label="Filter By Symbol or Name" value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
-        </Grid>
-      </Grid>
+      </FilterPanel>
 
       <VersionsTable tokens={tokens} showUnderlying underlyingLogos={underlyingLogos} paginate />
       <Typography variant="body2" color="text.secondary">

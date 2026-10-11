@@ -18,6 +18,7 @@ import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
+import { stickyColumn } from './components/tableSx';
 
 type Field = 'score' | 'relative' | 'raw' | 'protocols' | 'assets' | 'yield' | 'pools';
 
@@ -52,7 +53,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
         Issuers
       </Typography>
       <MethodNote data={index.data} />
-      <TableContainer component={Paper} sx={{ marginBottom: 2 }}>
+      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650 }} aria-label="issuers table">
           <TableHead>
             <TableRow>
