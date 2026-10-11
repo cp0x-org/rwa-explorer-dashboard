@@ -96,7 +96,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
           <TableHead>
             <TableRow>
               <TableCell>{header('ticker', 'Asset')}</TableCell>
-              <TableCell>ISIN</TableCell>
               <TableCell>{header('versions', 'Versions', 'Tokenized versions tracked by CoinMarketCap')}</TableCell>
               <TableCell>{header('issuers', 'Issuers')}</TableCell>
               <TableCell>{header('eligible', 'Eligible', 'Distinct eligible DeFi positions across all versions')}</TableCell>
@@ -123,7 +122,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
                     </Box>
                   </Box>
                 </TableCell>
-                <TableCell>{u.isin ?? '—'}</TableCell>
                 <TableCell>{u.versions_count}</TableCell>
                 <TableCell>{u.issuers_count}</TableCell>
                 <TableCell>{u.eligible_opportunities_count}</TableCell>
@@ -147,7 +145,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
       <Legend
         items={[
           { term: 'Asset', description: 'Ticker and name of the underlying stock or ETF. Click a row to compare its tokenized versions.' },
-          { term: 'ISIN', description: 'Identifier of the underlying security itself, not of a token or an issuer.' },
           {
             term: 'Versions',
             description:
