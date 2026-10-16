@@ -15,7 +15,8 @@ import Typography from '@mui/material/Typography';
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Underlying } from 'types/rwa';
-import { compareNullable, fmtAge, fmtNum, fmtUsd, num, UNDERLYING_STATUS } from 'utils/rwa';
+import { compareNullable, fmtNum, fmtUsd, num, UNDERLYING_STATUS } from 'utils/rwa';
+import Age from './components/Age';
 import DataGate from './components/DataGate';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
@@ -23,6 +24,7 @@ import { StatGrid } from './components/StatGrid';
 import { CoverageChip } from './components/StatusChip';
 import Legend from './components/Legend';
 import { stickyColumn } from './components/tableSx';
+import RowLink from './components/RowLink';
 
 type Field = 'ticker' | 'versions' | 'issuers' | 'eligible' | 'raw' | 'protocols' | 'mcap';
 
@@ -61,7 +63,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
         <StatGrid
           stats={[
             { label: 'Underlying assets', value: fmtNum(summary.underlyings_count) },
-            { label: 'Tokenized versions', value: fmtNum(summary.tokens_count), hint: 'Derivatives and other share classes excluded' },
+            { label: 'Tokenized assets', value: fmtNum(summary.tokens_count), hint: 'Derivatives and other share classes excluded' },
             { label: 'Issuers', value: fmtNum(summary.issuers_count) },
             {
               label: 'Eligible positions',
@@ -96,9 +98,11 @@ function AssetsView({ index }: { index: RwaIndex }) {
           <TableHead>
             <TableRow>
               <TableCell>{header('ticker', 'Asset')}</TableCell>
-              <TableCell>{header('versions', 'Versions', 'Tokenized versions tracked by CoinMarketCap')}</TableCell>
+              <TableCell>
+                {header('versions', 'Tokenized assets', 'Tokenized assets of the stock or ETF tracked by CoinMarketCap')}
+              </TableCell>
               <TableCell>{header('issuers', 'Issuers')}</TableCell>
-              <TableCell>{header('eligible', 'Eligible', 'Distinct eligible DeFi positions across all versions')}</TableCell>
+              <TableCell>{header('eligible', 'Eligible', 'Distinct eligible DeFi positions across all tokenized assets')}</TableCell>
               <TableCell>{header('raw', 'Raw', 'Distinct positions confirmed by address, before filters')}</TableCell>
               <TableCell>{header('protocols', 'Protocols')}</TableCell>
               <TableCell>{header('mcap', 'Tokenized MCap', 'CoinMarketCap tokenized market cap')}</TableCell>
@@ -110,17 +114,19 @@ function AssetsView({ index }: { index: RwaIndex }) {
             {rows.map((u) => (
               <TableRow key={u.id} hover onClick={() => navigate(`/assets/${u.ticker}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <TokenIcon symbol={u.ticker} src={logoUrl(u.logo)} />
-                    <Box>
-                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {u.ticker}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {u.name}
-                      </Typography>
+                  <RowLink to={`/assets/${u.ticker}`}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <TokenIcon symbol={u.ticker} src={logoUrl(u.logo)} />
+                      <Box>
+                        <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                          {u.ticker}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {u.name}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Box>
+                  </RowLink>
                 </TableCell>
                 <TableCell>{u.versions_count}</TableCell>
                 <TableCell>{u.issuers_count}</TableCell>
@@ -131,7 +137,9 @@ function AssetsView({ index }: { index: RwaIndex }) {
                 <TableCell>
                   {u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : (UNDERLYING_STATUS[u.status] ?? u.status)}
                 </TableCell>
-                <TableCell>{fmtAge(u.fetched_at)}</TableCell>
+                <TableCell>
+                  <Age iso={u.fetched_at} />
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -144,20 +152,20 @@ function AssetsView({ index }: { index: RwaIndex }) {
 
       <Legend
         items={[
-          { term: 'Asset', description: 'Ticker and name of the underlying stock or ETF. Click a row to compare its tokenized versions.' },
+          { term: 'Asset', description: 'Ticker and name of the underlying stock or ETF. Click a row to compare its tokenized assets.' },
           {
-            term: 'Versions',
+            term: 'Tokenized assets',
             description:
-              'Tokenized versions of the asset tracked by CoinMarketCap (one per issuer product). Derivatives and tokens of another share class are excluded.'
+              'On-chain tokens of the stock or ETF tracked by CoinMarketCap (one per issuer product). Derivatives and tokens of another share class are excluded.'
           },
-          { term: 'Issuers', description: 'Distinct issuers of these versions, as labeled by CoinMarketCap.' },
+          { term: 'Issuers', description: 'Distinct issuers of these tokenized assets, as labeled by CoinMarketCap.' },
           {
             term: 'Eligible',
             description:
-              `Distinct DeFi positions that contain any version of the asset and pass all filters: the token address is confirmed ` +
+              `Distinct DeFi positions that contain any of its tokenized assets and pass all filters: the token address is confirmed ` +
               `in the position composition (directly or via LP → vault), the position is a real use-case (DEX LP, lending supply, ` +
               `vault, staking, yield market), liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data not older than ` +
-              `${s.max_position_age_hours}h at collection. A position shared by two versions counts once. This is the main rating.`
+              `${s.max_position_age_hours}h at collection. A position shared by two tokenized assets counts once. This is the main rating.`
           },
           {
             term: 'Raw',
@@ -166,7 +174,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
           { term: 'Protocols', description: 'Distinct DeFi protocols among the eligible positions.' },
           {
             term: 'Tokenized MCap',
-            description: 'CoinMarketCap market cap of all tokenized versions of the asset. Not DeFi liquidity.'
+            description: 'CoinMarketCap market cap of all its tokenized assets. Not DeFi liquidity.'
           },
           {
             term: 'Coverage',

@@ -7,19 +7,22 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2296f3" />
+        <!-- title and description: per page from scripts/prerender.mjs (src/utils/pageMeta.ts); keep each tag on one line -->
         <meta name="title" content="Tokenized Stocks in DeFi by cp0x" />
-        <meta
-            name="description"
-            content="Permissionless Interface Boilerplate by cp0x"
-        />
-        <meta
-            name="keywords"
-            content="permissionless interface, boilerplate, cp0x"
-        />
+        <meta name="description" content="Tokenized stocks and ETFs ranked by DeFi usage: eligible DeFi positions per tokenized asset and issuer, reported APY. Data from CoinMarketCap and Portals." />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="cp0x" />
+        <meta property="og:title" content="Tokenized Stocks in DeFi by cp0x" />
+        <meta property="og:description" content="Tokenized stocks and ETFs ranked by DeFi usage: eligible DeFi positions per tokenized asset and issuer, reported APY. Data from CoinMarketCap and Portals." />
+        <meta name="keywords" content="tokenized stocks, tokenized ETFs, RWA, DeFi, issuers, APY, cp0x" />
         <meta name="author" content="cp0x" />
+        <!-- the whole dataset behind every page -->
+        <link rel="alternate" type="application/json" href="/data/rwa.json" title="Dataset (JSON)" />
+        <!-- canonical link and critical CSS of the page: scripts/prerender.mjs -->
+        <!--prerender-head-->
     </head>
     <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>JavaScript is off: this is a static snapshot of the page. Sorting, filters and paging need JavaScript.</noscript>
         <div id="root"></div>
         <!--
           This HTML file is a template.

@@ -29,7 +29,10 @@ export function StatGrid({ stats }: { stats: Stat[] }) {
             <Stack spacing={{ xs: 0.5, sm: 1 }}>
               <Typography variant="h3">{s.value}</Typography>
               <Tooltip title={s.hint ?? ''} arrow disableHoverListener={!s.hint}>
-                <Typography variant="h6" sx={{ fontWeight: 400, color: theme.palette.grey[500], cursor: s.hint ? 'help' : 'default' }}>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: 400, color: theme.palette.grey[500], cursor: s.hint ? 'help' : 'default', textWrap: 'balance' }}
+                >
                   {s.label}
                 </Typography>
               </Tooltip>

@@ -1,10 +1,14 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 
 // third party
 import { Provider } from 'react-redux';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // project imports
 import App from 'App';
+import routes from 'routes';
+import { loadRwaData, RwaDataContext } from 'api/rwa';
+import { RwaExport } from 'types/rwa';
 import { store } from 'store';
 import * as serviceWorker from 'serviceWorker';
 import reportWebVitals from 'reportWebVitals';
@@ -31,15 +35,36 @@ import '@fontsource/poppins/700.css';
 
 // ==============================|| REACT DOM RENDER ||============================== //
 
-const container = document.getElementById('root');
-const root = createRoot(container!);
-root.render(
+const container = document.getElementById('root')!;
+const router = createBrowserRouter(routes, {
+  basename: import.meta.env.VITE_APP_BASE_NAME
+});
+
+// same provider tree as the prerender in entry-server.tsx, except for the router
+const app = (data?: RwaExport) => (
   <Provider store={store}>
     <ConfigProvider>
-      <App />
+      <RwaDataContext value={data}>
+        <App router={<RouterProvider router={router} />} />
+      </RwaDataContext>
     </ConfigProvider>
   </Provider>
 );
+
+if (container.hasChildNodes()) {
+  // A page prerendered at build time (scripts/prerender.mjs) stays on screen until the data is here. Then React hydrates
+  // it if it was rendered for this exact location; otherwise (the root path, a query string, an unknown path served
+  // with the fallback page) it renders the app anew in place of the static markup.
+  loadRwaData()
+    .catch(() => undefined) // the data gate shows the error after its own retry
+    .then((data) => {
+      const { pathname, search } = router.state.location;
+      if (data && !search && container.dataset.path === pathname) hydrateRoot(container, app(data));
+      else createRoot(container).render(app(data));
+    });
+} else {
+  createRoot(container).render(app());
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -168,8 +168,8 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
           {
             term: 'Token',
             description:
-              'Tokenized version used by the position, with its underlying ticker and issuer. A pool with two tracked versions appears ' +
-              'once per version.'
+              'Tokenized asset used by the position, with its underlying ticker and issuer. A pool with two tracked tokenized assets ' +
+              'appears once per token.'
           },
           { term: 'Protocol', description: 'DeFi protocol of the position (Portals platform).' },
           { term: 'Network', description: 'Blockchain where the position lives.' },

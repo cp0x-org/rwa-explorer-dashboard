@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import svgr from 'vite-plugin-svgr';
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode, isSsrBuild }) => {
   // depending on your application, base can also be "/"
   const env = loadEnv(mode, process.cwd(), '');
   // const API_URL = `${env.VITE_APP_BASE_NAME}`;
@@ -19,15 +19,22 @@ export default defineConfig(({ mode }) => {
       host: true
     },
     build: {
-      chunkSizeWarningLimit: 1600
+      chunkSizeWarningLimit: 1600,
+      // `vite build --ssr src/entry-server.tsx`: a Node module for scripts/prerender.mjs, without a copy of public/
+      ...(isSsrBuild && {
+        copyPublicDir: false,
+        rollupOptions: { output: { entryFileNames: '[name].mjs', chunkFileNames: '[name]-[hash].mjs' } }
+      })
+    },
+    ssr: {
+      // bundle the dependencies too: Node then needs no ESM/CJS interop for MUI, icons and the rest
+      noExternal: true
     },
     preview: {
       open: true,
       host: true
     },
-    define: {
-      global: 'window'
-    },
+    define: isSsrBuild ? {} : { global: 'window' },
     resolve: {
       alias: {
         // { find: '', replacement: path.resolve(__dirname, 'src') },

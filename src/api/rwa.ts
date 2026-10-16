@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { createContext, useContext, useMemo } from 'react';
 import useSWR from 'swr';
 
 import { Issuer, Opportunity, RelationRow, RwaExport, Token, Underlying } from 'types/rwa';
@@ -11,6 +11,12 @@ const fetcher = async (url: string): Promise<RwaExport> => {
   if (!res.ok) throw new Error(`HTTP ${res.status} while loading ${url}`);
   return res.json();
 };
+
+export const loadRwaData = () => fetcher(DATA_URL);
+
+// Export loaded before the first render: by the build-time prerender, and by index.tsx before it hydrates a prerendered
+// page, so the first render already shows the data instead of a loader.
+export const RwaDataContext = createContext<RwaExport | undefined>(undefined);
 
 // Logos are published next to the data by the pipeline (public/logos/...).
 export const logoUrl = (path: string | null | undefined): string | undefined => (path ? `${import.meta.env.BASE_URL}${path}` : undefined);
@@ -41,7 +47,10 @@ function buildIndex(data: RwaExport): RwaIndex {
 }
 
 export function useRwaData() {
+  const preloaded = useContext(RwaDataContext);
   const { data, error, isLoading } = useSWR(DATA_URL, fetcher, {
+    fallbackData: preloaded,
+    revalidateOnMount: !preloaded,
     revalidateIfStale: false,
     revalidateOnFocus: false,
     revalidateOnReconnect: false

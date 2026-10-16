@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { Link as RouterLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { Link as RouterLink, Outlet, useLocation } from 'react-router-dom';
 
 // material-ui
 import { styled, useTheme } from '@mui/material/styles';
@@ -49,7 +49,8 @@ const AntTabs = styled(Tabs)(({ theme }) => ({
 }));
 
 // style constant
-const AntTab = styled((props: TabProps) => <Tab disableRipple {...props} />)(({ theme }) => ({
+// tabs are links: sections open without JS and in a new tab
+const AntTab = styled((props: TabProps<typeof RouterLink>) => <Tab disableRipple component={RouterLink} {...props} />)(({ theme }) => ({
   textTransform: 'none',
   minWidth: 0,
   fontWeight: theme.typography.fontWeightRegular,
@@ -117,19 +118,20 @@ export default function MainLayout() {
     { label: 'Summary', short: 'Summary', path: 'summary', match: ['/summary'], iconPosition: 'top' }
   ];
 
-  const navigate = useNavigate();
   const location = useLocation();
   const currentTabIndex = tabs.findIndex((tab) => tab.match.some((prefix) => location.pathname.startsWith(prefix)));
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    navigate(`/${tabs[newValue].path}`);
-  };
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
   }, []);
 
+  // top of the page on navigation, but not on the first render: a prerendered page may already be scrolled when React takes over
+  const firstPath = useRef(true);
   useEffect(() => {
+    if (firstPath.current) {
+      firstPath.current = false;
+      return;
+    }
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
@@ -141,15 +143,13 @@ export default function MainLayout() {
     downMD && handlerDrawerOpen(false);
   }, [downMD]);
 
-  const isHorizontal = menuOrientation === MenuOrientation.HORIZONTAL && !downMD;
-
   if (menuMasterLoading) return <Loader />;
 
   return (
     <Box sx={{ display: 'flex' }}>
       {/* header */}
       <AppBar enableColorOnDark position="fixed" color="inherit" elevation={0} sx={{ bgcolor: 'background.default' }}>
-        <Toolbar sx={{ p: isHorizontal ? 1.25 : 2 }}>
+        <Toolbar sx={{ p: menuOrientation === MenuOrientation.HORIZONTAL ? { xs: 2, md: 1.25 } : 2 }}>
           <Header />
         </Toolbar>
       </AppBar>
@@ -171,48 +171,39 @@ export default function MainLayout() {
 
           {/*<MainCard>*/}
           <MainCard sx={{ borderRadius: { xs: 0, sm: `${borderRadius}px` } }} contentSX={{ p: { xs: 2, sm: 3 } }}>
-            {downMD ? (
-              <SectionGrid
-                aria-label="Sections"
-                sx={{ gridTemplateColumns: { xs: 'repeat(6, minmax(0, 1fr))', sm: `repeat(${tabs.length}, minmax(0, 1fr))` } }}
-              >
-                {tabs.map((tab, index) => {
-                  const lastRow = tabs.length % 3 || 3; // items in the last row share it evenly
-                  return (
-                    <ButtonBase
-                      key={tab.path}
-                      component={RouterLink}
-                      to={`/${tab.path}`}
-                      replace={currentTabIndex === index}
-                      aria-current={currentTabIndex === index ? 'page' : undefined}
-                      className="section-link"
-                      sx={{ gridColumn: { xs: `span ${index < tabs.length - lastRow ? 2 : 6 / lastRow}`, sm: 'span 1' } }}
-                    >
-                      {tab.short}
-                    </ButtonBase>
-                  );
-                })}
-              </SectionGrid>
-            ) : (
-              <AntTabs value={currentTabIndex === -1 ? false : currentTabIndex} onChange={handleChange} centered>
-                {tabs.map((tab, index) => (
-                  <AntTab
-                    wrapped={true}
+            {/* both navs are in the markup and CSS picks one, so the prerendered page is right at any width without JS */}
+            <SectionGrid
+              aria-label="Sections"
+              sx={{
+                display: { xs: 'grid', md: 'none' },
+                gridTemplateColumns: { xs: 'repeat(6, minmax(0, 1fr))', sm: `repeat(${tabs.length}, minmax(0, 1fr))` }
+              }}
+            >
+              {tabs.map((tab, index) => {
+                const lastRow = tabs.length % 3 || 3; // items in the last row share it evenly
+                return (
+                  <ButtonBase
                     key={tab.path}
-                    label={tab.label}
-                    onClick={() => {
-                      const tabPath = `/${tab.path}`;
-                      // клик на активный таб
-                      if (currentTabIndex === index) {
-                        navigate(tabPath, { replace: true, state: { refresh: Date.now() } });
-                      } else {
-                        navigate(tabPath);
-                      }
-                    }}
-                  />
+                    component={RouterLink}
+                    to={`/${tab.path}`}
+                    replace={currentTabIndex === index}
+                    aria-current={currentTabIndex === index ? 'page' : undefined}
+                    className="section-link"
+                    sx={{ gridColumn: { xs: `span ${index < tabs.length - lastRow ? 2 : 6 / lastRow}`, sm: 'span 1' } }}
+                  >
+                    {tab.short}
+                  </ButtonBase>
+                );
+              })}
+            </SectionGrid>
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              <AntTabs value={currentTabIndex === -1 ? false : currentTabIndex} centered>
+                {tabs.map((tab, index) => (
+                  // клик на активный таб: тот же адрес без query, без новой записи в истории
+                  <AntTab wrapped={true} key={tab.path} label={tab.label} to={`/${tab.path}`} replace={currentTabIndex === index} />
                 ))}
               </AntTabs>
-            )}
+            </Box>
             <Box sx={{ pt: 3 }}>
               <Outlet />
             </Box>

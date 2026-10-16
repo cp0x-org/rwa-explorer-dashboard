@@ -23,6 +23,7 @@ import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import { NetworkChips } from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
+import RowLink from './components/RowLink';
 import { RELATIVE_HINT } from './IssuersPage';
 
 function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }) {
@@ -34,7 +35,7 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
   const rows = relationRows(index, tokens);
   const yieldRows = rows.filter(isReportedYield);
 
-  // distinct positions per asset: a pool shared by two versions of one asset counts once
+  // distinct positions per asset: a pool shared by two tokenized assets of one underlying counts once
   const perAsset = new Map<string, { raw: Set<string>; eligible: Set<string> }>();
   tokens.forEach((t) => perAsset.set(t.ticker, perAsset.get(t.ticker) ?? { raw: new Set(), eligible: new Set() }));
   rows.forEach((r) => {
@@ -79,7 +80,7 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
             value: fmtPct(issuer.basket_relative_score, 1).replace('%', ''),
             hint: RELATIVE_HINT
           },
-          { label: 'Assets / versions', value: `${issuer.basket_underlyings_count} / ${issuer.basket_tokens_count}` },
+          { label: 'Underlying / tokenized assets', value: `${issuer.basket_underlyings_count} / ${issuer.basket_tokens_count}` },
           {
             label: 'Deployments on Portals networks',
             value: `${issuer.supported_deployments_count} / ${issuer.deployments_count}`
@@ -94,14 +95,14 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
       <MethodNote data={index.data} />
 
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
-        Versions In Basket
+        Tokenized Assets In Basket
       </Typography>
       <TableContainer component={Paper} sx={[{ marginBottom: 4 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650 }} aria-label="issuer tokens table">
           <TableHead>
             <TableRow>
               <TableCell>Asset</TableCell>
-              <TableCell>Version</TableCell>
+              <TableCell>Token</TableCell>
               <TableCell>Rank in asset</TableCell>
               <TableCell>Score</TableCell>
               <TableCell>Raw</TableCell>
@@ -117,21 +118,23 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
               <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>{t.ticker}</TableCell>
                 <TableCell>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <TokenIcon
-                      symbol={t.symbol ?? '?'}
-                      src={logoUrl(t.logo)}
-                      avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
-                    />
-                    <Box>
-                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {t.symbol}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {t.name}
-                      </Typography>
+                  <RowLink to={`/tokens/${t.id}`}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <TokenIcon
+                        symbol={t.symbol ?? '?'}
+                        src={logoUrl(t.logo)}
+                        avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                      />
+                      <Box>
+                        <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                          {t.symbol}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          {t.name}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Box>
+                  </RowLink>
                 </TableCell>
                 <TableCell>
                   #{t.rank_in_underlying} of {index.underlyingById.get(t.underlying_id)?.versions_count ?? '—'}

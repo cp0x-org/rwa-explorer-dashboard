@@ -20,7 +20,10 @@ WORKDIR /app
 RUN npm install -g serve@14.2.4
 
 COPY --from=builder /app/dist ./dist
+COPY serve.json ./
 
 EXPOSE 4173
 
-CMD ["serve", "-s", "dist", "-l", "4173"]
+# No --single: every page is prerendered to <path>/index.html (scripts/prerender.mjs), and --single would answer every
+# path with the root index.html. Unknown paths get dist/404.html, the app shell, with status 404.
+CMD ["serve", "dist", "-l", "4173", "-c", "../serve.json"]

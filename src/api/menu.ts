@@ -40,7 +40,10 @@ export function useGetMenu() {
 }
 
 export function useGetMenuMaster() {
+  // local UI state only: starts from initialState right away (also in the prerender), changed through handlerDrawerOpen
   const { data, isLoading } = useSWR(endpoints.key + endpoints.master, () => initialState, {
+    fallbackData: initialState,
+    revalidateOnMount: false,
     revalidateIfStale: false,
     revalidateOnFocus: false,
     revalidateOnReconnect: false

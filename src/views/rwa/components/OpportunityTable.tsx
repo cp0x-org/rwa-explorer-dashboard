@@ -14,7 +14,8 @@ import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { stickyColumn } from './tableSx';
 import { RelationRow } from 'types/rwa';
-import { categoryLabel, compareNullable, FLAG_LABELS, fmtAge, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
+import { categoryLabel, compareNullable, FLAG_LABELS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
+import Age from './Age';
 import { EligibilityChip } from './StatusChip';
 import SortHeader, { useSort } from './SortHeader';
 import TablePager from './TablePager';
@@ -162,7 +163,9 @@ export default function OpportunityTable({
                       fmtPct(o.apy_percent)
                     )}
                   </TableCell>
-                  <TableCell>{fmtAge(o.updated_at)}</TableCell>
+                  <TableCell>
+                    <Age iso={o.updated_at} />
+                  </TableCell>
                   <TableCell>
                     <EligibilityChip eligibility={row.relation ? o.eligibility : 'unconfirmed'} />
                   </TableCell>

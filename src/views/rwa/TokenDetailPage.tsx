@@ -57,7 +57,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
       <DetailHeader
         caption={
           <>
-            Tokenized version of{' '}
+            Tokenized{' '}
             <Link component={RouterLink} to={`/assets/${token.ticker}`} color="inherit" underline="hover">
               {token.ticker}
             </Link>

@@ -57,9 +57,13 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : <Chip size="small" label={UNDERLYING_STATUS[u.status] ?? u.status} />
         }
         stats={[
-          { label: 'Tokenized versions', value: fmtNum(u.versions_count) },
+          { label: 'Tokenized assets', value: fmtNum(u.versions_count) },
           { label: 'Issuers', value: fmtNum(u.issuers_count) },
-          { label: 'Eligible positions', value: fmtNum(u.eligible_opportunities_count), hint: 'Distinct positions across versions' },
+          {
+            label: 'Eligible positions',
+            value: fmtNum(u.eligible_opportunities_count),
+            hint: 'Distinct positions across tokenized assets'
+          },
           { label: 'Raw confirmed', value: fmtNum(u.raw_confirmed_opportunities_count) },
           { label: 'Protocols', value: fmtNum(u.eligible_protocols_count) },
           { label: 'Networks', value: fmtNum(u.eligible_networks_count) },
@@ -70,7 +74,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
       <MethodNote data={index.data} />
 
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
-        Tokenized Versions
+        Tokenized Assets
       </Typography>
       <VersionsTable tokens={tokens} />
 
@@ -100,7 +104,11 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
               <TableBody>
                 {excluded.map((t) => (
                   <TableRow key={t.id}>
-                    <TableCell>{t.symbol ?? '—'}</TableCell>
+                    <TableCell>
+                      <Link component={RouterLink} to={`/tokens/${t.id}`} underline="hover">
+                        {t.symbol ?? '—'}
+                      </Link>
+                    </TableCell>
                     <TableCell>{t.name ?? '—'}</TableCell>
                     <TableCell>{t.issuer_name ?? '—'}</TableCell>
                     <TableCell>{EXCLUDED_REASONS[t.excluded_reason ?? ''] ?? t.excluded_reason}</TableCell>

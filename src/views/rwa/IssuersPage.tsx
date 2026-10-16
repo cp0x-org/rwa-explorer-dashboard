@@ -19,6 +19,7 @@ import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
 import { stickyColumn } from './components/tableSx';
+import RowLink from './components/RowLink';
 
 type Field = 'score' | 'relative' | 'raw' | 'protocols' | 'assets' | 'yield' | 'pools';
 
@@ -63,7 +64,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
               <TableCell>{header('relative', 'Relative', RELATIVE_HINT)}</TableCell>
               <TableCell>{header('raw', 'Raw')}</TableCell>
               <TableCell>{header('protocols', 'Protocols')}</TableCell>
-              <TableCell>{header('assets', 'Assets', 'Basket assets / tokenized versions')}</TableCell>
+              <TableCell>{header('assets', 'Assets', 'Underlying assets / the issuer’s tokenized assets of them')}</TableCell>
               <TableCell>
                 <Tooltip title="Deployments on networks covered by Portals / all CMC deployments" arrow>
                   <span>Deployments</span>
@@ -79,12 +80,14 @@ function IssuersView({ index }: { index: RwaIndex }) {
               <TableRow key={i.id} hover onClick={() => navigate(`/issuers/${i.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>{n + 1}</TableCell>
                 <TableCell>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <TokenIcon symbol={i.name ?? '?'} src={logoUrl(i.logo)} />
-                    <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                      {i.name ?? 'Unknown issuer'}
-                    </Typography>
-                  </Box>
+                  <RowLink to={`/issuers/${i.id}`}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                      <TokenIcon symbol={i.name ?? '?'} src={logoUrl(i.logo)} />
+                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                        {i.name ?? 'Unknown issuer'}
+                      </Typography>
+                    </Box>
+                  </RowLink>
                 </TableCell>
                 <TableCell>
                   <Typography variant="h5" component="span">
@@ -125,15 +128,15 @@ function IssuersView({ index }: { index: RwaIndex }) {
           {
             term: 'Issuer',
             description:
-              'Issuer of tokenized versions, as labeled by CoinMarketCap (not a verified legal entity). Click a row for its versions and positions.'
+              'Issuer of tokenized assets, as labeled by CoinMarketCap (not a verified legal entity). Click a row for its tokenized assets and positions.'
           },
           {
             term: 'Score',
             description:
-              `Unique eligible DeFi positions across all versions of the issuer in this basket. A position counts as eligible when the token ` +
+              `Unique eligible DeFi positions across all tokenized assets of the issuer in this basket. A position counts as eligible when the token ` +
               `address is confirmed in its composition (directly or via LP → vault), it is a real use-case (DEX LP, lending supply, vault, ` +
               `staking, yield market), liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data is not older than ` +
-              `${s.max_position_age_hours}h at collection. A pool shared by two versions of the same issuer counts once; tokens outside the ` +
+              `${s.max_position_age_hours}h at collection. A pool shared by two tokenized assets of the same issuer counts once; tokens outside the ` +
               `basket do not count. This is the main rating.`
           },
           {
@@ -148,7 +151,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
             description: 'Unique positions confirmed by contract address before the use-case, liquidity and freshness filters.'
           },
           { term: 'Protocols', description: 'Distinct DeFi protocols among the eligible positions.' },
-          { term: 'Assets', description: 'Underlying assets of the basket covered by the issuer / its tokenized versions of them.' },
+          { term: 'Assets', description: 'Underlying assets of the basket covered by the issuer / the issuer’s tokenized assets of them.' },
           {
             term: 'Deployments',
             description:
@@ -158,7 +161,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
           {
             term: 'Direct / Indirect',
             description:
-              'Eligible positions holding a version itself (e.g. a DEX pool) / holding it through another position (e.g. a vault that holds an LP with the token).'
+              'Eligible positions holding the tokenized asset itself (e.g. a DEX pool) / holding it through another position (e.g. a vault that holds an LP with the token).'
           },
           {
             term: 'Yield',
@@ -167,7 +170,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
           {
             term: 'Pools liquidity',
             description:
-              'Sum of liquidity of distinct eligible DEX pools that directly hold the issuer’s versions. Not the issuer’s TVL or capital: vaults ' +
+              'Sum of liquidity of distinct eligible DEX pools that directly hold the issuer’s tokenized assets. Not the issuer’s TVL or capital: vaults ' +
               'on top of these pools are not added.'
           }
         ]}

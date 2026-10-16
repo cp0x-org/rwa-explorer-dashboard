@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import { logoUrl } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { stickyColumn } from './tableSx';
+import RowLink from './RowLink';
 import { Token } from 'types/rwa';
 import { compareNullable, DEPLOYMENT_STATUS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import SortHeader, { SortOrder, useSort } from './SortHeader';
@@ -96,11 +97,11 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
   return (
     <>
       <TableContainer component={Paper} sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
-        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized versions table">
+        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized assets table">
           <TableHead>
             <TableRow>
               <TableCell>{showUnderlying ? header('ticker', 'Underlying') : '#'}</TableCell>
-              <TableCell>Version</TableCell>
+              <TableCell>Token</TableCell>
               <TableCell>Issuer</TableCell>
               <TableCell>Networks</TableCell>
               <TableCell>{header('score', 'Score', 'Eligible positions; ties: protocols, networks, direct positions')}</TableCell>
@@ -116,7 +117,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
             {visible.length === 0 && (
               <TableRow>
                 <TableCell colSpan={11} sx={{ color: 'text.secondary' }}>
-                  {showUnderlying ? 'No tokenized versions match the filters' : 'CMC tracks no tokenized versions of this asset'}
+                  {showUnderlying ? 'No tokenized assets match the filters' : 'CMC tracks no tokenized assets for this underlying'}
                 </TableCell>
               </TableRow>
             )}
@@ -139,19 +140,21 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
                   )}
                 </TableCell>
                 <TableCell>
-                  <Tooltip title={t.name ?? ''} arrow>
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, whiteSpace: 'nowrap' }}>
-                      <TokenIcon
-                        symbol={t.symbol ?? '?'}
-                        src={logoUrl(t.logo)}
-                        avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
-                      />
-                      <Typography variant="body2" component="span" sx={{ fontWeight: 500 }}>
-                        {t.symbol}
-                      </Typography>
-                      {t.kind === 'wrapper' && <Chip size="small" label="Wrapper" />}
-                    </Box>
-                  </Tooltip>
+                  <RowLink to={`/tokens/${t.id}`}>
+                    <Tooltip title={t.name ?? ''} arrow>
+                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, whiteSpace: 'nowrap' }}>
+                        <TokenIcon
+                          symbol={t.symbol ?? '?'}
+                          src={logoUrl(t.logo)}
+                          avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
+                        />
+                        <Typography variant="body2" component="span" sx={{ fontWeight: 500 }}>
+                          {t.symbol}
+                        </Typography>
+                        {t.kind === 'wrapper' && <Chip size="small" label="Wrapper" />}
+                      </Box>
+                    </Tooltip>
+                  </RowLink>
                 </TableCell>
                 <TableCell>{t.issuer_name ?? '—'}</TableCell>
                 <TableCell>

@@ -1,4 +1,5 @@
-import { ReactNode, useState } from 'react';
+import { KeyboardEvent, ReactNode, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -253,18 +254,24 @@ interface RowFrameProps {
   value: ReactNode;
   tooltip?: ReactNode;
   onClick?: () => void;
+  to?: string; // a page to open: the whole row is a link (works without JS, in a new tab, followed by crawlers)
   selected?: boolean;
   labelWidth: number;
   children: ReactNode;
 }
 
-function RowFrame({ label, value, tooltip, onClick, selected, labelWidth, children }: RowFrameProps) {
+function RowFrame({ label, value, tooltip, onClick, to, selected, labelWidth, children }: RowFrameProps) {
   const theme = useTheme();
+  const interactive = to
+    ? { component: RouterLink, to }
+    : {
+        onClick,
+        tabIndex: onClick || tooltip ? 0 : undefined,
+        onKeyDown: onClick ? (e: KeyboardEvent) => e.key === 'Enter' && onClick() : undefined
+      };
   const row = (
     <Box
-      onClick={onClick}
-      tabIndex={onClick || tooltip ? 0 : undefined}
-      onKeyDown={onClick ? (e) => e.key === 'Enter' && onClick() : undefined}
+      {...interactive}
       sx={{
         display: 'grid',
         // phone: label and value on one line, the bar full width below; wider: label | bar | value
@@ -275,8 +282,10 @@ function RowFrame({ label, value, tooltip, onClick, selected, labelWidth, childr
         paddingX: 1,
         paddingY: 0.75,
         borderRadius: '6px',
-        cursor: onClick ? 'pointer' : 'default',
+        cursor: onClick || to ? 'pointer' : 'default',
         outline: 'none',
+        color: 'inherit',
+        textDecoration: 'none',
         backgroundColor: selected ? alpha(theme.palette.secondary.main, 0.1) : 'transparent',
         '&:hover, &:focus-visible': {
           backgroundColor: selected ? alpha(theme.palette.secondary.main, 0.14) : alpha(theme.palette.text.primary, 0.05)
@@ -304,6 +313,7 @@ export interface BarItem {
   valueLabel: ReactNode;
   tooltip?: ReactNode;
   onClick?: () => void;
+  to?: string;
 }
 
 // One series: one color for every bar, value at the tip.
@@ -318,6 +328,7 @@ export function BarList({ items, max, color, labelWidth = 170 }: { items: BarIte
           value={item.valueLabel}
           tooltip={item.tooltip}
           onClick={item.onClick}
+          to={item.to}
           labelWidth={labelWidth}
         >
           {item.value > 0 && <Box sx={{ ...barSx(color), width: `${Math.max((item.value / (scale || 1)) * 100, 0.6)}%` }} />}
@@ -357,6 +368,7 @@ export function RangeBarList({
           value={item.valueLabel}
           tooltip={item.tooltip}
           onClick={item.onClick}
+          to={item.to}
           labelWidth={labelWidth}
         >
           {reference !== undefined && (

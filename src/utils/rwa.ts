@@ -92,7 +92,7 @@ export const COVERAGE: Record<string, { label: string; color: ChipColor; hint: s
   },
   no_contracts: { label: 'No contracts', color: 'default', hint: 'CMC lists no contract addresses for this token' },
   data_unavailable: { label: 'Data unavailable', color: 'error', hint: 'Source data could not be fetched' },
-  no_tokens: { label: 'No tokenized versions', color: 'default', hint: 'CMC tracks no tokenized versions of this asset' }
+  no_tokens: { label: 'No tokenized assets', color: 'default', hint: 'CMC tracks no tokenized assets for this underlying' }
 };
 
 export const DEPLOYMENT_STATUS: Record<string, { label: string; color: ChipColor }> = {
@@ -121,7 +121,7 @@ export const ELIGIBILITY: Record<string, { label: string; color: ChipColor; hint
 export const UNDERLYING_STATUS: Record<string, string> = {
   ok: 'OK',
   not_in_cmc: 'Not tracked by CMC',
-  no_tracked_tokens: 'No tokenized versions',
+  no_tracked_tokens: 'No tokenized assets',
   ambiguous_cmc_match: 'Ambiguous CMC match',
   rwa_id_changed: 'CMC id changed'
 };

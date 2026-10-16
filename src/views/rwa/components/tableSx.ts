@@ -1,6 +1,6 @@
 import { Theme } from '@mui/material/styles';
 
-// Phones: keeps the column that names the row (asset, version, position) in view while a wide table scrolls sideways.
+// Phones: keeps the column that names the row (asset, token, position) in view while a wide table scrolls sideways.
 export const stickyColumn =
   (column = 1) =>
   (theme: Theme) => ({

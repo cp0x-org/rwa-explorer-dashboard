@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
 // material-ui
-import { Box, Button, Stack, Theme, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Button, Stack, Theme, useTheme } from '@mui/material';
 
 // Menu button styling as an object for reuse
 const menuButtonStyle = (theme: Theme) => ({
@@ -20,12 +20,10 @@ const menuButtonStyle = (theme: Theme) => ({
 
 const MenuItems = () => {
   const theme = useTheme();
-  const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
 
-  if (matchDownMd) return null;
-
+  // below md the MobileMenu button replaces these links; CSS decides, so the prerendered header fits any width
   return (
-    <Box sx={{ display: 'flex', alignItems: 'center', ml: 2 }}>
+    <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', ml: 2 }}>
       <Stack direction="row" spacing={1}>
         {/* Internal link using RouterLink */}
         <Button component={RouterLink} to="/" sx={menuButtonStyle(theme)}>

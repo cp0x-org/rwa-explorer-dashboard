@@ -1,13 +1,21 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import Loader from 'ui-component/Loader';
 import { RwaIndex, useRwaData } from 'api/rwa';
+import { pageMeta } from 'utils/pageMeta';
 
 // Renders children only with a fully loaded export; an HTTP failure is shown as such, never as empty data.
 export default function DataGate({ children }: { children: (index: RwaIndex) => ReactNode }) {
   const { index, error, isLoading } = useRwaData();
+  const { pathname } = useLocation();
+
+  // same title as the prerendered <head> of this path, kept current on client-side navigation
+  useEffect(() => {
+    if (index) document.title = pageMeta(pathname, index.data).title;
+  }, [pathname, index]);
 
   if (isLoading) {
     return (

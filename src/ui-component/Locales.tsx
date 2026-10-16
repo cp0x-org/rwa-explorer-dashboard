@@ -7,6 +7,11 @@ import useConfig from 'hooks/useConfig';
 // types
 import { I18n } from 'types/config';
 
+// English is bundled so the first render (and the prerendered HTML) has text; other locales load on demand
+import en from 'utils/locales/en.json';
+
+type Messages = Record<string, string> | Record<string, MessageFormatElement[]>;
+
 // load locales files
 function loadLocaleData(i18n: I18n) {
   switch (i18n) {
@@ -17,7 +22,7 @@ function loadLocaleData(i18n: I18n) {
     case 'zh':
       return import('utils/locales/zh.json');
     default:
-      return import('utils/locales/en.json');
+      return Promise.resolve({ default: en });
   }
 }
 
@@ -29,21 +34,17 @@ interface LocalsProps {
 
 export default function Locales({ children }: LocalsProps) {
   const { i18n } = useConfig();
-  const [messages, setMessages] = useState<Record<string, string> | Record<string, MessageFormatElement[]> | undefined>();
+  const [messages, setMessages] = useState<Messages>(en);
 
   useEffect(() => {
-    loadLocaleData(i18n).then((d: { default: Record<string, string> | Record<string, MessageFormatElement[]> | undefined }) => {
+    loadLocaleData(i18n).then((d: { default: Messages }) => {
       setMessages(d.default);
     });
   }, [i18n]);
 
   return (
-    <>
-      {messages && (
-        <IntlProvider locale={i18n} defaultLocale="en" messages={messages}>
-          {children}
-        </IntlProvider>
-      )}
-    </>
+    <IntlProvider locale={i18n} defaultLocale="en" messages={messages}>
+      {children}
+    </IntlProvider>
   );
 }

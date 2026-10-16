@@ -1,11 +1,13 @@
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
+import useHydrated from 'hooks/useHydrated';
 import { RwaExport } from 'types/rwa';
 import { fmtAge, fmtDate, fmtUsd } from 'utils/rwa';
 
 // Update time and counting method, always next to the data.
 export default function MethodNote({ data }: { data: RwaExport }) {
+  const hydrated = useHydrated(); // the age needs the viewer's clock, so the prerendered HTML has only the date
   const { oldest_fetched_at: oldest, newest_fetched_at: newest } = data.summary;
   const s = data.settings;
   const method =
@@ -18,7 +20,8 @@ export default function MethodNote({ data }: { data: RwaExport }) {
   return (
     <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }}>
       Data collected {oldest && oldest !== newest ? `${fmtDate(oldest)} – ` : ''}
-      {fmtDate(newest)} ({fmtAge(newest)}) · Sources: CoinMarketCap, Portals · Coverage: search ·{' '}
+      {fmtDate(newest)}
+      {hydrated && ` (${fmtAge(newest)})`} · Sources: CoinMarketCap, Portals · Coverage: search ·{' '}
       <Tooltip title={method} arrow>
         <span style={{ textDecoration: 'underline dotted', cursor: 'help' }}>How the rating works</span>
       </Tooltip>

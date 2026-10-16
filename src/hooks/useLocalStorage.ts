@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function useLocalStorage<ValueType>(key: string, defaultValue: ValueType) {
   const [value, setValue] = useState(() => {
+    if (typeof window === 'undefined') return defaultValue; // prerender at build time: no storage, defaults
     const storedValue = localStorage.getItem(key);
     return storedValue === null ? defaultValue : JSON.parse(storedValue);
   });

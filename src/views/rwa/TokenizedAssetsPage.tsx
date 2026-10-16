@@ -16,7 +16,7 @@ import FilterPanel from './components/FilterPanel';
 
 const uniqueSorted = (values: string[]) => Array.from(new Set(values)).sort();
 
-// All tokenized versions of the basket in one sortable, filterable table.
+// All tokenized assets of the basket in one sortable, filterable table.
 function TokenizedAssetsView({ index }: { index: RwaIndex }) {
   const [underlyings, setUnderlyings] = useState<string[]>([]);
   const [issuers, setIssuers] = useState<string[]>([]);
@@ -83,7 +83,7 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
 
       <VersionsTable tokens={tokens} showUnderlying underlyingLogos={underlyingLogos} paginate />
       <Typography variant="body2" color="text.secondary">
-        Showing {tokens.length} of {allTokens.length} tokenized versions{filtered ? ' (filtered)' : ''}
+        Showing {tokens.length} of {allTokens.length} tokenized assets{filtered ? ' (filtered)' : ''}
       </Typography>
 
       <Legend
@@ -91,25 +91,25 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
           {
             term: 'Underlying',
             description:
-              'Ticker of the underlying stock or ETF. Click a row to open the version details; the rank of a version among versions of ' +
+              'Ticker of the underlying stock or ETF. Click a row to open the token details; its rank among tokenized assets of ' +
               'the same underlying is shown on the underlying and issuer pages.'
           },
           {
-            term: 'Version',
+            term: 'Token',
             description:
-              'Token symbol in CoinMarketCap; the full name is in the tooltip. "Wrapper" marks a wrapped version of another token.'
+              'Symbol of the tokenized asset in CoinMarketCap; the full name is in the tooltip. "Wrapper" marks a wrapper around another token.'
           },
-          { term: 'Issuer', description: 'Issuer of the version, as labeled by CoinMarketCap (not a verified legal entity).' },
+          { term: 'Issuer', description: 'Issuer of the token, as labeled by CoinMarketCap (not a verified legal entity).' },
           {
             term: 'Networks',
             description:
-              'Networks where CoinMarketCap lists a contract of the version. Highlighted: indexed by Portals and searched for DeFi positions. ' +
+              'Networks where CoinMarketCap lists a contract of the token. Highlighted: indexed by Portals and searched for DeFi positions. ' +
               'Greyed: network not covered by Portals or token not indexed — usage there is unknown, not zero.'
           },
           {
             term: 'Score',
             description:
-              `Number of eligible DeFi positions with this version: the token address is confirmed in the position composition ` +
+              `Number of eligible DeFi positions with this token: the token address is confirmed in the position composition ` +
               `(directly or via LP → vault), the position is a real use-case (DEX LP, lending supply, vault, staking, yield market), ` +
               `liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data not older than ${s.max_position_age_hours}h at collection. ` +
               `This is the main rating.`
@@ -133,7 +133,7 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
           },
           {
             term: 'MCap (CMC)',
-            description: 'CoinMarketCap market cap of this version. "—" means not reported; $0.00 is a zero reported by CoinMarketCap.'
+            description: 'CoinMarketCap market cap of this token. "—" means not reported; $0.00 is a zero reported by CoinMarketCap.'
           },
           {
             term: 'Coverage',
