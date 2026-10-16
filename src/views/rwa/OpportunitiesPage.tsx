@@ -196,13 +196,13 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
               `Total APY reported by Portals for this position (base + rewards): a snapshot, not an expected return. ⚠ marks APY above ` +
               `${fmtPct(s.yield_apy_review_threshold_percent, 0)}, excluded from yield statistics. Borrow APY is a cost and is shown only in the details.`
           },
-          { term: 'Updated', description: 'How long ago Portals last updated the data of this position.' },
           {
             term: 'Status',
             description:
               `Eligible: counted in the ratings. Low liquidity: below ${fmtUsd(s.min_eligible_liquidity_usd)}. Stale: source data older ` +
               `than ${s.max_position_age_hours}h at collection. Not a use-case: wrapper or unknown category. Unconfirmed: symbol match only.`
-          }
+          },
+          { term: 'Updated', description: 'How long ago Portals last updated the data of this position.' }
         ]}
       />
     </Box>

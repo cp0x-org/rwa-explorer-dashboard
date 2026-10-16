@@ -2,11 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
@@ -14,6 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import { logoUrl } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
+import DataTableContainer from './DataTableContainer';
 import { stickyColumn } from './tableSx';
 import RowLink from './RowLink';
 import { Token } from 'types/rwa';
@@ -22,7 +21,8 @@ import SortHeader, { SortOrder, useSort } from './SortHeader';
 import { CoverageChip } from './StatusChip';
 import TablePager from './TablePager';
 
-type Field = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
+export type TokenSortField = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
+type Field = TokenSortField;
 
 const sortValue: Record<Exclude<Field, 'score'>, (t: Token) => number | string | null> = {
   ticker: (t) => t.ticker,
@@ -40,7 +40,7 @@ const scoreKey = (t: Token) => [
   t.counts.direct_eligible_count
 ];
 
-function compareTokens(a: Token, b: Token, field: Field, order: SortOrder): number {
+export function compareTokens(a: Token, b: Token, field: Field, order: SortOrder): number {
   if (field !== 'score') return compareNullable(sortValue[field](a), sortValue[field](b), order);
   const ka = scoreKey(a);
   const kb = scoreKey(b);
@@ -96,7 +96,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
 
   return (
     <>
-      <TableContainer component={Paper} sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
+      <DataTableContainer sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized assets table">
           <TableHead>
             <TableRow>
@@ -184,7 +184,7 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
       {paginate && (
         <TablePager count={sorted.length} page={currentPage} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
       )}

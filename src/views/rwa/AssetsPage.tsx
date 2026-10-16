@@ -2,11 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TextField from '@mui/material/TextField';
@@ -16,6 +14,7 @@ import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Underlying } from 'types/rwa';
 import { compareNullable, fmtNum, fmtUsd, num, UNDERLYING_STATUS } from 'utils/rwa';
+import DataTableContainer from './components/DataTableContainer';
 import Age from './components/Age';
 import DataGate from './components/DataGate';
 import MethodNote from './components/MethodNote';
@@ -93,7 +92,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
         </Grid>
       </Grid>
 
-      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
+      <DataTableContainer sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
         <Table sx={{ minWidth: 650 }} aria-label="underlying assets table">
           <TableHead>
             <TableRow>
@@ -144,7 +143,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
       <Typography variant="body2" color="text.secondary">
         Showing {rows.length} {rows.length === 1 ? 'asset' : 'assets'}
         {query ? ` (filtered by "${nameFilter}")` : ''}

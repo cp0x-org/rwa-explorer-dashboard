@@ -7,12 +7,10 @@ import Grid from '@mui/material/Grid';
 import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
-import Paper from '@mui/material/Paper';
 import Select from '@mui/material/Select';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
@@ -21,9 +19,11 @@ import { relationRows, RwaIndex } from 'api/rwa';
 import { CopyableAddress } from 'components/CopyableAddress';
 import { Token } from 'types/rwa';
 import { categoryLabel, EXCLUDED_REASONS, fmtNum, fmtPct, fmtUsd, networkName } from 'utils/rwa';
+import DataTableContainer from './components/DataTableContainer';
 import BreakdownTable from './components/BreakdownTable';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
+import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
@@ -51,6 +51,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
   const networks = Array.from(new Set(allRows.map((r) => r.opportunity.network))).sort();
   const categories = Array.from(new Set(allRows.map((r) => r.opportunity.category))).sort();
   const issuer = token.issuer_id ? index.issuerById.get(token.issuer_id) : undefined;
+  const s = index.data.settings;
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -129,7 +130,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
       <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
         Deployments
       </Typography>
-      <TableContainer component={Paper} sx={[{ marginBottom: 4 }, stickyColumn(1)]}>
+      <DataTableContainer sx={[{ marginBottom: 4 }, stickyColumn(1)]}>
         <Table sx={{ minWidth: 650 }} aria-label="deployments table">
           <TableHead>
             <TableRow>
@@ -165,7 +166,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
 
       <Grid container spacing={2} sx={{ marginBottom: 4 }}>
         <Grid size={{ xs: 12, md: 4 }}>
@@ -243,6 +244,59 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
           <OpportunityTable index={index} rows={unconfirmed} defaultSort="liquidity" />
         </Box>
       )}
+
+      <Legend
+        items={[
+          {
+            term: 'Deployments',
+            description:
+              'Contracts of the token listed by CoinMarketCap, with the matching Portals network, symbol and decimals. Indexed: Portals knows ' +
+              'the contract and its positions were searched. Not indexed / Unsupported by Portals: DeFi usage on that network is unknown, not zero.'
+          },
+          {
+            term: 'Network / Category / Protocol',
+            description: 'Eligible positions of the token grouped by network, use-case category and DeFi protocol. Raw: before the filters.'
+          },
+          {
+            term: 'Position',
+            description:
+              'A DeFi position indexed by Portals: pool, vault, lending market or yield market. Click a row for details: composition, ' +
+              'link path, APY breakdown, volume and flags.'
+          },
+          { term: 'Protocol', description: 'DeFi protocol of the position (Portals platform).' },
+          { term: 'Network', description: 'Blockchain where the position lives.' },
+          {
+            term: 'Category',
+            description:
+              'DEX LP: liquidity in a pool with the token. Lending supply: the token supplied to a lending market. Vault: a vault or ' +
+              'strategy holding the token or its LP. Yield market: PT/YT and similar markets. Wrapper: a wrapped token, not a use-case.'
+          },
+          {
+            term: 'Link',
+            description:
+              'Direct: the position holds the token itself. Indirect (n): it holds the token through other positions, n levels deep ' +
+              '(e.g. vault → LP → token); hover for the path. Symbol match: the name matches, but the token address is not in the ' +
+              'composition — unconfirmed and never counted.'
+          },
+          {
+            term: 'Liquidity',
+            description: 'Pool TVL or vault deposits reported by Portals, in USD. Values of nested positions are never summed.'
+          },
+          {
+            term: 'Reported APY',
+            description:
+              `Total APY reported by Portals for this position (base + rewards): a snapshot, not an expected return. ⚠ marks APY above ` +
+              `${fmtPct(s.yield_apy_review_threshold_percent, 0)}, excluded from yield statistics. Borrow APY is a cost and is shown only in the details.`
+          },
+          {
+            term: 'Status',
+            description:
+              `Eligible: counted in the ratings. Low liquidity: below ${fmtUsd(s.min_eligible_liquidity_usd)}. Stale: source data older ` +
+              `than ${s.max_position_age_hours}h at collection. Not a use-case: wrapper or unknown category. Unconfirmed: symbol match only.`
+          },
+          { term: 'Updated', description: 'How long ago Portals last updated the data of this position.' }
+        ]}
+      />
     </Box>
   );
 }

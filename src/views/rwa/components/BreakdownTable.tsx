@@ -1,11 +1,10 @@
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
+import DataTableContainer from './DataTableContainer';
 import { Breakdown } from 'types/rwa';
 
 export default function BreakdownTable({
@@ -19,7 +18,7 @@ export default function BreakdownTable({
 }) {
   const entries = Object.entries(data);
   return (
-    <TableContainer component={Paper}>
+    <DataTableContainer>
       <Table size="small" aria-label={`${title} breakdown`}>
         <TableHead>
           <TableRow>
@@ -45,6 +44,6 @@ export default function BreakdownTable({
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+    </DataTableContainer>
   );
 }

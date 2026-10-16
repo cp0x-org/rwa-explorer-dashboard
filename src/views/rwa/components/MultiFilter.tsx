@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import Chip from '@mui/material/Chip';
 import TextField from '@mui/material/TextField';
@@ -11,10 +12,15 @@ interface MultiFilterProps {
 }
 
 export default function MultiFilter({ label, options, value, onChange, getLabel = (o) => o }: MultiFilterProps) {
+  // Options arrive as ids or slugs; the list is shown in alphabetical order of what the user actually reads.
+  const sorted = useMemo(
+    () => [...options].sort((a, b) => getLabel(a).localeCompare(getLabel(b), 'en', { sensitivity: 'base', numeric: true })),
+    [options, getLabel]
+  );
   return (
     <Autocomplete
       multiple
-      options={options}
+      options={sorted}
       value={value}
       getOptionLabel={getLabel}
       onChange={(_, v) => onChange(v)}

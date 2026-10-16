@@ -2,11 +2,9 @@ import { Link as RouterLink, useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import Link from '@mui/material/Link';
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
@@ -14,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import { isReportedYield, relationRows, RwaIndex } from 'api/rwa';
 import { Token } from 'types/rwa';
 import { EXCLUDED_REASONS, fmtNum, fmtUsd, UNDERLYING_STATUS } from 'utils/rwa';
+import DataTableContainer from './components/DataTableContainer';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
 import MethodNote from './components/MethodNote';
@@ -91,7 +90,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
             Excluded From Ranking
           </Typography>
-          <TableContainer component={Paper} sx={stickyColumn(1)}>
+          <DataTableContainer sx={stickyColumn(1)}>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="excluded tokens table">
               <TableHead>
                 <TableRow>
@@ -116,7 +115,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
                 ))}
               </TableBody>
             </Table>
-          </TableContainer>
+          </DataTableContainer>
         </Box>
       )}
     </Box>

@@ -1,10 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
@@ -14,6 +12,7 @@ import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Issuer } from 'types/rwa';
 import { compareNullable, fmtPct, fmtUsd, num } from 'utils/rwa';
+import DataTableContainer from './components/DataTableContainer';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
@@ -54,7 +53,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
         Issuers
       </Typography>
       <MethodNote data={index.data} />
-      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(2)]}>
+      <DataTableContainer sx={[{ marginBottom: 2 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650 }} aria-label="issuers table">
           <TableHead>
             <TableRow>
@@ -120,7 +119,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
 
       <Legend
         items={[

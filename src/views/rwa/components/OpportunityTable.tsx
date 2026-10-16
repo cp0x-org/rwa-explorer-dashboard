@@ -1,10 +1,8 @@
 import { useMemo, useState } from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
@@ -12,6 +10,7 @@ import Typography from '@mui/material/Typography';
 
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
+import DataTableContainer from './DataTableContainer';
 import { stickyColumn } from './tableSx';
 import { RelationRow } from 'types/rwa';
 import { categoryLabel, compareNullable, FLAG_LABELS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
@@ -72,8 +71,9 @@ export default function OpportunityTable({
 
   return (
     <Box>
-      <TableContainer component={Paper} sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
-        <Table sx={{ minWidth: 650 }} aria-label="positions table">
+      <DataTableContainer sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
+        {/* denser cells: with the token column the table must still fit the lg container so the header can stick */}
+        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="positions table">
           <TableHead>
             <TableRow>
               <TableCell>Position</TableCell>
@@ -94,10 +94,10 @@ export default function OpportunityTable({
                   onSort={handleSort}
                 />
               </TableCell>
+              <TableCell>Status</TableCell>
               <TableCell>
                 <SortHeader field="updated" label="Updated" {...{ sortField, sortOrder }} onSort={handleSort} />
               </TableCell>
-              <TableCell>Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -164,17 +164,17 @@ export default function OpportunityTable({
                     )}
                   </TableCell>
                   <TableCell>
-                    <Age iso={o.updated_at} />
+                    <EligibilityChip eligibility={row.relation ? o.eligibility : 'unconfirmed'} />
                   </TableCell>
                   <TableCell>
-                    <EligibilityChip eligibility={row.relation ? o.eligibility : 'unconfirmed'} />
+                    <Age iso={o.updated_at} />
                   </TableCell>
                 </TableRow>
               );
             })}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
       <TablePager count={rows.length} page={page} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
       <OpportunityDialog index={index} row={selected} onClose={() => setSelected(null)} />
     </Box>

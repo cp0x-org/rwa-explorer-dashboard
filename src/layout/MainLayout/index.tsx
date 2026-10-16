@@ -170,7 +170,8 @@ export default function MainLayout() {
           {/*<Outlet />*/}
 
           {/*<MainCard>*/}
-          <MainCard sx={{ borderRadius: { xs: 0, sm: `${borderRadius}px` } }} contentSX={{ p: { xs: 2, sm: 3 } }}>
+          {/* overflow: visible — Card clips by default, which would make it the sticky container and keep table headers from sticking under the app bar */}
+          <MainCard sx={{ borderRadius: { xs: 0, sm: `${borderRadius}px` }, overflow: 'visible' }} contentSX={{ p: { xs: 2, sm: 3 } }}>
             {/* both navs are in the markup and CSS picks one, so the prerendered page is right at any width without JS */}
             <SectionGrid
               aria-label="Sections"

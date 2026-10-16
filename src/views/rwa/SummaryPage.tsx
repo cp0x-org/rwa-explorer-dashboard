@@ -9,12 +9,10 @@ import Grid from '@mui/material/Grid';
 import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
-import Paper from '@mui/material/Paper';
 import Select from '@mui/material/Select';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TextField from '@mui/material/TextField';
@@ -35,6 +33,7 @@ import {
   StackedBarList,
   useSeriesColors
 } from './components/Charts';
+import DataTableContainer from './components/DataTableContainer';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
@@ -62,6 +61,7 @@ interface IssuerStat {
   color: string;
   versions: number;
   inDefi: number; // tokenized assets with at least one eligible position
+  platforms: Map<string, string>; // distinct DeFi protocols (slug → name) across eligible positions of all its tokens
   yield: YieldStats | null;
 }
 
@@ -83,6 +83,16 @@ function yieldStats(index: RwaIndex, keys: Iterable<string>): YieldStats | null 
 }
 
 const union = (sets: Set<string>[]) => new Set(sets.flatMap((s) => Array.from(s)));
+
+// Distinct protocols behind a set of positions: 200 Uniswap V3 pools count once, Uniswap V2 and V3 count separately.
+function distinctPlatforms(index: RwaIndex, keys: Iterable<string>): Map<string, string> {
+  const platforms = new Map<string, string>();
+  for (const key of keys) {
+    const o = index.opportunityByKey.get(key);
+    if (o) platforms.set(o.platform, o.platform_name);
+  }
+  return platforms;
+}
 
 function buildStats(index: RwaIndex, series: string[]) {
   const basket = index.data.tokens.filter((t) => t.excluded_reason === null);
@@ -121,6 +131,7 @@ function buildStats(index: RwaIndex, series: string[]) {
       color: issuerColor.get(issuer.id)!,
       versions: own.length,
       inDefi: own.filter((s) => s.eligible.size > 0).length,
+      platforms: distinctPlatforms(index, union(own.map((s) => s.eligible))),
       yield: yieldStats(index, union(own.map((s) => s.yieldKeys)))
     };
   });
@@ -130,6 +141,18 @@ function buildStats(index: RwaIndex, series: string[]) {
 }
 
 type Stats = ReturnType<typeof buildStats>;
+
+// Issuers ranked by how many distinct protocols host their tokenized assets; ties keep the overall rank (more positions first).
+function byProtocolDiversity(issuers: IssuerStat[]): IssuerStat[] {
+  return issuers.filter((i) => i.versions > 0).sort((a, b) => b.platforms.size - a.platforms.size);
+}
+
+// Issuers ranked by the share of their tokenized assets with at least one eligible position; ties go to the wider line-up.
+function byDefiPresence(issuers: IssuerStat[]): IssuerStat[] {
+  return [...issuers]
+    .filter((i) => i.versions > 0)
+    .sort((a, b) => b.inDefi / b.versions - a.inDefi / a.versions || b.versions - a.versions);
+}
 
 // Per-issuer donut segments; issuers past the categorical slots fold into one "Other" segment.
 function issuerSegments(items: { id: string; name: string; value: number; color: string; detail?: string }[]): Segment[] {
@@ -235,9 +258,9 @@ function IssuersSection({ stats }: { stats: Stats }) {
       detail: `${i.inDefi} of ${i.versions} tokenized assets in DeFi`
     }))
   );
-  const presence = [...stats.issuers]
-    .filter((i) => i.versions > 0)
-    .sort((a, b) => b.inDefi / b.versions - a.inDefi / a.versions || b.versions - a.versions);
+  const presence = byDefiPresence(stats.issuers);
+  const diversity = byProtocolDiversity(stats.issuers);
+  const maxPlatforms = Math.max(...diversity.map((i) => i.platforms.size), 0);
 
   return (
     <Box sx={{ marginBottom: 5 }}>
@@ -245,7 +268,7 @@ function IssuersSection({ stats }: { stats: Stats }) {
         Issuers: DeFi readiness
       </Typography>
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, md: 6, lg: 4 }}>
           <ChartCard
             title="Share of eligible positions"
             subtitle="Which issuer’s tokenized assets are used in DeFi the most (issuer score / sum of scores)"
@@ -257,7 +280,7 @@ function IssuersSection({ stats }: { stats: Stats }) {
             />
           </ChartCard>
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, md: 6, lg: 4 }}>
           <ChartCard title="Tokenized assets in DeFi" subtitle="Share of the issuer’s tokenized assets with at least one eligible position">
             <BarList
               color={accent}
@@ -265,23 +288,24 @@ function IssuersSection({ stats }: { stats: Stats }) {
               labelWidth={150}
               items={presence.map((i) => ({
                 id: i.issuer.id,
+                // The count sits under the name so the value column stays one width and every bar shares the same track.
                 label: (
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, minWidth: 0 }}>
                     <Box sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
-                    <Typography variant="body2" noWrap>
-                      {i.issuer.name ?? 'Unknown issuer'}
-                    </Typography>
+                    <Box sx={{ minWidth: 0 }}>
+                      <Typography variant="body2" noWrap>
+                        {i.issuer.name ?? 'Unknown issuer'}
+                      </Typography>
+                      <Typography variant="caption" noWrap sx={{ display: 'block', color: 'text.secondary', lineHeight: 1.2 }}>
+                        {i.inDefi} of {i.versions} assets
+                      </Typography>
+                    </Box>
                   </Box>
                 ),
                 value: (i.inDefi / i.versions) * 100,
                 valueLabel: (
-                  <Typography variant="body2" component="span">
-                    <Box component="span" sx={{ fontWeight: 600 }}>
-                      {share(i.inDefi, i.versions)}
-                    </Box>
-                    <Box component="span" sx={{ color: 'text.secondary' }}>
-                      {` ${i.inDefi}/${i.versions}`}
-                    </Box>
+                  <Typography variant="body2" component="span" sx={{ fontWeight: 600 }}>
+                    {share(i.inDefi, i.versions)}
                   </Typography>
                 ),
                 tooltip: `${i.inDefi} of ${i.versions} tokenized assets have at least one eligible position`,
@@ -290,9 +314,48 @@ function IssuersSection({ stats }: { stats: Stats }) {
             />
           </ChartCard>
         </Grid>
+        <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+          <ChartCard
+            title="Protocol diversity"
+            subtitle="Distinct DeFi protocols hosting the issuer’s tokenized assets; many pools of one protocol count once"
+          >
+            <BarList
+              color={accent}
+              max={maxPlatforms || 1}
+              labelWidth={150}
+              items={diversity.map((i) => {
+                const names = Array.from(i.platforms.values()).sort((a, b) => a.localeCompare(b));
+                return {
+                  id: i.issuer.id,
+                  label: (
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, minWidth: 0 }}>
+                      <Box sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
+                      <Typography variant="body2" noWrap>
+                        {i.issuer.name ?? 'Unknown issuer'}
+                      </Typography>
+                    </Box>
+                  ),
+                  value: i.platforms.size,
+                  valueLabel: (
+                    <Typography variant="body2" component="span">
+                      <Box component="span" sx={{ fontWeight: 600 }}>
+                        {i.platforms.size}
+                      </Box>
+                      <Box component="span" sx={{ color: 'text.secondary' }}>
+                        {i.platforms.size === 1 ? ' protocol' : ' protocols'}
+                      </Box>
+                    </Typography>
+                  ),
+                  tooltip: names.length ? names.join(', ') : 'No eligible positions',
+                  to: `/issuers/${i.issuer.id}`
+                };
+              })}
+            />
+          </ChartCard>
+        </Grid>
       </Grid>
 
-      <TableContainer component={Paper} sx={stickyColumn(1)}>
+      <DataTableContainer sx={stickyColumn(1)}>
         <Table size="small" aria-label="issuer summary table">
           <TableHead>
             <TableRow>
@@ -300,6 +363,7 @@ function IssuersSection({ stats }: { stats: Stats }) {
               <TableCell align="right">Share</TableCell>
               <TableCell align="right">Eligible positions</TableCell>
               <TableCell align="right">Tokenized assets in DeFi</TableCell>
+              <TableCell align="right">Protocols</TableCell>
               <TableCell align="right">Positions with APY</TableCell>
               <TableCell align="right">Avg APY</TableCell>
               <TableCell align="right">Max APY</TableCell>
@@ -331,6 +395,7 @@ function IssuersSection({ stats }: { stats: Stats }) {
                     ({share(i.inDefi, i.versions)})
                   </Typography>
                 </TableCell>
+                <TableCell align="right">{i.platforms.size}</TableCell>
                 <TableCell align="right">{i.yield?.count ?? 0}</TableCell>
                 <TableCell align="right">{pct(i.yield?.average)}</TableCell>
                 <TableCell align="right">{pct(i.yield?.max)}</TableCell>
@@ -338,7 +403,7 @@ function IssuersSection({ stats }: { stats: Stats }) {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
     </Box>
   );
 }
@@ -457,6 +522,8 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
         .sort((a, b) => b.total - a.total || a.u.ticker.localeCompare(b.u.ticker)),
     [index, stats]
   );
+  // The chart ranks underlyings by positions; the picker lists them alphabetically.
+  const pickerOptions = useMemo(() => [...overview].sort((a, b) => a.u.ticker.localeCompare(b.u.ticker)).map((o) => o.u), [overview]);
 
   const selectedTicker = params.get('asset') ?? overview[0]?.u.ticker;
   const selected = index.underlyingByTicker.get(selectedTicker ?? '') ?? overview[0]?.u;
@@ -524,7 +591,7 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
         <Grid container spacing={2} sx={{ marginBottom: 2 }}>
           <Grid size={{ xs: 12, md: 4 }}>
             <Autocomplete
-              options={overview.map((o) => o.u)}
+              options={pickerOptions}
               value={selected ?? null}
               disableClearable={!!selected}
               getOptionLabel={(u) => `${u.ticker} — ${u.name}`}
@@ -656,7 +723,7 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
         </Grid>
       </Grid>
 
-      <TableContainer component={Paper} sx={stickyColumn(1)}>
+      <DataTableContainer sx={stickyColumn(1)}>
         <Table size="small" aria-label="tokenized assets summary table">
           <TableHead>
             <TableRow>
@@ -698,7 +765,7 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </DataTableContainer>
     </Box>
   );
 }
@@ -713,6 +780,7 @@ function SummaryView({ index }: { index: RwaIndex }) {
   const overall = stats.overallYield;
   const best = stats.tokens.reduce<TokenStat | null>((top, t) => (t.yield && (!top?.yield || t.yield.max > top.yield.max) ? t : top), null);
   const leader = stats.issuers[0];
+  const presenceLeader = byDefiPresence(stats.issuers)[0];
   const totalScore = stats.issuers.reduce((sum, i) => sum + i.issuer.issuer_usefulness_score, 0);
 
   return (
@@ -735,6 +803,13 @@ function SummaryView({ index }: { index: RwaIndex }) {
               label: 'Top issuer',
               value: leader ? `${leader.issuer.name ?? DASH}` : DASH,
               hint: leader ? `${share(leader.issuer.issuer_usefulness_score, totalScore)} of eligible positions` : undefined
+            },
+            {
+              label: 'Top issuer by DeFi coverage',
+              value: presenceLeader ? `${presenceLeader.issuer.name ?? DASH}` : DASH,
+              hint: presenceLeader
+                ? `${presenceLeader.inDefi} of ${presenceLeader.versions} tokenized assets (${share(presenceLeader.inDefi, presenceLeader.versions)}) have at least one eligible position`
+                : undefined
             },
             {
               label: 'Positions with APY > 0',
@@ -780,6 +855,12 @@ function SummaryView({ index }: { index: RwaIndex }) {
             description:
               'Tokenized assets with at least one eligible position / all tokenized assets of the issuer or underlying in the basket. ' +
               'Shows how much of the issuer’s line-up is usable in DeFi, independent of how many positions each token has.'
+          },
+          {
+            term: 'Protocols',
+            description:
+              'Number of distinct DeFi protocols (Uniswap V3, Morpho, Beefy…) with at least one eligible position holding any of the ' +
+              'issuer’s tokenized assets. Many pools of the same protocol count once; protocol versions (Uniswap V2 vs V3) count separately.'
           },
           {
             term: 'Average APY',
