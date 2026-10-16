@@ -13,14 +13,13 @@ import Typography from '@mui/material/Typography';
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Underlying } from 'types/rwa';
-import { compareNullable, fmtNum, fmtUsd, num, UNDERLYING_STATUS } from 'utils/rwa';
+import { compareNullable, fmtNum, fmtUsd, num } from 'utils/rwa';
 import DataTableContainer from './components/DataTableContainer';
 import Age from './components/Age';
 import DataGate from './components/DataGate';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
 import { StatGrid } from './components/StatGrid';
-import { CoverageChip } from './components/StatusChip';
 import Legend from './components/Legend';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
@@ -105,7 +104,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
               <TableCell>{header('raw', 'Raw', 'Distinct positions confirmed by address, before filters')}</TableCell>
               <TableCell>{header('protocols', 'Protocols')}</TableCell>
               <TableCell>{header('mcap', 'Tokenized MCap', 'CoinMarketCap tokenized market cap')}</TableCell>
-              <TableCell>Coverage</TableCell>
               <TableCell>Updated</TableCell>
             </TableRow>
           </TableHead>
@@ -133,9 +131,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
                 <TableCell>{u.raw_confirmed_opportunities_count}</TableCell>
                 <TableCell>{u.eligible_protocols_count}</TableCell>
                 <TableCell>{fmtUsd(u.tokenized_market_cap_usd)}</TableCell>
-                <TableCell>
-                  {u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : (UNDERLYING_STATUS[u.status] ?? u.status)}
-                </TableCell>
                 <TableCell>
                   <Age iso={u.fetched_at} />
                 </TableCell>
@@ -174,12 +169,6 @@ function AssetsView({ index }: { index: RwaIndex }) {
           {
             term: 'Tokenized MCap',
             description: 'CoinMarketCap market cap of all its tokenized assets. Not DeFi liquidity.'
-          },
-          {
-            term: 'Coverage',
-            description:
-              'How DeFi positions were discovered. Search coverage: Portals text search, confirmed by address — positions without the ' +
-              'ticker in their name may be missed. Unsupported by Portals / Not indexed: usage on those networks is unknown, not zero.'
           },
           { term: 'Updated', description: 'When CoinMarketCap and Portals data for this asset was collected.' }
         ]}

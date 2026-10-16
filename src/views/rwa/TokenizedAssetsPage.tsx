@@ -134,12 +134,6 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
           {
             term: 'MCap (CMC)',
             description: 'CoinMarketCap market cap of this token. "—" means not reported; $0.00 is a zero reported by CoinMarketCap.'
-          },
-          {
-            term: 'Coverage',
-            description:
-              'Search coverage: positions found via Portals text search and confirmed by address. No positions: searched, nothing contains ' +
-              'the token address. Not indexed / Unsupported by Portals: DeFi usage is unknown.'
           }
         ]}
       />

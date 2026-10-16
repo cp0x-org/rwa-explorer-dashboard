@@ -18,7 +18,6 @@ import RowLink from './RowLink';
 import { Token } from 'types/rwa';
 import { compareNullable, DEPLOYMENT_STATUS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
 import SortHeader, { SortOrder, useSort } from './SortHeader';
-import { CoverageChip } from './StatusChip';
 import TablePager from './TablePager';
 
 export type TokenSortField = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
@@ -110,13 +109,12 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
               <TableCell>Direct / Indirect</TableCell>
               <TableCell>{header('apy', 'APY max / median', 'Reported APY over eligible positions: highest and median')}</TableCell>
               <TableCell>{header('mcap', 'MCap (CMC)')}</TableCell>
-              <TableCell>Coverage</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
-                <TableCell colSpan={11} sx={{ color: 'text.secondary' }}>
+                <TableCell colSpan={10} sx={{ color: 'text.secondary' }}>
                   {showUnderlying ? 'No tokenized assets match the filters' : 'CMC tracks no tokenized assets for this underlying'}
                 </TableCell>
               </TableRow>
@@ -177,9 +175,6 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
                   </Typography>
                 </TableCell>
                 <TableCell>{fmtUsd(t.market_cap_usd)}</TableCell>
-                <TableCell>
-                  <CoverageChip coverage={t.coverage} rawCount={t.counts.raw_confirmed_opportunities_count} />
-                </TableCell>
               </TableRow>
             ))}
           </TableBody>
