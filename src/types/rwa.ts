@@ -42,14 +42,19 @@ export interface Relation {
   path: string[];
 }
 
-export interface YieldProfile {
-  status: 'reported' | 'no_reported_yield_in_coverage' | 'unknown';
+// Over eligible positions with a positive reported APY (zero and missing APY never enter the average), anomalies excluded.
+export interface YieldSummary {
   yield_opportunities_count: number;
   max_reported_apy_percent: Decimal;
-  max_reported_apy_key: string | null;
+  average_reported_apy_percent: Decimal;
   median_reported_apy_percent: Decimal;
+}
+
+export interface YieldProfile extends YieldSummary {
+  status: 'reported' | 'no_reported_yield_in_coverage' | 'unknown';
+  max_reported_apy_key: string | null;
   top_keys: string[];
-  by_category: { [category: string]: { count: number; max: Decimal; median: Decimal } };
+  by_category: { [category: string]: { count: number; max: Decimal; average: Decimal; median: Decimal } };
   missing_apy_count: number;
   anomaly_count: number;
 }
@@ -83,7 +88,7 @@ export interface Token {
   yield: YieldProfile;
 }
 
-export interface Underlying extends OpportunityCounts {
+export interface Underlying extends OpportunityCounts, YieldSummary {
   id: string;
   ticker: string;
   name: string;
@@ -100,6 +105,8 @@ export interface Underlying extends OpportunityCounts {
   excluded_token_ids: number[];
   versions_count: number;
   issuers_count: number;
+  tokens_in_defi_count: number; // tokenized assets with at least one eligible position
+  eligible_platforms: string[]; // distinct protocol names behind eligible positions
   coverage: Coverage;
   search_terms: string[];
   search_complete: boolean;
@@ -107,7 +114,7 @@ export interface Underlying extends OpportunityCounts {
   logo: string | null; // path under public/, e.g. logos/underlyings/<ISIN>.png
 }
 
-export interface Issuer extends OpportunityCounts {
+export interface Issuer extends OpportunityCounts, YieldSummary {
   id: string;
   name: string | null;
   cmc_label: string | null;
@@ -119,11 +126,12 @@ export interface Issuer extends OpportunityCounts {
   token_ids: number[];
   basket_underlyings_count: number;
   basket_tokens_count: number;
+  tokens_in_defi_count: number; // tokenized assets with at least one eligible position
   deployments_count: number;
   supported_deployments_count: number;
   unsupported_deployments_count: number;
   issuer_usefulness_score: number;
-  yield_opportunities_count: number;
+  eligible_platforms: string[]; // distinct protocol names behind eligible positions
   best_reported_yield_keys: string[];
   by_network: Breakdown;
   by_category: Breakdown;
@@ -175,17 +183,19 @@ export interface RwaExport {
     max_graph_depth: number;
     yield_apy_review_threshold_percent: string;
   };
-  summary: OpportunityCounts & {
-    underlyings_count: number;
-    tokens_count: number;
-    excluded_tokens_count: number;
-    issuers_count: number;
-    deployments_count: number;
-    indexed_deployments_count: number;
-    coverage: Coverage;
-    oldest_fetched_at: string | null;
-    newest_fetched_at: string | null;
-  };
+  summary: OpportunityCounts &
+    YieldSummary & {
+      underlyings_count: number;
+      tokens_count: number;
+      excluded_tokens_count: number;
+      issuers_count: number;
+      deployments_count: number;
+      indexed_deployments_count: number;
+      tokens_in_defi_count: number;
+      coverage: Coverage;
+      oldest_fetched_at: string | null;
+      newest_fetched_at: string | null;
+    };
   underlyings: Underlying[];
   tokens: Token[];
   issuers: Issuer[];
