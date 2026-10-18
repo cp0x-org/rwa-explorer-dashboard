@@ -9,6 +9,7 @@ The site reads one static file, `public/data/rwa.json`, produced by `../rwa-data
 (`uv run rwa-pipeline sync` / `uv run rwa-pipeline build`). The browser never calls CMC or Portals.
 Types of the file: `src/types/rwa.ts`; loading: `src/api/rwa.ts`.
 Token and issuer logos are published by the pipeline to `public/logos/`.
+The pipeline writes both files into this folder itself; the full flow is in `../rwa-data-pipeline/WORKFLOW.md`.
 
 ## Pages
 
