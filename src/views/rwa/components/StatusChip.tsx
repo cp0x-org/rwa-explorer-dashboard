@@ -4,7 +4,8 @@ import Tooltip from '@mui/material/Tooltip';
 import { COVERAGE, DEPLOYMENT_STATUS, ELIGIBILITY } from 'utils/rwa';
 
 export function CoverageChip({ coverage, rawCount }: { coverage: string; rawCount?: number }) {
-  if (coverage === 'search' && rawCount === 0) {
+  if (coverage === 'search') {
+    if (rawCount !== 0) return null;
     return (
       <Tooltip title="No confirmed positions in current coverage: Portals search found no position containing this token's address" arrow>
         <Chip size="small" label="No positions" />

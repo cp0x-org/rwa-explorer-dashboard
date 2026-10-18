@@ -20,7 +20,6 @@ import DetailHeader from './components/StatGrid';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
-import { CoverageChip } from './components/StatusChip';
 import { compareTokens, NetworkChips, TokenSortField } from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
@@ -83,7 +82,6 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
             {issuer.roster_size !== null && ` · ${issuer.roster_size} tokens tracked by CMC in total (not all in this basket)`}
           </>
         }
-        chips={<CoverageChip coverage={issuer.coverage} />}
         stats={[
           { label: 'Score', value: fmtNum(issuer.issuer_usefulness_score), hint: 'Unique eligible positions' },
           { label: 'Raw confirmed', value: fmtNum(issuer.raw_confirmed_opportunities_count) },

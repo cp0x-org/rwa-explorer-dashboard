@@ -81,8 +81,8 @@ export const categoryLabel = (category: string): string => CATEGORY_LABELS[categ
 
 type ChipColor = 'default' | 'success' | 'warning' | 'error' | 'info' | 'primary' | 'secondary';
 
+// `search` (the normal case: positions found via Portals search and confirmed by address) has no chip, only problems are shown.
 export const COVERAGE: Record<string, { label: string; color: ChipColor; hint: string }> = {
-  search: { label: 'Search coverage', color: 'info', hint: 'Positions found via Portals text search and confirmed by contract address' },
   partial: { label: 'Partial fetch', color: 'warning', hint: 'Some deployments were not checked in the last run' },
   not_indexed: { label: 'Not indexed', color: 'warning', hint: 'Supported network, but Portals does not index this token' },
   unsupported_by_portals: {
