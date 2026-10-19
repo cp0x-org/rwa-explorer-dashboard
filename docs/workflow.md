@@ -1,5 +1,7 @@
 # Workflow: from data collection to the published site
 
+All paths below are relative to the repository root.
+
 Two projects, one data file. Nothing has to be copied by hand: the pipeline writes straight into the frontend folder.
 
 ```

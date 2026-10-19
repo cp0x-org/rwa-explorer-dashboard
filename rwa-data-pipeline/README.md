@@ -9,7 +9,7 @@ config/assets.json ──► sync ──► data/snapshots/<ISIN>.json ──►
                        (CMC + Portals)   (raw collected data)    (no network)  └► export ──► data/exports/rwa.xlsx, csv/*.csv
 ```
 
-Full flow with commands, from collection to the site build: [WORKFLOW.md](WORKFLOW.md).
+Full flow with commands, from collection to the site build: [docs/workflow.md](../docs/workflow.md).
 
 ## Setup
 

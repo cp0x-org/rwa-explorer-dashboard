@@ -1,0 +1,15 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# logs
+*.log
+
+# local env files (per-project .gitignore files keep the .env.example files)
+.env
+.env.*
+!.env.example
+!.env.production

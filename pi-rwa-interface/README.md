@@ -9,7 +9,7 @@ The site reads one static file, `public/data/rwa.json`, produced by `../rwa-data
 (`uv run rwa-pipeline sync` / `uv run rwa-pipeline build`). The browser never calls CMC or Portals.
 Types of the file: `src/types/rwa.ts`; loading: `src/api/rwa.ts`.
 Token and issuer logos are published by the pipeline to `public/logos/`.
-The pipeline writes both files into this folder itself; the full flow is in `../rwa-data-pipeline/WORKFLOW.md`.
+The pipeline writes both files into this folder itself; the full flow is in [`docs/workflow.md`](../docs/workflow.md).
 
 ## Pages
 
@@ -72,13 +72,13 @@ data collection) and `dist/robots.txt` pointing to it.
 - Accessibility rules kept by the e2e tests (axe, WCAG 2.2 AA): one `h1` per page, `header` / `nav` / `main` / `footer`
   landmarks, tables with a visually hidden `<caption>` and `aria-sort` on sortable headers, hints as `describeChild`
   tooltips plus visually hidden text (`ui-component/VisuallyHidden`), charts with an accessible legend and text summary,
-  every control with an accessible name. Details and the audit: `docs/i18n-ssr-seo-plan.md`.
+  every control with an accessible name. Details and the audit: [`docs/i18n-ssr-seo-plan.md`](../docs/i18n-ssr-seo-plan.md).
 
 ## Application Links
-- Website: [pi.cp0x.com](https://pi.cp0x.com/)
+- Website: [rwa.cp0x.com](https://rwa.cp0x.com/)
 - Twitter: [@cp0xdotcom](https://x.com/cp0xdotcom)
 - Telegram: [@cp0xdotcom](https://t.me/cp0xdotcom)
 
 ## Contributions
 
-For steps on local deployment, development, and code contribution, please see [CONTRIBUTING](CONTRIBUTING.md).
+For steps on local deployment, development, and code contribution, please see [CONTRIBUTING](../CONTRIBUTING.md) in the repository root.
