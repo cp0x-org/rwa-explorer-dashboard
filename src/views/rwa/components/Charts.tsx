@@ -1,10 +1,12 @@
-import { KeyboardEvent, ReactNode, useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { KeyboardEvent, ReactNode, useId, useState } from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+
+import VisuallyHidden from 'ui-component/VisuallyHidden';
+import { LocaleLink, useFormat, useT } from 'i18n';
 
 // Categorical slots, assigned in this fixed order and never cycled. Validated as a set
 // (adjacent CVD ΔE ≥ 8.4, contrast ≥ 3:1) against the dark card surface #1e1e26.
@@ -17,12 +19,11 @@ export function useSeriesColors(): string[] {
   return theme.palette.mode === 'dark' ? SERIES_DARK : SERIES_LIGHT;
 }
 
-const pctOf = (value: number, total: number) =>
-  `${(total > 0 ? (value / total) * 100 : 0).toLocaleString('en-US', { maximumFractionDigits: 1, minimumFractionDigits: 1 })}%`;
-
 const tabular = { fontVariantNumeric: 'tabular-nums' } as const;
 
-// Card that holds one chart: title, optional subtitle, content.
+const focusRing = (color: string) => ({ '&:focus-visible': { outline: `2px solid ${color}`, outlineOffset: 2 } });
+
+// Card that holds one chart: a section with its own heading, optional subtitle, content.
 export function ChartCard({
   title,
   subtitle,
@@ -34,13 +35,20 @@ export function ChartCard({
   action?: ReactNode;
   children: ReactNode;
 }) {
+  const id = useId();
   return (
-    <Box sx={{ padding: '20px', backgroundColor: 'background.default', borderRadius: '12px', height: '100%' }}>
+    <Box
+      component="section"
+      aria-labelledby={id}
+      sx={{ padding: '20px', backgroundColor: 'background.default', borderRadius: '12px', height: '100%' }}
+    >
       <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 2, marginBottom: 2, flexWrap: 'wrap' }}>
         <Box sx={{ minWidth: 0 }}>
-          <Typography variant="h4">{title}</Typography>
+          <Typography variant="h4" component="h3" id={id}>
+            {title}
+          </Typography>
           {subtitle && (
-            <Typography variant="body2" color="text.secondary" component="div" sx={{ marginTop: 0.5 }}>
+            <Typography variant="body2" color="text.secondary" component="p" sx={{ marginTop: 0.5 }}>
               {subtitle}
             </Typography>
           )}
@@ -57,9 +65,10 @@ export function LegendKey({ color, label, shape = 'rect' }: { color: string; lab
   const theme = useTheme();
   const key =
     shape === 'line' ? (
-      <Box sx={{ width: '1px', height: 14, backgroundColor: color }} />
+      <Box aria-hidden="true" sx={{ width: '1px', height: 14, backgroundColor: color }} />
     ) : (
       <Box
+        aria-hidden="true"
         sx={{
           width: shape === 'dot' ? 8 : 12,
           height: shape === 'dot' ? 8 : 12,
@@ -87,27 +96,25 @@ export interface Segment {
   value: number;
   color: string;
   detail?: ReactNode; // extra line in the tooltip and the legend
+  to?: string; // page of the segment: its legend row is a link
 }
 
 interface DonutProps {
   segments: Segment[];
   centerCaption: string;
   formatValue?: (value: number) => string;
-  onSelect?: (id: string) => void;
   size?: number;
   thickness?: number;
 }
 
-// Part-to-whole ring with a legend that lists every value, so the tooltip never gates a number.
-export function DonutChart({
-  segments,
-  centerCaption,
-  formatValue = (v) => v.toLocaleString('en-US'),
-  onSelect,
-  size = 190,
-  thickness = 24
-}: DonutProps) {
+// Part-to-whole ring with a legend that lists every value, so the tooltip never gates a number. The SVG is decorative
+// for assistive technology: the legend (links, keyboard-reachable) and a hidden summary carry the same information.
+export function DonutChart({ segments, centerCaption, formatValue, size = 190, thickness = 24 }: DonutProps) {
   const theme = useTheme();
+  const t = useT();
+  const f = useFormat();
+  const fmt = formatValue ?? ((v: number) => f.num(v));
+  const pctOf = (value: number, total: number) => f.pct(total > 0 ? (value / total) * 100 : 0, 1);
   const [active, setActive] = useState<string | null>(null);
   const visible = segments.filter((s) => s.value > 0);
   const total = visible.reduce((sum, s) => sum + s.value, 0);
@@ -130,14 +137,20 @@ export function DonutChart({
     onMouseEnter: () => setActive(id),
     onMouseLeave: () => setActive(null),
     onFocus: () => setActive(id),
-    onBlur: () => setActive(null),
-    onClick: onSelect ? () => onSelect(id) : undefined
+    onBlur: () => setActive(null)
+  });
+
+  const summary = t('chart.donut.summary', {
+    caption: centerCaption,
+    total: fmt(total),
+    items: visible.map((s) => t('chart.item', { label: s.label, value: fmt(s.value), share: pctOf(s.value, total) })).join(', ')
   });
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, flexWrap: 'wrap' }}>
-      <Box sx={{ position: 'relative', width: size, height: size, flexShrink: 0, marginX: { xs: 'auto', sm: 0 } }}>
-        <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label={`${centerCaption}: ${formatValue(total)}`}>
+      <VisuallyHidden component="p">{summary}</VisuallyHidden>
+      <Box aria-hidden="true" sx={{ position: 'relative', width: size, height: size, flexShrink: 0, marginX: { xs: 'auto', sm: 0 } }}>
+        <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} focusable="false">
           <g transform={`rotate(-90 ${center} ${center})`}>
             {total === 0 ? (
               <circle cx={center} cy={center} r={radius} fill="none" stroke={theme.palette.divider} strokeWidth={thickness} />
@@ -146,10 +159,11 @@ export function DonutChart({
                 <Tooltip
                   key={s.id}
                   followCursor
+                  describeChild
                   title={
                     <Box>
                       <Typography variant="subtitle2" sx={{ color: 'inherit', fontWeight: 600 }}>
-                        {formatValue(s.value)} · {pctOf(s.value, total)}
+                        {fmt(s.value)} · {pctOf(s.value, total)}
                       </Typography>
                       <Typography variant="caption" sx={{ color: 'inherit', opacity: 0.8, display: 'block' }}>
                         {s.label}
@@ -172,9 +186,9 @@ export function DonutChart({
                     strokeDasharray={`${dash} ${circumference - dash}`}
                     strokeDashoffset={-o}
                     opacity={active && active !== s.id ? 0.55 : 1}
-                    tabIndex={0}
-                    style={{ cursor: onSelect ? 'pointer' : 'default', outline: 'none', transition: 'stroke-width 120ms, opacity 120ms' }}
-                    {...hoverProps(s.id)}
+                    style={{ transition: 'stroke-width 120ms, opacity 120ms' }}
+                    onMouseEnter={() => setActive(s.id)}
+                    onMouseLeave={() => setActive(null)}
                   />
                 </Tooltip>
               ))
@@ -194,47 +208,55 @@ export function DonutChart({
             paddingX: `${thickness + 12}px`
           }}
         >
-          <Typography variant="h3">{activeSegment ? pctOf(activeSegment.value, total) : formatValue(total)}</Typography>
+          <Typography variant="h3" component="div">
+            {activeSegment ? pctOf(activeSegment.value, total) : fmt(total)}
+          </Typography>
           <Typography variant="caption" color="text.secondary" sx={{ lineHeight: 1.3 }}>
             {activeSegment ? activeSegment.label : centerCaption}
           </Typography>
         </Box>
       </Box>
 
-      <Stack spacing={0.5} sx={{ flex: 1, minWidth: 200 }}>
+      <Stack component="ul" spacing={0.5} sx={{ flex: 1, minWidth: 200, listStyle: 'none', margin: 0, padding: 0 }}>
         {visible.map((s) => (
-          <Box
-            key={s.id}
-            {...hoverProps(s.id)}
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: '12px minmax(0, 1fr) auto auto',
-              alignItems: 'center',
-              columnGap: 1.25,
-              paddingX: 1,
-              paddingY: 0.5,
-              borderRadius: '6px',
-              cursor: onSelect ? 'pointer' : 'default',
-              backgroundColor: active === s.id ? alpha(theme.palette.text.primary, 0.06) : 'transparent'
-            }}
-          >
-            <Box sx={{ width: 12, height: 12, borderRadius: '3px', backgroundColor: s.color }} />
-            <Box sx={{ minWidth: 0 }}>
-              <Typography variant="body2" noWrap sx={{ fontWeight: 500 }}>
-                {s.label}
-              </Typography>
-              {s.detail && (
-                <Typography variant="caption" color="text.secondary" noWrap component="div">
-                  {s.detail}
+          <Box key={s.id} component="li" sx={{ display: 'block' }}>
+            <Box
+              component={s.to ? LocaleLink : 'div'}
+              {...(s.to ? { to: s.to } : {})}
+              {...hoverProps(s.id)}
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: '12px minmax(0, 1fr) auto auto',
+                alignItems: 'center',
+                columnGap: 1.25,
+                paddingX: 1,
+                paddingY: 0.5,
+                borderRadius: '6px',
+                color: 'inherit',
+                textDecoration: 'none',
+                cursor: s.to ? 'pointer' : 'default',
+                backgroundColor: active === s.id ? alpha(theme.palette.text.primary, 0.06) : 'transparent',
+                ...focusRing(theme.palette.secondary.main)
+              }}
+            >
+              <Box aria-hidden="true" sx={{ width: 12, height: 12, borderRadius: '3px', backgroundColor: s.color }} />
+              <Box sx={{ minWidth: 0 }}>
+                <Typography variant="body2" noWrap sx={{ fontWeight: 500 }}>
+                  {s.label}
                 </Typography>
-              )}
+                {s.detail && (
+                  <Typography variant="caption" color="text.secondary" noWrap component="div">
+                    {s.detail}
+                  </Typography>
+                )}
+              </Box>
+              <Typography variant="body2" sx={{ ...tabular, fontWeight: 500, textAlign: 'right' }}>
+                {pctOf(s.value, total)}
+              </Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ ...tabular, textAlign: 'right', minWidth: 36 }}>
+                {fmt(s.value)}
+              </Typography>
             </Box>
-            <Typography variant="body2" sx={{ ...tabular, fontWeight: 500, textAlign: 'right' }}>
-              {pctOf(s.value, total)}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ ...tabular, textAlign: 'right', minWidth: 36 }}>
-              {formatValue(s.value)}
-            </Typography>
           </Box>
         ))}
       </Stack>
@@ -257,19 +279,29 @@ interface RowFrameProps {
   to?: string; // a page to open: the whole row is a link (works without JS, in a new tab, followed by crawlers)
   selected?: boolean;
   labelWidth: number;
+  description?: string; // what the bar shows, for assistive technology (the bar itself is decorative)
   children: ReactNode;
 }
 
-function RowFrame({ label, value, tooltip, onClick, to, selected, labelWidth, children }: RowFrameProps) {
+function RowFrame({ label, value, tooltip, onClick, to, selected, labelWidth, description, children }: RowFrameProps) {
   const theme = useTheme();
   const interactive = to
-    ? { component: RouterLink, to }
-    : {
-        onClick,
-        tabIndex: onClick || tooltip ? 0 : undefined,
-        onKeyDown: onClick ? (e: KeyboardEvent) => e.key === 'Enter' && onClick() : undefined
-      };
-  const row = (
+    ? { component: LocaleLink, to }
+    : onClick
+      ? {
+          role: 'button',
+          tabIndex: 0,
+          onClick,
+          'aria-pressed': selected,
+          onKeyDown: (e: KeyboardEvent) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              onClick();
+            }
+          }
+        }
+      : {};
+  const inner = (
     <Box
       {...interactive}
       sx={{
@@ -283,26 +315,33 @@ function RowFrame({ label, value, tooltip, onClick, to, selected, labelWidth, ch
         paddingY: 0.75,
         borderRadius: '6px',
         cursor: onClick || to ? 'pointer' : 'default',
-        outline: 'none',
         color: 'inherit',
         textDecoration: 'none',
         backgroundColor: selected ? alpha(theme.palette.secondary.main, 0.1) : 'transparent',
         '&:hover, &:focus-visible': {
           backgroundColor: selected ? alpha(theme.palette.secondary.main, 0.14) : alpha(theme.palette.text.primary, 0.05)
-        }
+        },
+        ...focusRing(theme.palette.secondary.main)
       }}
     >
       <Box sx={{ gridArea: 'label', minWidth: 0 }}>{label}</Box>
-      <Box sx={{ gridArea: 'bar', position: 'relative', height: BAR + 8, display: 'flex', alignItems: 'center' }}>{children}</Box>
+      <Box aria-hidden="true" sx={{ gridArea: 'bar', position: 'relative', height: BAR + 8, display: 'flex', alignItems: 'center' }}>
+        {children}
+      </Box>
       <Box sx={{ gridArea: 'value', ...tabular, textAlign: 'right', whiteSpace: 'nowrap' }}>{value}</Box>
+      {description && <VisuallyHidden>. {description}</VisuallyHidden>}
     </Box>
   );
-  return tooltip ? (
-    <Tooltip title={tooltip} placement="top" followCursor>
-      {row}
-    </Tooltip>
-  ) : (
-    row
+  return (
+    <Box component="li" sx={{ display: 'block', listStyle: 'none' }}>
+      {tooltip ? (
+        <Tooltip title={tooltip} placement="top" followCursor describeChild>
+          {inner}
+        </Tooltip>
+      ) : (
+        inner
+      )}
+    </Box>
   );
 }
 
@@ -320,7 +359,7 @@ export interface BarItem {
 export function BarList({ items, max, color, labelWidth = 170 }: { items: BarItem[]; max?: number; color: string; labelWidth?: number }) {
   const scale = max ?? Math.max(...items.map((i) => i.value), 0);
   return (
-    <Stack spacing={0.25}>
+    <Stack component="ul" spacing={0.25} sx={{ margin: 0, padding: 0 }}>
       {items.map((item) => (
         <RowFrame
           key={item.id}
@@ -360,7 +399,7 @@ export function RangeBarList({
   const scale = Math.max(...items.map((i) => i.max), reference ?? 0) || 1;
   const at = (v: number) => `${(v / scale) * 100}%`;
   return (
-    <Stack spacing={0.25}>
+    <Stack component="ul" spacing={0.25} sx={{ margin: 0, padding: 0 }}>
       {items.map((item) => (
         <RowFrame
           key={item.id}
@@ -422,12 +461,16 @@ export interface StackedRow {
   selected?: boolean;
 }
 
-// Part-to-whole per row, segments separated by a 2px surface gap; each segment has its own tooltip.
+// Part-to-whole per row, segments separated by a 2px surface gap; each segment has its own tooltip, and the row
+// carries the segment values as hidden text.
 export function StackedBarList({ rows, labelWidth = 170 }: { rows: StackedRow[]; labelWidth?: number }) {
+  const t = useT();
+  const f = useFormat();
   const totals = rows.map((r) => r.segments.reduce((sum, s) => sum + s.value, 0));
   const scale = Math.max(...totals, 0) || 1;
+  const pctOf = (value: number, total: number) => f.pct(total > 0 ? (value / total) * 100 : 0, 1);
   return (
-    <Stack spacing={0.25}>
+    <Stack component="ul" spacing={0.25} sx={{ margin: 0, padding: 0 }}>
       {rows.map((row, n) => {
         const visible = row.segments.filter((s) => s.value > 0);
         return (
@@ -438,16 +481,23 @@ export function StackedBarList({ rows, labelWidth = 170 }: { rows: StackedRow[];
             onClick={row.onClick}
             selected={row.selected}
             labelWidth={labelWidth}
+            description={t('chart.stacked.summary', {
+              total: f.num(totals[n]),
+              items: visible
+                .map((s) => t('chart.item', { label: s.label, value: f.num(s.value), share: pctOf(s.value, totals[n]) }))
+                .join(', ')
+            })}
           >
             <Box sx={{ display: 'flex', gap: '2px', width: `${(totals[n] / scale) * 100}%`, minWidth: visible.length ? 2 : 0 }}>
               {visible.map((s, i) => (
                 <Tooltip
                   key={s.id}
                   followCursor
+                  describeChild
                   title={
                     <Box>
                       <Typography variant="subtitle2" sx={{ color: 'inherit', fontWeight: 600 }}>
-                        {s.value.toLocaleString('en-US')} · {pctOf(s.value, totals[n])}
+                        {f.num(s.value)} · {pctOf(s.value, totals[n])}
                       </Typography>
                       <Typography variant="caption" sx={{ color: 'inherit', opacity: 0.8 }}>
                         {s.label}

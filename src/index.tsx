@@ -13,6 +13,7 @@ import { store } from 'store';
 import * as serviceWorker from 'serviceWorker';
 import reportWebVitals from 'reportWebVitals';
 import { ConfigProvider } from 'contexts/ConfigContext';
+import { loadMessages, localeFromPath } from 'i18n';
 
 // style + assets
 import 'assets/scss/style.scss';
@@ -51,19 +52,22 @@ const app = (data?: RwaExport) => (
   </Provider>
 );
 
+// The language is in the URL (/zh/...): its dictionary must be in place before the first render, so the hydrated
+// markup matches the prerendered page and nothing flickers.
+const { pathname, search } = router.state.location;
+const messages = loadMessages(localeFromPath(pathname));
+
 if (container.hasChildNodes()) {
   // A page prerendered at build time (scripts/prerender.mjs) stays on screen until the data is here. Then React hydrates
   // it if it was rendered for this exact location; otherwise (the root path, a query string, an unknown path served
   // with the fallback page) it renders the app anew in place of the static markup.
-  loadRwaData()
-    .catch(() => undefined) // the data gate shows the error after its own retry
-    .then((data) => {
-      const { pathname, search } = router.state.location;
+  Promise.all([loadRwaData().catch(() => undefined), messages]) // the data gate shows the error after its own retry
+    .then(([data]) => {
       if (data && !search && container.dataset.path === pathname) hydrateRoot(container, app(data));
       else createRoot(container).render(app(data));
     });
 } else {
-  createRoot(container).render(app());
+  messages.then(() => createRoot(container).render(app()));
 }
 
 // If you want your app to work offline and load faster, you can change

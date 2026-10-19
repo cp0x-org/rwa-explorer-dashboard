@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-
 // material-ui
 import { Box, Button, Stack, Theme, useTheme } from '@mui/material';
+
+// project imports
+import { LocaleLink, useT } from 'i18n';
 
 // Menu button styling as an object for reuse
 const menuButtonStyle = (theme: Theme) => ({
@@ -18,29 +18,24 @@ const menuButtonStyle = (theme: Theme) => ({
   }
 });
 
-const MenuItems = () => {
+export default function MenuItems() {
   const theme = useTheme();
+  const t = useT();
 
   // below md the MobileMenu button replaces these links; CSS decides, so the prerendered header fits any width
   return (
-    <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', ml: 2 }}>
+    <Box component="nav" aria-label={t('header.siteMenu')} sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', ml: 3 }}>
       <Stack direction="row" spacing={1}>
-        {/* Internal link using RouterLink */}
-        <Button component={RouterLink} to="/" sx={menuButtonStyle(theme)}>
-          Home
+        <Button component={LocaleLink} to="/" sx={menuButtonStyle(theme)}>
+          {t('header.home')}
         </Button>
-
-        {/* External links using anchor tags */}
         <Button href="https://pi.cp0x.com" rel="noopener noreferrer" sx={menuButtonStyle(theme)}>
-          Permissionless Interfaces
+          {t('header.pi')}
         </Button>
-
         <Button href="https://cp0x.com" target="_blank" rel="noopener noreferrer" sx={menuButtonStyle(theme)}>
-          cp0x Referrals
+          {t('header.referrals')}
         </Button>
       </Stack>
     </Box>
   );
-};
-
-export default MenuItems;
+}

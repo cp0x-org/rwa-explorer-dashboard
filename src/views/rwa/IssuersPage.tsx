@@ -1,22 +1,22 @@
-import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Issuer } from 'types/rwa';
-import { compareNullable, fmtPct, fmtUsd, num } from 'utils/rwa';
+import { compareNullable, num } from 'utils/rwa';
+import { useFormat, useLocaleNavigate, useT } from 'i18n';
 import DataTableContainer from './components/DataTableContainer';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
-import SortHeader, { useSort } from './components/SortHeader';
+import SortHeader, { HeaderCell, useSort } from './components/SortHeader';
+import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
 
@@ -32,14 +32,17 @@ const sortValue: Record<Field, (i: Issuer) => number | null> = {
   pools: (i) => num(i.direct_pools_liquidity_usd)
 };
 
-export const RELATIVE_HINT =
-  'For each asset with at least two issuers: issuer positions / best issuer positions × 100, averaged with equal weight per asset. ' +
-  'Provisional: based on search coverage.';
-
 function IssuersView({ index }: { index: RwaIndex }) {
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('score');
   const { settings: s } = index.data;
+  const thresholds = {
+    liquidity: f.usd(s.min_eligible_liquidity_usd),
+    hours: s.max_position_age_hours,
+    threshold: f.pct(s.yield_apy_review_threshold_percent, 0)
+  };
   const rows = [...index.data.issuers].sort(
     (a, b) => compareNullable(sortValue[sortField](a), sortValue[sortField](b), sortOrder) || (a.name ?? '').localeCompare(b.name ?? '')
   );
@@ -49,41 +52,41 @@ function IssuersView({ index }: { index: RwaIndex }) {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant="h3" gutterBottom>
-        Issuers
+      <Typography variant="h3" component="h1" gutterBottom>
+        {t('issuers.title')}
+      </Typography>
+      <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2, maxWidth: 900 }}>
+        {t('issuers.intro')}
       </Typography>
       <MethodNote data={index.data} />
       <DataTableContainer sx={[{ marginBottom: 2 }, stickyColumn(2)]}>
-        <Table sx={{ minWidth: 650 }} aria-label="issuers table">
+        <Table sx={{ minWidth: 650 }}>
+          <TableCaption>{t('table.issuers')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>#</TableCell>
-              <TableCell>Issuer</TableCell>
-              <TableCell>{header('score', 'Score', 'Unique eligible positions')}</TableCell>
-              <TableCell>{header('relative', 'Relative', RELATIVE_HINT)}</TableCell>
-              <TableCell>{header('raw', 'Raw')}</TableCell>
-              <TableCell>{header('protocols', 'Protocols')}</TableCell>
-              <TableCell>{header('assets', 'Assets', 'Underlying assets / the issuer’s tokenized assets of them')}</TableCell>
-              <TableCell>
-                <Tooltip title="Deployments on networks covered by Portals / all CMC deployments" arrow>
-                  <span>Deployments</span>
-                </Tooltip>
-              </TableCell>
-              <TableCell>Direct / Indirect</TableCell>
-              <TableCell>{header('yield', 'Yield', 'Eligible positions with positive reported APY')}</TableCell>
-              <TableCell>{header('pools', 'Pools liquidity', 'Liquidity of tracked distinct direct pools. Not issuer TVL')}</TableCell>
+              <TableCell>{t('col.rank')}</TableCell>
+              <TableCell>{t('col.issuer')}</TableCell>
+              {header('score', t('col.score'), t('col.score.hintUnique'))}
+              {header('relative', t('col.relative'), t('issuers.relativeHint'))}
+              {header('raw', t('col.raw'))}
+              {header('protocols', t('col.protocols'))}
+              {header('assets', t('col.assets'), t('col.assets.hint'))}
+              <HeaderCell label={t('col.deployments')} hint={t('col.deployments.hint')} />
+              <HeaderCell label={t('col.directIndirect')} />
+              {header('yield', t('col.yield'), t('col.yield.hint'))}
+              {header('pools', t('col.poolsLiquidity'), t('col.poolsLiquidity.hint'))}
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((i, n) => (
               <TableRow key={i.id} hover onClick={() => navigate(`/issuers/${i.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>{n + 1}</TableCell>
-                <TableCell>
+                <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
                   <RowLink to={`/issuers/${i.id}`}>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                       <TokenIcon symbol={i.name ?? '?'} src={logoUrl(i.logo)} />
                       <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {i.name ?? 'Unknown issuer'}
+                        {i.name ?? t('common.unknownIssuer')}
                       </Typography>
                     </Box>
                   </RowLink>
@@ -94,7 +97,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
                   </Typography>
                 </TableCell>
                 <TableCell>
-                  {fmtPct(i.basket_relative_score, 1).replace('%', '')}
+                  {f.pct(i.basket_relative_score, 1).replace('%', '')}
                   {i.compared_underlyings_count > 0 && (
                     <Typography component="span" variant="body2" color="text.secondary">
                       {' '}
@@ -114,7 +117,7 @@ function IssuersView({ index }: { index: RwaIndex }) {
                   {i.direct_eligible_count} / {i.indirect_eligible_count}
                 </TableCell>
                 <TableCell>{i.yield_opportunities_count}</TableCell>
-                <TableCell>{fmtUsd(i.direct_pools_liquidity_usd)}</TableCell>
+                <TableCell>{f.usd(i.direct_pools_liquidity_usd)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -123,55 +126,17 @@ function IssuersView({ index }: { index: RwaIndex }) {
 
       <Legend
         items={[
-          { term: '#', description: 'Position of the issuer in the current sort.' },
-          {
-            term: 'Issuer',
-            description:
-              'Issuer of tokenized assets, as labeled by CoinMarketCap (not a verified legal entity). Click a row for its tokenized assets and positions.'
-          },
-          {
-            term: 'Score',
-            description:
-              `Unique eligible DeFi positions across all tokenized assets of the issuer in this basket. A position counts as eligible when the token ` +
-              `address is confirmed in its composition (directly or via LP → vault), it is a real use-case (DEX LP, lending supply, vault, ` +
-              `staking, yield market), liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data is not older than ` +
-              `${s.max_position_age_hours}h at collection. A pool shared by two tokenized assets of the same issuer counts once; tokens outside the ` +
-              `basket do not count. This is the main rating.`
-          },
-          {
-            term: 'Relative',
-            description:
-              'Basket relative score, 0–100: for every asset with at least two issuers, the issuer’s eligible positions divided by the best ' +
-              'issuer’s on that asset × 100, averaged with equal weight per asset. In brackets: number of compared assets. Shows quality ' +
-              'per asset regardless of how many assets the issuer covers. Provisional: based on search coverage.'
-          },
-          {
-            term: 'Raw',
-            description: 'Unique positions confirmed by contract address before the use-case, liquidity and freshness filters.'
-          },
-          { term: 'Protocols', description: 'Distinct DeFi protocols among the eligible positions.' },
-          { term: 'Assets', description: 'Underlying assets of the basket covered by the issuer / the issuer’s tokenized assets of them.' },
-          {
-            term: 'Deployments',
-            description:
-              'Token contracts on networks covered by Portals / all contracts listed by CoinMarketCap. Contracts on other networks ' +
-              '(Solana, TON, X Layer, …) are not searched: usage there is unknown, not zero.'
-          },
-          {
-            term: 'Direct / Indirect',
-            description:
-              'Eligible positions holding the tokenized asset itself (e.g. a DEX pool) / holding it through another position (e.g. a vault that holds an LP with the token).'
-          },
-          {
-            term: 'Yield',
-            description: `Eligible positions with a positive reported APY (APY above ${fmtPct(s.yield_apy_review_threshold_percent, 0)} excluded as anomaly).`
-          },
-          {
-            term: 'Pools liquidity',
-            description:
-              'Sum of liquidity of distinct eligible DEX pools that directly hold the issuer’s tokenized assets. Not the issuer’s TVL or capital: vaults ' +
-              'on top of these pools are not added.'
-          }
+          { term: t('col.rank'), description: t('legend.issuers.rank') },
+          { term: t('col.issuer'), description: t('legend.issuers.issuer') },
+          { term: t('col.score'), description: t('legend.issuers.score', thresholds) },
+          { term: t('col.relative'), description: t('legend.issuers.relative') },
+          { term: t('col.raw'), description: t('legend.issuers.raw') },
+          { term: t('col.protocols'), description: t('legend.issuers.protocols') },
+          { term: t('col.assets'), description: t('legend.issuers.assets') },
+          { term: t('col.deployments'), description: t('legend.issuers.deployments') },
+          { term: t('col.directIndirect'), description: t('legend.issuers.directIndirect') },
+          { term: t('col.yield'), description: t('legend.issuers.yield', thresholds) },
+          { term: t('col.poolsLiquidity'), description: t('legend.issuers.poolsLiquidity') }
         ]}
       />
     </Box>

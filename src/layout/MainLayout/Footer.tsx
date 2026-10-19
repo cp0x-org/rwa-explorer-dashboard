@@ -1,7 +1,9 @@
 import { Stack, Box, Typography, Link } from '@mui/material';
 import { ReactComponent as Cp0xLogo } from '@/assets/images/cp0x-logo.svg';
+import { LocaleLink, useT } from 'i18n';
 
 export default function Footer() {
+  const t = useT();
   return (
     <Box
       component="footer"
@@ -26,8 +28,14 @@ export default function Footer() {
           gap: { xs: 2, md: 0 }
         }}
       >
-        <Link href="/" className="logo-wrapper" sx={{ textDecoration: 'none', mb: { xs: 1, md: 0 } }}>
-          <Cp0xLogo style={{ width: 70, height: 'auto' }} />
+        <Link
+          component={LocaleLink}
+          to="/"
+          className="logo-wrapper"
+          aria-label={t('header.logo')}
+          sx={{ textDecoration: 'none', mb: { xs: 1, md: 0 } }}
+        >
+          <Cp0xLogo style={{ width: 70, height: 'auto' }} aria-hidden="true" focusable="false" />
         </Link>
         <Box
           className="wallet"
@@ -106,13 +114,23 @@ export default function Footer() {
           <Link
             href="https://t.me/cp0xdotcom"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('footer.telegram')}
             className="social-icon"
             sx={{
               color: 'text.secondary',
               '&:hover': { color: 'primary.main' }
             }}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
               <path
                 d="M9.633 14.8632L9.227 19.8558C9.767 19.8558 10.003 19.6218 10.288 19.3378L12.793 16.9498L17.729 20.5378C18.705 21.0858 19.397 20.7978 19.662 19.8838L22.944 5.0838L22.945 5.0818C23.255 3.9318 22.426 3.3458 21.475 3.7098L2.36599 11.0578C1.24299 11.6058 1.26699 12.3938 2.17499 12.7578L7.20799 14.2628L18.392 7.1318C18.973 6.7478 19.505 6.9598 19.068 7.3438L9.633 14.8632Z"
                 fill="currentColor"
@@ -123,13 +141,23 @@ export default function Footer() {
           <Link
             href="https://twitter.com/cp0xdotcom"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('footer.x')}
             className="social-icon"
             sx={{
               color: 'text.secondary',
               '&:hover': { color: 'primary.main' }
             }}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
               <path
                 d="M18.244 2.25H21.552L14.325 10.51L22.827 21.75H16.17L10.956 14.933L4.99 21.75H1.68L9.41 12.915L1.254 2.25H8.08L12.793 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z"
                 fill="currentColor"
@@ -140,6 +168,8 @@ export default function Footer() {
           <Link
             href="https://github.com/cp0x-org"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t('footer.github')}
             className="social-icon"
             sx={{
               color: 'text.secondary',
@@ -153,6 +183,8 @@ export default function Footer() {
               fill="none"
               preserveAspectRatio="xMidYMid meet"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 fillRule="evenodd"

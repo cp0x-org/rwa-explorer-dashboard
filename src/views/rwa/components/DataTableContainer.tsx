@@ -77,6 +77,9 @@ export default function DataTableContainer({ sx = [], children }: Props) {
       ref={ref}
       component={Paper}
       sx={[
+        // the containing block of the visually hidden hints inside the cells: their overflow then stays inside this
+        // scrolling box instead of widening the page (a phone's layout viewport would follow it)
+        { position: 'relative' },
         fits
           ? {
               overflow: 'visible',

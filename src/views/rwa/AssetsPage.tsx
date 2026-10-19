@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Table from '@mui/material/Table';
@@ -13,14 +12,16 @@ import Typography from '@mui/material/Typography';
 import { logoUrl, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Underlying } from 'types/rwa';
-import { compareNullable, fmtNum, fmtUsd, num } from 'utils/rwa';
+import { compareNullable, num } from 'utils/rwa';
+import { useFormat, useLocaleNavigate, useT } from 'i18n';
 import DataTableContainer from './components/DataTableContainer';
 import Age from './components/Age';
 import DataGate from './components/DataGate';
 import MethodNote from './components/MethodNote';
-import SortHeader, { useSort } from './components/SortHeader';
+import SortHeader, { HeaderCell, useSort } from './components/SortHeader';
 import { StatGrid } from './components/StatGrid';
 import Legend from './components/Legend';
+import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
 
@@ -37,10 +38,13 @@ const sortValue: Record<Field, (u: Underlying) => number | string | null> = {
 };
 
 function AssetsView({ index }: { index: RwaIndex }) {
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('eligible');
   const [nameFilter, setNameFilter] = useState('');
   const { summary, settings: s } = index.data;
+  const thresholds = { liquidity: f.usd(s.min_eligible_liquidity_usd), hours: s.max_position_age_hours };
 
   const query = nameFilter.trim().toLowerCase();
   const rows = index.data.underlyings
@@ -52,28 +56,31 @@ function AssetsView({ index }: { index: RwaIndex }) {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant="h3" gutterBottom>
-        Underlying Assets
+      <Typography variant="h3" component="h1" gutterBottom>
+        {t('assets.title')}
+      </Typography>
+      <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2, maxWidth: 900 }}>
+        {t('assets.intro')}
       </Typography>
       <MethodNote data={index.data} />
 
       <Box sx={{ marginBottom: 3 }}>
         <StatGrid
           stats={[
-            { label: 'Underlying assets', value: fmtNum(summary.underlyings_count) },
-            { label: 'Tokenized assets', value: fmtNum(summary.tokens_count), hint: 'Derivatives and other share classes excluded' },
-            { label: 'Issuers', value: fmtNum(summary.issuers_count) },
+            { label: t('stat.underlyings'), value: f.num(summary.underlyings_count) },
+            { label: t('stat.tokens'), value: f.num(summary.tokens_count), hint: t('stat.tokens.hint') },
+            { label: t('stat.issuers'), value: f.num(summary.issuers_count) },
             {
-              label: 'Eligible positions',
-              value: fmtNum(summary.eligible_opportunities_count),
-              hint: `${fmtNum(summary.raw_confirmed_opportunities_count)} confirmed by address before liquidity/freshness filters`
+              label: t('stat.eligible'),
+              value: f.num(summary.eligible_opportunities_count),
+              hint: t('stat.eligible.hintRaw', { n: f.num(summary.raw_confirmed_opportunities_count) })
             },
-            { label: 'Protocols', value: fmtNum(summary.eligible_protocols_count) },
-            { label: 'Networks', value: fmtNum(summary.eligible_networks_count) },
+            { label: t('stat.protocols'), value: f.num(summary.eligible_protocols_count) },
+            { label: t('stat.networks'), value: f.num(summary.eligible_networks_count) },
             {
-              label: 'Deployments in Portals',
-              value: `${fmtNum(summary.indexed_deployments_count)} / ${fmtNum(summary.deployments_count)}`,
-              hint: 'Contract deployments indexed by Portals out of all CMC deployments'
+              label: t('stat.deployments'),
+              value: `${f.num(summary.indexed_deployments_count)} / ${f.num(summary.deployments_count)}`,
+              hint: t('stat.deployments.hint')
             }
           ]}
         />
@@ -82,7 +89,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
         <Grid size={{ xs: 12, md: 4 }}>
           <TextField
-            label="Filter By Ticker or Name"
+            label={t('filter.tickerOrName')}
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
             size="small"
@@ -92,25 +99,24 @@ function AssetsView({ index }: { index: RwaIndex }) {
       </Grid>
 
       <DataTableContainer sx={[{ marginBottom: 2 }, stickyColumn(1)]}>
-        <Table sx={{ minWidth: 650 }} aria-label="underlying assets table">
+        <Table sx={{ minWidth: 650 }}>
+          <TableCaption>{t('table.assets')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>{header('ticker', 'Asset')}</TableCell>
-              <TableCell>
-                {header('versions', 'Tokenized assets', 'Tokenized assets of the stock or ETF tracked by CoinMarketCap')}
-              </TableCell>
-              <TableCell>{header('issuers', 'Issuers')}</TableCell>
-              <TableCell>{header('eligible', 'Eligible', 'Distinct eligible DeFi positions across all tokenized assets')}</TableCell>
-              <TableCell>{header('raw', 'Raw', 'Distinct positions confirmed by address, before filters')}</TableCell>
-              <TableCell>{header('protocols', 'Protocols')}</TableCell>
-              <TableCell>{header('mcap', 'Tokenized MCap', 'CoinMarketCap tokenized market cap')}</TableCell>
-              <TableCell>Updated</TableCell>
+              {header('ticker', t('col.asset'))}
+              {header('versions', t('col.tokenized'), t('col.tokenized.hint'))}
+              {header('issuers', t('col.issuers'))}
+              {header('eligible', t('col.eligible'), t('col.eligible.hint'))}
+              {header('raw', t('col.raw'), t('col.raw.hint'))}
+              {header('protocols', t('col.protocols'))}
+              {header('mcap', t('col.tokenizedMcap'), t('col.tokenizedMcap.hint'))}
+              <HeaderCell label={t('col.updated')} />
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((u) => (
               <TableRow key={u.id} hover onClick={() => navigate(`/assets/${u.ticker}`)} sx={{ cursor: 'pointer' }}>
-                <TableCell>
+                <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
                   <RowLink to={`/assets/${u.ticker}`}>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                       <TokenIcon symbol={u.ticker} src={logoUrl(u.logo)} />
@@ -130,7 +136,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
                 <TableCell>{u.eligible_opportunities_count}</TableCell>
                 <TableCell>{u.raw_confirmed_opportunities_count}</TableCell>
                 <TableCell>{u.eligible_protocols_count}</TableCell>
-                <TableCell>{fmtUsd(u.tokenized_market_cap_usd)}</TableCell>
+                <TableCell>{f.usd(u.tokenized_market_cap_usd)}</TableCell>
                 <TableCell>
                   <Age iso={u.fetched_at} />
                 </TableCell>
@@ -139,38 +145,21 @@ function AssetsView({ index }: { index: RwaIndex }) {
           </TableBody>
         </Table>
       </DataTableContainer>
-      <Typography variant="body2" color="text.secondary">
-        Showing {rows.length} {rows.length === 1 ? 'asset' : 'assets'}
-        {query ? ` (filtered by "${nameFilter}")` : ''}
+      <Typography variant="body2" color="text.secondary" role="status">
+        {t('assets.showing', { n: rows.length })}
+        {query ? t('assets.filteredBy', { query: nameFilter }) : ''}
       </Typography>
 
       <Legend
         items={[
-          { term: 'Asset', description: 'Ticker and name of the underlying stock or ETF. Click a row to compare its tokenized assets.' },
-          {
-            term: 'Tokenized assets',
-            description:
-              'On-chain tokens of the stock or ETF tracked by CoinMarketCap (one per issuer product). Derivatives and tokens of another share class are excluded.'
-          },
-          { term: 'Issuers', description: 'Distinct issuers of these tokenized assets, as labeled by CoinMarketCap.' },
-          {
-            term: 'Eligible',
-            description:
-              `Distinct DeFi positions that contain any of its tokenized assets and pass all filters: the token address is confirmed ` +
-              `in the position composition (directly or via LP → vault), the position is a real use-case (DEX LP, lending supply, ` +
-              `vault, staking, yield market), liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data not older than ` +
-              `${s.max_position_age_hours}h at collection. A position shared by two tokenized assets counts once. This is the main rating.`
-          },
-          {
-            term: 'Raw',
-            description: 'Distinct positions confirmed by contract address before the use-case, liquidity and freshness filters.'
-          },
-          { term: 'Protocols', description: 'Distinct DeFi protocols among the eligible positions.' },
-          {
-            term: 'Tokenized MCap',
-            description: 'CoinMarketCap market cap of all its tokenized assets. Not DeFi liquidity.'
-          },
-          { term: 'Updated', description: 'When CoinMarketCap and Portals data for this asset was collected.' }
+          { term: t('col.asset'), description: t('legend.assets.asset') },
+          { term: t('col.tokenized'), description: t('legend.assets.tokenized') },
+          { term: t('col.issuers'), description: t('legend.assets.issuers') },
+          { term: t('col.eligible'), description: t('legend.assets.eligible', thresholds) },
+          { term: t('col.raw'), description: t('legend.assets.raw') },
+          { term: t('col.protocols'), description: t('legend.assets.protocols') },
+          { term: t('col.tokenizedMcap'), description: t('legend.assets.tokenizedMcap') },
+          { term: t('col.updated'), description: t('legend.assets.updated') }
         ]}
       />
     </Box>

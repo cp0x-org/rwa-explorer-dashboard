@@ -13,10 +13,17 @@ export const TokenIcon: React.FC<TokenIconProps> = ({ symbol, src, avatarProps, 
   if (!symbol) {
     return null;
   }
+  const { sx: avatarSx, ...avatarRest } = avatarProps ?? {};
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }} {...boxProps}>
-      <Avatar alt={`${symbol} icon`} src={src} sx={{ width: 36, height: 36, fontSize: 14, ...avatarProps?.sx }} {...avatarProps}>
+      {/* decorative: the symbol is written next to it; the letter fallback keeps AA contrast on both themes */}
+      <Avatar
+        alt=""
+        src={src}
+        sx={{ width: 36, height: 36, fontSize: 14, bgcolor: '#3f3f3f', color: '#ffffff', ...avatarSx }}
+        {...avatarRest}
+      >
         {symbol.slice(0, 2).toUpperCase()}
       </Avatar>
     </Box>

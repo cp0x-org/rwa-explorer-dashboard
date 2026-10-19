@@ -3,6 +3,8 @@ import Autocomplete from '@mui/material/Autocomplete';
 import Chip from '@mui/material/Chip';
 import TextField from '@mui/material/TextField';
 
+import { useLocale } from 'i18n';
+
 interface MultiFilterProps {
   label: string;
   options: string[];
@@ -12,10 +14,11 @@ interface MultiFilterProps {
 }
 
 export default function MultiFilter({ label, options, value, onChange, getLabel = (o) => o }: MultiFilterProps) {
+  const { locale } = useLocale();
   // Options arrive as ids or slugs; the list is shown in alphabetical order of what the user actually reads.
   const sorted = useMemo(
-    () => [...options].sort((a, b) => getLabel(a).localeCompare(getLabel(b), 'en', { sensitivity: 'base', numeric: true })),
-    [options, getLabel]
+    () => [...options].sort((a, b) => getLabel(a).localeCompare(getLabel(b), locale, { sensitivity: 'base', numeric: true })),
+    [options, getLabel, locale]
   );
   return (
     <Autocomplete

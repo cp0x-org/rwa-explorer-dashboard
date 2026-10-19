@@ -1,39 +1,6 @@
-import { formatShortUSDS } from 'utils/formatters';
+import { MessageId, T } from 'i18n';
 
-// null / undefined = not reported -> "—"; a real zero stays "0".
-export const DASH = '—';
-
-export const fmtUsd = (value: string | null | undefined): string => {
-  if (value === null || value === undefined) return DASH;
-  const num = Number(value);
-  if (!Number.isFinite(num)) return DASH;
-  return num < 0 ? `-$${formatShortUSDS(-num)}` : `$${formatShortUSDS(num)}`;
-};
-
-export const fmtPct = (value: string | null | undefined, digits = 2): string => {
-  if (value === null || value === undefined) return DASH;
-  const num = Number(value);
-  return Number.isFinite(num) ? `${num.toLocaleString('en-US', { maximumFractionDigits: digits, minimumFractionDigits: digits })}%` : DASH;
-};
-
-export const fmtNum = (value: number | string | null | undefined): string =>
-  value === null || value === undefined ? DASH : Number(value).toLocaleString('en-US');
-
-export const fmtDate = (iso: string | null | undefined): string => {
-  if (!iso) return DASH;
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return DASH;
-  return `${d.toLocaleString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false })} UTC`;
-};
-
-export const fmtAge = (iso: string | null | undefined, now: Date = new Date()): string => {
-  if (!iso) return DASH;
-  const minutes = Math.round((now.getTime() - new Date(iso).getTime()) / 60000);
-  if (!Number.isFinite(minutes)) return DASH;
-  if (minutes < 60) return `${Math.max(minutes, 0)}m ago`;
-  if (minutes < 48 * 60) return `${Math.round(minutes / 60)}h ago`;
-  return `${Math.round(minutes / 1440)}d ago`;
-};
+export { DASH } from 'i18n';
 
 // Sorting helper: nulls always last regardless of direction.
 export const num = (value: string | number | null | undefined): number | null => {
@@ -50,6 +17,7 @@ export function compareNullable(a: number | string | null, b: number | string | 
   return order === 'asc' ? result : -result;
 }
 
+// Proper names of networks: the same in every language.
 export const NETWORK_NAMES: Record<string, string> = {
   ethereum: 'Ethereum',
   bsc: 'BNB Chain',
@@ -65,79 +33,75 @@ export const NETWORK_NAMES: Record<string, string> = {
   flare: 'Flare'
 };
 
-export const networkName = (network: string | null | undefined): string => (network ? (NETWORK_NAMES[network] ?? network) : DASH);
+export const networkName = (network: string | null | undefined): string => (network ? (NETWORK_NAMES[network] ?? network) : '—');
 
-export const CATEGORY_LABELS: Record<string, string> = {
-  dex_lp: 'DEX LP',
-  lending_supply: 'Lending supply',
-  vault: 'Vault',
-  staking: 'Staking',
-  yield_market: 'Yield market',
-  wrapper: 'Wrapper',
-  unknown: 'Unknown'
-};
+// Labels of enumerated data values live in the dictionaries (`category.dex_lp`, ...); an unknown value is shown as is.
+const CATEGORIES = new Set(['dex_lp', 'lending_supply', 'vault', 'staking', 'yield_market', 'wrapper', 'unknown']);
+export const categoryLabel = (t: T, category: string): string =>
+  CATEGORIES.has(category) ? t(`category.${category}` as MessageId) : category;
 
-export const categoryLabel = (category: string): string => CATEGORY_LABELS[category] ?? category;
-
-type ChipColor = 'default' | 'success' | 'warning' | 'error' | 'info' | 'primary' | 'secondary';
+export type ChipColor = 'default' | 'success' | 'warning' | 'error' | 'info' | 'primary' | 'secondary';
 
 // `search` (the normal case: positions found via Portals search and confirmed by address) has no chip, only problems are shown.
-export const COVERAGE: Record<string, { label: string; color: ChipColor; hint: string }> = {
-  partial: { label: 'Partial fetch', color: 'warning', hint: 'Some deployments were not checked in the last run' },
-  not_indexed: { label: 'Not indexed', color: 'warning', hint: 'Supported network, but Portals does not index this token' },
-  unsupported_by_portals: {
-    label: 'Unsupported by Portals',
-    color: 'default',
-    hint: 'All deployments are on networks Portals does not cover: DeFi usage is unknown, not zero'
-  },
-  no_contracts: { label: 'No contracts', color: 'default', hint: 'CMC lists no contract addresses for this token' },
-  data_unavailable: { label: 'Data unavailable', color: 'error', hint: 'Source data could not be fetched' },
-  no_tokens: { label: 'No tokenized assets', color: 'default', hint: 'CMC tracks no tokenized assets for this underlying' }
+const COVERAGE_COLOR: Record<string, ChipColor> = {
+  partial: 'warning',
+  not_indexed: 'warning',
+  unsupported_by_portals: 'default',
+  no_contracts: 'default',
+  data_unavailable: 'error',
+  no_tokens: 'default'
 };
+export const coverageChip = (t: T, coverage: string): { label: string; color: ChipColor; hint: string } =>
+  coverage in COVERAGE_COLOR
+    ? { label: t(`coverage.${coverage}` as MessageId), color: COVERAGE_COLOR[coverage], hint: t(`coverage.${coverage}.hint` as MessageId) }
+    : { label: coverage, color: 'default', hint: '' };
 
-export const DEPLOYMENT_STATUS: Record<string, { label: string; color: ChipColor }> = {
-  indexed: { label: 'Indexed', color: 'success' },
-  not_indexed: { label: 'Not indexed', color: 'warning' },
-  unsupported_network: { label: 'Unsupported by Portals', color: 'default' },
-  unmapped_network: { label: 'Unmapped network', color: 'default' },
-  not_checked: { label: 'Not checked', color: 'warning' },
-  data_unavailable: { label: 'Data unavailable', color: 'error' }
+const DEPLOYMENT_COLOR: Record<string, ChipColor> = {
+  indexed: 'success',
+  not_indexed: 'warning',
+  unsupported_network: 'default',
+  unmapped_network: 'default',
+  not_checked: 'warning',
+  data_unavailable: 'error'
 };
+export const deploymentChip = (t: T, status: string): { label: string; color: ChipColor } =>
+  status in DEPLOYMENT_COLOR
+    ? { label: t(`deployment.${status}` as MessageId), color: DEPLOYMENT_COLOR[status] }
+    : { label: status, color: 'default' };
 
-export const ELIGIBILITY: Record<string, { label: string; color: ChipColor; hint: string }> = {
-  eligible: { label: 'Eligible', color: 'success', hint: 'Confirmed use-case, fresh data, enough liquidity' },
-  low_liquidity: { label: 'Low liquidity', color: 'default', hint: 'Liquidity below the eligibility threshold' },
-  stale: { label: 'Stale', color: 'warning', hint: 'Source data older than the freshness limit at collection time' },
-  unknown_liquidity: { label: 'Unknown liquidity', color: 'default', hint: 'Portals reports no comparable liquidity for this position' },
-  unknown_freshness: { label: 'Unknown freshness', color: 'default', hint: 'No source timestamp' },
-  category_excluded: { label: 'Not a use-case', color: 'default', hint: 'Wrapper or unclassified position: kept as raw only' },
-  unconfirmed: {
-    label: 'Unconfirmed',
-    color: 'default',
-    hint: 'Symbol matches, but the position composition does not contain the token address'
-  }
+const ELIGIBILITY_COLOR: Record<string, ChipColor> = {
+  eligible: 'success',
+  low_liquidity: 'default',
+  stale: 'warning',
+  unknown_liquidity: 'default',
+  unknown_freshness: 'default',
+  category_excluded: 'default',
+  unconfirmed: 'default'
 };
+export const eligibilityChip = (t: T, eligibility: string): { label: string; color: ChipColor; hint: string } =>
+  eligibility in ELIGIBILITY_COLOR
+    ? {
+        label: t(`eligibility.${eligibility}` as MessageId),
+        color: ELIGIBILITY_COLOR[eligibility],
+        hint: t(`eligibility.${eligibility}.hint` as MessageId)
+      }
+    : { label: eligibility, color: 'default', hint: '' };
 
-export const UNDERLYING_STATUS: Record<string, string> = {
-  ok: 'OK',
-  not_in_cmc: 'Not tracked by CMC',
-  no_tracked_tokens: 'No tokenized assets',
-  ambiguous_cmc_match: 'Ambiguous CMC match',
-  rwa_id_changed: 'CMC id changed'
-};
+const UNDERLYING_STATUSES = new Set(['ok', 'not_in_cmc', 'no_tracked_tokens', 'ambiguous_cmc_match', 'rwa_id_changed']);
+export const underlyingStatusLabel = (t: T, status: string): string =>
+  UNDERLYING_STATUSES.has(status) ? t(`underlyingStatus.${status}` as MessageId) : status;
 
-export const FLAG_LABELS: Record<string, string> = {
-  sentinel_price: 'Pool position, not an ERC-20 share (no share price)',
-  range_details_unknown: 'Concentrated liquidity: range details unknown',
-  negative_volume_net_flow: 'Negative volume reported (net flow)',
-  apy_anomaly: 'APY above review threshold: excluded from yield stats',
-  apy_negative: 'Negative APY reported',
-  apy_missing: 'No APY reported',
-  liquidity_missing: 'No liquidity reported'
-};
+const FLAGS = new Set([
+  'sentinel_price',
+  'range_details_unknown',
+  'negative_volume_net_flow',
+  'apy_anomaly',
+  'apy_negative',
+  'apy_missing',
+  'liquidity_missing'
+]);
+export const flagLabel = (t: T, flag: string): string => (FLAGS.has(flag) ? t(`flag.${flag}` as MessageId) : flag);
 
-export const EXCLUDED_REASONS: Record<string, string> = {
-  derivative: 'Derivative, not a tokenized security',
-  missing_symbol: 'No symbol in CMC data',
-  symbol_does_not_match_ticker: 'Symbol does not match the underlying ticker (other share class?)'
-};
+const EXCLUDED = new Set(['derivative', 'missing_symbol', 'symbol_does_not_match_ticker']);
+export const excludedReason = (t: T, reason: string | null | undefined): string =>
+  reason ? (EXCLUDED.has(reason) ? t(`excluded.${reason}` as MessageId) : reason) : '';

@@ -14,7 +14,9 @@ interface MainStyleProps {
 
 // ==============================|| MAIN LAYOUT - STYLED ||============================== //
 
-const MainContentStyled = styled('main', {
+// The content area under the fixed app bar. A plain div: the <main> landmark is the container inside it, so the
+// <footer> landmark that follows is a top-level landmark, not part of <main>.
+const MainContentStyled = styled('div', {
   shouldForwardProp: (prop) => prop !== 'open' && prop !== 'menuOrientation' && prop !== 'borderRadius' && prop !== 'marginTop'
 })<MainStyleProps>(({ theme, open, menuOrientation, borderRadius, marginTop }) => ({
   backgroundColor: theme.palette.mode === ThemeMode.DARK ? theme.palette.dark[800] : theme.palette.grey[100],

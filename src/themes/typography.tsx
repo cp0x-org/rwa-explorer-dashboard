@@ -7,9 +7,14 @@ import { ThemeMode } from 'config';
 // types
 import { FontFamily } from 'types/config';
 
+// System fonts with Simplified Chinese glyphs after the Latin web font: no extra download, no tofu on /zh pages.
+export const CJK_FALLBACK = `'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', sans-serif`;
+
+export const withCjkFallback = (fontFamily: string): string => fontFamily.replace(/,\s*sans-serif\s*$/, '') + `, ${CJK_FALLBACK}`;
+
 export default function Typography(theme: Theme, borderRadius: number, fontFamily: FontFamily): TypographyVariantsOptions {
   return {
-    fontFamily,
+    fontFamily: withCjkFallback(fontFamily),
     h6: {
       fontWeight: 500,
       color: theme.palette.mode === ThemeMode.DARK ? theme.palette.grey[600] : theme.palette.grey[900],

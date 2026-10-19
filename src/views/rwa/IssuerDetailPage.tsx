@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Link as RouterLink, useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Table from '@mui/material/Table';
@@ -12,7 +12,8 @@ import Typography from '@mui/material/Typography';
 import { isReportedYield, logoUrl, relationRows, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Issuer, RelationRow, Token } from 'types/rwa';
-import { compareNullable, fmtNum, fmtPct, fmtUsd, num } from 'utils/rwa';
+import { compareNullable, num } from 'utils/rwa';
+import { LocaleLink, useFormat, useLocaleNavigate, useT } from 'i18n';
 import DataTableContainer from './components/DataTableContainer';
 import Age from './components/Age';
 import DataGate, { NotFound } from './components/DataGate';
@@ -20,10 +21,10 @@ import DetailHeader from './components/StatGrid';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
+import TableCaption from './components/TableCaption';
 import { compareTokens, NetworkChips, TokenSortField } from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
-import { RELATIVE_HINT } from './IssuersPage';
 
 // Token columns sort by the token itself; "liquidity" and "updated" sort by the token's best reported-APY position.
 type Field = TokenSortField | 'liquidity' | 'updated';
@@ -39,16 +40,24 @@ function bestYieldByToken(rows: RelationRow[]): Map<number, RelationRow> {
 }
 
 function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }) {
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('score');
 
-  const tokens = useMemo(() => issuer.token_ids.map((id) => index.tokenById.get(id)).filter((t): t is Token => !!t), [index, issuer]);
+  const tokens = useMemo(() => issuer.token_ids.map((id) => index.tokenById.get(id)).filter((tk): tk is Token => !!tk), [index, issuer]);
   const best = useMemo(() => bestYieldByToken(relationRows(index, tokens)), [index, tokens]);
   const s = index.data.settings;
+  const thresholds = {
+    liquidity: f.usd(s.min_eligible_liquidity_usd),
+    hours: s.max_position_age_hours,
+    threshold: f.pct(s.yield_apy_review_threshold_percent, 0)
+  };
+  const name = issuer.name ?? t('common.unknownIssuer');
 
   const sorted = useMemo(() => {
-    const positionValue = (t: Token) => {
-      const o = best.get(t.id)?.opportunity;
+    const positionValue = (tk: Token) => {
+      const o = best.get(tk.id)?.opportunity;
       return sortField === 'liquidity' ? num(o?.liquidity_usd) : (o?.updated_at ?? null);
     };
     const compare = (a: Token, b: Token) =>
@@ -65,118 +74,111 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
   return (
     <Box sx={{ width: '100%' }}>
       <DetailHeader
-        caption={
-          <Link component={RouterLink} to="/issuers" color="inherit" underline="hover">
-            Issuers
-          </Link>
-        }
-        title={issuer.name ?? 'Unknown issuer'}
+        crumbs={[{ label: t('nav.issuers'), to: '/issuers' }]}
+        title={name}
         logo={issuer.logo}
         subtitle={
           <>
             {issuer.website && (
-              <Link href={issuer.website} target="_blank" rel="noopener noreferrer" underline="hover">
+              <Link href={issuer.website} target="_blank" rel="noopener noreferrer" underline="always">
                 {issuer.website.replace(/^https?:\/\//, '')}
               </Link>
             )}
-            {issuer.roster_size !== null && ` · ${issuer.roster_size} tokens tracked by CMC in total (not all in this basket)`}
+            {issuer.roster_size !== null && ` · ${t('issuer.roster', { n: issuer.roster_size })}`}
           </>
         }
         stats={[
-          { label: 'Score', value: fmtNum(issuer.issuer_usefulness_score), hint: 'Unique eligible positions' },
-          { label: 'Raw confirmed', value: fmtNum(issuer.raw_confirmed_opportunities_count) },
-          { label: 'Protocols', value: fmtNum(issuer.eligible_protocols_count) },
-          { label: 'Networks', value: fmtNum(issuer.eligible_networks_count) },
+          { label: t('stat.score'), value: f.num(issuer.issuer_usefulness_score), hint: t('stat.score.hint') },
+          { label: t('stat.rawConfirmed'), value: f.num(issuer.raw_confirmed_opportunities_count) },
+          { label: t('stat.protocols'), value: f.num(issuer.eligible_protocols_count) },
+          { label: t('stat.networks'), value: f.num(issuer.eligible_networks_count) },
           {
-            label: `Relative basket score (${issuer.compared_underlyings_count})`,
-            value: fmtPct(issuer.basket_relative_score, 1).replace('%', ''),
-            hint: RELATIVE_HINT
+            label: t('stat.relative', { n: issuer.compared_underlyings_count }),
+            value: f.pct(issuer.basket_relative_score, 1).replace('%', ''),
+            hint: t('issuers.relativeHint')
           },
-          { label: 'Underlying / tokenized assets', value: `${issuer.basket_underlyings_count} / ${issuer.basket_tokens_count}` },
-          {
-            label: 'Deployments on Portals networks',
-            value: `${issuer.supported_deployments_count} / ${issuer.deployments_count}`
-          },
-          {
-            label: 'Direct pools liquidity',
-            value: fmtUsd(issuer.direct_pools_liquidity_usd),
-            hint: 'Liquidity of tracked distinct direct pools. Not issuer TVL or capital'
-          }
+          { label: t('stat.underlyingTokenized'), value: `${issuer.basket_underlyings_count} / ${issuer.basket_tokens_count}` },
+          { label: t('stat.deploymentsPortals'), value: `${issuer.supported_deployments_count} / ${issuer.deployments_count}` },
+          { label: t('stat.directPools'), value: f.usd(issuer.direct_pools_liquidity_usd), hint: t('stat.directPools.hint') }
         ]}
       />
       <MethodNote data={index.data} />
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
-        <Typography variant="h3">Tokenized Assets In Basket</Typography>
-        <Link component={RouterLink} to={`/opportunities?issuer=${issuer.id}`} underline="hover">
-          All positions of {issuer.name} →
+        <Typography variant="h3" component="h2">
+          {t('issuer.tokensInBasket')}
+        </Typography>
+        <Link component={LocaleLink} to={`/opportunities?issuer=${issuer.id}`} underline="always">
+          {t('issuer.allPositions', { name })}
         </Link>
       </Box>
       <DataTableContainer sx={[{ marginBottom: 4 }, stickyColumn(2)]}>
-        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="issuer tokens table">
+        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }}>
+          <TableCaption>{t('table.issuerTokens')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>{header('ticker', 'Asset')}</TableCell>
-              <TableCell>Token</TableCell>
-              <TableCell>Rank in asset</TableCell>
-              <TableCell>{header('score', 'Score', 'Eligible positions; ties: protocols, networks, direct positions')}</TableCell>
-              <TableCell>{header('protocols', 'Protocols')}</TableCell>
-              <TableCell>Networks</TableCell>
-              <TableCell>{header('liquidity', 'Liquidity', 'Liquidity of the best position')}</TableCell>
-              <TableCell>
-                {header('apy', 'Max APY', 'Highest reported APY over eligible positions. APY of one position, not an expected return')}
-              </TableCell>
-              <TableCell>{header('mcap', 'MCap (CMC)')}</TableCell>
-              <TableCell>{header('updated', 'Updated', 'Source timestamp of the best position')}</TableCell>
+              {header('ticker', t('col.asset'))}
+              <TableCell>{t('col.token')}</TableCell>
+              <TableCell>{t('col.rankInAsset')}</TableCell>
+              {header('score', t('col.score'), t('col.score.hint'))}
+              {header('protocols', t('col.protocols'))}
+              <TableCell>{t('col.networks')}</TableCell>
+              {header('liquidity', t('col.liquidity'), t('col.liquidity.hintBest'))}
+              {header('apy', t('col.maxApy'), t('col.maxApy.hint'))}
+              {header('mcap', t('col.mcapCmc'))}
+              {header('updated', t('col.updated'), t('col.updated.hintBest'))}
             </TableRow>
           </TableHead>
           <TableBody>
             {sorted.length === 0 && (
               <TableRow>
                 <TableCell colSpan={10} sx={{ color: 'text.secondary' }}>
-                  No tokenized assets of this issuer in the basket
+                  {t('issuer.none')}
                 </TableCell>
               </TableRow>
             )}
-            {sorted.map((t) => {
-              const o = best.get(t.id)?.opportunity;
+            {sorted.map((tk) => {
+              const o = best.get(tk.id)?.opportunity;
               return (
-                <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
-                  <TableCell>{t.ticker}</TableCell>
-                  <TableCell>
-                    <RowLink to={`/tokens/${t.id}`}>
+                <TableRow key={tk.id} hover onClick={() => navigate(`/tokens/${tk.id}`)} sx={{ cursor: 'pointer' }}>
+                  <TableCell>{tk.ticker}</TableCell>
+                  <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
+                    <RowLink to={`/tokens/${tk.id}`}>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         <TokenIcon
-                          symbol={t.symbol ?? '?'}
-                          src={logoUrl(t.logo)}
+                          symbol={tk.symbol ?? '?'}
+                          src={logoUrl(tk.logo)}
                           avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
                         />
                         <Box>
                           <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                            {t.symbol}
+                            {tk.symbol}
                           </Typography>
                           <Typography variant="body2" color="text.secondary">
-                            {t.name}
+                            {tk.name}
                           </Typography>
                         </Box>
                       </Box>
                     </RowLink>
                   </TableCell>
                   <TableCell>
-                    #{t.rank_in_underlying} of {index.underlyingById.get(t.underlying_id)?.versions_count ?? '—'}
+                    {t('common.rankOf', {
+                      rank: tk.rank_in_underlying ?? '—',
+                      count: index.underlyingById.get(tk.underlying_id)?.versions_count ?? '—'
+                    })}
                   </TableCell>
                   <TableCell>
                     <Typography variant="h5" component="span">
-                      {t.usefulness_score}
+                      {tk.usefulness_score}
                     </Typography>
                   </TableCell>
-                  <TableCell>{t.counts.eligible_protocols_count}</TableCell>
+                  <TableCell>{tk.counts.eligible_protocols_count}</TableCell>
                   <TableCell>
-                    <NetworkChips token={t} />
+                    <NetworkChips token={tk} />
                   </TableCell>
-                  <TableCell>{fmtUsd(o?.liquidity_usd)}</TableCell>
-                  <TableCell>{fmtPct(t.yield.max_reported_apy_percent)}</TableCell>
-                  <TableCell>{fmtUsd(t.market_cap_usd)}</TableCell>
+                  <TableCell>{f.usd(o?.liquidity_usd)}</TableCell>
+                  <TableCell>{f.pct(tk.yield.max_reported_apy_percent)}</TableCell>
+                  <TableCell>{f.usd(tk.market_cap_usd)}</TableCell>
                   <TableCell>{o ? <Age iso={o.updated_at} /> : '—'}</TableCell>
                 </TableRow>
               );
@@ -186,50 +188,16 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
       </DataTableContainer>
       <Legend
         items={[
-          {
-            term: 'Asset',
-            description: 'Ticker of the underlying stock or ETF. Click a row to open the token details.'
-          },
-          {
-            term: 'Token',
-            description: 'Symbol and name of the issuer’s tokenized asset in CoinMarketCap.'
-          },
-          {
-            term: 'Rank in asset',
-            description: 'Place of this token among all tokenized versions of the same underlying in the basket, by score.'
-          },
-          {
-            term: 'Score',
-            description:
-              `Number of eligible DeFi positions with this token: the token address is confirmed in the position composition ` +
-              `(directly or via LP → vault), the position is a real use-case (DEX LP, lending supply, vault, staking, yield market), ` +
-              `liquidity ≥ ${fmtUsd(s.min_eligible_liquidity_usd)} and source data not older than ${s.max_position_age_hours}h at collection. ` +
-              `Ties are broken by protocols, networks and direct positions. This is the main rating.`
-          },
-          { term: 'Protocols', description: 'Distinct DeFi protocols among the eligible positions.' },
-          {
-            term: 'Networks',
-            description:
-              'Networks where CoinMarketCap lists a contract of the token. Highlighted: indexed by Portals and searched for DeFi positions. ' +
-              'Greyed: network not covered by Portals or token not indexed — usage there is unknown, not zero.'
-          },
-          {
-            term: 'Liquidity',
-            description:
-              'Liquidity of the token’s best position: the eligible position with the highest reported APY. ' +
-              'Not the total liquidity of the token; "—" means no position with reported APY.'
-          },
-          {
-            term: 'Max APY',
-            description:
-              `Highest reported APY over eligible positions with positive APY. APY above ${fmtPct(s.yield_apy_review_threshold_percent, 0)} ` +
-              `is treated as an anomaly and excluded. A snapshot of one position, not an expected return.`
-          },
-          {
-            term: 'MCap (CMC)',
-            description: 'CoinMarketCap market cap of this token. "—" means not reported; $0.00 is a zero reported by CoinMarketCap.'
-          },
-          { term: 'Updated', description: 'Source timestamp of the best position at collection.' }
+          { term: t('col.asset'), description: t('legend.issuer.asset') },
+          { term: t('col.token'), description: t('legend.issuer.token') },
+          { term: t('col.rankInAsset'), description: t('legend.issuer.rankInAsset') },
+          { term: t('col.score'), description: t('legend.issuer.score', thresholds) },
+          { term: t('col.protocols'), description: t('legend.tokenized.protocols') },
+          { term: t('col.networks'), description: t('legend.tokenized.networks') },
+          { term: t('col.liquidity'), description: t('legend.issuer.liquidity') },
+          { term: t('col.maxApy'), description: t('legend.issuer.maxApy', thresholds) },
+          { term: t('col.mcapCmc'), description: t('legend.tokenized.mcap') },
+          { term: t('col.updated'), description: t('legend.issuer.updated') }
         ]}
       />
     </Box>
@@ -242,7 +210,7 @@ export default function IssuerDetailPage() {
     <DataGate>
       {(index) => {
         const issuer = index.issuerById.get(issuerId);
-        return issuer ? <IssuerDetailView index={index} issuer={issuer} /> : <NotFound what="Issuer" />;
+        return issuer ? <IssuerDetailView index={index} issuer={issuer} /> : <NotFound id="notFound.issuer" />;
       }}
     </DataGate>
   );

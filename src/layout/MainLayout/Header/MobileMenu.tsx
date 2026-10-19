@@ -1,85 +1,69 @@
-import React, { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { useState } from 'react';
 
 // material-ui
 import { Box, IconButton, Drawer, List, ListItemButton, ListItemText, Typography, useTheme } from '@mui/material';
 import { IconMenu2, IconX } from '@tabler/icons-react';
 
-// types
-interface MobileMenuItemProps {
-  title: string;
-  path?: string;
-  isExternal?: boolean;
-}
+// project imports
+import { LocaleLink, useT } from 'i18n';
 
-const MobileMenu = () => {
+const TITLE_ID = 'mobile-menu-title';
+
+export default function MobileMenu() {
   const theme = useTheme();
+  const t = useT();
   const [open, setOpen] = useState(false);
 
-  const handleToggleDrawer = () => {
-    setOpen(!open);
-  };
-
-  const menuItems: MobileMenuItemProps[] = [
-    {
-      title: 'Home',
-      path: '/',
-      isExternal: false
-    },
-    {
-      title: 'Permissionless Interfaces',
-      path: 'https://pi.cp0x.com',
-      isExternal: false
-    },
-    {
-      title: 'cp0x Referrals',
-      path: 'https://cp0x.com',
-      isExternal: true
-    }
-  ];
+  const toggle = () => setOpen(!open);
 
   return (
     <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-      <IconButton color="inherit" onClick={handleToggleDrawer} edge="end" size="large" aria-label="Open menu">
-        <IconMenu2 />
+      <IconButton
+        color="inherit"
+        onClick={toggle}
+        edge="end"
+        size="large"
+        aria-label={t('header.openMenu')}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+      >
+        <IconMenu2 aria-hidden="true" />
       </IconButton>
 
       <Drawer
         anchor="right"
         open={open}
-        onClose={handleToggleDrawer}
-        PaperProps={{
-          sx: {
-            width: '280px',
-            background: theme.palette.background.default
+        onClose={toggle}
+        slotProps={{
+          paper: {
+            role: 'dialog',
+            'aria-modal': true,
+            'aria-labelledby': TITLE_ID,
+            sx: { width: '280px', background: theme.palette.background.default }
           }
         }}
       >
         <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Typography variant="h6">Menu</Typography>
-          <IconButton color="inherit" onClick={handleToggleDrawer} edge="end" size="small">
-            <IconX />
+          <Typography variant="h6" component="h2" id={TITLE_ID}>
+            {t('header.menu')}
+          </Typography>
+          <IconButton color="inherit" onClick={toggle} edge="end" size="small" aria-label={t('header.closeMenu')}>
+            <IconX aria-hidden="true" />
           </IconButton>
         </Box>
 
-        <List component="nav" sx={{ px: 2, pt: 1 }}>
-          {menuItems.map((item) => (
-            <React.Fragment key={item.title}>
-              {item.isExternal ? (
-                <ListItemButton component="a" href={item.path} target="_blank" rel="noopener noreferrer" onClick={handleToggleDrawer}>
-                  <ListItemText primary={item.title} />
-                </ListItemButton>
-              ) : (
-                <ListItemButton component={RouterLink} to={item.path || '#'} onClick={handleToggleDrawer}>
-                  <ListItemText primary={item.title} />
-                </ListItemButton>
-              )}
-            </React.Fragment>
-          ))}
+        <List component="nav" aria-label={t('header.siteMenu')} sx={{ px: 2, pt: 1 }}>
+          <ListItemButton component={LocaleLink} to="/" onClick={toggle}>
+            <ListItemText primary={t('header.home')} />
+          </ListItemButton>
+          <ListItemButton component="a" href="https://pi.cp0x.com" rel="noopener noreferrer" onClick={toggle}>
+            <ListItemText primary={t('header.pi')} />
+          </ListItemButton>
+          <ListItemButton component="a" href="https://cp0x.com" target="_blank" rel="noopener noreferrer" onClick={toggle}>
+            <ListItemText primary={t('header.referrals')} />
+          </ListItemButton>
         </List>
       </Drawer>
     </Box>
   );
-};
-
-export default MobileMenu;
+}

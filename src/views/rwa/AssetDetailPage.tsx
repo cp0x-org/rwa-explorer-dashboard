@@ -1,4 +1,4 @@
-import { Link as RouterLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import Link from '@mui/material/Link';
@@ -11,41 +11,41 @@ import Typography from '@mui/material/Typography';
 
 import { isReportedYield, relationRows, RwaIndex } from 'api/rwa';
 import { Token } from 'types/rwa';
-import { EXCLUDED_REASONS, fmtNum, fmtUsd, UNDERLYING_STATUS } from 'utils/rwa';
+import { excludedReason, underlyingStatusLabel } from 'utils/rwa';
+import { LocaleLink, useFormat, useT } from 'i18n';
 import DataTableContainer from './components/DataTableContainer';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
 import MethodNote from './components/MethodNote';
 import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
+import TableCaption from './components/TableCaption';
 import VersionsTable from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
 
 function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string }) {
+  const t = useT();
+  const f = useFormat();
   const u = index.underlyingByTicker.get(ticker.toUpperCase());
-  if (!u) return <NotFound what={`Asset ${ticker}`} />;
+  if (!u) return <NotFound id="notFound.asset" values={{ ticker }} />;
 
-  const tokens = u.token_ids.map((id) => index.tokenById.get(id)).filter((t): t is Token => !!t);
-  const excluded = u.excluded_token_ids.map((id) => index.tokenById.get(id)).filter((t): t is Token => !!t);
+  const tokens = u.token_ids.map((id) => index.tokenById.get(id)).filter((tk): tk is Token => !!tk);
+  const excluded = u.excluded_token_ids.map((id) => index.tokenById.get(id)).filter((tk): tk is Token => !!tk);
   const yieldRows = relationRows(index, tokens).filter(isReportedYield);
 
   return (
     <Box sx={{ width: '100%' }}>
       <DetailHeader
-        caption={
-          <Link component={RouterLink} to="/assets" color="inherit" underline="hover">
-            Underlying assets
-          </Link>
-        }
+        crumbs={[{ label: t('nav.assets'), to: '/assets' }]}
         title={u.ticker}
         logo={u.logo}
         subtitle={
           <>
-            {`${u.cmc_name ?? u.name} · ISIN ${u.isin ?? '—'} · ${u.asset_type.toUpperCase()}`}
+            {`${u.cmc_name ?? u.name} · ${t('asset.isin')} ${u.isin ?? '—'} · ${u.asset_type.toUpperCase()}`}
             {u.website && (
               <>
                 {' · '}
-                <Link href={u.website} target="_blank" rel="noopener noreferrer" underline="hover">
+                <Link href={u.website} target="_blank" rel="noopener noreferrer" underline="always">
                   {u.website.replace(/^https?:\/\/(www\.)?/, '')}
                 </Link>
               </>
@@ -53,64 +53,69 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           </>
         }
         chips={
-          u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : <Chip size="small" label={UNDERLYING_STATUS[u.status] ?? u.status} />
+          u.status === 'ok' ? <CoverageChip coverage={u.coverage} /> : <Chip size="small" label={underlyingStatusLabel(t, u.status)} />
         }
         stats={[
-          { label: 'Tokenized assets', value: fmtNum(u.versions_count) },
-          { label: 'Issuers', value: fmtNum(u.issuers_count) },
-          {
-            label: 'Eligible positions',
-            value: fmtNum(u.eligible_opportunities_count),
-            hint: 'Distinct positions across tokenized assets'
-          },
-          { label: 'Raw confirmed', value: fmtNum(u.raw_confirmed_opportunities_count) },
-          { label: 'Protocols', value: fmtNum(u.eligible_protocols_count) },
-          { label: 'Networks', value: fmtNum(u.eligible_networks_count) },
-          { label: 'Tokenized MCap (CMC)', value: fmtUsd(u.tokenized_market_cap_usd) },
-          { label: 'Avg tokenized price (CMC)', value: fmtUsd(u.average_tokenized_price_usd) }
+          { label: t('stat.tokens'), value: f.num(u.versions_count) },
+          { label: t('stat.issuers'), value: f.num(u.issuers_count) },
+          { label: t('stat.eligible'), value: f.num(u.eligible_opportunities_count), hint: t('stat.eligible.hintDistinct') },
+          { label: t('stat.rawConfirmed'), value: f.num(u.raw_confirmed_opportunities_count) },
+          { label: t('stat.protocols'), value: f.num(u.eligible_protocols_count) },
+          { label: t('stat.networks'), value: f.num(u.eligible_networks_count) },
+          { label: t('stat.tokenizedMcap'), value: f.usd(u.tokenized_market_cap_usd) },
+          { label: t('stat.avgPrice'), value: f.usd(u.average_tokenized_price_usd) }
         ]}
       />
       <MethodNote data={index.data} />
 
-      <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
-        Tokenized Assets
+      <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
+        {t('asset.tokenizedAssets')}
       </Typography>
       <VersionsTable tokens={tokens} />
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
-        <Typography variant="h3">Highest Reported APY</Typography>
-        <Link component={RouterLink} to={`/opportunities?underlying=${u.ticker}`} underline="hover">
-          All {u.ticker} positions →
+        <Typography variant="h3" component="h2">
+          {t('asset.highestApy')}
+        </Typography>
+        <Link component={LocaleLink} to={`/opportunities?underlying=${u.ticker}`} underline="always">
+          {t('asset.allPositions', { ticker: u.ticker })}
         </Link>
       </Box>
-      <OpportunityTable index={index} rows={yieldRows} showToken emptyText="No eligible positions with reported APY" />
+      <OpportunityTable
+        index={index}
+        rows={yieldRows}
+        showToken
+        emptyText={t('asset.noYield')}
+        caption={`${t('asset.highestApy')}: ${u.ticker}`}
+      />
 
       {excluded.length > 0 && (
         <Box sx={{ marginTop: 4 }}>
-          <Typography variant="h3" gutterBottom sx={{ marginBottom: 2 }}>
-            Excluded From Ranking
+          <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
+            {t('asset.excluded')}
           </Typography>
           <DataTableContainer sx={stickyColumn(1)}>
-            <Table sx={{ minWidth: 650 }} size="small" aria-label="excluded tokens table">
+            <Table sx={{ minWidth: 650 }} size="small">
+              <TableCaption>{t('table.excluded')}</TableCaption>
               <TableHead>
                 <TableRow>
-                  <TableCell>Symbol</TableCell>
-                  <TableCell>Name</TableCell>
-                  <TableCell>CMC issuer label</TableCell>
-                  <TableCell>Reason</TableCell>
+                  <TableCell>{t('col.symbol')}</TableCell>
+                  <TableCell>{t('col.name')}</TableCell>
+                  <TableCell>{t('col.cmcIssuerLabel')}</TableCell>
+                  <TableCell>{t('col.reason')}</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                {excluded.map((t) => (
-                  <TableRow key={t.id}>
-                    <TableCell>
-                      <Link component={RouterLink} to={`/tokens/${t.id}`} underline="hover">
-                        {t.symbol ?? '—'}
+                {excluded.map((tk) => (
+                  <TableRow key={tk.id}>
+                    <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
+                      <Link component={LocaleLink} to={`/tokens/${tk.id}`} underline="hover">
+                        {tk.symbol ?? '—'}
                       </Link>
                     </TableCell>
-                    <TableCell>{t.name ?? '—'}</TableCell>
-                    <TableCell>{t.issuer_name ?? '—'}</TableCell>
-                    <TableCell>{EXCLUDED_REASONS[t.excluded_reason ?? ''] ?? t.excluded_reason}</TableCell>
+                    <TableCell>{tk.name ?? '—'}</TableCell>
+                    <TableCell>{tk.issuer_name ?? '—'}</TableCell>
+                    <TableCell>{excludedReason(t, tk.excluded_reason)}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

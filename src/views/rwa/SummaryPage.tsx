@@ -1,5 +1,5 @@
-import { useMemo, useRef, useState } from 'react';
-import { Link as RouterLink, useNavigate, useSearchParams } from 'react-router-dom';
+import { useId, useMemo, useRef, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import Autocomplete from '@mui/material/Autocomplete';
 import Box from '@mui/material/Box';
@@ -21,7 +21,8 @@ import Typography from '@mui/material/Typography';
 import { isReportedYield, logoUrl, relationRows, RwaIndex } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Issuer, Token, Underlying } from 'types/rwa';
-import { DASH, fmtNum, fmtPct } from 'utils/rwa';
+import { DASH } from 'utils/rwa';
+import { Format, LocaleLink, T, useFormat, useLocaleNavigate, useT } from 'i18n';
 import {
   BarList,
   ChartCard,
@@ -38,6 +39,7 @@ import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
 import { StatGrid } from './components/StatGrid';
+import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
 
@@ -155,20 +157,20 @@ function byDefiPresence(issuers: IssuerStat[]): IssuerStat[] {
 }
 
 // Per-issuer donut segments; issuers past the categorical slots fold into one "Other" segment.
-function issuerSegments(items: { id: string; name: string; value: number; color: string; detail?: string }[]): Segment[] {
+function issuerSegments(t: T, items: { id: string; name: string; value: number; color: string; detail?: string }[]): Segment[] {
   const segments: Segment[] = [];
   let other = 0;
   items.forEach((i) => {
     if (i.value <= 0) return;
     if (i.color === OTHER_COLOR) other += i.value;
-    else segments.push({ id: i.id, label: i.name, value: i.value, color: i.color, detail: i.detail });
+    else segments.push({ id: i.id, label: i.name, value: i.value, color: i.color, detail: i.detail, to: `/issuers/${i.id}` });
   });
-  if (other > 0) segments.push({ id: OTHER_ID, label: 'Other issuers', value: other, color: OTHER_COLOR });
+  if (other > 0) segments.push({ id: OTHER_ID, label: t('common.otherIssuers'), value: other, color: OTHER_COLOR });
   return segments.sort((a, b) => (a.id === OTHER_ID ? 1 : b.id === OTHER_ID ? -1 : b.value - a.value));
 }
 
 // Eligible positions of each issuer's tokenized assets of an underlying (a pool shared by two of one issuer's tokens counts once).
-function issuerParts(stats: Stats, u: Underlying) {
+function issuerParts(t: T, stats: Stats, u: Underlying) {
   const keys = new Map<string, Set<string>[]>();
   u.token_ids.forEach((id) => {
     const s = stats.tokenStatById.get(id);
@@ -177,11 +179,16 @@ function issuerParts(stats: Stats, u: Underlying) {
   });
   return stats.issuers
     .filter((i) => keys.has(i.issuer.id))
-    .map((i) => ({ id: i.issuer.id, name: i.issuer.name ?? 'Unknown issuer', value: union(keys.get(i.issuer.id)!).size, color: i.color }));
+    .map((i) => ({
+      id: i.issuer.id,
+      name: i.issuer.name ?? t('common.unknownIssuer'),
+      value: union(keys.get(i.issuer.id)!).size,
+      color: i.color
+    }));
 }
 
-const pct = (value: number | null | undefined) => (value === null || value === undefined ? DASH : fmtPct(String(value)));
-const share = (part: number, whole: number) => (whole > 0 ? `${((part / whole) * 100).toFixed(1)}%` : DASH);
+const pctOf = (f: Format, value: number | null | undefined) => (value === null || value === undefined ? DASH : f.pct(value));
+const shareOf = (f: Format, part: number, whole: number) => (whole > 0 ? f.pct((part / whole) * 100, 1) : DASH);
 
 function TokenLabel({ token, caption }: { token: Token; caption: string }) {
   return (
@@ -200,30 +207,34 @@ function TokenLabel({ token, caption }: { token: Token; caption: string }) {
 }
 
 function ApyValue({ stats }: { stats: YieldStats }) {
+  const f = useFormat();
   return (
     <Typography variant="body2" component="span">
       <Box component="span" sx={{ fontWeight: 600 }}>
-        {pct(stats.average)}
+        {pctOf(f, stats.average)}
       </Box>
       <Box component="span" sx={{ color: 'text.secondary' }}>
         {' / '}
-        {pct(stats.max)}
+        {pctOf(f, stats.max)}
       </Box>
     </Typography>
   );
 }
 
 function ApyTooltip({ title, stats, extra }: { title: string; stats: YieldStats; extra?: string }) {
+  const t = useT();
+  const f = useFormat();
   return (
     <Box>
       <Typography variant="subtitle2" sx={{ color: 'inherit', fontWeight: 600 }}>
-        Avg {pct(stats.average)} · Max {pct(stats.max)}
+        {t('summary.yield.tooltipStats', { average: pctOf(f, stats.average), max: pctOf(f, stats.max) })}
       </Typography>
       <Typography variant="caption" sx={{ color: 'inherit', opacity: 0.8, display: 'block' }}>
         {title}
       </Typography>
       <Typography variant="caption" sx={{ color: 'inherit', opacity: 0.8, display: 'block' }}>
-        {stats.count} eligible {stats.count === 1 ? 'position' : 'positions'} with APY &gt; 0{extra ? ` · ${extra}` : ''}
+        {t('summary.yield.tooltipCount', { n: stats.count })}
+        {extra ? ` · ${extra}` : ''}
       </Typography>
     </Box>
   );
@@ -231,12 +242,14 @@ function ApyTooltip({ title, stats, extra }: { title: string; stats: YieldStats;
 
 function YieldKeys({ accent, reference }: { accent: string; reference?: number }) {
   const theme = useTheme();
+  const t = useT();
+  const f = useFormat();
   return (
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', marginBottom: 1.5 }}>
-      <LegendKey color={accent} label="Average APY" />
-      <LegendKey color={accent} label="Max APY" shape="dot" />
+      <LegendKey color={accent} label={t('summary.yield.keyAverage')} />
+      <LegendKey color={accent} label={t('summary.yield.keyMax')} shape="dot" />
       {reference !== undefined && (
-        <LegendKey color={theme.palette.text.secondary} label={`Basket average ${pct(reference)}`} shape="line" />
+        <LegendKey color={theme.palette.text.secondary} label={t('summary.yield.keyBasket', { value: pctOf(f, reference) })} shape="line" />
       )}
     </Box>
   );
@@ -246,16 +259,19 @@ function YieldKeys({ accent, reference }: { accent: string; reference?: number }
 
 function IssuersSection({ stats }: { stats: Stats }) {
   const theme = useTheme();
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const accent = theme.palette.secondary.main;
   const total = stats.issuers.reduce((sum, i) => sum + i.issuer.issuer_usefulness_score, 0);
   const segments = issuerSegments(
+    t,
     stats.issuers.map((i) => ({
       id: i.issuer.id,
-      name: i.issuer.name ?? 'Unknown issuer',
+      name: i.issuer.name ?? t('common.unknownIssuer'),
       value: i.issuer.issuer_usefulness_score,
       color: i.color,
-      detail: `${i.inDefi} of ${i.versions} tokenized assets in DeFi`
+      detail: t('summary.issuers.inDefi.detail', { n: i.inDefi, total: i.versions })
     }))
   );
   const presence = byDefiPresence(stats.issuers);
@@ -263,25 +279,18 @@ function IssuersSection({ stats }: { stats: Stats }) {
   const maxPlatforms = Math.max(...diversity.map((i) => i.platforms.size), 0);
 
   return (
-    <Box sx={{ marginBottom: 5 }}>
-      <Typography variant="h3" gutterBottom>
-        Issuers: DeFi readiness
+    <Box component="section" sx={{ marginBottom: 5 }}>
+      <Typography variant="h3" component="h2" gutterBottom>
+        {t('summary.issuers.title')}
       </Typography>
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-          <ChartCard
-            title="Share of eligible positions"
-            subtitle="Which issuer’s tokenized assets are used in DeFi the most (issuer score / sum of scores)"
-          >
-            <DonutChart
-              segments={segments}
-              centerCaption="eligible positions"
-              onSelect={(id) => id !== OTHER_ID && navigate(`/issuers/${id}`)}
-            />
+          <ChartCard title={t('summary.issuers.share')} subtitle={t('summary.issuers.share.subtitle')}>
+            <DonutChart segments={segments} centerCaption={t('summary.eligiblePositions')} />
           </ChartCard>
         </Grid>
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-          <ChartCard title="Tokenized assets in DeFi" subtitle="Share of the issuer’s tokenized assets with at least one eligible position">
+          <ChartCard title={t('summary.issuers.inDefi')} subtitle={t('summary.issuers.inDefi.subtitle')}>
             <BarList
               color={accent}
               max={100}
@@ -291,13 +300,13 @@ function IssuersSection({ stats }: { stats: Stats }) {
                 // The count sits under the name so the value column stays one width and every bar shares the same track.
                 label: (
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, minWidth: 0 }}>
-                    <Box sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
+                    <Box aria-hidden="true" sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
                     <Box sx={{ minWidth: 0 }}>
                       <Typography variant="body2" noWrap>
-                        {i.issuer.name ?? 'Unknown issuer'}
+                        {i.issuer.name ?? t('common.unknownIssuer')}
                       </Typography>
                       <Typography variant="caption" noWrap sx={{ display: 'block', color: 'text.secondary', lineHeight: 1.2 }}>
-                        {i.inDefi} of {i.versions} assets
+                        {t('summary.issuers.inDefi.caption', { n: i.inDefi, total: i.versions })}
                       </Typography>
                     </Box>
                   </Box>
@@ -305,20 +314,17 @@ function IssuersSection({ stats }: { stats: Stats }) {
                 value: (i.inDefi / i.versions) * 100,
                 valueLabel: (
                   <Typography variant="body2" component="span" sx={{ fontWeight: 600 }}>
-                    {share(i.inDefi, i.versions)}
+                    {shareOf(f, i.inDefi, i.versions)}
                   </Typography>
                 ),
-                tooltip: `${i.inDefi} of ${i.versions} tokenized assets have at least one eligible position`,
+                tooltip: t('summary.issuers.inDefi.tooltip', { n: i.inDefi, total: i.versions }),
                 to: `/issuers/${i.issuer.id}`
               }))}
             />
           </ChartCard>
         </Grid>
         <Grid size={{ xs: 12, md: 6, lg: 4 }}>
-          <ChartCard
-            title="Protocol diversity"
-            subtitle="Distinct DeFi protocols hosting the issuer’s tokenized assets; many pools of one protocol count once"
-          >
+          <ChartCard title={t('summary.issuers.diversity')} subtitle={t('summary.issuers.diversity.subtitle')}>
             <BarList
               color={accent}
               max={maxPlatforms || 1}
@@ -329,9 +335,9 @@ function IssuersSection({ stats }: { stats: Stats }) {
                   id: i.issuer.id,
                   label: (
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, minWidth: 0 }}>
-                      <Box sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
+                      <Box aria-hidden="true" sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: i.color, flexShrink: 0 }} />
                       <Typography variant="body2" noWrap>
-                        {i.issuer.name ?? 'Unknown issuer'}
+                        {i.issuer.name ?? t('common.unknownIssuer')}
                       </Typography>
                     </Box>
                   ),
@@ -342,11 +348,12 @@ function IssuersSection({ stats }: { stats: Stats }) {
                         {i.platforms.size}
                       </Box>
                       <Box component="span" sx={{ color: 'text.secondary' }}>
-                        {i.platforms.size === 1 ? ' protocol' : ' protocols'}
+                        {' '}
+                        {t('summary.issuers.protocols', { n: i.platforms.size })}
                       </Box>
                     </Typography>
                   ),
-                  tooltip: names.length ? names.join(', ') : 'No eligible positions',
+                  tooltip: names.length ? names.join(', ') : t('summary.issuers.noEligible'),
                   to: `/issuers/${i.issuer.id}`
                 };
               })}
@@ -356,49 +363,53 @@ function IssuersSection({ stats }: { stats: Stats }) {
       </Grid>
 
       <DataTableContainer sx={stickyColumn(1)}>
-        <Table size="small" aria-label="issuer summary table">
+        <Table size="small">
+          <TableCaption>{t('table.issuerSummary')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>Issuer</TableCell>
-              <TableCell align="right">Share</TableCell>
-              <TableCell align="right">Eligible positions</TableCell>
-              <TableCell align="right">Tokenized assets in DeFi</TableCell>
-              <TableCell align="right">Protocols</TableCell>
-              <TableCell align="right">Positions with APY</TableCell>
-              <TableCell align="right">Avg APY</TableCell>
-              <TableCell align="right">Max APY</TableCell>
+              <TableCell>{t('col.issuer')}</TableCell>
+              <TableCell align="right">{t('col.share')}</TableCell>
+              <TableCell align="right">{t('col.eligiblePositions')}</TableCell>
+              <TableCell align="right">{t('col.tokensInDefi')}</TableCell>
+              <TableCell align="right">{t('col.protocols')}</TableCell>
+              <TableCell align="right">{t('col.positionsWithApy')}</TableCell>
+              <TableCell align="right">{t('col.avgApy')}</TableCell>
+              <TableCell align="right">{t('col.maxApy')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {stats.issuers.map((i) => (
               <TableRow key={i.issuer.id} hover onClick={() => navigate(`/issuers/${i.issuer.id}`)} sx={{ cursor: 'pointer' }}>
-                <TableCell>
+                <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
                   <RowLink to={`/issuers/${i.issuer.id}`}>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                      <Box sx={{ width: 10, height: 10, borderRadius: '3px', backgroundColor: i.color, flexShrink: 0 }} />
+                      <Box
+                        aria-hidden="true"
+                        sx={{ width: 10, height: 10, borderRadius: '3px', backgroundColor: i.color, flexShrink: 0 }}
+                      />
                       <TokenIcon
                         symbol={i.issuer.name ?? '?'}
                         src={logoUrl(i.issuer.logo)}
                         avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
                       />
                       <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {i.issuer.name ?? 'Unknown issuer'}
+                        {i.issuer.name ?? t('common.unknownIssuer')}
                       </Typography>
                     </Box>
                   </RowLink>
                 </TableCell>
-                <TableCell align="right">{share(i.issuer.issuer_usefulness_score, total)}</TableCell>
-                <TableCell align="right">{fmtNum(i.issuer.issuer_usefulness_score)}</TableCell>
+                <TableCell align="right">{shareOf(f, i.issuer.issuer_usefulness_score, total)}</TableCell>
+                <TableCell align="right">{f.num(i.issuer.issuer_usefulness_score)}</TableCell>
                 <TableCell align="right">
                   {i.inDefi} / {i.versions}{' '}
                   <Typography component="span" variant="body2" color="text.secondary">
-                    ({share(i.inDefi, i.versions)})
+                    ({shareOf(f, i.inDefi, i.versions)})
                   </Typography>
                 </TableCell>
                 <TableCell align="right">{i.platforms.size}</TableCell>
                 <TableCell align="right">{i.yield?.count ?? 0}</TableCell>
-                <TableCell align="right">{pct(i.yield?.average)}</TableCell>
-                <TableCell align="right">{pct(i.yield?.max)}</TableCell>
+                <TableCell align="right">{pctOf(f, i.yield?.average)}</TableCell>
+                <TableCell align="right">{pctOf(f, i.yield?.max)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -412,6 +423,11 @@ type YieldSort = 'average' | 'max';
 
 function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
   const theme = useTheme();
+  const t = useT();
+  const f = useFormat();
+  const sortId = useId();
+  const minId = useId();
+  const showId = useId();
   const accent = theme.palette.secondary.main;
   const [minPositions, setMinPositions] = useState(1);
   const [sortBy, setSortBy] = useState<YieldSort>('average');
@@ -425,33 +441,45 @@ function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
   const overall = stats.overallYield;
 
   return (
-    <Box sx={{ marginBottom: 5 }}>
-      <Typography variant="h3" gutterBottom>
-        Most profitable tokenized stocks
+    <Box component="section" sx={{ marginBottom: 5 }}>
+      <Typography variant="h3" component="h2" gutterBottom>
+        {t('summary.yield.title')}
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }}>
-        Only eligible positions with a reported APY above zero are counted: zero or missing APY is left out so it does not drag the average
-        down, APY above {fmtPct(index.data.settings.yield_apy_review_threshold_percent, 0)} is excluded as anomaly. {withYield.length} of{' '}
-        {stats.tokens.length} tokenized assets have such positions.
+        {t('summary.yield.text', {
+          threshold: f.pct(index.data.settings.yield_apy_review_threshold_percent, 0),
+          n: withYield.length,
+          total: stats.tokens.length
+        })}
       </Typography>
 
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
         <Grid size={{ xs: 12, sm: 4, md: 3 }}>
           <FormControl size="small" fullWidth>
-            <InputLabel>Sort by</InputLabel>
-            <Select value={sortBy} label="Sort by" onChange={(e) => setSortBy(e.target.value as YieldSort)}>
-              <MenuItem value="average">Average APY</MenuItem>
-              <MenuItem value="max">Max APY</MenuItem>
+            <InputLabel id={sortId}>{t('summary.yield.sortBy')}</InputLabel>
+            <Select
+              labelId={sortId}
+              value={sortBy}
+              label={t('summary.yield.sortBy')}
+              onChange={(e) => setSortBy(e.target.value as YieldSort)}
+            >
+              <MenuItem value="average">{t('summary.yield.sortAverage')}</MenuItem>
+              <MenuItem value="max">{t('summary.yield.sortMax')}</MenuItem>
             </Select>
           </FormControl>
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 3 }}>
           <FormControl size="small" fullWidth>
-            <InputLabel>Min. positions with APY</InputLabel>
-            <Select value={minPositions} label="Min. positions with APY" onChange={(e) => setMinPositions(Number(e.target.value))}>
+            <InputLabel id={minId}>{t('summary.yield.minPositions')}</InputLabel>
+            <Select
+              labelId={minId}
+              value={minPositions}
+              label={t('summary.yield.minPositions')}
+              onChange={(e) => setMinPositions(Number(e.target.value))}
+            >
               {[1, 2, 3, 5, 10].map((n) => (
                 <MenuItem key={n} value={n}>
-                  {n === 1 ? 'Any (≥ 1)' : `≥ ${n}`}
+                  {n === 1 ? t('common.any') : t('common.atLeast', { n })}
                 </MenuItem>
               ))}
             </Select>
@@ -459,19 +487,19 @@ function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 3 }}>
           <FormControl size="small" fullWidth>
-            <InputLabel>Show</InputLabel>
-            <Select value={limit} label="Show" onChange={(e) => setLimit(Number(e.target.value))}>
-              <MenuItem value={15}>Top 15</MenuItem>
-              <MenuItem value={30}>Top 30</MenuItem>
-              <MenuItem value={10000}>All</MenuItem>
+            <InputLabel id={showId}>{t('summary.yield.show')}</InputLabel>
+            <Select labelId={showId} value={limit} label={t('summary.yield.show')} onChange={(e) => setLimit(Number(e.target.value))}>
+              <MenuItem value={15}>{t('common.top', { n: 15 })}</MenuItem>
+              <MenuItem value={30}>{t('common.top', { n: 30 })}</MenuItem>
+              <MenuItem value={10000}>{t('common.all')}</MenuItem>
             </Select>
           </FormControl>
         </Grid>
       </Grid>
 
       <ChartCard
-        title={`Tokenized assets by ${sortBy === 'average' ? 'average' : 'max'} APY`}
-        subtitle={`Showing ${rows.length} of ${candidates.length} tokenized assets · value: average / max APY`}
+        title={sortBy === 'average' ? t('summary.yield.chartAverage') : t('summary.yield.chartMax')}
+        subtitle={t('summary.yield.chartSubtitle', { n: rows.length, total: candidates.length })}
       >
         <YieldKeys accent={accent} reference={overall?.average} />
         {rows.length ? (
@@ -481,7 +509,12 @@ function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
             labelWidth={190}
             items={rows.map((s) => ({
               id: String(s.token.id),
-              label: <TokenLabel token={s.token} caption={`${s.token.issuer_name ?? 'Unknown issuer'} · ${s.yield.count} pos.`} />,
+              label: (
+                <TokenLabel
+                  token={s.token}
+                  caption={`${s.token.issuer_name ?? t('common.unknownIssuer')} · ${t('summary.yield.positions', { n: s.yield.count })}`}
+                />
+              ),
               average: s.yield.average,
               max: s.yield.max,
               valueLabel: <ApyValue stats={s.yield} />,
@@ -497,7 +530,7 @@ function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
           />
         ) : (
           <Typography variant="body2" color="text.secondary">
-            No tokenized assets with at least {minPositions} positions with APY.
+            {t('summary.yield.empty', { n: minPositions })}
           </Typography>
         )}
       </ChartCard>
@@ -507,6 +540,8 @@ function YieldSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
 
 function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) {
   const theme = useTheme();
+  const t = useT();
+  const f = useFormat();
   const accent = theme.palette.secondary.main;
   const [params, setParams] = useSearchParams();
   const [showAll, setShowAll] = useState(false);
@@ -516,11 +551,11 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
     () =>
       index.data.underlyings
         .map((u) => {
-          const parts = issuerParts(stats, u);
+          const parts = issuerParts(t, stats, u);
           return { u, parts, total: parts.reduce((sum, p) => sum + p.value, 0) };
         })
         .sort((a, b) => b.total - a.total || a.u.ticker.localeCompare(b.u.ticker)),
-    [index, stats]
+    [index, stats, t]
   );
   // The chart ranks underlyings by positions; the picker lists them alphabetically.
   const pickerOptions = useMemo(() => [...overview].sort((a, b) => a.u.ticker.localeCompare(b.u.ticker)).map((o) => o.u), [overview]);
@@ -536,23 +571,21 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
 
   const shown = showAll ? overview : overview.slice(0, 15);
   const legendIssuers = issuerSegments(
+    t,
     stats.issuers.map((i) => ({
       id: i.issuer.id,
-      name: i.issuer.name ?? 'Unknown issuer',
+      name: i.issuer.name ?? t('common.unknownIssuer'),
       value: i.issuer.issuer_usefulness_score,
       color: i.color
     }))
   );
 
   return (
-    <Box sx={{ marginBottom: 2 }}>
-      <Typography variant="h3" gutterBottom>
-        By underlying asset
+    <Box component="section" sx={{ marginBottom: 2 }}>
+      <Typography variant="h3" component="h2" gutterBottom>
+        {t('summary.underlying.title')}
       </Typography>
-      <ChartCard
-        title="Eligible positions by issuer"
-        subtitle="Each bar is one asset, split by the issuer of the tokenized assets used. Click an asset for its breakdown below."
-      >
+      <ChartCard title={t('summary.underlying.chart')} subtitle={t('summary.underlying.chartSubtitle')}>
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', marginBottom: 1.5 }}>
           {legendIssuers.map((s) => (
             <LegendKey key={s.id} color={s.color} label={s.label} />
@@ -572,17 +605,17 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
             ),
             valueLabel: (
               <Typography variant="body2" component="span" sx={{ fontWeight: 600 }}>
-                {fmtNum(total)}
+                {f.num(total)}
               </Typography>
             ),
-            segments: issuerSegments(parts),
+            segments: issuerSegments(t, parts),
             selected: u.id === selected?.id,
             onClick: () => select(u.ticker, true)
           }))}
         />
         {overview.length > 15 && (
-          <Button size="small" onClick={() => setShowAll(!showAll)} sx={{ marginTop: 1 }}>
-            {showAll ? 'Show top 15' : `Show all ${overview.length} assets`}
+          <Button size="small" onClick={() => setShowAll(!showAll)} aria-expanded={showAll} sx={{ marginTop: 1 }}>
+            {showAll ? t('common.showTop', { n: 15 }) : t('common.showAll', { n: overview.length })}
           </Button>
         )}
       </ChartCard>
@@ -597,13 +630,13 @@ function UnderlyingSection({ index, stats }: { index: RwaIndex; stats: Stats }) 
               getOptionLabel={(u) => `${u.ticker} — ${u.name}`}
               isOptionEqualToValue={(a, b) => a.id === b.id}
               onChange={(_, u) => u && select(u.ticker)}
-              renderInput={(p) => <TextField {...p} label="Underlying asset" size="small" />}
+              renderInput={(p) => <TextField {...p} label={t('summary.underlying.picker')} size="small" />}
               size="small"
               fullWidth
             />
           </Grid>
         </Grid>
-        {selected && <UnderlyingDetail index={index} stats={stats} u={selected} parts={issuerParts(stats, selected)} accent={accent} />}
+        {selected && <UnderlyingDetail index={index} stats={stats} u={selected} parts={issuerParts(t, stats, selected)} accent={accent} />}
       </Box>
     </Box>
   );
@@ -618,7 +651,9 @@ interface DetailProps {
 }
 
 function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const versions = u.token_ids
     .map((id) => stats.tokenStatById.get(id))
     .filter((s): s is TokenStat => !!s)
@@ -640,11 +675,13 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, marginBottom: 2, flexWrap: 'wrap' }}>
         <TokenIcon symbol={u.ticker} src={logoUrl(u.logo)} />
         <Box>
-          <Typography variant="h4">{u.ticker}</Typography>
+          <Typography variant="h4" component="h3">
+            {u.ticker}
+          </Typography>
           <Typography variant="body2" color="text.secondary">
             {u.name} ·{' '}
-            <Link component={RouterLink} to={`/assets/${u.ticker}`} underline="hover">
-              Open asset page
+            <Link component={LocaleLink} to={`/assets/${u.ticker}`} underline="always">
+              {t('summary.underlying.open')}
             </Link>
           </Typography>
         </Box>
@@ -653,44 +690,35 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
       <Box sx={{ marginBottom: 2 }}>
         <StatGrid
           stats={[
-            {
-              label: 'Eligible positions',
-              value: fmtNum(u.eligible_opportunities_count),
-              hint: 'Distinct positions across all tokenized assets'
-            },
-            {
-              label: 'Tokenized assets in DeFi',
-              value: `${inDefi} / ${versions.length}`,
-              hint: 'Tokenized assets with at least one eligible position'
-            },
-            { label: 'Positions with APY > 0', value: fmtNum(assetYield?.count ?? 0) },
-            { label: 'Average APY', value: pct(assetYield?.average), hint: 'Mean over distinct positions with APY > 0' },
-            { label: 'Max APY', value: pct(assetYield?.max) }
+            { label: t('stat.eligible'), value: f.num(u.eligible_opportunities_count), hint: t('stat.eligible.hintDistinctAll') },
+            { label: t('summary.underlying.inDefi'), value: `${inDefi} / ${versions.length}`, hint: t('summary.underlying.inDefi.hint') },
+            { label: t('summary.stat.positionsWithApy'), value: f.num(assetYield?.count ?? 0) },
+            { label: t('summary.stat.avgApy'), value: pctOf(f, assetYield?.average), hint: t('summary.stat.avgApy.hint') },
+            { label: t('summary.stat.maxApy'), value: pctOf(f, assetYield?.max) }
           ]}
         />
       </Box>
 
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
         <Grid size={{ xs: 12, md: 6 }}>
-          <ChartCard
-            title="DeFi readiness by issuer"
-            subtitle={`Share of ${u.ticker} eligible positions by the issuer of the tokenized asset used`}
-          >
+          <ChartCard title={t('summary.underlying.readiness')} subtitle={t('summary.underlying.readiness.subtitle', { ticker: u.ticker })}>
             {u.eligible_opportunities_count > 0 ? (
               <DonutChart
-                segments={issuerSegments(parts.map((p) => ({ ...p, detail: versionsOf(p.id) })))}
-                centerCaption="eligible positions"
-                onSelect={(id) => id !== OTHER_ID && navigate(`/issuers/${id}`)}
+                segments={issuerSegments(
+                  t,
+                  parts.map((p) => ({ ...p, detail: versionsOf(p.id) }))
+                )}
+                centerCaption={t('summary.eligiblePositions')}
               />
             ) : (
               <Typography variant="body2" color="text.secondary">
-                No eligible positions found for {u.ticker} in the current coverage.
+                {t('summary.underlying.noEligible', { ticker: u.ticker })}
               </Typography>
             )}
           </ChartCard>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
-          <ChartCard title="Yield by tokenized asset" subtitle="Average and max APY over each token’s positions with APY > 0">
+          <ChartCard title={t('summary.underlying.yield')} subtitle={t('summary.underlying.yield.subtitle')}>
             {withYield.length ? (
               <>
                 <YieldKeys accent={accent} reference={stats.overallYield?.average} />
@@ -700,23 +728,30 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
                   labelWidth={150}
                   items={withYield.map((s) => ({
                     id: String(s.token.id),
-                    label: <TokenLabel token={s.token} caption={`${s.token.issuer_name ?? 'Unknown issuer'} · ${s.yield.count} pos.`} />,
+                    label: (
+                      <TokenLabel
+                        token={s.token}
+                        caption={`${s.token.issuer_name ?? t('common.unknownIssuer')} · ${t('summary.yield.positions', { n: s.yield.count })}`}
+                      />
+                    ),
                     average: s.yield.average,
                     max: s.yield.max,
                     valueLabel: <ApyValue stats={s.yield} />,
-                    tooltip: <ApyTooltip title={`${s.token.symbol} · ${s.token.issuer_name ?? 'Unknown issuer'}`} stats={s.yield} />,
+                    tooltip: (
+                      <ApyTooltip title={`${s.token.symbol} · ${s.token.issuer_name ?? t('common.unknownIssuer')}`} stats={s.yield} />
+                    ),
                     to: `/tokens/${s.token.id}`
                   }))}
                 />
               </>
             ) : (
               <Typography variant="body2" color="text.secondary">
-                No tokenized {u.ticker} has an eligible position with APY above zero.
+                {t('summary.underlying.noYield', { ticker: u.ticker })}
               </Typography>
             )}
             {withYield.length > 0 && noYield.length > 0 && (
               <Typography variant="caption" color="text.secondary" component="div" sx={{ marginTop: 1.5 }}>
-                No APY &gt; 0: {noYield.map((s) => s.token.symbol).join(', ')}
+                {t('summary.underlying.noApyList', { list: noYield.map((s) => s.token.symbol).join(', ') })}
               </Typography>
             )}
           </ChartCard>
@@ -724,21 +759,22 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
       </Grid>
 
       <DataTableContainer sx={stickyColumn(1)}>
-        <Table size="small" aria-label="tokenized assets summary table">
+        <Table size="small">
+          <TableCaption>{t('table.tokenSummary')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>Token</TableCell>
-              <TableCell>Issuer</TableCell>
-              <TableCell align="right">Eligible positions</TableCell>
-              <TableCell align="right">Positions with APY</TableCell>
-              <TableCell align="right">Avg APY</TableCell>
-              <TableCell align="right">Max APY</TableCell>
+              <TableCell>{t('col.token')}</TableCell>
+              <TableCell>{t('col.issuer')}</TableCell>
+              <TableCell align="right">{t('col.eligiblePositions')}</TableCell>
+              <TableCell align="right">{t('col.positionsWithApy')}</TableCell>
+              <TableCell align="right">{t('col.avgApy')}</TableCell>
+              <TableCell align="right">{t('col.maxApy')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {versions.map((s) => (
               <TableRow key={s.token.id} hover onClick={() => navigate(`/tokens/${s.token.id}`)} sx={{ cursor: 'pointer' }}>
-                <TableCell>
+                <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
                   <RowLink to={`/tokens/${s.token.id}`}>
                     <TokenLabel token={s.token} caption={s.token.name ?? s.token.ticker} />
                   </RowLink>
@@ -746,6 +782,7 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
                 <TableCell>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <Box
+                      aria-hidden="true"
                       sx={{
                         width: 10,
                         height: 10,
@@ -754,13 +791,13 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
                         backgroundColor: stats.issuerColor.get(s.token.issuer_id ?? '') ?? OTHER_COLOR
                       }}
                     />
-                    {s.token.issuer_name ?? 'Unknown issuer'}
+                    {s.token.issuer_name ?? t('common.unknownIssuer')}
                   </Box>
                 </TableCell>
                 <TableCell align="right">{s.eligible.size}</TableCell>
                 <TableCell align="right">{s.yield?.count ?? 0}</TableCell>
-                <TableCell align="right">{pct(s.yield?.average)}</TableCell>
-                <TableCell align="right">{pct(s.yield?.max)}</TableCell>
+                <TableCell align="right">{pctOf(f, s.yield?.average)}</TableCell>
+                <TableCell align="right">{pctOf(f, s.yield?.max)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -773,59 +810,74 @@ function UnderlyingDetail({ index, stats, u, parts, accent }: DetailProps) {
 // ==============================|| PAGE ||============================== //
 
 function SummaryView({ index }: { index: RwaIndex }) {
+  const t = useT();
+  const f = useFormat();
   const series = useSeriesColors();
   const stats = useMemo(() => buildStats(index, series), [index, series]);
   const { summary, settings: s } = index.data;
-  const inDefi = stats.tokens.filter((t) => t.eligible.size > 0).length;
+  const thresholds = {
+    liquidity: f.usd(s.min_eligible_liquidity_usd),
+    hours: s.max_position_age_hours,
+    threshold: f.pct(s.yield_apy_review_threshold_percent, 0)
+  };
+  const inDefi = stats.tokens.filter((tk) => tk.eligible.size > 0).length;
   const overall = stats.overallYield;
-  const best = stats.tokens.reduce<TokenStat | null>((top, t) => (t.yield && (!top?.yield || t.yield.max > top.yield.max) ? t : top), null);
+  const best = stats.tokens.reduce<TokenStat | null>(
+    (top, tk) => (tk.yield && (!top?.yield || tk.yield.max > top.yield.max) ? tk : top),
+    null
+  );
   const leader = stats.issuers[0];
   const presenceLeader = byDefiPresence(stats.issuers)[0];
   const totalScore = stats.issuers.reduce((sum, i) => sum + i.issuer.issuer_usefulness_score, 0);
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant="h3" gutterBottom>
-        Summary
+      <Typography variant="h3" component="h1" gutterBottom>
+        {t('summary.title')}
+      </Typography>
+      <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2, maxWidth: 900 }}>
+        {t('summary.intro')}
       </Typography>
       <MethodNote data={index.data} />
 
       <Box sx={{ marginBottom: 4 }}>
         <StatGrid
           stats={[
-            { label: 'Eligible positions', value: fmtNum(summary.eligible_opportunities_count) },
+            { label: t('stat.eligible'), value: f.num(summary.eligible_opportunities_count) },
             {
-              label: 'Tokenized assets in DeFi',
-              value: `${share(inDefi, stats.tokens.length)}`,
-              hint: `${inDefi} of ${stats.tokens.length} tokenized assets have at least one eligible position`
+              label: t('summary.stat.tokensInDefi'),
+              value: shareOf(f, inDefi, stats.tokens.length),
+              hint: t('summary.stat.tokensInDefi.hint', { n: inDefi, total: stats.tokens.length })
             },
             {
-              label: 'Top issuer',
-              value: leader ? `${leader.issuer.name ?? DASH}` : DASH,
-              hint: leader ? `${share(leader.issuer.issuer_usefulness_score, totalScore)} of eligible positions` : undefined
-            },
-            {
-              label: 'Top issuer by DeFi coverage',
-              value: presenceLeader ? `${presenceLeader.issuer.name ?? DASH}` : DASH,
-              hint: presenceLeader
-                ? `${presenceLeader.inDefi} of ${presenceLeader.versions} tokenized assets (${share(presenceLeader.inDefi, presenceLeader.versions)}) have at least one eligible position`
+              label: t('summary.stat.topIssuer'),
+              value: leader ? (leader.issuer.name ?? DASH) : DASH,
+              hint: leader
+                ? t('summary.stat.topIssuer.hint', { share: shareOf(f, leader.issuer.issuer_usefulness_score, totalScore) })
                 : undefined
             },
             {
-              label: 'Positions with APY > 0',
-              value: fmtNum(overall?.count ?? 0),
-              hint: 'Distinct eligible positions with a positive reported APY; zero and missing APY excluded'
+              label: t('summary.stat.topCoverage'),
+              value: presenceLeader ? (presenceLeader.issuer.name ?? DASH) : DASH,
+              hint: presenceLeader
+                ? t('summary.stat.topCoverage.hint', {
+                    n: presenceLeader.inDefi,
+                    total: presenceLeader.versions,
+                    share: shareOf(f, presenceLeader.inDefi, presenceLeader.versions)
+                  })
+                : undefined
             },
-            { label: 'Average APY', value: pct(overall?.average), hint: 'Mean over distinct eligible positions with APY > 0' },
+            { label: t('summary.stat.positionsWithApy'), value: f.num(overall?.count ?? 0), hint: t('summary.stat.positionsWithApy.hint') },
+            { label: t('summary.stat.avgApy'), value: pctOf(f, overall?.average), hint: t('summary.stat.avgApy.hint') },
             {
-              label: 'Max APY',
-              value: pct(overall?.max),
-              hint: best ? `${best.token.symbol} (${best.token.issuer_name ?? 'Unknown issuer'})` : undefined
+              label: t('summary.stat.maxApy'),
+              value: pctOf(f, overall?.max),
+              hint: best ? `${best.token.symbol} (${best.token.issuer_name ?? t('common.unknownIssuer')})` : undefined
             },
             {
-              label: 'Tokenized assets with APY > 0',
-              value: fmtNum(stats.tokens.filter((t) => t.yield).length),
-              hint: `Out of ${stats.tokens.length} tokenized assets`
+              label: t('summary.stat.tokensWithApy'),
+              value: f.num(stats.tokens.filter((tk) => tk.yield).length),
+              hint: t('summary.stat.tokensWithApy.hint', { total: stats.tokens.length })
             }
           ]}
         />
@@ -837,47 +889,14 @@ function SummaryView({ index }: { index: RwaIndex }) {
 
       <Legend
         items={[
-          {
-            term: 'Eligible position',
-            description:
-              `A DeFi position that contains the token, confirmed by its contract address (directly or via LP → vault), is a real ` +
-              `use-case (DEX LP, lending supply, vault, staking, yield market), has liquidity ≥ $${Number(s.min_eligible_liquidity_usd).toLocaleString('en-US')} ` +
-              `and source data not older than ${s.max_position_age_hours}h at collection.`
-          },
-          {
-            term: 'Share',
-            description:
-              'Issuer score (unique eligible positions of its tokenized assets) divided by the sum of all issuer scores. A pool holding ' +
-              'tokenized assets of two issuers counts for each of them.'
-          },
-          {
-            term: 'Tokenized assets in DeFi',
-            description:
-              'Tokenized assets with at least one eligible position / all tokenized assets of the issuer or underlying in the basket. ' +
-              'Shows how much of the issuer’s line-up is usable in DeFi, independent of how many positions each token has.'
-          },
-          {
-            term: 'Protocols',
-            description:
-              'Number of distinct DeFi protocols (Uniswap V3, Morpho, Beefy…) with at least one eligible position holding any of the ' +
-              'issuer’s tokenized assets. Many pools of the same protocol count once; protocol versions (Uniswap V2 vs V3) count separately.'
-          },
-          {
-            term: 'Average APY',
-            description:
-              'Mean reported APY over distinct eligible positions with APY above zero. Positions with zero or no reported APY are left out, ' +
-              `APY above ${fmtPct(s.yield_apy_review_threshold_percent, 0)} is excluded as anomaly. Reported APY of one position is not an expected return.`
-          },
-          { term: 'Max APY', description: 'Highest reported APY among those positions.' },
-          {
-            term: 'Basket average',
-            description: 'Average APY over all eligible positions with APY > 0 in the basket; drawn as a vertical line on the yield charts.'
-          },
-          {
-            term: 'pos.',
-            description:
-              'Number of eligible positions with APY > 0 behind the token’s average. One position means the average equals the max.'
-          }
+          { term: t('legend.summary.eligibleTerm'), description: t('legend.summary.eligible', thresholds) },
+          { term: t('col.share'), description: t('legend.summary.share') },
+          { term: t('col.tokensInDefi'), description: t('legend.summary.tokensInDefi') },
+          { term: t('col.protocols'), description: t('legend.summary.protocols') },
+          { term: t('summary.stat.avgApy'), description: t('legend.summary.avgApy', thresholds) },
+          { term: t('summary.stat.maxApy'), description: t('legend.summary.maxApy') },
+          { term: t('legend.summary.basketAverageTerm'), description: t('legend.summary.basketAverage') },
+          { term: t('legend.summary.posTerm'), description: t('legend.summary.pos') }
         ]}
       />
     </Box>

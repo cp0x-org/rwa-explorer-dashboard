@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useId, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
@@ -10,7 +10,8 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 import { relationRows, RwaIndex } from 'api/rwa';
-import { categoryLabel, fmtPct, fmtUsd, networkName } from 'utils/rwa';
+import { categoryLabel, networkName } from 'utils/rwa';
+import { useFormat, useT } from 'i18n';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
 import MethodNote from './components/MethodNote';
@@ -24,6 +25,10 @@ type LinkFilter = 'all' | 'direct' | 'indirect';
 const uniqueSorted = (values: string[]) => Array.from(new Set(values)).sort();
 
 function OpportunitiesView({ index }: { index: RwaIndex }) {
+  const t = useT();
+  const f = useFormat();
+  const statusId = useId();
+  const linkId = useId();
   const [params] = useSearchParams();
   const [underlyings, setUnderlyings] = useState<string[]>(params.get('underlying') ? [params.get('underlying')!] : []);
   const [issuers, setIssuers] = useState<string[]>(params.get('issuer') ? [params.get('issuer')!] : []);
@@ -39,13 +44,18 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
     () =>
       relationRows(
         index,
-        index.data.tokens.filter((t) => t.kind !== 'derivative' && t.kind !== 'unclassified'),
+        index.data.tokens.filter((tk) => tk.kind !== 'derivative' && tk.kind !== 'unclassified'),
         true
       ),
     [index]
   );
   const platformNames = useMemo(() => new Map(allRows.map((r) => [r.opportunity.platform, r.opportunity.platform_name])), [allRows]);
   const { settings: s } = index.data;
+  const thresholds = {
+    liquidity: f.usd(s.min_eligible_liquidity_usd),
+    hours: s.max_position_age_hours,
+    threshold: f.pct(s.yield_apy_review_threshold_percent, 0)
+  };
   const issuerNames = new Map(index.data.issuers.map((i) => [i.id, i.name ?? i.id]));
 
   const query = search.trim().toLowerCase();
@@ -68,14 +78,17 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant="h3" gutterBottom>
-        DeFi Positions
+      <Typography variant="h3" component="h1" gutterBottom>
+        {t('positions.title')}
+      </Typography>
+      <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2, maxWidth: 900 }}>
+        {t('positions.intro')}
       </Typography>
       <MethodNote data={index.data} />
 
       <FilterPanel
         active={
-          [underlyings, issuers, networks, categories, platforms].filter((f) => f.length > 0).length +
+          [underlyings, issuers, networks, categories, platforms].filter((fl) => fl.length > 0).length +
           (search.trim() ? 1 : 0) +
           (status !== 'eligible' ? 1 : 0) +
           (link !== 'all' ? 1 : 0)
@@ -84,7 +97,7 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
         <Grid container spacing={2} sx={{ marginBottom: 2 }}>
           <Grid size={{ xs: 12, md: 4 }}>
             <MultiFilter
-              label="Filter By Underlying"
+              label={t('filter.underlying')}
               options={index.data.underlyings.map((u) => u.ticker)}
               value={underlyings}
               onChange={setUnderlyings}
@@ -92,7 +105,7 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
             <MultiFilter
-              label="Filter By Issuer"
+              label={t('filter.issuer')}
               options={index.data.issuers.map((i) => i.id)}
               value={issuers}
               onChange={setIssuers}
@@ -101,7 +114,7 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
             <MultiFilter
-              label="Filter By Network"
+              label={t('filter.network')}
               options={uniqueSorted(allRows.map((r) => r.opportunity.network))}
               value={networks}
               onChange={setNetworks}
@@ -110,16 +123,16 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
             <MultiFilter
-              label="Filter By Category"
+              label={t('filter.category')}
               options={uniqueSorted(allRows.map((r) => r.opportunity.category))}
               value={categories}
               onChange={setCategories}
-              getLabel={categoryLabel}
+              getLabel={(k) => categoryLabel(t, k)}
             />
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
             <MultiFilter
-              label="Filter By Protocol"
+              label={t('filter.protocol')}
               options={uniqueSorted(allRows.map((r) => r.opportunity.platform))}
               value={platforms}
               onChange={setPlatforms}
@@ -127,25 +140,25 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
             />
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
-            <TextField label="Filter By Name" value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
+            <TextField label={t('filter.name')} value={search} onChange={(e) => setSearch(e.target.value)} size="small" fullWidth />
           </Grid>
           <Grid size={{ xs: 6, md: 4 }}>
             <FormControl size="small" fullWidth>
-              <InputLabel>Status</InputLabel>
-              <Select value={status} label="Status" onChange={(e) => setStatus(e.target.value as Status)}>
-                <MenuItem value="eligible">Eligible</MenuItem>
-                <MenuItem value="confirmed">All confirmed (raw)</MenuItem>
-                <MenuItem value="all">Incl. unconfirmed symbol matches</MenuItem>
+              <InputLabel id={statusId}>{t('filter.status')}</InputLabel>
+              <Select labelId={statusId} value={status} label={t('filter.status')} onChange={(e) => setStatus(e.target.value as Status)}>
+                <MenuItem value="eligible">{t('filter.status.eligible')}</MenuItem>
+                <MenuItem value="confirmed">{t('filter.status.confirmedRaw')}</MenuItem>
+                <MenuItem value="all">{t('filter.status.inclUnconfirmed')}</MenuItem>
               </Select>
             </FormControl>
           </Grid>
           <Grid size={{ xs: 6, md: 4 }}>
             <FormControl size="small" fullWidth>
-              <InputLabel>Link</InputLabel>
-              <Select value={link} label="Link" onChange={(e) => setLink(e.target.value as LinkFilter)}>
-                <MenuItem value="all">Direct and indirect</MenuItem>
-                <MenuItem value="direct">Direct</MenuItem>
-                <MenuItem value="indirect">Indirect</MenuItem>
+              <InputLabel id={linkId}>{t('filter.link')}</InputLabel>
+              <Select labelId={linkId} value={link} label={t('filter.link')} onChange={(e) => setLink(e.target.value as LinkFilter)}>
+                <MenuItem value="all">{t('filter.link.all')}</MenuItem>
+                <MenuItem value="direct">{t('filter.link.direct')}</MenuItem>
+                <MenuItem value="indirect">{t('filter.link.indirect')}</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -153,56 +166,22 @@ function OpportunitiesView({ index }: { index: RwaIndex }) {
       </FilterPanel>
 
       <OpportunityTable index={index} rows={rows} showToken defaultRows={25} />
-      <Typography variant="body2" color="text.secondary">
-        Showing {rows.length} token–position links ({distinctPositions} distinct positions)
+      <Typography variant="body2" color="text.secondary" role="status">
+        {t('positions.showing', { n: rows.length, d: distinctPositions })}
       </Typography>
 
       <Legend
         items={[
-          {
-            term: 'Position',
-            description:
-              'A DeFi position indexed by Portals: pool, vault, lending market or yield market. Click a row for details: composition, ' +
-              'link path, APY breakdown, volume and flags.'
-          },
-          {
-            term: 'Token',
-            description:
-              'Tokenized asset used by the position, with its underlying ticker and issuer. A pool with two tracked tokenized assets ' +
-              'appears once per token.'
-          },
-          { term: 'Protocol', description: 'DeFi protocol of the position (Portals platform).' },
-          { term: 'Network', description: 'Blockchain where the position lives.' },
-          {
-            term: 'Category',
-            description:
-              'DEX LP: liquidity in a pool with the token. Lending supply: the token supplied to a lending market. Vault: a vault or ' +
-              'strategy holding the token or its LP. Yield market: PT/YT and similar markets. Wrapper: a wrapped token, not a use-case.'
-          },
-          {
-            term: 'Link',
-            description:
-              'Direct: the position holds the token itself. Indirect (n): it holds the token through other positions, n levels deep ' +
-              '(e.g. vault → LP → token); hover for the path. Symbol match: the name matches, but the token address is not in the ' +
-              'composition — unconfirmed and never counted.'
-          },
-          {
-            term: 'Liquidity',
-            description: 'Pool TVL or vault deposits reported by Portals, in USD. Values of nested positions are never summed.'
-          },
-          {
-            term: 'Reported APY',
-            description:
-              `Total APY reported by Portals for this position (base + rewards): a snapshot, not an expected return. ⚠ marks APY above ` +
-              `${fmtPct(s.yield_apy_review_threshold_percent, 0)}, excluded from yield statistics. Borrow APY is a cost and is shown only in the details.`
-          },
-          {
-            term: 'Status',
-            description:
-              `Eligible: counted in the ratings. Low liquidity: below ${fmtUsd(s.min_eligible_liquidity_usd)}. Stale: source data older ` +
-              `than ${s.max_position_age_hours}h at collection. Not a use-case: wrapper or unknown category. Unconfirmed: symbol match only.`
-          },
-          { term: 'Updated', description: 'How long ago Portals last updated the data of this position.' }
+          { term: t('col.position'), description: t('legend.position.position') },
+          { term: t('col.token'), description: t('legend.position.token') },
+          { term: t('col.protocol'), description: t('legend.position.protocol') },
+          { term: t('col.network'), description: t('legend.position.network') },
+          { term: t('col.category'), description: t('legend.position.category') },
+          { term: t('col.link'), description: t('legend.position.link') },
+          { term: t('col.liquidity'), description: t('legend.position.liquidity') },
+          { term: t('col.reportedApy'), description: t('legend.position.apy', thresholds) },
+          { term: t('col.status'), description: t('legend.position.status', thresholds) },
+          { term: t('col.updated'), description: t('legend.position.updated') }
         ]}
       />
     </Box>

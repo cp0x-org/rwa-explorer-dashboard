@@ -50,7 +50,10 @@
     "build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "build-stage": "env-cmd -f .env.qa vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" e2e",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "serve": "node scripts/serve-dist.mjs",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "knip": "knip"
@@ -74,10 +77,12 @@
     ]
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
     "@emotion/server": "11.11.0",
     "@eslint/compat": "1.2.8",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.25.1",
+    "@playwright/test": "1.63.0",
     "@types/chance": "1.1.6",
     "@types/jest": "29.5.14",
     "@types/lodash-es": "4.17.12",
@@ -98,6 +103,7 @@
     "sass": "1.87.0",
     "typescript": "5.8.3",
     "vite-plugin-svgr": "^4.3.0",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "3"
   }
 }

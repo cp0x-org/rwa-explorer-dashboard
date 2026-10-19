@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import Table from '@mui/material/Table';
@@ -12,12 +11,15 @@ import Typography from '@mui/material/Typography';
 
 import { logoUrl } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
+import VisuallyHidden from 'ui-component/VisuallyHidden';
 import DataTableContainer from './DataTableContainer';
+import TableCaption from './TableCaption';
 import { stickyColumn } from './tableSx';
 import RowLink from './RowLink';
 import { Token } from 'types/rwa';
-import { compareNullable, DEPLOYMENT_STATUS, fmtPct, fmtUsd, networkName, num } from 'utils/rwa';
-import SortHeader, { SortOrder, useSort } from './SortHeader';
+import { compareNullable, deploymentChip, networkName, num } from 'utils/rwa';
+import { useFormat, useLocaleNavigate, useT } from 'i18n';
+import SortHeader, { HeaderCell, SortOrder, useSort } from './SortHeader';
 import TablePager from './TablePager';
 
 export type TokenSortField = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
@@ -51,18 +53,28 @@ export function compareTokens(a: Token, b: Token, field: Field, order: SortOrder
 export const deploymentLabel = (d: Token['deployments'][number]) => (d.network ? networkName(d.network) : d.cmc_network);
 
 export function NetworkChips({ token }: { token: Token }) {
+  const t = useT();
   return (
-    <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap', maxWidth: 180 }}>
-      {token.deployments.map((d) => (
-        <Tooltip key={`${d.cmc_network}:${d.address}`} title={DEPLOYMENT_STATUS[d.status]?.label ?? d.status} arrow>
-          <Chip
-            size="small"
-            label={deploymentLabel(d)}
-            color={d.status === 'indexed' ? 'primary' : 'default'}
-            sx={{ opacity: d.status === 'indexed' ? 1 : 0.6 }}
-          />
-        </Tooltip>
-      ))}
+    <Box component="ul" sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap', maxWidth: 180, listStyle: 'none', margin: 0, padding: 0 }}>
+      {token.deployments.map((d) => {
+        const status = deploymentChip(t, d.status).label;
+        return (
+          <Tooltip key={`${d.cmc_network}:${d.address}`} title={status} describeChild arrow>
+            <Chip
+              component="li"
+              size="small"
+              label={
+                <>
+                  {deploymentLabel(d)}
+                  <VisuallyHidden>: {status}</VisuallyHidden>
+                </>
+              }
+              color={d.status === 'indexed' ? 'primary' : 'default'}
+              variant={d.status === 'indexed' ? 'filled' : 'outlined'}
+            />
+          </Tooltip>
+        );
+      })}
     </Box>
   );
 }
@@ -76,7 +88,9 @@ interface VersionsTableProps {
 
 // Comparison of tokenized versions, ranked by usefulness score.
 export default function VersionsTable({ tokens, showUnderlying = false, underlyingLogos, paginate = false }: VersionsTableProps) {
-  const navigate = useNavigate();
+  const t = useT();
+  const f = useFormat();
+  const navigate = useLocaleNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('score');
   const [page, setPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(25);
@@ -96,85 +110,87 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
   return (
     <>
       <DataTableContainer sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
-        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }} aria-label="tokenized assets table">
+        <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }}>
+          <TableCaption>{t('table.tokenized')}</TableCaption>
           <TableHead>
             <TableRow>
-              <TableCell>{showUnderlying ? header('ticker', 'Underlying') : '#'}</TableCell>
-              <TableCell>Token</TableCell>
-              <TableCell>Issuer</TableCell>
-              <TableCell>Networks</TableCell>
-              <TableCell>{header('score', 'Score', 'Eligible positions; ties: protocols, networks, direct positions')}</TableCell>
-              <TableCell>{header('raw', 'Raw')}</TableCell>
-              <TableCell>{header('protocols', 'Protocols')}</TableCell>
-              <TableCell>Direct / Indirect</TableCell>
-              <TableCell>{header('apy', 'APY max / median', 'Reported APY over eligible positions: highest and median')}</TableCell>
-              <TableCell>{header('mcap', 'MCap (CMC)')}</TableCell>
+              {showUnderlying ? header('ticker', t('col.underlying')) : <TableCell>{t('col.rank')}</TableCell>}
+              <TableCell>{t('col.token')}</TableCell>
+              <TableCell>{t('col.issuer')}</TableCell>
+              <TableCell>{t('col.networks')}</TableCell>
+              {header('score', t('col.score'), t('col.score.hint'))}
+              {header('raw', t('col.raw'))}
+              {header('protocols', t('col.protocols'))}
+              <HeaderCell label={t('col.directIndirect')} />
+              {header('apy', t('col.apyMaxMedian'), t('col.apyMaxMedian.hint'))}
+              {header('mcap', t('col.mcapCmc'))}
             </TableRow>
           </TableHead>
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
                 <TableCell colSpan={10} sx={{ color: 'text.secondary' }}>
-                  {showUnderlying ? 'No tokenized assets match the filters' : 'CMC tracks no tokenized assets for this underlying'}
+                  {showUnderlying ? t('tokenized.empty') : t('tokenized.emptyUnderlying')}
                 </TableCell>
               </TableRow>
             )}
-            {visible.map((t) => (
-              <TableRow key={t.id} hover onClick={() => navigate(`/tokens/${t.id}`)} sx={{ cursor: 'pointer' }}>
+            {visible.map((tk) => (
+              <TableRow key={tk.id} hover onClick={() => navigate(`/tokens/${tk.id}`)} sx={{ cursor: 'pointer' }}>
                 <TableCell>
                   {showUnderlying ? (
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                       <TokenIcon
-                        symbol={t.ticker}
-                        src={logoUrl(underlyingLogos?.get(t.ticker))}
+                        symbol={tk.ticker}
+                        src={logoUrl(underlyingLogos?.get(tk.ticker))}
                         avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
                       />
                       <Typography variant="body2" sx={{ fontWeight: 500 }}>
-                        {t.ticker}
+                        {tk.ticker}
                       </Typography>
                     </Box>
                   ) : (
-                    t.rank_in_underlying
+                    tk.rank_in_underlying
                   )}
                 </TableCell>
-                <TableCell>
-                  <RowLink to={`/tokens/${t.id}`}>
-                    <Tooltip title={t.name ?? ''} arrow>
+                <TableCell component="th" scope="row" sx={{ fontWeight: 'inherit' }}>
+                  <RowLink to={`/tokens/${tk.id}`}>
+                    <Tooltip title={tk.name ?? ''} describeChild arrow>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, whiteSpace: 'nowrap' }}>
                         <TokenIcon
-                          symbol={t.symbol ?? '?'}
-                          src={logoUrl(t.logo)}
+                          symbol={tk.symbol ?? '?'}
+                          src={logoUrl(tk.logo)}
                           avatarProps={{ sx: { width: 24, height: 24, fontSize: 10 } }}
                         />
                         <Typography variant="body2" component="span" sx={{ fontWeight: 500 }}>
-                          {t.symbol}
+                          {tk.symbol}
                         </Typography>
-                        {t.kind === 'wrapper' && <Chip size="small" label="Wrapper" />}
+                        {tk.name && <VisuallyHidden>, {tk.name}</VisuallyHidden>}
+                        {tk.kind === 'wrapper' && <Chip size="small" label={t('common.wrapper')} />}
                       </Box>
                     </Tooltip>
                   </RowLink>
                 </TableCell>
-                <TableCell>{t.issuer_name ?? '—'}</TableCell>
+                <TableCell>{tk.issuer_name ?? '—'}</TableCell>
                 <TableCell>
-                  <NetworkChips token={t} />
+                  <NetworkChips token={tk} />
                 </TableCell>
                 <TableCell>
                   <Typography variant="h5" component="span">
-                    {t.usefulness_score}
+                    {tk.usefulness_score}
                   </Typography>
                 </TableCell>
-                <TableCell>{t.counts.raw_confirmed_opportunities_count}</TableCell>
-                <TableCell>{t.counts.eligible_protocols_count}</TableCell>
+                <TableCell>{tk.counts.raw_confirmed_opportunities_count}</TableCell>
+                <TableCell>{tk.counts.eligible_protocols_count}</TableCell>
                 <TableCell>
-                  {t.counts.direct_eligible_count} / {t.counts.indirect_eligible_count}
+                  {tk.counts.direct_eligible_count} / {tk.counts.indirect_eligible_count}
                 </TableCell>
                 <TableCell>
-                  {fmtPct(t.yield.max_reported_apy_percent)}
+                  {f.pct(tk.yield.max_reported_apy_percent)}
                   <Typography variant="body2" color="text.secondary">
-                    {fmtPct(t.yield.median_reported_apy_percent)}
+                    {f.pct(tk.yield.median_reported_apy_percent)}
                   </Typography>
                 </TableCell>
-                <TableCell>{fmtUsd(t.market_cap_usd)}</TableCell>
+                <TableCell>{f.usd(tk.market_cap_usd)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
