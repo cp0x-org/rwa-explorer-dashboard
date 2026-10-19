@@ -1,0 +1,1515 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US36118L1061",
+ "ticker": "FUTU",
+ "name": "Futu Holdings (ADR)",
+ "isin": "US36118L1061",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:31Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Futu Holdings Ltd",
+   "symbol": "FUTU",
+   "slug": "futu-holdings",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 107.68877092270544,
+     "tokenized_market_cap": 939305.1982516864,
+     "tokenized_volume_24h": 532248.24503237,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 194,
+   "asset_type": "stock",
+   "rwa_rank": 695,
+   "has_tokens": true,
+   "average_tokenized_price": 107.68877092270544,
+   "tokenized_market_cap": 939305.1982516864,
+   "tokenized_volume_24h": 532248.24503237,
+   "last_updated": "2026-10-18T20:14:26.455Z",
+   "tokens": [
+    {
+     "symbol": "FUTUon",
+     "name": "Futu Holdings Tokenized Stock (Ondo)",
+     "price": 107.90670314964234,
+     "crypto_id": 38090,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 810861.87,
+     "volume_24h": 531665.26183677
+    },
+    {
+     "symbol": "rFUTU",
+     "name": "Futu Tokenized Stock (Reality)",
+     "price": 109.25475349226815,
+     "crypto_id": 40627,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 105498.56,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "FUTU",
+     "name": "Futu Holdings Tokenized Stock (Robinhood)",
+     "price": 106.39666099287196,
+     "crypto_id": 40716,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 24582.42,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "FUTU",
+     "market_url": "https://www.binance.com/en/stocks/EQ_FUTU"
+    }
+   ]
+  },
+  "info": {
+   "38090": {
+    "id": 38090,
+    "symbol": "FUTUon",
+    "name": "Futu Holdings Tokenized Stock (Ondo)",
+    "slug": "futu-holdings-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38090.png",
+    "date_added": "2025-09-03T10:55:31.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x5Ce215d9c37a195DF88e294a06B8396C296B4e15"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5Ce215d9c37a195DF88e294a06B8396C296B4e15",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "Ao5rKFRQ54W3DKSAtqfhBRPNHewwWRLNLao2JL9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40627": {
+    "id": 40627,
+    "symbol": "rFUTU",
+    "name": "Futu Tokenized Stock (Reality)",
+    "slug": "futu-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40627.png",
+    "date_added": "2026-07-02T07:39:13.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40716": {
+    "id": 40716,
+    "symbol": "FUTU",
+    "name": "Futu Holdings Tokenized Stock (Robinhood)",
+    "slug": "futu-holdings-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40716.png",
+    "date_added": "2026-08-04T07:31:37.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xeB30663bDFf0622Ef4e4E5cBb4E975F19f33f51D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xeB30663bDFf0622Ef4e4E5cBb4E975F19f33f51D",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+   "bsc:0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+   "ethereum:0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+   "robinhood:0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+  ],
+  "exact": {
+   "bsc:0x5acf40056ed51c8bbcd1b125ef803581ac89a627": {
+    "key": "bsc:0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+    "name": "Futu Holdings (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "FUTUON",
+    "price": 107.94,
+    "address": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+    "addresses": {
+     "ethereum": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+     "bsc": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 811622,
+    "image": "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205",
+    "metrics": {
+     "volumeUsd1d": "155092.672",
+     "volumeUsd7d": "1060739.886"
+    },
+    "metadata": {},
+    "tokenId": "48da7ff6-90bb-4314-9229-178238e6663b",
+    "totalSupply": "7514.47172456833",
+    "circulatingSupply": "7514.47172456833",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5ce215d9c37a195df88e294a06b8396c296b4e15": {
+    "key": "ethereum:0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+    "name": "Futu Holdings (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "FUTUON",
+    "price": 107.94,
+    "address": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+    "addresses": {
+     "ethereum": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+     "bsc": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 811622,
+    "image": "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205",
+    "metrics": {
+     "volumeUsd1d": "154898.782",
+     "volumeUsd7d": "1059117.821"
+    },
+    "metadata": {},
+    "tokenId": "48da7ff6-90bb-4314-9229-178238e6663b",
+    "totalSupply": "7514.47172456833",
+    "circulatingSupply": "7514.47172456833",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d": {
+    "key": "robinhood:0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "name": "Futu Holdings • Robinhood Token",
+    "decimals": 18,
+    "symbol": "FUTU",
+    "price": 103.85,
+    "address": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "addresses": {
+     "robinhood": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "liquidity": 23994.02325,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "311.059"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002e3b98468b2d49bea9b69a2b92228fa6",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "56062fa9-42bb-4ad0-a6b7-cc529e99107e",
+    "totalSupply": "231.045",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x061c43ed6bc5b30fb9d371b88b40d3c182ded853": {
+    "key": "arbitrum:0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+    "name": "Futu Holdings rStock",
+    "decimals": 18,
+    "symbol": "RFUTU",
+    "price": 109.93,
+    "address": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+    "addresses": {
+     "arbitrum": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 106148,
+    "image": "https://coin-images.coingecko.com/coins/images/102177100/large/e4961eab7014ed94ecc622d775fb63cb.png?1789116828",
+    "metrics": {
+     "volumeUsd1d": "42.928",
+     "volumeUsd7d": "8747.209"
+    },
+    "metadata": {},
+    "tokenId": "513c7562-e45f-4222-a80e-8643da5c755d",
+    "totalSupply": "965.619839766",
+    "circulatingSupply": "965.619839766",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "FUTU": {
+    "total_items": 31,
+    "pages": 1,
+    "received": 31,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xad7dc43a13df5236a282d0fd511f58f0db4e2645a18d3321d140e88e0ff04946": {
+    "key": "ethereum:0xad7dc43a13df5236a282d0fd511f58f0db4e2645a18d3321d140e88e0ff04946",
+    "name": "Uniswap V4 LP wUSDC/FUTUon",
+    "decimals": 18,
+    "symbol": "WUSDC/FUTUON",
+    "price": 9007199254740990,
+    "address": "0xad7dc43a13df5236a282d0fd511f58f0db4e2645a18d3321d140e88e0ff04946",
+    "addresses": {
+     "ethereum": "0xad7dc43a13df5236a282d0fd511f58f0db4e2645a18d3321d140e88e0ff04946"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205"
+    ],
+    "updatedAt": "2026-10-18T20:16:37.582Z",
+    "createdAt": "2026-09-28T10:39:17.559Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x5ce215d9c37a195df88e294a06b8396c296b4e15"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2bd5d9f1-1624-47b7-a33c-bc7e297b6a17",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3aa41a378d4385675af8accf3b2033b265a4ed3e461e6442e2fc88a4ef1e18b0": {
+    "key": "robinhood:0x3aa41a378d4385675af8accf3b2033b265a4ed3e461e6442e2fc88a4ef1e18b0",
+    "name": "Uniswap V4 LP USDG/FUTU",
+    "decimals": 18,
+    "symbol": "USDG/FUTU",
+    "price": 9007199254740990,
+    "address": "0x3aa41a378d4385675af8accf3b2033b265a4ed3e461e6442e2fc88a4ef1e18b0",
+    "addresses": {
+     "robinhood": "0x3aa41a378d4385675af8accf3b2033b265a4ed3e461e6442e2fc88a4ef1e18b0"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174192/large/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png?1782444782"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.645Z",
+    "createdAt": "2026-09-08T14:39:07.260Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    ],
+    "liquidity": 5101.866684600334,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 380,
+     "feePercentage": "3.8962"
+    },
+    "tokenId": "26097486-b3d2-4f31-8130-a96ebcdde35d",
+    "reserves": [
+     "0.627893",
+     "49.121220910932443547"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x5acf40056ed51c8bbcd1b125ef803581ac89a627": {
+    "key": "bsc:0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+    "name": "Futu Holdings (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "FUTUON",
+    "price": 107.94,
+    "address": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627",
+    "addresses": {
+     "ethereum": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+     "bsc": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 811622,
+    "image": "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205",
+    "metrics": {
+     "volumeUsd1d": "155092.672",
+     "volumeUsd7d": "1060739.886"
+    },
+    "metadata": {},
+    "tokenId": "48da7ff6-90bb-4314-9229-178238e6663b",
+    "totalSupply": "7514.47172456833",
+    "circulatingSupply": "7514.47172456833",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x653430560be843c4a3d143d0110e896c2ab8ac0d": {
+    "key": "ethereum:0x653430560be843c4a3d143d0110e896c2ab8ac0d",
+    "name": "Molecular Future",
+    "decimals": 16,
+    "symbol": "MOF",
+    "price": 0.021205996443302694,
+    "address": "0x653430560be843c4a3d143d0110e896c2ab8ac0d",
+    "addresses": {
+     "ethereum": "0x653430560be843c4a3d143d0110e896c2ab8ac0d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2120599.6443302697,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "1",
+     "volumeUsd7d": "6.97"
+    },
+    "metadata": {},
+    "tokenId": "e6b8d165-dd85-4899-bed6-7629705d9161",
+    "totalSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5a352ab81d057ebbd4265bbeec34ea660a370cfac80b22e1448355c6e12a2511": {
+    "key": "robinhood:0x5a352ab81d057ebbd4265bbeec34ea660a370cfac80b22e1448355c6e12a2511",
+    "name": "Uniswap V4 LP wUSDG/FUTU",
+    "decimals": 18,
+    "symbol": "WUSDG/FUTU",
+    "price": 9007199254740990,
+    "address": "0x5a352ab81d057ebbd4265bbeec34ea660a370cfac80b22e1448355c6e12a2511",
+    "addresses": {
+     "robinhood": "0x5a352ab81d057ebbd4265bbeec34ea660a370cfac80b22e1448355c6e12a2511"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174192/large/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png?1782444782"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.802Z",
+    "createdAt": "2026-08-14T14:53:47.317Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    ],
+    "liquidity": 10097.06244523161,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "0f10d8ed-442d-4c0d-8136-56ed175a0275",
+    "reserves": [
+     "9996.852542",
+     "0.031705564867557614"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6e15a54b5ecac17e58dadeddbe8506a7560252f9": {
+    "key": "ethereum:0x6e15a54b5ecac17e58dadeddbe8506a7560252f9",
+    "name": "SynFutures",
+    "decimals": 18,
+    "symbol": "F",
+    "price": 0.00274879,
+    "address": "0x6e15a54b5ecac17e58dadeddbe8506a7560252f9",
+    "addresses": {
+     "bsc": "0xc9ccbd76c2353e593cc975f13295e8289d04d3bb",
+     "base": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
+     "ethereum": "0x6e15a54b5ecac17e58dadeddbe8506a7560252f9"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-12-09T14:45:58.238Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13945685,
+    "image": "https://coin-images.coingecko.com/coins/images/52186/large/synfutures_f_token_light_200.png?1732722899",
+    "metrics": {
+     "volumeUsd1d": "704787.169",
+     "volumeUsd7d": "8589770.327"
+    },
+    "metadata": {},
+    "tokenId": "52ec1690-959c-4414-84df-c3527fbbd15b",
+    "totalSupply": "10000000000",
+    "circulatingSupply": "5075354617",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd4ae236a5080a09c0f7bd6e6b84919523573a43b": {
+    "key": "ethereum:0xd4ae236a5080a09c0f7bd6e6b84919523573a43b",
+    "name": "Future T.I.M.E. Dividend",
+    "decimals": 18,
+    "symbol": "FUTURE",
+    "price": 0.00029111367584265806,
+    "address": "0xd4ae236a5080a09c0f7bd6e6b84919523573a43b",
+    "addresses": {
+     "ethereum": "0xd4ae236a5080a09c0f7bd6e6b84919523573a43b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 582227.3516853161,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "71.52",
+     "volumeUsd7d": "127.56"
+    },
+    "metadata": {},
+    "tokenId": "6e1cb5bc-b5dc-4730-839f-dd5caddaa73a",
+    "totalSupply": "2000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc4360c6d39b7125e6d5f236ccc305ad854edd109": {
+    "key": "ethereum:0xc4360c6d39b7125e6d5f236ccc305ad854edd109",
+    "name": "The Man from the Future",
+    "decimals": 18,
+    "symbol": "HENRY",
+    "price": 4.78043211210701e-06,
+    "address": "0xc4360c6d39b7125e6d5f236ccc305ad854edd109",
+    "addresses": {
+     "ethereum": "0xc4360c6d39b7125e6d5f236ccc305ad854edd109"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-04-26T19:02:25.481Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4780.43211210701,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "b3edd263-5464-4a91-a3b9-47abffefcaa6",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1342a3b6340563bb01c7c9c398cec05c8bb122d4ed6672d9aca8653ac95d3de1": {
+    "key": "ethereum:0x1342a3b6340563bb01c7c9c398cec05c8bb122d4ed6672d9aca8653ac95d3de1",
+    "name": "Uniswap V4 LP EGP/FUTUon",
+    "decimals": 18,
+    "symbol": "EGP/FUTUON",
+    "price": 9007199254740990,
+    "address": "0x1342a3b6340563bb01c7c9c398cec05c8bb122d4ed6672d9aca8653ac95d3de1",
+    "addresses": {
+     "ethereum": "0x1342a3b6340563bb01c7c9c398cec05c8bb122d4ed6672d9aca8653ac95d3de1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.183Z",
+    "createdAt": "2026-10-14T06:54:25.777Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x5ce215d9c37a195df88e294a06b8396c296b4e15"
+    ],
+    "liquidity": 20060.938560802068,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.91"
+    },
+    "tokenId": "29cece65-f549-43c9-96e0-6f404522120e",
+    "reserves": [
+     "19999.99999999999999998",
+     "0.243745048407275301"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x01ff50f8b7f74e4f00580d9596cd3d0d6d6e326f": {
+    "key": "ethereum:0x01ff50f8b7f74e4f00580d9596cd3d0d6d6e326f",
+    "name": "BnkToTheFuture",
+    "decimals": 18,
+    "symbol": "BFT",
+    "price": 0.00045691,
+    "address": "0x01ff50f8b7f74e4f00580d9596cd3d0d6d6e326f",
+    "addresses": {
+     "ethereum": "0x01ff50f8b7f74e4f00580d9596cd3d0d6d6e326f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 456910,
+    "image": "https://assets.coingecko.com/coins/images/3468/large/bnktothefuture.png?1696504157",
+    "metrics": {
+     "volumeUsd1d": "501.573",
+     "volumeUsd7d": "3511.011"
+    },
+    "metadata": {},
+    "tokenId": "cacd5984-31dd-4fc8-b938-731ae3e1f2de",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0xec54a961642f39d9ab0c2b48630b879013987f14": {
+    "key": "polygon:0xec54a961642f39d9ab0c2b48630b879013987f14",
+    "name": "Uniswap V3 FutureTalk/(PoS) Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "FT/USDT",
+    "price": 9007199254740990,
+    "address": "0xec54a961642f39d9ab0c2b48630b879013987f14",
+    "addresses": {
+     "polygon": "0xec54a961642f39d9ab0c2b48630b879013987f14"
+    },
+    "platform": "uniswap-v3",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.328Z",
+    "createdAt": "2025-10-07T09:18:36.072Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5bec61a4df68da5d7f0ea220a4675044d04204d1",
+     "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+    ],
+    "liquidity": 34394.435438126566,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.996"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "1ccbed5b-9403-4bc2-8368-3f5f3c1ac6bb",
+    "reserves": [
+     "16659.350441739942745992",
+     "3228.338496"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7f45477db5f35ca3f6475f7884c6c2a3e90057820674c267c33586691ae61a04": {
+    "key": "bsc:0x7f45477db5f35ca3f6475f7884c6c2a3e90057820674c267c33586691ae61a04",
+    "name": "Uniswap V4 LP USDT/FUTUon",
+    "decimals": 18,
+    "symbol": "USDT/FUTUON",
+    "price": 9007199254740990,
+    "address": "0x7f45477db5f35ca3f6475f7884c6c2a3e90057820674c267c33586691ae61a04",
+    "addresses": {
+     "bsc": "0x7f45477db5f35ca3f6475f7884c6c2a3e90057820674c267c33586691ae61a04"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.876Z",
+    "createdAt": "2026-09-08T17:18:32.033Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    ],
+    "liquidity": 2308.982568332813,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "21.939"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 700,
+     "feePercentage": "7.093"
+    },
+    "tokenId": "c0525769-9d99-4173-af6f-a3d2c4ab4b41",
+    "reserves": [
+     "468.572879338172386185",
+     "17.053840799437661036"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc9ccbd76c2353e593cc975f13295e8289d04d3bb": {
+    "key": "bsc:0xc9ccbd76c2353e593cc975f13295e8289d04d3bb",
+    "name": "SynFutures",
+    "decimals": 18,
+    "symbol": "F",
+    "price": 0.00274879,
+    "address": "0xc9ccbd76c2353e593cc975f13295e8289d04d3bb",
+    "addresses": {
+     "bsc": "0xc9ccbd76c2353e593cc975f13295e8289d04d3bb",
+     "base": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
+     "ethereum": "0x6e15a54b5ecac17e58dadeddbe8506a7560252f9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-05-28T11:22:11.283Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13945685,
+    "image": "https://coin-images.coingecko.com/coins/images/52186/large/synfutures_f_token_light_200.png?1732722899",
+    "metrics": {
+     "volumeUsd1d": "707501.216",
+     "volumeUsd7d": "8735624.808"
+    },
+    "metadata": {},
+    "tokenId": "52ec1690-959c-4414-84df-c3527fbbd15b",
+    "totalSupply": "10000000000",
+    "circulatingSupply": "5075354617",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5ce215d9c37a195df88e294a06b8396c296b4e15": {
+    "key": "ethereum:0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+    "name": "Futu Holdings (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "FUTUON",
+    "price": 107.94,
+    "address": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+    "addresses": {
+     "ethereum": "0x5ce215d9c37a195df88e294a06b8396c296b4e15",
+     "bsc": "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 811622,
+    "image": "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205",
+    "metrics": {
+     "volumeUsd1d": "154898.782",
+     "volumeUsd7d": "1059117.821"
+    },
+    "metadata": {},
+    "tokenId": "48da7ff6-90bb-4314-9229-178238e6663b",
+    "totalSupply": "7514.47172456833",
+    "circulatingSupply": "7514.47172456833",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x58dbfebf1974b036a248566f2d80862477b3f09c0ec921f253beb24535d12dc6": {
+    "key": "robinhood:0x58dbfebf1974b036a248566f2d80862477b3f09c0ec921f253beb24535d12dc6",
+    "name": "Uniswap V4 LP ETH/FUTU",
+    "decimals": 18,
+    "symbol": "ETH/FUTU",
+    "price": 9007199254740990,
+    "address": "0x58dbfebf1974b036a248566f2d80862477b3f09c0ec921f253beb24535d12dc6",
+    "addresses": {
+     "robinhood": "0x58dbfebf1974b036a248566f2d80862477b3f09c0ec921f253beb24535d12dc6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174192/large/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png?1782444782"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.189Z",
+    "createdAt": "2026-08-19T20:59:47.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    ],
+    "liquidity": 2214.7199615161785,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "32.203"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "cf6f57a1-9d85-4511-9668-e26e6768a1b9",
+    "reserves": [
+     "0.084807482341040749",
+     "19.419718267364876628"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8d1dbdfb5d9716dda791e6a877e53d53ebfd7777": {
+    "key": "bsc:0x8d1dbdfb5d9716dda791e6a877e53d53ebfd7777",
+    "name": "Flap Futures",
+    "decimals": 18,
+    "symbol": "FFX",
+    "price": 6.37e-06,
+    "address": "0x8d1dbdfb5d9716dda791e6a877e53d53ebfd7777",
+    "addresses": {
+     "bsc": "0x8d1dbdfb5d9716dda791e6a877e53d53ebfd7777"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-04-01T22:42:54.624Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5293.72,
+    "image": "https://coin-images.coingecko.com/coins/images/102172724/large/6161255097673912100.jpg?1775049387",
+    "metrics": {
+     "volumeUsd1d": "4.642",
+     "volumeUsd7d": "42.552"
+    },
+    "metadata": {},
+    "tokenId": "9c8fd291-b6ff-4239-b545-140b883e36b4",
+    "totalSupply": "830682526.9155796",
+    "circulatingSupply": "830682526.9155796",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d": {
+    "key": "robinhood:0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "name": "Futu Holdings • Robinhood Token",
+    "decimals": 18,
+    "symbol": "FUTU",
+    "price": 103.85,
+    "address": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "addresses": {
+     "robinhood": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d",
+    "liquidity": 23994.02325,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "311.059"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002e3b98468b2d49bea9b69a2b92228fa6",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "56062fa9-42bb-4ad0-a6b7-cc529e99107e",
+    "totalSupply": "231.045",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x061c43ed6bc5b30fb9d371b88b40d3c182ded853": {
+    "key": "arbitrum:0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+    "name": "Futu Holdings rStock",
+    "decimals": 18,
+    "symbol": "RFUTU",
+    "price": 109.93,
+    "address": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853",
+    "addresses": {
+     "arbitrum": "0x061c43ed6bc5b30fb9d371b88b40d3c182ded853"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 106148,
+    "image": "https://coin-images.coingecko.com/coins/images/102177100/large/e4961eab7014ed94ecc622d775fb63cb.png?1789116828",
+    "metrics": {
+     "volumeUsd1d": "42.928",
+     "volumeUsd7d": "8747.209"
+    },
+    "metadata": {},
+    "tokenId": "513c7562-e45f-4222-a80e-8643da5c755d",
+    "totalSupply": "965.619839766",
+    "circulatingSupply": "965.619839766",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x26d55d21a7a072ebb10bdaf24a054f66243f91550a4ec5f791b9eeac613a68e2": {
+    "key": "robinhood:0x26d55d21a7a072ebb10bdaf24a054f66243f91550a4ec5f791b9eeac613a68e2",
+    "name": "Uniswap V4 LP USDG/FUTU",
+    "decimals": 18,
+    "symbol": "USDG/FUTU",
+    "price": 9007199254740990,
+    "address": "0x26d55d21a7a072ebb10bdaf24a054f66243f91550a4ec5f791b9eeac613a68e2",
+    "addresses": {
+     "robinhood": "0x26d55d21a7a072ebb10bdaf24a054f66243f91550a4ec5f791b9eeac613a68e2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174192/large/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png?1782444782"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.731Z",
+    "createdAt": "2026-09-08T14:36:52.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    ],
+    "liquidity": 11493.00385900562,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "136.397"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 450,
+     "feePercentage": "4.5955"
+    },
+    "tokenId": "2dcac9a9-92a6-4195-9014-a4f6265f69f8",
+    "reserves": [
+     "714.452675",
+     "103.78961178628425434"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xd444b75c2020d01545c2618b36a8aa7c58e11ab5": {
+    "key": "arbitrum:0xd444b75c2020d01545c2618b36a8aa7c58e11ab5",
+    "name": "ProShares Ultra VIX Short-Term Futures ETF rStock",
+    "decimals": 18,
+    "symbol": "RUVXY",
+    "price": 18.63,
+    "address": "0xd444b75c2020d01545c2618b36a8aa7c58e11ab5",
+    "addresses": {
+     "arbitrum": "0xd444b75c2020d01545c2618b36a8aa7c58e11ab5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4108.16,
+    "image": "https://coin-images.coingecko.com/coins/images/102177555/large/3142323203579e73915207ddf7ab9ca0.png?1789118304",
+    "metrics": {
+     "volumeUsd1d": "3765.784",
+     "volumeUsd7d": "125897.35"
+    },
+    "metadata": {},
+    "tokenId": "efa3d4f1-9e3d-40c5-bdf2-67161a4b8416",
+    "totalSupply": "220.49775133999998",
+    "circulatingSupply": "220.49775133999998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0c0ae048d2d0b50e7d8a2870556419d6b59b6a47": {
+    "key": "bsc:0x0c0ae048d2d0b50e7d8a2870556419d6b59b6a47",
+    "name": "AGRI FUTURE TOKEN",
+    "decimals": 18,
+    "symbol": "AGRF",
+    "price": 1.19,
+    "address": "0x0c0ae048d2d0b50e7d8a2870556419d6b59b6a47",
+    "addresses": {
+     "bsc": "0x0c0ae048d2d0b50e7d8a2870556419d6b59b6a47"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-05-16T10:00:12.118Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1186737213,
+    "image": "https://assets.coingecko.com/coins/images/37891/large/AGRF.jpg?1715846415",
+    "metrics": {
+     "volumeUsd1d": "63686.208",
+     "volumeUsd7d": "450262.159"
+    },
+    "metadata": {},
+    "tokenId": "55194538-d50c-4bd1-836d-3dec36896213",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbbec7f9c96131d40ba0953bf22e5aa4f01a50650": {
+    "key": "ethereum:0xbbec7f9c96131d40ba0953bf22e5aa4f01a50650",
+    "name": "Uniswap V3 Future Mining Token/Tether USD 1%",
+    "decimals": 18,
+    "symbol": "FMT/USDT",
+    "price": 9007199254740990,
+    "address": "0xbbec7f9c96131d40ba0953bf22e5aa4f01a50650",
+    "addresses": {
+     "ethereum": "0xbbec7f9c96131d40ba0953bf22e5aa4f01a50650"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.856Z",
+    "createdAt": "2025-10-26T06:25:58.822Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5434a4ee8bf7552202ec89a9ecaab71a08da9079",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 12936.11903532087,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "aba3848b-eb4e-49e7-b546-4cd9a95356f3",
+    "reserves": [
+     "8214.546472620893997823",
+     "7133.864804"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x2c24497d4086490e7ead87cc12597fb50c2e6ed6": {
+    "key": "base:0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
+    "name": "SynFutures",
+    "decimals": 18,
+    "symbol": "F",
+    "price": 0.00274879,
+    "address": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
+    "addresses": {
+     "bsc": "0xc9ccbd76c2353e593cc975f13295e8289d04d3bb",
+     "base": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
+     "ethereum": "0x6e15a54b5ecac17e58dadeddbe8506a7560252f9"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-12-09T14:45:58.238Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13945685,
+    "image": "https://coin-images.coingecko.com/coins/images/52186/large/synfutures_f_token_light_200.png?1732722899",
+    "metrics": {
+     "volumeUsd1d": "706663.879",
+     "volumeUsd7d": "9246740.896"
+    },
+    "metadata": {},
+    "tokenId": "52ec1690-959c-4414-84df-c3527fbbd15b",
+    "totalSupply": "10000000000",
+    "circulatingSupply": "5075354617",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5fe2e094bba2bd33e493f0feb9fabfe9f6a28d8f36b09750e89de7bb77493a30": {
+    "key": "bsc:0x5fe2e094bba2bd33e493f0feb9fabfe9f6a28d8f36b09750e89de7bb77493a30",
+    "name": "Uniswap V4 LP USDT/FUTUon",
+    "decimals": 18,
+    "symbol": "USDT/FUTUON",
+    "price": 9007199254740990,
+    "address": "0x5fe2e094bba2bd33e493f0feb9fabfe9f6a28d8f36b09750e89de7bb77493a30",
+    "addresses": {
+     "bsc": "0x5fe2e094bba2bd33e493f0feb9fabfe9f6a28d8f36b09750e89de7bb77493a30"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68568/large/futuon_160x160.png?1756106205"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.368Z",
+    "createdAt": "2026-09-08T17:18:32.033Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5acf40056ed51c8bbcd1b125ef803581ac89a627"
+    ],
+    "liquidity": 3430.1757172744888,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "7ee75799-b9f1-4c9d-95e1-31ef2827d0e7",
+    "reserves": [
+     "2061.197993268314339158",
+     "12.698328704564460776"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x671f8baae356739eb1a277ce934a17aa03f6a5f7": {
+    "key": "ethereum:0x671f8baae356739eb1a277ce934a17aa03f6a5f7",
+    "name": "Uniswap V3 Wrapped Ether/Future T.I.M.E. Dividend 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/FUTURE",
+    "price": 9007199254740990,
+    "address": "0x671f8baae356739eb1a277ce934a17aa03f6a5f7",
+    "addresses": {
+     "ethereum": "0x671f8baae356739eb1a277ce934a17aa03f6a5f7"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:34.086Z",
+    "createdAt": "2025-09-03T07:01:50.094Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xd4ae236a5080a09c0f7bd6e6b84919523573a43b"
+    ],
+    "liquidity": 2772.0981726369846,
+    "metrics": {
+     "apy": "2.819",
+     "baseApy": "2.819",
+     "volumeUsd1d": "71.399",
+     "volumeUsd7d": "99.214"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "3b6d3972-78bd-4573-8f98-ee90c40ba1b2",
+    "reserves": [
+     "0.588997733821366757",
+     "4795229.425189752851590521"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6d8d8df799279e761a4f49edc319b3bd50f14444": {
+    "key": "bsc:0x6d8d8df799279e761a4f49edc319b3bd50f14444",
+    "name": "我是未来 (I am the Future)",
+    "decimals": 18,
+    "symbol": "我是未来",
+    "price": 6.265e-05,
+    "address": "0x6d8d8df799279e761a4f49edc319b3bd50f14444",
+    "addresses": {
+     "bsc": "0x6d8d8df799279e761a4f49edc319b3bd50f14444"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-24T08:32:28.021Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 62645,
+    "image": "https://coin-images.coingecko.com/coins/images/71752/large/%E5%93%A6%E5%8A%9B%E7%BB%99_A_square_icon_for_a_cryptocurrency._A_stylized__futuristic_young_c178b9ba-b788-4327-aad7-bebbe20dd1b1.jpg?1769158995",
+    "metrics": {
+     "volumeUsd1d": "262.09",
+     "volumeUsd7d": "2366.735"
+    },
+    "metadata": {},
+    "tokenId": "1f075a02-513d-4c7e-b34d-ddf8da724ba3",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5434a4ee8bf7552202ec89a9ecaab71a08da9079": {
+    "key": "ethereum:0x5434a4ee8bf7552202ec89a9ecaab71a08da9079",
+    "name": "Future Mining Token",
+    "decimals": 18,
+    "symbol": "FMT",
+    "price": 0.7070002393602199,
+    "address": "0x5434a4ee8bf7552202ec89a9ecaab71a08da9079",
+    "addresses": {
+     "ethereum": "0x5434a4ee8bf7552202ec89a9ecaab71a08da9079"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-26T06:25:23.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 141400.047872044,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "d14840b8-99a2-466a-bc1a-2723c365c738",
+    "totalSupply": "200000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x5bec61a4df68da5d7f0ea220a4675044d04204d1": {
+    "key": "polygon:0x5bec61a4df68da5d7f0ea220a4675044d04204d1",
+    "name": "FutureTalk",
+    "decimals": 18,
+    "symbol": "FT",
+    "price": 1.870877543239812,
+    "address": "0x5bec61a4df68da5d7f0ea220a4675044d04204d1",
+    "addresses": {
+     "polygon": "0x5bec61a4df68da5d7f0ea220a4675044d04204d1"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-07T09:17:54.815Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18708775.432398118,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "1",
+     "volumeUsd7d": "4"
+    },
+    "metadata": {},
+    "tokenId": "5a21dd94-6b02-4e9f-b82d-29e1528a0d7a",
+    "totalSupply": "10000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2671ef3e85fe0c8d8a7e434208ccc842455a4cf1": {
+    "key": "ethereum:0x2671ef3e85fe0c8d8a7e434208ccc842455a4cf1",
+    "name": "Faraday Future",
+    "decimals": 9,
+    "symbol": "FFIE",
+    "price": 2.4916989313879028e-08,
+    "address": "0x2671ef3e85fe0c8d8a7e434208ccc842455a4cf1",
+    "addresses": {
+     "ethereum": "0x2671ef3e85fe0c8d8a7e434208ccc842455a4cf1"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-09T07:21:08.389Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10482.328234455768,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "4.51",
+     "volumeUsd7d": "4.51"
+    },
+    "metadata": {},
+    "tokenId": "e274cbb5-368e-4eba-8839-faf37d0efb54",
+    "totalSupply": "420690000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x5537a24ad7e8d68aec165dcff6d2f8c23605417f": {
+    "key": "base:0x5537a24ad7e8d68aec165dcff6d2f8c23605417f",
+    "name": "Eye Future by Virtuals",
+    "decimals": 18,
+    "symbol": "EYE",
+    "price": 9.79e-06,
+    "address": "0x5537a24ad7e8d68aec165dcff6d2f8c23605417f",
+    "addresses": {
+     "base": "0x5537a24ad7e8d68aec165dcff6d2f8c23605417f"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9788.55,
+    "image": "https://coin-images.coingecko.com/coins/images/53621/large/ezgif-6-4c84951698.png?1736895817",
+    "metrics": {
+     "volumeUsd1d": "2.956",
+     "volumeUsd7d": "51.157"
+    },
+    "metadata": {},
+    "tokenId": "d9f66573-05d0-49f5-a377-5454623cb6b8",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6ce5709f695d1ed9fc2240b6e685c7aa78166105fc42650a763709b8adfb28a1": {
+    "key": "robinhood:0x6ce5709f695d1ed9fc2240b6e685c7aa78166105fc42650a763709b8adfb28a1",
+    "name": "Uniswap V4 LP USDG/FUTU",
+    "decimals": 18,
+    "symbol": "USDG/FUTU",
+    "price": 9007199254740990,
+    "address": "0x6ce5709f695d1ed9fc2240b6e685c7aa78166105fc42650a763709b8adfb28a1",
+    "addresses": {
+     "robinhood": "0x6ce5709f695d1ed9fc2240b6e685c7aa78166105fc42650a763709b8adfb28a1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174192/large/0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d.png?1782444782"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.237Z",
+    "createdAt": "2026-10-06T06:16:37.566Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xeb30663bdff0622ef4e4e5cbb4e975f19f33f51d"
+    ],
+    "liquidity": 2639.961618642548,
+    "metrics": {
+     "apy": "8.377",
+     "baseApy": "8.377",
+     "volumeUsd1d": "55.129",
+     "volumeUsd7d": "642.383"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "e73b1d08-5961-404c-82f6-bfcc41be7d0e",
+    "reserves": [
+     "202.83432",
+     "23.467764069740468295"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

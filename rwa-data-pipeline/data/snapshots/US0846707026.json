@@ -1,0 +1,855 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0846707026",
+ "ticker": "BRK.B",
+ "name": "Berkshire Hathaway Class B",
+ "isin": "US0846707026",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:58Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Berkshire Hathaway Inc Class B",
+   "symbol": "BRK.B",
+   "slug": "berkshire-hathaway-inc-class-b",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 530.6005531052677,
+     "tokenized_market_cap": 1911622.3470397103,
+     "tokenized_volume_24h": 5129.94313572,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 15,
+   "asset_type": "stock",
+   "rwa_rank": 13,
+   "has_tokens": true,
+   "average_tokenized_price": 530.6005531052677,
+   "tokenized_market_cap": 1911622.3470397103,
+   "tokenized_volume_24h": 5129.94313572,
+   "last_updated": "2026-10-18T20:13:37.230Z",
+   "tokens": [
+    {
+     "symbol": "BRK.BX",
+     "name": "Berkshire Hathaway tokenized stock (xStock)",
+     "price": 529.8221350384581,
+     "crypto_id": 37020,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1879894.12,
+     "volume_24h": 3629.66729039
+    },
+    {
+     "symbol": "BRK.A.D",
+     "name": "BRK tokenized stock (Dinari)",
+     "price": null,
+     "crypto_id": 28630,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "BRKB",
+     "name": "Berkshire Hathaway Inc Class B (Derivatives)",
+     "price": 532.7337464879721,
+     "crypto_id": 40016,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WBRK.BX",
+     "name": "Wrapped Berkshire Hathaway Tokenized stock (xStock)",
+     "price": 532.5652484839108,
+     "crypto_id": 37191,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 31820.31,
+     "volume_24h": 1490.17058562
+    },
+    {
+     "symbol": "BRK.Bc",
+     "name": "Berkshire Hathaway Inc. Class B Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42549,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "BRK.B",
+     "market_url": "https://www.binance.com/en/stocks/EQ_BRK.B"
+    }
+   ]
+  },
+  "info": {
+   "37020": {
+    "id": 37020,
+    "symbol": "BRK.BX",
+    "name": "Berkshire Hathaway tokenized stock (xStock)",
+    "slug": "berkshire-hathaway-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37020.png",
+    "date_added": "2025-07-01T15:49:32.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x12992613fDd35aBe95DEc5a4964331b1ee23B50d",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDz62JH-T5q4wW6DpzuL-ROKScpOCcC1iIv8dXAnYVNIV7O",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     }
+    ]
+   },
+   "28630": {
+    "id": 28630,
+    "symbol": "BRK.A.D",
+    "name": "BRK tokenized stock (Dinari)",
+    "slug": "dinari-brk-a",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/28630.png",
+    "date_added": "2023-12-07T11:19:31.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x9dA913f4DCa9B210a232d588113047685a4ed4B1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9dA913f4DCa9B210a232d588113047685a4ed4B1",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40016": {
+    "id": 40016,
+    "symbol": "BRKB",
+    "name": "Berkshire Hathaway Inc Class B (Derivatives)",
+    "slug": "berkshire-hathaway-class-b-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40016.png",
+    "date_added": "2026-01-29T01:38:26.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37191": {
+    "id": 37191,
+    "symbol": "WBRK.BX",
+    "name": "Wrapped Berkshire Hathaway Tokenized stock (xStock)",
+    "slug": "wrapped-berkshire-hathaway-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37191.png",
+    "date_added": "2025-07-06T03:11:36.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xC3A8D2e18D33e0800F84cb4ca6529D18fAd225df"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xC3A8D2e18D33e0800F84cb4ca6529D18fAd225df",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa150245f155778e749185c9446e9e59e406674ef",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42549": {
+    "id": 42549,
+    "symbol": "BRK.Bc",
+    "name": "Berkshire Hathaway Inc. Class B Tokenized Stock (Coinbase)",
+    "slug": "berkshire-hathaway-inc-class-b-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42549.png",
+    "date_added": "2026-10-14T03:36:47.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb20000000000000000000024170488e788cbbcb4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb20000000000000000000024170488e788cbbcb4",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+   "arbitrum:0x9da913f4dca9b210a232d588113047685a4ed4b1",
+   "arbitrum:0xa150245f155778e749185c9446e9e59e406674ef",
+   "base:0xb20000000000000000000024170488e788cbbcb4",
+   "bsc:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+   "ethereum:0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+  ],
+  "exact": {
+   "ethereum:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "ethereum:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "ethereum": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10690648,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "9c316202-ac2b-4e51-b1f9-6c24e5a722a0",
+    "totalSupply": "20200",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "arbitrum:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "arbitrum": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10416501.68,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "ebb1dfb8-33ac-4895-97b1-ddc01973cd56",
+    "totalSupply": "19682",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "bsc:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "bsc": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:56.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5292400,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "524c4440-58e8-4da8-88b3-6d366b06c78f",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "BRK.B": {
+    "total_items": 11,
+    "pages": 1,
+    "received": 11,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x95e97ac7ab2aeeb50b43e406d6396ab71d7beb5de3e7fdb93219dc329d5d15ee": {
+    "key": "bsc:0x95e97ac7ab2aeeb50b43e406d6396ab71d7beb5de3e7fdb93219dc329d5d15ee",
+    "name": "Uniswap V4 LP BRK.Bx/USDC",
+    "decimals": 18,
+    "symbol": "BRK.BX/USDC",
+    "price": 9007199254740990,
+    "address": "0x95e97ac7ab2aeeb50b43e406d6396ab71d7beb5de3e7fdb93219dc329d5d15ee",
+    "addresses": {
+     "bsc": "0x95e97ac7ab2aeeb50b43e406d6396ab71d7beb5de3e7fdb93219dc329d5d15ee"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.283Z",
+    "createdAt": "2026-08-17T19:58:39.632Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ],
+    "liquidity": 1355.6083866189485,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "b4519123-9641-4d7d-8d88-ebd28186f75e",
+    "reserves": [
+     "1.907916269855072093",
+     "345.906255511753940802"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb66056499020bf98ad5d61f7a5d7fc276c1ccb042a9edcdef624402bdc65992c": {
+    "key": "arbitrum:0xb66056499020bf98ad5d61f7a5d7fc276c1ccb042a9edcdef624402bdc65992c",
+    "name": "Uniswap V4 LP BRK.Bx/USDT",
+    "decimals": 18,
+    "symbol": "BRK.BX/USDT",
+    "price": 9007199254740990,
+    "address": "0xb66056499020bf98ad5d61f7a5d7fc276c1ccb042a9edcdef624402bdc65992c",
+    "addresses": {
+     "arbitrum": "0xb66056499020bf98ad5d61f7a5d7fc276c1ccb042a9edcdef624402bdc65992c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.749Z",
+    "createdAt": "2026-10-16T14:24:07.996Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "032485f0-a9c4-4e90-80e5-cd2e04e067bd",
+    "reserves": [
+     "0",
+     "1999.999999999999999984"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3e40426b9965c474f9363ac6ffe7f59519b698fa": {
+    "key": "ethereum:0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+    "name": "Berkshire Hathaway Class B (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BRK.B",
+    "price": 532.68,
+    "address": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+    "addresses": {
+     "avalanche": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "ethereum": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "base": "0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+     "arbitrum": "0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11398.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102175090/large/dinari-logo-green-with-margin.png?1785403168",
+    "metrics": {
+     "volumeUsd1d": "1.952",
+     "volumeUsd7d": "3636.383"
+    },
+    "metadata": {},
+    "tokenId": "e6327563-21a9-4498-aa38-67c0548c10f7",
+    "totalSupply": "21.39734077289991",
+    "circulatingSupply": "21.39734077289991",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6a1169d9088da03f571456c77192166dee8f74466e82b370a2c15d0af978efb8": {
+    "key": "ethereum:0x6a1169d9088da03f571456c77192166dee8f74466e82b370a2c15d0af978efb8",
+    "name": "Uniswap V4 LP BRK.Bx/USDT",
+    "decimals": 18,
+    "symbol": "BRK.BX/USDT",
+    "price": 9007199254740990,
+    "address": "0x6a1169d9088da03f571456c77192166dee8f74466e82b370a2c15d0af978efb8",
+    "addresses": {
+     "ethereum": "0x6a1169d9088da03f571456c77192166dee8f74466e82b370a2c15d0af978efb8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.699Z",
+    "createdAt": "2026-10-18T18:58:06.298Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "56f10ff9-c157-408b-bcf3-f3296481b339",
+    "reserves": [
+     "0",
+     "3999.999999999999999981"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75": {
+    "key": "arbitrum:0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75",
+    "name": "Berkshire Hathaway Class B (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BRK.B",
+    "price": 532.68,
+    "address": "0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75",
+    "addresses": {
+     "avalanche": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "ethereum": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "base": "0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+     "arbitrum": "0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11398.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102175090/large/dinari-logo-green-with-margin.png?1785403168",
+    "metrics": {
+     "volumeUsd1d": "1.952",
+     "volumeUsd7d": "3633.782"
+    },
+    "metadata": {},
+    "tokenId": "e6327563-21a9-4498-aa38-67c0548c10f7",
+    "totalSupply": "21.39734077289991",
+    "circulatingSupply": "21.39734077289991",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "ethereum:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "ethereum": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10690648,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "9c316202-ac2b-4e51-b1f9-6c24e5a722a0",
+    "totalSupply": "20200",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xf468bf6c0053ed435060d6d8ab9573dc479a43f1": {
+    "key": "base:0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+    "name": "Berkshire Hathaway Class B (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BRK.B",
+    "price": 532.68,
+    "address": "0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+    "addresses": {
+     "avalanche": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "ethereum": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "base": "0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+     "arbitrum": "0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11398.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102175090/large/dinari-logo-green-with-margin.png?1785403168",
+    "metrics": {
+     "volumeUsd1d": "1.952",
+     "volumeUsd7d": "3632.14"
+    },
+    "metadata": {},
+    "tokenId": "e6327563-21a9-4498-aa38-67c0548c10f7",
+    "totalSupply": "21.39734077289991",
+    "circulatingSupply": "21.39734077289991",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc3a8d2e18d33e0800f84cb4ca6529d18fad225df": {
+    "key": "ethereum:0xc3a8d2e18d33e0800f84cb4ca6529d18fad225df",
+    "name": "Wrapped Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "WBRK.BX",
+    "price": 529.26,
+    "address": "0xc3a8d2e18d33e0800f84cb4ca6529d18fad225df",
+    "addresses": {
+     "ethereum": "0xc3a8d2e18d33e0800f84cb4ca6529d18fad225df"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.960Z",
+    "createdAt": "2026-07-03T11:38:30.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    ],
+    "liquidity": 20516.430167674065,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/BRK.Bx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "49.426"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "51a3c042-27e9-499a-81d4-ac2851f69fbf",
+    "totalSupply": "38.76436943595598476",
+    "reserves": [
+     "38.76436943595598476"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "arbitrum:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "arbitrum": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10416501.68,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "ebb1dfb8-33ac-4895-97b1-ddc01973cd56",
+    "totalSupply": "19682",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x3e40426b9965c474f9363ac6ffe7f59519b698fa": {
+    "key": "avalanche:0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+    "name": "Berkshire Hathaway Class B (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BRK.B",
+    "price": 532.68,
+    "address": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+    "addresses": {
+     "avalanche": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "ethereum": "0x3e40426b9965c474f9363ac6ffe7f59519b698fa",
+     "base": "0xf468bf6c0053ed435060d6d8ab9573dc479a43f1",
+     "arbitrum": "0xcb2215ec193f4153317f1b455afd5ac8a3ddeb75"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11398.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102175090/large/dinari-logo-green-with-margin.png?1785403168",
+    "metrics": {
+     "volumeUsd1d": "1.952",
+     "volumeUsd7d": "3633.563"
+    },
+    "metadata": {},
+    "tokenId": "e6327563-21a9-4498-aa38-67c0548c10f7",
+    "totalSupply": "21.39734077289991",
+    "circulatingSupply": "21.39734077289991",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x12992613fdd35abe95dec5a4964331b1ee23b50d": {
+    "key": "bsc:0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "name": "Berkshire Hathaway xStock",
+    "decimals": 18,
+    "symbol": "BRK.BX",
+    "price": 529.24,
+    "address": "0x12992613fdd35abe95dec5a4964331b1ee23b50d",
+    "addresses": {
+     "bsc": "0x12992613fdd35abe95dec5a4964331b1ee23b50d"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:56.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5292400,
+    "image": "https://coin-images.coingecko.com/coins/images/55599/large/Ticker_BRK.B__Company_Name_berkshire-hathaway__size_200x200_2x.png?1746857982",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "berkshire-hathaway-xstock"
+    },
+    "tokenId": "524c4440-58e8-4da8-88b3-6d366b06c78f",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

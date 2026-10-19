@@ -1,0 +1,5202 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0378331005",
+ "ticker": "AAPL",
+ "name": "Apple",
+ "isin": "US0378331005",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:16:08Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Apple Inc.",
+   "symbol": "AAPL",
+   "slug": "apple",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 343.1628217766439,
+     "tokenized_market_cap": 34965974.805301964,
+     "tokenized_volume_24h": 17570398.49993805,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 3,
+   "asset_type": "stock",
+   "rwa_rank": 3,
+   "has_tokens": true,
+   "average_tokenized_price": 343.1628217766439,
+   "tokenized_market_cap": 34965974.805301964,
+   "tokenized_volume_24h": 17570398.49993805,
+   "last_updated": "2026-10-18T20:13:45.507Z",
+   "tokens": [
+    {
+     "symbol": "AAPLX",
+     "name": "Apple tokenized stock (xStock)",
+     "price": 343.19178693061014,
+     "crypto_id": 36994,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 12513036.29,
+     "volume_24h": 5201126.07522759
+    },
+    {
+     "symbol": "AAPL.D",
+     "name": "AAPL tokenized stock (Dinari)",
+     "price": null,
+     "crypto_id": 28624,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "AAPLon",
+     "name": "Apple Tokenized Stock (Ondo)",
+     "price": 344.7326466469859,
+     "crypto_id": 38037,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 9506421.3,
+     "volume_24h": 1512279.89665958
+    },
+    {
+     "symbol": "AAPL",
+     "name": "Apple Inc (Derivatives)",
+     "price": 342.74252088658193,
+     "crypto_id": 39491,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AAPL",
+     "name": "Apple Tokenized Stock (Hyperliquid)",
+     "price": 289.9561869110714,
+     "crypto_id": 39624,
+     "issuer_id": "699ed38db54c9320b15928e3",
+     "issuer_name": "Hyperliquid Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rAAPL",
+     "name": "Apple Tokenized Stock (Reality)",
+     "price": 342.650192439478,
+     "crypto_id": 40598,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 629586.99,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AAPL",
+     "name": "Apple Tokenized Stock (Robinhood)",
+     "price": 342.4063325749988,
+     "crypto_id": 40703,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 4010304.81,
+     "volume_24h": 972241.35089056
+    },
+    {
+     "symbol": "AAPLB",
+     "name": "Apple Tokenized bStocks",
+     "price": 342.80934001298795,
+     "crypto_id": 40927,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 5498953.97,
+     "volume_24h": 6813302.56558129
+    },
+    {
+     "symbol": "WAAPLX",
+     "name": "Wrapped Apple Tokenized stock (xStock)",
+     "price": 343.0607247891997,
+     "crypto_id": 37269,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 250511.63,
+     "volume_24h": 15329.93278861
+    },
+    {
+     "symbol": "AAPLc",
+     "name": "Apple Inc. Tokenized Stock (Coinbase)",
+     "price": 343.238979170606,
+     "crypto_id": 42427,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 2560259.53,
+     "volume_24h": 3151113.89136269
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AAPL",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AAPL"
+    }
+   ]
+  },
+  "info": {
+   "36994": {
+    "id": 36994,
+    "symbol": "AAPLX",
+    "name": "Apple tokenized stock (xStock)",
+    "slug": "apple-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/36994.png",
+    "date_added": "2025-07-01T07:38:36.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9d275685dC284C8eB1C79f6ABA7a63Dc75ec890a",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDsjAwfKo-6FVZv2EYt-1CaZTY_ZL-pfkSId6jeQchNwmdo",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "28624": {
+    "id": 28624,
+    "symbol": "AAPL.D",
+    "name": "AAPL tokenized stock (Dinari)",
+    "slug": "dinari-aapl",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/28624.png",
+    "date_added": "2023-12-07T11:08:34.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xCe38e140fC3982a6bCEbc37b040913EF2Cd6C5a7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xCe38e140fC3982a6bCEbc37b040913EF2Cd6C5a7",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "38037": {
+    "id": 38037,
+    "symbol": "AAPLon",
+    "name": "Apple Tokenized Stock (Ondo)",
+    "slug": "apple-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38037.png",
+    "date_added": "2025-09-03T10:55:37.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x14c3abF95Cb9C93a8b82C1CdCB76D72Cb87b2d4c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x14c3abF95Cb9C93a8b82C1CdCB76D72Cb87b2d4c",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "123mYEnRLM2LLYsJW3K6oyYh8uP1fngj732iG638ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x81db0DF77669b3BE563e7a0591685a2C8C3EE1c5",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39491": {
+    "id": 39491,
+    "symbol": "AAPL",
+    "name": "Apple Inc (Derivatives)",
+    "slug": "apple-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39491.png",
+    "date_added": "2026-01-30T05:30:56.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "39624": {
+    "id": 39624,
+    "symbol": "AAPL",
+    "name": "Apple Tokenized Stock (Hyperliquid)",
+    "slug": "apple-tokenized-stock-hyperliquid",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39624.png",
+    "date_added": "2026-02-25T10:52:59.000Z",
+    "platform": {
+     "id": "32196",
+     "name": "Hyperliquid",
+     "symbol": "HYPE",
+     "slug": "hyperliquid",
+     "token_address": "0x499e347174f237ad28687b947b94c0d49570d1b7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x499e347174f237ad28687b947b94c0d49570d1b7",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "0xec340db435d4d90899e97655cb8e71f5",
+      "platform": {
+       "name": "Hyperliquid",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "40598": {
+    "id": 40598,
+    "symbol": "rAAPL",
+    "name": "Apple Tokenized Stock (Reality)",
+    "slug": "apple-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40598.png",
+    "date_added": "2026-07-02T03:36:49.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xaba5e0c80e9f58e391214689fb342049c0d31892"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xaba5e0c80e9f58e391214689fb342049c0d31892",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40703": {
+    "id": 40703,
+    "symbol": "AAPL",
+    "name": "Apple Tokenized Stock (Robinhood)",
+    "slug": "apple-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40703.png",
+    "date_added": "2026-08-04T07:31:32.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xaF3D76f1834A1d425780943C99Ea8A608f8a93f9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xaF3D76f1834A1d425780943C99Ea8A608f8a93f9",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40927": {
+    "id": 40927,
+    "symbol": "AAPLB",
+    "name": "Apple Tokenized bStocks",
+    "slug": "apple-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40927.png",
+    "date_added": "2026-07-28T07:08:33.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "37269": {
+    "id": 37269,
+    "symbol": "WAAPLX",
+    "name": "Wrapped Apple Tokenized stock (xStock)",
+    "slug": "wrapped-apple-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37269.png",
+    "date_added": "2025-07-08T05:30:21.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x943BF64D566c32A2Bcd41AC92FB63C111cC9De8f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x943BF64D566c32A2Bcd41AC92FB63C111cC9De8f",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x5aa7649fdbda47de64a07ac81d64b682af9c0724",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42427": {
+    "id": 42427,
+    "symbol": "AAPLc",
+    "name": "Apple Inc. Tokenized Stock (Coinbase)",
+    "slug": "apple-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42427.png",
+    "date_added": "2026-10-08T03:59:47.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000C2e324d24d7eEcd1fb"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x5aa7649fdbda47de64a07ac81d64b682af9c0724",
+   "arbitrum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+   "arbitrum:0xaba5e0c80e9f58e391214689fb342049c0d31892",
+   "arbitrum:0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7",
+   "base:0xb200000000000000000000c2e324d24d7eecd1fb",
+   "bsc:0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+   "bsc:0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+   "bsc:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+   "ethereum:0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+   "ethereum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+   "hyperevm:0x499e347174f237ad28687b947b94c0d49570d1b7",
+   "hyperevm:0x81db0df77669b3be563e7a0591685a2c8c3ee1c5",
+   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+  ],
+  "exact": {
+   "arbitrum:0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7": {
+    "key": "arbitrum:0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68819.297"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "ethereum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "ethereum": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.176Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25476866.80896702,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "91efa869-e690-461b-8c90-a266f839dcc5",
+    "totalSupply": "74144.718747903202410949",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x81db0df77669b3be563e7a0591685a2c8c3ee1c5": {
+    "key": "hyperevm:0x81db0df77669b3be563e7a0591685a2c8c3ee1c5",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1017136.981",
+     "volumeUsd7d": "9782974.877"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xaba5e0c80e9f58e391214689fb342049c0d31892": {
+    "key": "arbitrum:0xaba5e0c80e9f58e391214689fb342049c0d31892",
+    "name": "Apple (Reality Protocol)",
+    "decimals": 18,
+    "symbol": "RAAPL",
+    "price": 342.41,
+    "address": "0xaba5e0c80e9f58e391214689fb342049c0d31892",
+    "addresses": {
+     "arbitrum": "0xaba5e0c80e9f58e391214689fb342049c0d31892"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-01T00:49:25.354Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 629141,
+    "image": "https://coin-images.coingecko.com/coins/images/102174884/large/raapl.png?1785330068",
+    "metrics": {
+     "volumeUsd1d": "29.936",
+     "volumeUsd7d": "719637.171"
+    },
+    "metadata": {},
+    "tokenId": "e8f2bd7e-11e3-48bd-83c5-d5f44412d0a8",
+    "totalSupply": "1837.404466191",
+    "circulatingSupply": "1837.404466191",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "arbitrum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "arbitrum": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:17.440Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24755617.21826392,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "9a0e1f03-3fbc-489a-a902-6f41e6ecfd1c",
+    "totalSupply": "72045.683240487535606549",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "bsc:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "bsc": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:19.723Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3444639.4450186524,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "2e86a484-be17-40c6-809f-d0832f80da2f",
+    "totalSupply": "10024.852143472694160207",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c": {
+    "key": "ethereum:0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1016385.121",
+     "volumeUsd7d": "9383377.687"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
+    "key": "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "name": "Apple • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.01226254,
+    "address": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "addresses": {
+     "robinhood": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "liquidity": 4015128.6506551914,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2366870.414"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c2425be3658540dd8e2424cbf3c5c649",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000566080061092436",
+     "currentMultiplier": "1.000566080061092436",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "dd5e3db0-1eb0-4c5e-ae50-3883c994faa6",
+    "totalSupply": "11705.49595202",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb200000000000000000000c2e324d24d7eecd1fb": {
+    "key": "base:0xb200000000000000000000c2e324d24d7eecd1fb",
+    "name": "Apple Inc.",
+    "decimals": 8,
+    "symbol": "AAPLC",
+    "price": 343.66499999,
+    "address": "0xb200000000000000000000c2e324d24d7eecd1fb",
+    "addresses": {
+     "base": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-18T16:21:26.781Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb200000000000000000000c2e324d24d7eecd1fb",
+    "liquidity": 2563437.268423456,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-371148.872"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "6c3b6d76-1fda-49b8-b082-665c7b560d1a",
+    "totalSupply": "7459.11648989",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4": {
+    "key": "bsc:0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1017134.523",
+     "volumeUsd7d": "10053361.879"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a": {
+    "key": "bsc:0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+    "name": "Apple (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLB",
+    "price": 342.95,
+    "address": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+    "addresses": {
+     "bsc": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5497700,
+    "image": "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+    "metrics": {
+     "volumeUsd1d": "37688047.638",
+     "volumeUsd7d": "90911361.243"
+    },
+    "metadata": {},
+    "tokenId": "d2223342-3857-4474-afc8-9ee8d3675de5",
+    "totalSupply": "16030.8016572",
+    "circulatingSupply": "16030.8016572",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AAPL": {
+    "total_items": 95,
+    "pages": 1,
+    "received": 95,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483": {
+    "key": "robinhood:0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483",
+    "name": "Uniswap V4 LP SPCX/AAPL",
+    "decimals": 18,
+    "symbol": "SPCX/AAPL",
+    "price": 9007199254740990,
+    "address": "0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483",
+    "addresses": {
+     "robinhood": "0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174129/large/0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea.png?1782444614",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.380Z",
+    "createdAt": "2026-08-07T16:03:48.486Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 3946.0975181634053,
+    "metrics": {
+     "apy": "23.176",
+     "baseApy": "23.176",
+     "volumeUsd1d": "716.094",
+     "volumeUsd7d": "7436.906"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "89dfa25f-3077-454c-86b2-3edd656ec7f4",
+    "reserves": [
+     "13.051228464044066887",
+     "5.975365122155500815"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617": {
+    "key": "bsc:0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617",
+    "name": "Uniswap V4 LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617",
+    "addresses": {
+     "bsc": "0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.081Z",
+    "createdAt": "2026-09-28T10:43:09.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 35072.29341900507,
+    "metrics": {
+     "apy": "4.567",
+     "baseApy": "4.567",
+     "volumeUsd1d": "11579.484",
+     "volumeUsd7d": "1231882.724"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3,
+     "feePercentage": "0.0379"
+    },
+    "tokenId": "50a2d5de-db39-412c-a982-4647e17086e0",
+    "reserves": [
+     "38.495950737449666096",
+     "21887.880072215346372658"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x256b72f2cb1f761082827129d63bb0cc884c25c1": {
+    "key": "robinhood:0x256b72f2cb1f761082827129d63bb0cc884c25c1",
+    "name": "Uniswap V3 SPDR S&P 500 ETF Trust  Robinhood Token/Apple  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "SPY/AAPL",
+    "price": 9007199254740990,
+    "address": "0x256b72f2cb1f761082827129d63bb0cc884c25c1",
+    "addresses": {
+     "robinhood": "0x256b72f2cb1f761082827129d63bb0cc884c25c1"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.579Z",
+    "createdAt": "2026-08-24T02:41:39.373Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 2102.900317576286,
+    "metrics": {
+     "apy": "1.504",
+     "baseApy": "1.504",
+     "volumeUsd1d": "173.276",
+     "volumeUsd7d": "21860.75"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "252562cb-0ef9-42d8-8bd2-f8f8ec7f2fe8",
+    "reserves": [
+     "2.570920406940804347",
+     "0.413190807098721643"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8d39c7e9427edff441c63fc51861522cf02167c8": {
+    "key": "bsc:0x8d39c7e9427edff441c63fc51861522cf02167c8",
+    "name": "Uniswap V3 Ethereum Token/Apple (Ondo Tokenized) 0.3%",
+    "decimals": 18,
+    "symbol": "ETH/AAPLON",
+    "price": 9007199254740990,
+    "address": "0x8d39c7e9427edff441c63fc51861522cf02167c8",
+    "addresses": {
+     "bsc": "0x8d39c7e9427edff441c63fc51861522cf02167c8"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.879Z",
+    "createdAt": "2026-09-06T23:12:07.455Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+     "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4"
+    ],
+    "liquidity": 3697.714633763034,
+    "metrics": {
+     "apy": "36.166",
+     "baseApy": "36.166",
+     "volumeUsd1d": "1221.868",
+     "volumeUsd7d": "6629.813"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8dfa9a2e-6076-48b9-a661-7fb5bd521a5b",
+    "reserves": [
+     "0.90414847707376988",
+     "4.59628633734047734"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848": {
+    "key": "base:0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848",
+    "addresses": {
+     "base": "0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.074Z",
+    "createdAt": "2026-10-03T11:41:29.290Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 48230.918704168085,
+    "metrics": {
+     "apy": "8.607",
+     "baseApy": "8.607",
+     "volumeUsd1d": "437.83",
+     "volumeUsd7d": "9494.317"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 250,
+     "feePercentage": "2.5975"
+    },
+    "tokenId": "c3709d1f-19e7-4ce1-ad4d-8644c5b31b18",
+    "reserves": [
+     "29440.269527",
+     "54.69273236"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f": {
+    "key": "robinhood:0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f",
+    "name": "Uniswap V4 LP AAPL/NVDA",
+    "decimals": 18,
+    "symbol": "AAPL/NVDA",
+    "price": 9007199254740990,
+    "address": "0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f",
+    "addresses": {
+     "robinhood": "0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598",
+     "https://coin-images.coingecko.com/coins/images/102174110/large/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec.png?1782444565"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.221Z",
+    "createdAt": "2026-07-31T21:18:52.209Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+     "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    ],
+    "liquidity": 12504.895114530576,
+    "metrics": {
+     "apy": "12.345",
+     "baseApy": "12.345",
+     "volumeUsd1d": "1208.548",
+     "volumeUsd7d": "17285.254"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "4317d691-7694-4787-b59c-5580929c566c",
+    "reserves": [
+     "11.515742251089295983",
+     "39.866747846035069074"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9c516dfc99fd6c64cbb836b518e8e141c2d99b7a2b778bb29667b0ccb1796ade": {
+    "key": "robinhood:0x9c516dfc99fd6c64cbb836b518e8e141c2d99b7a2b778bb29667b0ccb1796ade",
+    "name": "Uniswap V4 LP wUSDG/AAPL",
+    "decimals": 18,
+    "symbol": "WUSDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0x9c516dfc99fd6c64cbb836b518e8e141c2d99b7a2b778bb29667b0ccb1796ade",
+    "addresses": {
+     "robinhood": "0x9c516dfc99fd6c64cbb836b518e8e141c2d99b7a2b778bb29667b0ccb1796ade"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.221Z",
+    "createdAt": "2026-10-09T07:28:39.060Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 10096.710123779676,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "99.001"
+    },
+    "tokenId": "9dbbfacc-58f6-4527-ae8b-bb0b00233b03",
+    "reserves": [
+     "9999.999866",
+     "0.000040033805142543"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1cead301e2958ff6878035eaedd51a49759e11c0152717a5f2ba247c7cf0cc5e": {
+    "key": "robinhood:0x1cead301e2958ff6878035eaedd51a49759e11c0152717a5f2ba247c7cf0cc5e",
+    "name": "Uniswap V4 LP SHROOM/AAPL",
+    "decimals": 18,
+    "symbol": "SHROOM/AAPL",
+    "price": 9007199254740990,
+    "address": "0x1cead301e2958ff6878035eaedd51a49759e11c0152717a5f2ba247c7cf0cc5e",
+    "addresses": {
+     "robinhood": "0x1cead301e2958ff6878035eaedd51a49759e11c0152717a5f2ba247c7cf0cc5e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.019Z",
+    "createdAt": "2026-09-08T14:37:19.546Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xab093def657f15df31b33922a95e047add645b29",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 970.8898514624963,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "637caaaa-dd47-458a-a5db-2466437e05c9",
+    "reserves": [
+     "53692.838588300887087859",
+     "2.074031201857686498"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365": {
+    "key": "bsc:0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365",
+    "name": "PancakeSwap V3 Apple/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365",
+    "addresses": {
+     "bsc": "0xe9b9998b2ec5430d2246c7f1f8d9f298c97d7365"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.942Z",
+    "createdAt": "2026-07-31T05:08:25.891Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 427016.5341136495,
+    "metrics": {
+     "apy": "20.453",
+     "baseApy": "20.453",
+     "volumeUsd1d": "95710.699",
+     "volumeUsd7d": "2485992.214"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "89947d33-34be-41e3-a2b8-6910985eaba6",
+    "reserves": [
+     "342.008287405382971068",
+     "309976.492860175871175849"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf4dda6b92ccfaa5db9d241651557195e3ef3959f1bbedb2acc38c57919a18052": {
+    "key": "robinhood:0xf4dda6b92ccfaa5db9d241651557195e3ef3959f1bbedb2acc38c57919a18052",
+    "name": "Uniswap V4 LP ETH/AAPL",
+    "decimals": 18,
+    "symbol": "ETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0xf4dda6b92ccfaa5db9d241651557195e3ef3959f1bbedb2acc38c57919a18052",
+    "addresses": {
+     "robinhood": "0xf4dda6b92ccfaa5db9d241651557195e3ef3959f1bbedb2acc38c57919a18052"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.453Z",
+    "createdAt": "2026-07-16T20:46:43.507Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 3651.6390519413694,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "393.202"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "9be6096f-af61-4635-88cb-f2e92afacb16",
+    "reserves": [
+     "0.750911921508244501",
+     "5.530868956831439301"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x21f1e46fd743ccee15d1010bc92ee18f636e5edf4f1d5d032c9984497d0ec69e": {
+    "key": "bsc:0x21f1e46fd743ccee15d1010bc92ee18f636e5edf4f1d5d032c9984497d0ec69e",
+    "name": "Uniswap V4 LP USDC/AAPLx",
+    "decimals": 18,
+    "symbol": "USDC/AAPLX",
+    "price": 9007199254740990,
+    "address": "0x21f1e46fd743ccee15d1010bc92ee18f636e5edf4f1d5d032c9984497d0ec69e",
+    "addresses": {
+     "bsc": "0x21f1e46fd743ccee15d1010bc92ee18f636e5edf4f1d5d032c9984497d0ec69e"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.477Z",
+    "createdAt": "2026-05-19T06:10:26.021Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    ],
+    "liquidity": 1009.9122856471596,
+    "metrics": {
+     "apy": "28953.228",
+     "baseApy": "28953.228",
+     "volumeUsd1d": "843.185",
+     "volumeUsd7d": "843.185"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15200,
+     "feePercentage": "95.005"
+    },
+    "tokenId": "123cb212-692c-42cd-8acf-dd009ddb40ea",
+    "reserves": [
+     "933.607235653608178223",
+     "0.222554079806776993"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f": {
+    "key": "robinhood:0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f",
+    "name": "Uniswap V3 WETH/Apple  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "WETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f",
+    "addresses": {
+     "robinhood": "0x8bb3514e2204e1cdf3ac149efee7ff04d91b719f"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.664Z",
+    "createdAt": "2026-07-28T14:24:26.009Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 248509.49463847742,
+    "metrics": {
+     "apy": "45.62",
+     "baseApy": "45.62",
+     "volumeUsd1d": "621032.13",
+     "volumeUsd7d": "7715126.572"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "62c95ce5-08bf-44df-b31c-e73b7a915964",
+    "reserves": [
+     "90.834506968896123903",
+     "105.602327941425296467"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xae1a30486234bf7e7ac166c7c03d9bc5f2cd8a39be2c48e73c665ac7148c3c28": {
+    "key": "base:0xae1a30486234bf7e7ac166c7c03d9bc5f2cd8a39be2c48e73c665ac7148c3c28",
+    "name": "Morpho USDC / AAPLc",
+    "decimals": 12,
+    "symbol": "USDC/AAPLC",
+    "price": 1.0061106063112186,
+    "address": "0xae1a30486234bf7e7ac166c7c03d9bc5f2cd8a39be2c48e73c665ac7148c3c28",
+    "addresses": {
+     "base": "0xae1a30486234bf7e7ac166c7c03d9bc5f2cd8a39be2c48e73c665ac7148c3c28"
+    },
+    "platform": "morpho",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.583Z",
+    "createdAt": "2026-09-12T12:50:14.854Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "poolAddress": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+    "liquidity": 181518.7790471792,
+    "metrics": {
+     "apy": "5.487",
+     "baseApy": "5.487",
+     "borrowApy": "6.101",
+     "baseBorrowApy": "6.101",
+     "volumeUsd1d": "-6.557",
+     "volumeUsd7d": "118.439"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "oracle": {
+      "type": "ChainlinkOracleV2",
+      "address": "0xEcC5c9bf18CB2CfC94C2f7EFf8BDd5837A60AB0e"
+     },
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "851ca36e-44fd-487a-9b05-64bced794d7d",
+    "totalSupply": "5252.25023900397",
+    "totalBorrow": "4737.871432818048",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x550c36d2c777f8621d300f2aa9da4fda5aefffe5": {
+    "key": "bsc:0x550c36d2c777f8621d300f2aa9da4fda5aefffe5",
+    "name": "PancakeSwap LP AAPLB/WBNB",
+    "decimals": 18,
+    "symbol": "AAPLB/WBNB",
+    "price": 1385.432389567436,
+    "address": "0x550c36d2c777f8621d300f2aa9da4fda5aefffe5",
+    "addresses": {
+     "bsc": "0x550c36d2c777f8621d300f2aa9da4fda5aefffe5"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.483Z",
+    "createdAt": "2026-10-13T05:25:11.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 22005.325091808398,
+    "metrics": {
+     "apy": "2.449",
+     "baseApy": "2.449",
+     "volumeUsd1d": "590.657",
+     "volumeUsd7d": "39179.102"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "e67a5129-8d17-4e21-af5e-70f3b5e20821",
+    "totalSupply": "15.883362665340143674",
+    "reserves": [
+     "32.126605440779384152",
+     "15.578264530338586596"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x628a455f1dfe3f5ac7a5f6aec09ea1cf042330b3c307c0fc94c26cefba53b3da": {
+    "key": "ethereum:0x628a455f1dfe3f5ac7a5f6aec09ea1cf042330b3c307c0fc94c26cefba53b3da",
+    "name": "Uniswap V4 LP AAPLon/EGP",
+    "decimals": 18,
+    "symbol": "AAPLON/EGP",
+    "price": 9007199254740990,
+    "address": "0x628a455f1dfe3f5ac7a5f6aec09ea1cf042330b3c307c0fc94c26cefba53b3da",
+    "addresses": {
+     "ethereum": "0x628a455f1dfe3f5ac7a5f6aec09ea1cf042330b3c307c0fc94c26cefba53b3da"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.571Z",
+    "createdAt": "2026-10-14T06:54:29.589Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20060.193302233154,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.04"
+    },
+    "tokenId": "0a51cc66-3763-48e6-aa5f-9cac3c1be8f7",
+    "reserves": [
+     "0.082580817532395823",
+     "19999.999999999999999992"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x75e4a239077a67587db08e1b68404593cff4581cf4003fa29746b0bf0160a7e0": {
+    "key": "base:0x75e4a239077a67587db08e1b68404593cff4581cf4003fa29746b0bf0160a7e0",
+    "name": "Uniswap V4 LP BASED/AAPLc",
+    "decimals": 18,
+    "symbol": "BASED/AAPLC",
+    "price": 9007199254740990,
+    "address": "0x75e4a239077a67587db08e1b68404593cff4581cf4003fa29746b0bf0160a7e0",
+    "addresses": {
+     "base": "0x75e4a239077a67587db08e1b68404593cff4581cf4003fa29746b0bf0160a7e0"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/69790/large/based_coin.png?1759654799"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.385Z",
+    "createdAt": "2026-09-19T01:25:53.071Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x07d15798a67253d76cea61f0ea6f57aedc59dffb",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 811.6785018576223,
+    "metrics": {
+     "apy": "16.602",
+     "baseApy": "16.602",
+     "volumeUsd1d": "7.246",
+     "volumeUsd7d": "62.269"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "59f344e3-03b0-4c5c-83ef-849e4f65c1f8",
+    "reserves": [
+     "100073939.161307163645361312",
+     "1.16501422"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb0afc3cd4a67c7b9db8a857862322a911adb07019a560be5463147b452a793fb": {
+    "key": "robinhood:0xb0afc3cd4a67c7b9db8a857862322a911adb07019a560be5463147b452a793fb",
+    "name": "Uniswap V4 LP PACK/AAPL",
+    "decimals": 18,
+    "symbol": "PACK/AAPL",
+    "price": 9007199254740990,
+    "address": "0xb0afc3cd4a67c7b9db8a857862322a911adb07019a560be5463147b452a793fb",
+    "addresses": {
+     "robinhood": "0xb0afc3cd4a67c7b9db8a857862322a911adb07019a560be5463147b452a793fb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.007Z",
+    "createdAt": "2026-08-13T01:07:45.359Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0145acbccefbed6f303c420beeaaac72e905430b",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 6523.744761117871,
+    "metrics": {
+     "apy": "18.209",
+     "baseApy": "18.209",
+     "volumeUsd1d": "296.074",
+     "volumeUsd7d": "3761.601"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "294f1664-df81-44f6-8f42-3ca6b36126b4",
+    "reserves": [
+     "36477984.681710635888024848",
+     "9.68393153399276627"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0905edec2928b701fb6c6354e4eee4960895a82f": {
+    "key": "bsc:0x0905edec2928b701fb6c6354e4eee4960895a82f",
+    "name": "PancakeSwap V3 Apple/Tether USD 0.01%",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x0905edec2928b701fb6c6354e4eee4960895a82f",
+    "addresses": {
+     "bsc": "0x0905edec2928b701fb6c6354e4eee4960895a82f"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.425Z",
+    "createdAt": "2026-10-14T06:55:38.141Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 77313.28828106853,
+    "metrics": {
+     "apy": "198.665",
+     "baseApy": "198.665",
+     "volumeUsd1d": "4208058.305",
+     "volumeUsd7d": "25890959.639"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "838e2830-d420-47f0-bff7-6b808c64dc57",
+    "reserves": [
+     "96.153388008498121382",
+     "44373.515157862279050181"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x41f7a63713e76c0ab800be03bae9f17b8a356348": {
+    "key": "base:0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68822.074"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x17683e492d0c8910f7c0157d04af31cb7a23ad71": {
+    "key": "robinhood:0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "name": "Apple aStock",
+    "decimals": 18,
+    "symbol": "AAAPL",
+    "price": 342.74,
+    "address": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "addresses": {
+     "ethereum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "arbitrum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "robinhood": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "bsc": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "base": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15073.41,
+    "image": "https://coin-images.coingecko.com/coins/images/102175665/large/AAPL.png?1787292199",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "f036aa29-1405-441c-bb7f-56f42b9f5728",
+    "totalSupply": "43.979128554",
+    "circulatingSupply": "43.979128554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd2c580195bd00297f97ad8f7eb9e7ff87b8d5ab19a5b500a031855d32ba79f4a": {
+    "key": "bsc:0xd2c580195bd00297f97ad8f7eb9e7ff87b8d5ab19a5b500a031855d32ba79f4a",
+    "name": "PancakeSwap Infinity LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0xd2c580195bd00297f97ad8f7eb9e7ff87b8d5ab19a5b500a031855d32ba79f4a",
+    "addresses": {
+     "bsc": "0xd2c580195bd00297f97ad8f7eb9e7ff87b8d5ab19a5b500a031855d32ba79f4a"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:21.594Z",
+    "createdAt": "2026-10-17T18:55:42.792Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 962.9546451597614,
+    "metrics": {
+     "apy": "6777.087",
+     "baseApy": "6777.087",
+     "volumeUsd1d": "2352564.523",
+     "volumeUsd7d": "3056793.429"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0076"
+    },
+    "tokenId": "27803fa9-d3a2-4ab8-bbdc-553bc6295af8",
+    "reserves": [
+     "1.400451997444063779",
+     "483.061878881971886715"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x17683e492d0c8910f7c0157d04af31cb7a23ad71": {
+    "key": "base:0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "name": "Apple aStock",
+    "decimals": 18,
+    "symbol": "AAAPL",
+    "price": 342.74,
+    "address": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "addresses": {
+     "ethereum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "arbitrum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "robinhood": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "bsc": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "base": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15073.41,
+    "image": "https://coin-images.coingecko.com/coins/images/102175665/large/AAPL.png?1787292199",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "f036aa29-1405-441c-bb7f-56f42b9f5728",
+    "totalSupply": "43.979128554",
+    "circulatingSupply": "43.979128554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8dbecff9def80a9e537af69d00e51cc9eef42dc6635185af54b9d7089496d9bf": {
+    "key": "ethereum:0x8dbecff9def80a9e537af69d00e51cc9eef42dc6635185af54b9d7089496d9bf",
+    "name": "Uniswap V4 LP AAPLx/USDC",
+    "decimals": 18,
+    "symbol": "AAPLX/USDC",
+    "price": 9007199254740990,
+    "address": "0x8dbecff9def80a9e537af69d00e51cc9eef42dc6635185af54b9d7089496d9bf",
+    "addresses": {
+     "ethereum": "0x8dbecff9def80a9e537af69d00e51cc9eef42dc6635185af54b9d7089496d9bf"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.429Z",
+    "createdAt": "2026-06-10T23:08:25.012Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 717.7215800837666,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88"
+    },
+    "tokenId": "aa7ce42c-9d55-4397-a39f-96b107966774",
+    "reserves": [
+     "0.379391297393573276",
+     "587.461473"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x35ef1f2f187b326a93a3d74441f38fdcff85ce48": {
+    "key": "base:0x35ef1f2f187b326a93a3d74441f38fdcff85ce48",
+    "name": "Harvest Finance FARM_AAPLc",
+    "decimals": 8,
+    "symbol": "FAAPLC",
+    "price": 352.47694862124365,
+    "address": "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48",
+    "addresses": {
+     "base": "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48"
+    },
+    "platform": "harvest-finance",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/harvest-finance",
+     "https://icons.llamao.fi/icons/protocols/harvest-finance"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.588Z",
+    "createdAt": "2026-08-27T16:11:23.526Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 6420.722852454313,
+    "metrics": {
+     "apy": "11.63",
+     "baseApy": "11.63",
+     "volumeUsd1d": "13.879",
+     "volumeUsd7d": "59.995"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "ptAddress": "0x7e840326632058e5c31327bb1e6ffd70679573ab",
+     "ytAddress": "0x02123e61f903aa635c6c4caad9f9c62b27996feb",
+     "poolAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+     "marketAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+     "underlyingAddress": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "tokenId": "b288c519-2610-4fd1-943b-2387f999473a",
+    "totalSupply": "18.21600782",
+    "reserves": [
+     "18.6830863"
+    ],
+    "pricePerShare": "1.0256411",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3937af869168db000b4f6d049360446fe566398199b06441fee64e94cf62dbcc": {
+    "key": "bsc:0x3937af869168db000b4f6d049360446fe566398199b06441fee64e94cf62dbcc",
+    "name": "PancakeSwap Infinity LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x3937af869168db000b4f6d049360446fe566398199b06441fee64e94cf62dbcc",
+    "addresses": {
+     "bsc": "0x3937af869168db000b4f6d049360446fe566398199b06441fee64e94cf62dbcc"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:21.596Z",
+    "createdAt": "2026-10-18T18:59:26.481Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2624.807303606629,
+    "metrics": {
+     "apy": "156.933",
+     "baseApy": "156.933",
+     "volumeUsd1d": "168439.803"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0067"
+    },
+    "tokenId": "9033930a-88ba-4c74-8981-280dd3dd909a",
+    "reserves": [
+     "7.023970657767157789",
+     "216.112049509583743584"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x301a1ceb684d62833101b373ab6c395349b24033": {
+    "key": "base:0x301a1ceb684d62833101b373ab6c395349b24033",
+    "name": "AAPL SuperVault",
+    "decimals": 8,
+    "symbol": "SUPERAAPL",
+    "price": 343.66499999,
+    "address": "0x301a1ceb684d62833101b373ab6c395349b24033",
+    "addresses": {
+     "base": "0x301a1ceb684d62833101b373ab6c395349b24033"
+    },
+    "platform": "superform",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/superform",
+     "https://icons.llamao.fi/icons/protocols/superform"
+    ],
+    "updatedAt": "2026-10-18T20:13:33.499Z",
+    "createdAt": "2026-09-28T21:13:26.659Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 88043.7233974243,
+    "metrics": {
+     "apy": "21.677",
+     "baseApy": "0",
+     "rewardApy": "21.677",
+     "volumeUsd1d": "-5177.607",
+     "volumeUsd7d": "-1602.35"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0,
+      "withdraw": 0,
+      "performance": 0
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [
+      "USDC",
+      "sUP"
+     ],
+     "interface": "ERC4626",
+     "description": "Over time, superAAPL can evolve from simple exposure into a structured vault strategy that seeks to accumulate Apple-linked assets using liquidity provisioning, lending, and a variety of onchain strategies."
+    },
+    "tokenId": "6ea82f17-167e-45a8-83b8-202eac600c19",
+    "totalSupply": "256.19054428",
+    "reserves": [
+     "256.19054428"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7": {
+    "key": "arbitrum:0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68819.297"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "ethereum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "ethereum": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.176Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25476866.80896702,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "91efa869-e690-461b-8c90-a266f839dcc5",
+    "totalSupply": "74144.718747903202410949",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x31744e44d6af88225c1dbefbe5df8308faea641b": {
+    "key": "base:0x31744e44d6af88225c1dbefbe5df8308faea641b",
+    "name": "TAU AAPLc Carry Vault",
+    "decimals": 10,
+    "symbol": "TAUAAPLC",
+    "price": 354.1874781474284,
+    "address": "0x31744e44d6af88225c1dbefbe5df8308faea641b",
+    "addresses": {
+     "base": "0x31744e44d6af88225c1dbefbe5df8308faea641b"
+    },
+    "platform": "ipor-fusion",
+    "network": "base",
+    "images": [
+     "https://images.portals.fi/logos/ipor_fusion_logo.png",
+     "https://images.portals.fi/logos/7c7ea447-ce22-4162-9968-5f5eaa656262.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:26.120Z",
+    "createdAt": "2026-08-18T16:24:52.970Z",
+    "verifiedAt": "2026-08-26T04:49:16.941Z",
+    "tokens": [
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 54145.34956494668,
+    "customCmsImageUrl": "https://images.portals.fi/logos/7c7ea447-ce22-4162-9968-5f5eaa656262.png",
+    "metrics": {
+     "apy": "14.123",
+     "baseApy": "4.123",
+     "rewardApy": "10",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1831.269"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "ptAddress": "0x9ebb9230276e858efb8209618055add25a2bf41b",
+     "ytAddress": "0x27e6a48b2a686c1d23db12569ab4185c408e0703",
+     "description": "The vault provides an evergreen carry strategy for AAPLc, allowing depositors to generate yield on their tokenized stock holdings.",
+     "poolAddress": "0xbff897282390cb3e76fbb831ee2fd815f3934cde",
+     "socialLinks": {
+      "twitter": "https://x.com/628Labs",
+      "website": "https://www.628labs.xyz/"
+     },
+     "marketAddress": "0xbff897282390cb3e76fbb831ee2fd815f3934cde",
+     "underlyingAddress": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "tokenId": "ba562d8a-9ae5-4d9c-ad51-7597f09e4de0",
+    "totalSupply": "152.8720039685",
+    "reserves": [
+     "157.55270268"
+    ],
+    "pricePerShare": "1.0306184166",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "bsc:0x21632d9be3a5895d83a2f9adde60fa3b2450ffd596f897da1a048219b3963f99": {
+    "key": "bsc:0x21632d9be3a5895d83a2f9adde60fa3b2450ffd596f897da1a048219b3963f99",
+    "name": "Uniswap V4 LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x21632d9be3a5895d83a2f9adde60fa3b2450ffd596f897da1a048219b3963f99",
+    "addresses": {
+     "bsc": "0x21632d9be3a5895d83a2f9adde60fa3b2450ffd596f897da1a048219b3963f99"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.071Z",
+    "createdAt": "2026-09-17T03:28:31.685Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 24394.625603157914,
+    "metrics": {
+     "apy": "2.268",
+     "baseApy": "2.268",
+     "volumeUsd1d": "3421.831",
+     "volumeUsd7d": "341563.504"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0443"
+    },
+    "tokenId": "aed5554e-b740-4eb5-a62c-d6b6dae69675",
+    "reserves": [
+     "30.474638199542502814",
+     "13954.679632486391758826"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x81db0df77669b3be563e7a0591685a2c8c3ee1c5": {
+    "key": "hyperevm:0x81db0df77669b3be563e7a0591685a2c8c3ee1c5",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1017136.981",
+     "volumeUsd7d": "9782974.877"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xaba5e0c80e9f58e391214689fb342049c0d31892": {
+    "key": "arbitrum:0xaba5e0c80e9f58e391214689fb342049c0d31892",
+    "name": "Apple (Reality Protocol)",
+    "decimals": 18,
+    "symbol": "RAAPL",
+    "price": 342.41,
+    "address": "0xaba5e0c80e9f58e391214689fb342049c0d31892",
+    "addresses": {
+     "arbitrum": "0xaba5e0c80e9f58e391214689fb342049c0d31892"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-01T00:49:25.354Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 629141,
+    "image": "https://coin-images.coingecko.com/coins/images/102174884/large/raapl.png?1785330068",
+    "metrics": {
+     "volumeUsd1d": "29.936",
+     "volumeUsd7d": "719637.171"
+    },
+    "metadata": {},
+    "tokenId": "e8f2bd7e-11e3-48bd-83c5-d5f44412d0a8",
+    "totalSupply": "1837.404466191",
+    "circulatingSupply": "1837.404466191",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x863477f37c59a5a5d1f89f0a8a5cb47498bdcad1e45a014b2f813b904be2ed18": {
+    "key": "arbitrum:0x863477f37c59a5a5d1f89f0a8a5cb47498bdcad1e45a014b2f813b904be2ed18",
+    "name": "Uniswap V4 LP AAPLx/USDT",
+    "decimals": 18,
+    "symbol": "AAPLX/USDT",
+    "price": 9007199254740990,
+    "address": "0x863477f37c59a5a5d1f89f0a8a5cb47498bdcad1e45a014b2f813b904be2ed18",
+    "addresses": {
+     "arbitrum": "0x863477f37c59a5a5d1f89f0a8a5cb47498bdcad1e45a014b2f813b904be2ed18"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.003Z",
+    "createdAt": "2026-10-16T14:24:12.463Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "a0444df8-1e6c-410c-804f-c1454e2cb830",
+    "reserves": [
+     "0",
+     "1999.999999999999999993"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x68e670d2f9b792f034a1826cf4a8f180c9952cb6": {
+    "key": "ethereum:0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68847.898"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x70a690e54860ca1140cdce260a1eba0277cdb806": {
+    "key": "arbitrum:0x70a690e54860ca1140cdce260a1eba0277cdb806",
+    "name": "Uniswap V3 Apple (Reality Tokenized)/USD Coin 0.05%",
+    "decimals": 18,
+    "symbol": "RAAPL/USDC",
+    "price": 9007199254740990,
+    "address": "0x70a690e54860ca1140cdce260a1eba0277cdb806",
+    "addresses": {
+     "arbitrum": "0x70a690e54860ca1140cdce260a1eba0277cdb806"
+    },
+    "platform": "uniswap-v3",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174884/large/raapl.png?1785330068",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.668Z",
+    "createdAt": "2026-09-15T09:52:20.128Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaba5e0c80e9f58e391214689fb342049c0d31892",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 203020.93694356133,
+    "metrics": {
+     "apy": "0.003",
+     "baseApy": "0.003",
+     "volumeUsd1d": "29.959",
+     "volumeUsd7d": "28700.54"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "50ff1f0c-5194-410b-80a7-a23a2bd96f77",
+    "reserves": [
+     "296.309876694205127085",
+     "101579.858019"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb": {
+    "key": "robinhood:0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb",
+    "name": "Uniswap V4 LP USDG/AAPL",
+    "decimals": 18,
+    "symbol": "USDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb",
+    "addresses": {
+     "robinhood": "0xc748f4671a867db48b552f6b7650bf3255e05f80f00e3f7aad1b17ccb7898fdb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.755Z",
+    "createdAt": "2026-07-16T20:45:10.190Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 658949.4490289759,
+    "metrics": {
+     "apy": "2.248",
+     "baseApy": "2.248",
+     "volumeUsd1d": "11598.459",
+     "volumeUsd7d": "1050765.333"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "a701b4d8-a4c6-4b8b-835a-786eca3d5ebb",
+    "reserves": [
+     "441618.931409",
+     "633.594017924161410754"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x943bf64d566c32a2bcd41ac92fb63c111cc9de8f": {
+    "key": "ethereum:0x943bf64d566c32a2bcd41ac92fb63c111cc9de8f",
+    "name": "Wrapped Apple xStock",
+    "decimals": 18,
+    "symbol": "WAAPLX",
+    "price": 344.74329808893253,
+    "address": "0x943bf64d566c32a2bcd41ac92fb63c111cc9de8f",
+    "addresses": {
+     "ethereum": "0x943bf64d566c32a2bcd41ac92fb63c111cc9de8f"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.533Z",
+    "createdAt": "2026-07-03T12:42:52.971Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    ],
+    "liquidity": 3508.9841136858035,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/AAPLx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "3b68bf5b-6cac-4f66-8f1e-07aad175d016",
+    "totalSupply": "10.178541927102524645",
+    "reserves": [
+     "10.211815708299293194"
+    ],
+    "pricePerShare": "1.003269012539818699",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2": {
+    "key": "base:0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+    "name": "Spectra Market PT-fAAPLc(AAPLc)-2026/12/28/fAAPLc",
+    "decimals": 18,
+    "symbol": "PT-FAAPLC(AAPLC)-2026/12/28/FAAPLC",
+    "price": 345.46052111318863,
+    "address": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+    "addresses": {
+     "base": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2"
+    },
+    "platform": "spectra",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://icons.llamao.fi/icons/protocols/spectra"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.633Z",
+    "createdAt": "2026-09-28T16:28:36.277Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7e840326632058e5c31327bb1e6ffd70679573ab",
+     "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48"
+    ],
+    "poolAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+    "liquidity": 5933.959782824609,
+    "metrics": {
+     "apy": "9.259",
+     "baseApy": "9.259",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1798416011,
+     "expired": false,
+     "ptAddress": "0x7e840326632058e5c31327bb1e6ffd70679573ab",
+     "ytAddress": "0x02123e61f903aa635c6c4caad9f9c62b27996feb",
+     "ibtAddress": "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48",
+     "poolAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+     "underlyingAddress": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "tokenId": "90e73f46-ad9b-4d69-9bde-5e79c6243e12",
+    "totalSupply": "17.176954876648186638",
+    "reserves": [
+     "8.70464472",
+     "8.5017091"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x41242819331898fd61aa85a9dc36fe2072baee15778b9f640c31ac1dcefe1c4a": {
+    "key": "robinhood:0x41242819331898fd61aa85a9dc36fe2072baee15778b9f640c31ac1dcefe1c4a",
+    "name": "Uniswap V4 LP ETH/AAPL",
+    "decimals": 18,
+    "symbol": "ETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0x41242819331898fd61aa85a9dc36fe2072baee15778b9f640c31ac1dcefe1c4a",
+    "addresses": {
+     "robinhood": "0x41242819331898fd61aa85a9dc36fe2072baee15778b9f640c31ac1dcefe1c4a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.052Z",
+    "createdAt": "2026-09-16T04:05:18.467Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 14635.486588674647,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "7241.896"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8,
+     "feePercentage": "0.0966"
+    },
+    "tokenId": "821728c1-2980-47d5-890d-2e49481ffd8c",
+    "reserves": [
+     "6.216252974966704308",
+     "0.324763900361144201"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x91faa9a75aed4ccf3e96f84c50bb9c2a5f3e6d1d": {
+    "key": "base:0x91faa9a75aed4ccf3e96f84c50bb9c2a5f3e6d1d",
+    "name": "Dialectic Yielding AAPLc",
+    "decimals": 18,
+    "symbol": "YAAPLC",
+    "price": 344.02392371598955,
+    "address": "0x91faa9a75aed4ccf3e96f84c50bb9c2a5f3e6d1d",
+    "addresses": {
+     "base": "0x91faa9a75aed4ccf3e96f84c50bb9c2a5f3e6d1d"
+    },
+    "platform": "makina",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/makina",
+     "https://icons.llamao.fi/icons/protocols/makina"
+    ],
+    "updatedAt": "2026-10-18T20:13:33.647Z",
+    "createdAt": "2026-10-13T05:12:39.382Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "poolAddress": "0x2ad7de46614fefee6702b626daca480538132510",
+    "liquidity": 69248.76297919749,
+    "metrics": {
+     "apy": "2.801",
+     "baseApy": "2.801",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "43475.198"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "interface": "ERC20",
+     "strategyName": "Dialectic Yielding AAPLc",
+     "strategySlug": "yaaplc",
+     "machineAddress": "0x2ad7de46614fefee6702b626daca480538132510",
+     "redeemerAddress": "0x2a996c09fc5cd48e0688a234f41177875e0b6c51",
+     "depositorAddress": "0x26bdb065602da3525b3a98b2c598650b97c8ab60"
+    },
+    "tokenId": "bc086ad1-9177-4acd-9dbf-f19e8e453974",
+    "totalSupply": "201.290543351948205659",
+    "reserves": [
+     "201.5007725"
+    ],
+    "pricePerShare": "1.0010444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x00d11147c95de39a546212969f2a8902f1b35f672eda77f5aff01a293aa477ee": {
+    "key": "bsc:0x00d11147c95de39a546212969f2a8902f1b35f672eda77f5aff01a293aa477ee",
+    "name": "Uniswap V4 LP AAPLon/USDT",
+    "decimals": 18,
+    "symbol": "AAPLON/USDT",
+    "price": 9007199254740990,
+    "address": "0x00d11147c95de39a546212969f2a8902f1b35f672eda77f5aff01a293aa477ee",
+    "addresses": {
+     "bsc": "0x00d11147c95de39a546212969f2a8902f1b35f672eda77f5aff01a293aa477ee"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.365Z",
+    "createdAt": "2025-10-30T06:07:53.425Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 530.728063877423,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80"
+    },
+    "tokenId": "0a70bbf5-09e6-4daf-8e50-3f1b19420311",
+    "reserves": [
+     "1.036535684972251629",
+     "173.575156294398911807"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3fdc23d1692352f9c82e524d36f9e06fc45a53bce73802d0db661b7caa43b3a6": {
+    "key": "base:0x3fdc23d1692352f9c82e524d36f9e06fc45a53bce73802d0db661b7caa43b3a6",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0x3fdc23d1692352f9c82e524d36f9e06fc45a53bce73802d0db661b7caa43b3a6",
+    "addresses": {
+     "base": "0x3fdc23d1692352f9c82e524d36f9e06fc45a53bce73802d0db661b7caa43b3a6"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102175597/large/aapl_200x200.png?1787068801"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.778Z",
+    "createdAt": "2026-08-20T15:51:41.305Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 554.9251942819353,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5200,
+     "feePercentage": "52.048"
+    },
+    "tokenId": "406398eb-272f-4ec4-8b92-296560fd5315",
+    "reserves": [
+     "305.386192",
+     "0.72627203"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xba1d0c3f9ca153f354cafd8c861b03a496547c61dc2c22e3df53e5d8d6c85da3": {
+    "key": "bsc:0xba1d0c3f9ca153f354cafd8c861b03a496547c61dc2c22e3df53e5d8d6c85da3",
+    "name": "Uniswap V4 LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0xba1d0c3f9ca153f354cafd8c861b03a496547c61dc2c22e3df53e5d8d6c85da3",
+    "addresses": {
+     "bsc": "0xba1d0c3f9ca153f354cafd8c861b03a496547c61dc2c22e3df53e5d8d6c85da3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.365Z",
+    "createdAt": "2026-07-31T08:35:10.091Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1257.6011177542646,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 13,
+     "feePercentage": "0.1535"
+    },
+    "tokenId": "289daae1-d114-406f-af48-06382e712abf",
+    "reserves": [
+     "1.946810193718388497",
+     "590.421984469932720065"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x783c9bbb765047cfdd2b84b92b2ca9f11d34b7ed": {
+    "key": "robinhood:0x783c9bbb765047cfdd2b84b92b2ca9f11d34b7ed",
+    "name": "Uniswap V3 Global Dollar/Apple  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0x783c9bbb765047cfdd2b84b92b2ca9f11d34b7ed",
+    "addresses": {
+     "robinhood": "0x783c9bbb765047cfdd2b84b92b2ca9f11d34b7ed"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.764Z",
+    "createdAt": "2026-07-23T13:51:09.959Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 80907.5111088803,
+    "metrics": {
+     "apy": "0.099",
+     "baseApy": "0.099",
+     "volumeUsd1d": "73.169",
+     "volumeUsd7d": "102962.846"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "c4e85d71-8a49-4f8f-a6f4-e2e33279c576",
+    "reserves": [
+     "62641.390508",
+     "53.252092113617094815"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x5aca9563f8d14a6d79f12421d549a5606644a270": {
+    "key": "bsc:0x5aca9563f8d14a6d79f12421d549a5606644a270",
+    "name": "PancakeSwap V3 Apple/Wrapped BNB 0.25%",
+    "decimals": 18,
+    "symbol": "AAPLB/WBNB",
+    "price": 9007199254740990,
+    "address": "0x5aca9563f8d14a6d79f12421d549a5606644a270",
+    "addresses": {
+     "bsc": "0x5aca9563f8d14a6d79f12421d549a5606644a270"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.654Z",
+    "createdAt": "2026-09-05T21:08:07.119Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 53869.77533225745,
+    "metrics": {
+     "apy": "59.818",
+     "baseApy": "59.818",
+     "volumeUsd1d": "35347.049",
+     "volumeUsd7d": "252273.358"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "a4eae723-a8cc-43b3-84ab-71db0703d88b",
+    "reserves": [
+     "27.512552300323529233",
+     "62.999738442474229964"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xcb4bc943314405c01907ae910e57afc2d0549706": {
+    "key": "base:0xcb4bc943314405c01907ae910e57afc2d0549706",
+    "name": "Aerodrome SlipStream LAPTOP/Apple Inc. 0.3%",
+    "decimals": 18,
+    "symbol": "LAPTOP/AAPLC",
+    "price": 9007199254740990,
+    "address": "0xcb4bc943314405c01907ae910e57afc2d0549706",
+    "addresses": {
+     "base": "0xcb4bc943314405c01907ae910e57afc2d0549706"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/102176837/large/Laptop_Logo.png?1788875459"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.296Z",
+    "createdAt": "2026-09-10T00:17:44.861Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb095274743941e953c746f9c228da9c18bb6ec29",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 22359.322202979507,
+    "metrics": {
+     "apy": "320.692",
+     "baseApy": "320.692",
+     "rewardApy": "0",
+     "volumeUsd1d": "56441.885",
+     "volumeUsd7d": "738889.877"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "3a82ec83-28c3-420b-9110-275e2eb28a98",
+    "reserves": [
+     "228818.392200038431804412",
+     "12.10487702"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x7e840326632058e5c31327bb1e6ffd70679573ab": {
+    "key": "base:0x7e840326632058e5c31327bb1e6ffd70679573ab",
+    "name": "Principal Token: fAAPLc(AAPLc) 2026/12/28",
+    "decimals": 8,
+    "symbol": "PT-FAAPLC(AAPLC)-2026/12/28",
+    "price": 337.44091754168113,
+    "address": "0x7e840326632058e5c31327bb1e6ffd70679573ab",
+    "addresses": {
+     "base": "0x7e840326632058e5c31327bb1e6ffd70679573ab"
+    },
+    "platform": "spectra-pt",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://icons.llamao.fi/icons/protocols/spectra"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.984Z",
+    "createdAt": "2026-09-28T15:59:35.583Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48"
+    ],
+    "poolAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+    "liquidity": 2937.3033011911502,
+    "metrics": {
+     "apy": "9.65",
+     "baseApy": "9.65",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.699"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1798416011,
+     "expired": false,
+     "ytAddress": "0x02123e61f903aa635c6c4caad9f9c62b27996feb",
+     "ibtAddress": "0x35ef1f2f187b326a93a3d74441f38fdcff85ce48",
+     "poolAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+     "marketAddress": "0xcff08eb7a12e3cb8dae59c6fc8fe1c7e0b552dd2",
+     "underlyingAddress": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "tokenId": "e58d3854-19d1-4134-aaf2-ac0ef2334546",
+    "totalSupply": "8.70464472",
+    "reserves": [
+     "8.70464472"
+    ],
+    "pricePerShare": "0.9818891",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x172e8c4921543c6dd208abd3609c350ca7e0f51eb21f600b9e4c601df4713c52": {
+    "key": "bsc:0x172e8c4921543c6dd208abd3609c350ca7e0f51eb21f600b9e4c601df4713c52",
+    "name": "Uniswap V4 LP USDC/AAPLx",
+    "decimals": 18,
+    "symbol": "USDC/AAPLX",
+    "price": 9007199254740990,
+    "address": "0x172e8c4921543c6dd208abd3609c350ca7e0f51eb21f600b9e4c601df4713c52",
+    "addresses": {
+     "bsc": "0x172e8c4921543c6dd208abd3609c350ca7e0f51eb21f600b9e4c601df4713c52"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.425Z",
+    "createdAt": "2026-06-11T10:22:11.128Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    ],
+    "liquidity": 2674.4890301261603,
+    "metrics": {
+     "apy": "25602.482",
+     "baseApy": "25602.482",
+     "volumeUsd1d": "2131.391",
+     "volumeUsd7d": "2133.493"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "f84f32a7-ec7a-4e20-9225-5a9816f2d58e",
+    "reserves": [
+     "2348.017448929736625111",
+     "0.951331623172923871"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9a115e83ad9aab5d29aff68044d24681c9eddf46b7c3d335bbf221cba8427e29": {
+    "key": "ethereum:0x9a115e83ad9aab5d29aff68044d24681c9eddf46b7c3d335bbf221cba8427e29",
+    "name": "Uniswap V4 LP AAPLx/USDC",
+    "decimals": 18,
+    "symbol": "AAPLX/USDC",
+    "price": 9007199254740990,
+    "address": "0x9a115e83ad9aab5d29aff68044d24681c9eddf46b7c3d335bbf221cba8427e29",
+    "addresses": {
+     "ethereum": "0x9a115e83ad9aab5d29aff68044d24681c9eddf46b7c3d335bbf221cba8427e29"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.618Z",
+    "createdAt": "2026-06-28T18:00:34.049Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 826.5265965609033,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19930,
+     "feePercentage": "99.6504"
+    },
+    "tokenId": "a04fb3f0-855b-4fd2-84c3-66209437e6d3",
+    "reserves": [
+     "1.60563893199615057",
+     "274.846694"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0": {
+    "key": "base:0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0",
+    "name": "Aerodrome SlipStream USD Coin/Apple Inc. 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0",
+    "addresses": {
+     "base": "0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.296Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 1246332.4508416185,
+    "metrics": {
+     "apy": "43.913",
+     "baseApy": "43.913",
+     "rewardApy": "0",
+     "volumeUsd1d": "3003366.258",
+     "volumeUsd7d": "42471217.981"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "fa5cbdcb-e3aa-4ec6-9dc6-a2f75a4e2883",
+    "reserves": [
+     "661051.009908",
+     "1703.40619843"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x17683e492d0c8910f7c0157d04af31cb7a23ad71": {
+    "key": "bsc:0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "name": "Apple aStock",
+    "decimals": 18,
+    "symbol": "AAAPL",
+    "price": 342.74,
+    "address": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "addresses": {
+     "ethereum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "arbitrum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "robinhood": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "bsc": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "base": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15073.41,
+    "image": "https://coin-images.coingecko.com/coins/images/102175665/large/AAPL.png?1787292199",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "f036aa29-1405-441c-bb7f-56f42b9f5728",
+    "totalSupply": "43.979128554",
+    "circulatingSupply": "43.979128554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xac63a5d5f8247cd4b978af9adc8227e453cfc898": {
+    "key": "base:0xac63a5d5f8247cd4b978af9adc8227e453cfc898",
+    "name": "Beefy CLM AAPLc-USDC Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWAERODROMEBASEUSDC-AAPLC",
+    "price": 3196494314623.6387,
+    "address": "0xac63a5d5f8247cd4b978af9adc8227e453cfc898",
+    "addresses": {
+     "base": "0xac63a5d5f8247cd4b978af9adc8227e453cfc898"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.092Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": "2026-09-03T15:23:25.038Z",
+    "tokens": [
+     "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a"
+    ],
+    "poolAddress": "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a",
+    "liquidity": 252534.12174391196,
+    "metrics": {
+     "apy": "1.496",
+     "baseApy": "1.496",
+     "volumeUsd1d": "52.024",
+     "volumeUsd7d": "-9482.487"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-aaplc",
+     "providerId": "aerodrome",
+     "description": "Reward pool receipt token for the Beefy Cowcentrated Liquidity Manager vault on the Aerodrome AAPLc-USDC pool on Base. Depositors stake their Beefy CLM position here to earn campaign incentives, and the token represents that staked position 1:1. It is minted on stake and burned on unstake",
+     "socialLinks": {
+      "github": "https://github.com/beefyfinance/",
+      "discord": "https://discord.gg/beefyfinance",
+      "twitter": "https://x.com/beefyfinance",
+      "website": "https://app.beefy.com",
+      "telegram": "https://t.me/beefyfinance",
+      "auditLink": "https://github.com/beefyfinance/beefy-audits",
+      "documentation": "https://docs.beefy.finance/"
+     },
+     "tickSpacing": 10,
+     "managerAddress": "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a",
+     "strategyAddress": "0xd93b22fa01d5260e0d9c791d70b26128e42d4254",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xac63a5d5f8247cd4b978af9adc8227e453cfc898",
+     "standardVaultAddress": "0x66cf69c5b780240b1eb1879020453d81b1c816da",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb200000000000000000000c2e324d24d7eecd1fb"
+     ]
+    },
+    "tokenId": "28d573fd-c4e1-4960-adb6-9e6f0db9488d",
+    "totalSupply": "0.000000079003463447",
+    "reserves": [
+     "0.000000079003463447"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "bsc:0x92ce2a4c5da7617b899584404e06ac871fc4d0ff6547138ba82768bfaca0d91a": {
+    "key": "bsc:0x92ce2a4c5da7617b899584404e06ac871fc4d0ff6547138ba82768bfaca0d91a",
+    "name": "Uniswap V4 LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x92ce2a4c5da7617b899584404e06ac871fc4d0ff6547138ba82768bfaca0d91a",
+    "addresses": {
+     "bsc": "0x92ce2a4c5da7617b899584404e06ac871fc4d0ff6547138ba82768bfaca0d91a"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.832Z",
+    "createdAt": "2026-10-15T14:22:42.846Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 778.9493376213273,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6660474.201"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0113"
+    },
+    "tokenId": "f7c41265-214e-4fd7-901a-532066fb6198",
+    "reserves": [
+     "1.131935858252529361",
+     "391.069483454187247747"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xad82c9eb065a5cfed71db087e4a52c8a09c69921": {
+    "key": "ethereum:0xad82c9eb065a5cfed71db087e4a52c8a09c69921",
+    "name": "Uniswap V3 Apple (Ondo Tokenized)/USD Coin 1%",
+    "decimals": 18,
+    "symbol": "AAPLON/USDC",
+    "price": 9007199254740990,
+    "address": "0xad82c9eb065a5cfed71db087e4a52c8a09c69921",
+    "addresses": {
+     "ethereum": "0xad82c9eb065a5cfed71db087e4a52c8a09c69921"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.262Z",
+    "createdAt": "2025-09-21T08:30:40.244Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 39631.66732982746,
+    "metrics": {
+     "apy": "3.259",
+     "baseApy": "3.259",
+     "volumeUsd1d": "353.913",
+     "volumeUsd7d": "27430.27"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "6b039edd-6197-45d2-ae00-1351bf35b0f3",
+    "reserves": [
+     "34.481778463774917758",
+     "27750.821192"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x13841b4845325482b5328434f37f9eb0188a407d8ceaf1eb00facbf2674f4dda": {
+    "key": "robinhood:0x13841b4845325482b5328434f37f9eb0188a407d8ceaf1eb00facbf2674f4dda",
+    "name": "Uniswap V4 LP MBG/AAPL",
+    "decimals": 18,
+    "symbol": "MBG/AAPL",
+    "price": 9007199254740990,
+    "address": "0x13841b4845325482b5328434f37f9eb0188a407d8ceaf1eb00facbf2674f4dda",
+    "addresses": {
+     "robinhood": "0x13841b4845325482b5328434f37f9eb0188a407d8ceaf1eb00facbf2674f4dda"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.907Z",
+    "createdAt": "2026-09-29T05:04:26.321Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x977689834cb1822ea31d80307303a76aaa313368",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 3108.074786555705,
+    "metrics": {
+     "apy": "20.576",
+     "baseApy": "20.576",
+     "volumeUsd1d": "159.426",
+     "volumeUsd7d": "2326.018"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "66e1923d-b3a2-4e23-b66c-310bd9c72726",
+    "reserves": [
+     "29235.986223418613641106",
+     "4.506667075710443217"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3714aa8105de1f384481b425788af413748c1837": {
+    "key": "robinhood:0x3714aa8105de1f384481b425788af413748c1837",
+    "name": "Uniswap V3 Global Dollar/Apple  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0x3714aa8105de1f384481b425788af413748c1837",
+    "addresses": {
+     "robinhood": "0x3714aa8105de1f384481b425788af413748c1837"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.967Z",
+    "createdAt": "2026-07-20T07:07:49.661Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 1017.2976702450839,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "191.056"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "d3042cfd-d0e3-4d3f-a634-9d7947ee0064",
+    "reserves": [
+     "773.724478",
+     "0.710100538218163183"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xda4116b5894ee7479e64eae9276e1a2944ef0e5ce863a299d296a15618deee01": {
+    "key": "robinhood:0xda4116b5894ee7479e64eae9276e1a2944ef0e5ce863a299d296a15618deee01",
+    "name": "Uniswap V4 LP USDG/AAPL",
+    "decimals": 18,
+    "symbol": "USDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0xda4116b5894ee7479e64eae9276e1a2944ef0e5ce863a299d296a15618deee01",
+    "addresses": {
+     "robinhood": "0xda4116b5894ee7479e64eae9276e1a2944ef0e5ce863a299d296a15618deee01"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.960Z",
+    "createdAt": "2026-07-16T20:40:36.619Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 876.8959540195809,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "63.57"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "4f5fe5c6-9db7-4759-8bd8-a7826fc3bec8",
+    "reserves": [
+     "652.358427",
+     "0.654604955977038189"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1": {
+    "key": "robinhood:0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1",
+    "name": "Beefy CLM AAPL-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODAAPL-USDG",
+    "price": 333.4090319000955,
+    "address": "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1",
+    "addresses": {
+     "robinhood": "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "poolAddress": "0x783c9bbb765047cfdd2b84b92b2ca9f11d34b7ed",
+    "liquidity": 39787.48504956691,
+    "metrics": {
+     "apy": "0.095",
+     "baseApy": "0.095",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "49.932"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-aapl-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1",
+     "strategyAddress": "0xbb594904f65ce50fd3b3b4fe666d0f413bbe6442",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x68a2e1cf0007d28728774619d1ac89f66fa99894",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+     ]
+    },
+    "tokenId": "e7ceec56-514f-4dd0-8748-38f5f65fa591",
+    "totalSupply": "119.335354602778276162",
+    "reserves": [
+     "26394.622742",
+     "39.044849908259805122"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d": {
+    "key": "robinhood:0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d",
+    "name": "Uniswap V3 Global Dollar/Apple  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "USDG/AAPL",
+    "price": 9007199254740990,
+    "address": "0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d",
+    "addresses": {
+     "robinhood": "0xaae0d815ee56e4092a5e5c2911e676fea50b2d6d"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.022Z",
+    "createdAt": "2026-07-29T16:22:01.100Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 249592.27840374727,
+    "metrics": {
+     "apy": "3.597",
+     "baseApy": "3.597",
+     "volumeUsd1d": "49199.839",
+     "volumeUsd7d": "3978921.209"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "5eb76d54-8ea7-4a2e-b4a2-dbd247b531de",
+    "reserves": [
+     "183304.796759",
+     "193.251055090245439191"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xb6b0149009eb78239213b97a960b5c793c03373b": {
+    "key": "avalanche:0xb6b0149009eb78239213b97a960b5c793c03373b",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68811.449"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xea35b2847dd3ca14ed9f4e2fd872aaf38cab7e02965d8bd7289e8c9d42e69527": {
+    "key": "ethereum:0xea35b2847dd3ca14ed9f4e2fd872aaf38cab7e02965d8bd7289e8c9d42e69527",
+    "name": "Uniswap V4 LP AAPLon/wUSDC",
+    "decimals": 18,
+    "symbol": "AAPLON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xea35b2847dd3ca14ed9f4e2fd872aaf38cab7e02965d8bd7289e8c9d42e69527",
+    "addresses": {
+     "ethereum": "0xea35b2847dd3ca14ed9f4e2fd872aaf38cab7e02965d8bd7289e8c9d42e69527"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.201Z",
+    "createdAt": "2026-09-28T10:39:20.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2cf42ff4-3dd1-4063-b94b-055915ee2e65",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "arbitrum:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "arbitrum": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:17.440Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24755617.21826392,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "9a0e1f03-3fbc-489a-a902-6f41e6ecfd1c",
+    "totalSupply": "72045.683240487535606549",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x48170dd8fbe4ad1e592e78c2465518ff70c60734a4cab81e52517ef232980281": {
+    "key": "arbitrum:0x48170dd8fbe4ad1e592e78c2465518ff70c60734a4cab81e52517ef232980281",
+    "name": "Uniswap V4 LP rAAPL/USD0",
+    "decimals": 18,
+    "symbol": "RAAPL/USD0",
+    "price": 9007199254740990,
+    "address": "0x48170dd8fbe4ad1e592e78c2465518ff70c60734a4cab81e52517ef232980281",
+    "addresses": {
+     "arbitrum": "0x48170dd8fbe4ad1e592e78c2465518ff70c60734a4cab81e52517ef232980281"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174884/large/raapl.png?1785330068",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.818Z",
+    "createdAt": "2026-09-15T15:44:29.134Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaba5e0c80e9f58e391214689fb342049c0d31892",
+     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+    ],
+    "liquidity": 1323.4379034486747,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4684e8b1-1caf-4bf1-b79e-b83769d6d4b7",
+    "reserves": [
+     "2.566493080926066943",
+     "445.105692"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xeab4766790098876d1a0dbdded252f17a2bcbbc0": {
+    "key": "robinhood:0xeab4766790098876d1a0dbdded252f17a2bcbbc0",
+    "name": "Uniswap V3 WETH/Apple  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0xeab4766790098876d1a0dbdded252f17a2bcbbc0",
+    "addresses": {
+     "robinhood": "0xeab4766790098876d1a0dbdded252f17a2bcbbc0"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.371Z",
+    "createdAt": "2026-10-18T19:02:44.514Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 7011.93741858117,
+    "metrics": {
+     "apy": "3.838",
+     "baseApy": "3.838",
+     "volumeUsd1d": "245.703"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "26fec6bb-fca6-47d8-baa5-9917f09bd7e1",
+    "reserves": [
+     "3.000153113905821511",
+     "0.001077456131030258"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a": {
+    "key": "bsc:0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "name": "Apple xStock",
+    "decimals": 18,
+    "symbol": "AAPLX",
+    "price": 343.61,
+    "address": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+    "addresses": {
+     "bsc": "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:19.723Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3444639.4450186524,
+    "image": "https://coin-images.coingecko.com/coins/images/55586/large/Ticker_AAPL__Company_Name_Apple_Inc.__size_200x200_2x.png?1746807196",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "apple-xstock"
+    },
+    "tokenId": "2e86a484-be17-40c6-809f-d0832f80da2f",
+    "totalSupply": "10024.852143472694160207",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x17683e492d0c8910f7c0157d04af31cb7a23ad71": {
+    "key": "arbitrum:0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "name": "Apple aStock",
+    "decimals": 18,
+    "symbol": "AAAPL",
+    "price": 342.74,
+    "address": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "addresses": {
+     "ethereum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "arbitrum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "robinhood": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "bsc": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "base": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-25T08:08:29.943Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15073.41,
+    "image": "https://coin-images.coingecko.com/coins/images/102175665/large/AAPL.png?1787292199",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "f036aa29-1405-441c-bb7f-56f42b9f5728",
+    "totalSupply": "43.979128554",
+    "circulatingSupply": "43.979128554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x66cf69c5b780240b1eb1879020453d81b1c816da": {
+    "key": "base:0x66cf69c5b780240b1eb1879020453d81b1c816da",
+    "name": "Moo Beefy Aerodrome Base USDC-AAPLc",
+    "decimals": 18,
+    "symbol": "MOOBEEFYAERODROMEBASEUSDC-AAPL",
+    "price": 3333377517372.3896,
+    "address": "0x66cf69c5b780240b1eb1879020453d81b1c816da",
+    "addresses": {
+     "base": "0x66cf69c5b780240b1eb1879020453d81b1c816da"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.947Z",
+    "createdAt": "2026-08-26T12:36:11.301Z",
+    "verifiedAt": "2026-09-04T04:43:25.318Z",
+    "tokens": [
+     "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a"
+    ],
+    "liquidity": 239781.95249841697,
+    "metrics": {
+     "apy": "1.363",
+     "baseApy": "1.363",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-10664.75"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "description": "Vault receipt token for the Beefy auto-compounding vault on the Aerodrome AAPLc-USDC pool on Base. It represents a share of the vault, which holds the Beefy CLM position and reinvests trading fees and rewards back into it. The share price rises as yield compounds, and the token is burned on withdrawal to redeem the underlying position.",
+     "socialLinks": {
+      "github": "https://github.com/beefyfinance",
+      "discord": "https://discord.gg/beefyfinance",
+      "twitter": "https://x.com/beefyfinance",
+      "website": "https://app.beefy.com",
+      "telegram": "https://t.me/beefyfinance",
+      "auditLink": "https://github.com/beefyfinance/beefy-audits",
+      "documentation": "https://docs.beefy.finance/"
+     }
+    },
+    "tokenId": "3edb511a-daa8-4d5e-a53e-799969569f41",
+    "totalSupply": "0.000000071933632254",
+    "reserves": [
+     "0.000000075014040038"
+    ],
+    "pricePerShare": "1.0428229145043445",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "bsc:0x302a080ffb0bc52f377a293ed348cd1006b0a5847bf80d7b5a52030b19f53216": {
+    "key": "bsc:0x302a080ffb0bc52f377a293ed348cd1006b0a5847bf80d7b5a52030b19f53216",
+    "name": "Uniswap V4 LP GOOGLB/AAPLB",
+    "decimals": 18,
+    "symbol": "GOOGLB/AAPLB",
+    "price": 9007199254740990,
+    "address": "0x302a080ffb0bc52f377a293ed348cd1006b0a5847bf80d7b5a52030b19f53216",
+    "addresses": {
+     "bsc": "0x302a080ffb0bc52f377a293ed348cd1006b0a5847bf80d7b5a52030b19f53216"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174363/large/googlb-bstocks.png?1783451303",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.054Z",
+    "createdAt": "2026-10-17T14:24:22.388Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3f53de71c126bdabae20f9cd64848d317f6c3238",
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a"
+    ],
+    "liquidity": 1821.6373513754236,
+    "metrics": {
+     "apy": "60.522",
+     "baseApy": "60.522",
+     "volumeUsd1d": "11988.794",
+     "volumeUsd7d": "15319.679"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2,
+     "feePercentage": "0.0252"
+    },
+    "tokenId": "3ee6a3c3-e9a9-4288-8d98-c3c177867946",
+    "reserves": [
+     "3.543369654094829298",
+     "1.811695235605190581"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2cf94f4671c376e2aef86f98ae5a85d7b6a941f1930e329737c155bde2fc227c": {
+    "key": "bsc:0x2cf94f4671c376e2aef86f98ae5a85d7b6a941f1930e329737c155bde2fc227c",
+    "name": "PancakeSwap Infinity LP AAPLon/USDT",
+    "decimals": 18,
+    "symbol": "AAPLON/USDT",
+    "price": 9007199254740990,
+    "address": "0x2cf94f4671c376e2aef86f98ae5a85d7b6a941f1930e329737c155bde2fc227c",
+    "addresses": {
+     "bsc": "0x2cf94f4671c376e2aef86f98ae5a85d7b6a941f1930e329737c155bde2fc227c"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.873Z",
+    "createdAt": "2026-08-19T09:58:30.926Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2017.1915589943515,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "10"
+    },
+    "tokenId": "6f9ea1bb-a0c5-473e-82c1-cb5790f9b1e1",
+    "reserves": [
+     "2.928202079322596442",
+     "1008.659333630760730245"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x383e9df6cba05083605374e9cb414e49af22b6da5344c2ee3b0553621c27bb3f": {
+    "key": "base:0x383e9df6cba05083605374e9cb414e49af22b6da5344c2ee3b0553621c27bb3f",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0x383e9df6cba05083605374e9cb414e49af22b6da5344c2ee3b0553621c27bb3f",
+    "addresses": {
+     "base": "0x383e9df6cba05083605374e9cb414e49af22b6da5344c2ee3b0553621c27bb3f"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:57.154Z",
+    "createdAt": "2026-09-05T19:35:34.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 2155.868728606568,
+    "metrics": {
+     "apy": "0.393",
+     "baseApy": "0.393",
+     "volumeUsd1d": "2.324",
+     "volumeUsd7d": "475.222"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "bc9ebc95-6220-446c-9203-4c3fb6cdd959",
+    "reserves": [
+     "1691.360897",
+     "1.35252053"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x17683e492d0c8910f7c0157d04af31cb7a23ad71": {
+    "key": "ethereum:0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "name": "Apple aStock",
+    "decimals": 18,
+    "symbol": "AAAPL",
+    "price": 342.74,
+    "address": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+    "addresses": {
+     "ethereum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "arbitrum": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "robinhood": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "bsc": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71",
+     "base": "0x17683e492d0c8910f7c0157d04af31cb7a23ad71"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15073.41,
+    "image": "https://coin-images.coingecko.com/coins/images/102175665/large/AAPL.png?1787292199",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "f036aa29-1405-441c-bb7f-56f42b9f5728",
+    "totalSupply": "43.979128554",
+    "circulatingSupply": "43.979128554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7458bf9fb741da112910cd1ff786d5ee95bcb729fc3dcda258e8bc0956f3d5ef": {
+    "key": "robinhood:0x7458bf9fb741da112910cd1ff786d5ee95bcb729fc3dcda258e8bc0956f3d5ef",
+    "name": "Uniswap V4 LP ETH/AAPL",
+    "decimals": 18,
+    "symbol": "ETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0x7458bf9fb741da112910cd1ff786d5ee95bcb729fc3dcda258e8bc0956f3d5ef",
+    "addresses": {
+     "robinhood": "0x7458bf9fb741da112910cd1ff786d5ee95bcb729fc3dcda258e8bc0956f3d5ef"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.166Z",
+    "createdAt": "2026-09-08T14:42:56.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 90701.05466256477,
+    "metrics": {
+     "apy": "1.406",
+     "baseApy": "1.406",
+     "volumeUsd1d": "1205.281",
+     "volumeUsd7d": "100668.303"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "4c716157-9170-46f8-b0a8-f29882d34265",
+    "reserves": [
+     "37.710679369704071994",
+     "7.554201171831647871"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xe816eb35174b28a20219d389eaf296b0d8b90cdaac0782d8a7d0a69e6d3abe79": {
+    "key": "base:0xe816eb35174b28a20219d389eaf296b0d8b90cdaac0782d8a7d0a69e6d3abe79",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0xe816eb35174b28a20219d389eaf296b0d8b90cdaac0782d8a7d0a69e6d3abe79",
+    "addresses": {
+     "base": "0xe816eb35174b28a20219d389eaf296b0d8b90cdaac0782d8a7d0a69e6d3abe79"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:57.118Z",
+    "createdAt": "2026-08-23T12:10:32.888Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 893.2072195929762,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "c9819dbf-3a2d-4bad-a21c-8bc83297ffba",
+    "reserves": [
+     "479.39173",
+     "1.20437711"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x97f35d1e92795327614be000cd18cba1be2c1931": {
+    "key": "base:0x97f35d1e92795327614be000cd18cba1be2c1931",
+    "name": "Uniswap V3 USD Coin/Apple Inc. 0.3%",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0x97f35d1e92795327614be000cd18cba1be2c1931",
+    "addresses": {
+     "base": "0x97f35d1e92795327614be000cd18cba1be2c1931"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102175597/large/aapl_200x200.png?1787068801"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.316Z",
+    "createdAt": "2026-08-18T16:25:13.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 32439.696966627886,
+    "metrics": {
+     "apy": "0.892",
+     "baseApy": "0.892",
+     "volumeUsd1d": "264.323",
+     "volumeUsd7d": "82914.153"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "1e5dccd6-f660-49ab-a66c-ae6e07dd8856",
+    "reserves": [
+     "27210.661707",
+     "15.22983251"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x50b31ab7a061843ca6ebab6c006ab4ece6ca2fd8": {
+    "key": "ethereum:0x50b31ab7a061843ca6ebab6c006ab4ece6ca2fd8",
+    "name": "Uniswap V3 Apple (Ondo Tokenized)/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "AAPLON/USDC",
+    "price": 9007199254740990,
+    "address": "0x50b31ab7a061843ca6ebab6c006ab4ece6ca2fd8",
+    "addresses": {
+     "ethereum": "0x50b31ab7a061843ca6ebab6c006ab4ece6ca2fd8"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.313Z",
+    "createdAt": "2026-02-08T05:11:28.480Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2525.764466799548,
+    "metrics": {
+     "apy": "0.104",
+     "baseApy": "0.104",
+     "volumeUsd1d": "2.391",
+     "volumeUsd7d": "12.014"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "5d1ef6a7-a371-43c5-aa68-b74f3234898d",
+    "reserves": [
+     "0.632508013251693126",
+     "2308.156731"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c": {
+    "key": "ethereum:0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1016385.121",
+     "volumeUsd7d": "9383377.687"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1": {
+    "key": "bsc:0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1",
+    "name": "Uniswap V3 Apple/Tether USD 0.05%",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1",
+    "addresses": {
+     "bsc": "0x36c0fc3159eb8662a2e1b84a4df518d916bce0e1"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.260Z",
+    "createdAt": "2026-07-31T07:59:54.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 111251.41799072408,
+    "metrics": {
+     "apy": "1.932",
+     "baseApy": "1.932",
+     "volumeUsd1d": "11776.958",
+     "volumeUsd7d": "1080134.275"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "033f6536-c2a4-4689-9c5e-73f67e2c693a",
+    "reserves": [
+     "79.268630765543405157",
+     "84134.558331045777549566"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5e8baeb990021549ff3b36b1ef93d689c4568cf4c2673471d7d5150ce1221842": {
+    "key": "ethereum:0x5e8baeb990021549ff3b36b1ef93d689c4568cf4c2673471d7d5150ce1221842",
+    "name": "Uniswap V4 LP ETH/AAPLon",
+    "decimals": 18,
+    "symbol": "ETH/AAPLON",
+    "price": 9007199254740990,
+    "address": "0x5e8baeb990021549ff3b36b1ef93d689c4568cf4c2673471d7d5150ce1221842",
+    "addresses": {
+     "ethereum": "0x5e8baeb990021549ff3b36b1ef93d689c4568cf4c2673471d7d5150ce1221842"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.095Z",
+    "createdAt": "2025-09-30T08:57:43.689Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c"
+    ],
+    "liquidity": 512.0812638495371,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9600,
+     "feePercentage": "48.052"
+    },
+    "tokenId": "ac035591-7186-466c-b43b-3ec843b693c6",
+    "reserves": [
+     "0.102872334426409532",
+     "0.788288774680197386"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x17ef0605ce9f182ab9b5af4c2a35f0529862c84401faf2e54c8545da774d37c9": {
+    "key": "robinhood:0x17ef0605ce9f182ab9b5af4c2a35f0529862c84401faf2e54c8545da774d37c9",
+    "name": "Uniswap V4 LP hOHM/AAPL",
+    "decimals": 18,
+    "symbol": "HOHM/AAPL",
+    "price": 9007199254740990,
+    "address": "0x17ef0605ce9f182ab9b5af4c2a35f0529862c84401faf2e54c8545da774d37c9",
+    "addresses": {
+     "robinhood": "0x17ef0605ce9f182ab9b5af4c2a35f0529862c84401faf2e54c8545da774d37c9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.444Z",
+    "createdAt": "2026-09-19T12:13:34.631Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x76cf788606f3d968b93b8a243d0e185c974ee407",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 64075.543632001245,
+    "metrics": {
+     "apy": "4.844",
+     "baseApy": "4.844",
+     "volumeUsd1d": "843.864",
+     "volumeUsd7d": "21108.284"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "847ea66e-dfac-4a8a-821b-c5b426e922e7",
+    "reserves": [
+     "4259131.651034633499717494",
+     "79.917500992546461879"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2c097784b50e6bd7aae3932ffc7f5d1fe665eae4": {
+    "key": "bsc:0x2c097784b50e6bd7aae3932ffc7f5d1fe665eae4",
+    "name": "PancakeSwap V3 Alphabet/Apple 0.25%",
+    "decimals": 18,
+    "symbol": "GOOGLB/AAPLB",
+    "price": 9007199254740990,
+    "address": "0x2c097784b50e6bd7aae3932ffc7f5d1fe665eae4",
+    "addresses": {
+     "bsc": "0x2c097784b50e6bd7aae3932ffc7f5d1fe665eae4"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102174363/large/googlb-bstocks.png?1783451303",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.993Z",
+    "createdAt": "2026-07-31T21:16:25.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3f53de71c126bdabae20f9cd64848d317f6c3238",
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a"
+    ],
+    "liquidity": 10148.259836722304,
+    "metrics": {
+     "apy": "0.361",
+     "baseApy": "0.361",
+     "volumeUsd1d": "40.129",
+     "volumeUsd7d": "3073.586"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "6fe917de-b94c-4ee3-ad27-f105eb224ab9",
+    "reserves": [
+     "15.959758148172354203",
+     "13.82677289409219741"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
+    "key": "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "name": "Apple • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.01226254,
+    "address": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "addresses": {
+     "robinhood": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+    "liquidity": 4015128.6506551914,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2366870.414"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c2425be3658540dd8e2424cbf3c5c649",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000566080061092436",
+     "currentMultiplier": "1.000566080061092436",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "dd5e3db0-1eb0-4c5e-ae50-3883c994faa6",
+    "totalSupply": "11705.49595202",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xeab0adac76db99a233ed077ca6be7a3f708baee6f98b17df69f7e1a07d1dc2e4": {
+    "key": "robinhood:0xeab0adac76db99a233ed077ca6be7a3f708baee6f98b17df69f7e1a07d1dc2e4",
+    "name": "Uniswap V4 LP SPY/AAPL",
+    "decimals": 18,
+    "symbol": "SPY/AAPL",
+    "price": 9007199254740990,
+    "address": "0xeab0adac76db99a233ed077ca6be7a3f708baee6f98b17df69f7e1a07d1dc2e4",
+    "addresses": {
+     "robinhood": "0xeab0adac76db99a233ed077ca6be7a3f708baee6f98b17df69f7e1a07d1dc2e4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.666Z",
+    "createdAt": "2026-09-18T09:52:38.229Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 482325.2204589204,
+    "metrics": {
+     "apy": "4.961",
+     "baseApy": "4.961",
+     "volumeUsd1d": "147981.411",
+     "volumeUsd7d": "3512169.895"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0443"
+    },
+    "tokenId": "5439aad4-315b-4829-b799-b980f19293d6",
+    "reserves": [
+     "408.408310459144966318",
+     "497.882519691945310554"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2cece44ca1b3c4fab24624205e526b4bcf6b2f1aeff9d0fb0c535e19ba6106ce": {
+    "key": "ethereum:0x2cece44ca1b3c4fab24624205e526b4bcf6b2f1aeff9d0fb0c535e19ba6106ce",
+    "name": "Uniswap V4 LP AAPLx/USDC",
+    "decimals": 18,
+    "symbol": "AAPLX/USDC",
+    "price": 9007199254740990,
+    "address": "0x2cece44ca1b3c4fab24624205e526b4bcf6b2f1aeff9d0fb0c535e19ba6106ce",
+    "addresses": {
+     "ethereum": "0x2cece44ca1b3c4fab24624205e526b4bcf6b2f1aeff9d0fb0c535e19ba6106ce"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.033Z",
+    "createdAt": "2026-06-22T03:04:44.770Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 553.4110556546663,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19926,
+     "feePercentage": "99.6304"
+    },
+    "tokenId": "16149700-68c7-4778-8853-b97a902671b7",
+    "reserves": [
+     "0.981465719871553647",
+     "216.198937"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x158d86a5d9131e756413066b2252bef7dde822e6b76881e849239e84130d5c09": {
+    "key": "ethereum:0x158d86a5d9131e756413066b2252bef7dde822e6b76881e849239e84130d5c09",
+    "name": "Uniswap V4 LP USDT/AAPLx",
+    "decimals": 18,
+    "symbol": "USDT/AAPLX",
+    "price": 9007199254740990,
+    "address": "0x158d86a5d9131e756413066b2252bef7dde822e6b76881e849239e84130d5c09",
+    "addresses": {
+     "ethereum": "0x158d86a5d9131e756413066b2252bef7dde822e6b76881e849239e84130d5c09"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.033Z",
+    "createdAt": "2026-10-18T18:58:00.974Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x9d275685dc284c8eb1c79f6aba7a63dc75ec890a"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "c68231f7-2ff2-4e9c-9d5e-271900f9a348",
+    "reserves": [
+     "3999.999999999999999984",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x0ba637cea9ea07c50ec64197b184a789adb5ea5a": {
+    "key": "base:0x0ba637cea9ea07c50ec64197b184a789adb5ea5a",
+    "name": "Beefy CLM AAPLc-USDC",
+    "decimals": 18,
+    "symbol": "COWAAPLC-USDC",
+    "price": 3196494314623.6387,
+    "address": "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a",
+    "addresses": {
+     "base": "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.760Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": "2026-09-01T08:56:33.010Z",
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "poolAddress": "0xa3b1e3f9747065e2073722ff4c9027d3ea4994f0",
+    "liquidity": 252534.1343700645,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "52.026",
+     "volumeUsd7d": "-9482.507"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-aaplc",
+     "providerId": "aerodrome",
+     "description": "This CLM vault deposits the user's AAPL and USDC into the Aerodrome concentrated liquidity pool to earn rewards on swaps through that pool with the underlying CLM product. Those rewards - together with any additional rewards distributed through the CLM Pool or Merkl - are compounded by automatically claiming, selling and redepositing back into the underlying position.",
+     "tickSpacing": 10,
+     "managerAddress": "0x0ba637cea9ea07c50ec64197b184a789adb5ea5a",
+     "strategyAddress": "0xd93b22fa01d5260e0d9c791d70b26128e42d4254",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xac63a5d5f8247cd4b978af9adc8227e453cfc898",
+     "standardVaultAddress": "0x66cf69c5b780240b1eb1879020453d81b1c816da",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb200000000000000000000c2e324d24d7eecd1fb"
+     ]
+    },
+    "tokenId": "1c22556b-df12-4238-acce-9b9075887367",
+    "totalSupply": "0.000000079003467397",
+    "reserves": [
+     "176521.628432",
+     "221.27495193"
+    ],
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "robinhood:0xa3c5cf4153f2d6ecdc917270e420842197d2fc02e26731afd8e81c7fe9fc724e": {
+    "key": "robinhood:0xa3c5cf4153f2d6ecdc917270e420842197d2fc02e26731afd8e81c7fe9fc724e",
+    "name": "Uniswap V4 LP ETH/AAPL",
+    "decimals": 18,
+    "symbol": "ETH/AAPL",
+    "price": 9007199254740990,
+    "address": "0xa3c5cf4153f2d6ecdc917270e420842197d2fc02e26731afd8e81c7fe9fc724e",
+    "addresses": {
+     "robinhood": "0xa3c5cf4153f2d6ecdc917270e420842197d2fc02e26731afd8e81c7fe9fc724e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.314Z",
+    "createdAt": "2026-09-08T15:09:10.329Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 16744.968904388392,
+    "metrics": {
+     "apy": "56.359",
+     "baseApy": "56.359",
+     "volumeUsd1d": "2875.045",
+     "volumeUsd7d": "13281.989"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 80,
+     "feePercentage": "0.8992"
+    },
+    "tokenId": "3f0435a1-4c4c-40e8-a249-d2a3b6adf995",
+    "reserves": [
+     "5.790824274870927827",
+     "9.372497901604360867"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x37406ea78ff675713f305b5bae0d02cfe9b9630cdf934dd08021a2f6b9a02aed": {
+    "key": "ethereum:0x37406ea78ff675713f305b5bae0d02cfe9b9630cdf934dd08021a2f6b9a02aed",
+    "name": "Uniswap V4 LP AAPLon/USDC",
+    "decimals": 18,
+    "symbol": "AAPLON/USDC",
+    "price": 9007199254740990,
+    "address": "0x37406ea78ff675713f305b5bae0d02cfe9b9630cdf934dd08021a2f6b9a02aed",
+    "addresses": {
+     "ethereum": "0x37406ea78ff675713f305b5bae0d02cfe9b9630cdf934dd08021a2f6b9a02aed"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.798Z",
+    "createdAt": "2026-07-30T15:45:27.475Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2363.811233711859,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.03"
+    },
+    "tokenId": "9e2909d7-ae12-4a1c-b5c7-c46a61a4ebb6",
+    "reserves": [
+     "0.000000000000000002",
+     "2364.239161"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb200000000000000000000c2e324d24d7eecd1fb": {
+    "key": "base:0xb200000000000000000000c2e324d24d7eecd1fb",
+    "name": "Apple Inc.",
+    "decimals": 8,
+    "symbol": "AAPLC",
+    "price": 343.66499999,
+    "address": "0xb200000000000000000000c2e324d24d7eecd1fb",
+    "addresses": {
+     "base": "0xb200000000000000000000c2e324d24d7eecd1fb"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-18T16:21:26.781Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb200000000000000000000c2e324d24d7eecd1fb",
+    "liquidity": 2563437.268423456,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-371148.872"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "6c3b6d76-1fda-49b8-b082-665c7b560d1a",
+    "totalSupply": "7459.11648989",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x68a2e1cf0007d28728774619d1ac89f66fa99894": {
+    "key": "robinhood:0x68a2e1cf0007d28728774619d1ac89f66fa99894",
+    "name": "Beefy CLM AAPL-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODAAPL-USDG",
+    "price": 333.4090319000955,
+    "address": "0x68a2e1cf0007d28728774619d1ac89f66fa99894",
+    "addresses": {
+     "robinhood": "0x68a2e1cf0007d28728774619d1ac89f66fa99894"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1"
+    ],
+    "poolAddress": "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1",
+    "liquidity": 39787.48504956691,
+    "metrics": {
+     "apy": "0.095",
+     "baseApy": "0.095",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "49.932"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-aapl-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x0b7df93bb66e13923a2153217b4a29ec7cc3efc1",
+     "strategyAddress": "0xbb594904f65ce50fd3b3b4fe666d0f413bbe6442",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x68a2e1cf0007d28728774619d1ac89f66fa99894",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+     ]
+    },
+    "tokenId": "c14dd917-3712-4880-b4c3-6c0568950eb5",
+    "totalSupply": "119.335354602778275162",
+    "reserves": [
+     "119.335354602778275162"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xceba75c4d1bcf24452040e98eb3b2107a2877f36": {
+    "key": "robinhood:0xceba75c4d1bcf24452040e98eb3b2107a2877f36",
+    "name": "AAPL Cat",
+    "decimals": 18,
+    "symbol": "CAT",
+    "price": 1.548196603661414e-05,
+    "address": "0xceba75c4d1bcf24452040e98eb3b2107a2877f36",
+    "addresses": {
+     "robinhood": "0xceba75c4d1bcf24452040e98eb3b2107a2877f36"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-02T10:53:23.544Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15481.966036614142,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "26ca0bd4-ba41-42c0-99a1-b7d83b0d98f9",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4": {
+    "key": "bsc:0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+    "name": "Apple (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLON",
+    "price": 344.7,
+    "address": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+    "addresses": {
+     "ethereum": "0x14c3abf95cb9c93a8b82c1cdcb76d72cb87b2d4c",
+     "bsc": "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4",
+     "hyperevm": "0x81db0df77669b3be563e7a0591685a2c8c3ee1c5"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9505090,
+    "image": "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+    "metrics": {
+     "volumeUsd1d": "1017134.523",
+     "volumeUsd7d": "10053361.879"
+    },
+    "metadata": {},
+    "tokenId": "672ffe59-52f6-4e9c-8c10-7f32ca89680e",
+    "totalSupply": "27576.21418297256",
+    "circulatingSupply": "27576.21418297256",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a": {
+    "key": "bsc:0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+    "name": "Apple (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AAPLB",
+    "price": 342.95,
+    "address": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+    "addresses": {
+     "bsc": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5497700,
+    "image": "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+    "metrics": {
+     "volumeUsd1d": "37688047.638",
+     "volumeUsd7d": "90911361.243"
+    },
+    "metadata": {},
+    "tokenId": "d2223342-3857-4474-afc8-9ee8d3675de5",
+    "totalSupply": "16030.8016572",
+    "circulatingSupply": "16030.8016572",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbd6b2b93900fe2101d43e46da3f79b5d5b9d9ba3": {
+    "key": "robinhood:0xbd6b2b93900fe2101d43e46da3f79b5d5b9d9ba3",
+    "name": "AppleCat",
+    "decimals": 18,
+    "symbol": "AAPLCAT",
+    "price": 2.493014260269134e-06,
+    "address": "0xbd6b2b93900fe2101d43e46da3f79b5d5b9d9ba3",
+    "addresses": {
+     "robinhood": "0xbd6b2b93900fe2101d43e46da3f79b5d5b9d9ba3"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-23T13:27:58.309Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 249301.4260269134,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a1218d54-c9ae-47eb-98f4-6d208b9649f1",
+    "totalSupply": "100000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xb6b0149009eb78239213b97a960b5c793c03373b": {
+    "key": "hyperevm:0xb6b0149009eb78239213b97a960b5c793c03373b",
+    "name": "Dinari AAPL dShares",
+    "decimals": 18,
+    "symbol": "AAPL",
+    "price": 343.09,
+    "address": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+    "addresses": {
+     "avalanche": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "base": "0x41f7a63713e76c0ab800be03bae9f17b8a356348",
+     "ethereum": "0x68e670d2f9b792f034a1826cf4a8f180c9952cb6",
+     "hyperevm": "0xb6b0149009eb78239213b97a960b5c793c03373b",
+     "arbitrum": "0xce38e140fc3982a6bcebc37b040913ef2cd6c5a7"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 230407,
+    "image": "https://coin-images.coingecko.com/coins/images/102174907/large/dinari-logo-green-with-margin.png?1785402519",
+    "metrics": {
+     "volumeUsd1d": "13.724",
+     "volumeUsd7d": "68809.494"
+    },
+    "metadata": {},
+    "tokenId": "fcd828f3-a751-424f-8dbb-4e651a8fd616",
+    "totalSupply": "671.5585541217541",
+    "circulatingSupply": "671.5585541217541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x4af3b7a1bf6a288aa903b8d294bdd4e649093e5ecac94a95cd7f1865ae4a53da": {
+    "key": "base:0x4af3b7a1bf6a288aa903b8d294bdd4e649093e5ecac94a95cd7f1865ae4a53da",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0x4af3b7a1bf6a288aa903b8d294bdd4e649093e5ecac94a95cd7f1865ae4a53da",
+    "addresses": {
+     "base": "0x4af3b7a1bf6a288aa903b8d294bdd4e649093e5ecac94a95cd7f1865ae4a53da"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102175597/large/aapl_200x200.png?1787068801"
+    ],
+    "updatedAt": "2026-10-18T20:12:57.172Z",
+    "createdAt": "2026-08-18T16:25:11.677Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 4247.422436119651,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "341.254"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d6cf3343-7831-4bc7-8a71-a1ad26da65e5",
+    "reserves": [
+     "1981.167845",
+     "6.59541467"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

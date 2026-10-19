@@ -1,0 +1,581 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US1696561059",
+ "ticker": "CMG",
+ "name": "Chipotle Mexican Grill",
+ "isin": "US1696561059",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:25Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Chipotle Mexican Grill Inc",
+   "symbol": "CMG",
+   "slug": "chipotle",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 29.987375157508644,
+     "tokenized_market_cap": 926419.7351651775,
+     "tokenized_volume_24h": 523526.61003792,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 130,
+   "asset_type": "stock",
+   "rwa_rank": 388,
+   "has_tokens": true,
+   "average_tokenized_price": 29.987375157508644,
+   "tokenized_market_cap": 926419.7351651775,
+   "tokenized_volume_24h": 523526.61003792,
+   "last_updated": "2026-10-18T20:13:34.269Z",
+   "tokens": [
+    {
+     "symbol": "CMGon",
+     "name": "Chipotle Tokenized Stock (Ondo)",
+     "price": 30.0160008956978,
+     "crypto_id": 38008,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 926966.2,
+     "volume_24h": 510162.59922635
+    },
+    {
+     "symbol": "wCMGx",
+     "name": "Wrapped Chipotle Mexican Grill Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41242,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "CMG",
+     "name": "Chipotle Mexican Grill Inc (Backpack)",
+     "price": 29.561625929427244,
+     "crypto_id": 42598,
+     "issuer_id": "6a2d54b697c45356b1a634f4",
+     "issuer_name": "Backpack",
+     "market_cap": 0,
+     "volume_24h": 13108.76000307
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "CMG",
+     "market_url": "https://www.binance.com/en/stocks/EQ_CMG"
+    }
+   ]
+  },
+  "info": {
+   "38008": {
+    "id": 38008,
+    "symbol": "CMGon",
+    "name": "Chipotle Tokenized Stock (Ondo)",
+    "slug": "chipotle-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38008.png",
+    "date_added": "2025-09-03T10:55:20.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x25018520138bbaB60684AD7983D4432E8B8E926B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x25018520138bbaB60684AD7983D4432E8B8E926B",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "5owVsVFSHACQuippFYdLp3qWRobp2EGcwxMmsr6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41242": {
+    "id": 41242,
+    "symbol": "wCMGx",
+    "name": "Wrapped Chipotle Mexican Grill Tokenized Stock (xStock)",
+    "slug": "wrapped-chipotle-mexican-grill-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41242.png",
+    "date_added": "2026-08-11T16:21:44.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xd8e5A9a5aDfe92feec69fc36e125a1E61c27328c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd8e5A9a5aDfe92feec69fc36e125a1E61c27328c",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42598": {
+    "id": 42598,
+    "symbol": "CMG",
+    "name": "Chipotle Mexican Grill Inc (Backpack)",
+    "slug": "chipotle-mexican-grill-inc-backpack",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42598.png",
+    "date_added": "2026-09-28T20:28:16.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "CMGi497VQA9RiHVWpQi5B847vN8RLaEwcMhB5kEUhkAQ"
+    },
+    "contract_address": [
+     {
+      "contract_address": "CMGi497VQA9RiHVWpQi5B847vN8RLaEwcMhB5kEUhkAQ",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+   "ethereum:0x25018520138bbab60684ad7983d4432e8b8e926b"
+  ],
+  "exact": {
+   "bsc:0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208": {
+    "key": "bsc:0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+    "name": "Chipotle (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CMGON",
+    "price": 29.92,
+    "address": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+    "addresses": {
+     "bsc": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+     "ethereum": "0x25018520138bbab60684ad7983d4432e8b8e926b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 920745,
+    "image": "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+    "metrics": {
+     "volumeUsd1d": "155653.107",
+     "volumeUsd7d": "1055311.954"
+    },
+    "metadata": {},
+    "tokenId": "135b872c-4109-43dd-94b6-e2e3ccbd0c26",
+    "totalSupply": "30882.401818788545",
+    "circulatingSupply": "30882.401818788545",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x25018520138bbab60684ad7983d4432e8b8e926b": {
+    "key": "ethereum:0x25018520138bbab60684ad7983d4432e8b8e926b",
+    "name": "Chipotle (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CMGON",
+    "price": 29.92,
+    "address": "0x25018520138bbab60684ad7983d4432e8b8e926b",
+    "addresses": {
+     "bsc": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+     "ethereum": "0x25018520138bbab60684ad7983d4432e8b8e926b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 920745,
+    "image": "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+    "metrics": {
+     "volumeUsd1d": "156116.689",
+     "volumeUsd7d": "1057064.323"
+    },
+    "metadata": {},
+    "tokenId": "135b872c-4109-43dd-94b6-e2e3ccbd0c26",
+    "totalSupply": "30882.401818788545",
+    "circulatingSupply": "30882.401818788545",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "CMG": {
+    "total_items": 7,
+    "pages": 1,
+    "received": 7,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x76d4e55a5da8c2550f26aad00f695a5a4da67bdcb10a151e98250c1792da01c5": {
+    "key": "ethereum:0x76d4e55a5da8c2550f26aad00f695a5a4da67bdcb10a151e98250c1792da01c5",
+    "name": "Uniswap V4 LP CMGon/wUSDC",
+    "decimals": 18,
+    "symbol": "CMGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x76d4e55a5da8c2550f26aad00f695a5a4da67bdcb10a151e98250c1792da01c5",
+    "addresses": {
+     "ethereum": "0x76d4e55a5da8c2550f26aad00f695a5a4da67bdcb10a151e98250c1792da01c5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.285Z",
+    "createdAt": "2026-09-28T10:39:20.872Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25018520138bbab60684ad7983d4432e8b8e926b",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "815cfeb4-076a-40de-aeda-3ef088434360",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbb3c5d3d80516b87850358dde2c4820d90b16a6097309f0253685a36f95fdf38": {
+    "key": "bsc:0xbb3c5d3d80516b87850358dde2c4820d90b16a6097309f0253685a36f95fdf38",
+    "name": "Uniswap V4 LP USDT/CMGon",
+    "decimals": 18,
+    "symbol": "USDT/CMGON",
+    "price": 9007199254740990,
+    "address": "0xbb3c5d3d80516b87850358dde2c4820d90b16a6097309f0253685a36f95fdf38",
+    "addresses": {
+     "bsc": "0xbb3c5d3d80516b87850358dde2c4820d90b16a6097309f0253685a36f95fdf38"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.892Z",
+    "createdAt": "2026-10-14T06:57:16.216Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208"
+    ],
+    "liquidity": 760.2280310548599,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "1566db74-def9-44e0-9188-037d8751d31b",
+    "reserves": [
+     "171.423010011814906224",
+     "19.683981644258176946"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x52574928f368b0b193c9190e5f6b5929d67e89b60d06d4c1d4ea8bd2db5830c6": {
+    "key": "ethereum:0x52574928f368b0b193c9190e5f6b5929d67e89b60d06d4c1d4ea8bd2db5830c6",
+    "name": "Uniswap V4 LP CMGon/USDT",
+    "decimals": 18,
+    "symbol": "CMGON/USDT",
+    "price": 9007199254740990,
+    "address": "0x52574928f368b0b193c9190e5f6b5929d67e89b60d06d4c1d4ea8bd2db5830c6",
+    "addresses": {
+     "ethereum": "0x52574928f368b0b193c9190e5f6b5929d67e89b60d06d4c1d4ea8bd2db5830c6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.216Z",
+    "createdAt": "2025-09-26T08:45:50.738Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25018520138bbab60684ad7983d4432e8b8e926b",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 804.1020056675065,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "20.556"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "274d8cb0-39d1-499c-894b-9ae5a9f4da21",
+    "reserves": [
+     "7.507186790687382873",
+     "579.959644"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcb92b30a11f2941eddc2364672f79b2a7bfe93609214634139e69c4063979e23": {
+    "key": "ethereum:0xcb92b30a11f2941eddc2364672f79b2a7bfe93609214634139e69c4063979e23",
+    "name": "Uniswap V4 LP CMGon/USDC",
+    "decimals": 18,
+    "symbol": "CMGON/USDC",
+    "price": 9007199254740990,
+    "address": "0xcb92b30a11f2941eddc2364672f79b2a7bfe93609214634139e69c4063979e23",
+    "addresses": {
+     "ethereum": "0xcb92b30a11f2941eddc2364672f79b2a7bfe93609214634139e69c4063979e23"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.701Z",
+    "createdAt": "2025-09-26T08:45:51.035Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25018520138bbab60684ad7983d4432e8b8e926b",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2252.5103399290715,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "35.533"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "38b94f98-2a35-4c0e-a758-58ddea5eeb78",
+    "reserves": [
+     "23.720705051295835876",
+     "1543.08003"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1a0dcb81544e594ba68293772881a9489c93d9e7199c27c9b45603f2c1522004": {
+    "key": "ethereum:0x1a0dcb81544e594ba68293772881a9489c93d9e7199c27c9b45603f2c1522004",
+    "name": "Uniswap V4 LP CMGon/EGP",
+    "decimals": 18,
+    "symbol": "CMGON/EGP",
+    "price": 9007199254740990,
+    "address": "0x1a0dcb81544e594ba68293772881a9489c93d9e7199c27c9b45603f2c1522004",
+    "addresses": {
+     "ethereum": "0x1a0dcb81544e594ba68293772881a9489c93d9e7199c27c9b45603f2c1522004"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:47.511Z",
+    "createdAt": "2026-10-14T06:54:25.448Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25018520138bbab60684ad7983d4432e8b8e926b",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20061.258551938372,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.45"
+    },
+    "tokenId": "a16ec144-8a1d-4707-ac33-df2f2760ae67",
+    "reserves": [
+     "0.89003448066118068",
+     "19999.999999999999999995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208": {
+    "key": "bsc:0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+    "name": "Chipotle (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CMGON",
+    "price": 29.92,
+    "address": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+    "addresses": {
+     "bsc": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+     "ethereum": "0x25018520138bbab60684ad7983d4432e8b8e926b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 920745,
+    "image": "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+    "metrics": {
+     "volumeUsd1d": "155653.107",
+     "volumeUsd7d": "1055311.954"
+    },
+    "metadata": {},
+    "tokenId": "135b872c-4109-43dd-94b6-e2e3ccbd0c26",
+    "totalSupply": "30882.401818788545",
+    "circulatingSupply": "30882.401818788545",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x25018520138bbab60684ad7983d4432e8b8e926b": {
+    "key": "ethereum:0x25018520138bbab60684ad7983d4432e8b8e926b",
+    "name": "Chipotle (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CMGON",
+    "price": 29.92,
+    "address": "0x25018520138bbab60684ad7983d4432e8b8e926b",
+    "addresses": {
+     "bsc": "0xaed5985afc12aa09d87f55b4b1e6bc3b8f7b0208",
+     "ethereum": "0x25018520138bbab60684ad7983d4432e8b8e926b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 920745,
+    "image": "https://coin-images.coingecko.com/coins/images/68567/large/cmgon_160x160.png?1756106157",
+    "metrics": {
+     "volumeUsd1d": "156116.689",
+     "volumeUsd7d": "1057064.323"
+    },
+    "metadata": {},
+    "tokenId": "135b872c-4109-43dd-94b6-e2e3ccbd0c26",
+    "totalSupply": "30882.401818788545",
+    "circulatingSupply": "30882.401818788545",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

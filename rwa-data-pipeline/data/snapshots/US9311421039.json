@@ -1,0 +1,4755 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US9311421039",
+ "ticker": "WMT",
+ "name": "Walmart",
+ "isin": "US9311421039",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:41Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Walmart Inc",
+   "symbol": "WMT",
+   "slug": "walmart",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 119.96662071624135,
+     "tokenized_market_cap": 2645696.7356771184,
+     "tokenized_volume_24h": 1575300.19584414,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 17,
+   "asset_type": "stock",
+   "rwa_rank": 17,
+   "has_tokens": true,
+   "average_tokenized_price": 119.96662071624135,
+   "tokenized_market_cap": 2645696.7356771184,
+   "tokenized_volume_24h": 1575300.19584414,
+   "last_updated": "2026-10-18T20:13:41.990Z",
+   "tokens": [
+    {
+     "symbol": "WMTX",
+     "name": "Walmart tokenized stock (xStock)",
+     "price": 120.95462949524442,
+     "crypto_id": 37048,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 238114.16,
+     "volume_24h": 32.31493354
+    },
+    {
+     "symbol": "WMTon",
+     "name": "Walmart Tokenized Stock (Ondo)",
+     "price": 119.91412624427508,
+     "crypto_id": 38060,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2406238.93,
+     "volume_24h": 1575962.27824007
+    },
+    {
+     "symbol": "WMT",
+     "name": "Walmart Inc (Derivatives)",
+     "price": 119.30477398055719,
+     "crypto_id": 40015,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WWMTX",
+     "name": "Wrapped Walmart Tokenized stock (xStock)",
+     "price": 120.09516202396509,
+     "crypto_id": 37229,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 290.67,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WMTc",
+     "name": "Walmart Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42545,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "WMT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_WMT"
+    }
+   ]
+  },
+  "info": {
+   "37048": {
+    "id": 37048,
+    "symbol": "WMTX",
+    "name": "Walmart tokenized stock (xStock)",
+    "slug": "walmart-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37048.png",
+    "date_added": "2025-07-01T18:39:48.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xs151QeqTCiuKtinzfRATnUESM2xTU6V9Wy8Vy538ci"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xs151QeqTCiuKtinzfRATnUESM2xTU6V9Wy8Vy538ci",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQD4Slv4BhS3roQNVKi2ToUCYcyfdFfC4fY4RhaMl-2nv56L",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "38060": {
+    "id": 38060,
+    "symbol": "WMTon",
+    "name": "Walmart Tokenized Stock (Ondo)",
+    "slug": "walmart-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38060.png",
+    "date_added": "2025-09-03T10:55:22.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x82106347dDbB23cE44Cf4cE4053Ef1adf8b9323B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x82106347dDbB23cE44Cf4cE4053Ef1adf8b9323B",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "LZddqAqKqJW9oMZSjTxCUmbmzBRQtv9gMkD9hZ3ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40015": {
+    "id": 40015,
+    "symbol": "WMT",
+    "name": "Walmart Inc (Derivatives)",
+    "slug": "walmart-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40015.png",
+    "date_added": "2026-01-29T01:38:26.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37229": {
+    "id": 37229,
+    "symbol": "WWMTX",
+    "name": "Wrapped Walmart Tokenized stock (xStock)",
+    "slug": "wrapped-walmart-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37229.png",
+    "date_added": "2025-07-07T04:54:03.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x3b4336e3958913984C2E36b8Ed0E7C87a5bDee33"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3b4336e3958913984C2E36b8Ed0E7C87a5bDee33",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa24d9c43d64c76acd962003647fd43a85eb44db8",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42545": {
+    "id": 42545,
+    "symbol": "WMTc",
+    "name": "Walmart Inc. Tokenized Stock (Coinbase)",
+    "slug": "walmart-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42545.png",
+    "date_added": "2026-10-14T03:36:58.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000008a7508619c717a7106"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000008a7508619c717a7106",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+   "arbitrum:0xa24d9c43d64c76acd962003647fd43a85eb44db8",
+   "base:0xb2000000000000000000008a7508619c717a7106",
+   "bsc:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+   "bsc:0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+   "ethereum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+   "ethereum:0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+  ],
+  "exact": {
+   "bsc:0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c": {
+    "key": "bsc:0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+    "name": "Walmart (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMTON",
+    "price": 120.05,
+    "address": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+    "addresses": {
+     "bsc": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+     "ethereum": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2409218,
+    "image": "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770",
+    "metrics": {
+     "volumeUsd1d": "1180799.122",
+     "volumeUsd7d": "8232677.274"
+    },
+    "metadata": {},
+    "tokenId": "4de9e9f7-d6d9-4bd0-afb8-d285b007ad79",
+    "totalSupply": "20066.350887081564",
+    "circulatingSupply": "20066.350887081564",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "arbitrum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "arbitrum": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.688Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9227352.732392408,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "9997d1cd-faed-45a4-a78e-f2f5cb163641",
+    "totalSupply": "76569.187058272414469849",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "ethereum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "ethereum": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.960Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10897328.034750894,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "d57c0ccf-8fc5-44ff-a35f-faf801e6c2e2",
+    "totalSupply": "90426.753254924016678188",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "bsc:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "bsc": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.394Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3475665.8241919605,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "2a486aa5-110e-4393-a015-9d90b867b27c",
+    "totalSupply": "28841.306316421544917563",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b": {
+    "key": "ethereum:0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b",
+    "name": "Walmart (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMTON",
+    "price": 120.05,
+    "address": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b",
+    "addresses": {
+     "bsc": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+     "ethereum": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2409218,
+    "image": "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770",
+    "metrics": {
+     "volumeUsd1d": "1178467.836",
+     "volumeUsd7d": "8246367.639"
+    },
+    "metadata": {},
+    "tokenId": "4de9e9f7-d6d9-4bd0-afb8-d285b007ad79",
+    "totalSupply": "20066.350887081564",
+    "circulatingSupply": "20066.350887081564",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "WMT": {
+    "total_items": 96,
+    "pages": 1,
+    "received": 96,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x0628a5c0495554928d2e85a58ec6ae57a8883ff779a282e041b63bbde98c8d88": {
+    "key": "ethereum:0x0628a5c0495554928d2e85a58ec6ae57a8883ff779a282e041b63bbde98c8d88",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x0628a5c0495554928d2e85a58ec6ae57a8883ff779a282e041b63bbde98c8d88",
+    "addresses": {
+     "ethereum": "0x0628a5c0495554928d2e85a58ec6ae57a8883ff779a282e041b63bbde98c8d88"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.402Z",
+    "createdAt": "2026-09-22T19:04:33.454Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 644512.9887228563,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "367.983"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2189,
+     "feePercentage": "21.9662"
+    },
+    "tokenId": "4dd99d8c-cdd7-408c-b71c-32e28a6f1dc7",
+    "reserves": [
+     "568.073994",
+     "30749827.318029"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb61e2676f31050c0d4ce3905f8bf499e429d814f5951824ba41fbbe64f9415a8": {
+    "key": "ethereum:0xb61e2676f31050c0d4ce3905f8bf499e429d814f5951824ba41fbbe64f9415a8",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0xb61e2676f31050c0d4ce3905f8bf499e429d814f5951824ba41fbbe64f9415a8",
+    "addresses": {
+     "ethereum": "0xb61e2676f31050c0d4ce3905f8bf499e429d814f5951824ba41fbbe64f9415a8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.563Z",
+    "createdAt": "2026-10-13T05:10:08.639Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 6325.607865286467,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3.138"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.0761"
+    },
+    "tokenId": "e35d882f-5a74-4bcb-8d31-d9c12c1f52ae",
+    "reserves": [
+     "0.000000000000000002",
+     "302062.031385"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbdaa31402cf6e6787c1af55f79feae076099c7eb6537314fd0b402f89e091777": {
+    "key": "ethereum:0xbdaa31402cf6e6787c1af55f79feae076099c7eb6537314fd0b402f89e091777",
+    "name": "Uniswap V4 LP wUSDC/WMTon",
+    "decimals": 18,
+    "symbol": "WUSDC/WMTON",
+    "price": 9007199254740990,
+    "address": "0xbdaa31402cf6e6787c1af55f79feae076099c7eb6537314fd0b402f89e091777",
+    "addresses": {
+     "ethereum": "0xbdaa31402cf6e6787c1af55f79feae076099c7eb6537314fd0b402f89e091777"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.658Z",
+    "createdAt": "2026-09-28T10:38:28.541Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "cc8eae10-762c-4507-87c7-bacb71bee414",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa0bc275eba25028c7c56b3c19ba20d9e40d2cdfb9b7c9bff969a73a8ca023362": {
+    "key": "ethereum:0xa0bc275eba25028c7c56b3c19ba20d9e40d2cdfb9b7c9bff969a73a8ca023362",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xa0bc275eba25028c7c56b3c19ba20d9e40d2cdfb9b7c9bff969a73a8ca023362",
+    "addresses": {
+     "ethereum": "0xa0bc275eba25028c7c56b3c19ba20d9e40d2cdfb9b7c9bff969a73a8ca023362"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.953Z",
+    "createdAt": "2026-09-20T03:58:36.831Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 5037.620151814424,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1500,
+     "feePercentage": "15.085"
+    },
+    "tokenId": "f6d2481c-6ed6-48f6-99cc-f9eae22a0c9c",
+    "reserves": [
+     "873.444111",
+     "198884.576875"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0b5ff5237ee1c849d113cc7e07af6069b8bf63174a340ffea9be7c34e9b8e006": {
+    "key": "ethereum:0x0b5ff5237ee1c849d113cc7e07af6069b8bf63174a340ffea9be7c34e9b8e006",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x0b5ff5237ee1c849d113cc7e07af6069b8bf63174a340ffea9be7c34e9b8e006",
+    "addresses": {
+     "ethereum": "0x0b5ff5237ee1c849d113cc7e07af6069b8bf63174a340ffea9be7c34e9b8e006"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.323Z",
+    "createdAt": "2026-09-20T04:47:08.163Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 6673.076170300584,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1176,
+     "feePercentage": "5.9742"
+    },
+    "tokenId": "5f7e9703-c5e0-4e23-b5bf-60537ca1ec82",
+    "reserves": [
+     "373.117947",
+     "300841.408039"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x567a098a206540eae16bdc9c3ec4cfeb070e28134df62940652bdf116007e1a9": {
+    "key": "ethereum:0x567a098a206540eae16bdc9c3ec4cfeb070e28134df62940652bdf116007e1a9",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x567a098a206540eae16bdc9c3ec4cfeb070e28134df62940652bdf116007e1a9",
+    "addresses": {
+     "ethereum": "0x567a098a206540eae16bdc9c3ec4cfeb070e28134df62940652bdf116007e1a9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.271Z",
+    "createdAt": "2026-09-20T11:25:28.017Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 36874.273722222984,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5400,
+     "feePercentage": "54.046"
+    },
+    "tokenId": "8e344a42-8419-4223-b9b0-7e8ed55ab9b2",
+    "reserves": [
+     "27.349233",
+     "1759524.805618"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7e8cb79247653ec8446c1f72a14ad186cdd3fbe532165d2262b80d68f44847dc": {
+    "key": "ethereum:0x7e8cb79247653ec8446c1f72a14ad186cdd3fbe532165d2262b80d68f44847dc",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x7e8cb79247653ec8446c1f72a14ad186cdd3fbe532165d2262b80d68f44847dc",
+    "addresses": {
+     "ethereum": "0x7e8cb79247653ec8446c1f72a14ad186cdd3fbe532165d2262b80d68f44847dc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:14:54.115Z",
+    "createdAt": "2026-09-20T03:54:43.004Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 10841.415958542184,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7900,
+     "feePercentage": "79.021"
+    },
+    "tokenId": "2440b42f-a8d1-4ff4-ab17-afeb12fa520e",
+    "reserves": [
+     "0.000009",
+     "517702.044539"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x74403abc1f9a5fdde2e30bc856d3b976d7ef8aa4d4418bfaaa027457aca7f15e": {
+    "key": "ethereum:0x74403abc1f9a5fdde2e30bc856d3b976d7ef8aa4d4418bfaaa027457aca7f15e",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0x74403abc1f9a5fdde2e30bc856d3b976d7ef8aa4d4418bfaaa027457aca7f15e",
+    "addresses": {
+     "ethereum": "0x74403abc1f9a5fdde2e30bc856d3b976d7ef8aa4d4418bfaaa027457aca7f15e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.273Z",
+    "createdAt": "2026-09-20T03:54:43.004Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 46430.03703173855,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5.561"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9500,
+     "feePercentage": "95.005"
+    },
+    "tokenId": "129b076f-7bb9-4bbc-bd6e-a7316e1f8997",
+    "reserves": [
+     "0.005084021946563416",
+     "2216572.153815"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbc51b1b83e2d1f5e5f3036497d0b86b336f452e27aa2c722e215739498b3b674": {
+    "key": "ethereum:0xbc51b1b83e2d1f5e5f3036497d0b86b336f452e27aa2c722e215739498b3b674",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xbc51b1b83e2d1f5e5f3036497d0b86b336f452e27aa2c722e215739498b3b674",
+    "addresses": {
+     "ethereum": "0xbc51b1b83e2d1f5e5f3036497d0b86b336f452e27aa2c722e215739498b3b674"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-09-20T05:53:31.850Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 3377.8010978804245,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 800,
+     "feePercentage": "8.092"
+    },
+    "tokenId": "2c40ae2e-8bd9-4483-aa70-60df951511a3",
+    "reserves": [
+     "141.130067",
+     "154559.926575"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc364234f1d85facb795d1192da45bb64f300ad968a11377063b7faf0db45279f": {
+    "key": "ethereum:0xc364234f1d85facb795d1192da45bb64f300ad968a11377063b7faf0db45279f",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc364234f1d85facb795d1192da45bb64f300ad968a11377063b7faf0db45279f",
+    "addresses": {
+     "ethereum": "0xc364234f1d85facb795d1192da45bb64f300ad968a11377063b7faf0db45279f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.299Z",
+    "createdAt": "2026-09-20T03:58:36.831Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 155856.27936045665,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2400,
+     "feePercentage": "24.076"
+    },
+    "tokenId": "ed47ef13-b7cd-4660-be1e-47e608479e6a",
+    "reserves": [
+     "9871.647552",
+     "6971499.625243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43": {
+    "key": "avalanche:0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+    "name": "Walmart (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMT",
+    "price": 118.83,
+    "address": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+    "addresses": {
+     "ethereum": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+     "base": "0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+     "arbitrum": "0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+     "avalanche": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9675.48,
+    "image": "https://coin-images.coingecko.com/coins/images/102175062/large/dinari-logo-green-with-margin.png?1785403069",
+    "metrics": {
+     "volumeUsd1d": "1.001",
+     "volumeUsd7d": "3134.824"
+    },
+    "metadata": {},
+    "tokenId": "7de66b53-01fd-4dfe-ab52-c90321a70f1a",
+    "totalSupply": "81.42052579550266",
+    "circulatingSupply": "81.42052579550266",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8120f0c201ce937f641a085249304b6824faefd9f35b462fcd63c2fc17dbd5e7": {
+    "key": "ethereum:0x8120f0c201ce937f641a085249304b6824faefd9f35b462fcd63c2fc17dbd5e7",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x8120f0c201ce937f641a085249304b6824faefd9f35b462fcd63c2fc17dbd5e7",
+    "addresses": {
+     "ethereum": "0x8120f0c201ce937f641a085249304b6824faefd9f35b462fcd63c2fc17dbd5e7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:14:53.121Z",
+    "createdAt": "2026-09-20T03:49:53.954Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2711.3483468443756,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "49ffa553-832d-436e-b165-9382f8afcac4",
+    "reserves": [
+     "232.836199",
+     "118364.080435"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc46f17a7e16337264aef5197de969caabd8045f14dd11a41f7b0e8262ae3669c": {
+    "key": "ethereum:0xc46f17a7e16337264aef5197de969caabd8045f14dd11a41f7b0e8262ae3669c",
+    "name": "Uniswap V4 LP USDT/WMTx",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc46f17a7e16337264aef5197de969caabd8045f14dd11a41f7b0e8262ae3669c",
+    "addresses": {
+     "ethereum": "0xc46f17a7e16337264aef5197de969caabd8045f14dd11a41f7b0e8262ae3669c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.013Z",
+    "createdAt": "2026-09-18T05:44:23.447Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    ],
+    "liquidity": 882.2745709266522,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.001"
+    },
+    "tokenId": "ddf280a6-fccd-4c51-99d1-c065012a0d98",
+    "reserves": [
+     "999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf78f45ece654f2d0a932d7e58043dbd5853a80e8b97f919c6b8426011d9919db": {
+    "key": "ethereum:0xf78f45ece654f2d0a932d7e58043dbd5853a80e8b97f919c6b8426011d9919db",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xf78f45ece654f2d0a932d7e58043dbd5853a80e8b97f919c6b8426011d9919db",
+    "addresses": {
+     "ethereum": "0xf78f45ece654f2d0a932d7e58043dbd5853a80e8b97f919c6b8426011d9919db"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.021Z",
+    "createdAt": "2026-09-20T04:54:29.952Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 20133.918845820084,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "40.06"
+    },
+    "tokenId": "68753e79-d49d-4553-8f97-74386428f4b0",
+    "reserves": [
+     "0.000001",
+     "961440.000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8a4543373536ba9f168a27703d6458b69a3a88344a2d83d95f4ca219dca3705c": {
+    "key": "ethereum:0x8a4543373536ba9f168a27703d6458b69a3a88344a2d83d95f4ca219dca3705c",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x8a4543373536ba9f168a27703d6458b69a3a88344a2d83d95f4ca219dca3705c",
+    "addresses": {
+     "ethereum": "0x8a4543373536ba9f168a27703d6458b69a3a88344a2d83d95f4ca219dca3705c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.037Z",
+    "createdAt": "2026-08-01T00:50:53.346Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2990.8133725283606,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25890,
+     "feePercentage": "99.6004"
+    },
+    "tokenId": "df9e2380-4736-49e7-afb7-5861931b285a",
+    "reserves": [
+     "1.299482",
+     "142756.078885"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdca5a7155089fb42f75b3f12e93931ea42c8d03ae56d596b4bdf872714668cc1": {
+    "key": "ethereum:0xdca5a7155089fb42f75b3f12e93931ea42c8d03ae56d596b4bdf872714668cc1",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xdca5a7155089fb42f75b3f12e93931ea42c8d03ae56d596b4bdf872714668cc1",
+    "addresses": {
+     "ethereum": "0xdca5a7155089fb42f75b3f12e93931ea42c8d03ae56d596b4bdf872714668cc1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.429Z",
+    "createdAt": "2026-09-20T16:10:41.838Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 110751.7957949098,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3211,
+     "feePercentage": "32.1779"
+    },
+    "tokenId": "fe1a0cd5-85a7-4db2-8571-521609577eca",
+    "reserves": [
+     "328.602127",
+     "5272960.05801"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x49b35ac1f6cd78ee32d2cb076dae8d4653bb0697c3a3b327153216a68f520d61": {
+    "key": "ethereum:0x49b35ac1f6cd78ee32d2cb076dae8d4653bb0697c3a3b327153216a68f520d61",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x49b35ac1f6cd78ee32d2cb076dae8d4653bb0697c3a3b327153216a68f520d61",
+    "addresses": {
+     "ethereum": "0x49b35ac1f6cd78ee32d2cb076dae8d4653bb0697c3a3b327153216a68f520d61"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.810Z",
+    "createdAt": "2026-09-20T11:14:46.703Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 12150.395642876303,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3800,
+     "feePercentage": "38.062"
+    },
+    "tokenId": "b19070d7-347c-4e56-8062-67ec5df3626e",
+    "reserves": [
+     "171.049467",
+     "572042.70501"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9b327d9f8bc1f016f4f3f29fff07c6456fc1a9c1093e4e3dd8867b4a2856da73": {
+    "key": "ethereum:0x9b327d9f8bc1f016f4f3f29fff07c6456fc1a9c1093e4e3dd8867b4a2856da73",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x9b327d9f8bc1f016f4f3f29fff07c6456fc1a9c1093e4e3dd8867b4a2856da73",
+    "addresses": {
+     "ethereum": "0x9b327d9f8bc1f016f4f3f29fff07c6456fc1a9c1093e4e3dd8867b4a2856da73"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.256Z",
+    "createdAt": "2026-09-21T18:14:03.657Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 16754.998363117968,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2197,
+     "feePercentage": "22.0481"
+    },
+    "tokenId": "0d9babfc-85d4-4547-a258-ffcf093b584a",
+    "reserves": [
+     "72.348607",
+     "796634.938337"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x11d8aa5ee131c12fbee95ec8e5f29ef5a2f9ebeefa7c65ad32822b1f2e084802": {
+    "key": "ethereum:0x11d8aa5ee131c12fbee95ec8e5f29ef5a2f9ebeefa7c65ad32822b1f2e084802",
+    "name": "Uniswap V4 LP MNTx/WMTX",
+    "decimals": 18,
+    "symbol": "MNTX/WMTX",
+    "price": 9007199254740990,
+    "address": "0x11d8aa5ee131c12fbee95ec8e5f29ef5a2f9ebeefa7c65ad32822b1f2e084802",
+    "addresses": {
+     "ethereum": "0x11d8aa5ee131c12fbee95ec8e5f29ef5a2f9ebeefa7c65ad32822b1f2e084802"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/55216/large/mntx.jpg?1744736020",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.918Z",
+    "createdAt": "2025-07-01T10:07:07.030Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5c697fee285b513711a816018dbb34dc0cfc4875",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 617.97300825252,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1"
+    },
+    "tokenId": "70bd7de7-4692-43d5-aa63-8f8b5fa7dd69",
+    "reserves": [
+     "8960.660774726715834117",
+     "14358.774385"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe2725026ac2e6b384397e27063d08fddb9945e67d01067dd654acb296366e8f5": {
+    "key": "ethereum:0xe2725026ac2e6b384397e27063d08fddb9945e67d01067dd654acb296366e8f5",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xe2725026ac2e6b384397e27063d08fddb9945e67d01067dd654acb296366e8f5",
+    "addresses": {
+     "ethereum": "0xe2725026ac2e6b384397e27063d08fddb9945e67d01067dd654acb296366e8f5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.055Z",
+    "createdAt": "2026-09-21T12:09:17.808Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 318727.89291513443,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "255.051"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2199,
+     "feePercentage": "22.0681"
+    },
+    "tokenId": "6f4a7aac-e501-4458-b4ed-5d6137dfe731",
+    "reserves": [
+     "1200.090199",
+     "15162681.706275"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc0593007c3eb5f74174eccd782db609adf0d2c18b12c199e6f3d58057604d64c": {
+    "key": "ethereum:0xc0593007c3eb5f74174eccd782db609adf0d2c18b12c199e6f3d58057604d64c",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc0593007c3eb5f74174eccd782db609adf0d2c18b12c199e6f3d58057604d64c",
+    "addresses": {
+     "ethereum": "0xc0593007c3eb5f74174eccd782db609adf0d2c18b12c199e6f3d58057604d64c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.073Z",
+    "createdAt": "2026-10-02T19:06:48.857Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 629.6546182701327,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9799,
+     "feePercentage": "97.99"
+    },
+    "tokenId": "47619b1d-14aa-4162-8d3a-3c0a0e63d33e",
+    "reserves": [
+     "0.000030067061798442",
+     "30064.075264"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcedeaa17ed2f3cb2cd15da892d35a1e4b6ea27305442153cb9f7989784572394": {
+    "key": "ethereum:0xcedeaa17ed2f3cb2cd15da892d35a1e4b6ea27305442153cb9f7989784572394",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xcedeaa17ed2f3cb2cd15da892d35a1e4b6ea27305442153cb9f7989784572394",
+    "addresses": {
+     "ethereum": "0xcedeaa17ed2f3cb2cd15da892d35a1e4b6ea27305442153cb9f7989784572394"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.005Z",
+    "createdAt": "2026-09-20T05:14:57.234Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 867.1422953543575,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2600,
+     "feePercentage": "26.074"
+    },
+    "tokenId": "234a1768-93f5-461f-a120-128517db8139",
+    "reserves": [
+     "40.639512",
+     "39467.828556"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5544346396a991e9b0a8e2ec4884d64e493d2921a0b740543921793d306912b4": {
+    "key": "ethereum:0x5544346396a991e9b0a8e2ec4884d64e493d2921a0b740543921793d306912b4",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x5544346396a991e9b0a8e2ec4884d64e493d2921a0b740543921793d306912b4",
+    "addresses": {
+     "ethereum": "0x5544346396a991e9b0a8e2ec4884d64e493d2921a0b740543921793d306912b4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.005Z",
+    "createdAt": "2026-09-20T04:54:29.952Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 31783.562398447295,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2900,
+     "feePercentage": "29.0711"
+    },
+    "tokenId": "aaa712e7-68ba-4f6c-aae1-3e104ec4a6f6",
+    "reserves": [
+     "880.823333",
+     "1475711.523472"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x22e951f950991ba1dc44e14f31ecbd24d7ec539cbb173519cf56122f30493097": {
+    "key": "ethereum:0x22e951f950991ba1dc44e14f31ecbd24d7ec539cbb173519cf56122f30493097",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x22e951f950991ba1dc44e14f31ecbd24d7ec539cbb173519cf56122f30493097",
+    "addresses": {
+     "ethereum": "0x22e951f950991ba1dc44e14f31ecbd24d7ec539cbb173519cf56122f30493097"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.263Z",
+    "createdAt": "2026-09-20T05:24:22.995Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 630.325324276995,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1776,
+     "feePercentage": "8.9712"
+    },
+    "tokenId": "e9426fab-c3f9-4233-894b-6f7da15e7264",
+    "reserves": [
+     "26.495242",
+     "28834.54585"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x99a979c5a4f601994b20b0d49b6d625a3f65b9deebd665aa3f0861ec7db04e52": {
+    "key": "ethereum:0x99a979c5a4f601994b20b0d49b6d625a3f65b9deebd665aa3f0861ec7db04e52",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x99a979c5a4f601994b20b0d49b6d625a3f65b9deebd665aa3f0861ec7db04e52",
+    "addresses": {
+     "ethereum": "0x99a979c5a4f601994b20b0d49b6d625a3f65b9deebd665aa3f0861ec7db04e52"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.319Z",
+    "createdAt": "2026-09-28T10:39:13.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 36802.75210730642,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "36.632"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2300,
+     "feePercentage": "23.0771"
+    },
+    "tokenId": "427bd7e0-8f61-4310-b728-ae54f2254a40",
+    "reserves": [
+     "64.691515",
+     "1754325.917703"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa8f67d283a5be4f6dc03262f6bac949bbc8bed48e175e68973b6071ce6b5afdd": {
+    "key": "ethereum:0xa8f67d283a5be4f6dc03262f6bac949bbc8bed48e175e68973b6071ce6b5afdd",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0xa8f67d283a5be4f6dc03262f6bac949bbc8bed48e175e68973b6071ce6b5afdd",
+    "addresses": {
+     "ethereum": "0xa8f67d283a5be4f6dc03262f6bac949bbc8bed48e175e68973b6071ce6b5afdd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.319Z",
+    "createdAt": "2026-09-29T03:21:52.314Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 40616.7199738575,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9900,
+     "feePercentage": "99"
+    },
+    "tokenId": "75d40e86-0759-4a36-80f2-d033f4b78fc1",
+    "reserves": [
+     "0",
+     "1939539.915338"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xbdcd7e902861094164d4b4048ac62d3897a32721": {
+    "key": "base:0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "name": "Walmart aStock",
+    "decimals": 18,
+    "symbol": "AWMT",
+    "price": 118.66,
+    "address": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "addresses": {
+     "robinhood": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "bsc": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "ethereum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "arbitrum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "base": "0xbdcd7e902861094164d4b4048ac62d3897a32721"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10201.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175741/large/WMT.png?1787292453",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5a5bc9c8-dc2c-4b70-b028-f2e69a955088",
+    "totalSupply": "85.970129966",
+    "circulatingSupply": "85.970129966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1de4bacec7122852e4962650cd1d7eacebce665a062296e35a471c6d6a879075": {
+    "key": "ethereum:0x1de4bacec7122852e4962650cd1d7eacebce665a062296e35a471c6d6a879075",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x1de4bacec7122852e4962650cd1d7eacebce665a062296e35a471c6d6a879075",
+    "addresses": {
+     "ethereum": "0x1de4bacec7122852e4962650cd1d7eacebce665a062296e35a471c6d6a879075"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.382Z",
+    "createdAt": "2026-09-20T03:58:36.831Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 22508.11676822226,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "21a19544-a6ea-4f61-97e1-05d02f00952a",
+    "reserves": [
+     "3575.46657",
+     "904223.206857"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x18c772b1e324256d4eae3d444aed7e856a6d86e2": {
+    "key": "base:0x18c772b1e324256d4eae3d444aed7e856a6d86e2",
+    "name": "Hydrex WorldMobileToken/Wrapped Ether",
+    "decimals": 18,
+    "symbol": "WMTX/WETH",
+    "price": 9007199254740990,
+    "address": "0x18c772b1e324256d4eae3d444aed7e856a6d86e2",
+    "addresses": {
+     "base": "0x18c772b1e324256d4eae3d444aed7e856a6d86e2"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-08-19T10:00:07.501Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e31966d4f81c72d2a55310a6365a56a4393e98d",
+     "0x4200000000000000000000000000000000000006"
+    ],
+    "liquidity": 363688.9982054145,
+    "metrics": {
+     "apy": "12.284",
+     "baseApy": "12.284",
+     "volumeUsd1d": "12607.235",
+     "volumeUsd7d": "76523.835"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "309e226b-942f-4854-af1c-22264e77d5ce",
+    "reserves": [
+     "11076526.132989",
+     "56.384132376917458358"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc91225a2af29e4de31e903127e465a37c8a4a4e0162ea0a42c5086efa97eaa56": {
+    "key": "ethereum:0xc91225a2af29e4de31e903127e465a37c8a4a4e0162ea0a42c5086efa97eaa56",
+    "name": "Uniswap V4 LP ZQ/WMTX",
+    "decimals": 18,
+    "symbol": "ZQ/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc91225a2af29e4de31e903127e465a37c8a4a4e0162ea0a42c5086efa97eaa56",
+    "addresses": {
+     "ethereum": "0xc91225a2af29e4de31e903127e465a37c8a4a4e0162ea0a42c5086efa97eaa56"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.578Z",
+    "createdAt": "2026-09-28T10:38:27.490Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1159.3225419965534,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9900,
+     "feePercentage": "99.001"
+    },
+    "tokenId": "e5f123bb-4502-41de-b10f-a35804f895d2",
+    "reserves": [
+     "0.000000000000000002",
+     "55360.264108"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6e5d65c6375a8b492c95d2c37ca587f82a17947f71f9995dd77b6770938c27bd": {
+    "key": "ethereum:0x6e5d65c6375a8b492c95d2c37ca587f82a17947f71f9995dd77b6770938c27bd",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x6e5d65c6375a8b492c95d2c37ca587f82a17947f71f9995dd77b6770938c27bd",
+    "addresses": {
+     "ethereum": "0x6e5d65c6375a8b492c95d2c37ca587f82a17947f71f9995dd77b6770938c27bd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.535Z",
+    "createdAt": "2026-10-13T05:10:08.906Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 347395.73151934356,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3000,
+     "feePercentage": "30.0694"
+    },
+    "tokenId": "5fd0908f-af3c-4ca0-9cd4-7f802ba46650",
+    "reserves": [
+     "34.011214",
+     "16587306.375927"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1d09bf979a167075f5608686642fd3cdb458de742a234175892fa03f23693f6b": {
+    "key": "ethereum:0x1d09bf979a167075f5608686642fd3cdb458de742a234175892fa03f23693f6b",
+    "name": "Morpho USDC / v-wmtUSDC",
+    "decimals": 6,
+    "symbol": "USDC/V-WMTUSDC",
+    "price": 1.025244007617809,
+    "address": "0x1d09bf979a167075f5608686642fd3cdb458de742a234175892fa03f23693f6b",
+    "addresses": {
+     "ethereum": "0x1d09bf979a167075f5608686642fd3cdb458de742a234175892fa03f23693f6b"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.241Z",
+    "createdAt": "2026-05-19T06:08:35.021Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "poolAddress": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+    "liquidity": 4357152.7306523025,
+    "metrics": {
+     "apy": "6.063",
+     "baseApy": "6.063",
+     "borrowApy": "6.758",
+     "baseBorrowApy": "6.758",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "29111606729.245"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "oracle": {
+      "type": "ChainlinkOracleV2",
+      "address": "0x6969A0296d9fEC77e794651469e362105d2307e8"
+     },
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "f3711bcc-93b8-4e3a-92d0-eba79dc8c4ed",
+    "totalSupply": "4248251572809.329497",
+    "totalBorrow": "3824023724650.869806",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe210d613216ae247254940f1e212a5f52fcba08a70428b5adb9a9ffc9b703b04": {
+    "key": "ethereum:0xe210d613216ae247254940f1e212a5f52fcba08a70428b5adb9a9ffc9b703b04",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xe210d613216ae247254940f1e212a5f52fcba08a70428b5adb9a9ffc9b703b04",
+    "addresses": {
+     "ethereum": "0xe210d613216ae247254940f1e212a5f52fcba08a70428b5adb9a9ffc9b703b04"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.662Z",
+    "createdAt": "2026-09-20T12:59:36.146Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 49001.96915457493,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2.086"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2333,
+     "feePercentage": "23.4097"
+    },
+    "tokenId": "702b1e58-5fbe-4566-aee6-9f853cdcac3d",
+    "reserves": [
+     "561.909691",
+     "2313128.339638"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4da61cf492de579536ef09709a404b842cd57eaf": {
+    "key": "bsc:0x4da61cf492de579536ef09709a404b842cd57eaf",
+    "name": "PancakeSwap V3 Wrapped BNB/WorldMobileToken 0.01%",
+    "decimals": 18,
+    "symbol": "WBNB/WMTX",
+    "price": 9007199254740990,
+    "address": "0x4da61cf492de579536ef09709a404b842cd57eaf",
+    "addresses": {
+     "bsc": "0x4da61cf492de579536ef09709a404b842cd57eaf"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2025-11-17T17:33:23.189Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 264727.44625651557,
+    "metrics": {
+     "apy": "0.037",
+     "baseApy": "0.037",
+     "volumeUsd1d": "2748.233",
+     "volumeUsd7d": "20540.874"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "52e2c5c0-6752-4e46-b649-dd91e14a84ef",
+    "reserves": [
+     "137.380529707502274068",
+     "8016698.095889"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd0b616a4e5f16e7b46453e4dcfd441cddd90e00c05fabf2673042cd5a1ca4390": {
+    "key": "ethereum:0xd0b616a4e5f16e7b46453e4dcfd441cddd90e00c05fabf2673042cd5a1ca4390",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xd0b616a4e5f16e7b46453e4dcfd441cddd90e00c05fabf2673042cd5a1ca4390",
+    "addresses": {
+     "ethereum": "0xd0b616a4e5f16e7b46453e4dcfd441cddd90e00c05fabf2673042cd5a1ca4390"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.644Z",
+    "createdAt": "2026-09-20T04:51:16.133Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 6107.0226982442455,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1990,
+     "feePercentage": "19.896"
+    },
+    "tokenId": "64d91c63-9f8e-4525-aa3a-b15b4e3abdc7",
+    "reserves": [
+     "0.000002",
+     "291624.096945"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x630f744e62e01cd6829948cf7592f33e3037734eff2a72c7c907afbc7f436897": {
+    "key": "ethereum:0x630f744e62e01cd6829948cf7592f33e3037734eff2a72c7c907afbc7f436897",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x630f744e62e01cd6829948cf7592f33e3037734eff2a72c7c907afbc7f436897",
+    "addresses": {
+     "ethereum": "0x630f744e62e01cd6829948cf7592f33e3037734eff2a72c7c907afbc7f436897"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.683Z",
+    "createdAt": "2026-09-20T04:09:29.361Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 3366.479321180472,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3900,
+     "feePercentage": "39.061"
+    },
+    "tokenId": "dd099294-fa67-4c94-b50b-d49b52d3e895",
+    "reserves": [
+     "328.615511",
+     "145078.30712"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5246d563d44b4199299863ae609431fe805ce02f3bca78da5a3d11cce280b768": {
+    "key": "ethereum:0x5246d563d44b4199299863ae609431fe805ce02f3bca78da5a3d11cce280b768",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x5246d563d44b4199299863ae609431fe805ce02f3bca78da5a3d11cce280b768",
+    "addresses": {
+     "ethereum": "0x5246d563d44b4199299863ae609431fe805ce02f3bca78da5a3d11cce280b768"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.949Z",
+    "createdAt": "2026-09-20T04:47:08.163Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 6978.002122944307,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1985,
+     "feePercentage": "19.85"
+    },
+    "tokenId": "ef5dcb2c-3b69-4a4a-89fb-6007dc3499c2",
+    "reserves": [
+     "288.21836",
+     "319464.059949"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c": {
+    "key": "bsc:0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+    "name": "Walmart (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMTON",
+    "price": 120.05,
+    "address": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+    "addresses": {
+     "bsc": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+     "ethereum": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2409218,
+    "image": "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770",
+    "metrics": {
+     "volumeUsd1d": "1180799.122",
+     "volumeUsd7d": "8232677.274"
+    },
+    "metadata": {},
+    "tokenId": "4de9e9f7-d6d9-4bd0-afb8-d285b007ad79",
+    "totalSupply": "20066.350887081564",
+    "circulatingSupply": "20066.350887081564",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x1dda8b6469df243971381f1f3f4137814ca68722": {
+    "key": "base:0x1dda8b6469df243971381f1f3f4137814ca68722",
+    "name": "Aerodrome Volatile AMM - WMTX/WETH",
+    "decimals": 18,
+    "symbol": "VAMM-WMTX/WETH",
+    "price": 13996331.805746552,
+    "address": "0x1dda8b6469df243971381f1f3f4137814ca68722",
+    "addresses": {
+     "base": "0x1dda8b6469df243971381f1f3f4137814ca68722"
+    },
+    "platform": "aerodrome",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.268Z",
+    "createdAt": "2024-10-01T08:21:25.420Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e31966d4f81c72d2a55310a6365a56a4393e98d",
+     "0x4200000000000000000000000000000000000006"
+    ],
+    "poolAddress": "0xf2470b185647d1fd0f432c223ab0e80e0b23dcd3",
+    "liquidity": 11377.494735518292,
+    "metrics": {
+     "apy": "35.984",
+     "rewardApy": "35.984",
+     "volumeUsd1d": "1188.764",
+     "volumeUsd7d": "7563.298"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isStable": false,
+     "feePercentage": "0.3"
+    },
+    "tokenId": "a6a85a36-7ae2-4eca-8885-8d353c94782d",
+    "totalSupply": "0.00081289118416348",
+    "reserves": [
+     "264205.271493",
+     "2.501663383270778206"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbdcd7e902861094164d4b4048ac62d3897a32721": {
+    "key": "bsc:0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "name": "Walmart aStock",
+    "decimals": 18,
+    "symbol": "AWMT",
+    "price": 118.66,
+    "address": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "addresses": {
+     "robinhood": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "bsc": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "ethereum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "arbitrum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "base": "0xbdcd7e902861094164d4b4048ac62d3897a32721"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10201.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175741/large/WMT.png?1787292453",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5a5bc9c8-dc2c-4b70-b028-f2e69a955088",
+    "totalSupply": "85.970129966",
+    "circulatingSupply": "85.970129966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa0374514206bbaca681bbc3a98481fe46f3a827acaf5db8f0568c1b0e773e07c": {
+    "key": "ethereum:0xa0374514206bbaca681bbc3a98481fe46f3a827acaf5db8f0568c1b0e773e07c",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xa0374514206bbaca681bbc3a98481fe46f3a827acaf5db8f0568c1b0e773e07c",
+    "addresses": {
+     "ethereum": "0xa0374514206bbaca681bbc3a98481fe46f3a827acaf5db8f0568c1b0e773e07c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.352Z",
+    "createdAt": "2026-09-20T04:38:11.961Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 5746.839130741883,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1950,
+     "feePercentage": "19.5805"
+    },
+    "tokenId": "e6055a88-046c-44c9-ab3e-300480f6c9be",
+    "reserves": [
+     "643.195015",
+     "243736.861066"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xff35d6738adedd4fe7de5d17fe2e8f1c4ed9e996de9ebe7012ea52c851af405e": {
+    "key": "ethereum:0xff35d6738adedd4fe7de5d17fe2e8f1c4ed9e996de9ebe7012ea52c851af405e",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0xff35d6738adedd4fe7de5d17fe2e8f1c4ed9e996de9ebe7012ea52c851af405e",
+    "addresses": {
+     "ethereum": "0xff35d6738adedd4fe7de5d17fe2e8f1c4ed9e996de9ebe7012ea52c851af405e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.635Z",
+    "createdAt": "2026-10-07T07:18:38.118Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 61843.612242046285,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1902.239"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.0781"
+    },
+    "tokenId": "1ba0b822-65fa-417e-b564-d0b8b6c046db",
+    "reserves": [
+     "0.110451904714180383",
+     "2940858.994997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xac309f40a33618f4c056c2d92e46a054ebc45de1": {
+    "key": "base:0xac309f40a33618f4c056c2d92e46a054ebc45de1",
+    "name": "ICHI Vault WMTX-WETH (HYDX)",
+    "decimals": 18,
+    "symbol": "IV-HYDX-268-WMTX-WETH",
+    "price": 0.7857858108110034,
+    "address": "0xac309f40a33618f4c056c2d92e46a054ebc45de1",
+    "addresses": {
+     "base": "0xac309f40a33618f4c056c2d92e46a054ebc45de1"
+    },
+    "platform": "ichi",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/ichi",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:50.854Z",
+    "createdAt": "2026-08-19T08:37:01.536Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e31966d4f81c72d2a55310a6365a56a4393e98d",
+     "0x4200000000000000000000000000000000000006"
+    ],
+    "poolAddress": "0x18c772b1e324256d4eae3d444aed7e856a6d86e2",
+    "liquidity": 28882.551106934923,
+    "metrics": {
+     "apy": "10.913",
+     "baseApy": "10.913",
+     "volumeUsd1d": "32.064",
+     "volumeUsd7d": "701.054"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "poolAddress": "0x18c772b1e324256d4eae3d444aed7e856a6d86e2"
+    },
+    "tokenId": "91cd9469-79ad-40de-8c7c-e4f84472429c",
+    "totalSupply": "36756.264505623318616657",
+    "reserves": [
+     "1134247.714844",
+     "2.19568179152016917"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x039accf942416b05b876ef862faabdf7b8a00ea6dbc254a66eae5bc2d16b3928": {
+    "key": "ethereum:0x039accf942416b05b876ef862faabdf7b8a00ea6dbc254a66eae5bc2d16b3928",
+    "name": "Uniswap V4 LP EGP/WMTon",
+    "decimals": 18,
+    "symbol": "EGP/WMTON",
+    "price": 9007199254740990,
+    "address": "0x039accf942416b05b876ef862faabdf7b8a00ea6dbc254a66eae5bc2d16b3928",
+    "addresses": {
+     "ethereum": "0x039accf942416b05b876ef862faabdf7b8a00ea6dbc254a66eae5bc2d16b3928"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.444Z",
+    "createdAt": "2026-10-14T06:54:26.154Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    ],
+    "liquidity": 20075.43113098108,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.11"
+    },
+    "tokenId": "13f346a5-3b09-4daf-8ccf-fee8ddc86427",
+    "reserves": [
+     "19999.999999999999999995",
+     "0.249162184603367553"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x90d2f5c5d7a6e2de60b2d9bf2c7d3600e547d3ff98ac236a8d913055aebfcc83": {
+    "key": "ethereum:0x90d2f5c5d7a6e2de60b2d9bf2c7d3600e547d3ff98ac236a8d913055aebfcc83",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x90d2f5c5d7a6e2de60b2d9bf2c7d3600e547d3ff98ac236a8d913055aebfcc83",
+    "addresses": {
+     "ethereum": "0x90d2f5c5d7a6e2de60b2d9bf2c7d3600e547d3ff98ac236a8d913055aebfcc83"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.464Z",
+    "createdAt": "2026-09-20T03:58:36.831Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2293.0092671183393,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 990,
+     "feePercentage": "9.9901"
+    },
+    "tokenId": "f01175fc-48d6-4f03-bcce-2fceaafc94ab",
+    "reserves": [
+     "849.354251",
+     "68947.352363"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9396095980b6a44e2b57d237af84611c488b1d716ef01b4168005a9eb187f2c3": {
+    "key": "ethereum:0x9396095980b6a44e2b57d237af84611c488b1d716ef01b4168005a9eb187f2c3",
+    "name": "Morpho USDT / v-wmtUSDT",
+    "decimals": 12,
+    "symbol": "USDT/V-WMTUSDT",
+    "price": 1.0089644560610944,
+    "address": "0x9396095980b6a44e2b57d237af84611c488b1d716ef01b4168005a9eb187f2c3",
+    "addresses": {
+     "ethereum": "0x9396095980b6a44e2b57d237af84611c488b1d716ef01b4168005a9eb187f2c3"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.391Z",
+    "createdAt": "2026-09-02T13:14:20.340Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "poolAddress": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+    "liquidity": 3523912.2013532217,
+    "metrics": {
+     "apy": "6.741",
+     "baseApy": "6.741",
+     "borrowApy": "7.51",
+     "baseBorrowApy": "7.51",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2643.513"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "oracle": {
+      "type": "ChainlinkOracleV2",
+      "address": "0x606A4DD63bA4418E707b214e1817db6F00C6Ee26"
+     },
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "94e12537-6498-464a-9571-9c28d6099c1e",
+    "totalSupply": "3491970.636719533033",
+    "totalBorrow": "3145648.419444508836",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849": {
+    "key": "base:0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+    "name": "Walmart (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMT",
+    "price": 118.83,
+    "address": "0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+    "addresses": {
+     "ethereum": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+     "base": "0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+     "arbitrum": "0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+     "avalanche": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9675.48,
+    "image": "https://coin-images.coingecko.com/coins/images/102175062/large/dinari-logo-green-with-margin.png?1785403069",
+    "metrics": {
+     "volumeUsd1d": "1.001",
+     "volumeUsd7d": "3135.863"
+    },
+    "metadata": {},
+    "tokenId": "7de66b53-01fd-4dfe-ab52-c90321a70f1a",
+    "totalSupply": "81.42052579550266",
+    "circulatingSupply": "81.42052579550266",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe764653695e05085b18cb3f2f6b296a11572be9e90236f1bf229bfcd6cf56fa4": {
+    "key": "ethereum:0xe764653695e05085b18cb3f2f6b296a11572be9e90236f1bf229bfcd6cf56fa4",
+    "name": "Uniswap V4 LP ZQ/WMTX",
+    "decimals": 18,
+    "symbol": "ZQ/WMTX",
+    "price": 9007199254740990,
+    "address": "0xe764653695e05085b18cb3f2f6b296a11572be9e90236f1bf229bfcd6cf56fa4",
+    "addresses": {
+     "ethereum": "0xe764653695e05085b18cb3f2f6b296a11572be9e90236f1bf229bfcd6cf56fa4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.671Z",
+    "createdAt": "2026-09-20T03:44:05.891Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1090.7216025141545,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9955,
+     "feePercentage": "99.5505"
+    },
+    "tokenId": "ff24eb3c-ede5-4c65-8ea8-0ad3edac075d",
+    "reserves": [
+     "0.000000000000000001",
+     "52084.414644"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xba66f5620c20ef50af6b084e876fe82acac873f38a22e0a510f7884187e7958e": {
+    "key": "ethereum:0xba66f5620c20ef50af6b084e876fe82acac873f38a22e0a510f7884187e7958e",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xba66f5620c20ef50af6b084e876fe82acac873f38a22e0a510f7884187e7958e",
+    "addresses": {
+     "ethereum": "0xba66f5620c20ef50af6b084e876fe82acac873f38a22e0a510f7884187e7958e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.737Z",
+    "createdAt": "2026-09-20T04:51:16.133Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 16727.27215044906,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1910,
+     "feePercentage": "19.1"
+    },
+    "tokenId": "d7c3e577-6393-48e6-a888-4eeb2ada2dc3",
+    "reserves": [
+     "0.000002",
+     "798764.9428"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa2ac99a41cf2da2d0e26994996aebf6f836b98f7200f7c79bc9f3e686d6c2357": {
+    "key": "ethereum:0xa2ac99a41cf2da2d0e26994996aebf6f836b98f7200f7c79bc9f3e686d6c2357",
+    "name": "Uniswap V4 LP ETH/WMTX",
+    "decimals": 18,
+    "symbol": "ETH/WMTX",
+    "price": 9007199254740990,
+    "address": "0xa2ac99a41cf2da2d0e26994996aebf6f836b98f7200f7c79bc9f3e686d6c2357",
+    "addresses": {
+     "ethereum": "0xa2ac99a41cf2da2d0e26994996aebf6f836b98f7200f7c79bc9f3e686d6c2357"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.863Z",
+    "createdAt": "2026-09-20T03:54:43.004Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 14026.478180401284,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9000,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "0463d31a-38a9-4194-9623-1e7c31823c1e",
+    "reserves": [
+     "0.003224724769193103",
+     "669436.460979"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1f3838b7417256285413abefb2beba38d7cc0e0978d814c70093a0b84f0de5b9": {
+    "key": "ethereum:0x1f3838b7417256285413abefb2beba38d7cc0e0978d814c70093a0b84f0de5b9",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x1f3838b7417256285413abefb2beba38d7cc0e0978d814c70093a0b84f0de5b9",
+    "addresses": {
+     "ethereum": "0x1f3838b7417256285413abefb2beba38d7cc0e0978d814c70093a0b84f0de5b9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.795Z",
+    "createdAt": "2026-09-20T11:54:23.235Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 565647.6664827089,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "300.327"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5956,
+     "feePercentage": "59.6005"
+    },
+    "tokenId": "8d3a6e32-594f-4c63-af04-83f3723537e8",
+    "reserves": [
+     "785.594402",
+     "26973445.806492"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8726ca421019640e0a2829aa0f479d893c6449e7b2a194981de6defa99a8067b": {
+    "key": "ethereum:0x8726ca421019640e0a2829aa0f479d893c6449e7b2a194981de6defa99a8067b",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x8726ca421019640e0a2829aa0f479d893c6449e7b2a194981de6defa99a8067b",
+    "addresses": {
+     "ethereum": "0x8726ca421019640e0a2829aa0f479d893c6449e7b2a194981de6defa99a8067b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.007Z",
+    "createdAt": "2026-09-20T04:05:21.391Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1156.37326666899,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1800,
+     "feePercentage": "18"
+    },
+    "tokenId": "2236d557-4b52-4e6f-a01c-2fd81a45b1e0",
+    "reserves": [
+     "0.000002",
+     "55219.429469"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x22e659b3a8589b202015372faea144c44ea2c920ddf2960b6b41f6e2757e1124": {
+    "key": "ethereum:0x22e659b3a8589b202015372faea144c44ea2c920ddf2960b6b41f6e2757e1124",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x22e659b3a8589b202015372faea144c44ea2c920ddf2960b6b41f6e2757e1124",
+    "addresses": {
+     "ethereum": "0x22e659b3a8589b202015372faea144c44ea2c920ddf2960b6b41f6e2757e1124"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.040Z",
+    "createdAt": "2026-09-20T14:13:09.519Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1308.0745150940086,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 600,
+     "feePercentage": "6.0941"
+    },
+    "tokenId": "e33664c4-321f-4a0b-89f8-186afc26be86",
+    "reserves": [
+     "31.483792",
+     "60961.373975"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd6cab819ce1ddf725ebf2094cb3c299581cd621667b74fb41ecffe927ec1ef1a": {
+    "key": "ethereum:0xd6cab819ce1ddf725ebf2094cb3c299581cd621667b74fb41ecffe927ec1ef1a",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xd6cab819ce1ddf725ebf2094cb3c299581cd621667b74fb41ecffe927ec1ef1a",
+    "addresses": {
+     "ethereum": "0xd6cab819ce1ddf725ebf2094cb3c299581cd621667b74fb41ecffe927ec1ef1a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.087Z",
+    "createdAt": "2026-09-20T05:14:57.234Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 23454.41652765172,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2450,
+     "feePercentage": "24.5755"
+    },
+    "tokenId": "979370c5-4883-4ac8-86f0-7538d913dbbe",
+    "reserves": [
+     "256.991308",
+     "1107732.229696"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4a08ee829c4d3c87304a822c82d83c48878278f96f2e66caa3743703e41b76a7": {
+    "key": "ethereum:0x4a08ee829c4d3c87304a822c82d83c48878278f96f2e66caa3743703e41b76a7",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x4a08ee829c4d3c87304a822c82d83c48878278f96f2e66caa3743703e41b76a7",
+    "addresses": {
+     "ethereum": "0x4a08ee829c4d3c87304a822c82d83c48878278f96f2e66caa3743703e41b76a7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.139Z",
+    "createdAt": "2026-09-20T12:38:12.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 274545.92286542285,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3900,
+     "feePercentage": "39.0612"
+    },
+    "tokenId": "b3df2a28-adc5-4460-9739-7478b868d52f",
+    "reserves": [
+     "0.000006",
+     "13110186.551792"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x4c1d3d120cf1f0fcaf954d20b384d29c3fe8d23a": {
+    "key": "arbitrum:0x4c1d3d120cf1f0fcaf954d20b384d29c3fe8d23a",
+    "name": "Walmart rStock",
+    "decimals": 18,
+    "symbol": "RWMT",
+    "price": 118.62,
+    "address": "0x4c1d3d120cf1f0fcaf954d20b384d29c3fe8d23a",
+    "addresses": {
+     "arbitrum": "0x4c1d3d120cf1f0fcaf954d20b384d29c3fe8d23a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 83730,
+    "image": "https://coin-images.coingecko.com/coins/images/102177236/large/61f950d277fcdd128a6359be95ddd298.png?1789117255",
+    "metrics": {
+     "volumeUsd1d": "308.107",
+     "volumeUsd7d": "7325.145"
+    },
+    "metadata": {},
+    "tokenId": "89561232-6c97-45f8-9358-e90135a8fe1d",
+    "totalSupply": "705.885772329",
+    "circulatingSupply": "705.885772329",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x1750650e874bfb2f0cadd408d14dd710c1337a253e52a8b0e4283aa4b05bd955": {
+    "key": "arbitrum:0x1750650e874bfb2f0cadd408d14dd710c1337a253e52a8b0e4283aa4b05bd955",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x1750650e874bfb2f0cadd408d14dd710c1337a253e52a8b0e4283aa4b05bd955",
+    "addresses": {
+     "arbitrum": "0x1750650e874bfb2f0cadd408d14dd710c1337a253e52a8b0e4283aa4b05bd955"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.528Z",
+    "createdAt": "2026-02-14T05:05:14.480Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1064.8933933770309,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "e29e72ac-a130-477f-90c3-c2d7d4ea87e7",
+    "reserves": [
+     "758.127125",
+     "14657.324402"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3e31966d4f81c72d2a55310a6365a56a4393e98d": {
+    "key": "base:0x3e31966d4f81c72d2a55310a6365a56a4393e98d",
+    "name": "World Mobile Token",
+    "decimals": 6,
+    "symbol": "WMT",
+    "price": 0.02094142,
+    "address": "0x3e31966d4f81c72d2a55310a6365a56a4393e98d",
+    "addresses": {
+     "arbitrum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "ethereum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "bsc": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "base": "0x3e31966d4f81c72d2a55310a6365a56a4393e98d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-10-01T08:18:30.041Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16912610,
+    "image": "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+    "metrics": {
+     "volumeUsd1d": "185961.88",
+     "volumeUsd7d": "882566.058"
+    },
+    "metadata": {},
+    "tokenId": "08f3bbda-ba4f-4f59-a1ac-d5e294d2d8a0",
+    "totalSupply": "2000000000",
+    "circulatingSupply": "851874782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbdcd7e902861094164d4b4048ac62d3897a32721": {
+    "key": "ethereum:0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "name": "Walmart aStock",
+    "decimals": 18,
+    "symbol": "AWMT",
+    "price": 118.66,
+    "address": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "addresses": {
+     "robinhood": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "bsc": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "ethereum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "arbitrum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "base": "0xbdcd7e902861094164d4b4048ac62d3897a32721"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10201.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175741/large/WMT.png?1787292453",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5a5bc9c8-dc2c-4b70-b028-f2e69a955088",
+    "totalSupply": "85.970129966",
+    "circulatingSupply": "85.970129966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf8fc1af1660999d7fee64f32e3048658f490c1e80b40f0aac0742a3256f70983": {
+    "key": "ethereum:0xf8fc1af1660999d7fee64f32e3048658f490c1e80b40f0aac0742a3256f70983",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xf8fc1af1660999d7fee64f32e3048658f490c1e80b40f0aac0742a3256f70983",
+    "addresses": {
+     "ethereum": "0xf8fc1af1660999d7fee64f32e3048658f490c1e80b40f0aac0742a3256f70983"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.455Z",
+    "createdAt": "2026-09-20T03:49:53.954Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 6795.454278405773,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "0bb6ef64-a680-491b-aea5-a5797ea00c22",
+    "reserves": [
+     "2127.381028",
+     "222998.179843"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "arbitrum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "arbitrum": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.688Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9227352.732392408,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "9997d1cd-faed-45a4-a78e-f2f5cb163641",
+    "totalSupply": "76569.187058272414469849",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xadd53e4a680a9a87dcfd8eea06e21455e9f03444f3bada47224e956d362831e0": {
+    "key": "ethereum:0xadd53e4a680a9a87dcfd8eea06e21455e9f03444f3bada47224e956d362831e0",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xadd53e4a680a9a87dcfd8eea06e21455e9f03444f3bada47224e956d362831e0",
+    "addresses": {
+     "ethereum": "0xadd53e4a680a9a87dcfd8eea06e21455e9f03444f3bada47224e956d362831e0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.298Z",
+    "createdAt": "2026-09-20T04:32:02.785Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1541.2885130200834,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2300,
+     "feePercentage": "23"
+    },
+    "tokenId": "4865ace1-db4e-4565-8edd-9312e5aac4ad",
+    "reserves": [
+     "0.000001",
+     "73600.000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd217b3320dcf336c531a3d64dfdd1492f0c834c225578ad94ce533253de03928": {
+    "key": "ethereum:0xd217b3320dcf336c531a3d64dfdd1492f0c834c225578ad94ce533253de03928",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xd217b3320dcf336c531a3d64dfdd1492f0c834c225578ad94ce533253de03928",
+    "addresses": {
+     "ethereum": "0xd217b3320dcf336c531a3d64dfdd1492f0c834c225578ad94ce533253de03928"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.919Z",
+    "createdAt": "2026-10-14T18:45:24.284Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 697245.2080447269,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "146.688"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.0771"
+    },
+    "tokenId": "718b0a5c-0fa1-4d80-a4db-8695a8e7fcbb",
+    "reserves": [
+     "16.370883",
+     "33294248.481013"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x29f2175a82b325155b8b042dbbc50752f14c4b4068a448a8c05808e978e2dd9f": {
+    "key": "ethereum:0x29f2175a82b325155b8b042dbbc50752f14c4b4068a448a8c05808e978e2dd9f",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x29f2175a82b325155b8b042dbbc50752f14c4b4068a448a8c05808e978e2dd9f",
+    "addresses": {
+     "ethereum": "0x29f2175a82b325155b8b042dbbc50752f14c4b4068a448a8c05808e978e2dd9f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.919Z",
+    "createdAt": "2026-09-20T04:21:11.559Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 13678.605333575042,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1400,
+     "feePercentage": "14.086"
+    },
+    "tokenId": "3e28f611-e151-4d38-a5f7-e4d35fd70775",
+    "reserves": [
+     "1770.15723",
+     "568727.760509"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "ethereum:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "ethereum": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.960Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10897328.034750894,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "d57c0ccf-8fc5-44ff-a35f-faf801e6c2e2",
+    "totalSupply": "90426.753254924016678188",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x47caae681feaa911918cfa4f81426ded14d981675f89bf62ee76805cf945fc92": {
+    "key": "ethereum:0x47caae681feaa911918cfa4f81426ded14d981675f89bf62ee76805cf945fc92",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x47caae681feaa911918cfa4f81426ded14d981675f89bf62ee76805cf945fc92",
+    "addresses": {
+     "ethereum": "0x47caae681feaa911918cfa4f81426ded14d981675f89bf62ee76805cf945fc92"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.877Z",
+    "createdAt": "2026-09-28T10:37:12.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 751088.6233957729,
+    "metrics": {
+     "apy": "0.05",
+     "baseApy": "0.05",
+     "volumeUsd1d": "11.886",
+     "volumeUsd7d": "1611.083"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 900,
+     "feePercentage": "9.0913"
+    },
+    "tokenId": "3c73b76c-12f8-42d6-bca4-1612e4184049",
+    "reserves": [
+     "102.48124",
+     "35861284.959887"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9bbad3a7e947dcba7895de60ae0d4e822a98e68edcd7587a2ba56045796cfb96": {
+    "key": "ethereum:0x9bbad3a7e947dcba7895de60ae0d4e822a98e68edcd7587a2ba56045796cfb96",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x9bbad3a7e947dcba7895de60ae0d4e822a98e68edcd7587a2ba56045796cfb96",
+    "addresses": {
+     "ethereum": "0x9bbad3a7e947dcba7895de60ae0d4e822a98e68edcd7587a2ba56045796cfb96"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.908Z",
+    "createdAt": "2026-09-20T04:51:16.133Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 5251.688191081643,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 995,
+     "feePercentage": "10.0351"
+    },
+    "tokenId": "28cdc414-8c81-4d9e-85af-46e53d0fce5e",
+    "reserves": [
+     "177.793412",
+     "242291.914222"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xae3ee150b26f9dbf6ccea8454f12926c367a92b8fe61b56d5bc9c4b5d816ed7b": {
+    "key": "ethereum:0xae3ee150b26f9dbf6ccea8454f12926c367a92b8fe61b56d5bc9c4b5d816ed7b",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xae3ee150b26f9dbf6ccea8454f12926c367a92b8fe61b56d5bc9c4b5d816ed7b",
+    "addresses": {
+     "ethereum": "0xae3ee150b26f9dbf6ccea8454f12926c367a92b8fe61b56d5bc9c4b5d816ed7b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.973Z",
+    "createdAt": "2026-09-20T04:05:21.391Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2743.9396917452827,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 980,
+     "feePercentage": "9.8902"
+    },
+    "tokenId": "1866ea9a-90ec-47a6-b59d-28d74523c123",
+    "reserves": [
+     "589.166801",
+     "102901.901309"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbdcd7e902861094164d4b4048ac62d3897a32721": {
+    "key": "robinhood:0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "name": "Walmart aStock",
+    "decimals": 18,
+    "symbol": "AWMT",
+    "price": 118.66,
+    "address": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "addresses": {
+     "robinhood": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "bsc": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "ethereum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "arbitrum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "base": "0xbdcd7e902861094164d4b4048ac62d3897a32721"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10201.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175741/large/WMT.png?1787292453",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5a5bc9c8-dc2c-4b70-b028-f2e69a955088",
+    "totalSupply": "85.970129966",
+    "circulatingSupply": "85.970129966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbdcd7e902861094164d4b4048ac62d3897a32721": {
+    "key": "arbitrum:0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "name": "Walmart aStock",
+    "decimals": 18,
+    "symbol": "AWMT",
+    "price": 118.66,
+    "address": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+    "addresses": {
+     "robinhood": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "bsc": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "ethereum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "arbitrum": "0xbdcd7e902861094164d4b4048ac62d3897a32721",
+     "base": "0xbdcd7e902861094164d4b4048ac62d3897a32721"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10201.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175741/large/WMT.png?1787292453",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5a5bc9c8-dc2c-4b70-b028-f2e69a955088",
+    "totalSupply": "85.970129966",
+    "circulatingSupply": "85.970129966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdb8f06d64c2ed94a945df726fbcad351ef56c8f7ee97fad3a444c64ccbcf3b87": {
+    "key": "ethereum:0xdb8f06d64c2ed94a945df726fbcad351ef56c8f7ee97fad3a444c64ccbcf3b87",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xdb8f06d64c2ed94a945df726fbcad351ef56c8f7ee97fad3a444c64ccbcf3b87",
+    "addresses": {
+     "ethereum": "0xdb8f06d64c2ed94a945df726fbcad351ef56c8f7ee97fad3a444c64ccbcf3b87"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.354Z",
+    "createdAt": "2026-09-20T05:14:57.234Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 31931.414112734317,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2900,
+     "feePercentage": "29.0712"
+    },
+    "tokenId": "ae6215a4-d23b-4914-a627-13665f6229ba",
+    "reserves": [
+     "830.998717",
+     "1485148.972354"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x67afea03e0ddfe925465cb5aa1439f4e826b4971da7b0df11183f72681ce2cce": {
+    "key": "ethereum:0x67afea03e0ddfe925465cb5aa1439f4e826b4971da7b0df11183f72681ce2cce",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x67afea03e0ddfe925465cb5aa1439f4e826b4971da7b0df11183f72681ce2cce",
+    "addresses": {
+     "ethereum": "0x67afea03e0ddfe925465cb5aa1439f4e826b4971da7b0df11183f72681ce2cce"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.354Z",
+    "createdAt": "2026-09-20T04:47:08.163Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 35087.02464360605,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1970,
+     "feePercentage": "19.7803"
+    },
+    "tokenId": "acc8e3af-33e1-4a9d-a876-969fabf3b7d4",
+    "reserves": [
+     "649.542577",
+     "1644493.992009"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb65617850efd15a7b57af219109ba38d6c77d7a6": {
+    "key": "bsc:0xb65617850efd15a7b57af219109ba38d6c77d7a6",
+    "name": "Uniswap V3 Tether USD/WorldMobileToken 0.01%",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xb65617850efd15a7b57af219109ba38d6c77d7a6",
+    "addresses": {
+     "bsc": "0xb65617850efd15a7b57af219109ba38d6c77d7a6"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.099Z",
+    "createdAt": "2026-01-28T05:18:40.002Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 11016.783825129663,
+    "metrics": {
+     "apy": "24.302",
+     "baseApy": "24.302",
+     "volumeUsd1d": "75098.407",
+     "volumeUsd7d": "95136.226"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "7f1545bf-86cd-47cf-b4fa-c6f7c69afcc5",
+    "reserves": [
+     "5388.865344092592496251",
+     "268966.580466"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7": {
+    "key": "arbitrum:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "name": "World Mobile Token",
+    "decimals": 6,
+    "symbol": "WMT",
+    "price": 0.02094142,
+    "address": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "addresses": {
+     "arbitrum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "ethereum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "bsc": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "base": "0x3e31966d4f81c72d2a55310a6365a56a4393e98d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-10-01T08:18:30.041Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16912610,
+    "image": "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+    "metrics": {
+     "volumeUsd1d": "185959.557",
+     "volumeUsd7d": "882587.555"
+    },
+    "metadata": {},
+    "tokenId": "08f3bbda-ba4f-4f59-a1ac-d5e294d2d8a0",
+    "totalSupply": "2000000000",
+    "circulatingSupply": "851874782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43": {
+    "key": "ethereum:0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+    "name": "Walmart (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMT",
+    "price": 118.83,
+    "address": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+    "addresses": {
+     "ethereum": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+     "base": "0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+     "arbitrum": "0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+     "avalanche": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9675.48,
+    "image": "https://coin-images.coingecko.com/coins/images/102175062/large/dinari-logo-green-with-margin.png?1785403069",
+    "metrics": {
+     "volumeUsd1d": "1.001",
+     "volumeUsd7d": "3135.489"
+    },
+    "metadata": {},
+    "tokenId": "7de66b53-01fd-4dfe-ab52-c90321a70f1a",
+    "totalSupply": "81.42052579550266",
+    "circulatingSupply": "81.42052579550266",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x92c1a861113d6a63029311b73a83cc1f51dccb755d8410bca5633b06f06145ee": {
+    "key": "ethereum:0x92c1a861113d6a63029311b73a83cc1f51dccb755d8410bca5633b06f06145ee",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x92c1a861113d6a63029311b73a83cc1f51dccb755d8410bca5633b06f06145ee",
+    "addresses": {
+     "ethereum": "0x92c1a861113d6a63029311b73a83cc1f51dccb755d8410bca5633b06f06145ee"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.767Z",
+    "createdAt": "2026-10-13T05:10:08.163Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1310501.1850454656,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3400,
+     "feePercentage": "34"
+    },
+    "tokenId": "695b9e90-d073-4687-b924-caafc8dc1ac8",
+    "reserves": [
+     "0",
+     "62579385.019997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x73fb88be057534b5f724ac4b23e46049d4f32d26b3bb1ac56438035c64a365ac": {
+    "key": "ethereum:0x73fb88be057534b5f724ac4b23e46049d4f32d26b3bb1ac56438035c64a365ac",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x73fb88be057534b5f724ac4b23e46049d4f32d26b3bb1ac56438035c64a365ac",
+    "addresses": {
+     "ethereum": "0x73fb88be057534b5f724ac4b23e46049d4f32d26b3bb1ac56438035c64a365ac"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.799Z",
+    "createdAt": "2026-09-20T17:59:28.467Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 7376.145329741783,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.5005"
+    },
+    "tokenId": "6ca8800d-8f59-4b3f-8f42-9a18d6134345",
+    "reserves": [
+     "0.000000000000000036",
+     "352227.562875"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4d99e516a5a4e742f9e43aa94281ef43fe0d0bc37ea39b902a88735a1da55be2": {
+    "key": "ethereum:0x4d99e516a5a4e742f9e43aa94281ef43fe0d0bc37ea39b902a88735a1da55be2",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x4d99e516a5a4e742f9e43aa94281ef43fe0d0bc37ea39b902a88735a1da55be2",
+    "addresses": {
+     "ethereum": "0x4d99e516a5a4e742f9e43aa94281ef43fe0d0bc37ea39b902a88735a1da55be2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.799Z",
+    "createdAt": "2026-09-21T14:37:12.054Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2663.4231147923906,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2198,
+     "feePercentage": "22.0581"
+    },
+    "tokenId": "39a751a0-88ab-45c5-9a7f-4bc771ddd237",
+    "reserves": [
+     "52.40227",
+     "124682.720261"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf": {
+    "key": "arbitrum:0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+    "name": "Walmart (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMT",
+    "price": 118.83,
+    "address": "0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+    "addresses": {
+     "ethereum": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43",
+     "base": "0xf4b9df3d24bde5db32e2ae8fa1ce5fbeb9432849",
+     "arbitrum": "0x8339fb479ae6c920eb2dd8b8e259bb65100b86cf",
+     "avalanche": "0x75ab7f65f44c340ccac2fd80d4911130eb0b8e43"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9675.48,
+    "image": "https://coin-images.coingecko.com/coins/images/102175062/large/dinari-logo-green-with-margin.png?1785403069",
+    "metrics": {
+     "volumeUsd1d": "1.001",
+     "volumeUsd7d": "3134.71"
+    },
+    "metadata": {},
+    "tokenId": "7de66b53-01fd-4dfe-ab52-c90321a70f1a",
+    "totalSupply": "81.42052579550266",
+    "circulatingSupply": "81.42052579550266",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9145b370c09d489e4fb5b81aa5711611f6d18275492115475544f4b65622bf43": {
+    "key": "arbitrum:0x9145b370c09d489e4fb5b81aa5711611f6d18275492115475544f4b65622bf43",
+    "name": "Uniswap V4 LP WMTx/USDT",
+    "decimals": 18,
+    "symbol": "WMTX/USDT",
+    "price": 9007199254740990,
+    "address": "0x9145b370c09d489e4fb5b81aa5711611f6d18275492115475544f4b65622bf43",
+    "addresses": {
+     "arbitrum": "0x9145b370c09d489e4fb5b81aa5711611f6d18275492115475544f4b65622bf43"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.866Z",
+    "createdAt": "2026-10-16T14:24:11.636Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "54608685-5d50-481b-939a-e0089ca796a3",
+    "reserves": [
+     "0",
+     "1999.999999999999999997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0f6098f429abf8dbd61bbfe3e3d9426b205463981b2c89b93b4654add9b67057": {
+    "key": "ethereum:0x0f6098f429abf8dbd61bbfe3e3d9426b205463981b2c89b93b4654add9b67057",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x0f6098f429abf8dbd61bbfe3e3d9426b205463981b2c89b93b4654add9b67057",
+    "addresses": {
+     "ethereum": "0x0f6098f429abf8dbd61bbfe3e3d9426b205463981b2c89b93b4654add9b67057"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.239Z",
+    "createdAt": "2026-09-20T04:25:48.036Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 8150.7581126312225,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4800,
+     "feePercentage": "48"
+    },
+    "tokenId": "d003d503-cf8b-4bbe-994d-edebeacd319f",
+    "reserves": [
+     "0.000001",
+     "389217.06893"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7aefc9965699fbea943e03264d96e50cd4a97b21": {
+    "key": "bsc:0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "name": "Walmart xStock",
+    "decimals": 18,
+    "symbol": "WMTX",
+    "price": 120.51,
+    "address": "0x7aefc9965699fbea943e03264d96e50cd4a97b21",
+    "addresses": {
+     "bsc": "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.394Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3475665.8241919605,
+    "image": "https://coin-images.coingecko.com/coins/images/55643/large/Ticker_WMT__Company_Name_Walmart__size_200x200_2x.png?1746863900",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "walmart-xstock"
+    },
+    "tokenId": "2a486aa5-110e-4393-a015-9d90b867b27c",
+    "totalSupply": "28841.306316421544917563",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9a5acca7e947a4ca53e3e6c2fec8369c1eb5c8ba5fb78fbef78c278511594f7c": {
+    "key": "ethereum:0x9a5acca7e947a4ca53e3e6c2fec8369c1eb5c8ba5fb78fbef78c278511594f7c",
+    "name": "Uniswap V4 LP USDT/WMTx",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x9a5acca7e947a4ca53e3e6c2fec8369c1eb5c8ba5fb78fbef78c278511594f7c",
+    "addresses": {
+     "ethereum": "0x9a5acca7e947a4ca53e3e6c2fec8369c1eb5c8ba5fb78fbef78c278511594f7c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.318Z",
+    "createdAt": "2026-10-18T18:58:09.439Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x7aefc9965699fbea943e03264d96e50cd4a97b21"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "51d3d938-cf3b-4866-bec4-731f3df01361",
+    "reserves": [
+     "3999.999999999999999991",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb1321cda62189257bc6fd94c8dab16945d92b751df40832eb480e2f004fbb596": {
+    "key": "ethereum:0xb1321cda62189257bc6fd94c8dab16945d92b751df40832eb480e2f004fbb596",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xb1321cda62189257bc6fd94c8dab16945d92b751df40832eb480e2f004fbb596",
+    "addresses": {
+     "ethereum": "0xb1321cda62189257bc6fd94c8dab16945d92b751df40832eb480e2f004fbb596"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.590Z",
+    "createdAt": "2026-09-20T03:49:53.954Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1042.018021909519,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10"
+    },
+    "tokenId": "3493d445-da6b-4c28-9d2d-4e52a2b0bd14",
+    "reserves": [
+     "516.312377",
+     "25109.447909"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x09aaabc04b877a1de66de59749c1722fff3468ff0d9bf6396801d5d77b94ed54": {
+    "key": "arbitrum:0x09aaabc04b877a1de66de59749c1722fff3468ff0d9bf6396801d5d77b94ed54",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x09aaabc04b877a1de66de59749c1722fff3468ff0d9bf6396801d5d77b94ed54",
+    "addresses": {
+     "arbitrum": "0x09aaabc04b877a1de66de59749c1722fff3468ff0d9bf6396801d5d77b94ed54"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.961Z",
+    "createdAt": "2026-01-27T05:17:14.117Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1398.711757880625,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "a01cd9a7-a354-4fca-be2e-db17ad7c60b8",
+    "reserves": [
+     "0.000007",
+     "66791.638336"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x12c4941a032b721ab55f62a14c23051374d486521abbcb8dd19954d1c26fe7ef": {
+    "key": "ethereum:0x12c4941a032b721ab55f62a14c23051374d486521abbcb8dd19954d1c26fe7ef",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x12c4941a032b721ab55f62a14c23051374d486521abbcb8dd19954d1c26fe7ef",
+    "addresses": {
+     "ethereum": "0x12c4941a032b721ab55f62a14c23051374d486521abbcb8dd19954d1c26fe7ef"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.153Z",
+    "createdAt": "2025-10-06T09:15:24.734Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 2597.5647643855095,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "113d794b-795a-41f7-90f4-afd9a1ecf6d6",
+    "reserves": [
+     "3.082571",
+     "123892.498132"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b": {
+    "key": "ethereum:0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b",
+    "name": "Walmart (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WMTON",
+    "price": 120.05,
+    "address": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b",
+    "addresses": {
+     "bsc": "0xa7d1e886acf66ec0656df2decb4b7c893a3bab4c",
+     "ethereum": "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2409218,
+    "image": "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770",
+    "metrics": {
+     "volumeUsd1d": "1178467.836",
+     "volumeUsd7d": "8246367.639"
+    },
+    "metadata": {},
+    "tokenId": "4de9e9f7-d6d9-4bd0-afb8-d285b007ad79",
+    "totalSupply": "20066.350887081564",
+    "circulatingSupply": "20066.350887081564",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7": {
+    "key": "bsc:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "name": "World Mobile Token",
+    "decimals": 6,
+    "symbol": "WMT",
+    "price": 0.02094142,
+    "address": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "addresses": {
+     "arbitrum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "ethereum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "bsc": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "base": "0x3e31966d4f81c72d2a55310a6365a56a4393e98d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-10-01T08:18:30.041Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16912610,
+    "image": "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+    "metrics": {
+     "volumeUsd1d": "187493.931",
+     "volumeUsd7d": "882649.81"
+    },
+    "metadata": {},
+    "tokenId": "08f3bbda-ba4f-4f59-a1ac-d5e294d2d8a0",
+    "totalSupply": "2000000000",
+    "circulatingSupply": "851874782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc290362baa4c99cfb9972bf3d1d317e1ed78a2624306a5ad4ff7fbacb35d8369": {
+    "key": "ethereum:0xc290362baa4c99cfb9972bf3d1d317e1ed78a2624306a5ad4ff7fbacb35d8369",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc290362baa4c99cfb9972bf3d1d317e1ed78a2624306a5ad4ff7fbacb35d8369",
+    "addresses": {
+     "ethereum": "0xc290362baa4c99cfb9972bf3d1d317e1ed78a2624306a5ad4ff7fbacb35d8369"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.246Z",
+    "createdAt": "2026-09-20T05:53:31.850Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 3681.2055669908154,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 900,
+     "feePercentage": "9.0912"
+    },
+    "tokenId": "d8835abf-f7f9-4801-b5c4-181e2fc66ad9",
+    "reserves": [
+     "169.884012",
+     "167680.477994"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfd3d67eec5b7fd0849cad18a4f89d0737c6ed2f04f6ab632adab924bbaf4409c": {
+    "key": "ethereum:0xfd3d67eec5b7fd0849cad18a4f89d0737c6ed2f04f6ab632adab924bbaf4409c",
+    "name": "Morpho WBTC / v-wmtWBTC",
+    "decimals": 14,
+    "symbol": "WBTC/V-WMTWBTC",
+    "price": 80800.84360437794,
+    "address": "0xfd3d67eec5b7fd0849cad18a4f89d0737c6ed2f04f6ab632adab924bbaf4409c",
+    "addresses": {
+     "ethereum": "0xfd3d67eec5b7fd0849cad18a4f89d0737c6ed2f04f6ab632adab924bbaf4409c"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://images.portals.fi/logos/WBTC.jpeg"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.273Z",
+    "createdAt": "2026-09-15T07:28:24.294Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+    ],
+    "poolAddress": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+    "liquidity": 281990.07186125,
+    "metrics": {
+     "apy": "2.353",
+     "baseApy": "2.353",
+     "borrowApy": "2.741",
+     "baseBorrowApy": "2.741",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6094.405"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "oracle": {
+      "type": "ChainlinkOracleV2",
+      "address": "0xfF258B21873B456aD43463487B9B66712Ff60277"
+     },
+     "collateralCorrelation": "low"
+    },
+    "tokenId": "8dc56d02-ce13-43bc-a456-d4ae47f690a7",
+    "totalSupply": "3.48971383929576",
+    "totalBorrow": "3.00067952894409",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe0ef3cc738e388f4d9d3b28b44be759bc85abde4bf14d99ff11b791ad4d0e0ef": {
+    "key": "ethereum:0xe0ef3cc738e388f4d9d3b28b44be759bc85abde4bf14d99ff11b791ad4d0e0ef",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xe0ef3cc738e388f4d9d3b28b44be759bc85abde4bf14d99ff11b791ad4d0e0ef",
+    "addresses": {
+     "ethereum": "0xe0ef3cc738e388f4d9d3b28b44be759bc85abde4bf14d99ff11b791ad4d0e0ef"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.293Z",
+    "createdAt": "2026-09-21T11:34:20.416Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 1020.5205449079854,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2200,
+     "feePercentage": "22.078"
+    },
+    "tokenId": "2f623e7c-79a3-4699-ae99-c280bfa25b3a",
+    "reserves": [
+     "12.843366",
+     "48119.001001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x61017b45c13a7baa051f8bb2fce8a3eaf2fde6159a3dd6a06ac41ef65b03e671": {
+    "key": "ethereum:0x61017b45c13a7baa051f8bb2fce8a3eaf2fde6159a3dd6a06ac41ef65b03e671",
+    "name": "Uniswap V4 LP USDT/WMTX",
+    "decimals": 18,
+    "symbol": "USDT/WMTX",
+    "price": 9007199254740990,
+    "address": "0x61017b45c13a7baa051f8bb2fce8a3eaf2fde6159a3dd6a06ac41ef65b03e671",
+    "addresses": {
+     "ethereum": "0x61017b45c13a7baa051f8bb2fce8a3eaf2fde6159a3dd6a06ac41ef65b03e671"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.293Z",
+    "createdAt": "2026-09-22T00:26:52.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 459035.4486407658,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "806.779"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.0797"
+    },
+    "tokenId": "bd923f17-fce5-4143-a86c-744badba3563",
+    "reserves": [
+     "633.422971",
+     "21889755.763777"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7": {
+    "key": "ethereum:0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "name": "World Mobile Token",
+    "decimals": 6,
+    "symbol": "WMT",
+    "price": 0.02094142,
+    "address": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+    "addresses": {
+     "arbitrum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "ethereum": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "bsc": "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7",
+     "base": "0x3e31966d4f81c72d2a55310a6365a56a4393e98d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-10-01T08:18:30.041Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16912610,
+    "image": "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+    "metrics": {
+     "volumeUsd1d": "188820.27",
+     "volumeUsd7d": "912835.871"
+    },
+    "metadata": {},
+    "tokenId": "08f3bbda-ba4f-4f59-a1ac-d5e294d2d8a0",
+    "totalSupply": "2000000000",
+    "circulatingSupply": "851874782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x635f5841395085f7c6a71eb9219d642c1aad02ba4f092aaf5f23a32a1a73a643": {
+    "key": "ethereum:0x635f5841395085f7c6a71eb9219d642c1aad02ba4f092aaf5f23a32a1a73a643",
+    "name": "Uniswap V4 LP wUSDC/WMTon",
+    "decimals": 18,
+    "symbol": "WUSDC/WMTON",
+    "price": 9007199254740990,
+    "address": "0x635f5841395085f7c6a71eb9219d642c1aad02ba4f092aaf5f23a32a1a73a643",
+    "addresses": {
+     "ethereum": "0x635f5841395085f7c6a71eb9219d642c1aad02ba4f092aaf5f23a32a1a73a643"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68582/large/wmton_160x160.png?1756129770"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.082Z",
+    "createdAt": "2026-09-30T09:01:07.744Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x82106347ddbb23ce44cf4ce4053ef1adf8b9323b"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "7628edc4-df9b-4207-b568-79ccd0f8c577",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x47c40cee7764de77bc1e5d2a9b9ce26b23b9df4c3f00795a913958f7e441de18": {
+    "key": "ethereum:0x47c40cee7764de77bc1e5d2a9b9ce26b23b9df4c3f00795a913958f7e441de18",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0x47c40cee7764de77bc1e5d2a9b9ce26b23b9df4c3f00795a913958f7e441de18",
+    "addresses": {
+     "ethereum": "0x47c40cee7764de77bc1e5d2a9b9ce26b23b9df4c3f00795a913958f7e441de18"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.247Z",
+    "createdAt": "2026-09-20T11:14:46.703Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 50531.060332631925,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3300,
+     "feePercentage": "33.067"
+    },
+    "tokenId": "09d50166-f75e-4eee-9761-05cf41f4dc14",
+    "reserves": [
+     "352.681304",
+     "2396134.658558"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc468cf844f0cd34726f04f3859c67db5f40408bf0fdfd6f6979a01b2c2929274": {
+    "key": "ethereum:0xc468cf844f0cd34726f04f3859c67db5f40408bf0fdfd6f6979a01b2c2929274",
+    "name": "Uniswap V4 LP USDC/WMTX",
+    "decimals": 18,
+    "symbol": "USDC/WMTX",
+    "price": 9007199254740990,
+    "address": "0xc468cf844f0cd34726f04f3859c67db5f40408bf0fdfd6f6979a01b2c2929274",
+    "addresses": {
+     "ethereum": "0xc468cf844f0cd34726f04f3859c67db5f40408bf0fdfd6f6979a01b2c2929274"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/17333/large/Colored_Token.png?1696516885",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.247Z",
+    "createdAt": "2026-09-20T04:51:16.133Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xdbb5cf12408a3ac17d668037ce289f9ea75439d7"
+    ],
+    "liquidity": 5262.473725213919,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1172,
+     "feePercentage": "5.9542"
+    },
+    "tokenId": "eeccc3e3-2a39-493c-ac43-157833e4dd1f",
+    "reserves": [
+     "190.882831",
+     "242182.046039"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

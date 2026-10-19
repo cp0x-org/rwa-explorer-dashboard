@@ -1,0 +1,1853 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US79466L3024",
+ "ticker": "CRM",
+ "name": "Salesforce",
+ "isin": "US79466L3024",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:52Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Salesforce Inc",
+   "symbol": "CRM",
+   "slug": "salesforce",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 241.82695332288387,
+     "tokenized_market_cap": 2179719.089328766,
+     "tokenized_volume_24h": 1583672.30473434,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 198,
+   "asset_type": "stock",
+   "rwa_rank": 75,
+   "has_tokens": true,
+   "average_tokenized_price": 241.82695332288387,
+   "tokenized_market_cap": 2179719.089328766,
+   "tokenized_volume_24h": 1583672.30473434,
+   "last_updated": "2026-10-18T20:14:26.350Z",
+   "tokens": [
+    {
+     "symbol": "CRMon",
+     "name": "Salesforce Tokenized Stock (Ondo)",
+     "price": 242.25341784020114,
+     "crypto_id": 38023,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1061313.39,
+     "volume_24h": 1489578.79699059
+    },
+    {
+     "symbol": "CRMX",
+     "name": "Salesforce tokenized stock (xStock)",
+     "price": 242.69,
+     "crypto_id": 37042,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 574852.71,
+     "volume_24h": 106.0336879
+    },
+    {
+     "symbol": "CRM",
+     "name": "Salesforce Inc (Derivatives)",
+     "price": 237.11590706026118,
+     "crypto_id": 40116,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WCRMX",
+     "name": "Wrapped Salesforce Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37194,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "CRMB",
+     "name": "Salesforce Tokenized bStocks",
+     "price": 236.4392490416841,
+     "crypto_id": 42045,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 544042.3,
+     "volume_24h": 92852.19548264
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "CRM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_CRM"
+    }
+   ]
+  },
+  "info": {
+   "38023": {
+    "id": 38023,
+    "symbol": "CRMon",
+    "name": "Salesforce Tokenized Stock (Ondo)",
+    "slug": "salesforce-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38023.png",
+    "date_added": "2025-09-03T10:55:25.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x55720eF5b023Fd043AE5F8D2e526030207978950"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x55720eF5b023Fd043AE5F8D2e526030207978950",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "7D7ukbcnUNYt7Et5vtsDZhAy28MKu9pkHka1Hp9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37042": {
+    "id": 37042,
+    "symbol": "CRMX",
+    "name": "Salesforce tokenized stock (xStock)",
+    "slug": "salesforce-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37042.png",
+    "date_added": "2025-07-01T18:39:27.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsczbcQ3zfcgAEt9qHQES8pxKAVG5rujPSHQEXi4kaN"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsczbcQ3zfcgAEt9qHQES8pxKAVG5rujPSHQEXi4kaN",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBnt0vCnZVi2YdFkvgM5gXcxM2kyP0Uf4295iKOGCZRllsA",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "40116": {
+    "id": 40116,
+    "symbol": "CRM",
+    "name": "Salesforce Inc (Derivatives)",
+    "slug": "salesforce-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40116.png",
+    "date_added": "2026-06-03T07:59:01.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37194": {
+    "id": 37194,
+    "symbol": "WCRMX",
+    "name": "Wrapped Salesforce Tokenized stock (xStock)",
+    "slug": "wrapped-salesforce-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37194.png",
+    "date_added": "2025-07-06T04:17:25.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xE0881D96bd6CD9343D2dAF3F4C6f3830620E2b41"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xE0881D96bd6CD9343D2dAF3F4C6f3830620E2b41",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc6b6b8d50a6673c04c495e30b411da5a7adf39f5",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42045": {
+    "id": 42045,
+    "symbol": "CRMB",
+    "name": "Salesforce Tokenized bStocks",
+    "slug": "salesforce-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42045.png",
+    "date_added": "2026-09-08T02:00:00.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x8c433eca1be0e2a357015602f63751c768f6f643"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8c433eca1be0e2a357015602f63751c768f6f643",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+   "arbitrum:0xc6b6b8d50a6673c04c495e30b411da5a7adf39f5",
+   "bsc:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+   "bsc:0x8c433eca1be0e2a357015602f63751c768f6f643",
+   "bsc:0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+   "ethereum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+   "ethereum:0x55720ef5b023fd043ae5f8d2e526030207978950"
+  ],
+  "exact": {
+   "arbitrum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "arbitrum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "arbitrum": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.130Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12115124.387416001,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "49ef8267-feae-4483-ae10-adb9963a63e9",
+    "totalSupply": "52510.074494694876456612",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "bsc:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "bsc": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.642Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3711002.549123391,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "fd63e172-366c-4cd8-92a6-daf246c6d2bb",
+    "totalSupply": "16084.442393912063343014",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x8c433eca1be0e2a357015602f63751c768f6f643": {
+    "key": "bsc:0x8c433eca1be0e2a357015602f63751c768f6f643",
+    "name": "Salesforce (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMB",
+    "price": 236.67,
+    "address": "0x8c433eca1be0e2a357015602f63751c768f6f643",
+    "addresses": {
+     "bsc": "0x8c433eca1be0e2a357015602f63751c768f6f643"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T01:29:35.809Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 543894,
+    "image": "https://coin-images.coingecko.com/coins/images/102176945/large/salesforce.png?1789086975",
+    "metrics": {
+     "volumeUsd1d": "28527.61",
+     "volumeUsd7d": "302049.565"
+    },
+    "metadata": {},
+    "tokenId": "c1dc2dda-a1fe-4d2f-b9d0-d330de861437",
+    "totalSupply": "2298.15575077",
+    "circulatingSupply": "2298.15575077",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd04a2bb053277721a8321d7441eed5b42fdf7250": {
+    "key": "bsc:0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+    "name": "Salesforce (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMON",
+    "price": 242.4,
+    "address": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+    "addresses": {
+     "bsc": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+     "ethereum": "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1061925,
+    "image": "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951",
+    "metrics": {
+     "volumeUsd1d": "1107746.488",
+     "volumeUsd7d": "9116171.825"
+    },
+    "metadata": {},
+    "tokenId": "ea5b86e3-6a54-4489-a6bd-77a3fa60a7bd",
+    "totalSupply": "4381.004828187633",
+    "circulatingSupply": "4381.004828187633",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x55720ef5b023fd043ae5f8d2e526030207978950": {
+    "key": "ethereum:0x55720ef5b023fd043ae5f8d2e526030207978950",
+    "name": "Salesforce (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMON",
+    "price": 242.4,
+    "address": "0x55720ef5b023fd043ae5f8d2e526030207978950",
+    "addresses": {
+     "bsc": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+     "ethereum": "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1061925,
+    "image": "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951",
+    "metrics": {
+     "volumeUsd1d": "1106073.766",
+     "volumeUsd7d": "9110688.747"
+    },
+    "metadata": {},
+    "tokenId": "ea5b86e3-6a54-4489-a6bd-77a3fa60a7bd",
+    "totalSupply": "4381.004828187633",
+    "circulatingSupply": "4381.004828187633",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "ethereum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "ethereum": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.227Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8820992.200500535,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "8030133c-bcf1-4202-9bc7-0de0ba996411",
+    "totalSupply": "38232.455792738105417038",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "CRM": {
+    "total_items": 34,
+    "pages": 1,
+    "received": 34,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xa5fc8fb65316aa5eb2b80690161a17a13c722cd27abbd4511a5485932bdea22e": {
+    "key": "ethereum:0xa5fc8fb65316aa5eb2b80690161a17a13c722cd27abbd4511a5485932bdea22e",
+    "name": "Uniswap V4 LP EGP/CRMon",
+    "decimals": 18,
+    "symbol": "EGP/CRMON",
+    "price": 9007199254740990,
+    "address": "0xa5fc8fb65316aa5eb2b80690161a17a13c722cd27abbd4511a5485932bdea22e",
+    "addresses": {
+     "ethereum": "0xa5fc8fb65316aa5eb2b80690161a17a13c722cd27abbd4511a5485932bdea22e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.402Z",
+    "createdAt": "2026-10-14T06:54:48.425Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    ],
+    "liquidity": 20074.863013807793,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.66"
+    },
+    "tokenId": "7d824f6c-ca2c-4c10-a383-b7f252a63245",
+    "reserves": [
+     "19999.999999999999999999",
+     "0.121055293268761881"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e": {
+    "key": "base:0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+    "name": "Salesforce (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRM",
+    "price": 234.25,
+    "address": "0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+    "addresses": {
+     "arbitrum": "0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+     "ethereum": "0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+     "base": "0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+     "avalanche": "0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2319.18,
+    "image": "https://coin-images.coingecko.com/coins/images/102175139/large/dinari-logo-green-with-margin.png?1785403342",
+    "metrics": {
+     "volumeUsd1d": "641.405",
+     "volumeUsd7d": "4489.835"
+    },
+    "metadata": {},
+    "tokenId": "33e994ce-876a-4d38-8948-38f366fd6230",
+    "totalSupply": "9.900444971779372",
+    "circulatingSupply": "9.900444971779372",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "arbitrum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "arbitrum": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.130Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12115124.387416001,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "49ef8267-feae-4483-ae10-adb9963a63e9",
+    "totalSupply": "52510.074494694876456612",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3fa7f73ea8934488f4ec0e7b20c2c2579398e7410525f63b7c529a8efa5825b4": {
+    "key": "ethereum:0x3fa7f73ea8934488f4ec0e7b20c2c2579398e7410525f63b7c529a8efa5825b4",
+    "name": "Uniswap V4 LP USDT/CRMx",
+    "decimals": 18,
+    "symbol": "USDT/CRMX",
+    "price": 9007199254740990,
+    "address": "0x3fa7f73ea8934488f4ec0e7b20c2c2579398e7410525f63b7c529a8efa5825b4",
+    "addresses": {
+     "ethereum": "0x3fa7f73ea8934488f4ec0e7b20c2c2579398e7410525f63b7c529a8efa5825b4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.045Z",
+    "createdAt": "2026-10-18T18:58:06.024Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "44e54300-032c-4b41-9e66-22cb41f9978b",
+    "reserves": [
+     "3999.999999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3": {
+    "key": "ethereum:0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+    "name": "Global Currency Restart Master",
+    "decimals": 18,
+    "symbol": "GCRM",
+    "price": 0.03259802,
+    "address": "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+    "addresses": {
+     "ethereum": "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-17T06:35:45.089Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 508529082,
+    "image": "https://coin-images.coingecko.com/coins/images/102174622/large/Lg_GCRM_200X200.png?1784258376",
+    "metrics": {
+     "volumeUsd1d": "81.572",
+     "volumeUsd7d": "571.004"
+    },
+    "metadata": {},
+    "tokenId": "3fa71fac-f168-45c2-8d24-4cdd1dfd59f0",
+    "totalSupply": "15600000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8339d77b003589cf90f17729595afe05ad951ac5": {
+    "key": "robinhood:0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "name": "Salesforce aStock",
+    "decimals": 18,
+    "symbol": "ACRM",
+    "price": 239.8,
+    "address": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "addresses": {
+     "base": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "arbitrum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "ethereum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "robinhood": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "bsc": "0x8339d77b003589cf90f17729595afe05ad951ac5"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 645.42,
+    "image": "https://coin-images.coingecko.com/coins/images/102175682/large/CRM.png?1787292255",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4b62d42d-1f2b-4f2c-b5db-5e633c1931ee",
+    "totalSupply": "2.691473234",
+    "circulatingSupply": "2.691473234",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfbdbaf886f5ea2d8541c51acd78012ff8b45655692b836ebaf943570c8446341": {
+    "key": "ethereum:0xfbdbaf886f5ea2d8541c51acd78012ff8b45655692b836ebaf943570c8446341",
+    "name": "Uniswap V4 LP GCRM/USDT",
+    "decimals": 18,
+    "symbol": "GCRM/USDT",
+    "price": 9007199254740990,
+    "address": "0xfbdbaf886f5ea2d8541c51acd78012ff8b45655692b836ebaf943570c8446341",
+    "addresses": {
+     "ethereum": "0xfbdbaf886f5ea2d8541c51acd78012ff8b45655692b836ebaf943570c8446341"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/102174622/large/Lg_GCRM_200X200.png?1784258376"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.263Z",
+    "createdAt": "2026-07-17T10:32:16.544Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 646.6850461044775,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "83dd0412-702f-4303-b803-b0f8ce6b0762",
+    "reserves": [
+     "17427.024940829210270948",
+     "78.666034"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9486843dfd495879d4e704e2dfbda652a41d33593a89d1bdb3265d52bb69f1fd": {
+    "key": "ethereum:0x9486843dfd495879d4e704e2dfbda652a41d33593a89d1bdb3265d52bb69f1fd",
+    "name": "Uniswap V4 LP CRMC/USDC",
+    "decimals": 18,
+    "symbol": "CRMC/USDC",
+    "price": 9007199254740990,
+    "address": "0x9486843dfd495879d4e704e2dfbda652a41d33593a89d1bdb3265d52bb69f1fd",
+    "addresses": {
+     "ethereum": "0x9486843dfd495879d4e704e2dfbda652a41d33593a89d1bdb3265d52bb69f1fd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/67018/large/CRMC_Logo_Black.png?1751471894",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.485Z",
+    "createdAt": "2026-08-21T04:10:02.938Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1750.67307274901,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9990,
+     "feePercentage": "99.9001"
+    },
+    "tokenId": "478303eb-45b9-4602-896f-13b11eb65065",
+    "reserves": [
+     "5189.14653213",
+     "11.346481"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8339d77b003589cf90f17729595afe05ad951ac5": {
+    "key": "bsc:0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "name": "Salesforce aStock",
+    "decimals": 18,
+    "symbol": "ACRM",
+    "price": 239.8,
+    "address": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "addresses": {
+     "base": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "arbitrum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "ethereum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "robinhood": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "bsc": "0x8339d77b003589cf90f17729595afe05ad951ac5"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 645.42,
+    "image": "https://coin-images.coingecko.com/coins/images/102175682/large/CRM.png?1787292255",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4b62d42d-1f2b-4f2c-b5db-5e633c1931ee",
+    "totalSupply": "2.691473234",
+    "circulatingSupply": "2.691473234",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x48a69335d9e9e6f8cdb07c108b88b53fc17277fc": {
+    "key": "robinhood:0x48a69335d9e9e6f8cdb07c108b88b53fc17277fc",
+    "name": "Worldcrumb",
+    "decimals": 18,
+    "symbol": "WCRMB",
+    "price": 1.0106207601159543e-08,
+    "address": "0x48a69335d9e9e6f8cdb07c108b88b53fc17277fc",
+    "addresses": {
+     "robinhood": "0x48a69335d9e9e6f8cdb07c108b88b53fc17277fc"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-02T04:06:38.297Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1010.6207601159543,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.26"
+    },
+    "metadata": {},
+    "tokenId": "bb3acef4-5766-41ea-8786-3c9a9d8267de",
+    "totalSupply": "100000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22": {
+    "key": "avalanche:0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22",
+    "name": "Salesforce (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRM",
+    "price": 234.25,
+    "address": "0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22",
+    "addresses": {
+     "arbitrum": "0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+     "ethereum": "0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+     "base": "0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+     "avalanche": "0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2319.18,
+    "image": "https://coin-images.coingecko.com/coins/images/102175139/large/dinari-logo-green-with-margin.png?1785403342",
+    "metrics": {
+     "volumeUsd1d": "641.405",
+     "volumeUsd7d": "4489.835"
+    },
+    "metadata": {},
+    "tokenId": "33e994ce-876a-4d38-8948-38f366fd6230",
+    "totalSupply": "9.900444971779372",
+    "circulatingSupply": "9.900444971779372",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8d037945b9114fdb1e87e3b3e7923e6a075294aba1892a0a213dee1d259498ab": {
+    "key": "ethereum:0x8d037945b9114fdb1e87e3b3e7923e6a075294aba1892a0a213dee1d259498ab",
+    "name": "Uniswap V4 LP CRMC/USDC",
+    "decimals": 18,
+    "symbol": "CRMC/USDC",
+    "price": 9007199254740990,
+    "address": "0x8d037945b9114fdb1e87e3b3e7923e6a075294aba1892a0a213dee1d259498ab",
+    "addresses": {
+     "ethereum": "0x8d037945b9114fdb1e87e3b3e7923e6a075294aba1892a0a213dee1d259498ab"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/67018/large/CRMC_Logo_Black.png?1751471894",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.771Z",
+    "createdAt": "2026-06-16T11:04:11.583Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1991.029470283124,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19760,
+     "feePercentage": "98.8"
+    },
+    "tokenId": "f3f10176-0826-479d-a467-0b5fea0ec479",
+    "reserves": [
+     "5900",
+     "13.435241"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8339d77b003589cf90f17729595afe05ad951ac5": {
+    "key": "arbitrum:0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "name": "Salesforce aStock",
+    "decimals": 18,
+    "symbol": "ACRM",
+    "price": 239.8,
+    "address": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "addresses": {
+     "base": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "arbitrum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "ethereum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "robinhood": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "bsc": "0x8339d77b003589cf90f17729595afe05ad951ac5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 645.42,
+    "image": "https://coin-images.coingecko.com/coins/images/102175682/large/CRM.png?1787292255",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4b62d42d-1f2b-4f2c-b5db-5e633c1931ee",
+    "totalSupply": "2.691473234",
+    "circulatingSupply": "2.691473234",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x739a072d4139322b6fa78e2ec037f7175e8fa335527d0471368fc83f1cf3f540": {
+    "key": "robinhood:0x739a072d4139322b6fa78e2ec037f7175e8fa335527d0471368fc83f1cf3f540",
+    "name": "Uniswap V4 LP WCRMB/USDG",
+    "decimals": 18,
+    "symbol": "WCRMB/USDG",
+    "price": 9007199254740990,
+    "address": "0x739a072d4139322b6fa78e2ec037f7175e8fa335527d0471368fc83f1cf3f540",
+    "addresses": {
+     "robinhood": "0x739a072d4139322b6fa78e2ec037f7175e8fa335527d0471368fc83f1cf3f540"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.831Z",
+    "createdAt": "2026-10-10T07:29:47.448Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x48a69335d9e9e6f8cdb07c108b88b53fc17277fc",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 768.0639172202931,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "96.004"
+    },
+    "tokenId": "70ade9d0-d292-4e7e-ad8d-afb22a4bc1c1",
+    "reserves": [
+     "109662819.529444157351564459",
+     "766.955642"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa6b973d47204d55709a5e3c94e32183e27835fc7e3d1226541231263f74e39b6": {
+    "key": "robinhood:0xa6b973d47204d55709a5e3c94e32183e27835fc7e3d1226541231263f74e39b6",
+    "name": "Uniswap V4 LP USDG/CRM",
+    "decimals": 18,
+    "symbol": "USDG/CRM",
+    "price": 9007199254740990,
+    "address": "0xa6b973d47204d55709a5e3c94e32183e27835fc7e3d1226541231263f74e39b6",
+    "addresses": {
+     "robinhood": "0xa6b973d47204d55709a5e3c94e32183e27835fc7e3d1226541231263f74e39b6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.223Z",
+    "createdAt": "2026-09-09T13:24:20.213Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xd95b44124e475743a7589e68f3d74008a5536d44"
+    ],
+    "liquidity": 6591.102541968311,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "40.497"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "25c17a8d-02d9-4432-b829-0f59fc3ad233",
+    "reserves": [
+     "20.30266",
+     "27.39887343614229823"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xcfceb3fd88fa3148cf4d96725b9ebdf077421fe9": {
+    "key": "arbitrum:0xcfceb3fd88fa3148cf4d96725b9ebdf077421fe9",
+    "name": "Salesforce rStock",
+    "decimals": 18,
+    "symbol": "RCRM",
+    "price": 239.18,
+    "address": "0xcfceb3fd88fa3148cf4d96725b9ebdf077421fe9",
+    "addresses": {
+     "arbitrum": "0xcfceb3fd88fa3148cf4d96725b9ebdf077421fe9"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16940.26,
+    "image": "https://coin-images.coingecko.com/coins/images/102177078/large/d4ca5651659a7d861c8af37b6a12e40c.png?1789116759",
+    "metrics": {
+     "volumeUsd1d": "7084.305",
+     "volumeUsd7d": "53818.884"
+    },
+    "metadata": {},
+    "tokenId": "97148c9b-42f7-4c05-972e-6062688ce31a",
+    "totalSupply": "70.826824755",
+    "circulatingSupply": "70.826824755",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99": {
+    "key": "ethereum:0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+    "name": "Chrema Coin",
+    "decimals": 8,
+    "symbol": "CRMC",
+    "price": 0.335186,
+    "address": "0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+    "addresses": {
+     "ethereum": "0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+     "polygon": "0x61ca155f1660b0af117ed00321d1c3ee264ef943"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-07-03T10:10:35.014Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10967413,
+    "image": "https://coin-images.coingecko.com/coins/images/67018/large/CRMC_Logo_Black.png?1751471894",
+    "metrics": {
+     "volumeUsd1d": "283.59",
+     "volumeUsd7d": "1155.158"
+    },
+    "metadata": {},
+    "tokenId": "5e8b753b-08a7-4f1f-ba8f-dd6b6da9e699",
+    "totalSupply": "50000000",
+    "circulatingSupply": "32720382",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6ca673685ee9df5f73ca671dde70bff0786fd73da158def19aa74879829d7c37": {
+    "key": "ethereum:0x6ca673685ee9df5f73ca671dde70bff0786fd73da158def19aa74879829d7c37",
+    "name": "Uniswap V4 LP GCRM/USDT",
+    "decimals": 18,
+    "symbol": "GCRM/USDT",
+    "price": 9007199254740990,
+    "address": "0x6ca673685ee9df5f73ca671dde70bff0786fd73da158def19aa74879829d7c37",
+    "addresses": {
+     "ethereum": "0x6ca673685ee9df5f73ca671dde70bff0786fd73da158def19aa74879829d7c37"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174622/large/Lg_GCRM_200X200.png?1784258376",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.392Z",
+    "createdAt": "2026-07-20T11:00:26.794Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 792.3010353062667,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "9c1fd7d3-d483-4461-a264-179cdeb5d05e",
+    "reserves": [
+     "10417.855044578497191485",
+     "453.088338"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x983944d227fe8f2deb9978932b2d05eeb547c6e6": {
+    "key": "arbitrum:0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+    "name": "Salesforce (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRM",
+    "price": 234.25,
+    "address": "0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+    "addresses": {
+     "arbitrum": "0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+     "ethereum": "0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+     "base": "0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+     "avalanche": "0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2319.18,
+    "image": "https://coin-images.coingecko.com/coins/images/102175139/large/dinari-logo-green-with-margin.png?1785403342",
+    "metrics": {
+     "volumeUsd1d": "641.405",
+     "volumeUsd7d": "4489.835"
+    },
+    "metadata": {},
+    "tokenId": "33e994ce-876a-4d38-8948-38f366fd6230",
+    "totalSupply": "9.900444971779372",
+    "circulatingSupply": "9.900444971779372",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x8339d77b003589cf90f17729595afe05ad951ac5": {
+    "key": "base:0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "name": "Salesforce aStock",
+    "decimals": 18,
+    "symbol": "ACRM",
+    "price": 239.8,
+    "address": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "addresses": {
+     "base": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "arbitrum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "ethereum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "robinhood": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "bsc": "0x8339d77b003589cf90f17729595afe05ad951ac5"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 645.42,
+    "image": "https://coin-images.coingecko.com/coins/images/102175682/large/CRM.png?1787292255",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4b62d42d-1f2b-4f2c-b5db-5e633c1931ee",
+    "totalSupply": "2.691473234",
+    "circulatingSupply": "2.691473234",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "bsc:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "bsc": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.642Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3711002.549123391,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "fd63e172-366c-4cd8-92a6-daf246c6d2bb",
+    "totalSupply": "16084.442393912063343014",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x8c433eca1be0e2a357015602f63751c768f6f643": {
+    "key": "bsc:0x8c433eca1be0e2a357015602f63751c768f6f643",
+    "name": "Salesforce (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMB",
+    "price": 236.67,
+    "address": "0x8c433eca1be0e2a357015602f63751c768f6f643",
+    "addresses": {
+     "bsc": "0x8c433eca1be0e2a357015602f63751c768f6f643"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T01:29:35.809Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 543894,
+    "image": "https://coin-images.coingecko.com/coins/images/102176945/large/salesforce.png?1789086975",
+    "metrics": {
+     "volumeUsd1d": "28527.61",
+     "volumeUsd7d": "302049.565"
+    },
+    "metadata": {},
+    "tokenId": "c1dc2dda-a1fe-4d2f-b9d0-d330de861437",
+    "totalSupply": "2298.15575077",
+    "circulatingSupply": "2298.15575077",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf": {
+    "key": "ethereum:0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+    "name": "Salesforce (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRM",
+    "price": 234.25,
+    "address": "0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+    "addresses": {
+     "arbitrum": "0x983944d227fe8f2deb9978932b2d05eeb547c6e6",
+     "ethereum": "0x5a4e74e74b379dc55ca726001ae6f0b449ea29bf",
+     "base": "0x10a4aaa5ecf0518ddca2f08202de67c72ba1311e",
+     "avalanche": "0x0f77e2e597b9a4b8232d501a92f2c1e77eb0bb22"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2319.18,
+    "image": "https://coin-images.coingecko.com/coins/images/102175139/large/dinari-logo-green-with-margin.png?1785403342",
+    "metrics": {
+     "volumeUsd1d": "641.405",
+     "volumeUsd7d": "4489.835"
+    },
+    "metadata": {},
+    "tokenId": "33e994ce-876a-4d38-8948-38f366fd6230",
+    "totalSupply": "9.900444971779372",
+    "circulatingSupply": "9.900444971779372",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd04a2bb053277721a8321d7441eed5b42fdf7250": {
+    "key": "bsc:0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+    "name": "Salesforce (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMON",
+    "price": 242.4,
+    "address": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+    "addresses": {
+     "bsc": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+     "ethereum": "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1061925,
+    "image": "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951",
+    "metrics": {
+     "volumeUsd1d": "1107746.488",
+     "volumeUsd7d": "9116171.825"
+    },
+    "metadata": {},
+    "tokenId": "ea5b86e3-6a54-4489-a6bd-77a3fa60a7bd",
+    "totalSupply": "4381.004828187633",
+    "circulatingSupply": "4381.004828187633",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd95b44124e475743a7589e68f3d74008a5536d44": {
+    "key": "robinhood:0xd95b44124e475743a7589e68f3d74008a5536d44",
+    "name": "Salesforce • Robinhood Token",
+    "decimals": 18,
+    "symbol": "CRM",
+    "price": 239.8200749852971,
+    "address": "0xd95b44124e475743a7589e68f3d74008a5536d44",
+    "addresses": {
+     "robinhood": "0xd95b44124e475743a7589e68f3d74008a5536d44"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xd95b44124e475743a7589e68f3d74008a5536d44.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T17:53:25.520Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xd95b44124e475743a7589e68f3d74008a5536d44",
+    "liquidity": 29020.98694412826,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2111.669"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000022015c295294037bfe416d3e45327b9",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1001148322800714293",
+     "currentMultiplier": "1.001148322800714293",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "60b05ac4-317b-404e-897f-abf8f7e8daaf",
+    "totalSupply": "121.01149975",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8f7bd3f19235f0d582a41651767f1f93c98a441fdb7695789e9e9b41cec3e5d4": {
+    "key": "ethereum:0x8f7bd3f19235f0d582a41651767f1f93c98a441fdb7695789e9e9b41cec3e5d4",
+    "name": "Uniswap V4 LP GCRM/USDT",
+    "decimals": 18,
+    "symbol": "GCRM/USDT",
+    "price": 9007199254740990,
+    "address": "0x8f7bd3f19235f0d582a41651767f1f93c98a441fdb7695789e9e9b41cec3e5d4",
+    "addresses": {
+     "ethereum": "0x8f7bd3f19235f0d582a41651767f1f93c98a441fdb7695789e9e9b41cec3e5d4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174622/large/Lg_GCRM_200X200.png?1784258376",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.460Z",
+    "createdAt": "2026-07-17T08:12:52.660Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 612.3418963082719,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "328f4f5d-b81f-4033-ba6c-eb6a87f31948",
+    "reserves": [
+     "8061.563754819704672336",
+     "349.851052"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xedadd7096097c245e989bebafafef1c855a450f577c9516e563580d703f34ee7": {
+    "key": "ethereum:0xedadd7096097c245e989bebafafef1c855a450f577c9516e563580d703f34ee7",
+    "name": "Uniswap V4 LP GCRM/USDT",
+    "decimals": 18,
+    "symbol": "GCRM/USDT",
+    "price": 9007199254740990,
+    "address": "0xedadd7096097c245e989bebafafef1c855a450f577c9516e563580d703f34ee7",
+    "addresses": {
+     "ethereum": "0xedadd7096097c245e989bebafafef1c855a450f577c9516e563580d703f34ee7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174622/large/Lg_GCRM_200X200.png?1784258376",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.794Z",
+    "createdAt": "2026-08-22T06:45:28.131Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ae2d0dfdb1b3b03a771167c43b983a97b65b9b3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2452.219781867664,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "94.345"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "0259f590-5852-435f-b3b8-7f19db969a36",
+    "reserves": [
+     "34146.105261299121761299",
+     "1340.274315"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x55720ef5b023fd043ae5f8d2e526030207978950": {
+    "key": "ethereum:0x55720ef5b023fd043ae5f8d2e526030207978950",
+    "name": "Salesforce (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRMON",
+    "price": 242.4,
+    "address": "0x55720ef5b023fd043ae5f8d2e526030207978950",
+    "addresses": {
+     "bsc": "0xd04a2bb053277721a8321d7441eed5b42fdf7250",
+     "ethereum": "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1061925,
+    "image": "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951",
+    "metrics": {
+     "volumeUsd1d": "1106073.766",
+     "volumeUsd7d": "9110688.747"
+    },
+    "metadata": {},
+    "tokenId": "ea5b86e3-6a54-4489-a6bd-77a3fa60a7bd",
+    "totalSupply": "4381.004828187633",
+    "circulatingSupply": "4381.004828187633",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8339d77b003589cf90f17729595afe05ad951ac5": {
+    "key": "ethereum:0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "name": "Salesforce aStock",
+    "decimals": 18,
+    "symbol": "ACRM",
+    "price": 239.8,
+    "address": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+    "addresses": {
+     "base": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "arbitrum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "ethereum": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "robinhood": "0x8339d77b003589cf90f17729595afe05ad951ac5",
+     "bsc": "0x8339d77b003589cf90f17729595afe05ad951ac5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 645.42,
+    "image": "https://coin-images.coingecko.com/coins/images/102175682/large/CRM.png?1787292255",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4b62d42d-1f2b-4f2c-b5db-5e633c1931ee",
+    "totalSupply": "2.691473234",
+    "circulatingSupply": "2.691473234",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x61ca155f1660b0af117ed00321d1c3ee264ef943": {
+    "key": "polygon:0x61ca155f1660b0af117ed00321d1c3ee264ef943",
+    "name": "Chrema Coin",
+    "decimals": 8,
+    "symbol": "CRMC",
+    "price": 0.335186,
+    "address": "0x61ca155f1660b0af117ed00321d1c3ee264ef943",
+    "addresses": {
+     "ethereum": "0x9ac4ee539403e3f101b9ae3620926f2ded0d0b99",
+     "polygon": "0x61ca155f1660b0af117ed00321d1c3ee264ef943"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-28T06:08:02.059Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10967413,
+    "image": "https://coin-images.coingecko.com/coins/images/67018/large/CRMC_Logo_Black.png?1751471894",
+    "metrics": {
+     "volumeUsd1d": "283.602",
+     "volumeUsd7d": "1155.124"
+    },
+    "metadata": {},
+    "tokenId": "5e8b753b-08a7-4f1f-ba8f-dd6b6da9e699",
+    "totalSupply": "50000000",
+    "circulatingSupply": "32720382",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2": {
+    "key": "ethereum:0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "name": "Salesforce xStock",
+    "decimals": 18,
+    "symbol": "CRMX",
+    "price": 230.72,
+    "address": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+    "addresses": {
+     "ethereum": "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.227Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8820992.200500535,
+    "image": "https://coin-images.coingecko.com/coins/images/55647/large/Ticker_CRM__Company_Name_SP500__size_200x200_2x.png?1746864230",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "salesforce-xstock"
+    },
+    "tokenId": "8030133c-bcf1-4202-9bc7-0de0ba996411",
+    "totalSupply": "38232.455792738105417038",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5d0434f1dcf45ff9450c1a63b5c9e088f90cfebf483458164e81be6fb96e2b2a": {
+    "key": "robinhood:0x5d0434f1dcf45ff9450c1a63b5c9e088f90cfebf483458164e81be6fb96e2b2a",
+    "name": "Uniswap V4 LP USDG/CRM",
+    "decimals": 18,
+    "symbol": "USDG/CRM",
+    "price": 9007199254740990,
+    "address": "0x5d0434f1dcf45ff9450c1a63b5c9e088f90cfebf483458164e81be6fb96e2b2a",
+    "addresses": {
+     "robinhood": "0x5d0434f1dcf45ff9450c1a63b5c9e088f90cfebf483458164e81be6fb96e2b2a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.286Z",
+    "createdAt": "2026-09-08T15:09:07.947Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xd95b44124e475743a7589e68f3d74008a5536d44"
+    ],
+    "liquidity": 12294.168793205683,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "20490.088"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "39132550-69b2-4e42-a30f-2ff17bfe183f",
+    "reserves": [
+     "3215.502872",
+     "37.856154960181206718"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0defba3fa1496817b369e919223f38657576992c36b769f11f479915dd2e466a": {
+    "key": "arbitrum:0x0defba3fa1496817b369e919223f38657576992c36b769f11f479915dd2e466a",
+    "name": "Uniswap V4 LP CRMx/USDT",
+    "decimals": 18,
+    "symbol": "CRMX/USDT",
+    "price": 9007199254740990,
+    "address": "0x0defba3fa1496817b369e919223f38657576992c36b769f11f479915dd2e466a",
+    "addresses": {
+     "arbitrum": "0x0defba3fa1496817b369e919223f38657576992c36b769f11f479915dd2e466a"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.162Z",
+    "createdAt": "2026-10-16T14:24:01.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4a4073f2eaf299a1be22254dcd2c41727f6f54a2",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "6d392cc9-ef50-46b3-9ea6-4ff8458ebea9",
+    "reserves": [
+     "0",
+     "1999.999999999999999996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x910c1d8c79fa0bfd7030dd1a509f7a7a7db2cf0f0d2fcde64d6e36e4115f23b9": {
+    "key": "ethereum:0x910c1d8c79fa0bfd7030dd1a509f7a7a7db2cf0f0d2fcde64d6e36e4115f23b9",
+    "name": "Uniswap V4 LP wUSDC/CRMon",
+    "decimals": 18,
+    "symbol": "WUSDC/CRMON",
+    "price": 9007199254740990,
+    "address": "0x910c1d8c79fa0bfd7030dd1a509f7a7a7db2cf0f0d2fcde64d6e36e4115f23b9",
+    "addresses": {
+     "ethereum": "0x910c1d8c79fa0bfd7030dd1a509f7a7a7db2cf0f0d2fcde64d6e36e4115f23b9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68603/large/crmon_160x160.png?1756129951"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.293Z",
+    "createdAt": "2026-09-28T10:38:27.800Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x55720ef5b023fd043ae5f8d2e526030207978950"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "c7bba500-d2ef-4166-8788-459270f1c39c",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

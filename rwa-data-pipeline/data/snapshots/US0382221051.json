@@ -1,0 +1,1290 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0382221051",
+ "ticker": "AMAT",
+ "name": "Applied Materials",
+ "isin": "US0382221051",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:55Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Applied Materials",
+   "symbol": "AMAT",
+   "slug": "applied-materials",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 408.57850506717284,
+     "tokenized_market_cap": 10553366.563720169,
+     "tokenized_volume_24h": 2231769.08108095,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 22,
+   "asset_type": "stock",
+   "rwa_rank": 40,
+   "has_tokens": true,
+   "average_tokenized_price": 408.57850506717284,
+   "tokenized_market_cap": 10553366.563720169,
+   "tokenized_volume_24h": 2231769.08108095,
+   "last_updated": "2026-10-18T20:13:35.520Z",
+   "tokens": [
+    {
+     "symbol": "AMATon",
+     "name": "Applied Materials Tokenized Stock (Ondo)",
+     "price": 411.47794378189593,
+     "crypto_id": 39218,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 489991.11,
+     "volume_24h": 1326748.53948414
+    },
+    {
+     "symbol": "AMAT",
+     "name": "Applied Materials Inc (Derivatives)",
+     "price": 404.0430451528092,
+     "crypto_id": 40087,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMATx",
+     "name": "Applied Materials, Inc. tokenized stock (xStock)",
+     "price": 403.3922231661818,
+     "crypto_id": 40170,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 449429.17,
+     "volume_24h": 12194.15841731
+    },
+    {
+     "symbol": "rAMAT",
+     "name": "Applied Materials Tokenized Stock (Reality)",
+     "price": 409.3043276450909,
+     "crypto_id": 40639,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 340408.23,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMAT",
+     "name": "Applied Materials Tokenized Stock (Robinhood)",
+     "price": 409.48630929185094,
+     "crypto_id": 40752,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 92928.25,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMATB",
+     "name": "Applied Materials Tokenized bStocks",
+     "price": 403.4711766288897,
+     "crypto_id": 40936,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 9177664.45,
+     "volume_24h": 886767.83781395
+    },
+    {
+     "symbol": "wAMATx",
+     "name": "Wrapped Applied Materials, Inc. Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41094,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AMAT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AMAT"
+    }
+   ]
+  },
+  "info": {
+   "39218": {
+    "id": 39218,
+    "symbol": "AMATon",
+    "name": "Applied Materials Tokenized Stock (Ondo)",
+    "slug": "applied-materials-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39218.png",
+    "date_added": "2026-01-08T15:44:06.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x6be935eadc71c49c414b1175985946ee40365c67"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x6be935eadc71c49c414b1175985946ee40365c67",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "7eRX747PSbVtGVx3qD5UFdkNM2BfTy86ikUiCMhondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40087": {
+    "id": 40087,
+    "symbol": "AMAT",
+    "name": "Applied Materials Inc (Derivatives)",
+    "slug": "applied-materials-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40087.png",
+    "date_added": "2026-05-28T09:33:39.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40170": {
+    "id": 40170,
+    "symbol": "AMATx",
+    "name": "Applied Materials, Inc. tokenized stock (xStock)",
+    "slug": "applied-materials-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40170.png",
+    "date_added": "2026-06-10T06:33:36.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsQZdaWUAGC4R3fgD2N1fupKvJfJq6YM51ccnsLUWFA"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsQZdaWUAGC4R3fgD2N1fupKvJfJq6YM51ccnsLUWFA",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAL2WHraj0GYa_8uuBk_pcmsAJCfhl0I-ni7dVm-Yahcoue",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40639": {
+    "id": 40639,
+    "symbol": "rAMAT",
+    "name": "Applied Materials Tokenized Stock (Reality)",
+    "slug": "applied-materials-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40639.png",
+    "date_added": "2026-07-02T07:39:18.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40752": {
+    "id": 40752,
+    "symbol": "AMAT",
+    "name": "Applied Materials Tokenized Stock (Robinhood)",
+    "slug": "applied-materials-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40752.png",
+    "date_added": "2026-08-04T07:31:52.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x36046893810a7E7fCE501229d57dc3FC8c8716d0"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x36046893810a7E7fCE501229d57dc3FC8c8716d0",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40936": {
+    "id": 40936,
+    "symbol": "AMATB",
+    "name": "Applied Materials Tokenized bStocks",
+    "slug": "applied-materials-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40936.png",
+    "date_added": "2026-07-28T07:18:46.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xa304bd78e739c0f777202b3eb73ac3736d1df801"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41094": {
+    "id": 41094,
+    "symbol": "wAMATx",
+    "name": "Wrapped Applied Materials, Inc. Tokenized Stock (xStock)",
+    "slug": "wrapped-applied-materials-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41094.png",
+    "date_added": "2026-08-11T16:20:10.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xF04d0964247841f2A2BE071C0AFeB7eE6638329D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xF04d0964247841f2A2BE071C0AFeB7eE6638329D",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+   "bsc:0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+   "bsc:0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+   "bsc:0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+   "ethereum:0x6be935eadc71c49c414b1175985946ee40365c67",
+   "ethereum:0xe9fa01197b7e836982a1cab03fe591f7e331e313",
+   "robinhood:0x36046893810a7e7fce501229d57dc3fc8c8716d0"
+  ],
+  "exact": {
+   "bsc:0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6": {
+    "key": "bsc:0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+    "name": "Applied Materials (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "AMATON",
+    "price": 412.02,
+    "address": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+    "addresses": {
+     "ethereum": "0x6be935eadc71c49c414b1175985946ee40365c67",
+     "bsc": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 490617,
+    "image": "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400",
+    "metrics": {
+     "volumeUsd1d": "480586.643",
+     "volumeUsd7d": "6947697.217"
+    },
+    "metadata": {},
+    "tokenId": "63341e27-6990-45c7-92ef-d16532f6ea4e",
+    "totalSupply": "1190.8077201540523",
+    "circulatingSupply": "1190.8077201540523",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa304bd78e739c0f777202b3eb73ac3736d1df801": {
+    "key": "bsc:0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+    "name": "Applied Materials (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMATB",
+    "price": 403.71,
+    "address": "0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+    "addresses": {
+     "bsc": "0xa304bd78e739c0f777202b3eb73ac3736d1df801"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9176258,
+    "image": "https://coin-images.coingecko.com/coins/images/102175183/large/Amatb.png?1785456031",
+    "metrics": {
+     "volumeUsd1d": "25016.53",
+     "volumeUsd7d": "1032641.899"
+    },
+    "metadata": {},
+    "tokenId": "a663c694-4dc0-47af-811b-cd3312356e79",
+    "totalSupply": "22729.75505857",
+    "circulatingSupply": "22729.75505857",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6be935eadc71c49c414b1175985946ee40365c67": {
+    "key": "ethereum:0x6be935eadc71c49c414b1175985946ee40365c67",
+    "name": "Applied Materials (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "AMATON",
+    "price": 412.02,
+    "address": "0x6be935eadc71c49c414b1175985946ee40365c67",
+    "addresses": {
+     "ethereum": "0x6be935eadc71c49c414b1175985946ee40365c67",
+     "bsc": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 490617,
+    "image": "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400",
+    "metrics": {
+     "volumeUsd1d": "478643.884",
+     "volumeUsd7d": "6945717.223"
+    },
+    "metadata": {},
+    "tokenId": "63341e27-6990-45c7-92ef-d16532f6ea4e",
+    "totalSupply": "1190.8077201540523",
+    "circulatingSupply": "1190.8077201540523",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f": {
+    "key": "arbitrum:0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+    "name": "Applied Materials rStock",
+    "decimals": 18,
+    "symbol": "RAMAT",
+    "price": 409.36,
+    "address": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+    "addresses": {
+     "arbitrum": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 340457,
+    "image": "https://coin-images.coingecko.com/coins/images/102177022/large/3b0907f398c4e05d37cdf64cbd1e363c.png?1789116582",
+    "metrics": {
+     "volumeUsd1d": "820.424",
+     "volumeUsd7d": "127856.898"
+    },
+    "metadata": {},
+    "tokenId": "82b28fd9-4034-48be-9620-91b8f114af9b",
+    "totalSupply": "831.675130503",
+    "circulatingSupply": "831.675130503",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x36046893810a7e7fce501229d57dc3fc8c8716d0": {
+    "key": "robinhood:0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "name": "Applied Materials • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMAT",
+    "price": 409.24327447544647,
+    "address": "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "addresses": {
+     "robinhood": "0x36046893810a7e7fce501229d57dc3fc8c8716d0"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x36046893810a7e7fce501229d57dc3fc8c8716d0.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "liquidity": 92868.95267590386,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "40051.584"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000a98d1e2ff1ea4e54a538680595585902",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000044656302636618",
+     "currentMultiplier": "1.000044656302636618",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "1d82c9a9-0c44-41d6-9643-d62ce13b01b2",
+    "totalSupply": "226.92847621",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AMAT": {
+    "total_items": 17,
+    "pages": 1,
+    "received": 17,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6": {
+    "key": "bsc:0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+    "name": "Applied Materials (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "AMATON",
+    "price": 412.02,
+    "address": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6",
+    "addresses": {
+     "ethereum": "0x6be935eadc71c49c414b1175985946ee40365c67",
+     "bsc": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 490617,
+    "image": "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400",
+    "metrics": {
+     "volumeUsd1d": "480586.643",
+     "volumeUsd7d": "6947697.217"
+    },
+    "metadata": {},
+    "tokenId": "63341e27-6990-45c7-92ef-d16532f6ea4e",
+    "totalSupply": "1190.8077201540523",
+    "circulatingSupply": "1190.8077201540523",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x13272aadbc7573594e98191b6502023938907fff": {
+    "key": "ethereum:0x13272aadbc7573594e98191b6502023938907fff",
+    "name": "Uniswap V3 AMATERASU OMIKAMI/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "AMATERASU OMIKAMI/USD COIN",
+    "price": 9007199254740990,
+    "address": "0x13272aadbc7573594e98191b6502023938907fff",
+    "addresses": {
+     "ethereum": "0x13272aadbc7573594e98191b6502023938907fff"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31821/large/Omikami_BTC_AMZN.png?1696530635",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:30.406Z",
+    "createdAt": "2025-02-21T12:34:05.930Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9e18d5bab2fa94a6a95f509ecb38f8f68322abd3",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 5768.007776073147,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "88ece521-934c-462a-9ad4-4be1b9603e24",
+    "reserves": [
+     "1830044.610125208",
+     "10.177422"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4ce5f6bf8e996ae54709c75865709aca5127dd54": {
+    "key": "bsc:0x4ce5f6bf8e996ae54709c75865709aca5127dd54",
+    "name": "Amateras",
+    "decimals": 18,
+    "symbol": "AMT",
+    "price": 0.00777331,
+    "address": "0x4ce5f6bf8e996ae54709c75865709aca5127dd54",
+    "addresses": {
+     "bsc": "0x4ce5f6bf8e996ae54709c75865709aca5127dd54"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 777379,
+    "image": "https://assets.coingecko.com/coins/images/21759/large/logo.png?1696521114",
+    "metrics": {
+     "volumeUsd1d": "14.984",
+     "volumeUsd7d": "155.095"
+    },
+    "metadata": {},
+    "tokenId": "471c0e06-4584-4d7f-a0e9-8594f9cef26f",
+    "totalSupply": "100000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xabc93f35755b3c1cf8feea9b6490d93fd184d7964529aef89b6c5a66d321fe40": {
+    "key": "robinhood:0xabc93f35755b3c1cf8feea9b6490d93fd184d7964529aef89b6c5a66d321fe40",
+    "name": "Uniswap V4 LP AMAT/USDG",
+    "decimals": 18,
+    "symbol": "AMAT/USDG",
+    "price": 9007199254740990,
+    "address": "0xabc93f35755b3c1cf8feea9b6490d93fd184d7964529aef89b6c5a66d321fe40",
+    "addresses": {
+     "robinhood": "0xabc93f35755b3c1cf8feea9b6490d93fd184d7964529aef89b6c5a66d321fe40"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174172/large/0x36046893810a7e7fce501229d57dc3fc8c8716d0.png?1782444729",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.061Z",
+    "createdAt": "2026-09-09T09:12:05.519Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1692.8704320731931,
+    "metrics": {
+     "apy": "3.166",
+     "baseApy": "3.166",
+     "volumeUsd1d": "2.882",
+     "volumeUsd7d": "290.217"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d5bc9a4d-9291-46f2-aa94-3236a0c1675d",
+    "reserves": [
+     "3.555605713834390354",
+     "237.762707"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe1bf5309778aca8ca0474366ae5e1721c7e5d629f48fe39fd26d3cda4c220258": {
+    "key": "robinhood:0xe1bf5309778aca8ca0474366ae5e1721c7e5d629f48fe39fd26d3cda4c220258",
+    "name": "Uniswap V4 LP ETH/AMAT",
+    "decimals": 18,
+    "symbol": "ETH/AMAT",
+    "price": 9007199254740990,
+    "address": "0xe1bf5309778aca8ca0474366ae5e1721c7e5d629f48fe39fd26d3cda4c220258",
+    "addresses": {
+     "robinhood": "0xe1bf5309778aca8ca0474366ae5e1721c7e5d629f48fe39fd26d3cda4c220258"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174172/large/0x36046893810a7e7fce501229d57dc3fc8c8716d0.png?1782444729"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.439Z",
+    "createdAt": "2026-07-23T21:06:50.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x36046893810a7e7fce501229d57dc3fc8c8716d0"
+    ],
+    "liquidity": 1397.486676371197,
+    "metrics": {
+     "apy": "25.43",
+     "baseApy": "25.43",
+     "volumeUsd1d": "19.113",
+     "volumeUsd7d": "253.444"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4c777377-f410-44d5-b312-d2a5cf125552",
+    "reserves": [
+     "0.154368840433232243",
+     "2.534224083212013301"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa5b52a9f99dad86e47b6cd0ebdda0525012a4aadac5e552ecf65876ac6149590": {
+    "key": "ethereum:0xa5b52a9f99dad86e47b6cd0ebdda0525012a4aadac5e552ecf65876ac6149590",
+    "name": "Uniswap V4 LP ZQ/AMATon",
+    "decimals": 18,
+    "symbol": "ZQ/AMATON",
+    "price": 9007199254740990,
+    "address": "0xa5b52a9f99dad86e47b6cd0ebdda0525012a4aadac5e552ecf65876ac6149590",
+    "addresses": {
+     "ethereum": "0xa5b52a9f99dad86e47b6cd0ebdda0525012a4aadac5e552ecf65876ac6149590"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.073Z",
+    "createdAt": "2026-09-30T05:25:12.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0x6be935eadc71c49c414b1175985946ee40365c67"
+    ],
+    "liquidity": 20002.54542477676,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "55"
+    },
+    "tokenId": "ae3384de-e0f7-44d9-9bc0-7a8c866865e8",
+    "reserves": [
+     "19999.999999999999999989",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xa304bd78e739c0f777202b3eb73ac3736d1df801": {
+    "key": "bsc:0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+    "name": "Applied Materials (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMATB",
+    "price": 403.71,
+    "address": "0xa304bd78e739c0f777202b3eb73ac3736d1df801",
+    "addresses": {
+     "bsc": "0xa304bd78e739c0f777202b3eb73ac3736d1df801"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9176258,
+    "image": "https://coin-images.coingecko.com/coins/images/102175183/large/Amatb.png?1785456031",
+    "metrics": {
+     "volumeUsd1d": "25016.53",
+     "volumeUsd7d": "1032641.899"
+    },
+    "metadata": {},
+    "tokenId": "a663c694-4dc0-47af-811b-cd3312356e79",
+    "totalSupply": "22729.75505857",
+    "circulatingSupply": "22729.75505857",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xcdf283ee9213ccdb1a33ed1408616ac8d24a2748975da7b42d0916c1cdc7579d": {
+    "key": "robinhood:0xcdf283ee9213ccdb1a33ed1408616ac8d24a2748975da7b42d0916c1cdc7579d",
+    "name": "Uniswap V4 LP AMAT/MM",
+    "decimals": 18,
+    "symbol": "AMAT/MM",
+    "price": 9007199254740990,
+    "address": "0xcdf283ee9213ccdb1a33ed1408616ac8d24a2748975da7b42d0916c1cdc7579d",
+    "addresses": {
+     "robinhood": "0xcdf283ee9213ccdb1a33ed1408616ac8d24a2748975da7b42d0916c1cdc7579d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174172/large/0x36046893810a7e7fce501229d57dc3fc8c8716d0.png?1782444729",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.857Z",
+    "createdAt": "2026-08-24T04:31:30.324Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
+    ],
+    "liquidity": 19994.248757727964,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9940,
+     "feePercentage": "99.4006"
+    },
+    "tokenId": "cb02e3ec-42ec-4587-956a-44455a6880a7",
+    "reserves": [
+     "0.000363227269840369",
+     "19998.368425342541435854"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x920ecad02c4bdaf05858c1d23929e8419cc5b72063089bffc039fa3786733f92": {
+    "key": "ethereum:0x920ecad02c4bdaf05858c1d23929e8419cc5b72063089bffc039fa3786733f92",
+    "name": "Uniswap V4 LP EGP/AMATon",
+    "decimals": 18,
+    "symbol": "EGP/AMATON",
+    "price": 9007199254740990,
+    "address": "0x920ecad02c4bdaf05858c1d23929e8419cc5b72063089bffc039fa3786733f92",
+    "addresses": {
+     "ethereum": "0x920ecad02c4bdaf05858c1d23929e8419cc5b72063089bffc039fa3786733f92"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.611Z",
+    "createdAt": "2026-10-14T06:54:33.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x6be935eadc71c49c414b1175985946ee40365c67"
+    ],
+    "liquidity": 20067.531813894293,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.07"
+    },
+    "tokenId": "72e9a7a4-1046-4be6-b5fe-fc6b66f1b160",
+    "reserves": [
+     "19999.999999999999999977",
+     "0.053426054984823151"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1": {
+    "key": "ethereum:0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1",
+    "name": "LlamaThena",
+    "decimals": 18,
+    "symbol": "LLAMATHENA",
+    "price": 1.1255960211678147,
+    "address": "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1",
+    "addresses": {
+     "ethereum": "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1"
+    },
+    "platform": "curve",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+     "https://coin-images.coingecko.com/coins/images/51712/large/scrvUSD200x200.png?1731899723",
+     "https://assets.coingecko.com/coins/images/33613/large/3466ef_3c088c66c7d941e8856339d0bddf33cc_mv2.png?1702514458"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.816Z",
+    "createdAt": "2025-02-27T07:03:59.259Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0655977feb2f289a4ab78af67bab0d17aab84367",
+     "0x9d39a5de30e57443bff2a8307a4256c8797a3497"
+    ],
+    "poolAddress": "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1",
+    "liquidity": 1965050.8310161019,
+    "metrics": {
+     "apy": "2.61",
+     "baseApy": "2.61",
+     "volumeUsd1d": "6381.51",
+     "volumeUsd7d": "1203667.43"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isMetaPool": false,
+     "feePercentage": "0.02",
+     "implementation": "plainstableng",
+     "offpegFeeMultiplier": "50000000000",
+     "implementationAddress": "ethereum:0xdcc91f930b42619377c200ba05b7513f2958b202",
+     "amplificationCoefficient": "500"
+    },
+    "tokenId": "5ad0062e-f7c0-4433-8d2b-13d90c14d3be",
+    "totalSupply": "1745786.937819259634651359",
+    "reserves": [
+     "1025860.179236095625123229",
+     "660365.653087383006861542"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6be935eadc71c49c414b1175985946ee40365c67": {
+    "key": "ethereum:0x6be935eadc71c49c414b1175985946ee40365c67",
+    "name": "Applied Materials (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "AMATON",
+    "price": 412.02,
+    "address": "0x6be935eadc71c49c414b1175985946ee40365c67",
+    "addresses": {
+     "ethereum": "0x6be935eadc71c49c414b1175985946ee40365c67",
+     "bsc": "0x5ecc352c4640f1d26bd231dbbd171f40f7d0eec6"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 490617,
+    "image": "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400",
+    "metrics": {
+     "volumeUsd1d": "478643.884",
+     "volumeUsd7d": "6945717.223"
+    },
+    "metadata": {},
+    "tokenId": "63341e27-6990-45c7-92ef-d16532f6ea4e",
+    "totalSupply": "1190.8077201540523",
+    "circulatingSupply": "1190.8077201540523",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f": {
+    "key": "arbitrum:0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+    "name": "Applied Materials rStock",
+    "decimals": 18,
+    "symbol": "RAMAT",
+    "price": 409.36,
+    "address": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f",
+    "addresses": {
+     "arbitrum": "0x5d7b6fdb9c2eae10481467a1db7f0b10c761688f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 340457,
+    "image": "https://coin-images.coingecko.com/coins/images/102177022/large/3b0907f398c4e05d37cdf64cbd1e363c.png?1789116582",
+    "metrics": {
+     "volumeUsd1d": "820.424",
+     "volumeUsd7d": "127856.898"
+    },
+    "metadata": {},
+    "tokenId": "82b28fd9-4034-48be-9620-91b8f114af9b",
+    "totalSupply": "831.675130503",
+    "circulatingSupply": "831.675130503",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x36046893810a7e7fce501229d57dc3fc8c8716d0": {
+    "key": "robinhood:0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "name": "Applied Materials • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMAT",
+    "price": 409.24327447544647,
+    "address": "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "addresses": {
+     "robinhood": "0x36046893810a7e7fce501229d57dc3fc8c8716d0"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x36046893810a7e7fce501229d57dc3fc8c8716d0.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x36046893810a7e7fce501229d57dc3fc8c8716d0",
+    "liquidity": 92868.95267590386,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "40051.584"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000a98d1e2ff1ea4e54a538680595585902",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000044656302636618",
+     "currentMultiplier": "1.000044656302636618",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "1d82c9a9-0c44-41d6-9643-d62ce13b01b2",
+    "totalSupply": "226.92847621",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9e18d5bab2fa94a6a95f509ecb38f8f68322abd3": {
+    "key": "ethereum:0x9e18d5bab2fa94a6a95f509ecb38f8f68322abd3",
+    "name": "AMATERASU OMIKAMI",
+    "decimals": 9,
+    "symbol": "OMIKAMI",
+    "price": 0.00314628,
+    "address": "0x9e18d5bab2fa94a6a95f509ecb38f8f68322abd3",
+    "addresses": {
+     "ethereum": "0x9e18d5bab2fa94a6a95f509ecb38f8f68322abd3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3144998,
+    "image": "https://assets.coingecko.com/coins/images/31821/large/Omikami_BTC_AMZN.png?1696530635",
+    "metrics": {
+     "volumeUsd1d": "2135.141",
+     "volumeUsd7d": "27877.507"
+    },
+    "metadata": {},
+    "tokenId": "c116478c-20ec-4683-ac63-837d73d9a5b1",
+    "totalSupply": "999592216.6089",
+    "circulatingSupply": "999592216.6089",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf1cf3b0e5c427c04cc48dbb3ab7f6ba357434444": {
+    "key": "bsc:0xf1cf3b0e5c427c04cc48dbb3ab7f6ba357434444",
+    "name": "Shamatte",
+    "decimals": 18,
+    "symbol": "杀马特",
+    "price": 1.752e-05,
+    "address": "0xf1cf3b0e5c427c04cc48dbb3ab7f6ba357434444",
+    "addresses": {
+     "bsc": "0xf1cf3b0e5c427c04cc48dbb3ab7f6ba357434444"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-13T10:39:15.092Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17527.3,
+    "image": "https://coin-images.coingecko.com/coins/images/69982/large/shamatte-logo.jpg?1760269656",
+    "metrics": {
+     "volumeUsd1d": "31.713",
+     "volumeUsd7d": "509.078"
+    },
+    "metadata": {},
+    "tokenId": "3b270440-6dfb-4f50-8720-b41b1e5d8565",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x237926e55f9deee89833a42deb92d3a6970850b4": {
+    "key": "ethereum:0x237926e55f9deee89833a42deb92d3a6970850b4",
+    "name": "LlamaThena Convex Deposit",
+    "decimals": 18,
+    "symbol": "CVXLLAMATHENA",
+    "price": 1.1255960211678147,
+    "address": "0x237926e55f9deee89833a42deb92d3a6970850b4",
+    "addresses": {
+     "ethereum": "0x237926e55f9deee89833a42deb92d3a6970850b4"
+    },
+    "platform": "convex",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/15585/large/convex.png",
+     "https://coin-images.coingecko.com/coins/images/51712/large/scrvUSD200x200.png?1731899723",
+     "https://assets.coingecko.com/coins/images/33613/large/3466ef_3c088c66c7d941e8856339d0bddf33cc_mv2.png?1702514458"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.339Z",
+    "createdAt": "2025-02-28T07:06:47.972Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1"
+    ],
+    "poolAddress": "0x11fd8801a051b296e337a3e1168839fb346d5940",
+    "liquidity": 1432069.4067058992,
+    "metrics": {
+     "apy": "5.17",
+     "baseApy": "5.17",
+     "volumeUsd1d": "-22.507",
+     "volumeUsd7d": "-10025.102"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ]
+    },
+    "tokenId": "b4f9632b-6627-47d8-b4d0-83574fa00f30",
+    "totalSupply": "1272276.535963689732685403",
+    "reserves": [
+     "1272276.535963689732685403"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa257d69f20a3f7879c353edc39a64a0f8875bc3bdd58b4fdeebdb7d7e42c1d78": {
+    "key": "ethereum:0xa257d69f20a3f7879c353edc39a64a0f8875bc3bdd58b4fdeebdb7d7e42c1d78",
+    "name": "Uniswap V4 LP wUSDC/AMATon",
+    "decimals": 18,
+    "symbol": "WUSDC/AMATON",
+    "price": 9007199254740990,
+    "address": "0xa257d69f20a3f7879c353edc39a64a0f8875bc3bdd58b4fdeebdb7d7e42c1d78",
+    "addresses": {
+     "ethereum": "0xa257d69f20a3f7879c353edc39a64a0f8875bc3bdd58b4fdeebdb7d7e42c1d78"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71404/large/amaton_160x160.png?1767875400",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.247Z",
+    "createdAt": "2026-09-28T10:39:18.722Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x6be935eadc71c49c414b1175985946ee40365c67"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "5ff1c3f7-be47-4516-a925-491a0736b2d8",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

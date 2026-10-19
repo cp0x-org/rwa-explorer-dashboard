@@ -1,0 +1,2032 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4592001014",
+ "ticker": "IBM",
+ "name": "IBM",
+ "isin": "US4592001014",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:53Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "IBM",
+   "symbol": "IBM",
+   "slug": "ibm",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 233.4930186937697,
+     "tokenized_market_cap": 4506657.912909916,
+     "tokenized_volume_24h": 2280191.17520019,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 42,
+   "asset_type": "stock",
+   "rwa_rank": 67,
+   "has_tokens": true,
+   "average_tokenized_price": 233.4930186937697,
+   "tokenized_market_cap": 4506657.912909916,
+   "tokenized_volume_24h": 2280191.17520019,
+   "last_updated": "2026-10-18T20:14:19.014Z",
+   "tokens": [
+    {
+     "symbol": "IBMon",
+     "name": "IBM Tokenized Stock (Ondo)",
+     "price": 236.10765553789437,
+     "crypto_id": 38018,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2492511.2,
+     "volume_24h": 1467848.80570504
+    },
+    {
+     "symbol": "IBMX",
+     "name": "International Business Machines tokenized stock (xStock)",
+     "price": 230.80693760986068,
+     "crypto_id": 37029,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1071020.52,
+     "volume_24h": 6597.27775596
+    },
+    {
+     "symbol": "IBM",
+     "name": "IBM (Derivatives)",
+     "price": 230.05821322127062,
+     "crypto_id": 39634,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rIBM",
+     "name": "IBM Tokenized Stock (Reality)",
+     "price": 230.81476712057236,
+     "crypto_id": 40610,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 69292.12,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "IBMB",
+     "name": "IBM Tokenized bStocks",
+     "price": 228.66288855169904,
+     "crypto_id": 40847,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 873599.38,
+     "volume_24h": 787908.47036793
+    },
+    {
+     "symbol": "wIBMx",
+     "name": "Wrapped International Business Tokenized Stock (xStock)",
+     "price": 235.29782079675994,
+     "crypto_id": 41431,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 1418.48049412
+    },
+    {
+     "symbol": "IBM",
+     "name": "IBM Tokenized Stock (Robinhood)",
+     "price": 229.97050319988867,
+     "crypto_id": 42358,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 0,
+     "volume_24h": 13992.81214841
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "IBM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_IBM"
+    }
+   ]
+  },
+  "info": {
+   "38018": {
+    "id": 38018,
+    "symbol": "IBMon",
+    "name": "IBM Tokenized Stock (Ondo)",
+    "slug": "ibm-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38018.png",
+    "date_added": "2025-09-03T10:55:13.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x25d3f236B2d61656eebdeA86Ac6D42168e340011"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x25d3f236B2d61656eebdeA86Ac6D42168e340011",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "C8bZkgSxXkyT1RgxByp2teJ24hgimPLoyEYoNa9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37029": {
+    "id": 37029,
+    "symbol": "IBMX",
+    "name": "International Business Machines tokenized stock (xStock)",
+    "slug": "international-business-machines-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37029.png",
+    "date_added": "2025-07-01T15:48:56.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XspwhyYPdWVM8XBHZnpS9hgyag9MKjLRyE3tVfmCbSr"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XspwhyYPdWVM8XBHZnpS9hgyag9MKjLRyE3tVfmCbSr",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EQB7U3MUc6TeOvYRwqLoouF-yxr4w-sa-Q-n0_6MjUyQlTSQ",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9913208647671Fe0F48F7F260076B2C6F310Aac",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "39634": {
+    "id": 39634,
+    "symbol": "IBM",
+    "name": "IBM (Derivatives)",
+    "slug": "ibm-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39634.png",
+    "date_added": "2026-02-26T09:51:37.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40610": {
+    "id": 40610,
+    "symbol": "rIBM",
+    "name": "IBM Tokenized Stock (Reality)",
+    "slug": "ibm-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40610.png",
+    "date_added": "2026-07-02T07:39:06.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40847": {
+    "id": 40847,
+    "symbol": "IBMB",
+    "name": "IBM Tokenized bStocks",
+    "slug": "ibm-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40847.png",
+    "date_added": "2026-07-13T10:40:21.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xfa273b076feb8c0fb34e554ae341082323d016a3",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41431": {
+    "id": 41431,
+    "symbol": "wIBMx",
+    "name": "Wrapped International Business Tokenized Stock (xStock)",
+    "slug": "wrapped-international-business-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41431.png",
+    "date_added": "2026-08-11T16:23:42.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xbF69D85055642A9C6450BdFDe3C49Baac50F8286"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbF69D85055642A9C6450BdFDe3C49Baac50F8286",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42358": {
+    "id": 42358,
+    "symbol": "IBM",
+    "name": "IBM Tokenized Stock (Robinhood)",
+    "slug": "ibm-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42358.png",
+    "date_added": "2026-09-23T06:34:45.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x980dcf6766FA79f5Cf0c4AAdb3ab477ff15a9619"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x980dcf6766FA79f5Cf0c4AAdb3ab477ff15a9619",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+   "arbitrum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+   "bsc:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+   "bsc:0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+   "bsc:0xfa273b076feb8c0fb34e554ae341082323d016a3",
+   "ethereum:0x25d3f236b2d61656eebdea86ac6d42168e340011",
+   "ethereum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+   "robinhood:0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+  ],
+  "exact": {
+   "ethereum:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "ethereum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "ethereum": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.869Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7774346.642083447,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "2897e501-0cd4-4d92-8204-a88faa0096de",
+    "totalSupply": "33527.456624475793871768",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x25d3f236b2d61656eebdea86ac6d42168e340011": {
+    "key": "ethereum:0x25d3f236b2d61656eebdea86ac6d42168e340011",
+    "name": "IBM (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMON",
+    "price": 236.61,
+    "address": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+    "addresses": {
+     "ethereum": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "bsc": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2497836,
+    "image": "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056",
+    "metrics": {
+     "volumeUsd1d": "1079190.014",
+     "volumeUsd7d": "8224528.009"
+    },
+    "metadata": {},
+    "tokenId": "83407215-21a0-49cf-8610-09f1379e7de8",
+    "totalSupply": "10556.672521688",
+    "circulatingSupply": "10556.672521688",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a": {
+    "key": "arbitrum:0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+    "name": "IBM rStock",
+    "decimals": 18,
+    "symbol": "RIBM",
+    "price": 230.91,
+    "address": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+    "addresses": {
+     "arbitrum": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 69321,
+    "image": "https://coin-images.coingecko.com/coins/images/102177145/large/59197303337cc44ffce20910026b05b5.png?1789116970",
+    "metrics": {
+     "volumeUsd1d": "0.01",
+     "volumeUsd7d": "25631.641"
+    },
+    "metadata": {},
+    "tokenId": "2512f1e3-3039-4a9d-be6f-35dfb028e8f5",
+    "totalSupply": "300.206624379",
+    "circulatingSupply": "300.206624379",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619": {
+    "key": "robinhood:0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "name": "IBM • Robinhood Token",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.35,
+    "address": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "addresses": {
+     "robinhood": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T20:14:27.258Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "liquidity": 518800.66301,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6764.743"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c0d3fe37e35240d1a0f311a07e2b9fc4",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "09d28476-48f6-471a-be35-6af007e92a64",
+    "totalSupply": "2242.4926",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "arbitrum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "arbitrum": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.302Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7866162.206512749,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "50460b28-3795-47ec-9a8b-49b3980ca7b4",
+    "totalSupply": "33923.418175404298687448",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfa273b076feb8c0fb34e554ae341082323d016a3": {
+    "key": "bsc:0xfa273b076feb8c0fb34e554ae341082323d016a3",
+    "name": "IBM (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMB",
+    "price": 229.75,
+    "address": "0xfa273b076feb8c0fb34e554ae341082323d016a3",
+    "addresses": {
+     "bsc": "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 873380,
+    "image": "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838",
+    "metrics": {
+     "volumeUsd1d": "15949.439",
+     "volumeUsd7d": "508030.909"
+    },
+    "metadata": {},
+    "tokenId": "6b48ff01-4a95-494d-bad2-812360bada86",
+    "totalSupply": "3801.4393042399997",
+    "circulatingSupply": "3801.4393042399997",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "bsc:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "bsc": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.642Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2366110.2881004494,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "5109e53b-4161-41a4-ab07-cd46c5ff32d7",
+    "totalSupply": "10204.029187943977",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464": {
+    "key": "bsc:0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+    "name": "IBM (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMON",
+    "price": 236.61,
+    "address": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+    "addresses": {
+     "ethereum": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "bsc": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2497836,
+    "image": "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056",
+    "metrics": {
+     "volumeUsd1d": "1082393.475",
+     "volumeUsd7d": "8225539.572"
+    },
+    "metadata": {},
+    "tokenId": "83407215-21a0-49cf-8610-09f1379e7de8",
+    "totalSupply": "10556.672521688",
+    "circulatingSupply": "10556.672521688",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "IBM": {
+    "total_items": 32,
+    "pages": 1,
+    "received": 32,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x940ea4d62f32efa0e208992ea778342b7aae44f9022108ccd565ebb23ec17c7d": {
+    "key": "robinhood:0x940ea4d62f32efa0e208992ea778342b7aae44f9022108ccd565ebb23ec17c7d",
+    "name": "Uniswap V4 LP IBM/SHROOM",
+    "decimals": 18,
+    "symbol": "IBM/SHROOM",
+    "price": 9007199254740990,
+    "address": "0x940ea4d62f32efa0e208992ea778342b7aae44f9022108ccd565ebb23ec17c7d",
+    "addresses": {
+     "robinhood": "0x940ea4d62f32efa0e208992ea778342b7aae44f9022108ccd565ebb23ec17c7d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:15:36.114Z",
+    "createdAt": "2026-09-08T15:09:10.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 1075.2217479173678,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "03d309d4-ebe3-4137-b7a0-d3a077493a62",
+    "reserves": [
+     "3.456491837951886929",
+     "57018.48619806879137122"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfcada155781c81206b4ad60ff4cdf781a63708dd5a4aa36f5c94935a9a40359f": {
+    "key": "ethereum:0xfcada155781c81206b4ad60ff4cdf781a63708dd5a4aa36f5c94935a9a40359f",
+    "name": "Uniswap V4 LP IBMon/wUSDC",
+    "decimals": 18,
+    "symbol": "IBMON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xfcada155781c81206b4ad60ff4cdf781a63708dd5a4aa36f5c94935a9a40359f",
+    "addresses": {
+     "ethereum": "0xfcada155781c81206b4ad60ff4cdf781a63708dd5a4aa36f5c94935a9a40359f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056"
+    ],
+    "updatedAt": "2026-10-18T20:14:55.459Z",
+    "createdAt": "2026-09-28T10:39:22.828Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1c008fc1-dc80-4f48-8139-bb50b2dff37f",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfefcd3697193dacac74626b2c8ca15937479605b4ee074670186f746b448028a": {
+    "key": "robinhood:0xfefcd3697193dacac74626b2c8ca15937479605b4ee074670186f746b448028a",
+    "name": "Uniswap V4 LP USDG/IBM",
+    "decimals": 18,
+    "symbol": "USDG/IBM",
+    "price": 9007199254740990,
+    "address": "0xfefcd3697193dacac74626b2c8ca15937479605b4ee074670186f746b448028a",
+    "addresses": {
+     "robinhood": "0xfefcd3697193dacac74626b2c8ca15937479605b4ee074670186f746b448028a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.728Z",
+    "createdAt": "2026-09-08T14:43:04.825Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 29648.87945363274,
+    "metrics": {
+     "apy": "11.61",
+     "baseApy": "11.61",
+     "volumeUsd1d": "5352.307",
+     "volumeUsd7d": "136053.026"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15,
+     "feePercentage": "0.1762"
+    },
+    "tokenId": "0d8bc92f-73e8-4e65-a197-e0054186c3a2",
+    "reserves": [
+     "18199.87519",
+     "49.487807493549769209"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "ethereum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "ethereum": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.869Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7774346.642083447,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "2897e501-0cd4-4d92-8204-a88faa0096de",
+    "totalSupply": "33527.456624475793871768",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc092c1a831ffdaa9ebf3fbc68887d3bef10d808b": {
+    "key": "robinhood:0xc092c1a831ffdaa9ebf3fbc68887d3bef10d808b",
+    "name": "IBM Bob",
+    "decimals": 18,
+    "symbol": "BOB",
+    "price": 9.067786046104982e-05,
+    "address": "0xc092c1a831ffdaa9ebf3fbc68887d3bef10d808b",
+    "addresses": {
+     "robinhood": "0xc092c1a831ffdaa9ebf3fbc68887d3bef10d808b"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-16T03:50:39.594Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 90677.86046104983,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.02"
+    },
+    "metadata": {},
+    "tokenId": "1f2c803d-e21b-43bf-bc03-475f9cddff58",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x25d3f236b2d61656eebdea86ac6d42168e340011": {
+    "key": "ethereum:0x25d3f236b2d61656eebdea86ac6d42168e340011",
+    "name": "IBM (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMON",
+    "price": 236.61,
+    "address": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+    "addresses": {
+     "ethereum": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "bsc": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2497836,
+    "image": "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056",
+    "metrics": {
+     "volumeUsd1d": "1079190.014",
+     "volumeUsd7d": "8224528.009"
+    },
+    "metadata": {},
+    "tokenId": "83407215-21a0-49cf-8610-09f1379e7de8",
+    "totalSupply": "10556.672521688",
+    "circulatingSupply": "10556.672521688",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a": {
+    "key": "arbitrum:0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+    "name": "IBM rStock",
+    "decimals": 18,
+    "symbol": "RIBM",
+    "price": 230.91,
+    "address": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a",
+    "addresses": {
+     "arbitrum": "0x054cc8ef9a3d8accdb8f906e941d2298da8ada5a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 69321,
+    "image": "https://coin-images.coingecko.com/coins/images/102177145/large/59197303337cc44ffce20910026b05b5.png?1789116970",
+    "metrics": {
+     "volumeUsd1d": "0.01",
+     "volumeUsd7d": "25631.641"
+    },
+    "metadata": {},
+    "tokenId": "2512f1e3-3039-4a9d-be6f-35dfb028e8f5",
+    "totalSupply": "300.206624379",
+    "circulatingSupply": "300.206624379",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x81eab6e9604f074f7423ba90f472458c9bcc23f3818dfa23fa6d5640a7c9d8e9": {
+    "key": "bsc:0x81eab6e9604f074f7423ba90f472458c9bcc23f3818dfa23fa6d5640a7c9d8e9",
+    "name": "Uniswap V4 LP USDT/IBMB",
+    "decimals": 18,
+    "symbol": "USDT/IBMB",
+    "price": 9007199254740990,
+    "address": "0x81eab6e9604f074f7423ba90f472458c9bcc23f3818dfa23fa6d5640a7c9d8e9",
+    "addresses": {
+     "bsc": "0x81eab6e9604f074f7423ba90f472458c9bcc23f3818dfa23fa6d5640a7c9d8e9"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838"
+    ],
+    "updatedAt": "2026-10-18T20:15:19.422Z",
+    "createdAt": "2026-08-03T06:33:19.492Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 524.2401658439007,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "8e4548bb-3914-4434-965b-1f9fc2abb16b",
+    "reserves": [
+     "336.182324284514398547",
+     "0.819787969504341243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb5f6996883b21af3662728aa0df70ec6671500a9": {
+    "key": "arbitrum:0xb5f6996883b21af3662728aa0df70ec6671500a9",
+    "name": "International Business Machines (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.38,
+    "address": "0xb5f6996883b21af3662728aa0df70ec6671500a9",
+    "addresses": {
+     "arbitrum": "0xb5f6996883b21af3662728aa0df70ec6671500a9",
+     "avalanche": "0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+     "ethereum": "0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+     "base": "0xb9bd4717f85f603cde3596c13d88404cb98d8400"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18804.66,
+    "image": "https://coin-images.coingecko.com/coins/images/102175049/large/dinari-logo-green-with-margin.png?1785403023",
+    "metrics": {
+     "volumeUsd1d": "1.941",
+     "volumeUsd7d": "478.279"
+    },
+    "metadata": {},
+    "tokenId": "71904f37-2c0e-43ad-a980-21b4e69a5cc3",
+    "totalSupply": "81.27095719945378",
+    "circulatingSupply": "81.27095719945378",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x12b42ffc95c08e1170d013ca5728e020fb71aadbeef7a6d33024ef7fa72429cb": {
+    "key": "robinhood:0x12b42ffc95c08e1170d013ca5728e020fb71aadbeef7a6d33024ef7fa72429cb",
+    "name": "Uniswap V4 LP ETH/IBM",
+    "decimals": 18,
+    "symbol": "ETH/IBM",
+    "price": 9007199254740990,
+    "address": "0x12b42ffc95c08e1170d013ca5728e020fb71aadbeef7a6d33024ef7fa72429cb",
+    "addresses": {
+     "robinhood": "0x12b42ffc95c08e1170d013ca5728e020fb71aadbeef7a6d33024ef7fa72429cb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.343Z",
+    "createdAt": "2026-08-13T15:49:58.025Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 727.4866249054004,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "35.236"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "00a37ade-1644-4542-bad4-b8e1c56dacfc",
+    "reserves": [
+     "0.087095820394609362",
+     "2.265668049070191447"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x92e3a392009026312a9244605471df9db4d165484f5fc8932f4f37603556ad25": {
+    "key": "robinhood:0x92e3a392009026312a9244605471df9db4d165484f5fc8932f4f37603556ad25",
+    "name": "Uniswap V4 LP ETH/IBM",
+    "decimals": 18,
+    "symbol": "ETH/IBM",
+    "price": 9007199254740990,
+    "address": "0x92e3a392009026312a9244605471df9db4d165484f5fc8932f4f37603556ad25",
+    "addresses": {
+     "robinhood": "0x92e3a392009026312a9244605471df9db4d165484f5fc8932f4f37603556ad25"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.727Z",
+    "createdAt": "2026-09-08T15:09:10.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 3218.5279097131456,
+    "metrics": {
+     "apy": "61.972",
+     "baseApy": "61.972",
+     "volumeUsd1d": "547.15",
+     "volumeUsd7d": "5229.327"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "cd0ea4e3-f090-406e-8416-6f127ebd2ff9",
+    "reserves": [
+     "0.710826979858838943",
+     "6.739180607315689609"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619": {
+    "key": "robinhood:0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "name": "IBM • Robinhood Token",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.35,
+    "address": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "addresses": {
+     "robinhood": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T20:14:27.258Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+    "liquidity": 518800.66301,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6764.743"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c0d3fe37e35240d1a0f311a07e2b9fc4",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "09d28476-48f6-471a-be35-6af007e92a64",
+    "totalSupply": "2242.4926",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x831fda3103c14851fd6a49474df5c3a93136029e92f6ce12c77403fef18d0fd4": {
+    "key": "bsc:0x831fda3103c14851fd6a49474df5c3a93136029e92f6ce12c77403fef18d0fd4",
+    "name": "Uniswap V4 LP USDT/IBMB",
+    "decimals": 18,
+    "symbol": "USDT/IBMB",
+    "price": 9007199254740990,
+    "address": "0x831fda3103c14851fd6a49474df5c3a93136029e92f6ce12c77403fef18d0fd4",
+    "addresses": {
+     "bsc": "0x831fda3103c14851fd6a49474df5c3a93136029e92f6ce12c77403fef18d0fd4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.495Z",
+    "createdAt": "2026-09-11T13:02:23.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 778.0944369085713,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "2.0971"
+    },
+    "tokenId": "c36979f0-b6cd-4e4f-9f90-406ac4d54eef",
+    "reserves": [
+     "458.983264166304176831",
+     "1.390663679577461917"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "arbitrum:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "arbitrum": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.302Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7866162.206512749,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "50460b28-3795-47ec-9a8b-49b3980ca7b4",
+    "totalSupply": "33923.418175404298687448",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x6c37f91dde919fa6740678bcb6222c84f6bb1adb": {
+    "key": "avalanche:0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+    "name": "International Business Machines (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.38,
+    "address": "0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+    "addresses": {
+     "arbitrum": "0xb5f6996883b21af3662728aa0df70ec6671500a9",
+     "avalanche": "0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+     "ethereum": "0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+     "base": "0xb9bd4717f85f603cde3596c13d88404cb98d8400"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18804.66,
+    "image": "https://coin-images.coingecko.com/coins/images/102175049/large/dinari-logo-green-with-margin.png?1785403023",
+    "metrics": {
+     "volumeUsd1d": "1.941",
+     "volumeUsd7d": "477.954"
+    },
+    "metadata": {},
+    "tokenId": "71904f37-2c0e-43ad-a980-21b4e69a5cc3",
+    "totalSupply": "81.27095719945378",
+    "circulatingSupply": "81.27095719945378",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e6acf0380143b920c5ce7cf90da73e01d6bb70be9c09004fdd34e713f4a3b7f": {
+    "key": "robinhood:0x2e6acf0380143b920c5ce7cf90da73e01d6bb70be9c09004fdd34e713f4a3b7f",
+    "name": "Uniswap V4 LP USDG/IBM",
+    "decimals": 18,
+    "symbol": "USDG/IBM",
+    "price": 9007199254740990,
+    "address": "0x2e6acf0380143b920c5ce7cf90da73e01d6bb70be9c09004fdd34e713f4a3b7f",
+    "addresses": {
+     "robinhood": "0x2e6acf0380143b920c5ce7cf90da73e01d6bb70be9c09004fdd34e713f4a3b7f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.223Z",
+    "createdAt": "2026-09-08T14:37:22.990Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 4991.418244332205,
+    "metrics": {
+     "apy": "5.807",
+     "baseApy": "5.807",
+     "volumeUsd1d": "105.958",
+     "volumeUsd7d": "3169.617"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 65,
+     "feePercentage": "0.7494"
+    },
+    "tokenId": "697a86b4-a3c3-40f5-b3a9-d0c4ff224eea",
+    "reserves": [
+     "1299.760632",
+     "15.957024475177026494"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x210c52eb6ef3102a6ca6343e2b98bd0cea04c18d8f58d18e00d3f569fbb343ab": {
+    "key": "bsc:0x210c52eb6ef3102a6ca6343e2b98bd0cea04c18d8f58d18e00d3f569fbb343ab",
+    "name": "Uniswap V4 LP USDT/IBMB",
+    "decimals": 18,
+    "symbol": "USDT/IBMB",
+    "price": 9007199254740990,
+    "address": "0x210c52eb6ef3102a6ca6343e2b98bd0cea04c18d8f58d18e00d3f569fbb343ab",
+    "addresses": {
+     "bsc": "0x210c52eb6ef3102a6ca6343e2b98bd0cea04c18d8f58d18e00d3f569fbb343ab"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.927Z",
+    "createdAt": "2026-07-19T06:33:49.479Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 667.6198455716784,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17760,
+     "feePercentage": "88.8112"
+    },
+    "tokenId": "b9eb43b8-c056-4b65-9c43-d5375a0236c9",
+    "reserves": [
+     "502.553567470623175484",
+     "0.720337188517715037"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd1cd4c16adc3ffae4ddf1b080748713da5d3430f366380c30c1d85de35c14846": {
+    "key": "bsc:0xd1cd4c16adc3ffae4ddf1b080748713da5d3430f366380c30c1d85de35c14846",
+    "name": "Uniswap V4 LP USDT/IBMB",
+    "decimals": 18,
+    "symbol": "USDT/IBMB",
+    "price": 9007199254740990,
+    "address": "0xd1cd4c16adc3ffae4ddf1b080748713da5d3430f366380c30c1d85de35c14846",
+    "addresses": {
+     "bsc": "0xd1cd4c16adc3ffae4ddf1b080748713da5d3430f366380c30c1d85de35c14846"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:22.991Z",
+    "createdAt": "2026-08-04T20:07:01.214Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 54325.23335126917,
+    "metrics": {
+     "apy": "8.591",
+     "baseApy": "8.591",
+     "volumeUsd1d": "609.642",
+     "volumeUsd7d": "29797.139"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "0cbddd25-20bd-4901-ae9b-7b715805a7fb",
+    "reserves": [
+     "29156.757687830290910779",
+     "109.656113869575774826"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0efde25e5c923620b44f19de1f1d0d5542f2f0b77cf46a92388b4383a04ca5e5": {
+    "key": "arbitrum:0x0efde25e5c923620b44f19de1f1d0d5542f2f0b77cf46a92388b4383a04ca5e5",
+    "name": "Uniswap V4 LP USDT/IBMx",
+    "decimals": 18,
+    "symbol": "USDT/IBMX",
+    "price": 9007199254740990,
+    "address": "0x0efde25e5c923620b44f19de1f1d0d5542f2f0b77cf46a92388b4383a04ca5e5",
+    "addresses": {
+     "arbitrum": "0x0efde25e5c923620b44f19de1f1d0d5542f2f0b77cf46a92388b4383a04ca5e5"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.861Z",
+    "createdAt": "2026-10-16T14:24:01.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "ffa3a4ee-5ef6-4306-a180-7cfbe85f16cb",
+    "reserves": [
+     "2000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xfa273b076feb8c0fb34e554ae341082323d016a3": {
+    "key": "bsc:0xfa273b076feb8c0fb34e554ae341082323d016a3",
+    "name": "IBM (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMB",
+    "price": 229.75,
+    "address": "0xfa273b076feb8c0fb34e554ae341082323d016a3",
+    "addresses": {
+     "bsc": "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 873380,
+    "image": "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838",
+    "metrics": {
+     "volumeUsd1d": "15949.439",
+     "volumeUsd7d": "508030.909"
+    },
+    "metadata": {},
+    "tokenId": "6b48ff01-4a95-494d-bad2-812360bada86",
+    "totalSupply": "3801.4393042399997",
+    "circulatingSupply": "3801.4393042399997",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd9913208647671fe0f48f7f260076b2c6f310aac": {
+    "key": "bsc:0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "name": "International Business Machines xStock",
+    "decimals": 18,
+    "symbol": "IBMX",
+    "price": 231.88,
+    "address": "0xd9913208647671fe0f48f7f260076b2c6f310aac",
+    "addresses": {
+     "bsc": "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.642Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2366110.2881004494,
+    "image": "https://coin-images.coingecko.com/coins/images/55614/large/Ticker_IBM__Company_Name_IBM__size_200x200_2x.png?1746858898",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "international-business-machines-xstock"
+    },
+    "tokenId": "5109e53b-4161-41a4-ab07-cd46c5ff32d7",
+    "totalSupply": "10204.029187943977",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa0a79bc62fc822f3bcdf0ebbc586031781c53a5b": {
+    "key": "robinhood:0xa0a79bc62fc822f3bcdf0ebbc586031781c53a5b",
+    "name": "Uniswap V3 Global Dollar/IBM  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/IBM",
+    "price": 9007199254740990,
+    "address": "0xa0a79bc62fc822f3bcdf0ebbc586031781c53a5b",
+    "addresses": {
+     "robinhood": "0xa0a79bc62fc822f3bcdf0ebbc586031781c53a5b"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:13.904Z",
+    "createdAt": "2026-08-14T07:04:03.803Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 24558.298833373578,
+    "metrics": {
+     "apy": "4.484",
+     "baseApy": "4.484",
+     "volumeUsd1d": "301.671",
+     "volumeUsd7d": "12823.366"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "23d7a768-cd4b-4922-a706-c37dbba7361b",
+    "reserves": [
+     "9039.38732",
+     "67.079799063642001994"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd43a51c85ca0b12309a46a8b6c68dd76837fbd3dba5d413cd4686b85a52f9081": {
+    "key": "robinhood:0xd43a51c85ca0b12309a46a8b6c68dd76837fbd3dba5d413cd4686b85a52f9081",
+    "name": "Uniswap V4 LP USDG/IBM",
+    "decimals": 18,
+    "symbol": "USDG/IBM",
+    "price": 9007199254740990,
+    "address": "0xd43a51c85ca0b12309a46a8b6c68dd76837fbd3dba5d413cd4686b85a52f9081",
+    "addresses": {
+     "robinhood": "0xd43a51c85ca0b12309a46a8b6c68dd76837fbd3dba5d413cd4686b85a52f9081"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.388Z",
+    "createdAt": "2026-09-09T13:24:20.259Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 3753.0513606222216,
+    "metrics": {
+     "apy": "1.744",
+     "baseApy": "1.744",
+     "volumeUsd1d": "17.945",
+     "volumeUsd7d": "955.376"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "058e3c76-449a-4752-a723-5d81627d799c",
+    "reserves": [
+     "817.568685",
+     "12.688492222270247512"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3e3a6cd91e8b7fe6289db2b72d227d9202d28ea545d8a67f9d19be93a02ded5f": {
+    "key": "ethereum:0x3e3a6cd91e8b7fe6289db2b72d227d9202d28ea545d8a67f9d19be93a02ded5f",
+    "name": "Uniswap V4 LP USDT/IBMx",
+    "decimals": 18,
+    "symbol": "USDT/IBMX",
+    "price": 9007199254740990,
+    "address": "0x3e3a6cd91e8b7fe6289db2b72d227d9202d28ea545d8a67f9d19be93a02ded5f",
+    "addresses": {
+     "ethereum": "0x3e3a6cd91e8b7fe6289db2b72d227d9202d28ea545d8a67f9d19be93a02ded5f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.636Z",
+    "createdAt": "2026-10-18T18:58:06.024Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xd9913208647671fe0f48f7f260076b2c6f310aac"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "29d1faa4-65b6-4950-9309-849338c39d72",
+    "reserves": [
+     "3999.999999999999999994",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb9bd4717f85f603cde3596c13d88404cb98d8400": {
+    "key": "base:0xb9bd4717f85f603cde3596c13d88404cb98d8400",
+    "name": "International Business Machines (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.38,
+    "address": "0xb9bd4717f85f603cde3596c13d88404cb98d8400",
+    "addresses": {
+     "arbitrum": "0xb5f6996883b21af3662728aa0df70ec6671500a9",
+     "avalanche": "0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+     "ethereum": "0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+     "base": "0xb9bd4717f85f603cde3596c13d88404cb98d8400"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18804.66,
+    "image": "https://coin-images.coingecko.com/coins/images/102175049/large/dinari-logo-green-with-margin.png?1785403023",
+    "metrics": {
+     "volumeUsd1d": "1.941",
+     "volumeUsd7d": "478.184"
+    },
+    "metadata": {},
+    "tokenId": "71904f37-2c0e-43ad-a980-21b4e69a5cc3",
+    "totalSupply": "81.27095719945378",
+    "circulatingSupply": "81.27095719945378",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8cd848ce18b829c5c769aff27164078bb52e0e97": {
+    "key": "robinhood:0x8cd848ce18b829c5c769aff27164078bb52e0e97",
+    "name": "Uniswap V3 Global Dollar/IBM  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/IBM",
+    "price": 9007199254740990,
+    "address": "0x8cd848ce18b829c5c769aff27164078bb52e0e97",
+    "addresses": {
+     "robinhood": "0x8cd848ce18b829c5c769aff27164078bb52e0e97"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.662Z",
+    "createdAt": "2026-09-08T09:33:48.923Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 131650.3969090251,
+    "metrics": {
+     "apy": "5.869",
+     "baseApy": "5.869",
+     "volumeUsd1d": "7056.48",
+     "volumeUsd7d": "395639.644"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "e352c705-3dff-4b97-bf42-1bbdfe4cc5a0",
+    "reserves": [
+     "70193.940596",
+     "265.642776369246184216"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d": {
+    "key": "ethereum:0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+    "name": "International Business Machines (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBM",
+    "price": 231.38,
+    "address": "0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+    "addresses": {
+     "arbitrum": "0xb5f6996883b21af3662728aa0df70ec6671500a9",
+     "avalanche": "0x6c37f91dde919fa6740678bcb6222c84f6bb1adb",
+     "ethereum": "0xd3dfb805730087e7581d7a6e12366ac8bb2d2b3d",
+     "base": "0xb9bd4717f85f603cde3596c13d88404cb98d8400"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18804.66,
+    "image": "https://coin-images.coingecko.com/coins/images/102175049/large/dinari-logo-green-with-margin.png?1785403023",
+    "metrics": {
+     "volumeUsd1d": "1.941",
+     "volumeUsd7d": "478.182"
+    },
+    "metadata": {},
+    "tokenId": "71904f37-2c0e-43ad-a980-21b4e69a5cc3",
+    "totalSupply": "81.27095719945378",
+    "circulatingSupply": "81.27095719945378",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0d7f1b479786d817462242cefd268c988b0082f5daff5bd57ab0063e9e90e1c3": {
+    "key": "bsc:0x0d7f1b479786d817462242cefd268c988b0082f5daff5bd57ab0063e9e90e1c3",
+    "name": "Uniswap V4 LP BNB/IBMB",
+    "decimals": 18,
+    "symbol": "BNB/IBMB",
+    "price": 9007199254740990,
+    "address": "0x0d7f1b479786d817462242cefd268c988b0082f5daff5bd57ab0063e9e90e1c3",
+    "addresses": {
+     "bsc": "0x0d7f1b479786d817462242cefd268c988b0082f5daff5bd57ab0063e9e90e1c3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838"
+    ],
+    "updatedAt": "2026-10-18T20:15:27.051Z",
+    "createdAt": "2026-09-07T17:37:28.093Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 1584.3787452063814,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7900,
+     "feePercentage": "79.021"
+    },
+    "tokenId": "e08804b9-ccf3-405a-8d4d-767400cbe844",
+    "reserves": [
+     "0.864850918437292298",
+     "4.23902100508480607"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x16588be41c6004d36c338d6afe3ec517d45b778f": {
+    "key": "bsc:0x16588be41c6004d36c338d6afe3ec517d45b778f",
+    "name": "PancakeSwap V3 Tether USD/IBM 1%",
+    "decimals": 18,
+    "symbol": "USDT/IBMB",
+    "price": 9007199254740990,
+    "address": "0x16588be41c6004d36c338d6afe3ec517d45b778f",
+    "addresses": {
+     "bsc": "0x16588be41c6004d36c338d6afe3ec517d45b778f"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174592/large/ibmb-bstocks.png?1784150838"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.873Z",
+    "createdAt": "2026-10-02T10:20:26.577Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa273b076feb8c0fb34e554ae341082323d016a3"
+    ],
+    "liquidity": 1141.010905045916,
+    "metrics": {
+     "apy": "8.872",
+     "baseApy": "8.872",
+     "volumeUsd1d": "27.741",
+     "volumeUsd7d": "1541.76"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "95815d8c-2622-4e4f-b79d-0d41dcd2b141",
+    "reserves": [
+     "621.948369239041987636",
+     "2.261572002209710923"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7502f81aef932e82ccf240f023dd989689a3ef65": {
+    "key": "robinhood:0x7502f81aef932e82ccf240f023dd989689a3ef65",
+    "name": "Uniswap V3 WETH/IBM  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/IBM",
+    "price": 9007199254740990,
+    "address": "0x7502f81aef932e82ccf240f023dd989689a3ef65",
+    "addresses": {
+     "robinhood": "0x7502f81aef932e82ccf240f023dd989689a3ef65"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.937Z",
+    "createdAt": "2026-09-17T11:52:01.619Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619"
+    ],
+    "liquidity": 2398.3314220935067,
+    "metrics": {
+     "apy": "6.684",
+     "baseApy": "6.684",
+     "volumeUsd1d": "146.436",
+     "volumeUsd7d": "14275.137"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "f016632d-c3c7-4839-9c71-be25748ef254",
+    "reserves": [
+     "1.012228927884747686",
+     "0.146733727087769162"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8257ab0c5969dd9e004a576b1cf0d28fd9c2789295d6b266303f02990e1f3409": {
+    "key": "ethereum:0x8257ab0c5969dd9e004a576b1cf0d28fd9c2789295d6b266303f02990e1f3409",
+    "name": "Uniswap V4 LP IBMon/EGP",
+    "decimals": 18,
+    "symbol": "IBMON/EGP",
+    "price": 9007199254740990,
+    "address": "0x8257ab0c5969dd9e004a576b1cf0d28fd9c2789295d6b266303f02990e1f3409",
+    "addresses": {
+     "ethereum": "0x8257ab0c5969dd9e004a576b1cf0d28fd9c2789295d6b266303f02990e1f3409"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.318Z",
+    "createdAt": "2026-10-14T06:54:53.981Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20074.197553635888,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.82"
+    },
+    "tokenId": "85ac0e0a-a8f5-4805-beca-072b90619f8a",
+    "reserves": [
+     "0.121205117773725754",
+     "19999.999999999999999989"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464": {
+    "key": "bsc:0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+    "name": "IBM (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IBMON",
+    "price": 236.61,
+    "address": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464",
+    "addresses": {
+     "ethereum": "0x25d3f236b2d61656eebdea86ac6d42168e340011",
+     "bsc": "0xe8ff70859ce4cbd72e4352b4fb45f5bf39d07464"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2497836,
+    "image": "https://coin-images.coingecko.com/coins/images/68608/large/ibmon_160x160.png?1756130056",
+    "metrics": {
+     "volumeUsd1d": "1082393.475",
+     "volumeUsd7d": "8225539.572"
+    },
+    "metadata": {},
+    "tokenId": "83407215-21a0-49cf-8610-09f1379e7de8",
+    "totalSupply": "10556.672521688",
+    "circulatingSupply": "10556.672521688",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

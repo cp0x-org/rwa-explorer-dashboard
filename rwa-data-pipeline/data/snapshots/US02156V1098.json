@@ -1,0 +1,1453 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US02156V1098",
+ "ticker": "OKLO",
+ "name": "Oklo",
+ "isin": "US02156V1098",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:10Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Oklo Inc",
+   "symbol": "OKLO",
+   "slug": "oklo",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 27.705866465398422,
+     "tokenized_market_cap": 1009143.9748826844,
+     "tokenized_volume_24h": 990702.20562525,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 171,
+   "asset_type": "stock",
+   "rwa_rank": 1305,
+   "has_tokens": true,
+   "average_tokenized_price": 27.705866465398422,
+   "tokenized_market_cap": 1009143.9748826844,
+   "tokenized_volume_24h": 990702.20562525,
+   "last_updated": "2026-10-18T20:14:23.892Z",
+   "tokens": [
+    {
+     "symbol": "OKLOon",
+     "name": "Oklo Tokenized Stock (Ondo)",
+     "price": 27.677125324706655,
+     "crypto_id": 39294,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 515618.62,
+     "volume_24h": 992110.12429636
+    },
+    {
+     "symbol": "OKLOx",
+     "name": "Oklo tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 40158,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "rOKLO",
+     "name": "Oklo Tokenized Stock (Reality)",
+     "price": 27.83592437755247,
+     "crypto_id": 40612,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 492989.92,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wOKLOx",
+     "name": "Wrapped Oklo Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41661,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "OKLO",
+     "name": "Oklo Inc. (Derivatives)",
+     "price": 27.565108282788913,
+     "crypto_id": 42370,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "OKLOc",
+     "name": "Oklo Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42509,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "OKLO",
+     "market_url": "https://www.binance.com/en/stocks/EQ_OKLO"
+    }
+   ]
+  },
+  "info": {
+   "39294": {
+    "id": 39294,
+    "symbol": "OKLOon",
+    "name": "Oklo Tokenized Stock (Ondo)",
+    "slug": "oklo-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39294.png",
+    "date_added": "2026-01-08T15:44:19.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf0372e226553af4f343b44111a789f87a9fa427a",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "m6oDLvJT7rY7M1TxuLWP3pWmAPg2cCWDQR1NKiEondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40158": {
+    "id": 40158,
+    "symbol": "OKLOx",
+    "name": "Oklo tokenized stock (xStock)",
+    "slug": "oklo-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40158.png",
+    "date_added": "2026-06-10T06:33:42.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsJb1p4Ks6VFggq68JyMz7S3kdRfkqh4wA6EMyxi4DD"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsJb1p4Ks6VFggq68JyMz7S3kdRfkqh4wA6EMyxi4DD",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCapSoyvnP8-Lasx875Vqr5HSbfcYLqc33looTgqeBATMVY",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40612": {
+    "id": 40612,
+    "symbol": "rOKLO",
+    "name": "Oklo Tokenized Stock (Reality)",
+    "slug": "oklo-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40612.png",
+    "date_added": "2026-07-02T07:39:06.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "41661": {
+    "id": 41661,
+    "symbol": "wOKLOx",
+    "name": "Wrapped Oklo Tokenized Stock (xStock)",
+    "slug": "wrapped-oklo-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41661.png",
+    "date_added": "2026-08-11T16:26:15.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x8c0ed8229C848905f4f63275A37137bb7901d1E2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8c0ed8229C848905f4f63275A37137bb7901d1E2",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42370": {
+    "id": 42370,
+    "symbol": "OKLO",
+    "name": "Oklo Inc. (Derivatives)",
+    "slug": "oklo-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42370.png",
+    "date_added": "2026-01-08T15:44:19.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "42509": {
+    "id": 42509,
+    "symbol": "OKLOc",
+    "name": "Oklo Inc. Tokenized Stock (Coinbase)",
+    "slug": "oklo-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42509.png",
+    "date_added": "2026-10-08T03:59:29.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000009188edfd2fcc8cc81e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000009188edfd2fcc8cc81e",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+   "arbitrum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+   "base:0xb2000000000000000000009188edfd2fcc8cc81e",
+   "bsc:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+   "bsc:0xaf6c03acf72355ce98d0741302b78870b376428c",
+   "ethereum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+   "ethereum:0xf0372e226553af4f343b44111a789f87a9fa427a",
+   "hyperevm:0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+  ],
+  "exact": {
+   "bsc:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "bsc:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "bsc": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.120Z",
+    "createdAt": "2026-06-22T11:31:13.955Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2759722.5141896154,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/OKLOx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "e37cc398-1234-4892-9859-d88f805b4db5",
+    "totalSupply": "84086.609207483708219",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "ethereum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "ethereum": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.958Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4266600,
+    "image": "https://coin-images.coingecko.com/coins/images/69622/large/Ticker_OKLOx__Company_Name_Oklo__size_200x200.png?1759233239",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "2db9a81d-2dc1-4b79-9fdb-e0615717a24b",
+    "totalSupply": "130000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xaf6c03acf72355ce98d0741302b78870b376428c": {
+    "key": "bsc:0xaf6c03acf72355ce98d0741302b78870b376428c",
+    "name": "Oklo (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "OKLOON",
+    "price": 27.67,
+    "address": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+    "addresses": {
+     "bsc": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+     "ethereum": "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 515844,
+    "image": "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913",
+    "metrics": {
+     "volumeUsd1d": "486447.995",
+     "volumeUsd7d": "3688605.248"
+    },
+    "metadata": {},
+    "tokenId": "55f7f0ce-3f75-4960-a41f-67f7f24ebb99",
+    "totalSupply": "18629.775008217173",
+    "circulatingSupply": "18629.775008217173",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "arbitrum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "arbitrum": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2026-06-22T11:35:00.981Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4616034.54,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/OKLOx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "a0c01bac-d30f-4630-98eb-4972d833058b",
+    "totalSupply": "140647",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2c4f334f19fde70b80949a473b4ee68a28bcf02a": {
+    "key": "arbitrum:0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+    "name": "Oklo Inc rStock",
+    "decimals": 18,
+    "symbol": "ROKLO",
+    "price": 27.85,
+    "address": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+    "addresses": {
+     "arbitrum": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 493170,
+    "image": "https://coin-images.coingecko.com/coins/images/102177031/large/4f03d69cdb21f6d2dbb63762204730c0.png?1789116610",
+    "metrics": {
+     "volumeUsd1d": "250.615",
+     "volumeUsd7d": "297680.258"
+    },
+    "metadata": {},
+    "tokenId": "4575e902-42f5-456c-84ff-e8281362c5aa",
+    "totalSupply": "17710.563857621",
+    "circulatingSupply": "17710.563857621",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf0372e226553af4f343b44111a789f87a9fa427a": {
+    "key": "ethereum:0xf0372e226553af4f343b44111a789f87a9fa427a",
+    "name": "Oklo (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "OKLOON",
+    "price": 27.67,
+    "address": "0xf0372e226553af4f343b44111a789f87a9fa427a",
+    "addresses": {
+     "bsc": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+     "ethereum": "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 515844,
+    "image": "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913",
+    "metrics": {
+     "volumeUsd1d": "486563.014",
+     "volumeUsd7d": "3674139.225"
+    },
+    "metadata": {},
+    "tokenId": "55f7f0ce-3f75-4960-a41f-67f7f24ebb99",
+    "totalSupply": "18629.775008217173",
+    "circulatingSupply": "18629.775008217173",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "OKLO": {
+    "total_items": 21,
+    "pages": 1,
+    "received": 21,
+    "complete": true
+   }
+  },
+  "records": {
+   "arbitrum:0xee620a7b985be3be87df11ed02e326c824a1c4af867f9e12a81d7520d2ab73d4": {
+    "key": "arbitrum:0xee620a7b985be3be87df11ed02e326c824a1c4af867f9e12a81d7520d2ab73d4",
+    "name": "Uniswap V4 LP OKLOx/USDT",
+    "decimals": 18,
+    "symbol": "OKLOX/USDT",
+    "price": 9007199254740990,
+    "address": "0xee620a7b985be3be87df11ed02e326c824a1c4af867f9e12a81d7520d2ab73d4",
+    "addresses": {
+     "arbitrum": "0xee620a7b985be3be87df11ed02e326c824a1c4af867f9e12a81d7520d2ab73d4"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.698Z",
+    "createdAt": "2026-10-16T14:24:12.378Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "6530750e-d649-4b33-bb4a-06aeb40d4193",
+    "reserves": [
+     "0",
+     "1999.999999999999999998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x746856ec1b57c4a6a8ffe011e4171b5064f0ef1c": {
+    "key": "bsc:0x746856ec1b57c4a6a8ffe011e4171b5064f0ef1c",
+    "name": "Euler EVK Vault eOKLOon-1",
+    "decimals": 18,
+    "symbol": "EOKLOON-1",
+    "price": 27.71,
+    "address": "0x746856ec1b57c4a6a8ffe011e4171b5064f0ef1c",
+    "addresses": {
+     "bsc": "0x746856ec1b57c4a6a8ffe011e4171b5064f0ef1c"
+    },
+    "platform": "euler",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/26149/large/Coingecko_logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.435Z",
+    "createdAt": "2026-07-29T12:14:40.076Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf6c03acf72355ce98d0741302b78870b376428c"
+    ],
+    "liquidity": 11084,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6495.27"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626",
+     "collateralCorrelation": "low"
+    },
+    "tokenId": "f31b15fe-9590-41d5-974e-4b71a8b79b81",
+    "totalSupply": "400",
+    "totalBorrow": "0",
+    "reserves": [
+     "400"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "bsc:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "bsc": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.120Z",
+    "createdAt": "2026-06-22T11:31:13.955Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2759722.5141896154,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/OKLOx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "e37cc398-1234-4892-9859-d88f805b4db5",
+    "totalSupply": "84086.609207483708219",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "ethereum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "ethereum": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.958Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4266600,
+    "image": "https://coin-images.coingecko.com/coins/images/69622/large/Ticker_OKLOx__Company_Name_Oklo__size_200x200.png?1759233239",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "2db9a81d-2dc1-4b79-9fdb-e0615717a24b",
+    "totalSupply": "130000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9ae772394702f1d8a57915da88afe0e8450c9df4e5a8c5c6ccf479b49e2e2cd0": {
+    "key": "ethereum:0x9ae772394702f1d8a57915da88afe0e8450c9df4e5a8c5c6ccf479b49e2e2cd0",
+    "name": "Uniswap V4 LP USDT/OKLOx",
+    "decimals": 18,
+    "symbol": "USDT/OKLOX",
+    "price": 9007199254740990,
+    "address": "0x9ae772394702f1d8a57915da88afe0e8450c9df4e5a8c5c6ccf479b49e2e2cd0",
+    "addresses": {
+     "ethereum": "0x9ae772394702f1d8a57915da88afe0e8450c9df4e5a8c5c6ccf479b49e2e2cd0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.349Z",
+    "createdAt": "2026-10-18T18:58:09.439Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "183c51f6-301d-42e3-8bbc-e7a4cb0738ec",
+    "reserves": [
+     "3999.999999999999999998",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xaf6c03acf72355ce98d0741302b78870b376428c": {
+    "key": "bsc:0xaf6c03acf72355ce98d0741302b78870b376428c",
+    "name": "Oklo (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "OKLOON",
+    "price": 27.67,
+    "address": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+    "addresses": {
+     "bsc": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+     "ethereum": "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 515844,
+    "image": "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913",
+    "metrics": {
+     "volumeUsd1d": "486447.995",
+     "volumeUsd7d": "3688605.248"
+    },
+    "metadata": {},
+    "tokenId": "55f7f0ce-3f75-4960-a41f-67f7f24ebb99",
+    "totalSupply": "18629.775008217173",
+    "circulatingSupply": "18629.775008217173",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7ecf3bb84b839becc0fc353233b2813a426d1ef5b28f6abcf3d1e23cd31e1b76": {
+    "key": "ethereum:0x7ecf3bb84b839becc0fc353233b2813a426d1ef5b28f6abcf3d1e23cd31e1b76",
+    "name": "Uniswap V4 LP USDC/OKLOon",
+    "decimals": 18,
+    "symbol": "USDC/OKLOON",
+    "price": 9007199254740990,
+    "address": "0x7ecf3bb84b839becc0fc353233b2813a426d1ef5b28f6abcf3d1e23cd31e1b76",
+    "addresses": {
+     "ethereum": "0x7ecf3bb84b839becc0fc353233b2813a426d1ef5b28f6abcf3d1e23cd31e1b76"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.707Z",
+    "createdAt": "2026-02-27T05:29:14.492Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    ],
+    "liquidity": 715.9727635358996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.886"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15600,
+     "feePercentage": "78.022"
+    },
+    "tokenId": "cca4d898-df1d-4313-a09a-b132edeeebe9",
+    "reserves": [
+     "481.675483",
+     "8.471664472348665627"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa0f9aa07d2a3b79bbced1fba02045fe3e9420721caf4f205ccecc721aa0bf97a": {
+    "key": "ethereum:0xa0f9aa07d2a3b79bbced1fba02045fe3e9420721caf4f205ccecc721aa0bf97a",
+    "name": "Uniswap V4 LP USDC/OKLOon",
+    "decimals": 18,
+    "symbol": "USDC/OKLOON",
+    "price": 9007199254740990,
+    "address": "0xa0f9aa07d2a3b79bbced1fba02045fe3e9420721caf4f205ccecc721aa0bf97a",
+    "addresses": {
+     "ethereum": "0xa0f9aa07d2a3b79bbced1fba02045fe3e9420721caf4f205ccecc721aa0bf97a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.648Z",
+    "createdAt": "2026-01-29T05:19:41.168Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    ],
+    "liquidity": 550.0959675008958,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75"
+    },
+    "tokenId": "0c34ef92-232a-4b09-8bb8-9443232c1834",
+    "reserves": [
+     "531.613937",
+     "0.672478908204833939"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x94f59cf3d8dff3d7a39d41d7c057c4d3335659f87992255dc9f2c1d6766d963c": {
+    "key": "ethereum:0x94f59cf3d8dff3d7a39d41d7c057c4d3335659f87992255dc9f2c1d6766d963c",
+    "name": "Uniswap V4 LP wUSDC/OKLOon",
+    "decimals": 18,
+    "symbol": "WUSDC/OKLOON",
+    "price": 9007199254740990,
+    "address": "0x94f59cf3d8dff3d7a39d41d7c057c4d3335659f87992255dc9f2c1d6766d963c",
+    "addresses": {
+     "ethereum": "0x94f59cf3d8dff3d7a39d41d7c057c4d3335659f87992255dc9f2c1d6766d963c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.254Z",
+    "createdAt": "2026-09-28T10:37:32.204Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2b416e62-1b14-4c45-8e07-363057a05cba",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf1cc3422b0fec941f3864ac8ad52413e7406164881ad950161c384954a27a5de": {
+    "key": "robinhood:0xf1cc3422b0fec941f3864ac8ad52413e7406164881ad950161c384954a27a5de",
+    "name": "Uniswap V4 LP MM/OKLO",
+    "decimals": 18,
+    "symbol": "MM/OKLO",
+    "price": 9007199254740990,
+    "address": "0xf1cc3422b0fec941f3864ac8ad52413e7406164881ad950161c384954a27a5de",
+    "addresses": {
+     "robinhood": "0xf1cc3422b0fec941f3864ac8ad52413e7406164881ad950161c384954a27a5de"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.965Z",
+    "createdAt": "2026-10-09T07:28:52.504Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104",
+     "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774"
+    ],
+    "liquidity": 20019.584777315675,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9920,
+     "feePercentage": "99.2008"
+    },
+    "tokenId": "f5691caf-fd8a-4034-b368-c3fbf578533d",
+    "reserves": [
+     "19906.322781288601211494",
+     "4.213362006519384988"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x45f26603328ccb7182841f9a1411a43d297f3a0cbdf687672433d351e6a596e8": {
+    "key": "ethereum:0x45f26603328ccb7182841f9a1411a43d297f3a0cbdf687672433d351e6a596e8",
+    "name": "Uniswap V4 LP EGP/OKLOon",
+    "decimals": 18,
+    "symbol": "EGP/OKLOON",
+    "price": 9007199254740990,
+    "address": "0x45f26603328ccb7182841f9a1411a43d297f3a0cbdf687672433d351e6a596e8",
+    "addresses": {
+     "ethereum": "0x45f26603328ccb7182841f9a1411a43d297f3a0cbdf687672433d351e6a596e8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.504Z",
+    "createdAt": "2026-10-14T06:54:48.701Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    ],
+    "liquidity": 20067.87766700165,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.96"
+    },
+    "tokenId": "8418d8a0-9cd6-42c1-ae78-411d06e820bb",
+    "reserves": [
+     "19999.99999999999999999",
+     "0.808039619884509939"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x720264642fb90d7f129a86230531016b58e05a1b": {
+    "key": "arbitrum:0x720264642fb90d7f129a86230531016b58e05a1b",
+    "name": "Oklo (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "OKLO",
+    "price": 37.75,
+    "address": "0x720264642fb90d7f129a86230531016b58e05a1b",
+    "addresses": {
+     "avalanche": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "ethereum": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "arbitrum": "0x720264642fb90d7f129a86230531016b58e05a1b",
+     "base": "0xf6db5aa7159759b8f43f08de864f3751d7250f28"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2439.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102175145/large/dinari-logo-green-with-margin.png?1785403363",
+    "metrics": {
+     "volumeUsd1d": "163.209",
+     "volumeUsd7d": "1142.463"
+    },
+    "metadata": {},
+    "tokenId": "20cb999c-43f8-4147-948d-2d3ab1e01de9",
+    "totalSupply": "64.61214347148322",
+    "circulatingSupply": "64.61214347148322",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x58f187dd17ac479fe139249866b1be0fe142947555018726cac63330eb785daf": {
+    "key": "robinhood:0x58f187dd17ac479fe139249866b1be0fe142947555018726cac63330eb785daf",
+    "name": "Uniswap V4 LP USDG/OKLO",
+    "decimals": 18,
+    "symbol": "USDG/OKLO",
+    "price": 9007199254740990,
+    "address": "0x58f187dd17ac479fe139249866b1be0fe142947555018726cac63330eb785daf",
+    "addresses": {
+     "robinhood": "0x58f187dd17ac479fe139249866b1be0fe142947555018726cac63330eb785daf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.460Z",
+    "createdAt": "2026-09-16T04:10:31.012Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774"
+    ],
+    "liquidity": 1126.0646592529379,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 450,
+     "feePercentage": "4.5955"
+    },
+    "tokenId": "925588cd-1250-4fea-97f0-329e67d642a7",
+    "reserves": [
+     "2.034898",
+     "40.302250313837856886"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xecc9829947db75dbefebb8600812f8dc528fd379179ca00037f4d8b1de202730": {
+    "key": "robinhood:0xecc9829947db75dbefebb8600812f8dc528fd379179ca00037f4d8b1de202730",
+    "name": "Uniswap V4 LP USDG/OKLO",
+    "decimals": 18,
+    "symbol": "USDG/OKLO",
+    "price": 9007199254740990,
+    "address": "0xecc9829947db75dbefebb8600812f8dc528fd379179ca00037f4d8b1de202730",
+    "addresses": {
+     "robinhood": "0xecc9829947db75dbefebb8600812f8dc528fd379179ca00037f4d8b1de202730"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.840Z",
+    "createdAt": "2026-09-10T03:36:03.792Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774"
+    ],
+    "liquidity": 1071.646140024687,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "84.129"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "09a54172-68ad-40b8-8edf-be364bd09aab",
+    "reserves": [
+     "467.492885",
+     "21.66200269002104542"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xf6db5aa7159759b8f43f08de864f3751d7250f28": {
+    "key": "base:0xf6db5aa7159759b8f43f08de864f3751d7250f28",
+    "name": "Oklo (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "OKLO",
+    "price": 37.75,
+    "address": "0xf6db5aa7159759b8f43f08de864f3751d7250f28",
+    "addresses": {
+     "avalanche": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "ethereum": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "arbitrum": "0x720264642fb90d7f129a86230531016b58e05a1b",
+     "base": "0xf6db5aa7159759b8f43f08de864f3751d7250f28"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2439.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102175145/large/dinari-logo-green-with-margin.png?1785403363",
+    "metrics": {
+     "volumeUsd1d": "163.209",
+     "volumeUsd7d": "1142.463"
+    },
+    "metadata": {},
+    "tokenId": "20cb999c-43f8-4147-948d-2d3ab1e01de9",
+    "totalSupply": "64.61214347148322",
+    "circulatingSupply": "64.61214347148322",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076": {
+    "key": "arbitrum:0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "name": "Oklo xStock",
+    "decimals": 18,
+    "symbol": "OKLOX",
+    "price": 32.82,
+    "address": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076",
+    "addresses": {
+     "arbitrum": "0x4b0ee7c047d43ca403239f28f42115bedb7c0076"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2026-06-22T11:35:00.981Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4616034.54,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/OKLOx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "oklo-xstock"
+    },
+    "tokenId": "a0c01bac-d30f-4630-98eb-4972d833058b",
+    "totalSupply": "140647",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x40a2df5b363baa9087e1ec779801a70389209a52": {
+    "key": "avalanche:0x40a2df5b363baa9087e1ec779801a70389209a52",
+    "name": "Oklo (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "OKLO",
+    "price": 37.75,
+    "address": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+    "addresses": {
+     "avalanche": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "ethereum": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "arbitrum": "0x720264642fb90d7f129a86230531016b58e05a1b",
+     "base": "0xf6db5aa7159759b8f43f08de864f3751d7250f28"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2439.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102175145/large/dinari-logo-green-with-margin.png?1785403363",
+    "metrics": {
+     "volumeUsd1d": "163.209",
+     "volumeUsd7d": "1142.463"
+    },
+    "metadata": {},
+    "tokenId": "20cb999c-43f8-4147-948d-2d3ab1e01de9",
+    "totalSupply": "64.61214347148322",
+    "circulatingSupply": "64.61214347148322",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2c4f334f19fde70b80949a473b4ee68a28bcf02a": {
+    "key": "arbitrum:0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+    "name": "Oklo Inc rStock",
+    "decimals": 18,
+    "symbol": "ROKLO",
+    "price": 27.85,
+    "address": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a",
+    "addresses": {
+     "arbitrum": "0x2c4f334f19fde70b80949a473b4ee68a28bcf02a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 493170,
+    "image": "https://coin-images.coingecko.com/coins/images/102177031/large/4f03d69cdb21f6d2dbb63762204730c0.png?1789116610",
+    "metrics": {
+     "volumeUsd1d": "250.615",
+     "volumeUsd7d": "297680.258"
+    },
+    "metadata": {},
+    "tokenId": "4575e902-42f5-456c-84ff-e8281362c5aa",
+    "totalSupply": "17710.563857621",
+    "circulatingSupply": "17710.563857621",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf0372e226553af4f343b44111a789f87a9fa427a": {
+    "key": "ethereum:0xf0372e226553af4f343b44111a789f87a9fa427a",
+    "name": "Oklo (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "OKLOON",
+    "price": 27.67,
+    "address": "0xf0372e226553af4f343b44111a789f87a9fa427a",
+    "addresses": {
+     "bsc": "0xaf6c03acf72355ce98d0741302b78870b376428c",
+     "ethereum": "0xf0372e226553af4f343b44111a789f87a9fa427a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 515844,
+    "image": "https://coin-images.coingecko.com/coins/images/71449/large/okloon_160x160.png?1767889913",
+    "metrics": {
+     "volumeUsd1d": "486563.014",
+     "volumeUsd7d": "3674139.225"
+    },
+    "metadata": {},
+    "tokenId": "55f7f0ce-3f75-4960-a41f-67f7f24ebb99",
+    "totalSupply": "18629.775008217173",
+    "circulatingSupply": "18629.775008217173",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x40a2df5b363baa9087e1ec779801a70389209a52": {
+    "key": "ethereum:0x40a2df5b363baa9087e1ec779801a70389209a52",
+    "name": "Oklo (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "OKLO",
+    "price": 37.75,
+    "address": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+    "addresses": {
+     "avalanche": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "ethereum": "0x40a2df5b363baa9087e1ec779801a70389209a52",
+     "arbitrum": "0x720264642fb90d7f129a86230531016b58e05a1b",
+     "base": "0xf6db5aa7159759b8f43f08de864f3751d7250f28"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2439.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102175145/large/dinari-logo-green-with-margin.png?1785403363",
+    "metrics": {
+     "volumeUsd1d": "163.209",
+     "volumeUsd7d": "1142.463"
+    },
+    "metadata": {},
+    "tokenId": "20cb999c-43f8-4147-948d-2d3ab1e01de9",
+    "totalSupply": "64.61214347148322",
+    "circulatingSupply": "64.61214347148322",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774": {
+    "key": "robinhood:0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774",
+    "name": "Oklo • Robinhood Token",
+    "decimals": 18,
+    "symbol": "OKLO",
+    "price": 27.89,
+    "address": "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774",
+    "addresses": {
+     "robinhood": "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-09T15:37:24.217Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x8b2f88497f15a18e9d4ffa1a8ffb8538399ae774",
+    "liquidity": 8634.13042,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "729.278"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000d9dd6bf798564cfd8d65f3f95fc915c3",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "c6a53dd0-eab9-48c5-8c05-a1b7fdff7250",
+    "totalSupply": "309.578",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,705 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4642876555",
+ "ticker": "IWM",
+ "name": "iShares Russell 2000 ETF",
+ "isin": "US4642876555",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:12Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "iShares Russell 2000 ETF",
+   "symbol": "IWM",
+   "slug": "iwm",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 272.3600060949751,
+     "tokenized_market_cap": 3164466.092469865,
+     "tokenized_volume_24h": 0,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 140,
+   "asset_type": "etf",
+   "rwa_rank": 7798,
+   "has_tokens": true,
+   "average_tokenized_price": 272.3600060949751,
+   "tokenized_market_cap": 3164466.092469865,
+   "tokenized_volume_24h": 0,
+   "last_updated": "2026-10-18T20:14:24.147Z",
+   "tokens": [
+    {
+     "symbol": "IWMon",
+     "name": "iShares Russell 2000 Tokenized ETF (Ondo)",
+     "price": 272.3600060949751,
+     "crypto_id": 38066,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 3164466.09,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "IWM",
+     "name": "iShares Russell 2000 ETF (Derivatives)",
+     "price": 268.22123993487304,
+     "crypto_id": 39493,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wIWMx",
+     "name": "Wrapped Russell 2000 Tokenized ETF (xStock)",
+     "price": 270.2031108130102,
+     "crypto_id": 41417,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "IWM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_IWM"
+    }
+   ]
+  },
+  "info": {
+   "38066": {
+    "id": 38066,
+    "symbol": "IWMon",
+    "name": "iShares Russell 2000 Tokenized ETF (Ondo)",
+    "slug": "ishares-russell-2000-tokenized-etf-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38066.png",
+    "date_added": "2025-09-03T10:55:04.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x070D79021dD7e841123cB0CF554993bF683c511D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x070D79021dD7e841123cB0CF554993bF683c511D",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "dvj2kKFSyjpnyYSYppgFdAEVfgjMEoQGi9VaV23ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39493": {
+    "id": 39493,
+    "symbol": "IWM",
+    "name": "iShares Russell 2000 ETF (Derivatives)",
+    "slug": "ishares-russell-2000-etf-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39493.png",
+    "date_added": "2026-01-30T05:41:11.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41417": {
+    "id": 41417,
+    "symbol": "wIWMx",
+    "name": "Wrapped Russell 2000 Tokenized ETF (xStock)",
+    "slug": "wrapped-russell-2000-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41417.png",
+    "date_added": "2026-08-11T16:23:34.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x25d218F19B706C8680Aa26Fb64e676CF84B58f65"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x25d218F19B706C8680Aa26Fb64e676CF84B58f65",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+   "ethereum:0x070d79021dd7e841123cb0cf554993bf683c511d"
+  ],
+  "exact": {
+   "bsc:0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f": {
+    "key": "bsc:0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+    "name": "iShares Russell 2000 ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWMON",
+    "price": 271.69,
+    "address": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+    "addresses": {
+     "ethereum": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "bsc": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3156700,
+    "image": "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+    "metrics": {
+     "volumeUsd1d": "9.581",
+     "volumeUsd7d": "6190.197"
+    },
+    "metadata": {},
+    "tokenId": "7c87ef4a-628e-47ef-9e53-c1e5bd32170e",
+    "totalSupply": "11618.688580022745",
+    "circulatingSupply": "11618.688580022745",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x070d79021dd7e841123cb0cf554993bf683c511d": {
+    "key": "ethereum:0x070d79021dd7e841123cb0cf554993bf683c511d",
+    "name": "iShares Russell 2000 ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWMON",
+    "price": 271.69,
+    "address": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+    "addresses": {
+     "ethereum": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "bsc": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3156700,
+    "image": "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+    "metrics": {
+     "volumeUsd1d": "9.581",
+     "volumeUsd7d": "6168.558"
+    },
+    "metadata": {},
+    "tokenId": "7c87ef4a-628e-47ef-9e53-c1e5bd32170e",
+    "totalSupply": "11618.688580022745",
+    "circulatingSupply": "11618.688580022745",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "IWM": {
+    "total_items": 12,
+    "pages": 1,
+    "received": 12,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x8184567cef501cdec8b961467edc9a0579016a8be98048b1ffe293ae8a0471e8": {
+    "key": "ethereum:0x8184567cef501cdec8b961467edc9a0579016a8be98048b1ffe293ae8a0471e8",
+    "name": "Uniswap V4 LP IWMon/wUSDC",
+    "decimals": 18,
+    "symbol": "IWMON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x8184567cef501cdec8b961467edc9a0579016a8be98048b1ffe293ae8a0471e8",
+    "addresses": {
+     "ethereum": "0x8184567cef501cdec8b961467edc9a0579016a8be98048b1ffe293ae8a0471e8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.393Z",
+    "createdAt": "2026-09-28T10:37:16.097Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "a323b397-0fbb-48b4-bbca-9717cf333a47",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f": {
+    "key": "bsc:0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+    "name": "iShares Russell 2000 ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWMON",
+    "price": 271.69,
+    "address": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f",
+    "addresses": {
+     "ethereum": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "bsc": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3156700,
+    "image": "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+    "metrics": {
+     "volumeUsd1d": "9.581",
+     "volumeUsd7d": "6190.197"
+    },
+    "metadata": {},
+    "tokenId": "7c87ef4a-628e-47ef-9e53-c1e5bd32170e",
+    "totalSupply": "11618.688580022745",
+    "circulatingSupply": "11618.688580022745",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xd07ce3aa00a7b5988676980388d2e804a0c69491": {
+    "key": "avalanche:0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+    "name": "iShares Russell 2000 ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWM",
+    "price": 274.53,
+    "address": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+    "addresses": {
+     "ethereum": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+     "arbitrum": "0xd90f3d35ffc93848c7775325c209e64830852e75",
+     "base": "0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+     "avalanche": "0xd07ce3aa00a7b5988676980388d2e804a0c69491"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9155.68,
+    "image": "https://coin-images.coingecko.com/coins/images/102175152/large/dinari-logo-green-with-margin.png?1785403387",
+    "metrics": {
+     "volumeUsd1d": "100.185",
+     "volumeUsd7d": "1188.4"
+    },
+    "metadata": {},
+    "tokenId": "185796fd-e248-4032-a6d9-39502d6b7fc2",
+    "totalSupply": "33.350928361",
+    "circulatingSupply": "33.350928361",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x070d79021dd7e841123cb0cf554993bf683c511d": {
+    "key": "ethereum:0x070d79021dd7e841123cb0cf554993bf683c511d",
+    "name": "iShares Russell 2000 ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWMON",
+    "price": 271.69,
+    "address": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+    "addresses": {
+     "ethereum": "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "bsc": "0x500eafc69b68acd6f27064f9b75f1c7d91cc4d9f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3156700,
+    "image": "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+    "metrics": {
+     "volumeUsd1d": "9.581",
+     "volumeUsd7d": "6168.558"
+    },
+    "metadata": {},
+    "tokenId": "7c87ef4a-628e-47ef-9e53-c1e5bd32170e",
+    "totalSupply": "11618.688580022745",
+    "circulatingSupply": "11618.688580022745",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdadfb355c6110eda0908740d52c834d6c2bcddc7": {
+    "key": "ethereum:0xdadfb355c6110eda0908740d52c834d6c2bcddc7",
+    "name": "Russell 2000 xStock",
+    "decimals": 18,
+    "symbol": "IWMX",
+    "price": 272.79,
+    "address": "0xdadfb355c6110eda0908740d52c834d6c2bcddc7",
+    "addresses": {
+     "ethereum": "0xdadfb355c6110eda0908740d52c834d6c2bcddc7"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.725Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10963215.365155164,
+    "image": "https://coin-images.coingecko.com/coins/images/69663/large/Ticker_IWMx__Company_Name_Russell_2000__size_200x200.png?1759233850",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "russell-2000-xstock"
+    },
+    "tokenId": "0cc4009e-bf16-40fd-b88f-3035d9d48982",
+    "totalSupply": "40189.21281995368",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x913167109ba587eb33a23b75f4a2a96c9ceb3fabdb8add81a8aaf4afd2c6e5b8": {
+    "key": "ethereum:0x913167109ba587eb33a23b75f4a2a96c9ceb3fabdb8add81a8aaf4afd2c6e5b8",
+    "name": "Uniswap V4 LP IWMon/EGP",
+    "decimals": 18,
+    "symbol": "IWMON/EGP",
+    "price": 9007199254740990,
+    "address": "0x913167109ba587eb33a23b75f4a2a96c9ceb3fabdb8add81a8aaf4afd2c6e5b8",
+    "addresses": {
+     "ethereum": "0x913167109ba587eb33a23b75f4a2a96c9ceb3fabdb8add81a8aaf4afd2c6e5b8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.347Z",
+    "createdAt": "2026-10-13T13:14:05.498Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20072.04393574394,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.79"
+    },
+    "tokenId": "18fc4112-f702-4b2b-ada7-0e957ba6d3bb",
+    "reserves": [
+     "0.097628639348124214",
+     "19999.999999999999999995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd07ce3aa00a7b5988676980388d2e804a0c69491": {
+    "key": "ethereum:0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+    "name": "iShares Russell 2000 ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWM",
+    "price": 274.53,
+    "address": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+    "addresses": {
+     "ethereum": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+     "arbitrum": "0xd90f3d35ffc93848c7775325c209e64830852e75",
+     "base": "0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+     "avalanche": "0xd07ce3aa00a7b5988676980388d2e804a0c69491"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9155.68,
+    "image": "https://coin-images.coingecko.com/coins/images/102175152/large/dinari-logo-green-with-margin.png?1785403387",
+    "metrics": {
+     "volumeUsd1d": "100.185",
+     "volumeUsd7d": "1188.838"
+    },
+    "metadata": {},
+    "tokenId": "185796fd-e248-4032-a6d9-39502d6b7fc2",
+    "totalSupply": "33.350928361",
+    "circulatingSupply": "33.350928361",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xc0aaf96be8f50d666647543153067c1ba8f8b866": {
+    "key": "base:0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+    "name": "iShares Russell 2000 ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWM",
+    "price": 274.53,
+    "address": "0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+    "addresses": {
+     "ethereum": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+     "arbitrum": "0xd90f3d35ffc93848c7775325c209e64830852e75",
+     "base": "0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+     "avalanche": "0xd07ce3aa00a7b5988676980388d2e804a0c69491"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9155.68,
+    "image": "https://coin-images.coingecko.com/coins/images/102175152/large/dinari-logo-green-with-margin.png?1785403387",
+    "metrics": {
+     "volumeUsd1d": "100.185",
+     "volumeUsd7d": "1188.346"
+    },
+    "metadata": {},
+    "tokenId": "185796fd-e248-4032-a6d9-39502d6b7fc2",
+    "totalSupply": "33.350928361",
+    "circulatingSupply": "33.350928361",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3aa09a6cb7150c176ae58f3c38db2b99bdc1a040d3c1694b790117b84d10726f": {
+    "key": "ethereum:0x3aa09a6cb7150c176ae58f3c38db2b99bdc1a040d3c1694b790117b84d10726f",
+    "name": "Uniswap V4 LP USDT/IWMx",
+    "decimals": 18,
+    "symbol": "USDT/IWMX",
+    "price": 9007199254740990,
+    "address": "0x3aa09a6cb7150c176ae58f3c38db2b99bdc1a040d3c1694b790117b84d10726f",
+    "addresses": {
+     "ethereum": "0x3aa09a6cb7150c176ae58f3c38db2b99bdc1a040d3c1694b790117b84d10726f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.753Z",
+    "createdAt": "2026-10-18T18:58:06.024Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xdadfb355c6110eda0908740d52c834d6c2bcddc7"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "8fa385c7-5e39-409d-bf18-166642b4dd2c",
+    "reserves": [
+     "3999.999999999999999992",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xd90f3d35ffc93848c7775325c209e64830852e75": {
+    "key": "arbitrum:0xd90f3d35ffc93848c7775325c209e64830852e75",
+    "name": "iShares Russell 2000 ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "IWM",
+    "price": 274.53,
+    "address": "0xd90f3d35ffc93848c7775325c209e64830852e75",
+    "addresses": {
+     "ethereum": "0xd07ce3aa00a7b5988676980388d2e804a0c69491",
+     "arbitrum": "0xd90f3d35ffc93848c7775325c209e64830852e75",
+     "base": "0xc0aaf96be8f50d666647543153067c1ba8f8b866",
+     "avalanche": "0xd07ce3aa00a7b5988676980388d2e804a0c69491"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9155.68,
+    "image": "https://coin-images.coingecko.com/coins/images/102175152/large/dinari-logo-green-with-margin.png?1785403387",
+    "metrics": {
+     "volumeUsd1d": "100.185",
+     "volumeUsd7d": "1188.348"
+    },
+    "metadata": {},
+    "tokenId": "185796fd-e248-4032-a6d9-39502d6b7fc2",
+    "totalSupply": "33.350928361",
+    "circulatingSupply": "33.350928361",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdcda0a102f891065d6fe748c4bf2c540470eb8fd6d25cad5ca5933da40d0ff24": {
+    "key": "ethereum:0xdcda0a102f891065d6fe748c4bf2c540470eb8fd6d25cad5ca5933da40d0ff24",
+    "name": "Uniswap V4 LP IWMon/wUSDC",
+    "decimals": 18,
+    "symbol": "IWMON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xdcda0a102f891065d6fe748c4bf2c540470eb8fd6d25cad5ca5933da40d0ff24",
+    "addresses": {
+     "ethereum": "0xdcda0a102f891065d6fe748c4bf2c540470eb8fd6d25cad5ca5933da40d0ff24"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68646/large/iwmon_160x160.png?1756156170",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.623Z",
+    "createdAt": "2026-09-30T08:51:48.125Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x070d79021dd7e841123cb0cf554993bf683c511d",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "ba731deb-bf4d-4861-97c2-034d7be722b0",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xbd6af2ae887ecd0c81dc20362230cf02839764ae": {
+    "key": "arbitrum:0xbd6af2ae887ecd0c81dc20362230cf02839764ae",
+    "name": "iShares Russell 2000 ETF rStock",
+    "decimals": 18,
+    "symbol": "RIWM",
+    "price": 269.74,
+    "address": "0xbd6af2ae887ecd0c81dc20362230cf02839764ae",
+    "addresses": {
+     "arbitrum": "0xbd6af2ae887ecd0c81dc20362230cf02839764ae"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12008.92,
+    "image": "https://coin-images.coingecko.com/coins/images/102177301/large/IWM.png?1789117466",
+    "metrics": {
+     "volumeUsd1d": "20.783",
+     "volumeUsd7d": "4835.271"
+    },
+    "metadata": {},
+    "tokenId": "8b22eef5-b442-4e29-bed7-d8f15718517b",
+    "totalSupply": "44.520091248",
+    "circulatingSupply": "44.520091248",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

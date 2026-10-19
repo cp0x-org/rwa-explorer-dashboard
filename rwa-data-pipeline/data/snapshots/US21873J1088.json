@@ -1,0 +1,983 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US21873J1088",
+ "ticker": "CRWV",
+ "name": "CoreWeave",
+ "isin": "US21873J1088",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:50Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Coreweave, Inc.",
+   "symbol": "CRWV",
+   "slug": "coreweave-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 60.002185604793134,
+     "tokenized_market_cap": 2180367.1712797387,
+     "tokenized_volume_24h": 1784358.90227674,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 443,
+   "asset_type": "stock",
+   "rwa_rank": 422,
+   "has_tokens": true,
+   "average_tokenized_price": 60.002185604793134,
+   "tokenized_market_cap": 2180367.1712797387,
+   "tokenized_volume_24h": 1784358.90227674,
+   "last_updated": "2026-10-18T20:13:42.753Z",
+   "tokens": [
+    {
+     "symbol": "rCRWV",
+     "name": "CoreWeave Tokenized Stock (Reality)",
+     "price": 60.87502106068408,
+     "crypto_id": 40637,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 266694,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "CRWV",
+     "name": "CoreWeave Tokenized Stock (Robinhood)",
+     "price": 59.96315984549641,
+     "crypto_id": 40692,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 430691.73,
+     "volume_24h": 14095.39340122
+    },
+    {
+     "symbol": "CRWVB",
+     "name": "CoreWeave Tokenized bStocks",
+     "price": 60.00902451661779,
+     "crypto_id": 40877,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1483142.79,
+     "volume_24h": 1768884.33280941
+    },
+    {
+     "symbol": "wCRWVx",
+     "name": "Wrapped CoreWeave Tokenized Stock (xStock)",
+     "price": 72.9631497975698,
+     "crypto_id": 41257,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "CRWVc",
+     "name": "CoreWeave, Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42491,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "CRWV",
+     "market_url": "https://www.binance.com/en/stocks/EQ_CRWV"
+    }
+   ]
+  },
+  "info": {
+   "40637": {
+    "id": 40637,
+    "symbol": "rCRWV",
+    "name": "CoreWeave Tokenized Stock (Reality)",
+    "slug": "coreweave-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40637.png",
+    "date_added": "2026-07-02T07:39:17.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x3621153439c995084cd0e359a5f5239de41811eb"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3621153439c995084cd0e359a5f5239de41811eb",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40692": {
+    "id": 40692,
+    "symbol": "CRWV",
+    "name": "CoreWeave Tokenized Stock (Robinhood)",
+    "slug": "coreweave-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40692.png",
+    "date_added": "2026-08-04T07:31:27.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x5f10A1C971B69e47e059e1dC91901B59b3fB49C3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5f10A1C971B69e47e059e1dC91901B59b3fB49C3",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40877": {
+    "id": 40877,
+    "symbol": "CRWVB",
+    "name": "CoreWeave Tokenized bStocks",
+    "slug": "coreweave-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40877.png",
+    "date_added": "2026-07-20T08:44:50.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41257": {
+    "id": 41257,
+    "symbol": "wCRWVx",
+    "name": "Wrapped CoreWeave Tokenized Stock (xStock)",
+    "slug": "wrapped-coreweave-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41257.png",
+    "date_added": "2026-08-11T16:21:55.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xADf63a79C9813a8E0C4D1d334eBdFaEef04BDF98"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xADf63a79C9813a8E0C4D1d334eBdFaEef04BDF98",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42491": {
+    "id": 42491,
+    "symbol": "CRWVc",
+    "name": "CoreWeave, Inc. Tokenized Stock (Coinbase)",
+    "slug": "coreweave-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42491.png",
+    "date_added": "2026-10-08T03:59:54.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000F111184A74720787E6"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000F111184A74720787E6",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x3621153439c995084cd0e359a5f5239de41811eb",
+   "base:0xb200000000000000000000f111184a74720787e6",
+   "bsc:0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+   "robinhood:0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3"
+  ],
+  "exact": {
+   "arbitrum:0x3621153439c995084cd0e359a5f5239de41811eb": {
+    "key": "arbitrum:0x3621153439c995084cd0e359a5f5239de41811eb",
+    "name": "CoreWeave rStock",
+    "decimals": 18,
+    "symbol": "RCRWV",
+    "price": 60.9,
+    "address": "0x3621153439c995084cd0e359a5f5239de41811eb",
+    "addresses": {
+     "arbitrum": "0x3621153439c995084cd0e359a5f5239de41811eb"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 267499,
+    "image": "https://coin-images.coingecko.com/coins/images/102177049/large/8166fe679c4d9cd1294f6acf16aa8167.png?1789116667",
+    "metrics": {
+     "volumeUsd1d": "2515.437",
+     "volumeUsd7d": "433905.049"
+    },
+    "metadata": {},
+    "tokenId": "498b9edb-cf8a-4719-a849-95d44c22c1f0",
+    "totalSupply": "4392.596320061",
+    "circulatingSupply": "4392.596320061",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3": {
+    "key": "robinhood:0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "name": "CoreWeave • Robinhood Token",
+    "decimals": 18,
+    "symbol": "CRWV",
+    "price": 61.05535,
+    "address": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "addresses": {
+     "robinhood": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "liquidity": 438536.504925495,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "27204.866"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000007f48cdbfaced4ff4b34fbc832f449c33",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "13f3e16d-e667-4ffe-800f-65ff3e53fc30",
+    "totalSupply": "7182.6057",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95": {
+    "key": "bsc:0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+    "name": "CoreWeave (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRWVB",
+    "price": 60.03,
+    "address": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+    "addresses": {
+     "bsc": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1483695,
+    "image": "https://coin-images.coingecko.com/coins/images/102174775/large/coreweave.png?1784798895",
+    "metrics": {
+     "volumeUsd1d": "848698.565",
+     "volumeUsd7d": "8357259.396"
+    },
+    "metadata": {},
+    "tokenId": "517d1372-6a05-41da-aa9a-47a780b871fe",
+    "totalSupply": "24715.32905917",
+    "circulatingSupply": "24715.32905917",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "CRWV": {
+    "total_items": 14,
+    "pages": 1,
+    "received": 14,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x467805e52e5832aeca78537aa1e57e3645f778423ade7cc215f7624c39ce627b": {
+    "key": "robinhood:0x467805e52e5832aeca78537aa1e57e3645f778423ade7cc215f7624c39ce627b",
+    "name": "Uniswap V4 LP CRWV/USDG",
+    "decimals": 18,
+    "symbol": "CRWV/USDG",
+    "price": 9007199254740990,
+    "address": "0x467805e52e5832aeca78537aa1e57e3645f778423ade7cc215f7624c39ce627b",
+    "addresses": {
+     "robinhood": "0x467805e52e5832aeca78537aa1e57e3645f778423ade7cc215f7624c39ce627b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174127/large/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png?1782444608",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:38.694Z",
+    "createdAt": "2026-09-23T04:57:16.588Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 764.9114896162857,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "3.1969"
+    },
+    "tokenId": "718891c5-4e5c-4dfb-b980-7bb29632f1a1",
+    "reserves": [
+     "12.477889662679613461",
+     "3.069569"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc354786ceefa953d8e33a82c0f7e183cb58650fbe8044e1eaac710efacd95e30": {
+    "key": "ethereum:0xc354786ceefa953d8e33a82c0f7e183cb58650fbe8044e1eaac710efacd95e30",
+    "name": "Uniswap V4 LP wUSDC/CRWVon",
+    "decimals": 18,
+    "symbol": "WUSDC/CRWVON",
+    "price": 9007199254740990,
+    "address": "0xc354786ceefa953d8e33a82c0f7e183cb58650fbe8044e1eaac710efacd95e30",
+    "addresses": {
+     "ethereum": "0xc354786ceefa953d8e33a82c0f7e183cb58650fbe8044e1eaac710efacd95e30"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.563Z",
+    "createdAt": "2026-09-28T10:38:16.959Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x66908813cd7676269494b2c6f6dbab8b4f9e95df"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "4d44275d-2f90-4ba3-920d-d88cfc02bf66",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3621153439c995084cd0e359a5f5239de41811eb": {
+    "key": "arbitrum:0x3621153439c995084cd0e359a5f5239de41811eb",
+    "name": "CoreWeave rStock",
+    "decimals": 18,
+    "symbol": "RCRWV",
+    "price": 60.9,
+    "address": "0x3621153439c995084cd0e359a5f5239de41811eb",
+    "addresses": {
+     "arbitrum": "0x3621153439c995084cd0e359a5f5239de41811eb"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 267499,
+    "image": "https://coin-images.coingecko.com/coins/images/102177049/large/8166fe679c4d9cd1294f6acf16aa8167.png?1789116667",
+    "metrics": {
+     "volumeUsd1d": "2515.437",
+     "volumeUsd7d": "433905.049"
+    },
+    "metadata": {},
+    "tokenId": "498b9edb-cf8a-4719-a849-95d44c22c1f0",
+    "totalSupply": "4392.596320061",
+    "circulatingSupply": "4392.596320061",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3d9c8c482dde142cc7a7bce0ebf18a8ac5bea1cfa85112d18d212bb8838bfdcf": {
+    "key": "ethereum:0x3d9c8c482dde142cc7a7bce0ebf18a8ac5bea1cfa85112d18d212bb8838bfdcf",
+    "name": "Uniswap V4 LP EGP/CRWVon",
+    "decimals": 18,
+    "symbol": "EGP/CRWVON",
+    "price": 9007199254740990,
+    "address": "0x3d9c8c482dde142cc7a7bce0ebf18a8ac5bea1cfa85112d18d212bb8838bfdcf",
+    "addresses": {
+     "ethereum": "0x3d9c8c482dde142cc7a7bce0ebf18a8ac5bea1cfa85112d18d212bb8838bfdcf"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-10-14T06:54:29.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x66908813cd7676269494b2c6f6dbab8b4f9e95df"
+    ],
+    "liquidity": 20066.14057746444,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.12"
+    },
+    "tokenId": "613f1399-1f87-4bee-9e9b-9454f175db7b",
+    "reserves": [
+     "19999.999999999999999985",
+     "0.343003438872197558"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x76e39171cb665a35981e744e2ceb7012f76caeac": {
+    "key": "bsc:0x76e39171cb665a35981e744e2ceb7012f76caeac",
+    "name": "CoreWeave (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "CRWVON",
+    "price": 60.12,
+    "address": "0x76e39171cb665a35981e744e2ceb7012f76caeac",
+    "addresses": {
+     "bsc": "0x76e39171cb665a35981e744e2ceb7012f76caeac",
+     "hyperevm": "0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f",
+     "ethereum": "0x66908813cd7676269494b2c6f6dbab8b4f9e95df"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1014633,
+    "image": "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891",
+    "metrics": {
+     "volumeUsd1d": "832809.537",
+     "volumeUsd7d": "6395492.098"
+    },
+    "metadata": {},
+    "tokenId": "6c9e468f-44d3-4c46-ba1b-10f975f37e0a",
+    "totalSupply": "16882.311708496753",
+    "circulatingSupply": "16882.311708496753",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3": {
+    "key": "robinhood:0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "name": "CoreWeave • Robinhood Token",
+    "decimals": 18,
+    "symbol": "CRWV",
+    "price": 61.05535,
+    "address": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "addresses": {
+     "robinhood": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+    "liquidity": 438536.504925495,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "27204.866"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000007f48cdbfaced4ff4b34fbc832f449c33",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "13f3e16d-e667-4ffe-800f-65ff3e53fc30",
+    "totalSupply": "7182.6057",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95": {
+    "key": "bsc:0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+    "name": "CoreWeave (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CRWVB",
+    "price": 60.03,
+    "address": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95",
+    "addresses": {
+     "bsc": "0x33e7317e17838fee56b10fe8d0b9ca6ca3090c95"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1483695,
+    "image": "https://coin-images.coingecko.com/coins/images/102174775/large/coreweave.png?1784798895",
+    "metrics": {
+     "volumeUsd1d": "848698.565",
+     "volumeUsd7d": "8357259.396"
+    },
+    "metadata": {},
+    "tokenId": "517d1372-6a05-41da-aa9a-47a780b871fe",
+    "totalSupply": "24715.32905917",
+    "circulatingSupply": "24715.32905917",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x778f82789690522c9e9b00cd28f0c299033a6f4c9975069f33eff8b991e90c61": {
+    "key": "robinhood:0x778f82789690522c9e9b00cd28f0c299033a6f4c9975069f33eff8b991e90c61",
+    "name": "Uniswap V4 LP ETH/CRWV",
+    "decimals": 18,
+    "symbol": "ETH/CRWV",
+    "price": 9007199254740990,
+    "address": "0x778f82789690522c9e9b00cd28f0c299033a6f4c9975069f33eff8b991e90c61",
+    "addresses": {
+     "robinhood": "0x778f82789690522c9e9b00cd28f0c299033a6f4c9975069f33eff8b991e90c61"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174127/large/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png?1782444608"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.586Z",
+    "createdAt": "2026-09-08T15:09:07.950Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3"
+    ],
+    "liquidity": 1537.449908795265,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "164.562"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 498,
+     "feePercentage": "5.0751"
+    },
+    "tokenId": "b8e42d3e-bc59-4fc5-869b-da78e57ae769",
+    "reserves": [
+     "0.011903430595072052",
+     "24.726112766618734972"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x237014478f7ef98afbe7412ac35b6a3f96b8fb111de48b7c4dbf49dba4bd9c4b": {
+    "key": "robinhood:0x237014478f7ef98afbe7412ac35b6a3f96b8fb111de48b7c4dbf49dba4bd9c4b",
+    "name": "Uniswap V4 LP CRWV/USDG",
+    "decimals": 18,
+    "symbol": "CRWV/USDG",
+    "price": 9007199254740990,
+    "address": "0x237014478f7ef98afbe7412ac35b6a3f96b8fb111de48b7c4dbf49dba4bd9c4b",
+    "addresses": {
+     "robinhood": "0x237014478f7ef98afbe7412ac35b6a3f96b8fb111de48b7c4dbf49dba4bd9c4b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174127/large/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png?1782444608",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.588Z",
+    "createdAt": "2026-08-20T14:21:34.177Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 97320.72551383091,
+    "metrics": {
+     "apy": "51.427",
+     "baseApy": "51.427",
+     "volumeUsd1d": "13724.364",
+     "volumeUsd7d": "55772.138"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "90028f8b-8a16-48f2-81a8-7f7d0da81b2a",
+    "reserves": [
+     "1140.13124525256025536",
+     "27709.613289"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x214cb0d273321ae3d5fb85a869e3853ed1a8ece7c3eda9dee0c77d7f0d8a4ae8": {
+    "key": "robinhood:0x214cb0d273321ae3d5fb85a869e3853ed1a8ece7c3eda9dee0c77d7f0d8a4ae8",
+    "name": "Uniswap V4 LP CRWV/USDG",
+    "decimals": 18,
+    "symbol": "CRWV/USDG",
+    "price": 9007199254740990,
+    "address": "0x214cb0d273321ae3d5fb85a869e3853ed1a8ece7c3eda9dee0c77d7f0d8a4ae8",
+    "addresses": {
+     "robinhood": "0x214cb0d273321ae3d5fb85a869e3853ed1a8ece7c3eda9dee0c77d7f0d8a4ae8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174127/large/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png?1782444608",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.833Z",
+    "createdAt": "2026-09-22T14:57:47.865Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 550.1464178902706,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "volumeUsd1d": "0.024",
+     "volumeUsd7d": "323.327"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "e5a4ef2e-5a66-47dc-ae7e-3d1ecf81a8c2",
+    "reserves": [
+     "8.297357707232383048",
+     "43.548339"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f": {
+    "key": "hyperevm:0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f",
+    "name": "CoreWeave (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "CRWVON",
+    "price": 60.12,
+    "address": "0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f",
+    "addresses": {
+     "bsc": "0x76e39171cb665a35981e744e2ceb7012f76caeac",
+     "hyperevm": "0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f",
+     "ethereum": "0x66908813cd7676269494b2c6f6dbab8b4f9e95df"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1014633,
+    "image": "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891",
+    "metrics": {
+     "volumeUsd1d": "833655.711",
+     "volumeUsd7d": "7130607.351"
+    },
+    "metadata": {},
+    "tokenId": "6c9e468f-44d3-4c46-ba1b-10f975f37e0a",
+    "totalSupply": "16882.311708496753",
+    "circulatingSupply": "16882.311708496753",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x66908813cd7676269494b2c6f6dbab8b4f9e95df": {
+    "key": "ethereum:0x66908813cd7676269494b2c6f6dbab8b4f9e95df",
+    "name": "CoreWeave (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "CRWVON",
+    "price": 60.12,
+    "address": "0x66908813cd7676269494b2c6f6dbab8b4f9e95df",
+    "addresses": {
+     "bsc": "0x76e39171cb665a35981e744e2ceb7012f76caeac",
+     "hyperevm": "0xd616ddc3a9e13e12533d7124d5bd94b53fb60a3f",
+     "ethereum": "0x66908813cd7676269494b2c6f6dbab8b4f9e95df"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1014633,
+    "image": "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891",
+    "metrics": {
+     "volumeUsd1d": "835243.044",
+     "volumeUsd7d": "7129454.036"
+    },
+    "metadata": {},
+    "tokenId": "6c9e468f-44d3-4c46-ba1b-10f975f37e0a",
+    "totalSupply": "16882.311708496753",
+    "circulatingSupply": "16882.311708496753",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x63bcd31f3734436d9414ea87f488f051d6bd60d9352744ae891be74a3b423702": {
+    "key": "robinhood:0x63bcd31f3734436d9414ea87f488f051d6bd60d9352744ae891be74a3b423702",
+    "name": "Uniswap V4 LP ETH/CRWV",
+    "decimals": 18,
+    "symbol": "ETH/CRWV",
+    "price": 9007199254740990,
+    "address": "0x63bcd31f3734436d9414ea87f488f051d6bd60d9352744ae891be74a3b423702",
+    "addresses": {
+     "robinhood": "0x63bcd31f3734436d9414ea87f488f051d6bd60d9352744ae891be74a3b423702"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174127/large/0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3.png?1782444608"
+    ],
+    "updatedAt": "2026-10-18T20:15:43.013Z",
+    "createdAt": "2026-07-23T06:14:05.238Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3"
+    ],
+    "liquidity": 1254.9441843239913,
+    "metrics": {
+     "apy": "32.89",
+     "baseApy": "32.89",
+     "volumeUsd1d": "22.197",
+     "volumeUsd7d": "838.388"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "f99bcaa7-944e-4e48-ad3c-ec4b6238796e",
+    "reserves": [
+     "0.09351292892285368",
+     "16.97867896724658075"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf65bc3abb5d5c9f7cb983363049fbc56a23450751d1f1452910f15e7b1799929": {
+    "key": "ethereum:0xf65bc3abb5d5c9f7cb983363049fbc56a23450751d1f1452910f15e7b1799929",
+    "name": "Uniswap V4 LP CRWVon/USDT",
+    "decimals": 18,
+    "symbol": "CRWVON/USDT",
+    "price": 9007199254740990,
+    "address": "0xf65bc3abb5d5c9f7cb983363049fbc56a23450751d1f1452910f15e7b1799929",
+    "addresses": {
+     "ethereum": "0xf65bc3abb5d5c9f7cb983363049fbc56a23450751d1f1452910f15e7b1799929"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172482/large/crwvon_160x160.png?1773506891",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.082Z",
+    "createdAt": "2026-09-13T05:43:23.661Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x66908813cd7676269494b2c6f6dbab8b4f9e95df",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 666.4479036237434,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4300,
+     "feePercentage": "43"
+    },
+    "tokenId": "ba6c0b77-ecb9-4eaa-8aec-af5acdab8ad7",
+    "reserves": [
+     "4.471650281547861545",
+     "397.953733"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,1423 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4330001060",
+ "ticker": "HIMS",
+ "name": "Hims & Hers Health",
+ "isin": "US4330001060",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:16:57Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Hims & Hers Health Inc",
+   "symbol": "HIMS",
+   "slug": "hims-hers",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 27.795571574960583,
+     "tokenized_market_cap": 31072228.804923225,
+     "tokenized_volume_24h": 3146854.87517698,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 125,
+   "asset_type": "stock",
+   "rwa_rank": 1143,
+   "has_tokens": true,
+   "average_tokenized_price": 27.795571574960583,
+   "tokenized_market_cap": 31072228.804923225,
+   "tokenized_volume_24h": 3146854.87517698,
+   "last_updated": "2026-10-18T20:13:33.343Z",
+   "tokens": [
+    {
+     "symbol": "HIMSon",
+     "name": "Hims & Hers Health Tokenized Stock (Ondo)",
+     "price": 28.06921084440581,
+     "crypto_id": 38034,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 29874544.58,
+     "volume_24h": 1775477.04776725
+    },
+    {
+     "symbol": "HIMSx",
+     "name": "Hims & Hers tokenized stock (xStock)",
+     "price": 27.40748016775058,
+     "crypto_id": 40148,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 429436.18,
+     "volume_24h": 1690.2897144
+    },
+    {
+     "symbol": "wHIMSx",
+     "name": "Wrapped Hims & Hers Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41430,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "HIMS",
+     "name": "Hims & Hers Health Tokenized Stock (Robinhood)",
+     "price": 27.443328373103316,
+     "crypto_id": 41995,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 0,
+     "volume_24h": 1234875.78650014
+    },
+    {
+     "symbol": "HIMSB",
+     "name": "Hims & Hers Tokenized bStocks",
+     "price": 27.43340047236134,
+     "crypto_id": 42046,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 688965.74,
+     "volume_24h": 111650.22144868
+    },
+    {
+     "symbol": "HIMSc",
+     "name": "Hims & Hers Health, Inc. Tokenized Stock (Coinbase)",
+     "price": 27.48845602675191,
+     "crypto_id": 42486,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 36165.77,
+     "volume_24h": 2550.73962772
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "HIMS",
+     "market_url": "https://www.binance.com/en/stocks/EQ_HIMS"
+    }
+   ]
+  },
+  "info": {
+   "38034": {
+    "id": 38034,
+    "symbol": "HIMSon",
+    "name": "Hims & Hers Health Tokenized Stock (Ondo)",
+    "slug": "hims-hers-health-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38034.png",
+    "date_added": "2025-09-03T10:55:30.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xCa468554e5C0423Ee858fe3942c9568C51FcAa79"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xCa468554e5C0423Ee858fe3942c9568C51FcAa79",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "bdh3njeo19d2TBLAKTGvCWdSoArfVw8uZBAJHY4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40148": {
+    "id": 40148,
+    "symbol": "HIMSx",
+    "name": "Hims & Hers tokenized stock (xStock)",
+    "slug": "hims-hers-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40148.png",
+    "date_added": "2026-06-10T06:33:43.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsprHSJzwz3qmHcEf7j7WcUk6hMUL4sPLuAdWaSY1oh"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsprHSJzwz3qmHcEf7j7WcUk6hMUL4sPLuAdWaSY1oh",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCYieHucMd0T83OI_Z-81lFpHHUqta5vt-1Nm9BRqDpm4rz",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41430": {
+    "id": 41430,
+    "symbol": "wHIMSx",
+    "name": "Wrapped Hims & Hers Tokenized Stock (xStock)",
+    "slug": "wrapped-hims-hers-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41430.png",
+    "date_added": "2026-08-11T16:23:41.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xb465D783408cb823469A968Dd67628609d4CD107"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb465D783408cb823469A968Dd67628609d4CD107",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41995": {
+    "id": 41995,
+    "symbol": "HIMS",
+    "name": "Hims & Hers Health Tokenized Stock (Robinhood)",
+    "slug": "hims-hers-health-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41995.png",
+    "date_added": "2026-08-04T07:31:24.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xccee82fe024c36fa15e1005ede3e9e4787e23d09"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xccee82fe024c36fa15e1005ede3e9e4787e23d09",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "42046": {
+    "id": 42046,
+    "symbol": "HIMSB",
+    "name": "Hims & Hers Tokenized bStocks",
+    "slug": "hims-hers-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42046.png",
+    "date_added": "2026-09-08T02:00:02.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42486": {
+    "id": 42486,
+    "symbol": "HIMSc",
+    "name": "Hims & Hers Health, Inc. Tokenized Stock (Coinbase)",
+    "slug": "hims-hers-health-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42486.png",
+    "date_added": "2026-10-08T03:59:53.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB20000000000000000000043a599976181Bcf336"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB20000000000000000000043a599976181Bcf336",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+   "base:0xb20000000000000000000043a599976181bcf336",
+   "bsc:0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+   "bsc:0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+   "bsc:0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+   "ethereum:0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+   "ethereum:0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+   "hyperevm:0x55600dfb3943a2db1a49b250e1e9114e4ad2174f",
+   "robinhood:0xccee82fe024c36fa15e1005ede3e9e4787e23d09"
+  ],
+  "exact": {
+   "bsc:0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad": {
+    "key": "bsc:0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+    "name": "Hims & Hers Health (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSON",
+    "price": 28.11,
+    "address": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+    "addresses": {
+     "ethereum": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+     "bsc": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29904374,
+    "image": "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686",
+    "metrics": {
+     "volumeUsd1d": "1411838.508",
+     "volumeUsd7d": "14583073.217"
+    },
+    "metadata": {},
+    "tokenId": "e9fdda9d-a60c-4376-a43d-e8dc695362f5",
+    "totalSupply": "1064317.224546319",
+    "circulatingSupply": "1064317.224546319",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xca468554e5c0423ee858fe3942c9568c51fcaa79": {
+    "key": "ethereum:0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+    "name": "Hims & Hers Health (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSON",
+    "price": 28.11,
+    "address": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+    "addresses": {
+     "ethereum": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+     "bsc": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29904374,
+    "image": "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686",
+    "metrics": {
+     "volumeUsd1d": "1410146.459",
+     "volumeUsd7d": "12831318.158"
+    },
+    "metadata": {},
+    "tokenId": "e9fdda9d-a60c-4376-a43d-e8dc695362f5",
+    "totalSupply": "1064317.224546319",
+    "circulatingSupply": "1064317.224546319",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xee6f4bcc88c2c8583d5a65c7d0c877b464100711": {
+    "key": "bsc:0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+    "name": "Hims & Hers (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSB",
+    "price": 27.44,
+    "address": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+    "addresses": {
+     "bsc": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T01:29:35.809Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689050,
+    "image": "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230",
+    "metrics": {
+     "volumeUsd1d": "14139.391",
+     "volumeUsd7d": "499053.567"
+    },
+    "metadata": {},
+    "tokenId": "52b880ed-d143-4b2c-9ccc-9d3e15775e3b",
+    "totalSupply": "25114.12090766",
+    "circulatingSupply": "25114.12090766",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "HIMS": {
+    "total_items": 22,
+    "pages": 1,
+    "received": 22,
+    "complete": true
+   }
+  },
+  "records": {
+   "arbitrum:0xfcffe2634e941690d2d2095be127930ee620bb3e": {
+    "key": "arbitrum:0xfcffe2634e941690d2d2095be127930ee620bb3e",
+    "name": "Hims & Hers Health rStock",
+    "decimals": 18,
+    "symbol": "RHIMS",
+    "price": 28.02,
+    "address": "0xfcffe2634e941690d2d2095be127930ee620bb3e",
+    "addresses": {
+     "arbitrum": "0xfcffe2634e941690d2d2095be127930ee620bb3e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29664,
+    "image": "https://coin-images.coingecko.com/coins/images/102177363/large/HIMS.png?1789117671",
+    "metrics": {
+     "volumeUsd1d": "68.701",
+     "volumeUsd7d": "41593.562"
+    },
+    "metadata": {},
+    "tokenId": "04965ec0-c8c2-4483-873a-3bde730736cd",
+    "totalSupply": "1058.597554494",
+    "circulatingSupply": "1058.597554494",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd43b7db03807fb040cf4503618202d5f51a3513b": {
+    "key": "arbitrum:0xd43b7db03807fb040cf4503618202d5f51a3513b",
+    "name": "Hims & Hers Health (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMS",
+    "price": 28.11,
+    "address": "0xd43b7db03807fb040cf4503618202d5f51a3513b",
+    "addresses": {
+     "avalanche": "0xbfb211b276788551f4531d120e0bdb5151102f69",
+     "ethereum": "0xc36f40fa944aa288c781c635929167efa37f4a1f",
+     "base": "0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+     "arbitrum": "0xd43b7db03807fb040cf4503618202d5f51a3513b"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14474.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175097/large/dinari-logo-green-with-margin.png?1785403193",
+    "metrics": {
+     "volumeUsd1d": "9.14",
+     "volumeUsd7d": "754.408"
+    },
+    "metadata": {},
+    "tokenId": "75aad7c5-dca8-4a22-8d70-bd5928ec41db",
+    "totalSupply": "515.2792391108073",
+    "circulatingSupply": "514.9540818338073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3b09263ec319feb04b9573bf018a70b305ae4069bf74211c4fc4d489a645cfa0": {
+    "key": "bsc:0x3b09263ec319feb04b9573bf018a70b305ae4069bf74211c4fc4d489a645cfa0",
+    "name": "Uniswap V4 LP USDT/HIMSB",
+    "decimals": 18,
+    "symbol": "USDT/HIMSB",
+    "price": 9007199254740990,
+    "address": "0x3b09263ec319feb04b9573bf018a70b305ae4069bf74211c4fc4d489a645cfa0",
+    "addresses": {
+     "bsc": "0x3b09263ec319feb04b9573bf018a70b305ae4069bf74211c4fc4d489a645cfa0"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.484Z",
+    "createdAt": "2026-09-11T07:47:38.350Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    ],
+    "liquidity": 875.6319743900456,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 87,
+     "feePercentage": "0.9652"
+    },
+    "tokenId": "14432a02-743e-4081-8359-b7c499fe09d6",
+    "reserves": [
+     "376.217387064921690686",
+     "18.21137302636372624"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb1aa81d472579c2c0fa177d702a72bb075a161aa4003a7f594084da4d4d2cee4": {
+    "key": "ethereum:0xb1aa81d472579c2c0fa177d702a72bb075a161aa4003a7f594084da4d4d2cee4",
+    "name": "Uniswap V4 LP EGP/HIMSon",
+    "decimals": 18,
+    "symbol": "EGP/HIMSON",
+    "price": 9007199254740990,
+    "address": "0xb1aa81d472579c2c0fa177d702a72bb075a161aa4003a7f594084da4d4d2cee4",
+    "addresses": {
+     "ethereum": "0xb1aa81d472579c2c0fa177d702a72bb075a161aa4003a7f594084da4d4d2cee4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.311Z",
+    "createdAt": "2026-10-14T06:54:51.637Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 20057.35018592851,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.08"
+    },
+    "tokenId": "b70d7614-09f3-4be9-8f95-039a0fd63417",
+    "reserves": [
+     "19999.999999999999999997",
+     "0.91150805758707181"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x273bd79d47bbbdff5e6ee973570465f5f66a556f": {
+    "key": "base:0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+    "name": "Hims & Hers Health (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMS",
+    "price": 28.11,
+    "address": "0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+    "addresses": {
+     "avalanche": "0xbfb211b276788551f4531d120e0bdb5151102f69",
+     "ethereum": "0xc36f40fa944aa288c781c635929167efa37f4a1f",
+     "base": "0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+     "arbitrum": "0xd43b7db03807fb040cf4503618202d5f51a3513b"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14474.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175097/large/dinari-logo-green-with-margin.png?1785403193",
+    "metrics": {
+     "volumeUsd1d": "9.14",
+     "volumeUsd7d": "753.701"
+    },
+    "metadata": {},
+    "tokenId": "75aad7c5-dca8-4a22-8d70-bd5928ec41db",
+    "totalSupply": "515.2792391108073",
+    "circulatingSupply": "514.9540818338073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb4030220215f2d16eee8c620055443bfb2b4b0da6292a54c2fd676f4f0c2afd6": {
+    "key": "ethereum:0xb4030220215f2d16eee8c620055443bfb2b4b0da6292a54c2fd676f4f0c2afd6",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0xb4030220215f2d16eee8c620055443bfb2b4b0da6292a54c2fd676f4f0c2afd6",
+    "addresses": {
+     "ethereum": "0xb4030220215f2d16eee8c620055443bfb2b4b0da6292a54c2fd676f4f0c2afd6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.774Z",
+    "createdAt": "2026-01-16T05:13:43.776Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 1455.5551594697295,
+    "metrics": {
+     "apy": "0.178",
+     "baseApy": "0.178",
+     "volumeUsd1d": "1.201",
+     "volumeUsd7d": "5.011"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "0.5896"
+    },
+    "tokenId": "2fbe193c-3fc4-447c-a6da-bba2a3a2f19f",
+    "reserves": [
+     "749.768406",
+     "25.112858824305064251"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xee14424007ad8ea63e0805d3c2d058ad95a7c5551d6f7f226168b525dee084cf": {
+    "key": "ethereum:0xee14424007ad8ea63e0805d3c2d058ad95a7c5551d6f7f226168b525dee084cf",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0xee14424007ad8ea63e0805d3c2d058ad95a7c5551d6f7f226168b525dee084cf",
+    "addresses": {
+     "ethereum": "0xee14424007ad8ea63e0805d3c2d058ad95a7c5551d6f7f226168b525dee084cf"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.924Z",
+    "createdAt": "2026-01-17T05:15:38.288Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 1850.673576839635,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2.928"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 140,
+     "feePercentage": "0.7993"
+    },
+    "tokenId": "49c91e14-3a5d-44d0-ab83-59c05083ff2c",
+    "reserves": [
+     "949.886135",
+     "32.05120495304411173"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3729aa10a08fef60c17bdb98294c2a686287ffa1346f0c15c2ac1c97a3b86c1e": {
+    "key": "ethereum:0x3729aa10a08fef60c17bdb98294c2a686287ffa1346f0c15c2ac1c97a3b86c1e",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0x3729aa10a08fef60c17bdb98294c2a686287ffa1346f0c15c2ac1c97a3b86c1e",
+    "addresses": {
+     "ethereum": "0x3729aa10a08fef60c17bdb98294c2a686287ffa1346f0c15c2ac1c97a3b86c1e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.421Z",
+    "createdAt": "2025-09-26T08:45:49.327Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 565.3557096773573,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "30f3356b-1c2e-436e-9ce4-21a81ca28411",
+    "reserves": [
+     "255.215336",
+     "11.034740933944262571"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe3869307af5f2c36ccf6cf5bb73009e8662f4fba26fdb2eddabc2d34b9db31ad": {
+    "key": "ethereum:0xe3869307af5f2c36ccf6cf5bb73009e8662f4fba26fdb2eddabc2d34b9db31ad",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0xe3869307af5f2c36ccf6cf5bb73009e8662f4fba26fdb2eddabc2d34b9db31ad",
+    "addresses": {
+     "ethereum": "0xe3869307af5f2c36ccf6cf5bb73009e8662f4fba26fdb2eddabc2d34b9db31ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.774Z",
+    "createdAt": "2026-01-27T05:16:18.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 746.930292229638,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75"
+    },
+    "tokenId": "b07c23f5-eb31-41ee-90b8-b71c7aa8ab2c",
+    "reserves": [
+     "0.000002",
+     "26.571693000000000004"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x80a053ec06518a0c7b81f3e4d95dd369857356cfa14938b2bc0868c93c73b805": {
+    "key": "ethereum:0x80a053ec06518a0c7b81f3e4d95dd369857356cfa14938b2bc0868c93c73b805",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0x80a053ec06518a0c7b81f3e4d95dd369857356cfa14938b2bc0868c93c73b805",
+    "addresses": {
+     "ethereum": "0x80a053ec06518a0c7b81f3e4d95dd369857356cfa14938b2bc0868c93c73b805"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.278Z",
+    "createdAt": "2026-08-02T06:40:46.897Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 665.5199891262281,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "1b843f76-1ec8-4bf7-b17c-e1d05a54d150",
+    "reserves": [
+     "352.18436",
+     "11.149035022959377425"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x03da7d3c0c0f4741f91b89aeaeca36465cc6be6d": {
+    "key": "bsc:0x03da7d3c0c0f4741f91b89aeaeca36465cc6be6d",
+    "name": "PancakeSwap V3 Tether USD/Hims & Hers 1%",
+    "decimals": 18,
+    "symbol": "USDT/HIMSB",
+    "price": 9007199254740990,
+    "address": "0x03da7d3c0c0f4741f91b89aeaeca36465cc6be6d",
+    "addresses": {
+     "bsc": "0x03da7d3c0c0f4741f91b89aeaeca36465cc6be6d"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.681Z",
+    "createdAt": "2026-09-11T07:47:32.506Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    ],
+    "liquidity": 90716.81830108042,
+    "metrics": {
+     "apy": "12.656",
+     "baseApy": "12.656",
+     "volumeUsd1d": "3145.415",
+     "volumeUsd7d": "189865.306"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "e5c90cae-0e14-41c8-abe5-436704ebae6f",
+    "reserves": [
+     "42747.161387651000379371",
+     "1749.430306431348134065"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xbfb211b276788551f4531d120e0bdb5151102f69": {
+    "key": "avalanche:0xbfb211b276788551f4531d120e0bdb5151102f69",
+    "name": "Hims & Hers Health (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMS",
+    "price": 28.11,
+    "address": "0xbfb211b276788551f4531d120e0bdb5151102f69",
+    "addresses": {
+     "avalanche": "0xbfb211b276788551f4531d120e0bdb5151102f69",
+     "ethereum": "0xc36f40fa944aa288c781c635929167efa37f4a1f",
+     "base": "0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+     "arbitrum": "0xd43b7db03807fb040cf4503618202d5f51a3513b"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14474.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175097/large/dinari-logo-green-with-margin.png?1785403193",
+    "metrics": {
+     "volumeUsd1d": "9.14",
+     "volumeUsd7d": "754.09"
+    },
+    "metadata": {},
+    "tokenId": "75aad7c5-dca8-4a22-8d70-bd5928ec41db",
+    "totalSupply": "515.2792391108073",
+    "circulatingSupply": "514.9540818338073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfb1474fd0c6f4f62644bb070be02ae7fe29d01a03cfa25ba99458c993c7f4fa4": {
+    "key": "bsc:0xfb1474fd0c6f4f62644bb070be02ae7fe29d01a03cfa25ba99458c993c7f4fa4",
+    "name": "Uniswap V4 LP USDT/HIMSB",
+    "decimals": 18,
+    "symbol": "USDT/HIMSB",
+    "price": 9007199254740990,
+    "address": "0xfb1474fd0c6f4f62644bb070be02ae7fe29d01a03cfa25ba99458c993c7f4fa4",
+    "addresses": {
+     "bsc": "0xfb1474fd0c6f4f62644bb070be02ae7fe29d01a03cfa25ba99458c993c7f4fa4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.391Z",
+    "createdAt": "2026-09-14T11:46:24.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    ],
+    "liquidity": 543.1140237296553,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 970,
+     "feePercentage": "9.7903"
+    },
+    "tokenId": "0aa5345d-8cae-4f2e-ba74-90488ac08e45",
+    "reserves": [
+     "55.374164662809793322",
+     "17.776414828299990097"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc36f40fa944aa288c781c635929167efa37f4a1f": {
+    "key": "ethereum:0xc36f40fa944aa288c781c635929167efa37f4a1f",
+    "name": "Hims & Hers Health (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMS",
+    "price": 28.11,
+    "address": "0xc36f40fa944aa288c781c635929167efa37f4a1f",
+    "addresses": {
+     "avalanche": "0xbfb211b276788551f4531d120e0bdb5151102f69",
+     "ethereum": "0xc36f40fa944aa288c781c635929167efa37f4a1f",
+     "base": "0x273bd79d47bbbdff5e6ee973570465f5f66a556f",
+     "arbitrum": "0xd43b7db03807fb040cf4503618202d5f51a3513b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14474.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175097/large/dinari-logo-green-with-margin.png?1785403193",
+    "metrics": {
+     "volumeUsd1d": "9.14",
+     "volumeUsd7d": "754.73"
+    },
+    "metadata": {},
+    "tokenId": "75aad7c5-dca8-4a22-8d70-bd5928ec41db",
+    "totalSupply": "515.2792391108073",
+    "circulatingSupply": "514.9540818338073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x41f7a54a44d242e8afed75630816e08676fa9707196968bfa31019cdc58d827e": {
+    "key": "ethereum:0x41f7a54a44d242e8afed75630816e08676fa9707196968bfa31019cdc58d827e",
+    "name": "Uniswap V4 LP HIMSon/USDT",
+    "decimals": 18,
+    "symbol": "HIMSON/USDT",
+    "price": 9007199254740990,
+    "address": "0x41f7a54a44d242e8afed75630816e08676fa9707196968bfa31019cdc58d827e",
+    "addresses": {
+     "ethereum": "0x41f7a54a44d242e8afed75630816e08676fa9707196968bfa31019cdc58d827e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.142Z",
+    "createdAt": "2025-09-26T08:45:49.327Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 596.4640280908292,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "ef73c69a-8468-49d9-86f5-9ad64bf891f6",
+    "reserves": [
+     "10.894728094358632817",
+     "290.449066"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x801f14ac97695ba5c3b0ae183abc75b908b7ce8dfe84eb9e2bfa651ca5d1736a": {
+    "key": "ethereum:0x801f14ac97695ba5c3b0ae183abc75b908b7ce8dfe84eb9e2bfa651ca5d1736a",
+    "name": "Uniswap V4 LP wUSDC/HIMSon",
+    "decimals": 18,
+    "symbol": "WUSDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0x801f14ac97695ba5c3b0ae183abc75b908b7ce8dfe84eb9e2bfa651ca5d1736a",
+    "addresses": {
+     "ethereum": "0x801f14ac97695ba5c3b0ae183abc75b908b7ce8dfe84eb9e2bfa651ca5d1736a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.936Z",
+    "createdAt": "2026-09-28T10:39:38.681Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "40065c0c-e47c-497a-87d6-1f3659ee16ab",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad": {
+    "key": "bsc:0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+    "name": "Hims & Hers Health (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSON",
+    "price": 28.11,
+    "address": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad",
+    "addresses": {
+     "ethereum": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+     "bsc": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29904374,
+    "image": "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686",
+    "metrics": {
+     "volumeUsd1d": "1411838.508",
+     "volumeUsd7d": "14583073.217"
+    },
+    "metadata": {},
+    "tokenId": "e9fdda9d-a60c-4376-a43d-e8dc695362f5",
+    "totalSupply": "1064317.224546319",
+    "circulatingSupply": "1064317.224546319",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xca468554e5c0423ee858fe3942c9568c51fcaa79": {
+    "key": "ethereum:0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+    "name": "Hims & Hers Health (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSON",
+    "price": 28.11,
+    "address": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+    "addresses": {
+     "ethereum": "0xca468554e5c0423ee858fe3942c9568c51fcaa79",
+     "bsc": "0x4693f6f5ef257381a28afd0673e64d8b32d5c6ad"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29904374,
+    "image": "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686",
+    "metrics": {
+     "volumeUsd1d": "1410146.459",
+     "volumeUsd7d": "12831318.158"
+    },
+    "metadata": {},
+    "tokenId": "e9fdda9d-a60c-4376-a43d-e8dc695362f5",
+    "totalSupply": "1064317.224546319",
+    "circulatingSupply": "1064317.224546319",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf4d2389a077be7e67b5be85dc7be67d192d1f806383b60ec92fce277a2a5986c": {
+    "key": "bsc:0xf4d2389a077be7e67b5be85dc7be67d192d1f806383b60ec92fce277a2a5986c",
+    "name": "Uniswap V4 LP USDT/HIMSB",
+    "decimals": 18,
+    "symbol": "USDT/HIMSB",
+    "price": 9007199254740990,
+    "address": "0xf4d2389a077be7e67b5be85dc7be67d192d1f806383b60ec92fce277a2a5986c",
+    "addresses": {
+     "bsc": "0xf4d2389a077be7e67b5be85dc7be67d192d1f806383b60ec92fce277a2a5986c"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.955Z",
+    "createdAt": "2026-09-17T00:48:53.680Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    ],
+    "liquidity": 537.4585591020683,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "cd266f4e-e8cc-4056-8605-e5db3944ff9d",
+    "reserves": [
+     "178.866752418424613214",
+     "13.073507525022138557"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x1dddf0941cd8d7825a1bc46640b500f5cd43eb6d": {
+    "key": "bsc:0x1dddf0941cd8d7825a1bc46640b500f5cd43eb6d",
+    "name": "Uniswap V3 Tether USD/Hims & Hers 1%",
+    "decimals": 18,
+    "symbol": "USDT/HIMSB",
+    "price": 9007199254740990,
+    "address": "0x1dddf0941cd8d7825a1bc46640b500f5cd43eb6d",
+    "addresses": {
+     "bsc": "0x1dddf0941cd8d7825a1bc46640b500f5cd43eb6d"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.260Z",
+    "createdAt": "2026-09-11T07:47:14.472Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    ],
+    "liquidity": 2487.2306609196266,
+    "metrics": {
+     "apy": "0.881",
+     "baseApy": "0.881",
+     "volumeUsd1d": "6.007",
+     "volumeUsd7d": "259.971"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "9e3b28fd-c905-4861-8e7e-aec87d1872f9",
+    "reserves": [
+     "1241.332553274058298229",
+     "45.44118329733334311"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3a784b5fd17f0891184d24fcd9917dd62a57a1a6293c0164fdf8e9214986f2bb": {
+    "key": "ethereum:0x3a784b5fd17f0891184d24fcd9917dd62a57a1a6293c0164fdf8e9214986f2bb",
+    "name": "Uniswap V4 LP USDC/HIMSon",
+    "decimals": 18,
+    "symbol": "USDC/HIMSON",
+    "price": 9007199254740990,
+    "address": "0x3a784b5fd17f0891184d24fcd9917dd62a57a1a6293c0164fdf8e9214986f2bb",
+    "addresses": {
+     "ethereum": "0x3a784b5fd17f0891184d24fcd9917dd62a57a1a6293c0164fdf8e9214986f2bb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68553/large/himson_160x160.png?1756105686"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.672Z",
+    "createdAt": "2026-08-02T06:40:39.360Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xca468554e5c0423ee858fe3942c9568c51fcaa79"
+    ],
+    "liquidity": 636.7127600574187,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3.932"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8500,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "028d846d-6379-4e54-b11d-93f51b1e30c7",
+    "reserves": [
+     "316.137577",
+     "11.406346636743353393"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xee6f4bcc88c2c8583d5a65c7d0c877b464100711": {
+    "key": "bsc:0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+    "name": "Hims & Hers (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "HIMSB",
+    "price": 27.44,
+    "address": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711",
+    "addresses": {
+     "bsc": "0xee6f4bcc88c2c8583d5a65c7d0c877b464100711"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T01:29:35.809Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689050,
+    "image": "https://coin-images.coingecko.com/coins/images/102176946/large/hims.png?1789087230",
+    "metrics": {
+     "volumeUsd1d": "14139.391",
+     "volumeUsd7d": "499053.567"
+    },
+    "metadata": {},
+    "tokenId": "52b880ed-d143-4b2c-9ccc-9d3e15775e3b",
+    "totalSupply": "25114.12090766",
+    "circulatingSupply": "25114.12090766",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

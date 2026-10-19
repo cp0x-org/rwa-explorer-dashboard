@@ -1,0 +1,753 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US37954Y8306",
+ "ticker": "COPX",
+ "name": "Global X Copper Miners ETF",
+ "isin": "US37954Y8306",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:18Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Global X Copper Miners ETF",
+   "symbol": "COPX",
+   "slug": "global-x-copper-miners-etf",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 81.65675864552679,
+     "tokenized_market_cap": 1478494.7362706426,
+     "tokenized_volume_24h": 1247669.89822497,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 160,
+   "asset_type": "etf",
+   "rwa_rank": 7782,
+   "has_tokens": true,
+   "average_tokenized_price": 81.65675864552679,
+   "tokenized_market_cap": 1478494.7362706426,
+   "tokenized_volume_24h": 1247669.89822497,
+   "last_updated": "2026-10-18T20:14:25.959Z",
+   "tokens": [
+    {
+     "symbol": "COPXon",
+     "name": "Global X Copper Miners Tokenized ETF (Ondo)",
+     "price": 82.21841202835598,
+     "crypto_id": 39229,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1488664.15,
+     "volume_24h": 1245723.10217203
+    },
+    {
+     "symbol": "wCOPXx",
+     "name": "Wrapped Global X Copper Miners Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41209,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "COPX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_COPX"
+    }
+   ]
+  },
+  "info": {
+   "39229": {
+    "id": 39229,
+    "symbol": "COPXon",
+    "name": "Global X Copper Miners Tokenized ETF (Ondo)",
+    "slug": "global-x-copper-miners-tokenized-etf-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39229.png",
+    "date_added": "2026-01-08T15:44:24.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "X7j77hTmjZJbepkXXBcsEapM8qNgdfihkFj6CZ5ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x86E33197369a3560CeE2Ab6Bb12376AC7b29f3dD",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "41209": {
+    "id": 41209,
+    "symbol": "wCOPXx",
+    "name": "Wrapped Global X Copper Miners Tokenized ETF (xStock)",
+    "slug": "wrapped-global-x-copper-miners-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41209.png",
+    "date_added": "2026-08-11T16:21:24.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x8145A751B860f59BfbD5f7D33Aa3126329De107b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8145A751B860f59BfbD5f7D33Aa3126329De107b",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+   "ethereum:0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+   "hyperevm:0x86e33197369a3560cee2ab6bb12376ac7b29f3dd"
+  ],
+  "exact": {
+   "ethereum:0x423a63dfe8d82cd9c6568c92210aa537d8ef6885": {
+    "key": "ethereum:0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "651932.926",
+     "volumeUsd7d": "5199202.466"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x86e33197369a3560cee2ab6bb12376ac7b29f3dd": {
+    "key": "hyperevm:0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "654088.814",
+     "volumeUsd7d": "5200612.328"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780": {
+    "key": "bsc:0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "654174.084",
+     "volumeUsd7d": "5198255.498"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "COPX": {
+    "total_items": 12,
+    "pages": 1,
+    "received": 12,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x8145a751b860f59bfbd5f7d33aa3126329de107b": {
+    "key": "ethereum:0x8145a751b860f59bfbd5f7d33aa3126329de107b",
+    "name": "Wrapped Global X Copper Miners xStock",
+    "decimals": 18,
+    "symbol": "WCOPXX",
+    "price": 80.39011253136819,
+    "address": "0x8145a751b860f59bfbd5f7d33aa3126329de107b",
+    "addresses": {
+     "ethereum": "0x8145a751b860f59bfbd5f7d33aa3126329de107b"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.782Z",
+    "createdAt": "2026-07-16T02:47:12.679Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9"
+    ],
+    "liquidity": 5512.770288310765,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/COPXx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "2235b176-4825-4169-a676-15a9deed0df9",
+    "totalSupply": "68.575227907035009597",
+    "reserves": [
+     "68.737784143525753453"
+    ],
+    "pricePerShare": "1.002370480440999999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9255bd6c52674a245767b119e4e425bd80df291a966a71eeee0de6a70adb3b00": {
+    "key": "ethereum:0x9255bd6c52674a245767b119e4e425bd80df291a966a71eeee0de6a70adb3b00",
+    "name": "Uniswap V4 LP wUSDC/COPXon",
+    "decimals": 18,
+    "symbol": "WUSDC/COPXON",
+    "price": 9007199254740990,
+    "address": "0x9255bd6c52674a245767b119e4e425bd80df291a966a71eeee0de6a70adb3b00",
+    "addresses": {
+     "ethereum": "0x9255bd6c52674a245767b119e4e425bd80df291a966a71eeee0de6a70adb3b00"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-09-28T10:37:32.204Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "31b48eb3-3ea2-440e-808f-172e2ea61d9d",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc0d5c057a99c74d7a72822ab5b116733502fb7d32b06d32b96384e72a8e9f1c6": {
+    "key": "ethereum:0xc0d5c057a99c74d7a72822ab5b116733502fb7d32b06d32b96384e72a8e9f1c6",
+    "name": "Uniswap V4 LP COPXon/USDC",
+    "decimals": 18,
+    "symbol": "COPXON/USDC",
+    "price": 9007199254740990,
+    "address": "0xc0d5c057a99c74d7a72822ab5b116733502fb7d32b06d32b96384e72a8e9f1c6",
+    "addresses": {
+     "ethereum": "0xc0d5c057a99c74d7a72822ab5b116733502fb7d32b06d32b96384e72a8e9f1c6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.299Z",
+    "createdAt": "2026-01-27T05:16:19.269Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2419.4163057477645,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "a9bd589c-7053-4de9-bf85-23ffd8398eba",
+    "reserves": [
+     "13.281400662186203338",
+     "1320.957775"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe530ea8739273d08b1eacd3f7ad61c0920cd9813b9a51e0e1647214f93f15c28": {
+    "key": "ethereum:0xe530ea8739273d08b1eacd3f7ad61c0920cd9813b9a51e0e1647214f93f15c28",
+    "name": "Uniswap V4 LP EGP/COPXon",
+    "decimals": 18,
+    "symbol": "EGP/COPXON",
+    "price": 9007199254740990,
+    "address": "0xe530ea8739273d08b1eacd3f7ad61c0920cd9813b9a51e0e1647214f93f15c28",
+    "addresses": {
+     "ethereum": "0xe530ea8739273d08b1eacd3f7ad61c0920cd9813b9a51e0e1647214f93f15c28"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.256Z",
+    "createdAt": "2026-10-14T06:54:36.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    ],
+    "liquidity": 20072.901445362306,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.43"
+    },
+    "tokenId": "387a5029-1b31-4a38-94fc-26ec9e3bb540",
+    "reserves": [
+     "19999.999999999999999986",
+     "0.330983133601595856"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0d4629ff6d6ca422178dc66a21eea0dfb182e72c": {
+    "key": "bsc:0x0d4629ff6d6ca422178dc66a21eea0dfb182e72c",
+    "name": "CopXToken",
+    "decimals": 18,
+    "symbol": "COPX",
+    "price": 0.00011497,
+    "address": "0x0d4629ff6d6ca422178dc66a21eea0dfb182e72c",
+    "addresses": {
+     "bsc": "0x0d4629ff6d6ca422178dc66a21eea0dfb182e72c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-09-30T08:17:36.357Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 114960,
+    "image": "https://coin-images.coingecko.com/coins/images/50407/large/COPX_logo_200.png?1727662662",
+    "metrics": {
+     "volumeUsd1d": "0.524",
+     "volumeUsd7d": "3.668"
+    },
+    "metadata": {},
+    "tokenId": "b1c94d47-91a3-491e-841c-6a021e4c7ef9",
+    "totalSupply": "999898783",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x423a63dfe8d82cd9c6568c92210aa537d8ef6885": {
+    "key": "ethereum:0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "651932.926",
+     "volumeUsd7d": "5199202.466"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x86e33197369a3560cee2ab6bb12376ac7b29f3dd": {
+    "key": "hyperevm:0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "654088.814",
+     "volumeUsd7d": "5200612.328"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x428147fc3b8ed9094d9b9ba0345ba8ec190304c63deac58761874cbf711500ae": {
+    "key": "ethereum:0x428147fc3b8ed9094d9b9ba0345ba8ec190304c63deac58761874cbf711500ae",
+    "name": "Uniswap V4 LP USDT/COPXx",
+    "decimals": 18,
+    "symbol": "USDT/COPXX",
+    "price": 9007199254740990,
+    "address": "0x428147fc3b8ed9094d9b9ba0345ba8ec190304c63deac58761874cbf711500ae",
+    "addresses": {
+     "ethereum": "0x428147fc3b8ed9094d9b9ba0345ba8ec190304c63deac58761874cbf711500ae"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.106Z",
+    "createdAt": "2026-10-18T18:58:36.251Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "0ae41884-4be9-4869-98b4-8f69f5714a79",
+    "reserves": [
+     "3999.999999999999999995",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780": {
+    "key": "bsc:0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+    "name": "Global X Copper Miners ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "COPXON",
+    "price": 82.73,
+    "address": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+    "addresses": {
+     "hyperevm": "0x86e33197369a3560cee2ab6bb12376ac7b29f3dd",
+     "bsc": "0xec93fe7ff4b09ca3ccafbc4cc9615e62be412780",
+     "ethereum": "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1497189,
+    "image": "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+    "metrics": {
+     "volumeUsd1d": "654174.084",
+     "volumeUsd7d": "5198255.498"
+    },
+    "metadata": {},
+    "tokenId": "dc20089e-4309-4f31-a07b-033fabbfb211",
+    "totalSupply": "18106.21387371561",
+    "circulatingSupply": "18106.21387371561",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9": {
+    "key": "ethereum:0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9",
+    "name": "Global X Copper Miners xStock",
+    "decimals": 18,
+    "symbol": "COPXX",
+    "price": 80.2,
+    "address": "0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9",
+    "addresses": {
+     "ethereum": "0x89bab39d627a9e34f0dc782c53457e80ee8fb9d9"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.227Z",
+    "createdAt": "2026-02-10T05:16:47.913Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9478848.010443393,
+    "image": "https://coin-images.coingecko.com/coins/images/102171957/large/Ticker_COPXx__Company_Name_Global_X_Copper_Miners__Size_64x64.png?1770653709",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "global-x-copper-miners-xstock"
+    },
+    "tokenId": "74d4379e-fa41-4a9c-af07-53bf06f7b4fe",
+    "totalSupply": "118190.12481849618342",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xab30854f3fdc362c9094f04e38c01c408c5d9c37": {
+    "key": "arbitrum:0xab30854f3fdc362c9094f04e38c01c408c5d9c37",
+    "name": "Global X Copper Miners ETF rStock",
+    "decimals": 18,
+    "symbol": "RCOPX",
+    "price": 79.81,
+    "address": "0xab30854f3fdc362c9094f04e38c01c408c5d9c37",
+    "addresses": {
+     "arbitrum": "0xab30854f3fdc362c9094f04e38c01c408c5d9c37"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 81961,
+    "image": "https://coin-images.coingecko.com/coins/images/102177156/large/71b5d75c174a07d45429acfa2dbab217.png?1789117005",
+    "metrics": {
+     "volumeUsd1d": "49.466",
+     "volumeUsd7d": "6280.805"
+    },
+    "metadata": {},
+    "tokenId": "c4028d68-d0ed-4f1d-94a2-7531cddf2c68",
+    "totalSupply": "1026.988244003",
+    "circulatingSupply": "1026.988244003",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x89dfb4033d87f3b15dc1badb4a7b97e01cc41837": {
+    "key": "ethereum:0x89dfb4033d87f3b15dc1badb4a7b97e01cc41837",
+    "name": "Uniswap V3 Global X Copper Miners ETF (Ondo Tokenized)/USD Coin 1%",
+    "decimals": 18,
+    "symbol": "COPXON/USDC",
+    "price": 9007199254740990,
+    "address": "0x89dfb4033d87f3b15dc1badb4a7b97e01cc41837",
+    "addresses": {
+     "ethereum": "0x89dfb4033d87f3b15dc1badb4a7b97e01cc41837"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71424/large/copxon_160x160.png?1767882136",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.024Z",
+    "createdAt": "2026-01-23T08:30:01.210Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x423a63dfe8d82cd9c6568c92210aa537d8ef6885",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 6266.576405435144,
+    "metrics": {
+     "apy": "2.385",
+     "baseApy": "2.385",
+     "volumeUsd1d": "40.753",
+     "volumeUsd7d": "1335.454"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "195d70f2-9d2f-49de-a9a2-59e6fb924056",
+    "reserves": [
+     "51.583410708085287843",
+     "1999.552732"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

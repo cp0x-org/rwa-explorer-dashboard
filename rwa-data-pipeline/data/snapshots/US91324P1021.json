@@ -1,0 +1,1201 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US91324P1021",
+ "ticker": "UNH",
+ "name": "UnitedHealth Group",
+ "isin": "US91324P1021",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:37Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "UnitedHealth Group Inc",
+   "symbol": "UNH",
+   "slug": "unitedhealth",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 405.1308624202071,
+     "tokenized_market_cap": 1885820.1063278932,
+     "tokenized_volume_24h": 515088.46844386,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 33,
+   "asset_type": "stock",
+   "rwa_rank": 34,
+   "has_tokens": true,
+   "average_tokenized_price": 405.1308624202071,
+   "tokenized_market_cap": 1885820.1063278932,
+   "tokenized_volume_24h": 515088.46844386,
+   "last_updated": "2026-10-18T20:13:45.460Z",
+   "tokens": [
+    {
+     "symbol": "UNHX",
+     "name": "UnitedHealth tokenized stock (xStock)",
+     "price": 399.6993046986181,
+     "crypto_id": 37045,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 608288.07,
+     "volume_24h": 40034.69646301
+    },
+    {
+     "symbol": "UNHon",
+     "name": "UnitedHealth Tokenized Stock (Ondo)",
+     "price": 405.75538976558636,
+     "crypto_id": 38039,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1278045.86,
+     "volume_24h": 474418.23833228
+    },
+    {
+     "symbol": "UNH",
+     "name": "UnitedHealth Group (Derivatives)",
+     "price": 401.21235974562455,
+     "crypto_id": 39630,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WUNHX",
+     "name": "Wrapped UnitedHealth Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37228,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "UNH",
+     "market_url": "https://www.binance.com/en/stocks/EQ_UNH"
+    }
+   ]
+  },
+  "info": {
+   "37045": {
+    "id": 37045,
+    "symbol": "UNHX",
+    "name": "UnitedHealth tokenized stock (xStock)",
+    "slug": "unitedhealth-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37045.png",
+    "date_added": "2025-07-01T18:39:40.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XszvaiXGPwvk2nwb3o9C1CX4K6zH8sez11E6uyup6fe"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XszvaiXGPwvk2nwb3o9C1CX4K6zH8sez11E6uyup6fe",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCQu9PwIhgX6oEY0U1U4QdKA5nB7gML_K1pyBJWVb6p2ZMr",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "38039": {
+    "id": 38039,
+    "symbol": "UNHon",
+    "name": "UnitedHealth Tokenized Stock (Ondo)",
+    "slug": "unitedhealth-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38039.png",
+    "date_added": "2025-09-03T10:55:24.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x075756F3b6381a79633438fAA8964946bf40163d"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x075756F3b6381a79633438fAA8964946bf40163d",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "kPBGL8vAwKN3UGmr9cjkM2dU79SC3nzTC9yu7F8ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39630": {
+    "id": 39630,
+    "symbol": "UNH",
+    "name": "UnitedHealth Group (Derivatives)",
+    "slug": "unitedhealth-group-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39630.png",
+    "date_added": "2026-02-26T06:44:46.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37228": {
+    "id": 37228,
+    "symbol": "WUNHX",
+    "name": "Wrapped UnitedHealth Tokenized stock (xStock)",
+    "slug": "wrapped-unitedhealth-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37228.png",
+    "date_added": "2025-07-07T04:50:34.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x1F652b05eFB825a068304972BC506Fb43Fac4D6F"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1F652b05eFB825a068304972BC506Fb43Fac4D6F",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa0412ce46fe877b7f174b82acd95e70063bbaf2a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+   "arbitrum:0xa0412ce46fe877b7f174b82acd95e70063bbaf2a",
+   "bsc:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+   "bsc:0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+   "ethereum:0x075756f3b6381a79633438faa8964946bf40163d",
+   "ethereum:0x167a6375da1efc4a5be0f470e73ecefd66245048"
+  ],
+  "exact": {
+   "ethereum:0x075756f3b6381a79633438faa8964946bf40163d": {
+    "key": "ethereum:0x075756f3b6381a79633438faa8964946bf40163d",
+    "name": "UnitedHealth (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UNHON",
+    "price": 406.03,
+    "address": "0x075756f3b6381a79633438faa8964946bf40163d",
+    "addresses": {
+     "ethereum": "0x075756f3b6381a79633438faa8964946bf40163d",
+     "bsc": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1278824,
+    "image": "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+    "metrics": {
+     "volumeUsd1d": "406157.988",
+     "volumeUsd7d": "3278635.619"
+    },
+    "metadata": {},
+    "tokenId": "fbaf4b2c-3660-4b7e-97ff-9393ebd16ea0",
+    "totalSupply": "3149.79393207474",
+    "circulatingSupply": "3149.79393207474",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "ethereum:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "ethereum": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12597776.042176217,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "5082b585-a085-47c2-b6a9-29216f9ecf74",
+    "totalSupply": "31517.290140792618119001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "bsc:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "bsc": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4493887.472645573,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "38c6bad6-8a66-415c-a147-862759f4bc52",
+    "totalSupply": "11242.869762191522858859",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "arbitrum:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "arbitrum": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.169Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14646563.00614121,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "50fd742c-f77b-45ab-bddd-5ff581b0aa51",
+    "totalSupply": "36642.973671264689518419",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3385cb29cca0ac66f5d2354d13ef977b49a2510f": {
+    "key": "bsc:0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+    "name": "UnitedHealth (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UNHON",
+    "price": 406.03,
+    "address": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+    "addresses": {
+     "ethereum": "0x075756f3b6381a79633438faa8964946bf40163d",
+     "bsc": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1278824,
+    "image": "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+    "metrics": {
+     "volumeUsd1d": "406429.137",
+     "volumeUsd7d": "3277854.154"
+    },
+    "metadata": {},
+    "tokenId": "fbaf4b2c-3660-4b7e-97ff-9393ebd16ea0",
+    "totalSupply": "3149.79393207474",
+    "circulatingSupply": "3149.79393207474",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "UNH": {
+    "total_items": 17,
+    "pages": 1,
+    "received": 17,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x075756f3b6381a79633438faa8964946bf40163d": {
+    "key": "ethereum:0x075756f3b6381a79633438faa8964946bf40163d",
+    "name": "UnitedHealth (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UNHON",
+    "price": 406.03,
+    "address": "0x075756f3b6381a79633438faa8964946bf40163d",
+    "addresses": {
+     "ethereum": "0x075756f3b6381a79633438faa8964946bf40163d",
+     "bsc": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1278824,
+    "image": "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+    "metrics": {
+     "volumeUsd1d": "406157.988",
+     "volumeUsd7d": "3278635.619"
+    },
+    "metadata": {},
+    "tokenId": "fbaf4b2c-3660-4b7e-97ff-9393ebd16ea0",
+    "totalSupply": "3149.79393207474",
+    "circulatingSupply": "3149.79393207474",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x04010216076c6ad23fa39417c06069e27e6a6df571d7d14d2ed11d7c2861a22f": {
+    "key": "ethereum:0x04010216076c6ad23fa39417c06069e27e6a6df571d7d14d2ed11d7c2861a22f",
+    "name": "Uniswap V4 LP UNHx/USDT",
+    "decimals": 18,
+    "symbol": "UNHX/USDT",
+    "price": 9007199254740990,
+    "address": "0x04010216076c6ad23fa39417c06069e27e6a6df571d7d14d2ed11d7c2861a22f",
+    "addresses": {
+     "ethereum": "0x04010216076c6ad23fa39417c06069e27e6a6df571d7d14d2ed11d7c2861a22f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.949Z",
+    "createdAt": "2026-09-18T05:44:22.465Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
+    ],
+    "liquidity": 882.2745709266522,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95"
+    },
+    "tokenId": "9fec27f8-95b9-4717-b7d6-dab293e6cf95",
+    "reserves": [
+     "0",
+     "999.999999999999999995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x52ae8a587889fb9450648e427d53766953b475ff": {
+    "key": "arbitrum:0x52ae8a587889fb9450648e427d53766953b475ff",
+    "name": "UnitedHealth rStock",
+    "decimals": 18,
+    "symbol": "RUNH",
+    "price": 400.36,
+    "address": "0x52ae8a587889fb9450648e427d53766953b475ff",
+    "addresses": {
+     "arbitrum": "0x52ae8a587889fb9450648e427d53766953b475ff"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 41740,
+    "image": "https://coin-images.coingecko.com/coins/images/102177189/large/46737e6013c91909c7a4e371c5d48e82.png?1789117104",
+    "metrics": {
+     "volumeUsd1d": "42.213",
+     "volumeUsd7d": "55281.575"
+    },
+    "metadata": {},
+    "tokenId": "a5dc9041-49d1-48ab-b81c-327aebde1254",
+    "totalSupply": "103.882711098",
+    "circulatingSupply": "104.255611098",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xae58def7e10a76937e3e529b0ffe2863a9a363defb71c88e260d6ca4d346613c": {
+    "key": "ethereum:0xae58def7e10a76937e3e529b0ffe2863a9a363defb71c88e260d6ca4d346613c",
+    "name": "Uniswap V4 LP UNHon/wUSDC",
+    "decimals": 18,
+    "symbol": "UNHON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xae58def7e10a76937e3e529b0ffe2863a9a363defb71c88e260d6ca4d346613c",
+    "addresses": {
+     "ethereum": "0xae58def7e10a76937e3e529b0ffe2863a9a363defb71c88e260d6ca4d346613c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.276Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x075756f3b6381a79633438faa8964946bf40163d",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "f019a6fa-d6e6-47ed-b63d-a12cf7613f8a",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xcf364ea52787e289de6f32077834056e3e70d6a8": {
+    "key": "robinhood:0xcf364ea52787e289de6f32077834056e3e70d6a8",
+    "name": "UnitedHealth • Robinhood Token",
+    "decimals": 18,
+    "symbol": "UNH",
+    "price": 402.5150572392282,
+    "address": "0xcf364ea52787e289de6f32077834056e3e70d6a8",
+    "addresses": {
+     "robinhood": "0xcf364ea52787e289de6f32077834056e3e70d6a8"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xcf364ea52787e289de6f32077834056e3e70d6a8.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-10T13:38:25.611Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xcf364ea52787e289de6f32077834056e3e70d6a8",
+    "liquidity": 25836.53890429595,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2019.72"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000006d5054df7b5d4f8f8a11cc01084242e7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1004241501039702113",
+     "currentMultiplier": "1.004241501039702113",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "320ce3df-cb5c-4a9d-9bc9-07566dd52a1e",
+    "totalSupply": "64.18775755",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6901c42bf2baa57e6473fde740b4f25d4e0fe7278df8156af9406081a9755a0d": {
+    "key": "robinhood:0x6901c42bf2baa57e6473fde740b4f25d4e0fe7278df8156af9406081a9755a0d",
+    "name": "Uniswap V4 LP USDG/UNH",
+    "decimals": 18,
+    "symbol": "USDG/UNH",
+    "price": 9007199254740990,
+    "address": "0x6901c42bf2baa57e6473fde740b4f25d4e0fe7278df8156af9406081a9755a0d",
+    "addresses": {
+     "robinhood": "0x6901c42bf2baa57e6473fde740b4f25d4e0fe7278df8156af9406081a9755a0d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.269Z",
+    "createdAt": "2026-09-09T05:31:40.910Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xcf364ea52787e289de6f32077834056e3e70d6a8"
+    ],
+    "liquidity": 3602.297987999012,
+    "metrics": {
+     "apy": "0.175",
+     "baseApy": "0.175",
+     "volumeUsd1d": "1.916",
+     "volumeUsd7d": "3495.844"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 80,
+     "feePercentage": "0.8992"
+    },
+    "tokenId": "da086026-7098-4fca-8c25-3358b3ff810c",
+    "reserves": [
+     "1435.346291",
+     "5.383529530203686416"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "ethereum:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "ethereum": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12597776.042176217,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "5082b585-a085-47c2-b6a9-29216f9ecf74",
+    "totalSupply": "31517.290140792618119001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf327da667436e0390bc29269c97103f94a9957926795db273390cd2f416d9f4b": {
+    "key": "ethereum:0xf327da667436e0390bc29269c97103f94a9957926795db273390cd2f416d9f4b",
+    "name": "Uniswap V4 LP UNHon/wUSDC",
+    "decimals": 18,
+    "symbol": "UNHON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xf327da667436e0390bc29269c97103f94a9957926795db273390cd2f416d9f4b",
+    "addresses": {
+     "ethereum": "0xf327da667436e0390bc29269c97103f94a9957926795db273390cd2f416d9f4b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.931Z",
+    "createdAt": "2026-09-28T10:37:34.483Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x075756f3b6381a79633438faa8964946bf40163d",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "51480d15-7e4c-4604-9005-eeb9ac7dda61",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x33b6189f8abc4435b13eef8e47d79df8a4b509d57dff322aefb9b834af3859e4": {
+    "key": "robinhood:0x33b6189f8abc4435b13eef8e47d79df8a4b509d57dff322aefb9b834af3859e4",
+    "name": "Uniswap V4 LP ETH/UNH",
+    "decimals": 18,
+    "symbol": "ETH/UNH",
+    "price": 9007199254740990,
+    "address": "0x33b6189f8abc4435b13eef8e47d79df8a4b509d57dff322aefb9b834af3859e4",
+    "addresses": {
+     "robinhood": "0x33b6189f8abc4435b13eef8e47d79df8a4b509d57dff322aefb9b834af3859e4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.229Z",
+    "createdAt": "2026-09-08T14:37:36.709Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xcf364ea52787e289de6f32077834056e3e70d6a8"
+    ],
+    "liquidity": 577.3354288517775,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "49.092"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 501,
+     "feePercentage": "5.1045"
+    },
+    "tokenId": "e81ebe78-f594-456e-bfeb-d2da4a695af7",
+    "reserves": [
+     "0.061249294484911753",
+     "1.079088982034148706"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7e4ccc988d0cdcd9591b3b54c9240f33ee56841e7b44dd04dfd7d15c7df32472": {
+    "key": "ethereum:0x7e4ccc988d0cdcd9591b3b54c9240f33ee56841e7b44dd04dfd7d15c7df32472",
+    "name": "Uniswap V4 LP UNHx/USDT",
+    "decimals": 18,
+    "symbol": "UNHX/USDT",
+    "price": 9007199254740990,
+    "address": "0x7e4ccc988d0cdcd9591b3b54c9240f33ee56841e7b44dd04dfd7d15c7df32472",
+    "addresses": {
+     "ethereum": "0x7e4ccc988d0cdcd9591b3b54c9240f33ee56841e7b44dd04dfd7d15c7df32472"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.183Z",
+    "createdAt": "2026-10-18T18:58:08.320Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "253d2d9c-fd51-4203-81b9-7a9736965d18",
+    "reserves": [
+     "0",
+     "3999.999999999999999985"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "bsc:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "bsc": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4493887.472645573,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "38c6bad6-8a66-415c-a147-862759f4bc52",
+    "totalSupply": "11242.869762191522858859",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x167a6375da1efc4a5be0f470e73ecefd66245048": {
+    "key": "arbitrum:0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "name": "UnitedHealth xStock",
+    "decimals": 18,
+    "symbol": "UNHX",
+    "price": 399.71,
+    "address": "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+    "addresses": {
+     "arbitrum": "0x167a6375da1efc4a5be0f470e73ecefd66245048"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.169Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14646563.00614121,
+    "image": "https://coin-images.coingecko.com/coins/images/55640/large/Ticker_UNH__Company_Name_United_Health__size_200x200_2x.png?1746863336",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "unitedhealth-xstock"
+    },
+    "tokenId": "50fd742c-f77b-45ab-bddd-5ff581b0aa51",
+    "totalSupply": "36642.973671264689518419",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9b279e8c272ba9e031e49f21ef6174446ef0a3d9bc1387d30c29d1aab38dcc42": {
+    "key": "arbitrum:0x9b279e8c272ba9e031e49f21ef6174446ef0a3d9bc1387d30c29d1aab38dcc42",
+    "name": "Uniswap V4 LP UNHx/USDT",
+    "decimals": 18,
+    "symbol": "UNHX/USDT",
+    "price": 9007199254740990,
+    "address": "0x9b279e8c272ba9e031e49f21ef6174446ef0a3d9bc1387d30c29d1aab38dcc42",
+    "addresses": {
+     "arbitrum": "0x9b279e8c272ba9e031e49f21ef6174446ef0a3d9bc1387d30c29d1aab38dcc42"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.866Z",
+    "createdAt": "2026-10-16T14:24:09.350Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x167a6375da1efc4a5be0f470e73ecefd66245048",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "edbd98c7-128e-42b8-b185-04504875a43c",
+    "reserves": [
+     "0",
+     "1999.999999999999999983"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3385cb29cca0ac66f5d2354d13ef977b49a2510f": {
+    "key": "bsc:0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+    "name": "UnitedHealth (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UNHON",
+    "price": 406.03,
+    "address": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f",
+    "addresses": {
+     "ethereum": "0x075756f3b6381a79633438faa8964946bf40163d",
+     "bsc": "0x3385cb29cca0ac66f5d2354d13ef977b49a2510f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1278824,
+    "image": "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+    "metrics": {
+     "volumeUsd1d": "406429.137",
+     "volumeUsd7d": "3277854.154"
+    },
+    "metadata": {},
+    "tokenId": "fbaf4b2c-3660-4b7e-97ff-9393ebd16ea0",
+    "totalSupply": "3149.79393207474",
+    "circulatingSupply": "3149.79393207474",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x968046797b360bc9af4ac59faa255018d17064412c7a32ae2938e6cf6edabd94": {
+    "key": "robinhood:0x968046797b360bc9af4ac59faa255018d17064412c7a32ae2938e6cf6edabd94",
+    "name": "Uniswap V4 LP ETH/UNH",
+    "decimals": 18,
+    "symbol": "ETH/UNH",
+    "price": 9007199254740990,
+    "address": "0x968046797b360bc9af4ac59faa255018d17064412c7a32ae2938e6cf6edabd94",
+    "addresses": {
+     "robinhood": "0x968046797b360bc9af4ac59faa255018d17064412c7a32ae2938e6cf6edabd94"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.976Z",
+    "createdAt": "2026-09-09T13:25:15.761Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xcf364ea52787e289de6f32077834056e3e70d6a8"
+    ],
+    "liquidity": 2073.365095070189,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "137.734"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "ea9ae916-ced2-4a22-aeef-3cbe4cdd83cd",
+    "reserves": [
+     "0.122382573965731276",
+     "4.441235595592788919"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcc192622625b9c8b9ede6205639ec92affffbc6ac1ed4ce7e9150be58e5d10d3": {
+    "key": "ethereum:0xcc192622625b9c8b9ede6205639ec92affffbc6ac1ed4ce7e9150be58e5d10d3",
+    "name": "Uniswap V4 LP UNHon/EGP",
+    "decimals": 18,
+    "symbol": "UNHON/EGP",
+    "price": 9007199254740990,
+    "address": "0xcc192622625b9c8b9ede6205639ec92affffbc6ac1ed4ce7e9150be58e5d10d3",
+    "addresses": {
+     "ethereum": "0xcc192622625b9c8b9ede6205639ec92affffbc6ac1ed4ce7e9150be58e5d10d3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68624/large/unhon_160x160.png?1756130276",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.590Z",
+    "createdAt": "2026-10-14T06:54:37.734Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x075756f3b6381a79633438faa8964946bf40163d",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20074.85044774784,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.66"
+    },
+    "tokenId": "6a34fdd7-2a30-4d4e-be76-c6be27398f9b",
+    "reserves": [
+     "0.072239088314633715",
+     "19999.999999999999999989"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfcd0ff818a8728244eb0b4b1b6e2211161e3fc7b88b3081c5024d7a0dfcd7099": {
+    "key": "robinhood:0xfcd0ff818a8728244eb0b4b1b6e2211161e3fc7b88b3081c5024d7a0dfcd7099",
+    "name": "Uniswap V4 LP USDG/UNH",
+    "decimals": 18,
+    "symbol": "USDG/UNH",
+    "price": 9007199254740990,
+    "address": "0xfcd0ff818a8728244eb0b4b1b6e2211161e3fc7b88b3081c5024d7a0dfcd7099",
+    "addresses": {
+     "robinhood": "0xfcd0ff818a8728244eb0b4b1b6e2211161e3fc7b88b3081c5024d7a0dfcd7099"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.280Z",
+    "createdAt": "2026-09-09T21:43:16.395Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xcf364ea52787e289de6f32077834056e3e70d6a8"
+    ],
+    "liquidity": 1090.0251312746198,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "67.295"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "68a7f81b-d83f-4a41-8256-d17d029b0364",
+    "reserves": [
+     "67.29478",
+     "2.540849920719305707"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

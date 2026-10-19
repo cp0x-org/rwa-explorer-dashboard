@@ -1,0 +1,1607 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US95058W1009",
+ "ticker": "WEN",
+ "name": "Wendy's",
+ "isin": "US95058W1009",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:35Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Wendy's Company",
+   "symbol": "WEN",
+   "slug": "wendy-s-company",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 6.641877423048932,
+     "tokenized_market_cap": 518356.1390531488,
+     "tokenized_volume_24h": 1104777.45844476,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 3231,
+   "asset_type": "stock",
+   "rwa_rank": 2289,
+   "has_tokens": true,
+   "average_tokenized_price": 6.641877423048932,
+   "tokenized_market_cap": 518356.1390531488,
+   "tokenized_volume_24h": 1104777.45844476,
+   "last_updated": "2026-10-18T20:13:42.424Z",
+   "tokens": [
+    {
+     "symbol": "WEN",
+     "name": "Wendy's Co (Derivatives)",
+     "price": 6.653528077078036,
+     "crypto_id": 40575,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wWENx",
+     "name": "Wrapped Wendy's Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41685,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "WENon",
+     "name": "Wendy's Tokenized Stock (Ondo)",
+     "price": 6.766940870637637,
+     "crypto_id": 42275,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 130.39,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WENB",
+     "name": "Wendy's Tokenized bStocks",
+     "price": 6.642924994178144,
+     "crypto_id": 42387,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 516306.13,
+     "volume_24h": 1107325.12862875
+    },
+    {
+     "symbol": "WENc",
+     "name": "Wendy's Co Tokenized Stock (Coinbase)",
+     "price": 8.276782848406958,
+     "crypto_id": 42423,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 2001.04,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "WEN",
+     "market_url": "https://www.binance.com/en/stocks/EQ_WEN"
+    }
+   ]
+  },
+  "info": {
+   "40575": {
+    "id": 40575,
+    "symbol": "WEN",
+    "name": "Wendy's Co (Derivatives)",
+    "slug": "wendys-co-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40575.png",
+    "date_added": "2026-06-26T07:05:30.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41685": {
+    "id": 41685,
+    "symbol": "wWENx",
+    "name": "Wrapped Wendy's Tokenized Stock (xStock)",
+    "slug": "wrapped-wendys-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41685.png",
+    "date_added": "2026-08-11T16:26:32.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x31e088bD155f1F81b448c77d6B7Db3DE6a4be081"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x31e088bD155f1F81b448c77d6B7Db3DE6a4be081",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42275": {
+    "id": 42275,
+    "symbol": "WENon",
+    "name": "Wendy's Tokenized Stock (Ondo)",
+    "slug": "wendys-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42275.png",
+    "date_added": "2026-09-11T02:10:25.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x613518b520241f90c3E023Bb6006c63A5019CA7B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x613518b520241f90c3E023Bb6006c63A5019CA7B",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "QwJ619MuDRvT1f29RH7tMdaqsUnaSNcvBEJAZkHondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x79ed7f4d9668E8e7AaadD12A711d19064840B9A5",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42387": {
+    "id": 42387,
+    "symbol": "WENB",
+    "name": "Wendy's Tokenized bStocks",
+    "slug": "wendys-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42387.png",
+    "date_added": "2026-09-29T10:49:35.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42423": {
+    "id": 42423,
+    "symbol": "WENc",
+    "name": "Wendy's Co Tokenized Stock (Coinbase)",
+    "slug": "wendys-co-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42423.png",
+    "date_added": "2026-10-08T04:00:04.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb20000000000000000000044e3cd7a0e1028e57a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb20000000000000000000044e3cd7a0e1028e57a",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "base:0xb20000000000000000000044e3cd7a0e1028e57a",
+   "bsc:0x79ed7f4d9668e8e7aaadd12a711d19064840b9a5",
+   "bsc:0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+   "ethereum:0x613518b520241f90c3e023bb6006c63a5019ca7b"
+  ],
+  "exact": {
+   "bsc:0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd": {
+    "key": "bsc:0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+    "name": "Wendy’s (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WENB",
+    "price": 6.65,
+    "address": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+    "addresses": {
+     "bsc": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-01T02:30:42.409Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 517167,
+    "image": "https://coin-images.coingecko.com/coins/images/102178983/large/42387.jpg?1790820965",
+    "metrics": {
+     "volumeUsd1d": "1036060.245",
+     "volumeUsd7d": "4191257.483"
+    },
+    "metadata": {},
+    "tokenId": "cf3bab75-6b33-4688-a2b3-75d078edd1e4",
+    "totalSupply": "77722.70959575",
+    "circulatingSupply": "77722.70959575",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "WEN": {
+    "total_items": 35,
+    "pages": 1,
+    "received": 35,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xb86c8358f7753e188e588411e9f04e4488ce850e": {
+    "key": "robinhood:0xb86c8358f7753e188e588411e9f04e4488ce850e",
+    "name": "Wen Cat",
+    "decimals": 18,
+    "symbol": "WENCAT",
+    "price": 4.9921502393175466e-06,
+    "address": "0xb86c8358f7753e188e588411e9f04e4488ce850e",
+    "addresses": {
+     "robinhood": "0xb86c8358f7753e188e588411e9f04e4488ce850e"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-12T03:01:25.541Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4992.150239317547,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "28.51"
+    },
+    "metadata": {},
+    "tokenId": "17b6471e-6347-4d40-bb1a-8a455faf31cf",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xef2851eb6b10b077a45cbc0a5b89d0ef0fdcc733": {
+    "key": "robinhood:0xef2851eb6b10b077a45cbc0a5b89d0ef0fdcc733",
+    "name": "WEN",
+    "decimals": 18,
+    "symbol": "WEN",
+    "price": 3.5508075859641044e-05,
+    "address": "0xef2851eb6b10b077a45cbc0a5b89d0ef0fdcc733",
+    "addresses": {
+     "robinhood": "0xef2851eb6b10b077a45cbc0a5b89d0ef0fdcc733"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-17T01:49:35.207Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35508.075859641045,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "e06ef18f-8004-46cc-a49f-69a7dc55b61f",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a": {
+    "key": "ethereum:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "name": "Wendy's aStock",
+    "decimals": 18,
+    "symbol": "AWEN",
+    "price": 6.66,
+    "address": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "addresses": {
+     "arbitrum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "base": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "robinhood": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "ethereum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "bsc": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11020.99,
+    "image": "https://coin-images.coingecko.com/coins/images/102175740/large/WEN.png?1787292449",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1b7f9774-27dc-4458-968b-36d5394c553d",
+    "totalSupply": "1656.046343902",
+    "circulatingSupply": "1656.046343902",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7b4bc0f9567a3db0b900e2078982986c451e7393": {
+    "key": "ethereum:0x7b4bc0f9567a3db0b900e2078982986c451e7393",
+    "name": "WenMoon",
+    "decimals": 18,
+    "symbol": "NGMI",
+    "price": 1.5526803261673652e-06,
+    "address": "0x7b4bc0f9567a3db0b900e2078982986c451e7393",
+    "addresses": {
+     "ethereum": "0x7b4bc0f9567a3db0b900e2078982986c451e7393"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-11-29T21:05:47.719Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1552.6803261673651,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "882c0428-4c8c-41d7-bb3c-9ca556febe01",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xeba6145367b33e9fb683358e0421e8b7337d435f": {
+    "key": "ethereum:0xeba6145367b33e9fb683358e0421e8b7337d435f",
+    "name": "Wencash",
+    "decimals": 18,
+    "symbol": "WEN",
+    "price": 0.00043963385800558784,
+    "address": "0xeba6145367b33e9fb683358e0421e8b7337d435f",
+    "addresses": {
+     "ethereum": "0xeba6145367b33e9fb683358e0421e8b7337d435f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 43963.38580055878,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "11.68",
+     "volumeUsd7d": "626.37"
+    },
+    "metadata": {},
+    "tokenId": "a2f34a2f-91f6-4ddb-959d-049c9360822b",
+    "totalSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a": {
+    "key": "robinhood:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "name": "Wendy's aStock",
+    "decimals": 18,
+    "symbol": "AWEN",
+    "price": 6.66,
+    "address": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "addresses": {
+     "arbitrum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "base": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "robinhood": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "ethereum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "bsc": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11020.99,
+    "image": "https://coin-images.coingecko.com/coins/images/102175740/large/WEN.png?1787292449",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1b7f9774-27dc-4458-968b-36d5394c553d",
+    "totalSupply": "1656.046343902",
+    "circulatingSupply": "1656.046343902",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfeac00616cecfd049767bdd0276e75550ae10f81": {
+    "key": "robinhood:0xfeac00616cecfd049767bdd0276e75550ae10f81",
+    "name": "UniswapV2 LP WETH/WEN",
+    "decimals": 18,
+    "symbol": "WETH/WEN",
+    "price": 4012.968461421704,
+    "address": "0xfeac00616cecfd049767bdd0276e75550ae10f81",
+    "addresses": {
+     "robinhood": "0xfeac00616cecfd049767bdd0276e75550ae10f81"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-08-08T18:13:22.160Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xf172dc5b774c52432e1e5223cd30f8e8a1096969"
+    ],
+    "liquidity": 3096.7534454640554,
+    "metrics": {
+     "apy": "0.105",
+     "baseApy": "0.105",
+     "volumeUsd1d": "2.958",
+     "volumeUsd7d": "59.209"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "f54ed56a-b356-42b2-b5a2-e69b3175b35c",
+    "totalSupply": "0.771686464828817932",
+    "reserves": [
+     "0.653540265679768649",
+     "951636983.081174629"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1963a95cfc30e49cc75f7f2de6027289971cac79": {
+    "key": "ethereum:0x1963a95cfc30e49cc75f7f2de6027289971cac79",
+    "name": "Wen Lambo Financial",
+    "decimals": 18,
+    "symbol": "WLFI",
+    "price": 81.87931150566884,
+    "address": "0x1963a95cfc30e49cc75f7f2de6027289971cac79",
+    "addresses": {
+     "ethereum": "0x1963a95cfc30e49cc75f7f2de6027289971cac79"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 81879.31150566884,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "33.75",
+     "volumeUsd7d": "2700.66"
+    },
+    "metadata": {},
+    "tokenId": "0315b3cb-113b-40fd-bc2a-17d2e2374461",
+    "totalSupply": "1000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd813e7ac5bb5067ca548e4d9ba441d95003d074f": {
+    "key": "ethereum:0xd813e7ac5bb5067ca548e4d9ba441d95003d074f",
+    "name": "UniswapV2 LP NUT/WEN",
+    "decimals": 18,
+    "symbol": "NUT/WEN",
+    "price": 4.521164990590381e-06,
+    "address": "0xd813e7ac5bb5067ca548e4d9ba441d95003d074f",
+    "addresses": {
+     "ethereum": "0xd813e7ac5bb5067ca548e4d9ba441d95003d074f"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/37569/large/icon-2_200x200.png?1714886224",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:51.474Z",
+    "createdAt": "2025-09-07T07:15:55.221Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x473f4068073cd5b2ab0e4cc8e146f9edc6fb52cc",
+     "0xeba6145367b33e9fb683358e0421e8b7337d435f"
+    ],
+    "liquidity": 36169.31992472305,
+    "metrics": {
+     "apy": "0.035",
+     "baseApy": "0.035",
+     "volumeUsd1d": "11.526",
+     "volumeUsd7d": "332.114"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "dd28ed03-84ea-45d2-bed7-45f52e5139bf",
+    "totalSupply": "8000000000",
+    "reserves": [
+     "1639024650767.209723265118151893",
+     "40967194.611849524817669543"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a": {
+    "key": "arbitrum:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "name": "Wendy's aStock",
+    "decimals": 18,
+    "symbol": "AWEN",
+    "price": 6.66,
+    "address": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "addresses": {
+     "arbitrum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "base": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "robinhood": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "ethereum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "bsc": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11020.99,
+    "image": "https://coin-images.coingecko.com/coins/images/102175740/large/WEN.png?1787292449",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1b7f9774-27dc-4458-968b-36d5394c553d",
+    "totalSupply": "1656.046343902",
+    "circulatingSupply": "1656.046343902",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b": {
+    "key": "ethereum:0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+    "name": "Twenty One Capital (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "XXI",
+    "price": 6.41,
+    "address": "0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+    "addresses": {
+     "base": "0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+     "arbitrum": "0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+     "ethereum": "0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+     "avalanche": "0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6160.77,
+    "image": "https://coin-images.coingecko.com/coins/images/102175012/large/dinari-logo-green-with-margin.png?1785402892",
+    "metrics": {
+     "volumeUsd1d": "7.757",
+     "volumeUsd7d": "53.766"
+    },
+    "metadata": {},
+    "tokenId": "636f5a0a-8c52-4159-b6eb-e2d79cde47c6",
+    "totalSupply": "961.441671153",
+    "circulatingSupply": "961.441671153",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xf44f49e6577b3934f981c6f0629d15154d2606e6": {
+    "key": "hyperevm:0xf44f49e6577b3934f981c6f0629d15154d2606e6",
+    "name": "D2 Finance HyperliquidTwentyOne",
+    "decimals": 8,
+    "symbol": "HXXI",
+    "price": 84112.91520075001,
+    "address": "0xf44f49e6577b3934f981c6f0629d15154d2606e6",
+    "addresses": {
+     "hyperevm": "0xf44f49e6577b3934f981c6f0629d15154d2606e6"
+    },
+    "platform": "d2-finance",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/d2-finance",
+     "https://coin-images.coingecko.com/coins/images/55066/large/ubtc.jpg?1743580113"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.305Z",
+    "createdAt": "2026-06-22T11:35:50.108Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9fdbda0a5e284c32744d2f17ee5c74b284993463"
+    ],
+    "liquidity": 1717134.4954133,
+    "metrics": {
+     "apy": "-22.17",
+     "baseApy": "-22.17",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#liquid-staking",
+      "#yield",
+      "#btc"
+     ],
+     "interface": "ERC4626"
+    },
+    "tokenId": "28e5ad2d-2694-4cf5-82ce-64f39d904d37",
+    "totalSupply": "20.41463539",
+    "reserves": [
+     "21.26087417"
+    ],
+    "pricePerShare": "1.04145255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x587059840a8bbc992534a05f1633c9d453dda06cb9450e33ee49771704dff021": {
+    "key": "ethereum:0x587059840a8bbc992534a05f1633c9d453dda06cb9450e33ee49771704dff021",
+    "name": "Uniswap V4 LP EGP/WENon",
+    "decimals": 18,
+    "symbol": "EGP/WENON",
+    "price": 9007199254740990,
+    "address": "0x587059840a8bbc992534a05f1633c9d453dda06cb9450e33ee49771704dff021",
+    "addresses": {
+     "ethereum": "0x587059840a8bbc992534a05f1633c9d453dda06cb9450e33ee49771704dff021"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102176867/large/wendys.png?1788933700"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.420Z",
+    "createdAt": "2026-10-15T14:16:55.398Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x613518b520241f90c3e023bb6006c63a5019ca7b"
+    ],
+    "liquidity": 20063.376725123508,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.21"
+    },
+    "tokenId": "cf951305-011c-4afb-af05-f0975eb12973",
+    "reserves": [
+     "19999.999999999999999999",
+     "4.284352436143228582"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a": {
+    "key": "base:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "name": "Wendy's aStock",
+    "decimals": 18,
+    "symbol": "AWEN",
+    "price": 6.66,
+    "address": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "addresses": {
+     "arbitrum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "base": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "robinhood": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "ethereum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "bsc": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11020.99,
+    "image": "https://coin-images.coingecko.com/coins/images/102175740/large/WEN.png?1787292449",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1b7f9774-27dc-4458-968b-36d5394c553d",
+    "totalSupply": "1656.046343902",
+    "circulatingSupply": "1656.046343902",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x215ea98c2a293adee2e33f38c2e18c0564361a2a": {
+    "key": "polygon:0x215ea98c2a293adee2e33f38c2e18c0564361a2a",
+    "name": "Uniswap V3 WEN Token (FXERC20)/Wrapped Ether 1%",
+    "decimals": 18,
+    "symbol": "WEN TOKEN (FXERC20)/WRAPPED ETHER",
+    "price": 9007199254740990,
+    "address": "0x215ea98c2a293adee2e33f38c2e18c0564361a2a",
+    "addresses": {
+     "polygon": "0x215ea98c2a293adee2e33f38c2e18c0564361a2a"
+    },
+    "platform": "uniswap-v3",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/30400/large/kxtrOzUd_400x400.jpg?1696529290",
+     "https://coin-images.coingecko.com/coins/images/39708/large/WETH.PNG?1723730343"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.369Z",
+    "createdAt": "2025-02-27T07:05:09.732Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x11a88f949c0592238959142653bb6847c6523d81",
+     "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+    ],
+    "liquidity": 1247.1535948461942,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8add44cf-f8ce-41b4-ab92-710e03ed7060",
+    "reserves": [
+     "6009556330.922792079888558699",
+     "0.099806611193970062"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd8edf76883cf0bdbbaef78eca4195e351edfbdce": {
+    "key": "bsc:0xd8edf76883cf0bdbbaef78eca4195e351edfbdce",
+    "name": "PancakeSwap V3 Tether USD/Wendy's 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/WENB",
+    "price": 9007199254740990,
+    "address": "0xd8edf76883cf0bdbbaef78eca4195e351edfbdce",
+    "addresses": {
+     "bsc": "0xd8edf76883cf0bdbbaef78eca4195e351edfbdce"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102178983/large/42387.jpg?1790820965",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.258Z",
+    "createdAt": "2026-10-01T03:12:31.125Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    ],
+    "liquidity": 105853.5367356996,
+    "metrics": {
+     "apy": "3.93",
+     "baseApy": "3.93",
+     "volumeUsd1d": "4562.101",
+     "volumeUsd7d": "101693.227"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "cf1d6275-b609-4840-b548-0ce645bf08d4",
+    "reserves": [
+     "56768.471525506693545641",
+     "7399.664541982196435414"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x442b29b177cda78537dd58a7aee7071729e96885": {
+    "key": "base:0x442b29b177cda78537dd58a7aee7071729e96885",
+    "name": "Hydrex Wrapped The Wendy's Company ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTWEN/USDC",
+    "price": 9007199254740990,
+    "address": "0x442b29b177cda78537dd58a7aee7071729e96885",
+    "addresses": {
+     "base": "0x442b29b177cda78537dd58a7aee7071729e96885"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102178257/large/WEN.png?1789228175",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-09-12T17:37:07.481Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x31fa821f8b1bdea7db357ec9622d1a2f6afe903d",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 25427.269095343327,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2119.156"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "40ca8a61-3f49-4e48-929f-ab69d6ce9cf6",
+    "reserves": [
+     "3204.429581856961079607",
+     "4054.680689"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcf4d1c0470c8e2ae8bf8160dc1c0ac25f00bb702": {
+    "key": "ethereum:0xcf4d1c0470c8e2ae8bf8160dc1c0ac25f00bb702",
+    "name": "UniswapV2 LP WETH/WEN",
+    "decimals": 18,
+    "symbol": "WETH/WEN",
+    "price": 2.311734776360196,
+    "address": "0xcf4d1c0470c8e2ae8bf8160dc1c0ac25f00bb702",
+    "addresses": {
+     "ethereum": "0xcf4d1c0470c8e2ae8bf8160dc1c0ac25f00bb702"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:53.103Z",
+    "createdAt": "2025-09-07T07:15:53.592Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xeba6145367b33e9fb683358e0421e8b7337d435f"
+    ],
+    "liquidity": 14620.694479036387,
+    "metrics": {
+     "apy": "0.087",
+     "baseApy": "0.087",
+     "volumeUsd1d": "11.671",
+     "volumeUsd7d": "319.203"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "8a89ded1-a6d0-4dc2-92a2-f8bfd8a6f327",
+    "totalSupply": "6324.555320336758663997",
+    "reserves": [
+     "3.128054375837543485",
+     "16618635.154284521040914235"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820": {
+    "key": "robinhood:0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820",
+    "name": "Wen Lambo",
+    "decimals": 18,
+    "symbol": "WEN",
+    "price": 0.00014547,
+    "address": "0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820",
+    "addresses": {
+     "robinhood": "0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 145464,
+    "image": "https://coin-images.coingecko.com/coins/images/102174429/large/Screenshot_2026-07-10_at_6.46.16%E2%80%AFAM.png?1783670272",
+    "metrics": {
+     "volumeUsd1d": "345.006",
+     "volumeUsd7d": "10855.176"
+    },
+    "metadata": {},
+    "tokenId": "286cb5da-407e-41e6-a1ff-21e09ff1eb3d",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcf099e75c80a2a01cfd6d6448e4cdf59b7f5d7ec": {
+    "key": "ethereum:0xcf099e75c80a2a01cfd6d6448e4cdf59b7f5d7ec",
+    "name": "UniswapV2 LP WEN/WETH",
+    "decimals": 18,
+    "symbol": "WEN/WETH",
+    "price": 0.05259267395187209,
+    "address": "0xcf099e75c80a2a01cfd6d6448e4cdf59b7f5d7ec",
+    "addresses": {
+     "ethereum": "0xcf099e75c80a2a01cfd6d6448e4cdf59b7f5d7ec"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/30400/large/kxtrOzUd_400x400.jpg?1696529290",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:17:53.054Z",
+    "createdAt": "2024-04-12T03:04:05.249Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x830a8512db4f6fca51968593e2667156c2c483a8",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 95450.40157793325,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "volumeUsd1d": "0.957",
+     "volumeUsd7d": "1.999"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "500e29ef-458c-495e-98a9-cd3d11bd7f2d",
+    "totalSupply": "1814899.194235314388987604",
+    "reserves": [
+     "286871427642.411252193079742529",
+     "20.119675247869095403"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4": {
+    "key": "base:0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+    "name": "Twenty One Capital (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "XXI",
+    "price": 6.41,
+    "address": "0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+    "addresses": {
+     "base": "0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+     "arbitrum": "0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+     "ethereum": "0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+     "avalanche": "0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6160.77,
+    "image": "https://coin-images.coingecko.com/coins/images/102175012/large/dinari-logo-green-with-margin.png?1785402892",
+    "metrics": {
+     "volumeUsd1d": "7.757",
+     "volumeUsd7d": "53.736"
+    },
+    "metadata": {},
+    "tokenId": "636f5a0a-8c52-4159-b6eb-e2d79cde47c6",
+    "totalSupply": "961.441671153",
+    "circulatingSupply": "961.441671153",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc265df05e2dcaf4f5768fa82faf79985758a4e486b18e55b4683a78d959af237": {
+    "key": "bsc:0xc265df05e2dcaf4f5768fa82faf79985758a4e486b18e55b4683a78d959af237",
+    "name": "Uniswap V4 LP USDT/WENB",
+    "decimals": 18,
+    "symbol": "USDT/WENB",
+    "price": 9007199254740990,
+    "address": "0xc265df05e2dcaf4f5768fa82faf79985758a4e486b18e55b4683a78d959af237",
+    "addresses": {
+     "bsc": "0xc265df05e2dcaf4f5768fa82faf79985758a4e486b18e55b4683a78d959af237"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178983/large/42387.jpg?1790820965",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.250Z",
+    "createdAt": "2026-10-01T03:12:08.054Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    ],
+    "liquidity": 7615.97102355396,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "143.466"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "e16d7780-bf13-4ba6-9598-a0eac0f04db7",
+    "reserves": [
+     "2858.34482549303742985",
+     "715.782819412586341738"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3b2ccee56e7360f958c2972a770503094549460f": {
+    "key": "robinhood:0x3b2ccee56e7360f958c2972a770503094549460f",
+    "name": "Uniswap V3 WETH/Wen Cat 1%",
+    "decimals": 18,
+    "symbol": "WETH/WENCAT",
+    "price": 9007199254740990,
+    "address": "0x3b2ccee56e7360f958c2972a770503094549460f",
+    "addresses": {
+     "robinhood": "0x3b2ccee56e7360f958c2972a770503094549460f"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.026Z",
+    "createdAt": "2026-08-12T03:06:00.334Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xb86c8358f7753e188e588411e9f04e4488ce850e"
+    ],
+    "liquidity": 4833.8351750549145,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.001",
+     "volumeUsd7d": "28.41"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "3d5544ed-6d22-4a19-9ccb-cee19d8214bc",
+    "reserves": [
+     "0.349976996569322707",
+     "804528553.028414612608515837"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8ff5a5764ba2d5198df8c80ed12f23c7fc145394ff33a61fc3c40bcd9997534d": {
+    "key": "ethereum:0x8ff5a5764ba2d5198df8c80ed12f23c7fc145394ff33a61fc3c40bcd9997534d",
+    "name": "Uniswap V4 LP wUSDC/WENon",
+    "decimals": 18,
+    "symbol": "WUSDC/WENON",
+    "price": 9007199254740990,
+    "address": "0x8ff5a5764ba2d5198df8c80ed12f23c7fc145394ff33a61fc3c40bcd9997534d",
+    "addresses": {
+     "ethereum": "0x8ff5a5764ba2d5198df8c80ed12f23c7fc145394ff33a61fc3c40bcd9997534d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102176867/large/wendys.png?1788933700"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.513Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x613518b520241f90c3e023bb6006c63a5019ca7b"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "fc77c9db-8d97-4244-8c1d-87e67a57b2ed",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf172dc5b774c52432e1e5223cd30f8e8a1096969": {
+    "key": "robinhood:0xf172dc5b774c52432e1e5223cd30f8e8a1096969",
+    "name": "WEN",
+    "decimals": 9,
+    "symbol": "WEN",
+    "price": 1.65e-06,
+    "address": "0xf172dc5b774c52432e1e5223cd30f8e8a1096969",
+    "addresses": {
+     "robinhood": "0xf172dc5b774c52432e1e5223cd30f8e8a1096969"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-08T17:28:24.686Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1653.25,
+    "metrics": {
+     "volumeUsd1d": "2.962",
+     "volumeUsd7d": "64.706"
+    },
+    "metadata": {},
+    "tokenId": "49207ca4-1218-4cfe-b23c-726a980aaa5c",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8": {
+    "key": "arbitrum:0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+    "name": "Twenty One Capital (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "XXI",
+    "price": 6.41,
+    "address": "0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+    "addresses": {
+     "base": "0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+     "arbitrum": "0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+     "ethereum": "0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+     "avalanche": "0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6160.77,
+    "image": "https://coin-images.coingecko.com/coins/images/102175012/large/dinari-logo-green-with-margin.png?1785402892",
+    "metrics": {
+     "volumeUsd1d": "7.757",
+     "volumeUsd7d": "53.736"
+    },
+    "metadata": {},
+    "tokenId": "636f5a0a-8c52-4159-b6eb-e2d79cde47c6",
+    "totalSupply": "961.441671153",
+    "circulatingSupply": "961.441671153",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x31fa821f8b1bdea7db357ec9622d1a2f6afe903d": {
+    "key": "base:0x31fa821f8b1bdea7db357ec9622d1a2f6afe903d",
+    "name": "Wendy's (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTWEN",
+    "price": 6.67,
+    "address": "0x31fa821f8b1bdea7db357ec9622d1a2f6afe903d",
+    "addresses": {
+     "base": "0x31fa821f8b1bdea7db357ec9622d1a2f6afe903d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-12T15:54:29.942Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25433,
+    "image": "https://coin-images.coingecko.com/coins/images/102178257/large/WEN.png?1789228175",
+    "metrics": {
+     "volumeUsd1d": "34.324",
+     "volumeUsd7d": "2262.438"
+    },
+    "metadata": {},
+    "tokenId": "69724ec2-9591-4a7c-b272-d814217132d1",
+    "totalSupply": "3813.6836362430004",
+    "circulatingSupply": "3813.6836362430004",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5dc4eee4f99d9e019f736962585265eb15c0299a": {
+    "key": "ethereum:0x5dc4eee4f99d9e019f736962585265eb15c0299a",
+    "name": "Uniswap V3 Wen Lambo Financial/Wrapped Ether 1%",
+    "decimals": 18,
+    "symbol": "WLFI/WETH",
+    "price": 9007199254740990,
+    "address": "0x5dc4eee4f99d9e019f736962585265eb15c0299a",
+    "addresses": {
+     "ethereum": "0x5dc4eee4f99d9e019f736962585265eb15c0299a"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:34.086Z",
+    "createdAt": "2025-09-02T06:58:59.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1963a95cfc30e49cc75f7f2de6027289971cac79",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 659.8334721889221,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "628c8da6-d024-4a39-9fcb-9bbd469bfa40",
+    "reserves": [
+     "2.713339497899561277",
+     "0.187328544248200626"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe": {
+    "key": "avalanche:0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe",
+    "name": "Twenty One Capital (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "XXI",
+    "price": 6.41,
+    "address": "0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe",
+    "addresses": {
+     "base": "0x13dd287e5d5fe3b9c81caf1e0e25e8299c3bb2c4",
+     "arbitrum": "0x9e52fd0c9ba81cf4fa3719c71e6e5282ef3bd3f8",
+     "ethereum": "0x0a4af150d228f52220669ebc79fd7b90d7e5fa1b",
+     "avalanche": "0x77695f942f3ebfa5a92c0dad6a5e9a4612ea30fe"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6160.77,
+    "image": "https://coin-images.coingecko.com/coins/images/102175012/large/dinari-logo-green-with-margin.png?1785402892",
+    "metrics": {
+     "volumeUsd1d": "7.757",
+     "volumeUsd7d": "53.736"
+    },
+    "metadata": {},
+    "tokenId": "636f5a0a-8c52-4159-b6eb-e2d79cde47c6",
+    "totalSupply": "961.441671153",
+    "circulatingSupply": "961.441671153",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbbc2223b9002fcf4eeb1815784e1945b4155d0ff92a8cf385cc3aa03e76ae9dd": {
+    "key": "bsc:0xbbc2223b9002fcf4eeb1815784e1945b4155d0ff92a8cf385cc3aa03e76ae9dd",
+    "name": "Uniswap V4 LP USDT/WENB",
+    "decimals": 18,
+    "symbol": "USDT/WENB",
+    "price": 9007199254740990,
+    "address": "0xbbc2223b9002fcf4eeb1815784e1945b4155d0ff92a8cf385cc3aa03e76ae9dd",
+    "addresses": {
+     "bsc": "0xbbc2223b9002fcf4eeb1815784e1945b4155d0ff92a8cf385cc3aa03e76ae9dd"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102178983/large/42387.jpg?1790820965"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.435Z",
+    "createdAt": "2026-10-01T19:43:37.336Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    ],
+    "liquidity": 7320.8613804684755,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "4.096"
+    },
+    "tokenId": "d4232ea4-2939-47c9-81be-6238cdd7934d",
+    "reserves": [
+     "3450.800360444086676738",
+     "582.386980799721877933"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd": {
+    "key": "bsc:0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+    "name": "Wendy’s (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WENB",
+    "price": 6.65,
+    "address": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd",
+    "addresses": {
+     "bsc": "0xded1c5fb38c262beb9cff1e1116eff3c5bf278cd"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-01T02:30:42.409Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 517167,
+    "image": "https://coin-images.coingecko.com/coins/images/102178983/large/42387.jpg?1790820965",
+    "metrics": {
+     "volumeUsd1d": "1036060.245",
+     "volumeUsd7d": "4191257.483"
+    },
+    "metadata": {},
+    "tokenId": "cf3bab75-6b33-4688-a2b3-75d078edd1e4",
+    "totalSupply": "77722.70959575",
+    "circulatingSupply": "77722.70959575",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x11a88f949c0592238959142653bb6847c6523d81": {
+    "key": "polygon:0x11a88f949c0592238959142653bb6847c6523d81",
+    "name": "WEN Token",
+    "decimals": 18,
+    "symbol": "WEN",
+    "price": 1.68727e-07,
+    "address": "0x11a88f949c0592238959142653bb6847c6523d81",
+    "addresses": {
+     "ethereum": "0x830a8512db4f6fca51968593e2667156c2c483a8",
+     "polygon": "0x11a88f949c0592238959142653bb6847c6523d81"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 70865,
+    "image": "https://assets.coingecko.com/coins/images/30400/large/kxtrOzUd_400x400.jpg?1696529290",
+    "metrics": {
+     "volumeUsd1d": "1.438",
+     "volumeUsd7d": "12.152"
+    },
+    "metadata": {},
+    "tokenId": "b8edef1f-1307-4a0f-bb77-1dedfb4bf13f",
+    "totalSupply": "420000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x830a8512db4f6fca51968593e2667156c2c483a8": {
+    "key": "ethereum:0x830a8512db4f6fca51968593e2667156c2c483a8",
+    "name": "WEN Token",
+    "decimals": 18,
+    "symbol": "WEN",
+    "price": 1.68727e-07,
+    "address": "0x830a8512db4f6fca51968593e2667156c2c483a8",
+    "addresses": {
+     "ethereum": "0x830a8512db4f6fca51968593e2667156c2c483a8",
+     "polygon": "0x11a88f949c0592238959142653bb6847c6523d81"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 70865,
+    "image": "https://assets.coingecko.com/coins/images/30400/large/kxtrOzUd_400x400.jpg?1696529290",
+    "metrics": {
+     "volumeUsd1d": "1.438",
+     "volumeUsd7d": "12.151"
+    },
+    "metadata": {},
+    "tokenId": "b8edef1f-1307-4a0f-bb77-1dedfb4bf13f",
+    "totalSupply": "420000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x3f98045d6bc0fef56bf69e85f1efa7f5100e7c48": {
+    "key": "robinhood:0x3f98045d6bc0fef56bf69e85f1efa7f5100e7c48",
+    "name": "Uniswap V3 WETH/Wen Lambo 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/WEN",
+    "price": 9007199254740990,
+    "address": "0x3f98045d6bc0fef56bf69e85f1efa7f5100e7c48",
+    "addresses": {
+     "robinhood": "0x3f98045d6bc0fef56bf69e85f1efa7f5100e7c48"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174429/large/Screenshot_2026-07-10_at_6.46.16%E2%80%AFAM.png?1783670272"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.267Z",
+    "createdAt": "2026-07-16T20:29:55.312Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820"
+    ],
+    "liquidity": 78864.09243386883,
+    "metrics": {
+     "apy": "0.487",
+     "baseApy": "0.487",
+     "volumeUsd1d": "349.888",
+     "volumeUsd7d": "11035.524"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "4d69161f-7663-469a-9522-a8e80a1ff9d4",
+    "reserves": [
+     "25.091301960041637774",
+     "139228508.272682814926516129"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a": {
+    "key": "bsc:0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "name": "Wendy's aStock",
+    "decimals": 18,
+    "symbol": "AWEN",
+    "price": 6.66,
+    "address": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+    "addresses": {
+     "arbitrum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "base": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "robinhood": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "ethereum": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a",
+     "bsc": "0x4644fd1eab16a21969b4c16be8a2d5c986033f2a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11020.99,
+    "image": "https://coin-images.coingecko.com/coins/images/102175740/large/WEN.png?1787292449",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1b7f9774-27dc-4458-968b-36d5394c553d",
+    "totalSupply": "1656.046343902",
+    "circulatingSupply": "1656.046343902",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

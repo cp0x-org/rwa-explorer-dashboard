@@ -1,0 +1,1526 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US74347X8314",
+ "ticker": "TQQQ",
+ "name": "ProShares UltraPro QQQ",
+ "isin": "US74347X8314",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:17Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "ProShares UltraPro QQQ",
+   "symbol": "TQQQ",
+   "slug": "tqqq",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 66.80995887682636,
+     "tokenized_market_cap": 29837742.86767237,
+     "tokenized_volume_24h": 10464407.27004707,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 211,
+   "asset_type": "etf",
+   "rwa_rank": 7792,
+   "has_tokens": true,
+   "average_tokenized_price": 66.80995887682636,
+   "tokenized_market_cap": 29837742.86767237,
+   "tokenized_volume_24h": 10464407.27004707,
+   "last_updated": "2026-10-18T20:13:32.263Z",
+   "tokens": [
+    {
+     "symbol": "TQQQX",
+     "name": "TQQQ tokenized ETF (xStock)",
+     "price": 57.302526840195256,
+     "crypto_id": 37044,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 3031414.45,
+     "volume_24h": 43087.32689151
+    },
+    {
+     "symbol": "TQQQon",
+     "name": "ProShares UltraPro QQQ Tokenized Stock (Ondo)",
+     "price": 67.66076281766964,
+     "crypto_id": 39284,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 4737634.43,
+     "volume_24h": 1245182.53429852
+    },
+    {
+     "symbol": "rTQQQ",
+     "name": "ProShares UltraPro QQQ Tokenized Stock (Reality)",
+     "price": 67.76653287887471,
+     "crypto_id": 40633,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 995963.32,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "TQQQB",
+     "name": "ProShares UltraPro QQQ Tokenized bStocks",
+     "price": 66.7223217761822,
+     "crypto_id": 40884,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 21065377.62,
+     "volume_24h": 9134925.06811207
+    },
+    {
+     "symbol": "wTQQQx",
+     "name": "Wrapped TQQQ Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41573,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "TQQQ",
+     "market_url": "https://www.binance.com/en/stocks/EQ_TQQQ"
+    }
+   ]
+  },
+  "info": {
+   "37044": {
+    "id": 37044,
+    "symbol": "TQQQX",
+    "name": "TQQQ tokenized ETF (xStock)",
+    "slug": "tqqq-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37044.png",
+    "date_added": "2025-07-01T18:39:40.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EQChEtBTqYzP3_VEAd-RGkxtnFHvZ-KPJVEBWdukdmweJOtX",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "39284": {
+    "id": 39284,
+    "symbol": "TQQQon",
+    "name": "ProShares UltraPro QQQ Tokenized Stock (Ondo)",
+    "slug": "proshares-ultrapro-qqq-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39284.png",
+    "date_added": "2026-01-08T15:44:36.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xa45cd7ac9865b9539166ebaf2abc362df4736580"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "14W1itEkV7k1W819mLSknFTaMmkCtPokbF2tRkPUondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40633": {
+    "id": 40633,
+    "symbol": "rTQQQ",
+    "name": "ProShares UltraPro QQQ Tokenized Stock (Reality)",
+    "slug": "proshares-ultrapro-qqq-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40633.png",
+    "date_added": "2026-07-02T07:39:15.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x947f0803216092d13c9a5a27b8baf66538699965"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x947f0803216092d13c9a5a27b8baf66538699965",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40884": {
+    "id": 40884,
+    "symbol": "TQQQB",
+    "name": "ProShares UltraPro QQQ Tokenized bStocks",
+    "slug": "proshares-ultrapro-qqq-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40884.png",
+    "date_added": "2026-07-20T08:23:32.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x462b5f13b7c7748279358962925c5de83bb9e598"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x462b5f13b7c7748279358962925c5de83bb9e598",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41573": {
+    "id": 41573,
+    "symbol": "wTQQQx",
+    "name": "Wrapped TQQQ Tokenized ETF (xStock)",
+    "slug": "wrapped-tqqq-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41573.png",
+    "date_added": "2026-08-11T16:25:14.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x0b6cEC8Ded816651dB478411fDc2c5bFc269b1e1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0b6cEC8Ded816651dB478411fDc2c5bFc269b1e1",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x947f0803216092d13c9a5a27b8baf66538699965",
+   "arbitrum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+   "bsc:0x462b5f13b7c7748279358962925c5de83bb9e598",
+   "bsc:0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+   "bsc:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+   "ethereum:0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+   "ethereum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+  ],
+  "exact": {
+   "arbitrum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "arbitrum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "arbitrum": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.130Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13524537.666206403,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "5dca309e-73ae-4537-8d46-928a0bfeb09e",
+    "totalSupply": "198481.62116534197402787",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa45cd7ac9865b9539166ebaf2abc362df4736580": {
+    "key": "ethereum:0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+    "name": "ProShares UltraPro QQQ (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TQQQON",
+    "price": 67.6,
+    "address": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+    "addresses": {
+     "ethereum": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+     "bsc": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4734427,
+    "image": "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499",
+    "metrics": {
+     "volumeUsd1d": "846799.158",
+     "volumeUsd7d": "6149749.582"
+    },
+    "metadata": {},
+    "tokenId": "4a8bd09e-8236-4b60-a0a4-d5ff95f6eb02",
+    "totalSupply": "70020.41118794835",
+    "circulatingSupply": "70020.41118794835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x947f0803216092d13c9a5a27b8baf66538699965": {
+    "key": "arbitrum:0x947f0803216092d13c9a5a27b8baf66538699965",
+    "name": "ProShares UltraPro QQQ ETF rStock",
+    "decimals": 18,
+    "symbol": "RTQQQ",
+    "price": 67.79,
+    "address": "0x947f0803216092d13c9a5a27b8baf66538699965",
+    "addresses": {
+     "arbitrum": "0x947f0803216092d13c9a5a27b8baf66538699965"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 996527,
+    "image": "https://coin-images.coingecko.com/coins/images/102177050/large/1067d8d2836f009992ab7939668f3736.png?1789116671",
+    "metrics": {
+     "volumeUsd1d": "19.782",
+     "volumeUsd7d": "6013465.193"
+    },
+    "metadata": {},
+    "tokenId": "010be9a9-a3a1-4603-8b98-3c976cde20c7",
+    "totalSupply": "14699.81731427",
+    "circulatingSupply": "14699.81731427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x462b5f13b7c7748279358962925c5de83bb9e598": {
+    "key": "bsc:0x462b5f13b7c7748279358962925c5de83bb9e598",
+    "name": "ProShares UltraPro QQQ (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TQQQB",
+    "price": 66.74,
+    "address": "0x462b5f13b7c7748279358962925c5de83bb9e598",
+    "addresses": {
+     "bsc": "0x462b5f13b7c7748279358962925c5de83bb9e598"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 21038560,
+    "image": "https://coin-images.coingecko.com/coins/images/102174767/large/proshares.png?1784798078",
+    "metrics": {
+     "volumeUsd1d": "5481947.759",
+     "volumeUsd7d": "40119019.641"
+    },
+    "metadata": {},
+    "tokenId": "b85c137d-5535-4423-9f3d-9a0d8f39e45f",
+    "totalSupply": "315290.20323468",
+    "circulatingSupply": "315290.20323468",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4": {
+    "key": "bsc:0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+    "name": "ProShares UltraPro QQQ (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TQQQON",
+    "price": 67.6,
+    "address": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+    "addresses": {
+     "ethereum": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+     "bsc": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4734427,
+    "image": "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499",
+    "metrics": {
+     "volumeUsd1d": "847903.271",
+     "volumeUsd7d": "6144588.443"
+    },
+    "metadata": {},
+    "tokenId": "4a8bd09e-8236-4b60-a0a4-d5ff95f6eb02",
+    "totalSupply": "70020.41118794835",
+    "circulatingSupply": "70020.41118794835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "ethereum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "ethereum": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.470Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12509618.656005241,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "9f21f913-e92f-49e9-9257-1b85e206610e",
+    "totalSupply": "183587.006985694757338758",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "bsc:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "bsc": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2398744.3252240904,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "3cef6b3d-a4fe-4751-9f80-d3e1a7f5f8cf",
+    "totalSupply": "35203.174717113156716215",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "TQQQ": {
+    "total_items": 24,
+    "pages": 1,
+    "received": 24,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xd9f78c7e6887405f122a92792cc2a46f781ec3c62afb828346a1b800d8f0dfbe": {
+    "key": "ethereum:0xd9f78c7e6887405f122a92792cc2a46f781ec3c62afb828346a1b800d8f0dfbe",
+    "name": "Uniswap V4 LP USDT/TQQQx",
+    "decimals": 18,
+    "symbol": "USDT/TQQQX",
+    "price": 9007199254740990,
+    "address": "0xd9f78c7e6887405f122a92792cc2a46f781ec3c62afb828346a1b800d8f0dfbe",
+    "addresses": {
+     "ethereum": "0xd9f78c7e6887405f122a92792cc2a46f781ec3c62afb828346a1b800d8f0dfbe"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.482Z",
+    "createdAt": "2026-09-18T05:44:24.482Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    ],
+    "liquidity": 882.2745709266522,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.001"
+    },
+    "tokenId": "97b69e01-bd6f-4d69-bd04-852fc730f513",
+    "reserves": [
+     "999.999999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "arbitrum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "arbitrum": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.130Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13524537.666206403,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "5dca309e-73ae-4537-8d46-928a0bfeb09e",
+    "totalSupply": "198481.62116534197402787",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa45cd7ac9865b9539166ebaf2abc362df4736580": {
+    "key": "ethereum:0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+    "name": "ProShares UltraPro QQQ (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TQQQON",
+    "price": 67.6,
+    "address": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+    "addresses": {
+     "ethereum": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+     "bsc": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4734427,
+    "image": "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499",
+    "metrics": {
+     "volumeUsd1d": "846799.158",
+     "volumeUsd7d": "6149749.582"
+    },
+    "metadata": {},
+    "tokenId": "4a8bd09e-8236-4b60-a0a4-d5ff95f6eb02",
+    "totalSupply": "70020.41118794835",
+    "circulatingSupply": "70020.41118794835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x947f0803216092d13c9a5a27b8baf66538699965": {
+    "key": "arbitrum:0x947f0803216092d13c9a5a27b8baf66538699965",
+    "name": "ProShares UltraPro QQQ ETF rStock",
+    "decimals": 18,
+    "symbol": "RTQQQ",
+    "price": 67.79,
+    "address": "0x947f0803216092d13c9a5a27b8baf66538699965",
+    "addresses": {
+     "arbitrum": "0x947f0803216092d13c9a5a27b8baf66538699965"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 996527,
+    "image": "https://coin-images.coingecko.com/coins/images/102177050/large/1067d8d2836f009992ab7939668f3736.png?1789116671",
+    "metrics": {
+     "volumeUsd1d": "19.782",
+     "volumeUsd7d": "6013465.193"
+    },
+    "metadata": {},
+    "tokenId": "010be9a9-a3a1-4603-8b98-3c976cde20c7",
+    "totalSupply": "14699.81731427",
+    "circulatingSupply": "14699.81731427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x602060afd2dbbc373a8fe711987b6b1963b8365202124cae99779ceb78ab4e8a": {
+    "key": "ethereum:0x602060afd2dbbc373a8fe711987b6b1963b8365202124cae99779ceb78ab4e8a",
+    "name": "Uniswap V4 LP EGP/TQQQon",
+    "decimals": 18,
+    "symbol": "EGP/TQQQON",
+    "price": 9007199254740990,
+    "address": "0x602060afd2dbbc373a8fe711987b6b1963b8365202124cae99779ceb78ab4e8a",
+    "addresses": {
+     "ethereum": "0x602060afd2dbbc373a8fe711987b6b1963b8365202124cae99779ceb78ab4e8a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.376Z",
+    "createdAt": "2026-10-14T06:54:29.589Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xa45cd7ac9865b9539166ebaf2abc362df4736580"
+    ],
+    "liquidity": 20068.720920467567,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.83"
+    },
+    "tokenId": "7da302f7-9707-4084-9917-7f4c69fecfa9",
+    "reserves": [
+     "19999.999999999999999981",
+     "0.343220558404162402"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4e1ed1743867431ab4ff4faa9125ce9da1facb801c5246c2b84b80143bb3d5d9": {
+    "key": "bsc:0x4e1ed1743867431ab4ff4faa9125ce9da1facb801c5246c2b84b80143bb3d5d9",
+    "name": "Uniswap V4 LP TQQQB/USDT",
+    "decimals": 18,
+    "symbol": "TQQQB/USDT",
+    "price": 9007199254740990,
+    "address": "0x4e1ed1743867431ab4ff4faa9125ce9da1facb801c5246c2b84b80143bb3d5d9",
+    "addresses": {
+     "bsc": "0x4e1ed1743867431ab4ff4faa9125ce9da1facb801c5246c2b84b80143bb3d5d9"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174767/large/proshares.png?1784798078",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:19.402Z",
+    "createdAt": "2026-08-03T16:54:26.961Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x462b5f13b7c7748279358962925c5de83bb9e598",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 643.1093548279517,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "ed8431e7-c6e9-453c-b0f3-6c18e3439c19",
+    "reserves": [
+     "4.575702696971856934",
+     "338.016975396940577875"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x823ff7bbde2869aae73a6cd53e7f614442836757": {
+    "key": "base:0x823ff7bbde2869aae73a6cd53e7f614442836757",
+    "name": "Invesco NASDAQ 100 (ST0x Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "WTQQQM",
+    "price": 293.05,
+    "address": "0x823ff7bbde2869aae73a6cd53e7f614442836757",
+    "addresses": {
+     "base": "0x823ff7bbde2869aae73a6cd53e7f614442836757"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-19T02:06:54.980Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12834.16,
+    "image": "https://coin-images.coingecko.com/coins/images/102174007/large/WTQQQM_256.png?1781775620",
+    "metrics": {
+     "volumeUsd1d": "270.414",
+     "volumeUsd7d": "4612.643"
+    },
+    "metadata": {},
+    "tokenId": "b8346b36-2938-492c-b1d3-e5ce3d88a6ba",
+    "totalSupply": "43.795406755137364",
+    "circulatingSupply": "43.795406755137364",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x525dcb13b0caf29f30f93305a5cbd10314815408": {
+    "key": "base:0x525dcb13b0caf29f30f93305a5cbd10314815408",
+    "name": "Dinari TQQQ",
+    "decimals": 18,
+    "symbol": "TQQQ",
+    "price": 71.14,
+    "address": "0x525dcb13b0caf29f30f93305a5cbd10314815408",
+    "addresses": {
+     "avalanche": "0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+     "arbitrum": "0x63ad78a6e2db3322d16943fc65e71a0010571521",
+     "base": "0x525dcb13b0caf29f30f93305a5cbd10314815408",
+     "ethereum": "0xf7248e588f88655d4a5230c4cec2db2cf4438ff0"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10865.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102174990/large/dinari-logo-green-with-margin.png?1785402815",
+    "metrics": {
+     "volumeUsd1d": "1.757",
+     "volumeUsd7d": "17.793"
+    },
+    "metadata": {},
+    "tokenId": "7d789ec0-3427-4c88-b525-f802cd5b5463",
+    "totalSupply": "152.7405757807041",
+    "circulatingSupply": "152.7405757807041",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x462b5f13b7c7748279358962925c5de83bb9e598": {
+    "key": "bsc:0x462b5f13b7c7748279358962925c5de83bb9e598",
+    "name": "ProShares UltraPro QQQ (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TQQQB",
+    "price": 66.74,
+    "address": "0x462b5f13b7c7748279358962925c5de83bb9e598",
+    "addresses": {
+     "bsc": "0x462b5f13b7c7748279358962925c5de83bb9e598"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 21038560,
+    "image": "https://coin-images.coingecko.com/coins/images/102174767/large/proshares.png?1784798078",
+    "metrics": {
+     "volumeUsd1d": "5481947.759",
+     "volumeUsd7d": "40119019.641"
+    },
+    "metadata": {},
+    "tokenId": "b85c137d-5535-4423-9f3d-9a0d8f39e45f",
+    "totalSupply": "315290.20323468",
+    "circulatingSupply": "315290.20323468",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x75db3a9e66885422832de799be751a388e1123785032ad6194316bc2c9eaf97f": {
+    "key": "bsc:0x75db3a9e66885422832de799be751a388e1123785032ad6194316bc2c9eaf97f",
+    "name": "Uniswap V4 LP TQQQB/USDT",
+    "decimals": 18,
+    "symbol": "TQQQB/USDT",
+    "price": 9007199254740990,
+    "address": "0x75db3a9e66885422832de799be751a388e1123785032ad6194316bc2c9eaf97f",
+    "addresses": {
+     "bsc": "0x75db3a9e66885422832de799be751a388e1123785032ad6194316bc2c9eaf97f"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174767/large/proshares.png?1784798078",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.451Z",
+    "createdAt": "2026-08-01T14:59:12.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x462b5f13b7c7748279358962925c5de83bb9e598",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 737.5334447561971,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "a664de43-e232-4d19-be6f-6f84a8183124",
+    "reserves": [
+     "5.64751947786989577",
+     "360.927670744659147899"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4": {
+    "key": "bsc:0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+    "name": "ProShares UltraPro QQQ (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TQQQON",
+    "price": 67.6,
+    "address": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4",
+    "addresses": {
+     "ethereum": "0xa45cd7ac9865b9539166ebaf2abc362df4736580",
+     "bsc": "0xe42cfb20e00912409b77a602b5bdcff3c7acc5f4"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4734427,
+    "image": "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499",
+    "metrics": {
+     "volumeUsd1d": "847903.271",
+     "volumeUsd7d": "6144588.443"
+    },
+    "metadata": {},
+    "tokenId": "4a8bd09e-8236-4b60-a0a4-d5ff95f6eb02",
+    "totalSupply": "70020.41118794835",
+    "circulatingSupply": "70020.41118794835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xaef42a656273d437b32c5ba3f25bee0c31ef8efa8d78745bdf0efc8e1c6111cc": {
+    "key": "ethereum:0xaef42a656273d437b32c5ba3f25bee0c31ef8efa8d78745bdf0efc8e1c6111cc",
+    "name": "Uniswap V4 LP USDCc/TQQQx",
+    "decimals": 18,
+    "symbol": "USDCC/TQQQX",
+    "price": 9007199254740990,
+    "address": "0xaef42a656273d437b32c5ba3f25bee0c31ef8efa8d78745bdf0efc8e1c6111cc",
+    "addresses": {
+     "ethereum": "0xaef42a656273d437b32c5ba3f25bee0c31ef8efa8d78745bdf0efc8e1c6111cc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.352Z",
+    "createdAt": "2026-10-09T07:24:00.833Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    ],
+    "liquidity": 3001.2800476835682,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.306"
+    },
+    "tokenId": "37f707f7-dd51-47ba-a4d4-bfd818181f61",
+    "reserves": [
+     "2999.999999999999999987",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x630dc51c095f19234fcdae08fc46c7c60d2d4d1f8b4ad92afd262a0e4b20d804": {
+    "key": "ethereum:0x630dc51c095f19234fcdae08fc46c7c60d2d4d1f8b4ad92afd262a0e4b20d804",
+    "name": "Uniswap V4 LP wUSDC/TQQQon",
+    "decimals": 18,
+    "symbol": "WUSDC/TQQQON",
+    "price": 9007199254740990,
+    "address": "0x630dc51c095f19234fcdae08fc46c7c60d2d4d1f8b4ad92afd262a0e4b20d804",
+    "addresses": {
+     "ethereum": "0x630dc51c095f19234fcdae08fc46c7c60d2d4d1f8b4ad92afd262a0e4b20d804"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.346Z",
+    "createdAt": "2026-09-28T10:37:11.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xa45cd7ac9865b9539166ebaf2abc362df4736580"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "786db48c-189c-42da-b7ee-9b985bea2860",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf7248e588f88655d4a5230c4cec2db2cf4438ff0": {
+    "key": "ethereum:0xf7248e588f88655d4a5230c4cec2db2cf4438ff0",
+    "name": "Dinari TQQQ",
+    "decimals": 18,
+    "symbol": "TQQQ",
+    "price": 71.14,
+    "address": "0xf7248e588f88655d4a5230c4cec2db2cf4438ff0",
+    "addresses": {
+     "avalanche": "0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+     "arbitrum": "0x63ad78a6e2db3322d16943fc65e71a0010571521",
+     "base": "0x525dcb13b0caf29f30f93305a5cbd10314815408",
+     "ethereum": "0xf7248e588f88655d4a5230c4cec2db2cf4438ff0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10865.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102174990/large/dinari-logo-green-with-margin.png?1785402815",
+    "metrics": {
+     "volumeUsd1d": "1.757",
+     "volumeUsd7d": "17.792"
+    },
+    "metadata": {},
+    "tokenId": "7d789ec0-3427-4c88-b525-f802cd5b5463",
+    "totalSupply": "152.7405757807041",
+    "circulatingSupply": "152.7405757807041",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5c51a17f3c54978e4497ed9ccb85891972a04538b043cfb4fe89acdc44f2c896": {
+    "key": "ethereum:0x5c51a17f3c54978e4497ed9ccb85891972a04538b043cfb4fe89acdc44f2c896",
+    "name": "Uniswap V4 LP wUSDC/TQQQon",
+    "decimals": 18,
+    "symbol": "WUSDC/TQQQON",
+    "price": 9007199254740990,
+    "address": "0x5c51a17f3c54978e4497ed9ccb85891972a04538b043cfb4fe89acdc44f2c896",
+    "addresses": {
+     "ethereum": "0x5c51a17f3c54978e4497ed9ccb85891972a04538b043cfb4fe89acdc44f2c896"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71460/large/tqqqon_160x160.png?1767890499"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.795Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xa45cd7ac9865b9539166ebaf2abc362df4736580"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "bfebe935-e51a-4e58-be16-22f5ec1f4634",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "ethereum:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "ethereum": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.470Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12509618.656005241,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "9f21f913-e92f-49e9-9257-1b85e206610e",
+    "totalSupply": "183587.006985694757338758",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xfa73a951a3380243a074db5494d36a5c96da7a4a": {
+    "key": "avalanche:0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+    "name": "Dinari TQQQ",
+    "decimals": 18,
+    "symbol": "TQQQ",
+    "price": 71.14,
+    "address": "0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+    "addresses": {
+     "avalanche": "0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+     "arbitrum": "0x63ad78a6e2db3322d16943fc65e71a0010571521",
+     "base": "0x525dcb13b0caf29f30f93305a5cbd10314815408",
+     "ethereum": "0xf7248e588f88655d4a5230c4cec2db2cf4438ff0"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10865.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102174990/large/dinari-logo-green-with-margin.png?1785402815",
+    "metrics": {
+     "volumeUsd1d": "1.757",
+     "volumeUsd7d": "17.794"
+    },
+    "metadata": {},
+    "tokenId": "7d789ec0-3427-4c88-b525-f802cd5b5463",
+    "totalSupply": "152.7405757807041",
+    "circulatingSupply": "152.7405757807041",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86": {
+    "key": "bsc:0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "name": "TQQQ xStock",
+    "decimals": 18,
+    "symbol": "TQQQX",
+    "price": 68.14,
+    "address": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86",
+    "addresses": {
+     "bsc": "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2398744.3252240904,
+    "image": "https://coin-images.coingecko.com/coins/images/66700/large/TQQQx.png?1750267277",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tqqq-xstock"
+    },
+    "tokenId": "3cef6b3d-a4fe-4751-9f80-d3e1a7f5f8cf",
+    "totalSupply": "35203.174717113156716215",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x46873e8134c872160d8dc8845063622fa525ab4ed96d45a21c3cbde126516c28": {
+    "key": "ethereum:0x46873e8134c872160d8dc8845063622fa525ab4ed96d45a21c3cbde126516c28",
+    "name": "Uniswap V4 LP USDT/TQQQx",
+    "decimals": 18,
+    "symbol": "USDT/TQQQX",
+    "price": 9007199254740990,
+    "address": "0x46873e8134c872160d8dc8845063622fa525ab4ed96d45a21c3cbde126516c28",
+    "addresses": {
+     "ethereum": "0x46873e8134c872160d8dc8845063622fa525ab4ed96d45a21c3cbde126516c28"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.294Z",
+    "createdAt": "2026-10-18T18:58:01.822Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "745cd048-c00b-430a-9033-7c16830ff8c9",
+    "reserves": [
+     "3999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x85bc231a06c67f5c4604dd2fa1ebe08c24ad9db174234bb6e0f7a270d2c47ebd": {
+    "key": "bsc:0x85bc231a06c67f5c4604dd2fa1ebe08c24ad9db174234bb6e0f7a270d2c47ebd",
+    "name": "Uniswap V4 LP USDT/TQQQx",
+    "decimals": 18,
+    "symbol": "USDT/TQQQX",
+    "price": 9007199254740990,
+    "address": "0x85bc231a06c67f5c4604dd2fa1ebe08c24ad9db174234bb6e0f7a270d2c47ebd",
+    "addresses": {
+     "bsc": "0x85bc231a06c67f5c4604dd2fa1ebe08c24ad9db174234bb6e0f7a270d2c47ebd"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.300Z",
+    "createdAt": "2026-06-13T13:35:33.344Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    ],
+    "liquidity": 3171.728418770591,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "258.422"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17800,
+     "feePercentage": "89.011"
+    },
+    "tokenId": "58850f0a-7f87-40d4-ab53-40e165d69702",
+    "reserves": [
+     "3033.840921710424572754",
+     "2.061792377032488853"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xece0d1e0615feb34e78129d1996b75f1ff082324": {
+    "key": "base:0xece0d1e0615feb34e78129d1996b75f1ff082324",
+    "name": "Hydrex Wrapped Invesco NASDAQ 100 ETF ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTQQQM/USDC",
+    "price": 9007199254740990,
+    "address": "0xece0d1e0615feb34e78129d1996b75f1ff082324",
+    "addresses": {
+     "base": "0xece0d1e0615feb34e78129d1996b75f1ff082324"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102174007/large/WTQQQM_256.png?1781775620",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-08-19T11:27:15.024Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x823ff7bbde2869aae73a6cd53e7f614442836757",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 9308.911078962514,
+    "metrics": {
+     "apy": "0.115",
+     "baseApy": "0.115",
+     "volumeUsd1d": "268.779",
+     "volumeUsd7d": "4615.333"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "448acd25-03f1-4791-9304-a61a02957a7e",
+    "reserves": [
+     "19.960024683142378814",
+     "3460.44251"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xf6a5f768f583a695b6cdd772fb138921c5bae4e9": {
+    "key": "bsc:0xf6a5f768f583a695b6cdd772fb138921c5bae4e9",
+    "name": "PancakeSwap V3 ProShares UltraPro QQQ/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "TQQQB/USDT",
+    "price": 9007199254740990,
+    "address": "0xf6a5f768f583a695b6cdd772fb138921c5bae4e9",
+    "addresses": {
+     "bsc": "0xf6a5f768f583a695b6cdd772fb138921c5bae4e9"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102174767/large/proshares.png?1784798078",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.808Z",
+    "createdAt": "2026-09-02T04:49:01.950Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x462b5f13b7c7748279358962925c5de83bb9e598",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 133882.64488638754,
+    "metrics": {
+     "apy": "8.429",
+     "baseApy": "8.429",
+     "volumeUsd1d": "12369.458",
+     "volumeUsd7d": "91566.543"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "bbb18086-c371-433c-91f6-fcb952db010a",
+    "reserves": [
+     "507.969176369154821525",
+     "100066.639231971177873801"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x63ad78a6e2db3322d16943fc65e71a0010571521": {
+    "key": "arbitrum:0x63ad78a6e2db3322d16943fc65e71a0010571521",
+    "name": "Dinari TQQQ",
+    "decimals": 18,
+    "symbol": "TQQQ",
+    "price": 71.14,
+    "address": "0x63ad78a6e2db3322d16943fc65e71a0010571521",
+    "addresses": {
+     "avalanche": "0xfa73a951a3380243a074db5494d36a5c96da7a4a",
+     "arbitrum": "0x63ad78a6e2db3322d16943fc65e71a0010571521",
+     "base": "0x525dcb13b0caf29f30f93305a5cbd10314815408",
+     "ethereum": "0xf7248e588f88655d4a5230c4cec2db2cf4438ff0"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10865.21,
+    "image": "https://coin-images.coingecko.com/coins/images/102174990/large/dinari-logo-green-with-margin.png?1785402815",
+    "metrics": {
+     "volumeUsd1d": "1.757",
+     "volumeUsd7d": "17.794"
+    },
+    "metadata": {},
+    "tokenId": "7d789ec0-3427-4c88-b525-f802cd5b5463",
+    "totalSupply": "152.7405757807041",
+    "circulatingSupply": "152.7405757807041",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9ee8ee53707c208e94c5794bb9cc609215d00a4d1d83b18ea683269852396e5f": {
+    "key": "arbitrum:0x9ee8ee53707c208e94c5794bb9cc609215d00a4d1d83b18ea683269852396e5f",
+    "name": "Uniswap V4 LP USDT/TQQQx",
+    "decimals": 18,
+    "symbol": "USDT/TQQQX",
+    "price": 9007199254740990,
+    "address": "0x9ee8ee53707c208e94c5794bb9cc609215d00a4d1d83b18ea683269852396e5f",
+    "addresses": {
+     "arbitrum": "0x9ee8ee53707c208e94c5794bb9cc609215d00a4d1d83b18ea683269852396e5f"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.761Z",
+    "createdAt": "2026-10-16T14:24:09.350Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xfdddb57878ef9d6f681ec4381dcb626b9e69ac86"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "81df7904-44aa-476f-9e58-32811193ec9b",
+    "reserves": [
+     "1999.999999999999999995",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

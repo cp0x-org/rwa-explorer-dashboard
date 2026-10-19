@@ -1,0 +1,3014 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0028241000",
+ "ticker": "ABT",
+ "name": "Abbott Laboratories",
+ "isin": "US0028241000",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:45Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Abbott Laboratories",
+   "symbol": "ABT",
+   "slug": "abbott",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 101.68995397747968,
+     "tokenized_market_cap": 1528918.7484559177,
+     "tokenized_volume_24h": 99296.073099,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 112,
+   "asset_type": "stock",
+   "rwa_rank": 85,
+   "has_tokens": true,
+   "average_tokenized_price": 101.68995397747968,
+   "tokenized_market_cap": 1528918.7484559177,
+   "tokenized_volume_24h": 99296.073099,
+   "last_updated": "2026-10-18T20:13:38.739Z",
+   "tokens": [
+    {
+     "symbol": "ABTon",
+     "name": "Abbott Tokenized Stock (Ondo)",
+     "price": 102.0440228704555,
+     "crypto_id": 38006,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1374496.25,
+     "volume_24h": 51456.96544548
+    },
+    {
+     "symbol": "ABTX",
+     "name": "Abbott tokenized stock (xStock)",
+     "price": 101.43345051144613,
+     "crypto_id": 37010,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 153926.65,
+     "volume_24h": 47622.92318098
+    },
+    {
+     "symbol": "WABTX",
+     "name": "Wrapped Abbott tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37095,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "ABT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_ABT"
+    }
+   ]
+  },
+  "info": {
+   "38006": {
+    "id": 38006,
+    "symbol": "ABTon",
+    "name": "Abbott Tokenized Stock (Ondo)",
+    "slug": "abbott-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38006.png",
+    "date_added": "2025-09-03T10:55:27.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x3859385363f7BB4Dfe42811cCF3F294FcD41dd1D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3859385363f7BB4Dfe42811cCF3F294FcD41dd1D",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "129gRoHKhVg7CvPMrqVsEB4uYZo6zV4yDZX6NBg9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37010": {
+    "id": 37010,
+    "symbol": "ABTX",
+    "name": "Abbott tokenized stock (xStock)",
+    "slug": "abbott-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37010.png",
+    "date_added": "2025-07-01T13:51:12.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsHtf5RpxsQ7jeJ9ivNewouZKJHbPxhPoEy6yYvULr7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsHtf5RpxsQ7jeJ9ivNewouZKJHbPxhPoEy6yYvULr7",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89233399708C18Ac6887F90A2B4Cd8Ba5fEdD06e",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDO-gj4yLJH21dtkrtbUPyjpqukqW4pDmZ5ce0M6p1lNPj_",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "37095": {
+    "id": 37095,
+    "symbol": "WABTX",
+    "name": "Wrapped Abbott tokenized stock (xStock)",
+    "slug": "wrapped-abbott-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37095.png",
+    "date_added": "2025-07-02T11:41:19.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x87694E857BD0F7e9F7124088E010058AE30DEb43"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x87694E857BD0F7e9F7124088E010058AE30DEb43",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd812b37181ae89801e4bb3f49e4c1faf11fc0b57",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+   "arbitrum:0xd812b37181ae89801e4bb3f49e4c1faf11fc0b57",
+   "bsc:0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+   "bsc:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+   "ethereum:0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+   "ethereum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+  ],
+  "exact": {
+   "ethereum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "ethereum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "ethereum": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8306754.125802284,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "39c2ab9f-8496-4743-bdd4-26248b8011a9",
+    "totalSupply": "82245.090354478058660677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "bsc:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "bsc": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.122Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3018927.821657702,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "f66860e6-f655-4fad-b7ed-022757f3f58b",
+    "totalSupply": "29890.374471858433971586",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5a20886b575058dd7299785f0ea9b1172942a3e0": {
+    "key": "bsc:0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+    "name": "Abbott (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTON",
+    "price": 101.57,
+    "address": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+    "addresses": {
+     "bsc": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+     "ethereum": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1368142,
+    "image": "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+    "metrics": {
+     "volumeUsd1d": "5055.08",
+     "volumeUsd7d": "215534.653"
+    },
+    "metadata": {},
+    "tokenId": "153e597c-bd74-4871-95e1-95d1a6767161",
+    "totalSupply": "13469.639951479603",
+    "circulatingSupply": "13469.639951479603",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d": {
+    "key": "ethereum:0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+    "name": "Abbott (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTON",
+    "price": 101.57,
+    "address": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+    "addresses": {
+     "bsc": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+     "ethereum": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1368142,
+    "image": "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+    "metrics": {
+     "volumeUsd1d": "5055.21",
+     "volumeUsd7d": "214716.913"
+    },
+    "metadata": {},
+    "tokenId": "153e597c-bd74-4871-95e1-95d1a6767161",
+    "totalSupply": "13469.639951479603",
+    "circulatingSupply": "13469.639951479603",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "arbitrum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "arbitrum": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9272597.512412213,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "3b954a82-1e91-42ed-a08f-62d60db12901",
+    "totalSupply": "91807.896162497148580071",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "ABT": {
+    "total_items": 61,
+    "pages": 1,
+    "received": 61,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b": {
+    "key": "ethereum:0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b",
+    "name": "Wrapped aBTC",
+    "decimals": 18,
+    "symbol": "WABTC",
+    "price": 80649.69284186652,
+    "address": "0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b",
+    "addresses": {
+     "ethereum": "0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10647.767321156354,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a81226d7-c3ea-4e21-b728-78c0b4f78feb",
+    "totalSupply": "0.132024896139826722",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xcd1335d2cb32ba19a6dd6d5dff643189b664fe4227c11f34391cc77185c684c0": {
+    "key": "avalanche:0xcd1335d2cb32ba19a6dd6d5dff643189b664fe4227c11f34391cc77185c684c0",
+    "name": "Uniswap V4 LP aAvaBTC.b/USDC",
+    "decimals": 18,
+    "symbol": "AAVABTC.B/USDC",
+    "price": 9007199254740990,
+    "address": "0xcd1335d2cb32ba19a6dd6d5dff643189b664fe4227c11f34391cc77185c684c0",
+    "addresses": {
+     "avalanche": "0xcd1335d2cb32ba19a6dd6d5dff643189b664fe4227c11f34391cc77185c684c0"
+    },
+    "platform": "uniswap-v4",
+    "network": "avalanche",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1696525205"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.323Z",
+    "createdAt": "2025-08-30T12:29:55.865Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ffdf2de812095b1d19cb146e4c004587c0a0692",
+     "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+    ],
+    "liquidity": 2070.79348773124,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90"
+    },
+    "tokenId": "78601b4c-cf3b-4e01-a968-f9faa308e0bd",
+    "reserves": [
+     "0.02035095",
+     "426.25241"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x186d1d81e32dab26b5756b1ae2bfded264291b5b3470a58e91e6660ff8ce35e7": {
+    "key": "ethereum:0x186d1d81e32dab26b5756b1ae2bfded264291b5b3470a58e91e6660ff8ce35e7",
+    "name": "Uniswap V4 LP ABT/USDT",
+    "decimals": 18,
+    "symbol": "ABT/USDT",
+    "price": 9007199254740990,
+    "address": "0x186d1d81e32dab26b5756b1ae2bfded264291b5b3470a58e91e6660ff8ce35e7",
+    "addresses": {
+     "ethereum": "0x186d1d81e32dab26b5756b1ae2bfded264291b5b3470a58e91e6660ff8ce35e7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.348Z",
+    "createdAt": "2026-02-07T08:38:20.620Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 997.5334301918268,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2008,
+     "feePercentage": "10.04"
+    },
+    "tokenId": "c0d7e3f4-619d-4717-a2f9-6b811ef45509",
+    "reserves": [
+     "1528.964185341935074743",
+     "562.733913"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb98d4c97425d9908e66e53a6fdf673acca0be986": {
+    "key": "ethereum:0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+    "name": "Arcblock",
+    "decimals": 18,
+    "symbol": "ABT",
+    "price": 0.284691,
+    "address": "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+    "addresses": {
+     "ethereum": "0xb98d4c97425d9908e66e53a6fdf673acca0be986"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 28064815,
+    "image": "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220",
+    "metrics": {
+     "volumeUsd1d": "51513.241",
+     "volumeUsd7d": "956942.203"
+    },
+    "metadata": {},
+    "tokenId": "9ed12f4f-d893-4f18-a0ef-eeb7928617ab",
+    "totalSupply": "186000000",
+    "circulatingSupply": "98580000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5da3b5f1fa8ab734af3b7df54b4732f7f64c7229801361498d47f702d0f8bceb": {
+    "key": "ethereum:0x5da3b5f1fa8ab734af3b7df54b4732f7f64c7229801361498d47f702d0f8bceb",
+    "name": "Uniswap V4 LP USDC/liquidBeraBTC",
+    "decimals": 18,
+    "symbol": "USDC/LIQUIDBERABTC",
+    "price": 9007199254740990,
+    "address": "0x5da3b5f1fa8ab734af3b7df54b4732f7f64c7229801361498d47f702d0f8bceb",
+    "addresses": {
+     "ethereum": "0x5da3b5f1fa8ab734af3b7df54b4732f7f64c7229801361498d47f702d0f8bceb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/logos/WBTC.jpeg",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.376Z",
+    "createdAt": "2026-05-28T17:42:23.688Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80"
+    ],
+    "liquidity": 507.6350594254955,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17660,
+     "feePercentage": "88.3"
+    },
+    "tokenId": "2556d92d-71d1-4326-ab89-4aec189563d2",
+    "reserves": [
+     "500.176132",
+     "0.00009365"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "ethereum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "ethereum": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8306754.125802284,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "39c2ab9f-8496-4743-bdd4-26248b8011a9",
+    "totalSupply": "82245.090354478058660677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9ae81a8373a85308aa719b88331c453a0865d71b": {
+    "key": "ethereum:0x9ae81a8373a85308aa719b88331c453a0865d71b",
+    "name": "Upshift Gamma BTC Vault",
+    "decimals": 8,
+    "symbol": "UPGAMMABTC",
+    "price": 82237.00980288,
+    "address": "0x9ae81a8373a85308aa719b88331c453a0865d71b",
+    "addresses": {
+     "ethereum": "0x9ae81a8373a85308aa719b88331c453a0865d71b"
+    },
+    "platform": "upshift",
+    "network": "ethereum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/upshift",
+     "https://icons.llamao.fi/icons/protocols/upshift"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.998Z",
+    "createdAt": "2026-07-16T08:49:17.911Z",
+    "verifiedAt": "2026-07-23T10:50:53.317Z",
+    "tokens": [
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+    ],
+    "poolAddress": "0x3e4ef6ccc7e4a045c9d3f48b08813d59df14e256",
+    "liquidity": 3303918.052313039,
+    "customCmsImageUrl": "https://icons.llamao.fi/icons/protocols/upshift",
+    "metrics": {
+     "apy": "9.671",
+     "baseApy": "9.671",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0.5,
+      "withdraw": 0,
+      "performance": 0.1
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [
+      "5x Upshift Points"
+     ],
+     "interface": "ERC20",
+     "description": "The Upshift Gamma BTC vault leverages market neutral positioning across multiple DeFi protocols to maximize risk-adjusted yields. Through systematic deployment of delta-hedged strategies and cross-chain farming opportunities, the vault generates consistent returns while prioritizing capital protection and downside mitigation.",
+     "socialLinks": {
+      "github": "https://github.com/GammaStrategies",
+      "discord": "https://discord.gg/gammastrategies",
+      "twitter": "https://x.com/GammaStrategies",
+      "website": "https://gamma.xyz",
+      "telegram": "https://t.me/upshiftfi",
+      "documentation": "https://docs.gamma.xyz"
+     }
+    },
+    "tokenId": "94b64b0e-32eb-4fb7-8a42-c61ff79e8164",
+    "totalSupply": "40.17556159",
+    "reserves": [
+     "40.92248898"
+    ],
+    "pricePerShare": "1.01859158",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "arbitrum:0xfd3b912fc1c5026a1b73d7fbc0b9bc3106b10605": {
+    "key": "arbitrum:0xfd3b912fc1c5026a1b73d7fbc0b9bc3106b10605",
+    "name": "CrabToken",
+    "decimals": 18,
+    "symbol": "CRAB",
+    "price": 0.00013433010927220182,
+    "address": "0xfd3b912fc1c5026a1b73d7fbc0b9bc3106b10605",
+    "addresses": {
+     "arbitrum": "0xfd3b912fc1c5026a1b73d7fbc0b9bc3106b10605"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-19T09:34:40.764Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 134330.1092722018,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "220fbf29-21f3-4258-9280-55fca9c706f3",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x1a60ef81d9863bf5e6eb0666664d516b53c06403": {
+    "key": "base:0x1a60ef81d9863bf5e6eb0666664d516b53c06403",
+    "name": "Abbott Laboratories (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABT",
+    "price": 104.67,
+    "address": "0x1a60ef81d9863bf5e6eb0666664d516b53c06403",
+    "addresses": {
+     "avalanche": "0x45591301a193070548ff599b34850696d35ca725",
+     "arbitrum": "0x0947f651947efc92d602d084d4a465e23b09d3aa",
+     "ethereum": "0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+     "base": "0x1a60ef81d9863bf5e6eb0666664d516b53c06403"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1953.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175114/large/dinari-logo-green-with-margin.png?1785403253",
+    "metrics": {
+     "volumeUsd1d": "49.053",
+     "volumeUsd7d": "346.034"
+    },
+    "metadata": {},
+    "tokenId": "ab071318-fbb3-4f67-acc4-2ecfc9834feb",
+    "totalSupply": "18.664646609",
+    "circulatingSupply": "18.664646609",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfbec3934cb1d6bddc3a0bb8fa877338fdf91f3706e1af9d4c29384eb6a437ab2": {
+    "key": "ethereum:0xfbec3934cb1d6bddc3a0bb8fa877338fdf91f3706e1af9d4c29384eb6a437ab2",
+    "name": "Uniswap V4 LP ETH/ABT",
+    "decimals": 18,
+    "symbol": "ETH/ABT",
+    "price": 9007199254740990,
+    "address": "0xfbec3934cb1d6bddc3a0bb8fa877338fdf91f3706e1af9d4c29384eb6a437ab2",
+    "addresses": {
+     "ethereum": "0xfbec3934cb1d6bddc3a0bb8fa877338fdf91f3706e1af9d4c29384eb6a437ab2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.256Z",
+    "createdAt": "2025-04-04T08:49:54.631Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986"
+    ],
+    "liquidity": 808.9853024182573,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "40.06"
+    },
+    "tokenId": "07c10029-1a0d-47e4-99a2-4b423ffa824e",
+    "reserves": [
+     "0.233432203926956466",
+     "927.462254419060564852"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc673ef7791724f0dcca38adb47fbb3aef3db6c80": {
+    "key": "ethereum:0xc673ef7791724f0dcca38adb47fbb3aef3db6c80",
+    "name": "Veda Ether.Fi Liquid Bera BTC",
+    "decimals": 8,
+    "symbol": "LIQUIDBERABTC",
+    "price": 80907.30371220001,
+    "address": "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80",
+    "addresses": {
+     "ethereum": "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80"
+    },
+    "platform": "veda",
+    "network": "ethereum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/veda?w=148&h=148",
+     "https://images.portals.fi/logos/WBTC.jpeg",
+     "https://coin-images.coingecko.com/coins/images/39969/large/LBTC_Logo.png?1724959872",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.811Z",
+    "createdAt": "2026-04-22T01:12:55.180Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+     "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+     "0x8236a87084f8b84306f72007f36f2618a5634494"
+    ],
+    "liquidity": 299954.5168913973,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "supportedAssets": [
+      "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+      "0x8236a87084f8b84306f72007f36f2618a5634494"
+     ],
+     "boringVaultComponents": {
+      "vault": "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80",
+      "teller": "0xe238e253b67f42ee3af194baf7aba5e2eadda1b8",
+      "authority": "0x829675330fdcee01022983493e71f73fb53eab45",
+      "accountant": "0xf44bd12956a0a87c2c20113ddfe1537a442526b5",
+      "allowToDeposit": [
+       "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+       "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+       "0x8236a87084f8b84306f72007f36f2618a5634494"
+      ],
+      "allowToWithdraw": [
+       "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+       "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+       "0x8236a87084f8b84306f72007f36f2618a5634494"
+      ],
+      "shareLockPeriod": 0
+     }
+    },
+    "tokenId": "c99da8a7-bb40-4d26-84c2-ea97457867e8",
+    "totalSupply": "3.70738491",
+    "reserves": [
+     "1.16597492",
+     "0.30652025",
+     "0.0534166"
+    ],
+    "pricePerShare": "1.00294166",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6a4846f141d5f80c1c1a1e0a396d79a6ab2d89d19357686635061dafda094eee": {
+    "key": "ethereum:0x6a4846f141d5f80c1c1a1e0a396d79a6ab2d89d19357686635061dafda094eee",
+    "name": "Uniswap V4 LP ABT/USDT",
+    "decimals": 18,
+    "symbol": "ABT/USDT",
+    "price": 9007199254740990,
+    "address": "0x6a4846f141d5f80c1c1a1e0a396d79a6ab2d89d19357686635061dafda094eee",
+    "addresses": {
+     "ethereum": "0x6a4846f141d5f80c1c1a1e0a396d79a6ab2d89d19357686635061dafda094eee"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.055Z",
+    "createdAt": "2026-09-28T10:37:14.786Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 12828.601286782361,
+    "metrics": {
+     "apy": "3.239",
+     "baseApy": "3.239",
+     "volumeUsd1d": "43.748",
+     "volumeUsd7d": "3600.878"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 250,
+     "feePercentage": "2.5975"
+    },
+    "tokenId": "8f507acb-1d5c-44bc-af7a-223e001e13d8",
+    "reserves": [
+     "22348.732487093730237922",
+     "6471.67098"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x130fed774615db290647b2e790030225fc2797ec": {
+    "key": "ethereum:0x130fed774615db290647b2e790030225fc2797ec",
+    "name": "UniswapV2 LP ABTC/WETH",
+    "decimals": 18,
+    "symbol": "ABTC/WETH",
+    "price": 1595.7963227676848,
+    "address": "0x130fed774615db290647b2e790030225fc2797ec",
+    "addresses": {
+     "ethereum": "0x130fed774615db290647b2e790030225fc2797ec"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:09.379Z",
+    "createdAt": "2025-09-02T06:59:32.470Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x64b3b21ee104f434380270749d8d5bfd481fdcf6",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 19243.26318582723,
+    "metrics": {
+     "apy": "0.008",
+     "baseApy": "0.008",
+     "volumeUsd1d": "1.415",
+     "volumeUsd7d": "765.905"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "23eeebe5-c22c-4840-a192-d67596c014aa",
+    "totalSupply": "12.058721348882725052",
+    "reserves": [
+     "97927278726.25848138",
+     "4.118774890672949866"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x067c9e3469c294b599463227b5abe4c4e3e102caff9a2ec8058f1bf048e17279": {
+    "key": "ethereum:0x067c9e3469c294b599463227b5abe4c4e3e102caff9a2ec8058f1bf048e17279",
+    "name": "Uniswap V4 LP ABT/USDT",
+    "decimals": 18,
+    "symbol": "ABT/USDT",
+    "price": 9007199254740990,
+    "address": "0x067c9e3469c294b599463227b5abe4c4e3e102caff9a2ec8058f1bf048e17279",
+    "addresses": {
+     "ethereum": "0x067c9e3469c294b599463227b5abe4c4e3e102caff9a2ec8058f1bf048e17279"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.349Z",
+    "createdAt": "2026-03-28T06:08:37.252Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 8130.077850460649,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2"
+    },
+    "tokenId": "6028becb-7a31-49fd-98c7-5bf868efdf65",
+    "reserves": [
+     "13904.666326685537971513",
+     "4175.126748"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x52914102bf66d5c86592cff975eadd7300a42eeb7354eb60db2b7180c9e31fd4": {
+    "key": "ethereum:0x52914102bf66d5c86592cff975eadd7300a42eeb7354eb60db2b7180c9e31fd4",
+    "name": "Uniswap V4 LP wUSDC/ABTon",
+    "decimals": 18,
+    "symbol": "WUSDC/ABTON",
+    "price": 9007199254740990,
+    "address": "0x52914102bf66d5c86592cff975eadd7300a42eeb7354eb60db2b7180c9e31fd4",
+    "addresses": {
+     "ethereum": "0x52914102bf66d5c86592cff975eadd7300a42eeb7354eb60db2b7180c9e31fd4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.454Z",
+    "createdAt": "2026-09-28T10:37:14.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "c3d7e2f7-c3ae-4fe3-af89-900af487b3ae",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x6ebda28c53d3fb7e1de7fc17c9fae64e5e63ba480b2ae5bafaab9042ef887be7": {
+    "key": "avalanche:0x6ebda28c53d3fb7e1de7fc17c9fae64e5e63ba480b2ae5bafaab9042ef887be7",
+    "name": "Uniswap V4 LP BTC.b/aAvaBTC.b",
+    "decimals": 18,
+    "symbol": "BTC.B/AAVABTC.B",
+    "price": 9007199254740990,
+    "address": "0x6ebda28c53d3fb7e1de7fc17c9fae64e5e63ba480b2ae5bafaab9042ef887be7",
+    "addresses": {
+     "avalanche": "0x6ebda28c53d3fb7e1de7fc17c9fae64e5e63ba480b2ae5bafaab9042ef887be7"
+    },
+    "platform": "uniswap-v4",
+    "network": "avalanche",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1696525205"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.545Z",
+    "createdAt": "2025-10-11T10:33:24.285Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x152b9d0fdc40c096757f570a51e494bd4b943e50",
+     "0x8ffdf2de812095b1d19cb146e4c004587c0a0692"
+    ],
+    "liquidity": 807.65,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90"
+    },
+    "tokenId": "5e73d39d-0cc9-48e7-bc20-0397dff624b2",
+    "reserves": [
+     "0.01",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x860ce009a81947a752fce8ef756413981817a8bfff2eb5f5247731b70121f7c3": {
+    "key": "ethereum:0x860ce009a81947a752fce8ef756413981817a8bfff2eb5f5247731b70121f7c3",
+    "name": "Uniswap V4 LP ETH/ABT",
+    "decimals": 18,
+    "symbol": "ETH/ABT",
+    "price": 9007199254740990,
+    "address": "0x860ce009a81947a752fce8ef756413981817a8bfff2eb5f5247731b70121f7c3",
+    "addresses": {
+     "ethereum": "0x860ce009a81947a752fce8ef756413981817a8bfff2eb5f5247731b70121f7c3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.611Z",
+    "createdAt": "2025-03-18T07:57:44.556Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986"
+    ],
+    "liquidity": 2311.0999250405075,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1"
+    },
+    "tokenId": "afcab8ea-3234-419b-9a41-3d487e490283",
+    "reserves": [
+     "0.762331949687376557",
+     "1866.738364805434058356"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba": {
+    "key": "avalanche:0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+    "name": "American Bitcoin (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTC",
+    "price": 7.63,
+    "address": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+    "addresses": {
+     "base": "0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+     "arbitrum": "0x545b758c84a7806a22091a573131812bce81c4a4",
+     "avalanche": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+     "ethereum": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3251.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175172/large/dinari-logo-green-with-margin.png?1785403458",
+    "metrics": {
+     "volumeUsd1d": "39.123",
+     "volumeUsd7d": "1873.384"
+    },
+    "metadata": {},
+    "tokenId": "0e91f639-508a-4b64-9f78-591edc7faa8c",
+    "totalSupply": "426.13923362136893",
+    "circulatingSupply": "426.13923362136893",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "bsc:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "bsc": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.122Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3018927.821657702,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "f66860e6-f655-4fad-b7ed-022757f3f58b",
+    "totalSupply": "29890.374471858433971586",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe46b8e65006e6450bdd8cb7d3274ab4f76f4c705": {
+    "key": "bsc:0xe46b8e65006e6450bdd8cb7d3274ab4f76f4c705",
+    "name": "Lista BTC Vault",
+    "decimals": 18,
+    "symbol": "LISTABTCB",
+    "price": 81150.56660540907,
+    "address": "0xe46b8e65006e6450bdd8cb7d3274ab4f76f4c705",
+    "addresses": {
+     "bsc": "0xe46b8e65006e6450bdd8cb7d3274ab4f76f4c705"
+    },
+    "platform": "lista",
+    "network": "bsc",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/lista-dao",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.776Z",
+    "createdAt": "2025-08-12T11:39:34.601Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"
+    ],
+    "liquidity": 180218.4857105507,
+    "metrics": {
+     "apy": "0.189",
+     "baseApy": "0.189",
+     "volumeUsd1d": "-5.4",
+     "volumeUsd7d": "22912.907"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626"
+    },
+    "tokenId": "309bbffb-57b6-4a7b-8197-d98fb4189685",
+    "totalSupply": "2.220791465164437728",
+    "reserves": [
+     "2.230426803348399643"
+    ],
+    "pricePerShare": "1.00433869561149834",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xad6f9e1ce949607b17a5fa0788281ec74f21a054eeed0fd1b102577ae5f0a4c7": {
+    "key": "arbitrum:0xad6f9e1ce949607b17a5fa0788281ec74f21a054eeed0fd1b102577ae5f0a4c7",
+    "name": "Uniswap V4 LP ABTx/USDT",
+    "decimals": 18,
+    "symbol": "ABTX/USDT",
+    "price": 9007199254740990,
+    "address": "0xad6f9e1ce949607b17a5fa0788281ec74f21a054eeed0fd1b102577ae5f0a4c7",
+    "addresses": {
+     "arbitrum": "0xad6f9e1ce949607b17a5fa0788281ec74f21a054eeed0fd1b102577ae5f0a4c7"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.284Z",
+    "createdAt": "2026-10-16T14:24:06.460Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "211ffea1-af8c-49cc-80f9-3d1c98fad5b6",
+    "reserves": [
+     "0",
+     "1999.999999999999999995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd31dce6950ac245b89ae665b8e8ca56753e9b14ecf9488196a485ecf9556a573": {
+    "key": "ethereum:0xd31dce6950ac245b89ae665b8e8ca56753e9b14ecf9488196a485ecf9556a573",
+    "name": "Uniswap V4 LP USS1/liquidBeraBTC",
+    "decimals": 18,
+    "symbol": "USS1/LIQUIDBERABTC",
+    "price": 9007199254740990,
+    "address": "0xd31dce6950ac245b89ae665b8e8ca56753e9b14ecf9488196a485ecf9556a573",
+    "addresses": {
+     "ethereum": "0xd31dce6950ac245b89ae665b8e8ca56753e9b14ecf9488196a485ecf9556a573"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/logos/WBTC.jpeg",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.644Z",
+    "createdAt": "2026-07-14T13:15:39.098Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x506f2d58bb97caea3abe6a80bf80ecddc1f8702a",
+     "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80"
+    ],
+    "liquidity": 9988.73434873031,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "99"
+    },
+    "tokenId": "cffa99cc-d527-4e71-81b7-d513b0e9b9be",
+    "reserves": [
+     "9999.999999999948587148",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa5405950f808061f8523f911bd74ee7705148f3b0dbce931863015c462b6dd25": {
+    "key": "ethereum:0xa5405950f808061f8523f911bd74ee7705148f3b0dbce931863015c462b6dd25",
+    "name": "Uniswap V4 LP ABT/USDT",
+    "decimals": 18,
+    "symbol": "ABT/USDT",
+    "price": 9007199254740990,
+    "address": "0xa5405950f808061f8523f911bd74ee7705148f3b0dbce931863015c462b6dd25",
+    "addresses": {
+     "ethereum": "0xa5405950f808061f8523f911bd74ee7705148f3b0dbce931863015c462b6dd25"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.730Z",
+    "createdAt": "2026-07-08T22:00:51.243Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 42807.108973635644,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "12256.519"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1600,
+     "feePercentage": "8.092"
+    },
+    "tokenId": "44ae6a54-f7d7-4c0c-b38d-8c22aa42d7bc",
+    "reserves": [
+     "96723.515140880767973715",
+     "15283.908318"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0947f651947efc92d602d084d4a465e23b09d3aa": {
+    "key": "arbitrum:0x0947f651947efc92d602d084d4a465e23b09d3aa",
+    "name": "Abbott Laboratories (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABT",
+    "price": 104.67,
+    "address": "0x0947f651947efc92d602d084d4a465e23b09d3aa",
+    "addresses": {
+     "avalanche": "0x45591301a193070548ff599b34850696d35ca725",
+     "arbitrum": "0x0947f651947efc92d602d084d4a465e23b09d3aa",
+     "ethereum": "0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+     "base": "0x1a60ef81d9863bf5e6eb0666664d516b53c06403"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1953.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175114/large/dinari-logo-green-with-margin.png?1785403253",
+    "metrics": {
+     "volumeUsd1d": "49.053",
+     "volumeUsd7d": "346.035"
+    },
+    "metadata": {},
+    "tokenId": "ab071318-fbb3-4f67-acc4-2ecfc9834feb",
+    "totalSupply": "18.664646609",
+    "circulatingSupply": "18.664646609",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8664c22f690252fae5b2148f8e8ee7b926d2d0529312dac041cb3e894a4c8f6b": {
+    "key": "ethereum:0x8664c22f690252fae5b2148f8e8ee7b926d2d0529312dac041cb3e894a4c8f6b",
+    "name": "Uniswap V4 LP ETH/ABTC",
+    "decimals": 18,
+    "symbol": "ETH/ABTC",
+    "price": 9007199254740990,
+    "address": "0x8664c22f690252fae5b2148f8e8ee7b926d2d0529312dac041cb3e894a4c8f6b",
+    "addresses": {
+     "ethereum": "0x8664c22f690252fae5b2148f8e8ee7b926d2d0529312dac041cb3e894a4c8f6b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.402Z",
+    "createdAt": "2026-06-26T17:32:24.333Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x8c45bc48a451f48cca403ff2ddba2da0ea68c404"
+    ],
+    "liquidity": 8464.408276941796,
+    "metrics": {
+     "apy": "143.3",
+     "baseApy": "143.3",
+     "volumeUsd1d": "9499.86",
+     "volumeUsd7d": "29673.422"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "dcfcba0a-1da4-4f01-8edb-0f9faf6eb094",
+    "reserves": [
+     "1.838097052429050901",
+     "4330.059927054629062073"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2cc0a05d8ab918028775d4a6bf7eec11f79a1fd6": {
+    "key": "ethereum:0x2cc0a05d8ab918028775d4a6bf7eec11f79a1fd6",
+    "name": "UniswapV2 LP ABTC/WETH",
+    "decimals": 18,
+    "symbol": "ABTC/WETH",
+    "price": 55519.58623460936,
+    "address": "0x2cc0a05d8ab918028775d4a6bf7eec11f79a1fd6",
+    "addresses": {
+     "ethereum": "0x2cc0a05d8ab918028775d4a6bf7eec11f79a1fd6"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:10.116Z",
+    "createdAt": "2025-09-04T07:05:02.552Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41e7fcb245f84b337eddcdcc26cae570029a9554",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 7196.160841387955,
+    "metrics": {
+     "apy": "1.936",
+     "baseApy": "1.936",
+     "volumeUsd1d": "127.25",
+     "volumeUsd7d": "198.903"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "fe47c3a8-da44-437d-927b-8be42b36fee6",
+    "totalSupply": "0.129614813968157204",
+    "reserves": [
+     "12287266.799669158",
+     "1.540246386308440429"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfea50261819dc00278f9c4b18b6cf146a830bced": {
+    "key": "bsc:0xfea50261819dc00278f9c4b18b6cf146a830bced",
+    "name": "Beefy CLM BTCB-WBNB",
+    "decimals": 18,
+    "symbol": "COWTHENABTCB-WBNB",
+    "price": 659.1677061770698,
+    "address": "0xfea50261819dc00278f9c4b18b6cf146a830bced",
+    "addresses": {
+     "bsc": "0xfea50261819dc00278f9c4b18b6cf146a830bced"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.401Z",
+    "createdAt": "2026-08-26T12:35:12.367Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "poolAddress": "0x6b67112aa7b45e8cdc0a93b8d66a6a36e68ae8e5",
+    "liquidity": 180509.78517757662,
+    "metrics": {
+     "apy": "5.75",
+     "baseApy": "5.75",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-338.902"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "Dynamic",
+     "interface": "ERC20",
+     "beefyClmId": "thena-cow-btcb-wbnb",
+     "providerId": "thena",
+     "tickSpacing": 60,
+     "managerAddress": "0xfea50261819dc00278f9c4b18b6cf146a830bced",
+     "strategyAddress": "0xd9173f10fd2a4e8bdd624a34e10ae487e88247a6",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xb74bce6b35410058d2f35e544507e98cd93a1cd6",
+     "depositTokenAddresses": [
+      "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+     ]
+    },
+    "tokenId": "0e3344a1-c7e2-4385-950c-d8abdf1b2d2e",
+    "totalSupply": "273.845007099129523768",
+    "reserves": [
+     "0.601579722985325752",
+     "187.131550057284781282"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x8bc727c6b33bfe0d80cc114ca299dd48e5cd1ab8": {
+    "key": "arbitrum:0x8bc727c6b33bfe0d80cc114ca299dd48e5cd1ab8",
+    "name": "Abbott Laboratories rStock",
+    "decimals": 18,
+    "symbol": "RABT",
+    "price": 104.64,
+    "address": "0x8bc727c6b33bfe0d80cc114ca299dd48e5cd1ab8",
+    "addresses": {
+     "arbitrum": "0x8bc727c6b33bfe0d80cc114ca299dd48e5cd1ab8"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 686.87,
+    "image": "https://coin-images.coingecko.com/coins/images/102177241/large/496df8a98eb23f50c8f94819561b71c7.png?1789117271",
+    "metrics": {
+     "volumeUsd1d": "0.009",
+     "volumeUsd7d": "40.719"
+    },
+    "metadata": {},
+    "tokenId": "cc9ab964-71d7-4992-82c2-a80d923eb2c9",
+    "totalSupply": "6.564181434",
+    "circulatingSupply": "6.564181434",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbd2383816bab04e46b69801cca7e92d34ab94d3f": {
+    "key": "bsc:0xbd2383816bab04e46b69801cca7e92d34ab94d3f",
+    "name": "Gamma Thena aBTCB-WBNB",
+    "decimals": 18,
+    "symbol": "ABTCB-WBNB",
+    "price": 459.2820584892441,
+    "address": "0xbd2383816bab04e46b69801cca7e92d34ab94d3f",
+    "addresses": {
+     "bsc": "0xbd2383816bab04e46b69801cca7e92d34ab94d3f"
+    },
+    "platform": "gamma-thena",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/21975/large/gamma-token-200.png",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.480Z",
+    "createdAt": "2024-05-15T09:59:39.388Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 914.212032391462,
+    "metrics": {
+     "apy": "0.022",
+     "baseApy": "0.022",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "0737e2bc-e2de-417c-a14e-7b547a97e2d3",
+    "totalSupply": "1.9905241572001705",
+    "reserves": [
+     "0.004975366486005765",
+     "0.726770345722843119"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x0c8526616ec9688ac6057a414a7e1dd1f41a187c85e3a4b3239d949a511870cf": {
+    "key": "avalanche:0x0c8526616ec9688ac6057a414a7e1dd1f41a187c85e3a4b3239d949a511870cf",
+    "name": "Uniswap V4 LP aAvaBTC.b/MM",
+    "decimals": 18,
+    "symbol": "AAVABTC.B/MM",
+    "price": 9007199254740990,
+    "address": "0x0c8526616ec9688ac6057a414a7e1dd1f41a187c85e3a4b3239d949a511870cf",
+    "addresses": {
+     "avalanche": "0x0c8526616ec9688ac6057a414a7e1dd1f41a187c85e3a4b3239d949a511870cf"
+    },
+    "platform": "uniswap-v4",
+    "network": "avalanche",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1696525205",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.558Z",
+    "createdAt": "2026-07-13T07:29:14.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ffdf2de812095b1d19cb146e4c004587c0a0692",
+     "0xa0a171c65c6440810c023d1b6ead2fcf4c3b0f89"
+    ],
+    "liquidity": 24214.0241498841,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99"
+    },
+    "tokenId": "7b016442-6cc3-4cbd-9a54-f5a9f6caca0d",
+    "reserves": [
+     "0.00000056",
+     "24222.328511856075916416"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x22f0e0a4c97ff43546dad16d43ef854c773f0e08": {
+    "key": "ethereum:0x22f0e0a4c97ff43546dad16d43ef854c773f0e08",
+    "name": "Fiamma BTC",
+    "decimals": 8,
+    "symbol": "FIABTC",
+    "price": 61009,
+    "address": "0x22f0e0a4c97ff43546dad16d43ef854c773f0e08",
+    "addresses": {
+     "ethereum": "0x22f0e0a4c97ff43546dad16d43ef854c773f0e08",
+     "base": "0x60c230c38af6d86b0277a98a1caeaa345a7b061f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-09T11:14:17.009Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1018647,
+    "image": "https://coin-images.coingecko.com/coins/images/68062/large/fiabtc_200-200.png?1754642511",
+    "metrics": {
+     "volumeUsd1d": "47.242",
+     "volumeUsd7d": "330.694"
+    },
+    "metadata": {
+     "tags": [
+      "#btc"
+     ]
+    },
+    "tokenId": "6eadcdc7-8c1d-49aa-8b87-2c7639687b4d",
+    "totalSupply": "16.69676922",
+    "circulatingSupply": "16.69676922",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x97673d6be983ae675aea9ad3ad4473d01062abbf": {
+    "key": "ethereum:0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+    "name": "Abbott Laboratories (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABT",
+    "price": 104.67,
+    "address": "0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+    "addresses": {
+     "avalanche": "0x45591301a193070548ff599b34850696d35ca725",
+     "arbitrum": "0x0947f651947efc92d602d084d4a465e23b09d3aa",
+     "ethereum": "0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+     "base": "0x1a60ef81d9863bf5e6eb0666664d516b53c06403"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1953.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175114/large/dinari-logo-green-with-margin.png?1785403253",
+    "metrics": {
+     "volumeUsd1d": "49.053",
+     "volumeUsd7d": "346.094"
+    },
+    "metadata": {},
+    "tokenId": "ab071318-fbb3-4f67-acc4-2ecfc9834feb",
+    "totalSupply": "18.664646609",
+    "circulatingSupply": "18.664646609",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x545b758c84a7806a22091a573131812bce81c4a4": {
+    "key": "arbitrum:0x545b758c84a7806a22091a573131812bce81c4a4",
+    "name": "American Bitcoin (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTC",
+    "price": 7.63,
+    "address": "0x545b758c84a7806a22091a573131812bce81c4a4",
+    "addresses": {
+     "base": "0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+     "arbitrum": "0x545b758c84a7806a22091a573131812bce81c4a4",
+     "avalanche": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+     "ethereum": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3251.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175172/large/dinari-logo-green-with-margin.png?1785403458",
+    "metrics": {
+     "volumeUsd1d": "39.123",
+     "volumeUsd7d": "1872.61"
+    },
+    "metadata": {},
+    "tokenId": "0e91f639-508a-4b64-9f78-591edc7faa8c",
+    "totalSupply": "426.13923362136893",
+    "circulatingSupply": "426.13923362136893",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdc2bc7562b0b387402db5ff8f137892eac22ef0763aa6484535e23912a2c3e04": {
+    "key": "ethereum:0xdc2bc7562b0b387402db5ff8f137892eac22ef0763aa6484535e23912a2c3e04",
+    "name": "Uniswap V4 LP ETH/ABT",
+    "decimals": 18,
+    "symbol": "ETH/ABT",
+    "price": 9007199254740990,
+    "address": "0xdc2bc7562b0b387402db5ff8f137892eac22ef0763aa6484535e23912a2c3e04",
+    "addresses": {
+     "ethereum": "0xdc2bc7562b0b387402db5ff8f137892eac22ef0763aa6484535e23912a2c3e04"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.795Z",
+    "createdAt": "2025-04-25T09:45:10.610Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986"
+    ],
+    "liquidity": 23508.984212115556,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "20"
+    },
+    "tokenId": "3ed5f12a-d85d-4912-8e6c-e1eb5e268cb0",
+    "reserves": [
+     "1.76203671601789531",
+     "68128.346589596925201717"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba": {
+    "key": "ethereum:0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+    "name": "American Bitcoin (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTC",
+    "price": 7.63,
+    "address": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+    "addresses": {
+     "base": "0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+     "arbitrum": "0x545b758c84a7806a22091a573131812bce81c4a4",
+     "avalanche": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+     "ethereum": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3251.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175172/large/dinari-logo-green-with-margin.png?1785403458",
+    "metrics": {
+     "volumeUsd1d": "39.123",
+     "volumeUsd7d": "1873.267"
+    },
+    "metadata": {},
+    "tokenId": "0e91f639-508a-4b64-9f78-591edc7faa8c",
+    "totalSupply": "426.13923362136893",
+    "circulatingSupply": "426.13923362136893",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x71813ad44be1eb74ea8a70a4d744ef1e0c86887ee0a3ae2e50469a68ca53eea0": {
+    "key": "ethereum:0x71813ad44be1eb74ea8a70a4d744ef1e0c86887ee0a3ae2e50469a68ca53eea0",
+    "name": "Uniswap V4 LP ETH/ABT",
+    "decimals": 18,
+    "symbol": "ETH/ABT",
+    "price": 9007199254740990,
+    "address": "0x71813ad44be1eb74ea8a70a4d744ef1e0c86887ee0a3ae2e50469a68ca53eea0",
+    "addresses": {
+     "ethereum": "0x71813ad44be1eb74ea8a70a4d744ef1e0c86887ee0a3ae2e50469a68ca53eea0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.401Z",
+    "createdAt": "2025-11-14T13:12:52.073Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986"
+    ],
+    "liquidity": 43070.45053530599,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9200,
+     "feePercentage": "46"
+    },
+    "tokenId": "005f327c-b7c4-4250-a44c-91d184660248",
+    "reserves": [
+     "7.43269817762894143",
+     "90339.669910931487513449"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0": {
+    "key": "bsc:0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0",
+    "name": "Gamma Thena aBTCB-WBNB",
+    "decimals": 18,
+    "symbol": "ABTCB-WBNB",
+    "price": 123.08541065684467,
+    "address": "0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0",
+    "addresses": {
+     "bsc": "0xd3c480ec7a47596ff8d63396227d1f7dc728a7f0"
+    },
+    "platform": "gamma-thena",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/21975/large/gamma-token-200.png",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.480Z",
+    "createdAt": "2024-05-15T09:59:39.388Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 22780.804137310035,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "f602ea32-0372-4b3b-8f04-20c9d9c4d2ba",
+    "totalSupply": "185.081270117558133011",
+    "reserves": [
+     "0.038293021645551936",
+     "27.927884105161883954"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x21e69f978028a0cb313efff3c00b9c8ef8bfe37877f498786da4073d0cb80578": {
+    "key": "ethereum:0x21e69f978028a0cb313efff3c00b9c8ef8bfe37877f498786da4073d0cb80578",
+    "name": "Uniswap V4 LP USDT/ABTx",
+    "decimals": 18,
+    "symbol": "USDT/ABTX",
+    "price": 9007199254740990,
+    "address": "0x21e69f978028a0cb313efff3c00b9c8ef8bfe37877f498786da4073d0cb80578",
+    "addresses": {
+     "ethereum": "0x21e69f978028a0cb313efff3c00b9c8ef8bfe37877f498786da4073d0cb80578"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.455Z",
+    "createdAt": "2026-10-18T18:58:01.507Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "761ed56e-df67-497a-b543-10d0e1216b99",
+    "reserves": [
+     "3999.999999999999999995",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1a85e7fac0e9c0c98a01de94b99f637fbac986a137242e4d2712dbfc4a27d585": {
+    "key": "ethereum:0x1a85e7fac0e9c0c98a01de94b99f637fbac986a137242e4d2712dbfc4a27d585",
+    "name": "Uniswap V4 LP MM/liquidBeraBTC",
+    "decimals": 18,
+    "symbol": "MM/LIQUIDBERABTC",
+    "price": 9007199254740990,
+    "address": "0x1a85e7fac0e9c0c98a01de94b99f637fbac986a137242e4d2712dbfc4a27d585",
+    "addresses": {
+     "ethereum": "0x1a85e7fac0e9c0c98a01de94b99f637fbac986a137242e4d2712dbfc4a27d585"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://images.portals.fi/logos/WBTC.jpeg"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.298Z",
+    "createdAt": "2026-08-11T16:07:35.614Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7e996e66e121a8b5ebdf116b9bd3db194d9c7afe",
+     "0xc673ef7791724f0dcca38adb47fbb3aef3db6c80"
+    ],
+    "liquidity": 13000.274893798192,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9911,
+     "feePercentage": "99.111"
+    },
+    "tokenId": "c9b1bf3c-c44b-4c5c-8e05-6425e7ef5f01",
+    "reserves": [
+     "12999.999999999985840537",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x64b3b21ee104f434380270749d8d5bfd481fdcf6": {
+    "key": "ethereum:0x64b3b21ee104f434380270749d8d5bfd481fdcf6",
+    "name": "American Bitcoin",
+    "decimals": 9,
+    "symbol": "ABTC",
+    "price": 9.824155583748939e-08,
+    "address": "0x64b3b21ee104f434380270749d8d5bfd481fdcf6",
+    "addresses": {
+     "ethereum": "0x64b3b21ee104f434380270749d8d5bfd481fdcf6"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 41329.24012527341,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "1.41",
+     "volumeUsd7d": "1764.45"
+    },
+    "metadata": {},
+    "tokenId": "22597236-9baf-4d3d-b7b5-39f331a183c5",
+    "totalSupply": "420690000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x41e7fcb245f84b337eddcdcc26cae570029a9554": {
+    "key": "ethereum:0x41e7fcb245f84b337eddcdcc26cae570029a9554",
+    "name": "Anime Bitcoin",
+    "decimals": 9,
+    "symbol": "ABTC",
+    "price": 0.00029279642619044877,
+    "address": "0x41e7fcb245f84b337eddcdcc26cae570029a9554",
+    "addresses": {
+     "ethereum": "0x41e7fcb245f84b337eddcdcc26cae570029a9554"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6148.724949999424,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "131.37",
+     "volumeUsd7d": "271.75"
+    },
+    "metadata": {},
+    "tokenId": "b70facc2-ab57-4497-87b2-c7d17edfd142",
+    "totalSupply": "21000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91": {
+    "key": "ethereum:0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91",
+    "name": "Uniswap V4 LP upGAMMAbtc/GGB",
+    "decimals": 18,
+    "symbol": "UPGAMMABTC/GGB",
+    "price": 9007199254740990,
+    "address": "0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91",
+    "addresses": {
+     "ethereum": "0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.460Z",
+    "createdAt": "2026-07-16T19:59:51.732Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9ae81a8373a85308aa719b88331c453a0865d71b",
+     "0xd0dc619f7a4420394360718e8b4bac75a723333e"
+    ],
+    "liquidity": 15660.77923874819,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99"
+    },
+    "tokenId": "d14f6410-3520-4496-8d5b-4f8f993d5052",
+    "reserves": [
+     "0.00000036",
+     "15655.364926872673959505"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc710fffa53e1c1e693de4d7afd67246af2659b50fdd17b08068ec02bf07c2691": {
+    "key": "ethereum:0xc710fffa53e1c1e693de4d7afd67246af2659b50fdd17b08068ec02bf07c2691",
+    "name": "Uniswap V4 LP ZQ/ABTon",
+    "decimals": 18,
+    "symbol": "ZQ/ABTON",
+    "price": 9007199254740990,
+    "address": "0xc710fffa53e1c1e693de4d7afd67246af2659b50fdd17b08068ec02bf07c2691",
+    "addresses": {
+     "ethereum": "0xc710fffa53e1c1e693de4d7afd67246af2659b50fdd17b08068ec02bf07c2691"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.941Z",
+    "createdAt": "2026-09-30T05:25:12.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    ],
+    "liquidity": 20002.54542477676,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "55"
+    },
+    "tokenId": "5eb0133b-f8d9-4058-a7f6-3797ced664a9",
+    "reserves": [
+     "19999.999999999999999996",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5f94be500d22ce42f3c8d736e1a8f4885a994630": {
+    "key": "ethereum:0x5f94be500d22ce42f3c8d736e1a8f4885a994630",
+    "name": "Uniswap V3 CollabToken/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "COLLAB/USDC",
+    "price": 9007199254740990,
+    "address": "0x5f94be500d22ce42f3c8d736e1a8f4885a994630",
+    "addresses": {
+     "ethereum": "0x5f94be500d22ce42f3c8d736e1a8f4885a994630"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:36.272Z",
+    "createdAt": "2025-10-15T12:50:00.700Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4acaaed02d7b3e096411d4b9fd7d8f905414a960",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1945.670558561948,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "af397f37-6f57-4047-a3d5-58f37d7b5066",
+    "reserves": [
+     "488502.981452931533318317",
+     "1073.092681"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xccac3bfc4543a0e3c464ca33b717a2b380b43315": {
+    "key": "ethereum:0xccac3bfc4543a0e3c464ca33b717a2b380b43315",
+    "name": "Uniswap V3 Wrapped aBTC/Wrapped BTC 0.01%",
+    "decimals": 18,
+    "symbol": "WABTC/WBTC",
+    "price": 9007199254740990,
+    "address": "0xccac3bfc4543a0e3c464ca33b717a2b380b43315",
+    "addresses": {
+     "ethereum": "0xccac3bfc4543a0e3c464ca33b717a2b380b43315"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://images.portals.fi/logos/WBTC.jpeg"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.957Z",
+    "createdAt": "2026-06-04T11:09:56.178Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b",
+     "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+    ],
+    "liquidity": 3859.8879983922247,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "d21fad5f-943f-485f-a8d9-c6f5ac83e209",
+    "reserves": [
+     "0.025575480694719625",
+     "0.02228408"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8": {
+    "key": "base:0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+    "name": "American Bitcoin (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTC",
+    "price": 7.63,
+    "address": "0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+    "addresses": {
+     "base": "0x1ea213f74f5ee89e98cc46ad4ee017cdde319fd8",
+     "arbitrum": "0x545b758c84a7806a22091a573131812bce81c4a4",
+     "avalanche": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba",
+     "ethereum": "0xc8b23d3fa71c9c8586f50d32a98a6678253c91ba"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3251.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175172/large/dinari-logo-green-with-margin.png?1785403458",
+    "metrics": {
+     "volumeUsd1d": "39.123",
+     "volumeUsd7d": "1874.955"
+    },
+    "metadata": {},
+    "tokenId": "0e91f639-508a-4b64-9f78-591edc7faa8c",
+    "totalSupply": "426.13923362136893",
+    "circulatingSupply": "426.13923362136893",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4acaaed02d7b3e096411d4b9fd7d8f905414a960": {
+    "key": "ethereum:0x4acaaed02d7b3e096411d4b9fd7d8f905414a960",
+    "name": "CollabToken",
+    "decimals": 18,
+    "symbol": "COLLAB",
+    "price": 0.0017867467765266102,
+    "address": "0x4acaaed02d7b3e096411d4b9fd7d8f905414a960",
+    "addresses": {
+     "ethereum": "0x4acaaed02d7b3e096411d4b9fd7d8f905414a960"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.561Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 178674.67765266102,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "8766f9b1-329b-4e88-9d91-0b23709724fc",
+    "totalSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x92528e15865bf472f2da1d87bca3181195b802d5a50ac061e7b94ebb628d5ba0": {
+    "key": "ethereum:0x92528e15865bf472f2da1d87bca3181195b802d5a50ac061e7b94ebb628d5ba0",
+    "name": "Uniswap V4 LP ABT/USDT",
+    "decimals": 18,
+    "symbol": "ABT/USDT",
+    "price": 9007199254740990,
+    "address": "0x92528e15865bf472f2da1d87bca3181195b802d5a50ac061e7b94ebb628d5ba0",
+    "addresses": {
+     "ethereum": "0x92528e15865bf472f2da1d87bca3181195b802d5a50ac061e7b94ebb628d5ba0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/2341/large/arcblock.png?1696503220"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.687Z",
+    "createdAt": "2025-11-14T13:12:52.073Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2453.118471138406,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2002,
+     "feePercentage": "10.01"
+    },
+    "tokenId": "8132dbeb-9e54-441c-b826-9add21a87c2f",
+    "reserves": [
+     "3614.376562083381945273",
+     "1425.360953"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb74bce6b35410058d2f35e544507e98cd93a1cd6": {
+    "key": "bsc:0xb74bce6b35410058d2f35e544507e98cd93a1cd6",
+    "name": "Beefy CLM BTCB-WBNB Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWTHENABTCB-WBNB",
+    "price": 659.1677061770698,
+    "address": "0xb74bce6b35410058d2f35e544507e98cd93a1cd6",
+    "addresses": {
+     "bsc": "0xb74bce6b35410058d2f35e544507e98cd93a1cd6"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.401Z",
+    "createdAt": "2026-08-26T12:35:12.367Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xfea50261819dc00278f9c4b18b6cf146a830bced"
+    ],
+    "poolAddress": "0xfea50261819dc00278f9c4b18b6cf146a830bced",
+    "liquidity": 180509.7851775766,
+    "metrics": {
+     "apy": "5.75",
+     "baseApy": "5.75",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-338.902"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "Dynamic",
+     "interface": "ERC20",
+     "beefyClmId": "thena-cow-btcb-wbnb",
+     "providerId": "thena",
+     "tickSpacing": 60,
+     "managerAddress": "0xfea50261819dc00278f9c4b18b6cf146a830bced",
+     "strategyAddress": "0xd9173f10fd2a4e8bdd624a34e10ae487e88247a6",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xb74bce6b35410058d2f35e544507e98cd93a1cd6",
+     "depositTokenAddresses": [
+      "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+     ]
+    },
+    "tokenId": "fcc1cc1b-f0be-4152-82fe-85efe6a4e53a",
+    "totalSupply": "273.845007099129522768",
+    "reserves": [
+     "273.845007099129522768"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74": {
+    "key": "avalanche:0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+    "name": "Wrapped Aave Avalanche BTC.b",
+    "decimals": 8,
+    "symbol": "WAAVABTC.B",
+    "price": 81106.84649994,
+    "address": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74",
+    "addresses": {
+     "avalanche": "0x2d324fd1ca86d90f61b0965d2db2f86d22ea4b74"
+    },
+    "platform": "aavev3-stata-token",
+    "network": "avalanche",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1696525205"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.609Z",
+    "createdAt": "2025-07-11T10:30:23.423Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+    ],
+    "liquidity": 1236.1721574226056,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "volumeUsd1d": "-336.654",
+     "volumeUsd7d": "-251.267"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626"
+    },
+    "tokenId": "f7649e7a-f444-4de3-b31b-81d789a9a873",
+    "totalSupply": "0.01524128",
+    "reserves": [
+     "0.01529651"
+    ],
+    "pricePerShare": "1.00362371",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5a20886b575058dd7299785f0ea9b1172942a3e0": {
+    "key": "bsc:0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+    "name": "Abbott (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTON",
+    "price": 101.57,
+    "address": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+    "addresses": {
+     "bsc": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+     "ethereum": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1368142,
+    "image": "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+    "metrics": {
+     "volumeUsd1d": "5055.08",
+     "volumeUsd7d": "215534.653"
+    },
+    "metadata": {},
+    "tokenId": "153e597c-bd74-4871-95e1-95d1a6767161",
+    "totalSupply": "13469.639951479603",
+    "circulatingSupply": "13469.639951479603",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfbaa62e2fc3da350a8e75b214d9e87754cf4309956dea039363e9ef843a37e04": {
+    "key": "ethereum:0xfbaa62e2fc3da350a8e75b214d9e87754cf4309956dea039363e9ef843a37e04",
+    "name": "Uniswap V4 LP ABTon/USDCc",
+    "decimals": 18,
+    "symbol": "ABTON/USDCC",
+    "price": 9007199254740990,
+    "address": "0xfbaa62e2fc3da350a8e75b214d9e87754cf4309956dea039363e9ef843a37e04",
+    "addresses": {
+     "ethereum": "0xfbaa62e2fc3da350a8e75b214d9e87754cf4309956dea039363e9ef843a37e04"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.799Z",
+    "createdAt": "2026-10-16T14:20:35.560Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 4001.7067302447576,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.7331"
+    },
+    "tokenId": "0d31a9ae-5ce1-43fb-b44e-9ba3d146be1e",
+    "reserves": [
+     "0",
+     "4000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8de6c0cbc64b9cf089551d290f978fc156f47587f57867a18c3e8f29d9de3125": {
+    "key": "ethereum:0x8de6c0cbc64b9cf089551d290f978fc156f47587f57867a18c3e8f29d9de3125",
+    "name": "Uniswap V4 LP ABTC/USDT",
+    "decimals": 18,
+    "symbol": "ABTC/USDT",
+    "price": 9007199254740990,
+    "address": "0x8de6c0cbc64b9cf089551d290f978fc156f47587f57867a18c3e8f29d9de3125",
+    "addresses": {
+     "ethereum": "0x8de6c0cbc64b9cf089551d290f978fc156f47587f57867a18c3e8f29d9de3125"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.114Z",
+    "createdAt": "2026-06-26T17:30:14.514Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8c45bc48a451f48cca403ff2ddba2da0ea68c404",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 777.8311670219617,
+    "metrics": {
+     "apy": "32.104",
+     "baseApy": "32.104",
+     "volumeUsd1d": "3.416",
+     "volumeUsd7d": "9.972"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3990,
+     "feePercentage": "20.0301"
+    },
+    "tokenId": "a962ccfe-91e3-4f1e-b165-c1738cf364d6",
+    "reserves": [
+     "365.376877948350889215",
+     "426.039949"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8c45bc48a451f48cca403ff2ddba2da0ea68c404": {
+    "key": "ethereum:0x8c45bc48a451f48cca403ff2ddba2da0ea68c404",
+    "name": "Astra Bitcoin",
+    "decimals": 18,
+    "symbol": "ABTC",
+    "price": 0.963817859180416,
+    "address": "0x8c45bc48a451f48cca403ff2ddba2da0ea68c404",
+    "addresses": {
+     "ethereum": "0x8c45bc48a451f48cca403ff2ddba2da0ea68c404"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-26T10:35:55.513Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2168590.1831559357,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "9395.48",
+     "volumeUsd7d": "34391.61"
+    },
+    "metadata": {},
+    "tokenId": "5d0c4cf8-7b16-4257-b3bf-7111e00646ab",
+    "totalSupply": "2250000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x45591301a193070548ff599b34850696d35ca725": {
+    "key": "avalanche:0x45591301a193070548ff599b34850696d35ca725",
+    "name": "Abbott Laboratories (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABT",
+    "price": 104.67,
+    "address": "0x45591301a193070548ff599b34850696d35ca725",
+    "addresses": {
+     "avalanche": "0x45591301a193070548ff599b34850696d35ca725",
+     "arbitrum": "0x0947f651947efc92d602d084d4a465e23b09d3aa",
+     "ethereum": "0x97673d6be983ae675aea9ad3ad4473d01062abbf",
+     "base": "0x1a60ef81d9863bf5e6eb0666664d516b53c06403"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1953.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175114/large/dinari-logo-green-with-margin.png?1785403253",
+    "metrics": {
+     "volumeUsd1d": "49.053",
+     "volumeUsd7d": "346.368"
+    },
+    "metadata": {},
+    "tokenId": "ab071318-fbb3-4f67-acc4-2ecfc9834feb",
+    "totalSupply": "18.664646609",
+    "circulatingSupply": "18.664646609",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9d01c58f85f479fc8c84addfed41e85f5bdb015848122426897ed97b9d1b9fbc": {
+    "key": "ethereum:0x9d01c58f85f479fc8c84addfed41e85f5bdb015848122426897ed97b9d1b9fbc",
+    "name": "Uniswap V4 LP ABTon/EGP",
+    "decimals": 18,
+    "symbol": "ABTON/EGP",
+    "price": 9007199254740990,
+    "address": "0x9d01c58f85f479fc8c84addfed41e85f5bdb015848122426897ed97b9d1b9fbc",
+    "addresses": {
+     "ethereum": "0x9d01c58f85f479fc8c84addfed41e85f5bdb015848122426897ed97b9d1b9fbc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.772Z",
+    "createdAt": "2026-10-14T06:54:32.568Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20073.39634544542,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.31"
+    },
+    "tokenId": "f62835eb-515e-4181-a3af-e610840b990c",
+    "reserves": [
+     "0.2744622893174567",
+     "19999.999999999999999975"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d": {
+    "key": "ethereum:0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+    "name": "Abbott (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABTON",
+    "price": 101.57,
+    "address": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d",
+    "addresses": {
+     "bsc": "0x5a20886b575058dd7299785f0ea9b1172942a3e0",
+     "ethereum": "0x3859385363f7bb4dfe42811ccf3f294fcd41dd1d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1368142,
+    "image": "https://coin-images.coingecko.com/coins/images/68552/large/abton_160x160.png?1756105660",
+    "metrics": {
+     "volumeUsd1d": "5055.21",
+     "volumeUsd7d": "214716.913"
+    },
+    "metadata": {},
+    "tokenId": "153e597c-bd74-4871-95e1-95d1a6767161",
+    "totalSupply": "13469.639951479603",
+    "circulatingSupply": "13469.639951479603",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x60c230c38af6d86b0277a98a1caeaa345a7b061f": {
+    "key": "base:0x60c230c38af6d86b0277a98a1caeaa345a7b061f",
+    "name": "Fiamma BTC",
+    "decimals": 8,
+    "symbol": "FIABTC",
+    "price": 61009,
+    "address": "0x60c230c38af6d86b0277a98a1caeaa345a7b061f",
+    "addresses": {
+     "ethereum": "0x22f0e0a4c97ff43546dad16d43ef854c773f0e08",
+     "base": "0x60c230c38af6d86b0277a98a1caeaa345a7b061f"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-09T11:14:17.009Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1018647,
+    "image": "https://coin-images.coingecko.com/coins/images/68062/large/fiabtc_200-200.png?1754642511",
+    "metrics": {
+     "volumeUsd1d": "47.242",
+     "volumeUsd7d": "330.694"
+    },
+    "metadata": {
+     "tags": [
+      "#btc"
+     ]
+    },
+    "tokenId": "6eadcdc7-8c1d-49aa-8b87-2c7639687b4d",
+    "totalSupply": "16.69676922",
+    "circulatingSupply": "16.69676922",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e": {
+    "key": "arbitrum:0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "name": "Abbott xStock",
+    "decimals": 18,
+    "symbol": "ABTX",
+    "price": 101,
+    "address": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e",
+    "addresses": {
+     "arbitrum": "0x89233399708c18ac6887f90a2b4cd8ba5fedd06e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9272597.512412213,
+    "image": "https://coin-images.coingecko.com/coins/images/55587/large/Ticker_ABT__Company_Name_Abbot__size_200x200_2x.png?1746807223",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "abbott-xstock"
+    },
+    "tokenId": "3b954a82-1e91-42ed-a08f-62d60db12901",
+    "totalSupply": "91807.896162497148580071",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x8ffdf2de812095b1d19cb146e4c004587c0a0692": {
+    "key": "avalanche:0x8ffdf2de812095b1d19cb146e4c004587c0a0692",
+    "name": "Aave Avalanche BTC.b",
+    "decimals": 8,
+    "symbol": "AAVABTC.B",
+    "price": 80814,
+    "address": "0x8ffdf2de812095b1d19cb146e4c004587c0a0692",
+    "addresses": {
+     "avalanche": "0x8ffdf2de812095b1d19cb146e4c004587c0a0692"
+    },
+    "platform": "aavev3",
+    "network": "avalanche",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/26115/large/btcb.png?1696525205"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.655Z",
+    "createdAt": "2024-02-29T09:05:59.576Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x152b9d0fdc40c096757f570a51e494bd4b943e50"
+    ],
+    "liquidity": 93203965.98903948,
+    "metrics": {
+     "apy": "0.004",
+     "baseApy": "0.004",
+     "borrowApy": "0.203",
+     "baseBorrowApy": "0.203",
+     "volumeUsd1d": "-73691.35",
+     "volumeUsd7d": "-734610.761"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0xd94112b5b62d53c9402e7a60289c6810def1dc9b",
+     "variableDebtTokenAddress": "0xa8669021776bc142dfca87c21b4a52595bcbb40a"
+    },
+    "tokenId": "f4579562-709a-49d5-9f78-e8955b3d372e",
+    "totalSupply": "1153.31459882",
+    "totalBorrow": "46.71681964",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x0e10a99cde61b87d39c60e35cd1703d61cc9668b": {
+    "key": "arbitrum:0x0e10a99cde61b87d39c60e35cd1703d61cc9668b",
+    "name": "Uniswap V3 USD0/CrabToken 1%",
+    "decimals": 18,
+    "symbol": "USD0/CRAB",
+    "price": 9007199254740990,
+    "address": "0x0e10a99cde61b87d39c60e35cd1703d61cc9668b",
+    "addresses": {
+     "arbitrum": "0x0e10a99cde61b87d39c60e35cd1703d61cc9668b"
+    },
+    "platform": "uniswap-v3",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.950Z",
+    "createdAt": "2025-08-19T11:59:04.301Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+     "0xfd3b912fc1c5026a1b73d7fbc0b9bc3106b10605"
+    ],
+    "liquidity": 14637.95895663699,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "e5cbce42-c28f-465c-98d8-760554d2b618",
+    "reserves": [
+     "7307.088255",
+     "54631317.350401733566181151"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

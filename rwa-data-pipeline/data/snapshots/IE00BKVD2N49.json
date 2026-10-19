@@ -1,0 +1,1557 @@
+{
+ "schema_version": 1,
+ "underlying_id": "IE00BKVD2N49",
+ "ticker": "STX",
+ "name": "Seagate Technology",
+ "isin": "IE00BKVD2N49",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:39Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Seagate Technology Holdings Plc",
+   "symbol": "STX",
+   "slug": "seagate-technology-holdings-plc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 604.21356914638,
+     "tokenized_market_cap": 880399.4133925978,
+     "tokenized_volume_24h": 1445417.92750444,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 73,
+   "asset_type": "stock",
+   "rwa_rank": 113,
+   "has_tokens": true,
+   "average_tokenized_price": 604.21356914638,
+   "tokenized_market_cap": 880399.4133925978,
+   "tokenized_volume_24h": 1445417.92750444,
+   "last_updated": "2026-10-18T20:14:27.291Z",
+   "tokens": [
+    {
+     "symbol": "rSTX",
+     "name": "Seagate Tokenized Stock (Reality)",
+     "price": 631.2230956467066,
+     "crypto_id": 40653,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 224448.18,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "STXB",
+     "name": "Seagate Tokenized bStocks",
+     "price": 604.9413575824016,
+     "crypto_id": 41963,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 656741.34,
+     "volume_24h": 1444343.34221202
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "STX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_STX"
+    }
+   ]
+  },
+  "info": {
+   "40653": {
+    "id": 40653,
+    "symbol": "rSTX",
+    "name": "Seagate Tokenized Stock (Reality)",
+    "slug": "seagate-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40653.png",
+    "date_added": "2026-07-02T07:39:23.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xf1d1ba0fc7829648906657e75436e45662586ebc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf1d1ba0fc7829648906657e75436e45662586ebc",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "41963": {
+    "id": 41963,
+    "symbol": "STXB",
+    "name": "Seagate Tokenized bStocks",
+    "slug": "seagate-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41963.png",
+    "date_added": "2026-09-01T08:21:33.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xf1d1ba0fc7829648906657e75436e45662586ebc",
+   "bsc:0x2e065f65f1699964f4092de1d39a8efe6c8d6f32"
+  ],
+  "exact": {
+   "arbitrum:0xf1d1ba0fc7829648906657e75436e45662586ebc": {
+    "key": "arbitrum:0xf1d1ba0fc7829648906657e75436e45662586ebc",
+    "name": "Seagate Technology rStock",
+    "decimals": 18,
+    "symbol": "RSTX",
+    "price": 631.45,
+    "address": "0xf1d1ba0fc7829648906657e75436e45662586ebc",
+    "addresses": {
+     "arbitrum": "0xf1d1ba0fc7829648906657e75436e45662586ebc"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 224530,
+    "image": "https://coin-images.coingecko.com/coins/images/102177043/large/a3804ab93e221fd181c7fcf028cf8beb.png?1789116649",
+    "metrics": {
+     "volumeUsd1d": "0.043",
+     "volumeUsd7d": "1397597.001"
+    },
+    "metadata": {},
+    "tokenId": "7fa5c5df-360f-4849-b727-adb015f16019",
+    "totalSupply": "355.576632868",
+    "circulatingSupply": "355.576632868",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2e065f65f1699964f4092de1d39a8efe6c8d6f32": {
+    "key": "bsc:0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+    "name": "Seagate (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "STXB",
+    "price": 604.93,
+    "address": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+    "addresses": {
+     "bsc": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 656344,
+    "image": "https://coin-images.coingecko.com/coins/images/102179143/large/stxb.png?1791294259",
+    "metrics": {
+     "volumeUsd1d": "770146.382",
+     "volumeUsd7d": "4521335.39"
+    },
+    "metadata": {},
+    "tokenId": "35e3a222-0d18-4aa7-a458-5228ef4f56eb",
+    "totalSupply": "1085.0213072",
+    "circulatingSupply": "1085.0213072",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "STX": {
+    "total_items": 30,
+    "pages": 1,
+    "received": 30,
+    "complete": true
+   }
+  },
+  "records": {
+   "flare:0x64e9329df667c938ddbbde3a0a0507dc99634aa2": {
+    "key": "flare:0x64e9329df667c938ddbbde3a0a0507dc99634aa2",
+    "name": "Principal Token: stXRP(FXRP) 2027/12/31",
+    "decimals": 6,
+    "symbol": "PT-STXRP(FXRP)-2027/12/31",
+    "price": 1.1591443344096,
+    "address": "0x64e9329df667c938ddbbde3a0a0507dc99634aa2",
+    "addresses": {
+     "flare": "0x64e9329df667c938ddbbde3a0a0507dc99634aa2"
+    },
+    "platform": "spectra-pt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:01.579Z",
+    "createdAt": "2026-07-07T13:06:47.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+    "liquidity": 876.7913983123443,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1830211204,
+     "expired": false,
+     "ytAddress": "0xb95e9a3b62e213ebb30f87a2e3ecb2472902cd5f",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+     "marketAddress": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "52b0d89a-ddff-4ebd-bb3b-ddc54a3e02c3",
+    "totalSupply": "756.412616",
+    "reserves": [
+     "756.412616"
+    ],
+    "pricePerShare": "0.919955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x0bb1344e88effeb34e4b15013f99e3bd1542ab41": {
+    "key": "flare:0x0bb1344e88effeb34e4b15013f99e3bd1542ab41",
+    "name": "Yield Token: stXRP(FXRP) 2026/11/26",
+    "decimals": 6,
+    "symbol": "YT-STXRP(FXRP)-2026/11/26",
+    "price": 0.0039614544522,
+    "address": "0x0bb1344e88effeb34e4b15013f99e3bd1542ab41",
+    "addresses": {
+     "flare": "0x0bb1344e88effeb34e4b15013f99e3bd1542ab41"
+    },
+    "platform": "spectra-yt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.015Z",
+    "createdAt": "2026-07-07T13:13:09.121Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181"
+    ],
+    "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "liquidity": 7936.331839434702,
+    "metrics": {
+     "volumeUsd1d": "-10.674",
+     "volumeUsd7d": "248.559"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1795651204,
+     "expired": false,
+     "ptAddress": "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "marketAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "3624c719-51e1-4f1c-beb4-df4f91c85bb2",
+    "totalSupply": "2003388.385553",
+    "reserves": [
+     "2003388.385553"
+    ],
+    "pricePerShare": "0.003144",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xffed33d28ca65e52e927849f456d8e820b324508": {
+    "key": "flare:0xffed33d28ca65e52e927849f456d8e820b324508",
+    "name": "SparkDEX V3 Firelight stXRP/FXRP 0.05%",
+    "decimals": 18,
+    "symbol": "STXRP/FXRP",
+    "price": 9007199254740990,
+    "address": "0xffed33d28ca65e52e927849f456d8e820b324508",
+    "addresses": {
+     "flare": "0xffed33d28ca65e52e927849f456d8e820b324508"
+    },
+    "platform": "sparkdex-v3",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.055Z",
+    "createdAt": "2026-06-22T11:42:12.984Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    ],
+    "liquidity": 41128.99238042947,
+    "metrics": {
+     "apy": "0.124",
+     "baseApy": "0.124",
+     "volumeUsd1d": "279.678",
+     "volumeUsd7d": "3180.794"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "f222b92a-8a57-4546-b063-79c0781f5906",
+    "reserves": [
+     "18916.943877",
+     "13710.547521"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0000000000ca73a6df4c58b84c5b4b847fe8ff39": {
+    "key": "ethereum:0x0000000000ca73a6df4c58b84c5b4b847fe8ff39",
+    "name": "Asterix",
+    "decimals": 18,
+    "symbol": "ASTX",
+    "price": 0.159506,
+    "address": "0x0000000000ca73a6df4c58b84c5b4b847fe8ff39",
+    "addresses": {
+     "ethereum": "0x0000000000ca73a6df4c58b84c5b4b847fe8ff39"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-02-16T13:55:15.110Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1595.06,
+    "image": "https://assets.coingecko.com/coins/images/35257/large/Asterix_Logo_200x200.png?1708006538",
+    "metrics": {
+     "volumeUsd1d": "1.698",
+     "volumeUsd7d": "11.886"
+    },
+    "metadata": {},
+    "tokenId": "f4c7ea90-4920-4934-8b07-3ed53f82d83e",
+    "totalSupply": "10000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb": {
+    "key": "flare:0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "name": "Spectra Market PT-stXRP(FXRP)-2026/11/26/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2026/11/26/STXRP",
+    "price": 1.2683815038111013,
+    "address": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "addresses": {
+     "flare": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "liquidity": 3421509.357859522,
+    "metrics": {
+     "volumeUsd1d": "15281.011",
+     "volumeUsd7d": "350691.729"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1795651204,
+     "expired": false,
+     "ptAddress": "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+     "ytAddress": "0x0bb1344e88effeb34e4b15013f99e3bd1542ab41",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "b68f60a8-31da-419c-8a20-40b8fbd20c1f",
+    "totalSupply": "2697539.618465678758222424",
+    "reserves": [
+     "442000.89518",
+     "2273122.074056"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xc8f03eba4aa897b33be0812a871ae96b7f508bb5": {
+    "key": "flare:0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+    "name": "Spectra Market PT-stXRP(FXRP)-2027/12/31/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2027/12/31/STXRP",
+    "price": 1.3262120267818533,
+    "address": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+    "addresses": {
+     "flare": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x64e9329df667c938ddbbde3a0a0507dc99634aa2",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+    "liquidity": 768.6182113004658,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3.943"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1830211204,
+     "expired": false,
+     "ptAddress": "0x64e9329df667c938ddbbde3a0a0507dc99634aa2",
+     "ytAddress": "0xb95e9a3b62e213ebb30f87a2e3ecb2472902cd5f",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0xc8f03eba4aa897b33be0812a871ae96b7f508bb5",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "e2519d1b-da48-441e-a52e-f8583fc1d1cc",
+    "totalSupply": "579.559071836780033347",
+    "reserves": [
+     "59.810634",
+     "554.564298"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xffbc4b519396487193f00136c8dce6a6d93e4593": {
+    "key": "flare:0xffbc4b519396487193f00136c8dce6a6d93e4593",
+    "name": "SparkDEX V4 SparkDEX Staked FLR/Firelight stXRP",
+    "decimals": 18,
+    "symbol": "STFLR/STXRP",
+    "price": 9007199254740990,
+    "address": "0xffbc4b519396487193f00136c8dce6a6d93e4593",
+    "addresses": {
+     "flare": "0xffbc4b519396487193f00136c8dce6a6d93e4593"
+    },
+    "platform": "sparkdex-v4",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/102171873/large/stflr.png?1770183957",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.496Z",
+    "createdAt": "2026-07-16T04:08:59.034Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0988c6ba244a90c07a917ebe609eb3264be716ff",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "liquidity": 887.5880778078435,
+    "metrics": {
+     "apy": "0.396",
+     "baseApy": "0.396",
+     "volumeUsd1d": "77.165",
+     "volumeUsd7d": "749.421"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "f10791ec-d0cd-4dd4-94bc-e89d053fce97",
+    "reserves": [
+     "125111.504716172438796994",
+     "46.077659"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "flare:0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f": {
+    "key": "flare:0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+    "name": "Spectra Market PT-stXRP(FXRP)-2027/09/30/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2027/09/30/STXRP",
+    "price": 1.3201374486507993,
+    "address": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+    "addresses": {
+     "flare": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+    "liquidity": 223810.32048444572,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2583.539"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1822262404,
+     "expired": false,
+     "ptAddress": "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0",
+     "ytAddress": "0x71b1338cc7ea3a49315444ff42c5ddd558c7da43",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "7b0416f9-cee2-4126-827f-324483b39837",
+    "totalSupply": "169535.619728978442962142",
+    "reserves": [
+     "7562.744296",
+     "170198.633192"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0e4524210ce19e2bd6144258ae16efe0f5054ddd5cf02ae0b066da805617c59c": {
+    "key": "ethereum:0x0e4524210ce19e2bd6144258ae16efe0f5054ddd5cf02ae0b066da805617c59c",
+    "name": "Uniswap V4 LP wUSDC/STXon",
+    "decimals": 18,
+    "symbol": "WUSDC/STXON",
+    "price": 9007199254740990,
+    "address": "0x0e4524210ce19e2bd6144258ae16efe0f5054ddd5cf02ae0b066da805617c59c",
+    "addresses": {
+     "ethereum": "0x0e4524210ce19e2bd6144258ae16efe0f5054ddd5cf02ae0b066da805617c59c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172441/large/stxon_160x160.png?1773419730"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.536Z",
+    "createdAt": "2026-09-28T10:37:11.211Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "63ea94bf-8e4f-4132-b9db-ef35d0210ebc",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "flare:0xa7cb1fa9aab0157f0380b29e48dfe2b305171181": {
+    "key": "flare:0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+    "name": "Principal Token: stXRP(FXRP) 2026/11/26",
+    "decimals": 6,
+    "symbol": "PT-STXRP(FXRP)-2026/11/26",
+    "price": 1.2560385455478,
+    "address": "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+    "addresses": {
+     "flare": "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181"
+    },
+    "platform": "spectra-pt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:01.579Z",
+    "createdAt": "2026-07-07T13:06:47.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "liquidity": 2516333.0339573454,
+    "metrics": {
+     "volumeUsd1d": "-18.667",
+     "volumeUsd7d": "8592.432"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1795651204,
+     "expired": false,
+     "ytAddress": "0x0bb1344e88effeb34e4b15013f99e3bd1542ab41",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "marketAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "4cdc64b4-3354-4232-bc6f-6f340a3fdcd8",
+    "totalSupply": "2003388.385553",
+    "reserves": [
+     "2003388.385553"
+    ],
+    "pricePerShare": "0.996855",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x71b1338cc7ea3a49315444ff42c5ddd558c7da43": {
+    "key": "flare:0x71b1338cc7ea3a49315444ff42c5ddd558c7da43",
+    "name": "Yield Token: stXRP(FXRP) 2027/09/30",
+    "decimals": 6,
+    "symbol": "YT-STXRP(FXRP)-2027/09/30",
+    "price": 0.0441826209216,
+    "address": "0x71b1338cc7ea3a49315444ff42c5ddd558c7da43",
+    "addresses": {
+     "flare": "0x71b1338cc7ea3a49315444ff42c5ddd558c7da43"
+    },
+    "platform": "spectra-yt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.015Z",
+    "createdAt": "2026-07-07T13:13:09.121Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0"
+    ],
+    "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+    "liquidity": 1119.271637279735,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1822262404,
+     "expired": false,
+     "ptAddress": "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+     "marketAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "ead11856-65a8-4bd2-945a-4080e0067ed5",
+    "totalSupply": "25332.84839",
+    "reserves": [
+     "25332.84839"
+    ],
+    "pricePerShare": "0.035065",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf1d1ba0fc7829648906657e75436e45662586ebc": {
+    "key": "arbitrum:0xf1d1ba0fc7829648906657e75436e45662586ebc",
+    "name": "Seagate Technology rStock",
+    "decimals": 18,
+    "symbol": "RSTX",
+    "price": 631.45,
+    "address": "0xf1d1ba0fc7829648906657e75436e45662586ebc",
+    "addresses": {
+     "arbitrum": "0xf1d1ba0fc7829648906657e75436e45662586ebc"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 224530,
+    "image": "https://coin-images.coingecko.com/coins/images/102177043/large/a3804ab93e221fd181c7fcf028cf8beb.png?1789116649",
+    "metrics": {
+     "volumeUsd1d": "0.043",
+     "volumeUsd7d": "1397597.001"
+    },
+    "metadata": {},
+    "tokenId": "7fa5c5df-360f-4849-b727-adb015f16019",
+    "totalSupply": "355.576632868",
+    "circulatingSupply": "355.576632868",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xe7c867e5d2c751967da19f6b4779daa895c0ba06": {
+    "key": "flare:0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+    "name": "Spectra Market PT-stXRP(FXRP)-2027/03/31/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2027/03/31/STXRP",
+    "price": 1.3059188558766914,
+    "address": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+    "addresses": {
+     "flare": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xead511d637634c2dab091235dcde507f7fd0bda9",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+    "liquidity": 8236.035097289208,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "218.792"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1806451204,
+     "expired": false,
+     "ptAddress": "0xead511d637634c2dab091235dcde507f7fd0bda9",
+     "ytAddress": "0xbf5559c41651e331db245886af0ac8c1324826d6",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "4ef9ba1a-9d8c-47a5-826f-d3b5bb0772f2",
+    "totalSupply": "6306.697433938329197671",
+    "reserves": [
+     "416.630798",
+     "6120.321098"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3": {
+    "key": "flare:0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+    "name": "Firelight stXRP",
+    "decimals": 6,
+    "symbol": "STXRP",
+    "price": 1.2609702,
+    "address": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+    "addresses": {
+     "flare": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    },
+    "platform": "firelight",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/firelight",
+     "https://icons.llamao.fi/icons/protocols/firelight"
+    ],
+    "updatedAt": "2026-10-18T20:16:06.959Z",
+    "createdAt": "2026-06-22T11:29:06.718Z",
+    "verifiedAt": "2026-07-19T07:02:31.575Z",
+    "tokens": [
+     "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    ],
+    "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+    "liquidity": 53954613.351645365,
+    "customCmsImageUrl": "https://icons.llamao.fi/icons/protocols/firelight",
+    "metrics": {
+     "apy": "2.705",
+     "baseApy": "2.705",
+     "volumeUsd1d": "5525.678",
+     "volumeUsd7d": "436176.509"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626",
+     "ptAddress": "0xa7cb1fa9aab0157f0380b29e48dfe2b305171181",
+     "ytAddress": "0x0bb1344e88effeb34e4b15013f99e3bd1542ab41",
+     "description": "Firelight stXRP (stXRP) is a liquid staking receipt token issued by Firelight on Flare. Depositors lock FXRP, Flare's bridged representation of XRP, and receive stXRP, which accrues staking rewards over time and remains usable as collateral or liquidity elsewhere in DeFi. The token is issued through a TransparentUpgradeableProxy pointing to Firelight's FirelightVault contract.",
+     "poolAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "socialLinks": {
+      "github": "https://github.com/firelight-protocol",
+      "twitter": "https://x.com/Firelightfi",
+      "website": "https://firelight.finance/",
+      "telegram": "https://t.me/FirelightProtocol",
+      "documentation": "https://docs.firelight.finance/"
+     },
+     "marketAddress": "0x966d1f376457a3aca5fbc2a6be985f6e5e7708eb",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "01c5956a-26de-42c0-8577-662796df09a9",
+    "totalSupply": "42788174.813049",
+    "reserves": [
+     "42821141.493412"
+    ],
+    "pricePerShare": "1.00077",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "flare:0x8ee8414ee2b9d4bf6c8de40d95167c2643c2c544": {
+    "key": "flare:0x8ee8414ee2b9d4bf6c8de40d95167c2643c2c544",
+    "name": "SparkDEX V3 Wrapped Flare/Firelight stXRP 0.05%",
+    "decimals": 18,
+    "symbol": "WFLR/STXRP",
+    "price": 9007199254740990,
+    "address": "0x8ee8414ee2b9d4bf6c8de40d95167c2643c2c544",
+    "addresses": {
+     "flare": "0x8ee8414ee2b9d4bf6c8de40d95167c2643c2c544"
+    },
+    "platform": "sparkdex-v3",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752",
+     "https://coin-images.coingecko.com/coins/images/28705/large/flare.png?1696527687"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.055Z",
+    "createdAt": "2026-06-22T11:42:10.811Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1d80c49bbbcd1c0911346656b529df9e5c2f783d",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "liquidity": 1695.5775605055883,
+    "metrics": {
+     "apy": "1.422",
+     "baseApy": "1.422",
+     "volumeUsd1d": "132.132",
+     "volumeUsd7d": "1396.38"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "141b0a85-2ca0-4ca2-b3f4-8480c9a4149d",
+    "reserves": [
+     "185023.721329324016821579",
+     "399.117639"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x86202355aac745a82b8694a443d7f3f0d1de696539cf51b62696c3a94e60bc80": {
+    "key": "bsc:0x86202355aac745a82b8694a443d7f3f0d1de696539cf51b62696c3a94e60bc80",
+    "name": "Uniswap V4 LP STXB/USDT",
+    "decimals": 18,
+    "symbol": "STXB/USDT",
+    "price": 9007199254740990,
+    "address": "0x86202355aac745a82b8694a443d7f3f0d1de696539cf51b62696c3a94e60bc80",
+    "addresses": {
+     "bsc": "0x86202355aac745a82b8694a443d7f3f0d1de696539cf51b62696c3a94e60bc80"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179143/large/stxb.png?1791294259",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.017Z",
+    "createdAt": "2026-10-08T07:23:09.462Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 4002.9764449724835,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "8995.626"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "822d0cc8-1f4e-4f05-9778-ee06bb5182f3",
+    "reserves": [
+     "6.5889513445170518",
+     "17.136074034121116942"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "flare:0x3df8071169743c2de79ec0864fc2d8ed744cb37a": {
+    "key": "flare:0x3df8071169743c2de79ec0864fc2d8ed744cb37a",
+    "name": "SparkDEX V4 Wrapped Flare/Firelight stXRP",
+    "decimals": 18,
+    "symbol": "WFLR/STXRP",
+    "price": 9007199254740990,
+    "address": "0x3df8071169743c2de79ec0864fc2d8ed744cb37a",
+    "addresses": {
+     "flare": "0x3df8071169743c2de79ec0864fc2d8ed744cb37a"
+    },
+    "platform": "sparkdex-v4",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/28705/large/flare.png?1696527687",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.496Z",
+    "createdAt": "2026-06-22T13:49:37.365Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1d80c49bbbcd1c0911346656b529df9e5c2f783d",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "liquidity": 27925.838193993503,
+    "metrics": {
+     "apy": "0.095",
+     "baseApy": "0.095",
+     "volumeUsd1d": "579.299",
+     "volumeUsd7d": "4589.38"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "19da4fcd-c192-4aca-ae18-faba98cf16dd",
+    "reserves": [
+     "2214416.193905018788243825",
+     "10829.779736"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff": {
+    "key": "ethereum:0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff",
+    "name": "Seagate (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "STXON",
+    "price": 629.11,
+    "address": "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff",
+    "addresses": {
+     "ethereum": "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff",
+     "bsc": "0x966ebcba3c51e81f5cf159a1eabefd2327ab5e8d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 85809,
+    "image": "https://coin-images.coingecko.com/coins/images/102172441/large/stxon_160x160.png?1773419730",
+    "metrics": {
+     "volumeUsd1d": "451194.961",
+     "volumeUsd7d": "5843661.506"
+    },
+    "metadata": {},
+    "tokenId": "328d5468-8c9b-492f-a1b0-91af2199234b",
+    "totalSupply": "136.39620905059923",
+    "circulatingSupply": "136.39620905059923",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd3ea09206d4a76361e369e16b4ff37a89838623d": {
+    "key": "arbitrum:0xd3ea09206d4a76361e369e16b4ff37a89838623d",
+    "name": "FastX Network Token",
+    "decimals": 18,
+    "symbol": "FXNW",
+    "price": 0.324782,
+    "address": "0xd3ea09206d4a76361e369e16b4ff37a89838623d",
+    "addresses": {
+     "arbitrum": "0xd3ea09206d4a76361e369e16b4ff37a89838623d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-28T10:35:44.439Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 42220346,
+    "image": "https://coin-images.coingecko.com/coins/images/102178610/large/FXNW.jpg?1790145624",
+    "metrics": {
+     "volumeUsd1d": "160352.609",
+     "volumeUsd7d": "2170151.784"
+    },
+    "metadata": {},
+    "tokenId": "52890ad6-d226-4ec1-b3b4-8ac3bccd06ea",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "130000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xead511d637634c2dab091235dcde507f7fd0bda9": {
+    "key": "flare:0xead511d637634c2dab091235dcde507f7fd0bda9",
+    "name": "Principal Token: stXRP(FXRP) 2027/03/31",
+    "decimals": 6,
+    "symbol": "PT-STXRP(FXRP)-2027/03/31",
+    "price": 1.244489319486,
+    "address": "0xead511d637634c2dab091235dcde507f7fd0bda9",
+    "addresses": {
+     "flare": "0xead511d637634c2dab091235dcde507f7fd0bda9"
+    },
+    "platform": "spectra-pt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:01.579Z",
+    "createdAt": "2026-07-07T13:06:47.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+    "liquidity": 29452.59048076595,
+    "metrics": {
+     "volumeUsd1d": "16.713",
+     "volumeUsd7d": "16.713"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1806451204,
+     "expired": false,
+     "ytAddress": "0xbf5559c41651e331db245886af0ac8c1324826d6",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+     "marketAddress": "0xe7c867e5d2c751967da19f6b4779daa895c0ba06",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "f3b5816d-a1aa-41ea-943b-f594bc0ef7b2",
+    "totalSupply": "23666.40679",
+    "reserves": [
+     "23666.40679"
+    ],
+    "pricePerShare": "0.987689",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x80af76913116c09a1ee2337d658709f981d4e8ab3d239a18645ee68497df9479": {
+    "key": "ethereum:0x80af76913116c09a1ee2337d658709f981d4e8ab3d239a18645ee68497df9479",
+    "name": "Uniswap V4 LP EGP/STXon",
+    "decimals": 18,
+    "symbol": "EGP/STXON",
+    "price": 9007199254740990,
+    "address": "0x80af76913116c09a1ee2337d658709f981d4e8ab3d239a18645ee68497df9479",
+    "addresses": {
+     "ethereum": "0x80af76913116c09a1ee2337d658709f981d4e8ab3d239a18645ee68497df9479"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172441/large/stxon_160x160.png?1773419730"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.176Z",
+    "createdAt": "2026-10-14T06:54:53.981Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff"
+    ],
+    "liquidity": 20056.760446355005,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.27"
+    },
+    "tokenId": "bf9587e3-f355-4ad0-9889-6e79287fb5fe",
+    "reserves": [
+     "19999.999999999999999959",
+     "0.035179421846764919"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "flare:0x126360be02d6dde2338b289ce13d0928a3f36186": {
+    "key": "flare:0x126360be02d6dde2338b289ce13d0928a3f36186",
+    "name": "SparkDEX V4 Firelight stXRP/USD0",
+    "decimals": 18,
+    "symbol": "STXRP/USD0",
+    "price": 9007199254740990,
+    "address": "0x126360be02d6dde2338b289ce13d0928a3f36186",
+    "addresses": {
+     "flare": "0x126360be02d6dde2338b289ce13d0928a3f36186"
+    },
+    "platform": "sparkdex-v4",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.496Z",
+    "createdAt": "2026-06-22T13:49:37.365Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "0xe7cd86e13ac4309349f30b3435a9d337750fc82d"
+    ],
+    "liquidity": 1832.3265427642646,
+    "metrics": {
+     "apy": "9.714",
+     "baseApy": "9.714",
+     "volumeUsd1d": "174.798",
+     "volumeUsd7d": "838.105"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "bdf17948-fb91-44aa-952d-31050df65f25",
+    "reserves": [
+     "800.331973",
+     "824.00687"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa8591483b4cb1ada37a297e23e8460aa01971d3ed6d326a0841e4623d7050bc4": {
+    "key": "ethereum:0xa8591483b4cb1ada37a297e23e8460aa01971d3ed6d326a0841e4623d7050bc4",
+    "name": "Uniswap V4 LP wUSDC/STXon",
+    "decimals": 18,
+    "symbol": "WUSDC/STXON",
+    "price": 9007199254740990,
+    "address": "0xa8591483b4cb1ada37a297e23e8460aa01971d3ed6d326a0841e4623d7050bc4",
+    "addresses": {
+     "ethereum": "0xa8591483b4cb1ada37a297e23e8460aa01971d3ed6d326a0841e4623d7050bc4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172441/large/stxon_160x160.png?1773419730"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.473Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "aefbe586-d84c-4b65-8f0b-dc1def2c4ad7",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2e065f65f1699964f4092de1d39a8efe6c8d6f32": {
+    "key": "bsc:0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+    "name": "Seagate (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "STXB",
+    "price": 604.93,
+    "address": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32",
+    "addresses": {
+     "bsc": "0x2e065f65f1699964f4092de1d39a8efe6c8d6f32"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 656344,
+    "image": "https://coin-images.coingecko.com/coins/images/102179143/large/stxb.png?1791294259",
+    "metrics": {
+     "volumeUsd1d": "770146.382",
+     "volumeUsd7d": "4521335.39"
+    },
+    "metadata": {},
+    "tokenId": "35e3a222-0d18-4aa7-a458-5228ef4f56eb",
+    "totalSupply": "1085.0213072",
+    "circulatingSupply": "1085.0213072",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x571a2cc38b2b7378f62196686cb858e6a0e338cf": {
+    "key": "flare:0x571a2cc38b2b7378f62196686cb858e6a0e338cf",
+    "name": "Spectra Market PT-stXRP(FXRP)-2027/06/30/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2027/06/30/STXRP",
+    "price": 1.2749494023913654,
+    "address": "0x571a2cc38b2b7378f62196686cb858e6a0e338cf",
+    "addresses": {
+     "flare": "0x571a2cc38b2b7378f62196686cb858e6a0e338cf"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb15a1ac3c49e8ee47642ea1d4949464f79adfac2",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x571a2cc38b2b7378f62196686cb858e6a0e338cf",
+    "liquidity": 1135.0201637502494,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "17.43"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1814313606,
+     "expired": false,
+     "ptAddress": "0xb15a1ac3c49e8ee47642ea1d4949464f79adfac2",
+     "ytAddress": "0x6b6cc4b8818b678640faf81123c0357cbc65c376",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x571a2cc38b2b7378f62196686cb858e6a0e338cf",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "abe8c57a-70b4-4996-ad26-ffb49db2c4bb",
+    "totalSupply": "890.247222063356345969",
+    "reserves": [
+     "79.729263",
+     "821.322605"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b": {
+    "key": "flare:0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b",
+    "name": "Principal Token: stXRP(FXRP) 2026/12/31",
+    "decimals": 6,
+    "symbol": "PT-STXRP(FXRP)-2026/12/31",
+    "price": 1.2502469094192,
+    "address": "0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b",
+    "addresses": {
+     "flare": "0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b"
+    },
+    "platform": "spectra-pt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:01.579Z",
+    "createdAt": "2026-07-07T13:06:47.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+    "liquidity": 29186.761891832928,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1798675203,
+     "expired": false,
+     "ytAddress": "0x526964f19b4b8b5c669ca5985d53d7f6bc1a0580",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+     "marketAddress": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "68b43c2a-42de-491a-ae2c-fd86ad84a4e9",
+    "totalSupply": "23344.798273",
+    "reserves": [
+     "23344.798273"
+    ],
+    "pricePerShare": "0.992259",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x966ebcba3c51e81f5cf159a1eabefd2327ab5e8d": {
+    "key": "bsc:0x966ebcba3c51e81f5cf159a1eabefd2327ab5e8d",
+    "name": "Seagate (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "STXON",
+    "price": 629.11,
+    "address": "0x966ebcba3c51e81f5cf159a1eabefd2327ab5e8d",
+    "addresses": {
+     "ethereum": "0xb53894f82a6b2d3b7365f24932b5bde1c5fb51ff",
+     "bsc": "0x966ebcba3c51e81f5cf159a1eabefd2327ab5e8d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 85809,
+    "image": "https://coin-images.coingecko.com/coins/images/102172441/large/stxon_160x160.png?1773419730",
+    "metrics": {
+     "volumeUsd1d": "451729.998",
+     "volumeUsd7d": "5841855.236"
+    },
+    "metadata": {},
+    "tokenId": "328d5468-8c9b-492f-a1b0-91af2199234b",
+    "totalSupply": "136.39620905059923",
+    "circulatingSupply": "136.39620905059923",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0": {
+    "key": "flare:0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0",
+    "name": "Principal Token: stXRP(FXRP) 2027/09/30",
+    "decimals": 6,
+    "symbol": "PT-STXRP(FXRP)-2027/09/30",
+    "price": 1.2158173790784,
+    "address": "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0",
+    "addresses": {
+     "flare": "0xa3f3629551c4a7003fb0efb0afeb97e81e6998d0"
+    },
+    "platform": "spectra-pt",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:01.579Z",
+    "createdAt": "2026-07-07T13:06:47.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+    "liquidity": 30800.117334120267,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-58.083"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1822262404,
+     "expired": false,
+     "ytAddress": "0x71b1338cc7ea3a49315444ff42c5ddd558c7da43",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+     "marketAddress": "0x912c6c89a0a55113751cfc6cc45e3dce22e9b46f",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "6de47e33-cf7d-40c7-ad17-148722a21cf7",
+    "totalSupply": "25332.84839",
+    "reserves": [
+     "25332.84839"
+    ],
+    "pricePerShare": "0.964934",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "flare:0x2a91d9296ee2fe4139b49c7071b2f29f59a9f9ae": {
+    "key": "flare:0x2a91d9296ee2fe4139b49c7071b2f29f59a9f9ae",
+    "name": "SparkDEX V4 Firelight stXRP/FXRP",
+    "decimals": 18,
+    "symbol": "STXRP/FXRP",
+    "price": 9007199254740990,
+    "address": "0x2a91d9296ee2fe4139b49c7071b2f29f59a9f9ae",
+    "addresses": {
+     "flare": "0x2a91d9296ee2fe4139b49c7071b2f29f59a9f9ae"
+    },
+    "platform": "sparkdex-v4",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/sparkdex",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.496Z",
+    "createdAt": "2026-06-22T13:49:37.365Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    ],
+    "liquidity": 6587468.179481624,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "volumeUsd1d": "9569.293",
+     "volumeUsd7d": "107816.273"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "e20224e0-3b49-4ec7-9c50-8130d33caab1",
+    "reserves": [
+     "3368180.03109",
+     "1857375.819081"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "flare:0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4": {
+    "key": "flare:0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+    "name": "Spectra Market PT-stXRP(FXRP)-2026/12/31/stXRP",
+    "decimals": 18,
+    "symbol": "PT-STXRP(FXRP)-2026/12/31/STXRP",
+    "price": 1.4721919670593382,
+    "address": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+    "addresses": {
+     "flare": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4"
+    },
+    "platform": "spectra",
+    "network": "flare",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/spectra",
+     "https://coin-images.coingecko.com/coins/images/69731/large/fxrp.png?1759406752"
+    ],
+    "updatedAt": "2026-10-18T20:16:04.468Z",
+    "createdAt": "2026-07-07T13:12:22.124Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b",
+     "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3"
+    ],
+    "poolAddress": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+    "liquidity": 63502.79237081033,
+    "metrics": {
+     "volumeUsd1d": "1114.024",
+     "volumeUsd7d": "5824.461"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "expiry": 1798675203,
+     "expired": false,
+     "ptAddress": "0x60b2fdbe6c56c9cacb4c4093c95d26a20a05449b",
+     "ytAddress": "0x526964f19b4b8b5c669ca5985d53d7f6bc1a0580",
+     "ibtAddress": "0x4c18ff3c89632c3dd62e796c0afa5c07c4c1b2b3",
+     "poolAddress": "0x1f24ec2acfda3ecdaaf84dda2d707bb23a8d4ac4",
+     "underlyingAddress": "0xad552a648c74d49e10027ab8a618a3ad4901c5be"
+    },
+    "tokenId": "e73af1cc-a1f8-4ae7-859f-c8e6d0df9bc1",
+    "totalSupply": "43134.858626932578714876",
+    "reserves": [
+     "9116.948644",
+     "41320.846048"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

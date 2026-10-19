@@ -1,0 +1,1406 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US92537N1081",
+ "ticker": "VRT",
+ "name": "Vertiv Holdings",
+ "isin": "US92537N1081",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:49Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Vertiv Holdings Co",
+   "symbol": "VRT",
+   "slug": "vertiv-holdings",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 203.99532210675835,
+     "tokenized_market_cap": 1465516.0930438398,
+     "tokenized_volume_24h": 1460240.85638708,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 247,
+   "asset_type": "stock",
+   "rwa_rank": 217,
+   "has_tokens": true,
+   "average_tokenized_price": 203.99532210675835,
+   "tokenized_market_cap": 1465516.0930438398,
+   "tokenized_volume_24h": 1460240.85638708,
+   "last_updated": "2026-10-18T20:13:31.715Z",
+   "tokens": [
+    {
+     "symbol": "VRTon",
+     "name": "Vertiv Tokenized Stock (Ondo)",
+     "price": 204.32402787949508,
+     "crypto_id": 39316,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 942306.92,
+     "volume_24h": 1461303.65474101
+    },
+    {
+     "symbol": "VRTx",
+     "name": "Vertiv Holdings Co tokenized stock (xStock)",
+     "price": 206.44462681201205,
+     "crypto_id": 40140,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 524775.99,
+     "volume_24h": 914.49998344
+    },
+    {
+     "symbol": "wVRTx",
+     "name": "Wrapped Vertiv Holdings Co Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41733,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "VRT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_VRT"
+    }
+   ]
+  },
+  "info": {
+   "39316": {
+    "id": 39316,
+    "symbol": "VRTon",
+    "name": "Vertiv Tokenized Stock (Ondo)",
+    "slug": "vertiv-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39316.png",
+    "date_added": "2026-01-08T15:44:27.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "MkN2TZSYTFBdMRLf9EVcfhstTwnazH8knd9hpepondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40140": {
+    "id": 40140,
+    "symbol": "VRTx",
+    "name": "Vertiv Holdings Co tokenized stock (xStock)",
+    "slug": "vertiv-holdings-co-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40140.png",
+    "date_added": "2026-06-10T06:33:40.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsLUiVEwYeoneKpgR1C2Q4DBUZhX4xDktSCfQqq8zmn"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsLUiVEwYeoneKpgR1C2Q4DBUZhX4xDktSCfQqq8zmn",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDpZ8NU_8nlFbycO17fGaofmxifLwLedkOfbTSW6ah7_32E",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41733": {
+    "id": 41733,
+    "symbol": "wVRTx",
+    "name": "Wrapped Vertiv Holdings Co Tokenized Stock (xStock)",
+    "slug": "wrapped-vertiv-holdings-co-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41733.png",
+    "date_added": "2026-08-11T16:27:01.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xd6f3C6B0f2D4F70c7F08B7f2A287b673C18a40f9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd6f3C6B0f2D4F70c7F08B7f2A287b673C18a40f9",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf",
+   "bsc:0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+   "ethereum:0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+   "ethereum:0x0a62db029ab8dc0b49b3e8159431728dbd23c7bf"
+  ],
+  "exact": {
+   "bsc:0x9cea8a7be1ab0320b709d368ad60d8500f55995f": {
+    "key": "bsc:0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+    "name": "Vertiv (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTON",
+    "price": 203.26,
+    "address": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+    "addresses": {
+     "ethereum": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "bsc": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 937381,
+    "image": "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+    "metrics": {
+     "volumeUsd1d": "1128965.976",
+     "volumeUsd7d": "10043443.277"
+    },
+    "metadata": {},
+    "tokenId": "77666779-c948-4c83-857a-b2ae5e2c5f6f",
+    "totalSupply": "4611.826289759593",
+    "circulatingSupply": "4611.826289759593",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0752163d221d3d5d4b6e98bd616b22bd2b453964": {
+    "key": "ethereum:0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+    "name": "Vertiv (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTON",
+    "price": 203.26,
+    "address": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+    "addresses": {
+     "ethereum": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "bsc": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 937381,
+    "image": "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+    "metrics": {
+     "volumeUsd1d": "1128703.55",
+     "volumeUsd7d": "10027487.576"
+    },
+    "metadata": {},
+    "tokenId": "77666779-c948-4c83-857a-b2ae5e2c5f6f",
+    "totalSupply": "4611.826289759593",
+    "circulatingSupply": "4611.826289759593",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "VRT": {
+    "total_items": 28,
+    "pages": 1,
+    "received": 28,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0xef5212ada83ec2cc105c409df10b8806d20e3b35": {
+    "key": "bsc:0xef5212ada83ec2cc105c409df10b8806d20e3b35",
+    "name": "PancakeSwap LP VRT/WBNB",
+    "decimals": 18,
+    "symbol": "VRT/WBNB",
+    "price": 0.29234352098745403,
+    "address": "0xef5212ada83ec2cc105c409df10b8806d20e3b35",
+    "addresses": {
+     "bsc": "0xef5212ada83ec2cc105c409df10b8806d20e3b35"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15734/large/vrt-venus-token.png?1696515360",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:48.737Z",
+    "createdAt": "2024-02-29T09:07:00.394Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5f84ce30dc3cf7909101c69086c50de191895883",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 5191.840034318897,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "105.643"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "1ff1b329-4ca9-4cbd-b27c-4a73429f6ccd",
+    "totalSupply": "17759.381212835929155032",
+    "reserves": [
+     "575289653.131310558036839326",
+     "3.219190859510375285"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe4f7bd794f0f352943995218bdddde34c6ed7f42012e7f2460089c6b3ad1618d": {
+    "key": "ethereum:0xe4f7bd794f0f352943995218bdddde34c6ed7f42012e7f2460089c6b3ad1618d",
+    "name": "Uniswap V4 LP EGP/VRTXon",
+    "decimals": 18,
+    "symbol": "EGP/VRTXON",
+    "price": 9007199254740990,
+    "address": "0xe4f7bd794f0f352943995218bdddde34c6ed7f42012e7f2460089c6b3ad1618d",
+    "addresses": {
+     "ethereum": "0xe4f7bd794f0f352943995218bdddde34c6ed7f42012e7f2460089c6b3ad1618d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172450/large/vrtxon_160x160.png?1773420136"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.512Z",
+    "createdAt": "2026-10-13T13:14:00.465Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xfc003a764a7b5054cc6fdb6b511f35dec8022751"
+    ],
+    "liquidity": 20062.312270775703,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.2"
+    },
+    "tokenId": "de9b47b6-a280-4843-9fa6-6f9b4b245486",
+    "reserves": [
+     "19999.999999999999999959",
+     "0.054535972772376704"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe81dc008231035c91f09633c541394b9ddf53673": {
+    "key": "robinhood:0xe81dc008231035c91f09633c541394b9ddf53673",
+    "name": "VORTANO",
+    "decimals": 18,
+    "symbol": "VRTN",
+    "price": 8.8e-06,
+    "address": "0xe81dc008231035c91f09633c541394b9ddf53673",
+    "addresses": {
+     "robinhood": "0xe81dc008231035c91f09633c541394b9ddf53673"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8799.65,
+    "image": "https://coin-images.coingecko.com/coins/images/102174483/large/2qbpbp79qyj6a2zjzsxd3zl6pgiy.?1783767232",
+    "metrics": {
+     "volumeUsd1d": "2.004",
+     "volumeUsd7d": "33.12"
+    },
+    "metadata": {},
+    "tokenId": "4053aa20-6f46-4aaa-ab62-71526a36ce1d",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x62a8a9168d8712a0f9dbd3fac30411c7a880e4a8b5d7a1410b1ea5db3b8fcaf1": {
+    "key": "robinhood:0x62a8a9168d8712a0f9dbd3fac30411c7a880e4a8b5d7a1410b1ea5db3b8fcaf1",
+    "name": "Uniswap V4 LP USDG/VRT",
+    "decimals": 18,
+    "symbol": "USDG/VRT",
+    "price": 9007199254740990,
+    "address": "0x62a8a9168d8712a0f9dbd3fac30411c7a880e4a8b5d7a1410b1ea5db3b8fcaf1",
+    "addresses": {
+     "robinhood": "0x62a8a9168d8712a0f9dbd3fac30411c7a880e4a8b5d7a1410b1ea5db3b8fcaf1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.707Z",
+    "createdAt": "2026-09-09T20:19:20.744Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xfa78c12e6488814a0262e4e802749a4a737d5fb7"
+    ],
+    "liquidity": 1812.095015280496,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "27.656"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "60e68a00-bb88-415e-bc24-8243d1084226",
+    "reserves": [
+     "524.280875",
+     "6.063310098724987589"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x0b45e5afea928030988704ef60995d8925b91cd6": {
+    "key": "base:0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "name": "Vertiv aStock",
+    "decimals": 18,
+    "symbol": "AVRT",
+    "price": 205.03,
+    "address": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "addresses": {
+     "robinhood": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "base": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "ethereum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "arbitrum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "bsc": "0x0b45e5afea928030988704ef60995d8925b91cd6"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 829.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102175737/large/VRT.png?1787292439",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1695e2ea-180c-4e30-952a-9aeba5947cf7",
+    "totalSupply": "4.047016261",
+    "circulatingSupply": "4.047016261",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x338f5fc60eeaedb18d616b3788c2a9a3f443c283": {
+    "key": "arbitrum:0x338f5fc60eeaedb18d616b3788c2a9a3f443c283",
+    "name": "Vertiv Holdings rStock",
+    "decimals": 18,
+    "symbol": "RVRT",
+    "price": 204.81,
+    "address": "0x338f5fc60eeaedb18d616b3788c2a9a3f443c283",
+    "addresses": {
+     "arbitrum": "0x338f5fc60eeaedb18d616b3788c2a9a3f443c283"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 193346,
+    "image": "https://coin-images.coingecko.com/coins/images/102177020/large/0409a3418dbde9d3e05c26a766dab17d.png?1789116576",
+    "metrics": {
+     "volumeUsd1d": "409.751",
+     "volumeUsd7d": "203999.492"
+    },
+    "metadata": {},
+    "tokenId": "fb75cce5-7136-4bde-990e-aaa97c7d5444",
+    "totalSupply": "944.045806784",
+    "circulatingSupply": "944.045806784",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb4589127a468f9fea9da3c8c9e39c48fdfd982fa": {
+    "key": "ethereum:0xb4589127a468f9fea9da3c8c9e39c48fdfd982fa",
+    "name": "Vortex",
+    "decimals": 18,
+    "symbol": "VRTX",
+    "price": 0.03195714,
+    "address": "0xb4589127a468f9fea9da3c8c9e39c48fdfd982fa",
+    "addresses": {
+     "ethereum": "0xb4589127a468f9fea9da3c8c9e39c48fdfd982fa"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-06-10T23:05:45.277Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 31957,
+    "image": "https://coin-images.coingecko.com/coins/images/102173718/large/XstiWY06_400x400.jpg?1781102368",
+    "metrics": {
+     "volumeUsd1d": "15.595",
+     "volumeUsd7d": "109.165"
+    },
+    "metadata": {},
+    "tokenId": "fd182a10-73f0-42d7-ab51-e4de3c92d9b1",
+    "totalSupply": "1000000",
+    "circulatingSupply": "1000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x0b45e5afea928030988704ef60995d8925b91cd6": {
+    "key": "arbitrum:0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "name": "Vertiv aStock",
+    "decimals": 18,
+    "symbol": "AVRT",
+    "price": 205.03,
+    "address": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "addresses": {
+     "robinhood": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "base": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "ethereum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "arbitrum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "bsc": "0x0b45e5afea928030988704ef60995d8925b91cd6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 829.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102175737/large/VRT.png?1787292439",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1695e2ea-180c-4e30-952a-9aeba5947cf7",
+    "totalSupply": "4.047016261",
+    "circulatingSupply": "4.047016261",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfa78c12e6488814a0262e4e802749a4a737d5fb7": {
+    "key": "robinhood:0xfa78c12e6488814a0262e4e802749a4a737d5fb7",
+    "name": "Vertiv • Robinhood Token",
+    "decimals": 18,
+    "symbol": "VRT",
+    "price": 212.3945698491162,
+    "address": "0xfa78c12e6488814a0262e4e802749a4a737d5fb7",
+    "addresses": {
+     "robinhood": "0xfa78c12e6488814a0262e4e802749a4a737d5fb7"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xfa78c12e6488814a0262e4e802749a4a737d5fb7.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-08-09T15:37:24.217Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xfa78c12e6488814a0262e4e802749a4a737d5fb7",
+    "liquidity": 6536.264541510194,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "10.049"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000008f9ceee3a7954365bdd32ff0094d9b0f",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000162788892052072",
+     "currentMultiplier": "1.000162788892052072",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "e57ec921-6893-490d-a89e-e56e319c3985",
+    "totalSupply": "30.77416031",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8ee92a82b7ff42ecd100e21783fe8f5381aee4ddc3edf6e5dcc89ab63df8c7d2": {
+    "key": "robinhood:0x8ee92a82b7ff42ecd100e21783fe8f5381aee4ddc3edf6e5dcc89ab63df8c7d2",
+    "name": "Uniswap V4 LP USDG/VRT",
+    "decimals": 18,
+    "symbol": "USDG/VRT",
+    "price": 9007199254740990,
+    "address": "0x8ee92a82b7ff42ecd100e21783fe8f5381aee4ddc3edf6e5dcc89ab63df8c7d2",
+    "addresses": {
+     "robinhood": "0x8ee92a82b7ff42ecd100e21783fe8f5381aee4ddc3edf6e5dcc89ab63df8c7d2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.445Z",
+    "createdAt": "2026-10-09T07:28:38.922Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xfa78c12e6488814a0262e4e802749a4a737d5fb7"
+    ],
+    "liquidity": 1346.4727143598254,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "64.719"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 385,
+     "feePercentage": "3.9502"
+    },
+    "tokenId": "9d9f09ab-025d-45c1-ad28-47156563e3d4",
+    "reserves": [
+     "2.357524",
+     "6.328387732862835092"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb49586191c1d9040917f4921e59ea47f1380f32eaeaefd29159ad5955eca198d": {
+    "key": "ethereum:0xb49586191c1d9040917f4921e59ea47f1380f32eaeaefd29159ad5955eca198d",
+    "name": "Uniswap V4 LP VRTon/wUSDC",
+    "decimals": 18,
+    "symbol": "VRTON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xb49586191c1d9040917f4921e59ea47f1380f32eaeaefd29159ad5955eca198d",
+    "addresses": {
+     "ethereum": "0xb49586191c1d9040917f4921e59ea47f1380f32eaeaefd29159ad5955eca198d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.030Z",
+    "createdAt": "2026-09-28T10:39:20.537Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "41bb8717-91a2-4b6a-925f-205d9a91e143",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xeda18a98d092b920686a83e789cce0f50804c97dde0c21776fb768006ae204ae": {
+    "key": "ethereum:0xeda18a98d092b920686a83e789cce0f50804c97dde0c21776fb768006ae204ae",
+    "name": "Uniswap V4 LP VRTon/EGP",
+    "decimals": 18,
+    "symbol": "VRTON/EGP",
+    "price": 9007199254740990,
+    "address": "0xeda18a98d092b920686a83e789cce0f50804c97dde0c21776fb768006ae204ae",
+    "addresses": {
+     "ethereum": "0xeda18a98d092b920686a83e789cce0f50804c97dde0c21776fb768006ae204ae"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.507Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20058.26759999751,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.33"
+    },
+    "tokenId": "751fd69e-e520-42e3-88f2-5f4b6a156695",
+    "reserves": [
+     "0.11629872931477803",
+     "19999.999999999999999977"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfc003a764a7b5054cc6fdb6b511f35dec8022751": {
+    "key": "ethereum:0xfc003a764a7b5054cc6fdb6b511f35dec8022751",
+    "name": "Vertex Pharmaceuticals (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTXON",
+    "price": 507.62,
+    "address": "0xfc003a764a7b5054cc6fdb6b511f35dec8022751",
+    "addresses": {
+     "bsc": "0x8c9979dc208f74a5602c38691aa920f121e2f863",
+     "ethereum": "0xfc003a764a7b5054cc6fdb6b511f35dec8022751"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7607.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102172450/large/vrtxon_160x160.png?1773420136",
+    "metrics": {
+     "volumeUsd1d": "1.489",
+     "volumeUsd7d": "149.639"
+    },
+    "metadata": {},
+    "tokenId": "6ae353a8-07b4-43cb-bb3b-2276db60e703",
+    "totalSupply": "14.986595465848941",
+    "circulatingSupply": "14.986595465848941",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9d997c72d47adf768453886092332173624f766c830a1079e230669d03480c1a": {
+    "key": "ethereum:0x9d997c72d47adf768453886092332173624f766c830a1079e230669d03480c1a",
+    "name": "Uniswap V4 LP wUSDC/VRTXon",
+    "decimals": 18,
+    "symbol": "WUSDC/VRTXON",
+    "price": 9007199254740990,
+    "address": "0x9d997c72d47adf768453886092332173624f766c830a1079e230669d03480c1a",
+    "addresses": {
+     "ethereum": "0x9d997c72d47adf768453886092332173624f766c830a1079e230669d03480c1a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172450/large/vrtxon_160x160.png?1773420136",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.131Z",
+    "createdAt": "2026-09-28T10:39:14.487Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xfc003a764a7b5054cc6fdb6b511f35dec8022751"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "140d78c6-8771-40e1-b13a-4c812445f481",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8997743205857d6394d57cc1ce92ce6692ac269fa2c6dd15b72fe5435c472bc3": {
+    "key": "ethereum:0x8997743205857d6394d57cc1ce92ce6692ac269fa2c6dd15b72fe5435c472bc3",
+    "name": "Uniswap V4 LP wUSDC/VRTXon",
+    "decimals": 18,
+    "symbol": "WUSDC/VRTXON",
+    "price": 9007199254740990,
+    "address": "0x8997743205857d6394d57cc1ce92ce6692ac269fa2c6dd15b72fe5435c472bc3",
+    "addresses": {
+     "ethereum": "0x8997743205857d6394d57cc1ce92ce6692ac269fa2c6dd15b72fe5435c472bc3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172450/large/vrtxon_160x160.png?1773420136"
+    ],
+    "updatedAt": "2026-10-18T20:17:07.855Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xfc003a764a7b5054cc6fdb6b511f35dec8022751"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "6722677c-59e0-4276-a2e6-f0848304ed47",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x92fd7205f9db77ca2e80af110a3bfb6b7eb72895b737a16c11f12c7b2cfd14f3": {
+    "key": "robinhood:0x92fd7205f9db77ca2e80af110a3bfb6b7eb72895b737a16c11f12c7b2cfd14f3",
+    "name": "Uniswap V4 LP USDG/VRT",
+    "decimals": 18,
+    "symbol": "USDG/VRT",
+    "price": 9007199254740990,
+    "address": "0x92fd7205f9db77ca2e80af110a3bfb6b7eb72895b737a16c11f12c7b2cfd14f3",
+    "addresses": {
+     "robinhood": "0x92fd7205f9db77ca2e80af110a3bfb6b7eb72895b737a16c11f12c7b2cfd14f3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.277Z",
+    "createdAt": "2026-09-16T18:25:19.509Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xfa78c12e6488814a0262e4e802749a4a737d5fb7"
+    ],
+    "liquidity": 841.6417273812161,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "132.527"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 280,
+     "feePercentage": "2.8972"
+    },
+    "tokenId": "e33b3d4b-cf34-4fa8-9b1e-fe101d41ade4",
+    "reserves": [
+     "21.318685",
+     "3.862259957794441701"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0b45e5afea928030988704ef60995d8925b91cd6": {
+    "key": "ethereum:0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "name": "Vertiv aStock",
+    "decimals": 18,
+    "symbol": "AVRT",
+    "price": 205.03,
+    "address": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "addresses": {
+     "robinhood": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "base": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "ethereum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "arbitrum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "bsc": "0x0b45e5afea928030988704ef60995d8925b91cd6"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 829.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102175737/large/VRT.png?1787292439",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1695e2ea-180c-4e30-952a-9aeba5947cf7",
+    "totalSupply": "4.047016261",
+    "circulatingSupply": "4.047016261",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0b45e5afea928030988704ef60995d8925b91cd6": {
+    "key": "bsc:0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "name": "Vertiv aStock",
+    "decimals": 18,
+    "symbol": "AVRT",
+    "price": 205.03,
+    "address": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "addresses": {
+     "robinhood": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "base": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "ethereum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "arbitrum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "bsc": "0x0b45e5afea928030988704ef60995d8925b91cd6"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 829.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102175737/large/VRT.png?1787292439",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1695e2ea-180c-4e30-952a-9aeba5947cf7",
+    "totalSupply": "4.047016261",
+    "circulatingSupply": "4.047016261",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9cea8a7be1ab0320b709d368ad60d8500f55995f": {
+    "key": "bsc:0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+    "name": "Vertiv (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTON",
+    "price": 203.26,
+    "address": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f",
+    "addresses": {
+     "ethereum": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "bsc": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 937381,
+    "image": "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+    "metrics": {
+     "volumeUsd1d": "1128965.976",
+     "volumeUsd7d": "10043443.277"
+    },
+    "metadata": {},
+    "tokenId": "77666779-c948-4c83-857a-b2ae5e2c5f6f",
+    "totalSupply": "4611.826289759593",
+    "circulatingSupply": "4611.826289759593",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xed236c32f695c83efde232c288701d6f9c23e60e": {
+    "key": "bsc:0xed236c32f695c83efde232c288701d6f9c23e60e",
+    "name": "Vertek",
+    "decimals": 18,
+    "symbol": "VRTK",
+    "price": 0.02978094,
+    "address": "0xed236c32f695c83efde232c288701d6f9c23e60e",
+    "addresses": {
+     "polygon": "0x570a42849ac23e3fdc45d8c31ddf7c09283e702d",
+     "bsc": "0xed236c32f695c83efde232c288701d6f9c23e60e"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6655797,
+    "image": "https://assets.coingecko.com/coins/images/28958/large/vertek-mark-color-round%282%29.png?1696527931",
+    "metrics": {
+     "volumeUsd1d": "12953.258",
+     "volumeUsd7d": "91100.656"
+    },
+    "metadata": {},
+    "tokenId": "32aa76d4-8088-49be-879d-adaed45ad0f8",
+    "totalSupply": "995163072.5737",
+    "circulatingSupply": "223499164.57369995",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5f84ce30dc3cf7909101c69086c50de191895883": {
+    "key": "bsc:0x5f84ce30dc3cf7909101c69086c50de191895883",
+    "name": "Venus Reward",
+    "decimals": 18,
+    "symbol": "VRT",
+    "price": 5.08e-06,
+    "address": "0x5f84ce30dc3cf7909101c69086c50de191895883",
+    "addresses": {
+     "bsc": "0x5f84ce30dc3cf7909101c69086c50de191895883"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 152302,
+    "image": "https://assets.coingecko.com/coins/images/15734/large/vrt-venus-token.png?1696515360",
+    "metrics": {
+     "volumeUsd1d": "8.93",
+     "volumeUsd7d": "62.51"
+    },
+    "metadata": {},
+    "tokenId": "c4fbb5ed-2dd8-47cb-ae26-2867a25cccb9",
+    "totalSupply": "24332697599.467545",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0b45e5afea928030988704ef60995d8925b91cd6": {
+    "key": "robinhood:0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "name": "Vertiv aStock",
+    "decimals": 18,
+    "symbol": "AVRT",
+    "price": 205.03,
+    "address": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+    "addresses": {
+     "robinhood": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "base": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "ethereum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "arbitrum": "0x0b45e5afea928030988704ef60995d8925b91cd6",
+     "bsc": "0x0b45e5afea928030988704ef60995d8925b91cd6"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 829.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102175737/large/VRT.png?1787292439",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "1695e2ea-180c-4e30-952a-9aeba5947cf7",
+    "totalSupply": "4.047016261",
+    "circulatingSupply": "4.047016261",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0752163d221d3d5d4b6e98bd616b22bd2b453964": {
+    "key": "ethereum:0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+    "name": "Vertiv (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTON",
+    "price": 203.26,
+    "address": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+    "addresses": {
+     "ethereum": "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "bsc": "0x9cea8a7be1ab0320b709d368ad60d8500f55995f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 937381,
+    "image": "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+    "metrics": {
+     "volumeUsd1d": "1128703.55",
+     "volumeUsd7d": "10027487.576"
+    },
+    "metadata": {},
+    "tokenId": "77666779-c948-4c83-857a-b2ae5e2c5f6f",
+    "totalSupply": "4611.826289759593",
+    "circulatingSupply": "4611.826289759593",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5ac1df706d5d4ef450c6eea35ad1d2011d7fbb04f643f9a171fa7de03665e2a7": {
+    "key": "ethereum:0x5ac1df706d5d4ef450c6eea35ad1d2011d7fbb04f643f9a171fa7de03665e2a7",
+    "name": "Uniswap V4 LP VRTon/wUSDC",
+    "decimals": 18,
+    "symbol": "VRTON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x5ac1df706d5d4ef450c6eea35ad1d2011d7fbb04f643f9a171fa7de03665e2a7",
+    "addresses": {
+     "ethereum": "0x5ac1df706d5d4ef450c6eea35ad1d2011d7fbb04f643f9a171fa7de03665e2a7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71476/large/vrton_160x160.png?1767892296",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.606Z",
+    "createdAt": "2026-09-30T09:01:07.744Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0752163d221d3d5d4b6e98bd616b22bd2b453964",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "b9e6550c-d2d3-4fb9-86c8-91e6acb16515",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8c9979dc208f74a5602c38691aa920f121e2f863": {
+    "key": "bsc:0x8c9979dc208f74a5602c38691aa920f121e2f863",
+    "name": "Vertex Pharmaceuticals (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VRTXON",
+    "price": 507.62,
+    "address": "0x8c9979dc208f74a5602c38691aa920f121e2f863",
+    "addresses": {
+     "bsc": "0x8c9979dc208f74a5602c38691aa920f121e2f863",
+     "ethereum": "0xfc003a764a7b5054cc6fdb6b511f35dec8022751"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7607.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102172450/large/vrtxon_160x160.png?1773420136",
+    "metrics": {
+     "volumeUsd1d": "1.489",
+     "volumeUsd7d": "149.408"
+    },
+    "metadata": {},
+    "tokenId": "6ae353a8-07b4-43cb-bb3b-2276db60e703",
+    "totalSupply": "14.986595465848941",
+    "circulatingSupply": "14.986595465848941",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1a9b626ba0be56f0cfb3e55d4d0b71c942f0a461": {
+    "key": "robinhood:0x1a9b626ba0be56f0cfb3e55d4d0b71c942f0a461",
+    "name": "UniswapV2 LP VIRTUAL/VRTN",
+    "decimals": 18,
+    "symbol": "VIRTUAL/VRTN",
+    "price": 0.005262854076540353,
+    "address": "0x1a9b626ba0be56f0cfb3e55d4d0b71c942f0a461",
+    "addresses": {
+     "robinhood": "0x1a9b626ba0be56f0cfb3e55d4d0b71c942f0a461"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://icons.llamao.fi/icons/protocols/virtuals-protocol",
+     "https://coin-images.coingecko.com/coins/images/102174483/large/2qbpbp79qyj6a2zjzsxd3zl6pgiy.?1783767232"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.180Z",
+    "createdAt": "2026-07-17T08:40:45.303Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31",
+     "0xe81dc008231035c91f09633c541394b9ddf53673"
+    ],
+    "liquidity": 12791.806666507942,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "12.438"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "04df0cb1-6bf5-4e6b-88ae-68de3f80dcf5",
+    "totalSupply": "2430583.573184857274982583",
+    "reserves": [
+     "10089.575813723660793664",
+     "738742723.579501381099060244"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x570a42849ac23e3fdc45d8c31ddf7c09283e702d": {
+    "key": "polygon:0x570a42849ac23e3fdc45d8c31ddf7c09283e702d",
+    "name": "Vertek",
+    "decimals": 18,
+    "symbol": "VRTK",
+    "price": 0.02978094,
+    "address": "0x570a42849ac23e3fdc45d8c31ddf7c09283e702d",
+    "addresses": {
+     "polygon": "0x570a42849ac23e3fdc45d8c31ddf7c09283e702d",
+     "bsc": "0xed236c32f695c83efde232c288701d6f9c23e60e"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-01T05:09:41.771Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6655797,
+    "image": "https://assets.coingecko.com/coins/images/28958/large/vertek-mark-color-round%282%29.png?1696527931",
+    "metrics": {
+     "volumeUsd1d": "12953.258",
+     "volumeUsd7d": "91101.021"
+    },
+    "metadata": {},
+    "tokenId": "32aa76d4-8088-49be-879d-adaed45ad0f8",
+    "totalSupply": "995163072.5737",
+    "circulatingSupply": "223499164.57369995",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x263b917321ded29312bd57a9142c872e88ca21ea": {
+    "key": "arbitrum:0x263b917321ded29312bd57a9142c872e88ca21ea",
+    "name": "Vertex Pharmaceuticals rStock",
+    "decimals": 18,
+    "symbol": "RVRTX",
+    "price": 508,
+    "address": "0x263b917321ded29312bd57a9142c872e88ca21ea",
+    "addresses": {
+     "arbitrum": "0x263b917321ded29312bd57a9142c872e88ca21ea"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5772.89,
+    "image": "https://coin-images.coingecko.com/coins/images/102177332/large/VRTX.png?1789117568",
+    "metrics": {
+     "volumeUsd1d": "504.448",
+     "volumeUsd7d": "2913.701"
+    },
+    "metadata": {},
+    "tokenId": "edee6097-ee1d-4a55-a6d2-0b92b5a0c096",
+    "totalSupply": "11.363853233999999",
+    "circulatingSupply": "11.363853233999999",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

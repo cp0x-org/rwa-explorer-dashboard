@@ -1,0 +1,678 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US60937P1066",
+ "ticker": "MDB",
+ "name": "MongoDB",
+ "isin": "US60937P1066",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:27Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Mongodb, Inc.",
+   "symbol": "MDB",
+   "slug": "mongodb-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 334.67056547614106,
+     "tokenized_market_cap": 681778.4876465529,
+     "tokenized_volume_24h": 1045393.1712267,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 373,
+   "asset_type": "stock",
+   "rwa_rank": 479,
+   "has_tokens": true,
+   "average_tokenized_price": 334.67056547614106,
+   "tokenized_market_cap": 681778.4876465529,
+   "tokenized_volume_24h": 1045393.1712267,
+   "last_updated": "2026-10-18T20:14:23.246Z",
+   "tokens": [
+    {
+     "symbol": "MDB",
+     "name": "MongoDB Tokenized Stock (Robinhood)",
+     "price": 350.27274068159403,
+     "crypto_id": 40754,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 8062.01,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wMDBx",
+     "name": "Wrapped MongoDB Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41293,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "MDB",
+     "name": "Mongodb Inc (Derivatives)",
+     "price": 334.6313523916327,
+     "crypto_id": 41972,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "MDBB",
+     "name": "Mongodb Tokenized bStocks",
+     "price": 336.24951337385244,
+     "crypto_id": 42535,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 676895.02,
+     "volume_24h": 1048881.74469316
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "MDB",
+     "market_url": "https://www.binance.com/en/stocks/EQ_MDB"
+    }
+   ]
+  },
+  "info": {
+   "40754": {
+    "id": 40754,
+    "symbol": "MDB",
+    "name": "MongoDB Tokenized Stock (Robinhood)",
+    "slug": "mongodb-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40754.png",
+    "date_added": "2026-08-04T07:31:52.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xDdf2266b79abf0B48898959B0ed6E6adf512be74"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xDdf2266b79abf0B48898959B0ed6E6adf512be74",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41293": {
+    "id": 41293,
+    "symbol": "wMDBx",
+    "name": "Wrapped MongoDB Tokenized Stock (xStock)",
+    "slug": "wrapped-mongodb-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41293.png",
+    "date_added": "2026-08-11T16:22:19.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x816003D3a2C9Be6C8D8cAAaf8250934Bc05d87D2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x816003D3a2C9Be6C8D8cAAaf8250934Bc05d87D2",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41972": {
+    "id": 41972,
+    "symbol": "MDB",
+    "name": "Mongodb Inc (Derivatives)",
+    "slug": "mongodb-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41972.png",
+    "date_added": "2026-01-30T05:01:06.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "42535": {
+    "id": 42535,
+    "symbol": "MDBB",
+    "name": "Mongodb Tokenized bStocks",
+    "slug": "mongodb-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42535.png",
+    "date_added": "2026-10-12T15:31:04.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x2e4127e92ebc1b7909267a820c9cb508373e5a5c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2e4127e92ebc1b7909267a820c9cb508373e5a5c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x2e4127e92ebc1b7909267a820c9cb508373e5a5c",
+   "robinhood:0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+  ],
+  "exact": {
+   "robinhood:0xddf2266b79abf0b48898959b0ed6e6adf512be74": {
+    "key": "robinhood:0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "name": "MongoDB • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MDB",
+    "price": 336.49,
+    "address": "0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "addresses": {
+     "robinhood": "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "liquidity": 7744.7783413,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-82.095"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000f92f60961bbe43028a23a3d52174b320",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "c9928060-a718-40a1-b68c-1437f32e38e5",
+    "totalSupply": "23.01637",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "MDB": {
+    "total_items": 9,
+    "pages": 1,
+    "received": 9,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad": {
+    "key": "bsc:0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad",
+    "name": "Uniswap V4 LP USDT/AMDB",
+    "decimals": 18,
+    "symbol": "USDT/AMDB",
+    "price": 9007199254740990,
+    "address": "0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad",
+    "addresses": {
+     "bsc": "0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176878/large/amdb.png?1788941339"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.322Z",
+    "createdAt": "2026-09-09T09:21:27.955Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    ],
+    "liquidity": 17320.781902335708,
+    "metrics": {
+     "apy": "16.496",
+     "baseApy": "16.496",
+     "volumeUsd1d": "373.241",
+     "volumeUsd7d": "20379.354"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "87b9afff-0d47-467a-a57b-27f43833faf5",
+    "reserves": [
+     "6106.902828046495994179",
+     "21.776152875820705232"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc9e202af6f339bfa161e8a3896504b16f1cf756c85d9f997b8f808a4e10d7576": {
+    "key": "robinhood:0xc9e202af6f339bfa161e8a3896504b16f1cf756c85d9f997b8f808a4e10d7576",
+    "name": "Uniswap V4 LP ETH/MDB",
+    "decimals": 18,
+    "symbol": "ETH/MDB",
+    "price": 9007199254740990,
+    "address": "0xc9e202af6f339bfa161e8a3896504b16f1cf756c85d9f997b8f808a4e10d7576",
+    "addresses": {
+     "robinhood": "0xc9e202af6f339bfa161e8a3896504b16f1cf756c85d9f997b8f808a4e10d7576"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174178/large/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png?1782444745"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.354Z",
+    "createdAt": "2026-09-16T14:23:18.037Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    ],
+    "liquidity": 768.210641841361,
+    "metrics": {
+     "apy": "4.62",
+     "baseApy": "4.62",
+     "volumeUsd1d": "1.909",
+     "volumeUsd7d": "43.047"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "90ad608a-bcef-42aa-9d44-94ebc47a840b",
+    "reserves": [
+     "0.104182781827978688",
+     "1.560215695835724838"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x408cc9adea9d52929a432ac23f7257818791df504078bee61fab6745dd054bd8": {
+    "key": "robinhood:0x408cc9adea9d52929a432ac23f7257818791df504078bee61fab6745dd054bd8",
+    "name": "Uniswap V4 LP USDG/MDB",
+    "decimals": 18,
+    "symbol": "USDG/MDB",
+    "price": 9007199254740990,
+    "address": "0x408cc9adea9d52929a432ac23f7257818791df504078bee61fab6745dd054bd8",
+    "addresses": {
+     "robinhood": "0x408cc9adea9d52929a432ac23f7257818791df504078bee61fab6745dd054bd8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174178/large/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png?1782444745"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.354Z",
+    "createdAt": "2026-10-07T07:21:35.736Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    ],
+    "liquidity": 1459.683666777541,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "548.033"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "91dfbbd9-395a-4f7f-8c8b-692fb7f24056",
+    "reserves": [
+     "3.697314",
+     "4.326982533738122895"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1": {
+    "key": "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "name": "Advanced Micro Devices (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDB",
+    "price": 515.19,
+    "address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "addresses": {
+     "bsc": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-09T08:14:29.873Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8026579,
+    "image": "https://coin-images.coingecko.com/coins/images/102176878/large/amdb.png?1788941339",
+    "metrics": {
+     "volumeUsd1d": "2400557.52",
+     "volumeUsd7d": "22708415.373"
+    },
+    "metadata": {},
+    "tokenId": "25b6c127-d895-4413-945a-b8e723f63e3a",
+    "totalSupply": "15580.48360761",
+    "circulatingSupply": "15580.48360761",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4a8c7282dd2f7a4f45cdfa91d7b0a1d9a16209de5cdf6b45b029402f62e55444": {
+    "key": "robinhood:0x4a8c7282dd2f7a4f45cdfa91d7b0a1d9a16209de5cdf6b45b029402f62e55444",
+    "name": "Uniswap V4 LP USDG/MDB",
+    "decimals": 18,
+    "symbol": "USDG/MDB",
+    "price": 9007199254740990,
+    "address": "0x4a8c7282dd2f7a4f45cdfa91d7b0a1d9a16209de5cdf6b45b029402f62e55444",
+    "addresses": {
+     "robinhood": "0x4a8c7282dd2f7a4f45cdfa91d7b0a1d9a16209de5cdf6b45b029402f62e55444"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174178/large/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png?1782444745"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.413Z",
+    "createdAt": "2026-09-09T10:21:31.397Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    ],
+    "liquidity": 1058.6896841002883,
+    "metrics": {
+     "apy": "0.525",
+     "baseApy": "0.525",
+     "volumeUsd1d": "0.303",
+     "volumeUsd7d": "37.571"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "5.0331"
+    },
+    "tokenId": "47026bc1-ab36-4d66-825a-0367c7f241f0",
+    "reserves": [
+     "88.69807",
+     "2.882675901513532148"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xaad7301db6f3ebe2051eb53afbc291d5f57ea739": {
+    "key": "arbitrum:0xaad7301db6f3ebe2051eb53afbc291d5f57ea739",
+    "name": "MongoDB rStock",
+    "decimals": 18,
+    "symbol": "RMDB",
+    "price": 346.07,
+    "address": "0xaad7301db6f3ebe2051eb53afbc291d5f57ea739",
+    "addresses": {
+     "arbitrum": "0xaad7301db6f3ebe2051eb53afbc291d5f57ea739"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5238.65,
+    "image": "https://coin-images.coingecko.com/coins/images/102177082/large/8529d7a3d5d6a088d02633c495430255.png?1789116772",
+    "metrics": {
+     "volumeUsd1d": "497.123",
+     "volumeUsd7d": "2504.169"
+    },
+    "metadata": {},
+    "tokenId": "2ed44e93-17d9-43f8-b181-6c81e9534051",
+    "totalSupply": "15.137598917",
+    "circulatingSupply": "15.137598917",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xaccf878bb53d27731feacfb856110fbbc2b28889aca990afaa088e272b99d16a": {
+    "key": "robinhood:0xaccf878bb53d27731feacfb856110fbbc2b28889aca990afaa088e272b99d16a",
+    "name": "Uniswap V4 LP USDG/MDB",
+    "decimals": 18,
+    "symbol": "USDG/MDB",
+    "price": 9007199254740990,
+    "address": "0xaccf878bb53d27731feacfb856110fbbc2b28889aca990afaa088e272b99d16a",
+    "addresses": {
+     "robinhood": "0xaccf878bb53d27731feacfb856110fbbc2b28889aca990afaa088e272b99d16a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174178/large/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png?1782444745"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.580Z",
+    "createdAt": "2026-09-20T10:57:46.794Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    ],
+    "liquidity": 2258.5730065567795,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "296.882"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 384,
+     "feePercentage": "3.9362"
+    },
+    "tokenId": "bd7e0e98-5762-45dd-bda5-b7959bd2658b",
+    "reserves": [
+     "36.460044",
+     "6.603800893211624976"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xaf53194435379dd3197e8ee63ec1cf72e9958846e3cec35d4e000b3637b842e5": {
+    "key": "robinhood:0xaf53194435379dd3197e8ee63ec1cf72e9958846e3cec35d4e000b3637b842e5",
+    "name": "Uniswap V4 LP USDG/MDB",
+    "decimals": 18,
+    "symbol": "USDG/MDB",
+    "price": 9007199254740990,
+    "address": "0xaf53194435379dd3197e8ee63ec1cf72e9958846e3cec35d4e000b3637b842e5",
+    "addresses": {
+     "robinhood": "0xaf53194435379dd3197e8ee63ec1cf72e9958846e3cec35d4e000b3637b842e5"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174178/large/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png?1782444745"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.180Z",
+    "createdAt": "2026-09-09T10:21:31.040Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    ],
+    "liquidity": 1064.579216562436,
+    "metrics": {
+     "apy": "1.058",
+     "baseApy": "1.058",
+     "volumeUsd1d": "0.606",
+     "volumeUsd7d": "42.365"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "1b1b1bd3-cc79-476d-ba53-d9a642148c5c",
+    "reserves": [
+     "535.400675",
+     "1.572642698334084263"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xddf2266b79abf0b48898959b0ed6e6adf512be74": {
+    "key": "robinhood:0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "name": "MongoDB • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MDB",
+    "price": 336.49,
+    "address": "0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "addresses": {
+     "robinhood": "0xddf2266b79abf0b48898959b0ed6e6adf512be74"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xddf2266b79abf0b48898959b0ed6e6adf512be74.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xddf2266b79abf0b48898959b0ed6e6adf512be74",
+    "liquidity": 7744.7783413,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-82.095"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000f92f60961bbe43028a23a3d52174b320",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "c9928060-a718-40a1-b68c-1437f32e38e5",
+    "totalSupply": "23.01637",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

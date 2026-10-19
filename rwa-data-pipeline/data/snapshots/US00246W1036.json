@@ -1,0 +1,473 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US00246W1036",
+ "ticker": "AXTI",
+ "name": "AXT",
+ "isin": "US00246W1036",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:33Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "AXT Inc",
+   "symbol": "AXTI",
+   "slug": "axt-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 48.884224500449925,
+     "tokenized_market_cap": 3018880.101027678,
+     "tokenized_volume_24h": 3209730.54578341,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 1164,
+   "asset_type": "stock",
+   "rwa_rank": 1620,
+   "has_tokens": true,
+   "average_tokenized_price": 48.884224500449925,
+   "tokenized_market_cap": 3018880.101027678,
+   "tokenized_volume_24h": 3209730.54578341,
+   "last_updated": "2026-10-18T20:14:27.426Z",
+   "tokens": [
+    {
+     "symbol": "rAXTI",
+     "name": "AXT Tokenized Stock (Reality)",
+     "price": 51.33375393748257,
+     "crypto_id": 40640,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 199412.31,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AXTIB",
+     "name": "AXT Tokenized bStocks",
+     "price": 48.90841357629114,
+     "crypto_id": 40875,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 2820862.93,
+     "volume_24h": 3207907.83851586
+    },
+    {
+     "symbol": "AXTIc",
+     "name": "AXT Inc Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42546,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AXTI",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AXTI"
+    }
+   ]
+  },
+  "info": {
+   "40640": {
+    "id": 40640,
+    "symbol": "rAXTI",
+    "name": "AXT Tokenized Stock (Reality)",
+    "slug": "axt-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40640.png",
+    "date_added": "2026-07-02T07:39:18.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xb3619c2a4604273f465742a35ff3603feed54ebb"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb3619c2a4604273f465742a35ff3603feed54ebb",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40875": {
+    "id": 40875,
+    "symbol": "AXTIB",
+    "name": "AXT Tokenized bStocks",
+    "slug": "axt-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40875.png",
+    "date_added": "2026-07-20T08:41:08.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42546": {
+    "id": 42546,
+    "symbol": "AXTIc",
+    "name": "AXT Inc Tokenized Stock (Coinbase)",
+    "slug": "axt-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42546.png",
+    "date_added": "2026-10-14T03:36:50.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000a640ec8c1de0efb484"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000a640ec8c1de0efb484",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xb3619c2a4604273f465742a35ff3603feed54ebb",
+   "base:0xb200000000000000000000a640ec8c1de0efb484",
+   "bsc:0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be"
+  ],
+  "exact": {
+   "bsc:0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be": {
+    "key": "bsc:0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be",
+    "name": "AXT (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXTIB",
+    "price": 48.84,
+    "address": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be",
+    "addresses": {
+     "bsc": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2816589,
+    "image": "https://coin-images.coingecko.com/coins/images/102174759/large/axtbstock.png?1784795690",
+    "metrics": {
+     "volumeUsd1d": "2025229.527",
+     "volumeUsd7d": "17805827.035"
+    },
+    "metadata": {},
+    "tokenId": "8866c9b0-ed19-4304-8561-d208a0a5b603",
+    "totalSupply": "57676.43493767",
+    "circulatingSupply": "57676.43493767",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb3619c2a4604273f465742a35ff3603feed54ebb": {
+    "key": "arbitrum:0xb3619c2a4604273f465742a35ff3603feed54ebb",
+    "name": "AXT Inc rStock",
+    "decimals": 18,
+    "symbol": "RAXTI",
+    "price": 51.35,
+    "address": "0xb3619c2a4604273f465742a35ff3603feed54ebb",
+    "addresses": {
+     "arbitrum": "0xb3619c2a4604273f465742a35ff3603feed54ebb"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 199752,
+    "image": "https://coin-images.coingecko.com/coins/images/102177005/large/056189a62270c4b447cc262c8fe2e8d1.png?1789116381",
+    "metrics": {
+     "volumeUsd1d": "2050.051",
+     "volumeUsd7d": "2075662.435"
+    },
+    "metadata": {},
+    "tokenId": "0c3aa96a-3800-4372-a5e1-8e6057002efc",
+    "totalSupply": "3889.921192157",
+    "circulatingSupply": "3889.921192157",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AXTI": {
+    "total_items": 6,
+    "pages": 1,
+    "received": 6,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x6a3e77d984e22bed6a036d3da79d7857936a593f": {
+    "key": "ethereum:0x6a3e77d984e22bed6a036d3da79d7857936a593f",
+    "name": "AXT (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "AXTION",
+    "price": 51.35,
+    "address": "0x6a3e77d984e22bed6a036d3da79d7857936a593f",
+    "addresses": {
+     "ethereum": "0x6a3e77d984e22bed6a036d3da79d7857936a593f",
+     "bsc": "0x0c50323af81d5c33822c6add256fb9093d42bc74"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-06-12T09:22:03.610Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 97270,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "154612.935",
+     "volumeUsd7d": "1172347.899"
+    },
+    "metadata": {},
+    "tokenId": "c705285b-7d26-493e-9150-bc31e7873c9d",
+    "totalSupply": "1894.0290616547645",
+    "circulatingSupply": "1894.0290616547645",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be": {
+    "key": "bsc:0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be",
+    "name": "AXT (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXTIB",
+    "price": 48.84,
+    "address": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be",
+    "addresses": {
+     "bsc": "0x9bdc8b470dbf89dbcb123587c6f5e49cca3463be"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2816589,
+    "image": "https://coin-images.coingecko.com/coins/images/102174759/large/axtbstock.png?1784795690",
+    "metrics": {
+     "volumeUsd1d": "2025229.527",
+     "volumeUsd7d": "17805827.035"
+    },
+    "metadata": {},
+    "tokenId": "8866c9b0-ed19-4304-8561-d208a0a5b603",
+    "totalSupply": "57676.43493767",
+    "circulatingSupply": "57676.43493767",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0c50323af81d5c33822c6add256fb9093d42bc74": {
+    "key": "bsc:0x0c50323af81d5c33822c6add256fb9093d42bc74",
+    "name": "AXT (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "AXTION",
+    "price": 51.35,
+    "address": "0x0c50323af81d5c33822c6add256fb9093d42bc74",
+    "addresses": {
+     "ethereum": "0x6a3e77d984e22bed6a036d3da79d7857936a593f",
+     "bsc": "0x0c50323af81d5c33822c6add256fb9093d42bc74"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-06-12T09:22:03.610Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 97270,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "155222.658",
+     "volumeUsd7d": "1175193.777"
+    },
+    "metadata": {},
+    "tokenId": "c705285b-7d26-493e-9150-bc31e7873c9d",
+    "totalSupply": "1894.0290616547645",
+    "circulatingSupply": "1894.0290616547645",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb3619c2a4604273f465742a35ff3603feed54ebb": {
+    "key": "arbitrum:0xb3619c2a4604273f465742a35ff3603feed54ebb",
+    "name": "AXT Inc rStock",
+    "decimals": 18,
+    "symbol": "RAXTI",
+    "price": 51.35,
+    "address": "0xb3619c2a4604273f465742a35ff3603feed54ebb",
+    "addresses": {
+     "arbitrum": "0xb3619c2a4604273f465742a35ff3603feed54ebb"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 199752,
+    "image": "https://coin-images.coingecko.com/coins/images/102177005/large/056189a62270c4b447cc262c8fe2e8d1.png?1789116381",
+    "metrics": {
+     "volumeUsd1d": "2050.051",
+     "volumeUsd7d": "2075662.435"
+    },
+    "metadata": {},
+    "tokenId": "0c3aa96a-3800-4372-a5e1-8e6057002efc",
+    "totalSupply": "3889.921192157",
+    "circulatingSupply": "3889.921192157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x045e166298e3ecea061cb02217103e660f3185ed0d010b46ffd1b20a3509c368": {
+    "key": "ethereum:0x045e166298e3ecea061cb02217103e660f3185ed0d010b46ffd1b20a3509c368",
+    "name": "Uniswap V4 LP wUSDC/AXTIon",
+    "decimals": 18,
+    "symbol": "WUSDC/AXTION",
+    "price": 9007199254740990,
+    "address": "0x045e166298e3ecea061cb02217103e660f3185ed0d010b46ffd1b20a3509c368",
+    "addresses": {
+     "ethereum": "0x045e166298e3ecea061cb02217103e660f3185ed0d010b46ffd1b20a3509c368"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.650Z",
+    "createdAt": "2026-09-28T10:37:10.224Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x6a3e77d984e22bed6a036d3da79d7857936a593f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "e7bd0a65-b66e-42b6-96b6-75875bc001fa",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x953d3e5e724f211349f49a787e9a9e9f12b6fc7a247e340a80aabb421d806388": {
+    "key": "ethereum:0x953d3e5e724f211349f49a787e9a9e9f12b6fc7a247e340a80aabb421d806388",
+    "name": "Uniswap V4 LP EGP/AXTIon",
+    "decimals": 18,
+    "symbol": "EGP/AXTION",
+    "price": 9007199254740990,
+    "address": "0x953d3e5e724f211349f49a787e9a9e9f12b6fc7a247e340a80aabb421d806388",
+    "addresses": {
+     "ethereum": "0x953d3e5e724f211349f49a787e9a9e9f12b6fc7a247e340a80aabb421d806388"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.955Z",
+    "createdAt": "2026-10-14T06:54:33.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x6a3e77d984e22bed6a036d3da79d7857936a593f"
+    ],
+    "liquidity": 20055.404469253826,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.64"
+    },
+    "tokenId": "ec73f808-bf8c-40f0-a8a5-7340c64843b2",
+    "reserves": [
+     "19999.999999999999999973",
+     "0.40459102194426639"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

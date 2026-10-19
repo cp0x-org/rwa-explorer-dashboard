@@ -1,0 +1,1918 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US75734B1008",
+ "ticker": "RDDT",
+ "name": "Reddit",
+ "isin": "US75734B1008",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:13Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Reddit Inc",
+   "symbol": "RDDT",
+   "slug": "reddit",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 154.61702024191604,
+     "tokenized_market_cap": 2849614.6512305667,
+     "tokenized_volume_24h": 1717488.31812373,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 196,
+   "asset_type": "stock",
+   "rwa_rank": 456,
+   "has_tokens": true,
+   "average_tokenized_price": 154.61702024191604,
+   "tokenized_market_cap": 2849614.6512305667,
+   "tokenized_volume_24h": 1717488.31812373,
+   "last_updated": "2026-10-18T20:14:22.955Z",
+   "tokens": [
+    {
+     "symbol": "RDDTon",
+     "name": "Reddit Tokenized Stock (Ondo)",
+     "price": 154.44801581938785,
+     "crypto_id": 38053,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 774517.83,
+     "volume_24h": 503151.41896562
+    },
+    {
+     "symbol": "RDDT",
+     "name": "Reddit (Derivatives)",
+     "price": 153.9986962088041,
+     "crypto_id": 39633,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "RDDT",
+     "name": "Reddit Tokenized Stock (Robinhood)",
+     "price": 153.57008238902176,
+     "crypto_id": 40777,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1449835.11,
+     "volume_24h": 80907.7186531
+    },
+    {
+     "symbol": "wRDDTx",
+     "name": "Wrapped Reddit Tokenized Stock (xStock)",
+     "price": 160.03414079899707,
+     "crypto_id": 41583,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "RDDTB",
+     "name": "Reddit Tokenized bStocks",
+     "price": 154.63122673311813,
+     "crypto_id": 42302,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 563502.44,
+     "volume_24h": 1132392.437883
+    },
+    {
+     "symbol": "RDDTc",
+     "name": "Reddit, Inc. Tokenized Stock (Coinbase)",
+     "price": 153.2916278506347,
+     "crypto_id": 42424,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 60566.6,
+     "volume_24h": 135.7247975
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "RDDT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_RDDT"
+    }
+   ]
+  },
+  "info": {
+   "38053": {
+    "id": 38053,
+    "symbol": "RDDTon",
+    "name": "Reddit Tokenized Stock (Ondo)",
+    "slug": "reddit-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38053.png",
+    "date_added": "2025-09-03T10:55:41.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xA9431d354cFAD3c6B76E50f0e73b43D48Be80CD0"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xA9431d354cFAD3c6B76E50f0e73b43D48Be80CD0",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "HXFrTf9v9NdjGUTnx4sojR3Cf92hoBsQFUxKTN7ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39633": {
+    "id": 39633,
+    "symbol": "RDDT",
+    "name": "Reddit (Derivatives)",
+    "slug": "reddit-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39633.png",
+    "date_added": "2026-02-26T09:34:26.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40777": {
+    "id": 40777,
+    "symbol": "RDDT",
+    "name": "Reddit Tokenized Stock (Robinhood)",
+    "slug": "reddit-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40777.png",
+    "date_added": "2026-08-04T07:32:03.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x05b37Fb53A299a1b874A619e1c4C404D52C36F4C"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x05b37Fb53A299a1b874A619e1c4C404D52C36F4C",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41583": {
+    "id": 41583,
+    "symbol": "wRDDTx",
+    "name": "Wrapped Reddit Tokenized Stock (xStock)",
+    "slug": "wrapped-reddit-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41583.png",
+    "date_added": "2026-08-11T16:25:21.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x9ED51B856159c7CF26c1ecE673aBD248F21Bcc9E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9ED51B856159c7CF26c1ecE673aBD248F21Bcc9E",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42302": {
+    "id": 42302,
+    "symbol": "RDDTB",
+    "name": "Reddit Tokenized bStocks",
+    "slug": "reddit-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42302.png",
+    "date_added": "2026-09-15T08:55:00.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42424": {
+    "id": 42424,
+    "symbol": "RDDTc",
+    "name": "Reddit, Inc. Tokenized Stock (Coinbase)",
+    "slug": "reddit-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42424.png",
+    "date_added": "2026-10-08T03:59:48.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb20000000000000000000066242d4067724cB7A1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb20000000000000000000066242d4067724cB7A1",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "base:0xb20000000000000000000066242d4067724cb7a1",
+   "bsc:0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+   "bsc:0x4da12f47578ef89c76179b760c778e70b668f80b",
+   "ethereum:0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0",
+   "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c"
+  ],
+  "exact": {
+   "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c": {
+    "key": "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "name": "Reddit • Robinhood Token",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 152,
+    "address": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "addresses": {
+     "robinhood": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "liquidity": 1435012.17008,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "773443.966"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000003bc66ed8f2314091a365604b4c01aef5",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "4320bccb-4e0f-4e45-b27d-260125de3b27",
+    "totalSupply": "9440.86954",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0": {
+    "key": "ethereum:0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0",
+    "name": "Reddit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTON",
+    "price": 154.88,
+    "address": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0",
+    "addresses": {
+     "bsc": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+     "ethereum": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 776415,
+    "image": "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789",
+    "metrics": {
+     "volumeUsd1d": "142394.364",
+     "volumeUsd7d": "1329403.322"
+    },
+    "metadata": {},
+    "tokenId": "f5141bf6-dbe6-4f52-b3e5-cd0ac745bb0f",
+    "totalSupply": "5014.747675052107",
+    "circulatingSupply": "5014.747675052107",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x41622a9125a22767df8c1dc79fc17299bac4bd0b": {
+    "key": "bsc:0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+    "name": "Reddit (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTB",
+    "price": 154.69,
+    "address": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+    "addresses": {
+     "bsc": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-16T13:23:34.894Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 563703,
+    "image": "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+    "metrics": {
+     "volumeUsd1d": "1034987.361",
+     "volumeUsd7d": "4099715.51"
+    },
+    "metadata": {},
+    "tokenId": "23c812c2-2130-4359-b104-eef7c42aa134",
+    "totalSupply": "3644.16977314",
+    "circulatingSupply": "3644.16977314",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4da12f47578ef89c76179b760c778e70b668f80b": {
+    "key": "bsc:0x4da12f47578ef89c76179b760c778e70b668f80b",
+    "name": "Reddit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTON",
+    "price": 154.88,
+    "address": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+    "addresses": {
+     "bsc": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+     "ethereum": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 776415,
+    "image": "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789",
+    "metrics": {
+     "volumeUsd1d": "142090.216",
+     "volumeUsd7d": "1326620.817"
+    },
+    "metadata": {},
+    "tokenId": "f5141bf6-dbe6-4f52-b3e5-cd0ac745bb0f",
+    "totalSupply": "5014.747675052107",
+    "circulatingSupply": "5014.747675052107",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "RDDT": {
+    "total_items": 33,
+    "pages": 1,
+    "received": 33,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x2604b9942511bc015c0e3cbc4c3a8dfa5463a7322061eabcc68d3d3adb5e6c1d": {
+    "key": "bsc:0x2604b9942511bc015c0e3cbc4c3a8dfa5463a7322061eabcc68d3d3adb5e6c1d",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x2604b9942511bc015c0e3cbc4c3a8dfa5463a7322061eabcc68d3d3adb5e6c1d",
+    "addresses": {
+     "bsc": "0x2604b9942511bc015c0e3cbc4c3a8dfa5463a7322061eabcc68d3d3adb5e6c1d"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.421Z",
+    "createdAt": "2026-09-16T15:19:39.817Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1833.9709732860515,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 85,
+     "feePercentage": "0.9492"
+    },
+    "tokenId": "42891fb7-a607-418f-b1a7-58cbeb136ec3",
+    "reserves": [
+     "9.65573501879127244",
+     "340.617573106955334979"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3441f214e2d1e90b9a9c9bfe0d7f0d99367256a1": {
+    "key": "bsc:0x3441f214e2d1e90b9a9c9bfe0d7f0d99367256a1",
+    "name": "Uniswap V3 Reddit/Tether USD 1%",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x3441f214e2d1e90b9a9c9bfe0d7f0d99367256a1",
+    "addresses": {
+     "bsc": "0x3441f214e2d1e90b9a9c9bfe0d7f0d99367256a1"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.170Z",
+    "createdAt": "2026-09-16T14:21:55.002Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 901.7572662086342,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "1f9d5b65-becb-4305-ae6a-2a8eaaa4f43a",
+    "reserves": [
+     "3.262425840299342667",
+     "397.433611010976272983"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xcfd31115179878659849381bd8b9405849bdc865": {
+    "key": "avalanche:0xcfd31115179878659849381bd8b9405849bdc865",
+    "name": "Dinari RDDT",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 155.38,
+    "address": "0xcfd31115179878659849381bd8b9405849bdc865",
+    "addresses": {
+     "avalanche": "0xcfd31115179878659849381bd8b9405849bdc865",
+     "ethereum": "0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+     "base": "0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+     "arbitrum": "0x97ec5dada8262bd922bffd54a93f5a11efe0b136"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12406.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102174946/large/dinari-logo-green-with-margin.png?1785402657",
+    "metrics": {
+     "volumeUsd1d": "1.988",
+     "volumeUsd7d": "458.912"
+    },
+    "metadata": {},
+    "tokenId": "ebe34348-4d46-4484-9a42-5f491a3394f0",
+    "totalSupply": "79.84747123958624",
+    "circulatingSupply": "79.84747123958624",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc": {
+    "key": "ethereum:0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+    "name": "Dinari RDDT",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 155.38,
+    "address": "0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+    "addresses": {
+     "avalanche": "0xcfd31115179878659849381bd8b9405849bdc865",
+     "ethereum": "0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+     "base": "0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+     "arbitrum": "0x97ec5dada8262bd922bffd54a93f5a11efe0b136"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12406.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102174946/large/dinari-logo-green-with-margin.png?1785402657",
+    "metrics": {
+     "volumeUsd1d": "1.988",
+     "volumeUsd7d": "459.027"
+    },
+    "metadata": {},
+    "tokenId": "ebe34348-4d46-4484-9a42-5f491a3394f0",
+    "totalSupply": "79.84747123958624",
+    "circulatingSupply": "79.84747123958624",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7d02144441bddb25a2993d928d7e06ee684df186c7d7a975e3310f5332126f1a": {
+    "key": "robinhood:0x7d02144441bddb25a2993d928d7e06ee684df186c7d7a975e3310f5332126f1a",
+    "name": "Uniswap V4 LP RDDT/MM",
+    "decimals": 18,
+    "symbol": "RDDT/MM",
+    "price": 9007199254740990,
+    "address": "0x7d02144441bddb25a2993d928d7e06ee684df186c7d7a975e3310f5332126f1a",
+    "addresses": {
+     "robinhood": "0x7d02144441bddb25a2993d928d7e06ee684df186c7d7a975e3310f5332126f1a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.759Z",
+    "createdAt": "2026-10-03T11:19:18.703Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
+    ],
+    "liquidity": 19995.738416946024,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9975,
+     "feePercentage": "99.7503"
+    },
+    "tokenId": "8eb10132-8e90-4e0b-acba-2dd82c2c3295",
+    "reserves": [
+     "0.000046573619158862",
+     "20000.000001920399134417"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c": {
+    "key": "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "name": "Reddit • Robinhood Token",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 152,
+    "address": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "addresses": {
+     "robinhood": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+    "liquidity": 1435012.17008,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "773443.966"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000003bc66ed8f2314091a365604b4c01aef5",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "4320bccb-4e0f-4e45-b27d-260125de3b27",
+    "totalSupply": "9440.86954",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x714187eed11d8fc9500ff6798734c8bb63a8a19b": {
+    "key": "robinhood:0x714187eed11d8fc9500ff6798734c8bb63a8a19b",
+    "name": "Uniswap V3 Reddit  Robinhood Token/WETH 0.3%",
+    "decimals": 18,
+    "symbol": "RDDT/WETH",
+    "price": 9007199254740990,
+    "address": "0x714187eed11d8fc9500ff6798734c8bb63a8a19b",
+    "addresses": {
+     "robinhood": "0x714187eed11d8fc9500ff6798734c8bb63a8a19b"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.319Z",
+    "createdAt": "2026-09-03T10:19:25.493Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73"
+    ],
+    "liquidity": 128875.66517147269,
+    "metrics": {
+     "apy": "46.334",
+     "baseApy": "46.334",
+     "volumeUsd1d": "54543.638",
+     "volumeUsd7d": "946927.873"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "42d9c427-656c-494c-8f61-1fcc26e50827",
+    "reserves": [
+     "31.142644027149767897",
+     "53.147067530608488247"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9ea8596752349525786e44d909432663b0680e7d": {
+    "key": "robinhood:0x9ea8596752349525786e44d909432663b0680e7d",
+    "name": "Beefy CLM RDDT-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODRDDT-USDG",
+    "price": 1248268029006.5583,
+    "address": "0x9ea8596752349525786e44d909432663b0680e7d",
+    "addresses": {
+     "robinhood": "0x9ea8596752349525786e44d909432663b0680e7d"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef"
+    ],
+    "poolAddress": "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef",
+    "liquidity": 46911.04444079114,
+    "metrics": {
+     "apy": "0.147",
+     "baseApy": "0.147",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-rddt-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef",
+     "strategyAddress": "0x88ad50b48e54a76f71164cd0420e917383c3b4e2",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x9ea8596752349525786e44d909432663b0680e7d",
+     "depositTokenAddresses": [
+      "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "d93888a8-da9a-441f-83b8-3a111f86c2c4",
+    "totalSupply": "0.000000037580906785",
+    "reserves": [
+     "0.000000037580906785"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1a774e182159d2880dbc646eb89a8defe569f97c": {
+    "key": "robinhood:0x1a774e182159d2880dbc646eb89a8defe569f97c",
+    "name": "Uniswap V3 Reddit  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "RDDT/USDG",
+    "price": 9007199254740990,
+    "address": "0x1a774e182159d2880dbc646eb89a8defe569f97c",
+    "addresses": {
+     "robinhood": "0x1a774e182159d2880dbc646eb89a8defe569f97c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.304Z",
+    "createdAt": "2026-08-30T08:21:27.324Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 5245.956087913769,
+    "metrics": {
+     "apy": "14.764",
+     "baseApy": "14.764",
+     "volumeUsd1d": "707.299",
+     "volumeUsd7d": "22653.765"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "42d1fa54-8c03-40ab-a67e-cb3ac91da1e8",
+    "reserves": [
+     "25.770228742853744792",
+     "1328.881319"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0": {
+    "key": "ethereum:0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0",
+    "name": "Reddit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTON",
+    "price": 154.88,
+    "address": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0",
+    "addresses": {
+     "bsc": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+     "ethereum": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 776415,
+    "image": "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789",
+    "metrics": {
+     "volumeUsd1d": "142394.364",
+     "volumeUsd7d": "1329403.322"
+    },
+    "metadata": {},
+    "tokenId": "f5141bf6-dbe6-4f52-b3e5-cd0ac745bb0f",
+    "totalSupply": "5014.747675052107",
+    "circulatingSupply": "5014.747675052107",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x1ad976537ba876c975809539c8163e433dd7342b": {
+    "key": "bsc:0x1ad976537ba876c975809539c8163e433dd7342b",
+    "name": "PancakeSwap V3 Reddit/Tether USD 1%",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x1ad976537ba876c975809539c8163e433dd7342b",
+    "addresses": {
+     "bsc": "0x1ad976537ba876c975809539c8163e433dd7342b"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.995Z",
+    "createdAt": "2026-09-16T14:44:07.587Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2876.3553493811964,
+    "metrics": {
+     "apy": "3.331",
+     "baseApy": "3.331",
+     "volumeUsd1d": "26.254",
+     "volumeUsd7d": "7649.441"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "04d2a4c0-7926-4dfe-852d-68ee577aae25",
+    "reserves": [
+     "9.906102482156223371",
+     "1345.134481801836224117"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x41743585e01364ab3898ff28b3f09fe5aa9a5b17e722f5bea1adb65a07769a7f": {
+    "key": "robinhood:0x41743585e01364ab3898ff28b3f09fe5aa9a5b17e722f5bea1adb65a07769a7f",
+    "name": "Uniswap V4 LP RDDT/SPY",
+    "decimals": 18,
+    "symbol": "RDDT/SPY",
+    "price": 9007199254740990,
+    "address": "0x41743585e01364ab3898ff28b3f09fe5aa9a5b17e722f5bea1adb65a07769a7f",
+    "addresses": {
+     "robinhood": "0x41743585e01364ab3898ff28b3f09fe5aa9a5b17e722f5bea1adb65a07769a7f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.047Z",
+    "createdAt": "2026-08-06T15:58:01.153Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c"
+    ],
+    "liquidity": 7376.52184803462,
+    "metrics": {
+     "apy": "16.185",
+     "baseApy": "16.185",
+     "volumeUsd1d": "5233.55",
+     "volumeUsd7d": "96167.287"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "b79bdfe6-5a22-4f45-8a6a-bf4c37bcc8b0",
+    "reserves": [
+     "18.483141179700632481",
+     "5.987041226290473892"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd": {
+    "key": "base:0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+    "name": "Dinari RDDT",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 155.38,
+    "address": "0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+    "addresses": {
+     "avalanche": "0xcfd31115179878659849381bd8b9405849bdc865",
+     "ethereum": "0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+     "base": "0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+     "arbitrum": "0x97ec5dada8262bd922bffd54a93f5a11efe0b136"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12406.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102174946/large/dinari-logo-green-with-margin.png?1785402657",
+    "metrics": {
+     "volumeUsd1d": "1.988",
+     "volumeUsd7d": "458.961"
+    },
+    "metadata": {},
+    "tokenId": "ebe34348-4d46-4484-9a42-5f491a3394f0",
+    "totalSupply": "79.84747123958624",
+    "circulatingSupply": "79.84747123958624",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xec481672a94cfe42e2d8c996b7eaeee8a93093d56bd01c1714341971e3f406c1": {
+    "key": "robinhood:0xec481672a94cfe42e2d8c996b7eaeee8a93093d56bd01c1714341971e3f406c1",
+    "name": "Uniswap V4 LP RDDT/USDG",
+    "decimals": 18,
+    "symbol": "RDDT/USDG",
+    "price": 9007199254740990,
+    "address": "0xec481672a94cfe42e2d8c996b7eaeee8a93093d56bd01c1714341971e3f406c1",
+    "addresses": {
+     "robinhood": "0xec481672a94cfe42e2d8c996b7eaeee8a93093d56bd01c1714341971e3f406c1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.047Z",
+    "createdAt": "2026-07-24T15:57:23.416Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 66453.52249550758,
+    "metrics": {
+     "apy": "3.009",
+     "baseApy": "3.009",
+     "volumeUsd1d": "498.47",
+     "volumeUsd7d": "85956.57"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "53f5b89e-6249-44fc-b985-388adfb224bc",
+    "reserves": [
+     "198.007036180970945135",
+     "36356.452996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa541143f20d7b0643123064abf25f423e375b531": {
+    "key": "robinhood:0xa541143f20d7b0643123064abf25f423e375b531",
+    "name": "Uniswap V3 Reddit  Robinhood Token/WETH 1%",
+    "decimals": 18,
+    "symbol": "RDDT/WETH",
+    "price": 9007199254740990,
+    "address": "0xa541143f20d7b0643123064abf25f423e375b531",
+    "addresses": {
+     "robinhood": "0xa541143f20d7b0643123064abf25f423e375b531"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.298Z",
+    "createdAt": "2026-08-13T03:23:35.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73"
+    ],
+    "liquidity": 55334.99095940887,
+    "metrics": {
+     "apy": "54.33",
+     "baseApy": "54.33",
+     "volumeUsd1d": "8237.565",
+     "volumeUsd7d": "122480.996"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "06126917-04df-4fd8-93bf-1e883b9e52e7",
+    "reserves": [
+     "156.922797567493506702",
+     "13.47823279582752632"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef": {
+    "key": "robinhood:0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef",
+    "name": "Beefy CLM RDDT-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODRDDT-USDG",
+    "price": 1248268029006.5583,
+    "address": "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef",
+    "addresses": {
+     "robinhood": "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0xa8744e76aed23b05f0126335e7bd38f7935d19fe",
+    "liquidity": 46911.045689059174,
+    "metrics": {
+     "apy": "0.147",
+     "baseApy": "0.147",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-rddt-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x3ca0b5eb3133982a982b72bfad4da71a6a6433ef",
+     "strategyAddress": "0x88ad50b48e54a76f71164cd0420e917383c3b4e2",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x9ea8596752349525786e44d909432663b0680e7d",
+     "depositTokenAddresses": [
+      "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "a89ac619-5ea7-422a-b58a-af56109b2091",
+    "totalSupply": "0.000000037580907785",
+    "reserves": [
+     "141.080404921441914254",
+     "25466.824141"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xcc8e47d3bfcc76319789c8b32d6e0fd6e3a3c3db012d92180be5ab95b1de33ab": {
+    "key": "bsc:0xcc8e47d3bfcc76319789c8b32d6e0fd6e3a3c3db012d92180be5ab95b1de33ab",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0xcc8e47d3bfcc76319789c8b32d6e0fd6e3a3c3db012d92180be5ab95b1de33ab",
+    "addresses": {
+     "bsc": "0xcc8e47d3bfcc76319789c8b32d6e0fd6e3a3c3db012d92180be5ab95b1de33ab"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:23.920Z",
+    "createdAt": "2026-10-08T07:23:19.446Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 596.1982168921635,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "69.688"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.0901"
+    },
+    "tokenId": "0dbb34ca-20a8-4db0-aad2-06e5bd9df794",
+    "reserves": [
+     "1.49304678377885823",
+     "365.552453914870908622"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xdbe36df57be801e21bb0155a84cccf0c41cdb2c61ba6ee293b8bdad52f852dca": {
+    "key": "bsc:0xdbe36df57be801e21bb0155a84cccf0c41cdb2c61ba6ee293b8bdad52f852dca",
+    "name": "Uniswap V4 LP RDDTon/USDT",
+    "decimals": 18,
+    "symbol": "RDDTON/USDT",
+    "price": 9007199254740990,
+    "address": "0xdbe36df57be801e21bb0155a84cccf0c41cdb2c61ba6ee293b8bdad52f852dca",
+    "addresses": {
+     "bsc": "0xdbe36df57be801e21bb0155a84cccf0c41cdb2c61ba6ee293b8bdad52f852dca"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:24.424Z",
+    "createdAt": "2026-10-02T13:47:18.238Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4da12f47578ef89c76179b760c778e70b668f80b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1879.7321879350332,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 700,
+     "feePercentage": "7.093"
+    },
+    "tokenId": "431e5783-c5e3-4765-af74-56cd64e708ad",
+    "reserves": [
+     "10.729698346385907304",
+     "218.103640970736778474"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x77a8d5364e8544834a04301df64b1476bbd331ec62640b9c710d3e3ca0b1aac4": {
+    "key": "bsc:0x77a8d5364e8544834a04301df64b1476bbd331ec62640b9c710d3e3ca0b1aac4",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x77a8d5364e8544834a04301df64b1476bbd331ec62640b9c710d3e3ca0b1aac4",
+    "addresses": {
+     "bsc": "0x77a8d5364e8544834a04301df64b1476bbd331ec62640b9c710d3e3ca0b1aac4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:23.912Z",
+    "createdAt": "2026-09-17T02:38:57.160Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2775.089881747253,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1001,
+     "feePercentage": "10.099"
+    },
+    "tokenId": "8c108878-828a-4473-a678-3862ab25ae74",
+    "reserves": [
+     "8.451457666067459038",
+     "1468.994292486230795548"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x80bf0bbf28eccae00965e8714f35391dd582b7426f6568bdf934669108fbf455": {
+    "key": "robinhood:0x80bf0bbf28eccae00965e8714f35391dd582b7426f6568bdf934669108fbf455",
+    "name": "Uniswap V4 LP RDDT/USDG",
+    "decimals": 18,
+    "symbol": "RDDT/USDG",
+    "price": 9007199254740990,
+    "address": "0x80bf0bbf28eccae00965e8714f35391dd582b7426f6568bdf934669108fbf455",
+    "addresses": {
+     "robinhood": "0x80bf0bbf28eccae00965e8714f35391dd582b7426f6568bdf934669108fbf455"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.438Z",
+    "createdAt": "2026-07-27T19:07:33.616Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1838.130393806441,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "volumeUsd1d": "0.023",
+     "volumeUsd7d": "0.289"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.198"
+    },
+    "tokenId": "ccf59985-c791-4925-b4b6-a8038a96a7a0",
+    "reserves": [
+     "12.089687669779215915",
+     "0.497868"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3cb74183c739ce18328548b12e44d681338969ba5f670d932dedda91d5741702": {
+    "key": "bsc:0x3cb74183c739ce18328548b12e44d681338969ba5f670d932dedda91d5741702",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x3cb74183c739ce18328548b12e44d681338969ba5f670d932dedda91d5741702",
+    "addresses": {
+     "bsc": "0x3cb74183c739ce18328548b12e44d681338969ba5f670d932dedda91d5741702"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:24.712Z",
+    "createdAt": "2026-09-29T12:40:04.118Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 757.7116303524924,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2300,
+     "feePercentage": "23.077"
+    },
+    "tokenId": "ced7721c-17ee-41b9-a497-7442fa13d065",
+    "reserves": [
+     "2.102043967395635355",
+     "432.91789258790203262"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x915d2102a927202a076f09c25fd6728bcc70358da163c2e789276433f0989a1f": {
+    "key": "robinhood:0x915d2102a927202a076f09c25fd6728bcc70358da163c2e789276433f0989a1f",
+    "name": "Uniswap V4 LP ETH/RDDT",
+    "decimals": 18,
+    "symbol": "ETH/RDDT",
+    "price": 9007199254740990,
+    "address": "0x915d2102a927202a076f09c25fd6728bcc70358da163c2e789276433f0989a1f",
+    "addresses": {
+     "robinhood": "0x915d2102a927202a076f09c25fd6728bcc70358da163c2e789276433f0989a1f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.286Z",
+    "createdAt": "2026-07-23T13:51:09.504Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c"
+    ],
+    "liquidity": 967.516629636587,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "17.368"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "70f8c4b5-e28c-49e6-b8e1-3d795b1531d9",
+    "reserves": [
+     "0.122654015755957392",
+     "4.481460897331986972"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x239f711aa77bec949e6b2d0e269629d687da445a3c63a1c19c831adc68f77cfe": {
+    "key": "ethereum:0x239f711aa77bec949e6b2d0e269629d687da445a3c63a1c19c831adc68f77cfe",
+    "name": "Uniswap V4 LP wUSDC/RDDTon",
+    "decimals": 18,
+    "symbol": "WUSDC/RDDTON",
+    "price": 9007199254740990,
+    "address": "0x239f711aa77bec949e6b2d0e269629d687da445a3c63a1c19c831adc68f77cfe",
+    "addresses": {
+     "ethereum": "0x239f711aa77bec949e6b2d0e269629d687da445a3c63a1c19c831adc68f77cfe"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.377Z",
+    "createdAt": "2026-09-28T10:37:10.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "6bd2a3ed-b0dd-431e-9f39-785f90a875d9",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3f143db95950ffb50611d0b5224469f375dd14c94bc9c6d3ce4a9f11ba48408c": {
+    "key": "ethereum:0x3f143db95950ffb50611d0b5224469f375dd14c94bc9c6d3ce4a9f11ba48408c",
+    "name": "Uniswap V4 LP EGP/RDDTon",
+    "decimals": 18,
+    "symbol": "EGP/RDDTON",
+    "price": 9007199254740990,
+    "address": "0x3f143db95950ffb50611d0b5224469f375dd14c94bc9c6d3ce4a9f11ba48408c",
+    "addresses": {
+     "ethereum": "0x3f143db95950ffb50611d0b5224469f375dd14c94bc9c6d3ce4a9f11ba48408c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.687Z",
+    "createdAt": "2026-10-14T06:54:29.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    ],
+    "liquidity": 20072.47993633266,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.34"
+    },
+    "tokenId": "aa01e427-8d0d-4b63-b219-73a1657b7ce5",
+    "reserves": [
+     "19999.999999999999999994",
+     "0.174074932936555347"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x41622a9125a22767df8c1dc79fc17299bac4bd0b": {
+    "key": "bsc:0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+    "name": "Reddit (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTB",
+    "price": 154.69,
+    "address": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+    "addresses": {
+     "bsc": "0x41622a9125a22767df8c1dc79fc17299bac4bd0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-16T13:23:34.894Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 563703,
+    "image": "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+    "metrics": {
+     "volumeUsd1d": "1034987.361",
+     "volumeUsd7d": "4099715.51"
+    },
+    "metadata": {},
+    "tokenId": "23c812c2-2130-4359-b104-eef7c42aa134",
+    "totalSupply": "3644.16977314",
+    "circulatingSupply": "3644.16977314",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb53007df9c0a317e4732c897f3e84d35bd690564": {
+    "key": "arbitrum:0xb53007df9c0a317e4732c897f3e84d35bd690564",
+    "name": "Reddit rStock",
+    "decimals": 18,
+    "symbol": "RRDDT",
+    "price": 155.04,
+    "address": "0xb53007df9c0a317e4732c897f3e84d35bd690564",
+    "addresses": {
+     "arbitrum": "0xb53007df9c0a317e4732c897f3e84d35bd690564"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5836.1,
+    "image": "https://coin-images.coingecko.com/coins/images/102177059/large/6b8ae92cd4bf6c9f2aa1c167107cb32f.png?1789116699",
+    "metrics": {
+     "volumeUsd1d": "282.099",
+     "volumeUsd7d": "2775.733"
+    },
+    "metadata": {},
+    "tokenId": "482bf378-3a8e-4563-a0d6-03d1eddb156d",
+    "totalSupply": "37.6425046",
+    "circulatingSupply": "37.6425046",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbff5872f9919a70c251747d4a434d1fefde5e189": {
+    "key": "robinhood:0xbff5872f9919a70c251747d4a434d1fefde5e189",
+    "name": "Uniswap V3 Reddit  Robinhood Token/Alphabet Class A  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "RDDT/GOOGL",
+    "price": 9007199254740990,
+    "address": "0xbff5872f9919a70c251747d4a434d1fefde5e189",
+    "addresses": {
+     "robinhood": "0xbff5872f9919a70c251747d4a434d1fefde5e189"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174124/large/0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3.png?1782444601",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795"
+    ],
+    "updatedAt": "2026-10-18T20:15:22.250Z",
+    "createdAt": "2026-10-07T07:21:04.422Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3"
+    ],
+    "liquidity": 382237.9050942434,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "579354.384"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "df1b4217-e4d7-4731-be5e-46ac8cb73f47",
+    "reserves": [
+     "1089.251848945279157002",
+     "637.541575169539060103"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x99437990440e2c154c8ce80c856ea27696a53a7f5b7b41093a1b9068a1441ed3": {
+    "key": "bsc:0x99437990440e2c154c8ce80c856ea27696a53a7f5b7b41093a1b9068a1441ed3",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0x99437990440e2c154c8ce80c856ea27696a53a7f5b7b41093a1b9068a1441ed3",
+    "addresses": {
+     "bsc": "0x99437990440e2c154c8ce80c856ea27696a53a7f5b7b41093a1b9068a1441ed3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:26.728Z",
+    "createdAt": "2026-09-16T20:18:07.243Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 3875.082885657075,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "10.876"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "aaf55f17-3c12-4b1c-a48a-48de3966ef64",
+    "reserves": [
+     "12.758581049809159023",
+     "1903.090834998525282013"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4da12f47578ef89c76179b760c778e70b668f80b": {
+    "key": "bsc:0x4da12f47578ef89c76179b760c778e70b668f80b",
+    "name": "Reddit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RDDTON",
+    "price": 154.88,
+    "address": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+    "addresses": {
+     "bsc": "0x4da12f47578ef89c76179b760c778e70b668f80b",
+     "ethereum": "0xa9431d354cfad3c6b76e50f0e73b43d48be80cd0"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 776415,
+    "image": "https://coin-images.coingecko.com/coins/images/68585/large/rddton_160x160.png?1756129789",
+    "metrics": {
+     "volumeUsd1d": "142090.216",
+     "volumeUsd7d": "1326620.817"
+    },
+    "metadata": {},
+    "tokenId": "f5141bf6-dbe6-4f52-b3e5-cd0ac745bb0f",
+    "totalSupply": "5014.747675052107",
+    "circulatingSupply": "5014.747675052107",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa8744e76aed23b05f0126335e7bd38f7935d19fe": {
+    "key": "robinhood:0xa8744e76aed23b05f0126335e7bd38f7935d19fe",
+    "name": "Uniswap V3 Reddit  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "RDDT/USDG",
+    "price": 9007199254740990,
+    "address": "0xa8744e76aed23b05f0126335e7bd38f7935d19fe",
+    "addresses": {
+     "robinhood": "0xa8744e76aed23b05f0126335e7bd38f7935d19fe"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:22.266Z",
+    "createdAt": "2026-07-19T19:41:20.475Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 662495.8276744643,
+    "metrics": {
+     "apy": "0.404",
+     "baseApy": "0.404",
+     "volumeUsd1d": "732.8",
+     "volumeUsd7d": "2194091.848"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "3cdea07c-89f5-4837-a453-600b6ff7cd3c",
+    "reserves": [
+     "2536.104652595159650543",
+     "277007.92048"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe9a8834a538576c11bcd1d0992256623eb0e9363d04e2124c74a7fb74b393978": {
+    "key": "bsc:0xe9a8834a538576c11bcd1d0992256623eb0e9363d04e2124c74a7fb74b393978",
+    "name": "Uniswap V4 LP RDDTB/USDT",
+    "decimals": 18,
+    "symbol": "RDDTB/USDT",
+    "price": 9007199254740990,
+    "address": "0xe9a8834a538576c11bcd1d0992256623eb0e9363d04e2124c74a7fb74b393978",
+    "addresses": {
+     "bsc": "0xe9a8834a538576c11bcd1d0992256623eb0e9363d04e2124c74a7fb74b393978"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178435/large/reddit.png?1789563983",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:26.639Z",
+    "createdAt": "2026-10-02T13:47:18.238Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41622a9125a22767df8c1dc79fc17299bac4bd0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 875.131041073794,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1900,
+     "feePercentage": "19.081"
+    },
+    "tokenId": "d960fe89-7cb0-49bd-b56e-98cdee0574b9",
+    "reserves": [
+     "3.449395882258896234",
+     "341.83728844064746718"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7c2985fd7623a5dcd88c7d51099931ca295875743b96bc64990e374f49e5f387": {
+    "key": "robinhood:0x7c2985fd7623a5dcd88c7d51099931ca295875743b96bc64990e374f49e5f387",
+    "name": "Uniswap V4 LP RDDT/USDG",
+    "decimals": 18,
+    "symbol": "RDDT/USDG",
+    "price": 9007199254740990,
+    "address": "0x7c2985fd7623a5dcd88c7d51099931ca295875743b96bc64990e374f49e5f387",
+    "addresses": {
+     "robinhood": "0x7c2985fd7623a5dcd88c7d51099931ca295875743b96bc64990e374f49e5f387"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174197/large/0x05b37fb53a299a1b874a619e1c4c404d52c36f4c.png?1782444795",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.486Z",
+    "createdAt": "2026-09-08T15:09:10.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 54663.46823517128,
+    "metrics": {
+     "apy": "16.171",
+     "baseApy": "16.171",
+     "volumeUsd1d": "7167.388",
+     "volumeUsd7d": "304443.822"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 29,
+     "feePercentage": "0.3379"
+    },
+    "tokenId": "0cb667da-c798-495c-a3a1-56379deb41b3",
+    "reserves": [
+     "213.585364165600533762",
+     "22198.492882"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x97ec5dada8262bd922bffd54a93f5a11efe0b136": {
+    "key": "arbitrum:0x97ec5dada8262bd922bffd54a93f5a11efe0b136",
+    "name": "Dinari RDDT",
+    "decimals": 18,
+    "symbol": "RDDT",
+    "price": 155.38,
+    "address": "0x97ec5dada8262bd922bffd54a93f5a11efe0b136",
+    "addresses": {
+     "avalanche": "0xcfd31115179878659849381bd8b9405849bdc865",
+     "ethereum": "0xac20315350d7b59cbe846144f5eb8a6d1df1f5fc",
+     "base": "0xa17c0e96c8b5e39b6fd670f01d7f021f66b930cd",
+     "arbitrum": "0x97ec5dada8262bd922bffd54a93f5a11efe0b136"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12406.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102174946/large/dinari-logo-green-with-margin.png?1785402657",
+    "metrics": {
+     "volumeUsd1d": "1.988",
+     "volumeUsd7d": "458.966"
+    },
+    "metadata": {},
+    "tokenId": "ebe34348-4d46-4484-9a42-5f491a3394f0",
+    "totalSupply": "79.84747123958624",
+    "circulatingSupply": "79.84747123958624",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

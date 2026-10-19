@@ -1,0 +1,2417 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US8740391003",
+ "ticker": "TSM",
+ "name": "Taiwan Semiconductor (ADR)",
+ "isin": "US8740391003",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:12Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+   "symbol": "TSM",
+   "slug": "tsm",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 412.7533162093645,
+     "tokenized_market_cap": 16634377.239712168,
+     "tokenized_volume_24h": 3485992.62085639,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 8,
+   "asset_type": "stock",
+   "rwa_rank": 8,
+   "has_tokens": true,
+   "average_tokenized_price": 412.7533162093645,
+   "tokenized_market_cap": 16634377.239712168,
+   "tokenized_volume_24h": 3485992.62085639,
+   "last_updated": "2026-10-18T20:13:34.654Z",
+   "tokens": [
+    {
+     "symbol": "TSMon",
+     "name": "Taiwan Semiconductor Manufacturing Tokenized Stock (Ondo)",
+     "price": 416.65353187485925,
+     "crypto_id": 38075,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 6050961.66,
+     "volume_24h": 2045277.70424126
+    },
+    {
+     "symbol": "TSM",
+     "name": "Taiwan Semiconductor Manufacturing (Derivatives)",
+     "price": 408.8985341078065,
+     "crypto_id": 39490,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rTSM",
+     "name": "TSMC Tokenized Stock (Reality)",
+     "price": 411.94359743626745,
+     "crypto_id": 40607,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 2023855.99,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "TSM",
+     "name": "TSMC Tokenized Stock (Robinhood)",
+     "price": 408.5485112545594,
+     "crypto_id": 40769,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1325220.4,
+     "volume_24h": 330074.91837848
+    },
+    {
+     "symbol": "TSMB",
+     "name": "TSMC Tokenized bStocks",
+     "price": 407.54669016848925,
+     "crypto_id": 40846,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 7239387.95,
+     "volume_24h": 1110710.15696771
+    },
+    {
+     "symbol": "wTSMx",
+     "name": "Wrapped TSMC Tokenized Stock (xStock)",
+     "price": 413.3777740312098,
+     "crypto_id": 41688,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "TSM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_TSM"
+    }
+   ]
+  },
+  "info": {
+   "38075": {
+    "id": 38075,
+    "symbol": "TSMon",
+    "name": "Taiwan Semiconductor Manufacturing Tokenized Stock (Ondo)",
+    "slug": "taiwan-semiconductor-manufacturing-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38075.png",
+    "date_added": "2025-09-03T10:55:33.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x3Cafdbfe682aec17d5acE2f97A2f3ab3dCf6a4A9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3Cafdbfe682aec17d5acE2f97A2f3ab3dCf6a4A9",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "keybg184d4vyXeQdFqs4o99YsMg7xBthxTJ6Ky3ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3254cdffDDEDdb1F61B9eF6f67e178615CCb0E85",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39490": {
+    "id": 39490,
+    "symbol": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing (Derivatives)",
+    "slug": "taiwan-semiconductor-manufacturing-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39490.png",
+    "date_added": "2026-02-10T01:33:09.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40607": {
+    "id": 40607,
+    "symbol": "rTSM",
+    "name": "TSMC Tokenized Stock (Reality)",
+    "slug": "tsmc-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40607.png",
+    "date_added": "2026-07-02T07:39:04.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40769": {
+    "id": 40769,
+    "symbol": "TSM",
+    "name": "TSMC Tokenized Stock (Robinhood)",
+    "slug": "tsmc-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40769.png",
+    "date_added": "2026-08-04T07:31:59.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x58FfE4a942d3885bAa22D7520691F611EF09e7AA"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x58FfE4a942d3885bAa22D7520691F611EF09e7AA",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40846": {
+    "id": 40846,
+    "symbol": "TSMB",
+    "name": "TSMC Tokenized bStocks",
+    "slug": "tsmc-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40846.png",
+    "date_added": "2026-07-13T10:34:40.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41688": {
+    "id": 41688,
+    "symbol": "wTSMx",
+    "name": "Wrapped TSMC Tokenized Stock (xStock)",
+    "slug": "wrapped-tsmc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41688.png",
+    "date_added": "2026-08-11T16:26:33.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x27D62249488fc66ECBb92C8da3F56f700B8e8501"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x27D62249488fc66ECBb92C8da3F56f700B8e8501",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+   "bsc:0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+   "bsc:0xc37042a7a4fa510d8884a433762ab87257b91965",
+   "ethereum:0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+   "hyperevm:0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85",
+   "robinhood:0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+  ],
+  "exact": {
+   "arbitrum:0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc": {
+    "key": "arbitrum:0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+    "name": "Taiwan Semiconductor rStock",
+    "decimals": 18,
+    "symbol": "RTSM",
+    "price": 412.1,
+    "address": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+    "addresses": {
+     "arbitrum": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2025150,
+    "image": "https://coin-images.coingecko.com/coins/images/102176998/large/3d843a759fb00e39b3be4e8aa169374c.png?1789116360",
+    "metrics": {
+     "volumeUsd1d": "197.86",
+     "volumeUsd7d": "374171.698"
+    },
+    "metadata": {},
+    "tokenId": "0353e763-9c05-4a3b-a569-ab1655c23dc7",
+    "totalSupply": "4914.268582291001",
+    "circulatingSupply": "4914.268582291001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85": {
+    "key": "hyperevm:0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "800542.675",
+     "volumeUsd7d": "6699351.788"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9": {
+    "key": "ethereum:0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "801850.985",
+     "volumeUsd7d": "6699412.634"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc37042a7a4fa510d8884a433762ab87257b91965": {
+    "key": "bsc:0xc37042a7a4fa510d8884a433762ab87257b91965",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "801637.436",
+     "volumeUsd7d": "6703889.95"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xab78b89b5bb00236be0b4b20704cbfa04efc711c": {
+    "key": "bsc:0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+    "name": "TSMC (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMB",
+    "price": 408.8,
+    "address": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+    "addresses": {
+     "bsc": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7246262,
+    "image": "https://coin-images.coingecko.com/coins/images/102174584/large/tsmb-bstocks.png?1784148787",
+    "metrics": {
+     "volumeUsd1d": "155013.429",
+     "volumeUsd7d": "3629161.449"
+    },
+    "metadata": {},
+    "tokenId": "4c58da34-760c-408c-8866-0ab5d19794c1",
+    "totalSupply": "17725.92400253",
+    "circulatingSupply": "17725.92400253",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x58ffe4a942d3885baa22d7520691f611ef09e7aa": {
+    "key": "robinhood:0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "name": "Taiwan Semiconductor Manufacturing • Robinhood Token",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 413.45006052,
+    "address": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "addresses": {
+     "robinhood": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "liquidity": 1337470.3084165992,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "802457.407"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002e890a0884474abd86ba66b19722e827",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1002728577037771211",
+     "currentMultiplier": "1.002728577037771211",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "62a9342a-ce2b-470b-993c-bfc505d63636",
+    "totalSupply": "3234.90171155",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "TSM": {
+    "total_items": 44,
+    "pages": 1,
+    "received": 44,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xe509830a4d9a620012a3c1b764d62712d31d255954cea1e669627d878251f83d": {
+    "key": "robinhood:0xe509830a4d9a620012a3c1b764d62712d31d255954cea1e669627d878251f83d",
+    "name": "Uniswap V4 LP TSM/SHROOM",
+    "decimals": 18,
+    "symbol": "TSM/SHROOM",
+    "price": 9007199254740990,
+    "address": "0xe509830a4d9a620012a3c1b764d62712d31d255954cea1e669627d878251f83d",
+    "addresses": {
+     "robinhood": "0xe509830a4d9a620012a3c1b764d62712d31d255954cea1e669627d878251f83d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.453Z",
+    "createdAt": "2026-09-08T15:09:10.465Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 706.7729790834852,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "5ae4e580-52e1-494a-9aaa-24869c98e825",
+    "reserves": [
+     "1.307927956281239282",
+     "34352.695157641750641426"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc": {
+    "key": "arbitrum:0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+    "name": "Taiwan Semiconductor rStock",
+    "decimals": 18,
+    "symbol": "RTSM",
+    "price": 412.1,
+    "address": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc",
+    "addresses": {
+     "arbitrum": "0x5a313745bc19509ec7bc8b7e2937e9f0bf0e2dcc"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2025150,
+    "image": "https://coin-images.coingecko.com/coins/images/102176998/large/3d843a759fb00e39b3be4e8aa169374c.png?1789116360",
+    "metrics": {
+     "volumeUsd1d": "197.86",
+     "volumeUsd7d": "374171.698"
+    },
+    "metadata": {},
+    "tokenId": "0353e763-9c05-4a3b-a569-ab1655c23dc7",
+    "totalSupply": "4914.268582291001",
+    "circulatingSupply": "4914.268582291001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7": {
+    "key": "robinhood:0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7",
+    "name": "Beefy CLM TSM-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODTSM-USDG",
+    "price": 1064152545337.2782,
+    "address": "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7",
+    "addresses": {
+     "robinhood": "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0x07e8ea83d4c1340774c8965125e26e12bf943bf1",
+    "liquidity": 64005.43474832882,
+    "metrics": {
+     "apy": "5.945",
+     "baseApy": "5.945",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-5036.421"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-tsm-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7",
+     "strategyAddress": "0xd756ef199aaf352a33e264149ac9ec43040b7c8e",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46",
+     "depositTokenAddresses": [
+      "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "86c8cdc1-0594-4068-9cdc-b8ffe6bcbbf9",
+    "totalSupply": "0.00000006014686055",
+    "reserves": [
+     "137.374481761821711272",
+     "7207.94695"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0ba5d53d2f6255f334b7c8ead4f56b6aef5af3402c5e4d11180afd38c6b85fb1": {
+    "key": "robinhood:0x0ba5d53d2f6255f334b7c8ead4f56b6aef5af3402c5e4d11180afd38c6b85fb1",
+    "name": "Uniswap V4 LP TSM/USDG",
+    "decimals": 18,
+    "symbol": "TSM/USDG",
+    "price": 9007199254740990,
+    "address": "0x0ba5d53d2f6255f334b7c8ead4f56b6aef5af3402c5e4d11180afd38c6b85fb1",
+    "addresses": {
+     "robinhood": "0x0ba5d53d2f6255f334b7c8ead4f56b6aef5af3402c5e4d11180afd38c6b85fb1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.676Z",
+    "createdAt": "2026-08-28T19:34:43.550Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 264189.2936437068,
+    "metrics": {
+     "apy": "6.432",
+     "baseApy": "6.432",
+     "volumeUsd1d": "5481.564",
+     "volumeUsd7d": "178876.227"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 75,
+     "feePercentage": "0.8493"
+    },
+    "tokenId": "fc940525-99ae-4ac2-9b02-762f2df43357",
+    "reserves": [
+     "356.41439519048885792",
+     "116829.740382"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc0bcebc5decbee6f7b379e02d191de1183c58fa3": {
+    "key": "robinhood:0xc0bcebc5decbee6f7b379e02d191de1183c58fa3",
+    "name": "Truth Social Memecoin Index",
+    "decimals": 18,
+    "symbol": "TSMI",
+    "price": 6.0419671152701264e-05,
+    "address": "0xc0bcebc5decbee6f7b379e02d191de1183c58fa3",
+    "addresses": {
+     "robinhood": "0xc0bcebc5decbee6f7b379e02d191de1183c58fa3"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-28T18:08:32.320Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 60419.67115270126,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a4046bea-e9ea-424c-a4d1-1443d3943a0c",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdb149edac8bb272d08ec0da42f6f4f4eec68e3bb38dcc45dc83377ccc5c5790c": {
+    "key": "ethereum:0xdb149edac8bb272d08ec0da42f6f4f4eec68e3bb38dcc45dc83377ccc5c5790c",
+    "name": "Uniswap V4 LP ETH/TSMon",
+    "decimals": 18,
+    "symbol": "ETH/TSMON",
+    "price": 9007199254740990,
+    "address": "0xdb149edac8bb272d08ec0da42f6f4f4eec68e3bb38dcc45dc83377ccc5c5790c",
+    "addresses": {
+     "ethereum": "0xdb149edac8bb272d08ec0da42f6f4f4eec68e3bb38dcc45dc83377ccc5c5790c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915"
+    ],
+    "updatedAt": "2026-10-18T20:12:48.666Z",
+    "createdAt": "2025-11-01T10:57:19.079Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9"
+    ],
+    "liquidity": 1909.4490018682502,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9400,
+     "feePercentage": "47.053"
+    },
+    "tokenId": "29d16dba-bc0a-42ab-8721-d6f323ed3624",
+    "reserves": [
+     "0.545672697395150693",
+     "1.524876507054560139"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd36f53497507e948df9f277cf8c3ececb09a1c1d": {
+    "key": "ethereum:0xd36f53497507e948df9f277cf8c3ececb09a1c1d",
+    "name": "IPOR Fusion TAU InfiniFi Pointsmaxx - Silo",
+    "decimals": 8,
+    "symbol": "$TAUSIUSDSILO",
+    "price": 1.0122250655641307,
+    "address": "0xd36f53497507e948df9f277cf8c3ececb09a1c1d",
+    "addresses": {
+     "ethereum": "0xd36f53497507e948df9f277cf8c3ececb09a1c1d"
+    },
+    "platform": "ipor-fusion",
+    "network": "ethereum",
+    "images": [
+     "https://images.portals.fi/logos/ipor_fusion_logo.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.505Z",
+    "createdAt": "2026-01-17T05:15:12.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1641.227432056812,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "726cfca9-5d23-40be-a75a-9e88af3da738",
+    "totalSupply": "1621.40564178",
+    "reserves": [
+     "1641.524548"
+    ],
+    "pricePerShare": "1.01240831",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4c862e5846659b086fe73896bbb9058513417e4e6938a1be93aeb7a768fa5754": {
+    "key": "robinhood:0x4c862e5846659b086fe73896bbb9058513417e4e6938a1be93aeb7a768fa5754",
+    "name": "Uniswap V4 LP SPY/TSM",
+    "decimals": 18,
+    "symbol": "SPY/TSM",
+    "price": 9007199254740990,
+    "address": "0x4c862e5846659b086fe73896bbb9058513417e4e6938a1be93aeb7a768fa5754",
+    "addresses": {
+     "robinhood": "0x4c862e5846659b086fe73896bbb9058513417e4e6938a1be93aeb7a768fa5754"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.030Z",
+    "createdAt": "2026-08-06T15:58:06.184Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 405880.4956950445,
+    "metrics": {
+     "apy": "16.715",
+     "baseApy": "16.715",
+     "volumeUsd1d": "297390.341",
+     "volumeUsd7d": "4728661.506"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "f8485c34-619e-4bc8-824d-259b7d86a68d",
+    "reserves": [
+     "157.131469657168340896",
+     "691.779234168642757451"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85": {
+    "key": "hyperevm:0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "800542.675",
+     "volumeUsd7d": "6699351.788"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2a1fa29b0d1c89595e1768c4781804025b6dce2e": {
+    "key": "bsc:0x2a1fa29b0d1c89595e1768c4781804025b6dce2e",
+    "name": "PancakeSwap V3 Nasf/TSMC 0.25%",
+    "decimals": 18,
+    "symbol": "NASF/TSMB",
+    "price": 9007199254740990,
+    "address": "0x2a1fa29b0d1c89595e1768c4781804025b6dce2e",
+    "addresses": {
+     "bsc": "0x2a1fa29b0d1c89595e1768c4781804025b6dce2e"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/56052/large/NASF-logo.png?1748160573",
+     "https://coin-images.coingecko.com/coins/images/102174584/large/tsmb-bstocks.png?1784148787"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "createdAt": "2026-09-09T16:26:01.396Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7891d5f6c0eba5485d2fca5cc83b4c89a770f9a6",
+     "0xab78b89b5bb00236be0b4b20704cbfa04efc711c"
+    ],
+    "liquidity": 898.4349790726703,
+    "metrics": {
+     "apy": "0.53",
+     "baseApy": "0.53",
+     "volumeUsd1d": "5.224",
+     "volumeUsd7d": "75.537"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "697ba681-1868-45c6-87a7-b5ee1a9fe718",
+    "reserves": [
+     "270190.916919045882229072",
+     "0.100102642659459023"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd60ec0a2f0b854bc3eb172d0ab191a961ebba52fae401b517524270cc386fdf3": {
+    "key": "bsc:0xd60ec0a2f0b854bc3eb172d0ab191a961ebba52fae401b517524270cc386fdf3",
+    "name": "Uniswap V4 LP USDT/TSMon",
+    "decimals": 18,
+    "symbol": "USDT/TSMON",
+    "price": 9007199254740990,
+    "address": "0xd60ec0a2f0b854bc3eb172d0ab191a961ebba52fae401b517524270cc386fdf3",
+    "addresses": {
+     "bsc": "0xd60ec0a2f0b854bc3eb172d0ab191a961ebba52fae401b517524270cc386fdf3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.152Z",
+    "createdAt": "2026-09-08T17:43:34.684Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xc37042a7a4fa510d8884a433762ab87257b91965"
+    ],
+    "liquidity": 665.8006259154433,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "10.053"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 700,
+     "feePercentage": "7.093"
+    },
+    "tokenId": "183731cc-7da1-40c2-8088-e3f341adf044",
+    "reserves": [
+     "197.338848970610965195",
+     "1.126224503941832582"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3058e30003d3ae2e73d0b942cdc5ca709e0ac7061f13201cfb15eb08fd56a195": {
+    "key": "ethereum:0x3058e30003d3ae2e73d0b942cdc5ca709e0ac7061f13201cfb15eb08fd56a195",
+    "name": "Uniswap V4 LP TSMon/USDC",
+    "decimals": 18,
+    "symbol": "TSMON/USDC",
+    "price": 9007199254740990,
+    "address": "0x3058e30003d3ae2e73d0b942cdc5ca709e0ac7061f13201cfb15eb08fd56a195",
+    "addresses": {
+     "ethereum": "0x3058e30003d3ae2e73d0b942cdc5ca709e0ac7061f13201cfb15eb08fd56a195"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.171Z",
+    "createdAt": "2025-09-26T08:45:50.081Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 834.3807619734727,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "091d3549-61c1-4e88-baad-189b0d35a15b",
+    "reserves": [
+     "0.851444097276468737",
+     "480.181786"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9e3bf4ecfc44eedd624f26656b6736a3f093b073": {
+    "key": "ethereum:0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+    "name": "TSMC xStock",
+    "decimals": 18,
+    "symbol": "TSMX",
+    "price": 420.58,
+    "address": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+    "addresses": {
+     "ethereum": "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.176Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13965016.456091398,
+    "image": "https://coin-images.coingecko.com/coins/images/69641/large/Ticker_TSMx__Company_Name_TSMC__size_200x200.png?1759233773",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "tsmc-xstock"
+    },
+    "tokenId": "262e44f0-1e14-42bb-94be-9b6edf0bcb2f",
+    "totalSupply": "33204.1857817570956",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x03f59988f5c366046321cccd2bf0e3878e2ed69c": {
+    "key": "bsc:0x03f59988f5c366046321cccd2bf0e3878e2ed69c",
+    "name": "PancakeSwap V3 Tether USD/TSMC 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/TSMB",
+    "price": 9007199254740990,
+    "address": "0x03f59988f5c366046321cccd2bf0e3878e2ed69c",
+    "addresses": {
+     "bsc": "0x03f59988f5c366046321cccd2bf0e3878e2ed69c"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174584/large/tsmb-bstocks.png?1784148787"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "createdAt": "2026-08-03T16:54:35.589Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xab78b89b5bb00236be0b4b20704cbfa04efc711c"
+    ],
+    "liquidity": 123555.13182201124,
+    "metrics": {
+     "apy": "8.16",
+     "baseApy": "8.16",
+     "volumeUsd1d": "11048.792",
+     "volumeUsd7d": "204835.731"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "5658b18c-b127-4e83-9356-57aae0b4106e",
+    "reserves": [
+     "39602.183209453160372334",
+     "205.443017576624655013"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x27d62249488fc66ecbb92c8da3f56f700b8e8501": {
+    "key": "ethereum:0x27d62249488fc66ecbb92c8da3f56f700b8e8501",
+    "name": "Wrapped TSMC xStock",
+    "decimals": 18,
+    "symbol": "WTSMX",
+    "price": 423.1823168512545,
+    "address": "0x27d62249488fc66ecbb92c8da3f56f700b8e8501",
+    "addresses": {
+     "ethereum": "0x27d62249488fc66ecbb92c8da3f56f700b8e8501"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.176Z",
+    "createdAt": "2026-07-03T12:42:54.116Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073"
+    ],
+    "liquidity": 4530.9495712330545,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/TSMx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1777.168"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "24126816-df7a-4dbc-9e00-eee412ed25bd",
+    "totalSupply": "10.70684995759321828",
+    "reserves": [
+     "10.773098034221918193"
+    ],
+    "pricePerShare": "1.006187447932033199",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xef581e4fbdadcced5d0b043742d12fa64e975de5b6d7b619604f5e3d9a03135f": {
+    "key": "ethereum:0xef581e4fbdadcced5d0b043742d12fa64e975de5b6d7b619604f5e3d9a03135f",
+    "name": "Uniswap V4 LP wUSDC/TSMon",
+    "decimals": 18,
+    "symbol": "WUSDC/TSMON",
+    "price": 9007199254740990,
+    "address": "0xef581e4fbdadcced5d0b043742d12fa64e975de5b6d7b619604f5e3d9a03135f",
+    "addresses": {
+     "ethereum": "0xef581e4fbdadcced5d0b043742d12fa64e975de5b6d7b619604f5e3d9a03135f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.524Z",
+    "createdAt": "2026-09-30T09:01:06.442Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "4d72d38a-01c1-4e16-92e0-56c27599442a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9": {
+    "key": "ethereum:0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "801850.985",
+     "volumeUsd7d": "6699412.634"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd852ed0c27ca0bc6e0fa2145a75713e8b4f059cb975277724d3ad4c7b993a8dd": {
+    "key": "ethereum:0xd852ed0c27ca0bc6e0fa2145a75713e8b4f059cb975277724d3ad4c7b993a8dd",
+    "name": "Uniswap V4 LP USDT/TSMx",
+    "decimals": 18,
+    "symbol": "USDT/TSMX",
+    "price": 9007199254740990,
+    "address": "0xd852ed0c27ca0bc6e0fa2145a75713e8b4f059cb975277724d3ad4c7b993a8dd",
+    "addresses": {
+     "ethereum": "0xd852ed0c27ca0bc6e0fa2145a75713e8b4f059cb975277724d3ad4c7b993a8dd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.565Z",
+    "createdAt": "2026-10-18T18:58:11.210Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "37de7703-96e4-4d1f-b173-96e951ea06bd",
+    "reserves": [
+     "3999.999999999999999992",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x91280db3392ea92c08d8134b5760fb4798b69547": {
+    "key": "robinhood:0x91280db3392ea92c08d8134b5760fb4798b69547",
+    "name": "Uniswap V3 WETH/Taiwan Semiconductor Manufacturing  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/TSM",
+    "price": 9007199254740990,
+    "address": "0x91280db3392ea92c08d8134b5760fb4798b69547",
+    "addresses": {
+     "robinhood": "0x91280db3392ea92c08d8134b5760fb4798b69547"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.698Z",
+    "createdAt": "2026-08-16T02:57:55.547Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 49802.277498621705,
+    "metrics": {
+     "apy": "49.518",
+     "baseApy": "49.518",
+     "volumeUsd1d": "22517.628",
+     "volumeUsd7d": "195677.85"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "cef5de51-22cc-4990-a753-f3060da0f1e8",
+    "reserves": [
+     "12.01990684445155843",
+     "52.511574874008443868"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f": {
+    "key": "ethereum:0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f",
+    "name": "IPOR Fusion TAU InfiniFi Pointsmax",
+    "decimals": 8,
+    "symbol": "$TAUSIUSD",
+    "price": 1.0373051769455655,
+    "address": "0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f",
+    "addresses": {
+     "ethereum": "0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f"
+    },
+    "platform": "ipor-fusion",
+    "network": "ethereum",
+    "images": [
+     "https://images.portals.fi/logos/ipor_fusion_logo.png",
+     "https://icons.llamao.fi/icons/protocols/ipor-fusion"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.505Z",
+    "createdAt": "2025-08-12T11:39:07.290Z",
+    "verifiedAt": "2026-02-19T11:54:17.186Z",
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1283487.3421551287,
+    "metrics": {
+     "apy": "6.836",
+     "baseApy": "6.836",
+     "rewardApy": "0",
+     "volumeUsd1d": "17.193",
+     "volumeUsd7d": "-456.552"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "description": "The IPOR Fusion TAU InfiniFi Pointsmax ($TAUSIUSD) token represents an ERC-4626 vault position curatored by IPOR Fusion and TAU Labs, optimized for the TAU infiniFi Pointsmax - Leveraged Looping strategy. Yield is generated through organic stablecoin lending and borrowing operations, supplemented by infiniFi Protocol points, with both streams optimized through systematic capital cycling and persistent reward harvesting. In the event of prolonged borrow rate spikes, automated deleveraging engages via the infiniFi smart contract itself, bypassing external liquidity venues to fully avoid swap-related slippage and fees. The vault enforces a fixed maximum capacity of 6,928,553 USDC to manage systemic risk and support predictable point distribution. All reward reinvestment and leveraged rebalancing are conducted on-chain through deterministic mechanisms, minimizing manual intervention. No cross-asset strategies or off-platform asset exposures are executed; all activity remains solely within the USDC, siUSD, and siUSD/USDC Morpho lending loop. Fee mechanics are built into the strategy’s automatic compounding and reward-optimization workflows, enhancing both realized stablecoin yield and infiniFi points crediting.",
+     "socialLinks": {
+      "twitter": "https://twitter.com/ipor_io",
+      "website": "https://ipor.io",
+      "documentation": "https://docs.ipor.io"
+     }
+    },
+    "tokenId": "190bf5ae-ac0d-4b35-9a8a-e9ca1bbae106",
+    "totalSupply": "1237328.58051906",
+    "reserves": [
+     "1283719.69542"
+    ],
+    "pricePerShare": "1.03749296",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "base:0x603258c5072a01609c4c7269031232695d14f21b": {
+    "key": "base:0x603258c5072a01609c4c7269031232695d14f21b",
+    "name": "Hydrex Wrapped Taiwan Semiconductor Manufacturing Company Limited ADR ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTTSM/USDC",
+    "price": 9007199254740990,
+    "address": "0x603258c5072a01609c4c7269031232695d14f21b",
+    "addresses": {
+     "base": "0x603258c5072a01609c4c7269031232695d14f21b"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102178389/large/TSM.png?1789459964",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.589Z",
+    "createdAt": "2026-09-15T13:40:33.221Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71c66449d2528e23514a9c197bfd55ae9db3b714",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 4879.462145524175,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "4828.003"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "44c9cfa3-f6db-4b90-a356-621e61cae425",
+    "reserves": [
+     "8.546288706541293119",
+     "1332.480734"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc37042a7a4fa510d8884a433762ab87257b91965": {
+    "key": "bsc:0xc37042a7a4fa510d8884a433762ab87257b91965",
+    "name": "Taiwan Semiconductor Manufacturing (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMON",
+    "price": 416.1,
+    "address": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+    "addresses": {
+     "bsc": "0xc37042a7a4fa510d8884a433762ab87257b91965",
+     "ethereum": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "hyperevm": "0x3254cdffddeddb1f61b9ef6f67e178615ccb0e85"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6042664,
+    "image": "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+    "metrics": {
+     "volumeUsd1d": "801637.436",
+     "volumeUsd7d": "6703889.95"
+    },
+    "metadata": {},
+    "tokenId": "2c5370ba-469a-4ee8-9fd1-4b37781824ae",
+    "totalSupply": "14522.76580427708",
+    "circulatingSupply": "14522.76580427708",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe1981edcfc44a7c6e3c2b8a1fbf749f18ceebf3e7788695f203f5121399b8362": {
+    "key": "ethereum:0xe1981edcfc44a7c6e3c2b8a1fbf749f18ceebf3e7788695f203f5121399b8362",
+    "name": "Uniswap V4 LP USDCc/TSMx",
+    "decimals": 18,
+    "symbol": "USDCC/TSMX",
+    "price": 9007199254740990,
+    "address": "0xe1981edcfc44a7c6e3c2b8a1fbf749f18ceebf3e7788695f203f5121399b8362",
+    "addresses": {
+     "ethereum": "0xe1981edcfc44a7c6e3c2b8a1fbf749f18ceebf3e7788695f203f5121399b8362"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.618Z",
+    "createdAt": "2026-10-09T07:24:05.452Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073"
+    ],
+    "liquidity": 2999.2151372049475,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.1139"
+    },
+    "tokenId": "39211144-a791-4ffc-92ff-f5132bda5502",
+    "reserves": [
+     "2999.99999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40": {
+    "key": "ethereum:0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40",
+    "name": "IPOR Fusion TAU Rserevoir Pointsmax",
+    "decimals": 8,
+    "symbol": "TAUSRP",
+    "price": 1.101846465834346,
+    "address": "0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40",
+    "addresses": {
+     "ethereum": "0x6f66b845604dad6e80b2a1472e6cacbbe66a8c40"
+    },
+    "platform": "ipor-fusion",
+    "network": "ethereum",
+    "images": [
+     "https://images.portals.fi/logos/ipor_fusion_logo.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.505Z",
+    "createdAt": "2025-04-11T09:07:28.687Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 14553.25757251379,
+    "metrics": {
+     "apy": "11.794",
+     "baseApy": "11.794",
+     "volumeUsd1d": "0.42",
+     "volumeUsd7d": "1.851"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "03603498-b794-4291-b86e-822e7ebf8dfa",
+    "totalSupply": "13208.06303217",
+    "reserves": [
+     "14555.892189"
+    ],
+    "pricePerShare": "1.10204594",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65": {
+    "key": "robinhood:0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65",
+    "name": "Uniswap V3 ASML Holding NV  Robinhood Token/Taiwan Semiconductor Manufacturing  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "ASML/TSM",
+    "price": 9007199254740990,
+    "address": "0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65",
+    "addresses": {
+     "robinhood": "0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.294Z",
+    "createdAt": "2026-09-08T09:35:06.493Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 1789.832261220483,
+    "metrics": {
+     "apy": "5.767",
+     "baseApy": "5.767",
+     "volumeUsd1d": "94.271",
+     "volumeUsd7d": "9951.396"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "78175e9b-95ed-49d3-aac3-4cf5a5e8c934",
+    "reserves": [
+     "0.216417784260770874",
+     "3.473111364678704322"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4c32a45673a0cda6ae05c2b19700e5ce33c87fec7a35f7f190655fed69a8450b": {
+    "key": "ethereum:0x4c32a45673a0cda6ae05c2b19700e5ce33c87fec7a35f7f190655fed69a8450b",
+    "name": "Uniswap V4 LP wUSDC/TSMon",
+    "decimals": 18,
+    "symbol": "WUSDC/TSMON",
+    "price": 9007199254740990,
+    "address": "0x4c32a45673a0cda6ae05c2b19700e5ce33c87fec7a35f7f190655fed69a8450b",
+    "addresses": {
+     "ethereum": "0x4c32a45673a0cda6ae05c2b19700e5ce33c87fec7a35f7f190655fed69a8450b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.579Z",
+    "createdAt": "2026-09-28T10:37:13.839Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "b6acc49d-ccf8-4759-9429-90e38e172108",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x71c66449d2528e23514a9c197bfd55ae9db3b714": {
+    "key": "base:0x71c66449d2528e23514a9c197bfd55ae9db3b714",
+    "name": "Taiwan Semiconductor (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTTSM",
+    "price": 415.06,
+    "address": "0x71c66449d2528e23514a9c197bfd55ae9db3b714",
+    "addresses": {
+     "base": "0x71c66449d2528e23514a9c197bfd55ae9db3b714"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-15T08:21:31.719Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5202.92,
+    "image": "https://coin-images.coingecko.com/coins/images/102178389/large/TSM.png?1789459964",
+    "metrics": {
+     "volumeUsd1d": "172.968",
+     "volumeUsd7d": "4994.819"
+    },
+    "metadata": {},
+    "tokenId": "d6b2f0ba-63c6-445f-9ed5-39fe590bcacb",
+    "totalSupply": "12.535341386843095",
+    "circulatingSupply": "12.535341386843095",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xab78b89b5bb00236be0b4b20704cbfa04efc711c": {
+    "key": "bsc:0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+    "name": "TSMC (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSMB",
+    "price": 408.8,
+    "address": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c",
+    "addresses": {
+     "bsc": "0xab78b89b5bb00236be0b4b20704cbfa04efc711c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7246262,
+    "image": "https://coin-images.coingecko.com/coins/images/102174584/large/tsmb-bstocks.png?1784148787",
+    "metrics": {
+     "volumeUsd1d": "155013.429",
+     "volumeUsd7d": "3629161.449"
+    },
+    "metadata": {},
+    "tokenId": "4c58da34-760c-408c-8866-0ab5d19794c1",
+    "totalSupply": "17725.92400253",
+    "circulatingSupply": "17725.92400253",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfa4ef8d367ae464b6ab7ebed3f11debd00f8d3e34e36ae8fe0a3841e83fa5147": {
+    "key": "robinhood:0xfa4ef8d367ae464b6ab7ebed3f11debd00f8d3e34e36ae8fe0a3841e83fa5147",
+    "name": "Uniswap V4 LP ETH/TSM",
+    "decimals": 18,
+    "symbol": "ETH/TSM",
+    "price": 9007199254740990,
+    "address": "0xfa4ef8d367ae464b6ab7ebed3f11debd00f8d3e34e36ae8fe0a3841e83fa5147",
+    "addresses": {
+     "robinhood": "0xfa4ef8d367ae464b6ab7ebed3f11debd00f8d3e34e36ae8fe0a3841e83fa5147"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.710Z",
+    "createdAt": "2026-09-09T07:57:21.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 6114.859127349869,
+    "metrics": {
+     "apy": "0.002",
+     "baseApy": "0.002",
+     "volumeUsd1d": "0.007",
+     "volumeUsd7d": "216.896"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 470,
+     "feePercentage": "4.7953"
+    },
+    "tokenId": "e9afae41-4267-4ec7-85db-4842e4db7d6d",
+    "reserves": [
+     "0.157736069284292727",
+     "13.898446468533601155"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x07e8ea83d4c1340774c8965125e26e12bf943bf1": {
+    "key": "robinhood:0x07e8ea83d4c1340774c8965125e26e12bf943bf1",
+    "name": "Uniswap V3 Taiwan Semiconductor Manufacturing  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "TSM/USDG",
+    "price": 9007199254740990,
+    "address": "0x07e8ea83d4c1340774c8965125e26e12bf943bf1",
+    "addresses": {
+     "robinhood": "0x07e8ea83d4c1340774c8965125e26e12bf943bf1"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.779Z",
+    "createdAt": "2026-07-17T23:41:05.921Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 96031.05503338692,
+    "metrics": {
+     "apy": "11.091",
+     "baseApy": "11.091",
+     "volumeUsd1d": "2917.944",
+     "volumeUsd7d": "70487.877"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "afe6651d-e886-4e56-b7aa-883be3c6af16",
+    "reserves": [
+     "203.986006354223760238",
+     "11693.028361"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x58ffe4a942d3885baa22d7520691f611ef09e7aa": {
+    "key": "robinhood:0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "name": "Taiwan Semiconductor Manufacturing • Robinhood Token",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 413.45006052,
+    "address": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "addresses": {
+     "robinhood": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+    "liquidity": 1337470.3084165992,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "802457.407"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002e890a0884474abd86ba66b19722e827",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1002728577037771211",
+     "currentMultiplier": "1.002728577037771211",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "62a9342a-ce2b-470b-993c-bfc505d63636",
+    "totalSupply": "3234.90171155",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7769b0ffebdf57ce5caacf7a1c993432bd5b584de1e5c5a11c759dc74441af0c": {
+    "key": "ethereum:0x7769b0ffebdf57ce5caacf7a1c993432bd5b584de1e5c5a11c759dc74441af0c",
+    "name": "Uniswap V4 LP USDT/TSMx",
+    "decimals": 18,
+    "symbol": "USDT/TSMX",
+    "price": 9007199254740990,
+    "address": "0x7769b0ffebdf57ce5caacf7a1c993432bd5b584de1e5c5a11c759dc74441af0c",
+    "addresses": {
+     "ethereum": "0x7769b0ffebdf57ce5caacf7a1c993432bd5b584de1e5c5a11c759dc74441af0c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.753Z",
+    "createdAt": "2026-09-18T05:44:23.446Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073"
+    ],
+    "liquidity": 881.6675572599557,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.001"
+    },
+    "tokenId": "23fea272-0184-4374-a814-808782c77b09",
+    "reserves": [
+     "999.999999999999999983",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd92a8ca5b88c765b55c8d4c3622523d5ef231a2b4f50a750d883ab39647cb07c": {
+    "key": "ethereum:0xd92a8ca5b88c765b55c8d4c3622523d5ef231a2b4f50a750d883ab39647cb07c",
+    "name": "Uniswap V4 LP TSMon/USDC",
+    "decimals": 18,
+    "symbol": "TSMON/USDC",
+    "price": 9007199254740990,
+    "address": "0xd92a8ca5b88c765b55c8d4c3622523d5ef231a2b4f50a750d883ab39647cb07c",
+    "addresses": {
+     "ethereum": "0xd92a8ca5b88c765b55c8d4c3622523d5ef231a2b4f50a750d883ab39647cb07c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.142Z",
+    "createdAt": "2026-10-14T06:54:54.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1224.484295972844,
+    "metrics": {
+     "apy": "0.174",
+     "baseApy": "0.174",
+     "volumeUsd1d": "0.28",
+     "volumeUsd7d": "62.291"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "cac54e45-70ec-4fa0-affb-061f2a98f524",
+    "reserves": [
+     "1.280357337985140533",
+     "691.852833"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2d7fea139ede100aa3025f3e40d32c49ef09958ab93aedeef405c4d1f0c7fb75": {
+    "key": "ethereum:0x2d7fea139ede100aa3025f3e40d32c49ef09958ab93aedeef405c4d1f0c7fb75",
+    "name": "Uniswap V4 LP TSMon/USDT",
+    "decimals": 18,
+    "symbol": "TSMON/USDT",
+    "price": 9007199254740990,
+    "address": "0x2d7fea139ede100aa3025f3e40d32c49ef09958ab93aedeef405c4d1f0c7fb75",
+    "addresses": {
+     "ethereum": "0x2d7fea139ede100aa3025f3e40d32c49ef09958ab93aedeef405c4d1f0c7fb75"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.062Z",
+    "createdAt": "2025-09-26T08:45:50.081Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1031.117410428171,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "dc8773c0-b5da-411f-93da-7fda1378d679",
+    "reserves": [
+     "0.762860133913326324",
+     "714.271297"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x946fb975a04efe8ac506eef988183da5937838cc5c0aa9638b96f9801eb2372b": {
+    "key": "robinhood:0x946fb975a04efe8ac506eef988183da5937838cc5c0aa9638b96f9801eb2372b",
+    "name": "Uniswap V4 LP TSM/SHROOM",
+    "decimals": 18,
+    "symbol": "TSM/SHROOM",
+    "price": 9007199254740990,
+    "address": "0x946fb975a04efe8ac506eef988183da5937838cc5c0aa9638b96f9801eb2372b",
+    "addresses": {
+     "robinhood": "0x946fb975a04efe8ac506eef988183da5937838cc5c0aa9638b96f9801eb2372b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.890Z",
+    "createdAt": "2026-09-08T15:09:10.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 6437.400227474205,
+    "metrics": {
+     "apy": "23.122",
+     "baseApy": "23.122",
+     "volumeUsd1d": "407.928",
+     "volumeUsd7d": "10908.83"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "a2dd62ba-90a7-4afe-8288-4c0d399deebc",
+    "reserves": [
+     "8.561053519142263104",
+     "599652.382580905489957608"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x11b5d2e647411ebb87ade3277e77133a930c2e18": {
+    "key": "base:0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+    "name": "Taiwan Semiconductor Manufacturing (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 412.87,
+    "address": "0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+    "addresses": {
+     "arbitrum": "0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+     "base": "0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+     "avalanche": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+     "ethereum": "0x32d96cb21be0274d66d20e78bb9f35d66438c912"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27114,
+    "image": "https://coin-images.coingecko.com/coins/images/102175082/large/dinari-logo-green-with-margin.png?1785403140",
+    "metrics": {
+     "volumeUsd1d": "39.855",
+     "volumeUsd7d": "4373.58"
+    },
+    "metadata": {},
+    "tokenId": "d40d1936-0001-415a-8d4b-574edecc666e",
+    "totalSupply": "65.67221160480905",
+    "circulatingSupply": "65.67221160480905",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x36ba0648db43cad5a5726adb6bac02ce961bc997712dd0b788792ca12ae4084e": {
+    "key": "ethereum:0x36ba0648db43cad5a5726adb6bac02ce961bc997712dd0b788792ca12ae4084e",
+    "name": "Uniswap V4 LP TSMx/USDC",
+    "decimals": 18,
+    "symbol": "TSMX/USDC",
+    "price": 9007199254740990,
+    "address": "0x36ba0648db43cad5a5726adb6bac02ce961bc997712dd0b788792ca12ae4084e",
+    "addresses": {
+     "ethereum": "0x36ba0648db43cad5a5726adb6bac02ce961bc997712dd0b788792ca12ae4084e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.995Z",
+    "createdAt": "2026-05-19T06:08:58.804Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9e3bf4ecfc44eedd624f26656b6736a3f093b073",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 549.4182201571931,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15200,
+     "feePercentage": "95.005"
+    },
+    "tokenId": "d9cec8ef-5775-4b2b-a7db-81af620cb8bf",
+    "reserves": [
+     "0.038344289721515666",
+     "533.387922"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6": {
+    "key": "arbitrum:0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+    "name": "Taiwan Semiconductor Manufacturing (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 412.87,
+    "address": "0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+    "addresses": {
+     "arbitrum": "0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+     "base": "0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+     "avalanche": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+     "ethereum": "0x32d96cb21be0274d66d20e78bb9f35d66438c912"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27114,
+    "image": "https://coin-images.coingecko.com/coins/images/102175082/large/dinari-logo-green-with-margin.png?1785403140",
+    "metrics": {
+     "volumeUsd1d": "39.855",
+     "volumeUsd7d": "4373.318"
+    },
+    "metadata": {},
+    "tokenId": "d40d1936-0001-415a-8d4b-574edecc666e",
+    "totalSupply": "65.67221160480905",
+    "circulatingSupply": "65.67221160480905",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x32d96cb21be0274d66d20e78bb9f35d66438c912": {
+    "key": "ethereum:0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+    "name": "Taiwan Semiconductor Manufacturing (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 412.87,
+    "address": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+    "addresses": {
+     "arbitrum": "0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+     "base": "0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+     "avalanche": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+     "ethereum": "0x32d96cb21be0274d66d20e78bb9f35d66438c912"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27114,
+    "image": "https://coin-images.coingecko.com/coins/images/102175082/large/dinari-logo-green-with-margin.png?1785403140",
+    "metrics": {
+     "volumeUsd1d": "39.855",
+     "volumeUsd7d": "4370.838"
+    },
+    "metadata": {},
+    "tokenId": "d40d1936-0001-415a-8d4b-574edecc666e",
+    "totalSupply": "65.67221160480905",
+    "circulatingSupply": "65.67221160480905",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbe36a6f83cbde323d94c2348bfea44277544e4024dbb6fa107fa1e02e57d910b": {
+    "key": "ethereum:0xbe36a6f83cbde323d94c2348bfea44277544e4024dbb6fa107fa1e02e57d910b",
+    "name": "Uniswap V4 LP TSMon/EGP",
+    "decimals": 18,
+    "symbol": "TSMON/EGP",
+    "price": 9007199254740990,
+    "address": "0xbe36a6f83cbde323d94c2348bfea44277544e4024dbb6fa107fa1e02e57d910b",
+    "addresses": {
+     "ethereum": "0xbe36a6f83cbde323d94c2348bfea44277544e4024dbb6fa107fa1e02e57d910b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68598/large/tsmon_160x160.png?1756129915",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.174Z",
+    "createdAt": "2026-10-14T06:56:04.029Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20057.208287538513,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.85"
+    },
+    "tokenId": "fd7cc165-c857-479c-ab7b-41054e986ee7",
+    "reserves": [
+     "0.061236705380378381",
+     "19999.999999999999999998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46": {
+    "key": "robinhood:0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46",
+    "name": "Beefy CLM TSM-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODTSM-USDG",
+    "price": 1064152545337.2782,
+    "address": "0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46",
+    "addresses": {
+     "robinhood": "0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7"
+    ],
+    "poolAddress": "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7",
+    "liquidity": 64005.43368417628,
+    "metrics": {
+     "apy": "5.945",
+     "baseApy": "5.945",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-5036.421"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-tsm-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x7a03d794bb44e4cfe55da70e0ddfc020a054c5f7",
+     "strategyAddress": "0xd756ef199aaf352a33e264149ac9ec43040b7c8e",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x0a1aa83108be594dd981bea4fb46c6e23a9f7b46",
+     "depositTokenAddresses": [
+      "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "f9264cf0-cc7f-45a4-b59f-297f6ad433d8",
+    "totalSupply": "0.00000006014685955",
+    "reserves": [
+     "0.00000006014685955"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18": {
+    "key": "robinhood:0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18",
+    "name": "AUTSM",
+    "decimals": 18,
+    "symbol": "AU",
+    "price": 0.0001136,
+    "address": "0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18",
+    "addresses": {
+     "robinhood": "0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-28T07:34:34.030Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 113601,
+    "image": "https://coin-images.coingecko.com/coins/images/102176727/large/au.jpg?1788599849",
+    "metrics": {
+     "volumeUsd1d": "470.329",
+     "volumeUsd7d": "46874.541"
+    },
+    "metadata": {},
+    "tokenId": "884bd54a-6f9b-4649-8a2e-ebb64e34ea55",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x32d96cb21be0274d66d20e78bb9f35d66438c912": {
+    "key": "avalanche:0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+    "name": "Taiwan Semiconductor Manufacturing (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TSM",
+    "price": 412.87,
+    "address": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+    "addresses": {
+     "arbitrum": "0xc40631e33d58a1fe2d689f2c27706cda2aefbdf6",
+     "base": "0x11b5d2e647411ebb87ade3277e77133a930c2e18",
+     "avalanche": "0x32d96cb21be0274d66d20e78bb9f35d66438c912",
+     "ethereum": "0x32d96cb21be0274d66d20e78bb9f35d66438c912"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27114,
+    "image": "https://coin-images.coingecko.com/coins/images/102175082/large/dinari-logo-green-with-margin.png?1785403140",
+    "metrics": {
+     "volumeUsd1d": "39.855",
+     "volumeUsd7d": "4372.119"
+    },
+    "metadata": {},
+    "tokenId": "d40d1936-0001-415a-8d4b-574edecc666e",
+    "totalSupply": "65.67221160480905",
+    "circulatingSupply": "65.67221160480905",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1264442c8fb7cded98dd6fa226d0adcd16fff538c03b3b9bf10cadc8ab1283a0": {
+    "key": "robinhood:0x1264442c8fb7cded98dd6fa226d0adcd16fff538c03b3b9bf10cadc8ab1283a0",
+    "name": "Uniswap V4 LP ETH/TSM",
+    "decimals": 18,
+    "symbol": "ETH/TSM",
+    "price": 9007199254740990,
+    "address": "0x1264442c8fb7cded98dd6fa226d0adcd16fff538c03b3b9bf10cadc8ab1283a0",
+    "addresses": {
+     "robinhood": "0x1264442c8fb7cded98dd6fa226d0adcd16fff538c03b3b9bf10cadc8ab1283a0"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.823Z",
+    "createdAt": "2026-07-23T13:51:07.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 8027.363353310388,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "116.475"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "c4bc0321-aefc-41e2-87c1-2d8f72fa5223",
+    "reserves": [
+     "0.285943453487177393",
+     "17.799646814140955548"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

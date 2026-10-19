@@ -1,0 +1,1167 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US9229087690",
+ "ticker": "VTI",
+ "name": "Vanguard Total Stock Market ETF",
+ "isin": "US9229087690",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:14Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Vanguard Total Stock Market Index Fund ETF",
+   "symbol": "VTI",
+   "slug": "vti",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 383.7562490378276,
+     "tokenized_market_cap": 2460679.4465875756,
+     "tokenized_volume_24h": 50863.24082921,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 148,
+   "asset_type": "etf",
+   "rwa_rank": 7791,
+   "has_tokens": true,
+   "average_tokenized_price": 383.7562490378276,
+   "tokenized_market_cap": 2460679.4465875756,
+   "tokenized_volume_24h": 50863.24082921,
+   "last_updated": "2026-10-18T20:14:21.516Z",
+   "tokens": [
+    {
+     "symbol": "VTIX",
+     "name": "Vanguard tokenized ETF (xStock)",
+     "price": 383.96132217228774,
+     "crypto_id": 37047,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1872230.45,
+     "volume_24h": 50883.08093951
+    },
+    {
+     "symbol": "VTIon",
+     "name": "Vanguard Total Stock Market Tokenized ETF (Ondo)",
+     "price": 376.10332221072815,
+     "crypto_id": 39262,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 589448.95,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wVTIx",
+     "name": "Wrapped Vanguard Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41690,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "VTI",
+     "market_url": "https://www.binance.com/en/stocks/EQ_VTI"
+    }
+   ]
+  },
+  "info": {
+   "37047": {
+    "id": 37047,
+    "symbol": "VTIX",
+    "name": "Vanguard tokenized ETF (xStock)",
+    "slug": "vanguard-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37047.png",
+    "date_added": "2025-07-01T18:39:42.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsssYEQjzxBCFgvYFFNuhJFBeHNdLWYeUSP8F45cDr9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsssYEQjzxBCFgvYFFNuhJFBeHNdLWYeUSP8F45cDr9",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQB7ik3-_oRQ0FEIJYYu8NG-ANIaMd-KNLXSvfbmSMCB1mpq",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     }
+    ]
+   },
+   "39262": {
+    "id": 39262,
+    "symbol": "VTIon",
+    "name": "Vanguard Total Stock Market Tokenized ETF (Ondo)",
+    "slug": "vanguard-total-stock-market-tokenized-etf-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39262.png",
+    "date_added": "2026-01-08T15:44:35.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "jCCU4GwukjNxAXJowG2S4KCrr5g6YyUB61WHYvGondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x158734153f354cb326ee690c3d55f810dcb0fc90",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41690": {
+    "id": 41690,
+    "symbol": "wVTIx",
+    "name": "Wrapped Vanguard Tokenized ETF (xStock)",
+    "slug": "wrapped-vanguard-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41690.png",
+    "date_added": "2026-08-11T16:26:35.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x2eE96832126dC446808BaBcbCc9A04905114f880"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2eE96832126dC446808BaBcbCc9A04905114f880",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+   "bsc:0x158734153f354cb326ee690c3d55f810dcb0fc90",
+   "bsc:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+   "ethereum:0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+   "ethereum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+  ],
+  "exact": {
+   "bsc:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "bsc:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "bsc": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.131Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3768688.562291803,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "f4909ac2-d502-47fb-b99b-451aa9e3d5a4",
+    "totalSupply": "10097.225812591906025595",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "ethereum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "ethereum": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11278029.857325805,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "7ba748c9-b160-46a1-8b83-ebde9214270a",
+    "totalSupply": "30216.562687080175809255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x57b392146848c6321bb2a3d4358df1bdeacdc62a": {
+    "key": "ethereum:0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+    "name": "Vanguard Total Stock Market ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VTION",
+    "price": 377.55,
+    "address": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+    "addresses": {
+     "ethereum": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+     "bsc": "0x158734153f354cb326ee690c3d55f810dcb0fc90"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 591722,
+    "image": "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132",
+    "metrics": {
+     "volumeUsd1d": "12437.443",
+     "volumeUsd7d": "176532.994"
+    },
+    "metadata": {},
+    "tokenId": "0bacc5e5-44a5-45a6-9b38-b7055642834a",
+    "totalSupply": "1567.2527062272982",
+    "circulatingSupply": "1567.2527062272982",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x158734153f354cb326ee690c3d55f810dcb0fc90": {
+    "key": "bsc:0x158734153f354cb326ee690c3d55f810dcb0fc90",
+    "name": "Vanguard Total Stock Market ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VTION",
+    "price": 377.55,
+    "address": "0x158734153f354cb326ee690c3d55f810dcb0fc90",
+    "addresses": {
+     "ethereum": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+     "bsc": "0x158734153f354cb326ee690c3d55f810dcb0fc90"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 591722,
+    "image": "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132",
+    "metrics": {
+     "volumeUsd1d": "12437.443",
+     "volumeUsd7d": "176428.486"
+    },
+    "metadata": {},
+    "tokenId": "0bacc5e5-44a5-45a6-9b38-b7055642834a",
+    "totalSupply": "1567.2527062272982",
+    "circulatingSupply": "1567.2527062272982",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "arbitrum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "arbitrum": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11012073.542102613,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "89be2aa4-a061-495b-8428-8d04fe52b216",
+    "totalSupply": "29504.001559593323224246",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "VTI": {
+    "total_items": 17,
+    "pages": 1,
+    "received": 17,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "bsc:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "bsc": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.131Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3768688.562291803,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "f4909ac2-d502-47fb-b99b-451aa9e3d5a4",
+    "totalSupply": "10097.225812591906025595",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xac2c72b482ec320af27ecc558159b8e1113ca0781447c96d7b4699f0827b1d7b": {
+    "key": "ethereum:0xac2c72b482ec320af27ecc558159b8e1113ca0781447c96d7b4699f0827b1d7b",
+    "name": "Uniswap V4 LP wUSDC/VTIon",
+    "decimals": 18,
+    "symbol": "WUSDC/VTION",
+    "price": 9007199254740990,
+    "address": "0xac2c72b482ec320af27ecc558159b8e1113ca0781447c96d7b4699f0827b1d7b",
+    "addresses": {
+     "ethereum": "0xac2c72b482ec320af27ecc558159b8e1113ca0781447c96d7b4699f0827b1d7b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-09-28T10:39:17.559Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x57b392146848c6321bb2a3d4358df1bdeacdc62a"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "495d20b5-9d4b-4d7a-982c-bd478295b140",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x941e5b61d9a7b423489757e53e37364122b07dd55ec26fadba2d42d830e9608f": {
+    "key": "arbitrum:0x941e5b61d9a7b423489757e53e37364122b07dd55ec26fadba2d42d830e9608f",
+    "name": "Uniswap V4 LP USDT/VTIx",
+    "decimals": 18,
+    "symbol": "USDT/VTIX",
+    "price": 9007199254740990,
+    "address": "0x941e5b61d9a7b423489757e53e37364122b07dd55ec26fadba2d42d830e9608f",
+    "addresses": {
+     "arbitrum": "0x941e5b61d9a7b423489757e53e37364122b07dd55ec26fadba2d42d830e9608f"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.749Z",
+    "createdAt": "2026-10-16T14:24:11.636Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "a16c8e2d-cbb5-4164-a0ef-b28a9195ed74",
+    "reserves": [
+     "1999.999999999999999991",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "ethereum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "ethereum": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11278029.857325805,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "7ba748c9-b160-46a1-8b83-ebde9214270a",
+    "totalSupply": "30216.562687080175809255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x57b392146848c6321bb2a3d4358df1bdeacdc62a": {
+    "key": "ethereum:0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+    "name": "Vanguard Total Stock Market ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VTION",
+    "price": 377.55,
+    "address": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+    "addresses": {
+     "ethereum": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+     "bsc": "0x158734153f354cb326ee690c3d55f810dcb0fc90"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 591722,
+    "image": "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132",
+    "metrics": {
+     "volumeUsd1d": "12437.443",
+     "volumeUsd7d": "176532.994"
+    },
+    "metadata": {},
+    "tokenId": "0bacc5e5-44a5-45a6-9b38-b7055642834a",
+    "totalSupply": "1567.2527062272982",
+    "circulatingSupply": "1567.2527062272982",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbe65be2c342bc09db01531d39e3b9533cb2ad31b15f77dcdce648f41a7ed28c9": {
+    "key": "ethereum:0xbe65be2c342bc09db01531d39e3b9533cb2ad31b15f77dcdce648f41a7ed28c9",
+    "name": "Uniswap V4 LP wUSDC/VTIon",
+    "decimals": 18,
+    "symbol": "WUSDC/VTION",
+    "price": 9007199254740990,
+    "address": "0xbe65be2c342bc09db01531d39e3b9533cb2ad31b15f77dcdce648f41a7ed28c9",
+    "addresses": {
+     "ethereum": "0xbe65be2c342bc09db01531d39e3b9533cb2ad31b15f77dcdce648f41a7ed28c9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.335Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x57b392146848c6321bb2a3d4358df1bdeacdc62a"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "d4619988-fc5b-4ad3-90cd-2bcc2a7609af",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa9d77582ad5b4040fb260ca41cf744b788fe8ad1fa16270e52dba9bc36e261f4": {
+    "key": "ethereum:0xa9d77582ad5b4040fb260ca41cf744b788fe8ad1fa16270e52dba9bc36e261f4",
+    "name": "Uniswap V4 LP USDT/VTIx",
+    "decimals": 18,
+    "symbol": "USDT/VTIX",
+    "price": 9007199254740990,
+    "address": "0xa9d77582ad5b4040fb260ca41cf744b788fe8ad1fa16270e52dba9bc36e261f4",
+    "addresses": {
+     "ethereum": "0xa9d77582ad5b4040fb260ca41cf744b788fe8ad1fa16270e52dba9bc36e261f4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.730Z",
+    "createdAt": "2026-09-18T05:44:23.447Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    ],
+    "liquidity": 882.2745709266522,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.001"
+    },
+    "tokenId": "d919cf5b-3f56-4402-8aa6-fbf9eb9f5e39",
+    "reserves": [
+     "999.999999999999999993",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xba9e3aff9c063c061169dc3c422fda2d1607a838700898a7187971a955b7b6a7": {
+    "key": "robinhood:0xba9e3aff9c063c061169dc3c422fda2d1607a838700898a7187971a955b7b6a7",
+    "name": "Uniswap V4 LP ETH/VTI",
+    "decimals": 18,
+    "symbol": "ETH/VTI",
+    "price": 9007199254740990,
+    "address": "0xba9e3aff9c063c061169dc3c422fda2d1607a838700898a7187971a955b7b6a7",
+    "addresses": {
+     "robinhood": "0xba9e3aff9c063c061169dc3c422fda2d1607a838700898a7187971a955b7b6a7"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.610Z",
+    "createdAt": "2026-09-09T09:55:27.672Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x0594134df3f171a354d9c85ebd65b7a6148f6d09"
+    ],
+    "liquidity": 644.8038361451564,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "13.67"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d25af77c-a428-423a-9a35-4ea53d7300e8",
+    "reserves": [
+     "0.048083825275679038",
+     "1.421600573935976932"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x2ef2d356886a862d870c0f2c7d623ac2a25fc297": {
+    "key": "arbitrum:0x2ef2d356886a862d870c0f2c7d623ac2a25fc297",
+    "name": "Vanguard Total Stock Market ETF rStock",
+    "decimals": 18,
+    "symbol": "RVTI",
+    "price": 373.16,
+    "address": "0x2ef2d356886a862d870c0f2c7d623ac2a25fc297",
+    "addresses": {
+     "arbitrum": "0x2ef2d356886a862d870c0f2c7d623ac2a25fc297"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3653.56,
+    "image": "https://coin-images.coingecko.com/coins/images/102177311/large/VTI.png?1789117500",
+    "metrics": {
+     "volumeUsd1d": "30.229",
+     "volumeUsd7d": "568.312"
+    },
+    "metadata": {},
+    "tokenId": "e109d426-704e-417d-b2be-c37a3725c1fe",
+    "totalSupply": "9.790828928",
+    "circulatingSupply": "9.790828928",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0594134df3f171a354d9c85ebd65b7a6148f6d09": {
+    "key": "robinhood:0x0594134df3f171a354d9c85ebd65b7a6148f6d09",
+    "name": "Vanguard Morningstar Total Stock Market ETF • Robinhood Token",
+    "decimals": 18,
+    "symbol": "VTI",
+    "price": 374.6148085765478,
+    "address": "0x0594134df3f171a354d9c85ebd65b7a6148f6d09",
+    "addresses": {
+     "robinhood": "0x0594134df3f171a354d9c85ebd65b7a6148f6d09"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x0594134df3f171a354d9c85ebd65b7a6148f6d09.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-10T13:38:25.611Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x0594134df3f171a354d9c85ebd65b7a6148f6d09",
+    "liquidity": 63616.30636493093,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "35842.292"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000007bf2fcc61eea41048648bcfbe4066b63",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1001751012345030813",
+     "currentMultiplier": "1.001751012345030813",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "e9f63ec1-285e-497c-ab03-464fc3f5480e",
+    "totalSupply": "169.81791672",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb78dd1a97fa544c65d7d1f12453ecaaf1e05c36d": {
+    "key": "robinhood:0xb78dd1a97fa544c65d7d1f12453ecaaf1e05c36d",
+    "name": "Uniswap V3 Vanguard Morningstar Total Stock Market ETF  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "VTI/USDG",
+    "price": 9007199254740990,
+    "address": "0xb78dd1a97fa544c65d7d1f12453ecaaf1e05c36d",
+    "addresses": {
+     "robinhood": "0xb78dd1a97fa544c65d7d1f12453ecaaf1e05c36d"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.298Z",
+    "createdAt": "2026-08-14T07:03:57.435Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0594134df3f171a354d9c85ebd65b7a6148f6d09",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 44656.36163076575,
+    "metrics": {
+     "apy": "29.005",
+     "baseApy": "29.005",
+     "volumeUsd1d": "3548.608",
+     "volumeUsd7d": "27468.169"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "75f1a0e4-9f7c-4b93-b124-61709d3e3558",
+    "reserves": [
+     "81.94993735142924347",
+     "13956.701537"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x158734153f354cb326ee690c3d55f810dcb0fc90": {
+    "key": "bsc:0x158734153f354cb326ee690c3d55f810dcb0fc90",
+    "name": "Vanguard Total Stock Market ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VTION",
+    "price": 377.55,
+    "address": "0x158734153f354cb326ee690c3d55f810dcb0fc90",
+    "addresses": {
+     "ethereum": "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+     "bsc": "0x158734153f354cb326ee690c3d55f810dcb0fc90"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 591722,
+    "image": "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132",
+    "metrics": {
+     "volumeUsd1d": "12437.443",
+     "volumeUsd7d": "176428.486"
+    },
+    "metadata": {},
+    "tokenId": "0bacc5e5-44a5-45a6-9b38-b7055642834a",
+    "totalSupply": "1567.2527062272982",
+    "circulatingSupply": "1567.2527062272982",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc26cd2db79eba63740994c29da9207736606bcb8270294e7855c3773d9cf28dc": {
+    "key": "ethereum:0xc26cd2db79eba63740994c29da9207736606bcb8270294e7855c3773d9cf28dc",
+    "name": "Uniswap V4 LP VTIon/USDC",
+    "decimals": 18,
+    "symbol": "VTION/USDC",
+    "price": 9007199254740990,
+    "address": "0xc26cd2db79eba63740994c29da9207736606bcb8270294e7855c3773d9cf28dc",
+    "addresses": {
+     "ethereum": "0xc26cd2db79eba63740994c29da9207736606bcb8270294e7855c3773d9cf28dc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.088Z",
+    "createdAt": "2026-01-30T05:11:58.133Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x57b392146848c6321bb2a3d4358df1bdeacdc62a",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 683.6269191677328,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.951"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "c6cefb5c-8a49-4338-8ccc-054d792c65df",
+    "reserves": [
+     "0.857237006527254265",
+     "360.062062"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777": {
+    "key": "arbitrum:0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "name": "Vanguard xStock",
+    "decimals": 18,
+    "symbol": "VTIX",
+    "price": 373.24,
+    "address": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777",
+    "addresses": {
+     "arbitrum": "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11012073.542102613,
+    "image": "https://coin-images.coingecko.com/coins/images/66697/large/Ticker_VTI__Company_Name_Vanguard__size_200x200_2x.png?1750266977",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "vanguard-xstock"
+    },
+    "tokenId": "89be2aa4-a061-495b-8428-8d04fe52b216",
+    "totalSupply": "29504.001559593323224246",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xaf5efdd2100cd03e1d33318165c48b0c7474d944c50171cbaef58b8232a19b31": {
+    "key": "ethereum:0xaf5efdd2100cd03e1d33318165c48b0c7474d944c50171cbaef58b8232a19b31",
+    "name": "Uniswap V4 LP USDT/VTIx",
+    "decimals": 18,
+    "symbol": "USDT/VTIX",
+    "price": 9007199254740990,
+    "address": "0xaf5efdd2100cd03e1d33318165c48b0c7474d944c50171cbaef58b8232a19b31",
+    "addresses": {
+     "ethereum": "0xaf5efdd2100cd03e1d33318165c48b0c7474d944c50171cbaef58b8232a19b31"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.354Z",
+    "createdAt": "2026-10-18T18:58:17.953Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xbd730e618bcd88c82ddee52e10275cf2f88a4777"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "c94d1397-b467-418d-99b8-6de81c350a51",
+    "reserves": [
+     "3999.999999999999999998",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf9e68c9da6b5bd77bff43572c14b854d3a6ff22475d1919a9e52abd15e614ad8": {
+    "key": "robinhood:0xf9e68c9da6b5bd77bff43572c14b854d3a6ff22475d1919a9e52abd15e614ad8",
+    "name": "Uniswap V4 LP VTI/USDG",
+    "decimals": 18,
+    "symbol": "VTI/USDG",
+    "price": 9007199254740990,
+    "address": "0xf9e68c9da6b5bd77bff43572c14b854d3a6ff22475d1919a9e52abd15e614ad8",
+    "addresses": {
+     "robinhood": "0xf9e68c9da6b5bd77bff43572c14b854d3a6ff22475d1919a9e52abd15e614ad8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.984Z",
+    "createdAt": "2026-09-09T20:23:46.976Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0594134df3f171a354d9c85ebd65b7a6148f6d09",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 876.9358053968294,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "65d7d759-23ef-4780-8bf2-3b17a4e125ca",
+    "reserves": [
+     "2.34089999999996967",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5c16ff9df7e8dbb0edc4e8176d1e99c0abe6ee8774ce4dae13318cff1afe65ab": {
+    "key": "ethereum:0x5c16ff9df7e8dbb0edc4e8176d1e99c0abe6ee8774ce4dae13318cff1afe65ab",
+    "name": "Uniswap V4 LP EGP/VTIon",
+    "decimals": 18,
+    "symbol": "EGP/VTION",
+    "price": 9007199254740990,
+    "address": "0x5c16ff9df7e8dbb0edc4e8176d1e99c0abe6ee8774ce4dae13318cff1afe65ab",
+    "addresses": {
+     "ethereum": "0x5c16ff9df7e8dbb0edc4e8176d1e99c0abe6ee8774ce4dae13318cff1afe65ab"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71473/large/vtion_160x160.png?1767892132"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.759Z",
+    "createdAt": "2026-10-14T06:54:29.589Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x57b392146848c6321bb2a3d4358df1bdeacdc62a"
+    ],
+    "liquidity": 20072.049078619217,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.13"
+    },
+    "tokenId": "2fba09e7-9724-4f37-86af-891007ba5bfc",
+    "reserves": [
+     "19999.999999999999999912",
+     "0.070268488676392191"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

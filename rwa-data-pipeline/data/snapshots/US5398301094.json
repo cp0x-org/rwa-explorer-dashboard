@@ -1,0 +1,2402 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US5398301094",
+ "ticker": "LMT",
+ "name": "Lockheed Martin",
+ "isin": "US5398301094",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:02Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Lockheed Martin Corp",
+   "symbol": "LMT",
+   "slug": "lockheed-martin",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 544.9946232893731,
+     "tokenized_market_cap": 4022966.6617443976,
+     "tokenized_volume_24h": 7330.67080405,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 137,
+   "asset_type": "stock",
+   "rwa_rank": 123,
+   "has_tokens": true,
+   "average_tokenized_price": 544.9946232893731,
+   "tokenized_market_cap": 4022966.6617443976,
+   "tokenized_volume_24h": 7330.67080405,
+   "last_updated": "2026-10-18T20:14:23.844Z",
+   "tokens": [
+    {
+     "symbol": "LMTon",
+     "name": "Lockheed Tokenized Stock (Ondo)",
+     "price": 545.0348572736043,
+     "crypto_id": 38017,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 4023263.66,
+     "volume_24h": 7331.21198755
+    },
+    {
+     "symbol": "wLMTx",
+     "name": "Wrapped Lockheed Martin Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41313,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "LMT",
+     "market_url": "https://www.binance.com/en/stocks/EQ_LMT"
+    }
+   ]
+  },
+  "info": {
+   "38017": {
+    "id": 38017,
+    "symbol": "LMTon",
+    "name": "Lockheed Tokenized Stock (Ondo)",
+    "slug": "lockheed-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38017.png",
+    "date_added": "2025-09-03T10:55:06.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x691b126cF619707Ed5d16CaB1B27C000aa8De300"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x691b126cF619707Ed5d16CaB1B27C000aa8De300",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EoReHwUnGGekbXFHLj5rbCVKiwWqu32GrETMfw4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41313": {
+    "id": 41313,
+    "symbol": "wLMTx",
+    "name": "Wrapped Lockheed Martin Tokenized Stock (xStock)",
+    "slug": "wrapped-lockheed-martin-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41313.png",
+    "date_added": "2026-08-11T16:22:31.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x966A45dc59474d2A7bEFaD2216b9c1ad042117B0"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x966A45dc59474d2A7bEFaD2216b9c1ad042117B0",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+   "ethereum:0x691b126cf619707ed5d16cab1b27c000aa8de300"
+  ],
+  "exact": {
+   "ethereum:0x691b126cf619707ed5d16cab1b27c000aa8de300": {
+    "key": "ethereum:0x691b126cf619707ed5d16cab1b27c000aa8de300",
+    "name": "Lockheed (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LMTON",
+    "price": 545.22,
+    "address": "0x691b126cf619707ed5d16cab1b27c000aa8de300",
+    "addresses": {
+     "bsc": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+     "ethereum": "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4024623,
+    "image": "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231",
+    "metrics": {
+     "volumeUsd1d": "4598.061",
+     "volumeUsd7d": "327001.664"
+    },
+    "metadata": {},
+    "tokenId": "f46a9ddb-2cad-40d8-9a38-88cd7262c73b",
+    "totalSupply": "7381.663029005246",
+    "circulatingSupply": "7381.663029005246",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd09f7b75b9659b864c6f82bb00ff096f9d277998": {
+    "key": "bsc:0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+    "name": "Lockheed (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LMTON",
+    "price": 545.22,
+    "address": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+    "addresses": {
+     "bsc": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+     "ethereum": "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4024623,
+    "image": "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231",
+    "metrics": {
+     "volumeUsd1d": "3199.365",
+     "volumeUsd7d": "328316.127"
+    },
+    "metadata": {},
+    "tokenId": "f46a9ddb-2cad-40d8-9a38-88cd7262c73b",
+    "totalSupply": "7381.663029005246",
+    "circulatingSupply": "7381.663029005246",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "LMT": {
+    "total_items": 50,
+    "pages": 1,
+    "received": 50,
+    "complete": true
+   }
+  },
+  "records": {
+   "base:0x8ca24504bf93d595b08d7336f0ec57305e57e9d2": {
+    "key": "base:0x8ca24504bf93d595b08d7336f0ec57305e57e9d2",
+    "name": "Dinari LMT",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 521.68,
+    "address": "0x8ca24504bf93d595b08d7336f0ec57305e57e9d2",
+    "addresses": {
+     "arbitrum": "0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+     "avalanche": "0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+     "ethereum": "0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+     "base": "0x8ca24504bf93d595b08d7336f0ec57305e57e9d2"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1152.54,
+    "image": "https://coin-images.coingecko.com/coins/images/102174977/large/dinari-logo-green-with-margin.png?1785402769",
+    "metrics": {
+     "volumeUsd1d": "5.16",
+     "volumeUsd7d": "89.97"
+    },
+    "metadata": {},
+    "tokenId": "69a5a7fe-8306-4552-85ac-8aca15f172b0",
+    "totalSupply": "2.209292572007675",
+    "circulatingSupply": "2.209292572007675",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xbe4c36b9542610df83ca690c8b5bc53bbbc5d542": {
+    "key": "base:0xbe4c36b9542610df83ca690c8b5bc53bbbc5d542",
+    "name": "Aerodrome SlipStream USD Coin/Limitless Official Token 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0xbe4c36b9542610df83ca690c8b5bc53bbbc5d542",
+    "addresses": {
+     "base": "0xbe4c36b9542610df83ca690c8b5bc53bbbc5d542"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.843Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 136523.1721134232,
+    "metrics": {
+     "apy": "22.436",
+     "baseApy": "22.436",
+     "rewardApy": "0",
+     "volumeUsd1d": "168001.282",
+     "volumeUsd7d": "1470797.505"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xade65c38cd4849adba595a4323a8c7ddfe89716a"
+    },
+    "tokenId": "b86fc62b-83d1-4d00-a56d-02cf01b22632",
+    "reserves": [
+     "13364.997173",
+     "3995549.308450937774104601"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986": {
+    "key": "arbitrum:0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+    "name": "Dinari LMT",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 521.68,
+    "address": "0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+    "addresses": {
+     "arbitrum": "0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+     "avalanche": "0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+     "ethereum": "0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+     "base": "0x8ca24504bf93d595b08d7336f0ec57305e57e9d2"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1152.54,
+    "image": "https://coin-images.coingecko.com/coins/images/102174977/large/dinari-logo-green-with-margin.png?1785402769",
+    "metrics": {
+     "volumeUsd1d": "5.16",
+     "volumeUsd7d": "89.965"
+    },
+    "metadata": {},
+    "tokenId": "69a5a7fe-8306-4552-85ac-8aca15f172b0",
+    "totalSupply": "2.209292572007675",
+    "circulatingSupply": "2.209292572007675",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f": {
+    "key": "ethereum:0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+    "name": "Element",
+    "decimals": 8,
+    "symbol": "ELMT",
+    "price": 0.00014367,
+    "address": "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+    "addresses": {
+     "ethereum": "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-12-19T11:38:14.769Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 92764,
+    "image": "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+    "metrics": {
+     "volumeUsd1d": "750.53",
+     "volumeUsd7d": "4910.579"
+    },
+    "metadata": {},
+    "tokenId": "8c7aed96-722d-4f62-a30c-7484a8416fd4",
+    "totalSupply": "645644097",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5547c8aafc9c3709261b986b633c338e924d85c6": {
+    "key": "ethereum:0x5547c8aafc9c3709261b986b633c338e924d85c6",
+    "name": "SushiSwap LP FLMTS/WETH",
+    "decimals": 18,
+    "symbol": "FLMTS/WETH",
+    "price": 912.872107786856,
+    "address": "0x5547c8aafc9c3709261b986b633c338e924d85c6",
+    "addresses": {
+     "ethereum": "0x5547c8aafc9c3709261b986b633c338e924d85c6"
+    },
+    "platform": "sushiswap",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.942Z",
+    "createdAt": "2025-12-25T01:04:58.137Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa4251ea8a5e71d3f10e3dc224f073bc8a61b4bcd",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 1945.4531115253267,
+    "metrics": {
+     "apy": "5.081",
+     "baseApy": "5.081",
+     "volumeUsd1d": "90.448",
+     "volumeUsd7d": "90.448"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "f15d3a45-0241-4af4-b644-9b8d94abc483",
+    "totalSupply": "2.131134355985345827",
+    "reserves": [
+     "11.190811566660566033",
+     "0.416399409463651239"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x691b126cf619707ed5d16cab1b27c000aa8de300": {
+    "key": "ethereum:0x691b126cf619707ed5d16cab1b27c000aa8de300",
+    "name": "Lockheed (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LMTON",
+    "price": 545.22,
+    "address": "0x691b126cf619707ed5d16cab1b27c000aa8de300",
+    "addresses": {
+     "bsc": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+     "ethereum": "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4024623,
+    "image": "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231",
+    "metrics": {
+     "volumeUsd1d": "4598.061",
+     "volumeUsd7d": "327001.664"
+    },
+    "metadata": {},
+    "tokenId": "f46a9ddb-2cad-40d8-9a38-88cd7262c73b",
+    "totalSupply": "7381.663029005246",
+    "circulatingSupply": "7381.663029005246",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x65321a54f8d32ad8c8fe9bb95ee2828540bf85dc5c4300753a91798d9a438037": {
+    "key": "ethereum:0x65321a54f8d32ad8c8fe9bb95ee2828540bf85dc5c4300753a91798d9a438037",
+    "name": "Uniswap V4 LP ELMT/SWITCH",
+    "decimals": 18,
+    "symbol": "ELMT/SWITCH",
+    "price": 9007199254740990,
+    "address": "0x65321a54f8d32ad8c8fe9bb95ee2828540bf85dc5c4300753a91798d9a438037",
+    "addresses": {
+     "ethereum": "0x65321a54f8d32ad8c8fe9bb95ee2828540bf85dc5c4300753a91798d9a438037"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://assets.coingecko.com/coins/images/30140/large/SWITCH-200x200-Circle_Token.jpg?1696529061"
+    ],
+    "updatedAt": "2026-10-18T20:14:56.483Z",
+    "createdAt": "2026-07-11T03:13:25.806Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+     "0xb10cc888cb2cce7036f4c7ecad8a57da16161338"
+    ],
+    "liquidity": 7289.431444837232,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2.008"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "1e6e27be-9919-400d-a6e1-8a688b37fa73",
+    "reserves": [
+     "2113972.26742273",
+     "98835838.27357964"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x329fcaceb9ad6f9580dd5f643fed0646900d043c": {
+    "key": "robinhood:0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+    "name": "Lockheed • Robinhood Token",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 551.9016177276068,
+    "address": "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+    "addresses": {
+     "robinhood": "0x329fcaceb9ad6f9580dd5f643fed0646900d043c"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x329fcaceb9ad6f9580dd5f643fed0646900d043c.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-09T17:22:26.668Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+    "liquidity": 156050.19778294087,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-25528.403"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000005cca09f06be14aea89a8ea6265026644",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000021050802889793",
+     "currentMultiplier": "1.000021050802889793",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "580ed576-42ca-4dc7-8979-0293bba2adf5",
+    "totalSupply": "282.75002785",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x28b6b23fbf99e6279170d28890e7655b9eb2dbb009b142355dfada430cf425e4": {
+    "key": "ethereum:0x28b6b23fbf99e6279170d28890e7655b9eb2dbb009b142355dfada430cf425e4",
+    "name": "Uniswap V4 LP RALLY/ELMT",
+    "decimals": 18,
+    "symbol": "RALLY/ELMT",
+    "price": 9007199254740990,
+    "address": "0x28b6b23fbf99e6279170d28890e7655b9eb2dbb009b142355dfada430cf425e4",
+    "addresses": {
+     "ethereum": "0x28b6b23fbf99e6279170d28890e7655b9eb2dbb009b142355dfada430cf425e4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/66842/large/rallytoken.png?1750764317",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.045Z",
+    "createdAt": "2026-07-08T22:00:48.483Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19640000000ba88d36206beb10d0e86011c8d08c",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 15844.808671406732,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10,
+     "feePercentage": "0.05"
+    },
+    "tokenId": "2e79984b-41fa-415f-869d-aaddf637c4a3",
+    "reserves": [
+     "77615.021981641366506536",
+     "109988945.99891704"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x51c1dc85f57fdaf591606e2adcc34adc96b04006": {
+    "key": "ethereum:0x51c1dc85f57fdaf591606e2adcc34adc96b04006",
+    "name": "SushiSwap LP LMT/WETH",
+    "decimals": 18,
+    "symbol": "LMT/WETH",
+    "price": 1.735481327201501,
+    "address": "0x51c1dc85f57fdaf591606e2adcc34adc96b04006",
+    "addresses": {
+     "ethereum": "0x51c1dc85f57fdaf591606e2adcc34adc96b04006"
+    },
+    "platform": "sushiswap",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.942Z",
+    "createdAt": "2026-03-14T13:07:04.819Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x327673ae6b33bd3d90f0096870059994f30dc8af",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 6798.755517637094,
+    "metrics": {
+     "apy": "0.159",
+     "baseApy": "0.159",
+     "volumeUsd1d": "9.893",
+     "volumeUsd7d": "25.817"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "28a4ff09-93c3-4dcc-9509-afd28b4d8ccf",
+    "totalSupply": "3917.504274505924029148",
+    "reserves": [
+     "13711654.602674549805870393",
+     "1.455186848688525473"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x8238f4aa987c3bcb3017da7de7d1f71fe1afd9e995e9898f71ec931c244d99e9": {
+    "key": "base:0x8238f4aa987c3bcb3017da7de7d1f71fe1afd9e995e9898f71ec931c244d99e9",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0x8238f4aa987c3bcb3017da7de7d1f71fe1afd9e995e9898f71ec931c244d99e9",
+    "addresses": {
+     "base": "0x8238f4aa987c3bcb3017da7de7d1f71fe1afd9e995e9898f71ec931c244d99e9"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.208Z",
+    "createdAt": "2025-10-23T05:15:45.555Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 4348.454890375329,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.036"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 196,
+     "feePercentage": "1.0791"
+    },
+    "tokenId": "d0f89b2d-678a-495d-ba59-c78ff959ce80",
+    "reserves": [
+     "4006.435549",
+     "11126.325284841821564783"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0b118d2480ebdb11374d3ad2ea1b935e9458a9f704222004b3b8de07bc98f1eb": {
+    "key": "robinhood:0x0b118d2480ebdb11374d3ad2ea1b935e9458a9f704222004b3b8de07bc98f1eb",
+    "name": "Uniswap V4 LP LMT/USDG",
+    "decimals": 18,
+    "symbol": "LMT/USDG",
+    "price": 9007199254740990,
+    "address": "0x0b118d2480ebdb11374d3ad2ea1b935e9458a9f704222004b3b8de07bc98f1eb",
+    "addresses": {
+     "robinhood": "0x0b118d2480ebdb11374d3ad2ea1b935e9458a9f704222004b3b8de07bc98f1eb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.721Z",
+    "createdAt": "2026-09-08T14:36:02.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 49999.41858746909,
+    "metrics": {
+     "apy": "12.354",
+     "baseApy": "12.354",
+     "volumeUsd1d": "2870.235",
+     "volumeUsd7d": "47080.521"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 50,
+     "feePercentage": "0.5896"
+    },
+    "tokenId": "1d49dcef-0aad-4d3d-aee7-d7090ff15e1a",
+    "reserves": [
+     "40.97317282847665776",
+     "27386.25822"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8": {
+    "key": "base:0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8",
+    "name": "Beefy CLM LMTS-USDC",
+    "decimals": 18,
+    "symbol": "COWAERODROMELMTS-USDC",
+    "price": 0.01299026338154534,
+    "address": "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8",
+    "addresses": {
+     "base": "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.304Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "poolAddress": "0xa5e0da329ee5aa03f09228e534953496334080f5",
+    "liquidity": 1042.0155032517146,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.38",
+     "volumeUsd7d": "5.232"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-lmts",
+     "providerId": "aerodrome",
+     "tickSpacing": 100,
+     "managerAddress": "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8",
+     "strategyAddress": "0x5fba072f933ad82ef3d79749216ce76dca62fcd8",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x602efafe5d5fab4de956f22a1d49de6e421ec4ec",
+     "standardVaultAddress": "0x357f4a9c0f0248ed238fba20c08931da62f2cc4d",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+     ]
+    },
+    "tokenId": "e1c8b566-849f-46f4-956e-f1bdde551baf",
+    "totalSupply": "80215.117480378209620197",
+    "reserves": [
+     "45.629802",
+     "32324.685483166761794893"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x602efafe5d5fab4de956f22a1d49de6e421ec4ec": {
+    "key": "base:0x602efafe5d5fab4de956f22a1d49de6e421ec4ec",
+    "name": "Beefy CLM LMTS-USDC Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWAERODROMELMTS-USDC",
+    "price": 0.01299026338154534,
+    "address": "0x602efafe5d5fab4de956f22a1d49de6e421ec4ec",
+    "addresses": {
+     "base": "0x602efafe5d5fab4de956f22a1d49de6e421ec4ec"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.304Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8"
+    ],
+    "poolAddress": "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8",
+    "liquidity": 1041.765627142318,
+    "metrics": {
+     "apy": "9.779",
+     "baseApy": "9.779",
+     "volumeUsd1d": "0.38",
+     "volumeUsd7d": "5.232"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-lmts",
+     "providerId": "aerodrome",
+     "tickSpacing": 100,
+     "managerAddress": "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8",
+     "strategyAddress": "0x5fba072f933ad82ef3d79749216ce76dca62fcd8",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x602efafe5d5fab4de956f22a1d49de6e421ec4ec",
+     "standardVaultAddress": "0x357f4a9c0f0248ed238fba20c08931da62f2cc4d",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+     ]
+    },
+    "tokenId": "d8d12093-2504-457c-9de7-d9f40ebd1e7d",
+    "totalSupply": "80195.881834259479530097",
+    "reserves": [
+     "80195.881834259479530097"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7ea8d262a0807d12aac073849a4764fc3d466f286f346affff5364b64489642f": {
+    "key": "ethereum:0x7ea8d262a0807d12aac073849a4764fc3d466f286f346affff5364b64489642f",
+    "name": "Uniswap V4 LP ELMT/USDC",
+    "decimals": 18,
+    "symbol": "ELMT/USDC",
+    "price": 9007199254740990,
+    "address": "0x7ea8d262a0807d12aac073849a4764fc3d466f286f346affff5364b64489642f",
+    "addresses": {
+     "ethereum": "0x7ea8d262a0807d12aac073849a4764fc3d466f286f346affff5364b64489642f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.055Z",
+    "createdAt": "2026-07-17T23:11:45.913Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1483.2209456028274,
+    "metrics": {
+     "apy": "26.578",
+     "baseApy": "26.578",
+     "volumeUsd1d": "98.295",
+     "volumeUsd7d": "786.84"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "1122de16-198a-4787-ac71-504d3a0fc14c",
+    "reserves": [
+     "5366155.58509417",
+     "712.433507"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xe2db3981c78ff6cb615a02c8b41f4bf549d0c1504a2caaf180f4e5180d2402ff": {
+    "key": "base:0xe2db3981c78ff6cb615a02c8b41f4bf549d0c1504a2caaf180f4e5180d2402ff",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0xe2db3981c78ff6cb615a02c8b41f4bf549d0c1504a2caaf180f4e5180d2402ff",
+    "addresses": {
+     "base": "0xe2db3981c78ff6cb615a02c8b41f4bf549d0c1504a2caaf180f4e5180d2402ff"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.224Z",
+    "createdAt": "2025-10-23T05:15:44.595Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 716.0293106740883,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2"
+    },
+    "tokenId": "24b530e6-33f5-47f9-9153-35730a5d7fab",
+    "reserves": [
+     "634.77919",
+     "2640.743086386706856432"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x28762de6831c206b837a17cc114378e99dc851d1973824b585db97eb98f3b056": {
+    "key": "robinhood:0x28762de6831c206b837a17cc114378e99dc851d1973824b585db97eb98f3b056",
+    "name": "Uniswap V4 LP LMT/USDG",
+    "decimals": 18,
+    "symbol": "LMT/USDG",
+    "price": 9007199254740990,
+    "address": "0x28762de6831c206b837a17cc114378e99dc851d1973824b585db97eb98f3b056",
+    "addresses": {
+     "robinhood": "0x28762de6831c206b837a17cc114378e99dc851d1973824b585db97eb98f3b056"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.354Z",
+    "createdAt": "2026-09-08T14:37:16.169Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 543.6607112475263,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "60"
+    },
+    "tokenId": "02ebb15c-bb8a-4d31-840e-b09e20997446",
+    "reserves": [
+     "0.505307606083460695",
+     "264.780626"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x6ecf26281e29579613e83d1a0f797a7cecc40c379f6357eb61aaf736351e95b1": {
+    "key": "base:0x6ecf26281e29579613e83d1a0f797a7cecc40c379f6357eb61aaf736351e95b1",
+    "name": "Uniswap V4 LP AERO/LMTS",
+    "decimals": 18,
+    "symbol": "AERO/LMTS",
+    "price": 9007199254740990,
+    "address": "0x6ecf26281e29579613e83d1a0f797a7cecc40c379f6357eb61aaf736351e95b1",
+    "addresses": {
+     "base": "0x6ecf26281e29579613e83d1a0f797a7cecc40c379f6357eb61aaf736351e95b1"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31745/large/token.png?1696530564",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.612Z",
+    "createdAt": "2025-11-05T13:18:40.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 2180.536788635788,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 160,
+     "feePercentage": "0.8"
+    },
+    "tokenId": "8ed30c2c-2319-4b8d-9980-c0889e7794a6",
+    "reserves": [
+     "2555.364965810643241603",
+     "6962.378745787196501747"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x70be5aa9c4d17ce368e303460630a1564ba5963822625517d160b0fe6f0683b7": {
+    "key": "ethereum:0x70be5aa9c4d17ce368e303460630a1564ba5963822625517d160b0fe6f0683b7",
+    "name": "Uniswap V4 LP GROW/ELMT",
+    "decimals": 18,
+    "symbol": "GROW/ELMT",
+    "price": 9007199254740990,
+    "address": "0x70be5aa9c4d17ce368e303460630a1564ba5963822625517d160b0fe6f0683b7",
+    "addresses": {
+     "ethereum": "0x70be5aa9c4d17ce368e303460630a1564ba5963822625517d160b0fe6f0683b7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://coin-images.coingecko.com/coins/images/67327/large/grow-logo-128px-circle.png?1752402240"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.607Z",
+    "createdAt": "2026-07-09T00:35:49.417Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1223334444a7466fbf985b14e1f4edaf3883bca6",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 843.5358840163507,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "125e3d19-55fd-44c4-a38a-c2411f44baa2",
+    "reserves": [
+     "1551166.36589663073677312",
+     "2837785.69075224"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa5e0da329ee5aa03f09228e534953496334080f5": {
+    "key": "base:0xa5e0da329ee5aa03f09228e534953496334080f5",
+    "name": "Aerodrome SlipStream USD Coin/Limitless Official Token 1%",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0xa5e0da329ee5aa03f09228e534953496334080f5",
+    "addresses": {
+     "base": "0xa5e0da329ee5aa03f09228e534953496334080f5"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.592Z",
+    "createdAt": "2025-10-23T05:15:24.642Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 281619.6005175195,
+    "metrics": {
+     "apy": "19.681",
+     "baseApy": "19.681",
+     "rewardApy": "0",
+     "volumeUsd1d": "15197.519",
+     "volumeUsd7d": "65977.095"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1",
+     "factoryAddress": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a"
+    },
+    "tokenId": "49773116-e6d2-4df1-b854-25554f9c8f95",
+    "reserves": [
+     "57595.221966",
+     "7268147.939615285029635743"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x357f4a9c0f0248ed238fba20c08931da62f2cc4d": {
+    "key": "base:0x357f4a9c0f0248ed238fba20c08931da62f2cc4d",
+    "name": "Beefy Moo Beefy Aerodrome LMTS-USDC",
+    "decimals": 18,
+    "symbol": "MOOBEEFYAERODROMELMTS-USDC",
+    "price": 0.028571638630985094,
+    "address": "0x357f4a9c0f0248ed238fba20c08931da62f2cc4d",
+    "addresses": {
+     "base": "0x357f4a9c0f0248ed238fba20c08931da62f2cc4d"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.795Z",
+    "createdAt": "2026-08-26T12:36:11.301Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2aa92e4c98a3540bb3260ffa964cf56d6ebbabb8"
+    ],
+    "liquidity": 1041.6402894925245,
+    "metrics": {
+     "apy": "9.252",
+     "baseApy": "9.252",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "b60c251a-e94b-491b-b31a-eb60b6808b52",
+    "totalSupply": "36457.14209624982935438",
+    "reserves": [
+     "80193.926181583880693496"
+    ],
+    "pricePerShare": "2.199676704494975861",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x23e312bcf62beb09146da9ba758942cab629bf6947e99e606a1071ad395fe4d2": {
+    "key": "base:0x23e312bcf62beb09146da9ba758942cab629bf6947e99e606a1071ad395fe4d2",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0x23e312bcf62beb09146da9ba758942cab629bf6947e99e606a1071ad395fe4d2",
+    "addresses": {
+     "base": "0x23e312bcf62beb09146da9ba758942cab629bf6947e99e606a1071ad395fe4d2"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.315Z",
+    "createdAt": "2025-10-23T05:15:45.286Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 1450.3597673842908,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 480,
+     "feePercentage": "2.4"
+    },
+    "tokenId": "52c6d781-8457-4685-865d-3f6f93c4fbf3",
+    "reserves": [
+     "1336.621914",
+     "3700.070241102480371489"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x90f35e808c6357c6ba3c6c08e34be5edc62f6a84": {
+    "key": "arbitrum:0x90f35e808c6357c6ba3c6c08e34be5edc62f6a84",
+    "name": "Lockheed Martin rStock",
+    "decimals": 18,
+    "symbol": "RLMT",
+    "price": 551.16,
+    "address": "0x90f35e808c6357c6ba3c6c08e34be5edc62f6a84",
+    "addresses": {
+     "arbitrum": "0x90f35e808c6357c6ba3c6c08e34be5edc62f6a84"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 43918,
+    "image": "https://coin-images.coingecko.com/coins/images/102177218/large/1bb6f254d51063efb9cee77e4ee4d8a8.png?1789117198",
+    "metrics": {
+     "volumeUsd1d": "1092.804",
+     "volumeUsd7d": "4789.402"
+    },
+    "metadata": {},
+    "tokenId": "17a71bb5-dd96-458f-85c8-e9fcba79381e",
+    "totalSupply": "79.68348952800001",
+    "circulatingSupply": "79.68348952800001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdf2f4da2fdc173901008039f49a5e45e3b9f31ef69e1cd9dfdb2cc1aa2605fcb": {
+    "key": "ethereum:0xdf2f4da2fdc173901008039f49a5e45e3b9f31ef69e1cd9dfdb2cc1aa2605fcb",
+    "name": "Uniswap V4 LP ETH/ELMT",
+    "decimals": 18,
+    "symbol": "ETH/ELMT",
+    "price": 9007199254740990,
+    "address": "0xdf2f4da2fdc173901008039f49a5e45e3b9f31ef69e1cd9dfdb2cc1aa2605fcb",
+    "addresses": {
+     "ethereum": "0xdf2f4da2fdc173901008039f49a5e45e3b9f31ef69e1cd9dfdb2cc1aa2605fcb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.402Z",
+    "createdAt": "2026-07-13T22:22:19.130Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 3939.768432995815,
+    "metrics": {
+     "apy": "111.563",
+     "baseApy": "111.563",
+     "volumeUsd1d": "571.528",
+     "volumeUsd7d": "3316.019"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 402,
+     "feePercentage": "2.108"
+    },
+    "tokenId": "b9dde758-31bf-48a7-a2f8-034a7ec4639d",
+    "reserves": [
+     "0.753392111478018912",
+     "15180497.54765431"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x45782b259d533553a4a5f7851a2ed87ae73ded19f26af504dac590ab03b28839": {
+    "key": "ethereum:0x45782b259d533553a4a5f7851a2ed87ae73ded19f26af504dac590ab03b28839",
+    "name": "Uniswap V4 LP ELMT/GREEN",
+    "decimals": 18,
+    "symbol": "ELMT/GREEN",
+    "price": 9007199254740990,
+    "address": "0x45782b259d533553a4a5f7851a2ed87ae73ded19f26af504dac590ab03b28839",
+    "addresses": {
+     "ethereum": "0x45782b259d533553a4a5f7851a2ed87ae73ded19f26af504dac590ab03b28839"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/67136/large/GREEN_logo_200_x_200.png?1751868854",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.254Z",
+    "createdAt": "2026-07-08T22:00:50.190Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+     "0xb2089a7069861c8d90c8da3aacab8e9188c0c531"
+    ],
+    "liquidity": 9347.839649571579,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.031"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "f353ee23-343a-4802-860d-d5d1d7450672",
+    "reserves": [
+     "2444139.94264546",
+     "120890756.03348167"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7c95f0137ba630afe93fc89c83020adbe5bb0f112a454c7702ab94d2842f7c14": {
+    "key": "ethereum:0x7c95f0137ba630afe93fc89c83020adbe5bb0f112a454c7702ab94d2842f7c14",
+    "name": "Uniswap V4 LP EGP/LMTon",
+    "decimals": 18,
+    "symbol": "EGP/LMTON",
+    "price": 9007199254740990,
+    "address": "0x7c95f0137ba630afe93fc89c83020adbe5bb0f112a454c7702ab94d2842f7c14",
+    "addresses": {
+     "ethereum": "0x7c95f0137ba630afe93fc89c83020adbe5bb0f112a454c7702ab94d2842f7c14"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.380Z",
+    "createdAt": "2026-10-14T06:54:53.981Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    ],
+    "liquidity": 20074.68762023971,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.27"
+    },
+    "tokenId": "2b04ce56-732e-45e6-a7cb-be6e92a1bb69",
+    "reserves": [
+     "19999.999999999999999991",
+     "0.05349842177518178"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8d49b28385c176031c22d53f45c8284d98c10707007af83d3069ff785d095b61": {
+    "key": "ethereum:0x8d49b28385c176031c22d53f45c8284d98c10707007af83d3069ff785d095b61",
+    "name": "Uniswap V4 LP ELMT/USDC",
+    "decimals": 18,
+    "symbol": "ELMT/USDC",
+    "price": 9007199254740990,
+    "address": "0x8d49b28385c176031c22d53f45c8284d98c10707007af83d3069ff785d095b61",
+    "addresses": {
+     "ethereum": "0x8d49b28385c176031c22d53f45c8284d98c10707007af83d3069ff785d095b61"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.505Z",
+    "createdAt": "2025-12-22T02:04:49.945Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2194.749538106558,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "90650126-7991-479a-b1b8-5c9bc8c04254",
+    "reserves": [
+     "5731825.81899585",
+     "1371.581816"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x4e689e08e2069b67a0ea9d4f01af7fae4db4d8478bdc2d73e910a2bfc774538b": {
+    "key": "base:0x4e689e08e2069b67a0ea9d4f01af7fae4db4d8478bdc2d73e910a2bfc774538b",
+    "name": "Uniswap V4 LP ETH/LMTS",
+    "decimals": 18,
+    "symbol": "ETH/LMTS",
+    "price": 9007199254740990,
+    "address": "0x4e689e08e2069b67a0ea9d4f01af7fae4db4d8478bdc2d73e910a2bfc774538b",
+    "addresses": {
+     "base": "0x4e689e08e2069b67a0ea9d4f01af7fae4db4d8478bdc2d73e910a2bfc774538b"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.555Z",
+    "createdAt": "2025-10-23T05:15:45.107Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 5076.819538891997,
+    "metrics": {
+     "apy": "20.236",
+     "baseApy": "20.236",
+     "volumeUsd1d": "10.034",
+     "volumeUsd7d": "17.114"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5600,
+     "feePercentage": "28.072"
+    },
+    "tokenId": "334a05e3-b219-46af-aaaf-45bde411708d",
+    "reserves": [
+     "1.919105857304915564",
+     "19357.44585003109392103"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918": {
+    "key": "ethereum:0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+    "name": "Dinari LMT",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 521.68,
+    "address": "0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+    "addresses": {
+     "arbitrum": "0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+     "avalanche": "0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+     "ethereum": "0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+     "base": "0x8ca24504bf93d595b08d7336f0ec57305e57e9d2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1152.54,
+    "image": "https://coin-images.coingecko.com/coins/images/102174977/large/dinari-logo-green-with-margin.png?1785402769",
+    "metrics": {
+     "volumeUsd1d": "5.16",
+     "volumeUsd7d": "89.916"
+    },
+    "metadata": {},
+    "tokenId": "69a5a7fe-8306-4552-85ac-8aca15f172b0",
+    "totalSupply": "2.209292572007675",
+    "circulatingSupply": "2.209292572007675",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x588efaeea621b2fb8f2612fdb0ed7528d579c1fe": {
+    "key": "hyperevm:0x588efaeea621b2fb8f2612fdb0ed7528d579c1fe",
+    "name": "Limitless",
+    "decimals": 18,
+    "symbol": "LMTS",
+    "price": 0.03082463,
+    "address": "0x588efaeea621b2fb8f2612fdb0ed7528d579c1fe",
+    "addresses": {
+     "base": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+     "hyperevm": "0x588efaeea621b2fb8f2612fdb0ed7528d579c1fe"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-11T16:05:30.726Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4057416,
+    "image": "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+    "metrics": {
+     "volumeUsd1d": "852426.31",
+     "volumeUsd7d": "5875832.435"
+    },
+    "metadata": {},
+    "tokenId": "4c0ba0f3-d59d-4c28-8898-544c68c9ffd0",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "131598680",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18": {
+    "key": "base:0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18",
+    "addresses": {
+     "base": "0x6cdd1bcaf26c37a0b2de7437f4c56b0f0f2c187894d787aa9aff5b7f7c408d18"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.529Z",
+    "createdAt": "2025-10-23T05:15:45.649Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 5883.840577536234,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "volumeUsd1d": "0.011",
+     "volumeUsd7d": "0.011"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 194,
+     "feePercentage": "1.0691"
+    },
+    "tokenId": "0fe42435-159f-43fd-adc7-5e1890a9879b",
+    "reserves": [
+     "5240.739949",
+     "20903.330977993850280728"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6d98b8f5cc98a94f81ec71a21e2e5d78ab0acdbadf117d3f504f4cb68c823e40": {
+    "key": "robinhood:0x6d98b8f5cc98a94f81ec71a21e2e5d78ab0acdbadf117d3f504f4cb68c823e40",
+    "name": "Uniswap V4 LP LMT/USDG",
+    "decimals": 18,
+    "symbol": "LMT/USDG",
+    "price": 9007199254740990,
+    "address": "0x6d98b8f5cc98a94f81ec71a21e2e5d78ab0acdbadf117d3f504f4cb68c823e40",
+    "addresses": {
+     "robinhood": "0x6d98b8f5cc98a94f81ec71a21e2e5d78ab0acdbadf117d3f504f4cb68c823e40"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.320Z",
+    "createdAt": "2026-09-08T14:42:56.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 17530.53225279422,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1325.318"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 470,
+     "feePercentage": "4.7953"
+    },
+    "tokenId": "0736629e-53bf-4f79-82bf-31dd05c07521",
+    "reserves": [
+     "21.795179393243011892",
+     "5501.737487"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xba6739cae9d6ed222036061ac6f9396a62be4b394b2e1771defca2aac5f41eae": {
+    "key": "ethereum:0xba6739cae9d6ed222036061ac6f9396a62be4b394b2e1771defca2aac5f41eae",
+    "name": "Uniswap V4 LP LMTon/USDC",
+    "decimals": 18,
+    "symbol": "LMTON/USDC",
+    "price": 9007199254740990,
+    "address": "0xba6739cae9d6ed222036061ac6f9396a62be4b394b2e1771defca2aac5f41eae",
+    "addresses": {
+     "ethereum": "0xba6739cae9d6ed222036061ac6f9396a62be4b394b2e1771defca2aac5f41eae"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.088Z",
+    "createdAt": "2025-09-26T08:45:51.035Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x691b126cf619707ed5d16cab1b27c000aa8de300",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 582.95643543836,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "feacab8d-1f73-4686-851a-c57fb0369957",
+    "reserves": [
+     "0.468657978937419697",
+     "327.512025"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x54f160bea60ec5207918c539d86e0b906b4da297": {
+    "key": "robinhood:0x54f160bea60ec5207918c539d86e0b906b4da297",
+    "name": "Uniswap V3 Lockheed  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "LMT/USDG",
+    "price": 9007199254740990,
+    "address": "0x54f160bea60ec5207918c539d86e0b906b4da297",
+    "addresses": {
+     "robinhood": "0x54f160bea60ec5207918c539d86e0b906b4da297"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:15.058Z",
+    "createdAt": "2026-09-13T05:15:46.483Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x329fcaceb9ad6f9580dd5f643fed0646900d043c",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 25588.09854082811,
+    "metrics": {
+     "apy": "58.018",
+     "baseApy": "58.018",
+     "volumeUsd1d": "13557.722",
+     "volumeUsd7d": "111649.86"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "33c5c214-c352-4f6e-b38b-cc1ceb5c9823",
+    "reserves": [
+     "16.823757404550289153",
+     "16303.039613"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x98a0a245ef9a96cf28f1ebf1a3b3bc562ed8d783": {
+    "key": "bsc:0x98a0a245ef9a96cf28f1ebf1a3b3bc562ed8d783",
+    "name": "iLuminary Token",
+    "decimals": 18,
+    "symbol": "ILMT",
+    "price": 0.00060335,
+    "address": "0x98a0a245ef9a96cf28f1ebf1a3b3bc562ed8d783",
+    "addresses": {
+     "bsc": "0x98a0a245ef9a96cf28f1ebf1a3b3bc562ed8d783"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-04-29T09:53:48.467Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12969.98,
+    "image": "https://coin-images.coingecko.com/coins/images/55413/large/logo_200x200.png?1745861607",
+    "metrics": {
+     "volumeUsd1d": "12.244",
+     "volumeUsd7d": "85.708"
+    },
+    "metadata": {},
+    "tokenId": "5c550e7d-eccb-4492-ac38-fc1bf93a2bb6",
+    "totalSupply": "139368333.25876617",
+    "circulatingSupply": "21496504.902845085",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xce7d98c4023ef024905d157b61921d5ef36f21ac4b436abda6be12d41f3ad99a": {
+    "key": "base:0xce7d98c4023ef024905d157b61921d5ef36f21ac4b436abda6be12d41f3ad99a",
+    "name": "Uniswap V4 LP ETH/LMTS",
+    "decimals": 18,
+    "symbol": "ETH/LMTS",
+    "price": 9007199254740990,
+    "address": "0xce7d98c4023ef024905d157b61921d5ef36f21ac4b436abda6be12d41f3ad99a",
+    "addresses": {
+     "base": "0xce7d98c4023ef024905d157b61921d5ef36f21ac4b436abda6be12d41f3ad99a"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.709Z",
+    "createdAt": "2025-10-28T05:15:23.060Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 703.2847833977277,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2"
+    },
+    "tokenId": "1de6506e-40e5-4345-af8f-a576a9251c5d",
+    "reserves": [
+     "0.253530447696766774",
+     "3614.657777047203914917"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd09f7b75b9659b864c6f82bb00ff096f9d277998": {
+    "key": "bsc:0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+    "name": "Lockheed (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LMTON",
+    "price": 545.22,
+    "address": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+    "addresses": {
+     "bsc": "0xd09f7b75b9659b864c6f82bb00ff096f9d277998",
+     "ethereum": "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4024623,
+    "image": "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231",
+    "metrics": {
+     "volumeUsd1d": "3199.365",
+     "volumeUsd7d": "328316.127"
+    },
+    "metadata": {},
+    "tokenId": "f46a9ddb-2cad-40d8-9a38-88cd7262c73b",
+    "totalSupply": "7381.663029005246",
+    "circulatingSupply": "7381.663029005246",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xa907c4a282537c8b74213a844d356e7b15dbd74069bfc945f6e699e092119740": {
+    "key": "base:0xa907c4a282537c8b74213a844d356e7b15dbd74069bfc945f6e699e092119740",
+    "name": "Uniswap V4 LP ETH/LMTS",
+    "decimals": 18,
+    "symbol": "ETH/LMTS",
+    "price": 9007199254740990,
+    "address": "0xa907c4a282537c8b74213a844d356e7b15dbd74069bfc945f6e699e092119740",
+    "addresses": {
+     "base": "0xa907c4a282537c8b74213a844d356e7b15dbd74069bfc945f6e699e092119740"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.918Z",
+    "createdAt": "2025-10-23T05:15:44.253Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 1613.0868506322652,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "25"
+    },
+    "tokenId": "52d8c241-b067-4692-87ea-c3b1dcfc4905",
+    "reserves": [
+     "0.648840595548584092",
+     "3191.440375117270064356"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x9eadbe35f3ee3bf3e28180070c429298a1b02f93": {
+    "key": "base:0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+    "name": "Limitless",
+    "decimals": 18,
+    "symbol": "LMTS",
+    "price": 0.03082463,
+    "address": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+    "addresses": {
+     "base": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93",
+     "hyperevm": "0x588efaeea621b2fb8f2612fdb0ed7528d579c1fe"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-23T05:13:45.449Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4057416,
+    "image": "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+    "metrics": {
+     "volumeUsd1d": "853215.398",
+     "volumeUsd7d": "6539033.531"
+    },
+    "metadata": {},
+    "tokenId": "4c0ba0f3-d59d-4c28-8898-544c68c9ffd0",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "131598680",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa4251ea8a5e71d3f10e3dc224f073bc8a61b4bcd": {
+    "key": "ethereum:0xa4251ea8a5e71d3f10e3dc224f073bc8a61b4bcd",
+    "name": "Filaments",
+    "decimals": 18,
+    "symbol": "FLMTS",
+    "price": 86.9119278264767,
+    "address": "0xa4251ea8a5e71d3f10e3dc224f073bc8a61b4bcd",
+    "addresses": {
+     "ethereum": "0xa4251ea8a5e71d3f10e3dc224f073bc8a61b4bcd"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-12-25T01:04:35.349Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1564.4147008765806,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "83.04",
+     "volumeUsd7d": "83.04"
+    },
+    "metadata": {},
+    "tokenId": "a0026150-5bd1-4476-99cf-59c9a34b965a",
+    "totalSupply": "18",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa97e79f5a005a5bbdc1eb38391018200b515f028e014f16d5126ef93b65dfb07": {
+    "key": "ethereum:0xa97e79f5a005a5bbdc1eb38391018200b515f028e014f16d5126ef93b65dfb07",
+    "name": "Uniswap V4 LP ETH/ELMT",
+    "decimals": 18,
+    "symbol": "ETH/ELMT",
+    "price": 9007199254740990,
+    "address": "0xa97e79f5a005a5bbdc1eb38391018200b515f028e014f16d5126ef93b65dfb07",
+    "addresses": {
+     "ethereum": "0xa97e79f5a005a5bbdc1eb38391018200b515f028e014f16d5126ef93b65dfb07"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.874Z",
+    "createdAt": "2026-07-09T07:00:04.081Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 4074.9585587858464,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14000,
+     "feePercentage": "70.03"
+    },
+    "tokenId": "8ab4f27f-6ddb-46b9-959e-538cd65939e2",
+    "reserves": [
+     "0.71565832535589747",
+     "16734609.55541002"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xacea5d83583652f680d89f428c83048e28515c007cc9a49e722084fdff41c04a": {
+    "key": "base:0xacea5d83583652f680d89f428c83048e28515c007cc9a49e722084fdff41c04a",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0xacea5d83583652f680d89f428c83048e28515c007cc9a49e722084fdff41c04a",
+    "addresses": {
+     "base": "0xacea5d83583652f680d89f428c83048e28515c007cc9a49e722084fdff41c04a"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.931Z",
+    "createdAt": "2026-09-18T10:04:03.383Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 7348.182579246721,
+    "metrics": {
+     "apy": "10.328",
+     "baseApy": "10.328",
+     "volumeUsd1d": "207.992",
+     "volumeUsd7d": "1282.507"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "1.0001"
+    },
+    "tokenId": "1b633c71-9585-42b5-a247-6e64cc3ab3cc",
+    "reserves": [
+     "3684.073749",
+     "118897.721453639008313765"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8b93a7ba72b5b49a54e29d28ec932bad33f666f2a5d7760f8b0df438db057e45": {
+    "key": "robinhood:0x8b93a7ba72b5b49a54e29d28ec932bad33f666f2a5d7760f8b0df438db057e45",
+    "name": "Uniswap V4 LP ETH/LMT",
+    "decimals": 18,
+    "symbol": "ETH/LMT",
+    "price": 9007199254740990,
+    "address": "0x8b93a7ba72b5b49a54e29d28ec932bad33f666f2a5d7760f8b0df438db057e45",
+    "addresses": {
+     "robinhood": "0x8b93a7ba72b5b49a54e29d28ec932bad33f666f2a5d7760f8b0df438db057e45"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.006Z",
+    "createdAt": "2026-09-08T15:09:10.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x329fcaceb9ad6f9580dd5f643fed0646900d043c"
+    ],
+    "liquidity": 3106.3509092543954,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "187.583"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "6aaa9285-f8c1-445c-8c22-eea108260aa3",
+    "reserves": [
+     "0.177892698397437881",
+     "4.875981691904996146"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd2afc885e49840cf8feefeb5d0779d2ba93a264a5f2b9c7ebeff8a29ff22b08c": {
+    "key": "ethereum:0xd2afc885e49840cf8feefeb5d0779d2ba93a264a5f2b9c7ebeff8a29ff22b08c",
+    "name": "Uniswap V4 LP wUSDC/LMTon",
+    "decimals": 18,
+    "symbol": "WUSDC/LMTON",
+    "price": 9007199254740990,
+    "address": "0xd2afc885e49840cf8feefeb5d0779d2ba93a264a5f2b9c7ebeff8a29ff22b08c",
+    "addresses": {
+     "ethereum": "0xd2afc885e49840cf8feefeb5d0779d2ba93a264a5f2b9c7ebeff8a29ff22b08c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68618/large/lmton_160x160.png?1756130231"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.753Z",
+    "createdAt": "2026-09-28T10:37:16.080Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x691b126cf619707ed5d16cab1b27c000aa8de300"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "37559145-c988-4e63-ac83-cbdd7ac472d7",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xc03b613cf7e8fcb54696a8b7155b6a5a317d0f8c954ad9025f83cb52230ac825": {
+    "key": "base:0xc03b613cf7e8fcb54696a8b7155b6a5a317d0f8c954ad9025f83cb52230ac825",
+    "name": "Uniswap V4 LP USDC/LMTS",
+    "decimals": 18,
+    "symbol": "USDC/LMTS",
+    "price": 9007199254740990,
+    "address": "0xc03b613cf7e8fcb54696a8b7155b6a5a317d0f8c954ad9025f83cb52230ac825",
+    "addresses": {
+     "base": "0xc03b613cf7e8fcb54696a8b7155b6a5a317d0f8c954ad9025f83cb52230ac825"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/69506/large/limitless.png?1758786338",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.926Z",
+    "createdAt": "2025-10-23T05:15:44.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93"
+    ],
+    "liquidity": 692.8338539197118,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 188,
+     "feePercentage": "0.94"
+    },
+    "tokenId": "5bb1f2c5-1f12-4465-935c-fc4ba52aa3d8",
+    "reserves": [
+     "627.566226",
+     "2122.190389602334142808"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x327673ae6b33bd3d90f0096870059994f30dc8af": {
+    "key": "ethereum:0x327673ae6b33bd3d90f0096870059994f30dc8af",
+    "name": "Lympo Market Token",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 0.00024789042822845103,
+    "address": "0x327673ae6b33bd3d90f0096870059994f30dc8af",
+    "addresses": {
+     "ethereum": "0x327673ae6b33bd3d90f0096870059994f30dc8af"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-14T13:06:24.221Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 309863.0352855638,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "9.93",
+     "volumeUsd7d": "28.75"
+    },
+    "metadata": {},
+    "tokenId": "44af83ba-a934-4fc3-8f74-6f1e37406629",
+    "totalSupply": "1250000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc8e2ead0f86c658becc7fe0f6acc4e528b87b22bebc7dffa6848810282614078": {
+    "key": "ethereum:0xc8e2ead0f86c658becc7fe0f6acc4e528b87b22bebc7dffa6848810282614078",
+    "name": "Uniswap V4 LP GULD/ELMT",
+    "decimals": 18,
+    "symbol": "GULD/ELMT",
+    "price": 9007199254740990,
+    "address": "0xc8e2ead0f86c658becc7fe0f6acc4e528b87b22bebc7dffa6848810282614078",
+    "addresses": {
+     "ethereum": "0xc8e2ead0f86c658becc7fe0f6acc4e528b87b22bebc7dffa6848810282614078"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102173593/large/250x250_GULD_icon.png?1780327048",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.759Z",
+    "createdAt": "2026-07-01T03:09:58.608Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x14d6c649292c5c9790c5196d1a9ea039307947a1",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 23423.879654797318,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "ea061b56-2f35-4a17-a290-bdbf5cb5b94e",
+    "reserves": [
+     "1052335.942686347855481397",
+     "1830049.29337124"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261": {
+    "key": "avalanche:0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+    "name": "Dinari LMT",
+    "decimals": 18,
+    "symbol": "LMT",
+    "price": 521.68,
+    "address": "0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+    "addresses": {
+     "arbitrum": "0x893ff58cd1e34eac0c8ce4fa92b30adee4e14986",
+     "avalanche": "0xfb2a3409f442638e6e0f4e7f88bcbcdd48659261",
+     "ethereum": "0x4989436ac5e1fa6a34d8b071cd7aa14a84ba4918",
+     "base": "0x8ca24504bf93d595b08d7336f0ec57305e57e9d2"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1152.54,
+    "image": "https://coin-images.coingecko.com/coins/images/102174977/large/dinari-logo-green-with-margin.png?1785402769",
+    "metrics": {
+     "volumeUsd1d": "5.16",
+     "volumeUsd7d": "89.965"
+    },
+    "metadata": {},
+    "tokenId": "69a5a7fe-8306-4552-85ac-8aca15f172b0",
+    "totalSupply": "2.209292572007675",
+    "circulatingSupply": "2.209292572007675",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xaa362e4301abe8627b5bf52b55336a6d5f1af6711f2ce5cde6c635dad813b341": {
+    "key": "ethereum:0xaa362e4301abe8627b5bf52b55336a6d5f1af6711f2ce5cde6c635dad813b341",
+    "name": "Uniswap V4 LP ELMT/WIN",
+    "decimals": 18,
+    "symbol": "ELMT/WIN",
+    "price": 9007199254740990,
+    "address": "0xaa362e4301abe8627b5bf52b55336a6d5f1af6711f2ce5cde6c635dad813b341",
+    "addresses": {
+     "ethereum": "0xaa362e4301abe8627b5bf52b55336a6d5f1af6711f2ce5cde6c635dad813b341"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68785/large/WIN_Token_200_x_200.png?1756565056",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.014Z",
+    "createdAt": "2026-07-08T22:00:51.243Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f",
+     "0xb10cb07ca2cdac77fbb5707f6690301f9d036f45"
+    ],
+    "liquidity": 7487.971249419367,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "27.274"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "d727f551-5c1c-4013-b165-5d624e4b7374",
+    "reserves": [
+     "1782796.50315387",
+     "112962150.51251563"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf357f0db460a9d1c8afd07d86d17e2352295f2cd3c3c1e7e7cdbdb1f03c25d66": {
+    "key": "ethereum:0xf357f0db460a9d1c8afd07d86d17e2352295f2cd3c3c1e7e7cdbdb1f03c25d66",
+    "name": "Uniswap V4 LP ETH/ELMT",
+    "decimals": 18,
+    "symbol": "ETH/ELMT",
+    "price": 9007199254740990,
+    "address": "0xf357f0db460a9d1c8afd07d86d17e2352295f2cd3c3c1e7e7cdbdb1f03c25d66",
+    "addresses": {
+     "ethereum": "0xf357f0db460a9d1c8afd07d86d17e2352295f2cd3c3c1e7e7cdbdb1f03c25d66"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/33775/large/ELMT_Logo_Mark_Filled_-_Neon_LG.png?1702970207"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.118Z",
+    "createdAt": "2026-07-09T07:09:18.011Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x600d601d8b9eb5de5ac90fefc68d0d08801bfd3f"
+    ],
+    "liquidity": 7538.1536254482835,
+    "metrics": {
+     "apy": "101.471",
+     "baseApy": "101.471",
+     "volumeUsd1d": "209.874",
+     "volumeUsd7d": "1765.297"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1980,
+     "feePercentage": "9.9901"
+    },
+    "tokenId": "d38c72fe-4035-41fc-81c0-63801820be34",
+    "reserves": [
+     "1.668193114038300334",
+     "25362104.00680039"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

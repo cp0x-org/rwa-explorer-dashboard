@@ -1,0 +1,973 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US90353T1007",
+ "ticker": "UBER",
+ "name": "Uber Technologies",
+ "isin": "US90353T1007",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:57Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Uber Technologies Inc",
+   "symbol": "UBER",
+   "slug": "uber",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 70.06348371280512,
+     "tokenized_market_cap": 1011568.2081156649,
+     "tokenized_volume_24h": 1850669.80888736,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 128,
+   "asset_type": "stock",
+   "rwa_rank": 114,
+   "has_tokens": true,
+   "average_tokenized_price": 70.06348371280512,
+   "tokenized_market_cap": 1011568.2081156649,
+   "tokenized_volume_24h": 1850669.80888736,
+   "last_updated": "2026-10-18T20:14:26.247Z",
+   "tokens": [
+    {
+     "symbol": "UBERon",
+     "name": "Uber Tokenized Stock (Ondo)",
+     "price": 69.96563172939106,
+     "crypto_id": 38069,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1010155.43,
+     "volume_24h": 1844902.83374162
+    },
+    {
+     "symbol": "UBER",
+     "name": "Uber Technologies Inc (Derivatives)",
+     "price": 69.78862940615552,
+     "crypto_id": 39997,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wUBERx",
+     "name": "Wrapped Uber Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41715,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "UBER",
+     "market_url": "https://www.binance.com/en/stocks/EQ_UBER"
+    }
+   ]
+  },
+  "info": {
+   "38069": {
+    "id": 38069,
+    "symbol": "UBERon",
+    "name": "Uber Tokenized Stock (Ondo)",
+    "slug": "uber-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38069.png",
+    "date_added": "2025-09-03T10:55:05.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x5Bcd8195E3Ef58f677aeF9eBC276B5087c027050"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5Bcd8195E3Ef58f677aeF9eBC276B5087c027050",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xde9d6036fca870f7efc5a82722ae694c371ac909",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "KJNeFW3kk3ycPjXpC6cbuyckjeYHacc2ekhtAi5ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39997": {
+    "id": 39997,
+    "symbol": "UBER",
+    "name": "Uber Technologies Inc (Derivatives)",
+    "slug": "uber-technologies-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39997.png",
+    "date_added": "2026-05-11T08:51:39.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41715": {
+    "id": 41715,
+    "symbol": "wUBERx",
+    "name": "Wrapped Uber Tokenized Stock (xStock)",
+    "slug": "wrapped-uber-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41715.png",
+    "date_added": "2026-08-11T16:26:49.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x1789a222C560DDd62E7E422d64D82E3Fe2BF7eCC"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1789a222C560DDd62E7E422d64D82E3Fe2BF7eCC",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xde9d6036fca870f7efc5a82722ae694c371ac909",
+   "ethereum:0x5bcd8195e3ef58f677aef9ebc276b5087c027050"
+  ],
+  "exact": {
+   "ethereum:0x5bcd8195e3ef58f677aef9ebc276b5087c027050": {
+    "key": "ethereum:0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+    "name": "Uber (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBERON",
+    "price": 70.16,
+    "address": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+    "addresses": {
+     "ethereum": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "bsc": "0xde9d6036fca870f7efc5a82722ae694c371ac909"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1012834,
+    "image": "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997",
+    "metrics": {
+     "volumeUsd1d": "1462174.558",
+     "volumeUsd7d": "9301326.988"
+    },
+    "metadata": {},
+    "tokenId": "f14d3962-6294-4b8f-9579-b434c0439dcf",
+    "totalSupply": "14437.880540767193",
+    "circulatingSupply": "14437.880540767193",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xde9d6036fca870f7efc5a82722ae694c371ac909": {
+    "key": "bsc:0xde9d6036fca870f7efc5a82722ae694c371ac909",
+    "name": "Uber (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBERON",
+    "price": 70.16,
+    "address": "0xde9d6036fca870f7efc5a82722ae694c371ac909",
+    "addresses": {
+     "ethereum": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "bsc": "0xde9d6036fca870f7efc5a82722ae694c371ac909"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1012834,
+    "image": "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997",
+    "metrics": {
+     "volumeUsd1d": "1468035.571",
+     "volumeUsd7d": "8605978.792"
+    },
+    "metadata": {},
+    "tokenId": "f14d3962-6294-4b8f-9579-b434c0439dcf",
+    "totalSupply": "14437.880540767193",
+    "circulatingSupply": "14437.880540767193",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "UBER": {
+    "total_items": 19,
+    "pages": 1,
+    "received": 19,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x1789a222c560ddd62e7e422d64d82e3fe2bf7ecc": {
+    "key": "ethereum:0x1789a222c560ddd62e7e422d64d82e3fe2bf7ecc",
+    "name": "Wrapped Uber xStock",
+    "decimals": 18,
+    "symbol": "WUBERX",
+    "price": 73.36,
+    "address": "0x1789a222c560ddd62e7e422d64d82e3fe2bf7ecc",
+    "addresses": {
+     "ethereum": "0x1789a222c560ddd62e7e422d64d82e3fe2bf7ecc"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.782Z",
+    "createdAt": "2026-07-03T12:42:54.116Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729"
+    ],
+    "liquidity": 721.3197374118151,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/UBERx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "0f7275ff-cf1c-4a31-9030-6bec4b3834bd",
+    "totalSupply": "9.832602745526377539",
+    "reserves": [
+     "9.832602745526377539"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5bcd8195e3ef58f677aef9ebc276b5087c027050": {
+    "key": "ethereum:0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+    "name": "Uber (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBERON",
+    "price": 70.16,
+    "address": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+    "addresses": {
+     "ethereum": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "bsc": "0xde9d6036fca870f7efc5a82722ae694c371ac909"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1012834,
+    "image": "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997",
+    "metrics": {
+     "volumeUsd1d": "1462174.558",
+     "volumeUsd7d": "9301326.988"
+    },
+    "metadata": {},
+    "tokenId": "f14d3962-6294-4b8f-9579-b434c0439dcf",
+    "totalSupply": "14437.880540767193",
+    "circulatingSupply": "14437.880540767193",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729": {
+    "key": "ethereum:0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729",
+    "name": "Uber xStock",
+    "decimals": 18,
+    "symbol": "UBERX",
+    "price": 73.36,
+    "address": "0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729",
+    "addresses": {
+     "ethereum": "0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.869Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9023280,
+    "image": "https://coin-images.coingecko.com/coins/images/69640/large/Ticker_UBERx__Company_Name_UBER__size_200x200.png?1759233658",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "uber-xstock"
+    },
+    "tokenId": "8a63e80d-d4d8-447f-ba97-a89a3bcd4a3d",
+    "totalSupply": "123000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7a0f50cfed21964a8e67aa4bd2a49b220d38c88902a5ee724ca978d2b2928189": {
+    "key": "ethereum:0x7a0f50cfed21964a8e67aa4bd2a49b220d38c88902a5ee724ca978d2b2928189",
+    "name": "Uniswap V4 LP wUSDC/UBERon",
+    "decimals": 18,
+    "symbol": "WUSDC/UBERON",
+    "price": 9007199254740990,
+    "address": "0x7a0f50cfed21964a8e67aa4bd2a49b220d38c88902a5ee724ca978d2b2928189",
+    "addresses": {
+     "ethereum": "0x7a0f50cfed21964a8e67aa4bd2a49b220d38c88902a5ee724ca978d2b2928189"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.320Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x5bcd8195e3ef58f677aef9ebc276b5087c027050"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "ebe2ba78-409a-470d-9f5b-eeb2c0ea6494",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xde9d6036fca870f7efc5a82722ae694c371ac909": {
+    "key": "bsc:0xde9d6036fca870f7efc5a82722ae694c371ac909",
+    "name": "Uber (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBERON",
+    "price": 70.16,
+    "address": "0xde9d6036fca870f7efc5a82722ae694c371ac909",
+    "addresses": {
+     "ethereum": "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "bsc": "0xde9d6036fca870f7efc5a82722ae694c371ac909"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1012834,
+    "image": "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997",
+    "metrics": {
+     "volumeUsd1d": "1468035.571",
+     "volumeUsd7d": "8605978.792"
+    },
+    "metadata": {},
+    "tokenId": "f14d3962-6294-4b8f-9579-b434c0439dcf",
+    "totalSupply": "14437.880540767193",
+    "circulatingSupply": "14437.880540767193",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcd5dfd463852f71a195a063dba2dc8b2a1ed504b520accdcb564dd590e83dc9f": {
+    "key": "ethereum:0xcd5dfd463852f71a195a063dba2dc8b2a1ed504b520accdcb564dd590e83dc9f",
+    "name": "Uniswap V4 LP USDT/UBERx",
+    "decimals": 18,
+    "symbol": "USDT/UBERX",
+    "price": 9007199254740990,
+    "address": "0xcd5dfd463852f71a195a063dba2dc8b2a1ed504b520accdcb564dd590e83dc9f",
+    "addresses": {
+     "ethereum": "0xcd5dfd463852f71a195a063dba2dc8b2a1ed504b520accdcb564dd590e83dc9f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.179Z",
+    "createdAt": "2026-09-18T05:44:24.482Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729"
+    ],
+    "liquidity": 881.7952417218908,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95"
+    },
+    "tokenId": "e5334797-1c3b-4252-8f3d-f46604fdec4e",
+    "reserves": [
+     "999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xa0eefbba9c18925fb6bab26281806772398cca1f": {
+    "key": "arbitrum:0xa0eefbba9c18925fb6bab26281806772398cca1f",
+    "name": "Uber Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBER",
+    "price": 70.17,
+    "address": "0xa0eefbba9c18925fb6bab26281806772398cca1f",
+    "addresses": {
+     "avalanche": "0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+     "arbitrum": "0xa0eefbba9c18925fb6bab26281806772398cca1f",
+     "base": "0x068b598c2e4711b1b993415358038d71ea715f2d",
+     "ethereum": "0xf89983560d466efa2c38f3308886e5a3127ab1c1"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 22354,
+    "image": "https://coin-images.coingecko.com/coins/images/102174949/large/dinari-logo-green-with-margin.png?1785402668",
+    "metrics": {
+     "volumeUsd1d": "69.765",
+     "volumeUsd7d": "6444.523"
+    },
+    "metadata": {},
+    "tokenId": "36292e16-e6d5-45bd-b0a8-31b9e3b33663",
+    "totalSupply": "318.5604491245216",
+    "circulatingSupply": "318.5604491245216",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x65a641c78c58c08bb9f25d0f0d39ca64b0cf696a": {
+    "key": "arbitrum:0x65a641c78c58c08bb9f25d0f0d39ca64b0cf696a",
+    "name": "Uber Technologies rStock",
+    "decimals": 18,
+    "symbol": "RUBER",
+    "price": 70.02,
+    "address": "0x65a641c78c58c08bb9f25d0f0d39ca64b0cf696a",
+    "addresses": {
+     "arbitrum": "0x65a641c78c58c08bb9f25d0f0d39ca64b0cf696a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 50128,
+    "image": "https://coin-images.coingecko.com/coins/images/102177063/large/fa3cc88b843b3d7935431cdd74b01a1e.png?1789116712",
+    "metrics": {
+     "volumeUsd1d": "20.958",
+     "volumeUsd7d": "81057.149"
+    },
+    "metadata": {},
+    "tokenId": "25cdeb9b-747d-42fc-890e-a125a49165f3",
+    "totalSupply": "715.869421391",
+    "circulatingSupply": "715.869421391",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x015c477a4e2881c4b3bb8999f59ee4a04e812344": {
+    "key": "ethereum:0x015c477a4e2881c4b3bb8999f59ee4a04e812344",
+    "name": "Neuberger Securitize High Income Tokenized Fund",
+    "decimals": 6,
+    "symbol": "HINC",
+    "price": 975.17,
+    "address": "0x015c477a4e2881c4b3bb8999f59ee4a04e812344",
+    "addresses": {
+     "ethereum": "0x015c477a4e2881c4b3bb8999f59ee4a04e812344",
+     "avalanche": "0xf5fa39a16449b1ee07aa52ae79c6b00567c59f83"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-18T15:44:28.087Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18330081,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "04fe418a-8d1e-4b98-987a-697f2fc06d17",
+    "totalSupply": "18796.895542",
+    "circulatingSupply": "18796.895542",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0": {
+    "key": "avalanche:0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+    "name": "Uber Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBER",
+    "price": 70.17,
+    "address": "0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+    "addresses": {
+     "avalanche": "0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+     "arbitrum": "0xa0eefbba9c18925fb6bab26281806772398cca1f",
+     "base": "0x068b598c2e4711b1b993415358038d71ea715f2d",
+     "ethereum": "0xf89983560d466efa2c38f3308886e5a3127ab1c1"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 22354,
+    "image": "https://coin-images.coingecko.com/coins/images/102174949/large/dinari-logo-green-with-margin.png?1785402668",
+    "metrics": {
+     "volumeUsd1d": "69.765",
+     "volumeUsd7d": "6441.88"
+    },
+    "metadata": {},
+    "tokenId": "36292e16-e6d5-45bd-b0a8-31b9e3b33663",
+    "totalSupply": "318.5604491245216",
+    "circulatingSupply": "318.5604491245216",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3ba02191e926a9387bdeebf576af9d22c08a7d16f1e6d6dd431feae33e026f99": {
+    "key": "ethereum:0x3ba02191e926a9387bdeebf576af9d22c08a7d16f1e6d6dd431feae33e026f99",
+    "name": "Uniswap V4 LP EGP/UBERon",
+    "decimals": 18,
+    "symbol": "EGP/UBERON",
+    "price": 9007199254740990,
+    "address": "0x3ba02191e926a9387bdeebf576af9d22c08a7d16f1e6d6dd431feae33e026f99",
+    "addresses": {
+     "ethereum": "0x3ba02191e926a9387bdeebf576af9d22c08a7d16f1e6d6dd431feae33e026f99"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.931Z",
+    "createdAt": "2026-10-14T06:54:29.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x5bcd8195e3ef58f677aef9ebc276b5087c027050"
+    ],
+    "liquidity": 20073.120547908326,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.54"
+    },
+    "tokenId": "beef14d4-6ffa-4777-ad36-2a541e38cef7",
+    "reserves": [
+     "20000",
+     "0.393461684802255271"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x890351b0f3c49117375ca0e44b2beac055d092a0": {
+    "key": "base:0x890351b0f3c49117375ca0e44b2beac055d092a0",
+    "name": "Alfa Romeo Racing ORLEN Fan Token",
+    "decimals": 18,
+    "symbol": "SAUBER",
+    "price": 0.10995,
+    "address": "0x890351b0f3c49117375ca0e44b2beac055d092a0",
+    "addresses": {
+     "base": "0x890351b0f3c49117375ca0e44b2beac055d092a0"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-06-06T18:03:21.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 313520,
+    "image": "https://coin-images.coingecko.com/coins/images/16869/large/SAUBER_New.png?1728465707",
+    "metrics": {
+     "volumeUsd1d": "1478685.196",
+     "volumeUsd7d": "9033390.258"
+    },
+    "metadata": {},
+    "tokenId": "ac8610be-9e42-4b82-b4c1-7436f00a30ab",
+    "totalSupply": "10000000",
+    "circulatingSupply": "2861541",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbbce2f86f3beeb8160e100dbf0b34b6e0a2390dd310e18bc73b210a77fe55dc3": {
+    "key": "ethereum:0xbbce2f86f3beeb8160e100dbf0b34b6e0a2390dd310e18bc73b210a77fe55dc3",
+    "name": "Uniswap V4 LP UBERon/USDT",
+    "decimals": 18,
+    "symbol": "UBERON/USDT",
+    "price": 9007199254740990,
+    "address": "0xbbce2f86f3beeb8160e100dbf0b34b6e0a2390dd310e18bc73b210a77fe55dc3",
+    "addresses": {
+     "ethereum": "0xbbce2f86f3beeb8160e100dbf0b34b6e0a2390dd310e18bc73b210a77fe55dc3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.023Z",
+    "createdAt": "2026-10-12T05:08:44.749Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1594.2288271478117,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "45.152"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "57402f56-594b-43a4-bf64-8ca641e22b49",
+    "reserves": [
+     "15.052277154574211524",
+     "538.600021"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x068b598c2e4711b1b993415358038d71ea715f2d": {
+    "key": "base:0x068b598c2e4711b1b993415358038d71ea715f2d",
+    "name": "Uber Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBER",
+    "price": 70.17,
+    "address": "0x068b598c2e4711b1b993415358038d71ea715f2d",
+    "addresses": {
+     "avalanche": "0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+     "arbitrum": "0xa0eefbba9c18925fb6bab26281806772398cca1f",
+     "base": "0x068b598c2e4711b1b993415358038d71ea715f2d",
+     "ethereum": "0xf89983560d466efa2c38f3308886e5a3127ab1c1"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 22354,
+    "image": "https://coin-images.coingecko.com/coins/images/102174949/large/dinari-logo-green-with-margin.png?1785402668",
+    "metrics": {
+     "volumeUsd1d": "69.765",
+     "volumeUsd7d": "6439.797"
+    },
+    "metadata": {},
+    "tokenId": "36292e16-e6d5-45bd-b0a8-31b9e3b33663",
+    "totalSupply": "318.5604491245216",
+    "circulatingSupply": "318.5604491245216",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb97e08a69b56196e4fc088db9fc73af43207d094": {
+    "key": "ethereum:0xb97e08a69b56196e4fc088db9fc73af43207d094",
+    "name": "Uniswap V3 Uber (Ondo Tokenized)/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "UBERON/USDC",
+    "price": 9007199254740990,
+    "address": "0xb97e08a69b56196e4fc088db9fc73af43207d094",
+    "addresses": {
+     "ethereum": "0xb97e08a69b56196e4fc088db9fc73af43207d094"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997"
+    ],
+    "updatedAt": "2026-10-18T20:15:34.086Z",
+    "createdAt": "2026-10-12T05:08:26.800Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5bcd8195e3ef58f677aef9ebc276b5087c027050",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1585.7461093035313,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "262.553"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "d16a1671-55d9-4fc8-9fb4-4104dc8c47f3",
+    "reserves": [
+     "14.605699179681644728",
+     "561.288776"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf89983560d466efa2c38f3308886e5a3127ab1c1": {
+    "key": "ethereum:0xf89983560d466efa2c38f3308886e5a3127ab1c1",
+    "name": "Uber Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "UBER",
+    "price": 70.17,
+    "address": "0xf89983560d466efa2c38f3308886e5a3127ab1c1",
+    "addresses": {
+     "avalanche": "0x69e245ca478df2a33a3c4ea3fd0ac92e2486a0c0",
+     "arbitrum": "0xa0eefbba9c18925fb6bab26281806772398cca1f",
+     "base": "0x068b598c2e4711b1b993415358038d71ea715f2d",
+     "ethereum": "0xf89983560d466efa2c38f3308886e5a3127ab1c1"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 22354,
+    "image": "https://coin-images.coingecko.com/coins/images/102174949/large/dinari-logo-green-with-margin.png?1785402668",
+    "metrics": {
+     "volumeUsd1d": "69.765",
+     "volumeUsd7d": "6442.389"
+    },
+    "metadata": {},
+    "tokenId": "36292e16-e6d5-45bd-b0a8-31b9e3b33663",
+    "totalSupply": "318.5604491245216",
+    "circulatingSupply": "318.5604491245216",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9e7cf476b3fd3835776ff91fcd7d44fdd3935211ba6dbfad941e0226b97294f5": {
+    "key": "ethereum:0x9e7cf476b3fd3835776ff91fcd7d44fdd3935211ba6dbfad941e0226b97294f5",
+    "name": "Uniswap V4 LP USDT/UBERx",
+    "decimals": 18,
+    "symbol": "USDT/UBERX",
+    "price": 9007199254740990,
+    "address": "0x9e7cf476b3fd3835776ff91fcd7d44fdd3935211ba6dbfad941e0226b97294f5",
+    "addresses": {
+     "ethereum": "0x9e7cf476b3fd3835776ff91fcd7d44fdd3935211ba6dbfad941e0226b97294f5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.951Z",
+    "createdAt": "2026-10-18T18:58:37.131Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xdb9783ca04bbd64fe2c6d7b9503a979b3de30729"
+    ],
+    "liquidity": 3527.180966887563,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "f5d924aa-4d47-43a2-9ac8-6564381d0ab8",
+    "reserves": [
+     "3999.999999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x468e24a94b768d5e88433712c3b29f91082e0c112f7f68bb0875fc2caf4e7417": {
+    "key": "ethereum:0x468e24a94b768d5e88433712c3b29f91082e0c112f7f68bb0875fc2caf4e7417",
+    "name": "Uniswap V4 LP wUSDC/UBERon",
+    "decimals": 18,
+    "symbol": "WUSDC/UBERON",
+    "price": 9007199254740990,
+    "address": "0x468e24a94b768d5e88433712c3b29f91082e0c112f7f68bb0875fc2caf4e7417",
+    "addresses": {
+     "ethereum": "0x468e24a94b768d5e88433712c3b29f91082e0c112f7f68bb0875fc2caf4e7417"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68562/large/uberon_160x160.png?1756105997"
+    ],
+    "updatedAt": "2026-10-18T20:17:50.262Z",
+    "createdAt": "2026-09-28T10:37:12.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x5bcd8195e3ef58f677aef9ebc276b5087c027050"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "a0720ba8-9c37-4e0f-a90d-1f8c57bae969",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xf5fa39a16449b1ee07aa52ae79c6b00567c59f83": {
+    "key": "avalanche:0xf5fa39a16449b1ee07aa52ae79c6b00567c59f83",
+    "name": "Neuberger Securitize High Income Tokenized Fund",
+    "decimals": 6,
+    "symbol": "HINC",
+    "price": 975.17,
+    "address": "0xf5fa39a16449b1ee07aa52ae79c6b00567c59f83",
+    "addresses": {
+     "ethereum": "0x015c477a4e2881c4b3bb8999f59ee4a04e812344",
+     "avalanche": "0xf5fa39a16449b1ee07aa52ae79c6b00567c59f83"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-08-18T15:44:28.087Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18330081,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "04fe418a-8d1e-4b98-987a-697f2fc06d17",
+    "totalSupply": "18796.895542",
+    "circulatingSupply": "18796.895542",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

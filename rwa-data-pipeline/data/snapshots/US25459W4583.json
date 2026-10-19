@@ -1,0 +1,1356 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US25459W4583",
+ "ticker": "SOXL",
+ "name": "Direxion Daily Semiconductor Bull 3X",
+ "isin": "US25459W4583",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:23Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Direxion Daily Semiconductor Bull 3X ETF",
+   "symbol": "SOXL",
+   "slug": "direxion-daily-semiconductor-bull-3x-etf",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 88.86384181732282,
+     "tokenized_market_cap": 49377410.442031726,
+     "tokenized_volume_24h": 39344678.2980001,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 7750,
+   "asset_type": "etf",
+   "rwa_rank": 5292,
+   "has_tokens": true,
+   "average_tokenized_price": 88.86384181732282,
+   "tokenized_market_cap": 49377410.442031726,
+   "tokenized_volume_24h": 39344678.2980001,
+   "last_updated": "2026-10-18T20:13:38.769Z",
+   "tokens": [
+    {
+     "symbol": "SOXLx",
+     "name": "Direxion Semiconductor Bull 3X tokenized ETF (xStock)",
+     "price": 93.37857015687105,
+     "crypto_id": 40147,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 6565109.58,
+     "volume_24h": 331652.765313
+    },
+    {
+     "symbol": "rSOXL",
+     "name": "Direxion Semiconductor Bull 3X Tokenized Stock (Reality)",
+     "price": 94.20936669932479,
+     "crypto_id": 40600,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 4807556.08,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "SOXLB",
+     "name": "Semicon Bull 3X ETF Tokenized bStocks",
+     "price": 88.88263503101932,
+     "crypto_id": 40794,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 38029766.02,
+     "volume_24h": 39018375.03038607
+    },
+    {
+     "symbol": "wSOXLx",
+     "name": "Wrapped Direxion Semiconductor Bull 3X Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41586,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SOXL",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SOXL"
+    }
+   ]
+  },
+  "info": {
+   "40147": {
+    "id": 40147,
+    "symbol": "SOXLx",
+    "name": "Direxion Semiconductor Bull 3X tokenized ETF (xStock)",
+    "slug": "direxion-semiconductor-bull-3x-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40147.png",
+    "date_added": "2026-06-10T06:33:34.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsdZDkoMdUb6iKDAKKappuM7C1Q2HmTqC8jNujbfmCu"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsdZDkoMdUb6iKDAKKappuM7C1Q2HmTqC8jNujbfmCu",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDrx0YmeevoA2hYIOZa-UxMQdwojDCNOMgAV2VCBXhyQ5KJ",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40600": {
+    "id": 40600,
+    "symbol": "rSOXL",
+    "name": "Direxion Semiconductor Bull 3X Tokenized Stock (Reality)",
+    "slug": "direxion-semiconductor-bull-3x-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40600.png",
+    "date_added": "2026-07-02T07:39:01.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x25501fea0562fa74dab22dc09dd3f994d5558dce"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40794": {
+    "id": 40794,
+    "symbol": "SOXLB",
+    "name": "Semicon Bull 3X ETF Tokenized bStocks",
+    "slug": "semicon-bull-3x-etf-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40794.png",
+    "date_added": "2026-07-06T06:10:07.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41586": {
+    "id": 41586,
+    "symbol": "wSOXLx",
+    "name": "Wrapped Direxion Semiconductor Bull 3X Tokenized ETF (xStock)",
+    "slug": "wrapped-direxion-semiconductor-bull-3x-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41586.png",
+    "date_added": "2026-08-11T16:25:23.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x6fF7B8B3A17a88daDa6f731838e83d1F9ECfF8f5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x6fF7B8B3A17a88daDa6f731838e83d1F9ECfF8f5",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+   "arbitrum:0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+   "bsc:0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+   "bsc:0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+   "ethereum:0x53ee7f58cf031ea4d897fdfcdafad124b3160689",
+   "hyperevm:0x53ee7f58cf031ea4d897fdfcdafad124b3160689"
+  ],
+  "exact": {
+   "bsc:0xd97d097a89113fa59b76c572e5b2eb647e8eefaf": {
+    "key": "bsc:0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+    "name": "Semicon Bull 3X ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOXLB",
+    "price": 88.72,
+    "address": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+    "addresses": {
+     "bsc": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37935336,
+    "image": "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750",
+    "metrics": {
+     "volumeUsd1d": "32357382.44",
+     "volumeUsd7d": "186348397.484"
+    },
+    "metadata": {},
+    "tokenId": "d3d83647-cf2a-4f25-bd98-db451398d46f",
+    "totalSupply": "427674.49689668",
+    "circulatingSupply": "427674.49689668",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x25501fea0562fa74dab22dc09dd3f994d5558dce": {
+    "key": "arbitrum:0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+    "name": "Direxion Daily Semiconductor Bull 3x Shares ETF rStock",
+    "decimals": 18,
+    "symbol": "RSOXL",
+    "price": 94.25,
+    "address": "0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+    "addresses": {
+     "arbitrum": "0x25501fea0562fa74dab22dc09dd3f994d5558dce"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4809685,
+    "image": "https://coin-images.coingecko.com/coins/images/102177164/large/bbbbc59eeb49cea3e0ba5ba8026396f8.png?1789117029",
+    "metrics": {
+     "volumeUsd1d": "2969.248",
+     "volumeUsd7d": "12977017.733"
+    },
+    "metadata": {},
+    "tokenId": "837b68ec-615c-4439-b8e2-cf74e659ac87",
+    "totalSupply": "51033.746809527",
+    "circulatingSupply": "51033.746809527",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SOXL": {
+    "total_items": 25,
+    "pages": 1,
+    "received": 25,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x0b513e05fb3323eb24738c251f8c21d12d23e78bf4abd2b5a3edccc2b8f502c7": {
+    "key": "bsc:0x0b513e05fb3323eb24738c251f8c21d12d23e78bf4abd2b5a3edccc2b8f502c7",
+    "name": "Uniswap V4 LP USDT/SOXLB",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x0b513e05fb3323eb24738c251f8c21d12d23e78bf4abd2b5a3edccc2b8f502c7",
+    "addresses": {
+     "bsc": "0x0b513e05fb3323eb24738c251f8c21d12d23e78bf4abd2b5a3edccc2b8f502c7"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.354Z",
+    "createdAt": "2026-10-14T06:57:05.872Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 1280.5249552447058,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5493.666"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 24,
+     "feePercentage": "0.2786"
+    },
+    "tokenId": "3f941168-0571-414c-853b-53613b1fe5a4",
+    "reserves": [
+     "7.065264881160968237",
+     "14.353761861596176702"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x399bdd1b721022266d34e779e719fe490664e53f71993db73a7bf8c93de7d422": {
+    "key": "bsc:0x399bdd1b721022266d34e779e719fe490664e53f71993db73a7bf8c93de7d422",
+    "name": "Uniswap V4 LP USDT/SOXLB",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x399bdd1b721022266d34e779e719fe490664e53f71993db73a7bf8c93de7d422",
+    "addresses": {
+     "bsc": "0x399bdd1b721022266d34e779e719fe490664e53f71993db73a7bf8c93de7d422"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.265Z",
+    "createdAt": "2026-10-16T14:23:52.583Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 13294.580504531192,
+    "metrics": {
+     "apy": "24.716",
+     "baseApy": "24.716",
+     "volumeUsd1d": "2204.704",
+     "volumeUsd7d": "35543.929"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 35,
+     "feePercentage": "0.4098"
+    },
+    "tokenId": "1e6b85a5-8df3-461b-af00-a56e727a07de",
+    "reserves": [
+     "62.582807769718755896",
+     "149.143951677305458472"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6910acdc21a86dad4fde233764fdac4f4ce187e8": {
+    "key": "robinhood:0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "name": "Direxion Daily Semiconductor Bull 3x aStock",
+    "decimals": 18,
+    "symbol": "ASOXL",
+    "price": 94.31,
+    "address": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "addresses": {
+     "bsc": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "ethereum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "base": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "robinhood": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "arbitrum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1370.67,
+    "image": "https://coin-images.coingecko.com/coins/images/102175725/large/SOXL.png?1787292400",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "afb5b90a-40db-444b-baf4-91922ea91e1a",
+    "totalSupply": "14.532888942000001",
+    "circulatingSupply": "14.532888942000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x74f1dcaa79e1670d526d4d28a16bbd63614bd5309305475274e2d66c0075f2f3": {
+    "key": "ethereum:0x74f1dcaa79e1670d526d4d28a16bbd63614bd5309305475274e2d66c0075f2f3",
+    "name": "Uniswap V4 LP EGP/SOXLon",
+    "decimals": 18,
+    "symbol": "EGP/SOXLON",
+    "price": 9007199254740990,
+    "address": "0x74f1dcaa79e1670d526d4d28a16bbd63614bd5309305475274e2d66c0075f2f3",
+    "addresses": {
+     "ethereum": "0x74f1dcaa79e1670d526d4d28a16bbd63614bd5309305475274e2d66c0075f2f3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.425Z",
+    "createdAt": "2026-10-14T06:54:32.550Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0"
+    ],
+    "liquidity": 20062.944031432842,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.21"
+    },
+    "tokenId": "92015cb9-bc31-4497-9581-7142cecb21c3",
+    "reserves": [
+     "19999.999999999999999999",
+     "0.193244102399877137"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf9005698204c71c3197887294e3a6b55eb551207402f21efb49e128d4ee4a61f": {
+    "key": "ethereum:0xf9005698204c71c3197887294e3a6b55eb551207402f21efb49e128d4ee4a61f",
+    "name": "Uniswap V4 LP wUSDC/SOXLon",
+    "decimals": 18,
+    "symbol": "WUSDC/SOXLON",
+    "price": 9007199254740990,
+    "address": "0xf9005698204c71c3197887294e3a6b55eb551207402f21efb49e128d4ee4a61f",
+    "addresses": {
+     "ethereum": "0xf9005698204c71c3197887294e3a6b55eb551207402f21efb49e128d4ee4a61f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.016Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "d1c18da2-ff14-43d5-804a-52a0e60bf45e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb943c8a0d77b656daf5244da060d647fd9152289": {
+    "key": "bsc:0xb943c8a0d77b656daf5244da060d647fd9152289",
+    "name": "Direxion Daily Semi Bull 3X ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SOXLON",
+    "price": 90.17,
+    "address": "0xb943c8a0d77b656daf5244da060d647fd9152289",
+    "addresses": {
+     "ethereum": "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0",
+     "bsc": "0xb943c8a0d77b656daf5244da060d647fd9152289"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T20:11:17.146Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 836445,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "747437.203",
+     "volumeUsd7d": "11437848.359"
+    },
+    "metadata": {},
+    "tokenId": "bdaff9b6-2281-4754-9c40-686d8e349542",
+    "totalSupply": "9275.65474567938",
+    "circulatingSupply": "9275.65474567938",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x474f463051a81eb7073daa39b642470450fa82ec0844f7c98c833f97311f4de3": {
+    "key": "ethereum:0x474f463051a81eb7073daa39b642470450fa82ec0844f7c98c833f97311f4de3",
+    "name": "Uniswap V4 LP wUSDC/SOXLon",
+    "decimals": 18,
+    "symbol": "WUSDC/SOXLON",
+    "price": 9007199254740990,
+    "address": "0x474f463051a81eb7073daa39b642470450fa82ec0844f7c98c833f97311f4de3",
+    "addresses": {
+     "ethereum": "0x474f463051a81eb7073daa39b642470450fa82ec0844f7c98c833f97311f4de3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.079Z",
+    "createdAt": "2026-09-28T10:37:12.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "686a8c15-5448-49db-ad20-106dc74220fc",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xdab641421c4ebb178737904752b5a08622da3d5507385f3efdba7f901a9985e9": {
+    "key": "bsc:0xdab641421c4ebb178737904752b5a08622da3d5507385f3efdba7f901a9985e9",
+    "name": "Uniswap V4 LP USDT/SOXLB",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0xdab641421c4ebb178737904752b5a08622da3d5507385f3efdba7f901a9985e9",
+    "addresses": {
+     "bsc": "0xdab641421c4ebb178737904752b5a08622da3d5507385f3efdba7f901a9985e9"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.478Z",
+    "createdAt": "2026-09-06T09:57:13.143Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 523.9439622099432,
+    "metrics": {
+     "apy": "4051.297",
+     "baseApy": "4051.297",
+     "volumeUsd1d": "58.309",
+     "volumeUsd7d": "114.815"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9990,
+     "feePercentage": "99.9002"
+    },
+    "tokenId": "bbc5f950-a22a-44a1-9b4f-80f5446e10d3",
+    "reserves": [
+     "287.797011578301958389",
+     "2.664493693277450474"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb9b034467a7f50b567b74f60b82e39bfd78aca5a": {
+    "key": "base:0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+    "name": "Dinari SOXL",
+    "decimals": 18,
+    "symbol": "SOXL",
+    "price": 93.77,
+    "address": "0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+    "addresses": {
+     "base": "0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+     "ethereum": "0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+     "avalanche": "0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+     "arbitrum": "0x9fe6002c876972d8d84124ec25000a6fa14c88ec"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2490.09,
+    "image": "https://coin-images.coingecko.com/coins/images/102174996/large/dinari-logo-green-with-margin.png?1785402836",
+    "metrics": {
+     "volumeUsd1d": "1089.619",
+     "volumeUsd7d": "67784.939"
+    },
+    "metadata": {},
+    "tokenId": "463201e6-307e-4714-8793-913e0949093e",
+    "totalSupply": "14.935932007902244",
+    "circulatingSupply": "26.556666007902244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xca9e17622f198b2fefad6f4e18765c90932ac6636c5f44127ae2843db4b3e94b": {
+    "key": "bsc:0xca9e17622f198b2fefad6f4e18765c90932ac6636c5f44127ae2843db4b3e94b",
+    "name": "Uniswap V4 LP QQQB/SOXLB",
+    "decimals": 18,
+    "symbol": "QQQB/SOXLB",
+    "price": 9007199254740990,
+    "address": "0xca9e17622f198b2fefad6f4e18765c90932ac6636c5f44127ae2843db4b3e94b",
+    "addresses": {
+     "bsc": "0xca9e17622f198b2fefad6f4e18765c90932ac6636c5f44127ae2843db4b3e94b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174259/large/bstocks_qqqb.png?1782837726",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:20.857Z",
+    "createdAt": "2026-09-22T21:16:50.340Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x205812cdbed920aff76c6580abd681a46d11efc7",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 4157.014259584535,
+    "metrics": {
+     "apy": "2.197",
+     "baseApy": "2.197",
+     "volumeUsd1d": "41.643",
+     "volumeUsd7d": "51975.129"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 51,
+     "feePercentage": "0.6028"
+    },
+    "tokenId": "74714696-c59f-4ed7-a63f-106eecbc43c0",
+    "reserves": [
+     "0.372688475240880877",
+     "43.89698993605318957"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6910acdc21a86dad4fde233764fdac4f4ce187e8": {
+    "key": "ethereum:0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "name": "Direxion Daily Semiconductor Bull 3x aStock",
+    "decimals": 18,
+    "symbol": "ASOXL",
+    "price": 94.31,
+    "address": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "addresses": {
+     "bsc": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "ethereum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "base": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "robinhood": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "arbitrum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1370.67,
+    "image": "https://coin-images.coingecko.com/coins/images/102175725/large/SOXL.png?1787292400",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "afb5b90a-40db-444b-baf4-91922ea91e1a",
+    "totalSupply": "14.532888942000001",
+    "circulatingSupply": "14.532888942000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9fe6002c876972d8d84124ec25000a6fa14c88ec": {
+    "key": "arbitrum:0x9fe6002c876972d8d84124ec25000a6fa14c88ec",
+    "name": "Dinari SOXL",
+    "decimals": 18,
+    "symbol": "SOXL",
+    "price": 93.77,
+    "address": "0x9fe6002c876972d8d84124ec25000a6fa14c88ec",
+    "addresses": {
+     "base": "0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+     "ethereum": "0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+     "avalanche": "0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+     "arbitrum": "0x9fe6002c876972d8d84124ec25000a6fa14c88ec"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2490.09,
+    "image": "https://coin-images.coingecko.com/coins/images/102174996/large/dinari-logo-green-with-margin.png?1785402836",
+    "metrics": {
+     "volumeUsd1d": "1089.619",
+     "volumeUsd7d": "67814.399"
+    },
+    "metadata": {},
+    "tokenId": "463201e6-307e-4714-8793-913e0949093e",
+    "totalSupply": "14.935932007902244",
+    "circulatingSupply": "26.556666007902244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x6910acdc21a86dad4fde233764fdac4f4ce187e8": {
+    "key": "bsc:0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "name": "Direxion Daily Semiconductor Bull 3x aStock",
+    "decimals": 18,
+    "symbol": "ASOXL",
+    "price": 94.31,
+    "address": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "addresses": {
+     "bsc": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "ethereum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "base": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "robinhood": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "arbitrum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1370.67,
+    "image": "https://coin-images.coingecko.com/coins/images/102175725/large/SOXL.png?1787292400",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "afb5b90a-40db-444b-baf4-91922ea91e1a",
+    "totalSupply": "14.532888942000001",
+    "circulatingSupply": "14.532888942000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3d7d950377eca7b4af7233716ff17def00ab2045": {
+    "key": "bsc:0x3d7d950377eca7b4af7233716ff17def00ab2045",
+    "name": "PancakeSwap V3 Tether USD/Semicon Bull 3X ETF 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x3d7d950377eca7b4af7233716ff17def00ab2045",
+    "addresses": {
+     "bsc": "0x3d7d950377eca7b4af7233716ff17def00ab2045"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2026-08-27T15:48:14.635Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 104471.17955151401,
+    "metrics": {
+     "apy": "73.078",
+     "baseApy": "73.078",
+     "volumeUsd1d": "83902.782",
+     "volumeUsd7d": "922438.318"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "84e84345-1009-4e7b-a7a5-b3acb5dc7e03",
+    "reserves": [
+     "21927.385734203211377524",
+     "930.597469728029226767"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd97d097a89113fa59b76c572e5b2eb647e8eefaf": {
+    "key": "bsc:0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+    "name": "Semicon Bull 3X ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOXLB",
+    "price": 88.72,
+    "address": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf",
+    "addresses": {
+     "bsc": "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37935336,
+    "image": "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750",
+    "metrics": {
+     "volumeUsd1d": "32357382.44",
+     "volumeUsd7d": "186348397.484"
+    },
+    "metadata": {},
+    "tokenId": "d3d83647-cf2a-4f25-bd98-db451398d46f",
+    "totalSupply": "427674.49689668",
+    "circulatingSupply": "427674.49689668",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x37111af783cb43c469127ca8ca8c20635bb35d3e": {
+    "key": "bsc:0x37111af783cb43c469127ca8ca8c20635bb35d3e",
+    "name": "PancakeSwap V3 Tether USD/Semicon Bull 3X ETF 1%",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x37111af783cb43c469127ca8ca8c20635bb35d3e",
+    "addresses": {
+     "bsc": "0x37111af783cb43c469127ca8ca8c20635bb35d3e"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.995Z",
+    "createdAt": "2026-07-20T17:47:07.226Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 1339.305326815372,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "4362.197"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "2f5af309-7fa2-4221-878f-7415044583dd",
+    "reserves": [
+     "7.951033007654975638",
+     "15.006324569364715643"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x6910acdc21a86dad4fde233764fdac4f4ce187e8": {
+    "key": "arbitrum:0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "name": "Direxion Daily Semiconductor Bull 3x aStock",
+    "decimals": 18,
+    "symbol": "ASOXL",
+    "price": 94.31,
+    "address": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "addresses": {
+     "bsc": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "ethereum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "base": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "robinhood": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "arbitrum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1370.67,
+    "image": "https://coin-images.coingecko.com/coins/images/102175725/large/SOXL.png?1787292400",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "afb5b90a-40db-444b-baf4-91922ea91e1a",
+    "totalSupply": "14.532888942000001",
+    "circulatingSupply": "14.532888942000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x6910acdc21a86dad4fde233764fdac4f4ce187e8": {
+    "key": "base:0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "name": "Direxion Daily Semiconductor Bull 3x aStock",
+    "decimals": 18,
+    "symbol": "ASOXL",
+    "price": 94.31,
+    "address": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+    "addresses": {
+     "bsc": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "ethereum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "base": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "robinhood": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8",
+     "arbitrum": "0x6910acdc21a86dad4fde233764fdac4f4ce187e8"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1370.67,
+    "image": "https://coin-images.coingecko.com/coins/images/102175725/large/SOXL.png?1787292400",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "afb5b90a-40db-444b-baf4-91922ea91e1a",
+    "totalSupply": "14.532888942000001",
+    "circulatingSupply": "14.532888942000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x25501fea0562fa74dab22dc09dd3f994d5558dce": {
+    "key": "arbitrum:0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+    "name": "Direxion Daily Semiconductor Bull 3x Shares ETF rStock",
+    "decimals": 18,
+    "symbol": "RSOXL",
+    "price": 94.25,
+    "address": "0x25501fea0562fa74dab22dc09dd3f994d5558dce",
+    "addresses": {
+     "arbitrum": "0x25501fea0562fa74dab22dc09dd3f994d5558dce"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4809685,
+    "image": "https://coin-images.coingecko.com/coins/images/102177164/large/bbbbc59eeb49cea3e0ba5ba8026396f8.png?1789117029",
+    "metrics": {
+     "volumeUsd1d": "2969.248",
+     "volumeUsd7d": "12977017.733"
+    },
+    "metadata": {},
+    "tokenId": "837b68ec-615c-4439-b8e2-cf74e659ac87",
+    "totalSupply": "51033.746809527",
+    "circulatingSupply": "51033.746809527",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0": {
+    "key": "ethereum:0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0",
+    "name": "Direxion Daily Semi Bull 3X ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SOXLON",
+    "price": 90.17,
+    "address": "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0",
+    "addresses": {
+     "ethereum": "0xd318bbbe6b6e83f74e7acaeb5e94c08ddbdb44c0",
+     "bsc": "0xb943c8a0d77b656daf5244da060d647fd9152289"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T20:11:17.146Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 836445,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "744114.579",
+     "volumeUsd7d": "10801706.15"
+    },
+    "metadata": {},
+    "tokenId": "bdaff9b6-2281-4754-9c40-686d8e349542",
+    "totalSupply": "9275.65474567938",
+    "circulatingSupply": "9275.65474567938",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1": {
+    "key": "avalanche:0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+    "name": "Dinari SOXL",
+    "decimals": 18,
+    "symbol": "SOXL",
+    "price": 93.77,
+    "address": "0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+    "addresses": {
+     "base": "0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+     "ethereum": "0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+     "avalanche": "0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+     "arbitrum": "0x9fe6002c876972d8d84124ec25000a6fa14c88ec"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2490.09,
+    "image": "https://coin-images.coingecko.com/coins/images/102174996/large/dinari-logo-green-with-margin.png?1785402836",
+    "metrics": {
+     "volumeUsd1d": "1089.619",
+     "volumeUsd7d": "67786.481"
+    },
+    "metadata": {},
+    "tokenId": "463201e6-307e-4714-8793-913e0949093e",
+    "totalSupply": "14.935932007902244",
+    "circulatingSupply": "26.556666007902244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x90a3f570a9cfa13d1e6b0c6f47f64de6873e726c205c487e7595e91372e50883": {
+    "key": "bsc:0x90a3f570a9cfa13d1e6b0c6f47f64de6873e726c205c487e7595e91372e50883",
+    "name": "Uniswap V4 LP USDT/SOXLB",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x90a3f570a9cfa13d1e6b0c6f47f64de6873e726c205c487e7595e91372e50883",
+    "addresses": {
+     "bsc": "0x90a3f570a9cfa13d1e6b0c6f47f64de6873e726c205c487e7595e91372e50883"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:27.772Z",
+    "createdAt": "2026-09-29T11:19:32.780Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 2535.0612088609673,
+    "metrics": {
+     "apy": "212.848",
+     "baseApy": "212.848",
+     "volumeUsd1d": "163.152",
+     "volumeUsd7d": "3409.907"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 900,
+     "feePercentage": "9.091"
+    },
+    "tokenId": "ff1261d3-bd21-4694-9d73-e8552bd4eab0",
+    "reserves": [
+     "205.048394347897308446",
+     "26.264525992283818875"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6422d12bd9996b2d514f8871d94e8d5b87343b47eba11696644ac304a10b34a7": {
+    "key": "bsc:0x6422d12bd9996b2d514f8871d94e8d5b87343b47eba11696644ac304a10b34a7",
+    "name": "PancakeSwap Infinity LP USDT/SOXLB",
+    "decimals": 18,
+    "symbol": "USDT/SOXLB",
+    "price": 9007199254740990,
+    "address": "0x6422d12bd9996b2d514f8871d94e8d5b87343b47eba11696644ac304a10b34a7",
+    "addresses": {
+     "bsc": "0x6422d12bd9996b2d514f8871d94e8d5b87343b47eba11696644ac304a10b34a7"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.205Z",
+    "createdAt": "2026-08-25T13:53:40.331Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 6844.707233264339,
+    "metrics": {
+     "apy": "4.719",
+     "baseApy": "4.719",
+     "volumeUsd1d": "396.961",
+     "volumeUsd7d": "107289.55"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x56a78328a880c6d2b28482d9c481c0061c3d82c0",
+     "tickSpacing": 10,
+     "feePercentage": "0.2237"
+    },
+    "tokenId": "08818963-d6a2-4476-9ecc-c019a816fc12",
+    "reserves": [
+     "361.813049671528447026",
+     "73.074894264984544724"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x94fe9b1f30bd2ea7095af110823815ee063d21fa": {
+    "key": "bsc:0x94fe9b1f30bd2ea7095af110823815ee063d21fa",
+    "name": "PancakeSwap LP WBNB/SOXLB",
+    "decimals": 18,
+    "symbol": "WBNB/SOXLB",
+    "price": 510.3526913009957,
+    "address": "0x94fe9b1f30bd2ea7095af110823815ee063d21fa",
+    "addresses": {
+     "bsc": "0x94fe9b1f30bd2ea7095af110823815ee063d21fa"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/102174369/large/soxlb-bstocks.png?1783453750"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.121Z",
+    "createdAt": "2026-10-14T07:01:23.178Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xd97d097a89113fa59b76c572e5b2eb647e8eefaf"
+    ],
+    "liquidity": 13071.400181339372,
+    "metrics": {
+     "apy": "8.681",
+     "baseApy": "8.681",
+     "volumeUsd1d": "1244.402",
+     "volumeUsd7d": "13535.52"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "cd73cebb-3eed-4682-8b45-8f4470688128",
+    "totalSupply": "25.612484080406515272",
+    "reserves": [
+     "9.263661240617398276",
+     "73.726129280501988515"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc580919e2e4b083321f9e4c5ed56bc862f275916": {
+    "key": "ethereum:0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+    "name": "Dinari SOXL",
+    "decimals": 18,
+    "symbol": "SOXL",
+    "price": 93.77,
+    "address": "0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+    "addresses": {
+     "base": "0xb9b034467a7f50b567b74f60b82e39bfd78aca5a",
+     "ethereum": "0xc580919e2e4b083321f9e4c5ed56bc862f275916",
+     "avalanche": "0xcae346a500bb9a6e4b58e8049928267b6ebdb1a1",
+     "arbitrum": "0x9fe6002c876972d8d84124ec25000a6fa14c88ec"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2490.09,
+    "image": "https://coin-images.coingecko.com/coins/images/102174996/large/dinari-logo-green-with-margin.png?1785402836",
+    "metrics": {
+     "volumeUsd1d": "1089.619",
+     "volumeUsd7d": "67754.92"
+    },
+    "metadata": {},
+    "tokenId": "463201e6-307e-4714-8793-913e0949093e",
+    "totalSupply": "14.935932007902244",
+    "circulatingSupply": "26.556666007902244",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,1292 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US46436E7186",
+ "ticker": "SGOV",
+ "name": "iShares 0-3 Month Treasury Bond ETF",
+ "isin": "US46436E7186",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:25Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "iShares 0-3 Month Treasury Bond ETF",
+   "symbol": "SGOV",
+   "slug": "sgov",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 100.57681742705171,
+     "tokenized_market_cap": 11443758.93448641,
+     "tokenized_volume_24h": 45196.6871785,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 242,
+   "asset_type": "etf",
+   "rwa_rank": 7773,
+   "has_tokens": true,
+   "average_tokenized_price": 100.57681742705171,
+   "tokenized_market_cap": 11443758.93448641,
+   "tokenized_volume_24h": 45196.6871785,
+   "last_updated": "2026-10-18T20:14:27.323Z",
+   "tokens": [
+    {
+     "symbol": "SGOVon",
+     "name": "iShares 0-3 Month Treasury Bond Tokenized ETF (Ondo)",
+     "price": 102.53644486806154,
+     "crypto_id": 39306,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 9480216.33,
+     "volume_24h": 948.90063414
+    },
+    {
+     "symbol": "SGOV",
+     "name": "iShares 0-3 Month Tokenized Treasury Bond ETF (Robinhood)",
+     "price": 100.5347929131342,
+     "crypto_id": 40781,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1963542.6,
+     "volume_24h": 44247.81746727
+    },
+    {
+     "symbol": "wSGOVx",
+     "name": "Wrapped iShares 0-3 Month Treasury Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41665,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SGOV",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SGOV"
+    }
+   ]
+  },
+  "info": {
+   "39306": {
+    "id": 39306,
+    "symbol": "SGOVon",
+    "name": "iShares 0-3 Month Treasury Bond Tokenized ETF (Ondo)",
+    "slug": "ishares-0-3-month-treasury-bond-tokenized-etf-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39306.png",
+    "date_added": "2026-01-08T15:44:21.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc008c5f579ec1450f20099c39f587547e27c7523",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "HjrN6ChZK2QRL6hMXayjGPLFvxhgjwKEy135VRjondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40781": {
+    "id": 40781,
+    "symbol": "SGOV",
+    "name": "iShares 0-3 Month Tokenized Treasury Bond ETF (Robinhood)",
+    "slug": "ishares-0-3-month-tokenized-treasury-bond-etf-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40781.png",
+    "date_added": "2026-08-04T07:32:05.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x92FD66527192E3e61d4DDd13322Aa222DE86F9B5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x92FD66527192E3e61d4DDd13322Aa222DE86F9B5",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41665": {
+    "id": 41665,
+    "symbol": "wSGOVx",
+    "name": "Wrapped iShares 0-3 Month Treasury Tokenized ETF (xStock)",
+    "slug": "wrapped-ishares-0-3-month-treasury-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41665.png",
+    "date_added": "2026-08-11T16:26:18.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x4Ac39e0881e5967822cCE9d166D1b7Ac12402ba1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4Ac39e0881e5967822cCE9d166D1b7Ac12402ba1",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xc008c5f579ec1450f20099c39f587547e27c7523",
+   "ethereum:0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+   "robinhood:0x92fd66527192e3e61d4ddd13322aa222de86f9b5"
+  ],
+  "exact": {
+   "bsc:0xc008c5f579ec1450f20099c39f587547e27c7523": {
+    "key": "bsc:0xc008c5f579ec1450f20099c39f587547e27c7523",
+    "name": "iShares 0-3 Month Treasury Bond ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SGOVON",
+    "price": 102.31,
+    "address": "0xc008c5f579ec1450f20099c39f587547e27c7523",
+    "addresses": {
+     "ethereum": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "bsc": "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9459765,
+    "image": "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+    "metrics": {
+     "volumeUsd1d": "999.954",
+     "volumeUsd7d": "616455.861"
+    },
+    "metadata": {},
+    "tokenId": "64e32b8d-0a26-491b-a3c4-a27c363c04aa",
+    "totalSupply": "92457.04142816056",
+    "circulatingSupply": "92457.04142816056",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f": {
+    "key": "ethereum:0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+    "name": "iShares 0-3 Month Treasury Bond ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SGOVON",
+    "price": 102.31,
+    "address": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+    "addresses": {
+     "ethereum": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "bsc": "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9459765,
+    "image": "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+    "metrics": {
+     "volumeUsd1d": "999.969",
+     "volumeUsd7d": "612804.402"
+    },
+    "metadata": {},
+    "tokenId": "64e32b8d-0a26-491b-a3c4-a27c363c04aa",
+    "totalSupply": "92457.04142816056",
+    "circulatingSupply": "92457.04142816056",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SGOV": {
+    "total_items": 23,
+    "pages": 1,
+    "received": 23,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x56103e0c2d6570c0377be79e6f02e67de3c4255e5433e6d60ef6492f8f6a0db9": {
+    "key": "ethereum:0x56103e0c2d6570c0377be79e6f02e67de3c4255e5433e6d60ef6492f8f6a0db9",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x56103e0c2d6570c0377be79e6f02e67de3c4255e5433e6d60ef6492f8f6a0db9",
+    "addresses": {
+     "ethereum": "0x56103e0c2d6570c0377be79e6f02e67de3c4255e5433e6d60ef6492f8f6a0db9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.563Z",
+    "createdAt": "2026-01-30T05:11:51.341Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1578.8327457535431,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "799c0fbe-0d3c-4eda-8a92-9dcab05d80db",
+    "reserves": [
+     "12.190471917321855249",
+     "331.703846"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfdaff192138a13fabbba9e9d6568b4c018f2d3435cac0179150735bc50c9369d": {
+    "key": "ethereum:0xfdaff192138a13fabbba9e9d6568b4c018f2d3435cac0179150735bc50c9369d",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0xfdaff192138a13fabbba9e9d6568b4c018f2d3435cac0179150735bc50c9369d",
+    "addresses": {
+     "ethereum": "0xfdaff192138a13fabbba9e9d6568b4c018f2d3435cac0179150735bc50c9369d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:14:55.459Z",
+    "createdAt": "2026-10-04T12:26:10.757Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1139.7901043926367,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 415,
+     "feePercentage": "4.2459"
+    },
+    "tokenId": "f6e328a4-4361-4a91-b4ca-1d8906f756bf",
+    "reserves": [
+     "5.863697761827864443",
+     "540.002627"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe0f4c53d777383cc77adfa89087a9c877586f0df": {
+    "key": "bsc:0xe0f4c53d777383cc77adfa89087a9c877586f0df",
+    "name": "PancakeSwap V3 Tether USD/iShares 0-3 Month Treasury Bond ETF (Ondo Tokenized) 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/SGOVON",
+    "price": 9007199254740990,
+    "address": "0xe0f4c53d777383cc77adfa89087a9c877586f0df",
+    "addresses": {
+     "bsc": "0xe0f4c53d777383cc77adfa89087a9c877586f0df"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.558Z",
+    "createdAt": "2026-09-17T16:42:53.211Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    ],
+    "liquidity": 57170.41325204042,
+    "metrics": {
+     "apy": "1.449",
+     "baseApy": "1.449",
+     "volumeUsd1d": "907.624",
+     "volumeUsd7d": "49693.802"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "ddd49804-961c-4f4a-bc78-1c4c2bf9114d",
+    "reserves": [
+     "22590.445154708297436046",
+     "338.181514018911730514"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5c53168c5055092d427bdeb309d76e1e5042128a441d3ca68be67f9cbaa6ed53": {
+    "key": "ethereum:0x5c53168c5055092d427bdeb309d76e1e5042128a441d3ca68be67f9cbaa6ed53",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x5c53168c5055092d427bdeb309d76e1e5042128a441d3ca68be67f9cbaa6ed53",
+    "addresses": {
+     "ethereum": "0x5c53168c5055092d427bdeb309d76e1e5042128a441d3ca68be67f9cbaa6ed53"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.264Z",
+    "createdAt": "2026-10-04T14:26:56.040Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 57797.09055737267,
+    "metrics": {
+     "apy": "1.228",
+     "baseApy": "1.228",
+     "volumeUsd1d": "49.913",
+     "volumeUsd7d": "2238.123"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 380,
+     "feePercentage": "3.8962"
+    },
+    "tokenId": "de972573-9fcb-4b7d-927c-f44de9e7cdd1",
+    "reserves": [
+     "255.27073872347978855",
+     "31687.819604"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9052bb3ce873d89491976c9275dbb7f02b7262fd1786634ce41f9fcc0bdc3027": {
+    "key": "ethereum:0x9052bb3ce873d89491976c9275dbb7f02b7262fd1786634ce41f9fcc0bdc3027",
+    "name": "Uniswap V4 LP SGOVon/USDT",
+    "decimals": 18,
+    "symbol": "SGOVON/USDT",
+    "price": 9007199254740990,
+    "address": "0x9052bb3ce873d89491976c9275dbb7f02b7262fd1786634ce41f9fcc0bdc3027",
+    "addresses": {
+     "ethereum": "0x9052bb3ce873d89491976c9275dbb7f02b7262fd1786634ce41f9fcc0bdc3027"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.323Z",
+    "createdAt": "2026-09-11T01:31:45.456Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1011.4895879424333,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7400,
+     "feePercentage": "74.026"
+    },
+    "tokenId": "8acf6b13-05b5-4d15-8925-ca69c013be9e",
+    "reserves": [
+     "7.030040928770279892",
+     "292.497063"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x99dee6b1c733de26edfef7a32ef160f44c482bc8088959842e46d562c625b410": {
+    "key": "ethereum:0x99dee6b1c733de26edfef7a32ef160f44c482bc8088959842e46d562c625b410",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x99dee6b1c733de26edfef7a32ef160f44c482bc8088959842e46d562c625b410",
+    "addresses": {
+     "ethereum": "0x99dee6b1c733de26edfef7a32ef160f44c482bc8088959842e46d562c625b410"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.849Z",
+    "createdAt": "2026-09-28T10:39:13.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2250.2789060183127,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "40.06"
+    },
+    "tokenId": "b18311bf-b6ab-4fa1-9f7b-bf84486f55d1",
+    "reserves": [
+     "10.676821325270457764",
+     "1158.206653"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9dfcb76701690f7003aeae3022027616c3c3ad40d37cd92be512ab086b51df51": {
+    "key": "ethereum:0x9dfcb76701690f7003aeae3022027616c3c3ad40d37cd92be512ab086b51df51",
+    "name": "Uniswap V4 LP SGOVon/USDT",
+    "decimals": 18,
+    "symbol": "SGOVON/USDT",
+    "price": 9007199254740990,
+    "address": "0x9dfcb76701690f7003aeae3022027616c3c3ad40d37cd92be512ab086b51df51",
+    "addresses": {
+     "ethereum": "0x9dfcb76701690f7003aeae3022027616c3c3ad40d37cd92be512ab086b51df51"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.849Z",
+    "createdAt": "2026-09-13T03:19:42.481Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 7898.987140753934,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4800,
+     "feePercentage": "48.052"
+    },
+    "tokenId": "e8a046be-80a6-4a50-ac35-8c3536ca737d",
+    "reserves": [
+     "64.136584337613135247",
+     "1338.321477"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc008c5f579ec1450f20099c39f587547e27c7523": {
+    "key": "bsc:0xc008c5f579ec1450f20099c39f587547e27c7523",
+    "name": "iShares 0-3 Month Treasury Bond ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SGOVON",
+    "price": 102.31,
+    "address": "0xc008c5f579ec1450f20099c39f587547e27c7523",
+    "addresses": {
+     "ethereum": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "bsc": "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9459765,
+    "image": "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+    "metrics": {
+     "volumeUsd1d": "999.954",
+     "volumeUsd7d": "616455.861"
+    },
+    "metadata": {},
+    "tokenId": "64e32b8d-0a26-491b-a3c4-a27c363c04aa",
+    "totalSupply": "92457.04142816056",
+    "circulatingSupply": "92457.04142816056",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8131e9811b5123909297b1b2cf17049121340e69bcd46926b34c76f5351e8de4": {
+    "key": "ethereum:0x8131e9811b5123909297b1b2cf17049121340e69bcd46926b34c76f5351e8de4",
+    "name": "Uniswap V4 LP SGOVon/USDT",
+    "decimals": 18,
+    "symbol": "SGOVON/USDT",
+    "price": 9007199254740990,
+    "address": "0x8131e9811b5123909297b1b2cf17049121340e69bcd46926b34c76f5351e8de4",
+    "addresses": {
+     "ethereum": "0x8131e9811b5123909297b1b2cf17049121340e69bcd46926b34c76f5351e8de4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.425Z",
+    "createdAt": "2026-09-13T03:19:42.481Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1339.560092799666,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "bcc517a7-f9d3-4046-842f-51730b2406d1",
+    "reserves": [
+     "10.97229185542697714",
+     "217.171246"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd5b83c33a8711e727c0abb6f72ee508755d37e10": {
+    "key": "base:0xd5b83c33a8711e727c0abb6f72ee508755d37e10",
+    "name": "Aerodrome SlipStream Wrapped  iShares 0-3 Month Treasury Bond ETF ST0x/USD Coin 0.01%",
+    "decimals": 18,
+    "symbol": "WTSGOV/USDC",
+    "price": 9007199254740990,
+    "address": "0xd5b83c33a8711e727c0abb6f72ee508755d37e10",
+    "addresses": {
+     "base": "0xd5b83c33a8711e727c0abb6f72ee508755d37e10"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102174008/large/WTSGOV_256.png?1781775656"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.843Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x78c31580c97101694c70022c83d570150c11e935",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 178650.29963560752,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "rewardApy": "0",
+     "volumeUsd1d": "71.845",
+     "volumeUsd7d": "125541.455"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "4822ebb5-e009-48df-9e3c-d50035cc7c1e",
+    "reserves": [
+     "202.470199330122651208",
+     "158066.013413"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x73644e52ee34b0f58f7992f4191dc3381ab76735db7c32f6fab938495a50ae26": {
+    "key": "ethereum:0x73644e52ee34b0f58f7992f4191dc3381ab76735db7c32f6fab938495a50ae26",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x73644e52ee34b0f58f7992f4191dc3381ab76735db7c32f6fab938495a50ae26",
+    "addresses": {
+     "ethereum": "0x73644e52ee34b0f58f7992f4191dc3381ab76735db7c32f6fab938495a50ae26"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.073Z",
+    "createdAt": "2026-09-28T10:37:12.682Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 5143.198680685488,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "b6528ac2-95dc-4920-ac64-888431b2541f",
+    "reserves": [
+     "26.430029715183190659",
+     "2439.718114"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x77a08dfc2603e624b48a8015d7e43c6487e1b73c2dc0cd20f507cc8a73529054": {
+    "key": "ethereum:0x77a08dfc2603e624b48a8015d7e43c6487e1b73c2dc0cd20f507cc8a73529054",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x77a08dfc2603e624b48a8015d7e43c6487e1b73c2dc0cd20f507cc8a73529054",
+    "addresses": {
+     "ethereum": "0x77a08dfc2603e624b48a8015d7e43c6487e1b73c2dc0cd20f507cc8a73529054"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.005Z",
+    "createdAt": "2026-09-28T10:39:20.872Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1474.3670146753789,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4500,
+     "feePercentage": "45"
+    },
+    "tokenId": "fdedfaf8-8f15-40db-8648-c9d5a1b950f2",
+    "reserves": [
+     "7.217178734788572022",
+     "736.15119"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x6ef9a0d9d80fda3b98de85d0274f74931c9f1053": {
+    "key": "base:0x6ef9a0d9d80fda3b98de85d0274f74931c9f1053",
+    "name": "Hydrex Wrapped  iShares 0-3 Month Treasury Bond ETF ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTSGOV/USDC",
+    "price": 9007199254740990,
+    "address": "0x6ef9a0d9d80fda3b98de85d0274f74931c9f1053",
+    "addresses": {
+     "base": "0x6ef9a0d9d80fda3b98de85d0274f74931c9f1053"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102174008/large/WTSGOV_256.png?1781775656",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-08-20T01:51:44.743Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x78c31580c97101694c70022c83d570150c11e935",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 3102.059922131379,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.134",
+     "volumeUsd7d": "0.027"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "34077819-17d6-4b13-884e-045b6d2aa5ed",
+    "reserves": [
+     "29.690459321832175824",
+     "78.105073"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x78c31580c97101694c70022c83d570150c11e935": {
+    "key": "base:0x78c31580c97101694c70022c83d570150c11e935",
+    "name": "BlackRock iShares 0-3 Month Treasury Bond (ST0x Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "WTSGOV",
+    "price": 101.85,
+    "address": "0x78c31580c97101694c70022c83d570150c11e935",
+    "addresses": {
+     "base": "0x78c31580c97101694c70022c83d570150c11e935"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-19T02:06:54.980Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 50929,
+    "image": "https://coin-images.coingecko.com/coins/images/102174008/large/WTSGOV_256.png?1781775656",
+    "metrics": {
+     "volumeUsd1d": "72.053",
+     "volumeUsd7d": "134538.399"
+    },
+    "metadata": {},
+    "tokenId": "b0fdc14c-cb8d-44c6-aec3-8dff5f686a2e",
+    "totalSupply": "500.04374232531916",
+    "circulatingSupply": "500.04374232531916",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2c968c437592ad78eafb83a84a4dc384500dc2e726888dd701bcd1c2ca8c956a": {
+    "key": "ethereum:0x2c968c437592ad78eafb83a84a4dc384500dc2e726888dd701bcd1c2ca8c956a",
+    "name": "Uniswap V4 LP wUSDC/SGOVon",
+    "decimals": 18,
+    "symbol": "WUSDC/SGOVON",
+    "price": 9007199254740990,
+    "address": "0x2c968c437592ad78eafb83a84a4dc384500dc2e726888dd701bcd1c2ca8c956a",
+    "addresses": {
+     "ethereum": "0x2c968c437592ad78eafb83a84a4dc384500dc2e726888dd701bcd1c2ca8c956a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.683Z",
+    "createdAt": "2026-09-28T10:37:11.186Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "b27e1573-bde8-439a-b349-1c5623a82310",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x11c6889064e0fa5b2501c314ca63e8cd26f28d140a1bc442f8413b6198997373": {
+    "key": "bsc:0x11c6889064e0fa5b2501c314ca63e8cd26f28d140a1bc442f8413b6198997373",
+    "name": "Uniswap V4 LP USDT/SGOVon",
+    "decimals": 18,
+    "symbol": "USDT/SGOVON",
+    "price": 9007199254740990,
+    "address": "0x11c6889064e0fa5b2501c314ca63e8cd26f28d140a1bc442f8413b6198997373",
+    "addresses": {
+     "bsc": "0x11c6889064e0fa5b2501c314ca63e8cd26f28d140a1bc442f8413b6198997373"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.927Z",
+    "createdAt": "2026-09-18T06:37:46.935Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    ],
+    "liquidity": 761.7755247371383,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2331"
+    },
+    "tokenId": "0451b964-006d-4d61-9034-019b33b97d58",
+    "reserves": [
+     "347.30603808866413884",
+     "4.054026734719521219"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x03d4ee569237a9011274c05e2b60b79da612a8e37f1fb97ec4c4dcd349595909": {
+    "key": "bsc:0x03d4ee569237a9011274c05e2b60b79da612a8e37f1fb97ec4c4dcd349595909",
+    "name": "Uniswap V4 LP USDT/SGOVon",
+    "decimals": 18,
+    "symbol": "USDT/SGOVON",
+    "price": 9007199254740990,
+    "address": "0x03d4ee569237a9011274c05e2b60b79da612a8e37f1fb97ec4c4dcd349595909",
+    "addresses": {
+     "bsc": "0x03d4ee569237a9011274c05e2b60b79da612a8e37f1fb97ec4c4dcd349595909"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.517Z",
+    "createdAt": "2026-09-18T07:08:37.907Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    ],
+    "liquidity": 1166.7742391123024,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 499,
+     "feePercentage": "5.0851"
+    },
+    "tokenId": "e7746c00-6a9e-45d8-835d-76d83e861b70",
+    "reserves": [
+     "444.428556351815973775",
+     "7.064089555877590695"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x717ca9cec215630415009cc4b0cd914b6913c50fdd539bb3672127cd759375ec": {
+    "key": "ethereum:0x717ca9cec215630415009cc4b0cd914b6913c50fdd539bb3672127cd759375ec",
+    "name": "Uniswap V4 LP SGOVon/USDC",
+    "decimals": 18,
+    "symbol": "SGOVON/USDC",
+    "price": 9007199254740990,
+    "address": "0x717ca9cec215630415009cc4b0cd914b6913c50fdd539bb3672127cd759375ec",
+    "addresses": {
+     "ethereum": "0x717ca9cec215630415009cc4b0cd914b6913c50fdd539bb3672127cd759375ec"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.503Z",
+    "createdAt": "2026-09-29T03:26:29.853Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1310.5051223614544,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "4.954"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 469,
+     "feePercentage": "4.7854"
+    },
+    "tokenId": "c8879f24-c4ff-46f0-ac9b-53b528ec6b1d",
+    "reserves": [
+     "10.369846973503024169",
+     "249.62499"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x82a2784e31af8136b26366a7df6b6b8e995ca5103777454ed76e145aaad2e3ad": {
+    "key": "ethereum:0x82a2784e31af8136b26366a7df6b6b8e995ca5103777454ed76e145aaad2e3ad",
+    "name": "Uniswap V4 LP SGOVon/USDT",
+    "decimals": 18,
+    "symbol": "SGOVON/USDT",
+    "price": 9007199254740990,
+    "address": "0x82a2784e31af8136b26366a7df6b6b8e995ca5103777454ed76e145aaad2e3ad",
+    "addresses": {
+     "ethereum": "0x82a2784e31af8136b26366a7df6b6b8e995ca5103777454ed76e145aaad2e3ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.444Z",
+    "createdAt": "2026-09-28T10:37:16.097Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2091.088056837378,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4500,
+     "feePercentage": "45.055"
+    },
+    "tokenId": "0692df26-6a55-4603-a4fd-99b29f698570",
+    "reserves": [
+     "10.359109051957953927",
+     "1032.13318"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3aa880d06fa191581762976a0e0d1a2ecae3874e": {
+    "key": "base:0x3aa880d06fa191581762976a0e0d1a2ecae3874e",
+    "name": "Hydrex Wrapped  iShares 0-3 Month Treasury Bond ETF ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTSGOV/USDC",
+    "price": 9007199254740990,
+    "address": "0x3aa880d06fa191581762976a0e0d1a2ecae3874e",
+    "addresses": {
+     "base": "0x3aa880d06fa191581762976a0e0d1a2ecae3874e"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102174008/large/WTSGOV_256.png?1781775656",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-08-19T16:24:26.742Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x78c31580c97101694c70022c83d570150c11e935",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 1006.3039732361653,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "volumeUsd1d": "0.188",
+     "volumeUsd7d": "0.369"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "a79db81a-4218-4425-88bc-5191e185b46e",
+    "reserves": [
+     "4.937757026283057482",
+     "503.512249"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f": {
+    "key": "ethereum:0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+    "name": "iShares 0-3 Month Treasury Bond ETF (Ondo Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SGOVON",
+    "price": 102.31,
+    "address": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+    "addresses": {
+     "ethereum": "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f",
+     "bsc": "0xc008c5f579ec1450f20099c39f587547e27c7523"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9459765,
+    "image": "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893",
+    "metrics": {
+     "volumeUsd1d": "999.969",
+     "volumeUsd7d": "612804.402"
+    },
+    "metadata": {},
+    "tokenId": "64e32b8d-0a26-491b-a3c4-a27c363c04aa",
+    "totalSupply": "92457.04142816056",
+    "circulatingSupply": "92457.04142816056",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbbe3b84985a06cfcfad90776afa9af07449e5fe0a267e01afd0b45f888f87ecd": {
+    "key": "ethereum:0xbbe3b84985a06cfcfad90776afa9af07449e5fe0a267e01afd0b45f888f87ecd",
+    "name": "Uniswap V4 LP EGP/SGOVon",
+    "decimals": 18,
+    "symbol": "EGP/SGOVON",
+    "price": 9007199254740990,
+    "address": "0xbbe3b84985a06cfcfad90776afa9af07449e5fe0a267e01afd0b45f888f87ecd",
+    "addresses": {
+     "ethereum": "0xbbe3b84985a06cfcfad90776afa9af07449e5fe0a267e01afd0b45f888f87ecd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71432/large/sgovon_160x160.png?1767882893"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.799Z",
+    "createdAt": "2026-10-14T06:54:49.432Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x8de5d49725550f7b318b2fa0f1b1f118e98e8d0f"
+    ],
+    "liquidity": 20073.57004935524,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.54"
+    },
+    "tokenId": "cbe83bc5-188c-49b4-9f5a-aa517fad5c39",
+    "reserves": [
+     "20000",
+     "0.274174945125551135"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x65f9396c597a58c26d9e7409fd63c158cbdecb5e": {
+    "key": "arbitrum:0x65f9396c597a58c26d9e7409fd63c158cbdecb5e",
+    "name": "iShares 0-3 Month Treasury Bond ETF rStock",
+    "decimals": 18,
+    "symbol": "RSGOV",
+    "price": 100.49,
+    "address": "0x65f9396c597a58c26d9e7409fd63c158cbdecb5e",
+    "addresses": {
+     "arbitrum": "0x65f9396c597a58c26d9e7409fd63c158cbdecb5e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96563,
+    "image": "https://coin-images.coingecko.com/coins/images/102177260/large/SGOV.png?1789117332",
+    "metrics": {
+     "volumeUsd1d": "149.551",
+     "volumeUsd7d": "9058.383"
+    },
+    "metadata": {},
+    "tokenId": "d4b55b35-c4a0-4bb7-9495-690632277a88",
+    "totalSupply": "960.963978648",
+    "circulatingSupply": "960.963978648",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

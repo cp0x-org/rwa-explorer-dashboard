@@ -1,0 +1,1396 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US24703L2025",
+ "ticker": "DELL",
+ "name": "Dell Technologies",
+ "isin": "US24703L2025",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:09Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Dell Technologies Inc.",
+   "symbol": "DELL",
+   "slug": "dell-technologies-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 444.72782268863705,
+     "tokenized_market_cap": 3609155.1009083777,
+     "tokenized_volume_24h": 2337741.71439878,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 44,
+   "asset_type": "stock",
+   "rwa_rank": 46,
+   "has_tokens": true,
+   "average_tokenized_price": 444.72782268863705,
+   "tokenized_market_cap": 3609155.1009083777,
+   "tokenized_volume_24h": 2337741.71439878,
+   "last_updated": "2026-10-18T20:14:24.410Z",
+   "tokens": [
+    {
+     "symbol": "DELLx",
+     "name": "Dell Technologies Inc. tokenized stock (xStock)",
+     "price": 448.80992428607817,
+     "crypto_id": 40190,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1823769.07,
+     "volume_24h": 31680.35364533
+    },
+    {
+     "symbol": "rDELL",
+     "name": "Dell Tokenized Stock (Reality)",
+     "price": 448.7254156472663,
+     "crypto_id": 40617,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 62359.69,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "DELL",
+     "name": "Dell Tokenized Stock (Robinhood)",
+     "price": 440.6450802838742,
+     "crypto_id": 40743,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 647598.24,
+     "volume_24h": 22068.51014843
+    },
+    {
+     "symbol": "DELLB",
+     "name": "Dell Tokenized bStocks",
+     "price": 444.83501060225547,
+     "crypto_id": 40931,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1076464.18,
+     "volume_24h": 2257111.28296922
+    },
+    {
+     "symbol": "wDELLx",
+     "name": "Wrapped Dell Technologies Inc. Tokenized Stock (xStock)",
+     "price": 446.0569330410609,
+     "crypto_id": 41142,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 26284.63418428
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "DELL",
+     "market_url": "https://www.binance.com/en/stocks/EQ_DELL"
+    }
+   ]
+  },
+  "info": {
+   "40190": {
+    "id": 40190,
+    "symbol": "DELLx",
+    "name": "Dell Technologies Inc. tokenized stock (xStock)",
+    "slug": "dell-technologies-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40190.png",
+    "date_added": "2026-06-10T06:33:30.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xsu7Tc5J2fVUE4H5vYAiSr34cvLJeCsYPMjAYnayQn6"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xsu7Tc5J2fVUE4H5vYAiSr34cvLJeCsYPMjAYnayQn6",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "EQB1FtKE8POjrMb9c29Wdlu8q5_xy0beDGCUg41dxRp6aQ-c",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2782dF1cC877F720C81B4f6568Db64563F1D3AA3",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "40617": {
+    "id": 40617,
+    "symbol": "rDELL",
+    "name": "Dell Tokenized Stock (Reality)",
+    "slug": "dell-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40617.png",
+    "date_added": "2026-07-02T07:39:08.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x0b331f6b174403ee435587ae4f5c70965d86e0fc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0b331f6b174403ee435587ae4f5c70965d86e0fc",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40743": {
+    "id": 40743,
+    "symbol": "DELL",
+    "name": "Dell Tokenized Stock (Robinhood)",
+    "slug": "dell-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40743.png",
+    "date_added": "2026-08-04T07:31:48.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x941AE714EC6D8130c7B75d67160Ca08f1e7d11Dd"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x941AE714EC6D8130c7B75d67160Ca08f1e7d11Dd",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40931": {
+    "id": 40931,
+    "symbol": "DELLB",
+    "name": "Dell Tokenized bStocks",
+    "slug": "dell-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40931.png",
+    "date_added": "2026-07-28T07:37:00.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x0e7a51966c66648999d506e1372efdea1b78cb0b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41142": {
+    "id": 41142,
+    "symbol": "wDELLx",
+    "name": "Wrapped Dell Technologies Inc. Tokenized Stock (xStock)",
+    "slug": "wrapped-dell-technologies-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41142.png",
+    "date_added": "2026-08-11T16:20:41.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x04DB4384013664BAa627c1a3fa4Ff0c50F37Cfd3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x04DB4384013664BAa627c1a3fa4Ff0c50F37Cfd3",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x0b331f6b174403ee435587ae4f5c70965d86e0fc",
+   "bsc:0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+   "bsc:0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+   "ethereum:0x2782df1cc877f720c81b4f6568db64563f1d3aa3",
+   "robinhood:0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+  ],
+  "exact": {
+   "bsc:0x0e7a51966c66648999d506e1372efdea1b78cb0b": {
+    "key": "bsc:0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+    "name": "Dell (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELLB",
+    "price": 444.48,
+    "address": "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+    "addresses": {
+     "bsc": "0x0e7a51966c66648999d506e1372efdea1b78cb0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1075592,
+    "image": "https://coin-images.coingecko.com/coins/images/102175190/large/DELLB.png?1785458092",
+    "metrics": {
+     "volumeUsd1d": "1274618.476",
+     "volumeUsd7d": "6197786.306"
+    },
+    "metadata": {},
+    "tokenId": "51c4f6cf-f3bd-4732-9532-27ced2087cea",
+    "totalSupply": "2419.91785418",
+    "circulatingSupply": "2419.91785418",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd": {
+    "key": "robinhood:0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "name": "Dell • Robinhood Token",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 448.37856375,
+    "address": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "addresses": {
+     "robinhood": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "liquidity": 658921.850236861,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "461238.089"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000014eaef73a2c44d62b7952cfd0a44ff51",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000063708620124549",
+     "currentMultiplier": "1.000063708620124549",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "70f34da3-2467-4b45-a3c9-85c79eb360ef",
+    "totalSupply": "1469.56590593",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "DELL": {
+    "total_items": 22,
+    "pages": 1,
+    "received": 22,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x0e7a51966c66648999d506e1372efdea1b78cb0b": {
+    "key": "bsc:0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+    "name": "Dell (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELLB",
+    "price": 444.48,
+    "address": "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+    "addresses": {
+     "bsc": "0x0e7a51966c66648999d506e1372efdea1b78cb0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1075592,
+    "image": "https://coin-images.coingecko.com/coins/images/102175190/large/DELLB.png?1785458092",
+    "metrics": {
+     "volumeUsd1d": "1274618.476",
+     "volumeUsd7d": "6197786.306"
+    },
+    "metadata": {},
+    "tokenId": "51c4f6cf-f3bd-4732-9532-27ced2087cea",
+    "totalSupply": "2419.91785418",
+    "circulatingSupply": "2419.91785418",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdcb9fc7cecfaee350e5c9119e56f381ba066ed1d36d325d40564bd8bd3810f6c": {
+    "key": "ethereum:0xdcb9fc7cecfaee350e5c9119e56f381ba066ed1d36d325d40564bd8bd3810f6c",
+    "name": "Uniswap V4 LP wUSDC/DELLon",
+    "decimals": 18,
+    "symbol": "WUSDC/DELLON",
+    "price": 9007199254740990,
+    "address": "0xdcb9fc7cecfaee350e5c9119e56f381ba066ed1d36d325d40564bd8bd3810f6c",
+    "addresses": {
+     "ethereum": "0xdcb9fc7cecfaee350e5c9119e56f381ba066ed1d36d325d40564bd8bd3810f6c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:56.483Z",
+    "createdAt": "2026-09-28T10:37:18.037Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xee9f43476c5b7292b114ba1b280a42a8746792d4"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1beb9e56-538c-437c-8d58-30f75e022ba2",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x4863a721022d3531a96017f6a2a3c47818a92484": {
+    "key": "base:0x4863a721022d3531a96017f6a2a3c47818a92484",
+    "name": "Dell Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 449.94,
+    "address": "0x4863a721022d3531a96017f6a2a3c47818a92484",
+    "addresses": {
+     "ethereum": "0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+     "base": "0x4863a721022d3531a96017f6a2a3c47818a92484",
+     "avalanche": "0x6fea534dd14126701fac98523476612a9c5cb793",
+     "arbitrum": "0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24712,
+    "image": "https://coin-images.coingecko.com/coins/images/102175034/large/dinari-logo-green-with-margin.png?1785402970",
+    "metrics": {
+     "volumeUsd1d": "0.944",
+     "volumeUsd7d": "26309.468"
+    },
+    "metadata": {},
+    "tokenId": "afa895f9-95a5-47df-87d0-c85cfba4156e",
+    "totalSupply": "54.92204758987042",
+    "circulatingSupply": "54.92204758987042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x923e8b43ebbb694b0be2945125fcb27b2902bf65ee2a703b06026a924216fee3": {
+    "key": "robinhood:0x923e8b43ebbb694b0be2945125fcb27b2902bf65ee2a703b06026a924216fee3",
+    "name": "Uniswap V4 LP ETH/DELL",
+    "decimals": 18,
+    "symbol": "ETH/DELL",
+    "price": 9007199254740990,
+    "address": "0x923e8b43ebbb694b0be2945125fcb27b2902bf65ee2a703b06026a924216fee3",
+    "addresses": {
+     "robinhood": "0x923e8b43ebbb694b0be2945125fcb27b2902bf65ee2a703b06026a924216fee3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.195Z",
+    "createdAt": "2026-07-23T06:14:04.126Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 6222.591870735219,
+    "metrics": {
+     "apy": "4.617",
+     "baseApy": "4.617",
+     "volumeUsd1d": "15.45",
+     "volumeUsd7d": "518.439"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "dde3013a-6820-4877-9953-8da86134b8ca",
+    "reserves": [
+     "0.109262915491671826",
+     "13.309107904802387284"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc30c89cb7815a1488b7998d15eec73961707fc5a": {
+    "key": "robinhood:0xc30c89cb7815a1488b7998d15eec73961707fc5a",
+    "name": "Uniswap V3 Global Dollar/Dell  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/DELL",
+    "price": 9007199254740990,
+    "address": "0xc30c89cb7815a1488b7998d15eec73961707fc5a",
+    "addresses": {
+     "robinhood": "0xc30c89cb7815a1488b7998d15eec73961707fc5a"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.167Z",
+    "createdAt": "2026-07-17T16:26:48.278Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 335041.5809210247,
+    "metrics": {
+     "apy": "17.65",
+     "baseApy": "17.65",
+     "volumeUsd1d": "16200.876",
+     "volumeUsd7d": "667542.672"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "23b757ed-6dc9-49dd-b8e0-0a3dbda9713d",
+    "reserves": [
+     "30634.907175",
+     "678.905501637119094151"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2cefb9dbcc0c867f7cd9df71ba8206bbc4fe856d52649789326bf033826d710b": {
+    "key": "bsc:0x2cefb9dbcc0c867f7cd9df71ba8206bbc4fe856d52649789326bf033826d710b",
+    "name": "Uniswap V4 LP DELLB/USDT",
+    "decimals": 18,
+    "symbol": "DELLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x2cefb9dbcc0c867f7cd9df71ba8206bbc4fe856d52649789326bf033826d710b",
+    "addresses": {
+     "bsc": "0x2cefb9dbcc0c867f7cd9df71ba8206bbc4fe856d52649789326bf033826d710b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175190/large/DELLB.png?1785458092",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:20.232Z",
+    "createdAt": "2026-10-03T14:00:56.957Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2697.488926111379,
+    "metrics": {
+     "apy": "11.831",
+     "baseApy": "11.831",
+     "volumeUsd1d": "12.332",
+     "volumeUsd7d": "79.592"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 700,
+     "feePercentage": "7.093"
+    },
+    "tokenId": "eaac612d-6511-4c0d-84d1-bd9bd6eb96d9",
+    "reserves": [
+     "2.17135632973875583",
+     "1733.852109779287475397"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x88e2e5deb8f627649c4f2ab76d574a69c4c0fd32402ac559dcdbc4bbaa968f63": {
+    "key": "robinhood:0x88e2e5deb8f627649c4f2ab76d574a69c4c0fd32402ac559dcdbc4bbaa968f63",
+    "name": "Uniswap V4 LP USDG/DELL",
+    "decimals": 18,
+    "symbol": "USDG/DELL",
+    "price": 9007199254740990,
+    "address": "0x88e2e5deb8f627649c4f2ab76d574a69c4c0fd32402ac559dcdbc4bbaa968f63",
+    "addresses": {
+     "robinhood": "0x88e2e5deb8f627649c4f2ab76d574a69c4c0fd32402ac559dcdbc4bbaa968f63"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.497Z",
+    "createdAt": "2026-07-26T11:55:31.321Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 1400.8141604174234,
+    "metrics": {
+     "apy": "55.824",
+     "baseApy": "55.824",
+     "volumeUsd1d": "42.05",
+     "volumeUsd7d": "424.279"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "ee0102e7-a60d-43ed-992c-bcc822e3d59e",
+    "reserves": [
+     "14.72852",
+     "3.091328962796391843"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x61346cd249a6453fba2ada35f210376ac0b4957c": {
+    "key": "robinhood:0x61346cd249a6453fba2ada35f210376ac0b4957c",
+    "name": "Uniswap V3 WETH/Dell  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/DELL",
+    "price": 9007199254740990,
+    "address": "0x61346cd249a6453fba2ada35f210376ac0b4957c",
+    "addresses": {
+     "robinhood": "0x61346cd249a6453fba2ada35f210376ac0b4957c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.304Z",
+    "createdAt": "2026-09-16T01:43:27.489Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 8081.927398295949,
+    "metrics": {
+     "apy": "2.134",
+     "baseApy": "2.134",
+     "volumeUsd1d": "157.533",
+     "volumeUsd7d": "42859.912"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "b73500bf-0543-4526-824f-d74f529f1d2c",
+    "reserves": [
+     "0.158591909648506532",
+     "17.198603741012975705"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3715712caf7f05b8cab8ebad372211711da533b5387d647cad16ce0de70b130b": {
+    "key": "ethereum:0x3715712caf7f05b8cab8ebad372211711da533b5387d647cad16ce0de70b130b",
+    "name": "Uniswap V4 LP EGP/DELLon",
+    "decimals": 18,
+    "symbol": "EGP/DELLON",
+    "price": 9007199254740990,
+    "address": "0x3715712caf7f05b8cab8ebad372211711da533b5387d647cad16ce0de70b130b",
+    "addresses": {
+     "ethereum": "0x3715712caf7f05b8cab8ebad372211711da533b5387d647cad16ce0de70b130b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.707Z",
+    "createdAt": "2026-10-14T06:54:27.260Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xee9f43476c5b7292b114ba1b280a42a8746792d4"
+    ],
+    "liquidity": 20066.283923738876,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.88"
+    },
+    "tokenId": "240af24c-562d-4bab-93b4-9bdab9fe5250",
+    "reserves": [
+     "19999.999999999999999961",
+     "0.046509682881846719"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xee9f43476c5b7292b114ba1b280a42a8746792d4": {
+    "key": "ethereum:0xee9f43476c5b7292b114ba1b280a42a8746792d4",
+    "name": "Dell Technologies (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "DELLON",
+    "price": 446.46,
+    "address": "0xee9f43476c5b7292b114ba1b280a42a8746792d4",
+    "addresses": {
+     "bsc": "0xf26518958935654878de15be7bc79a26971583ba",
+     "ethereum": "0xee9f43476c5b7292b114ba1b280a42a8746792d4"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 685156,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "171218.087",
+     "volumeUsd7d": "1378376.038"
+    },
+    "metadata": {},
+    "tokenId": "0726c6f6-585f-4378-bee3-a5677ce2c356",
+    "totalSupply": "1534.4542748560157",
+    "circulatingSupply": "1534.4542748560157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551": {
+    "key": "arbitrum:0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551",
+    "name": "Dell Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 449.94,
+    "address": "0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551",
+    "addresses": {
+     "ethereum": "0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+     "base": "0x4863a721022d3531a96017f6a2a3c47818a92484",
+     "avalanche": "0x6fea534dd14126701fac98523476612a9c5cb793",
+     "arbitrum": "0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24712,
+    "image": "https://coin-images.coingecko.com/coins/images/102175034/large/dinari-logo-green-with-margin.png?1785402970",
+    "metrics": {
+     "volumeUsd1d": "0.944",
+     "volumeUsd7d": "26314.43"
+    },
+    "metadata": {},
+    "tokenId": "afa895f9-95a5-47df-87d0-c85cfba4156e",
+    "totalSupply": "54.92204758987042",
+    "circulatingSupply": "54.92204758987042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd": {
+    "key": "robinhood:0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "name": "Dell • Robinhood Token",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 448.37856375,
+    "address": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "addresses": {
+     "robinhood": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "liquidity": 658921.850236861,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "461238.089"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000014eaef73a2c44d62b7952cfd0a44ff51",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000063708620124549",
+     "currentMultiplier": "1.000063708620124549",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "70f34da3-2467-4b45-a3c9-85c79eb360ef",
+    "totalSupply": "1469.56590593",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf26518958935654878de15be7bc79a26971583ba": {
+    "key": "bsc:0xf26518958935654878de15be7bc79a26971583ba",
+    "name": "Dell Technologies (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "DELLON",
+    "price": 446.46,
+    "address": "0xf26518958935654878de15be7bc79a26971583ba",
+    "addresses": {
+     "bsc": "0xf26518958935654878de15be7bc79a26971583ba",
+     "ethereum": "0xee9f43476c5b7292b114ba1b280a42a8746792d4"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 685156,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "171602.751",
+     "volumeUsd7d": "1389727.833"
+    },
+    "metadata": {},
+    "tokenId": "0726c6f6-585f-4378-bee3-a5677ce2c356",
+    "totalSupply": "1534.4542748560157",
+    "circulatingSupply": "1534.4542748560157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x892a7c3d9ba8d456e405e35e736b1a44a7a74794": {
+    "key": "robinhood:0x892a7c3d9ba8d456e405e35e736b1a44a7a74794",
+    "name": "Beefy CLM USDG-DELL Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-DELL",
+    "price": 461.10507949324557,
+    "address": "0x892a7c3d9ba8d456e405e35e736b1a44a7a74794",
+    "addresses": {
+     "robinhood": "0x892a7c3d9ba8d456e405e35e736b1a44a7a74794"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-28T13:41:33.886Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x563267a634a8f762046adebd9b128880f46baaaa"
+    ],
+    "poolAddress": "0x563267a634a8f762046adebd9b128880f46baaaa",
+    "liquidity": 37978.43023935179,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "29.32"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-dell",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x563267a634a8f762046adebd9b128880f46baaaa",
+     "strategyAddress": "0x4d5f2fad94a062ddc0a6f60ba0919ccfc0efa988",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x892a7c3d9ba8d456e405e35e736b1a44a7a74794",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+     ]
+    },
+    "tokenId": "f2608324-75fd-4d0d-b510-2bb76eb3f34a",
+    "totalSupply": "82.363938131174087589",
+    "reserves": [
+     "82.363938131174087589"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe4b2f64377e9dabba577c161b4de630dff95e8721165c879c030e99da7601f24": {
+    "key": "bsc:0xe4b2f64377e9dabba577c161b4de630dff95e8721165c879c030e99da7601f24",
+    "name": "Uniswap V4 LP DELLB/USDT",
+    "decimals": 18,
+    "symbol": "DELLB/USDT",
+    "price": 9007199254740990,
+    "address": "0xe4b2f64377e9dabba577c161b4de630dff95e8721165c879c030e99da7601f24",
+    "addresses": {
+     "bsc": "0xe4b2f64377e9dabba577c161b4de630dff95e8721165c879c030e99da7601f24"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175190/large/DELLB.png?1785458092",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:24.284Z",
+    "createdAt": "2026-10-08T07:23:18.347Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2480.710514657,
+    "metrics": {
+     "apy": "38.406",
+     "baseApy": "38.406",
+     "volumeUsd1d": "51.279",
+     "volumeUsd7d": "554.647"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "1a9198d9-11f1-430a-b364-ec62dcdf5680",
+    "reserves": [
+     "4.645848372451381371",
+     "416.080827419736380344"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd98482547d778da2d2b1b75b53cdab040cfe79d8798de17a95f10e125bcb72ff": {
+    "key": "bsc:0xd98482547d778da2d2b1b75b53cdab040cfe79d8798de17a95f10e125bcb72ff",
+    "name": "Uniswap V4 LP DELLB/USDC",
+    "decimals": 18,
+    "symbol": "DELLB/USDC",
+    "price": 9007199254740990,
+    "address": "0xd98482547d778da2d2b1b75b53cdab040cfe79d8798de17a95f10e125bcb72ff",
+    "addresses": {
+     "bsc": "0xd98482547d778da2d2b1b75b53cdab040cfe79d8798de17a95f10e125bcb72ff"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175190/large/DELLB.png?1785458092",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.060Z",
+    "createdAt": "2026-10-07T07:19:55.814Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e7a51966c66648999d506e1372efdea1b78cb0b",
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ],
+    "liquidity": 4216.532162948798,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "597.555"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "93fb5edf-88ca-4116-b183-cbd94a85bb89",
+    "reserves": [
+     "9.486402445299704276",
+     "0.016007839836129285"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x729651c09684919bdffda473141be4e908ee0e8cf8a43f41135831217fa7d3bb": {
+    "key": "robinhood:0x729651c09684919bdffda473141be4e908ee0e8cf8a43f41135831217fa7d3bb",
+    "name": "Uniswap V4 LP USDG/DELL",
+    "decimals": 18,
+    "symbol": "USDG/DELL",
+    "price": 9007199254740990,
+    "address": "0x729651c09684919bdffda473141be4e908ee0e8cf8a43f41135831217fa7d3bb",
+    "addresses": {
+     "robinhood": "0x729651c09684919bdffda473141be4e908ee0e8cf8a43f41135831217fa7d3bb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.586Z",
+    "createdAt": "2026-09-08T14:42:56.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 44778.715371611695,
+    "metrics": {
+     "apy": "27.42",
+     "baseApy": "27.42",
+     "volumeUsd1d": "5705.416",
+     "volumeUsd7d": "202383.708"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.5896"
+    },
+    "tokenId": "0f3f838b-b116-46cb-9f01-94090662917c",
+    "reserves": [
+     "6283.76476",
+     "85.853681963875328195"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x294bbb12f327354df8e087fa5082039c25dfc46a28d4c81169f1c9cb1ba08aad": {
+    "key": "robinhood:0x294bbb12f327354df8e087fa5082039c25dfc46a28d4c81169f1c9cb1ba08aad",
+    "name": "Uniswap V4 LP ETH/DELLE",
+    "decimals": 18,
+    "symbol": "ETH/DELLE",
+    "price": 9007199254740990,
+    "address": "0x294bbb12f327354df8e087fa5082039c25dfc46a28d4c81169f1c9cb1ba08aad",
+    "addresses": {
+     "robinhood": "0x294bbb12f327354df8e087fa5082039c25dfc46a28d4c81169f1c9cb1ba08aad"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.588Z",
+    "createdAt": "2026-10-18T19:03:02.765Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x733357e7381d2229bdcffbc76f3da8d2405f3260"
+    ],
+    "liquidity": 1381.3022806369895,
+    "metrics": {
+     "apy": "23942.694",
+     "baseApy": "23942.694",
+     "volumeUsd1d": "90637.083"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1"
+    },
+    "tokenId": "35e2dec0-78db-4c2b-8901-18a44417ccf5",
+    "reserves": [
+     "0.218548236676311406",
+     "3074930.064268217496152598"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8ad93bfadcaa380c3413f2ddf6a72c6eadf64bf7911ae81e91b2474003faa1dc": {
+    "key": "robinhood:0x8ad93bfadcaa380c3413f2ddf6a72c6eadf64bf7911ae81e91b2474003faa1dc",
+    "name": "Uniswap V4 LP USDG/DELL",
+    "decimals": 18,
+    "symbol": "USDG/DELL",
+    "price": 9007199254740990,
+    "address": "0x8ad93bfadcaa380c3413f2ddf6a72c6eadf64bf7911ae81e91b2474003faa1dc",
+    "addresses": {
+     "robinhood": "0x8ad93bfadcaa380c3413f2ddf6a72c6eadf64bf7911ae81e91b2474003faa1dc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.598Z",
+    "createdAt": "2026-07-29T03:57:02.465Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "liquidity": 634.6224972892943,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "40.06"
+    },
+    "tokenId": "124b4a56-c946-41cd-8df8-42e76f7435b8",
+    "reserves": [
+     "456.897994",
+     "0.396371543284542878"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4923c923af3e1a003e70cad95c413a1bf2302c67": {
+    "key": "ethereum:0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+    "name": "Dell Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 449.94,
+    "address": "0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+    "addresses": {
+     "ethereum": "0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+     "base": "0x4863a721022d3531a96017f6a2a3c47818a92484",
+     "avalanche": "0x6fea534dd14126701fac98523476612a9c5cb793",
+     "arbitrum": "0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24712,
+    "image": "https://coin-images.coingecko.com/coins/images/102175034/large/dinari-logo-green-with-margin.png?1785402970",
+    "metrics": {
+     "volumeUsd1d": "0.944",
+     "volumeUsd7d": "26299.475"
+    },
+    "metadata": {},
+    "tokenId": "afa895f9-95a5-47df-87d0-c85cfba4156e",
+    "totalSupply": "54.92204758987042",
+    "circulatingSupply": "54.92204758987042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x563267a634a8f762046adebd9b128880f46baaaa": {
+    "key": "robinhood:0x563267a634a8f762046adebd9b128880f46baaaa",
+    "name": "Beefy CLM USDG-DELL",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-DELL",
+    "price": 461.10507949324557,
+    "address": "0x563267a634a8f762046adebd9b128880f46baaaa",
+    "addresses": {
+     "robinhood": "0x563267a634a8f762046adebd9b128880f46baaaa"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174139/large/0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd.png?1782444640",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-28T13:41:33.886Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+    ],
+    "poolAddress": "0xc30c89cb7815a1488b7998d15eec73961707fc5a",
+    "liquidity": 37978.43023935179,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "29.32"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-dell",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x563267a634a8f762046adebd9b128880f46baaaa",
+     "strategyAddress": "0x4d5f2fad94a062ddc0a6f60ba0919ccfc0efa988",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x892a7c3d9ba8d456e405e35e736b1a44a7a74794",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd"
+     ]
+    },
+    "tokenId": "fa5f4e97-ef3c-491f-8144-39dbfc9a1016",
+    "totalSupply": "82.363938131174088589",
+    "reserves": [
+     "0",
+     "84.70170813189725684"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x6fea534dd14126701fac98523476612a9c5cb793": {
+    "key": "avalanche:0x6fea534dd14126701fac98523476612a9c5cb793",
+    "name": "Dell Technologies (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DELL",
+    "price": 449.94,
+    "address": "0x6fea534dd14126701fac98523476612a9c5cb793",
+    "addresses": {
+     "ethereum": "0x4923c923af3e1a003e70cad95c413a1bf2302c67",
+     "base": "0x4863a721022d3531a96017f6a2a3c47818a92484",
+     "avalanche": "0x6fea534dd14126701fac98523476612a9c5cb793",
+     "arbitrum": "0xa3d3e2c246c817ea52cfaa1210f2eedaee20e551"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24712,
+    "image": "https://coin-images.coingecko.com/coins/images/102175034/large/dinari-logo-green-with-margin.png?1785402970",
+    "metrics": {
+     "volumeUsd1d": "0.944",
+     "volumeUsd7d": "26305.917"
+    },
+    "metadata": {},
+    "tokenId": "afa895f9-95a5-47df-87d0-c85cfba4156e",
+    "totalSupply": "54.92204758987042",
+    "circulatingSupply": "54.92204758987042",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

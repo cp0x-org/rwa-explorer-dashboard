@@ -1,0 +1,1461 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4781601046",
+ "ticker": "JNJ",
+ "name": "Johnson & Johnson",
+ "isin": "US4781601046",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:09Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Johnson & Johnson",
+   "symbol": "JNJ",
+   "slug": "johnson-johnson",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 255.9218119182054,
+     "tokenized_market_cap": 632025.9027513211,
+     "tokenized_volume_24h": 56155.11579507,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 19,
+   "asset_type": "stock",
+   "rwa_rank": 23,
+   "has_tokens": true,
+   "average_tokenized_price": 255.9218119182054,
+   "tokenized_market_cap": 632025.9027513211,
+   "tokenized_volume_24h": 56155.11579507,
+   "last_updated": "2026-10-18T20:14:27.320Z",
+   "tokens": [
+    {
+     "symbol": "JNJX",
+     "name": "Johnson & Johnson tokenized stock (xStock)",
+     "price": 251.89910097019836,
+     "crypto_id": 37030,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 572143.19,
+     "volume_24h": 13669.62735617
+    },
+    {
+     "symbol": "JNJon",
+     "name": "Johnson & Johnson Tokenized Stock (Ondo)",
+     "price": 256.8082510239867,
+     "crypto_id": 39231,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 23769.69,
+     "volume_24h": 26210.47641215
+    },
+    {
+     "symbol": "JNJ",
+     "name": "Johnson & Johnson (Derivatives)",
+     "price": 251.95830018719812,
+     "crypto_id": 40820,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WJNJX",
+     "name": "Wrapped Johnson & Johnson Tokenized stock (xStock)",
+     "price": 257.21013199490943,
+     "crypto_id": 37203,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 35268.67,
+     "volume_24h": 14431.42655122
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "JNJ",
+     "market_url": "https://www.binance.com/en/stocks/EQ_JNJ"
+    }
+   ]
+  },
+  "info": {
+   "37030": {
+    "id": 37030,
+    "symbol": "JNJX",
+    "name": "Johnson & Johnson tokenized stock (xStock)",
+    "slug": "johnson-johnson-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37030.png",
+    "date_added": "2025-07-01T15:48:54.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsGVi5eo1Dh2zUpic4qACcjuWGjNv8GCt3dm5XcX6Dn"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsGVi5eo1Dh2zUpic4qACcjuWGjNv8GCt3dm5XcX6Dn",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdb0482cfaD4789798623E64b15eebA01b16e917C",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAk3GT-G1fD3P3VKOGfcxsSyPHawr8GHFoOOgOrNRp55SC-",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "39231": {
+    "id": 39231,
+    "symbol": "JNJon",
+    "name": "Johnson & Johnson Tokenized Stock (Ondo)",
+    "slug": "johnson-johnson-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39231.png",
+    "date_added": "2026-01-08T15:44:36.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xdd0e1e6162666a210905ffe8d368661b313c00e9",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "KUXt7LzHWSQXp5eyqMZRxWjAP6yM8BUh4LRHwiwondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40820": {
+    "id": 40820,
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson (Derivatives)",
+    "slug": "johnson-johnson-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40820.png",
+    "date_added": "2025-08-21T03:43:35.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37203": {
+    "id": 37203,
+    "symbol": "WJNJX",
+    "name": "Wrapped Johnson & Johnson Tokenized stock (xStock)",
+    "slug": "wrapped-johnson-johnson-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37203.png",
+    "date_added": "2025-07-06T08:37:09.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xB509eB6a307B3603450e7D4446BB0866F3CaE38A"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB509eB6a307B3603450e7D4446BB0866F3CaE38A",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xcdb53a7cba9ec6d55dfe8f58bd6772826722d7bd",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xcdb53a7cba9ec6d55dfe8f58bd6772826722d7bd",
+   "arbitrum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+   "bsc:0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+   "bsc:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+   "ethereum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+   "ethereum:0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+  ],
+  "exact": {
+   "ethereum:0xdd0e1e6162666a210905ffe8d368661b313c00e9": {
+    "key": "ethereum:0xdd0e1e6162666a210905ffe8d368661b313c00e9",
+    "name": "Johnson & Johnson (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JNJON",
+    "price": 257.13,
+    "address": "0xdd0e1e6162666a210905ffe8d368661b313c00e9",
+    "addresses": {
+     "bsc": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+     "ethereum": "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 23799,
+    "image": "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191",
+    "metrics": {
+     "volumeUsd1d": "11.952",
+     "volumeUsd7d": "14431.035"
+    },
+    "metadata": {},
+    "tokenId": "aeed2bfa-f9a8-483f-9d1c-f0042c1e5531",
+    "totalSupply": "92.55812488834461",
+    "circulatingSupply": "92.55812488834461",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "bsc:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "bsc": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2606680.0107631115,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "8e45ed0f-bc04-4aec-b4f3-4baff550275e",
+    "totalSupply": "10195.885202077413",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd1f799cb9f5d0a02951b0755beced6c43882712f": {
+    "key": "bsc:0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+    "name": "Johnson & Johnson (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JNJON",
+    "price": 257.13,
+    "address": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+    "addresses": {
+     "bsc": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+     "ethereum": "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 23799,
+    "image": "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191",
+    "metrics": {
+     "volumeUsd1d": "11.952",
+     "volumeUsd7d": "14393.092"
+    },
+    "metadata": {},
+    "tokenId": "aeed2bfa-f9a8-483f-9d1c-f0042c1e5531",
+    "totalSupply": "92.55812488834461",
+    "circulatingSupply": "92.55812488834461",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "ethereum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "ethereum": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12689261.042588193,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "b776f154-26aa-4da7-bbee-1b0162da080c",
+    "totalSupply": "49633.34523424936771441",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "arbitrum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "arbitrum": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10772332.985489424,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "16539cc1-00c5-4712-8033-de37fa5b9f7f",
+    "totalSupply": "42135.386785142077154873",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "JNJ": {
+    "total_items": 24,
+    "pages": 1,
+    "received": 24,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x8d39388ef11bb78843130bd74ab0e5d89fa76b30": {
+    "key": "robinhood:0x8d39388ef11bb78843130bd74ab0e5d89fa76b30",
+    "name": "Uniswap V3 Johnson & Johnson  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "JNJ/USDG",
+    "price": 9007199254740990,
+    "address": "0x8d39388ef11bb78843130bd74ab0e5d89fa76b30",
+    "addresses": {
+     "robinhood": "0x8d39388ef11bb78843130bd74ab0e5d89fa76b30"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:17:54.354Z",
+    "createdAt": "2026-08-14T05:16:32.111Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 10703.675410506161,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5643.165"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "e5bb080c-94cb-4d86-ab08-c41c4316a8c1",
+    "reserves": [
+     "30.256064931673130641",
+     "2968.243617"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xab754c3998ba88e789329f250d90ea35fc87aea6": {
+    "key": "base:0xab754c3998ba88e789329f250d90ea35fc87aea6",
+    "name": "Dinari JNJ",
+    "decimals": 18,
+    "symbol": "JNJ",
+    "price": 255.56,
+    "address": "0xab754c3998ba88e789329f250d90ea35fc87aea6",
+    "addresses": {
+     "base": "0xab754c3998ba88e789329f250d90ea35fc87aea6",
+     "avalanche": "0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+     "arbitrum": "0x50e2b96f958133cbda56d1a62d156e812fe97828",
+     "ethereum": "0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14262.59,
+    "image": "https://coin-images.coingecko.com/coins/images/102174955/large/dinari-logo-green-with-margin.png?1785402689",
+    "metrics": {
+     "volumeUsd1d": "49.399",
+     "volumeUsd7d": "2654.361"
+    },
+    "metadata": {},
+    "tokenId": "d2560bfa-8a9d-4650-b4df-de4d575456d2",
+    "totalSupply": "55.809047498",
+    "circulatingSupply": "55.809047498",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x6e60710690274a39cd53c0b1591a56e4dbdb9285": {
+    "key": "avalanche:0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+    "name": "Dinari JNJ",
+    "decimals": 18,
+    "symbol": "JNJ",
+    "price": 255.56,
+    "address": "0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+    "addresses": {
+     "base": "0xab754c3998ba88e789329f250d90ea35fc87aea6",
+     "avalanche": "0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+     "arbitrum": "0x50e2b96f958133cbda56d1a62d156e812fe97828",
+     "ethereum": "0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14262.59,
+    "image": "https://coin-images.coingecko.com/coins/images/102174955/large/dinari-logo-green-with-margin.png?1785402689",
+    "metrics": {
+     "volumeUsd1d": "49.399",
+     "volumeUsd7d": "2654.653"
+    },
+    "metadata": {},
+    "tokenId": "d2560bfa-8a9d-4650-b4df-de4d575456d2",
+    "totalSupply": "55.809047498",
+    "circulatingSupply": "55.809047498",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbea26ac0dd34cdf46923a366271a7e3b681785636bb0331748f95e58cba79c7e": {
+    "key": "ethereum:0xbea26ac0dd34cdf46923a366271a7e3b681785636bb0331748f95e58cba79c7e",
+    "name": "Uniswap V4 LP USDT/JNJx",
+    "decimals": 18,
+    "symbol": "USDT/JNJX",
+    "price": 9007199254740990,
+    "address": "0xbea26ac0dd34cdf46923a366271a7e3b681785636bb0331748f95e58cba79c7e",
+    "addresses": {
+     "ethereum": "0xbea26ac0dd34cdf46923a366271a7e3b681785636bb0331748f95e58cba79c7e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.221Z",
+    "createdAt": "2026-10-18T18:58:14.305Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    ],
+    "liquidity": 3527.180966887563,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "7575d18f-c7c2-4c4e-bec9-c9d04e148f94",
+    "reserves": [
+     "3999.999999999999999991",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdd0e1e6162666a210905ffe8d368661b313c00e9": {
+    "key": "ethereum:0xdd0e1e6162666a210905ffe8d368661b313c00e9",
+    "name": "Johnson & Johnson (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JNJON",
+    "price": 257.13,
+    "address": "0xdd0e1e6162666a210905ffe8d368661b313c00e9",
+    "addresses": {
+     "bsc": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+     "ethereum": "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 23799,
+    "image": "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191",
+    "metrics": {
+     "volumeUsd1d": "11.952",
+     "volumeUsd7d": "14431.035"
+    },
+    "metadata": {},
+    "tokenId": "aeed2bfa-f9a8-483f-9d1c-f0042c1e5531",
+    "totalSupply": "92.55812488834461",
+    "circulatingSupply": "92.55812488834461",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x50e2b96f958133cbda56d1a62d156e812fe97828": {
+    "key": "arbitrum:0x50e2b96f958133cbda56d1a62d156e812fe97828",
+    "name": "Dinari JNJ",
+    "decimals": 18,
+    "symbol": "JNJ",
+    "price": 255.56,
+    "address": "0x50e2b96f958133cbda56d1a62d156e812fe97828",
+    "addresses": {
+     "base": "0xab754c3998ba88e789329f250d90ea35fc87aea6",
+     "avalanche": "0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+     "arbitrum": "0x50e2b96f958133cbda56d1a62d156e812fe97828",
+     "ethereum": "0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14262.59,
+    "image": "https://coin-images.coingecko.com/coins/images/102174955/large/dinari-logo-green-with-margin.png?1785402689",
+    "metrics": {
+     "volumeUsd1d": "49.399",
+     "volumeUsd7d": "2654.421"
+    },
+    "metadata": {},
+    "tokenId": "d2560bfa-8a9d-4650-b4df-de4d575456d2",
+    "totalSupply": "55.809047498",
+    "circulatingSupply": "55.809047498",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70": {
+    "key": "ethereum:0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70",
+    "name": "Dinari JNJ",
+    "decimals": 18,
+    "symbol": "JNJ",
+    "price": 255.56,
+    "address": "0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70",
+    "addresses": {
+     "base": "0xab754c3998ba88e789329f250d90ea35fc87aea6",
+     "avalanche": "0x6e60710690274a39cd53c0b1591a56e4dbdb9285",
+     "arbitrum": "0x50e2b96f958133cbda56d1a62d156e812fe97828",
+     "ethereum": "0x97e4db79d2924f1c5ce2a821e7d5b111f9925e70"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14262.59,
+    "image": "https://coin-images.coingecko.com/coins/images/102174955/large/dinari-logo-green-with-margin.png?1785402689",
+    "metrics": {
+     "volumeUsd1d": "49.399",
+     "volumeUsd7d": "2652.878"
+    },
+    "metadata": {},
+    "tokenId": "d2560bfa-8a9d-4650-b4df-de4d575456d2",
+    "totalSupply": "55.809047498",
+    "circulatingSupply": "55.809047498",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x3e849fc213da62190241b17fec1be806e4d3b309382d26281d4602ab1282273f": {
+    "key": "robinhood:0x3e849fc213da62190241b17fec1be806e4d3b309382d26281d4602ab1282273f",
+    "name": "Uniswap V4 LP ETH/JNJ",
+    "decimals": 18,
+    "symbol": "ETH/JNJ",
+    "price": 9007199254740990,
+    "address": "0x3e849fc213da62190241b17fec1be806e4d3b309382d26281d4602ab1282273f",
+    "addresses": {
+     "robinhood": "0x3e849fc213da62190241b17fec1be806e4d3b309382d26281d4602ab1282273f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.561Z",
+    "createdAt": "2026-09-08T14:39:25.761Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80"
+    ],
+    "liquidity": 1232.712075416332,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 475,
+     "feePercentage": "4.8453"
+    },
+    "tokenId": "28be7ac2-e4fa-4063-a663-aad3fa84a602",
+    "reserves": [
+     "0.000003841164479778",
+     "4.821546654472114955"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7f0ace18d1dced47063cf26e649bc8ab14d09e67": {
+    "key": "robinhood:0x7f0ace18d1dced47063cf26e649bc8ab14d09e67",
+    "name": "Uniswap V3 Johnson & Johnson  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "JNJ/USDG",
+    "price": 9007199254740990,
+    "address": "0x7f0ace18d1dced47063cf26e649bc8ab14d09e67",
+    "addresses": {
+     "robinhood": "0x7f0ace18d1dced47063cf26e649bc8ab14d09e67"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.002Z",
+    "createdAt": "2026-09-08T09:33:38.907Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 33123.68342226519,
+    "metrics": {
+     "apy": "1.42",
+     "baseApy": "1.42",
+     "volumeUsd1d": "429.581",
+     "volumeUsd7d": "107474.272"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "7d874dd0-08bc-4661-8f8c-937758f2081c",
+    "reserves": [
+     "103.10716836489919803",
+     "6762.738266"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8fcd49a3019d52fe0d58e680a0a023e233ef2894": {
+    "key": "arbitrum:0x8fcd49a3019d52fe0d58e680a0a023e233ef2894",
+    "name": "Johnson & Johnson rStock",
+    "decimals": 18,
+    "symbol": "RJNJ",
+    "price": 255.64,
+    "address": "0x8fcd49a3019d52fe0d58e680a0a023e233ef2894",
+    "addresses": {
+     "arbitrum": "0x8fcd49a3019d52fe0d58e680a0a023e233ef2894"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3124.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102177188/large/40d7d739f3a0c002e5c198a7430e7ae0.png?1789117101",
+    "metrics": {
+     "volumeUsd1d": "108.22",
+     "volumeUsd7d": "49540.222"
+    },
+    "metadata": {},
+    "tokenId": "41d589f0-c1b0-458e-8de0-9956f66460ad",
+    "totalSupply": "12.223497683",
+    "circulatingSupply": "12.223497683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80": {
+    "key": "robinhood:0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+    "name": "Johnson & Johnson • Robinhood Token",
+    "decimals": 18,
+    "symbol": "JNJ",
+    "price": 255.6654942066982,
+    "address": "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+    "addresses": {
+     "robinhood": "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-08-09T19:02:28.788Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+    "liquidity": 232002.24367630002,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "21460.335"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000b1ab18e03806432eac8895cdd289a769",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000021490286701962",
+     "currentMultiplier": "1.000021490286701962",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "a5fc38d8-8bf7-4526-9e4a-653929ac4c77",
+    "totalSupply": "907.44448873",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "bsc:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "bsc": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2606680.0107631115,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "8e45ed0f-bc04-4aec-b4f3-4baff550275e",
+    "totalSupply": "10195.885202077413",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0a5e3862ff322729707412f12588bb77b6500bf07d63631b555897ae706bc367": {
+    "key": "robinhood:0x0a5e3862ff322729707412f12588bb77b6500bf07d63631b555897ae706bc367",
+    "name": "Uniswap V4 LP JNJ/USDG",
+    "decimals": 18,
+    "symbol": "JNJ/USDG",
+    "price": 9007199254740990,
+    "address": "0x0a5e3862ff322729707412f12588bb77b6500bf07d63631b555897ae706bc367",
+    "addresses": {
+     "robinhood": "0x0a5e3862ff322729707412f12588bb77b6500bf07d63631b555897ae706bc367"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.047Z",
+    "createdAt": "2026-10-14T06:59:47.410Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 3322.9523707480093,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "313.557"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "bc4c04cd-0ecd-45af-8885-af0316851193",
+    "reserves": [
+     "12.288814556288669061",
+     "181.126524"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd1f799cb9f5d0a02951b0755beced6c43882712f": {
+    "key": "bsc:0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+    "name": "Johnson & Johnson (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JNJON",
+    "price": 257.13,
+    "address": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+    "addresses": {
+     "bsc": "0xd1f799cb9f5d0a02951b0755beced6c43882712f",
+     "ethereum": "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 23799,
+    "image": "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191",
+    "metrics": {
+     "volumeUsd1d": "11.952",
+     "volumeUsd7d": "14393.092"
+    },
+    "metadata": {},
+    "tokenId": "aeed2bfa-f9a8-483f-9d1c-f0042c1e5531",
+    "totalSupply": "92.55812488834461",
+    "circulatingSupply": "92.55812488834461",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "ethereum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "ethereum": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12689261.042588193,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "b776f154-26aa-4da7-bbee-1b0162da080c",
+    "totalSupply": "49633.34523424936771441",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x939699357c3dfe97e84bce4ac71470ded8af8b7e2b52de4c216394b5849f8298": {
+    "key": "robinhood:0x939699357c3dfe97e84bce4ac71470ded8af8b7e2b52de4c216394b5849f8298",
+    "name": "Uniswap V4 LP JNJ/USDG",
+    "decimals": 18,
+    "symbol": "JNJ/USDG",
+    "price": 9007199254740990,
+    "address": "0x939699357c3dfe97e84bce4ac71470ded8af8b7e2b52de4c216394b5849f8298",
+    "addresses": {
+     "robinhood": "0x939699357c3dfe97e84bce4ac71470ded8af8b7e2b52de4c216394b5849f8298"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.734Z",
+    "createdAt": "2026-09-09T07:57:19.518Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 10120.424754566957,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "972.469"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "237e0890-f3c9-4219-b880-1a3fc0dca3b5",
+    "reserves": [
+     "26.321720635191798106",
+     "3390.86904"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9ffb2cd935ebbf9f02494e9ef43fee2e9a761972": {
+    "key": "robinhood:0x9ffb2cd935ebbf9f02494e9ef43fee2e9a761972",
+    "name": "Uniswap V3 Johnson & Johnson  Robinhood Token/WETH 0.3%",
+    "decimals": 18,
+    "symbol": "JNJ/WETH",
+    "price": 9007199254740990,
+    "address": "0x9ffb2cd935ebbf9f02494e9ef43fee2e9a761972",
+    "addresses": {
+     "robinhood": "0x9ffb2cd935ebbf9f02494e9ef43fee2e9a761972"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.057Z",
+    "createdAt": "2026-09-08T14:35:50.642Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73"
+    ],
+    "liquidity": 1429.1079319008225,
+    "metrics": {
+     "apy": "38.071",
+     "baseApy": "38.071",
+     "volumeUsd1d": "496.901",
+     "volumeUsd7d": "5148.463"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "99fd99f8-94a1-41df-9460-1d041bf55685",
+    "reserves": [
+     "3.684203896113210117",
+     "0.208564667875112109"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x572dc40df949ee30ed97fb08eb9e21b4fb3f203ac354bdb6f2805151eb59466a": {
+    "key": "robinhood:0x572dc40df949ee30ed97fb08eb9e21b4fb3f203ac354bdb6f2805151eb59466a",
+    "name": "Uniswap V4 LP ETH/JNJ",
+    "decimals": 18,
+    "symbol": "ETH/JNJ",
+    "price": 9007199254740990,
+    "address": "0x572dc40df949ee30ed97fb08eb9e21b4fb3f203ac354bdb6f2805151eb59466a",
+    "addresses": {
+     "robinhood": "0x572dc40df949ee30ed97fb08eb9e21b4fb3f203ac354bdb6f2805151eb59466a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.006Z",
+    "createdAt": "2026-08-17T19:35:24.060Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80"
+    ],
+    "liquidity": 2488.965377311661,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "173.479"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "ba24f11d-d0cc-4406-868a-845f38a440d4",
+    "reserves": [
+     "0.102708466746830486",
+     "8.797407314408430629"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x36a05cdcd99e387c1dbec64ff494cb0def823695fbc51d3ea60f66d25e22e369": {
+    "key": "ethereum:0x36a05cdcd99e387c1dbec64ff494cb0def823695fbc51d3ea60f66d25e22e369",
+    "name": "Uniswap V4 LP wUSDC/JNJon",
+    "decimals": 18,
+    "symbol": "WUSDC/JNJON",
+    "price": 9007199254740990,
+    "address": "0x36a05cdcd99e387c1dbec64ff494cb0def823695fbc51d3ea60f66d25e22e369",
+    "addresses": {
+     "ethereum": "0x36a05cdcd99e387c1dbec64ff494cb0def823695fbc51d3ea60f66d25e22e369"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.861Z",
+    "createdAt": "2026-09-28T10:37:11.258Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1dfd8981-9728-411c-986d-06e24c041a1e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1df1edd48bcf68a5011ac9551794d1dbd7c204d9793d2c0017428660801880c7": {
+    "key": "ethereum:0x1df1edd48bcf68a5011ac9551794d1dbd7c204d9793d2c0017428660801880c7",
+    "name": "Uniswap V4 LP wUSDC/JNJon",
+    "decimals": 18,
+    "symbol": "WUSDC/JNJON",
+    "price": 9007199254740990,
+    "address": "0x1df1edd48bcf68a5011ac9551794d1dbd7c204d9793d2c0017428660801880c7",
+    "addresses": {
+     "ethereum": "0x1df1edd48bcf68a5011ac9551794d1dbd7c204d9793d2c0017428660801880c7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.704Z",
+    "createdAt": "2026-09-30T08:51:49.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "15783820-719b-49d5-834e-4604e6df2e85",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xdb0482cfad4789798623e64b15eeba01b16e917c": {
+    "key": "arbitrum:0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "name": "Johnson & Johnson xStock",
+    "decimals": 18,
+    "symbol": "JNJX",
+    "price": 255.66,
+    "address": "0xdb0482cfad4789798623e64b15eeba01b16e917c",
+    "addresses": {
+     "arbitrum": "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10772332.985489424,
+    "image": "https://coin-images.coingecko.com/coins/images/55620/large/Ticker_JNJ__Company_Name_johnson-johnson__size_200x200_2x.png?1746861691",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "johnson-johnson-xstock"
+    },
+    "tokenId": "16539cc1-00c5-4712-8033-de37fa5b9f7f",
+    "totalSupply": "42135.386785142077154873",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x83d13dcc971d79dca7385a3cf48b28ef96a9dc5ca1439f51840ba0f9631c1b1e": {
+    "key": "ethereum:0x83d13dcc971d79dca7385a3cf48b28ef96a9dc5ca1439f51840ba0f9631c1b1e",
+    "name": "Uniswap V4 LP EGP/JNJon",
+    "decimals": 18,
+    "symbol": "EGP/JNJON",
+    "price": 9007199254740990,
+    "address": "0x83d13dcc971d79dca7385a3cf48b28ef96a9dc5ca1439f51840ba0f9631c1b1e",
+    "addresses": {
+     "ethereum": "0x83d13dcc971d79dca7385a3cf48b28ef96a9dc5ca1439f51840ba0f9631c1b1e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71435/large/jnjon_160x160.png?1767883191"
+    ],
+    "updatedAt": "2026-10-18T20:17:50.021Z",
+    "createdAt": "2026-10-13T13:14:07.144Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xdd0e1e6162666a210905ffe8d368661b313c00e9"
+    ],
+    "liquidity": 20061.862940606166,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.48"
+    },
+    "tokenId": "fc9c144c-cd69-4028-976c-f4ab8c564a87",
+    "reserves": [
+     "19999.999999999999999988",
+     "0.105916152643331308"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0cf7d36851a6367871946bcb6d6a7be55ae28c5b82b77adf3839477b2b3acbef": {
+    "key": "robinhood:0x0cf7d36851a6367871946bcb6d6a7be55ae28c5b82b77adf3839477b2b3acbef",
+    "name": "Uniswap V4 LP JNJ/USDG",
+    "decimals": 18,
+    "symbol": "JNJ/USDG",
+    "price": 9007199254740990,
+    "address": "0x0cf7d36851a6367871946bcb6d6a7be55ae28c5b82b77adf3839477b2b3acbef",
+    "addresses": {
+     "robinhood": "0x0cf7d36851a6367871946bcb6d6a7be55ae28c5b82b77adf3839477b2b3acbef"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.277Z",
+    "createdAt": "2026-09-08T14:36:03.143Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03dfbbe0ac4e7bcdafd08ed41a400326b77d8c80",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1549.1655109460455,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "244.882"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 333,
+     "feePercentage": "3.4297"
+    },
+    "tokenId": "a0d397d7-97b8-4a94-8cb8-c0a0e8dd17cc",
+    "reserves": [
+     "5.465425298324974104",
+     "151.844851"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0fbf6bbec3d149c002da1906bf5d8d5fa60ce593486a0ec9976b1f1e1b9b6e06": {
+    "key": "arbitrum:0x0fbf6bbec3d149c002da1906bf5d8d5fa60ce593486a0ec9976b1f1e1b9b6e06",
+    "name": "Uniswap V4 LP USDT/JNJx",
+    "decimals": 18,
+    "symbol": "USDT/JNJX",
+    "price": 9007199254740990,
+    "address": "0x0fbf6bbec3d149c002da1906bf5d8d5fa60ce593486a0ec9976b1f1e1b9b6e06",
+    "addresses": {
+     "arbitrum": "0x0fbf6bbec3d149c002da1906bf5d8d5fa60ce593486a0ec9976b1f1e1b9b6e06"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.679Z",
+    "createdAt": "2026-10-16T14:24:01.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xdb0482cfad4789798623e64b15eeba01b16e917c"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "d86a107b-200a-4c8b-a08f-044a793e7a46",
+    "reserves": [
+     "1999.999999999999999996",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

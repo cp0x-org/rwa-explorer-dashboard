@@ -1,0 +1,2094 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US5504241051",
+ "ticker": "LITE",
+ "name": "Lumentum Holdings",
+ "isin": "US5504241051",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:29Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Lumentum Holdings Inc.",
+   "symbol": "LITE",
+   "slug": "lumentum-holdings-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 799.2230310256376,
+     "tokenized_market_cap": 6495600.737252079,
+     "tokenized_volume_24h": 3364191.92059825,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 189,
+   "asset_type": "stock",
+   "rwa_rank": 230,
+   "has_tokens": true,
+   "average_tokenized_price": 799.2230310256376,
+   "tokenized_market_cap": 6495600.737252079,
+   "tokenized_volume_24h": 3364191.92059825,
+   "last_updated": "2026-10-18T20:14:23.118Z",
+   "tokens": [
+    {
+     "symbol": "LITEx",
+     "name": "Lumentum Holdings Inc. tokenized stock (xStock)",
+     "price": 800.198401828787,
+     "crypto_id": 40178,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 2563143.72,
+     "volume_24h": 310767.24098871
+    },
+    {
+     "symbol": "LITEB",
+     "name": "Lumentum Tokenized bStocks",
+     "price": 799.4766589619162,
+     "crypto_id": 40591,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 3471477.24,
+     "volume_24h": 2638488.3833364
+    },
+    {
+     "symbol": "rLITE",
+     "name": "Lumentum Tokenized Stock (Reality)",
+     "price": 820.7425803489815,
+     "crypto_id": 40664,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 211679.28,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "LITE",
+     "name": "Lumentum Tokenized Stock (Robinhood)",
+     "price": 799.4192999125083,
+     "crypto_id": 40750,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 251136.49,
+     "volume_24h": 412708.20777283
+    },
+    {
+     "symbol": "wLITEx",
+     "name": "Wrapped Lumentum Holdings Inc. Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41452,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "LITEc",
+     "name": "Lumentum Holdings Inc Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42547,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "LITE",
+     "market_url": "https://www.binance.com/en/stocks/EQ_LITE"
+    }
+   ]
+  },
+  "info": {
+   "40178": {
+    "id": 40178,
+    "symbol": "LITEx",
+    "name": "Lumentum Holdings Inc. tokenized stock (xStock)",
+    "slug": "lumentum-holdings-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40178.png",
+    "date_added": "2026-06-10T06:33:36.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsexQ9qqNbDkLE6XwCN9ceVhLo8Lxc7UheVR6eBkKyo"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsexQ9qqNbDkLE6XwCN9ceVhLo8Lxc7UheVR6eBkKyo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCDlLq_03Vcupsa0lKE4zTmlKC-L12r2n_FNJwX8NPKcP4Q",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40591": {
+    "id": 40591,
+    "symbol": "LITEB",
+    "name": "Lumentum Tokenized bStocks",
+    "slug": "lumentum-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40591.png",
+    "date_added": "2026-07-02T07:38:48.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x64748bea17b6d19e242adf20425de2440c656142"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x64748bea17b6d19e242adf20425de2440c656142",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40664": {
+    "id": 40664,
+    "symbol": "rLITE",
+    "name": "Lumentum Tokenized Stock (Reality)",
+    "slug": "lumentum-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40664.png",
+    "date_added": "2026-07-02T07:39:28.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40750": {
+    "id": 40750,
+    "symbol": "LITE",
+    "name": "Lumentum Tokenized Stock (Robinhood)",
+    "slug": "lumentum-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40750.png",
+    "date_added": "2026-08-04T07:31:51.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8eF20885F94e3D9bc7eB3080279188Bd5ED7c08C",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41452": {
+    "id": 41452,
+    "symbol": "wLITEx",
+    "name": "Wrapped Lumentum Holdings Inc. Tokenized Stock (xStock)",
+    "slug": "wrapped-lumentum-holdings-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41452.png",
+    "date_added": "2026-08-11T16:23:56.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xcECB9A955C95e0d84752908dE38540356B37B69b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xcECB9A955C95e0d84752908dE38540356B37B69b",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42547": {
+    "id": 42547,
+    "symbol": "LITEc",
+    "name": "Lumentum Holdings Inc Tokenized Stock (Coinbase)",
+    "slug": "lumentum-holdings-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42547.png",
+    "date_added": "2026-10-14T03:36:57.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000eda6c2c6f11e0f838f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000eda6c2c6f11e0f838f",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+   "base:0xb200000000000000000000eda6c2c6f11e0f838f",
+   "bsc:0x64748bea17b6d19e242adf20425de2440c656142",
+   "bsc:0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+   "ethereum:0xaaa9cf4e9488f5eef064b8cfac70f5fd857669dc",
+   "robinhood:0x8ef20885f94e3d9bc7eb3080279188bd5ed7c08c"
+  ],
+  "exact": {
+   "arbitrum:0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58": {
+    "key": "arbitrum:0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+    "name": "Lumentum rStock",
+    "decimals": 18,
+    "symbol": "RLITE",
+    "price": 821.01,
+    "address": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+    "addresses": {
+     "arbitrum": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 211756,
+    "image": "https://coin-images.coingecko.com/coins/images/102177001/large/0ab322184f0eeec50c7a5da49888d446.png?1789116369",
+    "metrics": {
+     "volumeUsd1d": "21.765",
+     "volumeUsd7d": "349810.074"
+    },
+    "metadata": {},
+    "tokenId": "8d9aae65-8a40-4e26-bd67-ad4bbd01f89e",
+    "totalSupply": "257.921975335",
+    "circulatingSupply": "257.921975335",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x64748bea17b6d19e242adf20425de2440c656142": {
+    "key": "bsc:0x64748bea17b6d19e242adf20425de2440c656142",
+    "name": "Lumentum Holdings (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LITEB",
+    "price": 799.1,
+    "address": "0x64748bea17b6d19e242adf20425de2440c656142",
+    "addresses": {
+     "bsc": "0x64748bea17b6d19e242adf20425de2440c656142"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-30T16:34:53.920Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 931692,
+    "image": "https://coin-images.coingecko.com/coins/images/102174256/large/bstocks_liteb.png?1782835863",
+    "metrics": {
+     "volumeUsd1d": "1506100.478",
+     "volumeUsd7d": "14763858.881"
+    },
+    "metadata": {},
+    "tokenId": "c85c29d1-656c-47c7-a444-a86d9dbbbf82",
+    "totalSupply": "1165.7980248400002",
+    "circulatingSupply": "1165.7980248400002",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "LITE": {
+    "total_items": 42,
+    "pages": 1,
+    "received": 42,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x50407564fa31c2be98bfd128dfa67701e1652ca2281a9c13dbf7cab5e6cccc1f": {
+    "key": "ethereum:0x50407564fa31c2be98bfd128dfa67701e1652ca2281a9c13dbf7cab5e6cccc1f",
+    "name": "Uniswap V4 LP fLiteUSD/USDC",
+    "decimals": 18,
+    "symbol": "FLITEUSD/USDC",
+    "price": 9007199254740990,
+    "address": "0x50407564fa31c2be98bfd128dfa67701e1652ca2281a9c13dbf7cab5e6cccc1f",
+    "addresses": {
+     "ethereum": "0x50407564fa31c2be98bfd128dfa67701e1652ca2281a9c13dbf7cab5e6cccc1f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:14:55.459Z",
+    "createdAt": "2026-05-02T05:07:35.976Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 5000.688479074632,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19980,
+     "feePercentage": "99.9001"
+    },
+    "tokenId": "a81702ec-1274-4496-a06c-be9fb9f8857d",
+    "reserves": [
+     "2.769491096743135875",
+     "4998.954026"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x693f73599fab1995797078b9c2ea27c91d3c1f03": {
+    "key": "ethereum:0x693f73599fab1995797078b9c2ea27c91d3c1f03",
+    "name": "Literal Dogecoin",
+    "decimals": 9,
+    "symbol": "DOGE",
+    "price": 3.9089307934493945e-08,
+    "address": "0x693f73599fab1995797078b9c2ea27c91d3c1f03",
+    "addresses": {
+     "ethereum": "0x693f73599fab1995797078b9c2ea27c91d3c1f03"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-02-04T05:22:43.777Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3908.930793449394,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0.14",
+     "volumeUsd7d": "0.14"
+    },
+    "metadata": {},
+    "tokenId": "77c987a9-c44d-4bea-83b7-fcb56c92698f",
+    "totalSupply": "100000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x05fb763eaf1c15bd3b5eb178bf095f6b9e8f380acf1488bc2eded3eb098a24bc": {
+    "key": "ethereum:0x05fb763eaf1c15bd3b5eb178bf095f6b9e8f380acf1488bc2eded3eb098a24bc",
+    "name": "Uniswap V4 LP EGP/LITEon",
+    "decimals": 18,
+    "symbol": "EGP/LITEON",
+    "price": 9007199254740990,
+    "address": "0x05fb763eaf1c15bd3b5eb178bf095f6b9e8f380acf1488bc2eded3eb098a24bc",
+    "addresses": {
+     "ethereum": "0x05fb763eaf1c15bd3b5eb178bf095f6b9e8f380acf1488bc2eded3eb098a24bc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.430Z",
+    "createdAt": "2026-10-14T06:54:26.154Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0"
+    ],
+    "liquidity": 20065.720744978964,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.41"
+    },
+    "tokenId": "d9b6cbdf-81e6-4159-a766-0cc0814f8499",
+    "reserves": [
+     "19999.99999999999999994",
+     "0.025204973561139995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x1f30deab3a1b47875d32a2d3e22d080d87955844": {
+    "key": "base:0x1f30deab3a1b47875d32a2d3e22d080d87955844",
+    "name": "Uniswap V3 Litebeam/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "LBM/USDC",
+    "price": 9007199254740990,
+    "address": "0x1f30deab3a1b47875d32a2d3e22d080d87955844",
+    "addresses": {
+     "base": "0x1f30deab3a1b47875d32a2d3e22d080d87955844"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174029/large/photo_2026-06-18_07.17.59.png?1781952155",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.043Z",
+    "createdAt": "2026-06-24T22:14:44.703Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x15b15fa54b629c634958e8bd639b2fc8af654974",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 1554.895305908923,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "5f73e847-e4f1-494d-ad63-a0f7096cc856",
+    "reserves": [
+     "30509771.615875175851650864",
+     "56.878943"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x91d3df26214684b8dfaadb1f329e4e7e6ac62986b5c7110248236ba4a65245b6": {
+    "key": "ethereum:0x91d3df26214684b8dfaadb1f329e4e7e6ac62986b5c7110248236ba4a65245b6",
+    "name": "Uniswap V4 LP fLiteUSD/USDT",
+    "decimals": 18,
+    "symbol": "FLITEUSD/USDT",
+    "price": 9007199254740990,
+    "address": "0x91d3df26214684b8dfaadb1f329e4e7e6ac62986b5c7110248236ba4a65245b6",
+    "addresses": {
+     "ethereum": "0x91d3df26214684b8dfaadb1f329e4e7e6ac62986b5c7110248236ba4a65245b6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.943Z",
+    "createdAt": "2026-03-19T13:21:11.709Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 922.8996185586137,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17000,
+     "feePercentage": "85"
+    },
+    "tokenId": "915e19e8-537f-47e7-b997-672280966aee",
+    "reserves": [
+     "0.314164402829261109",
+     "923.361282"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x9f605e1f57d6062a72d5ee5796bb88c4843aa99b": {
+    "key": "bsc:0x9f605e1f57d6062a72d5ee5796bb88c4843aa99b",
+    "name": "PancakeSwap V3 Litecoin Token/BTCB Token 1%",
+    "decimals": 18,
+    "symbol": "LTC/BTCB",
+    "price": 9007199254740990,
+    "address": "0x9f605e1f57d6062a72d5ee5796bb88c4843aa99b",
+    "addresses": {
+     "bsc": "0x9f605e1f57d6062a72d5ee5796bb88c4843aa99b"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.554Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"
+    ],
+    "liquidity": 4971.242282100029,
+    "metrics": {
+     "apy": "5.769",
+     "baseApy": "5.769",
+     "volumeUsd1d": "78.583",
+     "volumeUsd7d": "376.243"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "b2d08d32-6122-4c55-97b2-80e7e20226b6",
+    "reserves": [
+     "44.79887412783121007",
+     "0.029948750486393783"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc6a031fd206c72c614db391590f48a5ed9b2f9dc": {
+    "key": "bsc:0xc6a031fd206c72c614db391590f48a5ed9b2f9dc",
+    "name": "Wallitelli",
+    "decimals": 18,
+    "symbol": "WALLI",
+    "price": 1.129e-05,
+    "address": "0xc6a031fd206c72c614db391590f48a5ed9b2f9dc",
+    "addresses": {
+     "bsc": "0xc6a031fd206c72c614db391590f48a5ed9b2f9dc"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-27T05:02:22.230Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11291.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102173489/large/Wallitelli.png?1779806984",
+    "metrics": {
+     "volumeUsd1d": "580383.101",
+     "volumeUsd7d": "4062681.707"
+    },
+    "metadata": {},
+    "tokenId": "da5ece74-68b8-44ab-9664-ba206b17ea91",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc4bb45fa6f6ee6c0c070860354fce42424138509": {
+    "key": "bsc:0xc4bb45fa6f6ee6c0c070860354fce42424138509",
+    "name": "Uniswap V3 Litecoin Token/Dogecoin 1%",
+    "decimals": 18,
+    "symbol": "LTC/DOGE",
+    "price": 9007199254740990,
+    "address": "0xc4bb45fa6f6ee6c0c070860354fce42424138509",
+    "addresses": {
+     "bsc": "0xc4bb45fa6f6ee6c0c070860354fce42424138509"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://assets.coingecko.com/coins/images/15768/large/dogecoin.png?1696515392"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.520Z",
+    "createdAt": "2026-07-21T23:56:14.741Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0xba2ae424d960c26247dd6c32edc70b295c744c43"
+    ],
+    "liquidity": 5944.5146592829415,
+    "metrics": {
+     "apy": "10.316",
+     "baseApy": "10.316",
+     "volumeUsd1d": "168.123",
+     "volumeUsd7d": "1388.707"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "94a785ee-e7a6-42cd-b34a-7f76f1e8e281",
+    "reserves": [
+     "35.144599512578001624",
+     "51752.19324798"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb59490ab09a0f526cc7305822ac65f2ab12f9723": {
+    "key": "ethereum:0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+    "name": "Litentry",
+    "decimals": 18,
+    "symbol": "LIT",
+    "price": 0.105667,
+    "address": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+    "addresses": {
+     "ethereum": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+     "bsc": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4772614,
+    "image": "https://assets.coingecko.com/coins/images/13825/large/logo_200x200.png?1696513568",
+    "metrics": {
+     "volumeUsd1d": "33721.509",
+     "volumeUsd7d": "206277.995"
+    },
+    "metadata": {},
+    "tokenId": "06c3dbe6-aa2e-43d4-b30c-3f58ca0100cb",
+    "totalSupply": "100000000",
+    "circulatingSupply": "45166534",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x097ffedb80d4b2ca6105a07a4d90eb739c45a666": {
+    "key": "ethereum:0x097ffedb80d4b2ca6105a07a4d90eb739c45a666",
+    "name": "Morpho Steakhouse USDT Lite",
+    "decimals": 18,
+    "symbol": "STEAKUSDTLITE",
+    "price": 1.050938520422,
+    "address": "0x097ffedb80d4b2ca6105a07a4d90eb739c45a666",
+    "addresses": {
+     "ethereum": "0x097ffedb80d4b2ca6105a07a4d90eb739c45a666"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.102Z",
+    "createdAt": "2025-02-25T08:21:44.405Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1496.348868712486,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "9a942a06-dda5-4641-91ab-4bf0b99d697d",
+    "totalSupply": "1423.821507762064854522",
+    "reserves": [
+     "1497.633839"
+    ],
+    "pricePerShare": "1.051841000000000026",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58": {
+    "key": "arbitrum:0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+    "name": "Lumentum rStock",
+    "decimals": 18,
+    "symbol": "RLITE",
+    "price": 821.01,
+    "address": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58",
+    "addresses": {
+     "arbitrum": "0x9fa5a66796b4b7dd5cf1be8e5d44739cda384d58"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 211756,
+    "image": "https://coin-images.coingecko.com/coins/images/102177001/large/0ab322184f0eeec50c7a5da49888d446.png?1789116369",
+    "metrics": {
+     "volumeUsd1d": "21.765",
+     "volumeUsd7d": "349810.074"
+    },
+    "metadata": {},
+    "tokenId": "8d9aae65-8a40-4e26-bd67-ad4bbd01f89e",
+    "totalSupply": "257.921975335",
+    "circulatingSupply": "257.921975335",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xb59490ab09a0f526cc7305822ac65f2ab12f9723": {
+    "key": "bsc:0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+    "name": "Litentry",
+    "decimals": 18,
+    "symbol": "LIT",
+    "price": 0.105667,
+    "address": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+    "addresses": {
+     "ethereum": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723",
+     "bsc": "0xb59490ab09a0f526cc7305822ac65f2ab12f9723"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4772614,
+    "image": "https://assets.coingecko.com/coins/images/13825/large/logo_200x200.png?1696513568",
+    "metrics": {
+     "volumeUsd1d": "33721.509",
+     "volumeUsd7d": "214948.347"
+    },
+    "metadata": {},
+    "tokenId": "06c3dbe6-aa2e-43d4-b30c-3f58ca0100cb",
+    "totalSupply": "100000000",
+    "circulatingSupply": "45166534",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0": {
+    "key": "ethereum:0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0",
+    "name": "Lumentum Holdings (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LITEON",
+    "price": 801.49,
+    "address": "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0",
+    "addresses": {
+     "bsc": "0x0facafb97ffdba3cae88512070af49bd30674cd9",
+     "ethereum": "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T09:22:03.610Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 802351,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "553883.909",
+     "volumeUsd7d": "6748977.141"
+    },
+    "metadata": {},
+    "tokenId": "2e458d96-3007-45a5-9e5f-b5483dbbd7b8",
+    "totalSupply": "1001.0919889270526",
+    "circulatingSupply": "1001.0919889270526",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0e58ed58e150dba5fd8e5d4a49f54c7e1e880124": {
+    "key": "ethereum:0x0e58ed58e150dba5fd8e5d4a49f54c7e1e880124",
+    "name": "Relite",
+    "decimals": 18,
+    "symbol": "RELI",
+    "price": 0.00016863257771802462,
+    "address": "0x0e58ed58e150dba5fd8e5d4a49f54c7e1e880124",
+    "addresses": {
+     "ethereum": "0x0e58ed58e150dba5fd8e5d4a49f54c7e1e880124"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11972.913017979748,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "26.96",
+     "volumeUsd7d": "611.36"
+    },
+    "metadata": {},
+    "tokenId": "1b0f343c-1d2b-4a94-8e69-f166c4bbeb0a",
+    "totalSupply": "71000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4338665cbb7b2485a8855a139b75d5e34ab0db94": {
+    "key": "bsc:0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+    "name": "Binance-Peg Litecoin",
+    "decimals": 18,
+    "symbol": "LTC",
+    "price": 56.97,
+    "address": "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+    "addresses": {
+     "bsc": "0x4338665cbb7b2485a8855a139b75d5e34ab0db94"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 42412584,
+    "image": "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+    "metrics": {
+     "volumeUsd1d": "901179.699",
+     "volumeUsd7d": "7107699.198"
+    },
+    "metadata": {},
+    "tokenId": "27792a4c-816e-425c-8d39-74affc05570e",
+    "totalSupply": "744999.966",
+    "circulatingSupply": "744999.966",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xf0c82d188ee54958813e7ac650e119135fc35e94": {
+    "key": "hyperevm:0xf0c82d188ee54958813e7ac650e119135fc35e94",
+    "name": "Purr's Elite Network of Interactive Systems",
+    "decimals": 18,
+    "symbol": "PENIS",
+    "price": 0.05351728812133568,
+    "address": "0xf0c82d188ee54958813e7ac650e119135fc35e94",
+    "addresses": {
+     "hyperevm": "0xf0c82d188ee54958813e7ac650e119135fc35e94"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-23T16:01:29.510Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 64220.74574560281,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "2.96",
+     "volumeUsd7d": "138.34"
+    },
+    "metadata": {},
+    "tokenId": "4d325509-3f97-4146-8d26-7c9823d30f6a",
+    "totalSupply": "1200000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x026428e531f30b2714ceff3781d7cdf5d278e96a": {
+    "key": "bsc:0x026428e531f30b2714ceff3781d7cdf5d278e96a",
+    "name": "Uniswap V3 Litecoin Token/Tether USD 1%",
+    "decimals": 18,
+    "symbol": "LITECOIN TOKEN/TETHER USD",
+    "price": 9007199254740990,
+    "address": "0x026428e531f30b2714ceff3781d7cdf5d278e96a",
+    "addresses": {
+     "bsc": "0x026428e531f30b2714ceff3781d7cdf5d278e96a"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.015Z",
+    "createdAt": "2025-02-27T07:04:54.931Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 63534.99153856005,
+    "metrics": {
+     "apy": "16.933",
+     "baseApy": "16.933",
+     "volumeUsd1d": "2945.331",
+     "volumeUsd7d": "14758.08"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "d4926329-f815-4812-9c91-3fb30301505f",
+    "reserves": [
+     "914.160211132788135139",
+     "11465.121384472981300191"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x44812a88a643b2a55bc28bf618e180728f4d3fba": {
+    "key": "robinhood:0x44812a88a643b2a55bc28bf618e180728f4d3fba",
+    "name": "Abliteration AI",
+    "decimals": 18,
+    "symbol": "YES",
+    "price": 4.283710161222922e-06,
+    "address": "0x44812a88a643b2a55bc28bf618e180728f4d3fba",
+    "addresses": {
+     "robinhood": "0x44812a88a643b2a55bc28bf618e180728f4d3fba"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4283.710161222923,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "13169d29-ea86-4a46-a9f3-cb8443d307a3",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4471f3fc7999e700cd8e02b8b4b9e91e53a4cce9": {
+    "key": "bsc:0x4471f3fc7999e700cd8e02b8b4b9e91e53a4cce9",
+    "name": "Uniswap V3 PancakeSwap Token/Litecoin Token 1%",
+    "decimals": 18,
+    "symbol": "PANCAKESWAP TOKEN/LITECOIN TOKEN",
+    "price": 9007199254740990,
+    "address": "0x4471f3fc7999e700cd8e02b8b4b9e91e53a4cce9",
+    "addresses": {
+     "bsc": "0x4471f3fc7999e700cd8e02b8b4b9e91e53a4cce9"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png?1696512440",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.015Z",
+    "createdAt": "2025-02-27T07:05:14.144Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94"
+    ],
+    "liquidity": 22500.544591915957,
+    "metrics": {
+     "apy": "12.248",
+     "baseApy": "12.248",
+     "volumeUsd1d": "754.683",
+     "volumeUsd7d": "7552.123"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8b12cc60-2896-4f9b-abab-5feb9eec6cbc",
+    "reserves": [
+     "5521.29068369663458787",
+     "190.462019471933597617"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xce09e903442eabb48c525aa29c9c4238f146a6df": {
+    "key": "bsc:0xce09e903442eabb48c525aa29c9c4238f146a6df",
+    "name": "PancakeSwap V3 Litecoin Token/Wrapped BNB 0.05%",
+    "decimals": 18,
+    "symbol": "LTC/WBNB",
+    "price": 9007199254740990,
+    "address": "0xce09e903442eabb48c525aa29c9c4238f146a6df",
+    "addresses": {
+     "bsc": "0xce09e903442eabb48c525aa29c9c4238f146a6df"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2026-09-05T21:08:06.079Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 13277.885917661337,
+    "metrics": {
+     "apy": "94.842",
+     "baseApy": "94.842",
+     "volumeUsd1d": "69069.614",
+     "volumeUsd7d": "636517.695"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "7534fe2a-9ad8-4f6b-9ca0-46b47def70d1",
+    "reserves": [
+     "63.01713115013679787",
+     "13.742534869193622637"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xaa36dbf3fd5bfcf1350cb8d830708f28de37ae53": {
+    "key": "ethereum:0xaa36dbf3fd5bfcf1350cb8d830708f28de37ae53",
+    "name": "Uniswap V3 Relite/Wrapped Ether 0.3%",
+    "decimals": 18,
+    "symbol": "RELI/WETH",
+    "price": 9007199254740990,
+    "address": "0xaa36dbf3fd5bfcf1350cb8d830708f28de37ae53",
+    "addresses": {
+     "ethereum": "0xaa36dbf3fd5bfcf1350cb8d830708f28de37ae53"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.931Z",
+    "createdAt": "2025-09-03T07:01:51.938Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e58ed58e150dba5fd8e5d4a49f54c7e1e880124",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 5089.049045913555,
+    "metrics": {
+     "apy": "0.294",
+     "baseApy": "0.294",
+     "volumeUsd1d": "13.654",
+     "volumeUsd7d": "48.496"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "affd356a-a864-4c33-9dfe-907cc3c62c72",
+    "reserves": [
+     "21906247.580122629842871069",
+     "0.597070614921922525"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x26b059f072bedbdcd1935d039aba57d3788f00a2c508cd7440e04ad08dc10714": {
+    "key": "ethereum:0x26b059f072bedbdcd1935d039aba57d3788f00a2c508cd7440e04ad08dc10714",
+    "name": "Uniswap V4 LP fLiteUSD/USDC",
+    "decimals": 18,
+    "symbol": "FLITEUSD/USDC",
+    "price": 9007199254740990,
+    "address": "0x26b059f072bedbdcd1935d039aba57d3788f00a2c508cd7440e04ad08dc10714",
+    "addresses": {
+     "ethereum": "0x26b059f072bedbdcd1935d039aba57d3788f00a2c508cd7440e04ad08dc10714"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.391Z",
+    "createdAt": "2026-04-22T01:12:43.635Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 3003.838815195902,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90"
+    },
+    "tokenId": "5c7b2d1b-6d1e-4f91-8d66-0fb3da1b91b0",
+    "reserves": [
+     "4.321027145081133859",
+     "3000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5ab922a6dd28040b2dccf8272c2fb9fded4a31af72ca38641283f24593d60129": {
+    "key": "ethereum:0x5ab922a6dd28040b2dccf8272c2fb9fded4a31af72ca38641283f24593d60129",
+    "name": "Uniswap V4 LP fLiteUSD/GGB",
+    "decimals": 18,
+    "symbol": "FLITEUSD/GGB",
+    "price": 9007199254740990,
+    "address": "0x5ab922a6dd28040b2dccf8272c2fb9fded4a31af72ca38641283f24593d60129",
+    "addresses": {
+     "ethereum": "0x5ab922a6dd28040b2dccf8272c2fb9fded4a31af72ca38641283f24593d60129"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.391Z",
+    "createdAt": "2026-07-09T06:50:21.245Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0xd0dc619f7a4420394360718e8b4bac75a723333e"
+    ],
+    "liquidity": 105796.31740085846,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99"
+    },
+    "tokenId": "b848afb1-0ec4-408d-a00b-8fb754b7deb8",
+    "reserves": [
+     "0.201671065182160771",
+     "105759.728837283338119022"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6b9e3825e39203277f8fd33371e36b5188b26410": {
+    "key": "bsc:0x6b9e3825e39203277f8fd33371e36b5188b26410",
+    "name": "PancakeSwap V3 Litecoin Token/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "LTC/USDT",
+    "price": 9007199254740990,
+    "address": "0x6b9e3825e39203277f8fd33371e36b5188b26410",
+    "addresses": {
+     "bsc": "0x6b9e3825e39203277f8fd33371e36b5188b26410"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.529Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 73273.13382771902,
+    "metrics": {
+     "apy": "21.842",
+     "baseApy": "21.842",
+     "volumeUsd1d": "17527.83",
+     "volumeUsd7d": "108925.519"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "c1a87c83-27f0-40fc-a9bf-1ed3bd69129b",
+    "reserves": [
+     "967.757130289179333967",
+     "18155.587609313267774791"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x15b15fa54b629c634958e8bd639b2fc8af654974": {
+    "key": "base:0x15b15fa54b629c634958e8bd639b2fc8af654974",
+    "name": "Litebeam",
+    "decimals": 18,
+    "symbol": "LBM",
+    "price": 4.91e-05,
+    "address": "0x15b15fa54b629c634958e8bd639b2fc8af654974",
+    "addresses": {
+     "base": "0x15b15fa54b629c634958e8bd639b2fc8af654974"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-20T11:25:22.373Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 49103,
+    "image": "https://coin-images.coingecko.com/coins/images/102174029/large/photo_2026-06-18_07.17.59.png?1781952155",
+    "metrics": {
+     "volumeUsd1d": "9.942",
+     "volumeUsd7d": "289.711"
+    },
+    "metadata": {},
+    "tokenId": "210e1509-9df8-4071-bf44-31e6f14e4971",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc114d80a2a188f30400b3cd545c5e296f0b04c3f": {
+    "key": "ethereum:0xc114d80a2a188f30400b3cd545c5e296f0b04c3f",
+    "name": "Rita Elite Order",
+    "decimals": 9,
+    "symbol": "RITA",
+    "price": 0.00015251,
+    "address": "0xc114d80a2a188f30400b3cd545c5e296f0b04c3f",
+    "addresses": {
+     "ethereum": "0xc114d80a2a188f30400b3cd545c5e296f0b04c3f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-06-22T09:48:46.612Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15251.16,
+    "image": "https://coin-images.coingecko.com/coins/images/66805/large/Rita_Elite_Order.jpg?1750578548",
+    "metrics": {
+     "volumeUsd1d": "6.174",
+     "volumeUsd7d": "43.218"
+    },
+    "metadata": {},
+    "tokenId": "cbdb7374-fa08-4b84-9aab-b8f42b3fd3c9",
+    "totalSupply": "100000000",
+    "circulatingSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0271cc806b4bd0282abf8beb1dcb0e797fec2293": {
+    "key": "robinhood:0x0271cc806b4bd0282abf8beb1dcb0e797fec2293",
+    "name": "Arclite",
+    "decimals": 18,
+    "symbol": "LITE",
+    "price": 3.36e-06,
+    "address": "0x0271cc806b4bd0282abf8beb1dcb0e797fec2293",
+    "addresses": {
+     "robinhood": "0x0271cc806b4bd0282abf8beb1dcb0e797fec2293"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-28T10:35:44.439Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2964.56,
+    "image": "https://coin-images.coingecko.com/coins/images/102178797/large/lgog.png?1790314457",
+    "metrics": {
+     "volumeUsd1d": "3.855",
+     "volumeUsd7d": "15.605"
+    },
+    "metadata": {},
+    "tokenId": "4b625b0d-9ccf-4579-8338-94e4f540cd63",
+    "totalSupply": "965190912.6876321",
+    "circulatingSupply": "883558259.6264076",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe3cbe4dd1bd2f7101f17d586f44bab944091d383": {
+    "key": "bsc:0xe3cbe4dd1bd2f7101f17d586f44bab944091d383",
+    "name": "PancakeSwap V3 Litecoin Token/Wrapped BNB 0.25%",
+    "decimals": 18,
+    "symbol": "LTC/WBNB",
+    "price": 9007199254740990,
+    "address": "0xe3cbe4dd1bd2f7101f17d586f44bab944091d383",
+    "addresses": {
+     "bsc": "0xe3cbe4dd1bd2f7101f17d586f44bab944091d383"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.258Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 182688.54288518522,
+    "metrics": {
+     "apy": "15.657",
+     "baseApy": "15.657",
+     "volumeUsd1d": "31339.357",
+     "volumeUsd7d": "254103.768"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "1249258e-5ed9-4af5-8928-495738fd4466",
+    "reserves": [
+     "2341.202639093734531115",
+     "69.94854746579922156"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x59ec03e9059cee24bda61932fcdbd53f408b944e245790179f1441baf460fbc8": {
+    "key": "ethereum:0x59ec03e9059cee24bda61932fcdbd53f408b944e245790179f1441baf460fbc8",
+    "name": "Uniswap V4 LP wUSDC/LITEon",
+    "decimals": 18,
+    "symbol": "WUSDC/LITEON",
+    "price": 9007199254740990,
+    "address": "0x59ec03e9059cee24bda61932fcdbd53f408b944e245790179f1441baf460fbc8",
+    "addresses": {
+     "ethereum": "0x59ec03e9059cee24bda61932fcdbd53f408b944e245790179f1441baf460fbc8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.340Z",
+    "createdAt": "2026-09-30T08:51:49.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "3c3af2d6-6ee4-4886-b848-a66599d62719",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x05770b345390a446464e9641030da926ba668530": {
+    "key": "bsc:0x05770b345390a446464e9641030da926ba668530",
+    "name": "Uniswap V3 Litecoin Token/Venus 1%",
+    "decimals": 18,
+    "symbol": "LITECOIN TOKEN/VENUS",
+    "price": 9007199254740990,
+    "address": "0x05770b345390a446464e9641030da926ba668530",
+    "addresses": {
+     "bsc": "0x05770b345390a446464e9641030da926ba668530"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://assets.coingecko.com/coins/images/12677/large/download.jpg?1696512482"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.017Z",
+    "createdAt": "2025-02-27T07:04:54.931Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"
+    ],
+    "liquidity": 28415.752806828816,
+    "metrics": {
+     "apy": "7.303",
+     "baseApy": "7.303",
+     "volumeUsd1d": "568.375",
+     "volumeUsd7d": "4097.034"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "f88a2f0e-39a6-4621-aea6-373b3b1e17d0",
+    "reserves": [
+     "194.945672490402859629",
+     "6073.578191245812210243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7c787c9642a0b5ef55a5329f4b5548b571e1d7b17ac4928d8a3eaa5b3704fe22": {
+    "key": "ethereum:0x7c787c9642a0b5ef55a5329f4b5548b571e1d7b17ac4928d8a3eaa5b3704fe22",
+    "name": "Uniswap V4 LP fLiteUSD/TKLA",
+    "decimals": 18,
+    "symbol": "FLITEUSD/TKLA",
+    "price": 9007199254740990,
+    "address": "0x7c787c9642a0b5ef55a5329f4b5548b571e1d7b17ac4928d8a3eaa5b3704fe22",
+    "addresses": {
+     "ethereum": "0x7c787c9642a0b5ef55a5329f4b5548b571e1d7b17ac4928d8a3eaa5b3704fe22"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.404Z",
+    "createdAt": "2026-07-19T04:35:58.961Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0x35907ea8dfdb2bc0bea75a23acf19a9520f374ed"
+    ],
+    "liquidity": 6416.003178864208,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20000,
+     "feePercentage": "99.998"
+    },
+    "tokenId": "08e2e5da-a492-4faf-b58e-c0c554eea3fc",
+    "reserves": [
+     "0.962771777152843079",
+     "6411.964181457252703974"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8d0cce06fe512c69eb773eb98ea4e0778a179335a5d1bac8599a023d81e2c621": {
+    "key": "ethereum:0x8d0cce06fe512c69eb773eb98ea4e0778a179335a5d1bac8599a023d81e2c621",
+    "name": "Uniswap V4 LP fLiteUSD/MM",
+    "decimals": 18,
+    "symbol": "FLITEUSD/MM",
+    "price": 9007199254740990,
+    "address": "0x8d0cce06fe512c69eb773eb98ea4e0778a179335a5d1bac8599a023d81e2c621",
+    "addresses": {
+     "ethereum": "0x8d0cce06fe512c69eb773eb98ea4e0778a179335a5d1bac8599a023d81e2c621"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.947Z",
+    "createdAt": "2026-07-06T03:52:00.920Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0xebeb13abc5ea7ec8cb3fad71884ce0904b1cdc9d"
+    ],
+    "liquidity": 99436.21820559689,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18022,
+     "feePercentage": "90.111"
+    },
+    "tokenId": "dbbb9c1d-7dfd-49ea-b569-69e4dbda16b4",
+    "reserves": [
+     "17.346234019235454762",
+     "99999.999999999999992308"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0facafb97ffdba3cae88512070af49bd30674cd9": {
+    "key": "bsc:0x0facafb97ffdba3cae88512070af49bd30674cd9",
+    "name": "Lumentum Holdings (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LITEON",
+    "price": 801.49,
+    "address": "0x0facafb97ffdba3cae88512070af49bd30674cd9",
+    "addresses": {
+     "bsc": "0x0facafb97ffdba3cae88512070af49bd30674cd9",
+     "ethereum": "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T09:22:03.610Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 802351,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "552815.605",
+     "volumeUsd7d": "6760317.517"
+    },
+    "metadata": {},
+    "tokenId": "2e458d96-3007-45a5-9e5f-b5483dbbd7b8",
+    "totalSupply": "1001.0919889270526",
+    "circulatingSupply": "1001.0919889270526",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x768eaf3f76e54b7dedea34f2e889c7de88bd68ea": {
+    "key": "bsc:0x768eaf3f76e54b7dedea34f2e889c7de88bd68ea",
+    "name": "Uniswap V3 Litecoin Token/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "LITECOIN TOKEN/TETHER USD",
+    "price": 9007199254740990,
+    "address": "0x768eaf3f76e54b7dedea34f2e889c7de88bd68ea",
+    "addresses": {
+     "bsc": "0x768eaf3f76e54b7dedea34f2e889c7de88bd68ea"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.099Z",
+    "createdAt": "2025-02-27T07:04:57.634Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 501.2279426412145,
+    "metrics": {
+     "apy": "1.033",
+     "baseApy": "1.033",
+     "volumeUsd1d": "4.726",
+     "volumeUsd7d": "94.944"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "b653552f-dbcd-4d47-abe6-da152438e5fb",
+    "reserves": [
+     "8.760976731409396476",
+     "2.116914565518366931"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xef28e25b1b96fecad40e36bc38d67d5984ee002a": {
+    "key": "bsc:0xef28e25b1b96fecad40e36bc38d67d5984ee002a",
+    "name": "Uniswap V3 Ethereum Token/Litecoin Token 0.3%",
+    "decimals": 18,
+    "symbol": "ETH/LTC",
+    "price": 9007199254740990,
+    "address": "0xef28e25b1b96fecad40e36bc38d67d5984ee002a",
+    "addresses": {
+     "bsc": "0xef28e25b1b96fecad40e36bc38d67d5984ee002a"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.099Z",
+    "createdAt": "2026-02-12T05:22:31.949Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94"
+    ],
+    "liquidity": 14489.774650128855,
+    "metrics": {
+     "apy": "29.551",
+     "baseApy": "29.551",
+     "volumeUsd1d": "3910.091",
+     "volumeUsd7d": "25579.99"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "2bac72d8-7dc1-4cac-9a29-dc5fada132ba",
+    "reserves": [
+     "2.638983754521411385",
+     "146.117088197348354522"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xffe203b59393593965842439ce1e7d7c78109b46": {
+    "key": "ethereum:0xffe203b59393593965842439ce1e7d7c78109b46",
+    "name": "Satellite Doge-1 Mission",
+    "decimals": 18,
+    "symbol": "DOGE-1",
+    "price": 0.00012389,
+    "address": "0xffe203b59393593965842439ce1e7d7c78109b46",
+    "addresses": {
+     "ethereum": "0xffe203b59393593965842439ce1e7d7c78109b46"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-12-01T12:45:09.295Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 123890,
+    "image": "https://assets.coingecko.com/coins/images/33316/large/logo_200-200.png?1701413684",
+    "metrics": {
+     "volumeUsd1d": "147.016",
+     "volumeUsd7d": "4266.898"
+    },
+    "metadata": {},
+    "tokenId": "dbfec375-41a8-4f62-8099-9772c0fa54ac",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x273da948aca9261043fbdb2a857bc255ecc29012": {
+    "key": "ethereum:0x273da948aca9261043fbdb2a857bc255ecc29012",
+    "name": "Fluid Lite USD Vault",
+    "decimals": 18,
+    "symbol": "FLITEUSD",
+    "price": 1.0522533284887685,
+    "address": "0x273da948aca9261043fbdb2a857bc255ecc29012",
+    "addresses": {
+     "ethereum": "0x273da948aca9261043fbdb2a857bc255ecc29012"
+    },
+    "platform": "fluid",
+    "network": "ethereum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/fluid",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:33.599Z",
+    "createdAt": "2026-03-19T13:20:34.534Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 40834831.99223029,
+    "metrics": {
+     "apy": "7.308",
+     "baseApy": "7.308",
+     "volumeUsd1d": "-89390.389",
+     "volumeUsd7d": "-3189373.501"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626"
+    },
+    "tokenId": "2205eb80-68e2-4995-8bf0-49e46879755d",
+    "totalSupply": "38807035.23254870981977088",
+    "reserves": [
+     "40842224.434853"
+    ],
+    "pricePerShare": "1.052443820820337016",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xf43770caa0544047bbc9a0eed9b0cd7432826052": {
+    "key": "hyperevm:0xf43770caa0544047bbc9a0eed9b0cd7432826052",
+    "name": "Hyperswap V3 Wrapped HYPE/Purr's Elite Network of Interactive Systems 1%",
+    "decimals": 18,
+    "symbol": "WHYPE/PENIS",
+    "price": 9007199254740990,
+    "address": "0xf43770caa0544047bbc9a0eed9b0cd7432826052",
+    "addresses": {
+     "hyperevm": "0xf43770caa0544047bbc9a0eed9b0cd7432826052"
+    },
+    "platform": "hyperswap-v3",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hyperswap",
+     "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.477Z",
+    "createdAt": "2026-08-23T16:08:23.939Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5555555555555555555555555555555555555555",
+     "0xf0c82d188ee54958813e7ac650e119135fc35e94"
+    ],
+    "liquidity": 1119.9568961218354,
+    "metrics": {
+     "apy": "0.964",
+     "baseApy": "0.964",
+     "volumeUsd1d": "2.967",
+     "volumeUsd7d": "109.938"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8eb55041-8f73-4a4a-bd32-05a102b79c89",
+    "reserves": [
+     "7.348828264118535795",
+     "10449.731651231388330147"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x64748bea17b6d19e242adf20425de2440c656142": {
+    "key": "bsc:0x64748bea17b6d19e242adf20425de2440c656142",
+    "name": "Lumentum Holdings (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "LITEB",
+    "price": 799.1,
+    "address": "0x64748bea17b6d19e242adf20425de2440c656142",
+    "addresses": {
+     "bsc": "0x64748bea17b6d19e242adf20425de2440c656142"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-30T16:34:53.920Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 931692,
+    "image": "https://coin-images.coingecko.com/coins/images/102174256/large/bstocks_liteb.png?1782835863",
+    "metrics": {
+     "volumeUsd1d": "1506100.478",
+     "volumeUsd7d": "14763858.881"
+    },
+    "metadata": {},
+    "tokenId": "c85c29d1-656c-47c7-a444-a86d9dbbbf82",
+    "totalSupply": "1165.7980248400002",
+    "circulatingSupply": "1165.7980248400002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x85922bda78a260ed6ccfd9dd1535ac89b9199abbcb67237d6ec82a483da180f4": {
+    "key": "ethereum:0x85922bda78a260ed6ccfd9dd1535ac89b9199abbcb67237d6ec82a483da180f4",
+    "name": "Uniswap V4 LP wUSDC/LITEon",
+    "decimals": 18,
+    "symbol": "WUSDC/LITEON",
+    "price": 9007199254740990,
+    "address": "0x85922bda78a260ed6ccfd9dd1535ac89b9199abbcb67237d6ec82a483da180f4",
+    "addresses": {
+     "ethereum": "0x85922bda78a260ed6ccfd9dd1535ac89b9199abbcb67237d6ec82a483da180f4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.182Z",
+    "createdAt": "2026-09-28T10:37:12.402Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbf5ab848efff75d897a3dbe4647b939c59d3cdb0"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "7b194b9f-a9af-442c-97ad-68181cbec9ee",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3bebfffc5fa989990aa2998a1b0a3742ba04aa8a": {
+    "key": "bsc:0x3bebfffc5fa989990aa2998a1b0a3742ba04aa8a",
+    "name": "PancakeSwap V3 Litecoin Token/Tether USD 1%",
+    "decimals": 18,
+    "symbol": "LTC/USDT",
+    "price": 9007199254740990,
+    "address": "0x3bebfffc5fa989990aa2998a1b0a3742ba04aa8a",
+    "addresses": {
+     "bsc": "0x3bebfffc5fa989990aa2998a1b0a3742ba04aa8a"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/15456/large/LrysCc5Q_400x400.jpg?1696515103",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.873Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 45423.79576608809,
+    "metrics": {
+     "apy": "2.544",
+     "baseApy": "2.544",
+     "volumeUsd1d": "316.38",
+     "volumeUsd7d": "1233.671"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "0454d84c-cc0b-4b08-8c47-4ca0997e0a47",
+    "reserves": [
+     "738.867841661854953107",
+     "3333.354845069289142013"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb9288c7ddf4da8a8d59b3750119b303f3711f929025b13306343f8efe529a69b": {
+    "key": "ethereum:0xb9288c7ddf4da8a8d59b3750119b303f3711f929025b13306343f8efe529a69b",
+    "name": "Uniswap V4 LP fLiteUSD/Goldi",
+    "decimals": 18,
+    "symbol": "FLITEUSD/GOLDI",
+    "price": 9007199254740990,
+    "address": "0xb9288c7ddf4da8a8d59b3750119b303f3711f929025b13306343f8efe529a69b",
+    "addresses": {
+     "ethereum": "0xb9288c7ddf4da8a8d59b3750119b303f3711f929025b13306343f8efe529a69b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.318Z",
+    "createdAt": "2026-07-12T06:35:35.215Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x273da948aca9261043fbdb2a857bc255ecc29012",
+     "0x2bee9b6e23f00f2111d92b15397d50ae4bb5df6a"
+    ],
+    "liquidity": 3001.33450014778,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.9"
+    },
+    "tokenId": "cc7a1f81-796c-40f2-b230-08a295a49cd4",
+    "reserves": [
+     "0.323806643154478389",
+     "3002.99999999999999262"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

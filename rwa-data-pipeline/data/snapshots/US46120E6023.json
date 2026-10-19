@@ -1,0 +1,623 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US46120E6023",
+ "ticker": "ISRG",
+ "name": "Intuitive Surgical",
+ "isin": "US46120E6023",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:11Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Intuitive Surgical Inc",
+   "symbol": "ISRG",
+   "slug": "intuitive-surgical",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 424.825877796735,
+     "tokenized_market_cap": 603343.8953531103,
+     "tokenized_volume_24h": 515735.90099396,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 166,
+   "asset_type": "stock",
+   "rwa_rank": 108,
+   "has_tokens": true,
+   "average_tokenized_price": 424.825877796735,
+   "tokenized_market_cap": 603343.8953531103,
+   "tokenized_volume_24h": 515735.90099396,
+   "last_updated": "2026-10-18T20:13:44.241Z",
+   "tokens": [
+    {
+     "symbol": "ISRGon",
+     "name": "Intuitive Surgical Tokenized Stock (Ondo)",
+     "price": 425.1729527180445,
+     "crypto_id": 39221,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 436311.29,
+     "volume_24h": 513145.91057883
+    },
+    {
+     "symbol": "ISRG",
+     "name": "Intuitive Surgical Inc (Derivatives)",
+     "price": 424.1553051929968,
+     "crypto_id": 40228,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wISRGx",
+     "name": "Wrapped Intuitive Surgical Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41352,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "ISRGx",
+     "name": "Intuitive Surgical tokenized stock (xStock)",
+     "price": 423.06592326905843,
+     "crypto_id": 41903,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 167403.23,
+     "volume_24h": 441.03674433
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "ISRG",
+     "market_url": "https://www.binance.com/en/stocks/EQ_ISRG"
+    }
+   ]
+  },
+  "info": {
+   "39221": {
+    "id": 39221,
+    "symbol": "ISRGon",
+    "name": "Intuitive Surgical Tokenized Stock (Ondo)",
+    "slug": "intuitive-surgical-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39221.png",
+    "date_added": "2026-01-08T15:44:34.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x784584933c2192caa062e90d8140d94768ce62d8",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "1MGRpPrkhEsCm2GCWD3rsvEU77xTTLAzfKXeFgFondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40228": {
+    "id": 40228,
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical Inc (Derivatives)",
+    "slug": "intuitive-surgical-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40228.png",
+    "date_added": "2026-06-11T15:03:33.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41352": {
+    "id": 41352,
+    "symbol": "wISRGx",
+    "name": "Wrapped Intuitive Surgical Tokenized Stock (xStock)",
+    "slug": "wrapped-intuitive-surgical-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41352.png",
+    "date_added": "2026-08-11T16:22:53.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x61453272263115d33f4052837C2E086D3E17d4b4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x61453272263115d33f4052837C2E086D3E17d4b4",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41903": {
+    "id": 41903,
+    "symbol": "ISRGx",
+    "name": "Intuitive Surgical tokenized stock (xStock)",
+    "slug": "intuitive-surgical-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41903.png",
+    "date_added": "2025-07-01T12:44:26.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x2F8eb54f81898b40AdcF8ce3d415DDa9372015d7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2F8eb54f81898b40AdcF8ce3d415DDa9372015d7",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "XsgBcHP3frsQGHr5EoDdoPZMANk52Y4JPg5BYx98NwL",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2F8eb54f81898b40AdcF8ce3d415DDa9372015d7",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2F8eb54f81898b40AdcF8ce3d415DDa9372015d7",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2F8eb54f81898b40AdcF8ce3d415DDa9372015d7",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCUOtnBSu3ix1JopzLdLrI26CjCrwYNktGInyRwTYEmJFs9",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2f8eb54f81898b40adcf8ce3d415dda9372015d7",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2f8eb54f81898b40adcf8ce3d415dda9372015d7",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x2f8eb54f81898b40adcf8ce3d415dda9372015d7",
+   "bsc:0x2f8eb54f81898b40adcf8ce3d415dda9372015d7",
+   "bsc:0x784584933c2192caa062e90d8140d94768ce62d8",
+   "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+   "ethereum:0x2f8eb54f81898b40adcf8ce3d415dda9372015d7"
+  ],
+  "exact": {
+   "bsc:0x784584933c2192caa062e90d8140d94768ce62d8": {
+    "key": "bsc:0x784584933c2192caa062e90d8140d94768ce62d8",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x784584933c2192caa062e90d8140d94768ce62d8",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151864.813",
+     "volumeUsd7d": "1091489.561"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55": {
+    "key": "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151497.159",
+     "volumeUsd7d": "1091787.691"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "ISRG": {
+    "total_items": 6,
+    "pages": 1,
+    "received": 6,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x1421d000bc98f76c73af9d9af82c1bf1570c7c189cf952e8e981b3a46de67fc9": {
+    "key": "ethereum:0x1421d000bc98f76c73af9d9af82c1bf1570c7c189cf952e8e981b3a46de67fc9",
+    "name": "Uniswap V4 LP ISRGon/EGP",
+    "decimals": 18,
+    "symbol": "ISRGON/EGP",
+    "price": 9007199254740990,
+    "address": "0x1421d000bc98f76c73af9d9af82c1bf1570c7c189cf952e8e981b3a46de67fc9",
+    "addresses": {
+     "ethereum": "0x1421d000bc98f76c73af9d9af82c1bf1570c7c189cf952e8e981b3a46de67fc9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.971Z",
+    "createdAt": "2026-10-14T06:54:25.448Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20062.830751069192,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.2"
+    },
+    "tokenId": "7ca70a5b-9320-44ca-9467-c062f7743451",
+    "reserves": [
+     "0.06638271064919389",
+     "19999.999999999999999995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4c26ff45085f80c73f9c4da909eb822844a454ab309d2505e92f0abce399b263": {
+    "key": "ethereum:0x4c26ff45085f80c73f9c4da909eb822844a454ab309d2505e92f0abce399b263",
+    "name": "Uniswap V4 LP ISRGon/wUSDC",
+    "decimals": 18,
+    "symbol": "ISRGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x4c26ff45085f80c73f9c4da909eb822844a454ab309d2505e92f0abce399b263",
+    "addresses": {
+     "ethereum": "0x4c26ff45085f80c73f9c4da909eb822844a454ab309d2505e92f0abce399b263"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.621Z",
+    "createdAt": "2026-09-30T08:51:49.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "dc8c0d33-2b26-4e3a-81f1-61464da68a95",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf054375dedbcdf0ff845d8fbdc240f443374f2ad82b952c2f9708d287529bd33": {
+    "key": "ethereum:0xf054375dedbcdf0ff845d8fbdc240f443374f2ad82b952c2f9708d287529bd33",
+    "name": "Uniswap V4 LP ISRGon/wUSDC",
+    "decimals": 18,
+    "symbol": "ISRGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xf054375dedbcdf0ff845d8fbdc240f443374f2ad82b952c2f9708d287529bd33",
+    "addresses": {
+     "ethereum": "0xf054375dedbcdf0ff845d8fbdc240f443374f2ad82b952c2f9708d287529bd33"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.913Z",
+    "createdAt": "2026-09-28T10:37:34.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "a07faf29-5ef2-45fa-a6df-c1c6650e5434",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x784584933c2192caa062e90d8140d94768ce62d8": {
+    "key": "bsc:0x784584933c2192caa062e90d8140d94768ce62d8",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x784584933c2192caa062e90d8140d94768ce62d8",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151864.813",
+     "volumeUsd7d": "1091489.561"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60": {
+    "key": "arbitrum:0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60",
+    "name": "Intuitive Surgical rStock",
+    "decimals": 18,
+    "symbol": "RISRG",
+    "price": 425.19,
+    "address": "0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60",
+    "addresses": {
+     "arbitrum": "0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10441.56,
+    "image": "https://coin-images.coingecko.com/coins/images/102177377/large/ISRG.png?1789117717",
+    "metrics": {
+     "volumeUsd1d": "17.048",
+     "volumeUsd7d": "27069.04"
+    },
+    "metadata": {},
+    "tokenId": "41adc121-a8c0-4166-bd4c-a38a4edb2d9e",
+    "totalSupply": "24.557362408",
+    "circulatingSupply": "24.557362408",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55": {
+    "key": "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151497.159",
+     "volumeUsd7d": "1091787.691"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

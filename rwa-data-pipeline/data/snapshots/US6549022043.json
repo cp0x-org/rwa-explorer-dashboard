@@ -1,0 +1,1099 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US6549022043",
+ "ticker": "NOK",
+ "name": "Nokia (ADR)",
+ "isin": "US6549022043",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:37Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Nokia Corporation",
+   "symbol": "NOK",
+   "slug": "nokia-corporation",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 9.085836383989204,
+     "tokenized_market_cap": 3019876.9146508765,
+     "tokenized_volume_24h": 1736494.42727801,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 1588,
+   "asset_type": "stock",
+   "rwa_rank": 309,
+   "has_tokens": true,
+   "average_tokenized_price": 9.085836383989204,
+   "tokenized_market_cap": 3019876.9146508765,
+   "tokenized_volume_24h": 1736494.42727801,
+   "last_updated": "2026-10-18T20:13:39.712Z",
+   "tokens": [
+    {
+     "symbol": "NOK",
+     "name": "Nokia Oyj (Derivatives)",
+     "price": 9.102288649710902,
+     "crypto_id": 40072,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rNOK",
+     "name": "Nokia Tokenized Stock (Reality)",
+     "price": 9.118892414482252,
+     "crypto_id": 40661,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 547539.89,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "NOK",
+     "name": "Nokia Tokenized Stock (Robinhood)",
+     "price": null,
+     "crypto_id": 40746,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "NOKB",
+     "name": "Nokia Tokenized bStocks",
+     "price": 9.087532074684795,
+     "crypto_id": 40853,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 2041025.11,
+     "volume_24h": 1714724.99945152
+    },
+    {
+     "symbol": "NOK",
+     "name": "Nokia Oyj (Backpack)",
+     "price": 9.116314454803513,
+     "crypto_id": 42376,
+     "issuer_id": "6a2d54b697c45356b1a634f4",
+     "issuer_name": "Backpack",
+     "market_cap": 383222.88,
+     "volume_24h": 866.50380326
+    },
+    {
+     "symbol": "NOKc",
+     "name": "Nokia Corporation Tokenized Stock (Coinbase)",
+     "price": 9.287844979806692,
+     "crypto_id": 42577,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 48993.38,
+     "volume_24h": 19671.98323741
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "NOK",
+     "market_url": "https://www.binance.com/en/stocks/EQ_NOK"
+    }
+   ]
+  },
+  "info": {
+   "40072": {
+    "id": 40072,
+    "symbol": "NOK",
+    "name": "Nokia Oyj (Derivatives)",
+    "slug": "nokia-oyj-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40072.png",
+    "date_added": "2026-05-27T09:35:04.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40661": {
+    "id": 40661,
+    "symbol": "rNOK",
+    "name": "Nokia Tokenized Stock (Reality)",
+    "slug": "nokia-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40661.png",
+    "date_added": "2026-07-02T07:39:27.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40746": {
+    "id": 40746,
+    "symbol": "NOK",
+    "name": "Nokia Tokenized Stock (Robinhood)",
+    "slug": "nokia-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40746.png",
+    "date_added": "2026-08-04T07:31:49.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x25EE805ac369b6E3F8bF5764c682d34a37cb7175"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x25EE805ac369b6E3F8bF5764c682d34a37cb7175",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40853": {
+    "id": 40853,
+    "symbol": "NOKB",
+    "name": "Nokia Tokenized bStocks",
+    "slug": "nokia-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40853.png",
+    "date_added": "2026-07-13T10:50:18.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42376": {
+    "id": 42376,
+    "symbol": "NOK",
+    "name": "Nokia Oyj (Backpack)",
+    "slug": "nokia-oyj-backpack",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42376.png",
+    "date_added": "2026-09-28T20:28:16.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "N7Q5fYX7YRnDQksfdBKnoUb3awm92n7QNAD35X3Rq1X"
+    },
+    "contract_address": [
+     {
+      "contract_address": "N7Q5fYX7YRnDQksfdBKnoUb3awm92n7QNAD35X3Rq1X",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "42577": {
+    "id": 42577,
+    "symbol": "NOKc",
+    "name": "Nokia Corporation Tokenized Stock (Coinbase)",
+    "slug": "nokia-corporation-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42577.png",
+    "date_added": "2026-10-14T03:36:58.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB2000000000000000000005ac674f707E357409c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB2000000000000000000005ac674f707E357409c",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+   "base:0xb2000000000000000000005ac674f707e357409c",
+   "bsc:0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+   "robinhood:0x25ee805ac369b6e3f8bf5764c682d34a37cb7175"
+  ],
+  "exact": {
+   "bsc:0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea": {
+    "key": "bsc:0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+    "name": "Nokia (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NOKB",
+    "price": 9.1,
+    "address": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+    "addresses": {
+     "bsc": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2041682,
+    "image": "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016",
+    "metrics": {
+     "volumeUsd1d": "941964.098",
+     "volumeUsd7d": "5802422.001"
+    },
+    "metadata": {},
+    "tokenId": "b2676b6e-99fa-4fdc-998d-dcc8ccaa5a14",
+    "totalSupply": "224069.75970147998",
+    "circulatingSupply": "224069.75970147998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e": {
+    "key": "arbitrum:0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+    "name": "Nokia rStock",
+    "decimals": 18,
+    "symbol": "RNOK",
+    "price": 9.12,
+    "address": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+    "addresses": {
+     "arbitrum": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 547705,
+    "image": "https://coin-images.coingecko.com/coins/images/102177007/large/78bf75a3c560f7c0ec19a76bef8a35ff.png?1789116388",
+    "metrics": {
+     "volumeUsd1d": "5107.214",
+     "volumeUsd7d": "130464.325"
+    },
+    "metadata": {},
+    "tokenId": "f6bf9e08-0110-4065-b703-55b69a40081b",
+    "totalSupply": "60044.560822459",
+    "circulatingSupply": "60044.560822459",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "NOK": {
+    "total_items": 19,
+    "pages": 1,
+    "received": 19,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x5013b8c94ff2e95e8b36e3c064274b20987403f8": {
+    "key": "ethereum:0x5013b8c94ff2e95e8b36e3c064274b20987403f8",
+    "name": "UniswapV2 LP Mononoke-Inu/WETH",
+    "decimals": 18,
+    "symbol": "MONONOKE-INU/WETH",
+    "price": 3.0019741027842066,
+    "address": "0x5013b8c94ff2e95e8b36e3c064274b20987403f8",
+    "addresses": {
+     "ethereum": "0x5013b8c94ff2e95e8b36e3c064274b20987403f8"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/18769/large/z9YDK0f.png?1696518234",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:08.400Z",
+    "createdAt": "2024-04-12T03:04:01.957Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4da08a1bff50be96bded5c7019227164b49c2bfc",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 98184.81653256356,
+    "metrics": {
+     "apy": "0.013",
+     "baseApy": "0.013",
+     "volumeUsd1d": "11.428",
+     "volumeUsd7d": "2279.934"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "01271270-2d96-4b2e-86f0-dedc492b8dfb",
+    "totalSupply": "32706.750015431916997292",
+    "reserves": [
+     "188045034628506986.279820626",
+     "21.039945321414082846"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd76e7128f9dc20ff7fed233cc5b0b75c3a32d3d4387cd645158ca6889b65e61c": {
+    "key": "ethereum:0xd76e7128f9dc20ff7fed233cc5b0b75c3a32d3d4387cd645158ca6889b65e61c",
+    "name": "Uniswap V4 LP NOKon/EGP",
+    "decimals": 18,
+    "symbol": "NOKON/EGP",
+    "price": 9007199254740990,
+    "address": "0xd76e7128f9dc20ff7fed233cc5b0b75c3a32d3d4387cd645158ca6889b65e61c",
+    "addresses": {
+     "ethereum": "0xd76e7128f9dc20ff7fed233cc5b0b75c3a32d3d4387cd645158ca6889b65e61c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.271Z",
+    "createdAt": "2026-10-14T06:54:41.300Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20069.708661652006,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.63"
+    },
+    "tokenId": "99526156-4041-48a2-b8c5-d1a08ce6c322",
+    "reserves": [
+     "2.632149176557006142",
+     "19999.999999999999999993"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c": {
+    "key": "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "name": "Uniswap V3 WETH/RobinhoodTrumpGMEShrekNokia4663Doge 1%",
+    "decimals": 18,
+    "symbol": "WETH/NASDAQ",
+    "price": 9007199254740990,
+    "address": "0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "addresses": {
+     "robinhood": "0x434de0f0800d9653d26f96becd9702d8d740ee3c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.254Z",
+    "createdAt": "2026-07-17T08:50:20.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    ],
+    "liquidity": 4635.908952705062,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "25.754"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "830109f7-1fad-4e43-a717-6d18a83ba4bd",
+    "reserves": [
+     "0.311208307223458652",
+     "824831725.06329220529433026"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xaa7b6f2c9cdf48333a99d0edd03941b4c82f133a": {
+    "key": "ethereum:0xaa7b6f2c9cdf48333a99d0edd03941b4c82f133a",
+    "name": "UniswapV2 LP Kusunoki/WETH",
+    "decimals": 18,
+    "symbol": "KUSUNOKI/WETH",
+    "price": 0.0004423681209918217,
+    "address": "0xaa7b6f2c9cdf48333a99d0edd03941b4c82f133a",
+    "addresses": {
+     "ethereum": "0xaa7b6f2c9cdf48333a99d0edd03941b4c82f133a"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:09.060Z",
+    "createdAt": "2025-11-29T21:06:38.482Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x36919a60a2b67b6d2329863093d180d23d5a0308",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 152922.51844691698,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.097"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "a98b3b68-153b-4eea-8b90-e678fc0b68c5",
+    "totalSupply": "345690639.06335182157893166",
+    "reserves": [
+     "3869392880799544.001818040742050871",
+     "32.731113383177296899"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4da08a1bff50be96bded5c7019227164b49c2bfc": {
+    "key": "ethereum:0x4da08a1bff50be96bded5c7019227164b49c2bfc",
+    "name": "Mononoke Inu",
+    "decimals": 9,
+    "symbol": "MONONOKE-INU",
+    "price": 2.6073e-13,
+    "address": "0x4da08a1bff50be96bded5c7019227164b49c2bfc",
+    "addresses": {
+     "ethereum": "0x4da08a1bff50be96bded5c7019227164b49c2bfc"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 260730,
+    "image": "https://assets.coingecko.com/coins/images/18769/large/z9YDK0f.png?1696518234",
+    "metrics": {
+     "volumeUsd1d": "11.333",
+     "volumeUsd7d": "2234.372"
+    },
+    "metadata": {},
+    "tokenId": "c4460856-029a-4836-aa4d-6c9521d31d96",
+    "totalSupply": "1000000000000000000",
+    "circulatingSupply": "1000000000000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x1abee0b7bce5be52e3a792b5d8ef1a93c11efd035d7533cbb3e4038e31a477ab": {
+    "key": "bsc:0x1abee0b7bce5be52e3a792b5d8ef1a93c11efd035d7533cbb3e4038e31a477ab",
+    "name": "Uniswap V4 LP USDT/NOKB",
+    "decimals": 18,
+    "symbol": "USDT/NOKB",
+    "price": 9007199254740990,
+    "address": "0x1abee0b7bce5be52e3a792b5d8ef1a93c11efd035d7533cbb3e4038e31a477ab",
+    "addresses": {
+     "bsc": "0x1abee0b7bce5be52e3a792b5d8ef1a93c11efd035d7533cbb3e4038e31a477ab"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.420Z",
+    "createdAt": "2026-08-14T12:55:33.603Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    ],
+    "liquidity": 1396.131993273676,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "1bedad9e-55ac-4603-8b0d-c76da43e4943",
+    "reserves": [
+     "1094.616746367270535164",
+     "33.23675033788885161"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd76cb6e9f642cdc7c33c9d4fc6bdd858116dcc84": {
+    "key": "bsc:0xd76cb6e9f642cdc7c33c9d4fc6bdd858116dcc84",
+    "name": "PancakeSwap V3 Tether USD/Nokia 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/NOKB",
+    "price": 9007199254740990,
+    "address": "0xd76cb6e9f642cdc7c33c9d4fc6bdd858116dcc84",
+    "addresses": {
+     "bsc": "0xd76cb6e9f642cdc7c33c9d4fc6bdd858116dcc84"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2026-08-03T16:54:36.866Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    ],
+    "liquidity": 45610.74481111864,
+    "metrics": {
+     "apy": "5.623",
+     "baseApy": "5.623",
+     "volumeUsd1d": "2810.608",
+     "volumeUsd7d": "82715.413"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "bebb0d62-7ed4-43b4-b7d3-f2177d6e251b",
+    "reserves": [
+     "22211.720599715941936032",
+     "2573.415589854642932633"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7b4ccaf7a7590eb9ff41cb2bd18ab10148d1b206cdf6ac9dd4848f638b35ea45": {
+    "key": "bsc:0x7b4ccaf7a7590eb9ff41cb2bd18ab10148d1b206cdf6ac9dd4848f638b35ea45",
+    "name": "Uniswap V4 LP USDT/NOKB",
+    "decimals": 18,
+    "symbol": "USDT/NOKB",
+    "price": 9007199254740990,
+    "address": "0x7b4ccaf7a7590eb9ff41cb2bd18ab10148d1b206cdf6ac9dd4848f638b35ea45",
+    "addresses": {
+     "bsc": "0x7b4ccaf7a7590eb9ff41cb2bd18ab10148d1b206cdf6ac9dd4848f638b35ea45"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016"
+    ],
+    "updatedAt": "2026-10-18T20:15:22.517Z",
+    "createdAt": "2026-08-03T15:18:59.013Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    ],
+    "liquidity": 989.3980943372692,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "0f55808b-0722-4fb8-82b7-2042fefce0d3",
+    "reserves": [
+     "886.894063168055679954",
+     "11.347800689605674857"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x48013b31f481a64356140ef42790162cf409da75ef25efd7f63b6d4ed414a83b": {
+    "key": "bsc:0x48013b31f481a64356140ef42790162cf409da75ef25efd7f63b6d4ed414a83b",
+    "name": "Uniswap V4 LP USDT/NOKB",
+    "decimals": 18,
+    "symbol": "USDT/NOKB",
+    "price": 9007199254740990,
+    "address": "0x48013b31f481a64356140ef42790162cf409da75ef25efd7f63b6d4ed414a83b",
+    "addresses": {
+     "bsc": "0x48013b31f481a64356140ef42790162cf409da75ef25efd7f63b6d4ed414a83b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.986Z",
+    "createdAt": "2026-08-03T16:54:26.961Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    ],
+    "liquidity": 556.6867325128449,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8500,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "ac6ed9bd-fff4-4284-bb49-5e0d3e8bffb8",
+    "reserves": [
+     "494.504418505878814525",
+     "6.879846021763084864"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8b99b91187426a91d291c2d19d97e21544cb3909": {
+    "key": "ethereum:0x8b99b91187426a91d291c2d19d97e21544cb3909",
+    "name": "UniswapV2 LP MONONOKE/WETH",
+    "decimals": 18,
+    "symbol": "MONONOKE/WETH",
+    "price": 13807.488899798222,
+    "address": "0x8b99b91187426a91d291c2d19d97e21544cb3909",
+    "addresses": {
+     "ethereum": "0x8b99b91187426a91d291c2d19d97e21544cb3909"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68801/large/IMG_5001.jpeg?1756625589",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:10.864Z",
+    "createdAt": "2025-08-31T12:32:38.033Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x35889b9e7bb4d2890eb346ac243297a1b05f87ce",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 9278.63254066442,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "147f07b3-3b1f-489a-87a6-3fff61d26cd0",
+    "totalSupply": "0.672000000000001",
+    "reserves": [
+     "313624588.314285928",
+     "1.831716083454122437"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d": {
+    "key": "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "name": "RobinhoodTrumpGMEShrekNokia4663Doge",
+    "decimals": 18,
+    "symbol": "NASDAQ",
+    "price": 4.7391270798009295e-06,
+    "address": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "addresses": {
+     "robinhood": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T20:16:31.944Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4739.12707980093,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "18.22",
+     "volumeUsd7d": "30.7"
+    },
+    "metadata": {},
+    "tokenId": "3f9e42b8-6af7-4f2d-b1a9-36dac85aedf3",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe4e458330d697d6bf637b217c3203b2063dfcfa94e5bf792d987554a9a5081d3": {
+    "key": "bsc:0xe4e458330d697d6bf637b217c3203b2063dfcfa94e5bf792d987554a9a5081d3",
+    "name": "Uniswap V4 LP USDT/NOKB",
+    "decimals": 18,
+    "symbol": "USDT/NOKB",
+    "price": 9007199254740990,
+    "address": "0xe4e458330d697d6bf637b217c3203b2063dfcfa94e5bf792d987554a9a5081d3",
+    "addresses": {
+     "bsc": "0xe4e458330d697d6bf637b217c3203b2063dfcfa94e5bf792d987554a9a5081d3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016"
+    ],
+    "updatedAt": "2026-10-18T20:15:22.970Z",
+    "createdAt": "2026-08-03T16:54:27.848Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    ],
+    "liquidity": 542.6288006615962,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "bdd2efc4-72ec-4e43-b8e3-e921954c191f",
+    "reserves": [
+     "488.710491934349582935",
+     "5.971167288936954108"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd08c3c52028e2a42bf4cb171b290960d66bc1431ca4216ccbab372dbb962580e": {
+    "key": "ethereum:0xd08c3c52028e2a42bf4cb171b290960d66bc1431ca4216ccbab372dbb962580e",
+    "name": "Uniswap V4 LP NOKon/wUSDC",
+    "decimals": 18,
+    "symbol": "NOKON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xd08c3c52028e2a42bf4cb171b290960d66bc1431ca4216ccbab372dbb962580e",
+    "addresses": {
+     "ethereum": "0xd08c3c52028e2a42bf4cb171b290960d66bc1431ca4216ccbab372dbb962580e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.377Z",
+    "createdAt": "2026-09-28T10:37:16.080Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "412b9169-979a-45c5-b172-e9c071a80839",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x36919a60a2b67b6d2329863093d180d23d5a0308": {
+    "key": "ethereum:0x36919a60a2b67b6d2329863093d180d23d5a0308",
+    "name": "Kusunoki Samurai",
+    "decimals": 18,
+    "symbol": "KUSUNOKI",
+    "price": 1.97582652612077e-11,
+    "address": "0x36919a60a2b67b6d2329863093d180d23d5a0308",
+    "addresses": {
+     "ethereum": "0x36919a60a2b67b6d2329863093d180d23d5a0308"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-11-28T05:04:21.486Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1580661.2208966159,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0.1",
+     "volumeUsd7d": "0.1"
+    },
+    "metadata": {},
+    "tokenId": "508c27df-cd3a-40b3-b600-a0a99ff4a35a",
+    "totalSupply": "80000000000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea": {
+    "key": "bsc:0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+    "name": "Nokia (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NOKB",
+    "price": 9.1,
+    "address": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea",
+    "addresses": {
+     "bsc": "0x7c4d7a180d737dd5a70d8065a90e6746a69c37ea"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2041682,
+    "image": "https://coin-images.coingecko.com/coins/images/102174585/large/nokb-bstocks.png?1784149016",
+    "metrics": {
+     "volumeUsd1d": "941964.098",
+     "volumeUsd7d": "5802422.001"
+    },
+    "metadata": {},
+    "tokenId": "b2676b6e-99fa-4fdc-998d-dcc8ccaa5a14",
+    "totalSupply": "224069.75970147998",
+    "circulatingSupply": "224069.75970147998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e": {
+    "key": "arbitrum:0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+    "name": "Nokia rStock",
+    "decimals": 18,
+    "symbol": "RNOK",
+    "price": 9.12,
+    "address": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e",
+    "addresses": {
+     "arbitrum": "0xd6b02ba503474bc02f09d6dfbcce73a0bf97462e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 547705,
+    "image": "https://coin-images.coingecko.com/coins/images/102177007/large/78bf75a3c560f7c0ec19a76bef8a35ff.png?1789116388",
+    "metrics": {
+     "volumeUsd1d": "5107.214",
+     "volumeUsd7d": "130464.325"
+    },
+    "metadata": {},
+    "tokenId": "f6bf9e08-0110-4065-b703-55b69a40081b",
+    "totalSupply": "60044.560822459",
+    "circulatingSupply": "60044.560822459",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x35889b9e7bb4d2890eb346ac243297a1b05f87ce": {
+    "key": "ethereum:0x35889b9e7bb4d2890eb346ac243297a1b05f87ce",
+    "name": "Mononoke Inu",
+    "decimals": 9,
+    "symbol": "MONONOKE",
+    "price": 1.594e-05,
+    "address": "0x35889b9e7bb4d2890eb346ac243297a1b05f87ce",
+    "addresses": {
+     "ethereum": "0x35889b9e7bb4d2890eb346ac243297a1b05f87ce"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-31T12:32:01.733Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15944.23,
+    "image": "https://coin-images.coingecko.com/coins/images/68801/large/IMG_5001.jpeg?1756625589",
+    "metrics": {
+     "volumeUsd1d": "2.351",
+     "volumeUsd7d": "16.457"
+    },
+    "metadata": {},
+    "tokenId": "dc8609f3-de40-4b0b-ad9e-17037ae9979b",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe9518cb0010c717db69001f1418eff9e97330137": {
+    "key": "bsc:0xe9518cb0010c717db69001f1418eff9e97330137",
+    "name": "Nokia (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "NOKON",
+    "price": 9.19,
+    "address": "0xe9518cb0010c717db69001f1418eff9e97330137",
+    "addresses": {
+     "ethereum": "0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+     "bsc": "0xe9518cb0010c717db69001f1418eff9e97330137"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 987490,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "803553.271",
+     "volumeUsd7d": "4401820.168"
+    },
+    "metadata": {},
+    "tokenId": "63a507d2-55e8-45cf-94a4-4e6b37f75b96",
+    "totalSupply": "107517.33438831926",
+    "circulatingSupply": "107517.33438831926",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x01e7eaf05be1d0c2d1834fc65080188376026d07": {
+    "key": "ethereum:0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+    "name": "Nokia (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "NOKON",
+    "price": 9.19,
+    "address": "0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+    "addresses": {
+     "ethereum": "0x01e7eaf05be1d0c2d1834fc65080188376026d07",
+     "bsc": "0xe9518cb0010c717db69001f1418eff9e97330137"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 987490,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "803162.565",
+     "volumeUsd7d": "4396965.558"
+    },
+    "metadata": {},
+    "tokenId": "63a507d2-55e8-45cf-94a4-4e6b37f75b96",
+    "totalSupply": "107517.33438831926",
+    "circulatingSupply": "107517.33438831926",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

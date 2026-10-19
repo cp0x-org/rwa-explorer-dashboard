@@ -1,0 +1,4099 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US78463V1070",
+ "ticker": "GLD",
+ "name": "SPDR Gold Trust",
+ "isin": "US78463V1070",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:19Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "SPDR Gold Trust",
+   "symbol": "GLD",
+   "slug": "gld",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 380.4153784681308,
+     "tokenized_market_cap": 15152975.165242305,
+     "tokenized_volume_24h": 7435623.65695044,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 87,
+   "asset_type": "etf",
+   "rwa_rank": 7809,
+   "has_tokens": true,
+   "average_tokenized_price": 380.4153784681308,
+   "tokenized_market_cap": 15152975.165242305,
+   "tokenized_volume_24h": 7435623.65695044,
+   "last_updated": "2026-10-18T20:13:34.857Z",
+   "tokens": [
+    {
+     "symbol": "GLDX",
+     "name": "Gold tokenized ETF (xStock)",
+     "price": 380.2810009878947,
+     "crypto_id": 37024,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 11409345.41,
+     "volume_24h": 5372515.89364231
+    },
+    {
+     "symbol": "GLD.D",
+     "name": "SPDR Gold Shares tokenized ETF (Dinari)",
+     "price": null,
+     "crypto_id": 37081,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "GLDon",
+     "name": "SPDR Gold Shares Tokenized Stock (Ondo)",
+     "price": 381.1488387453578,
+     "crypto_id": 39276,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 3746127.44,
+     "volume_24h": 1411616.79995552
+    },
+    {
+     "symbol": "GLD",
+     "name": "SPDR Gold Shares Tokenized ETF (Hyperliquid)",
+     "price": 382.33374552467654,
+     "crypto_id": 39617,
+     "issuer_id": "699ed38db54c9320b15928e3",
+     "issuer_name": "Hyperliquid Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wGLDx",
+     "name": "Wrapped Gold Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41367,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "GLD",
+     "name": "SPDR Gold Shares Tokenized ETF (Derivatives)",
+     "price": 380.7266619513929,
+     "crypto_id": 41957,
+     "issuer_id": "699ed38db54c9320b15928e3",
+     "issuer_name": "Hyperliquid Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "GLD",
+     "name": "SPDR Gold Shares Tokenized ETF (Robinhood)",
+     "price": 380.3139024885491,
+     "crypto_id": 41994,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 0,
+     "volume_24h": 646694.95451687
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "GLD",
+     "market_url": "https://www.binance.com/en/stocks/EQ_GLD"
+    }
+   ]
+  },
+  "info": {
+   "37024": {
+    "id": 37024,
+    "symbol": "GLDX",
+    "name": "Gold tokenized ETF (xStock)",
+    "slug": "gold-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37024.png",
+    "date_added": "2025-07-01T15:49:18.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2380F2673C640fB67E2d6B55B44C62F0E0e69DA9",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQC49j6vUmrarJzSOlZfNHYHoNEHX3__0oX1dZLEfE7Vyybe",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2380F2673C640fB67E2d6B55B44C62F0E0e69DA9",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "37081": {
+    "id": 37081,
+    "symbol": "GLD.D",
+    "name": "SPDR Gold Shares tokenized ETF (Dinari)",
+    "slug": "spdr-gold-shares-tokenized-etf-dinari",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37081.png",
+    "date_added": "2025-07-02T05:39:22.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "39276": {
+    "id": 39276,
+    "symbol": "GLDon",
+    "name": "SPDR Gold Shares Tokenized Stock (Ondo)",
+    "slug": "spdr-gold-shares-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39276.png",
+    "date_added": "2026-01-08T15:44:19.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x423d42e505e64f99b6e277eb7ed324cc5606f139"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "hWfiw4mcxT8rnNFkk6fsCQSxoxgZ9yVhB6tyeVcondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x95FebDd6f447B5278c9b98743B4254eB02c6EA1d",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39617": {
+    "id": 39617,
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares Tokenized ETF (Hyperliquid)",
+    "slug": "spdr-gold-shares-tokenized-etf-hyperliquid",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39617.png",
+    "date_added": "2026-02-25T10:53:01.000Z",
+    "platform": {
+     "id": "32196",
+     "name": "Hyperliquid",
+     "symbol": "HYPE",
+     "slug": "hyperliquid",
+     "token_address": "0x35eeda03e55ff217a013892e9e2e37e792b264ea"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x35eeda03e55ff217a013892e9e2e37e792b264ea",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd0b13a173230b8e8dfd664ac0a00c9a8",
+      "platform": {
+       "name": "Hyperliquid",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "41367": {
+    "id": 41367,
+    "symbol": "wGLDx",
+    "name": "Wrapped Gold Tokenized ETF (xStock)",
+    "slug": "wrapped-gold-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41367.png",
+    "date_added": "2026-08-11T16:23:03.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x735f1509Bff25e27Cd442B9bFb231324648eAD9B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x735f1509Bff25e27Cd442B9bFb231324648eAD9B",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41957": {
+    "id": 41957,
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares Tokenized ETF (Derivatives)",
+    "slug": "spdr-gold-shares-tokenized-etf-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41957.png",
+    "date_added": "2026-02-25T10:53:01.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41994": {
+    "id": 41994,
+    "symbol": "GLD",
+    "name": "SPDR Gold Shares Tokenized ETF (Robinhood)",
+    "slug": "spdr-gold-shares-tokenized-etf-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41994.png",
+    "date_added": "2026-08-04T07:31:32.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+   "arbitrum:0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+   "bsc:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+   "bsc:0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+   "ethereum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+   "ethereum:0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+   "hyperevm:0x35eeda03e55ff217a013892e9e2e37e792b264ea",
+   "hyperevm:0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+   "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+  ],
+  "exact": {
+   "bsc:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "bsc:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "bsc": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.131Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3802500,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "45932a52-0563-4e31-b49b-2b688eaa4611",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "ethereum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "ethereum": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.958Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9506250,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "f5f546eb-3a86-4a41-8c61-d55c3d819165",
+    "totalSupply": "25000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e": {
+    "key": "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "name": "SPDR Gold Trust • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 381.655,
+    "address": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "addresses": {
+     "robinhood": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-10T13:38:25.611Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "liquidity": 7655498.3320139,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2727850.109"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000001db61e88b20b481093c556e4d07195b5",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "9e69191d-83f1-4b7e-b6e9-c6851af9c273",
+    "totalSupply": "20058.68738",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x95febdd6f447b5278c9b98743b4254eb02c6ea1d": {
+    "key": "hyperevm:0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1136999.551",
+     "volumeUsd7d": "7678309.361"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "arbitrum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "arbitrum": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8348769,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "111d313d-a90d-46e4-81b9-384bafe492a5",
+    "totalSupply": "21956",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x423d42e505e64f99b6e277eb7ed324cc5606f139": {
+    "key": "ethereum:0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1136126.874",
+     "volumeUsd7d": "7817735.151"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502": {
+    "key": "arbitrum:0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5862.113"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfa9a1e901085e269f6d428f79cd5252d8b919344": {
+    "key": "bsc:0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1135074.643",
+     "volumeUsd7d": "7826457.52"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "GLD": {
+    "total_items": 81,
+    "pages": 1,
+    "received": 81,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xcfebbb1315b4ce03a0564472a3cd467454ef38b232edc07195179f83964fb1f7": {
+    "key": "ethereum:0xcfebbb1315b4ce03a0564472a3cd467454ef38b232edc07195179f83964fb1f7",
+    "name": "Uniswap V4 LP AGLD/USDCc",
+    "decimals": 18,
+    "symbol": "AGLD/USDCC",
+    "price": 9007199254740990,
+    "address": "0xcfebbb1315b4ce03a0564472a3cd467454ef38b232edc07195179f83964fb1f7",
+    "addresses": {
+     "ethereum": "0xcfebbb1315b4ce03a0564472a3cd467454ef38b232edc07195179f83964fb1f7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/18125/large/lpgblc4h_400x400.jpg?1696517628"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.402Z",
+    "createdAt": "2026-10-09T07:24:04.599Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 4001.6867217511235,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.4949"
+    },
+    "tokenId": "a5d4d8a6-2343-41ea-a887-0c6e08e16cd2",
+    "reserves": [
+     "0",
+     "3999.980000039999960003"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0xe5bf66e3d093c8f15c4203e6d42843f6a5715552": {
+    "key": "polygon:0xe5bf66e3d093c8f15c4203e6d42843f6a5715552",
+    "name": "QuickSwap LP HGLD/USDT",
+    "decimals": 18,
+    "symbol": "HGLD/USDT",
+    "price": 695281037.1662598,
+    "address": "0xe5bf66e3d093c8f15c4203e6d42843f6a5715552",
+    "addresses": {
+     "polygon": "0xe5bf66e3d093c8f15c4203e6d42843f6a5715552"
+    },
+    "platform": "quickswap",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/25393/large/quickswap.jpg",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.194Z",
+    "createdAt": "2025-10-11T10:34:16.068Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x87a73cfdaddc4de32da5a8528cccd9ebf2b19593",
+     "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+    ],
+    "liquidity": 1689.4567801661979,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "b7b9db40-8b77-47c9-bad6-3b10974b7bf6",
+    "totalSupply": "0.000002429890490113",
+    "reserves": [
+     "6987427.853554242",
+     "845.600067"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xe7e6c5d49ab25913d7352d600eed3c85525c8894": {
+    "key": "hyperevm:0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5862.75"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "bsc:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "bsc": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.131Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3802500,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "45932a52-0563-4e31-b49b-2b688eaa4611",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8a389646a86a483f4ce02a7cff9e3f8a27fd686c1e02c1e38f405dfc553128b9": {
+    "key": "ethereum:0x8a389646a86a483f4ce02a7cff9e3f8a27fd686c1e02c1e38f405dfc553128b9",
+    "name": "Uniswap V4 LP USDC/DGLD",
+    "decimals": 18,
+    "symbol": "USDC/DGLD",
+    "price": 9007199254740990,
+    "address": "0x8a389646a86a483f4ce02a7cff9e3f8a27fd686c1e02c1e38f405dfc553128b9",
+    "addresses": {
+     "ethereum": "0x8a389646a86a483f4ce02a7cff9e3f8a27fd686c1e02c1e38f405dfc553128b9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.271Z",
+    "createdAt": "2026-07-03T13:16:04.797Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xa9299c296d7830a99414d1e5546f5171fa01e9c8"
+    ],
+    "liquidity": 2802.4385616108057,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 40,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "e72c3e95-4c4e-40fb-9cf9-b4418c53dd62",
+    "reserves": [
+     "1382.826176",
+     "0.339428667323642824"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x03b023542f20b0ff3b36c6091a3960daf1a29a3f": {
+    "key": "robinhood:0x03b023542f20b0ff3b36c6091a3960daf1a29a3f",
+    "name": "Beefy CLM GLD-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-GLD",
+    "price": 584.5354966419442,
+    "address": "0x03b023542f20b0ff3b36c6091a3960daf1a29a3f",
+    "addresses": {
+     "robinhood": "0x03b023542f20b0ff3b36c6091a3960daf1a29a3f"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2e35f0951cffaf89eb9adde94c60475e3745cc15"
+    ],
+    "poolAddress": "0x2e35f0951cffaf89eb9adde94c60475e3745cc15",
+    "liquidity": 425608.8026440274,
+    "metrics": {
+     "apy": "4.953",
+     "baseApy": "4.953",
+     "volumeUsd1d": "2997.671",
+     "volumeUsd7d": "16749.24"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-gld",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x2e35f0951cffaf89eb9adde94c60475e3745cc15",
+     "strategyAddress": "0x8237f673a33ee64c25b3ec93c1582d589bfeea38",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x03b023542f20b0ff3b36c6091a3960daf1a29a3f",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+     ]
+    },
+    "tokenId": "6d760330-ab16-4180-b259-c3a1485ca07a",
+    "totalSupply": "728.11455435824978237",
+    "reserves": [
+     "728.11455435824978237"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x735f1509bff25e27cd442b9bfb231324648ead9b": {
+    "key": "ethereum:0x735f1509bff25e27cd442b9bfb231324648ead9b",
+    "name": "Wrapped Gold xStock",
+    "decimals": 18,
+    "symbol": "WGLDX",
+    "price": 380.31,
+    "address": "0x735f1509bff25e27cd442b9bfb231324648ead9b",
+    "addresses": {
+     "ethereum": "0x735f1509bff25e27cd442b9bfb231324648ead9b"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.869Z",
+    "createdAt": "2026-07-03T11:38:30.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    ],
+    "liquidity": 721.8859399535473,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/GLDx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "18.231"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "c023d051-079c-4782-bcfd-a506a4ddd98c",
+    "totalSupply": "1.898151350092154723",
+    "reserves": [
+     "1.898151350092154723"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfce34d21a92069100e3226638140706cf03a266e": {
+    "key": "robinhood:0xfce34d21a92069100e3226638140706cf03a266e",
+    "name": "Goldstein",
+    "decimals": 18,
+    "symbol": "GLDSTN",
+    "price": 0.00566633,
+    "address": "0xfce34d21a92069100e3226638140706cf03a266e",
+    "addresses": {
+     "robinhood": "0xfce34d21a92069100e3226638140706cf03a266e"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-04T17:56:40.390Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1840119,
+    "image": "https://coin-images.coingecko.com/coins/images/102179092/large/13C4593B-E474-42D8-82EE-3F3BF3C376A5.jpeg?1791136194",
+    "metrics": {
+     "volumeUsd1d": "355879.682",
+     "volumeUsd7d": "1058396.926"
+    },
+    "metadata": {},
+    "tokenId": "3de20f85-75a6-4b1a-a186-a5346a5f5e0e",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "324746776.483423",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x26806c389c5c2ba59d6805011588ffdd5030af158f0ded7257224aa455888d07": {
+    "key": "robinhood:0x26806c389c5c2ba59d6805011588ffdd5030af158f0ded7257224aa455888d07",
+    "name": "Uniswap V4 LP SLV/GLD",
+    "decimals": 18,
+    "symbol": "SLV/GLD",
+    "price": 9007199254740990,
+    "address": "0x26806c389c5c2ba59d6805011588ffdd5030af158f0ded7257224aa455888d07",
+    "addresses": {
+     "robinhood": "0x26806c389c5c2ba59d6805011588ffdd5030af158f0ded7257224aa455888d07"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174120/large/0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f.png?1782444590"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.957Z",
+    "createdAt": "2026-08-24T06:34:19.781Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 4844.511069092235,
+    "metrics": {
+     "apy": "2.982",
+     "baseApy": "2.982",
+     "volumeUsd1d": "136.526",
+     "volumeUsd7d": "1253.431"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "60b5b7e0-d039-4b55-beaa-7d0aef95a208",
+    "reserves": [
+     "57.929811441332971725",
+     "4.863559355677439732"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3f82cba4969c75f7b2f0dce9af3ac8a44c107099": {
+    "key": "robinhood:0x3f82cba4969c75f7b2f0dce9af3ac8a44c107099",
+    "name": "Uniswap V3 WETH/SPDR Gold Trust  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/GLD",
+    "price": 9007199254740990,
+    "address": "0x3f82cba4969c75f7b2f0dce9af3ac8a44c107099",
+    "addresses": {
+     "robinhood": "0x3f82cba4969c75f7b2f0dce9af3ac8a44c107099"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.174Z",
+    "createdAt": "2026-09-08T09:33:31.591Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 6998.265905867393,
+    "metrics": {
+     "apy": "46.056",
+     "baseApy": "46.056",
+     "volumeUsd1d": "2943.957",
+     "volumeUsd7d": "21689.007"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "717dc548-91e6-4eb6-93c9-d27482dbcd93",
+    "reserves": [
+     "2.349037065064090424",
+     "3.959958990578896581"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x34b2b9acd196eb579aac3a554910f1a6e22fb2bea6775d2c7da3e542d900201f": {
+    "key": "ethereum:0x34b2b9acd196eb579aac3a554910f1a6e22fb2bea6775d2c7da3e542d900201f",
+    "name": "Uniswap V4 LP AGLD/USDC",
+    "decimals": 18,
+    "symbol": "AGLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x34b2b9acd196eb579aac3a554910f1a6e22fb2bea6775d2c7da3e542d900201f",
+    "addresses": {
+     "ethereum": "0x34b2b9acd196eb579aac3a554910f1a6e22fb2bea6775d2c7da3e542d900201f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/18125/large/lpgblc4h_400x400.jpg?1696517628",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.299Z",
+    "createdAt": "2026-10-12T05:08:43.132Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1499.6960218474733,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.767"
+    },
+    "tokenId": "47709ab9-1020-4035-838f-b315d49b7cf6",
+    "reserves": [
+     "0.301949424273263042",
+     "1500"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe60106a5cab7e7c64830919d36ab20caaf50ac91": {
+    "key": "bsc:0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+    "name": "Unitas Gold",
+    "decimals": 6,
+    "symbol": "XGLD",
+    "price": 4157.94,
+    "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+    "addresses": {
+     "bsc": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-05T00:32:24.657Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3997869,
+    "image": "https://coin-images.coingecko.com/coins/images/102173632/large/XGLD_200.png?1780589002",
+    "metrics": {
+     "volumeUsd1d": "99.637",
+     "volumeUsd7d": "1395.076"
+    },
+    "metadata": {},
+    "tokenId": "e3052e5e-34ea-4054-8e4d-cd9a080a3f9a",
+    "totalSupply": "961.502332",
+    "circulatingSupply": "961.502332",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf95acbfecc913f59aa35a6827d15037468332e78": {
+    "key": "bsc:0xf95acbfecc913f59aa35a6827d15037468332e78",
+    "name": "Uniswap V3 Tether USD/SPDR Gold Shares (Ondo Tokenized) 1%",
+    "decimals": 18,
+    "symbol": "USDT/GLDON",
+    "price": 9007199254740990,
+    "address": "0xf95acbfecc913f59aa35a6827d15037468332e78",
+    "addresses": {
+     "bsc": "0xf95acbfecc913f59aa35a6827d15037468332e78"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.520Z",
+    "createdAt": "2026-06-12T20:15:16.027Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    ],
+    "liquidity": 5731.746070037661,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "607.054"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8e74b7da-091d-44e8-a72f-e0526bb50b55",
+    "reserves": [
+     "1329.710053783693507368",
+     "11.539933188699325114"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x345f2b5f452d8a01bb48182ead5bd0793335de434447c8d78531a4dc3bdbf9b3": {
+    "key": "bsc:0x345f2b5f452d8a01bb48182ead5bd0793335de434447c8d78531a4dc3bdbf9b3",
+    "name": "Uniswap V4 LP USDT/GLDon",
+    "decimals": 18,
+    "symbol": "USDT/GLDON",
+    "price": 9007199254740990,
+    "address": "0x345f2b5f452d8a01bb48182ead5bd0793335de434447c8d78531a4dc3bdbf9b3",
+    "addresses": {
+     "bsc": "0x345f2b5f452d8a01bb48182ead5bd0793335de434447c8d78531a4dc3bdbf9b3"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536"
+    ],
+    "updatedAt": "2026-10-18T20:15:20.001Z",
+    "createdAt": "2026-05-13T08:04:52.492Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    ],
+    "liquidity": 562.0887896248893,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "77.023"
+    },
+    "tokenId": "865c5fbf-5ac8-4785-8d90-bba1905a3e38",
+    "reserves": [
+     "512.798625022339712513",
+     "0.130333750452926631"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x32cb909acf78354e08aa45639ff5cd33767e730a": {
+    "key": "robinhood:0x32cb909acf78354e08aa45639ff5cd33767e730a",
+    "name": "Uniswap V3 Global Dollar/SPDR Gold Trust  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0x32cb909acf78354e08aa45639ff5cd33767e730a",
+    "addresses": {
+     "robinhood": "0x32cb909acf78354e08aa45639ff5cd33767e730a"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.167Z",
+    "createdAt": "2026-08-14T07:03:57.954Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 14331.641044124992,
+    "metrics": {
+     "apy": "2.009",
+     "baseApy": "2.009",
+     "volumeUsd1d": "78.89",
+     "volumeUsd7d": "8201.147"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "4e7b3954-6f6f-4321-9b48-41cf81cbd1d0",
+    "reserves": [
+     "3283.091658",
+     "28.949049235893650398"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x43c72ea1736072f42f785e704e5244cc5b9a6779": {
+    "key": "ethereum:0x43c72ea1736072f42f785e704e5244cc5b9a6779",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0x43c72ea1736072f42f785e704e5244cc5b9a6779",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5865.391"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbce6d2ded7839788363855894326f6982eed6eaf4b3ddb4daf53eebe7a383540": {
+    "key": "ethereum:0xbce6d2ded7839788363855894326f6982eed6eaf4b3ddb4daf53eebe7a383540",
+    "name": "Uniswap V4 LP wUSDC/GLDon",
+    "decimals": 18,
+    "symbol": "WUSDC/GLDON",
+    "price": 9007199254740990,
+    "address": "0xbce6d2ded7839788363855894326f6982eed6eaf4b3ddb4daf53eebe7a383540",
+    "addresses": {
+     "ethereum": "0xbce6d2ded7839788363855894326f6982eed6eaf4b3ddb4daf53eebe7a383540"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.080Z",
+    "createdAt": "2026-09-28T10:38:28.541Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x423d42e505e64f99b6e277eb7ed324cc5606f139"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "f4dca5aa-84cd-4e46-93df-9e5f114ce680",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3f25917bc35a09834b9480c573b5499557ab001f": {
+    "key": "base:0x3f25917bc35a09834b9480c573b5499557ab001f",
+    "name": "Uniswap V3 USD Coin/Digital Gold 1%",
+    "decimals": 18,
+    "symbol": "USDC/DGLD",
+    "price": 9007199254740990,
+    "address": "0x3f25917bc35a09834b9480c573b5499557ab001f",
+    "addresses": {
+     "base": "0x3f25917bc35a09834b9480c573b5499557ab001f"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.047Z",
+    "createdAt": "2026-09-03T10:18:06.325Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a"
+    ],
+    "liquidity": 688.204614780283,
+    "metrics": {
+     "apy": "0.185",
+     "baseApy": "0.185",
+     "volumeUsd1d": "0.348",
+     "volumeUsd7d": "172.671"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "028dad3f-6e8e-4224-b6bb-e50cd3fa9e4e",
+    "reserves": [
+     "349.415541",
+     "0.081005406196025881"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "ethereum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "ethereum": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.958Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9506250,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "f5f546eb-3a86-4a41-8c61-d55c3d819165",
+    "totalSupply": "25000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x26250ba84465454bc731f710e46f1f32b167d66b": {
+    "key": "robinhood:0x26250ba84465454bc731f710e46f1f32b167d66b",
+    "name": "Uniswap V3 WETH/SPDR Gold Trust  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "WETH/GLD",
+    "price": 9007199254740990,
+    "address": "0x26250ba84465454bc731f710e46f1f32b167d66b",
+    "addresses": {
+     "robinhood": "0x26250ba84465454bc731f710e46f1f32b167d66b"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.242Z",
+    "createdAt": "2026-09-03T10:19:43.052Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 38413.522473002144,
+    "metrics": {
+     "apy": "50.611",
+     "baseApy": "50.611",
+     "volumeUsd1d": "106548.796",
+     "volumeUsd7d": "771358.801"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "f28e2be3-0ec4-4254-8953-350944f0f6bc",
+    "reserves": [
+     "14.756492560227218074",
+     "10.336592003176180045"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1": {
+    "key": "robinhood:0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1",
+    "name": "Uniswap V4 LP pGLD5x/USDG",
+    "decimals": 18,
+    "symbol": "PGLD5X/USDG",
+    "price": 9007199254740990,
+    "address": "0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1",
+    "addresses": {
+     "robinhood": "0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.476Z",
+    "createdAt": "2026-10-02T17:28:13.965Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x37a2afaa98648f2e13658623885f821ac8365609",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 678.9351485617428,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "199.653"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4d1e27f0-aee2-4af7-8b2e-bef33b6a6b76",
+    "reserves": [
+     "5.15428530172563695",
+     "318.289806"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x91b6878035ad950271537b5c27f7c2a2ccadefcfdfa9692618ee4795419aa5ff": {
+    "key": "robinhood:0x91b6878035ad950271537b5c27f7c2a2ccadefcfdfa9692618ee4795419aa5ff",
+    "name": "Uniswap V4 LP USDG/GLD",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0x91b6878035ad950271537b5c27f7c2a2ccadefcfdfa9692618ee4795419aa5ff",
+    "addresses": {
+     "robinhood": "0x91b6878035ad950271537b5c27f7c2a2ccadefcfdfa9692618ee4795419aa5ff"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.413Z",
+    "createdAt": "2026-10-10T07:29:49.723Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 522.9077511579998,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9600,
+     "feePercentage": "96"
+    },
+    "tokenId": "33513623-9e0a-4b43-8bae-37b26db445d6",
+    "reserves": [
+     "106.837625",
+     "1.090173392613747299"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x25890df358d340ce272c802526a164a18dfd679d3d71dcd23049f39c3e1c876b": {
+    "key": "robinhood:0x25890df358d340ce272c802526a164a18dfd679d3d71dcd23049f39c3e1c876b",
+    "name": "Uniswap V4 LP ETH/GLD",
+    "decimals": 18,
+    "symbol": "ETH/GLD",
+    "price": 9007199254740990,
+    "address": "0x25890df358d340ce272c802526a164a18dfd679d3d71dcd23049f39c3e1c876b",
+    "addresses": {
+     "robinhood": "0x25890df358d340ce272c802526a164a18dfd679d3d71dcd23049f39c3e1c876b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.759Z",
+    "createdAt": "2026-08-17T19:35:22.424Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 11355.731232645938,
+    "metrics": {
+     "apy": "33.763",
+     "baseApy": "33.763",
+     "volumeUsd1d": "206.172",
+     "volumeUsd7d": "1626.157"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "91c9b32a-95eb-4aae-a843-640338dfaee0",
+    "reserves": [
+     "2.119355304797656496",
+     "16.790340666698604546"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd85389e64f380f1f634d458dd32bc26ed7d36bf555ee144d798145b46c056f95": {
+    "key": "robinhood:0xd85389e64f380f1f634d458dd32bc26ed7d36bf555ee144d798145b46c056f95",
+    "name": "Uniswap V4 LP USDG/GLD",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0xd85389e64f380f1f634d458dd32bc26ed7d36bf555ee144d798145b46c056f95",
+    "addresses": {
+     "robinhood": "0xd85389e64f380f1f634d458dd32bc26ed7d36bf555ee144d798145b46c056f95"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.612Z",
+    "createdAt": "2026-09-09T05:45:06.541Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 18686.83098100245,
+    "metrics": {
+     "apy": "0.747",
+     "baseApy": "0.747",
+     "volumeUsd1d": "156.348",
+     "volumeUsd7d": "18174.899"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 21,
+     "feePercentage": "0.2445"
+    },
+    "tokenId": "6ffec188-f7c7-41a6-bea9-a981150eb1d8",
+    "reserves": [
+     "3444.937574",
+     "39.936312656725183327"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe": {
+    "key": "bsc:0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe",
+    "name": "Wrapped EGLD",
+    "decimals": 18,
+    "symbol": "WEGLD",
+    "price": 3.4,
+    "address": "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe",
+    "addresses": {
+     "bsc": "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7323838,
+    "image": "https://assets.coingecko.com/coins/images/22255/large/wrapped_elrond.jpg?1696521600",
+    "metrics": {
+     "volumeUsd1d": "38954.691",
+     "volumeUsd7d": "445128.76"
+    },
+    "metadata": {},
+    "tokenId": "1ff54434-3f2e-4d3c-95e2-72e7ca1edee1",
+    "totalSupply": "2158470",
+    "circulatingSupply": "2158470",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x14efb07e0575de94ae794c1d718bce39dd4efa6ac0b51cbe8bd8e010c7a5eab1": {
+    "key": "ethereum:0x14efb07e0575de94ae794c1d718bce39dd4efa6ac0b51cbe8bd8e010c7a5eab1",
+    "name": "Uniswap V4 LP AGLD/USDCc",
+    "decimals": 18,
+    "symbol": "AGLD/USDCC",
+    "price": 9007199254740990,
+    "address": "0x14efb07e0575de94ae794c1d718bce39dd4efa6ac0b51cbe8bd8e010c7a5eab1",
+    "addresses": {
+     "ethereum": "0x14efb07e0575de94ae794c1d718bce39dd4efa6ac0b51cbe8bd8e010c7a5eab1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/18125/large/lpgblc4h_400x400.jpg?1696517628",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.637Z",
+    "createdAt": "2026-10-09T07:23:50.428Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 2000.8513642690136,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.2452"
+    },
+    "tokenId": "c4996905-3f15-4bb6-8947-fc10ec7b641e",
+    "reserves": [
+     "0",
+     "1999.997999999999999998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x32353a6c91143bfd6c7d363b546e62a9a2489a20": {
+    "key": "ethereum:0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+    "name": "Adventure Gold",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 0.165663,
+    "address": "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+    "addresses": {
+     "ethereum": "0x32353a6c91143bfd6c7d363b546e62a9a2489a20"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15372487,
+    "image": "https://assets.coingecko.com/coins/images/18125/large/lpgblc4h_400x400.jpg?1696517628",
+    "metrics": {
+     "volumeUsd1d": "3353070.487",
+     "volumeUsd7d": "27909181.956"
+    },
+    "metadata": {},
+    "tokenId": "fd5c3f51-6e7f-492c-9fcf-c3ced08ceacf",
+    "totalSupply": "92840001",
+    "circulatingSupply": "92840001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x98996e833ea35ec17c3645ca7b6dd40d188564c4": {
+    "key": "robinhood:0x98996e833ea35ec17c3645ca7b6dd40d188564c4",
+    "name": "Uniswap V3 WETH/SPDR Gold Trust  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "WETH/GLD",
+    "price": 9007199254740990,
+    "address": "0x98996e833ea35ec17c3645ca7b6dd40d188564c4",
+    "addresses": {
+     "robinhood": "0x98996e833ea35ec17c3645ca7b6dd40d188564c4"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.288Z",
+    "createdAt": "2026-08-18T02:02:02.241Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 113908.06493868768,
+    "metrics": {
+     "apy": "71.164",
+     "baseApy": "71.164",
+     "volumeUsd1d": "22211.952",
+     "volumeUsd7d": "322200.928"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "b224c402-236f-40ae-ba59-08edf4e2a8a9",
+    "reserves": [
+     "33.618518268656168133",
+     "92.704818740473019711"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x500b67eef8244fe6d7f6278272f3ba65b90d6b72594ea04c86c3a35129e8b966": {
+    "key": "robinhood:0x500b67eef8244fe6d7f6278272f3ba65b90d6b72594ea04c86c3a35129e8b966",
+    "name": "Uniswap V4 LP COYT/GLD",
+    "decimals": 18,
+    "symbol": "COYT/GLD",
+    "price": 9007199254740990,
+    "address": "0x500b67eef8244fe6d7f6278272f3ba65b90d6b72594ea04c86c3a35129e8b966",
+    "addresses": {
+     "robinhood": "0x500b67eef8244fe6d7f6278272f3ba65b90d6b72594ea04c86c3a35129e8b966"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.932Z",
+    "createdAt": "2026-09-09T08:13:47.614Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x215e1a8c6527cf79edfaa7f2c512f5eaf0b97f3f",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 7647.05395050934,
+    "metrics": {
+     "apy": "0.117",
+     "baseApy": "0.117",
+     "volumeUsd1d": "51.577",
+     "volumeUsd7d": "1098.252"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0475"
+    },
+    "tokenId": "b2045f79-ddce-43d0-ba35-c30269158dab",
+    "reserves": [
+     "44059595.466484671900125789",
+     "10.042458694656642293"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4": {
+    "key": "ethereum:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "name": "SPDR Gold Shares aStock",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 381.43,
+    "address": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "addresses": {
+     "ethereum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "arbitrum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "bsc": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "robinhood": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "base": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 620.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102175692/large/GLD.png?1787292288",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a94d7323-4e7b-4698-8c4d-ba531a9af8ec",
+    "totalSupply": "1.627676803",
+    "circulatingSupply": "1.627676803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xf3ec90ea681561ce77120976bcfe985f83d182d8": {
+    "key": "base:0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5862.097"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x549db76161551030f012d22038d9c7700c697ffe": {
+    "key": "bsc:0x549db76161551030f012d22038d9c7700c697ffe",
+    "name": "PancakeSwap V3 Tether Gold/Unitas Gold 0.01%",
+    "decimals": 18,
+    "symbol": "XAUT/XGLD",
+    "price": 9007199254740990,
+    "address": "0x549db76161551030f012d22038d9c7700c697ffe",
+    "addresses": {
+     "bsc": "0x549db76161551030f012d22038d9c7700c697ffe"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/66560/large/XAUt0_Token_Icon_Gold.png?1749747942",
+     "https://coin-images.coingecko.com/coins/images/102173632/large/XGLD_200.png?1780589002"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.995Z",
+    "createdAt": "2026-06-11T05:40:55.693Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x21caef8a43163eea865baee23b9c2e327696a3bf",
+     "0xe60106a5cab7e7c64830919d36ab20caaf50ac91"
+    ],
+    "liquidity": 327562.02604872,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "volumeUsd1d": "99.804",
+     "volumeUsd7d": "1398.791"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "96a6ccaa-a6bb-4596-ba44-ef85d033f4b4",
+    "reserves": [
+     "26.007551",
+     "52.868032"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb03989c957f1459dc39720b36d8ea1c9f023c75e22204b0fab8d5d431a2b43b8": {
+    "key": "bsc:0xb03989c957f1459dc39720b36d8ea1c9f023c75e22204b0fab8d5d431a2b43b8",
+    "name": "Uniswap V4 LP USDT/EGLD",
+    "decimals": 18,
+    "symbol": "USDT/EGLD",
+    "price": 9007199254740990,
+    "address": "0xb03989c957f1459dc39720b36d8ea1c9f023c75e22204b0fab8d5d431a2b43b8",
+    "addresses": {
+     "bsc": "0xb03989c957f1459dc39720b36d8ea1c9f023c75e22204b0fab8d5d431a2b43b8"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://assets.coingecko.com/coins/images/22255/large/wrapped_elrond.jpg?1696521600"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.927Z",
+    "createdAt": "2026-10-04T08:22:16.619Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe"
+    ],
+    "liquidity": 1299.010526452046,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.399"
+    },
+    "tokenId": "b79cf0a2-8337-45be-8ada-d66ca398fdfa",
+    "reserves": [
+     "1299.999999999999999992",
+     "0.03703719177823069"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e": {
+    "key": "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "name": "SPDR Gold Trust • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 381.655,
+    "address": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "addresses": {
+     "robinhood": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-10T13:38:25.611Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "liquidity": 7655498.3320139,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2727850.109"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000001db61e88b20b481093c556e4d07195b5",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "9e69191d-83f1-4b7e-b6e9-c6851af9c273",
+    "totalSupply": "20058.68738",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3dc6200aee8971052a82171f21aef53db969bb5cdae7d17bc02840e9a05c2bff": {
+    "key": "arbitrum:0x3dc6200aee8971052a82171f21aef53db969bb5cdae7d17bc02840e9a05c2bff",
+    "name": "Uniswap V4 LP GLDx/USDT",
+    "decimals": 18,
+    "symbol": "GLDX/USDT",
+    "price": 9007199254740990,
+    "address": "0x3dc6200aee8971052a82171f21aef53db969bb5cdae7d17bc02840e9a05c2bff",
+    "addresses": {
+     "arbitrum": "0x3dc6200aee8971052a82171f21aef53db969bb5cdae7d17bc02840e9a05c2bff"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.861Z",
+    "createdAt": "2026-10-16T14:24:01.633Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "9c4e869a-3ffc-4c82-b628-8f0d327e294d",
+    "reserves": [
+     "0",
+     "1999.999999999999999996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0120c2748545a4d9c875cddfb439f786d6f1b460": {
+    "key": "ethereum:0x0120c2748545a4d9c875cddfb439f786d6f1b460",
+    "name": "Euler EVK Vault etGLD-1",
+    "decimals": 18,
+    "symbol": "ETGLD-1",
+    "price": 4119.58,
+    "address": "0x0120c2748545a4d9c875cddfb439f786d6f1b460",
+    "addresses": {
+     "ethereum": "0x0120c2748545a4d9c875cddfb439f786d6f1b460"
+    },
+    "platform": "euler",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/26149/large/Coingecko_logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102172708/large/tgld_%281%29.png?1774982553"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.421Z",
+    "createdAt": "2026-07-29T12:02:49.740Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6a547b25534234bb79ce6961a23db13de154b6f4"
+    ],
+    "liquidity": 436911.85695042467,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626",
+     "collateralCorrelation": "low"
+    },
+    "tokenId": "8150c494-db1a-4539-ac23-750ed220fc7e",
+    "totalSupply": "106.057378895524466351",
+    "totalBorrow": "0",
+    "reserves": [
+     "106.057378895524466351"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x48abc7052509caf820c4c22559f08381f9afd823": {
+    "key": "robinhood:0x48abc7052509caf820c4c22559f08381f9afd823",
+    "name": "Uniswap V3 iShares Silver Trust  Robinhood Token/SPDR Gold Trust  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "SLV/GLD",
+    "price": 9007199254740990,
+    "address": "0x48abc7052509caf820c4c22559f08381f9afd823",
+    "addresses": {
+     "robinhood": "0x48abc7052509caf820c4c22559f08381f9afd823"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174120/large/0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f.png?1782444590"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.143Z",
+    "createdAt": "2026-08-24T06:34:33.311Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 124687.9138124278,
+    "metrics": {
+     "apy": "5.092",
+     "baseApy": "5.092",
+     "volumeUsd1d": "34790.378",
+     "volumeUsd7d": "552744.02"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "629f791d-724e-42a2-a366-0ef59b7bb143",
+    "reserves": [
+     "1997.451406507092299975",
+     "56.72500820835423525"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8b11a11b906311dee59422ffdd7c23cf4a1ad106": {
+    "key": "bsc:0x8b11a11b906311dee59422ffdd7c23cf4a1ad106",
+    "name": "PancakeSwap V3 Ethereum Token/Elrond 1%",
+    "decimals": 18,
+    "symbol": "ETH/EGLD",
+    "price": 9007199254740990,
+    "address": "0x8b11a11b906311dee59422ffdd7c23cf4a1ad106",
+    "addresses": {
+     "bsc": "0x8b11a11b906311dee59422ffdd7c23cf4a1ad106"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716",
+     "https://assets.coingecko.com/coins/images/22255/large/wrapped_elrond.jpg?1696521600"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.529Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+     "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe"
+    ],
+    "liquidity": 538.6205417478325,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "ce202c93-7f52-4526-9eba-920d101ed061",
+    "reserves": [
+     "0.000647607440321098",
+     "157.972802943804680557"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x88b64e52190e83652838d5953ef0e99c4ea4264a5f8bad690a61fea09c6af606": {
+    "key": "bsc:0x88b64e52190e83652838d5953ef0e99c4ea4264a5f8bad690a61fea09c6af606",
+    "name": "Uniswap V4 LP USDT/EGLD",
+    "decimals": 18,
+    "symbol": "USDT/EGLD",
+    "price": 9007199254740990,
+    "address": "0x88b64e52190e83652838d5953ef0e99c4ea4264a5f8bad690a61fea09c6af606",
+    "addresses": {
+     "bsc": "0x88b64e52190e83652838d5953ef0e99c4ea4264a5f8bad690a61fea09c6af606"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/22255/large/wrapped_elrond.jpg?1696521600",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:23.340Z",
+    "createdAt": "2026-04-23T19:44:02.831Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe"
+    ],
+    "liquidity": 881.9964326328122,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18500,
+     "feePercentage": "92.5"
+    },
+    "tokenId": "16026fa8-9785-46fd-acc2-1b103b308893",
+    "reserves": [
+     "482.393600403068867988",
+     "117.651978217320348397"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0d15e893cf50724382368cafed222cf131b55307": {
+    "key": "ethereum:0x0d15e893cf50724382368cafed222cf131b55307",
+    "name": "SushiSwap LP AGLD/WETH",
+    "decimals": 18,
+    "symbol": "AGLD/WETH",
+    "price": 58.48323204966246,
+    "address": "0x0d15e893cf50724382368cafed222cf131b55307",
+    "addresses": {
+     "ethereum": "0x0d15e893cf50724382368cafed222cf131b55307"
+    },
+    "platform": "sushiswap",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+     "https://assets.coingecko.com/coins/images/18125/large/lpgblc4h_400x400.jpg?1696517628",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.966Z",
+    "createdAt": "2024-02-29T09:05:51.896Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x32353a6c91143bfd6c7d363b546e62a9a2489a20",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 1967.4943331320158,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "468.765"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "113831d1-cb71-411a-863b-1b35c66fa5cd",
+    "totalSupply": "33.642024631286966473",
+    "reserves": [
+     "5861.637393243452616903",
+     "0.426500720219117199"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d": {
+    "key": "robinhood:0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d",
+    "name": "Beefy CLM GLD-SLV Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODSLV-GLD",
+    "price": 363.0150520973084,
+    "address": "0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d",
+    "addresses": {
+     "robinhood": "0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174120/large/0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f.png?1782444590"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba"
+    ],
+    "poolAddress": "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba",
+    "liquidity": 18071.971820499602,
+    "metrics": {
+     "apy": "0.353",
+     "baseApy": "0.353",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-3781.812"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-slv-gld",
+     "providerId": "uniswap",
+     "tickSpacing": 10,
+     "managerAddress": "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba",
+     "strategyAddress": "0xef9c26122519b4ed1ff8d5bf3accf3eb60c8269a",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d",
+     "depositTokenAddresses": [
+      "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+      "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+     ]
+    },
+    "tokenId": "3f6c35ec-04a4-4cbf-83db-cafc4407e344",
+    "totalSupply": "49.782982044654451297",
+    "reserves": [
+     "49.782982044654451297"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa9299c296d7830a99414d1e5546f5171fa01e9c8": {
+    "key": "ethereum:0xa9299c296d7830a99414d1e5546f5171fa01e9c8",
+    "name": "Digital Gold",
+    "decimals": 18,
+    "symbol": "DGLD",
+    "price": 4183.32,
+    "address": "0xa9299c296d7830a99414d1e5546f5171fa01e9c8",
+    "addresses": {
+     "ethereum": "0xa9299c296d7830a99414d1e5546f5171fa01e9c8",
+     "base": "0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-03T08:18:11.069Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10089970,
+    "image": "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091",
+    "metrics": {
+     "volumeUsd1d": "30923.03",
+     "volumeUsd7d": "61955.889"
+    },
+    "metadata": {},
+    "tokenId": "c199e519-82eb-466c-b6f7-96352e866ed9",
+    "totalSupply": "2411.955",
+    "circulatingSupply": "2411.955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4": {
+    "key": "base:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "name": "SPDR Gold Shares aStock",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 381.43,
+    "address": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "addresses": {
+     "ethereum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "arbitrum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "bsc": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "robinhood": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "base": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 620.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102175692/large/GLD.png?1787292288",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a94d7323-4e7b-4698-8c4d-ba531a9af8ec",
+    "totalSupply": "1.627676803",
+    "circulatingSupply": "1.627676803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x95febdd6f447b5278c9b98743b4254eb02c6ea1d": {
+    "key": "hyperevm:0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1136999.551",
+     "volumeUsd7d": "7678309.361"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8bd10bd839c2d459b14dd9f0305bd806b8d5fc569e61b9ace23186885fb6ed82": {
+    "key": "ethereum:0x8bd10bd839c2d459b14dd9f0305bd806b8d5fc569e61b9ace23186885fb6ed82",
+    "name": "Uniswap V4 LP GLDx/USDC",
+    "decimals": 18,
+    "symbol": "GLDX/USDC",
+    "price": 9007199254740990,
+    "address": "0x8bd10bd839c2d459b14dd9f0305bd806b8d5fc569e61b9ace23186885fb6ed82",
+    "addresses": {
+     "ethereum": "0x8bd10bd839c2d459b14dd9f0305bd806b8d5fc569e61b9ace23186885fb6ed82"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.784Z",
+    "createdAt": "2026-06-10T23:08:25.012Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1038.4367334912079,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "acc156f3-a869-49d7-9a13-c4c95822b964",
+    "reserves": [
+     "1.287771869086881528",
+     "548.813734"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe4fb3eba3bcb8039fe8a3b8a11636658fd54a78417f208b89d851a72b308230d": {
+    "key": "ethereum:0xe4fb3eba3bcb8039fe8a3b8a11636658fd54a78417f208b89d851a72b308230d",
+    "name": "Uniswap V4 LP GLDon/USDC",
+    "decimals": 18,
+    "symbol": "GLDON/USDC",
+    "price": 9007199254740990,
+    "address": "0xe4fb3eba3bcb8039fe8a3b8a11636658fd54a78417f208b89d851a72b308230d",
+    "addresses": {
+     "ethereum": "0xe4fb3eba3bcb8039fe8a3b8a11636658fd54a78417f208b89d851a72b308230d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.784Z",
+    "createdAt": "2026-02-06T05:29:50.634Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 944.1866355216305,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14800,
+     "feePercentage": "74"
+    },
+    "tokenId": "29447e64-e5ac-4494-b49b-59535cdf8811",
+    "reserves": [
+     "0.309442708468630168",
+     "826.310685"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x86856814e74456893cfc8946bedcbb472b5fa856": {
+    "key": "ethereum:0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "name": "Gold Token",
+    "decimals": 8,
+    "symbol": "GLDT",
+    "price": 1.24,
+    "address": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "addresses": {
+     "ethereum": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "base": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "arbitrum": "0x86856814e74456893cfc8946bedcbb472b5fa856"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-13T11:40:59.433Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 738173,
+    "image": "https://coin-images.coingecko.com/coins/images/53968/large/gldt_200x200.png?1737793227",
+    "metrics": {
+     "volumeUsd1d": "693.459",
+     "volumeUsd7d": "28426.673"
+    },
+    "metadata": {},
+    "tokenId": "49976329-8374-42af-963a-8c278f0838d7",
+    "totalSupply": "594499.9",
+    "circulatingSupply": "594499.9",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4": {
+    "key": "bsc:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "name": "SPDR Gold Shares aStock",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 381.43,
+    "address": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "addresses": {
+     "ethereum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "arbitrum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "bsc": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "robinhood": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "base": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 620.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102175692/large/GLD.png?1787292288",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a94d7323-4e7b-4698-8c4d-ba531a9af8ec",
+    "totalSupply": "1.627676803",
+    "circulatingSupply": "1.627676803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6a547b25534234bb79ce6961a23db13de154b6f4": {
+    "key": "ethereum:0x6a547b25534234bb79ce6961a23db13de154b6f4",
+    "name": "Tenbin Gold",
+    "decimals": 18,
+    "symbol": "TGLD",
+    "price": 4119.58,
+    "address": "0x6a547b25534234bb79ce6961a23db13de154b6f4",
+    "addresses": {
+     "ethereum": "0x6a547b25534234bb79ce6961a23db13de154b6f4"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-31T22:36:09.709Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 575760,
+    "image": "https://coin-images.coingecko.com/coins/images/102172708/large/tgld_%281%29.png?1774982553",
+    "metrics": {
+     "volumeUsd1d": "14.718",
+     "volumeUsd7d": "139.311"
+    },
+    "metadata": {},
+    "tokenId": "8797d99a-4305-4e7a-b2fc-38a14b98a5a2",
+    "totalSupply": "139.76181015977275",
+    "circulatingSupply": "139.76181015977275",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x37a2afaa98648f2e13658623885f821ac8365609": {
+    "key": "robinhood:0x37a2afaa98648f2e13658623885f821ac8365609",
+    "name": "Arcus GLD (5x Long)",
+    "decimals": 18,
+    "symbol": "PGLD5X",
+    "price": 69.97,
+    "address": "0x37a2afaa98648f2e13658623885f821ac8365609",
+    "addresses": {
+     "robinhood": "0x37a2afaa98648f2e13658623885f821ac8365609"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-02T17:24:41.558Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37195,
+    "image": "https://coin-images.coingecko.com/coins/images/102179084/large/5xGLD_Long.png?1791134619",
+    "metrics": {
+     "volumeUsd1d": "118.196",
+     "volumeUsd7d": "805.644"
+    },
+    "metadata": {},
+    "tokenId": "bffdbe9b-78f6-487c-bc03-9070fbead23d",
+    "totalSupply": "531.6066239370023",
+    "circulatingSupply": "531.6066239370023",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x86856814e74456893cfc8946bedcbb472b5fa856": {
+    "key": "arbitrum:0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "name": "Gold Token",
+    "decimals": 8,
+    "symbol": "GLDT",
+    "price": 1.24,
+    "address": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "addresses": {
+     "ethereum": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "base": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "arbitrum": "0x86856814e74456893cfc8946bedcbb472b5fa856"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-13T11:40:59.433Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 738173,
+    "image": "https://coin-images.coingecko.com/coins/images/53968/large/gldt_200x200.png?1737793227",
+    "metrics": {
+     "volumeUsd1d": "720.125",
+     "volumeUsd7d": "27976.525"
+    },
+    "metadata": {},
+    "tokenId": "49976329-8374-42af-963a-8c278f0838d7",
+    "totalSupply": "594499.9",
+    "circulatingSupply": "594499.9",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7a6a053eccf1446a2633e05aa6d40d09381997ec": {
+    "key": "robinhood:0x7a6a053eccf1446a2633e05aa6d40d09381997ec",
+    "name": "Uniswap V3 Global Dollar/SPDR Gold Trust  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0x7a6a053eccf1446a2633e05aa6d40d09381997ec",
+    "addresses": {
+     "robinhood": "0x7a6a053eccf1446a2633e05aa6d40d09381997ec"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.304Z",
+    "createdAt": "2026-08-21T18:49:53.313Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 2389392.1141029526,
+    "metrics": {
+     "apy": "1.436",
+     "baseApy": "1.436",
+     "volumeUsd1d": "31332.428",
+     "volumeUsd7d": "1148043.388"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "6281d6ce-01e0-4b85-bd57-e9dc95cadc74",
+    "reserves": [
+     "608579.510277",
+     "4666.027181160872542962"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8992d94d7d0649456e6d34bd546215983a124cef3381f3caedc68de7b7b5c307": {
+    "key": "robinhood:0x8992d94d7d0649456e6d34bd546215983a124cef3381f3caedc68de7b7b5c307",
+    "name": "Uniswap V4 LP MBG/GLD",
+    "decimals": 18,
+    "symbol": "MBG/GLD",
+    "price": 9007199254740990,
+    "address": "0x8992d94d7d0649456e6d34bd546215983a124cef3381f3caedc68de7b7b5c307",
+    "addresses": {
+     "robinhood": "0x8992d94d7d0649456e6d34bd546215983a124cef3381f3caedc68de7b7b5c307"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.586Z",
+    "createdAt": "2026-09-16T10:53:48.107Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x977689834cb1822ea31d80307303a76aaa313368",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 10531.184632740566,
+    "metrics": {
+     "apy": "19.92",
+     "baseApy": "19.92",
+     "volumeUsd1d": "1642.633",
+     "volumeUsd7d": "22161.049"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 30,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "b15c77d1-4650-48be-85a5-ea0c8a064258",
+    "reserves": [
+     "96366.457889888127434877",
+     "14.101532558854676116"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4": {
+    "key": "robinhood:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "name": "SPDR Gold Shares aStock",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 381.43,
+    "address": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "addresses": {
+     "ethereum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "arbitrum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "bsc": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "robinhood": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "base": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 620.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102175692/large/GLD.png?1787292288",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a94d7323-4e7b-4698-8c4d-ba531a9af8ec",
+    "totalSupply": "1.627676803",
+    "circulatingSupply": "1.627676803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9": {
+    "key": "arbitrum:0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "name": "Gold xStock",
+    "decimals": 18,
+    "symbol": "GLDX",
+    "price": 380.25,
+    "address": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+    "addresses": {
+     "arbitrum": "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-06-19T09:40:04.590Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8348769,
+    "image": "https://coin-images.coingecko.com/coins/images/66699/large/Ticker_GLD__Company_Name_Gold__size_200x200_2x.png?1750267259",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gold-xstock"
+    },
+    "tokenId": "111d313d-a90d-46e4-81b9-384bafe492a5",
+    "totalSupply": "21956",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9c87ce7d91f04279162d5f98b889d8608e78612b2e3daafd399f94ec6ba91d52": {
+    "key": "ethereum:0x9c87ce7d91f04279162d5f98b889d8608e78612b2e3daafd399f94ec6ba91d52",
+    "name": "Uniswap V4 LP GLDon/USDC",
+    "decimals": 18,
+    "symbol": "GLDON/USDC",
+    "price": 9007199254740990,
+    "address": "0x9c87ce7d91f04279162d5f98b889d8608e78612b2e3daafd399f94ec6ba91d52",
+    "addresses": {
+     "ethereum": "0x9c87ce7d91f04279162d5f98b889d8608e78612b2e3daafd399f94ec6ba91d52"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.372Z",
+    "createdAt": "2026-02-23T05:21:05.244Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1465.2172227295566,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14800,
+     "feePercentage": "77"
+    },
+    "tokenId": "b7a5c31b-f74b-4efa-9c86-842b0e1a4c59",
+    "reserves": [
+     "1.707548112376026652",
+     "813.87724"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x889cee8a09253bfa44f26c9ef01c87958770ad07": {
+    "key": "ethereum:0x889cee8a09253bfa44f26c9ef01c87958770ad07",
+    "name": "Uniswap V3 Tether Gold/Digital Gold 0.05%",
+    "decimals": 18,
+    "symbol": "XAUT/DGLD",
+    "price": 9007199254740990,
+    "address": "0x889cee8a09253bfa44f26c9ef01c87958770ad07",
+    "addresses": {
+     "ethereum": "0x889cee8a09253bfa44f26c9ef01c87958770ad07"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091",
+     "https://assets.coingecko.com/coins/images/10481/large/Tether_Gold.png?1696510471"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.007Z",
+    "createdAt": "2026-10-07T07:17:44.108Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x68749665ff8d2d112fa859aa293f07a622782f38",
+     "0xa9299c296d7830a99414d1e5546f5171fa01e9c8"
+    ],
+    "liquidity": 11481.791635636851,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3312.77"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "3943a28e-e035-46e2-b0b5-9a434a5215f3",
+    "reserves": [
+     "1.44446",
+     "1.314111882867399745"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4": {
+    "key": "arbitrum:0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "name": "SPDR Gold Shares aStock",
+    "decimals": 18,
+    "symbol": "AGLD",
+    "price": 381.43,
+    "address": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+    "addresses": {
+     "ethereum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "arbitrum": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "bsc": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "robinhood": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4",
+     "base": "0x3e4a2f26fc4f92d92d7cd1e49ddade32869d00a4"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 620.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102175692/large/GLD.png?1787292288",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "a94d7323-4e7b-4698-8c4d-ba531a9af8ec",
+    "totalSupply": "1.627676803",
+    "circulatingSupply": "1.627676803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a": {
+    "key": "base:0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a",
+    "name": "Digital Gold",
+    "decimals": 18,
+    "symbol": "DGLD",
+    "price": 4183.32,
+    "address": "0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a",
+    "addresses": {
+     "ethereum": "0xa9299c296d7830a99414d1e5546f5171fa01e9c8",
+     "base": "0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-03T08:18:11.069Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10089970,
+    "image": "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091",
+    "metrics": {
+     "volumeUsd1d": "30922.962",
+     "volumeUsd7d": "63265.284"
+    },
+    "metadata": {},
+    "tokenId": "c199e519-82eb-466c-b6f7-96352e866ed9",
+    "totalSupply": "2411.955",
+    "circulatingSupply": "2411.955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x730453217f36841cb5affdadb9cfe57fe27ebbfae61522db0e07881a06d60e50": {
+    "key": "bsc:0x730453217f36841cb5affdadb9cfe57fe27ebbfae61522db0e07881a06d60e50",
+    "name": "Uniswap V4 LP USDT/GLDon",
+    "decimals": 18,
+    "symbol": "USDT/GLDON",
+    "price": 9007199254740990,
+    "address": "0x730453217f36841cb5affdadb9cfe57fe27ebbfae61522db0e07881a06d60e50",
+    "addresses": {
+     "bsc": "0x730453217f36841cb5affdadb9cfe57fe27ebbfae61522db0e07881a06d60e50"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.766Z",
+    "createdAt": "2026-09-18T01:03:29.187Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    ],
+    "liquidity": 666.745341466536,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "994f97be-f2c4-44ab-8da0-24a5d8384cc7",
+    "reserves": [
+     "174.453157527878013559",
+     "1.290601385752743975"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x776b5d9ae7ad1999772f50173e9977ad30ddac03": {
+    "key": "base:0x776b5d9ae7ad1999772f50173e9977ad30ddac03",
+    "name": "Aerodrome Volatile AMM - USDC/DGLD",
+    "decimals": 18,
+    "symbol": "VAMM-USDC/DGLD",
+    "price": 129346328.79884304,
+    "address": "0x776b5d9ae7ad1999772f50173e9977ad30ddac03",
+    "addresses": {
+     "base": "0x776b5d9ae7ad1999772f50173e9977ad30ddac03"
+    },
+    "platform": "aerodrome",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71141/large/Metallic__G__and_Cedi_Logo_%281%29.png?1765974091"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.386Z",
+    "createdAt": "2026-09-30T12:37:38.969Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xe908475f8beb7a138b0dc6eb5a05cb27068ffb9a"
+    ],
+    "poolAddress": "0x48654f6b2df95fc5834f78ab92fc9f71d4e140e5",
+    "liquidity": 4131.940492859008,
+    "metrics": {
+     "apy": "4.833",
+     "rewardApy": "4.833",
+     "volumeUsd1d": "5.036",
+     "volumeUsd7d": "629.175"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isStable": false,
+     "feePercentage": "0.3"
+    },
+    "tokenId": "f6a53c3c-6f4d-4a25-b446-b95528e26ec5",
+    "totalSupply": "0.000031944783676736",
+    "reserves": [
+     "2061.94099",
+     "0.494938498831705001"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x87a73cfdaddc4de32da5a8528cccd9ebf2b19593": {
+    "key": "polygon:0x87a73cfdaddc4de32da5a8528cccd9ebf2b19593",
+    "name": "Hiraeth Gold",
+    "decimals": 9,
+    "symbol": "HGLD",
+    "price": 0.00012089638106354928,
+    "address": "0x87a73cfdaddc4de32da5a8528cccd9ebf2b19593",
+    "addresses": {
+     "polygon": "0x87a73cfdaddc4de32da5a8528cccd9ebf2b19593"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-11T10:33:00.824Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24179.276212709854,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "5fcb6cf9-bb3d-4451-8c28-3c0c3bb59d0c",
+    "totalSupply": "200000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd88d6c65eba93c85227ddfe2d3bd5c677b6efc1379b7e51e4758a6957dd62881": {
+    "key": "bsc:0xd88d6c65eba93c85227ddfe2d3bd5c677b6efc1379b7e51e4758a6957dd62881",
+    "name": "Uniswap V4 LP USDT/GLDon",
+    "decimals": 18,
+    "symbol": "USDT/GLDON",
+    "price": 9007199254740990,
+    "address": "0xd88d6c65eba93c85227ddfe2d3bd5c677b6efc1379b7e51e4758a6957dd62881",
+    "addresses": {
+     "bsc": "0xd88d6c65eba93c85227ddfe2d3bd5c677b6efc1379b7e51e4758a6957dd62881"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536"
+    ],
+    "updatedAt": "2026-10-18T20:15:26.753Z",
+    "createdAt": "2026-06-10T05:15:08.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    ],
+    "liquidity": 1329.1693114864884,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15402,
+     "feePercentage": "77.033"
+    },
+    "tokenId": "d7405ffe-234c-4bf1-988f-aeed32359586",
+    "reserves": [
+     "1207.127724354474111631",
+     "0.322563430966323281"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xba2f1ed4ceb2169d538d1e614d847e83c5a55913": {
+    "key": "robinhood:0xba2f1ed4ceb2169d538d1e614d847e83c5a55913",
+    "name": "Uniswap V3 Global Dollar/SPDR Gold Trust  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0xba2f1ed4ceb2169d538d1e614d847e83c5a55913",
+    "addresses": {
+     "robinhood": "0xba2f1ed4ceb2169d538d1e614d847e83c5a55913"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.621Z",
+    "createdAt": "2026-08-26T15:03:25.801Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 1496030.7123307716,
+    "metrics": {
+     "apy": "2.956",
+     "baseApy": "2.956",
+     "volumeUsd1d": "242344.871",
+     "volumeUsd7d": "9114676.482"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "813cb209-7cde-4289-958f-28488236121a",
+    "reserves": [
+     "437045.583686",
+     "2774.718341551326683063"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3c42b785e4a0314ca55d7dfa927062482e2af597": {
+    "key": "arbitrum:0x3c42b785e4a0314ca55d7dfa927062482e2af597",
+    "name": "SPDR Gold Shares rStock",
+    "decimals": 18,
+    "symbol": "RGLD",
+    "price": 381.23,
+    "address": "0x3c42b785e4a0314ca55d7dfa927062482e2af597",
+    "addresses": {
+     "arbitrum": "0x3c42b785e4a0314ca55d7dfa927062482e2af597"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 213179,
+    "image": "https://coin-images.coingecko.com/coins/images/102177052/large/c1ce200108e73ba9154b32d321859ce5.png?1789116677",
+    "metrics": {
+     "volumeUsd1d": "494.752",
+     "volumeUsd7d": "91326.973"
+    },
+    "metadata": {},
+    "tokenId": "d6cd620f-2fc8-4b24-96a7-ab84f1f7f89a",
+    "totalSupply": "559.184249085",
+    "circulatingSupply": "559.184249085",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6a8f5e125195d54fb829e865808a92c5d2c60a224d5a7909000661ce1dfd6f5f": {
+    "key": "ethereum:0x6a8f5e125195d54fb829e865808a92c5d2c60a224d5a7909000661ce1dfd6f5f",
+    "name": "Uniswap V4 LP EGP/GLDon",
+    "decimals": 18,
+    "symbol": "EGP/GLDON",
+    "price": 9007199254740990,
+    "address": "0x6a8f5e125195d54fb829e865808a92c5d2c60a224d5a7909000661ce1dfd6f5f",
+    "addresses": {
+     "ethereum": "0x6a8f5e125195d54fb829e865808a92c5d2c60a224d5a7909000661ce1dfd6f5f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.114Z",
+    "createdAt": "2026-10-14T06:54:32.812Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x423d42e505e64f99b6e277eb7ed324cc5606f139"
+    ],
+    "liquidity": 20073.63017099905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.43"
+    },
+    "tokenId": "1725d92f-dd8d-4eba-ad1c-b3ef3d9dffcf",
+    "reserves": [
+     "19999.999999999999999998",
+     "0.073673761085031076"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1ea96425505a37a23814c5b2d82344128db71816be27783d78f18339ed68989d": {
+    "key": "robinhood:0x1ea96425505a37a23814c5b2d82344128db71816be27783d78f18339ed68989d",
+    "name": "Uniswap V4 LP SPY/GLD",
+    "decimals": 18,
+    "symbol": "SPY/GLD",
+    "price": 9007199254740990,
+    "address": "0x1ea96425505a37a23814c5b2d82344128db71816be27783d78f18339ed68989d",
+    "addresses": {
+     "robinhood": "0x1ea96425505a37a23814c5b2d82344128db71816be27783d78f18339ed68989d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.180Z",
+    "createdAt": "2026-09-09T05:45:08.049Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 862.7884045799127,
+    "metrics": {
+     "apy": "48.535",
+     "baseApy": "48.535",
+     "volumeUsd1d": "395.747",
+     "volumeUsd7d": "933.064"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "a0bb70fe-9528-4744-93f7-888836b5bdc0",
+    "reserves": [
+     "0.702539155259956831",
+     "0.856458492304634167"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba": {
+    "key": "robinhood:0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba",
+    "name": "Beefy CLM GLD-SLV",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODSLV-GLD",
+    "price": 363.0150520973084,
+    "address": "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba",
+    "addresses": {
+     "robinhood": "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174120/large/0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f.png?1782444590"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "poolAddress": "0x48abc7052509caf820c4c22559f08381f9afd823",
+    "liquidity": 18071.971820499606,
+    "metrics": {
+     "apy": "0.353",
+     "baseApy": "0.353",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-3781.812"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-slv-gld",
+     "providerId": "uniswap",
+     "tickSpacing": 10,
+     "managerAddress": "0xcc83f9d3e2aba9fcfb048e0fdf46e4724a44acba",
+     "strategyAddress": "0xef9c26122519b4ed1ff8d5bf3accf3eb60c8269a",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x7ac789958ba9a0cf35f8d6cfeae45190c9db573d",
+     "depositTokenAddresses": [
+      "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+      "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+     ]
+    },
+    "tokenId": "f645dc75-5522-4d32-9d82-d64f50709972",
+    "totalSupply": "49.782982044654452297",
+    "reserves": [
+     "340.018487891138602628",
+     "1.394238573149102167"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb6e5b62e4846cda5371af674468e3ae3c3e9f794e2e2a85a1d3b364fae3bc55c": {
+    "key": "robinhood:0xb6e5b62e4846cda5371af674468e3ae3c3e9f794e2e2a85a1d3b364fae3bc55c",
+    "name": "Uniswap V4 LP USDG/GLD",
+    "decimals": 18,
+    "symbol": "USDG/GLD",
+    "price": 9007199254740990,
+    "address": "0xb6e5b62e4846cda5371af674468e3ae3c3e9f794e2e2a85a1d3b364fae3bc55c",
+    "addresses": {
+     "robinhood": "0xb6e5b62e4846cda5371af674468e3ae3c3e9f794e2e2a85a1d3b364fae3bc55c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.180Z",
+    "createdAt": "2026-09-09T05:45:07.211Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 1952.2471649737238,
+    "metrics": {
+     "apy": "46.702",
+     "baseApy": "46.702",
+     "volumeUsd1d": "713.901",
+     "volumeUsd7d": "3006.02"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "5bda8724-97aa-4d00-b9a2-885f1dc27b7c",
+    "reserves": [
+     "202.87603",
+     "4.583645268563817557"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x106f078085f8190a36428bc2246d50035512e6a04209000cebf30ddda14b2e7d": {
+    "key": "ethereum:0x106f078085f8190a36428bc2246d50035512e6a04209000cebf30ddda14b2e7d",
+    "name": "Uniswap V4 LP tGLD/USDC",
+    "decimals": 18,
+    "symbol": "TGLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x106f078085f8190a36428bc2246d50035512e6a04209000cebf30ddda14b2e7d",
+    "addresses": {
+     "ethereum": "0x106f078085f8190a36428bc2246d50035512e6a04209000cebf30ddda14b2e7d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172708/large/tgld_%281%29.png?1774982553",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.917Z",
+    "createdAt": "2026-04-08T05:10:20.103Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6a547b25534234bb79ce6961a23db13de154b6f4",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2914.9815264072377,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "93.219"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "0b4dc5a1-1adf-4f6e-afb0-d72be2952219",
+    "reserves": [
+     "0.321027938939877718",
+     "1592.857164"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x86856814e74456893cfc8946bedcbb472b5fa856": {
+    "key": "base:0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "name": "Gold Token",
+    "decimals": 8,
+    "symbol": "GLDT",
+    "price": 1.24,
+    "address": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+    "addresses": {
+     "ethereum": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "base": "0x86856814e74456893cfc8946bedcbb472b5fa856",
+     "arbitrum": "0x86856814e74456893cfc8946bedcbb472b5fa856"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-13T11:40:59.433Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 738173,
+    "image": "https://coin-images.coingecko.com/coins/images/53968/large/gldt_200x200.png?1737793227",
+    "metrics": {
+     "volumeUsd1d": "720.234",
+     "volumeUsd7d": "28429.666"
+    },
+    "metadata": {},
+    "tokenId": "49976329-8374-42af-963a-8c278f0838d7",
+    "totalSupply": "594499.9",
+    "circulatingSupply": "594499.9",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdd92b27f3bcc317c51066330e40da9075a03f0073bac0ab545dc4364c3117a78": {
+    "key": "ethereum:0xdd92b27f3bcc317c51066330e40da9075a03f0073bac0ab545dc4364c3117a78",
+    "name": "Uniswap V4 LP GLDx/USDT",
+    "decimals": 18,
+    "symbol": "GLDX/USDT",
+    "price": 9007199254740990,
+    "address": "0xdd92b27f3bcc317c51066330e40da9075a03f0073bac0ab545dc4364c3117a78",
+    "addresses": {
+     "ethereum": "0xdd92b27f3bcc317c51066330e40da9075a03f0073bac0ab545dc4364c3117a78"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.432Z",
+    "createdAt": "2026-10-18T18:58:21.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2380f2673c640fb67e2d6b55b44c62f0e0e69da9",
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "9852950f-3570-4d31-aba5-ed96bba58759",
+    "reserves": [
+     "0",
+     "3999.999999999999999983"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x423d42e505e64f99b6e277eb7ed324cc5606f139": {
+    "key": "ethereum:0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1136126.874",
+     "volumeUsd7d": "7817735.151"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712": {
+    "key": "robinhood:0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712",
+    "name": "Uniswap V4 LP GLD/MSTR",
+    "decimals": 18,
+    "symbol": "GLD/MSTR",
+    "price": 9007199254740990,
+    "address": "0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712",
+    "addresses": {
+     "robinhood": "0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.976Z",
+    "createdAt": "2026-10-16T14:26:37.042Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 4526.975653372447,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "207.517"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "56d17c62-4b4e-40aa-be53-55d7e2710ca8",
+    "reserves": [
+     "0.000742879322456492",
+     "33.431995049960376569"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xe7e6c5d49ab25913d7352d600eed3c85525c8894": {
+    "key": "avalanche:0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5861.294"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e35f0951cffaf89eb9adde94c60475e3745cc15": {
+    "key": "robinhood:0x2e35f0951cffaf89eb9adde94c60475e3745cc15",
+    "name": "Beefy CLM GLD-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-GLD",
+    "price": 584.5354966419442,
+    "address": "0x2e35f0951cffaf89eb9adde94c60475e3745cc15",
+    "addresses": {
+     "robinhood": "0x2e35f0951cffaf89eb9adde94c60475e3745cc15"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "poolAddress": "0x7a6a053eccf1446a2633e05aa6d40d09381997ec",
+    "liquidity": 425608.8026440274,
+    "metrics": {
+     "apy": "4.953",
+     "baseApy": "4.953",
+     "volumeUsd1d": "2997.671",
+     "volumeUsd7d": "16749.24"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-gld",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x2e35f0951cffaf89eb9adde94c60475e3745cc15",
+     "strategyAddress": "0x8237f673a33ee64c25b3ec93c1582d589bfeea38",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x03b023542f20b0ff3b36c6091a3960daf1a29a3f",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+     ]
+    },
+    "tokenId": "57cf2706-0e56-4734-ba9d-5ad69863abb1",
+    "totalSupply": "728.11455435824978337",
+    "reserves": [
+     "180833.830219",
+     "641.351410108677746404"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502": {
+    "key": "arbitrum:0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+    "name": "Dinari GLD",
+    "decimals": 18,
+    "symbol": "GLD",
+    "price": 382.37,
+    "address": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+    "addresses": {
+     "base": "0xf3ec90ea681561ce77120976bcfe985f83d182d8",
+     "avalanche": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "hyperevm": "0xe7e6c5d49ab25913d7352d600eed3c85525c8894",
+     "arbitrum": "0xbe8e3f4d5bd6ee0175359982cc91dafa3cf72502",
+     "ethereum": "0x43c72ea1736072f42f785e704e5244cc5b9a6779"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39065,
+    "image": "https://coin-images.coingecko.com/coins/images/102174965/large/dinari-logo-green-with-margin.png?1785402726",
+    "metrics": {
+     "volumeUsd1d": "50.408",
+     "volumeUsd7d": "5862.113"
+    },
+    "metadata": {},
+    "tokenId": "7d1c9857-948c-4ac3-8b14-4c72e9e05299",
+    "totalSupply": "102.16476742356373",
+    "circulatingSupply": "102.16476742356373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc52da0a0b73f745e8c5e74a477e197fa02d5e87f96b4574bf2088c8212b1c320": {
+    "key": "robinhood:0xc52da0a0b73f745e8c5e74a477e197fa02d5e87f96b4574bf2088c8212b1c320",
+    "name": "Uniswap V4 LP TORO/GLD",
+    "decimals": 18,
+    "symbol": "TORO/GLD",
+    "price": 9007199254740990,
+    "address": "0xc52da0a0b73f745e8c5e74a477e197fa02d5e87f96b4574bf2088c8212b1c320",
+    "addresses": {
+     "robinhood": "0xc52da0a0b73f745e8c5e74a477e197fa02d5e87f96b4574bf2088c8212b1c320"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178564/large/tesoro_400x400.jpg?1790004138"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.486Z",
+    "createdAt": "2026-09-22T07:04:32.734Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x95b551c94a2457b597e4838457effb4731880411",
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e"
+    ],
+    "liquidity": 641.3836662859375,
+    "metrics": {
+     "apy": "5.995",
+     "baseApy": "5.995",
+     "volumeUsd1d": "30.116",
+     "volumeUsd7d": "1551.264"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "f2fef7d3-e6cb-4dab-a72a-e7b651bdde24",
+    "reserves": [
+     "415378.134994884184240237",
+     "0.798634273098957886"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xfa9a1e901085e269f6d428f79cd5252d8b919344": {
+    "key": "bsc:0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+    "name": "SPDR Gold Shares (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLDON",
+    "price": 381.56,
+    "address": "0xfa9a1e901085e269f6d428f79cd5252d8b919344",
+    "addresses": {
+     "ethereum": "0x423d42e505e64f99b6e277eb7ed324cc5606f139",
+     "hyperevm": "0x95febdd6f447b5278c9b98743b4254eb02c6ea1d",
+     "bsc": "0xfa9a1e901085e269f6d428f79cd5252d8b919344"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3749627,
+    "image": "https://coin-images.coingecko.com/coins/images/71467/large/gldon_160x160.png?1767891536",
+    "metrics": {
+     "volumeUsd1d": "1135074.643",
+     "volumeUsd7d": "7826457.52"
+    },
+    "metadata": {},
+    "tokenId": "f46bcaa2-5efc-438c-be20-213fafb4889c",
+    "totalSupply": "9828.56477418427",
+    "circulatingSupply": "9828.56477418427",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xcd68856b6e72e99b5eeaae7d41bb4a3b484c700d": {
+    "key": "bsc:0xcd68856b6e72e99b5eeaae7d41bb4a3b484c700d",
+    "name": "PancakeSwap LP WBNB/EGLD",
+    "decimals": 18,
+    "symbol": "WBNB/EGLD",
+    "price": 321.73294003090655,
+    "address": "0xcd68856b6e72e99b5eeaae7d41bb4a3b484c700d",
+    "addresses": {
+     "bsc": "0xcd68856b6e72e99b5eeaae7d41bb4a3b484c700d"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/22255/large/wrapped_elrond.jpg?1696521600"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.121Z",
+    "createdAt": "2024-02-29T09:06:58.818Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe"
+    ],
+    "liquidity": 21368.57551115013,
+    "metrics": {
+     "apy": "5.334",
+     "baseApy": "5.334",
+     "volumeUsd1d": "1249.744",
+     "volumeUsd7d": "14484.621"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "fbe0728f-a1e2-4352-b92b-d0916125a6a3",
+    "totalSupply": "66.417120699849400107",
+    "reserves": [
+     "15.123073790205881853",
+     "3149.283718454263514973"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x632db1aaace73401a5dc8cde6e9062b8ec0fd819": {
+    "key": "base:0x632db1aaace73401a5dc8cde6e9062b8ec0fd819",
+    "name": "Streamex GLDY",
+    "decimals": 18,
+    "symbol": "GLDY",
+    "price": 4165.28,
+    "address": "0x632db1aaace73401a5dc8cde6e9062b8ec0fd819",
+    "addresses": {
+     "base": "0x632db1aaace73401a5dc8cde6e9062b8ec0fd819"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12819612,
+    "image": "https://coin-images.coingecko.com/coins/images/102172460/large/Logo.png?1773465643",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c0b869a1-223b-40f8-bbb1-e3373e9c48b4",
+    "totalSupply": "3077.727598",
+    "circulatingSupply": "3077.727598",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,430 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US29444U7000",
+ "ticker": "EQIX",
+ "name": "Equinix",
+ "isin": "US29444U7000",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:43Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Equinix Inc",
+   "symbol": "EQIX",
+   "slug": "equinix",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 996.6198759439166,
+     "tokenized_market_cap": 1596311.755175977,
+     "tokenized_volume_24h": 255365.66044264,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 122,
+   "asset_type": "stock",
+   "rwa_rank": 170,
+   "has_tokens": true,
+   "average_tokenized_price": 996.6198759439166,
+   "tokenized_market_cap": 1596311.755175977,
+   "tokenized_volume_24h": 255365.66044264,
+   "last_updated": "2026-10-18T20:14:28.070Z",
+   "tokens": [
+    {
+     "symbol": "EQIXon",
+     "name": "Equinix Tokenized Stock (Ondo)",
+     "price": 997.1711820313844,
+     "crypto_id": 38047,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1597194.8,
+     "volume_24h": 255114.13244687
+    },
+    {
+     "symbol": "wEQIXx",
+     "name": "Wrapped Equinix Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41339,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "EQIX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_EQIX"
+    }
+   ]
+  },
+  "info": {
+   "38047": {
+    "id": 38047,
+    "symbol": "EQIXon",
+    "name": "Equinix Tokenized Stock (Ondo)",
+    "slug": "equinix-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38047.png",
+    "date_added": "2025-09-03T10:55:34.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x73d2ccEE12C120E7DA265a2dE9d9f952a0101b4f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x73d2ccEE12C120E7DA265a2dE9d9f952a0101b4f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "aheEdmuryJU8ymy8LjYheZH5i2BW1UMsfuWQKD2ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41339": {
+    "id": 41339,
+    "symbol": "wEQIXx",
+    "name": "Wrapped Equinix Tokenized Stock (xStock)",
+    "slug": "wrapped-equinix-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41339.png",
+    "date_added": "2026-08-11T16:22:46.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x813c68Afe880d2CEA321041864c0d116fdc00cd7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x813c68Afe880d2CEA321041864c0d116fdc00cd7",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+   "ethereum:0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+  ],
+  "exact": {
+   "bsc:0xe4e12c9cec3e8cae405202a97f66afa695075fa0": {
+    "key": "bsc:0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+    "name": "Equinix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "EQIXON",
+    "price": 995.94,
+    "address": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+    "addresses": {
+     "bsc": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+     "ethereum": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1595062,
+    "image": "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357",
+    "metrics": {
+     "volumeUsd1d": "157083.658",
+     "volumeUsd7d": "1071758.983"
+    },
+    "metadata": {},
+    "tokenId": "3cffbb09-5e6c-4280-a925-81fbbfad229d",
+    "totalSupply": "1601.7257870418816",
+    "circulatingSupply": "1601.7257870418816",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x73d2ccee12c120e7da265a2de9d9f952a0101b4f": {
+    "key": "ethereum:0x73d2ccee12c120e7da265a2de9d9f952a0101b4f",
+    "name": "Equinix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "EQIXON",
+    "price": 995.94,
+    "address": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f",
+    "addresses": {
+     "bsc": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+     "ethereum": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1595062,
+    "image": "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357",
+    "metrics": {
+     "volumeUsd1d": "157339.857",
+     "volumeUsd7d": "1071870.225"
+    },
+    "metadata": {},
+    "tokenId": "3cffbb09-5e6c-4280-a925-81fbbfad229d",
+    "totalSupply": "1601.7257870418816",
+    "circulatingSupply": "1601.7257870418816",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "EQIX": {
+    "total_items": 5,
+    "pages": 1,
+    "received": 5,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xf94560c3bdb93da7bb1f36b913bcb3b7a35333563c70e1f7d194e9a42a904b59": {
+    "key": "ethereum:0xf94560c3bdb93da7bb1f36b913bcb3b7a35333563c70e1f7d194e9a42a904b59",
+    "name": "Uniswap V4 LP wUSDC/EQIXon",
+    "decimals": 18,
+    "symbol": "WUSDC/EQIXON",
+    "price": 9007199254740990,
+    "address": "0xf94560c3bdb93da7bb1f36b913bcb3b7a35333563c70e1f7d194e9a42a904b59",
+    "addresses": {
+     "ethereum": "0xf94560c3bdb93da7bb1f36b913bcb3b7a35333563c70e1f7d194e9a42a904b59"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.079Z",
+    "createdAt": "2026-09-28T10:38:27.492Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "450f678c-025b-48fe-96d7-c02464bca4f3",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xdb51d29148d8d302a15b7d8623a952048211099d": {
+    "key": "arbitrum:0xdb51d29148d8d302a15b7d8623a952048211099d",
+    "name": "Equinix rStock",
+    "decimals": 18,
+    "symbol": "REQIX",
+    "price": 998.47,
+    "address": "0xdb51d29148d8d302a15b7d8623a952048211099d",
+    "addresses": {
+     "arbitrum": "0xdb51d29148d8d302a15b7d8623a952048211099d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2989.64,
+    "image": "https://coin-images.coingecko.com/coins/images/102177083/large/c99d685f65e5018ac6a802c87a1318eb.png?1789116775",
+    "metrics": {
+     "volumeUsd1d": "21.409",
+     "volumeUsd7d": "150.192"
+    },
+    "metadata": {},
+    "tokenId": "70fdd5b4-ed7d-4e05-964b-ca026108d079",
+    "totalSupply": "2.994228398",
+    "circulatingSupply": "2.994228398",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe4e12c9cec3e8cae405202a97f66afa695075fa0": {
+    "key": "bsc:0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+    "name": "Equinix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "EQIXON",
+    "price": 995.94,
+    "address": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+    "addresses": {
+     "bsc": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+     "ethereum": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1595062,
+    "image": "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357",
+    "metrics": {
+     "volumeUsd1d": "157083.658",
+     "volumeUsd7d": "1071758.983"
+    },
+    "metadata": {},
+    "tokenId": "3cffbb09-5e6c-4280-a925-81fbbfad229d",
+    "totalSupply": "1601.7257870418816",
+    "circulatingSupply": "1601.7257870418816",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x73d2ccee12c120e7da265a2de9d9f952a0101b4f": {
+    "key": "ethereum:0x73d2ccee12c120e7da265a2de9d9f952a0101b4f",
+    "name": "Equinix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "EQIXON",
+    "price": 995.94,
+    "address": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f",
+    "addresses": {
+     "bsc": "0xe4e12c9cec3e8cae405202a97f66afa695075fa0",
+     "ethereum": "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1595062,
+    "image": "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357",
+    "metrics": {
+     "volumeUsd1d": "157339.857",
+     "volumeUsd7d": "1071870.225"
+    },
+    "metadata": {},
+    "tokenId": "3cffbb09-5e6c-4280-a925-81fbbfad229d",
+    "totalSupply": "1601.7257870418816",
+    "circulatingSupply": "1601.7257870418816",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xeeb4da642d1853fb1e11e9e2ee89b949618e30cd28d7b9da22f7f70a505a9ba3": {
+    "key": "ethereum:0xeeb4da642d1853fb1e11e9e2ee89b949618e30cd28d7b9da22f7f70a505a9ba3",
+    "name": "Uniswap V4 LP EGP/EQIXon",
+    "decimals": 18,
+    "symbol": "EGP/EQIXON",
+    "price": 9007199254740990,
+    "address": "0xeeb4da642d1853fb1e11e9e2ee89b949618e30cd28d7b9da22f7f70a505a9ba3",
+    "addresses": {
+     "ethereum": "0xeeb4da642d1853fb1e11e9e2ee89b949618e30cd28d7b9da22f7f70a505a9ba3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68546/large/eqixon_160x160.png?1756105357"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.001Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x73d2ccee12c120e7da265a2de9d9f952a0101b4f"
+    ],
+    "liquidity": 20071.555926458954,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.42"
+    },
+    "tokenId": "d7156da2-9136-4699-95fd-887805d24b3b",
+    "reserves": [
+     "19999.999999999999999998",
+     "0.02614285573378833"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,1779 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US60770K1079",
+ "ticker": "MRNA",
+ "name": "Moderna",
+ "isin": "US60770K1079",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:43Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Moderna Inc",
+   "symbol": "MRNA",
+   "slug": "moderna",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 209.6639720955764,
+     "tokenized_market_cap": 2347334.1072860966,
+     "tokenized_volume_24h": 22787761.16243512,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 232,
+   "asset_type": "stock",
+   "rwa_rank": 199,
+   "has_tokens": true,
+   "average_tokenized_price": 209.6639720955764,
+   "tokenized_market_cap": 2347334.1072860966,
+   "tokenized_volume_24h": 22787761.16243512,
+   "last_updated": "2026-10-18T20:14:23.331Z",
+   "tokens": [
+    {
+     "symbol": "MRNAon",
+     "name": "Moderna Tokenized Stock (Ondo)",
+     "price": 216.5777319371638,
+     "crypto_id": 39277,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 216167.14,
+     "volume_24h": 575392.22553505
+    },
+    {
+     "symbol": "wMRNAx",
+     "name": "Wrapped Moderna Tokenized Stock (xStock)",
+     "price": 218.39,
+     "crypto_id": 41483,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 30217.62734965
+    },
+    {
+     "symbol": "MRNA",
+     "name": "Moderna Inc (Derivatives)",
+     "price": 209.14262589488058,
+     "crypto_id": 41887,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "MRNAB",
+     "name": "Moderna Tokenized bStocks",
+     "price": 208.91361325268005,
+     "crypto_id": 41961,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 2122338.48,
+     "volume_24h": 22078109.86662322
+    },
+    {
+     "symbol": "MRNA",
+     "name": "Moderna Tokenized Stock (Robinhood)",
+     "price": 209.52470097870844,
+     "crypto_id": 42005,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 0,
+     "volume_24h": 43236.79212633
+    },
+    {
+     "symbol": "MRNAc",
+     "name": "Moderna, Inc. Tokenized Stock (Coinbase)",
+     "price": 241.15202115521242,
+     "crypto_id": 42493,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 3174.56,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "MRNA",
+     "market_url": "https://www.binance.com/en/stocks/EQ_MRNA"
+    }
+   ]
+  },
+  "info": {
+   "39277": {
+    "id": 39277,
+    "symbol": "MRNAon",
+    "name": "Moderna Tokenized Stock (Ondo)",
+    "slug": "moderna-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39277.png",
+    "date_added": "2026-01-08T15:44:19.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "14VP7DvCAdBCc5XGNZkPt6zhtPzJrWWS64Koxtxyondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41483": {
+    "id": 41483,
+    "symbol": "wMRNAx",
+    "name": "Wrapped Moderna Tokenized Stock (xStock)",
+    "slug": "wrapped-moderna-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41483.png",
+    "date_added": "2026-08-11T16:24:18.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xCe0FBc16E820AB7fd6d2936F1533c2654AD49aE9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xCe0FBc16E820AB7fd6d2936F1533c2654AD49aE9",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41887": {
+    "id": 41887,
+    "symbol": "MRNA",
+    "name": "Moderna Inc (Derivatives)",
+    "slug": "moderna-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41887.png",
+    "date_added": "2026-08-20T07:34:45.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41961": {
+    "id": 41961,
+    "symbol": "MRNAB",
+    "name": "Moderna Tokenized bStocks",
+    "slug": "moderna-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41961.png",
+    "date_added": "2026-09-01T08:28:55.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "42005": {
+    "id": 42005,
+    "symbol": "MRNA",
+    "name": "Moderna Tokenized Stock (Robinhood)",
+    "slug": "moderna-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42005.png",
+    "date_added": "2026-08-04T07:31:24.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "42493": {
+    "id": 42493,
+    "symbol": "MRNAc",
+    "name": "Moderna, Inc. Tokenized Stock (Coinbase)",
+    "slug": "moderna-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42493.png",
+    "date_added": "2026-10-08T03:59:56.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB200000000000000000000e215e9B76ecBA02468"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB200000000000000000000e215e9B76ecBA02468",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "base:0xb200000000000000000000e215e9b76ecba02468",
+   "bsc:0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+   "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+   "ethereum:0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+   "robinhood:0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+  ],
+  "exact": {
+   "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503": {
+    "key": "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+    "name": "Moderna (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MRNAB",
+    "price": 209.35,
+    "address": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+    "addresses": {
+     "bsc": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2126767,
+    "image": "https://coin-images.coingecko.com/coins/images/102179140/large/mrnab.png?1791293265",
+    "metrics": {
+     "volumeUsd1d": "21383609.625",
+     "volumeUsd7d": "156794892.384"
+    },
+    "metadata": {},
+    "tokenId": "fc4bba1b-ffaa-4287-bcdd-3cf07ea30ef7",
+    "totalSupply": "10158.92859152",
+    "circulatingSupply": "10158.92859152",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x01486675da0764ee780ea7cb65c33062e9b2d28c": {
+    "key": "bsc:0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+    "name": "Moderna (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "MRNAON",
+    "price": 216.73,
+    "address": "0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+    "addresses": {
+     "ethereum": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "bsc": "0x01486675da0764ee780ea7cb65c33062e9b2d28c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 216304,
+    "image": "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+    "metrics": {
+     "volumeUsd1d": "511049.353",
+     "volumeUsd7d": "4969847.896"
+    },
+    "metadata": {},
+    "tokenId": "0ff63fc5-ab32-45c8-8c4d-7c2998e56c87",
+    "totalSupply": "998.1041867465981",
+    "circulatingSupply": "998.1041867465981",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb200000000000000000000e215e9b76ecba02468": {
+    "key": "base:0xb200000000000000000000e215e9b76ecba02468",
+    "name": "Moderna, Inc. (Coinbase Tokenized Stock)",
+    "decimals": 8,
+    "symbol": "MRNAC",
+    "price": 240.45,
+    "address": "0xb200000000000000000000e215e9b76ecba02468",
+    "addresses": {
+     "base": "0xb200000000000000000000e215e9b76ecba02468"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3165.34,
+    "image": "https://coin-images.coingecko.com/coins/images/102179188/large/MRNAc-icon-200.png?1791300887",
+    "metrics": {
+     "volumeUsd1d": "155.24",
+     "volumeUsd7d": "12349.115"
+    },
+    "metadata": {},
+    "tokenId": "b740d26d-798a-4ece-8d61-5b382639595c",
+    "totalSupply": "13.16412835",
+    "circulatingSupply": "13.16412835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa2c1c0b4683a871187d4565eb63abf9aef5947ee": {
+    "key": "ethereum:0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+    "name": "Moderna (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "MRNAON",
+    "price": 216.73,
+    "address": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+    "addresses": {
+     "ethereum": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "bsc": "0x01486675da0764ee780ea7cb65c33062e9b2d28c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 216304,
+    "image": "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+    "metrics": {
+     "volumeUsd1d": "511669.819",
+     "volumeUsd7d": "4549298.116"
+    },
+    "metadata": {},
+    "tokenId": "0ff63fc5-ab32-45c8-8c4d-7c2998e56c87",
+    "totalSupply": "998.1041867465981",
+    "circulatingSupply": "998.1041867465981",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x43b07d15ce533bec5476d70c22a78a1b2b662155": {
+    "key": "robinhood:0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "name": "Moderna • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MRNA",
+    "price": 213.38,
+    "address": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "addresses": {
+     "robinhood": "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x43b07d15ce533bec5476d70c22a78a1b2b662155.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T20:14:27.258Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "liquidity": 653181.1497276,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "532904.512"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000645f1b5c9e1a4a0e8fa96d05e16df733",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "d7778551-61e5-4520-9627-e3ddc3865153",
+    "totalSupply": "3061.11702",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "MRNA": {
+    "total_items": 30,
+    "pages": 1,
+    "received": 30,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503": {
+    "key": "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+    "name": "Moderna (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MRNAB",
+    "price": 209.35,
+    "address": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+    "addresses": {
+     "bsc": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2126767,
+    "image": "https://coin-images.coingecko.com/coins/images/102179140/large/mrnab.png?1791293265",
+    "metrics": {
+     "volumeUsd1d": "21383609.625",
+     "volumeUsd7d": "156794892.384"
+    },
+    "metadata": {},
+    "tokenId": "fc4bba1b-ffaa-4287-bcdd-3cf07ea30ef7",
+    "totalSupply": "10158.92859152",
+    "circulatingSupply": "10158.92859152",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x01486675da0764ee780ea7cb65c33062e9b2d28c": {
+    "key": "bsc:0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+    "name": "Moderna (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "MRNAON",
+    "price": 216.73,
+    "address": "0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+    "addresses": {
+     "ethereum": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "bsc": "0x01486675da0764ee780ea7cb65c33062e9b2d28c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 216304,
+    "image": "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+    "metrics": {
+     "volumeUsd1d": "511049.353",
+     "volumeUsd7d": "4969847.896"
+    },
+    "metadata": {},
+    "tokenId": "0ff63fc5-ab32-45c8-8c4d-7c2998e56c87",
+    "totalSupply": "998.1041867465981",
+    "circulatingSupply": "998.1041867465981",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xae6d85e96bee054417d8d627b310a945484415be": {
+    "key": "robinhood:0xae6d85e96bee054417d8d627b310a945484415be",
+    "name": "Uniswap V3 WETH/Moderna  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/MRNA",
+    "price": 9007199254740990,
+    "address": "0xae6d85e96bee054417d8d627b310a945484415be",
+    "addresses": {
+     "robinhood": "0xae6d85e96bee054417d8d627b310a945484415be"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.326Z",
+    "createdAt": "2026-09-08T09:34:55.328Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    ],
+    "liquidity": 8730.115013331175,
+    "metrics": {
+     "apy": "25.545",
+     "baseApy": "25.545",
+     "volumeUsd1d": "2036.803",
+     "volumeUsd7d": "16532.258"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "f886c32f-e9d0-4288-acbb-8fd30ef3a6db",
+    "reserves": [
+     "1.445168051824206997",
+     "25.093554103098491119"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f": {
+    "key": "arbitrum:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "name": "Moderna xStock",
+    "decimals": 18,
+    "symbol": "MRNAX",
+    "price": 222.27,
+    "address": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "addresses": {
+     "arbitrum": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.978Z",
+    "createdAt": "2026-07-22T07:37:44.795Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19036756.83391621,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MRNAx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "moderna-xstock"
+    },
+    "tokenId": "03fc4916-d8e2-4899-9d0c-2b6e594458a4",
+    "totalSupply": "85646.991649418314182",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2ee63d2c09a3b45f08e58a981623007916d63f9a": {
+    "key": "bsc:0x2ee63d2c09a3b45f08e58a981623007916d63f9a",
+    "name": "PancakeSwap LP MRNAB/WBNB",
+    "decimals": 18,
+    "symbol": "MRNAB/WBNB",
+    "price": 815.381815613457,
+    "address": "0x2ee63d2c09a3b45f08e58a981623007916d63f9a",
+    "addresses": {
+     "bsc": "0x2ee63d2c09a3b45f08e58a981623007916d63f9a"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102179140/large/mrnab.png?1791293265",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:50.519Z",
+    "createdAt": "2026-10-13T05:20:45.165Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 11791.5946226623,
+    "metrics": {
+     "apy": "1.506",
+     "baseApy": "1.506",
+     "volumeUsd1d": "194.176",
+     "volumeUsd7d": "5517.595"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "b38776b0-dde0-4a71-8c89-fdd2d4d6289a",
+    "totalSupply": "14.461439287545099462",
+    "reserves": [
+     "28.211427822765271996",
+     "8.348864753480943089"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f": {
+    "key": "bsc:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "name": "Moderna xStock",
+    "decimals": 18,
+    "symbol": "MRNAX",
+    "price": 222.27,
+    "address": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "addresses": {
+     "bsc": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.116Z",
+    "createdAt": "2026-07-22T07:36:22.830Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19251795.445523117,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MRNAx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "moderna-xstock"
+    },
+    "tokenId": "e2929e40-e4e1-4cb3-a318-4706d7664641",
+    "totalSupply": "86614.45739651376809",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x4506545bfaf122f4a035af51c462125900951179": {
+    "key": "base:0x4506545bfaf122f4a035af51c462125900951179",
+    "name": "Aerodrome SlipStream USD Coin/Moderna, Inc. 0.01%",
+    "decimals": 18,
+    "symbol": "USDC/MRNAC",
+    "price": 9007199254740990,
+    "address": "0x4506545bfaf122f4a035af51c462125900951179",
+    "addresses": {
+     "base": "0x4506545bfaf122f4a035af51c462125900951179"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102179188/large/MRNAc-icon-200.png?1791300887"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.592Z",
+    "createdAt": "2026-10-07T07:19:42.895Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000e215e9b76ecba02468"
+    ],
+    "liquidity": 1913.617793481776,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "127b9451-804f-4b1e-8cd0-a2115728892f",
+    "reserves": [
+     "1939.698109",
+     "-0.10656081"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x32be53c0e86965275e39cdd3083c62e290af4e3835673a725305e9034ff5e06b": {
+    "key": "robinhood:0x32be53c0e86965275e39cdd3083c62e290af4e3835673a725305e9034ff5e06b",
+    "name": "Uniswap V4 LP ETH/MRNA",
+    "decimals": 18,
+    "symbol": "ETH/MRNA",
+    "price": 9007199254740990,
+    "address": "0x32be53c0e86965275e39cdd3083c62e290af4e3835673a725305e9034ff5e06b",
+    "addresses": {
+     "robinhood": "0x32be53c0e86965275e39cdd3083c62e290af4e3835673a725305e9034ff5e06b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.354Z",
+    "createdAt": "2026-08-13T15:49:58.472Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    ],
+    "liquidity": 1898.5866070868221,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2257.824"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "13dd95b7-9573-4d18-9d8c-d1f35a62273f",
+    "reserves": [
+     "0.536256973125413047",
+     "3.030743583725168955"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x717b28f3c6b32522fabf2ee89a0c9d96ee7ce5a08ad7138b66589f40cb1504cf": {
+    "key": "robinhood:0x717b28f3c6b32522fabf2ee89a0c9d96ee7ce5a08ad7138b66589f40cb1504cf",
+    "name": "Uniswap V4 LP ETH/MRNA",
+    "decimals": 18,
+    "symbol": "ETH/MRNA",
+    "price": 9007199254740990,
+    "address": "0x717b28f3c6b32522fabf2ee89a0c9d96ee7ce5a08ad7138b66589f40cb1504cf",
+    "addresses": {
+     "robinhood": "0x717b28f3c6b32522fabf2ee89a0c9d96ee7ce5a08ad7138b66589f40cb1504cf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.610Z",
+    "createdAt": "2026-09-09T13:24:17.163Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    ],
+    "liquidity": 2751.6547991051348,
+    "metrics": {
+     "apy": "32.944",
+     "baseApy": "32.944",
+     "volumeUsd1d": "48.755",
+     "volumeUsd7d": "314.879"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "0e11f5e7-ee0e-45ee-9ac8-8d5217c52b87",
+    "reserves": [
+     "0.301399396249537156",
+     "9.598092241796572397"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xcc992887e9cee37a698541e2f6d1675453fbcfcc": {
+    "key": "bsc:0xcc992887e9cee37a698541e2f6d1675453fbcfcc",
+    "name": "PancakeSwap V3 Tether USD/Moderna 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/MRNAB",
+    "price": 9007199254740990,
+    "address": "0xcc992887e9cee37a698541e2f6d1675453fbcfcc",
+    "addresses": {
+     "bsc": "0xcc992887e9cee37a698541e2f6d1675453fbcfcc"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102179140/large/mrnab.png?1791293265",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2026-10-07T07:19:00.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5fd86da9b05abe396fe9d02a4a213a7c00556503"
+    ],
+    "liquidity": 92621.22914795746,
+    "metrics": {
+     "apy": "15.551",
+     "baseApy": "15.551",
+     "volumeUsd1d": "15723.045",
+     "volumeUsd7d": "962478.825"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "eebfb477-5758-464f-9a55-3a6fcb5ad2cc",
+    "reserves": [
+     "26026.800012817013564963",
+     "318.207595555535900603"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xde6e5549cea3f8f64564324851cfedbc3b076ec5": {
+    "key": "arbitrum:0xde6e5549cea3f8f64564324851cfedbc3b076ec5",
+    "name": "Moderna rStock",
+    "decimals": 18,
+    "symbol": "RMRNA",
+    "price": 215.79,
+    "address": "0xde6e5549cea3f8f64564324851cfedbc3b076ec5",
+    "addresses": {
+     "arbitrum": "0xde6e5549cea3f8f64564324851cfedbc3b076ec5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1427671,
+    "image": "https://coin-images.coingecko.com/coins/images/102177348/large/MRNA.png?1789117622",
+    "metrics": {
+     "volumeUsd1d": "859170.653",
+     "volumeUsd7d": "7824331.894"
+    },
+    "metadata": {},
+    "tokenId": "639cbce9-fb45-4441-91e4-8f4e25555f32",
+    "totalSupply": "6616.032877093",
+    "circulatingSupply": "6616.032877093",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf38b5596707dde70acee2bff52438f1acf186e89ce6ecbaa42b7baa6ec67d335": {
+    "key": "ethereum:0xf38b5596707dde70acee2bff52438f1acf186e89ce6ecbaa42b7baa6ec67d335",
+    "name": "Uniswap V4 LP MRNAon/USDT",
+    "decimals": 18,
+    "symbol": "MRNAON/USDT",
+    "price": 9007199254740990,
+    "address": "0xf38b5596707dde70acee2bff52438f1acf186e89ce6ecbaa42b7baa6ec67d335",
+    "addresses": {
+     "ethereum": "0xf38b5596707dde70acee2bff52438f1acf186e89ce6ecbaa42b7baa6ec67d335"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.550Z",
+    "createdAt": "2026-09-11T01:32:01.217Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 658.4221530993399,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7300,
+     "feePercentage": "73"
+    },
+    "tokenId": "e8ecb5a6-2800-47ea-a4b5-bd1c67e9a22b",
+    "reserves": [
+     "1.872582510773007083",
+     "252.794243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb200000000000000000000e215e9b76ecba02468": {
+    "key": "base:0xb200000000000000000000e215e9b76ecba02468",
+    "name": "Moderna, Inc. (Coinbase Tokenized Stock)",
+    "decimals": 8,
+    "symbol": "MRNAC",
+    "price": 240.45,
+    "address": "0xb200000000000000000000e215e9b76ecba02468",
+    "addresses": {
+     "base": "0xb200000000000000000000e215e9b76ecba02468"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-07T07:16:42.451Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3165.34,
+    "image": "https://coin-images.coingecko.com/coins/images/102179188/large/MRNAc-icon-200.png?1791300887",
+    "metrics": {
+     "volumeUsd1d": "155.24",
+     "volumeUsd7d": "12349.115"
+    },
+    "metadata": {},
+    "tokenId": "b740d26d-798a-4ece-8d61-5b382639595c",
+    "totalSupply": "13.16412835",
+    "circulatingSupply": "13.16412835",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2d485d2cc9060076836c2915bc94a9dd0b5c9b5188f4cd7de1af0220a0ec2803": {
+    "key": "arbitrum:0x2d485d2cc9060076836c2915bc94a9dd0b5c9b5188f4cd7de1af0220a0ec2803",
+    "name": "Uniswap V4 LP USDT/MRNAx",
+    "decimals": 18,
+    "symbol": "USDT/MRNAX",
+    "price": 9007199254740990,
+    "address": "0x2d485d2cc9060076836c2915bc94a9dd0b5c9b5188f4cd7de1af0220a0ec2803",
+    "addresses": {
+     "arbitrum": "0x2d485d2cc9060076836c2915bc94a9dd0b5c9b5188f4cd7de1af0220a0ec2803"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.528Z",
+    "createdAt": "2026-10-16T14:24:06.347Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "59126441-0843-4895-981a-c860bdf803fe",
+    "reserves": [
+     "1999.999999999999999986",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xef57edf77362c033ab576dc3ebc6f9e8c33b498f79d14a5ff576ee6f85f25acc": {
+    "key": "ethereum:0xef57edf77362c033ab576dc3ebc6f9e8c33b498f79d14a5ff576ee6f85f25acc",
+    "name": "Uniswap V4 LP wUSDC/MRNAon",
+    "decimals": 18,
+    "symbol": "WUSDC/MRNAON",
+    "price": 9007199254740990,
+    "address": "0xef57edf77362c033ab576dc3ebc6f9e8c33b498f79d14a5ff576ee6f85f25acc",
+    "addresses": {
+     "ethereum": "0xef57edf77362c033ab576dc3ebc6f9e8c33b498f79d14a5ff576ee6f85f25acc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.367Z",
+    "createdAt": "2026-09-28T10:37:34.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1503e7d4-eb9b-4ea3-a05f-779ac4f47734",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f": {
+    "key": "ethereum:0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "name": "Moderna xStock",
+    "decimals": 18,
+    "symbol": "MRNAX",
+    "price": 222.27,
+    "address": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f",
+    "addresses": {
+     "ethereum": "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2026-07-22T07:43:03.958Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19251795.445523117,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MRNAx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "moderna-xstock"
+    },
+    "tokenId": "cb9664e9-ca83-419b-a6f2-92c19dc5b411",
+    "totalSupply": "86614.45739651376809",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa2c1c0b4683a871187d4565eb63abf9aef5947ee": {
+    "key": "ethereum:0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+    "name": "Moderna (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "MRNAON",
+    "price": 216.73,
+    "address": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+    "addresses": {
+     "ethereum": "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "bsc": "0x01486675da0764ee780ea7cb65c33062e9b2d28c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 216304,
+    "image": "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+    "metrics": {
+     "volumeUsd1d": "511669.819",
+     "volumeUsd7d": "4549298.116"
+    },
+    "metadata": {},
+    "tokenId": "0ff63fc5-ab32-45c8-8c4d-7c2998e56c87",
+    "totalSupply": "998.1041867465981",
+    "circulatingSupply": "998.1041867465981",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa34d0667334074df2d5bfd259e79e6b9cf1fa8bf": {
+    "key": "robinhood:0xa34d0667334074df2d5bfd259e79e6b9cf1fa8bf",
+    "name": "Uniswap V3 Moderna  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "MRNA/USDG",
+    "price": 9007199254740990,
+    "address": "0xa34d0667334074df2d5bfd259e79e6b9cf1fa8bf",
+    "addresses": {
+     "robinhood": "0xa34d0667334074df2d5bfd259e79e6b9cf1fa8bf"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.165Z",
+    "createdAt": "2026-08-19T13:16:31.114Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 60149.14287694771,
+    "metrics": {
+     "apy": "14.569",
+     "baseApy": "14.569",
+     "volumeUsd1d": "2400.811",
+     "volumeUsd7d": "121339.211"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "b0ab3a0d-ccfa-43dc-88ef-cbd8b04253b8",
+    "reserves": [
+     "100.071193391825437745",
+     "38795.951631"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x48ce615c4fca451bbe07de395896307a04c97bc9": {
+    "key": "base:0x48ce615c4fca451bbe07de395896307a04c97bc9",
+    "name": "Aerodrome SlipStream USD Coin/Moderna, Inc. 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/MRNAC",
+    "price": 9007199254740990,
+    "address": "0x48ce615c4fca451bbe07de395896307a04c97bc9",
+    "addresses": {
+     "base": "0x48ce615c4fca451bbe07de395896307a04c97bc9"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102179188/large/MRNAc-icon-200.png?1791300887"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.579Z",
+    "createdAt": "2026-10-08T07:22:13.108Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000e215e9b76ecba02468"
+    ],
+    "liquidity": 6679.783367480516,
+    "metrics": {
+     "apy": "0.424",
+     "baseApy": "0.424",
+     "rewardApy": "0",
+     "volumeUsd1d": "155.219",
+     "volumeUsd7d": "11514.574"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "159042b9-50e7-4e33-980e-1c1e79971ff9",
+    "reserves": [
+     "4192.427269",
+     "10.34870248"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2e8d5845e5df7f6c400afe6f15679d1d403eef15771c56479cafc224e6b218c4": {
+    "key": "bsc:0x2e8d5845e5df7f6c400afe6f15679d1d403eef15771c56479cafc224e6b218c4",
+    "name": "Uniswap V4 LP MRNAon/USDT",
+    "decimals": 18,
+    "symbol": "MRNAON/USDT",
+    "price": 9007199254740990,
+    "address": "0x2e8d5845e5df7f6c400afe6f15679d1d403eef15771c56479cafc224e6b218c4",
+    "addresses": {
+     "bsc": "0x2e8d5845e5df7f6c400afe6f15679d1d403eef15771c56479cafc224e6b218c4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.060Z",
+    "createdAt": "2026-02-24T05:23:52.686Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x01486675da0764ee780ea7cb65c33062e9b2d28c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1316.456714340349,
+    "metrics": {
+     "apy": "54.794",
+     "baseApy": "54.794",
+     "volumeUsd1d": "2.325",
+     "volumeUsd7d": "11.643"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17000,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "89aa41a4-0a2e-4843-b933-136948d7ab28",
+    "reserves": [
+     "3.228600085999558166",
+     "617.251819763021303412"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x13507ea6623724e3d4e7fd8100674f39030d6c3216257e2b6bb1f1ea8482acf9": {
+    "key": "ethereum:0x13507ea6623724e3d4e7fd8100674f39030d6c3216257e2b6bb1f1ea8482acf9",
+    "name": "Uniswap V4 LP USDT/MRNAx",
+    "decimals": 18,
+    "symbol": "USDT/MRNAX",
+    "price": 9007199254740990,
+    "address": "0x13507ea6623724e3d4e7fd8100674f39030d6c3216257e2b6bb1f1ea8482acf9",
+    "addresses": {
+     "ethereum": "0x13507ea6623724e3d4e7fd8100674f39030d6c3216257e2b6bb1f1ea8482acf9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.856Z",
+    "createdAt": "2026-10-18T18:58:00.974Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xefd30445a4ec1f4b3e0a6f4d9bdbd215f805047f"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "e2bd5782-c32c-489d-b90d-2bbca6a255c0",
+    "reserves": [
+     "3999.999999999999999987",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x00df234893d728c32a95b6a0739f0a67f69a8ecd529b641c474dd060e2bf4520": {
+    "key": "robinhood:0x00df234893d728c32a95b6a0739f0a67f69a8ecd529b641c474dd060e2bf4520",
+    "name": "Uniswap V4 LP MRNA/USDG",
+    "decimals": 18,
+    "symbol": "MRNA/USDG",
+    "price": 9007199254740990,
+    "address": "0x00df234893d728c32a95b6a0739f0a67f69a8ecd529b641c474dd060e2bf4520",
+    "addresses": {
+     "robinhood": "0x00df234893d728c32a95b6a0739f0a67f69a8ecd529b641c474dd060e2bf4520"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.731Z",
+    "createdAt": "2026-09-16T03:58:13.369Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1451.2814569044158,
+    "metrics": {
+     "apy": "8.496",
+     "baseApy": "8.496",
+     "volumeUsd1d": "10.566",
+     "volumeUsd7d": "451.142"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "3.1969"
+    },
+    "tokenId": "134b51e6-4ec6-41c0-b017-0a281add8dfc",
+    "reserves": [
+     "4.388629852396736782",
+     "514.835619"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb40196272a6d2eb5edf6d93bc4dc39856ad95e0e": {
+    "key": "robinhood:0xb40196272a6d2eb5edf6d93bc4dc39856ad95e0e",
+    "name": "Uniswap V3 Moderna  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "MRNA/USDG",
+    "price": 9007199254740990,
+    "address": "0xb40196272a6d2eb5edf6d93bc4dc39856ad95e0e",
+    "addresses": {
+     "robinhood": "0xb40196272a6d2eb5edf6d93bc4dc39856ad95e0e"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.639Z",
+    "createdAt": "2026-09-08T09:33:49.512Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 161184.6156780474,
+    "metrics": {
+     "apy": "26.497",
+     "baseApy": "26.497",
+     "volumeUsd1d": "39004.14",
+     "volumeUsd7d": "2564889.396"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "0eca0905-5b16-4da7-80df-353e7a5d198c",
+    "reserves": [
+     "572.506013305124286589",
+     "39023.282559"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1fc943da01dc84af37f66ccad71153221ec368392d6b301b5d856d479c234cb3": {
+    "key": "ethereum:0x1fc943da01dc84af37f66ccad71153221ec368392d6b301b5d856d479c234cb3",
+    "name": "Uniswap V4 LP MRNAon/USDT",
+    "decimals": 18,
+    "symbol": "MRNAON/USDT",
+    "price": 9007199254740990,
+    "address": "0x1fc943da01dc84af37f66ccad71153221ec368392d6b301b5d856d479c234cb3",
+    "addresses": {
+     "ethereum": "0x1fc943da01dc84af37f66ccad71153221ec368392d6b301b5d856d479c234cb3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.075Z",
+    "createdAt": "2026-09-13T05:43:22.474Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2052.177199688599,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "101.874"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4300,
+     "feePercentage": "43.057"
+    },
+    "tokenId": "62773b64-faba-4e47-9ae4-d8b1316b52b5",
+    "reserves": [
+     "5.163318671792381845",
+     "933.932458"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe6bfbdccb6743530e657f5c6c2a10519625ea5676e856165c528885250d93300": {
+    "key": "ethereum:0xe6bfbdccb6743530e657f5c6c2a10519625ea5676e856165c528885250d93300",
+    "name": "Uniswap V4 LP USDC/MRNAon",
+    "decimals": 18,
+    "symbol": "USDC/MRNAON",
+    "price": 9007199254740990,
+    "address": "0xe6bfbdccb6743530e657f5c6c2a10519625ea5676e856165c528885250d93300",
+    "addresses": {
+     "ethereum": "0xe6bfbdccb6743530e657f5c6c2a10519625ea5676e856165c528885250d93300"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.796Z",
+    "createdAt": "2026-09-13T03:50:21.795Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee"
+    ],
+    "liquidity": 2169.4773060583284,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "624.422"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4500,
+     "feePercentage": "45.056"
+    },
+    "tokenId": "29506c26-a3d4-4546-9984-43565166fed8",
+    "reserves": [
+     "1383.391934",
+     "3.628532517670615742"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3d89b496a41a03dd2f7169eb944160ae4d02ed52d6fb43efb563abbef8c05f42": {
+    "key": "ethereum:0x3d89b496a41a03dd2f7169eb944160ae4d02ed52d6fb43efb563abbef8c05f42",
+    "name": "Uniswap V4 LP USDC/MRNAon",
+    "decimals": 18,
+    "symbol": "USDC/MRNAON",
+    "price": 9007199254740990,
+    "address": "0x3d89b496a41a03dd2f7169eb944160ae4d02ed52d6fb43efb563abbef8c05f42",
+    "addresses": {
+     "ethereum": "0x3d89b496a41a03dd2f7169eb944160ae4d02ed52d6fb43efb563abbef8c05f42"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.796Z",
+    "createdAt": "2026-03-03T06:14:20.586Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee"
+    ],
+    "liquidity": 530.4943007645171,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "124.916"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "d6c33ac4-e6e5-448c-ae52-3ee34a087cf0",
+    "reserves": [
+     "251.251841",
+     "1.288708324638919659"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb2087d2cbea1215af23b9238250cd22f983c9ffa10c139b3b12ebc346eeafeee": {
+    "key": "robinhood:0xb2087d2cbea1215af23b9238250cd22f983c9ffa10c139b3b12ebc346eeafeee",
+    "name": "Uniswap V4 LP MRNA/SHROOM",
+    "decimals": 18,
+    "symbol": "MRNA/SHROOM",
+    "price": 9007199254740990,
+    "address": "0xb2087d2cbea1215af23b9238250cd22f983c9ffa10c139b3b12ebc346eeafeee",
+    "addresses": {
+     "robinhood": "0xb2087d2cbea1215af23b9238250cd22f983c9ffa10c139b3b12ebc346eeafeee"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.173Z",
+    "createdAt": "2026-09-16T10:53:21.846Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 626.9923567171558,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "5fd7759e-a23e-4e3b-a11b-f53003cfc39a",
+    "reserves": [
+     "2.384531962159514001",
+     "24453.620968031080993198"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5fb00968834d782603b244e705a130058bf6cc4c0f53a1da98d5e392988db6aa": {
+    "key": "robinhood:0x5fb00968834d782603b244e705a130058bf6cc4c0f53a1da98d5e392988db6aa",
+    "name": "Uniswap V4 LP MRNA/USDG",
+    "decimals": 18,
+    "symbol": "MRNA/USDG",
+    "price": 9007199254740990,
+    "address": "0x5fb00968834d782603b244e705a130058bf6cc4c0f53a1da98d5e392988db6aa",
+    "addresses": {
+     "robinhood": "0x5fb00968834d782603b244e705a130058bf6cc4c0f53a1da98d5e392988db6aa"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.212Z",
+    "createdAt": "2026-09-08T15:09:07.947Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 35343.11641997505,
+    "metrics": {
+     "apy": "0.928",
+     "baseApy": "0.928",
+     "volumeUsd1d": "102.16",
+     "volumeUsd7d": "52644.746"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 78,
+     "feePercentage": "0.8793"
+    },
+    "tokenId": "37f05c59-331c-4918-82a1-e1d4ed38fabe",
+    "reserves": [
+     "106.705092421853270192",
+     "12574.383799"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe27ce9a2b10d034820b4c51343318a1a6a9ed3410f2c71227ae5c02f236605d5": {
+    "key": "ethereum:0xe27ce9a2b10d034820b4c51343318a1a6a9ed3410f2c71227ae5c02f236605d5",
+    "name": "Uniswap V4 LP EGP/MRNAon",
+    "decimals": 18,
+    "symbol": "EGP/MRNAON",
+    "price": 9007199254740990,
+    "address": "0xe27ce9a2b10d034820b4c51343318a1a6a9ed3410f2c71227ae5c02f236605d5",
+    "addresses": {
+     "ethereum": "0xe27ce9a2b10d034820b4c51343318a1a6a9ed3410f2c71227ae5c02f236605d5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71443/large/mrnaon_160x160.png?1767889634"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.759Z",
+    "createdAt": "2026-10-14T06:54:36.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xa2c1c0b4683a871187d4565eb63abf9aef5947ee"
+    ],
+    "liquidity": 20072.38816645622,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.24"
+    },
+    "tokenId": "fa701a1b-f1d6-42e8-b48a-e311e7d7b90a",
+    "reserves": [
+     "19999.999999999999999992",
+     "0.123974326289736268"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x43b07d15ce533bec5476d70c22a78a1b2b662155": {
+    "key": "robinhood:0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "name": "Moderna • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MRNA",
+    "price": 213.38,
+    "address": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "addresses": {
+     "robinhood": "0x43b07d15ce533bec5476d70c22a78a1b2b662155"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x43b07d15ce533bec5476d70c22a78a1b2b662155.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T20:14:27.258Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x43b07d15ce533bec5476d70c22a78a1b2b662155",
+    "liquidity": 653181.1497276,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "532904.512"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000645f1b5c9e1a4a0e8fa96d05e16df733",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "d7778551-61e5-4520-9627-e3ddc3865153",
+    "totalSupply": "3061.11702",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

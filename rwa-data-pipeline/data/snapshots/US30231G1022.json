@@ -1,0 +1,1520 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US30231G1022",
+ "ticker": "XOM",
+ "name": "Exxon Mobil",
+ "isin": "US30231G1022",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:17Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Exxon Mobil Corp",
+   "symbol": "XOM",
+   "slug": "exxon",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 180.761499537601,
+     "tokenized_market_cap": 843527.9672909728,
+     "tokenized_volume_24h": 1830480.82989215,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 27,
+   "asset_type": "stock",
+   "rwa_rank": 21,
+   "has_tokens": true,
+   "average_tokenized_price": 180.761499537601,
+   "tokenized_market_cap": 843527.9672909728,
+   "tokenized_volume_24h": 1830480.82989215,
+   "last_updated": "2026-10-18T20:14:24.783Z",
+   "tokens": [
+    {
+     "symbol": "XOMX",
+     "name": "Exxon Mobil tokenized stock (xStock)",
+     "price": 177.98907280842818,
+     "crypto_id": 37039,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 646052.59,
+     "volume_24h": 450.04095138
+    },
+    {
+     "symbol": "XOMon",
+     "name": "Exxon Mobil Tokenized Stock (Ondo)",
+     "price": 181.13743935234922,
+     "crypto_id": 39280,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 170191.71,
+     "volume_24h": 1832393.77941441
+    },
+    {
+     "symbol": "XOM",
+     "name": "Exxon Mobil Tokenized Stock (Robinhood)",
+     "price": 189.38219727940125,
+     "crypto_id": 40741,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 27636.25,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WXOMX",
+     "name": "Wrapped Exxon Mobil Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37230,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "XOM",
+     "name": "ExxonMobil Holdings Corporation (Derivatives)",
+     "price": 179.4992288463965,
+     "crypto_id": 42374,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "XOM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_XOM"
+    }
+   ]
+  },
+  "info": {
+   "37039": {
+    "id": 37039,
+    "symbol": "XOMX",
+    "name": "Exxon Mobil tokenized stock (xStock)",
+    "slug": "exxon-mobil-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37039.png",
+    "date_added": "2025-07-01T15:48:14.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsaHND8sHyfMfsWPj6kSdd5VwvCayZvjYgKmmcNL5qh"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsaHND8sHyfMfsWPj6kSdd5VwvCayZvjYgKmmcNL5qh",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQC4aTgTIycBGONrbP7vE75lRdVj-lyz8qYXc8jsMWZ2pEOv",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "39280": {
+    "id": 39280,
+    "symbol": "XOMon",
+    "name": "Exxon Mobil Tokenized Stock (Ondo)",
+    "slug": "exxon-mobil-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39280.png",
+    "date_added": "2026-01-08T15:44:33.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "qCYD74QnXzd9pzv6pGHQKJVwoibL6sNcPQDnpDiondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40741": {
+    "id": 40741,
+    "symbol": "XOM",
+    "name": "Exxon Mobil Tokenized Stock (Robinhood)",
+    "slug": "exxon-mobil-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40741.png",
+    "date_added": "2026-08-04T07:31:47.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xf9B46d3D1B22199D4D1025a9cEDB540A33F1a2d5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf9B46d3D1B22199D4D1025a9cEDB540A33F1a2d5",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "37230": {
+    "id": 37230,
+    "symbol": "WXOMX",
+    "name": "Wrapped Exxon Mobil Tokenized stock (xStock)",
+    "slug": "wrapped-exxon-mobil-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37230.png",
+    "date_added": "2025-07-07T05:00:17.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xe407Ca0C99338d210Ca06Aa9E4A5Eada8BE442de"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xe407Ca0C99338d210Ca06Aa9E4A5Eada8BE442de",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x448bc811f60eac772775dd53421380e8d4dc4338",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42374": {
+    "id": 42374,
+    "symbol": "XOM",
+    "name": "ExxonMobil Holdings Corporation (Derivatives)",
+    "slug": "exxonmobil-holdings-corporation-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42374.png",
+    "date_added": "2026-01-08T15:44:19.000Z",
+    "platform": null,
+    "contract_address": null
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x448bc811f60eac772775dd53421380e8d4dc4338",
+   "arbitrum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+   "bsc:0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+   "bsc:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+   "ethereum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+   "ethereum:0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+   "robinhood:0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+  ],
+  "exact": {
+   "bsc:0x4d209d275e3492ac08497a7a42915899c4dd5e86": {
+    "key": "bsc:0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+    "name": "Exxon Mobil (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "XOMON",
+    "price": 181.01,
+    "address": "0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+    "addresses": {
+     "ethereum": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+     "bsc": "0x4d209d275e3492ac08497a7a42915899c4dd5e86"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 170013,
+    "image": "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375",
+    "metrics": {
+     "volumeUsd1d": "1302718.836",
+     "volumeUsd7d": "9396038.172"
+    },
+    "metadata": {},
+    "tokenId": "601256cf-3ed5-41b5-a3a7-72c7942fb646",
+    "totalSupply": "939.5722332854493",
+    "circulatingSupply": "939.5722332854493",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "ethereum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "ethereum": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.016Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15488708.61810516,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "1cba4bf6-b26f-405c-8392-94ab7fbfce00",
+    "totalSupply": "86110.572180492352785278",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "bsc:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "bsc": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3015154.6185330697,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "4eaddb0a-4e6e-4da6-99e1-728ba85740ff",
+    "totalSupply": "16762.965578101237757751",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5": {
+    "key": "robinhood:0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "name": "ExxonMobil Holdings Corporation • Robinhood Token",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.21611310078742,
+    "address": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "addresses": {
+     "robinhood": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "liquidity": 26125.57398043819,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "11146.565"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000098d983331a5245e98847e635b93eb920",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1001039563764661900",
+     "currentMultiplier": "1.001039563764661900",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "b65277e4-967c-47e3-a1d2-2278a20a0d02",
+    "totalSupply": "145.77692557",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4": {
+    "key": "ethereum:0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+    "name": "Exxon Mobil (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "XOMON",
+    "price": 181.01,
+    "address": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+    "addresses": {
+     "ethereum": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+     "bsc": "0x4d209d275e3492ac08497a7a42915899c4dd5e86"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 170013,
+    "image": "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375",
+    "metrics": {
+     "volumeUsd1d": "1303678.725",
+     "volumeUsd7d": "9397102.008"
+    },
+    "metadata": {},
+    "tokenId": "601256cf-3ed5-41b5-a3a7-72c7942fb646",
+    "totalSupply": "939.5722332854493",
+    "circulatingSupply": "939.5722332854493",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "arbitrum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "arbitrum": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.975Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12218136.12034663,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "9cb8b43e-511d-4a0e-9c72-73f7357d48c6",
+    "totalSupply": "67927.592818961634497998",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "XOM": {
+    "total_items": 23,
+    "pages": 1,
+    "received": 23,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x24955fb6ea7f5589d4fc54eefef1974c1a2164b6f8aaf5d0b218903cb8055fe3": {
+    "key": "robinhood:0x24955fb6ea7f5589d4fc54eefef1974c1a2164b6f8aaf5d0b218903cb8055fe3",
+    "name": "Uniswap V4 LP USDG/XOM",
+    "decimals": 18,
+    "symbol": "USDG/XOM",
+    "price": 9007199254740990,
+    "address": "0x24955fb6ea7f5589d4fc54eefef1974c1a2164b6f8aaf5d0b218903cb8055fe3",
+    "addresses": {
+     "robinhood": "0x24955fb6ea7f5589d4fc54eefef1974c1a2164b6f8aaf5d0b218903cb8055fe3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:34.876Z",
+    "createdAt": "2026-10-13T13:16:10.524Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    ],
+    "liquidity": 1702.631780858755,
+    "metrics": {
+     "apy": "214.855",
+     "baseApy": "214.855",
+     "volumeUsd1d": "325.711",
+     "volumeUsd7d": "1307.45"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 298,
+     "feePercentage": "3.0771"
+    },
+    "tokenId": "ed348ae2-6637-485f-ac34-8e2255531f2a",
+    "reserves": [
+     "231.18243",
+     "8.210474635342874732"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785": {
+    "key": "ethereum:0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+    "name": "Dinari XOM",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.05,
+    "address": "0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+    "addresses": {
+     "arbitrum": "0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+     "ethereum": "0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+     "avalanche": "0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+     "base": "0x78bb8ff6baa486c31ce0ef1a157798f7a606565c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8171.98,
+    "image": "https://coin-images.coingecko.com/coins/images/102174953/large/dinari-logo-green-with-margin.png?1785402681",
+    "metrics": {
+     "volumeUsd1d": "79.478",
+     "volumeUsd7d": "569.458"
+    },
+    "metadata": {},
+    "tokenId": "7d95b532-3908-4ff9-b6a0-bd4e49d0a3a1",
+    "totalSupply": "45.6410923232925",
+    "circulatingSupply": "45.6410923232925",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4d209d275e3492ac08497a7a42915899c4dd5e86": {
+    "key": "bsc:0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+    "name": "Exxon Mobil (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "XOMON",
+    "price": 181.01,
+    "address": "0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+    "addresses": {
+     "ethereum": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+     "bsc": "0x4d209d275e3492ac08497a7a42915899c4dd5e86"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 170013,
+    "image": "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375",
+    "metrics": {
+     "volumeUsd1d": "1302718.836",
+     "volumeUsd7d": "9396038.172"
+    },
+    "metadata": {},
+    "tokenId": "601256cf-3ed5-41b5-a3a7-72c7942fb646",
+    "totalSupply": "939.5722332854493",
+    "circulatingSupply": "939.5722332854493",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6f74e536ff3400cb354cc01ada7978f1f8ec086206c2242d428825f7582fcca5": {
+    "key": "robinhood:0x6f74e536ff3400cb354cc01ada7978f1f8ec086206c2242d428825f7582fcca5",
+    "name": "Uniswap V4 LP ETH/XOM",
+    "decimals": 18,
+    "symbol": "ETH/XOM",
+    "price": 9007199254740990,
+    "address": "0x6f74e536ff3400cb354cc01ada7978f1f8ec086206c2242d428825f7582fcca5",
+    "addresses": {
+     "robinhood": "0x6f74e536ff3400cb354cc01ada7978f1f8ec086206c2242d428825f7582fcca5"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174170/large/0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5.png?1782444723"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.957Z",
+    "createdAt": "2026-07-23T13:51:07.832Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    ],
+    "liquidity": 2666.2190162358997,
+    "metrics": {
+     "apy": "24.928",
+     "baseApy": "24.928",
+     "volumeUsd1d": "35.743",
+     "volumeUsd7d": "2480.133"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "9d90a5c2-ddf9-49b3-815c-bebb01fc748c",
+    "reserves": [
+     "0.199101012569149831",
+     "12.283603607479828866"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe7142ed831b8d7dd51c73381ab3622be7d4be14013c8a143001cfb7f4b014637": {
+    "key": "ethereum:0xe7142ed831b8d7dd51c73381ab3622be7d4be14013c8a143001cfb7f4b014637",
+    "name": "Uniswap V4 LP wUSDC/XOMon",
+    "decimals": 18,
+    "symbol": "WUSDC/XOMON",
+    "price": 9007199254740990,
+    "address": "0xe7142ed831b8d7dd51c73381ab3622be7d4be14013c8a143001cfb7f4b014637",
+    "addresses": {
+     "ethereum": "0xe7142ed831b8d7dd51c73381ab3622be7d4be14013c8a143001cfb7f4b014637"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.844Z",
+    "createdAt": "2026-09-30T09:01:06.442Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "b0c9b5b9-773d-4462-bd72-1872a541e184",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8b249755b4ebaee431a8aa24854fded7a475c1fb05649f8e2007ae46389c2b3f": {
+    "key": "ethereum:0x8b249755b4ebaee431a8aa24854fded7a475c1fb05649f8e2007ae46389c2b3f",
+    "name": "Uniswap V4 LP EGP/XOMon",
+    "decimals": 18,
+    "symbol": "EGP/XOMON",
+    "price": 9007199254740990,
+    "address": "0x8b249755b4ebaee431a8aa24854fded7a475c1fb05649f8e2007ae46389c2b3f",
+    "addresses": {
+     "ethereum": "0x8b249755b4ebaee431a8aa24854fded7a475c1fb05649f8e2007ae46389c2b3f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.207Z",
+    "createdAt": "2026-10-14T06:54:33.772Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4"
+    ],
+    "liquidity": 20063.830307838223,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.66"
+    },
+    "tokenId": "0c2bbd15-7d82-4f25-b0aa-5faa688ce712",
+    "reserves": [
+     "19999.999999999999999974",
+     "0.161325824878379141"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "ethereum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "ethereum": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.016Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15488708.61810516,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "1cba4bf6-b26f-405c-8392-94ab7fbfce00",
+    "totalSupply": "86110.572180492352785278",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x42df0652f84892149d31d3ff9682f7304d07f909fa15c89110625cf92ffeb613": {
+    "key": "ethereum:0x42df0652f84892149d31d3ff9682f7304d07f909fa15c89110625cf92ffeb613",
+    "name": "Uniswap V4 LP USDT/XOMx",
+    "decimals": 18,
+    "symbol": "USDT/XOMX",
+    "price": 9007199254740990,
+    "address": "0x42df0652f84892149d31d3ff9682f7304d07f909fa15c89110625cf92ffeb613",
+    "addresses": {
+     "ethereum": "0x42df0652f84892149d31d3ff9682f7304d07f909fa15c89110625cf92ffeb613"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.975Z",
+    "createdAt": "2026-09-18T05:44:23.446Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    ],
+    "liquidity": 881.7952417218908,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95"
+    },
+    "tokenId": "e02a6d6f-50d9-446f-a526-7290705e3d77",
+    "reserves": [
+     "999.999999999999999993",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xaa88fe097d7ccfa7cb45764dc66a20cba93f138ab0f447e1db93d0ba244d162f": {
+    "key": "arbitrum:0xaa88fe097d7ccfa7cb45764dc66a20cba93f138ab0f447e1db93d0ba244d162f",
+    "name": "Uniswap V4 LP USDT/XOMx",
+    "decimals": 18,
+    "symbol": "USDT/XOMX",
+    "price": 9007199254740990,
+    "address": "0xaa88fe097d7ccfa7cb45764dc66a20cba93f138ab0f447e1db93d0ba244d162f",
+    "addresses": {
+     "arbitrum": "0xaa88fe097d7ccfa7cb45764dc66a20cba93f138ab0f447e1db93d0ba244d162f"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.253Z",
+    "createdAt": "2026-10-16T14:24:06.460Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "c791ef48-5948-468d-a315-a489297405ae",
+    "reserves": [
+     "1999.999999999999999994",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9596b6f7e08eef84096e435b1fcc9324357466f90a32f7713aed644b893c5186": {
+    "key": "robinhood:0x9596b6f7e08eef84096e435b1fcc9324357466f90a32f7713aed644b893c5186",
+    "name": "Uniswap V4 LP USDG/XOM",
+    "decimals": 18,
+    "symbol": "USDG/XOM",
+    "price": 9007199254740990,
+    "address": "0x9596b6f7e08eef84096e435b1fcc9324357466f90a32f7713aed644b893c5186",
+    "addresses": {
+     "robinhood": "0x9596b6f7e08eef84096e435b1fcc9324357466f90a32f7713aed644b893c5186"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174170/large/0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5.png?1782444723"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.748Z",
+    "createdAt": "2026-09-18T13:29:43.031Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    ],
+    "liquidity": 1578.087217941275,
+    "metrics": {
+     "apy": "132.154",
+     "baseApy": "132.154",
+     "volumeUsd1d": "184.491",
+     "volumeUsd7d": "4181.891"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "1409c581-f8a3-445f-a53a-1991bb02de2f",
+    "reserves": [
+     "309.748776",
+     "7.077145129400210879"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x315a2dca4b1b633d3a707c71d96243534c02f7c4": {
+    "key": "arbitrum:0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+    "name": "Dinari XOM",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.05,
+    "address": "0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+    "addresses": {
+     "arbitrum": "0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+     "ethereum": "0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+     "avalanche": "0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+     "base": "0x78bb8ff6baa486c31ce0ef1a157798f7a606565c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8171.98,
+    "image": "https://coin-images.coingecko.com/coins/images/102174953/large/dinari-logo-green-with-margin.png?1785402681",
+    "metrics": {
+     "volumeUsd1d": "79.478",
+     "volumeUsd7d": "568.77"
+    },
+    "metadata": {},
+    "tokenId": "7d95b532-3908-4ff9-b6a0-bd4e49d0a3a1",
+    "totalSupply": "45.6410923232925",
+    "circulatingSupply": "45.6410923232925",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x19c0c2c7cbc98b84475632bf66c55c29286eb83378cf92554a63e21374b79ceb": {
+    "key": "robinhood:0x19c0c2c7cbc98b84475632bf66c55c29286eb83378cf92554a63e21374b79ceb",
+    "name": "Uniswap V4 LP wUSDG/XOM",
+    "decimals": 18,
+    "symbol": "WUSDG/XOM",
+    "price": 9007199254740990,
+    "address": "0x19c0c2c7cbc98b84475632bf66c55c29286eb83378cf92554a63e21374b79ceb",
+    "addresses": {
+     "robinhood": "0x19c0c2c7cbc98b84475632bf66c55c29286eb83378cf92554a63e21374b79ceb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174170/large/0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5.png?1782444723"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.413Z",
+    "createdAt": "2026-08-26T18:40:39.834Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    ],
+    "liquidity": 10096.94821129166,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "b4d84dce-d482-4f95-8e70-94bf938cece0",
+    "reserves": [
+     "9999.997182",
+     "0.000018203610844449"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "bsc:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "bsc": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.117Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3015154.6185330697,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "4eaddb0a-4e6e-4da6-99e1-728ba85740ff",
+    "totalSupply": "16762.965578101237757751",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0d3ceedcbd0005f00cc0cabe6c61763603ca226fd39106511b8ede8e25dba80b": {
+    "key": "bsc:0x0d3ceedcbd0005f00cc0cabe6c61763603ca226fd39106511b8ede8e25dba80b",
+    "name": "PancakeSwap Infinity LP XOMon/USDT",
+    "decimals": 18,
+    "symbol": "XOMON/USDT",
+    "price": 9007199254740990,
+    "address": "0x0d3ceedcbd0005f00cc0cabe6c61763603ca226fd39106511b8ede8e25dba80b",
+    "addresses": {
+     "bsc": "0x0d3ceedcbd0005f00cc0cabe6c61763603ca226fd39106511b8ede8e25dba80b"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.955Z",
+    "createdAt": "2026-09-10T16:57:34.385Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4d209d275e3492ac08497a7a42915899c4dd5e86",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 746.2779213890177,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "90"
+    },
+    "tokenId": "cd0ab265-5ae9-4241-ba40-e05e07de28b1",
+    "reserves": [
+     "0.216084508446263414",
+     "707.799847770644829106"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb8ffc3b6e8e5fe02563ebef23c3fb99a1e8eace5": {
+    "key": "arbitrum:0xb8ffc3b6e8e5fe02563ebef23c3fb99a1e8eace5",
+    "name": "Exxon Mobil rStock",
+    "decimals": 18,
+    "symbol": "RXOM",
+    "price": 178.66,
+    "address": "0xb8ffc3b6e8e5fe02563ebef23c3fb99a1e8eace5",
+    "addresses": {
+     "arbitrum": "0xb8ffc3b6e8e5fe02563ebef23c3fb99a1e8eace5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 18316.83,
+    "image": "https://coin-images.coingecko.com/coins/images/102177336/large/XOM.png?1789117582",
+    "metrics": {
+     "volumeUsd1d": "357.541",
+     "volumeUsd7d": "17628.681"
+    },
+    "metadata": {},
+    "tokenId": "c0841097-465f-42db-afda-bb6ebd61d8f4",
+    "totalSupply": "102.522999216",
+    "circulatingSupply": "102.522999216",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5": {
+    "key": "robinhood:0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "name": "ExxonMobil Holdings Corporation • Robinhood Token",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.21611310078742,
+    "address": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "addresses": {
+     "robinhood": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xf9b46d3d1b22199d4d1025a9cedb540a33f1a2d5",
+    "liquidity": 26125.57398043819,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "11146.565"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000098d983331a5245e98847e635b93eb920",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1001039563764661900",
+     "currentMultiplier": "1.001039563764661900",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "b65277e4-967c-47e3-a1d2-2278a20a0d02",
+    "totalSupply": "145.77692557",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x78bb8ff6baa486c31ce0ef1a157798f7a606565c": {
+    "key": "base:0x78bb8ff6baa486c31ce0ef1a157798f7a606565c",
+    "name": "Dinari XOM",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.05,
+    "address": "0x78bb8ff6baa486c31ce0ef1a157798f7a606565c",
+    "addresses": {
+     "arbitrum": "0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+     "ethereum": "0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+     "avalanche": "0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+     "base": "0x78bb8ff6baa486c31ce0ef1a157798f7a606565c"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8171.98,
+    "image": "https://coin-images.coingecko.com/coins/images/102174953/large/dinari-logo-green-with-margin.png?1785402681",
+    "metrics": {
+     "volumeUsd1d": "79.478",
+     "volumeUsd7d": "569.428"
+    },
+    "metadata": {},
+    "tokenId": "7d95b532-3908-4ff9-b6a0-bd4e49d0a3a1",
+    "totalSupply": "45.6410923232925",
+    "circulatingSupply": "45.6410923232925",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4": {
+    "key": "ethereum:0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+    "name": "Exxon Mobil (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "XOMON",
+    "price": 181.01,
+    "address": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+    "addresses": {
+     "ethereum": "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4",
+     "bsc": "0x4d209d275e3492ac08497a7a42915899c4dd5e86"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T14:23:39.139Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 170013,
+    "image": "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375",
+    "metrics": {
+     "volumeUsd1d": "1303678.725",
+     "volumeUsd7d": "9397102.008"
+    },
+    "metadata": {},
+    "tokenId": "601256cf-3ed5-41b5-a3a7-72c7942fb646",
+    "totalSupply": "939.5722332854493",
+    "circulatingSupply": "939.5722332854493",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe407ca0c99338d210ca06aa9e4a5eada8be442de": {
+    "key": "ethereum:0xe407ca0c99338d210ca06aa9e4a5eada8be442de",
+    "name": "Wrapped Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "WXOMX",
+    "price": 183.0445203301648,
+    "address": "0xe407ca0c99338d210ca06aa9e4a5eada8be442de",
+    "addresses": {
+     "ethereum": "0xe407ca0c99338d210ca06aa9e4a5eada8be442de"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:46.451Z",
+    "createdAt": "2026-07-03T12:42:52.971Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    ],
+    "liquidity": 3316.9652179391705,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/XOMx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "421.261"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "a1b882fa-7578-43dd-a9b4-0794e88321b1",
+    "totalSupply": "18.121084487840587854",
+    "reserves": [
+     "18.440902974032193081"
+    ],
+    "pricePerShare": "1.017648970535190999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9f7aa852fa045257beda4605b6f6145d2e783e49d56d755f22ec146e2eb622a9": {
+    "key": "ethereum:0x9f7aa852fa045257beda4605b6f6145d2e783e49d56d755f22ec146e2eb622a9",
+    "name": "Uniswap V4 LP wUSDC/XOMon",
+    "decimals": 18,
+    "symbol": "WUSDC/XOMON",
+    "price": 9007199254740990,
+    "address": "0x9f7aa852fa045257beda4605b6f6145d2e783e49d56d755f22ec146e2eb622a9",
+    "addresses": {
+     "ethereum": "0x9f7aa852fa045257beda4605b6f6145d2e783e49d56d755f22ec146e2eb622a9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71421/large/xomon_160x160.png?1767881375"
+    ],
+    "updatedAt": "2026-10-18T20:17:50.298Z",
+    "createdAt": "2026-09-28T10:39:14.487Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xf05ad9840924ea6f977ebccb3b1da87e31dcd0b4"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "25c776f7-f73d-4917-ad87-cb2756a8186e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xeedb0273c5af792745180e9ff568cd01550ffa13": {
+    "key": "arbitrum:0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "name": "Exxon Mobil xStock",
+    "decimals": 18,
+    "symbol": "XOMX",
+    "price": 179.87,
+    "address": "0xeedb0273c5af792745180e9ff568cd01550ffa13",
+    "addresses": {
+     "arbitrum": "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.975Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12218136.12034663,
+    "image": "https://coin-images.coingecko.com/coins/images/55644/large/Ticker_XOM__Company_Name_ExxonMobil__size_200x200_2x.png?1746863917",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "exxon-mobil-xstock"
+    },
+    "tokenId": "9cb8b43e-511d-4a0e-9c72-73f7357d48c6",
+    "totalSupply": "67927.592818961634497998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0545b2323156eaef80df2477a6b54a15de5c9735e3001b8115254c75b207735a": {
+    "key": "ethereum:0x0545b2323156eaef80df2477a6b54a15de5c9735e3001b8115254c75b207735a",
+    "name": "Uniswap V4 LP USDT/XOMx",
+    "decimals": 18,
+    "symbol": "USDT/XOMX",
+    "price": 9007199254740990,
+    "address": "0x0545b2323156eaef80df2477a6b54a15de5c9735e3001b8115254c75b207735a",
+    "addresses": {
+     "ethereum": "0x0545b2323156eaef80df2477a6b54a15de5c9735e3001b8115254c75b207735a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:50.188Z",
+    "createdAt": "2026-10-18T18:57:59.671Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xeedb0273c5af792745180e9ff568cd01550ffa13"
+    ],
+    "liquidity": 3527.180966887563,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "921367e5-da46-4d3b-bc65-3388beac005b",
+    "reserves": [
+     "3999.999999999999999989",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xe7118dc777c5b9f95a65a5c759d1994802b5abd4": {
+    "key": "avalanche:0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+    "name": "Dinari XOM",
+    "decimals": 18,
+    "symbol": "XOM",
+    "price": 179.05,
+    "address": "0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+    "addresses": {
+     "arbitrum": "0x315a2dca4b1b633d3a707c71d96243534c02f7c4",
+     "ethereum": "0x52926f7f983d3d7ddcbe644a809d67bbe4a9e785",
+     "avalanche": "0xe7118dc777c5b9f95a65a5c759d1994802b5abd4",
+     "base": "0x78bb8ff6baa486c31ce0ef1a157798f7a606565c"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8171.98,
+    "image": "https://coin-images.coingecko.com/coins/images/102174953/large/dinari-logo-green-with-margin.png?1785402681",
+    "metrics": {
+     "volumeUsd1d": "79.478",
+     "volumeUsd7d": "568.766"
+    },
+    "metadata": {},
+    "tokenId": "7d95b532-3908-4ff9-b6a0-bd4e49d0a3a1",
+    "totalSupply": "45.6410923232925",
+    "circulatingSupply": "45.6410923232925",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

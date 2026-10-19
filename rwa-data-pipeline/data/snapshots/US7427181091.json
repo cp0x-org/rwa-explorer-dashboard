@@ -1,0 +1,4222 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US7427181091",
+ "ticker": "PG",
+ "name": "Procter & Gamble",
+ "isin": "US7427181091",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:20Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Procter & Gamble Co",
+   "symbol": "PG",
+   "slug": "procter-gamble",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 156.0091264837851,
+     "tokenized_market_cap": 3175443.42102336,
+     "tokenized_volume_24h": 43724.22778111,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 50,
+   "asset_type": "stock",
+   "rwa_rank": 33,
+   "has_tokens": true,
+   "average_tokenized_price": 156.0091264837851,
+   "tokenized_market_cap": 3175443.42102336,
+   "tokenized_volume_24h": 43724.22778111,
+   "last_updated": "2026-10-18T20:14:20.350Z",
+   "tokens": [
+    {
+     "symbol": "PGon",
+     "name": "Procter & Gamble Tokenized Stock (Ondo)",
+     "price": 158.361495371378,
+     "crypto_id": 38096,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2852012.48,
+     "volume_24h": 32339.56014888
+    },
+    {
+     "symbol": "PGX",
+     "name": "Procter & Gamble tokenized stock (xStock)",
+     "price": 149.0438200628678,
+     "crypto_id": 37040,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 322411.42,
+     "volume_24h": 11237.8682714
+    },
+    {
+     "symbol": "WPGX",
+     "name": "Wrapped Procter & Gamble Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37116,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "PG",
+     "market_url": "https://www.binance.com/en/stocks/EQ_PG"
+    }
+   ]
+  },
+  "info": {
+   "38096": {
+    "id": 38096,
+    "symbol": "PGon",
+    "name": "Procter & Gamble Tokenized Stock (Ondo)",
+    "slug": "procter-gamble-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38096.png",
+    "date_added": "2025-09-03T10:55:08.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x339ce23a355ed6D513DD3e1462975C4eCD86823a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x339ce23a355ed6D513DD3e1462975C4eCD86823a",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "GZ8v4NdSG7CTRZqHMgNsTPRULeVi8CpdWd9wZY8ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37040": {
+    "id": 37040,
+    "symbol": "PGX",
+    "name": "Procter & Gamble tokenized stock (xStock)",
+    "slug": "procter-gamble-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37040.png",
+    "date_added": "2025-07-01T18:39:23.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsYdjDjNUygZ7yGKfQaB6TxLh2gC6RRjzLtLAGJrhzV"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsYdjDjNUygZ7yGKfQaB6TxLh2gC6RRjzLtLAGJrhzV",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBGDL8J1dhHeH5vUvTb1bdtQaKRmj3oWG6iMwityBOa0B31",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "37116": {
+    "id": 37116,
+    "symbol": "WPGX",
+    "name": "Wrapped Procter & Gamble Tokenized stock (xStock)",
+    "slug": "wrapped-procter-gamble-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37116.png",
+    "date_added": "2025-07-03T06:09:13.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xf8154adaA88Cb3929B27EE627A530ED9fFA17e49"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf8154adaA88Cb3929B27EE627A530ED9fFA17e49",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0afc19943fa98e9e9e90fc4ab4d4d3c13e162232",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x0afc19943fa98e9e9e90fc4ab4d4d3c13e162232",
+   "arbitrum:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+   "bsc:0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+   "bsc:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+   "ethereum:0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+   "ethereum:0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+  ],
+  "exact": {
+   "ethereum:0x339ce23a355ed6d513dd3e1462975c4ecd86823a": {
+    "key": "ethereum:0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+    "name": "Procter & Gamble (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PGON",
+    "price": 158.53,
+    "address": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+    "addresses": {
+     "bsc": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+     "ethereum": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2855102,
+    "image": "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+    "metrics": {
+     "volumeUsd1d": "4393.25",
+     "volumeUsd7d": "280994.119"
+    },
+    "metadata": {},
+    "tokenId": "ea4a6366-cf83-47e3-b1ae-9e7e3c73a01c",
+    "totalSupply": "18009.507137082328",
+    "circulatingSupply": "18009.507137082328",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "bsc:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "bsc": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.120Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2682905.338621907,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "fa38b9af-8849-4662-a8bb-4f48db6e7efb",
+    "totalSupply": "16977.190018489569829715",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "arbitrum:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "arbitrum": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.378Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10079914.632367853,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "2c835349-67ab-4b4a-9ee0-1d80cfc316dd",
+    "totalSupply": "63784.817011756335431554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "ethereum:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "ethereum": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11237767.41046045,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "456acb2d-ebc2-4cc6-aced-4bded8f67d04",
+    "totalSupply": "71111.607988739157934647",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x400f1e257f86d25578a0928c94dc95115f09d5c9": {
+    "key": "bsc:0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+    "name": "Procter & Gamble (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PGON",
+    "price": 158.53,
+    "address": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+    "addresses": {
+     "bsc": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+     "ethereum": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2855102,
+    "image": "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+    "metrics": {
+     "volumeUsd1d": "4393.137",
+     "volumeUsd7d": "281666.092"
+    },
+    "metadata": {},
+    "tokenId": "ea4a6366-cf83-47e3-b1ae-9e7e3c73a01c",
+    "totalSupply": "18009.507137082328",
+    "circulatingSupply": "18009.507137082328",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "PG": {
+    "total_items": 93,
+    "pages": 1,
+    "received": 93,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x339ce23a355ed6d513dd3e1462975c4ecd86823a": {
+    "key": "ethereum:0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+    "name": "Procter & Gamble (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PGON",
+    "price": 158.53,
+    "address": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+    "addresses": {
+     "bsc": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+     "ethereum": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2855102,
+    "image": "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+    "metrics": {
+     "volumeUsd1d": "4393.25",
+     "volumeUsd7d": "280994.119"
+    },
+    "metadata": {},
+    "tokenId": "ea4a6366-cf83-47e3-b1ae-9e7e3c73a01c",
+    "totalSupply": "18009.507137082328",
+    "circulatingSupply": "18009.507137082328",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702": {
+    "key": "ethereum:0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702",
+    "name": "Uniswap V4 LP EGP/SPGIon",
+    "decimals": 18,
+    "symbol": "EGP/SPGION",
+    "price": 9007199254740990,
+    "address": "0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702",
+    "addresses": {
+     "ethereum": "0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.482Z",
+    "createdAt": "2026-10-13T13:13:56.500Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 20075.79559199617,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.85"
+    },
+    "tokenId": "9bdcfb40-8677-4f4b-bf0c-e30658aaba0e",
+    "reserves": [
+     "19999.999999999999999977",
+     "0.066161974774860838"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x090cf6c87f604deb7367e15bd398444b0a74debb": {
+    "key": "ethereum:0x090cf6c87f604deb7367e15bd398444b0a74debb",
+    "name": "HyperGold",
+    "decimals": 18,
+    "symbol": "HYPG",
+    "price": 1.324645161590808e-05,
+    "address": "0x090cf6c87f604deb7367e15bd398444b0a74debb",
+    "addresses": {
+     "ethereum": "0x090cf6c87f604deb7367e15bd398444b0a74debb"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6623225.80795404,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "2.75",
+     "volumeUsd7d": "33.35"
+    },
+    "metadata": {},
+    "tokenId": "c1eda643-d000-4b24-adbc-f65b229990a0",
+    "totalSupply": "500000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0a4b571c4932d84de11a6bca96bb9ba5bf27ff1c": {
+    "key": "bsc:0x0a4b571c4932d84de11a6bca96bb9ba5bf27ff1c",
+    "name": "Uniswap V3 Tether USD/OpenGradient 0.3%",
+    "decimals": 18,
+    "symbol": "USDT/OPG",
+    "price": 9007199254740990,
+    "address": "0x0a4b571c4932d84de11a6bca96bb9ba5bf27ff1c",
+    "addresses": {
+     "bsc": "0x0a4b571c4932d84de11a6bca96bb9ba5bf27ff1c"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.170Z",
+    "createdAt": "2026-04-22T19:41:14.392Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+    ],
+    "liquidity": 15733.152856515335,
+    "metrics": {
+     "apy": "26.394",
+     "baseApy": "26.394",
+     "volumeUsd1d": "3801.798",
+     "volumeUsd7d": "42459.041"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "7d9662b7-9dc9-4a02-ad23-c45b315598c0",
+    "reserves": [
+     "3249.855169354650013659",
+     "104909.224343342950400513"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c": {
+    "key": "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "name": "Uniswap V3 WETH/RobinhoodTrumpGMEShrekNokia4663Doge 1%",
+    "decimals": 18,
+    "symbol": "WETH/NASDAQ",
+    "price": 9007199254740990,
+    "address": "0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "addresses": {
+     "robinhood": "0x434de0f0800d9653d26f96becd9702d8d740ee3c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.254Z",
+    "createdAt": "2026-07-17T08:50:20.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    ],
+    "liquidity": 4635.908952705062,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "25.754"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "830109f7-1fad-4e43-a717-6d18a83ba4bd",
+    "reserves": [
+     "0.311208307223458652",
+     "824831725.06329220529433026"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "optimism:0xb3d2afbbc8485e3c89c8e511470988526763eaa8": {
+    "key": "optimism:0xb3d2afbbc8485e3c89c8e511470988526763eaa8",
+    "name": "Beefy Moo Morpho Op Gauntlet Prime USDC",
+    "decimals": 18,
+    "symbol": "MOOMORPHOOPGAUNTLETPRIMEUSDC",
+    "price": 1031166085396.905,
+    "address": "0xb3d2afbbc8485e3c89c8e511470988526763eaa8",
+    "addresses": {
+     "optimism": "0xb3d2afbbc8485e3c89c8e511470988526763eaa8"
+    },
+    "platform": "beefy",
+    "network": "optimism",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.864Z",
+    "createdAt": "2026-01-21T12:13:54.677Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b2c639c533813f4aa9d7837caf62653d097ff85"
+    ],
+    "liquidity": 27366.39814247967,
+    "metrics": {
+     "apy": "3.944",
+     "baseApy": "3.944",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-199.939"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "0a6a4fa6-1e97-403a-84fb-03652e04b06d",
+    "totalSupply": "0.000000026539272897",
+    "reserves": [
+     "27372.858137"
+    ],
+    "pricePerShare": "1.031409498038442058",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "bsc:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "bsc": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.120Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2682905.338621907,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "fa38b9af-8849-4662-a8bb-4f48db6e7efb",
+    "totalSupply": "16977.190018489569829715",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x47b36ddb9dd12a8411f78226f55e8c3f0d65481f": {
+    "key": "bsc:0x47b36ddb9dd12a8411f78226f55e8c3f0d65481f",
+    "name": "PG&E (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "PCGON",
+    "price": 13.15,
+    "address": "0x47b36ddb9dd12a8411f78226f55e8c3f0d65481f",
+    "addresses": {
+     "ethereum": "0x193fdf644451cc394b28b9cec2f5d32e2b4de515",
+     "bsc": "0x47b36ddb9dd12a8411f78226f55e8c3f0d65481f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2306.58,
+    "image": "https://coin-images.coingecko.com/coins/images/71456/large/pcgon_160x160.png?1767890294",
+    "metrics": {
+     "volumeUsd1d": "257.936",
+     "volumeUsd7d": "1869.909"
+    },
+    "metadata": {},
+    "tokenId": "bce89de4-8810-4306-8c01-7e4d79b6dc0b",
+    "totalSupply": "175.35873537654575",
+    "circulatingSupply": "175.35873537654575",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb828dc3d77360f053f1379cd8676bac6141684f3": {
+    "key": "base:0xb828dc3d77360f053f1379cd8676bac6141684f3",
+    "name": "Aerodrome SlipStream USD Coin/OpenGradient 0.3%",
+    "decimals": 18,
+    "symbol": "USDC/OPG",
+    "price": 9007199254740990,
+    "address": "0xb828dc3d77360f053f1379cd8676bac6141684f3",
+    "addresses": {
+     "base": "0xb828dc3d77360f053f1379cd8676bac6141684f3"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.843Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 3439.073849441565,
+    "metrics": {
+     "apy": "711.114",
+     "baseApy": "711.114",
+     "rewardApy": "0",
+     "volumeUsd1d": "22383.85",
+     "volumeUsd7d": "144222.234"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "1e7ff480-f9b2-4fef-9b1e-9f8796cc2415",
+    "reserves": [
+     "1015.362393",
+     "20366.256213062838472708"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa9709869577dcdf5c77a6cc914e98690527fee5c": {
+    "key": "base:0xa9709869577dcdf5c77a6cc914e98690527fee5c",
+    "name": "Beefy CLM VIRTUAL-OPG Reward Pool",
+    "decimals": 18,
+    "symbol": "RMOOBEEFYPANCAKEBASEVIRTUAL-OPG",
+    "price": 0.16287177301626649,
+    "address": "0xa9709869577dcdf5c77a6cc914e98690527fee5c",
+    "addresses": {
+     "base": "0xa9709869577dcdf5c77a6cc914e98690527fee5c"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://icons.llamao.fi/icons/protocols/virtuals-protocol"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.304Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcde66ac08d755406e6c869acabdd78774f17f180"
+    ],
+    "poolAddress": "0xcde66ac08d755406e6c869acabdd78774f17f180",
+    "liquidity": 3885.682519947963,
+    "metrics": {
+     "apy": "6.37",
+     "baseApy": "6.37",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "108.818"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-base-virtual-opg",
+     "providerId": "pancakeswap",
+     "tickSpacing": 200,
+     "managerAddress": "0xcde66ac08d755406e6c869acabdd78774f17f180",
+     "strategyAddress": "0x36ed259a3e04b1282d0f1dfceb2ad9553aa47269",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xa9709869577dcdf5c77a6cc914e98690527fee5c",
+     "standardVaultAddress": "0xd649c776fe0416a0a35b8df1b4d7432a819b7345",
+     "depositTokenAddresses": [
+      "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+      "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+     ]
+    },
+    "tokenId": "2ae534e9-c41d-4ae2-afe3-f420eed7618a",
+    "totalSupply": "23857.310864786179253685",
+    "reserves": [
+     "23857.310864786179253685"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8f448a09e59df8fc8ac4b7c595c64283de3b9f8c0e57ca0969a4f14fdc16e9c3": {
+    "key": "ethereum:0x8f448a09e59df8fc8ac4b7c595c64283de3b9f8c0e57ca0969a4f14fdc16e9c3",
+    "name": "Uniswap V4 LP upGAMMAusdc/GGB",
+    "decimals": 18,
+    "symbol": "UPGAMMAUSDC/GGB",
+    "price": 9007199254740990,
+    "address": "0x8f448a09e59df8fc8ac4b7c595c64283de3b9f8c0e57ca0969a4f14fdc16e9c3",
+    "addresses": {
+     "ethereum": "0x8f448a09e59df8fc8ac4b7c595c64283de3b9f8c0e57ca0969a4f14fdc16e9c3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-07-09T00:35:49.417Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x998d7b14c123c1982404562b68eddb057b0477cb",
+     "0xd0dc619f7a4420394360718e8b4bac75a723333e"
+    ],
+    "liquidity": 16006.074555855188,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19900,
+     "feePercentage": "99.5005"
+    },
+    "tokenId": "7e0a9ede-2146-41d4-ae01-76c64dcda414",
+    "reserves": [
+     "1.65968",
+     "15998.818504948398354248"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3e76bb02286bfeaa89dd35f11253f2cbce634f91": {
+    "key": "arbitrum:0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+    "name": "Pleasing Gold",
+    "decimals": 18,
+    "symbol": "PGOLD",
+    "price": 4130.07,
+    "address": "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+    "addresses": {
+     "arbitrum": "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-26T06:25:23.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 80557137,
+    "image": "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+    "metrics": {
+     "volumeUsd1d": "2.612",
+     "volumeUsd7d": "42.587"
+    },
+    "metadata": {},
+    "tokenId": "2ca1d8dd-2c1e-406c-bb0c-a9106be922a5",
+    "totalSupply": "19505.05044",
+    "circulatingSupply": "19505.05044",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb648689d1bea725b21fb8e164abfba4b05fea88a99e9c96276ac531a950487b6": {
+    "key": "base:0xb648689d1bea725b21fb8e164abfba4b05fea88a99e9c96276ac531a950487b6",
+    "name": "Uniswap V4 LP USDC/OPG",
+    "decimals": 18,
+    "symbol": "USDC/OPG",
+    "price": 9007199254740990,
+    "address": "0xb648689d1bea725b21fb8e164abfba4b05fea88a99e9c96276ac531a950487b6",
+    "addresses": {
+     "base": "0xb648689d1bea725b21fb8e164abfba4b05fea88a99e9c96276ac531a950487b6"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.215Z",
+    "createdAt": "2026-04-22T01:15:14.665Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 967.0730789154826,
+    "metrics": {
+     "apy": "0.042",
+     "baseApy": "0.042",
+     "volumeUsd1d": "0.036",
+     "volumeUsd7d": "0.098"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 600,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "6b0f860b-0153-4aa0-9b17-ea8f5d26ab08",
+    "reserves": [
+     "630.262185",
+     "2831.165334580841508154"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xcde66ac08d755406e6c869acabdd78774f17f180": {
+    "key": "base:0xcde66ac08d755406e6c869acabdd78774f17f180",
+    "name": "Beefy CLM VIRTUAL-OPG",
+    "decimals": 18,
+    "symbol": "COWPANCAKEBASEVIRTUAL-OPG",
+    "price": 0.16287177301626649,
+    "address": "0xcde66ac08d755406e6c869acabdd78774f17f180",
+    "addresses": {
+     "base": "0xcde66ac08d755406e6c869acabdd78774f17f180"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://icons.llamao.fi/icons/protocols/virtuals-protocol"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.304Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "poolAddress": "0x2b75b90fb01e5fc87d4d263033841397b015ceeb",
+    "liquidity": 3885.6825199479626,
+    "metrics": {
+     "apy": "6.37",
+     "baseApy": "6.37",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "108.818"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-base-virtual-opg",
+     "providerId": "pancakeswap",
+     "tickSpacing": 200,
+     "managerAddress": "0xcde66ac08d755406e6c869acabdd78774f17f180",
+     "strategyAddress": "0x36ed259a3e04b1282d0f1dfceb2ad9553aa47269",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xa9709869577dcdf5c77a6cc914e98690527fee5c",
+     "standardVaultAddress": "0xd649c776fe0416a0a35b8df1b4d7432a819b7345",
+     "depositTokenAddresses": [
+      "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+      "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+     ]
+    },
+    "tokenId": "eb7e83ba-dbdc-44f2-966c-59018595a09c",
+    "totalSupply": "23857.310864786179254685",
+    "reserves": [
+     "3498.810790513502129855",
+     "14318.565212331017126236"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x1292e838197d2c83a2bef77effe673f8402cb362405d3760ccd960a7de2225d6": {
+    "key": "arbitrum:0x1292e838197d2c83a2bef77effe673f8402cb362405d3760ccd960a7de2225d6",
+    "name": "Uniswap V4 LP PGx/USDT",
+    "decimals": 18,
+    "symbol": "PGX/USDT",
+    "price": 9007199254740990,
+    "address": "0x1292e838197d2c83a2bef77effe673f8402cb362405d3760ccd960a7de2225d6",
+    "addresses": {
+     "arbitrum": "0x1292e838197d2c83a2bef77effe673f8402cb362405d3760ccd960a7de2225d6"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.968Z",
+    "createdAt": "2026-10-16T14:24:01.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "84d41380-185b-4bc1-8ee7-a9d14d7cf5f6",
+    "reserves": [
+     "0",
+     "1999.999999999999999991"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9ae81a8373a85308aa719b88331c453a0865d71b": {
+    "key": "ethereum:0x9ae81a8373a85308aa719b88331c453a0865d71b",
+    "name": "Upshift Gamma BTC Vault",
+    "decimals": 8,
+    "symbol": "UPGAMMABTC",
+    "price": 82237.00980288,
+    "address": "0x9ae81a8373a85308aa719b88331c453a0865d71b",
+    "addresses": {
+     "ethereum": "0x9ae81a8373a85308aa719b88331c453a0865d71b"
+    },
+    "platform": "upshift",
+    "network": "ethereum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/upshift",
+     "https://icons.llamao.fi/icons/protocols/upshift"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.998Z",
+    "createdAt": "2026-07-16T08:49:17.911Z",
+    "verifiedAt": "2026-07-23T10:50:53.317Z",
+    "tokens": [
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+    ],
+    "poolAddress": "0x3e4ef6ccc7e4a045c9d3f48b08813d59df14e256",
+    "liquidity": 3303918.052313039,
+    "customCmsImageUrl": "https://icons.llamao.fi/icons/protocols/upshift",
+    "metrics": {
+     "apy": "9.671",
+     "baseApy": "9.671",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0.5,
+      "withdraw": 0,
+      "performance": 0.1
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [
+      "5x Upshift Points"
+     ],
+     "interface": "ERC20",
+     "description": "The Upshift Gamma BTC vault leverages market neutral positioning across multiple DeFi protocols to maximize risk-adjusted yields. Through systematic deployment of delta-hedged strategies and cross-chain farming opportunities, the vault generates consistent returns while prioritizing capital protection and downside mitigation.",
+     "socialLinks": {
+      "github": "https://github.com/GammaStrategies",
+      "discord": "https://discord.gg/gammastrategies",
+      "twitter": "https://x.com/GammaStrategies",
+      "website": "https://gamma.xyz",
+      "telegram": "https://t.me/upshiftfi",
+      "documentation": "https://docs.gamma.xyz"
+     }
+    },
+    "tokenId": "94b64b0e-32eb-4fb7-8a42-c61ff79e8164",
+    "totalSupply": "40.17556159",
+    "reserves": [
+     "40.92248898"
+    ],
+    "pricePerShare": "1.01859158",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "arbitrum:0xfac7263954c5fee95e5a993e364e6b62160c3958bbe485b496cadab113c97363": {
+    "key": "arbitrum:0xfac7263954c5fee95e5a993e364e6b62160c3958bbe485b496cadab113c97363",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0xfac7263954c5fee95e5a993e364e6b62160c3958bbe485b496cadab113c97363",
+    "addresses": {
+     "arbitrum": "0xfac7263954c5fee95e5a993e364e6b62160c3958bbe485b496cadab113c97363"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.968Z",
+    "createdAt": "2026-04-23T19:44:16.603Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 2981.137159163629,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "4a50e903-f5fa-45f9-84b8-14785bfe4aee",
+    "reserves": [
+     "0.681503804879964928",
+     "166.518038"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84": {
+    "key": "ethereum:0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84",
+    "name": "Uniswap V4 LP wUSDC/SPGIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SPGION",
+    "price": 9007199254740990,
+    "address": "0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84",
+    "addresses": {
+     "ethereum": "0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.560Z",
+    "createdAt": "2026-09-28T10:37:14.780Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2195564b-1db2-4d93-89d5-e62aa2eed61a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd649c776fe0416a0a35b8df1b4d7432a819b7345": {
+    "key": "base:0xd649c776fe0416a0a35b8df1b4d7432a819b7345",
+    "name": "Beefy Moo Beefy Pancake Base VIRTUAL-OPG",
+    "decimals": 18,
+    "symbol": "MOOBEEFYPANCAKEBASEVIRTUAL-OPG",
+    "price": 0.21634941729490548,
+    "address": "0xd649c776fe0416a0a35b8df1b4d7432a819b7345",
+    "addresses": {
+     "base": "0xd649c776fe0416a0a35b8df1b4d7432a819b7345"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://icons.llamao.fi/icons/protocols/virtuals-protocol"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.795Z",
+    "createdAt": "2026-08-26T12:36:11.895Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcde66ac08d755406e6c869acabdd78774f17f180"
+    ],
+    "liquidity": 3893.782641647795,
+    "metrics": {
+     "apy": "6.37",
+     "baseApy": "6.37",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "108.818"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "24b8fa65-88d4-4da0-95f4-317589572fd0",
+    "totalSupply": "17997.65717113158353318",
+    "reserves": [
+     "23852.783177924195972575"
+    ],
+    "pricePerShare": "1.325327121809181435",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3f142c3fab8de3639b220f91c782f2015be4d784": {
+    "key": "bsc:0x3f142c3fab8de3639b220f91c782f2015be4d784",
+    "name": "Beefy CLM USDT-OPG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPBSCUSDT-OPG",
+    "price": 0.1570699439674663,
+    "address": "0x3f142c3fab8de3639b220f91c782f2015be4d784",
+    "addresses": {
+     "bsc": "0x3f142c3fab8de3639b220f91c782f2015be4d784"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.401Z",
+    "createdAt": "2026-08-26T12:35:12.284Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+    ],
+    "poolAddress": "0x0a4b571c4932d84de11a6bca96bb9ba5bf27ff1c",
+    "liquidity": 564.6292836303455,
+    "metrics": {
+     "apy": "32.123",
+     "baseApy": "32.123",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-315.676"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-bsc-usdt-opg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x3f142c3fab8de3639b220f91c782f2015be4d784",
+     "strategyAddress": "0x55fddd17e0c3c9feeea7697d7dc1283e0ccaf109",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5",
+     "depositTokenAddresses": [
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+     ]
+    },
+    "tokenId": "0a46f1ad-e385-4a78-b0d4-a15ba0505ba1",
+    "totalSupply": "3594.763386095665550202",
+    "reserves": [
+     "202.673639723029306167",
+     "3042.645128385610761005"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5bf63e6d252f0a6ac08bfd749504f52bf53176b180f97e2e20dd17e2c4f7c859": {
+    "key": "bsc:0x5bf63e6d252f0a6ac08bfd749504f52bf53176b180f97e2e20dd17e2c4f7c859",
+    "name": "Uniswap V4 LP USDT/OPG",
+    "decimals": 18,
+    "symbol": "USDT/OPG",
+    "price": 9007199254740990,
+    "address": "0x5bf63e6d252f0a6ac08bfd749504f52bf53176b180f97e2e20dd17e2c4f7c859",
+    "addresses": {
+     "bsc": "0x5bf63e6d252f0a6ac08bfd749504f52bf53176b180f97e2e20dd17e2c4f7c859"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:21.305Z",
+    "createdAt": "2026-04-22T19:41:41.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+    ],
+    "liquidity": 3516.3192397110724,
+    "metrics": {
+     "apy": "33.004",
+     "baseApy": "33.004",
+     "volumeUsd1d": "375.174",
+     "volumeUsd7d": "3975.121"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 150,
+     "feePercentage": "0.8493"
+    },
+    "tokenId": "b4cb50cf-6722-4e18-9813-1839474c659c",
+    "reserves": [
+     "1137.330438744656398599",
+     "19996.678069559721188393"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xdc7523513c67945039c1290e4b8dd2c36387cd6aadf9e4ccad1b5c21d13ce5b2": {
+    "key": "base:0xdc7523513c67945039c1290e4b8dd2c36387cd6aadf9e4ccad1b5c21d13ce5b2",
+    "name": "Uniswap V4 LP ETH/OPG",
+    "decimals": 18,
+    "symbol": "ETH/OPG",
+    "price": 9007199254740990,
+    "address": "0xdc7523513c67945039c1290e4b8dd2c36387cd6aadf9e4ccad1b5c21d13ce5b2",
+    "addresses": {
+     "base": "0xdc7523513c67945039c1290e4b8dd2c36387cd6aadf9e4ccad1b5c21d13ce5b2"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.243Z",
+    "createdAt": "2026-04-22T01:15:16.452Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 515.1287874326888,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5"
+    },
+    "tokenId": "53a0f6cc-8568-406c-bd49-b9bfc1b66589",
+    "reserves": [
+     "0.172205797795874655",
+     "950.411488482392146479"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x2a0c9a36a640797a8430a218428f3f3dd3739ac6": {
+    "key": "arbitrum:0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
+    "name": "Uniswap V3 Pleasing Gold/USD0 0.3%",
+    "decimals": 18,
+    "symbol": "PGOLD/USD0",
+    "price": 9007199254740990,
+    "address": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
+    "addresses": {
+     "arbitrum": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6"
+    },
+    "platform": "uniswap-v3",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.930Z",
+    "createdAt": "2025-10-26T06:26:53.015Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+    ],
+    "liquidity": 334208.88577929104,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "12.675"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "ffb6c2d6-38ca-45dd-801e-f180824e36dc",
+    "reserves": [
+     "80.553545030665091594",
+     "1518.718934"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "arbitrum:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "arbitrum": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:47.378Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10079914.632367853,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "2c835349-67ab-4b4a-9ee0-1d80cfc316dd",
+    "totalSupply": "63784.817011756335431554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1": {
+    "key": "robinhood:0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1",
+    "name": "Uniswap V4 LP pGLD5x/USDG",
+    "decimals": 18,
+    "symbol": "PGLD5X/USDG",
+    "price": 9007199254740990,
+    "address": "0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1",
+    "addresses": {
+     "robinhood": "0xbbab00c4b584e414a1f0ae3c8ebd821fa54df25c33f947fde1967365728976d1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.476Z",
+    "createdAt": "2026-10-02T17:28:13.965Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x37a2afaa98648f2e13658623885f821ac8365609",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 678.9351485617428,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "199.653"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4d1e27f0-aee2-4af7-8b2e-bef33b6a6b76",
+    "reserves": [
+     "5.15428530172563695",
+     "318.289806"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0x01d35cbc2070a3b76693ce2b6364eae24eb88591": {
+    "key": "polygon:0x01d35cbc2070a3b76693ce2b6364eae24eb88591",
+    "name": "Polygen",
+    "decimals": 18,
+    "symbol": "PGEN",
+    "price": 1.484e-05,
+    "address": "0x01d35cbc2070a3b76693ce2b6364eae24eb88591",
+    "addresses": {
+     "ethereum": "0xf6719e1a8fcbb1b9c290019e37e004966a8916c9",
+     "polygon": "0x01d35cbc2070a3b76693ce2b6364eae24eb88591"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7387.42,
+    "image": "https://assets.coingecko.com/coins/images/21476/large/polygen-logo_1.jpeg?1696520837",
+    "metrics": {
+     "volumeUsd1d": "10.089",
+     "volumeUsd7d": "92.841"
+    },
+    "metadata": {},
+    "tokenId": "ecc0897f-56f5-4653-ba3d-51d60dd1032d",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "497769295.207642",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x8582924d47688e81292a72f2833133c5dbc320d9": {
+    "key": "base:0x8582924d47688e81292a72f2833133c5dbc320d9",
+    "name": "Uniswap V3 USD Coin/OpenGradient 1%",
+    "decimals": 18,
+    "symbol": "USDC/OPG",
+    "price": 9007199254740990,
+    "address": "0x8582924d47688e81292a72f2833133c5dbc320d9",
+    "addresses": {
+     "base": "0x8582924d47688e81292a72f2833133c5dbc320d9"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.047Z",
+    "createdAt": "2026-08-21T23:29:44.119Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 1570.1009932435095,
+    "metrics": {
+     "apy": "244.522",
+     "baseApy": "244.522",
+     "volumeUsd1d": "1052",
+     "volumeUsd7d": "13450.354"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "12da9f53-16bb-4b2c-801d-9b1d706c1f95",
+    "reserves": [
+     "779.604574",
+     "6643.368279780987129798"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc1145a543a87630a94bd07af34c8a0d0e914c0a80df1529385afb24b4bc100f2": {
+    "key": "ethereum:0xc1145a543a87630a94bd07af34c8a0d0e914c0a80df1529385afb24b4bc100f2",
+    "name": "Uniswap V4 LP VPGon/wUSDC",
+    "decimals": 18,
+    "symbol": "VPGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xc1145a543a87630a94bd07af34c8a0d0e914c0a80df1529385afb24b4bc100f2",
+    "addresses": {
+     "ethereum": "0xc1145a543a87630a94bd07af34c8a0d0e914c0a80df1529385afb24b4bc100f2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.524Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "70924b0c-8e97-4628-8e12-1e809b9dc22e",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb": {
+    "key": "base:0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb",
+    "name": "OpenGradient",
+    "decimals": 18,
+    "symbol": "OPG",
+    "price": 0.119018,
+    "address": "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb",
+    "addresses": {
+     "base": "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb",
+     "bsc": "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-04-17T00:28:16.202Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27370375,
+    "image": "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+    "metrics": {
+     "volumeUsd1d": "8684895.525",
+     "volumeUsd7d": "72691829.312"
+    },
+    "metadata": {},
+    "tokenId": "d87069d8-3d59-4e7a-9b50-f39332322dc8",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "229968750",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4db1823a16138470828a6b1a0909327c504e27221a706ad621c76e4467aa38c8": {
+    "key": "ethereum:0x4db1823a16138470828a6b1a0909327c504e27221a706ad621c76e4467aa38c8",
+    "name": "Uniswap V4 LP USDT/PGx",
+    "decimals": 18,
+    "symbol": "USDT/PGX",
+    "price": 9007199254740990,
+    "address": "0x4db1823a16138470828a6b1a0909327c504e27221a706ad621c76e4467aa38c8",
+    "addresses": {
+     "ethereum": "0x4db1823a16138470828a6b1a0909327c504e27221a706ad621c76e4467aa38c8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.636Z",
+    "createdAt": "2026-10-18T18:58:06.421Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "f0ce1a98-ccb4-4ca0-8e91-a8cce1f5591c",
+    "reserves": [
+     "3999.999999999999999995",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x53cb652aa3bd4ed2f7987ff9d2eca6fb9c371cfed852516ce631e0f58e94a0d6": {
+    "key": "arbitrum:0x53cb652aa3bd4ed2f7987ff9d2eca6fb9c371cfed852516ce631e0f58e94a0d6",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x53cb652aa3bd4ed2f7987ff9d2eca6fb9c371cfed852516ce631e0f58e94a0d6",
+    "addresses": {
+     "arbitrum": "0x53cb652aa3bd4ed2f7987ff9d2eca6fb9c371cfed852516ce631e0f58e94a0d6"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.746Z",
+    "createdAt": "2026-08-18T12:42:27.890Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 2001.6800950526576,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.4205"
+    },
+    "tokenId": "f016be19-8f95-42ca-9c7e-88280e005e3e",
+    "reserves": [
+     "0.000013261551969233",
+     "2002.097819"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f": {
+    "key": "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32562.877"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x2cad7a1b877fe864e7ab8ae27432a5ed39406a59cf9c948a787d4d19899cd593": {
+    "key": "base:0x2cad7a1b877fe864e7ab8ae27432a5ed39406a59cf9c948a787d4d19899cd593",
+    "name": "Uniswap V4 LP ETH/OPG",
+    "decimals": 18,
+    "symbol": "ETH/OPG",
+    "price": 9007199254740990,
+    "address": "0x2cad7a1b877fe864e7ab8ae27432a5ed39406a59cf9c948a787d4d19899cd593",
+    "addresses": {
+     "base": "0x2cad7a1b877fe864e7ab8ae27432a5ed39406a59cf9c948a787d4d19899cd593"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.644Z",
+    "createdAt": "2026-04-22T01:15:11.036Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 504.06392899916074,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 600,
+     "feePercentage": "3"
+    },
+    "tokenId": "0d85b358-3c3d-4178-96f8-c3338a07a117",
+    "reserves": [
+     "0.125660302446671106",
+     "1770.414639301883162906"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3b1736da9ddfba1f475ee7b71dc252cb91e1054ca3d67ffed2080a8b77eb77ef": {
+    "key": "arbitrum:0x3b1736da9ddfba1f475ee7b71dc252cb91e1054ca3d67ffed2080a8b77eb77ef",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x3b1736da9ddfba1f475ee7b71dc252cb91e1054ca3d67ffed2080a8b77eb77ef",
+    "addresses": {
+     "arbitrum": "0x3b1736da9ddfba1f475ee7b71dc252cb91e1054ca3d67ffed2080a8b77eb77ef"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.284Z",
+    "createdAt": "2026-04-23T19:44:15.238Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 22560.950001337653,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "4cf40207-2849-4bdc-9aac-224a72cb132a",
+    "reserves": [
+     "5.270640165924149308",
+     "793.024325"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8dacd1bd1db244ec372268628db3ba59d35caf55347983581f2bb8078b5106ed": {
+    "key": "arbitrum:0x8dacd1bd1db244ec372268628db3ba59d35caf55347983581f2bb8078b5106ed",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x8dacd1bd1db244ec372268628db3ba59d35caf55347983581f2bb8078b5106ed",
+    "addresses": {
+     "arbitrum": "0x8dacd1bd1db244ec372268628db3ba59d35caf55347983581f2bb8078b5106ed"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.284Z",
+    "createdAt": "2026-08-18T12:42:27.890Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 3163.167612014461,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15800,
+     "feePercentage": "79.021"
+    },
+    "tokenId": "22978f85-f206-410e-a107-59672a3ba717",
+    "reserves": [
+     "0.760420157514883075",
+     "22.584462"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa37700398c859ba847d2709457b480288def8039": {
+    "key": "ethereum:0xa37700398c859ba847d2709457b480288def8039",
+    "name": "UniswapV2 LP HYPG/WETH",
+    "decimals": 18,
+    "symbol": "HYPG/WETH",
+    "price": 0.3526362548727567,
+    "address": "0xa37700398c859ba847d2709457b480288def8039",
+    "addresses": {
+     "ethereum": "0xa37700398c859ba847d2709457b480288def8039"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:10.135Z",
+    "createdAt": "2025-09-23T08:37:04.546Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x090cf6c87f604deb7367e15bd398444b0a74debb",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 2493.5148711275397,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6.624"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "4b23332e-83ec-4254-8d17-a8d0276c0403",
+    "totalSupply": "7071.067811865475244008",
+    "reserves": [
+     "94137208.830804928404095062",
+     "0.533546870532441116"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0636066cec43597b2eb9e743a7c0e82c58c6bffaba22dae7bc5b012d37d6c751": {
+    "key": "bsc:0x0636066cec43597b2eb9e743a7c0e82c58c6bffaba22dae7bc5b012d37d6c751",
+    "name": "PancakeSwap Infinity LP OPG/USDC",
+    "decimals": 18,
+    "symbol": "OPG/USDC",
+    "price": 9007199254740990,
+    "address": "0x0636066cec43597b2eb9e743a7c0e82c58c6bffaba22dae7bc5b012d37d6c751",
+    "addresses": {
+     "bsc": "0x0636066cec43597b2eb9e743a7c0e82c58c6bffaba22dae7bc5b012d37d6c751"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.899Z",
+    "createdAt": "2026-08-19T08:35:35.240Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5feccd17c393caf1001d18164236a37e731fcb9d",
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ],
+    "liquidity": 810702.7393305501,
+    "metrics": {
+     "apy": "2.28",
+     "baseApy": "2.28",
+     "volumeUsd1d": "512825.165",
+     "volumeUsd7d": "7997876.894"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0xb0baa371b899950b4ef6a27c21baf5ef7c434d0f",
+     "tickSpacing": 10,
+     "feePercentage": "0.0099"
+    },
+    "tokenId": "b137630c-7141-46e4-a306-3b96c869f02b",
+    "reserves": [
+     "5455125.362285201128002236",
+     "161482.738888467740048059"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4": {
+    "key": "arbitrum:0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+    "name": "Dinari PG",
+    "decimals": 18,
+    "symbol": "PG",
+    "price": 159.47,
+    "address": "0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+    "addresses": {
+     "arbitrum": "0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+     "avalanche": "0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+     "ethereum": "0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+     "base": "0x437b5acc7d6f0eacb97431e649c61e98badb3f92"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4030.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102174958/large/dinari-logo-green-with-margin.png?1785402699",
+    "metrics": {
+     "volumeUsd1d": "89.275",
+     "volumeUsd7d": "402.95"
+    },
+    "metadata": {},
+    "tokenId": "235c5a98-d5d0-4ade-9d8d-a9d9d6d6003a",
+    "totalSupply": "25.273954892",
+    "circulatingSupply": "25.273954892",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xfb512de589144174e3b1988e905eca88575a4d12": {
+    "key": "arbitrum:0xfb512de589144174e3b1988e905eca88575a4d12",
+    "name": "Progressive rStock",
+    "decimals": 18,
+    "symbol": "RPGR",
+    "price": 208.6,
+    "address": "0xfb512de589144174e3b1988e905eca88575a4d12",
+    "addresses": {
+     "arbitrum": "0xfb512de589144174e3b1988e905eca88575a4d12"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 600,
+    "image": "https://coin-images.coingecko.com/coins/images/102177391/large/PGR.png?1789117763",
+    "metrics": {
+     "volumeUsd1d": "222.496",
+     "volumeUsd7d": "1456.668"
+    },
+    "metadata": {},
+    "tokenId": "2da4acad-b0d6-4529-91dc-e6ec1571c332",
+    "totalSupply": "2.8764",
+    "circulatingSupply": "2.8764",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe0ae52e75b38b605e9c879a570ee1e7bcc66254b": {
+    "key": "bsc:0xe0ae52e75b38b605e9c879a570ee1e7bcc66254b",
+    "name": "CrypGPT",
+    "decimals": 18,
+    "symbol": "CGPT",
+    "price": 0.088653,
+    "address": "0xe0ae52e75b38b605e9c879a570ee1e7bcc66254b",
+    "addresses": {
+     "bsc": "0xe0ae52e75b38b605e9c879a570ee1e7bcc66254b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-18T12:58:29.436Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13754787,
+    "image": "https://coin-images.coingecko.com/coins/images/69931/large/IMG_2631.jpeg?1760091340",
+    "metrics": {
+     "volumeUsd1d": "1682303.119",
+     "volumeUsd7d": "10876905.565"
+    },
+    "metadata": {},
+    "tokenId": "80429d0e-a266-440c-84b6-58b9d3c1a433",
+    "totalSupply": "749999999.98",
+    "circulatingSupply": "155138603.8100307",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcc6aec20d8a5e721a685124e3673945ca8797a04": {
+    "key": "ethereum:0xcc6aec20d8a5e721a685124e3673945ca8797a04",
+    "name": "SushiSwap LP HYPG/WETH",
+    "decimals": 18,
+    "symbol": "HYPG/WETH",
+    "price": 0.3525212800935468,
+    "address": "0xcc6aec20d8a5e721a685124e3673945ca8797a04",
+    "addresses": {
+     "ethereum": "0xcc6aec20d8a5e721a685124e3673945ca8797a04"
+    },
+    "platform": "sushiswap",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.007Z",
+    "createdAt": "2025-09-13T07:33:27.607Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x090cf6c87f604deb7367e15bd398444b0a74debb",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 2492.701876667092,
+    "metrics": {
+     "apy": "0.12",
+     "baseApy": "0.12",
+     "volumeUsd1d": "2.746",
+     "volumeUsd7d": "15.608"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "03a5b04a-205d-446e-bf96-5cc5564f6968",
+    "totalSupply": "7071.067811865475244008",
+    "reserves": [
+     "94078629.334803936809764371",
+     "0.533531023319962282"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x584bed2973b14455c08e26f566646092e2c0ed90527013bfcfcd60fa5e4ae6d2": {
+    "key": "base:0x584bed2973b14455c08e26f566646092e2c0ed90527013bfcfcd60fa5e4ae6d2",
+    "name": "Uniswap V4 LP USDC/AIPG",
+    "decimals": 18,
+    "symbol": "USDC/AIPG",
+    "price": 9007199254740990,
+    "address": "0x584bed2973b14455c08e26f566646092e2c0ed90527013bfcfcd60fa5e4ae6d2",
+    "addresses": {
+     "base": "0x584bed2973b14455c08e26f566646092e2c0ed90527013bfcfcd60fa5e4ae6d2"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/33878/large/AIPG_small_logo.png?1716327006",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.626Z",
+    "createdAt": "2025-11-04T12:11:59.235Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xa1c0decafe3e9bf06a5f29b7015cd373a9854608"
+    ],
+    "liquidity": 3187.154562649836,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "14.474"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "23f6bad7-e747-4fa2-8e74-6661e597d648",
+    "reserves": [
+     "1592.37529",
+     "1060502.658124705684627394"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa90424d5d3e770e8644103ab503ed775dd1318fd": {
+    "key": "ethereum:0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "name": "Procter & Gamble xStock",
+    "decimals": 18,
+    "symbol": "PGX",
+    "price": 158.03,
+    "address": "0xa90424d5d3e770e8644103ab503ed775dd1318fd",
+    "addresses": {
+     "ethereum": "0xa90424d5d3e770e8644103ab503ed775dd1318fd"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11237767.41046045,
+    "image": "https://coin-images.coingecko.com/coins/images/55636/large/Ticker_PG__Company_Name_Proctor___Gamble__size_200x200_2x.png?1746863267",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "procter-gamble-xstock"
+    },
+    "tokenId": "456acb2d-ebc2-4cc6-aced-4bded8f67d04",
+    "totalSupply": "71111.607988739157934647",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9": {
+    "key": "ethereum:0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9",
+    "name": "Vishay Precision Group (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VPGON",
+    "price": 61.73,
+    "address": "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9",
+    "addresses": {
+     "bsc": "0xad8920afa9d158f5ebab77c9ffcad650d72e473d",
+     "ethereum": "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3268.71,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "13.518",
+     "volumeUsd7d": "1115.797"
+    },
+    "metadata": {},
+    "tokenId": "bf7bdc7d-9d6e-4053-b9d2-03ef784da32b",
+    "totalSupply": "52.94833230454323",
+    "circulatingSupply": "52.94833230454323",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5f234c1065ab9f3302a3268a133b882a26c521600cc73ad860be68f6ebb18bcd": {
+    "key": "arbitrum:0x5f234c1065ab9f3302a3268a133b882a26c521600cc73ad860be68f6ebb18bcd",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x5f234c1065ab9f3302a3268a133b882a26c521600cc73ad860be68f6ebb18bcd",
+    "addresses": {
+     "arbitrum": "0x5f234c1065ab9f3302a3268a133b882a26c521600cc73ad860be68f6ebb18bcd"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.409Z",
+    "createdAt": "2026-08-18T12:42:27.890Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 621.8214571766363,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "631dff83-219f-405f-a048-0c2f0b5ea040",
+    "reserves": [
+     "0.147703468377302145",
+     "11.798578"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5340c7b63cef225e7c5e4620d4ff6c57ee585dd1": {
+    "key": "ethereum:0x5340c7b63cef225e7c5e4620d4ff6c57ee585dd1",
+    "name": "UniswapV2 LP RPG/USDT",
+    "decimals": 18,
+    "symbol": "RPG/USDT",
+    "price": 150971.75373243392,
+    "address": "0x5340c7b63cef225e7c5e4620d4ff6c57ee585dd1",
+    "addresses": {
+     "ethereum": "0x5340c7b63cef225e7c5e4620d4ff6c57ee585dd1"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:10.551Z",
+    "createdAt": "2025-09-10T07:25:10.600Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e5c8c387c5eba2ecbc137ad012aed5fe729e251",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2598.7568208346493,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "bd5e4be6-de5d-47d0-9171-64ed19a1c568",
+    "totalSupply": "0.017213530058347244",
+    "reserves": [
+     "259384.941994883922321199",
+     "1300.598483"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8": {
+    "key": "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32351.587"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d": {
+    "key": "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "name": "RobinhoodTrumpGMEShrekNokia4663Doge",
+    "decimals": 18,
+    "symbol": "NASDAQ",
+    "price": 4.7391270798009295e-06,
+    "address": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "addresses": {
+     "robinhood": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-16T20:16:31.944Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4739.12707980093,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "18.22",
+     "volumeUsd7d": "30.7"
+    },
+    "metadata": {},
+    "tokenId": "3f9e42b8-6af7-4f2d-b1a9-36dac85aedf3",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x93c6572a49a0bdab6469aeb8c33671746b2b5f7d": {
+    "key": "ethereum:0x93c6572a49a0bdab6469aeb8c33671746b2b5f7d",
+    "name": "UniswapV2 LP WETH/PGEN",
+    "decimals": 18,
+    "symbol": "WETH/PGEN",
+    "price": 0.3855221588486382,
+    "address": "0x93c6572a49a0bdab6469aeb8c33671746b2b5f7d",
+    "addresses": {
+     "ethereum": "0x93c6572a49a0bdab6469aeb8c33671746b2b5f7d"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://assets.coingecko.com/coins/images/21476/large/polygen-logo_1.jpeg?1696520837"
+    ],
+    "updatedAt": "2026-10-18T20:15:11.020Z",
+    "createdAt": "2024-04-15T09:31:08.725Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xf6719e1a8fcbb1b9c290019e37e004966a8916c9"
+    ],
+    "liquidity": 1795.128781837309,
+    "metrics": {
+     "apy": "0.621",
+     "baseApy": "0.621",
+     "volumeUsd1d": "10.189",
+     "volumeUsd7d": "10.189"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "b12905e4-88c5-4e00-af93-c15bca09c73e",
+    "totalSupply": "4656.356945080563730815",
+    "reserves": [
+     "0.378805923106242424",
+     "61328889.193056855483774095"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xaa4a8253039a63e3dd062cc18a0d1d74b6bd66cc": {
+    "key": "arbitrum:0xaa4a8253039a63e3dd062cc18a0d1d74b6bd66cc",
+    "name": "Vishay Precision Group rStock",
+    "decimals": 18,
+    "symbol": "RVPG",
+    "price": 60.05,
+    "address": "0xaa4a8253039a63e3dd062cc18a0d1d74b6bd66cc",
+    "addresses": {
+     "arbitrum": "0xaa4a8253039a63e3dd062cc18a0d1d74b6bd66cc"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1484.56,
+    "image": "https://coin-images.coingecko.com/coins/images/102177326/large/0a58afaa477cd29b95951034af0eda7a.png?1789117549",
+    "metrics": {
+     "volumeUsd1d": "63.674",
+     "volumeUsd7d": "846.021"
+    },
+    "metadata": {},
+    "tokenId": "e4aa5781-ca43-4bdc-a065-4f944950ba5a",
+    "totalSupply": "25.72290638",
+    "circulatingSupply": "24.72290638",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5dcf84ce0f5490ca257cc935d4f87d5fc351930400fd8eef04cffb1b2b3ea0ae": {
+    "key": "arbitrum:0x5dcf84ce0f5490ca257cc935d4f87d5fc351930400fd8eef04cffb1b2b3ea0ae",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x5dcf84ce0f5490ca257cc935d4f87d5fc351930400fd8eef04cffb1b2b3ea0ae",
+    "addresses": {
+     "arbitrum": "0x5dcf84ce0f5490ca257cc935d4f87d5fc351930400fd8eef04cffb1b2b3ea0ae"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.409Z",
+    "createdAt": "2026-08-19T16:24:09.795Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 3228.2176588659827,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3900,
+     "feePercentage": "39.061"
+    },
+    "tokenId": "7d81f5d7-db90-4385-ab5c-804fbae88b04",
+    "reserves": [
+     "0.722337060741854386",
+     "244.972848"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbcf05d1b8ce1e870ff430b0d6239ba23da6a996d85261e8c9576c8d136673fad": {
+    "key": "ethereum:0xbcf05d1b8ce1e870ff430b0d6239ba23da6a996d85261e8c9576c8d136673fad",
+    "name": "Morpho USDC / PGNGI+",
+    "decimals": 12,
+    "symbol": "USDC/PGNGI+",
+    "price": 1.0011119886525508,
+    "address": "0xbcf05d1b8ce1e870ff430b0d6239ba23da6a996d85261e8c9576c8d136673fad",
+    "addresses": {
+     "ethereum": "0xbcf05d1b8ce1e870ff430b0d6239ba23da6a996d85261e8c9576c8d136673fad"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.391Z",
+    "createdAt": "2026-10-14T18:43:28.596Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "poolAddress": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+    "liquidity": 163742.54942737732,
+    "metrics": {
+     "apy": "7.035",
+     "baseApy": "7.035",
+     "borrowApy": "7.693",
+     "baseBorrowApy": "7.693",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "163581.044"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "oracle": {
+      "type": "ChainlinkOracleV2",
+      "address": "0x02228c6B4d37fdF148a8031e9518025052d8d3b3"
+     },
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "b06dd4be-5b9f-45c8-a39a-90d6fcb2d395",
+    "totalSupply": "163554.79910852617",
+    "totalBorrow": "150026.497229658467",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf6719e1a8fcbb1b9c290019e37e004966a8916c9": {
+    "key": "ethereum:0xf6719e1a8fcbb1b9c290019e37e004966a8916c9",
+    "name": "Polygen",
+    "decimals": 18,
+    "symbol": "PGEN",
+    "price": 1.484e-05,
+    "address": "0xf6719e1a8fcbb1b9c290019e37e004966a8916c9",
+    "addresses": {
+     "ethereum": "0xf6719e1a8fcbb1b9c290019e37e004966a8916c9",
+     "polygon": "0x01d35cbc2070a3b76693ce2b6364eae24eb88591"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7387.42,
+    "image": "https://assets.coingecko.com/coins/images/21476/large/polygen-logo_1.jpeg?1696520837",
+    "metrics": {
+     "volumeUsd1d": "10.089",
+     "volumeUsd7d": "92.841"
+    },
+    "metadata": {},
+    "tokenId": "ecc0897f-56f5-4653-ba3d-51d60dd1032d",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "497769295.207642",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8": {
+    "key": "ethereum:0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+    "name": "Dinari PG",
+    "decimals": 18,
+    "symbol": "PG",
+    "price": 159.47,
+    "address": "0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+    "addresses": {
+     "arbitrum": "0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+     "avalanche": "0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+     "ethereum": "0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+     "base": "0x437b5acc7d6f0eacb97431e649c61e98badb3f92"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4030.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102174958/large/dinari-logo-green-with-margin.png?1785402699",
+    "metrics": {
+     "volumeUsd1d": "89.275",
+     "volumeUsd7d": "403.119"
+    },
+    "metadata": {},
+    "tokenId": "235c5a98-d5d0-4ade-9d8d-a9d9d6d6003a",
+    "totalSupply": "25.273954892",
+    "circulatingSupply": "25.273954892",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0e5c8c387c5eba2ecbc137ad012aed5fe729e251": {
+    "key": "ethereum:0x0e5c8c387c5eba2ecbc137ad012aed5fe729e251",
+    "name": "Rangers Protocol Gas",
+    "decimals": 18,
+    "symbol": "RPG",
+    "price": 0.005009058125504795,
+    "address": "0x0e5c8c387c5eba2ecbc137ad012aed5fe729e251",
+    "addresses": {
+     "ethereum": "0x0e5c8c387c5eba2ecbc137ad012aed5fe729e251"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-10T07:23:59.052Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 105190.22063560071,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "09a4c9e7-49ec-4bec-a874-2da5441fe03d",
+    "totalSupply": "21000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xad8920afa9d158f5ebab77c9ffcad650d72e473d": {
+    "key": "bsc:0xad8920afa9d158f5ebab77c9ffcad650d72e473d",
+    "name": "Vishay Precision Group (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "VPGON",
+    "price": 61.73,
+    "address": "0xad8920afa9d158f5ebab77c9ffcad650d72e473d",
+    "addresses": {
+     "bsc": "0xad8920afa9d158f5ebab77c9ffcad650d72e473d",
+     "ethereum": "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3268.71,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "13.518",
+     "volumeUsd7d": "1120.85"
+    },
+    "metadata": {},
+    "tokenId": "bf7bdc7d-9d6e-4053-b9d2-03ef784da32b",
+    "totalSupply": "52.94833230454323",
+    "circulatingSupply": "52.94833230454323",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4927370e1053eb0ed11cfeb9f6972e2460a7f560": {
+    "key": "robinhood:0x4927370e1053eb0ed11cfeb9f6972e2460a7f560",
+    "name": "RPG",
+    "decimals": 18,
+    "symbol": "RPG",
+    "price": 0.0003087652769838324,
+    "address": "0x4927370e1053eb0ed11cfeb9f6972e2460a7f560",
+    "addresses": {
+     "robinhood": "0x4927370e1053eb0ed11cfeb9f6972e2460a7f560"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 308765.2769838324,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "31c3a90b-7717-48b7-8f45-0d1a5c164352",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe": {
+    "key": "ethereum:0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe",
+    "name": "Uniswap V4 LP wUSDC/SPGIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SPGION",
+    "price": 9007199254740990,
+    "address": "0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe",
+    "addresses": {
+     "ethereum": "0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.340Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "ca355339-1439-480e-b770-0f7c30ea7c1a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x400f1e257f86d25578a0928c94dc95115f09d5c9": {
+    "key": "bsc:0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+    "name": "Procter & Gamble (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PGON",
+    "price": 158.53,
+    "address": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+    "addresses": {
+     "bsc": "0x400f1e257f86d25578a0928c94dc95115f09d5c9",
+     "ethereum": "0x339ce23a355ed6d513dd3e1462975c4ecd86823a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2855102,
+    "image": "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+    "metrics": {
+     "volumeUsd1d": "4393.137",
+     "volumeUsd7d": "281666.092"
+    },
+    "metadata": {},
+    "tokenId": "ea4a6366-cf83-47e3-b1ae-9e7e3c73a01c",
+    "totalSupply": "18009.507137082328",
+    "circulatingSupply": "18009.507137082328",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0e6fce64d9e32ebf5d7cf3f6ded501415eca374c": {
+    "key": "ethereum:0x0e6fce64d9e32ebf5d7cf3f6ded501415eca374c",
+    "name": "PGNGIPlus",
+    "decimals": 18,
+    "symbol": "PGNGI+",
+    "price": 1193.3667707354953,
+    "address": "0x0e6fce64d9e32ebf5d7cf3f6ded501415eca374c",
+    "addresses": {
+     "ethereum": "0x0e6fce64d9e32ebf5d7cf3f6ded501415eca374c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-08T07:18:40.336Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 900490.9365349442,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "392.5",
+     "volumeUsd7d": "3160.66"
+    },
+    "metadata": {},
+    "tokenId": "b5e2e902-f6ba-45a7-9feb-e416fb02d760",
+    "totalSupply": "754.5802",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x28743d93117dd39dd154589873d1b6cf5bbbe22562b71e252a4c82f28c097d78": {
+    "key": "ethereum:0x28743d93117dd39dd154589873d1b6cf5bbbe22562b71e252a4c82f28c097d78",
+    "name": "Uniswap V4 LP ETH/upGAMMAusdc",
+    "decimals": 18,
+    "symbol": "ETH/UPGAMMAUSDC",
+    "price": 9007199254740990,
+    "address": "0x28743d93117dd39dd154589873d1b6cf5bbbe22562b71e252a4c82f28c097d78",
+    "addresses": {
+     "ethereum": "0x28743d93117dd39dd154589873d1b6cf5bbbe22562b71e252a4c82f28c097d78"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.455Z",
+    "createdAt": "2026-04-04T23:58:24.302Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x998d7b14c123c1982404562b68eddb057b0477cb"
+    ],
+    "liquidity": 513.587799999938,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15,
+     "feePercentage": "88"
+    },
+    "tokenId": "4e70e4f3-a44c-4b04-a15c-5f4f9ff44b2b",
+    "reserves": [
+     "0.219999999999973448",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5": {
+    "key": "bsc:0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5",
+    "name": "Beefy CLM USDT-OPG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPBSCUSDT-OPG",
+    "price": 0.1570699439674663,
+    "address": "0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5",
+    "addresses": {
+     "bsc": "0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.401Z",
+    "createdAt": "2026-08-26T12:35:12.284Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3f142c3fab8de3639b220f91c782f2015be4d784"
+    ],
+    "poolAddress": "0x3f142c3fab8de3639b220f91c782f2015be4d784",
+    "liquidity": 564.6292836303456,
+    "metrics": {
+     "apy": "32.123",
+     "baseApy": "32.123",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-315.676"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-bsc-usdt-opg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x3f142c3fab8de3639b220f91c782f2015be4d784",
+     "strategyAddress": "0x55fddd17e0c3c9feeea7697d7dc1283e0ccaf109",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xbfe49a7af6ffb64c1424c417ae0c645ed9ed20e5",
+     "depositTokenAddresses": [
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+     ]
+    },
+    "tokenId": "8ec5061f-433c-479a-aeca-4cb246d4e343",
+    "totalSupply": "3594.763386095665549202",
+    "reserves": [
+     "3594.763386095665549202"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfbdb5b074885f9aed4a62bc822281477e619e89b": {
+    "key": "ethereum:0xfbdb5b074885f9aed4a62bc822281477e619e89b",
+    "name": "Uniswap V3 PGNGIPlus/USD Coin 0.05%",
+    "decimals": 18,
+    "symbol": "PGNGI+/USDC",
+    "price": 9007199254740990,
+    "address": "0xfbdb5b074885f9aed4a62bc822281477e619e89b",
+    "addresses": {
+     "ethereum": "0xfbdb5b074885f9aed4a62bc822281477e619e89b"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:33.413Z",
+    "createdAt": "2026-10-08T07:21:11.173Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e6fce64d9e32ebf5d7cf3f6ded501415eca374c",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2832.034342577026,
+    "metrics": {
+     "apy": "2.527",
+     "baseApy": "2.527",
+     "volumeUsd1d": "392.076",
+     "volumeUsd7d": "1379.858"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "483c5b96-a924-4f41-8c4e-92364059af69",
+    "reserves": [
+     "0.999999999729617646",
+     "1639.054389"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91": {
+    "key": "ethereum:0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91",
+    "name": "Uniswap V4 LP upGAMMAbtc/GGB",
+    "decimals": 18,
+    "symbol": "UPGAMMABTC/GGB",
+    "price": 9007199254740990,
+    "address": "0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91",
+    "addresses": {
+     "ethereum": "0xfecbc83342317abe4c8f34d358af34dab3ce42beb9af3c0ff4d56f9944aa6e91"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.460Z",
+    "createdAt": "2026-07-16T19:59:51.732Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9ae81a8373a85308aa719b88331c453a0865d71b",
+     "0xd0dc619f7a4420394360718e8b4bac75a723333e"
+    ],
+    "liquidity": 15660.77923874819,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99"
+    },
+    "tokenId": "d14f6410-3520-4496-8d5b-4f8f993d5052",
+    "reserves": [
+     "0.00000036",
+     "15655.364926872673959505"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdac070102b0cfde1493026454c9c608924f6db71": {
+    "key": "ethereum:0xdac070102b0cfde1493026454c9c608924f6db71",
+    "name": "POPG",
+    "decimals": 18,
+    "symbol": "POPG",
+    "price": 0.0476647,
+    "address": "0xdac070102b0cfde1493026454c9c608924f6db71",
+    "addresses": {
+     "ethereum": "0xdac070102b0cfde1493026454c9c608924f6db71"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-03-08T07:29:12.196Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 95329405,
+    "image": "https://coin-images.coingecko.com/coins/images/54752/large/logo_200x200.png?1741337502",
+    "metrics": {
+     "volumeUsd1d": "35.928",
+     "volumeUsd7d": "183.297"
+    },
+    "metadata": {},
+    "tokenId": "f32dffb8-0125-4914-b84d-fe8117fa7c5b",
+    "totalSupply": "2000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x37a2afaa98648f2e13658623885f821ac8365609": {
+    "key": "robinhood:0x37a2afaa98648f2e13658623885f821ac8365609",
+    "name": "Arcus GLD (5x Long)",
+    "decimals": 18,
+    "symbol": "PGLD5X",
+    "price": 69.97,
+    "address": "0x37a2afaa98648f2e13658623885f821ac8365609",
+    "addresses": {
+     "robinhood": "0x37a2afaa98648f2e13658623885f821ac8365609"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-02T17:24:41.558Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37195,
+    "image": "https://coin-images.coingecko.com/coins/images/102179084/large/5xGLD_Long.png?1791134619",
+    "metrics": {
+     "volumeUsd1d": "118.196",
+     "volumeUsd7d": "805.644"
+    },
+    "metadata": {},
+    "tokenId": "bffdbe9b-78f6-487c-bc03-9070fbead23d",
+    "totalSupply": "531.6066239370023",
+    "circulatingSupply": "531.6066239370023",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xa1c0decafe3e9bf06a5f29b7015cd373a9854608": {
+    "key": "base:0xa1c0decafe3e9bf06a5f29b7015cd373a9854608",
+    "name": "AI Power Grid",
+    "decimals": 18,
+    "symbol": "AIPG",
+    "price": 0.00150415,
+    "address": "0xa1c0decafe3e9bf06a5f29b7015cd373a9854608",
+    "addresses": {
+     "base": "0xa1c0decafe3e9bf06a5f29b7015cd373a9854608"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-11-04T12:10:20.855Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 214659,
+    "image": "https://coin-images.coingecko.com/coins/images/33878/large/AIPG_small_logo.png?1716327006",
+    "metrics": {
+     "volumeUsd1d": "4.678",
+     "volumeUsd7d": "72.974"
+    },
+    "metadata": {},
+    "tokenId": "bf079732-4e77-4f29-8f9e-40e935f01b97",
+    "totalSupply": "150000000",
+    "circulatingSupply": "142711264.92554137",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x2450cdca510f30a1dd69850beea77892629b9d11a0fb6d7ae327643f55eee80a": {
+    "key": "arbitrum:0x2450cdca510f30a1dd69850beea77892629b9d11a0fb6d7ae327643f55eee80a",
+    "name": "Uniswap V4 LP PGOLD/USD0",
+    "decimals": 18,
+    "symbol": "PGOLD/USD0",
+    "price": 9007199254740990,
+    "address": "0x2450cdca510f30a1dd69850beea77892629b9d11a0fb6d7ae327643f55eee80a",
+    "addresses": {
+     "arbitrum": "0x2450cdca510f30a1dd69850beea77892629b9d11a0fb6d7ae327643f55eee80a"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.530Z",
+    "createdAt": "2026-04-23T19:44:15.238Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+    ],
+    "liquidity": 3012.0969496782955,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1800,
+     "feePercentage": "9.091"
+    },
+    "tokenId": "22677fa9-635c-4c0b-8de0-f8b206db50ee",
+    "reserves": [
+     "0.67554863870152409",
+     "222.269834"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc0a3b2620a1e259cfa6cc7d3c96ac2bbaf8f477e430c8e4f11bbfd0542431424": {
+    "key": "ethereum:0xc0a3b2620a1e259cfa6cc7d3c96ac2bbaf8f477e430c8e4f11bbfd0542431424",
+    "name": "Uniswap V4 LP VPGon/EGP",
+    "decimals": 18,
+    "symbol": "VPGON/EGP",
+    "price": 9007199254740990,
+    "address": "0xc0a3b2620a1e259cfa6cc7d3c96ac2bbaf8f477e430c8e4f11bbfd0542431424",
+    "addresses": {
+     "ethereum": "0xc0a3b2620a1e259cfa6cc7d3c96ac2bbaf8f477e430c8e4f11bbfd0542431424"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.870Z",
+    "createdAt": "2026-10-13T13:14:00.923Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20069.003913655837,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.52"
+    },
+    "tokenId": "196837e7-84e0-483f-b444-a9fc6ee11541",
+    "reserves": [
+     "0.380442296069811966",
+     "19999.999999999999999998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x998d7b14c123c1982404562b68eddb057b0477cb": {
+    "key": "ethereum:0x998d7b14c123c1982404562b68eddb057b0477cb",
+    "name": "Upshift Gamma USDC Vault\n",
+    "decimals": 6,
+    "symbol": "UPGAMMAUSDC",
+    "price": 1.056355764993,
+    "address": "0x998d7b14c123c1982404562b68eddb057b0477cb",
+    "addresses": {
+     "ethereum": "0x998d7b14c123c1982404562b68eddb057b0477cb"
+    },
+    "platform": "upshift",
+    "network": "ethereum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/upshift",
+     "https://icons.llamao.fi/icons/protocols/upshift"
+    ],
+    "updatedAt": "2026-10-18T20:13:30.998Z",
+    "createdAt": "2025-10-07T09:18:27.101Z",
+    "verifiedAt": "2026-07-23T10:51:51.655Z",
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 546269.2113360743,
+    "metrics": {
+     "apy": "-0.113",
+     "baseApy": "-0.113",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-144.919"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0,
+      "withdraw": 0,
+      "performance": 0
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [
+      "10x Upshift Points"
+     ],
+     "interface": "ERC4626",
+     "description": "The Gamma USDC vault leverages market neutral positioning across multiple DeFi protocols to maximize risk-adjusted yields. Through systematic deployment of delta-hedged strategies and cross-chain farming opportunities, the vault generates consistent returns while prioritizing capital protection and downside mitigation.",
+     "socialLinks": {
+      "github": "https://github.com/GammaStrategies",
+      "discord": "https://discord.gg/gammastrategies",
+      "twitter": "https://x.com/GammaStrategies",
+      "website": "https://gamma.xyz",
+      "documentation": "https://docs.gamma.xyz"
+     }
+    },
+    "tokenId": "dd039d89-c0ee-4823-8264-4290245f1ba4",
+    "totalSupply": "517126.170405",
+    "reserves": [
+     "546368.435833"
+    ],
+    "pricePerShare": "1.056547",
+    "isClaimed": true,
+    "isPortable": true
+   },
+   "hyperevm:0x6ca620d610c791877437e6c9a2a5ebc62448a6be": {
+    "key": "hyperevm:0x6ca620d610c791877437e6c9a2a5ebc62448a6be",
+    "name": "Hyperswap V2 LP WHYPE/PGAY",
+    "decimals": 18,
+    "symbol": "WHYPE/PGAY",
+    "price": 132511.88734765377,
+    "address": "0x6ca620d610c791877437e6c9a2a5ebc62448a6be",
+    "addresses": {
+     "hyperevm": "0x6ca620d610c791877437e6c9a2a5ebc62448a6be"
+    },
+    "platform": "hyperswap-v2",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hyperswap",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920"
+    ],
+    "updatedAt": "2026-10-18T20:15:50.875Z",
+    "createdAt": "2026-01-23T08:31:58.229Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5555555555555555555555555555555555555555",
+     "0xe9e70b7c9d108011c5ab15ce9bf6ef21d0cf8363"
+    ],
+    "liquidity": 57990.88277602258,
+    "metrics": {
+     "apy": "0.018",
+     "baseApy": "0.018",
+     "volumeUsd1d": "9.674",
+     "volumeUsd7d": "33.349"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "b1c61860-1d37-49c2-91bc-08bfff9ee1ad",
+    "totalSupply": "0.437627777679142387",
+    "reserves": [
+     "380.303450979285422612",
+     "512968509.302384"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x35c6403a11bde0dc0e14863e9b5bd1ca5cdb5b42": {
+    "key": "ethereum:0x35c6403a11bde0dc0e14863e9b5bd1ca5cdb5b42",
+    "name": "UniswapV2 LP KPG/WETH",
+    "decimals": 18,
+    "symbol": "KPG/WETH",
+    "price": 3.9532485856317465,
+    "address": "0x35c6403a11bde0dc0e14863e9b5bd1ca5cdb5b42",
+    "addresses": {
+     "ethereum": "0x35c6403a11bde0dc0e14863e9b5bd1ca5cdb5b42"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:12.059Z",
+    "createdAt": "2026-02-26T05:27:53.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5a30ed2d3650c99e9b0de9063982495e9818bbe2",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 42566.87969727122,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "285.465"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "0eb666a7-4eb4-4d2a-9fc4-8a7a9eaf92dd",
+    "totalSupply": "10767.569702543470326965",
+    "reserves": [
+     "13073227.118995444329836818",
+     "8.980857248358058632"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5a30ed2d3650c99e9b0de9063982495e9818bbe2": {
+    "key": "ethereum:0x5a30ed2d3650c99e9b0de9063982495e9818bbe2",
+    "name": "Kepeng",
+    "decimals": 18,
+    "symbol": "KPG",
+    "price": 0.00165107,
+    "address": "0x5a30ed2d3650c99e9b0de9063982495e9818bbe2",
+    "addresses": {
+     "ethereum": "0x5a30ed2d3650c99e9b0de9063982495e9818bbe2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-02-26T05:26:45.684Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1651065,
+    "image": "https://coin-images.coingecko.com/coins/images/70449/large/Mandala_Chain.jpg?1762079404",
+    "metrics": {
+     "volumeUsd1d": "56.975",
+     "volumeUsd7d": "351.706"
+    },
+    "metadata": {},
+    "tokenId": "884a3863-4422-4a15-9b50-e3586b130128",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x437b5acc7d6f0eacb97431e649c61e98badb3f92": {
+    "key": "base:0x437b5acc7d6f0eacb97431e649c61e98badb3f92",
+    "name": "Dinari PG",
+    "decimals": 18,
+    "symbol": "PG",
+    "price": 159.47,
+    "address": "0x437b5acc7d6f0eacb97431e649c61e98badb3f92",
+    "addresses": {
+     "arbitrum": "0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+     "avalanche": "0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+     "ethereum": "0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+     "base": "0x437b5acc7d6f0eacb97431e649c61e98badb3f92"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4030.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102174958/large/dinari-logo-green-with-margin.png?1785402699",
+    "metrics": {
+     "volumeUsd1d": "89.275",
+     "volumeUsd7d": "403.012"
+    },
+    "metadata": {},
+    "tokenId": "235c5a98-d5d0-4ade-9d8d-a9d9d6d6003a",
+    "totalSupply": "25.273954892",
+    "circulatingSupply": "25.273954892",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8c3ef619d3c62f4364d7c8d8e02a256034717bde09c554013d4d65e4c961eb91": {
+    "key": "ethereum:0x8c3ef619d3c62f4364d7c8d8e02a256034717bde09c554013d4d65e4c961eb91",
+    "name": "Uniswap V4 LP PGon/EGP",
+    "decimals": 18,
+    "symbol": "PGON/EGP",
+    "price": 9007199254740990,
+    "address": "0x8c3ef619d3c62f4364d7c8d8e02a256034717bde09c554013d4d65e4c961eb91",
+    "addresses": {
+     "ethereum": "0x8c3ef619d3c62f4364d7c8d8e02a256034717bde09c554013d4d65e4c961eb91"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.198Z",
+    "createdAt": "2026-10-14T06:54:33.772Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x339ce23a355ed6d513dd3e1462975c4ecd86823a",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20074.173739517897,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.59"
+    },
+    "tokenId": "163d8ec7-3788-40cd-94a3-8a43580c7ac8",
+    "reserves": [
+     "0.180751459020058616",
+     "19999.999999999999999981"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5c3b9a9b021e86b54202abcb4580f1f5c271875b": {
+    "key": "robinhood:0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+    "name": "Arcus GME (5x Long)",
+    "decimals": 18,
+    "symbol": "PGME5X",
+    "price": 128.02,
+    "address": "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+    "addresses": {
+     "robinhood": "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-01T17:44:39.488Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39214,
+    "image": "https://coin-images.coingecko.com/coins/images/102179085/large/5xGME_Long.png?1791134625",
+    "metrics": {
+     "volumeUsd1d": "23.711",
+     "volumeUsd7d": "10251.11"
+    },
+    "metadata": {},
+    "tokenId": "049b6f02-b208-42ce-a7f1-7722fc50bef7",
+    "totalSupply": "307.41447315539045",
+    "circulatingSupply": "306.307371057536",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576": {
+    "key": "avalanche:0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+    "name": "Dinari PG",
+    "decimals": 18,
+    "symbol": "PG",
+    "price": 159.47,
+    "address": "0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+    "addresses": {
+     "arbitrum": "0xb90e1ee5f4194388e71c11dc2a4eea16da391ce4",
+     "avalanche": "0x1bc1b7b658ed3af23eb1ee0a39ebb43ff23ae576",
+     "ethereum": "0xaa88ab7413f909eef5bd69bb2a2b6f97dc6743b8",
+     "base": "0x437b5acc7d6f0eacb97431e649c61e98badb3f92"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4030.55,
+    "image": "https://coin-images.coingecko.com/coins/images/102174958/large/dinari-logo-green-with-margin.png?1785402699",
+    "metrics": {
+     "volumeUsd1d": "89.275",
+     "volumeUsd7d": "403.126"
+    },
+    "metadata": {},
+    "tokenId": "235c5a98-d5d0-4ade-9d8d-a9d9d6d6003a",
+    "totalSupply": "25.273954892",
+    "circulatingSupply": "25.273954892",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b": {
+    "key": "robinhood:0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b",
+    "name": "Uniswap V4 LP pGME5x/USDG",
+    "decimals": 18,
+    "symbol": "PGME5X/USDG",
+    "price": 9007199254740990,
+    "address": "0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b",
+    "addresses": {
+     "robinhood": "0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.752Z",
+    "createdAt": "2026-10-01T18:14:47.400Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 5380.658022474907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2426.001"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "5c194bd5-d7de-455a-8c68-0b67969fb742",
+    "reserves": [
+     "22.567978077448109216",
+     "2491.505469"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc4736f2611a62d545dc2d0d8f0766283617e6fcb": {
+    "key": "bsc:0xc4736f2611a62d545dc2d0d8f0766283617e6fcb",
+    "name": "TopGoal",
+    "decimals": 18,
+    "symbol": "GOAL",
+    "price": 0.00020163,
+    "address": "0xc4736f2611a62d545dc2d0d8f0766283617e6fcb",
+    "addresses": {
+     "bsc": "0xc4736f2611a62d545dc2d0d8f0766283617e6fcb"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 113015,
+    "image": "https://assets.coingecko.com/coins/images/29229/large/YRDnlXib_400x400.jpg?1696528186",
+    "metrics": {
+     "volumeUsd1d": "1.001",
+     "volumeUsd7d": "7.007"
+    },
+    "metadata": {},
+    "tokenId": "c2553ed5-8d26-49dc-ae3b-a8db4b6b17a9",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "560500000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xef6344de1fcfc5f48c30234c16c1389e8cdc572c": {
+    "key": "ethereum:0xef6344de1fcfc5f48c30234c16c1389e8cdc572c",
+    "name": "EncrypGen",
+    "decimals": 18,
+    "symbol": "DNA",
+    "price": 0.00042281,
+    "address": "0xef6344de1fcfc5f48c30234c16c1389e8cdc572c",
+    "addresses": {
+     "ethereum": "0xef6344de1fcfc5f48c30234c16c1389e8cdc572c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29993,
+    "image": "https://assets.coingecko.com/coins/images/1215/large/encrypgen.png?1696502295",
+    "metrics": {
+     "volumeUsd1d": "23.401",
+     "volumeUsd7d": "163.807"
+    },
+    "metadata": {},
+    "tokenId": "400a2911-dbc5-474e-8a43-b1be1a18bcd2",
+    "totalSupply": "70938084",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x795d5aa627d1e97471aade179e8aa57001f8ef84": {
+    "key": "ethereum:0x795d5aa627d1e97471aade179e8aa57001f8ef84",
+    "name": "Uniswap V3 POPG/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "POPG/TETHER USD",
+    "price": 9007199254740990,
+    "address": "0x795d5aa627d1e97471aade179e8aa57001f8ef84",
+    "addresses": {
+     "ethereum": "0x795d5aa627d1e97471aade179e8aa57001f8ef84"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/54752/large/logo_200x200.png?1741337502",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:34.093Z",
+    "createdAt": "2025-03-08T07:29:53.398Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac070102b0cfde1493026454c9c608924f6db71",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 265264.62722785363,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "cbdf7430-9f2e-47bc-b805-a76bedf0ba42",
+    "reserves": [
+     "2788278.811008411001249023",
+     "132475.818437"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x33a64943a0eaecc2b06b10f89686b797ba75ffad": {
+    "key": "bsc:0x33a64943a0eaecc2b06b10f89686b797ba75ffad",
+    "name": "PrivateAI",
+    "decimals": 6,
+    "symbol": "PGPT",
+    "price": 0.00411245,
+    "address": "0x33a64943a0eaecc2b06b10f89686b797ba75ffad",
+    "addresses": {
+     "bsc": "0x33a64943a0eaecc2b06b10f89686b797ba75ffad"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-03T15:51:12.777Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 137082,
+    "image": "https://coin-images.coingecko.com/coins/images/38570/large/kgjE-YjX_400x400.jpg?1718150203",
+    "metrics": {
+     "volumeUsd1d": "24381.907",
+     "volumeUsd7d": "166005.346"
+    },
+    "metadata": {},
+    "tokenId": "65c6cd4e-1f40-4a50-9c83-2f75e65d007a",
+    "totalSupply": "33333333",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xe9e70b7c9d108011c5ab15ce9bf6ef21d0cf8363": {
+    "key": "hyperevm:0xe9e70b7c9d108011c5ab15ce9bf6ef21d0cf8363",
+    "name": "peanut is gay",
+    "decimals": 6,
+    "symbol": "PGAY",
+    "price": 5.64824720053599e-05,
+    "address": "0xe9e70b7c9d108011c5ab15ce9bf6ef21d0cf8363",
+    "addresses": {
+     "hyperevm": "0xe9e70b7c9d108011c5ab15ce9bf6ef21d0cf8363"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-23T08:29:14.863Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 56482.4720053599,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "9.48",
+     "volumeUsd7d": "37.15"
+    },
+    "metadata": {},
+    "tokenId": "97d9f6bc-84cb-4019-a55e-bf55486d8816",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3f57a5d8c5610ae25d61c692e549ecc2c6b4c55a": {
+    "key": "bsc:0x3f57a5d8c5610ae25d61c692e549ecc2c6b4c55a",
+    "name": "PancakeSwap V3 PrivateAI.com/Wrapped BNB 0.01%",
+    "decimals": 18,
+    "symbol": "PGPT/WBNB",
+    "price": 9007199254740990,
+    "address": "0x3f57a5d8c5610ae25d61c692e549ecc2c6b4c55a",
+    "addresses": {
+     "bsc": "0x3f57a5d8c5610ae25d61c692e549ecc2c6b4c55a"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/38570/large/kgjE-YjX_400x400.jpg?1718150203",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.808Z",
+    "createdAt": "2026-06-16T22:06:17.945Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x33a64943a0eaecc2b06b10f89686b797ba75ffad",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 8225.105128499103,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01"
+    },
+    "tokenId": "5872df10-f0f3-46c6-b759-7fd27f63da8b",
+    "reserves": [
+     "2000000.000911",
+     "0.00029097773268998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8dcc90545b19dc4cf723f993e07cb2d427ecf975dfc75847bfcc4d595b6d5531": {
+    "key": "arbitrum:0x8dcc90545b19dc4cf723f993e07cb2d427ecf975dfc75847bfcc4d595b6d5531",
+    "name": "Uniswap V4 LP PGOLD/USDC",
+    "decimals": 18,
+    "symbol": "PGOLD/USDC",
+    "price": 9007199254740990,
+    "address": "0x8dcc90545b19dc4cf723f993e07cb2d427ecf975dfc75847bfcc4d595b6d5531",
+    "addresses": {
+     "arbitrum": "0x8dcc90545b19dc4cf723f993e07cb2d427ecf975dfc75847bfcc4d595b6d5531"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/70395/large/%E9%BB%84%E9%87%91.png?1761795141"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.866Z",
+    "createdAt": "2026-08-28T15:17:24.348Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3e76bb02286bfeaa89dd35f11253f2cbce634f91",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 583.955188506659,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.5497"
+    },
+    "tokenId": "5f40471d-631e-4986-bf04-e1f44a83c7f5",
+    "reserves": [
+     "0.084755658600579432",
+     "233.963601"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdfc8cc4767fd88317ee07ab9e96588693e311c88b9224ef3003ecc29f601e1e1": {
+    "key": "ethereum:0xdfc8cc4767fd88317ee07ab9e96588693e311c88b9224ef3003ecc29f601e1e1",
+    "name": "Uniswap V4 LP wUSDC/PGon",
+    "decimals": 18,
+    "symbol": "WUSDC/PGON",
+    "price": 9007199254740990,
+    "address": "0xdfc8cc4767fd88317ee07ab9e96588693e311c88b9224ef3003ecc29f601e1e1",
+    "addresses": {
+     "ethereum": "0xdfc8cc4767fd88317ee07ab9e96588693e311c88b9224ef3003ecc29f601e1e1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68593/large/pgon_160x160.png?1756129875",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.641Z",
+    "createdAt": "2026-09-28T10:39:19.921Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x339ce23a355ed6d513dd3e1462975c4ecd86823a"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1c61b8af-c2a7-438c-b1ce-0f1327c766f2",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x02de9e77823f2fd34aaac268824475d8de896d68": {
+    "key": "arbitrum:0x02de9e77823f2fd34aaac268824475d8de896d68",
+    "name": "PG&E Corp rStock",
+    "decimals": 18,
+    "symbol": "RPCG",
+    "price": 13.03,
+    "address": "0x02de9e77823f2fd34aaac268824475d8de896d68",
+    "addresses": {
+     "arbitrum": "0x02de9e77823f2fd34aaac268824475d8de896d68"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2427.62,
+    "image": "https://coin-images.coingecko.com/coins/images/102177342/large/PCG.png?1789117602",
+    "metrics": {
+     "volumeUsd1d": "52.189",
+     "volumeUsd7d": "2359.161"
+    },
+    "metadata": {},
+    "tokenId": "317990d0-2a1a-422b-88c5-cf2dce7ec45f",
+    "totalSupply": "186.35030847",
+    "circulatingSupply": "186.35030847",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb7d6e09894b0ebf6e52fc7cd231b9a372c8ac419": {
+    "key": "arbitrum:0xb7d6e09894b0ebf6e52fc7cd231b9a372c8ac419",
+    "name": "Procter & Gamble rStock",
+    "decimals": 18,
+    "symbol": "RPG",
+    "price": 159.17,
+    "address": "0xb7d6e09894b0ebf6e52fc7cd231b9a372c8ac419",
+    "addresses": {
+     "arbitrum": "0xb7d6e09894b0ebf6e52fc7cd231b9a372c8ac419"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5525.94,
+    "image": "https://coin-images.coingecko.com/coins/images/102177355/large/PG.png?1789117644",
+    "metrics": {
+     "volumeUsd1d": "104.755",
+     "volumeUsd7d": "2570.459"
+    },
+    "metadata": {},
+    "tokenId": "f753b195-dc4c-4b05-a328-182476638b3f",
+    "totalSupply": "34.716328903",
+    "circulatingSupply": "34.716328903",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x2879e4cddf64838731a33f09e27d5f31792988512920da7bc94b74555d71fb4e": {
+    "key": "base:0x2879e4cddf64838731a33f09e27d5f31792988512920da7bc94b74555d71fb4e",
+    "name": "Uniswap V4 LP USDC/OPG",
+    "decimals": 18,
+    "symbol": "USDC/OPG",
+    "price": 9007199254740990,
+    "address": "0x2879e4cddf64838731a33f09e27d5f31792988512920da7bc94b74555d71fb4e",
+    "addresses": {
+     "base": "0x2879e4cddf64838731a33f09e27d5f31792988512920da7bc94b74555d71fb4e"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.984Z",
+    "createdAt": "2026-04-22T01:15:10.336Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb"
+    ],
+    "liquidity": 558.3661753979975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5002,
+     "feePercentage": "25.085"
+    },
+    "tokenId": "1aa20407-0783-4266-81ee-7152ee925d29",
+    "reserves": [
+     "416.656404",
+     "1191.484500742253207901"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0xb6fbb59945c7dd8a1282c47a60fba77081c8cc2c": {
+    "key": "polygon:0xb6fbb59945c7dd8a1282c47a60fba77081c8cc2c",
+    "name": "QuickSwap LP PGEN/WMATIC",
+    "decimals": 18,
+    "symbol": "PGEN/WMATIC",
+    "price": 0.005287145290494149,
+    "address": "0xb6fbb59945c7dd8a1282c47a60fba77081c8cc2c",
+    "addresses": {
+     "polygon": "0xb6fbb59945c7dd8a1282c47a60fba77081c8cc2c"
+    },
+    "platform": "quickswap",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/25393/large/quickswap.jpg",
+     "https://assets.coingecko.com/coins/images/21476/large/polygen-logo_1.jpeg?1696520837",
+     "https://assets.coingecko.com/coins/images/14073/large/matic.png?1696513797"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.271Z",
+    "createdAt": "2024-02-29T09:06:42.069Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x01d35cbc2070a3b76693ce2b6364eae24eb88591",
+     "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+    ],
+    "liquidity": 2259.224217748331,
+    "metrics": {
+     "apy": "0.807",
+     "baseApy": "0.807",
+     "volumeUsd1d": "16.681",
+     "volumeUsd7d": "17.027"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "4b588d1a-c6cb-46b0-94d1-4ab8b7ecb676",
+    "totalSupply": "427305.113368121292047396",
+    "reserves": [
+     "77816755.136303069744061832",
+     "12561.830452184319287138"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x840a6aa3ff98e80bf5a41151176bd4f37e5784d52bec269969b81167c53f857b": {
+    "key": "ethereum:0x840a6aa3ff98e80bf5a41151176bd4f37e5784d52bec269969b81167c53f857b",
+    "name": "Uniswap V4 LP VPGon/wUSDC",
+    "decimals": 18,
+    "symbol": "VPGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x840a6aa3ff98e80bf5a41151176bd4f37e5784d52bec269969b81167c53f857b",
+    "addresses": {
+     "ethereum": "0x840a6aa3ff98e80bf5a41151176bd4f37e5784d52bec269969b81167c53f857b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.743Z",
+    "createdAt": "2026-09-28T10:37:16.097Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1c4c8a66884f1eec60aa203c6cb51fd6cb76dbb9",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "d9356ce6-f6d9-4b1f-88e8-58ab359f0c68",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x193fdf644451cc394b28b9cec2f5d32e2b4de515": {
+    "key": "ethereum:0x193fdf644451cc394b28b9cec2f5d32e2b4de515",
+    "name": "PG&E (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "PCGON",
+    "price": 13.15,
+    "address": "0x193fdf644451cc394b28b9cec2f5d32e2b4de515",
+    "addresses": {
+     "ethereum": "0x193fdf644451cc394b28b9cec2f5d32e2b4de515",
+     "bsc": "0x47b36ddb9dd12a8411f78226f55e8c3f0d65481f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T16:47:09.029Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2306.58,
+    "image": "https://coin-images.coingecko.com/coins/images/71456/large/pcgon_160x160.png?1767890294",
+    "metrics": {
+     "volumeUsd1d": "257.936",
+     "volumeUsd7d": "1864.9"
+    },
+    "metadata": {},
+    "tokenId": "bce89de4-8810-4306-8c01-7e4d79b6dc0b",
+    "totalSupply": "175.35873537654575",
+    "circulatingSupply": "175.35873537654575",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5feccd17c393caf1001d18164236a37e731fcb9d": {
+    "key": "bsc:0x5feccd17c393caf1001d18164236a37e731fcb9d",
+    "name": "OpenGradient",
+    "decimals": 18,
+    "symbol": "OPG",
+    "price": 0.119018,
+    "address": "0x5feccd17c393caf1001d18164236a37e731fcb9d",
+    "addresses": {
+     "base": "0xfbc2051ae2265686a469421b2c5a2d5462fbf5eb",
+     "bsc": "0x5feccd17c393caf1001d18164236a37e731fcb9d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-04-22T19:39:08.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27370375,
+    "image": "https://coin-images.coingecko.com/coins/images/102172863/large/coingecko_logo.png?1776349115",
+    "metrics": {
+     "volumeUsd1d": "8695406.104",
+     "volumeUsd7d": "72638905.623"
+    },
+    "metadata": {},
+    "tokenId": "d87069d8-3d59-4e7a-9b50-f39332322dc8",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "229968750",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

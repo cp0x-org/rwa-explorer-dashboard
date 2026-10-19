@@ -1,0 +1,1077 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US83406F1021",
+ "ticker": "SOFI",
+ "name": "SoFi Technologies",
+ "isin": "US83406F1021",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:24Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "SoFi Technologies Inc",
+   "symbol": "SOFI",
+   "slug": "sofi-technologies",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 14.444178114559739,
+     "tokenized_market_cap": 10418395.64760691,
+     "tokenized_volume_24h": 499707.24348398,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 243,
+   "asset_type": "stock",
+   "rwa_rank": 617,
+   "has_tokens": true,
+   "average_tokenized_price": 14.444178114559739,
+   "tokenized_market_cap": 10418395.64760691,
+   "tokenized_volume_24h": 499707.24348398,
+   "last_updated": "2026-10-18T20:14:26.040Z",
+   "tokens": [
+    {
+     "symbol": "SOFIon",
+     "name": "SoFi Technologies Tokenized Stock (Ondo)",
+     "price": 14.429231727491299,
+     "crypto_id": 39283,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 10246832.86,
+     "volume_24h": 499680.97376104
+    },
+    {
+     "symbol": "rSOFI",
+     "name": "SoFi Tokenized Stock (Reality)",
+     "price": 14.442145752844038,
+     "crypto_id": 40662,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 115828.5,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "SOFI",
+     "name": "SoFi Technologies Tokenized Stock (Robinhood)",
+     "price": 14.427285795990834,
+     "crypto_id": 40725,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 45120.16,
+     "volume_24h": 4.60261328
+    },
+    {
+     "symbol": "SOFI",
+     "name": "SoFi Technologies Inc (Derivatives)",
+     "price": 14.402900929657175,
+     "crypto_id": 40888,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wSOFIx",
+     "name": "Wrapped SoFi Technologies Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41634,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "SOFIc",
+     "name": "SoFi Technologies, Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42561,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SOFI",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SOFI"
+    }
+   ]
+  },
+  "info": {
+   "39283": {
+    "id": 39283,
+    "symbol": "SOFIon",
+    "name": "SoFi Technologies Tokenized Stock (Ondo)",
+    "slug": "sofi-technologies-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39283.png",
+    "date_added": "2026-01-08T15:44:23.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "mqL8yXQpeSvc7NgrAtLLPtRvUiWyLoG5RWLv16iondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40662": {
+    "id": 40662,
+    "symbol": "rSOFI",
+    "name": "SoFi Tokenized Stock (Reality)",
+    "slug": "sofi-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40662.png",
+    "date_added": "2026-07-02T07:39:27.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40725": {
+    "id": 40725,
+    "symbol": "SOFI",
+    "name": "SoFi Technologies Tokenized Stock (Robinhood)",
+    "slug": "sofi-technologies-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40725.png",
+    "date_added": "2026-08-04T07:31:41.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x98E75885157C80992A8D41b696D8c9C6Fb30A926"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x98E75885157C80992A8D41b696D8c9C6Fb30A926",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40888": {
+    "id": 40888,
+    "symbol": "SOFI",
+    "name": "SoFi Technologies Inc (Derivatives)",
+    "slug": "sofi-technologies-inc-derivaties",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40888.png",
+    "date_added": "2026-06-23T11:23:49.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41634": {
+    "id": 41634,
+    "symbol": "wSOFIx",
+    "name": "Wrapped SoFi Technologies Tokenized Stock (xStock)",
+    "slug": "wrapped-sofi-technologies-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41634.png",
+    "date_added": "2026-08-11T16:25:56.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x5cF3c0262103cB33aCd581c11a6bfc835B62DCFc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5cF3c0262103cB33aCd581c11a6bfc835B62DCFc",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42561": {
+    "id": 42561,
+    "symbol": "SOFIc",
+    "name": "SoFi Technologies, Inc. Tokenized Stock (Coinbase)",
+    "slug": "sofi-technologies-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42561.png",
+    "date_added": "2026-10-14T03:36:59.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000003ef37a7c863dc1482a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000003ef37a7c863dc1482a",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+   "base:0xb2000000000000000000003ef37a7c863dc1482a",
+   "bsc:0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+   "ethereum:0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+   "robinhood:0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+  ],
+  "exact": {
+   "robinhood:0x98e75885157c80992a8d41b696d8c9c6fb30a926": {
+    "key": "robinhood:0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "name": "SoFi Technologies • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SOFI",
+    "price": 14.405000000000001,
+    "address": "0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "addresses": {
+     "robinhood": "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "liquidity": 45050.46464490001,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-19.594"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000df2cb1370b1b41a8b896a706fefae931",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "6b7e4bda-4ed1-434a-ac95-1ebfbe3539a7",
+    "totalSupply": "3127.41858",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5": {
+    "key": "ethereum:0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+    "name": "SoFi Technologies (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOFION",
+    "price": 14.45,
+    "address": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+    "addresses": {
+     "bsc": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+     "ethereum": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10246079,
+    "image": "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245",
+    "metrics": {
+     "volumeUsd1d": "144180.675",
+     "volumeUsd7d": "1474719.376"
+    },
+    "metadata": {},
+    "tokenId": "5d226e2e-1b7b-4a68-9f8d-07ca7a8d8cb8",
+    "totalSupply": "710144.0362810316",
+    "circulatingSupply": "710144.0362810316",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8": {
+    "key": "arbitrum:0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+    "name": "SoFi Technologies rStock",
+    "decimals": 18,
+    "symbol": "RSOFI",
+    "price": 14.45,
+    "address": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+    "addresses": {
+     "arbitrum": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 116918,
+    "image": "https://coin-images.coingecko.com/coins/images/102177101/large/83806bf37fbdb204bd7ce97c31eef64b.png?1789116831",
+    "metrics": {
+     "volumeUsd1d": "65.002",
+     "volumeUsd7d": "213915.008"
+    },
+    "metadata": {},
+    "tokenId": "beaf39ae-074b-4e82-90f9-5121bd7528e9",
+    "totalSupply": "8093.088971737",
+    "circulatingSupply": "8093.088971737",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x71507068e98049cba81e9bbc8d901e4a2f4222eb": {
+    "key": "bsc:0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+    "name": "SoFi Technologies (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOFION",
+    "price": 14.45,
+    "address": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+    "addresses": {
+     "bsc": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+     "ethereum": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10246079,
+    "image": "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245",
+    "metrics": {
+     "volumeUsd1d": "144345.713",
+     "volumeUsd7d": "1474875.098"
+    },
+    "metadata": {},
+    "tokenId": "5d226e2e-1b7b-4a68-9f8d-07ca7a8d8cb8",
+    "totalSupply": "710144.0362810316",
+    "circulatingSupply": "710144.0362810316",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SOFI": {
+    "total_items": 14,
+    "pages": 1,
+    "received": 14,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xb7bf9bc3a3ca99e2af6d29ae29459b37ac9dd953580546ce092447e1db35dad8": {
+    "key": "ethereum:0xb7bf9bc3a3ca99e2af6d29ae29459b37ac9dd953580546ce092447e1db35dad8",
+    "name": "Uniswap V4 LP EGP/SOFIon",
+    "decimals": 18,
+    "symbol": "EGP/SOFION",
+    "price": 9007199254740990,
+    "address": "0xb7bf9bc3a3ca99e2af6d29ae29459b37ac9dd953580546ce092447e1db35dad8",
+    "addresses": {
+     "ethereum": "0xb7bf9bc3a3ca99e2af6d29ae29459b37ac9dd953580546ce092447e1db35dad8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.621Z",
+    "createdAt": "2026-10-14T06:54:49.432Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    ],
+    "liquidity": 20057.612429928842,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.41"
+    },
+    "tokenId": "f1fc6e2d-7c87-4812-8b15-bf6911732ca6",
+    "reserves": [
+     "19999.999999999999999992",
+     "1.791331176408847487"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7aeb16c54d3d45445f5b3b2577c0099aeedb4ebd915efc3909d42771a5e616d6": {
+    "key": "robinhood:0x7aeb16c54d3d45445f5b3b2577c0099aeedb4ebd915efc3909d42771a5e616d6",
+    "name": "Uniswap V4 LP USDG/SOFI",
+    "decimals": 18,
+    "symbol": "USDG/SOFI",
+    "price": 9007199254740990,
+    "address": "0x7aeb16c54d3d45445f5b3b2577c0099aeedb4ebd915efc3909d42771a5e616d6",
+    "addresses": {
+     "robinhood": "0x7aeb16c54d3d45445f5b3b2577c0099aeedb4ebd915efc3909d42771a5e616d6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174163/large/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png?1782444705",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.553Z",
+    "createdAt": "2026-10-09T07:28:36.233Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    ],
+    "liquidity": 7912.550065830502,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "684.209"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 312,
+     "feePercentage": "3.2169"
+    },
+    "tokenId": "654a1dea-bb6f-4582-9bdc-80c54d55d1ea",
+    "reserves": [
+     "13.323943",
+     "548.366964445019178589"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xab37f947cbc9b6142d29ad7a8ae88afa6f1ebd71c2c4978deab38880e085d617": {
+    "key": "robinhood:0xab37f947cbc9b6142d29ad7a8ae88afa6f1ebd71c2c4978deab38880e085d617",
+    "name": "Uniswap V4 LP ETH/SOFI",
+    "decimals": 18,
+    "symbol": "ETH/SOFI",
+    "price": 9007199254740990,
+    "address": "0xab37f947cbc9b6142d29ad7a8ae88afa6f1ebd71c2c4978deab38880e085d617",
+    "addresses": {
+     "robinhood": "0xab37f947cbc9b6142d29ad7a8ae88afa6f1ebd71c2c4978deab38880e085d617"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174163/large/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png?1782444705"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.261Z",
+    "createdAt": "2026-07-28T21:08:25.018Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    ],
+    "liquidity": 722.2303193865325,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "41.013"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "a5edce5b-e791-45bf-9ef1-eb7dcf2a5cbd",
+    "reserves": [
+     "0.03761657203874341",
+     "44.036121299213443698"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x98e75885157c80992a8d41b696d8c9c6fb30a926": {
+    "key": "robinhood:0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "name": "SoFi Technologies • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SOFI",
+    "price": 14.405000000000001,
+    "address": "0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "addresses": {
+     "robinhood": "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x98e75885157c80992a8d41b696d8c9c6fb30a926",
+    "liquidity": 45050.46464490001,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-19.594"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000df2cb1370b1b41a8b896a706fefae931",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "6b7e4bda-4ed1-434a-ac95-1ebfbe3539a7",
+    "totalSupply": "3127.41858",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb6a881c32ed115cb8790c182580c71607ee7b7b008b4e1c3c65b1bc29b891b53": {
+    "key": "robinhood:0xb6a881c32ed115cb8790c182580c71607ee7b7b008b4e1c3c65b1bc29b891b53",
+    "name": "Uniswap V4 LP USDG/SOFI",
+    "decimals": 18,
+    "symbol": "USDG/SOFI",
+    "price": 9007199254740990,
+    "address": "0xb6a881c32ed115cb8790c182580c71607ee7b7b008b4e1c3c65b1bc29b891b53",
+    "addresses": {
+     "robinhood": "0xb6a881c32ed115cb8790c182580c71607ee7b7b008b4e1c3c65b1bc29b891b53"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174163/large/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png?1782444705"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.961Z",
+    "createdAt": "2026-09-09T20:19:55.694Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    ],
+    "liquidity": 5320.273946943547,
+    "metrics": {
+     "apy": "0.341",
+     "baseApy": "0.341",
+     "volumeUsd1d": "1.468",
+     "volumeUsd7d": "1360.691"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 329,
+     "feePercentage": "3.3818"
+    },
+    "tokenId": "ac6b74f8-215e-464e-9112-64f78c7f93ac",
+    "reserves": [
+     "734.314221",
+     "318.358884133533318344"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x4e4f091d374f2fca1d907b65ce689f7f64bab527f17b09cb5963dfc4b7c82087": {
+    "key": "robinhood:0x4e4f091d374f2fca1d907b65ce689f7f64bab527f17b09cb5963dfc4b7c82087",
+    "name": "Uniswap V4 LP USDG/SOFI",
+    "decimals": 18,
+    "symbol": "USDG/SOFI",
+    "price": 9007199254740990,
+    "address": "0x4e4f091d374f2fca1d907b65ce689f7f64bab527f17b09cb5963dfc4b7c82087",
+    "addresses": {
+     "robinhood": "0x4e4f091d374f2fca1d907b65ce689f7f64bab527f17b09cb5963dfc4b7c82087"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174163/large/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png?1782444705"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.476Z",
+    "createdAt": "2026-10-06T06:16:35.048Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    ],
+    "liquidity": 2478.2715017625824,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "25.368"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 101,
+     "feePercentage": "1.104"
+    },
+    "tokenId": "370af9d8-50e8-459b-bc24-939a25a7005a",
+    "reserves": [
+     "2.312628",
+     "171.881907237943921313"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x71d157bf93386504eb0931fd673cadaa76de33ee4c6def3779406c9a32571aea": {
+    "key": "ethereum:0x71d157bf93386504eb0931fd673cadaa76de33ee4c6def3779406c9a32571aea",
+    "name": "Uniswap V4 LP wUSDC/SOFIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SOFION",
+    "price": 9007199254740990,
+    "address": "0x71d157bf93386504eb0931fd673cadaa76de33ee4c6def3779406c9a32571aea",
+    "addresses": {
+     "ethereum": "0x71d157bf93386504eb0931fd673cadaa76de33ee4c6def3779406c9a32571aea"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.661Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "3ce3b026-7b63-4d1f-b000-4e66a6566055",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x229899ea68f6034b90327312e0e713aeffa688ef0196b79843d8ed55c867c58e": {
+    "key": "ethereum:0x229899ea68f6034b90327312e0e713aeffa688ef0196b79843d8ed55c867c58e",
+    "name": "Uniswap V4 LP wUSDC/SOFIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SOFION",
+    "price": 9007199254740990,
+    "address": "0x229899ea68f6034b90327312e0e713aeffa688ef0196b79843d8ed55c867c58e",
+    "addresses": {
+     "ethereum": "0x229899ea68f6034b90327312e0e713aeffa688ef0196b79843d8ed55c867c58e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.062Z",
+    "createdAt": "2026-09-28T10:37:10.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "41c79351-d768-46d0-85f4-66c8e6568c2b",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5": {
+    "key": "ethereum:0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+    "name": "SoFi Technologies (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOFION",
+    "price": 14.45,
+    "address": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+    "addresses": {
+     "bsc": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+     "ethereum": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10246079,
+    "image": "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245",
+    "metrics": {
+     "volumeUsd1d": "144180.675",
+     "volumeUsd7d": "1474719.376"
+    },
+    "metadata": {},
+    "tokenId": "5d226e2e-1b7b-4a68-9f8d-07ca7a8d8cb8",
+    "totalSupply": "710144.0362810316",
+    "circulatingSupply": "710144.0362810316",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x11ab0ca146290519bd799d48bdeec60162e2926cd4f327334f28bb0668cec85d": {
+    "key": "ethereum:0x11ab0ca146290519bd799d48bdeec60162e2926cd4f327334f28bb0668cec85d",
+    "name": "Uniswap V4 LP SOFIon/USDT",
+    "decimals": 18,
+    "symbol": "SOFION/USDT",
+    "price": 9007199254740990,
+    "address": "0x11ab0ca146290519bd799d48bdeec60162e2926cd4f327334f28bb0668cec85d",
+    "addresses": {
+     "ethereum": "0x11ab0ca146290519bd799d48bdeec60162e2926cd4f327334f28bb0668cec85d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.177Z",
+    "createdAt": "2026-09-13T03:19:42.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 693.5929988614815,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4800,
+     "feePercentage": "48"
+    },
+    "tokenId": "06297607-38a7-47e0-9413-0439d123e868",
+    "reserves": [
+     "21.750270107318306639",
+     "379.609839"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x733561f484cb0f654fbab660e8e8ed0404e5ac9e32929d20e295095ec8a5ef76": {
+    "key": "robinhood:0x733561f484cb0f654fbab660e8e8ed0404e5ac9e32929d20e295095ec8a5ef76",
+    "name": "Uniswap V4 LP wUSDG/SOFI",
+    "decimals": 18,
+    "symbol": "WUSDG/SOFI",
+    "price": 9007199254740990,
+    "address": "0x733561f484cb0f654fbab660e8e8ed0404e5ac9e32929d20e295095ec8a5ef76",
+    "addresses": {
+     "robinhood": "0x733561f484cb0f654fbab660e8e8ed0404e5ac9e32929d20e295095ec8a5ef76"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174163/large/0x98e75885157c80992a8d41b696d8c9c6fb30a926.png?1782444705",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.411Z",
+    "createdAt": "2026-08-28T18:12:49.050Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x98e75885157c80992a8d41b696d8c9c6fb30a926"
+    ],
+    "liquidity": 10096.696515856373,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "f1e0a685-111b-43cc-acb3-51e916e9cf0b",
+    "reserves": [
+     "9999.999916",
+     "0.000005114841595673"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0cb6d03b0ac88a463f67b7ad99f9f3ec4678092e": {
+    "key": "ethereum:0x0cb6d03b0ac88a463f67b7ad99f9f3ec4678092e",
+    "name": "SoFiUSD",
+    "decimals": 6,
+    "symbol": "SOFID",
+    "price": 0.999626,
+    "address": "0x0cb6d03b0ac88a463f67b7ad99f9f3ec4678092e",
+    "addresses": {
+     "ethereum": "0x0cb6d03b0ac88a463f67b7ad99f9f3ec4678092e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-21T12:12:23.354Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 358216341,
+    "image": "https://coin-images.coingecko.com/coins/images/71688/large/CRY25-3266080_StableCoinLogo.png?1768922282",
+    "metrics": {
+     "volumeUsd1d": "4283333.777",
+     "volumeUsd7d": "51868326.765"
+    },
+    "metadata": {
+     "tags": [
+      "#stablecoin"
+     ]
+    },
+    "tokenId": "1a1ba339-7c32-4275-b0b1-11488f262663",
+    "totalSupply": "358351559.84",
+    "circulatingSupply": "358351559.84",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8": {
+    "key": "arbitrum:0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+    "name": "SoFi Technologies rStock",
+    "decimals": 18,
+    "symbol": "RSOFI",
+    "price": 14.45,
+    "address": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8",
+    "addresses": {
+     "arbitrum": "0xd7f64f582ef3c1a5a7bf332f0735fe44bb90e5f8"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 116918,
+    "image": "https://coin-images.coingecko.com/coins/images/102177101/large/83806bf37fbdb204bd7ce97c31eef64b.png?1789116831",
+    "metrics": {
+     "volumeUsd1d": "65.002",
+     "volumeUsd7d": "213915.008"
+    },
+    "metadata": {},
+    "tokenId": "beaf39ae-074b-4e82-90f9-5121bd7528e9",
+    "totalSupply": "8093.088971737",
+    "circulatingSupply": "8093.088971737",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x71507068e98049cba81e9bbc8d901e4a2f4222eb": {
+    "key": "bsc:0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+    "name": "SoFi Technologies (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SOFION",
+    "price": 14.45,
+    "address": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+    "addresses": {
+     "bsc": "0x71507068e98049cba81e9bbc8d901e4a2f4222eb",
+     "ethereum": "0x9f2e3eb0160117c56b07652fe66a08a48b5bd7b5"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10246079,
+    "image": "https://coin-images.coingecko.com/coins/images/71579/large/sofion_160x160.webp?1768405245",
+    "metrics": {
+     "volumeUsd1d": "144345.713",
+     "volumeUsd7d": "1474875.098"
+    },
+    "metadata": {},
+    "tokenId": "5d226e2e-1b7b-4a68-9f8d-07ca7a8d8cb8",
+    "totalSupply": "710144.0362810316",
+    "circulatingSupply": "710144.0362810316",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

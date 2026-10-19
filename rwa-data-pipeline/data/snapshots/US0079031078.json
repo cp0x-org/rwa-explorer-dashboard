@@ -1,0 +1,2798 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0079031078",
+ "ticker": "AMD",
+ "name": "Advanced Micro Devices",
+ "isin": "US0079031078",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:08Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Advanced Micro Devices Inc",
+   "symbol": "AMD",
+   "slug": "amd",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 517.5235600635621,
+     "tokenized_market_cap": 20670071.209686495,
+     "tokenized_volume_24h": 7188647.33327272,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 25,
+   "asset_type": "stock",
+   "rwa_rank": 19,
+   "has_tokens": true,
+   "average_tokenized_price": 517.5235600635621,
+   "tokenized_market_cap": 20670071.209686495,
+   "tokenized_volume_24h": 7188647.33327272,
+   "last_updated": "2026-10-18T20:13:35.755Z",
+   "tokens": [
+    {
+     "symbol": "AMD.D",
+     "name": "AMD tokenized stock (Dinari)",
+     "price": null,
+     "crypto_id": 28632,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "AMDon",
+     "name": "AMD Tokenized Stock (Ondo)",
+     "price": 521.9119293375009,
+     "crypto_id": 38027,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 8377774.23,
+     "volume_24h": 2378897.08416546
+    },
+    {
+     "symbol": "AMD",
+     "name": "Advanced Micro Devices Inc (Derivatives)",
+     "price": 516.3917350773353,
+     "crypto_id": 39489,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMDB",
+     "name": "Advanced Micro Devices Tokenized bStocks",
+     "price": 515.2717033368638,
+     "crypto_id": 40538,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 8028392.59,
+     "volume_24h": 3987744.17700224
+    },
+    {
+     "symbol": "rAMD",
+     "name": "AMD Tokenized Stock (Reality)",
+     "price": 526.6948299051155,
+     "crypto_id": 40601,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 2115784.62,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMD",
+     "name": "AMD Tokenized Stock (Robinhood)",
+     "price": 515.83379236585,
+     "crypto_id": 40687,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 2139671.32,
+     "volume_24h": 812671.09143605
+    },
+    {
+     "symbol": "wAMDx",
+     "name": "Wrapped AMD Tokenized Stock (xStock)",
+     "price": 523.4494903422669,
+     "crypto_id": 41115,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMDc",
+     "name": "Advanced Micro Devices, Inc. Tokenized Stock (Coinbase)",
+     "price": 581.3949939308574,
+     "crypto_id": 42473,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 9478.05,
+     "volume_24h": 3343.487995
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AMD",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AMD"
+    }
+   ]
+  },
+  "info": {
+   "28632": {
+    "id": 28632,
+    "symbol": "AMD.D",
+    "name": "AMD tokenized stock (Dinari)",
+    "slug": "dinari-amd",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/28632.png",
+    "date_added": "2023-12-07T11:21:20.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xd8F728AdB72a46Ae2c92234AE8870D04907786C5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd8F728AdB72a46Ae2c92234AE8870D04907786C5",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "38027": {
+    "id": 38027,
+    "symbol": "AMDon",
+    "name": "AMD Tokenized Stock (Ondo)",
+    "slug": "amd-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38027.png",
+    "date_added": "2025-09-03T10:55:20.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x0C1f3412A44Ff99E40bF14e06e5Ea321aE7B3938"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0C1f3412A44Ff99E40bF14e06e5Ea321aE7B3938",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "14diAn5z8kjrKwSC8WLqvBqqe5YmihJhjxRxd8Z6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x33706203A7a7c82B6F6c09dd9Ae4E6e881d36386",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39489": {
+    "id": 39489,
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices Inc (Derivatives)",
+    "slug": "advanced-micro-devices-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39489.png",
+    "date_added": "2026-01-30T05:33:22.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40538": {
+    "id": 40538,
+    "symbol": "AMDB",
+    "name": "Advanced Micro Devices Tokenized bStocks",
+    "slug": "advanced-micro-devices-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40538.png",
+    "date_added": "2026-06-21T05:23:03.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40601": {
+    "id": 40601,
+    "symbol": "rAMD",
+    "name": "AMD Tokenized Stock (Reality)",
+    "slug": "amd-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40601.png",
+    "date_added": "2026-07-02T07:39:02.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40687": {
+    "id": 40687,
+    "symbol": "AMD",
+    "name": "AMD Tokenized Stock (Robinhood)",
+    "slug": "amd-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40687.png",
+    "date_added": "2026-08-04T07:31:25.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x86923f96303D656E4aa86D9d42D1e57ad2023fdC"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x86923f96303D656E4aa86D9d42D1e57ad2023fdC",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41115": {
+    "id": 41115,
+    "symbol": "wAMDx",
+    "name": "Wrapped AMD Tokenized Stock (xStock)",
+    "slug": "wrapped-amd-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41115.png",
+    "date_added": "2026-08-11T16:20:22.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xEe7CcB0d37A12862e7f92F6C92a93d9c2d304266"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xEe7CcB0d37A12862e7f92F6C92a93d9c2d304266",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42473": {
+    "id": 42473,
+    "symbol": "AMDc",
+    "name": "Advanced Micro Devices, Inc. Tokenized Stock (Coinbase)",
+    "slug": "advanced-micro-devices-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42473.png",
+    "date_added": "2026-10-08T03:59:55.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB2000000000000000000000d8ce462E99ee7A47B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB2000000000000000000000d8ce462E99ee7A47B",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+   "arbitrum:0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+   "base:0xb2000000000000000000000d8ce462e99ee7a47b",
+   "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+   "bsc:0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+   "ethereum:0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+   "hyperevm:0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+   "robinhood:0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+  ],
+  "exact": {
+   "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1": {
+    "key": "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "name": "Advanced Micro Devices (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDB",
+    "price": 515.45,
+    "address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "addresses": {
+     "bsc": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T08:14:29.873Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8031051,
+    "image": "https://coin-images.coingecko.com/coins/images/102176878/large/amdb.png?1788941339",
+    "metrics": {
+     "volumeUsd1d": "2400557.52",
+     "volumeUsd7d": "22708415.373"
+    },
+    "metadata": {},
+    "tokenId": "25b6c127-d895-4413-945a-b8e723f63e3a",
+    "totalSupply": "15580.48360761",
+    "circulatingSupply": "15580.48360761",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386": {
+    "key": "hyperevm:0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1045501.6",
+     "volumeUsd7d": "15069481.132"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x86923f96303d656e4aa86d9d42d1e57ad2023fdc": {
+    "key": "robinhood:0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "name": "AMD • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.265,
+    "address": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "addresses": {
+     "robinhood": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "liquidity": 2187087.8066541,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1638666.287"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000086aeaac3c7d9422c90f6fd41aff0eaf7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "752ff9bb-e105-42d1-b1d7-6d6d947ac0ce",
+    "totalSupply": "4147.98594",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd8f728adb72a46ae2c92234ae8870d04907786c5": {
+    "key": "arbitrum:0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+    "name": "Dinari AMD",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.89,
+    "address": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+    "addresses": {
+     "avalanche": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+     "arbitrum": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+     "base": "0xaaf450456949eb5fc77987f619653e77383a8170",
+     "ethereum": "0x0b955628acf18834a7bf81fbe303c36221f2fd26"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-16T11:15:29.618Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 127717,
+    "image": "https://coin-images.coingecko.com/coins/images/102174922/large/dinari-logo-green-with-margin.png?1785402573",
+    "metrics": {
+     "volumeUsd1d": "79.313",
+     "volumeUsd7d": "42109.673"
+    },
+    "metadata": {},
+    "tokenId": "744acaa4-d91c-46ee-8da6-824a5a3ee859",
+    "totalSupply": "241.41056681632412",
+    "circulatingSupply": "241.94056681632412",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f": {
+    "key": "arbitrum:0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+    "name": "Advanced Micro Devices rStock",
+    "decimals": 18,
+    "symbol": "RAMD",
+    "price": 526.9,
+    "address": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+    "addresses": {
+     "arbitrum": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2117428,
+    "image": "https://coin-images.coingecko.com/coins/images/102177016/large/ee08cce8e354b03d1c8c1918cdcfeb6a.png?1789116564",
+    "metrics": {
+     "volumeUsd1d": "229.579",
+     "volumeUsd7d": "2039816.214"
+    },
+    "metadata": {},
+    "tokenId": "b266df5f-92d9-4611-a8b9-525eb8327163",
+    "totalSupply": "4018.667320228",
+    "circulatingSupply": "4018.667320228",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938": {
+    "key": "ethereum:0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1046238.357",
+     "volumeUsd7d": "15129791.617"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9f16e46c73b43bdb70861247d537bee4ea18f639": {
+    "key": "bsc:0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1046343.415",
+     "volumeUsd7d": "15073044.174"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AMD": {
+    "total_items": 51,
+    "pages": 1,
+    "received": 51,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x1c2a482970ae6b6e5052a7a184c8aef19e0840be": {
+    "key": "robinhood:0x1c2a482970ae6b6e5052a7a184c8aef19e0840be",
+    "name": "Advanced Micro Dog",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 6.92e-06,
+    "address": "0x1c2a482970ae6b6e5052a7a184c8aef19e0840be",
+    "addresses": {
+     "robinhood": "0x1c2a482970ae6b6e5052a7a184c8aef19e0840be"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T05:41:34.373Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6920.65,
+    "image": "https://coin-images.coingecko.com/coins/images/102176863/large/AMD.jpg?1788931295",
+    "metrics": {
+     "volumeUsd1d": "73.362",
+     "volumeUsd7d": "1049.33"
+    },
+    "metadata": {},
+    "tokenId": "51190f1d-0ceb-4d99-abb2-d665e1dd751e",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe2e2bdd2383d1d2742d98609dd65af8bbdf34680456205b0cc7458aadb58c99b": {
+    "key": "bsc:0xe2e2bdd2383d1d2742d98609dd65af8bbdf34680456205b0cc7458aadb58c99b",
+    "name": "Uniswap V4 LP USDT/AMDon",
+    "decimals": 18,
+    "symbol": "USDT/AMDON",
+    "price": 9007199254740990,
+    "address": "0xe2e2bdd2383d1d2742d98609dd65af8bbdf34680456205b0cc7458aadb58c99b",
+    "addresses": {
+     "bsc": "0xe2e2bdd2383d1d2742d98609dd65af8bbdf34680456205b0cc7458aadb58c99b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.108Z",
+    "createdAt": "2026-09-18T14:59:42.177Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x9f16e46c73b43bdb70861247d537bee4ea18f639"
+    ],
+    "liquidity": 5231.033207707537,
+    "metrics": {
+     "apy": "19.632",
+     "baseApy": "19.632",
+     "volumeUsd1d": "55.196",
+     "volumeUsd7d": "267.682"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "aa8b71b2-0787-4948-819b-7851382dae88",
+    "reserves": [
+     "2493.822329125674803031",
+     "5.209851767494222645"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x57a8f3c4031540c28ae994b9409167f886112f8b8d7d5911f62da3f420e5ef4c": {
+    "key": "ethereum:0x57a8f3c4031540c28ae994b9409167f886112f8b8d7d5911f62da3f420e5ef4c",
+    "name": "Uniswap V4 LP AMDon/ZQ",
+    "decimals": 18,
+    "symbol": "AMDON/ZQ",
+    "price": 9007199254740990,
+    "address": "0x57a8f3c4031540c28ae994b9409167f886112f8b8d7d5911f62da3f420e5ef4c",
+    "addresses": {
+     "ethereum": "0x57a8f3c4031540c28ae994b9409167f886112f8b8d7d5911f62da3f420e5ef4c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.465Z",
+    "createdAt": "2026-09-30T05:25:12.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665"
+    ],
+    "liquidity": 19988.78347487855,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "55"
+    },
+    "tokenId": "92e49e80-8f5f-44e1-854b-d33fec59d9a1",
+    "reserves": [
+     "0",
+     "19999.999999999999999977"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x52dacb9e5d583abb89c59e620eada1cff7483d336df696fff918a66ec03b5132": {
+    "key": "robinhood:0x52dacb9e5d583abb89c59e620eada1cff7483d336df696fff918a66ec03b5132",
+    "name": "Uniswap V4 LP USDG/AMD",
+    "decimals": 18,
+    "symbol": "USDG/AMD",
+    "price": 9007199254740990,
+    "address": "0x52dacb9e5d583abb89c59e620eada1cff7483d336df696fff918a66ec03b5132",
+    "addresses": {
+     "robinhood": "0x52dacb9e5d583abb89c59e620eada1cff7483d336df696fff918a66ec03b5132"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.918Z",
+    "createdAt": "2026-07-19T21:20:26.459Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 1035.2854377208644,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16800,
+     "feePercentage": "84"
+    },
+    "tokenId": "bef68d12-9e5b-47e6-b0fb-72d28e1395d1",
+    "reserves": [
+     "499.995201",
+     "1.015220499598616047"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad": {
+    "key": "bsc:0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad",
+    "name": "Uniswap V4 LP USDT/AMDB",
+    "decimals": 18,
+    "symbol": "USDT/AMDB",
+    "price": 9007199254740990,
+    "address": "0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad",
+    "addresses": {
+     "bsc": "0x5e1c94b7b15a740a8606c37cedd680bc33e4e0252bbe5372069a60d73d9b24ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176878/large/amdb.png?1788941339"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.548Z",
+    "createdAt": "2026-09-09T09:21:27.955Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    ],
+    "liquidity": 17326.462022791904,
+    "metrics": {
+     "apy": "16.496",
+     "baseApy": "16.496",
+     "volumeUsd1d": "373.241",
+     "volumeUsd7d": "20379.354"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "87b9afff-0d47-467a-a57b-27f43833faf5",
+    "reserves": [
+     "6106.902828046495994179",
+     "21.776152875820705232"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7f90de7a4d52547c81b2a5a8715238a908e88d147e343695162b2e887e039c2b": {
+    "key": "ethereum:0x7f90de7a4d52547c81b2a5a8715238a908e88d147e343695162b2e887e039c2b",
+    "name": "Uniswap V4 LP USDT/AMDx",
+    "decimals": 18,
+    "symbol": "USDT/AMDX",
+    "price": 9007199254740990,
+    "address": "0x7f90de7a4d52547c81b2a5a8715238a908e88d147e343695162b2e887e039c2b",
+    "addresses": {
+     "ethereum": "0x7f90de7a4d52547c81b2a5a8715238a908e88d147e343695162b2e887e039c2b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.620Z",
+    "createdAt": "2026-10-18T18:58:08.320Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x3522513e5f146a2006e2901b05f16b2821485e19"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "deae058e-550b-44ca-83ed-df43520c7db8",
+    "reserves": [
+     "3999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43": {
+    "key": "base:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "name": "Advanced Micro Devices aStock",
+    "decimals": 18,
+    "symbol": "AAMD",
+    "price": 527.43,
+    "address": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "addresses": {
+     "bsc": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "base": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "arbitrum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "ethereum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "robinhood": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102175668/large/AMD.png?1787292209",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "68d54e24-fe35-4aa7-8fa4-80b988fc2366",
+    "totalSupply": "1.307650823",
+    "circulatingSupply": "1.307650823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd60bc30cf5e564e0b956aebb338942273d62f93b": {
+    "key": "robinhood:0xd60bc30cf5e564e0b956aebb338942273d62f93b",
+    "name": "Beefy CLM AMD-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-AMD",
+    "price": 497.8806246908628,
+    "address": "0xd60bc30cf5e564e0b956aebb338942273d62f93b",
+    "addresses": {
+     "robinhood": "0xd60bc30cf5e564e0b956aebb338942273d62f93b"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "poolAddress": "0x48d284a2a4d3dc1b3da08231fe44317e7e7aa51f",
+    "liquidity": 82590.02908163698,
+    "metrics": {
+     "apy": "36.747",
+     "baseApy": "36.747",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-766.007"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-amd",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xd60bc30cf5e564e0b956aebb338942273d62f93b",
+     "strategyAddress": "0x350fd9b90679371862ea2d03f284edde622f2d7b",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x8202478ab592a6b448cf679969aa7ba3f50c18b3",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+     ]
+    },
+    "tokenId": "2967b9e7-435a-408b-89fd-96b302fefe15",
+    "totalSupply": "165.883195661445218813",
+    "reserves": [
+     "16216.592185",
+     "125.882501013033245715"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x80e23c0dd75ec1e84757b41fa7530101b6775b61fdc6233eaf046e9cc5f90516": {
+    "key": "robinhood:0x80e23c0dd75ec1e84757b41fa7530101b6775b61fdc6233eaf046e9cc5f90516",
+    "name": "Uniswap V4 LP ETH/AMD",
+    "decimals": 18,
+    "symbol": "ETH/AMD",
+    "price": 9007199254740990,
+    "address": "0x80e23c0dd75ec1e84757b41fa7530101b6775b61fdc6233eaf046e9cc5f90516",
+    "addresses": {
+     "robinhood": "0x80e23c0dd75ec1e84757b41fa7530101b6775b61fdc6233eaf046e9cc5f90516"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.261Z",
+    "createdAt": "2026-07-27T19:07:33.616Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 2444.3336511437255,
+    "metrics": {
+     "apy": "30.12",
+     "baseApy": "30.12",
+     "volumeUsd1d": "38.863",
+     "volumeUsd7d": "302.789"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.19"
+    },
+    "tokenId": "724ba0fe-7986-4331-a883-a9d7cde0734f",
+    "reserves": [
+     "0.383652974075016345",
+     "2.93579127536755169"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfc597cb44920c9a70dc59554b0e332626ca72c0616d5709bdfdccb700892d2a8": {
+    "key": "ethereum:0xfc597cb44920c9a70dc59554b0e332626ca72c0616d5709bdfdccb700892d2a8",
+    "name": "Uniswap V4 LP AMDon/EGP",
+    "decimals": 18,
+    "symbol": "AMDON/EGP",
+    "price": 9007199254740990,
+    "address": "0xfc597cb44920c9a70dc59554b0e332626ca72c0616d5709bdfdccb700892d2a8",
+    "addresses": {
+     "ethereum": "0xfc597cb44920c9a70dc59554b0e332626ca72c0616d5709bdfdccb700892d2a8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.808Z",
+    "createdAt": "2026-10-14T06:54:38.394Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20056.306350224968,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.61"
+    },
+    "tokenId": "33435530-3865-467f-81dd-5981d9c789d2",
+    "reserves": [
+     "0.046747034492052964",
+     "19999.999999999999999859"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0b955628acf18834a7bf81fbe303c36221f2fd26": {
+    "key": "ethereum:0x0b955628acf18834a7bf81fbe303c36221f2fd26",
+    "name": "Dinari AMD",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.89,
+    "address": "0x0b955628acf18834a7bf81fbe303c36221f2fd26",
+    "addresses": {
+     "avalanche": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+     "arbitrum": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+     "base": "0xaaf450456949eb5fc77987f619653e77383a8170",
+     "ethereum": "0x0b955628acf18834a7bf81fbe303c36221f2fd26"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 127717,
+    "image": "https://coin-images.coingecko.com/coins/images/102174922/large/dinari-logo-green-with-margin.png?1785402573",
+    "metrics": {
+     "volumeUsd1d": "79.313",
+     "volumeUsd7d": "36560.764"
+    },
+    "metadata": {},
+    "tokenId": "744acaa4-d91c-46ee-8da6-824a5a3ee859",
+    "totalSupply": "241.41056681632412",
+    "circulatingSupply": "241.94056681632412",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3522513e5f146a2006e2901b05f16b2821485e19": {
+    "key": "ethereum:0x3522513e5f146a2006e2901b05f16b2821485e19",
+    "name": "AMD xStock",
+    "decimals": 18,
+    "symbol": "AMDX",
+    "price": 522.24,
+    "address": "0x3522513e5f146a2006e2901b05f16b2821485e19",
+    "addresses": {
+     "ethereum": "0x3522513e5f146a2006e2901b05f16b2821485e19"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.462Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24284160,
+    "image": "https://coin-images.coingecko.com/coins/images/69642/large/Ticker_AMDx__Company_Name_AMD__size_200x200.png?1759233775",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amd-xstock"
+    },
+    "tokenId": "7aa9c61a-7d40-4f95-aa8e-84226f3da0d4",
+    "totalSupply": "46500",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xee7ccb0d37a12862e7f92f6c92a93d9c2d304266": {
+    "key": "ethereum:0xee7ccb0d37a12862e7f92f6c92a93d9c2d304266",
+    "name": "Wrapped AMD xStock",
+    "decimals": 18,
+    "symbol": "WAMDX",
+    "price": 522.25,
+    "address": "0xee7ccb0d37a12862e7f92f6c92a93d9c2d304266",
+    "addresses": {
+     "ethereum": "0xee7ccb0d37a12862e7f92f6c92a93d9c2d304266"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.462Z",
+    "createdAt": "2026-07-03T11:38:30.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3522513e5f146a2006e2901b05f16b2821485e19"
+    ],
+    "liquidity": 6463.130828124564,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/AMDx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "68.028"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "348f3d34-68cc-4140-9133-e25313712e40",
+    "totalSupply": "12.375549694829225065",
+    "reserves": [
+     "12.375549694829225065"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0b4486a6c403d2f73020254c7939b21d37eff1c61822cb380a22aa78e15df74f": {
+    "key": "ethereum:0x0b4486a6c403d2f73020254c7939b21d37eff1c61822cb380a22aa78e15df74f",
+    "name": "Uniswap V4 LP AMDon/wUSDC",
+    "decimals": 18,
+    "symbol": "AMDON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x0b4486a6c403d2f73020254c7939b21d37eff1c61822cb380a22aa78e15df74f",
+    "addresses": {
+     "ethereum": "0x0b4486a6c403d2f73020254c7939b21d37eff1c61822cb380a22aa78e15df74f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.774Z",
+    "createdAt": "2026-09-28T10:37:11.189Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "9e708f2a-af32-469a-a05b-4aa37633483c",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x44ece1031e5b5e2d9169546cc10ea5c95ba96237": {
+    "key": "bsc:0x44ece1031e5b5e2d9169546cc10ea5c95ba96237",
+    "name": "AmazingTeamDAO",
+    "decimals": 18,
+    "symbol": "AMAZINGTEAM",
+    "price": 0.379618,
+    "address": "0x44ece1031e5b5e2d9169546cc10ea5c95ba96237",
+    "addresses": {
+     "bsc": "0x44ece1031e5b5e2d9169546cc10ea5c95ba96237"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37962,
+    "image": "https://assets.coingecko.com/coins/images/25064/large/EXlV29q.jpg?1696524214",
+    "metrics": {
+     "volumeUsd1d": "155.754",
+     "volumeUsd7d": "927.806"
+    },
+    "metadata": {},
+    "tokenId": "0e7d6fd6-2cb6-4dd8-b16b-b937ef647b55",
+    "totalSupply": "99999.99999999999",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1": {
+    "key": "bsc:0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "name": "Advanced Micro Devices (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDB",
+    "price": 515.45,
+    "address": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1",
+    "addresses": {
+     "bsc": "0x75fd4cf6f8392e41e70391d60c90c0d5211603a1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T08:14:29.873Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8031051,
+    "image": "https://coin-images.coingecko.com/coins/images/102176878/large/amdb.png?1788941339",
+    "metrics": {
+     "volumeUsd1d": "2400557.52",
+     "volumeUsd7d": "22708415.373"
+    },
+    "metadata": {},
+    "tokenId": "25b6c127-d895-4413-945a-b8e723f63e3a",
+    "totalSupply": "15580.48360761",
+    "circulatingSupply": "15580.48360761",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xaaf450456949eb5fc77987f619653e77383a8170": {
+    "key": "base:0xaaf450456949eb5fc77987f619653e77383a8170",
+    "name": "Dinari AMD",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.89,
+    "address": "0xaaf450456949eb5fc77987f619653e77383a8170",
+    "addresses": {
+     "avalanche": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+     "arbitrum": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+     "base": "0xaaf450456949eb5fc77987f619653e77383a8170",
+     "ethereum": "0x0b955628acf18834a7bf81fbe303c36221f2fd26"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 127717,
+    "image": "https://coin-images.coingecko.com/coins/images/102174922/large/dinari-logo-green-with-margin.png?1785402573",
+    "metrics": {
+     "volumeUsd1d": "79.313",
+     "volumeUsd7d": "42114.663"
+    },
+    "metadata": {},
+    "tokenId": "744acaa4-d91c-46ee-8da6-824a5a3ee859",
+    "totalSupply": "241.41056681632412",
+    "circulatingSupply": "241.94056681632412",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43": {
+    "key": "robinhood:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "name": "Advanced Micro Devices aStock",
+    "decimals": 18,
+    "symbol": "AAMD",
+    "price": 527.43,
+    "address": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "addresses": {
+     "bsc": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "base": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "arbitrum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "ethereum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "robinhood": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102175668/large/AMD.png?1787292209",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "68d54e24-fe35-4aa7-8fa4-80b988fc2366",
+    "totalSupply": "1.307650823",
+    "circulatingSupply": "1.307650823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe6e17efdbdd916526293cf1b509171be4ffb04f47c4a5fe1a7367acdaa6ffd82": {
+    "key": "robinhood:0xe6e17efdbdd916526293cf1b509171be4ffb04f47c4a5fe1a7367acdaa6ffd82",
+    "name": "Uniswap V4 LP SPY/AMD",
+    "decimals": 18,
+    "symbol": "SPY/AMD",
+    "price": 9007199254740990,
+    "address": "0xe6e17efdbdd916526293cf1b509171be4ffb04f47c4a5fe1a7367acdaa6ffd82",
+    "addresses": {
+     "robinhood": "0xe6e17efdbdd916526293cf1b509171be4ffb04f47c4a5fe1a7367acdaa6ffd82"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.994Z",
+    "createdAt": "2026-08-06T14:30:06.690Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 315338.01679434057,
+    "metrics": {
+     "apy": "39.033",
+     "baseApy": "39.033",
+     "volumeUsd1d": "539550.739",
+     "volumeUsd7d": "6539345.076"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "6c07d77e-1025-4cb8-b79e-470cf86557bd",
+    "reserves": [
+     "72.745292878798211175",
+     "492.818316808383922718"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0x27f8d03b3a2196956ed754badc28d73be8830a6e": {
+    "key": "polygon:0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+    "name": "Aave Matic Market DAI",
+    "decimals": 18,
+    "symbol": "AMDAI",
+    "price": 1,
+    "address": "0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+    "addresses": {
+     "polygon": "0x27f8d03b3a2196956ed754badc28d73be8830a6e"
+    },
+    "platform": "aavev2",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/9956/large/Badge_Dai.png?1696509996"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.626Z",
+    "createdAt": "2024-02-29T09:06:43.080Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063"
+    ],
+    "liquidity": 1785376.9469871968,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "15.25",
+     "baseBorrowApy": "15.25",
+     "volumeUsd1d": "-129.314",
+     "volumeUsd7d": "290.829"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x2238101b7014c279aaf6b408a284e49cdbd5db55",
+     "variableDebtTokenAddress": "0x75c4d1fb84429023170086f06e682dcbbf537b7d"
+    },
+    "tokenId": "ea38a990-1641-4dff-a96f-f226a79b9c55",
+    "totalSupply": "1785376.946987196695977372",
+    "totalBorrow": "549018.398154370420975749",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386": {
+    "key": "hyperevm:0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1045501.6",
+     "volumeUsd7d": "15069481.132"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5eb1c0c6b5f383e95127660ca6481eb394bf99ed6b9034155077fb7b211b71f5": {
+    "key": "ethereum:0x5eb1c0c6b5f383e95127660ca6481eb394bf99ed6b9034155077fb7b211b71f5",
+    "name": "Uniswap V4 LP AMDon/USDC",
+    "decimals": 18,
+    "symbol": "AMDON/USDC",
+    "price": 9007199254740990,
+    "address": "0x5eb1c0c6b5f383e95127660ca6481eb394bf99ed6b9034155077fb7b211b71f5",
+    "addresses": {
+     "ethereum": "0x5eb1c0c6b5f383e95127660ca6481eb394bf99ed6b9034155077fb7b211b71f5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.674Z",
+    "createdAt": "2025-10-07T09:18:20.551Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 4677.580963936285,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "454844bf-cf7f-48be-bd87-af682514ff17",
+    "reserves": [
+     "4.80163714133799648",
+     "2153.365947"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5ca1b5e6cb510b3bf53e7cd8f7d9b5a71b4a4dc0": {
+    "key": "robinhood:0x5ca1b5e6cb510b3bf53e7cd8f7d9b5a71b4a4dc0",
+    "name": "Uniswap V3 WETH/AMD  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/AMD",
+    "price": 9007199254740990,
+    "address": "0x5ca1b5e6cb510b3bf53e7cd8f7d9b5a71b4a4dc0",
+    "addresses": {
+     "robinhood": "0x5ca1b5e6cb510b3bf53e7cd8f7d9b5a71b4a4dc0"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.732Z",
+    "createdAt": "2026-09-11T20:00:36.684Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 22400.382805909056,
+    "metrics": {
+     "apy": "55.41",
+     "baseApy": "55.41",
+     "volumeUsd1d": "11334.553",
+     "volumeUsd7d": "92142.739"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "efeed2d2-8c31-452d-9f95-55b713bb3260",
+    "reserves": [
+     "1.876453194990062514",
+     "34.166842740355667912"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3868aefd9b8209d949289529b1ff546ccfd8f16a63f70a16f3c8fe4c79c15fc8": {
+    "key": "bsc:0x3868aefd9b8209d949289529b1ff546ccfd8f16a63f70a16f3c8fe4c79c15fc8",
+    "name": "PancakeSwap Infinity LP USDT/AMDon",
+    "decimals": 18,
+    "symbol": "USDT/AMDON",
+    "price": 9007199254740990,
+    "address": "0x3868aefd9b8209d949289529b1ff546ccfd8f16a63f70a16f3c8fe4c79c15fc8",
+    "addresses": {
+     "bsc": "0x3868aefd9b8209d949289529b1ff546ccfd8f16a63f70a16f3c8fe4c79c15fc8"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.729Z",
+    "createdAt": "2026-09-20T03:29:45.062Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x9f16e46c73b43bdb70861247d537bee4ea18f639"
+    ],
+    "liquidity": 3340.051831223354,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "9dbbaf3d-cd91-48bc-8e1b-fc88b890b865",
+    "reserves": [
+     "2728.637009785928704523",
+     "1.167085995453177306"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7299841b076c2e7021cc1cad26b0f96046a32bd5212851b68ee3cf1958f57e3d": {
+    "key": "robinhood:0x7299841b076c2e7021cc1cad26b0f96046a32bd5212851b68ee3cf1958f57e3d",
+    "name": "Uniswap V4 LP ETH/AMD",
+    "decimals": 18,
+    "symbol": "ETH/AMD",
+    "price": 9007199254740990,
+    "address": "0x7299841b076c2e7021cc1cad26b0f96046a32bd5212851b68ee3cf1958f57e3d",
+    "addresses": {
+     "robinhood": "0x7299841b076c2e7021cc1cad26b0f96046a32bd5212851b68ee3cf1958f57e3d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.336Z",
+    "createdAt": "2026-07-16T20:36:43.747Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 2857.8482938893376,
+    "metrics": {
+     "apy": "44.229",
+     "baseApy": "44.229",
+     "volumeUsd1d": "67.964",
+     "volumeUsd7d": "1219.564"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "76bb7a06-b730-4871-be2a-a4f1f0810f69",
+    "reserves": [
+     "0.455173809118321793",
+     "3.403124319077981747"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x86923f96303d656e4aa86d9d42d1e57ad2023fdc": {
+    "key": "robinhood:0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "name": "AMD • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.265,
+    "address": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "addresses": {
+     "robinhood": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+    "liquidity": 2187087.8066541,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1638666.287"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000086aeaac3c7d9422c90f6fd41aff0eaf7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "752ff9bb-e105-42d1-b1d7-6d6d947ac0ce",
+    "totalSupply": "4147.98594",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd8f728adb72a46ae2c92234ae8870d04907786c5": {
+    "key": "arbitrum:0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+    "name": "Dinari AMD",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.89,
+    "address": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+    "addresses": {
+     "avalanche": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+     "arbitrum": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+     "base": "0xaaf450456949eb5fc77987f619653e77383a8170",
+     "ethereum": "0x0b955628acf18834a7bf81fbe303c36221f2fd26"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-16T11:15:29.618Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 127717,
+    "image": "https://coin-images.coingecko.com/coins/images/102174922/large/dinari-logo-green-with-margin.png?1785402573",
+    "metrics": {
+     "volumeUsd1d": "79.313",
+     "volumeUsd7d": "42109.673"
+    },
+    "metadata": {},
+    "tokenId": "744acaa4-d91c-46ee-8da6-824a5a3ee859",
+    "totalSupply": "241.41056681632412",
+    "circulatingSupply": "241.94056681632412",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f": {
+    "key": "arbitrum:0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+    "name": "Advanced Micro Devices rStock",
+    "decimals": 18,
+    "symbol": "RAMD",
+    "price": 526.9,
+    "address": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f",
+    "addresses": {
+     "arbitrum": "0x3fde83d2d577f21f1c0f61c7a53f4f578f8d800f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2117428,
+    "image": "https://coin-images.coingecko.com/coins/images/102177016/large/ee08cce8e354b03d1c8c1918cdcfeb6a.png?1789116564",
+    "metrics": {
+     "volumeUsd1d": "229.579",
+     "volumeUsd7d": "2039816.214"
+    },
+    "metadata": {},
+    "tokenId": "b266df5f-92d9-4611-a8b9-525eb8327163",
+    "totalSupply": "4018.667320228",
+    "circulatingSupply": "4018.667320228",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdc1e66df8cfb32fdf25252055d2920884620698ee9617816c9cf865d0eb20abb": {
+    "key": "ethereum:0xdc1e66df8cfb32fdf25252055d2920884620698ee9617816c9cf865d0eb20abb",
+    "name": "Uniswap V4 LP AMDon/USDC",
+    "decimals": 18,
+    "symbol": "AMDON/USDC",
+    "price": 9007199254740990,
+    "address": "0xdc1e66df8cfb32fdf25252055d2920884620698ee9617816c9cf865d0eb20abb",
+    "addresses": {
+     "ethereum": "0xdc1e66df8cfb32fdf25252055d2920884620698ee9617816c9cf865d0eb20abb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.813Z",
+    "createdAt": "2025-09-26T08:45:50.015Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 700.8101947148556,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "c2d150da-30ba-47c6-bd41-e2f4c13a95fe",
+    "reserves": [
+     "0.708491322805575649",
+     "328.35906"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0x81fb82aacb4abe262fc57f06fd4c1d2de347d7b1": {
+    "key": "polygon:0x81fb82aacb4abe262fc57f06fd4c1d2de347d7b1",
+    "name": "Aave Matic Market DPI",
+    "decimals": 18,
+    "symbol": "AMDPI",
+    "price": 58.04,
+    "address": "0x81fb82aacb4abe262fc57f06fd4c1d2de347d7b1",
+    "addresses": {
+     "polygon": "0x81fb82aacb4abe262fc57f06fd4c1d2de347d7b1"
+    },
+    "platform": "aavev2",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/12465/large/defi_pulse_index_set.png?1696512284"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.626Z",
+    "createdAt": "2024-02-29T09:06:43.080Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x85955046df4668e1dd369d2de9f3aeb98dd2a369"
+    ],
+    "liquidity": 834.7914333154254,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0xa742710c0244a8ebcf533368e3f0b956b6e53f7b",
+     "variableDebtTokenAddress": "0x43150aa0b7e19293d935a412c8607f9172d3d3f3"
+    },
+    "tokenId": "463d3367-7933-4614-9ac6-d4552e7eaa59",
+    "totalSupply": "14.383036411361565704",
+    "totalBorrow": "0",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x07fa95de79ab5788d174920c29592b5a6f2cbd18c03ec4a5c7a40e42137a40ad": {
+    "key": "robinhood:0x07fa95de79ab5788d174920c29592b5a6f2cbd18c03ec4a5c7a40e42137a40ad",
+    "name": "Uniswap V4 LP wUSDG/AMD",
+    "decimals": 18,
+    "symbol": "WUSDG/AMD",
+    "price": 9007199254740990,
+    "address": "0x07fa95de79ab5788d174920c29592b5a6f2cbd18c03ec4a5c7a40e42137a40ad",
+    "addresses": {
+     "robinhood": "0x07fa95de79ab5788d174920c29592b5a6f2cbd18c03ec4a5c7a40e42137a40ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.601Z",
+    "createdAt": "2026-08-17T23:02:50.576Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 10096.697586063634,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "7a0321af-2448-45c5-8900-f3a7acae346d",
+    "reserves": [
+     "9999.739115",
+     "0.000501582205623314"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x68051601df6bc5712078b96ac27cab7dfbf2cfc6": {
+    "key": "robinhood:0x68051601df6bc5712078b96ac27cab7dfbf2cfc6",
+    "name": "AlphaModel",
+    "decimals": 18,
+    "symbol": "AMDL",
+    "price": 1.0072293703766895e-08,
+    "address": "0x68051601df6bc5712078b96ac27cab7dfbf2cfc6",
+    "addresses": {
+     "robinhood": "0x68051601df6bc5712078b96ac27cab7dfbf2cfc6"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1007.2293703766894,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "9bfa5614-255e-4db6-96ce-e064ae992fe4",
+    "totalSupply": "100000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xea1a8080a9dc5c40449554798201fc5f041261dc9fad7276f1af2ebb7fabcb2f": {
+    "key": "robinhood:0xea1a8080a9dc5c40449554798201fc5f041261dc9fad7276f1af2ebb7fabcb2f",
+    "name": "Uniswap V4 LP AMD/SHROOM",
+    "decimals": 18,
+    "symbol": "AMD/SHROOM",
+    "price": 9007199254740990,
+    "address": "0xea1a8080a9dc5c40449554798201fc5f041261dc9fad7276f1af2ebb7fabcb2f",
+    "addresses": {
+     "robinhood": "0xea1a8080a9dc5c40449554798201fc5f041261dc9fad7276f1af2ebb7fabcb2f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.960Z",
+    "createdAt": "2026-09-08T15:09:09.381Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 1883.8773377846335,
+    "metrics": {
+     "apy": "6.431",
+     "baseApy": "6.431",
+     "volumeUsd1d": "33.208",
+     "volumeUsd7d": "8886.872"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "28ee29cb-9d97-490c-892c-d178253a4527",
+    "reserves": [
+     "2.251174399941800448",
+     "144212.92985840102291506"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd6af1dcb75cdae4f2efc403a58ef023a51edc686": {
+    "key": "robinhood:0xd6af1dcb75cdae4f2efc403a58ef023a51edc686",
+    "name": "Uniswap V3 Global Dollar/AMD  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/AMD",
+    "price": 9007199254740990,
+    "address": "0xd6af1dcb75cdae4f2efc403a58ef023a51edc686",
+    "addresses": {
+     "robinhood": "0xd6af1dcb75cdae4f2efc403a58ef023a51edc686"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.377Z",
+    "createdAt": "2026-07-31T21:31:22.553Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 2747.7837583200026,
+    "metrics": {
+     "apy": "32.974",
+     "baseApy": "32.974",
+     "volumeUsd1d": "248.235",
+     "volumeUsd7d": "7860.597"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "7fba2cfd-6274-43bb-ac98-cf9770bbd3c1",
+    "reserves": [
+     "208.864101",
+     "4.815263022047741628"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43": {
+    "key": "ethereum:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "name": "Advanced Micro Devices aStock",
+    "decimals": 18,
+    "symbol": "AAMD",
+    "price": 527.43,
+    "address": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "addresses": {
+     "bsc": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "base": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "arbitrum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "ethereum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "robinhood": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102175668/large/AMD.png?1787292209",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "68d54e24-fe35-4aa7-8fa4-80b988fc2366",
+    "totalSupply": "1.307650823",
+    "circulatingSupply": "1.307650823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43": {
+    "key": "avalanche:0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+    "name": "Dinari AMD",
+    "decimals": 18,
+    "symbol": "AMD",
+    "price": 527.89,
+    "address": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+    "addresses": {
+     "avalanche": "0x2b7c9a6448576790aa6ce639e4c70bbb32e65c43",
+     "arbitrum": "0xd8f728adb72a46ae2c92234ae8870d04907786c5",
+     "base": "0xaaf450456949eb5fc77987f619653e77383a8170",
+     "ethereum": "0x0b955628acf18834a7bf81fbe303c36221f2fd26"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 127717,
+    "image": "https://coin-images.coingecko.com/coins/images/102174922/large/dinari-logo-green-with-margin.png?1785402573",
+    "metrics": {
+     "volumeUsd1d": "79.313",
+     "volumeUsd7d": "42130.074"
+    },
+    "metadata": {},
+    "tokenId": "744acaa4-d91c-46ee-8da6-824a5a3ee859",
+    "totalSupply": "241.41056681632412",
+    "circulatingSupply": "241.94056681632412",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171": {
+    "key": "polygon:0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+    "name": "Curve.fi amDAI/amUSDC/amUSDT",
+    "decimals": 18,
+    "symbol": "AM3CRV",
+    "price": 1.144821407080799,
+    "address": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+    "addresses": {
+     "polygon": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171"
+    },
+    "platform": "curve",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+     "https://assets.coingecko.com/coins/images/9956/large/Badge_Dai.png?1696509996",
+     "https://assets.coingecko.com/coins/images/33000/large/usdc.png?1700119918",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:13:27.300Z",
+    "createdAt": "2024-02-29T09:09:04.635Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+     "0x1a13f4ca1d028320a707d99520abfefca3998b7f",
+     "0x60d55f02a771d515e077c9c2403a1ef324885cec"
+    ],
+    "poolAddress": "0x445fe580ef8d70ff569ab36e80c647af338db351",
+    "liquidity": 2288427.798029201,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1.12"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isMetaPool": false,
+     "feePercentage": "0.001",
+     "implementation": "",
+     "offpegFeeMultiplier": "500000000000",
+     "amplificationCoefficient": "2000"
+    },
+    "tokenId": "c5a6d1c8-8885-4880-9a7c-591884cf6673",
+    "totalSupply": "1998938.684999352711428159",
+    "reserves": [
+     "847169.943699500671955456",
+     "800838.099305",
+     "641228.378092"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43": {
+    "key": "bsc:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "name": "Advanced Micro Devices aStock",
+    "decimals": 18,
+    "symbol": "AAMD",
+    "price": 527.43,
+    "address": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "addresses": {
+     "bsc": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "base": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "arbitrum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "ethereum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "robinhood": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-10T07:32:28.587Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102175668/large/AMD.png?1787292209",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "68d54e24-fe35-4aa7-8fa4-80b988fc2366",
+    "totalSupply": "1.307650823",
+    "circulatingSupply": "1.307650823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xde9f85fdd9e05a943a52f2c69ffafe3064a3287df03d02c9b431bc92d4781274": {
+    "key": "robinhood:0xde9f85fdd9e05a943a52f2c69ffafe3064a3287df03d02c9b431bc92d4781274",
+    "name": "Uniswap V4 LP USDG/AMD",
+    "decimals": 18,
+    "symbol": "USDG/AMD",
+    "price": 9007199254740990,
+    "address": "0xde9f85fdd9e05a943a52f2c69ffafe3064a3287df03d02c9b431bc92d4781274",
+    "addresses": {
+     "robinhood": "0xde9f85fdd9e05a943a52f2c69ffafe3064a3287df03d02c9b431bc92d4781274"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.440Z",
+    "createdAt": "2026-07-16T20:40:38.210Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 552791.6353795285,
+    "metrics": {
+     "apy": "6.911",
+     "baseApy": "6.911",
+     "volumeUsd1d": "9524.152",
+     "volumeUsd7d": "644176.325"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "c033431a-2f27-4af3-adf6-9a4111d26a6f",
+    "reserves": [
+     "57348.576255",
+     "939.647158685914193415"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43": {
+    "key": "arbitrum:0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "name": "Advanced Micro Devices aStock",
+    "decimals": 18,
+    "symbol": "AAMD",
+    "price": 527.43,
+    "address": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+    "addresses": {
+     "bsc": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "base": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "arbitrum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "ethereum": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43",
+     "robinhood": "0xbdf82c0dafcf73834d10639c0f0bf14b84808c43"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 689.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102175668/large/AMD.png?1787292209",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "68d54e24-fe35-4aa7-8fa4-80b988fc2366",
+    "totalSupply": "1.307650823",
+    "circulatingSupply": "1.307650823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd4bfd899c4d069442d962a421e03fb1320df59de6719d210fa1c1c0d28b5a64f": {
+    "key": "ethereum:0xd4bfd899c4d069442d962a421e03fb1320df59de6719d210fa1c1c0d28b5a64f",
+    "name": "Uniswap V4 LP AMDx/USDCc",
+    "decimals": 18,
+    "symbol": "AMDX/USDCC",
+    "price": 9007199254740990,
+    "address": "0xd4bfd899c4d069442d962a421e03fb1320df59de6719d210fa1c1c0d28b5a64f",
+    "addresses": {
+     "ethereum": "0xd4bfd899c4d069442d962a421e03fb1320df59de6719d210fa1c1c0d28b5a64f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.991Z",
+    "createdAt": "2026-10-09T07:24:28.385Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3522513e5f146a2006e2901b05f16b2821485e19",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 2999.2151372049475,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.5036"
+    },
+    "tokenId": "03cc3d98-87d8-4662-b85b-7f7cd6b60a3f",
+    "reserves": [
+     "0",
+     "2999.999999999999999918"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x48d284a2a4d3dc1b3da08231fe44317e7e7aa51f": {
+    "key": "robinhood:0x48d284a2a4d3dc1b3da08231fe44317e7e7aa51f",
+    "name": "Uniswap V3 Global Dollar/AMD  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/AMD",
+    "price": 9007199254740990,
+    "address": "0x48d284a2a4d3dc1b3da08231fe44317e7e7aa51f",
+    "addresses": {
+     "robinhood": "0x48d284a2a4d3dc1b3da08231fe44317e7e7aa51f"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.324Z",
+    "createdAt": "2026-07-31T21:31:03.469Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 214642.6295307499,
+    "metrics": {
+     "apy": "50.369",
+     "baseApy": "50.369",
+     "volumeUsd1d": "98733.349",
+     "volumeUsd7d": "1062622.217"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "ec371d9e-1d0c-421a-8800-fd45b08c9170",
+    "reserves": [
+     "31022.464313",
+     "348.250244597593035545"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0x6c4572a3aa339eeff06b686c1598a2d705e41db60f65a3bc9ea245e7e674d471": {
+    "key": "polygon:0x6c4572a3aa339eeff06b686c1598a2d705e41db60f65a3bc9ea245e7e674d471",
+    "name": "Uniswap V4 LP amDAI/MM",
+    "decimals": 18,
+    "symbol": "AMDAI/MM",
+    "price": 9007199254740990,
+    "address": "0x6c4572a3aa339eeff06b686c1598a2d705e41db60f65a3bc9ea245e7e674d471",
+    "addresses": {
+     "polygon": "0x6c4572a3aa339eeff06b686c1598a2d705e41db60f65a3bc9ea245e7e674d471"
+    },
+    "platform": "uniswap-v4",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/39787/large/dai.png?1724110678"
+    ],
+    "updatedAt": "2026-10-18T20:13:11.811Z",
+    "createdAt": "2026-07-11T10:43:48.822Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x27f8d03b3a2196956ed754badc28d73be8830a6e",
+     "0x8e231edf6110ed36ac5ceb5128e01108b46522ea"
+    ],
+    "liquidity": 24901.119418671566,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19900,
+     "feePercentage": "99.5"
+    },
+    "tokenId": "f6dcbfcd-d687-4601-bbb0-faadbf140eba",
+    "reserves": [
+     "0.046636840256750762",
+     "24951.192696645687782746"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0xf25958c64634fd5b5eb10539769aa6cab355599a": {
+    "key": "polygon:0xf25958c64634fd5b5eb10539769aa6cab355599a",
+    "name": "Curve.fi amDAI/amUSDC/amUSDT Convex Deposit",
+    "decimals": 18,
+    "symbol": "CVXAM3CRV",
+    "price": 1.144821407080799,
+    "address": "0xf25958c64634fd5b5eb10539769aa6cab355599a",
+    "addresses": {
+     "polygon": "0xf25958c64634fd5b5eb10539769aa6cab355599a"
+    },
+    "platform": "convex",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/15585/large/convex.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/33000/large/usdc.png?1700119918",
+     "https://assets.coingecko.com/coins/images/9956/large/Badge_Dai.png?1696509996"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.191Z",
+    "createdAt": "2024-02-29T09:09:04.635Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171"
+    ],
+    "poolAddress": "0xf25958c64634fd5b5eb10539769aa6cab355599a",
+    "liquidity": 3959.9930938283273,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ]
+    },
+    "tokenId": "f8528a86-d93d-44f6-8133-40de87511f31",
+    "totalSupply": "3459.048782050630692712",
+    "reserves": [
+     "3459.048782050630692712"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938": {
+    "key": "ethereum:0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1046238.357",
+     "volumeUsd7d": "15129791.617"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf0d9c19962dd5111812c8e9059f07aea3e72bb98f44bf532aaed8883832b20c6": {
+    "key": "robinhood:0xf0d9c19962dd5111812c8e9059f07aea3e72bb98f44bf532aaed8883832b20c6",
+    "name": "Uniswap V4 LP AMD/SHROOM",
+    "decimals": 18,
+    "symbol": "AMD/SHROOM",
+    "price": 9007199254740990,
+    "address": "0xf0d9c19962dd5111812c8e9059f07aea3e72bb98f44bf532aaed8883832b20c6",
+    "addresses": {
+     "robinhood": "0xf0d9c19962dd5111812c8e9059f07aea3e72bb98f44bf532aaed8883832b20c6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.314Z",
+    "createdAt": "2026-09-08T15:09:09.381Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 834.8850680906934,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "c481a157-db11-493e-8c1b-7c3025b30944",
+    "reserves": [
+     "1.191862873390046663",
+     "42722.531961107332760621"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdb0a0823657f796d54eb7ae68a420dd6e42b82ade2f12396d499aecb8ee1ab1a": {
+    "key": "ethereum:0xdb0a0823657f796d54eb7ae68a420dd6e42b82ade2f12396d499aecb8ee1ab1a",
+    "name": "Uniswap V4 LP AMDon/USDC",
+    "decimals": 18,
+    "symbol": "AMDON/USDC",
+    "price": 9007199254740990,
+    "address": "0xdb0a0823657f796d54eb7ae68a420dd6e42b82ade2f12396d499aecb8ee1ab1a",
+    "addresses": {
+     "ethereum": "0xdb0a0823657f796d54eb7ae68a420dd6e42b82ade2f12396d499aecb8ee1ab1a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.715Z",
+    "createdAt": "2025-11-03T11:02:58.555Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 598.3845816549008,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5600,
+     "feePercentage": "28.072"
+    },
+    "tokenId": "20f2743a-8ade-4c27-b911-180014c4505f",
+    "reserves": [
+     "0.606725614628867112",
+     "279.430965"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8202478ab592a6b448cf679969aa7ba3f50c18b3": {
+    "key": "robinhood:0x8202478ab592a6b448cf679969aa7ba3f50c18b3",
+    "name": "Beefy CLM AMD-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-AMD",
+    "price": 497.8806246908628,
+    "address": "0x8202478ab592a6b448cf679969aa7ba3f50c18b3",
+    "addresses": {
+     "robinhood": "0x8202478ab592a6b448cf679969aa7ba3f50c18b3"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-27T13:17:59.468Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xd60bc30cf5e564e0b956aebb338942273d62f93b"
+    ],
+    "poolAddress": "0xd60bc30cf5e564e0b956aebb338942273d62f93b",
+    "liquidity": 82590.02908163697,
+    "metrics": {
+     "apy": "36.747",
+     "baseApy": "36.747",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-766.007"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-amd",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xd60bc30cf5e564e0b956aebb338942273d62f93b",
+     "strategyAddress": "0x350fd9b90679371862ea2d03f284edde622f2d7b",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x8202478ab592a6b448cf679969aa7ba3f50c18b3",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+     ]
+    },
+    "tokenId": "e21e2bad-0a69-45cd-b7e6-c9b4c2c33607",
+    "totalSupply": "165.883195661445217813",
+    "reserves": [
+     "165.883195661445217813"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfe3e6151a19b798d83a254d165f69d14420025896fbc642f21b2216241faaa45": {
+    "key": "robinhood:0xfe3e6151a19b798d83a254d165f69d14420025896fbc642f21b2216241faaa45",
+    "name": "Uniswap V4 LP PACK/AMD",
+    "decimals": 18,
+    "symbol": "PACK/AMD",
+    "price": 9007199254740990,
+    "address": "0xfe3e6151a19b798d83a254d165f69d14420025896fbc642f21b2216241faaa45",
+    "addresses": {
+     "robinhood": "0xfe3e6151a19b798d83a254d165f69d14420025896fbc642f21b2216241faaa45"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174114/large/0x86923f96303d656e4aa86d9d42d1e57ad2023fdc.png?1782444575"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.670Z",
+    "createdAt": "2026-08-13T01:07:46.371Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0145acbccefbed6f303c420beeaaac72e905430b",
+     "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc"
+    ],
+    "liquidity": 5369.662789009037,
+    "metrics": {
+     "apy": "9.479",
+     "baseApy": "9.479",
+     "volumeUsd1d": "126.86",
+     "volumeUsd7d": "1995.353"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "63a15126-6bf4-48d1-8e5c-55117fd67810",
+    "reserves": [
+     "29922589.655419614302959417",
+     "5.202427373438979262"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3f2b34aa73d2ab243e606b44ac0109c7e505fb88f335017d09b4a6cefbedd4ed": {
+    "key": "ethereum:0x3f2b34aa73d2ab243e606b44ac0109c7e505fb88f335017d09b4a6cefbedd4ed",
+    "name": "Uniswap V4 LP AMDon/USDT",
+    "decimals": 18,
+    "symbol": "AMDON/USDT",
+    "price": 9007199254740990,
+    "address": "0x3f2b34aa73d2ab243e606b44ac0109c7e505fb88f335017d09b4a6cefbedd4ed",
+    "addresses": {
+     "ethereum": "0x3f2b34aa73d2ab243e606b44ac0109c7e505fb88f335017d09b4a6cefbedd4ed"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.732Z",
+    "createdAt": "2025-09-26T08:45:49.327Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 632.9741429585517,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50"
+    },
+    "tokenId": "efdf6087-2db3-4ee0-9588-7d4e0938fafa",
+    "reserves": [
+     "0.668200535806496476",
+     "281.876549"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x9f16e46c73b43bdb70861247d537bee4ea18f639": {
+    "key": "bsc:0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+    "name": "AMD (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMDON",
+    "price": 525.78,
+    "address": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+    "addresses": {
+     "hyperevm": "0x33706203a7a7c82b6f6c09dd9ae4e6e881d36386",
+     "bsc": "0x9f16e46c73b43bdb70861247d537bee4ea18f639",
+     "ethereum": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8440136,
+    "image": "https://coin-images.coingecko.com/coins/images/68589/large/amdon_160x160.png?1756129814",
+    "metrics": {
+     "volumeUsd1d": "1046343.415",
+     "volumeUsd7d": "15073044.174"
+    },
+    "metadata": {},
+    "tokenId": "61430dc4-65e2-446d-bba4-bc7aafc9db7d",
+    "totalSupply": "16052.08419079656",
+    "circulatingSupply": "16052.08419079656",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

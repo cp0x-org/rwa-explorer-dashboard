@@ -1,0 +1,3051 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4581401001",
+ "ticker": "INTC",
+ "name": "Intel",
+ "isin": "US4581401001",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:16:53Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Intel Corp",
+   "symbol": "INTC",
+   "slug": "intel",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 86.77737885697347,
+     "tokenized_market_cap": 83708955.39975427,
+     "tokenized_volume_24h": 26607267.28485744,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 20,
+   "asset_type": "stock",
+   "rwa_rank": 26,
+   "has_tokens": true,
+   "average_tokenized_price": 86.77737885697347,
+   "tokenized_market_cap": 83708955.39975427,
+   "tokenized_volume_24h": 26607267.28485744,
+   "last_updated": "2026-10-18T20:14:24.055Z",
+   "tokens": [
+    {
+     "symbol": "INTCon",
+     "name": "Intel Tokenized Stock (Ondo)",
+     "price": 87.20839489977708,
+     "crypto_id": 38035,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 14152937.87,
+     "volume_24h": 1644408.59597261
+    },
+    {
+     "symbol": "INTCX",
+     "name": "Intel tokenized stock (xStock)",
+     "price": 87.11939133695573,
+     "crypto_id": 37028,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 12683269.53,
+     "volume_24h": 1638049.1693564
+    },
+    {
+     "symbol": "INTC",
+     "name": "Intel Corp (Derivatives)",
+     "price": 87.05019353236658,
+     "crypto_id": 39472,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "INTCB",
+     "name": "Intel Tokenized bStocks",
+     "price": 86.73581817873475,
+     "crypto_id": 40540,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 48044472.7,
+     "volume_24h": 17920719.0244288
+    },
+    {
+     "symbol": "rINTC",
+     "name": "Intel Tokenized Stock (Reality)",
+     "price": 89.212905337553,
+     "crypto_id": 40618,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 6453883.63,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "INTC",
+     "name": "Intel Tokenized Stock (Robinhood)",
+     "price": 86.93216508001677,
+     "crypto_id": 40697,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 2292645.57,
+     "volume_24h": 5305505.68137205
+    },
+    {
+     "symbol": "WINTCX",
+     "name": "Wrapped Intel Tokenized stock (xStock)",
+     "price": 88.05976456740828,
+     "crypto_id": 37202,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 107871.62,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "INTCc",
+     "name": "Intel Corporation Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42505,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "INTC",
+     "market_url": "https://www.binance.com/en/stocks/EQ_INTC"
+    }
+   ]
+  },
+  "info": {
+   "38035": {
+    "id": 38035,
+    "symbol": "INTCon",
+    "name": "Intel Tokenized Stock (Ondo)",
+    "slug": "intel-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38035.png",
+    "date_added": "2025-09-03T10:55:20.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xFdA09936DbD717368De0835bA441d9E62069d36f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xFdA09936DbD717368De0835bA441d9E62069d36f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa528caaa2f96090e379d43f90834c75df54d6e74",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "cJpUMp5R7rZ6fGeLHbHhrRuJzK9mkyKDjZqNpT3ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7bf529bb5Db370D679F33f4fe5420F48eE234bB7",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "37028": {
+    "id": 37028,
+    "symbol": "INTCX",
+    "name": "Intel tokenized stock (xStock)",
+    "slug": "intel-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37028.png",
+    "date_added": "2025-07-01T15:48:56.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBBnSFyNZkNmq7I4E9yWhZDZQurcQhGkFeGBV_UXibFlv4-",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf8A80D1cb9cFD70D03D655D9dF42339846F3B3C8",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "39472": {
+    "id": 39472,
+    "symbol": "INTC",
+    "name": "Intel Corp (Derivatives)",
+    "slug": "intel-corp-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39472.png",
+    "date_added": "2026-01-29T01:41:12.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40540": {
+    "id": 40540,
+    "symbol": "INTCB",
+    "name": "Intel Tokenized bStocks",
+    "slug": "intel-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40540.png",
+    "date_added": "2026-06-21T05:25:59.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40618": {
+    "id": 40618,
+    "symbol": "rINTC",
+    "name": "Intel Tokenized Stock (Reality)",
+    "slug": "intel-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40618.png",
+    "date_added": "2026-07-02T07:39:09.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xafa43b4badfd062f5f1891a398a0579c904da776"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xafa43b4badfd062f5f1891a398a0579c904da776",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40697": {
+    "id": 40697,
+    "symbol": "INTC",
+    "name": "Intel Tokenized Stock (Robinhood)",
+    "slug": "intel-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40697.png",
+    "date_added": "2026-08-04T07:31:29.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xc72b96e0E48ecd4DC75E1e45396e26300BC39681"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc72b96e0E48ecd4DC75E1e45396e26300BC39681",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "37202": {
+    "id": 37202,
+    "symbol": "WINTCX",
+    "name": "Wrapped Intel Tokenized stock (xStock)",
+    "slug": "wrapped-intel-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37202.png",
+    "date_added": "2025-07-06T08:33:12.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x33AA35B0271FFfE2048Cc093aB7fE60931786719"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x33AA35B0271FFfE2048Cc093aB7fE60931786719",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x6a2a68ca7fc793d8cea36326a6ec1ef7ac3d9742",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42505": {
+    "id": 42505,
+    "symbol": "INTCc",
+    "name": "Intel Corporation Tokenized Stock (Coinbase)",
+    "slug": "intel-corporation-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42505.png",
+    "date_added": "2026-10-08T03:59:28.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000004aff16039ba04bdfbc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000004aff16039ba04bdfbc",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x6a2a68ca7fc793d8cea36326a6ec1ef7ac3d9742",
+   "arbitrum:0xafa43b4badfd062f5f1891a398a0579c904da776",
+   "arbitrum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+   "base:0xb2000000000000000000004aff16039ba04bdfbc",
+   "bsc:0xa528caaa2f96090e379d43f90834c75df54d6e74",
+   "bsc:0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+   "bsc:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+   "ethereum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+   "ethereum:0xfda09936dbd717368de0835ba441d9e62069d36f",
+   "hyperevm:0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+   "robinhood:0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+  ],
+  "exact": {
+   "robinhood:0xc72b96e0e48ecd4dc75e1e45396e26300bc39681": {
+    "key": "robinhood:0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "name": "Intel • Robinhood Token",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.08,
+    "address": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "addresses": {
+     "robinhood": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "liquidity": 2349290.0136788,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1245648.414"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002eb75a2c20d7423881b4f812c27d0abe",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "10bfee27-3ca8-4523-8465-59cca0058c01",
+    "totalSupply": "26372.81111",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "ethereum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "ethereum": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24362800,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "aac9ebde-1b18-439a-82ee-ceff36fd9d83",
+    "totalSupply": "280000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "arbitrum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "arbitrum": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:14.410Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17199092.68,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "c826d4b9-1000-4931-8f9f-334706d6a3a7",
+    "totalSupply": "197668",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xafa43b4badfd062f5f1891a398a0579c904da776": {
+    "key": "arbitrum:0xafa43b4badfd062f5f1891a398a0579c904da776",
+    "name": "Intel rStock",
+    "decimals": 18,
+    "symbol": "RINTC",
+    "price": 89.25,
+    "address": "0xafa43b4badfd062f5f1891a398a0579c904da776",
+    "addresses": {
+     "arbitrum": "0xafa43b4badfd062f5f1891a398a0579c904da776"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6475259,
+    "image": "https://coin-images.coingecko.com/coins/images/102176991/large/57c63492ec4a3aaed4405965e0b89cbf.png?1789116305",
+    "metrics": {
+     "volumeUsd1d": "2666.059",
+     "volumeUsd7d": "2355521.54"
+    },
+    "metadata": {},
+    "tokenId": "d1856b70-3a20-4feb-8031-9c59a495cdc1",
+    "totalSupply": "72553.330146138",
+    "circulatingSupply": "72553.330146138",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "bsc:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "bsc": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.484Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2772929.260204789,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "1a08e576-76d5-4541-ba89-091320d9b0b4",
+    "totalSupply": "31869.087003847707803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa528caaa2f96090e379d43f90834c75df54d6e74": {
+    "key": "bsc:0xa528caaa2f96090e379d43f90834c75df54d6e74",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0xa528caaa2f96090e379d43f90834c75df54d6e74",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "876500.172",
+     "volumeUsd7d": "6310289.633"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe614e2fc6c787035ff51f452e8e826bfd32d5283": {
+    "key": "bsc:0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+    "name": "Intel (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCB",
+    "price": 86.77,
+    "address": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+    "addresses": {
+     "bsc": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T08:09:30.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 48076704,
+    "image": "https://coin-images.coingecko.com/coins/images/102176876/large/intcb.png?1788940550",
+    "metrics": {
+     "volumeUsd1d": "10795474.042",
+     "volumeUsd7d": "73175656.325"
+    },
+    "metadata": {},
+    "tokenId": "3a6277cf-1258-45c4-aaac-dd957113fc3d",
+    "totalSupply": "553917.32861146",
+    "circulatingSupply": "553917.32861146",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfda09936dbd717368de0835ba441d9e62069d36f": {
+    "key": "ethereum:0xfda09936dbd717368de0835ba441d9e62069d36f",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "877857.533",
+     "volumeUsd7d": "6897137.327"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x7bf529bb5db370d679f33f4fe5420f48ee234bb7": {
+    "key": "hyperevm:0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "876132.756",
+     "volumeUsd7d": "6877258.086"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "INTC": {
+    "total_items": 53,
+    "pages": 1,
+    "received": 53,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x09198e4718bf3681915e59532e3edc342c30a51bf7773f35ddb9fef92a574339": {
+    "key": "ethereum:0x09198e4718bf3681915e59532e3edc342c30a51bf7773f35ddb9fef92a574339",
+    "name": "Uniswap V4 LP USDCc/INTCon",
+    "decimals": 18,
+    "symbol": "USDCC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x09198e4718bf3681915e59532e3edc342c30a51bf7773f35ddb9fef92a574339",
+    "addresses": {
+     "ethereum": "0x09198e4718bf3681915e59532e3edc342c30a51bf7773f35ddb9fef92a574339"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.654Z",
+    "createdAt": "2026-09-30T07:41:54.675Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 3998.953516273263,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "90.8765"
+    },
+    "tokenId": "425d5062-9fed-4b08-ab39-6d5857f910bc",
+    "reserves": [
+     "4000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x126250964e05b9e34d025e9d3b309349cf92402a": {
+    "key": "ethereum:0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "name": "Intel aStock",
+    "decimals": 18,
+    "symbol": "AINTC",
+    "price": 89.33,
+    "address": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "addresses": {
+     "ethereum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "arbitrum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "robinhood": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "bsc": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "base": "0x126250964e05b9e34d025e9d3b309349cf92402a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 536.15,
+    "image": "https://coin-images.coingecko.com/coins/images/102175696/large/INTC.png?1787292301",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ce7db7ba-c520-4f8a-b437-329faca6fff9",
+    "totalSupply": "6.002256908",
+    "circulatingSupply": "6.002256908",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4dd8e7c67033ef4a745bb9f82a7c57c676eb2481": {
+    "key": "bsc:0x4dd8e7c67033ef4a745bb9f82a7c57c676eb2481",
+    "name": "PancakeSwap V3 Tether USD/Intel Corporation 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/INTCB",
+    "price": 9007199254740990,
+    "address": "0x4dd8e7c67033ef4a745bb9f82a7c57c676eb2481",
+    "addresses": {
+     "bsc": "0x4dd8e7c67033ef4a745bb9f82a7c57c676eb2481"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176876/large/intcb.png?1788940550"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.376Z",
+    "createdAt": "2026-09-09T09:50:47.068Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xe614e2fc6c787035ff51f452e8e826bfd32d5283"
+    ],
+    "liquidity": 449327.8588454937,
+    "metrics": {
+     "apy": "21.243",
+     "baseApy": "21.243",
+     "volumeUsd1d": "104839.721",
+     "volumeUsd7d": "725824.05"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "35e695c5-37b4-4ccf-ae56-cdd18206a0c8",
+    "reserves": [
+     "29244.57856220264607004",
+     "4841.616075614654619124"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc663a5c876fdec27467051856c193d0f543d787c": {
+    "key": "robinhood:0xc663a5c876fdec27467051856c193d0f543d787c",
+    "name": "Uniswap V3 Global Dollar/OnchainTCG 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/OCTCG",
+    "price": 9007199254740990,
+    "address": "0xc663a5c876fdec27467051856c193d0f543d787c",
+    "addresses": {
+     "robinhood": "0xc663a5c876fdec27467051856c193d0f543d787c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.664Z",
+    "createdAt": "2026-08-14T17:17:52.151Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xa55e75c879d9f9082bba64eb7f6afede1cdc5a08"
+    ],
+    "liquidity": 1623.2437962393947,
+    "metrics": {
+     "apy": "1.437",
+     "baseApy": "1.437",
+     "volumeUsd1d": "21.304",
+     "volumeUsd7d": "268.795"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "0113bd1b-a240-47dc-ab30-ed966e44a38a",
+    "reserves": [
+     "811.633447",
+     "8012170.780471143144535063"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x04d556de7f7c5a4a3056a86d3f4fc3efc6eef365683b87cd046e12c4127d5018": {
+    "key": "ethereum:0x04d556de7f7c5a4a3056a86d3f4fc3efc6eef365683b87cd046e12c4127d5018",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x04d556de7f7c5a4a3056a86d3f4fc3efc6eef365683b87cd046e12c4127d5018",
+    "addresses": {
+     "ethereum": "0x04d556de7f7c5a4a3056a86d3f4fc3efc6eef365683b87cd046e12c4127d5018"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.239Z",
+    "createdAt": "2026-08-02T06:40:38.098Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 520.3838249336193,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "3060bd8a-ed44-42d9-8d76-41d21cb8a5eb",
+    "reserves": [
+     "173.006552",
+     "3.985871811834915472"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x84a9700e07537eba5b9760ad2d2985d6f2b12154fe5eccb9d1fc605cfa3b01fc": {
+    "key": "robinhood:0x84a9700e07537eba5b9760ad2d2985d6f2b12154fe5eccb9d1fc605cfa3b01fc",
+    "name": "Uniswap V4 LP SHROOM/INTC",
+    "decimals": 18,
+    "symbol": "SHROOM/INTC",
+    "price": 9007199254740990,
+    "address": "0x84a9700e07537eba5b9760ad2d2985d6f2b12154fe5eccb9d1fc605cfa3b01fc",
+    "addresses": {
+     "robinhood": "0x84a9700e07537eba5b9760ad2d2985d6f2b12154fe5eccb9d1fc605cfa3b01fc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.675Z",
+    "createdAt": "2026-09-08T14:42:57.115Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xab093def657f15df31b33922a95e047add645b29",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 4509.256632449221,
+    "metrics": {
+     "apy": "19.975",
+     "baseApy": "19.975",
+     "volumeUsd1d": "246.861",
+     "volumeUsd7d": "4894.101"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "55925ba5-50d6-4590-b316-797f7c524f4b",
+    "reserves": [
+     "396198.902313259741505284",
+     "29.126824349375245199"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa55e75c879d9f9082bba64eb7f6afede1cdc5a08": {
+    "key": "robinhood:0xa55e75c879d9f9082bba64eb7f6afede1cdc5a08",
+    "name": "OnchainTCG",
+    "decimals": 18,
+    "symbol": "OCTCG",
+    "price": 0.00010129718542914897,
+    "address": "0xa55e75c879d9f9082bba64eb7f6afede1cdc5a08",
+    "addresses": {
+     "robinhood": "0xa55e75c879d9f9082bba64eb7f6afede1cdc5a08"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-14T17:13:27.100Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 101297.18542914897,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "21.3",
+     "volumeUsd7d": "302.23"
+    },
+    "metadata": {},
+    "tokenId": "278e3ad0-8573-41c4-9cdf-38f53965ddd0",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x33aa35b0271fffe2048cc093ab7fe60931786719": {
+    "key": "ethereum:0x33aa35b0271fffe2048cc093ab7fe60931786719",
+    "name": "Wrapped Intel xStock",
+    "decimals": 18,
+    "symbol": "WINTCX",
+    "price": 86.97,
+    "address": "0x33aa35b0271fffe2048cc093ab7fe60931786719",
+    "addresses": {
+     "ethereum": "0x33aa35b0271fffe2048cc093ab7fe60931786719"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.905Z",
+    "createdAt": "2026-07-03T11:38:30.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    ],
+    "liquidity": 7496.927733647975,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/INTCx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "264.941"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "2c0234a4-84aa-4a44-909e-5363c5b28246",
+    "totalSupply": "86.201307734252906615",
+    "reserves": [
+     "86.201307734252906615"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf3c571aa528c03d64fa825af7bc544fd1953ffff": {
+    "key": "bsc:0xf3c571aa528c03d64fa825af7bc544fd1953ffff",
+    "name": "pCLAW Coin",
+    "decimals": 18,
+    "symbol": "INTCLAW",
+    "price": 4.81e-06,
+    "address": "0xf3c571aa528c03d64fa825af7bc544fd1953ffff",
+    "addresses": {
+     "bsc": "0xf3c571aa528c03d64fa825af7bc544fd1953ffff"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-12T06:11:00.780Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4621.16,
+    "image": "https://coin-images.coingecko.com/coins/images/102173231/large/logos_four_%281%29.png?1778486228",
+    "metrics": {
+     "volumeUsd1d": "701.693",
+     "volumeUsd7d": "1434.883"
+    },
+    "metadata": {},
+    "tokenId": "65f5d3ec-fe32-4f47-8232-bdad7dc22b13",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "960000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc72b96e0e48ecd4dc75e1e45396e26300bc39681": {
+    "key": "robinhood:0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "name": "Intel • Robinhood Token",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.08,
+    "address": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "addresses": {
+     "robinhood": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+    "liquidity": 2349290.0136788,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1245648.414"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002eb75a2c20d7423881b4f812c27d0abe",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "10bfee27-3ca8-4523-8465-59cca0058c01",
+    "totalSupply": "26372.81111",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf2e329e631d0fb315a5c563ee3a9120f24822b5ef6c502a91cb56b174d5d8c22": {
+    "key": "robinhood:0xf2e329e631d0fb315a5c563ee3a9120f24822b5ef6c502a91cb56b174d5d8c22",
+    "name": "Uniswap V4 LP USDG/INTC",
+    "decimals": 18,
+    "symbol": "USDG/INTC",
+    "price": 9007199254740990,
+    "address": "0xf2e329e631d0fb315a5c563ee3a9120f24822b5ef6c502a91cb56b174d5d8c22",
+    "addresses": {
+     "robinhood": "0xf2e329e631d0fb315a5c563ee3a9120f24822b5ef6c502a91cb56b174d5d8c22"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.261Z",
+    "createdAt": "2026-07-16T20:43:53.637Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 324598.23044838366,
+    "metrics": {
+     "apy": "48.038",
+     "baseApy": "48.038",
+     "volumeUsd1d": "38872.171",
+     "volumeUsd7d": "332327.957"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "c676a85f-473f-486d-b0b1-5bba8711b9e3",
+    "reserves": [
+     "64136.210846",
+     "2923.911311207719749697"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4f30b2b2e777d9106bc9c099cb0f0a9c37bf1b118a38f34197691812cdbc2734": {
+    "key": "ethereum:0x4f30b2b2e777d9106bc9c099cb0f0a9c37bf1b118a38f34197691812cdbc2734",
+    "name": "Uniswap V4 LP USDT/INTCon",
+    "decimals": 18,
+    "symbol": "USDT/INTCON",
+    "price": 9007199254740990,
+    "address": "0x4f30b2b2e777d9106bc9c099cb0f0a9c37bf1b118a38f34197691812cdbc2734",
+    "addresses": {
+     "ethereum": "0x4f30b2b2e777d9106bc9c099cb0f0a9c37bf1b118a38f34197691812cdbc2734"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.750Z",
+    "createdAt": "2025-09-26T08:45:50.738Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 978.18636000425,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50"
+    },
+    "tokenId": "ad362711-1a82-4c97-9fc7-4f38974bf73b",
+    "reserves": [
+     "502.700591",
+     "5.460004151952065456"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x126250964e05b9e34d025e9d3b309349cf92402a": {
+    "key": "robinhood:0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "name": "Intel aStock",
+    "decimals": 18,
+    "symbol": "AINTC",
+    "price": 89.33,
+    "address": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "addresses": {
+     "ethereum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "arbitrum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "robinhood": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "bsc": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "base": "0x126250964e05b9e34d025e9d3b309349cf92402a"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 536.15,
+    "image": "https://coin-images.coingecko.com/coins/images/102175696/large/INTC.png?1787292301",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ce7db7ba-c520-4f8a-b437-329faca6fff9",
+    "totalSupply": "6.002256908",
+    "circulatingSupply": "6.002256908",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x126250964e05b9e34d025e9d3b309349cf92402a": {
+    "key": "bsc:0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "name": "Intel aStock",
+    "decimals": 18,
+    "symbol": "AINTC",
+    "price": 89.33,
+    "address": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "addresses": {
+     "ethereum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "arbitrum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "robinhood": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "bsc": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "base": "0x126250964e05b9e34d025e9d3b309349cf92402a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-10T08:08:29.256Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 536.15,
+    "image": "https://coin-images.coingecko.com/coins/images/102175696/large/INTC.png?1787292301",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ce7db7ba-c520-4f8a-b437-329faca6fff9",
+    "totalSupply": "6.002256908",
+    "circulatingSupply": "6.002256908",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "ethereum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "ethereum": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24362800,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "aac9ebde-1b18-439a-82ee-ceff36fd9d83",
+    "totalSupply": "280000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8c241d00ee324162a1a727f0167eb470c5b456e5": {
+    "key": "robinhood:0x8c241d00ee324162a1a727f0167eb470c5b456e5",
+    "name": "Beefy CLM INTC-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-INTC",
+    "price": 91.04159452017653,
+    "address": "0x8c241d00ee324162a1a727f0167eb470c5b456e5",
+    "addresses": {
+     "robinhood": "0x8c241d00ee324162a1a727f0167eb470c5b456e5"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2"
+    ],
+    "poolAddress": "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2",
+    "liquidity": 47642.31618075801,
+    "metrics": {
+     "apy": "27.734",
+     "baseApy": "27.734",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1933.088"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-intc",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2",
+     "strategyAddress": "0xac7ebd89c38dcb5cb5f90703b3ddfca17822d9e9",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x8c241d00ee324162a1a727f0167eb470c5b456e5",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+     ]
+    },
+    "tokenId": "e745a544-867a-42b4-a0ea-2330ab5a64d1",
+    "totalSupply": "523.302743453154048872",
+    "reserves": [
+     "523.302743453154048872"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "arbitrum:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "arbitrum": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:14.410Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17199092.68,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "c826d4b9-1000-4931-8f9f-334706d6a3a7",
+    "totalSupply": "197668",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x126250964e05b9e34d025e9d3b309349cf92402a": {
+    "key": "arbitrum:0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "name": "Intel aStock",
+    "decimals": 18,
+    "symbol": "AINTC",
+    "price": 89.33,
+    "address": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "addresses": {
+     "ethereum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "arbitrum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "robinhood": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "bsc": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "base": "0x126250964e05b9e34d025e9d3b309349cf92402a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 536.15,
+    "image": "https://coin-images.coingecko.com/coins/images/102175696/large/INTC.png?1787292301",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ce7db7ba-c520-4f8a-b437-329faca6fff9",
+    "totalSupply": "6.002256908",
+    "circulatingSupply": "6.002256908",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x9163a16b884c8413118ed76414ec648d1eba4703": {
+    "key": "avalanche:0x9163a16b884c8413118ed76414ec648d1eba4703",
+    "name": "Intel (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.41,
+    "address": "0x9163a16b884c8413118ed76414ec648d1eba4703",
+    "addresses": {
+     "ethereum": "0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+     "base": "0x86820324b526cd5d389c75a6cab31a3406bdd934",
+     "arbitrum": "0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+     "avalanche": "0x9163a16b884c8413118ed76414ec648d1eba4703"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27274,
+    "image": "https://coin-images.coingecko.com/coins/images/102175014/large/dinari-logo-green-with-margin.png?1785402899",
+    "metrics": {
+     "volumeUsd1d": "39.785",
+     "volumeUsd7d": "26086.575"
+    },
+    "metadata": {},
+    "tokenId": "d256b462-6d6e-4c23-8cf7-15932f8acd6e",
+    "totalSupply": "305.02957276096157",
+    "circulatingSupply": "305.02957276096157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x95474285f7c60842528ca62eb15a9e2ad50855ab": {
+    "key": "bsc:0x95474285f7c60842528ca62eb15a9e2ad50855ab",
+    "name": "PancakeSwap V3 Tether USD/Intel (Ondo Tokenized) 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/INTCON",
+    "price": 9007199254740990,
+    "address": "0x95474285f7c60842528ca62eb15a9e2ad50855ab",
+    "addresses": {
+     "bsc": "0x95474285f7c60842528ca62eb15a9e2ad50855ab"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "createdAt": "2026-05-09T05:06:37.396Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    ],
+    "liquidity": 588.3740564588304,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "460.267"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "84126be3-a827-4056-973e-cbae21c29f77",
+    "reserves": [
+     "46.633565300334929135",
+     "6.215905892766398706"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x9028a3383385948351e668454210bb99daaf1f6a7ee8873d09763648d942919a": {
+    "key": "arbitrum:0x9028a3383385948351e668454210bb99daaf1f6a7ee8873d09763648d942919a",
+    "name": "Uniswap V4 LP USDT/INTCx",
+    "decimals": 18,
+    "symbol": "USDT/INTCX",
+    "price": 9007199254740990,
+    "address": "0x9028a3383385948351e668454210bb99daaf1f6a7ee8873d09763648d942919a",
+    "addresses": {
+     "arbitrum": "0x9028a3383385948351e668454210bb99daaf1f6a7ee8873d09763648d942919a"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.339Z",
+    "createdAt": "2026-10-16T14:24:11.636Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "bc8cfb1f-08cd-401a-b2f1-66ebc01115fa",
+    "reserves": [
+     "1999.999999999999999998",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2ab2c70fcffa08771a238cebf32b9bd68af2eae88bcf5b90f7ca3d70eae06abb": {
+    "key": "ethereum:0x2ab2c70fcffa08771a238cebf32b9bd68af2eae88bcf5b90f7ca3d70eae06abb",
+    "name": "Uniswap V4 LP wUSDC/INTCon",
+    "decimals": 18,
+    "symbol": "WUSDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x2ab2c70fcffa08771a238cebf32b9bd68af2eae88bcf5b90f7ca3d70eae06abb",
+    "addresses": {
+     "ethereum": "0x2ab2c70fcffa08771a238cebf32b9bd68af2eae88bcf5b90f7ca3d70eae06abb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.207Z",
+    "createdAt": "2026-09-28T10:37:10.268Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "6fedf3f3-a59f-49d1-ab93-31ae14b038e5",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x08a91bfc46b8fefd65ac94c7ec484708f00825a3": {
+    "key": "bsc:0x08a91bfc46b8fefd65ac94c7ec484708f00825a3",
+    "name": "PancakeSwap LP WBNB/intCLAW",
+    "decimals": 18,
+    "symbol": "WBNB/INTCLAW",
+    "price": 0.12129710522895822,
+    "address": "0x08a91bfc46b8fefd65ac94c7ec484708f00825a3",
+    "addresses": {
+     "bsc": "0x08a91bfc46b8fefd65ac94c7ec484708f00825a3"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/102173231/large/logos_four_%281%29.png?1778486228"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.735Z",
+    "createdAt": "2026-05-12T06:14:21.690Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xf3c571aa528c03d64fa825af7bc544fd1953ffff"
+    ],
+    "liquidity": 7204.680473862101,
+    "metrics": {
+     "apy": "10.559",
+     "baseApy": "10.559",
+     "volumeUsd1d": "833.834",
+     "volumeUsd7d": "1562.393"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "60035faf-6f61-4e4d-aa52-d8dda5c98e57",
+    "totalSupply": "59396.96961656815029605",
+    "reserves": [
+     "5.110895682357119905",
+     "748423002.107858765867815243"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x86820324b526cd5d389c75a6cab31a3406bdd934": {
+    "key": "base:0x86820324b526cd5d389c75a6cab31a3406bdd934",
+    "name": "Intel (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.41,
+    "address": "0x86820324b526cd5d389c75a6cab31a3406bdd934",
+    "addresses": {
+     "ethereum": "0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+     "base": "0x86820324b526cd5d389c75a6cab31a3406bdd934",
+     "arbitrum": "0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+     "avalanche": "0x9163a16b884c8413118ed76414ec648d1eba4703"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27274,
+    "image": "https://coin-images.coingecko.com/coins/images/102175014/large/dinari-logo-green-with-margin.png?1785402899",
+    "metrics": {
+     "volumeUsd1d": "39.785",
+     "volumeUsd7d": "26098.838"
+    },
+    "metadata": {},
+    "tokenId": "d256b462-6d6e-4c23-8cf7-15932f8acd6e",
+    "totalSupply": "305.02957276096157",
+    "circulatingSupply": "305.02957276096157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39": {
+    "key": "arbitrum:0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+    "name": "Intel (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.41,
+    "address": "0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+    "addresses": {
+     "ethereum": "0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+     "base": "0x86820324b526cd5d389c75a6cab31a3406bdd934",
+     "arbitrum": "0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+     "avalanche": "0x9163a16b884c8413118ed76414ec648d1eba4703"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27274,
+    "image": "https://coin-images.coingecko.com/coins/images/102175014/large/dinari-logo-green-with-margin.png?1785402899",
+    "metrics": {
+     "volumeUsd1d": "39.785",
+     "volumeUsd7d": "26096.219"
+    },
+    "metadata": {},
+    "tokenId": "d256b462-6d6e-4c23-8cf7-15932f8acd6e",
+    "totalSupply": "305.02957276096157",
+    "circulatingSupply": "305.02957276096157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x00296290071d50a35b2bdfafc04b3c774a94dca05ea2d233665c14c10094ec0a": {
+    "key": "ethereum:0x00296290071d50a35b2bdfafc04b3c774a94dca05ea2d233665c14c10094ec0a",
+    "name": "Uniswap V4 LP USDT/INTCon",
+    "decimals": 18,
+    "symbol": "USDT/INTCON",
+    "price": 9007199254740990,
+    "address": "0x00296290071d50a35b2bdfafc04b3c774a94dca05ea2d233665c14c10094ec0a",
+    "addresses": {
+     "ethereum": "0x00296290071d50a35b2bdfafc04b3c774a94dca05ea2d233665c14c10094ec0a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.627Z",
+    "createdAt": "2025-09-24T08:40:02.531Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 865.4189521821734,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80"
+    },
+    "tokenId": "1a7005d5-7e52-4275-a0b0-8ebb9a163bcd",
+    "reserves": [
+     "524.089839",
+     "3.921003604078032626"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcd9acde5a1f5520eb9bc0345d9537a181847f530": {
+    "key": "ethereum:0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+    "name": "Intel (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTC",
+    "price": 89.41,
+    "address": "0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+    "addresses": {
+     "ethereum": "0xcd9acde5a1f5520eb9bc0345d9537a181847f530",
+     "base": "0x86820324b526cd5d389c75a6cab31a3406bdd934",
+     "arbitrum": "0x5be4ac666192f7aea38fdcdbd731d94c78ff1e39",
+     "avalanche": "0x9163a16b884c8413118ed76414ec648d1eba4703"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27274,
+    "image": "https://coin-images.coingecko.com/coins/images/102175014/large/dinari-logo-green-with-margin.png?1785402899",
+    "metrics": {
+     "volumeUsd1d": "39.785",
+     "volumeUsd7d": "26065.479"
+    },
+    "metadata": {},
+    "tokenId": "d256b462-6d6e-4c23-8cf7-15932f8acd6e",
+    "totalSupply": "305.02957276096157",
+    "circulatingSupply": "305.02957276096157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9021b0d5dd7796b8547e4f4d3ea06b518b0e795af915afd0df440437748aa525": {
+    "key": "ethereum:0x9021b0d5dd7796b8547e4f4d3ea06b518b0e795af915afd0df440437748aa525",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x9021b0d5dd7796b8547e4f4d3ea06b518b0e795af915afd0df440437748aa525",
+    "addresses": {
+     "ethereum": "0x9021b0d5dd7796b8547e4f4d3ea06b518b0e795af915afd0df440437748aa525"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.206Z",
+    "createdAt": "2025-09-26T08:45:50.077Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 1259.5681109996488,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29"
+    },
+    "tokenId": "a1c15587-f8db-419d-a466-f1d66e9003d9",
+    "reserves": [
+     "642.577252",
+     "7.080164817373345945"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2": {
+    "key": "robinhood:0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2",
+    "name": "Beefy CLM INTC-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-INTC",
+    "price": 91.04159452017653,
+    "address": "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2",
+    "addresses": {
+     "robinhood": "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "poolAddress": "0x2e5a92f5013a64661a49312111be2e8abd33f56a",
+    "liquidity": 47642.31618075802,
+    "metrics": {
+     "apy": "27.734",
+     "baseApy": "27.734",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1933.088"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-intc",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xbb18acfeeb566e8549f83bf0f0e01bd0b2a7bdd2",
+     "strategyAddress": "0xac7ebd89c38dcb5cb5f90703b3ddfca17822d9e9",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x8c241d00ee324162a1a727f0167eb470c5b456e5",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+     ]
+    },
+    "tokenId": "89d15cef-1c8b-40fe-b931-28bca999039b",
+    "totalSupply": "523.302743453154049872",
+    "reserves": [
+     "2464.161387",
+     "507.163839175550273984"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4afb6d85651ee2d018a9d3154556116a6aa43903b5ffc57e5883f10ba94de30f": {
+    "key": "ethereum:0x4afb6d85651ee2d018a9d3154556116a6aa43903b5ffc57e5883f10ba94de30f",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x4afb6d85651ee2d018a9d3154556116a6aa43903b5ffc57e5883f10ba94de30f",
+    "addresses": {
+     "ethereum": "0x4afb6d85651ee2d018a9d3154556116a6aa43903b5ffc57e5883f10ba94de30f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.370Z",
+    "createdAt": "2025-09-25T08:42:34.785Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 526.5695843968218,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75"
+    },
+    "tokenId": "3b895721-667d-4a7c-a17f-51d57d13266e",
+    "reserves": [
+     "360.2138",
+     "1.909373371897910462"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xee63b2e6dff7964d27b0e46f04fcefa9bd41686c61b020abfbc8783c63babbcc": {
+    "key": "ethereum:0xee63b2e6dff7964d27b0e46f04fcefa9bd41686c61b020abfbc8783c63babbcc",
+    "name": "Uniswap V4 LP EGP/INTCon",
+    "decimals": 18,
+    "symbol": "EGP/INTCON",
+    "price": 9007199254740990,
+    "address": "0xee63b2e6dff7964d27b0e46f04fcefa9bd41686c61b020abfbc8783c63babbcc",
+    "addresses": {
+     "ethereum": "0xee63b2e6dff7964d27b0e46f04fcefa9bd41686c61b020abfbc8783c63babbcc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.232Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 20055.462226413634,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.91"
+    },
+    "tokenId": "d9eb8bd0-41ea-4ead-b5c7-e05d8dadbf9c",
+    "reserves": [
+     "19999.999999999999999998",
+     "0.272309912619319227"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x976a76ac590b668df0e47479e39836daa98b39e15f1ce1bcfda7134085dff91e": {
+    "key": "ethereum:0x976a76ac590b668df0e47479e39836daa98b39e15f1ce1bcfda7134085dff91e",
+    "name": "Uniswap V4 LP USDT/INTCon",
+    "decimals": 18,
+    "symbol": "USDT/INTCON",
+    "price": 9007199254740990,
+    "address": "0x976a76ac590b668df0e47479e39836daa98b39e15f1ce1bcfda7134085dff91e",
+    "addresses": {
+     "ethereum": "0x976a76ac590b668df0e47479e39836daa98b39e15f1ce1bcfda7134085dff91e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.168Z",
+    "createdAt": "2025-09-25T08:42:35.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 771.7485842551823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "40"
+    },
+    "tokenId": "4c070a61-b949-4f58-8f4e-d19a68603452",
+    "reserves": [
+     "407.479504",
+     "4.183110986833757843"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1b375a9c30ac43391aefae1bcf3a988d92458725": {
+    "key": "robinhood:0x1b375a9c30ac43391aefae1bcf3a988d92458725",
+    "name": "Uniswap V3 WETH/Intel  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/INTC",
+    "price": 9007199254740990,
+    "address": "0x1b375a9c30ac43391aefae1bcf3a988d92458725",
+    "addresses": {
+     "robinhood": "0x1b375a9c30ac43391aefae1bcf3a988d92458725"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.837Z",
+    "createdAt": "2026-09-11T20:00:39.592Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 36454.56829278448,
+    "metrics": {
+     "apy": "33.831",
+     "baseApy": "33.831",
+     "volumeUsd1d": "11262.411",
+     "volumeUsd7d": "157111.556"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "efcd3d9a-1413-40ba-8c34-3e1e1f0becae",
+    "reserves": [
+     "2.0453723563506746",
+     "355.572405926448303161"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xafa43b4badfd062f5f1891a398a0579c904da776": {
+    "key": "arbitrum:0xafa43b4badfd062f5f1891a398a0579c904da776",
+    "name": "Intel rStock",
+    "decimals": 18,
+    "symbol": "RINTC",
+    "price": 89.25,
+    "address": "0xafa43b4badfd062f5f1891a398a0579c904da776",
+    "addresses": {
+     "arbitrum": "0xafa43b4badfd062f5f1891a398a0579c904da776"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6475259,
+    "image": "https://coin-images.coingecko.com/coins/images/102176991/large/57c63492ec4a3aaed4405965e0b89cbf.png?1789116305",
+    "metrics": {
+     "volumeUsd1d": "2666.059",
+     "volumeUsd7d": "2355521.54"
+    },
+    "metadata": {},
+    "tokenId": "d1856b70-3a20-4feb-8031-9c59a495cdc1",
+    "totalSupply": "72553.330146138",
+    "circulatingSupply": "72553.330146138",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7fb585f108d921de3b197cf7e26b5aebc96b035fec13f972b868e008ea062394": {
+    "key": "robinhood:0x7fb585f108d921de3b197cf7e26b5aebc96b035fec13f972b868e008ea062394",
+    "name": "Uniswap V4 LP SPY/INTC",
+    "decimals": 18,
+    "symbol": "SPY/INTC",
+    "price": 9007199254740990,
+    "address": "0x7fb585f108d921de3b197cf7e26b5aebc96b035fec13f972b868e008ea062394",
+    "addresses": {
+     "robinhood": "0x7fb585f108d921de3b197cf7e26b5aebc96b035fec13f972b868e008ea062394"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.367Z",
+    "createdAt": "2026-08-20T11:20:09.750Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 451744.38366990513,
+    "metrics": {
+     "apy": "30.786",
+     "baseApy": "30.786",
+     "volumeUsd1d": "609637.589",
+     "volumeUsd7d": "4960142.509"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "bf8c659c-07f1-4a92-9954-ac5509cc1fe9",
+    "reserves": [
+     "100.496460004145162834",
+     "4210.629113971157302639"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1a71ac55faafbb77f6c9bbd867934dde6109e15b88885cb051b0ab145b5448a7": {
+    "key": "ethereum:0x1a71ac55faafbb77f6c9bbd867934dde6109e15b88885cb051b0ab145b5448a7",
+    "name": "Uniswap V4 LP USDT/INTCx",
+    "decimals": 18,
+    "symbol": "USDT/INTCX",
+    "price": 9007199254740990,
+    "address": "0x1a71ac55faafbb77f6c9bbd867934dde6109e15b88885cb051b0ab145b5448a7",
+    "addresses": {
+     "ethereum": "0x1a71ac55faafbb77f6c9bbd867934dde6109e15b88885cb051b0ab145b5448a7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.959Z",
+    "createdAt": "2026-10-18T18:57:59.781Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "19bbbcc8-9921-43c8-935d-bb3dacddf45c",
+    "reserves": [
+     "3999.999999999999999992",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xea768108616458446332b10d910b0c355db60a310ba72fa229c192d5a8bdb7dc": {
+    "key": "ethereum:0xea768108616458446332b10d910b0c355db60a310ba72fa229c192d5a8bdb7dc",
+    "name": "Uniswap V4 LP wUSDC/INTCon",
+    "decimals": 18,
+    "symbol": "WUSDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0xea768108616458446332b10d910b0c355db60a310ba72fa229c192d5a8bdb7dc",
+    "addresses": {
+     "ethereum": "0xea768108616458446332b10d910b0c355db60a310ba72fa229c192d5a8bdb7dc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.990Z",
+    "createdAt": "2026-09-30T08:51:48.125Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "9f8dd306-92b8-47a4-9b5b-740086f57d21",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0b126af75849d6a517cc98c6f6346ab41629ad87": {
+    "key": "bsc:0x0b126af75849d6a517cc98c6f6346ab41629ad87",
+    "name": "Euler EVK Vault eINTCon-2",
+    "decimals": 18,
+    "symbol": "EINTCON-2",
+    "price": 87.16,
+    "address": "0x0b126af75849d6a517cc98c6f6346ab41629ad87",
+    "addresses": {
+     "bsc": "0x0b126af75849d6a517cc98c6f6346ab41629ad87"
+    },
+    "platform": "euler",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/26149/large/Coingecko_logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.435Z",
+    "createdAt": "2026-07-29T12:14:40.076Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    ],
+    "liquidity": 21774.869612857834,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "80.98"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626",
+     "collateralCorrelation": "low"
+    },
+    "tokenId": "8da448bf-7891-497f-a5ef-4fe0c1412ef4",
+    "totalSupply": "249.826406756055940153",
+    "totalBorrow": "0",
+    "reserves": [
+     "249.826406756055940153"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0735d9904b7e34e6fe39b0f66e00c111b3f2b681": {
+    "key": "bsc:0x0735d9904b7e34e6fe39b0f66e00c111b3f2b681",
+    "name": "GraniteShares 2X Long INTC ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTWB",
+    "price": 15.99,
+    "address": "0x0735d9904b7e34e6fe39b0f66e00c111b3f2b681",
+    "addresses": {
+     "bsc": "0x0735d9904b7e34e6fe39b0f66e00c111b3f2b681"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-23T13:00:58.387Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2559533,
+    "image": "https://coin-images.coingecko.com/coins/images/102174761/large/intwb.png?1784796126",
+    "metrics": {
+     "volumeUsd1d": "1831503.069",
+     "volumeUsd7d": "14366893.344"
+    },
+    "metadata": {},
+    "tokenId": "8d2f95fd-2710-4d40-a986-6527ce45754f",
+    "totalSupply": "160084.95727266002",
+    "circulatingSupply": "160084.95727266002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x05112696d203f8d8c7a9b0bceded8fbc785c3152dcd3669eab1da3d0c2d50b85": {
+    "key": "ethereum:0x05112696d203f8d8c7a9b0bceded8fbc785c3152dcd3669eab1da3d0c2d50b85",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x05112696d203f8d8c7a9b0bceded8fbc785c3152dcd3669eab1da3d0c2d50b85",
+    "addresses": {
+     "ethereum": "0x05112696d203f8d8c7a9b0bceded8fbc785c3152dcd3669eab1da3d0c2d50b85"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.938Z",
+    "createdAt": "2025-09-26T08:45:48.670Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 810.4877290102231,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30"
+    },
+    "tokenId": "31ae5055-8db1-4ba2-8447-93aae197f860",
+    "reserves": [
+     "418.776098",
+     "4.495037052363023444"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x13b07230e8fb997cf47ec9579449ae0c8453e4310bc8d5064f9c0195b2bef72b": {
+    "key": "robinhood:0x13b07230e8fb997cf47ec9579449ae0c8453e4310bc8d5064f9c0195b2bef72b",
+    "name": "Uniswap V4 LP ETH/INTC",
+    "decimals": 18,
+    "symbol": "ETH/INTC",
+    "price": 9007199254740990,
+    "address": "0x13b07230e8fb997cf47ec9579449ae0c8453e4310bc8d5064f9c0195b2bef72b",
+    "addresses": {
+     "robinhood": "0x13b07230e8fb997cf47ec9579449ae0c8453e4310bc8d5064f9c0195b2bef72b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.204Z",
+    "createdAt": "2026-07-19T04:40:09.910Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 2711.9029626732495,
+    "metrics": {
+     "apy": "54.56",
+     "baseApy": "54.56",
+     "volumeUsd1d": "79.561",
+     "volumeUsd7d": "1010.867"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d9ab6941-6b8b-4c8f-bf05-dbcfa5dcd1fa",
+    "reserves": [
+     "0.263679585835460607",
+     "23.527430632647853183"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b": {
+    "key": "robinhood:0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b",
+    "name": "Beefy Moo Beefy Up33 Robinhood USDG-INTC",
+    "decimals": 18,
+    "symbol": "MOOBEEFYUP33ROBINHOODUSDG-INTC",
+    "price": 130.16447789132818,
+    "address": "0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b",
+    "addresses": {
+     "robinhood": "0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b"
+    },
+    "platform": "beefy",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.566Z",
+    "createdAt": "2026-08-26T12:37:37.146Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x599ac767099bb6f01712867bfa1fc1aa27defd37"
+    ],
+    "liquidity": 2700.4051854600143,
+    "metrics": {
+     "apy": "18.177",
+     "baseApy": "18.177",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "7032749e-2889-4d25-bcd4-a78df4200748",
+    "totalSupply": "20.746099313781527134",
+    "reserves": [
+     "33.346136478670833965"
+    ],
+    "pricePerShare": "1.607344878394521466",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8": {
+    "key": "bsc:0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "name": "Intel xStock",
+    "decimals": 18,
+    "symbol": "INTCX",
+    "price": 87.01,
+    "address": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8",
+    "addresses": {
+     "bsc": "0xf8a80d1cb9cfd70d03d655d9df42339846f3b3c8"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.484Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2772929.260204789,
+    "image": "https://coin-images.coingecko.com/coins/images/55615/large/Ticker_INTC__Company_Name_Intel_Corp__size_200x200_2x.png?1746858925",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "intel-xstock"
+    },
+    "tokenId": "1a08e576-76d5-4541-ba89-091320d9b0b4",
+    "totalSupply": "31869.087003847707803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa528caaa2f96090e379d43f90834c75df54d6e74": {
+    "key": "bsc:0xa528caaa2f96090e379d43f90834c75df54d6e74",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0xa528caaa2f96090e379d43f90834c75df54d6e74",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "876500.172",
+     "volumeUsd7d": "6310289.633"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e5a92f5013a64661a49312111be2e8abd33f56a": {
+    "key": "robinhood:0x2e5a92f5013a64661a49312111be2e8abd33f56a",
+    "name": "Uniswap V3 Global Dollar/Intel  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/INTC",
+    "price": 9007199254740990,
+    "address": "0x2e5a92f5013a64661a49312111be2e8abd33f56a",
+    "addresses": {
+     "robinhood": "0x2e5a92f5013a64661a49312111be2e8abd33f56a"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.252Z",
+    "createdAt": "2026-07-28T14:23:59.815Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "liquidity": 304332.8370322747,
+    "metrics": {
+     "apy": "43.709",
+     "baseApy": "43.709",
+     "volumeUsd1d": "121479.951",
+     "volumeUsd7d": "1039648.398"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "4bbdfce2-ae89-47b3-a8a4-9078a331226d",
+    "reserves": [
+     "25189.658786",
+     "3133.623464821224890807"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x599ac767099bb6f01712867bfa1fc1aa27defd37": {
+    "key": "robinhood:0x599ac767099bb6f01712867bfa1fc1aa27defd37",
+    "name": "Beefy CLM INTC-USDG",
+    "decimals": 18,
+    "symbol": "COWUP33ROBINHOODUSDG-INTC",
+    "price": 80.981051198758,
+    "address": "0x599ac767099bb6f01712867bfa1fc1aa27defd37",
+    "addresses": {
+     "robinhood": "0x599ac767099bb6f01712867bfa1fc1aa27defd37"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+    ],
+    "poolAddress": "0x6290be6e6913708866e6f17eaf3f4fcc7d3fdf67",
+    "liquidity": 2766.840428702343,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.393",
+     "volumeUsd7d": "19.456"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "up33-cow-robinhood-usdg-intc",
+     "providerId": "up",
+     "tickSpacing": 60,
+     "managerAddress": "0x599ac767099bb6f01712867bfa1fc1aa27defd37",
+     "strategyAddress": "0xbaee86c9d7de9dc192f17dfa62833b601dc64d23",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x0e7fb97a89b20a682521c5d29868e50a7b693979",
+     "standardVaultAddress": "0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+     ]
+    },
+    "tokenId": "caaeb7df-89f5-4523-8af1-33ccc48800f7",
+    "totalSupply": "34.166516583138381796",
+    "reserves": [
+     "149.145469",
+     "29.385888636083782092"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe614e2fc6c787035ff51f452e8e826bfd32d5283": {
+    "key": "bsc:0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+    "name": "Intel (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCB",
+    "price": 86.77,
+    "address": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283",
+    "addresses": {
+     "bsc": "0xe614e2fc6c787035ff51f452e8e826bfd32d5283"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T08:09:30.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 48076704,
+    "image": "https://coin-images.coingecko.com/coins/images/102176876/large/intcb.png?1788940550",
+    "metrics": {
+     "volumeUsd1d": "10795474.042",
+     "volumeUsd7d": "73175656.325"
+    },
+    "metadata": {},
+    "tokenId": "3a6277cf-1258-45c4-aaac-dd957113fc3d",
+    "totalSupply": "553917.32861146",
+    "circulatingSupply": "553917.32861146",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2cff3a63169c257ace9a0f2c6eaf449bc112fed1da144a6090fecbd340dc11e3": {
+    "key": "ethereum:0x2cff3a63169c257ace9a0f2c6eaf449bc112fed1da144a6090fecbd340dc11e3",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0x2cff3a63169c257ace9a0f2c6eaf449bc112fed1da144a6090fecbd340dc11e3",
+    "addresses": {
+     "ethereum": "0x2cff3a63169c257ace9a0f2c6eaf449bc112fed1da144a6090fecbd340dc11e3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.571Z",
+    "createdAt": "2026-09-13T05:43:22.474Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 1789.0965448297288,
+    "metrics": {
+     "apy": "2.058",
+     "baseApy": "2.058",
+     "volumeUsd1d": "1.983",
+     "volumeUsd7d": "609.092"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "48f01f51-08e0-42f8-be6c-0a674695e453",
+    "reserves": [
+     "56.772076",
+     "19.875341264060174213"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0e7fb97a89b20a682521c5d29868e50a7b693979": {
+    "key": "robinhood:0x0e7fb97a89b20a682521c5d29868e50a7b693979",
+    "name": "Beefy CLM INTC-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUP33ROBINHOODUSDG-INTC",
+    "price": 80.981051198758,
+    "address": "0x0e7fb97a89b20a682521c5d29868e50a7b693979",
+    "addresses": {
+     "robinhood": "0x0e7fb97a89b20a682521c5d29868e50a7b693979"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174118/large/0xc72b96e0e48ecd4dc75e1e45396e26300bc39681.png?1782444585",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x599ac767099bb6f01712867bfa1fc1aa27defd37"
+    ],
+    "poolAddress": "0x599ac767099bb6f01712867bfa1fc1aa27defd37",
+    "liquidity": 2766.8404287023436,
+    "metrics": {
+     "apy": "18.458",
+     "baseApy": "18.458",
+     "volumeUsd1d": "0.393",
+     "volumeUsd7d": "19.456"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "up33-cow-robinhood-usdg-intc",
+     "providerId": "up",
+     "tickSpacing": 60,
+     "managerAddress": "0x599ac767099bb6f01712867bfa1fc1aa27defd37",
+     "strategyAddress": "0xbaee86c9d7de9dc192f17dfa62833b601dc64d23",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x0e7fb97a89b20a682521c5d29868e50a7b693979",
+     "standardVaultAddress": "0x8353c496114cf66d10545fdc2b4e6dfbafd37e3b",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681"
+     ]
+    },
+    "tokenId": "4f7a25f3-abd8-4f59-913e-46b0767717a2",
+    "totalSupply": "34.166516583138380796",
+    "reserves": [
+     "34.166516583138380796"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x126250964e05b9e34d025e9d3b309349cf92402a": {
+    "key": "base:0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "name": "Intel aStock",
+    "decimals": 18,
+    "symbol": "AINTC",
+    "price": 89.33,
+    "address": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+    "addresses": {
+     "ethereum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "arbitrum": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "robinhood": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "bsc": "0x126250964e05b9e34d025e9d3b309349cf92402a",
+     "base": "0x126250964e05b9e34d025e9d3b309349cf92402a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 536.15,
+    "image": "https://coin-images.coingecko.com/coins/images/102175696/large/INTC.png?1787292301",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ce7db7ba-c520-4f8a-b437-329faca6fff9",
+    "totalSupply": "6.002256908",
+    "circulatingSupply": "6.002256908",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfda09936dbd717368de0835ba441d9e62069d36f": {
+    "key": "ethereum:0xfda09936dbd717368de0835ba441d9e62069d36f",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "877857.533",
+     "volumeUsd7d": "6897137.327"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb54bbf8dbf10e16a36f7a49ea1d7c100d575f80e6bcfbb687759d6e545cefc6e": {
+    "key": "ethereum:0xb54bbf8dbf10e16a36f7a49ea1d7c100d575f80e6bcfbb687759d6e545cefc6e",
+    "name": "Uniswap V4 LP USDC/INTCon",
+    "decimals": 18,
+    "symbol": "USDC/INTCON",
+    "price": 9007199254740990,
+    "address": "0xb54bbf8dbf10e16a36f7a49ea1d7c100d575f80e6bcfbb687759d6e545cefc6e",
+    "addresses": {
+     "ethereum": "0xb54bbf8dbf10e16a36f7a49ea1d7c100d575f80e6bcfbb687759d6e545cefc6e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.052Z",
+    "createdAt": "2025-09-26T08:45:50.931Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xfda09936dbd717368de0835ba441d9e62069d36f"
+    ],
+    "liquidity": 920.9349900418732,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "4229ac96-2c8e-40eb-a891-47386abd5ec0",
+    "reserves": [
+     "452.287198",
+     "5.377806975960431922"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x7bf529bb5db370d679f33f4fe5420f48ee234bb7": {
+    "key": "hyperevm:0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+    "name": "Intel (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTCON",
+    "price": 87.16,
+    "address": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+    "addresses": {
+     "hyperevm": "0x7bf529bb5db370d679f33f4fe5420f48ee234bb7",
+     "ethereum": "0xfda09936dbd717368de0835ba441d9e62069d36f",
+     "bsc": "0xa528caaa2f96090e379d43f90834c75df54d6e74"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14140873,
+    "image": "https://coin-images.coingecko.com/coins/images/68557/large/intcon_160x160.png?1756105832",
+    "metrics": {
+     "volumeUsd1d": "876132.756",
+     "volumeUsd7d": "6877258.086"
+    },
+    "metadata": {},
+    "tokenId": "7b891ebb-de83-4720-b88e-8267752ca5f8",
+    "totalSupply": "162290.4746965063",
+    "circulatingSupply": "162290.4746965063",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

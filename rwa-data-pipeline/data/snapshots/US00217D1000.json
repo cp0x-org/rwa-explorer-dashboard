@@ -1,0 +1,1008 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US00217D1000",
+ "ticker": "ASTS",
+ "name": "AST SpaceMobile",
+ "isin": "US00217D1000",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:35Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Ast Spacemobile, Inc.",
+   "symbol": "ASTS",
+   "slug": "ast-spacemobile-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 39.663705212529564,
+     "tokenized_market_cap": 3471721.3350827103,
+     "tokenized_volume_24h": 1613483.8504121,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 511,
+   "asset_type": "stock",
+   "rwa_rank": 798,
+   "has_tokens": true,
+   "average_tokenized_price": 39.663705212529564,
+   "tokenized_market_cap": 3471721.3350827103,
+   "tokenized_volume_24h": 1613483.8504121,
+   "last_updated": "2026-10-18T20:13:41.875Z",
+   "tokens": [
+    {
+     "symbol": "ASTSx",
+     "name": "AST SpaceMobile tokenized stock (xStock)",
+     "price": 40.66545519384026,
+     "crypto_id": 40164,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 700473.59,
+     "volume_24h": 11052.50261569
+    },
+    {
+     "symbol": "rASTS",
+     "name": "AST SpaceMobile Tokenized Stock (Reality)",
+     "price": 40.593663450429865,
+     "crypto_id": 40665,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 1053436.63,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "ASTS",
+     "name": "AST SpaceMobile Tokenized Stock (Robinhood)",
+     "price": 39.47973345886725,
+     "crypto_id": 40724,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 26150.03,
+     "volume_24h": 50.11745163
+    },
+    {
+     "symbol": "ASTSB",
+     "name": "AST SpaceMobile Tokenized bStocks",
+     "price": 39.69553374054512,
+     "crypto_id": 40971,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1691353.27,
+     "volume_24h": 1598201.19042097
+    },
+    {
+     "symbol": "wASTSx",
+     "name": "Wrapped AST SpaceMobile Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41099,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "ASTSc",
+     "name": "AST SpaceMobile, Inc. Tokenized Stock (Coinbase)",
+     "price": 48.81334457259985,
+     "crypto_id": 42426,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 2058.53,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "ASTS",
+     "market_url": "https://www.binance.com/en/stocks/EQ_ASTS"
+    }
+   ]
+  },
+  "info": {
+   "40164": {
+    "id": 40164,
+    "symbol": "ASTSx",
+    "name": "AST SpaceMobile tokenized stock (xStock)",
+    "slug": "ast-spacemobile-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40164.png",
+    "date_added": "2026-06-10T06:33:30.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsR4LAtaBgTKTRUhiijY1ba13nx4bepeEcag2Pr4dZ1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsR4LAtaBgTKTRUhiijY1ba13nx4bepeEcag2Pr4dZ1",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAZZk6i-dp9-dnty9FyHtlJ0keBbPmGQbLG2j76T7OUxEIw",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40665": {
+    "id": 40665,
+    "symbol": "rASTS",
+    "name": "AST SpaceMobile Tokenized Stock (Reality)",
+    "slug": "ast-spacemobile-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40665.png",
+    "date_added": "2026-07-02T07:39:28.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40724": {
+    "id": 40724,
+    "symbol": "ASTS",
+    "name": "AST SpaceMobile Tokenized Stock (Robinhood)",
+    "slug": "ast-spacemobile-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40724.png",
+    "date_added": "2026-08-04T07:31:40.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x1AF6446f07eb1d97c546AFC8c9544cBDF3AD5137"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1AF6446f07eb1d97c546AFC8c9544cBDF3AD5137",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40971": {
+    "id": 40971,
+    "symbol": "ASTSB",
+    "name": "AST SpaceMobile Tokenized bStocks",
+    "slug": "ast-spacemobile-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40971.png",
+    "date_added": "2026-08-04T17:04:12.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41099": {
+    "id": 41099,
+    "symbol": "wASTSx",
+    "name": "Wrapped AST SpaceMobile Tokenized Stock (xStock)",
+    "slug": "wrapped-ast-spacemobile-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41099.png",
+    "date_added": "2026-08-11T16:20:13.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xF724EB71F31f9def5c0B6b5a52457FC7755A936B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xF724EB71F31f9def5c0B6b5a52457FC7755A936B",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42426": {
+    "id": 42426,
+    "symbol": "ASTSc",
+    "name": "AST SpaceMobile, Inc. Tokenized Stock (Coinbase)",
+    "slug": "ast-spacemobile-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42426.png",
+    "date_added": "2026-10-08T03:59:52.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB200000000000000000000B1a29cF17A1819288a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB200000000000000000000B1a29cF17A1819288a",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+   "arbitrum:0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+   "base:0xb200000000000000000000b1a29cf17a1819288a",
+   "bsc:0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+   "bsc:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+   "ethereum:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+   "hyperevm:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+   "robinhood:0x1af6446f07eb1d97c546afc8c9544cbdf3ad5137"
+  ],
+  "exact": {
+   "ethereum:0x89b2607878ae19bab8020b8140ed550ef3e953bb": {
+    "key": "ethereum:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+    "name": "AST SpaceMobile xStock",
+    "decimals": 18,
+    "symbol": "ASTSX",
+    "price": 43.47,
+    "address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+    "addresses": {
+     "ethereum": "0x89b2607878ae19bab8020b8140ed550ef3e953bb"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6085800,
+    "image": "https://coin-images.coingecko.com/coins/images/69630/large/Ticker_ASTSx__Company_Name_AST_SpaceMobile__size_200x200.png?1759233577",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "ast-spacemobile-xstock"
+    },
+    "tokenId": "c823276d-aa82-4631-8608-0c651ed84ab0",
+    "totalSupply": "140000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x58b6f5feeb8436489f5bf4a56619092b1fa8e777": {
+    "key": "bsc:0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+    "name": "AST SpaceMobile (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASTSB",
+    "price": 39.62,
+    "address": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+    "addresses": {
+     "bsc": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-07T06:06:29.402Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1688032,
+    "metrics": {
+     "volumeUsd1d": "824944.499",
+     "volumeUsd7d": "5929218.411"
+    },
+    "metadata": {},
+    "tokenId": "06552a1f-c8ef-4faf-b3db-6e048eaf8a3c",
+    "totalSupply": "42608.15045237",
+    "circulatingSupply": "42608.15045237",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6": {
+    "key": "arbitrum:0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+    "name": "AST SpaceMobile rStock",
+    "decimals": 18,
+    "symbol": "RASTS",
+    "price": 40.61,
+    "address": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+    "addresses": {
+     "arbitrum": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1053927,
+    "image": "https://coin-images.coingecko.com/coins/images/102177045/large/025cab7176be299412cc335570b790c8.png?1789116655",
+    "metrics": {
+     "volumeUsd1d": "11.385",
+     "volumeUsd7d": "169583.125"
+    },
+    "metadata": {},
+    "tokenId": "d9c57cf4-b6a2-4d85-a162-b5daad17bb62",
+    "totalSupply": "25950.765111617",
+    "circulatingSupply": "25950.765111617",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "ASTS": {
+    "total_items": 13,
+    "pages": 1,
+    "received": 13,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xbcf84129afb839cfe7622b22cbd721ee9fe48b1bebc7a6c997a76f7399f35b11": {
+    "key": "ethereum:0xbcf84129afb839cfe7622b22cbd721ee9fe48b1bebc7a6c997a76f7399f35b11",
+    "name": "Uniswap V4 LP USDT/ASTSx",
+    "decimals": 18,
+    "symbol": "USDT/ASTSX",
+    "price": 9007199254740990,
+    "address": "0xbcf84129afb839cfe7622b22cbd721ee9fe48b1bebc7a6c997a76f7399f35b11",
+    "addresses": {
+     "ethereum": "0xbcf84129afb839cfe7622b22cbd721ee9fe48b1bebc7a6c997a76f7399f35b11"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.840Z",
+    "createdAt": "2026-10-18T18:58:36.335Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x89b2607878ae19bab8020b8140ed550ef3e953bb"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "26b66167-d069-4819-bea1-e827c1b9537f",
+    "reserves": [
+     "4000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x744a9f5d2f9b9a93d0d3f6f264d8180e492fc4ff45c174677f6e19fa95955013": {
+    "key": "ethereum:0x744a9f5d2f9b9a93d0d3f6f264d8180e492fc4ff45c174677f6e19fa95955013",
+    "name": "Uniswap V4 LP ASTSon/wUSDC",
+    "decimals": 18,
+    "symbol": "ASTSON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x744a9f5d2f9b9a93d0d3f6f264d8180e492fc4ff45c174677f6e19fa95955013",
+    "addresses": {
+     "ethereum": "0x744a9f5d2f9b9a93d0d3f6f264d8180e492fc4ff45c174677f6e19fa95955013"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.228Z",
+    "createdAt": "2026-10-02T11:04:05.363Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.9043162973,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "27cc0028-628b-433c-8a17-bc149cf9b64f",
+    "reserves": [
+     "0.034295470953449394",
+     "9998.978568"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x89b2607878ae19bab8020b8140ed550ef3e953bb": {
+    "key": "ethereum:0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+    "name": "AST SpaceMobile xStock",
+    "decimals": 18,
+    "symbol": "ASTSX",
+    "price": 43.47,
+    "address": "0x89b2607878ae19bab8020b8140ed550ef3e953bb",
+    "addresses": {
+     "ethereum": "0x89b2607878ae19bab8020b8140ed550ef3e953bb"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6085800,
+    "image": "https://coin-images.coingecko.com/coins/images/69630/large/Ticker_ASTSx__Company_Name_AST_SpaceMobile__size_200x200.png?1759233577",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "ast-spacemobile-xstock"
+    },
+    "tokenId": "c823276d-aa82-4631-8608-0c651ed84ab0",
+    "totalSupply": "140000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2f27f6b66a477a9797cc9540e77f3b4373093b1a": {
+    "key": "robinhood:0x2f27f6b66a477a9797cc9540e77f3b4373093b1a",
+    "name": "BrokerBeasts",
+    "decimals": 18,
+    "symbol": "BEAST",
+    "price": 6.786e-05,
+    "address": "0x2f27f6b66a477a9797cc9540e77f3b4373093b1a",
+    "addresses": {
+     "robinhood": "0x2f27f6b66a477a9797cc9540e77f3b4373093b1a"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-01T08:09:41.604Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 66401,
+    "image": "https://coin-images.coingecko.com/coins/images/102179001/large/pfp_bb.png?1790840479",
+    "metrics": {
+     "volumeUsd1d": "46.722",
+     "volumeUsd7d": "5134.688"
+    },
+    "metadata": {},
+    "tokenId": "5f715ec7-7662-4e1a-8522-484f221000a3",
+    "totalSupply": "978531594.1934007",
+    "circulatingSupply": "978531594.1934007",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x91527b3c072c1d71a3292dfa573d941c5226d8df2316cb734fdea56e695a0ed1": {
+    "key": "ethereum:0x91527b3c072c1d71a3292dfa573d941c5226d8df2316cb734fdea56e695a0ed1",
+    "name": "Uniswap V4 LP ASTSon/wUSDC",
+    "decimals": 18,
+    "symbol": "ASTSON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x91527b3c072c1d71a3292dfa573d941c5226d8df2316cb734fdea56e695a0ed1",
+    "addresses": {
+     "ethereum": "0x91527b3c072c1d71a3292dfa573d941c5226d8df2316cb734fdea56e695a0ed1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.094Z",
+    "createdAt": "2026-09-28T10:38:27.800Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "3ba56e74-da21-4609-9647-65c67e15cbfe",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x92a8323542d3a9c6804ac98d8a633148b2c35be964f04f4193496bb1f128ec7f": {
+    "key": "ethereum:0x92a8323542d3a9c6804ac98d8a633148b2c35be964f04f4193496bb1f128ec7f",
+    "name": "Uniswap V4 LP ASTSon/EGP",
+    "decimals": 18,
+    "symbol": "ASTSON/EGP",
+    "price": 9007199254740990,
+    "address": "0x92a8323542d3a9c6804ac98d8a633148b2c35be964f04f4193496bb1f128ec7f",
+    "addresses": {
+     "ethereum": "0x92a8323542d3a9c6804ac98d8a633148b2c35be964f04f4193496bb1f128ec7f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.426Z",
+    "createdAt": "2026-10-14T06:54:33.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20067.312903972936,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.55"
+    },
+    "tokenId": "7bac4c3c-acc1-4843-bfa5-f27587310fd4",
+    "reserves": [
+     "0.536526175615244486",
+     "19999.999999999999999979"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x45abf29515bc23f8c0ed2a06584444ce473a75fb": {
+    "key": "bsc:0x45abf29515bc23f8c0ed2a06584444ce473a75fb",
+    "name": "AST SpaceMobile (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "ASTSON",
+    "price": 40.62,
+    "address": "0x45abf29515bc23f8c0ed2a06584444ce473a75fb",
+    "addresses": {
+     "bsc": "0x45abf29515bc23f8c0ed2a06584444ce473a75fb",
+     "ethereum": "0x0d1fa4e1e3719945899ef7b02840627df46af44a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2952647,
+    "image": "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+    "metrics": {
+     "volumeUsd1d": "766105.9",
+     "volumeUsd7d": "6104485.723"
+    },
+    "metadata": {},
+    "tokenId": "d1249e44-107a-4b42-a311-f3bf8ac92728",
+    "totalSupply": "72758.29680764464",
+    "circulatingSupply": "72758.29680764464",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0d1fa4e1e3719945899ef7b02840627df46af44a": {
+    "key": "ethereum:0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+    "name": "AST SpaceMobile (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "ASTSON",
+    "price": 40.62,
+    "address": "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+    "addresses": {
+     "bsc": "0x45abf29515bc23f8c0ed2a06584444ce473a75fb",
+     "ethereum": "0x0d1fa4e1e3719945899ef7b02840627df46af44a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2952647,
+    "image": "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+    "metrics": {
+     "volumeUsd1d": "764572.732",
+     "volumeUsd7d": "6105003.042"
+    },
+    "metadata": {},
+    "tokenId": "d1249e44-107a-4b42-a311-f3bf8ac92728",
+    "totalSupply": "72758.29680764464",
+    "circulatingSupply": "72758.29680764464",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x58b6f5feeb8436489f5bf4a56619092b1fa8e777": {
+    "key": "bsc:0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+    "name": "AST SpaceMobile (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASTSB",
+    "price": 39.62,
+    "address": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777",
+    "addresses": {
+     "bsc": "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-07T06:06:29.402Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1688032,
+    "metrics": {
+     "volumeUsd1d": "824944.499",
+     "volumeUsd7d": "5929218.411"
+    },
+    "metadata": {},
+    "tokenId": "06552a1f-c8ef-4faf-b3db-6e048eaf8a3c",
+    "totalSupply": "42608.15045237",
+    "circulatingSupply": "42608.15045237",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x6af3a52ff5f10bc4e147fa69be20232d6efd36a40e7dbcdaefb95d12390b4d83": {
+    "key": "bsc:0x6af3a52ff5f10bc4e147fa69be20232d6efd36a40e7dbcdaefb95d12390b4d83",
+    "name": "Uniswap V4 LP USDT/ASTSB",
+    "decimals": 18,
+    "symbol": "USDT/ASTSB",
+    "price": 9007199254740990,
+    "address": "0x6af3a52ff5f10bc4e147fa69be20232d6efd36a40e7dbcdaefb95d12390b4d83",
+    "addresses": {
+     "bsc": "0x6af3a52ff5f10bc4e147fa69be20232d6efd36a40e7dbcdaefb95d12390b4d83"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.731Z",
+    "createdAt": "2026-08-14T02:14:13.610Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x58b6f5feeb8436489f5bf4a56619092b1fa8e777"
+    ],
+    "liquidity": 1851.6764245026745,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "1b6500f0-65df-4f37-a275-34b9ecca92e0",
+    "reserves": [
+     "985.44587568036128732",
+     "21.884807203019864068"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe4bd4a683c3a0510fa2f850a9ec5493a1bf99e6ede8eb05869b6d30a3af55955": {
+    "key": "ethereum:0xe4bd4a683c3a0510fa2f850a9ec5493a1bf99e6ede8eb05869b6d30a3af55955",
+    "name": "Uniswap V4 LP ASTSon/USDCc",
+    "decimals": 18,
+    "symbol": "ASTSON/USDCC",
+    "price": 9007199254740990,
+    "address": "0xe4bd4a683c3a0510fa2f850a9ec5493a1bf99e6ede8eb05869b6d30a3af55955",
+    "addresses": {
+     "ethereum": "0xe4bd4a683c3a0510fa2f850a9ec5493a1bf99e6ede8eb05869b6d30a3af55955"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.767Z",
+    "createdAt": "2026-10-11T05:06:09.062Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 3001.2800476835682,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.0865"
+    },
+    "tokenId": "6d13f157-b040-40e0-9cc9-4d5c6dfdd523",
+    "reserves": [
+     "0",
+     "3000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6": {
+    "key": "arbitrum:0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+    "name": "AST SpaceMobile rStock",
+    "decimals": 18,
+    "symbol": "RASTS",
+    "price": 40.61,
+    "address": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6",
+    "addresses": {
+     "arbitrum": "0xe172d18ea50377eee45cd73ee2e122c5a5bb9be6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1053927,
+    "image": "https://coin-images.coingecko.com/coins/images/102177045/large/025cab7176be299412cc335570b790c8.png?1789116655",
+    "metrics": {
+     "volumeUsd1d": "11.385",
+     "volumeUsd7d": "169583.125"
+    },
+    "metadata": {},
+    "tokenId": "d9c57cf4-b6a2-4d85-a162-b5daad17bb62",
+    "totalSupply": "25950.765111617",
+    "circulatingSupply": "25950.765111617",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf4d49456ecaa60aec1e3d3bcdd603b445b19c50048df475df3f2a679fa5032ad": {
+    "key": "ethereum:0xf4d49456ecaa60aec1e3d3bcdd603b445b19c50048df475df3f2a679fa5032ad",
+    "name": "Uniswap V4 LP ASTSon/PZD",
+    "decimals": 18,
+    "symbol": "ASTSON/PZD",
+    "price": 9007199254740990,
+    "address": "0xf4d49456ecaa60aec1e3d3bcdd603b445b19c50048df475df3f2a679fa5032ad",
+    "addresses": {
+     "ethereum": "0xf4d49456ecaa60aec1e3d3bcdd603b445b19c50048df475df3f2a679fa5032ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172479/large/astson_160x160.png?1773506781"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.372Z",
+    "createdAt": "2026-08-13T14:07:17.562Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d1fa4e1e3719945899ef7b02840627df46af44a",
+     "0xd23c8f3cbafa711e5b17d7522ab3c51b0f2cd9a2"
+    ],
+    "liquidity": 2249.5270600257304,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.85"
+    },
+    "tokenId": "80d817a7-9067-4044-8937-b04988baa782",
+    "reserves": [
+     "55.379789759372979372",
+     "0.000000000000000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

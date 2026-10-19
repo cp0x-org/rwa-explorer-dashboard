@@ -1,0 +1,1213 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US17275R1023",
+ "ticker": "CSCO",
+ "name": "Cisco Systems",
+ "isin": "US17275R1023",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:06Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Cisco Systems Inc",
+   "symbol": "CSCO",
+   "slug": "cisco-systems",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 108.70271622030046,
+     "tokenized_market_cap": 3386130.104041357,
+     "tokenized_volume_24h": 1404114.32653957,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 29,
+   "asset_type": "stock",
+   "rwa_rank": 30,
+   "has_tokens": true,
+   "average_tokenized_price": 108.70271622030046,
+   "tokenized_market_cap": 3386130.104041357,
+   "tokenized_volume_24h": 1404114.32653957,
+   "last_updated": "2026-10-18T20:14:21.069Z",
+   "tokens": [
+    {
+     "symbol": "CSCOon",
+     "name": "Cisco Systems Tokenized Stock (Ondo)",
+     "price": 108.68228823686655,
+     "crypto_id": 38070,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2734088.37,
+     "volume_24h": 1385051.06174294
+    },
+    {
+     "symbol": "CSCOX",
+     "name": "Cisco tokenized stock (xStock)",
+     "price": 110.90362510044105,
+     "crypto_id": 37032,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 650690.16,
+     "volume_24h": 11434.30917659
+    },
+    {
+     "symbol": "CSCO",
+     "name": "Cisco Systems (Derivatives)",
+     "price": 106.45998130342869,
+     "crypto_id": 39631,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rCSCO",
+     "name": "Cisco Systems Tokenized Stock (Reality)",
+     "price": 106.84178001714803,
+     "crypto_id": 40893,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 2312.21,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WCSCOX",
+     "name": "Wrapped Cisco Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37196,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "CSCO",
+     "market_url": "https://www.binance.com/en/stocks/EQ_CSCO"
+    }
+   ]
+  },
+  "info": {
+   "38070": {
+    "id": 38070,
+    "symbol": "CSCOon",
+    "name": "Cisco Systems Tokenized Stock (Ondo)",
+    "slug": "cisco-systems-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38070.png",
+    "date_added": "2025-09-03T10:55:03.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x980a1001ee94e54142b231f44C7CA7c9DF71FBe1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x980a1001ee94e54142b231f44C7CA7c9DF71FBe1",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "7DWcZE1uVc8m2mf9pV8KNov28ET7HsvHkhrhgr9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37032": {
+    "id": 37032,
+    "symbol": "CSCOX",
+    "name": "Cisco tokenized stock (xStock)",
+    "slug": "cisco-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37032.png",
+    "date_added": "2025-07-01T15:48:47.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xsr3pdLQyXvDJBFgpR5nexCEZwXvigb8wbPYp4YoNFf"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xsr3pdLQyXvDJBFgpR5nexCEZwXvigb8wbPYp4YoNFf",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x053C784cD87B74f42e0c089f98643E79c1A3ff16",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAn6tdm6zbGSamhJRTwwqiM2FYoBKcw5FeVC1rf2jBjvg89",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     }
+    ]
+   },
+   "39631": {
+    "id": 39631,
+    "symbol": "CSCO",
+    "name": "Cisco Systems (Derivatives)",
+    "slug": "cisco-systems-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39631.png",
+    "date_added": "2026-02-26T07:07:06.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40893": {
+    "id": 40893,
+    "symbol": "rCSCO",
+    "name": "Cisco Systems Tokenized Stock (Reality)",
+    "slug": "cisco-systems-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40893.png",
+    "date_added": "2026-07-02T07:39:25.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xeD90C91E79DE553e7B2C1f9D02139d7Cd1506927"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xeD90C91E79DE553e7B2C1f9D02139d7Cd1506927",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "37196": {
+    "id": 37196,
+    "symbol": "WCSCOX",
+    "name": "Wrapped Cisco Tokenized stock (xStock)",
+    "slug": "wrapped-cisco-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37196.png",
+    "date_added": "2025-07-06T04:27:49.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xD54429a08Eb3bA2b828FA79e65229c6d683Bbb6E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xD54429a08Eb3bA2b828FA79e65229c6d683Bbb6E",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xcfa485bc42c2492917351f89f5cf5c7b2c5a66aa",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+   "arbitrum:0xcfa485bc42c2492917351f89f5cf5c7b2c5a66aa",
+   "arbitrum:0xed90c91e79de553e7b2c1f9d02139d7cd1506927",
+   "bsc:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+   "bsc:0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+   "ethereum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+   "ethereum:0x980a1001ee94e54142b231f44c7ca7c9df71fbe1"
+  ],
+  "exact": {
+   "arbitrum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "arbitrum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "arbitrum": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.479Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12763236.913268568,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "3c1f9c55-aaf9-450e-9271-30d79d482bb6",
+    "totalSupply": "118971.261309363984295169",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "ethereum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "ethereum": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.725Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14023266.762351468,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "9fef403b-108e-4d7f-8108-55678474e4af",
+    "totalSupply": "130716.505987616215421744",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x980a1001ee94e54142b231f44c7ca7c9df71fbe1": {
+    "key": "ethereum:0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+    "name": "Cisco Systems (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CSCOON",
+    "price": 108.56,
+    "address": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+    "addresses": {
+     "ethereum": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+     "bsc": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2734353,
+    "image": "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113",
+    "metrics": {
+     "volumeUsd1d": "175260.416",
+     "volumeUsd7d": "1787277.97"
+    },
+    "metadata": {},
+    "tokenId": "9108c347-cc53-4891-8a22-9d873d410861",
+    "totalSupply": "25156.706000667036",
+    "circulatingSupply": "25156.706000667036",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x34304f2f7cc487eb4186e6d69f5905a613474aa2": {
+    "key": "bsc:0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+    "name": "Cisco Systems (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CSCOON",
+    "price": 108.56,
+    "address": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+    "addresses": {
+     "ethereum": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+     "bsc": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2734353,
+    "image": "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113",
+    "metrics": {
+     "volumeUsd1d": "175406.522",
+     "volumeUsd7d": "1788806.422"
+    },
+    "metadata": {},
+    "tokenId": "9108c347-cc53-4891-8a22-9d873d410861",
+    "totalSupply": "25156.706000667036",
+    "circulatingSupply": "25156.706000667036",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "bsc:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "bsc": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.625Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3040059.898819204,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "b3ddca14-d472-464f-aeae-17194fee6780",
+    "totalSupply": "28337.620235078337319242",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xed90c91e79de553e7b2c1f9d02139d7cd1506927": {
+    "key": "arbitrum:0xed90c91e79de553e7b2c1f9d02139d7cd1506927",
+    "name": "Cisco rStock",
+    "decimals": 18,
+    "symbol": "RCSCO",
+    "price": 106.88,
+    "address": "0xed90c91e79de553e7b2c1f9d02139d7cd1506927",
+    "addresses": {
+     "arbitrum": "0xed90c91e79de553e7b2c1f9d02139d7cd1506927"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2313.11,
+    "image": "https://coin-images.coingecko.com/coins/images/102177125/large/1244d8c86e1cae68698d39cdf8f7dc35.png?1789116907",
+    "metrics": {
+     "volumeUsd1d": "0.006",
+     "volumeUsd7d": "1057.149"
+    },
+    "metadata": {},
+    "tokenId": "9ed07fac-83b8-48ea-ba65-ab0cf6521fa9",
+    "totalSupply": "21.641408249",
+    "circulatingSupply": "21.641408249",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "CSCO": {
+    "total_items": 17,
+    "pages": 1,
+    "received": 17,
+    "complete": true
+   }
+  },
+  "records": {
+   "arbitrum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "arbitrum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "arbitrum": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.479Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12763236.913268568,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "3c1f9c55-aaf9-450e-9271-30d79d482bb6",
+    "totalSupply": "118971.261309363984295169",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xa3adf8481d07a03d7942b5824d2a36a44c13daca": {
+    "key": "avalanche:0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+    "name": "Dinari CSCO",
+    "decimals": 18,
+    "symbol": "CSCO",
+    "price": 107.15,
+    "address": "0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+    "addresses": {
+     "arbitrum": "0x337842843512192b798a5592053ce8e2245651f8",
+     "ethereum": "0x0a27c31f087cd3d30cdad339731bede4194531a4",
+     "avalanche": "0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+     "base": "0x341c9b4e5566a2ae22a337c84e3c006064731925"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6485.38,
+    "image": "https://coin-images.coingecko.com/coins/images/102174950/large/dinari-logo-green-with-margin.png?1785402671",
+    "metrics": {
+     "volumeUsd1d": "61.077",
+     "volumeUsd7d": "343.077"
+    },
+    "metadata": {},
+    "tokenId": "d9e50dec-6257-4b05-872c-c0b601137d0c",
+    "totalSupply": "60.524293761080855",
+    "circulatingSupply": "60.524293761080855",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9b197628c95848d040bbe435976c9e343f13e97174618474a4db39f2acc68052": {
+    "key": "ethereum:0x9b197628c95848d040bbe435976c9e343f13e97174618474a4db39f2acc68052",
+    "name": "Uniswap V4 LP wUSDC/CSCOon",
+    "decimals": 18,
+    "symbol": "WUSDC/CSCOON",
+    "price": 9007199254740990,
+    "address": "0x9b197628c95848d040bbe435976c9e343f13e97174618474a4db39f2acc68052",
+    "addresses": {
+     "ethereum": "0x9b197628c95848d040bbe435976c9e343f13e97174618474a4db39f2acc68052"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.228Z",
+    "createdAt": "2026-09-28T10:39:13.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "386b28f8-65e6-48d6-a80e-8b30d782a703",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x62b64b49f9505efa26ddde50e7203fed2a7b0543b9697695285b6fe580091e81": {
+    "key": "robinhood:0x62b64b49f9505efa26ddde50e7203fed2a7b0543b9697695285b6fe580091e81",
+    "name": "Uniswap V4 LP USDG/CSCO",
+    "decimals": 18,
+    "symbol": "USDG/CSCO",
+    "price": 9007199254740990,
+    "address": "0x62b64b49f9505efa26ddde50e7203fed2a7b0543b9697695285b6fe580091e81",
+    "addresses": {
+     "robinhood": "0x62b64b49f9505efa26ddde50e7203fed2a7b0543b9697695285b6fe580091e81"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.612Z",
+    "createdAt": "2026-10-02T15:29:35.595Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf543967eebb6f1917992ef0e68de63ab07a5a0da"
+    ],
+    "liquidity": 568.5029258750031,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "20.985"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 480,
+     "feePercentage": "4.8952"
+    },
+    "tokenId": "a5dfaeee-fda1-4f67-a8f6-2e97c4fff9c8",
+    "reserves": [
+     "112.643494",
+     "4.243253720092770058"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa08228a11bffb18568f16ea518564e015decc191091d0adc9846679f5d4997b3": {
+    "key": "ethereum:0xa08228a11bffb18568f16ea518564e015decc191091d0adc9846679f5d4997b3",
+    "name": "Uniswap V4 LP EGP/CSCOon",
+    "decimals": 18,
+    "symbol": "EGP/CSCOON",
+    "price": 9007199254740990,
+    "address": "0xa08228a11bffb18568f16ea518564e015decc191091d0adc9846679f5d4997b3",
+    "addresses": {
+     "ethereum": "0xa08228a11bffb18568f16ea518564e015decc191091d0adc9846679f5d4997b3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.635Z",
+    "createdAt": "2026-10-14T06:54:32.568Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1"
+    ],
+    "liquidity": 20069.87478926104,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.92"
+    },
+    "tokenId": "a10c9ccb-04be-4afa-950c-f78e3bc67659",
+    "reserves": [
+     "19999.999999999999999975",
+     "0.224351313021321268"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x21da62dabbb7f0c0be013d5c1650be781fc50f9d6c117ea479b5101a2989e111": {
+    "key": "robinhood:0x21da62dabbb7f0c0be013d5c1650be781fc50f9d6c117ea479b5101a2989e111",
+    "name": "Uniswap V4 LP USDG/CSCO",
+    "decimals": 18,
+    "symbol": "USDG/CSCO",
+    "price": 9007199254740990,
+    "address": "0x21da62dabbb7f0c0be013d5c1650be781fc50f9d6c117ea479b5101a2989e111",
+    "addresses": {
+     "robinhood": "0x21da62dabbb7f0c0be013d5c1650be781fc50f9d6c117ea479b5101a2989e111"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.047Z",
+    "createdAt": "2026-09-08T14:36:43.193Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf543967eebb6f1917992ef0e68de63ab07a5a0da"
+    ],
+    "liquidity": 3847.434752294637,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "308.01"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "e9939182-809a-411d-852b-d0355281d91c",
+    "reserves": [
+     "27.448627",
+     "35.557387219540506403"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "ethereum:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "ethereum": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.725Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 14023266.762351468,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "9fef403b-108e-4d7f-8108-55678474e4af",
+    "totalSupply": "130716.505987616215421744",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf543967eebb6f1917992ef0e68de63ab07a5a0da": {
+    "key": "robinhood:0xf543967eebb6f1917992ef0e68de63ab07a5a0da",
+    "name": "Cisco Systems • Robinhood Token",
+    "decimals": 18,
+    "symbol": "CSCO",
+    "price": 107.43157537726421,
+    "address": "0xf543967eebb6f1917992ef0e68de63ab07a5a0da",
+    "addresses": {
+     "robinhood": "0xf543967eebb6f1917992ef0e68de63ab07a5a0da"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xf543967eebb6f1917992ef0e68de63ab07a5a0da.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-09T19:02:28.788Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xf543967eebb6f1917992ef0e68de63ab07a5a0da",
+    "liquidity": 8096.786931891821,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "470.02"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000052b1bd2848fd4837baefc662660c6b28",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1002674650028132112",
+     "currentMultiplier": "1.002674650028132112",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "76a27234-ceca-4ba1-8d28-58144c1298ea",
+    "totalSupply": "75.36691986",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x980a1001ee94e54142b231f44c7ca7c9df71fbe1": {
+    "key": "ethereum:0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+    "name": "Cisco Systems (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CSCOON",
+    "price": 108.56,
+    "address": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+    "addresses": {
+     "ethereum": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+     "bsc": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2734353,
+    "image": "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113",
+    "metrics": {
+     "volumeUsd1d": "175260.416",
+     "volumeUsd7d": "1787277.97"
+    },
+    "metadata": {},
+    "tokenId": "9108c347-cc53-4891-8a22-9d873d410861",
+    "totalSupply": "25156.706000667036",
+    "circulatingSupply": "25156.706000667036",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x34304f2f7cc487eb4186e6d69f5905a613474aa2": {
+    "key": "bsc:0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+    "name": "Cisco Systems (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CSCOON",
+    "price": 108.56,
+    "address": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2",
+    "addresses": {
+     "ethereum": "0x980a1001ee94e54142b231f44c7ca7c9df71fbe1",
+     "bsc": "0x34304f2f7cc487eb4186e6d69f5905a613474aa2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2734353,
+    "image": "https://coin-images.coingecko.com/coins/images/68566/large/cscoon_160x160.png?1756106113",
+    "metrics": {
+     "volumeUsd1d": "175406.522",
+     "volumeUsd7d": "1788806.422"
+    },
+    "metadata": {},
+    "tokenId": "9108c347-cc53-4891-8a22-9d873d410861",
+    "totalSupply": "25156.706000667036",
+    "circulatingSupply": "25156.706000667036",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x053c784cd87b74f42e0c089f98643e79c1a3ff16": {
+    "key": "bsc:0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "name": "Cisco xStock",
+    "decimals": 18,
+    "symbol": "CSCOX",
+    "price": 107.28,
+    "address": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+    "addresses": {
+     "bsc": "0x053c784cd87b74f42e0c089f98643e79c1a3ff16"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.625Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3040059.898819204,
+    "image": "https://coin-images.coingecko.com/coins/images/55604/large/Ticker_CSCO__Company_Name_Cisco_Systems_Inc.__size_200x200_2x.png?1746858247",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "cisco-xstock"
+    },
+    "tokenId": "b3ddca14-d472-464f-aeae-17194fee6780",
+    "totalSupply": "28337.620235078337319242",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xdda8e10bec48defdef56046a7ebe0ceb98c2968516a772127819135c0ce14819": {
+    "key": "arbitrum:0xdda8e10bec48defdef56046a7ebe0ceb98c2968516a772127819135c0ce14819",
+    "name": "Uniswap V4 LP CSCOx/USDT",
+    "decimals": 18,
+    "symbol": "CSCOX/USDT",
+    "price": 9007199254740990,
+    "address": "0xdda8e10bec48defdef56046a7ebe0ceb98c2968516a772127819135c0ce14819",
+    "addresses": {
+     "arbitrum": "0xdda8e10bec48defdef56046a7ebe0ceb98c2968516a772127819135c0ce14819"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.493Z",
+    "createdAt": "2026-10-16T14:24:06.988Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "7c81e02b-d539-4054-95e2-f5857c74d363",
+    "reserves": [
+     "0",
+     "1999.999999999999999994"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x337842843512192b798a5592053ce8e2245651f8": {
+    "key": "arbitrum:0x337842843512192b798a5592053ce8e2245651f8",
+    "name": "Dinari CSCO",
+    "decimals": 18,
+    "symbol": "CSCO",
+    "price": 107.15,
+    "address": "0x337842843512192b798a5592053ce8e2245651f8",
+    "addresses": {
+     "arbitrum": "0x337842843512192b798a5592053ce8e2245651f8",
+     "ethereum": "0x0a27c31f087cd3d30cdad339731bede4194531a4",
+     "avalanche": "0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+     "base": "0x341c9b4e5566a2ae22a337c84e3c006064731925"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6485.38,
+    "image": "https://coin-images.coingecko.com/coins/images/102174950/large/dinari-logo-green-with-margin.png?1785402671",
+    "metrics": {
+     "volumeUsd1d": "61.077",
+     "volumeUsd7d": "343.183"
+    },
+    "metadata": {},
+    "tokenId": "d9e50dec-6257-4b05-872c-c0b601137d0c",
+    "totalSupply": "60.524293761080855",
+    "circulatingSupply": "60.524293761080855",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9045c01c2123bb90b1083b6b262565c4910b67b55c4f81f5bb9a4b043d5383f6": {
+    "key": "ethereum:0x9045c01c2123bb90b1083b6b262565c4910b67b55c4f81f5bb9a4b043d5383f6",
+    "name": "Uniswap V4 LP CSCOx/USDT",
+    "decimals": 18,
+    "symbol": "CSCOX/USDT",
+    "price": 9007199254740990,
+    "address": "0x9045c01c2123bb90b1083b6b262565c4910b67b55c4f81f5bb9a4b043d5383f6",
+    "addresses": {
+     "ethereum": "0x9045c01c2123bb90b1083b6b262565c4910b67b55c4f81f5bb9a4b043d5383f6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.874Z",
+    "createdAt": "2026-10-18T18:58:05.623Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x053c784cd87b74f42e0c089f98643e79c1a3ff16",
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "af043469-2fda-4259-8ea3-d1f99e760b18",
+    "reserves": [
+     "0",
+     "3999.999999999999999997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x341c9b4e5566a2ae22a337c84e3c006064731925": {
+    "key": "base:0x341c9b4e5566a2ae22a337c84e3c006064731925",
+    "name": "Dinari CSCO",
+    "decimals": 18,
+    "symbol": "CSCO",
+    "price": 107.15,
+    "address": "0x341c9b4e5566a2ae22a337c84e3c006064731925",
+    "addresses": {
+     "arbitrum": "0x337842843512192b798a5592053ce8e2245651f8",
+     "ethereum": "0x0a27c31f087cd3d30cdad339731bede4194531a4",
+     "avalanche": "0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+     "base": "0x341c9b4e5566a2ae22a337c84e3c006064731925"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6485.38,
+    "image": "https://coin-images.coingecko.com/coins/images/102174950/large/dinari-logo-green-with-margin.png?1785402671",
+    "metrics": {
+     "volumeUsd1d": "61.077",
+     "volumeUsd7d": "343.352"
+    },
+    "metadata": {},
+    "tokenId": "d9e50dec-6257-4b05-872c-c0b601137d0c",
+    "totalSupply": "60.524293761080855",
+    "circulatingSupply": "60.524293761080855",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xed90c91e79de553e7b2c1f9d02139d7cd1506927": {
+    "key": "arbitrum:0xed90c91e79de553e7b2c1f9d02139d7cd1506927",
+    "name": "Cisco rStock",
+    "decimals": 18,
+    "symbol": "RCSCO",
+    "price": 106.88,
+    "address": "0xed90c91e79de553e7b2c1f9d02139d7cd1506927",
+    "addresses": {
+     "arbitrum": "0xed90c91e79de553e7b2c1f9d02139d7cd1506927"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2313.11,
+    "image": "https://coin-images.coingecko.com/coins/images/102177125/large/1244d8c86e1cae68698d39cdf8f7dc35.png?1789116907",
+    "metrics": {
+     "volumeUsd1d": "0.006",
+     "volumeUsd7d": "1057.149"
+    },
+    "metadata": {},
+    "tokenId": "9ed07fac-83b8-48ea-ba65-ab0cf6521fa9",
+    "totalSupply": "21.641408249",
+    "circulatingSupply": "21.641408249",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0a27c31f087cd3d30cdad339731bede4194531a4": {
+    "key": "ethereum:0x0a27c31f087cd3d30cdad339731bede4194531a4",
+    "name": "Dinari CSCO",
+    "decimals": 18,
+    "symbol": "CSCO",
+    "price": 107.15,
+    "address": "0x0a27c31f087cd3d30cdad339731bede4194531a4",
+    "addresses": {
+     "arbitrum": "0x337842843512192b798a5592053ce8e2245651f8",
+     "ethereum": "0x0a27c31f087cd3d30cdad339731bede4194531a4",
+     "avalanche": "0xa3adf8481d07a03d7942b5824d2a36a44c13daca",
+     "base": "0x341c9b4e5566a2ae22a337c84e3c006064731925"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6485.38,
+    "image": "https://coin-images.coingecko.com/coins/images/102174950/large/dinari-logo-green-with-margin.png?1785402671",
+    "metrics": {
+     "volumeUsd1d": "61.077",
+     "volumeUsd7d": "343.145"
+    },
+    "metadata": {},
+    "tokenId": "d9e50dec-6257-4b05-872c-c0b601137d0c",
+    "totalSupply": "60.524293761080855",
+    "circulatingSupply": "60.524293761080855",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

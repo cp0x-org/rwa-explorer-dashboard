@@ -1,0 +1,2305 @@
+{
+ "schema_version": 1,
+ "underlying_id": "AU0000185993",
+ "ticker": "IREN",
+ "name": "IREN",
+ "isin": "AU0000185993",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:34Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "IREN Ltd",
+   "symbol": "IREN",
+   "slug": "iren",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 25.924506795699592,
+     "tokenized_market_cap": 7336486.911276819,
+     "tokenized_volume_24h": 3467876.14729281,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 229,
+   "asset_type": "stock",
+   "rwa_rank": 873,
+   "has_tokens": true,
+   "average_tokenized_price": 25.924506795699592,
+   "tokenized_market_cap": 7336486.911276819,
+   "tokenized_volume_24h": 3467876.14729281,
+   "last_updated": "2026-10-18T20:13:43.128Z",
+   "tokens": [
+    {
+     "symbol": "IRENon",
+     "name": "IREN Tokenized Stock (Ondo)",
+     "price": 26.099029071044455,
+     "crypto_id": 39254,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2242430.59,
+     "volume_24h": 2094989.69726136
+    },
+    {
+     "symbol": "IREN",
+     "name": "IREN Ltd (Derivatives)",
+     "price": 25.837907578350773,
+     "crypto_id": 40117,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "IRENx",
+     "name": "IREN tokenized stock (xStock)",
+     "price": 26.453400114579676,
+     "crypto_id": 40162,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1187733.1,
+     "volume_24h": 209779.40869784
+    },
+    {
+     "symbol": "rIREN",
+     "name": "IREN Tokenized Stock (Reality)",
+     "price": 26.95507745159804,
+     "crypto_id": 40623,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 564022.75,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "IREN",
+     "name": "IREN Limited Tokenized Stock (Robinhood)",
+     "price": 26.907183905943914,
+     "crypto_id": 40731,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 65410.35,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "IRENB",
+     "name": "IREN Limited Tokenized bStocks",
+     "price": 25.99909572816587,
+     "crypto_id": 40970,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 3317024.69,
+     "volume_24h": 1165103.64568114
+    },
+    {
+     "symbol": "wIRENx",
+     "name": "Wrapped IREN Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41291,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "IREN",
+     "market_url": "https://www.binance.com/en/stocks/EQ_IREN"
+    }
+   ]
+  },
+  "info": {
+   "39254": {
+    "id": 39254,
+    "symbol": "IRENon",
+    "name": "IREN Tokenized Stock (Ondo)",
+    "slug": "iren-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39254.png",
+    "date_added": "2026-01-08T15:44:25.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "13QHuepdhtJ3urNsV9i1hdL8nQoca2G7ZaLzb5FYondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40117": {
+    "id": 40117,
+    "symbol": "IREN",
+    "name": "IREN Ltd (Derivatives)",
+    "slug": "iren-ltd-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40117.png",
+    "date_added": "2026-06-03T08:03:02.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40162": {
+    "id": 40162,
+    "symbol": "IRENx",
+    "name": "IREN tokenized stock (xStock)",
+    "slug": "iren-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40162.png",
+    "date_added": "2026-06-10T06:33:47.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xshh1dRsnxatP45yBfrzU9MrvrFCvxHQGTrWjgdA81E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xshh1dRsnxatP45yBfrzU9MrvrFCvxHQGTrWjgdA81E",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDlDmD7Wimb7MA2mF-8WQMONxUYRNEmNqgLDp6dGdmHAkH5",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40623": {
+    "id": 40623,
+    "symbol": "rIREN",
+    "name": "IREN Tokenized Stock (Reality)",
+    "slug": "iren-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40623.png",
+    "date_added": "2026-07-02T07:39:11.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40731": {
+    "id": 40731,
+    "symbol": "IREN",
+    "name": "IREN Limited Tokenized Stock (Robinhood)",
+    "slug": "iren-limited-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40731.png",
+    "date_added": "2026-08-04T07:31:43.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xF0AB0c93bE6F41369d302e55db1A96b3c430212D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xF0AB0c93bE6F41369d302e55db1A96b3c430212D",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40970": {
+    "id": 40970,
+    "symbol": "IRENB",
+    "name": "IREN Limited Tokenized bStocks",
+    "slug": "iren-limited-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40970.png",
+    "date_added": "2026-08-04T03:53:41.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41291": {
+    "id": 41291,
+    "symbol": "wIRENx",
+    "name": "Wrapped IREN Tokenized Stock (xStock)",
+    "slug": "wrapped-iren-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41291.png",
+    "date_added": "2026-08-11T16:22:17.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xb3a16DB475A9cb321fc8956aA2cB01385a022E75"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb3a16DB475A9cb321fc8956aA2cB01385a022E75",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+   "arbitrum:0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+   "bsc:0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+   "bsc:0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+   "bsc:0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+   "ethereum:0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+   "ethereum:0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+   "hyperevm:0xfbfc1fd14eec970276c8a3bf5e6131cd751cc0b9",
+   "robinhood:0xf0ab0c93be6f41369d302e55db1a96b3c430212d"
+  ],
+  "exact": {
+   "ethereum:0x0b59fdb1a233a7477ea14061004b9dd776e73cb3": {
+    "key": "ethereum:0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+    "name": "IREN (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENON",
+    "price": 25.94,
+    "address": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+    "addresses": {
+     "bsc": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+     "ethereum": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2230344,
+    "image": "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+    "metrics": {
+     "volumeUsd1d": "1088988.585",
+     "volumeUsd7d": "8119025.721"
+    },
+    "metadata": {},
+    "tokenId": "f8232a4c-ae1a-44cf-9685-4c788f44c421",
+    "totalSupply": "85920.07721712619",
+    "circulatingSupply": "85920.07721712619",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b": {
+    "key": "bsc:0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+    "name": "IREN Limited (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENB",
+    "price": 25.7,
+    "address": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+    "addresses": {
+     "bsc": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:23:26.149Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3286378,
+    "metrics": {
+     "volumeUsd1d": "234074.37",
+     "volumeUsd7d": "4903882.58"
+    },
+    "metadata": {},
+    "tokenId": "9e540148-7493-47c4-928a-43dc0d4df00f",
+    "totalSupply": "127582.30987355001",
+    "circulatingSupply": "127582.30987355001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6": {
+    "key": "bsc:0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+    "name": "IREN (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENON",
+    "price": 25.94,
+    "address": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+    "addresses": {
+     "bsc": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+     "ethereum": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2230344,
+    "image": "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+    "metrics": {
+     "volumeUsd1d": "1078514.319",
+     "volumeUsd7d": "8131443.795"
+    },
+    "metadata": {},
+    "tokenId": "f8232a4c-ae1a-44cf-9685-4c788f44c421",
+    "totalSupply": "85920.07721712619",
+    "circulatingSupply": "85920.07721712619",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93": {
+    "key": "arbitrum:0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+    "name": "IREN rStock",
+    "decimals": 18,
+    "symbol": "RIREN",
+    "price": 26.96,
+    "address": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+    "addresses": {
+     "arbitrum": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 564265,
+    "image": "https://coin-images.coingecko.com/coins/images/102177056/large/d98d052e19aa94878eab215cf12670c8.png?1789116689",
+    "metrics": {
+     "volumeUsd1d": "299.629",
+     "volumeUsd7d": "948805.887"
+    },
+    "metadata": {},
+    "tokenId": "b1b673e5-f817-4e3f-8ca4-f6142111da49",
+    "totalSupply": "20926.215846908002",
+    "circulatingSupply": "20926.215846908002",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "IREN": {
+    "total_items": 42,
+    "pages": 1,
+    "received": 42,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0xf7145ee24666696069a6b49e2d9193201ab7fe2f44c99e2fa9b1d46c2e914a9b": {
+    "key": "bsc:0xf7145ee24666696069a6b49e2d9193201ab7fe2f44c99e2fa9b1d46c2e914a9b",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0xf7145ee24666696069a6b49e2d9193201ab7fe2f44c99e2fa9b1d46c2e914a9b",
+    "addresses": {
+     "bsc": "0xf7145ee24666696069a6b49e2d9193201ab7fe2f44c99e2fa9b1d46c2e914a9b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.081Z",
+    "createdAt": "2026-04-04T23:59:41.666Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 824.288634399225,
+    "metrics": {
+     "apy": "14.584",
+     "baseApy": "14.584",
+     "volumeUsd1d": "136.035",
+     "volumeUsd7d": "1849.785"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 42,
+     "feePercentage": "0.2434"
+    },
+    "tokenId": "5ab8d40b-177b-4d96-89f1-caeb93faafb5",
+    "reserves": [
+     "324.931063181086240472",
+     "13301.611093681600855233"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x92799ecc8f5a3effcac3052fd07ef0201667d8183d9b3d5da47cd6db9e0bbdd1": {
+    "key": "bsc:0x92799ecc8f5a3effcac3052fd07ef0201667d8183d9b3d5da47cd6db9e0bbdd1",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0x92799ecc8f5a3effcac3052fd07ef0201667d8183d9b3d5da47cd6db9e0bbdd1",
+    "addresses": {
+     "bsc": "0x92799ecc8f5a3effcac3052fd07ef0201667d8183d9b3d5da47cd6db9e0bbdd1"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.108Z",
+    "createdAt": "2026-10-17T14:25:11.215Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 2083.6773763255987,
+    "metrics": {
+     "apy": "256.897",
+     "baseApy": "256.897",
+     "volumeUsd1d": "6322.549",
+     "volumeUsd7d": "16038.226"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2317"
+    },
+    "tokenId": "5b7e646d-8d1b-4ec6-9d64-66f8af268bdf",
+    "reserves": [
+     "1702.2844323402039507",
+     "10190.769805584226474537"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0b59fdb1a233a7477ea14061004b9dd776e73cb3": {
+    "key": "ethereum:0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+    "name": "IREN (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENON",
+    "price": 25.94,
+    "address": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+    "addresses": {
+     "bsc": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+     "ethereum": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2230344,
+    "image": "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+    "metrics": {
+     "volumeUsd1d": "1088988.585",
+     "volumeUsd7d": "8119025.721"
+    },
+    "metadata": {},
+    "tokenId": "f8232a4c-ae1a-44cf-9685-4c788f44c421",
+    "totalSupply": "85920.07721712619",
+    "circulatingSupply": "85920.07721712619",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0955dc56c2c3d4a6e20067276a1f3329ec1b340df64acecd86ee6e34628f1ef5": {
+    "key": "ethereum:0x0955dc56c2c3d4a6e20067276a1f3329ec1b340df64acecd86ee6e34628f1ef5",
+    "name": "Uniswap V4 LP IRENon/EGP",
+    "decimals": 18,
+    "symbol": "IRENON/EGP",
+    "price": 9007199254740990,
+    "address": "0x0955dc56c2c3d4a6e20067276a1f3329ec1b340df64acecd86ee6e34628f1ef5",
+    "addresses": {
+     "ethereum": "0x0955dc56c2c3d4a6e20067276a1f3329ec1b340df64acecd86ee6e34628f1ef5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.589Z",
+    "createdAt": "2026-10-14T06:54:25.777Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20051.311420786464,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.57"
+    },
+    "tokenId": "4bf08844-6d4e-4e33-a7aa-e862a80ad101",
+    "reserves": [
+     "0.754962465563938695",
+     "19999.999999999999999982"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a": {
+    "key": "arbitrum:0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+    "name": "IREN (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IREN",
+    "price": 30.41,
+    "address": "0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+    "addresses": {
+     "ethereum": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "avalanche": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "arbitrum": "0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+     "base": "0x5cd14a54be52b04e5af848382c4cb9df56b3761f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7067.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175132/large/dinari-logo-green-with-margin.png?1785403317",
+    "metrics": {
+     "volumeUsd1d": "119.037",
+     "volumeUsd7d": "5314.403"
+    },
+    "metadata": {},
+    "tokenId": "573db513-af45-4714-87d1-704c9b2fc026",
+    "totalSupply": "232.41482514224685",
+    "circulatingSupply": "232.41482514224685",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x00ced5d9ab36bc828fe57b89454c9445fc424c73050772028247e773b4985308": {
+    "key": "ethereum:0x00ced5d9ab36bc828fe57b89454c9445fc424c73050772028247e773b4985308",
+    "name": "Uniswap V4 LP IRENon/USDT",
+    "decimals": 18,
+    "symbol": "IRENON/USDT",
+    "price": 9007199254740990,
+    "address": "0x00ced5d9ab36bc828fe57b89454c9445fc424c73050772028247e773b4985308",
+    "addresses": {
+     "ethereum": "0x00ced5d9ab36bc828fe57b89454c9445fc424c73050772028247e773b4985308"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.735Z",
+    "createdAt": "2026-09-11T01:31:03.046Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 791.1519579262388,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7400,
+     "feePercentage": "74"
+    },
+    "tokenId": "c2b683f1-a1a0-4536-a3c5-ad308aed4644",
+    "reserves": [
+     "11.373050923265640808",
+     "496.538206"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x12a67c47baf61c0d8d43870a1115ac683f1e5907c2653f08c69bd5ef794a23aa": {
+    "key": "bsc:0x12a67c47baf61c0d8d43870a1115ac683f1e5907c2653f08c69bd5ef794a23aa",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0x12a67c47baf61c0d8d43870a1115ac683f1e5907c2653f08c69bd5ef794a23aa",
+    "addresses": {
+     "bsc": "0x12a67c47baf61c0d8d43870a1115ac683f1e5907c2653f08c69bd5ef794a23aa"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.429Z",
+    "createdAt": "2026-03-19T13:22:49.732Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 156271.3072440582,
+    "metrics": {
+     "apy": "272.696",
+     "baseApy": "272.696",
+     "volumeUsd1d": "481470.913",
+     "volumeUsd7d": "4280653.617"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 42,
+     "feePercentage": "0.2437"
+    },
+    "tokenId": "7e7dd167-91bb-4747-9d39-c3c5475359ae",
+    "reserves": [
+     "56370.840721314428508597",
+     "2660906.77757814777937329"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x9eeb6c5ff183e6001c65a12d70026b900ae76781": {
+    "key": "bsc:0x9eeb6c5ff183e6001c65a12d70026b900ae76781",
+    "name": "Irena Coin Apps",
+    "decimals": 9,
+    "symbol": "IRENA",
+    "price": 1.59545e-07,
+    "address": "0x9eeb6c5ff183e6001c65a12d70026b900ae76781",
+    "addresses": {
+     "bsc": "0x9eeb6c5ff183e6001c65a12d70026b900ae76781"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29439,
+    "image": "https://assets.coingecko.com/coins/images/24507/large/Irena_coin_apps.png?1696523687",
+    "metrics": {
+     "volumeUsd1d": "5.754",
+     "volumeUsd7d": "39.287"
+    },
+    "metadata": {},
+    "tokenId": "703e8034-15c4-455a-b6d9-9e7e27b18d84",
+    "totalSupply": "184486271710.07196",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x916de7e5d61ca8f20431b74d389baf2294e9ab1d7e133f17025857eb4bba1014": {
+    "key": "bsc:0x916de7e5d61ca8f20431b74d389baf2294e9ab1d7e133f17025857eb4bba1014",
+    "name": "Uniswap V4 LP USDC/SIREN",
+    "decimals": 18,
+    "symbol": "USDC/SIREN",
+    "price": 9007199254740990,
+    "address": "0x916de7e5d61ca8f20431b74d389baf2294e9ab1d7e133f17025857eb4bba1014",
+    "addresses": {
+     "bsc": "0x916de7e5d61ca8f20431b74d389baf2294e9ab1d7e133f17025857eb4bba1014"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.886Z",
+    "createdAt": "2026-06-16T14:05:02.264Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 22740.052768242065,
+    "metrics": {
+     "apy": "59.903",
+     "baseApy": "59.903",
+     "volumeUsd1d": "16101.511",
+     "volumeUsd7d": "199425.123"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 40,
+     "feePercentage": "0.2331"
+    },
+    "tokenId": "49b85e74-ec78-4579-a7f4-1d16b239b18b",
+    "reserves": [
+     "7543.311074365065129937",
+     "404624.987937783796697264"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x997a58129890bbda032231a52ed1ddc845fc18e1": {
+    "key": "bsc:0x997a58129890bbda032231a52ed1ddc845fc18e1",
+    "name": "Siren",
+    "decimals": 18,
+    "symbol": "SIREN",
+    "price": 0.03756097,
+    "address": "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+    "addresses": {
+     "bsc": "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 27176780,
+    "image": "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056",
+    "metrics": {
+     "volumeUsd1d": "2565860.246",
+     "volumeUsd7d": "21569616.462"
+    },
+    "metadata": {},
+    "tokenId": "4996a9ad-ab1b-4c4e-8bdc-1abd267bef73",
+    "totalSupply": "723026949.5189328",
+    "circulatingSupply": "723026949.5189328",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b": {
+    "key": "bsc:0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+    "name": "IREN Limited (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENB",
+    "price": 25.7,
+    "address": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b",
+    "addresses": {
+     "bsc": "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:23:26.149Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3286378,
+    "metrics": {
+     "volumeUsd1d": "234074.37",
+     "volumeUsd7d": "4903882.58"
+    },
+    "metadata": {},
+    "tokenId": "9e540148-7493-47c4-928a-43dc0d4df00f",
+    "totalSupply": "127582.30987355001",
+    "circulatingSupply": "127582.30987355001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xdb1311761c3413c8e38bcc4c9cf581283eb615ed": {
+    "key": "base:0xdb1311761c3413c8e38bcc4c9cf581283eb615ed",
+    "name": "UniswapV2 LP VIRTUAL/AIRENE",
+    "decimals": 18,
+    "symbol": "VIRTUAL/AIRENE",
+    "price": 0.015612173898685794,
+    "address": "0xdb1311761c3413c8e38bcc4c9cf581283eb615ed",
+    "addresses": {
+     "base": "0xdb1311761c3413c8e38bcc4c9cf581283eb615ed"
+    },
+    "platform": "uniswapv2",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/34057/large/WhatsApp_Image_2023-12-25_at_00.04.11.jpeg?1703749465",
+     "https://coin-images.coingecko.com/coins/images/51485/large/airene_icon_1to1.png?1731405207"
+    ],
+    "updatedAt": "2026-10-18T20:13:24.613Z",
+    "createdAt": "2024-12-27T12:01:41.146Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+     "0x2eac9b08a4d86f347b9e856fb3ec082e61c76545"
+    ],
+    "liquidity": 43862.6170069147,
+    "metrics": {
+     "apy": "0.302",
+     "baseApy": "0.302",
+     "volumeUsd1d": "121.356",
+     "volumeUsd7d": "19.978"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "5637b095-6c64-4be9-9855-83f8a2f66648",
+    "totalSupply": "2809513.735342582758374134",
+    "reserves": [
+     "35118.333144075613020763",
+     "294633518.030089610699909982"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x2eac9b08a4d86f347b9e856fb3ec082e61c76545": {
+    "key": "base:0x2eac9b08a4d86f347b9e856fb3ec082e61c76545",
+    "name": "AIRENE",
+    "decimals": 18,
+    "symbol": "AIRENE",
+    "price": 7.425e-05,
+    "address": "0x2eac9b08a4d86f347b9e856fb3ec082e61c76545",
+    "addresses": {
+     "base": "0x2eac9b08a4d86f347b9e856fb3ec082e61c76545"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-11-13T09:01:27.280Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 74273,
+    "image": "https://coin-images.coingecko.com/coins/images/51485/large/airene_icon_1to1.png?1731405207",
+    "metrics": {
+     "volumeUsd1d": "118.512",
+     "volumeUsd7d": "290.807"
+    },
+    "metadata": {},
+    "tokenId": "995985e0-6681-492c-9ab4-8494fafb4066",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5dd2a6ed810958c25148a4dbce2a1011ecbaee36db2b33dc0d9d4c6a0cabcecf": {
+    "key": "ethereum:0x5dd2a6ed810958c25148a4dbce2a1011ecbaee36db2b33dc0d9d4c6a0cabcecf",
+    "name": "Uniswap V4 LP IRENon/wUSDC",
+    "decimals": 18,
+    "symbol": "IRENON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x5dd2a6ed810958c25148a4dbce2a1011ecbaee36db2b33dc0d9d4c6a0cabcecf",
+    "addresses": {
+     "ethereum": "0x5dd2a6ed810958c25148a4dbce2a1011ecbaee36db2b33dc0d9d4c6a0cabcecf"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.774Z",
+    "createdAt": "2026-09-28T10:37:11.841Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "88f675f7-0690-4ca5-9341-7e10c56d8fc0",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbb915c34d3b3ac20a4b41edc2c9ae8dda5515541ba7da55728a76ff77aa99ab1": {
+    "key": "bsc:0xbb915c34d3b3ac20a4b41edc2c9ae8dda5515541ba7da55728a76ff77aa99ab1",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0xbb915c34d3b3ac20a4b41edc2c9ae8dda5515541ba7da55728a76ff77aa99ab1",
+    "addresses": {
+     "bsc": "0xbb915c34d3b3ac20a4b41edc2c9ae8dda5515541ba7da55728a76ff77aa99ab1"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.031Z",
+    "createdAt": "2026-06-13T13:35:32.841Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 5176.7705760988265,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.021"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "c95b5bad-f355-4942-9d2e-42efb251ec89",
+    "reserves": [
+     "0.260222080525102658",
+     "137816.210958306747683399"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6": {
+    "key": "bsc:0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+    "name": "IREN (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IRENON",
+    "price": 25.94,
+    "address": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+    "addresses": {
+     "bsc": "0x8fd70ee385f470c8d6fda2d93a4e49c849bac6a6",
+     "ethereum": "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2230344,
+    "image": "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+    "metrics": {
+     "volumeUsd1d": "1078514.319",
+     "volumeUsd7d": "8131443.795"
+    },
+    "metadata": {},
+    "tokenId": "f8232a4c-ae1a-44cf-9685-4c788f44c421",
+    "totalSupply": "85920.07721712619",
+    "circulatingSupply": "85920.07721712619",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x993fe9026d46461b715121dce2bba131615d59817bf7caef29c501e973a9b57b": {
+    "key": "ethereum:0x993fe9026d46461b715121dce2bba131615d59817bf7caef29c501e973a9b57b",
+    "name": "Uniswap V4 LP IRENon/USDC",
+    "decimals": 18,
+    "symbol": "IRENON/USDC",
+    "price": 9007199254740990,
+    "address": "0x993fe9026d46461b715121dce2bba131615d59817bf7caef29c501e973a9b57b",
+    "addresses": {
+     "ethereum": "0x993fe9026d46461b715121dce2bba131615d59817bf7caef29c501e973a9b57b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.238Z",
+    "createdAt": "2026-09-13T03:09:25.881Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 760.6580860440895,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "50"
+    },
+    "tokenId": "ca98c850-4400-48a8-bce1-98c8ffbcd429",
+    "reserves": [
+     "11.035459085461391399",
+     "474.484159"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x538c2c4aa5dbfe544b9b7e3a5a90c88f367c33d9": {
+    "key": "bsc:0x538c2c4aa5dbfe544b9b7e3a5a90c88f367c33d9",
+    "name": "PancakeSwap V3 USD Coin/SIREN 1%",
+    "decimals": 18,
+    "symbol": "USDC/SIREN",
+    "price": 9007199254740990,
+    "address": "0x538c2c4aa5dbfe544b9b7e3a5a90c88f367c33d9",
+    "addresses": {
+     "bsc": "0x538c2c4aa5dbfe544b9b7e3a5a90c88f367c33d9"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.753Z",
+    "createdAt": "2026-03-17T13:15:48.228Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 5438.084228122828,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "4415.653"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "729c8242-2546-400b-9afa-84c709876a4c",
+    "reserves": [
+     "14.733053012700173181",
+     "144388.013456327741332352"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb4cba874f47f787c4f52adc2e4a04885c211e5431372f8685fe387abe2ba2519": {
+    "key": "bsc:0xb4cba874f47f787c4f52adc2e4a04885c211e5431372f8685fe387abe2ba2519",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0xb4cba874f47f787c4f52adc2e4a04885c211e5431372f8685fe387abe2ba2519",
+    "addresses": {
+     "bsc": "0xb4cba874f47f787c4f52adc2e4a04885c211e5431372f8685fe387abe2ba2519"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.236Z",
+    "createdAt": "2026-10-17T14:24:33.601Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 3772.7857527248652,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "945.836"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 40,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "c91ef5e7-ccee-4ad4-a47a-58540de8695e",
+    "reserves": [
+     "4.515155110368502915",
+     "100324.199932015764108931"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3868851b2f2da5bc07c9866407f4e98b68c16f14": {
+    "key": "bsc:0x3868851b2f2da5bc07c9866407f4e98b68c16f14",
+    "name": "PancakeSwap V3 USD Coin/SIREN 0.25%",
+    "decimals": 18,
+    "symbol": "USDC/SIREN",
+    "price": 9007199254740990,
+    "address": "0x3868851b2f2da5bc07c9866407f4e98b68c16f14",
+    "addresses": {
+     "bsc": "0x3868851b2f2da5bc07c9866407f4e98b68c16f14"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.681Z",
+    "createdAt": "2026-03-03T05:12:26.494Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 5213.122420391007,
+    "metrics": {
+     "apy": "0.027",
+     "baseApy": "0.027",
+     "volumeUsd1d": "1.555",
+     "volumeUsd7d": "23.617"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "8ceca2e2-a0a0-4fbc-935a-50d5a48b94ba",
+    "reserves": [
+     "82.823462616225707497",
+     "136586.300854890455748753"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe21888102558deeebc4ca875ad99b7dd7368e6b2": {
+    "key": "ethereum:0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+    "name": "IREN (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IREN",
+    "price": 30.41,
+    "address": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+    "addresses": {
+     "ethereum": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "avalanche": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "arbitrum": "0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+     "base": "0x5cd14a54be52b04e5af848382c4cb9df56b3761f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7067.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175132/large/dinari-logo-green-with-margin.png?1785403317",
+    "metrics": {
+     "volumeUsd1d": "119.037",
+     "volumeUsd7d": "5314.596"
+    },
+    "metadata": {},
+    "tokenId": "573db513-af45-4714-87d1-704c9b2fc026",
+    "totalSupply": "232.41482514224685",
+    "circulatingSupply": "232.41482514224685",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4": {
+    "key": "bsc:0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4",
+    "name": "Beefy CLM SIREN-WBNB",
+    "decimals": 18,
+    "symbol": "COWPANCAKEBSCSIREN-WBNB",
+    "price": 30.791854653361707,
+    "address": "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4",
+    "addresses": {
+     "bsc": "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.478Z",
+    "createdAt": "2026-08-26T12:35:12.284Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "poolAddress": "0xb2af49dbf526054faf19602860a5e298a79f3d05",
+    "liquidity": 1203.231145309512,
+    "metrics": {
+     "apy": "3490.852",
+     "baseApy": "3490.852",
+     "volumeUsd1d": "-7.228",
+     "volumeUsd7d": "99.091"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-bsc-siren-wbnb",
+     "providerId": "pancakeswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4",
+     "strategyAddress": "0x02e54239beba80bb59f71d443a30d403738ae319",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xf3193b209e2cf77f9547eff865d4d4461c30c3c8",
+     "depositTokenAddresses": [
+      "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+     ]
+    },
+    "tokenId": "add62e03-4f09-43bb-83bb-1ebb0b803658",
+    "totalSupply": "39.076280362285645656",
+    "reserves": [
+     "18309.827228306784069807",
+     "0.73087900934609989"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd23ac27148af6a2f339bd82d0e3cff380b5093de": {
+    "key": "ethereum:0xd23ac27148af6a2f339bd82d0e3cff380b5093de",
+    "name": "Siren",
+    "decimals": 18,
+    "symbol": "SI",
+    "price": 0.00276853,
+    "address": "0xd23ac27148af6a2f339bd82d0e3cff380b5093de",
+    "addresses": {
+     "ethereum": "0xd23ac27148af6a2f339bd82d0e3cff380b5093de"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 185098,
+    "image": "https://assets.coingecko.com/coins/images/13955/large/siren_token_200x200.png?1696513692",
+    "metrics": {
+     "volumeUsd1d": "1.282",
+     "volumeUsd7d": "4917.51"
+    },
+    "metadata": {},
+    "tokenId": "eeba90e7-2514-429e-8450-6c993fa296da",
+    "totalSupply": "100000000",
+    "circulatingSupply": "66857920.78175118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf3193b209e2cf77f9547eff865d4d4461c30c3c8": {
+    "key": "bsc:0xf3193b209e2cf77f9547eff865d4d4461c30c3c8",
+    "name": "Beefy CLM SIREN-WBNB Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWPANCAKEBSCSIREN-WBNB",
+    "price": 30.791854653361707,
+    "address": "0xf3193b209e2cf77f9547eff865d4d4461c30c3c8",
+    "addresses": {
+     "bsc": "0xf3193b209e2cf77f9547eff865d4d4461c30c3c8"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.478Z",
+    "createdAt": "2026-08-26T12:35:12.284Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4"
+    ],
+    "poolAddress": "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4",
+    "liquidity": 1203.1838931210264,
+    "metrics": {
+     "apy": "3490.852",
+     "baseApy": "3490.852",
+     "volumeUsd1d": "-7.228",
+     "volumeUsd7d": "99.091"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-bsc-siren-wbnb",
+     "providerId": "pancakeswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x4831caf3c5d5c4c6ce283122fcfedf8f4b71dad4",
+     "strategyAddress": "0x02e54239beba80bb59f71d443a30d403738ae319",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xf3193b209e2cf77f9547eff865d4d4461c30c3c8",
+     "depositTokenAddresses": [
+      "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+     ]
+    },
+    "tokenId": "9d26984f-e299-46d3-80d1-6b65e37c3367",
+    "totalSupply": "39.074745794491092517",
+    "reserves": [
+     "39.074745794491092517"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x20ac3893e9da61fb4353c094686b56e4f8586f255dd1260e832a6739982213ad": {
+    "key": "bsc:0x20ac3893e9da61fb4353c094686b56e4f8586f255dd1260e832a6739982213ad",
+    "name": "Uniswap V4 LP USDT/IRENB",
+    "decimals": 18,
+    "symbol": "USDT/IRENB",
+    "price": 9007199254740990,
+    "address": "0x20ac3893e9da61fb4353c094686b56e4f8586f255dd1260e832a6739982213ad",
+    "addresses": {
+     "bsc": "0x20ac3893e9da61fb4353c094686b56e4f8586f255dd1260e832a6739982213ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.328Z",
+    "createdAt": "2026-08-08T11:49:14.325Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfdc2f2cab77b28f7ef6c819a404706cfa9bca33b"
+    ],
+    "liquidity": 644.2841347063766,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.704"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "4885c256-0f90-4900-bedf-3300fc4bac0c",
+    "reserves": [
+     "410.846166750719679647",
+     "9.09617023513846367"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd8e78286ab2356ce15e008659d5378241dcdc587d7f0c56577dd042ee22492c2": {
+    "key": "ethereum:0xd8e78286ab2356ce15e008659d5378241dcdc587d7f0c56577dd042ee22492c2",
+    "name": "Uniswap V4 LP IRENon/USDC",
+    "decimals": 18,
+    "symbol": "IRENON/USDC",
+    "price": 9007199254740990,
+    "address": "0xd8e78286ab2356ce15e008659d5378241dcdc587d7f0c56577dd042ee22492c2",
+    "addresses": {
+     "ethereum": "0xd8e78286ab2356ce15e008659d5378241dcdc587d7f0c56577dd042ee22492c2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.335Z",
+    "createdAt": "2026-01-27T05:16:18.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 842.0223801439572,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75.025"
+    },
+    "tokenId": "77a3e6a3-f4c8-42fc-95e0-38ba0241aea8",
+    "reserves": [
+     "9.910012893757100363",
+     "585.062542"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xe21888102558deeebc4ca875ad99b7dd7368e6b2": {
+    "key": "avalanche:0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+    "name": "IREN (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IREN",
+    "price": 30.41,
+    "address": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+    "addresses": {
+     "ethereum": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "avalanche": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "arbitrum": "0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+     "base": "0x5cd14a54be52b04e5af848382c4cb9df56b3761f"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7067.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175132/large/dinari-logo-green-with-margin.png?1785403317",
+    "metrics": {
+     "volumeUsd1d": "119.037",
+     "volumeUsd7d": "5315.567"
+    },
+    "metadata": {},
+    "tokenId": "573db513-af45-4714-87d1-704c9b2fc026",
+    "totalSupply": "232.41482514224685",
+    "circulatingSupply": "232.41482514224685",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x483c754f11b47bca2d0f37567136ab280734cedd": {
+    "key": "bsc:0x483c754f11b47bca2d0f37567136ab280734cedd",
+    "name": "Uniswap V3 Tether USD/SIREN 1%",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0x483c754f11b47bca2d0f37567136ab280734cedd",
+    "addresses": {
+     "bsc": "0x483c754f11b47bca2d0f37567136ab280734cedd"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.163Z",
+    "createdAt": "2026-02-08T05:12:33.703Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 7596.846029567305,
+    "metrics": {
+     "apy": "96.984",
+     "baseApy": "96.984",
+     "volumeUsd1d": "2030.441",
+     "volumeUsd7d": "34617.106"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "cccc07b2-6ed4-4489-aec1-44007df4de7c",
+    "reserves": [
+     "2417.594257733518874812",
+     "137941.455142693758046072"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xadae5d7f3f506e85b19b2237d6b3683e9e782c1c": {
+    "key": "bsc:0xadae5d7f3f506e85b19b2237d6b3683e9e782c1c",
+    "name": "PancakeSwap V3 Tether USD/SIREN 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0xadae5d7f3f506e85b19b2237d6b3683e9e782c1c",
+    "addresses": {
+     "bsc": "0xadae5d7f3f506e85b19b2237d6b3683e9e782c1c"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.730Z",
+    "createdAt": "2026-02-28T05:32:35.905Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 4308.538929041219,
+    "metrics": {
+     "apy": "222.539",
+     "baseApy": "222.539",
+     "volumeUsd1d": "10579.244",
+     "volumeUsd7d": "70150.363"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "339d6266-5ff3-48e2-94ff-0b5732ddf44a",
+    "reserves": [
+     "503.367285164646070226",
+     "101317.414808832848880625"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x26d43e907aae58b91cb0fe24d29dcd40147157951d8a74bada7994d6fa2abee8": {
+    "key": "ethereum:0x26d43e907aae58b91cb0fe24d29dcd40147157951d8a74bada7994d6fa2abee8",
+    "name": "Uniswap V4 LP IRENon/USDT",
+    "decimals": 18,
+    "symbol": "IRENON/USDT",
+    "price": 9007199254740990,
+    "address": "0x26d43e907aae58b91cb0fe24d29dcd40147157951d8a74bada7994d6fa2abee8",
+    "addresses": {
+     "ethereum": "0x26d43e907aae58b91cb0fe24d29dcd40147157951d8a74bada7994d6fa2abee8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.212Z",
+    "createdAt": "2026-09-13T03:09:25.601Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 789.2208953958274,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4800,
+     "feePercentage": "48"
+    },
+    "tokenId": "a788ebc0-7ff0-45fd-8828-ffd0ec8cea13",
+    "reserves": [
+     "11.373050929911924381",
+     "494.605574"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xca18a528ea897040f715edc92e6e4572780c5ca1": {
+    "key": "robinhood:0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "name": "Kairence",
+    "decimals": 18,
+    "symbol": "KAI",
+    "price": 0.00046023,
+    "address": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "addresses": {
+     "arc": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "base": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "robinhood": "0xca18a528ea897040f715edc92e6e4572780c5ca1"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1184929,
+    "image": "https://coin-images.coingecko.com/coins/images/102176542/large/QmSfRb4v3uxnjq792Nwq1f5DE34Aur6VbgS1RQXQMqhEWv_copy.png?1788029178",
+    "metrics": {
+     "volumeUsd1d": "2995.328",
+     "volumeUsd7d": "34209.534"
+    },
+    "metadata": {},
+    "tokenId": "70d16155-fe68-4963-9690-4e9864bf2ac6",
+    "totalSupply": "2834334798.9041204",
+    "circulatingSupply": "2574660844.2975955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x5cd14a54be52b04e5af848382c4cb9df56b3761f": {
+    "key": "base:0x5cd14a54be52b04e5af848382c4cb9df56b3761f",
+    "name": "IREN (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "IREN",
+    "price": 30.41,
+    "address": "0x5cd14a54be52b04e5af848382c4cb9df56b3761f",
+    "addresses": {
+     "ethereum": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "avalanche": "0xe21888102558deeebc4ca875ad99b7dd7368e6b2",
+     "arbitrum": "0x873c3ea04401e8bc9ef80c7f865ac959f3a64d1a",
+     "base": "0x5cd14a54be52b04e5af848382c4cb9df56b3761f"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7067.22,
+    "image": "https://coin-images.coingecko.com/coins/images/102175132/large/dinari-logo-green-with-margin.png?1785403317",
+    "metrics": {
+     "volumeUsd1d": "119.037",
+     "volumeUsd7d": "5315.035"
+    },
+    "metadata": {},
+    "tokenId": "573db513-af45-4714-87d1-704c9b2fc026",
+    "totalSupply": "232.41482514224685",
+    "circulatingSupply": "232.41482514224685",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xddd165504e22b4e8b18f2e0954fc90bd30f01117": {
+    "key": "bsc:0xddd165504e22b4e8b18f2e0954fc90bd30f01117",
+    "name": "PancakeSwap LP IRENA/WBNB",
+    "decimals": 18,
+    "symbol": "IRENA/WBNB",
+    "price": 1304.0284376600796,
+    "address": "0xddd165504e22b4e8b18f2e0954fc90bd30f01117",
+    "addresses": {
+     "bsc": "0xddd165504e22b4e8b18f2e0954fc90bd30f01117"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/24507/large/Irena_coin_apps.png?1696523687",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.974Z",
+    "createdAt": "2024-02-29T09:06:59.582Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9eeb6c5ff183e6001c65a12d70026b900ae76781",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 3618.3583196825684,
+    "metrics": {
+     "apy": "0.152",
+     "baseApy": "0.152",
+     "volumeUsd1d": "6.019",
+     "volumeUsd7d": "7.254"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "12ebb33d-c56b-47ec-8f7e-5de3a83448ce",
+    "totalSupply": "2.774754150434995259",
+    "reserves": [
+     "11322723538.011607727",
+     "2.568905010294064511"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xab2f7f49e422b6f1843ce754aea6345f9f23e5547f43e972285742d10cf46567": {
+    "key": "bsc:0xab2f7f49e422b6f1843ce754aea6345f9f23e5547f43e972285742d10cf46567",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0xab2f7f49e422b6f1843ce754aea6345f9f23e5547f43e972285742d10cf46567",
+    "addresses": {
+     "bsc": "0xab2f7f49e422b6f1843ce754aea6345f9f23e5547f43e972285742d10cf46567"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.968Z",
+    "createdAt": "2026-06-13T19:20:01.455Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 1101.170047648843,
+    "metrics": {
+     "apy": "91.252",
+     "baseApy": "91.252",
+     "volumeUsd1d": "67.553",
+     "volumeUsd7d": "1173.193"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 802,
+     "feePercentage": "4.106"
+    },
+    "tokenId": "d08fd7ea-100c-4098-9a28-373c7da4a9da",
+    "reserves": [
+     "203.006637812748979543",
+     "23916.53493575905597325"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8dae55b33bb0a27b6b99b40df778533756eec1564e8c9dc07a31b854d0c468a7": {
+    "key": "ethereum:0x8dae55b33bb0a27b6b99b40df778533756eec1564e8c9dc07a31b854d0c468a7",
+    "name": "Uniswap V4 LP IRENon/wUSDC",
+    "decimals": 18,
+    "symbol": "IRENON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x8dae55b33bb0a27b6b99b40df778533756eec1564e8c9dc07a31b854d0c468a7",
+    "addresses": {
+     "ethereum": "0x8dae55b33bb0a27b6b99b40df778533756eec1564e8c9dc07a31b854d0c468a7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71431/large/irenon_160x160.png?1767882809",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.936Z",
+    "createdAt": "2026-09-30T08:51:48.125Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b59fdb1a233a7477ea14061004b9dd776e73cb3",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "cfca0d2f-d772-4c8d-aba5-4d0e2b66e4c9",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x618bc80c47e3f83ced202a34ea48f419a97bf6151bd46bb1fd2db23307e38f4b": {
+    "key": "bsc:0x618bc80c47e3f83ced202a34ea48f419a97bf6151bd46bb1fd2db23307e38f4b",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0x618bc80c47e3f83ced202a34ea48f419a97bf6151bd46bb1fd2db23307e38f4b",
+    "addresses": {
+     "bsc": "0x618bc80c47e3f83ced202a34ea48f419a97bf6151bd46bb1fd2db23307e38f4b"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.955Z",
+    "createdAt": "2026-06-13T19:20:01.640Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 22552.322327727474,
+    "metrics": {
+     "apy": "311.521",
+     "baseApy": "311.521",
+     "volumeUsd1d": "82911.263",
+     "volumeUsd7d": "800656.315"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 40,
+     "feePercentage": "0.233"
+    },
+    "tokenId": "527e2e26-c49c-4d60-8138-4d785d87b1b6",
+    "reserves": [
+     "9742.754074798791078702",
+     "341244.631574674943830782"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arc:0xca18a528ea897040f715edc92e6e4572780c5ca1": {
+    "key": "arc:0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "name": "Kairence",
+    "decimals": 18,
+    "symbol": "KAI",
+    "price": 0.00046023,
+    "address": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "addresses": {
+     "arc": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "base": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "robinhood": "0xca18a528ea897040f715edc92e6e4572780c5ca1"
+    },
+    "platform": "basic",
+    "network": "arc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-10-13T05:08:37.520Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1184929,
+    "image": "https://coin-images.coingecko.com/coins/images/102176542/large/QmSfRb4v3uxnjq792Nwq1f5DE34Aur6VbgS1RQXQMqhEWv_copy.png?1788029178",
+    "metrics": {
+     "volumeUsd1d": "2995.431",
+     "volumeUsd7d": "29441.27"
+    },
+    "metadata": {},
+    "tokenId": "70d16155-fe68-4963-9690-4e9864bf2ac6",
+    "totalSupply": "2834334798.9041204",
+    "circulatingSupply": "2574660844.2975955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93": {
+    "key": "arbitrum:0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+    "name": "IREN rStock",
+    "decimals": 18,
+    "symbol": "RIREN",
+    "price": 26.96,
+    "address": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93",
+    "addresses": {
+     "arbitrum": "0x798b5967a0debe6ed3dc16aa36d5cecda1e19f93"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 564265,
+    "image": "https://coin-images.coingecko.com/coins/images/102177056/large/d98d052e19aa94878eab215cf12670c8.png?1789116689",
+    "metrics": {
+     "volumeUsd1d": "299.629",
+     "volumeUsd7d": "948805.887"
+    },
+    "metadata": {},
+    "tokenId": "b1b673e5-f817-4e3f-8ca4-f6142111da49",
+    "totalSupply": "20926.215846908002",
+    "circulatingSupply": "20926.215846908002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x48edab763b434629a489d1aa9ddab1f14f596c9f6cda4b5c373e27b0a5714c7e": {
+    "key": "bsc:0x48edab763b434629a489d1aa9ddab1f14f596c9f6cda4b5c373e27b0a5714c7e",
+    "name": "Uniswap V4 LP USDT/SIREN",
+    "decimals": 18,
+    "symbol": "USDT/SIREN",
+    "price": 9007199254740990,
+    "address": "0x48edab763b434629a489d1aa9ddab1f14f596c9f6cda4b5c373e27b0a5714c7e",
+    "addresses": {
+     "bsc": "0x48edab763b434629a489d1aa9ddab1f14f596c9f6cda4b5c373e27b0a5714c7e"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.384Z",
+    "createdAt": "2026-06-19T10:28:10.819Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 3096.479452745111,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18002,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "de76450a-0c97-487e-8c51-eac71a64d9bb",
+    "reserves": [
+     "1779.684753645070440974",
+     "35095.999999999999999979"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x52f5675b0ee6094bb8ee1b7e81f68fcd37ffb8618614589d92295845677bb517": {
+    "key": "bsc:0x52f5675b0ee6094bb8ee1b7e81f68fcd37ffb8618614589d92295845677bb517",
+    "name": "Uniswap V4 LP BNB/SIREN",
+    "decimals": 18,
+    "symbol": "BNB/SIREN",
+    "price": 9007199254740990,
+    "address": "0x52f5675b0ee6094bb8ee1b7e81f68fcd37ffb8618614589d92295845677bb517",
+    "addresses": {
+     "bsc": "0x52f5675b0ee6094bb8ee1b7e81f68fcd37ffb8618614589d92295845677bb517"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.358Z",
+    "createdAt": "2025-12-16T16:30:10.263Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1"
+    ],
+    "liquidity": 1974.8218156770522,
+    "metrics": {
+     "apy": "0.038",
+     "baseApy": "0.038",
+     "volumeUsd1d": "1036.156",
+     "volumeUsd7d": "51078.826"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0002"
+    },
+    "tokenId": "b0394e3a-bca7-48ab-9cba-d8066f904bd1",
+    "reserves": [
+     "1.234117979820620206",
+     "29371.934047723939795435"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xca18a528ea897040f715edc92e6e4572780c5ca1": {
+    "key": "base:0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "name": "Kairence",
+    "decimals": 18,
+    "symbol": "KAI",
+    "price": 0.00046023,
+    "address": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+    "addresses": {
+     "arc": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "base": "0xca18a528ea897040f715edc92e6e4572780c5ca1",
+     "robinhood": "0xca18a528ea897040f715edc92e6e4572780c5ca1"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-29T19:49:34.374Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1184929,
+    "image": "https://coin-images.coingecko.com/coins/images/102176542/large/QmSfRb4v3uxnjq792Nwq1f5DE34Aur6VbgS1RQXQMqhEWv_copy.png?1788029178",
+    "metrics": {
+     "volumeUsd1d": "2995.487",
+     "volumeUsd7d": "34212.378"
+    },
+    "metadata": {},
+    "tokenId": "70d16155-fe68-4963-9690-4e9864bf2ac6",
+    "totalSupply": "2834334798.9041204",
+    "circulatingSupply": "2574660844.2975955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xb2af49dbf526054faf19602860a5e298a79f3d05": {
+    "key": "bsc:0xb2af49dbf526054faf19602860a5e298a79f3d05",
+    "name": "PancakeSwap V3 SIREN/Wrapped BNB 1%",
+    "decimals": 18,
+    "symbol": "SIREN/WBNB",
+    "price": 9007199254740990,
+    "address": "0xb2af49dbf526054faf19602860a5e298a79f3d05",
+    "addresses": {
+     "bsc": "0xb2af49dbf526054faf19602860a5e298a79f3d05"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/54479/large/siren.png?1739960056",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.053Z",
+    "createdAt": "2025-09-09T10:51:48.908Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 2561617.69569877,
+    "metrics": {
+     "apy": "83.571",
+     "baseApy": "83.571",
+     "volumeUsd1d": "588868.447",
+     "volumeUsd7d": "7141543.974"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8f888353-a88f-43a7-aa04-07c4a19cbedb",
+    "reserves": [
+     "26369052.312096522344832373",
+     "2227.631130815786306506"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,1775 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US9497461015",
+ "ticker": "WFC",
+ "name": "Wells Fargo",
+ "isin": "US9497461015",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:53Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Wells Fargo & Co",
+   "symbol": "WFC",
+   "slug": "wells-fargo",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 85.21556177269942,
+     "tokenized_market_cap": 1281743.4215490741,
+     "tokenized_volume_24h": 33890.87334134,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 60,
+   "asset_type": "stock",
+   "rwa_rank": 59,
+   "has_tokens": true,
+   "average_tokenized_price": 85.21556177269942,
+   "tokenized_market_cap": 1281743.4215490741,
+   "tokenized_volume_24h": 33890.87334134,
+   "last_updated": "2026-10-18T20:14:21.596Z",
+   "tokens": [
+    {
+     "symbol": "WFCon",
+     "name": "Wells Fargo Tokenized Stock (Ondo)",
+     "price": 85.23652824512689,
+     "crypto_id": 38081,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1282058.78,
+     "volume_24h": 33694.22591752
+    },
+    {
+     "symbol": "wWFCx",
+     "name": "Wrapped Wells Fargo Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41706,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "WFC",
+     "market_url": "https://www.binance.com/en/stocks/EQ_WFC"
+    }
+   ]
+  },
+  "info": {
+   "38081": {
+    "id": 38081,
+    "symbol": "WFCon",
+    "name": "Wells Fargo Tokenized Stock (Ondo)",
+    "slug": "wells-fargo-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38081.png",
+    "date_added": "2025-09-03T10:54:57.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x4AD2118Da8a65eaa81402A3d583FEF6eE76BDf3F"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4AD2118Da8a65eaa81402A3d583FEF6eE76BDf3F",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x629520dee1620def11596f84e85de9f1ff653012",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "L6ZE5qCpVVSqLePz64CrwkgyWoPF9M7tB8BeFH4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41706": {
+    "id": 41706,
+    "symbol": "wWFCx",
+    "name": "Wrapped Wells Fargo Tokenized Stock (xStock)",
+    "slug": "wrapped-wells-fargo-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41706.png",
+    "date_added": "2026-08-11T16:26:44.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x1a60B265D0f7705830e6fF876A4E175c98e31f9D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1a60B265D0f7705830e6fF876A4E175c98e31f9D",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x629520dee1620def11596f84e85de9f1ff653012",
+   "ethereum:0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f"
+  ],
+  "exact": {
+   "bsc:0x629520dee1620def11596f84e85de9f1ff653012": {
+    "key": "bsc:0x629520dee1620def11596f84e85de9f1ff653012",
+    "name": "Wells Fargo (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WFCON",
+    "price": 85.34,
+    "address": "0x629520dee1620def11596f84e85de9f1ff653012",
+    "addresses": {
+     "ethereum": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+     "bsc": "0x629520dee1620def11596f84e85de9f1ff653012"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1283662,
+    "image": "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+    "metrics": {
+     "volumeUsd1d": "99.854",
+     "volumeUsd7d": "459.911"
+    },
+    "metadata": {},
+    "tokenId": "e7246150-6f5f-484f-ac94-63dd6a21f1f8",
+    "totalSupply": "15041.189600648244",
+    "circulatingSupply": "15041.189600648244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f": {
+    "key": "ethereum:0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+    "name": "Wells Fargo (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WFCON",
+    "price": 85.34,
+    "address": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+    "addresses": {
+     "ethereum": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+     "bsc": "0x629520dee1620def11596f84e85de9f1ff653012"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1283662,
+    "image": "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+    "metrics": {
+     "volumeUsd1d": "99.854",
+     "volumeUsd7d": "458.361"
+    },
+    "metadata": {},
+    "tokenId": "e7246150-6f5f-484f-ac94-63dd6a21f1f8",
+    "totalSupply": "15041.189600648244",
+    "circulatingSupply": "15041.189600648244",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "WFC": {
+    "total_items": 34,
+    "pages": 1,
+    "received": 34,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x7008a748c7b0cc967000c4b1a75934b6d84858dbb5a4f4de53c990ee5ad3ce9c": {
+    "key": "ethereum:0x7008a748c7b0cc967000c4b1a75934b6d84858dbb5a4f4de53c990ee5ad3ce9c",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0x7008a748c7b0cc967000c4b1a75934b6d84858dbb5a4f4de53c990ee5ad3ce9c",
+    "addresses": {
+     "ethereum": "0x7008a748c7b0cc967000c4b1a75934b6d84858dbb5a4f4de53c990ee5ad3ce9c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:16:37.622Z",
+    "createdAt": "2026-05-06T17:49:45.930Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 835.170863254501,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19992,
+     "feePercentage": "99.962"
+    },
+    "tokenId": "a2592bf7-01b1-4a4c-90e8-725e08a170ad",
+    "reserves": [
+     "210693.699215201912014702",
+     "0.000002"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb93414a5aaf96b2fededacfa24ba6190734f6cc68376da25f13cb4d374e4ad33": {
+    "key": "ethereum:0xb93414a5aaf96b2fededacfa24ba6190734f6cc68376da25f13cb4d374e4ad33",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0xb93414a5aaf96b2fededacfa24ba6190734f6cc68376da25f13cb4d374e4ad33",
+    "addresses": {
+     "ethereum": "0xb93414a5aaf96b2fededacfa24ba6190734f6cc68376da25f13cb4d374e4ad33"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.172Z",
+    "createdAt": "2026-02-15T05:07:58.551Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1145.209050226628,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4000,
+     "feePercentage": "20"
+    },
+    "tokenId": "b5c4ac60-e805-4911-924c-4ca59ec1a672",
+    "reserves": [
+     "78390.651538973641252657",
+     "835.156215"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0e5f0bd8f2934b9c5bb0ac6e33072f56cc018164870f00d1bb3c331d9240ecf2": {
+    "key": "ethereum:0x0e5f0bd8f2934b9c5bb0ac6e33072f56cc018164870f00d1bb3c331d9240ecf2",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0x0e5f0bd8f2934b9c5bb0ac6e33072f56cc018164870f00d1bb3c331d9240ecf2",
+    "addresses": {
+     "ethereum": "0x0e5f0bd8f2934b9c5bb0ac6e33072f56cc018164870f00d1bb3c331d9240ecf2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.096Z",
+    "createdAt": "2026-04-24T18:59:00.749Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 673.4673586722372,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.956"
+    },
+    "tokenId": "9b92a358-4830-45a8-9c3f-d31ebf74cee9",
+    "reserves": [
+     "169899.759498748000000002",
+     "0.000003"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4c9d55986e4f470ffa4c127427ba3e80bac1d67a64138713b9cd066bcb043b03": {
+    "key": "ethereum:0x4c9d55986e4f470ffa4c127427ba3e80bac1d67a64138713b9cd066bcb043b03",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x4c9d55986e4f470ffa4c127427ba3e80bac1d67a64138713b9cd066bcb043b03",
+    "addresses": {
+     "ethereum": "0x4c9d55986e4f470ffa4c127427ba3e80bac1d67a64138713b9cd066bcb043b03"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.427Z",
+    "createdAt": "2026-05-09T05:05:12.415Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 770.6720847284109,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19992,
+     "feePercentage": "99.961"
+    },
+    "tokenId": "99da4dfa-8efc-430b-b736-de82ce3fee7c",
+    "reserves": [
+     "0.000004",
+     "194422.194431551397641443"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd2f347fffac352670b5114050a2597417ceb62449ff097f3ad9bcfcf734ec0d8": {
+    "key": "ethereum:0xd2f347fffac352670b5114050a2597417ceb62449ff097f3ad9bcfcf734ec0d8",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0xd2f347fffac352670b5114050a2597417ceb62449ff097f3ad9bcfcf734ec0d8",
+    "addresses": {
+     "ethereum": "0xd2f347fffac352670b5114050a2597417ceb62449ff097f3ad9bcfcf734ec0d8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.809Z",
+    "createdAt": "2026-04-24T18:59:03.614Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 508.68448316111295,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.956"
+    },
+    "tokenId": "3df806ac-8043-410d-8b3a-cc0f96338e49",
+    "reserves": [
+     "0.000006",
+     "128328.967398920000000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x629520dee1620def11596f84e85de9f1ff653012": {
+    "key": "bsc:0x629520dee1620def11596f84e85de9f1ff653012",
+    "name": "Wells Fargo (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WFCON",
+    "price": 85.34,
+    "address": "0x629520dee1620def11596f84e85de9f1ff653012",
+    "addresses": {
+     "ethereum": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+     "bsc": "0x629520dee1620def11596f84e85de9f1ff653012"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1283662,
+    "image": "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+    "metrics": {
+     "volumeUsd1d": "99.854",
+     "volumeUsd7d": "459.911"
+    },
+    "metadata": {},
+    "tokenId": "e7246150-6f5f-484f-ac94-63dd6a21f1f8",
+    "totalSupply": "15041.189600648244",
+    "circulatingSupply": "15041.189600648244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa334874794db88a457a306f86fe944e644bf333fa0b5dd99516cb176f1a48fca": {
+    "key": "ethereum:0xa334874794db88a457a306f86fe944e644bf333fa0b5dd99516cb176f1a48fca",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0xa334874794db88a457a306f86fe944e644bf333fa0b5dd99516cb176f1a48fca",
+    "addresses": {
+     "ethereum": "0xa334874794db88a457a306f86fe944e644bf333fa0b5dd99516cb176f1a48fca"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.621Z",
+    "createdAt": "2026-07-10T04:24:14.818Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 1826.2997101478627,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9960,
+     "feePercentage": "49.8502"
+    },
+    "tokenId": "5d97a90b-6c4c-4cd0-a2eb-f4fcf862d595",
+    "reserves": [
+     "1799.100737",
+     "6947.887890464899795117"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa6e988796ca49587f012a6eafddb3f5fbcafc376f2dce664e7723083e5c36cf3": {
+    "key": "ethereum:0xa6e988796ca49587f012a6eafddb3f5fbcafc376f2dce664e7723083e5c36cf3",
+    "name": "Uniswap V4 LP wUSDC/WFCon",
+    "decimals": 18,
+    "symbol": "WUSDC/WFCON",
+    "price": 9007199254740990,
+    "address": "0xa6e988796ca49587f012a6eafddb3f5fbcafc376f2dce664e7723083e5c36cf3",
+    "addresses": {
+     "ethereum": "0xa6e988796ca49587f012a6eafddb3f5fbcafc376f2dce664e7723083e5c36cf3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.527Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "56dbb950-7310-4ace-ab14-942768507a3a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2d80d85f6a2a405094b71b20295f605e22ea7a947db46af238fbe1bf0d4dcc73": {
+    "key": "ethereum:0x2d80d85f6a2a405094b71b20295f605e22ea7a947db46af238fbe1bf0d4dcc73",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x2d80d85f6a2a405094b71b20295f605e22ea7a947db46af238fbe1bf0d4dcc73",
+    "addresses": {
+     "ethereum": "0x2d80d85f6a2a405094b71b20295f605e22ea7a947db46af238fbe1bf0d4dcc73"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.794Z",
+    "createdAt": "2026-06-08T22:59:26.148Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 685.4326725817278,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 994,
+     "feePercentage": "4.97"
+    },
+    "tokenId": "089c72a8-04d1-4a53-927e-9fd2b862d36d",
+    "reserves": [
+     "430.671472",
+     "64290.820972577047277982"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd4a7e6274c715b68a94d22afd7cc030256fc508dc5af5d12911102bed78c9b29": {
+    "key": "ethereum:0xd4a7e6274c715b68a94d22afd7cc030256fc508dc5af5d12911102bed78c9b29",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0xd4a7e6274c715b68a94d22afd7cc030256fc508dc5af5d12911102bed78c9b29",
+    "addresses": {
+     "ethereum": "0xd4a7e6274c715b68a94d22afd7cc030256fc508dc5af5d12911102bed78c9b29"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.342Z",
+    "createdAt": "2026-04-24T18:59:03.614Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 641.4363563958118,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 644,
+     "feePercentage": "3.2222"
+    },
+    "tokenId": "c1c09e41-b97a-47bf-9d7e-6b9f9cfd76f3",
+    "reserves": [
+     "32291.427677807214756902",
+     "513.854835"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb7e54091f1cd8ef9a0ddf0917033bcc3bbbecfeb945f24451daf8e2226f862fe": {
+    "key": "ethereum:0xb7e54091f1cd8ef9a0ddf0917033bcc3bbbecfeb945f24451daf8e2226f862fe",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0xb7e54091f1cd8ef9a0ddf0917033bcc3bbbecfeb945f24451daf8e2226f862fe",
+    "addresses": {
+     "ethereum": "0xb7e54091f1cd8ef9a0ddf0917033bcc3bbbecfeb945f24451daf8e2226f862fe"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.342Z",
+    "createdAt": "2026-07-30T15:06:02.636Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1037.4546301726705,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "40.0501"
+    },
+    "tokenId": "eebf0d9a-e7ec-43cf-a4fa-6659d2438cf0",
+    "reserves": [
+     "99173.279453847433041352",
+     "644.866242"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x257b8386df08ceadb4b18c12552d75e74f159ab75122b815b969b55b28a09692": {
+    "key": "ethereum:0x257b8386df08ceadb4b18c12552d75e74f159ab75122b815b969b55b28a09692",
+    "name": "Uniswap V4 LP ETH/WFCA",
+    "decimals": 18,
+    "symbol": "ETH/WFCA",
+    "price": 9007199254740990,
+    "address": "0x257b8386df08ceadb4b18c12552d75e74f159ab75122b815b969b55b28a09692",
+    "addresses": {
+     "ethereum": "0x257b8386df08ceadb4b18c12552d75e74f159ab75122b815b969b55b28a09692"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.696Z",
+    "createdAt": "2025-12-24T12:04:49.251Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 711.5412344823646,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17000,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "1e182728-860f-41ec-a6e7-9d431c9db38f",
+    "reserves": [
+     "0.268468933034110608",
+     "21254.981493233665148211"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd3372145e1b205403c9f847b3f2ab2e2e122bc71480e4287e31c456c27804f79": {
+    "key": "ethereum:0xd3372145e1b205403c9f847b3f2ab2e2e122bc71480e4287e31c456c27804f79",
+    "name": "Uniswap V4 LP ETH/WFCA",
+    "decimals": 18,
+    "symbol": "ETH/WFCA",
+    "price": 9007199254740990,
+    "address": "0xd3372145e1b205403c9f847b3f2ab2e2e122bc71480e4287e31c456c27804f79",
+    "addresses": {
+     "ethereum": "0xd3372145e1b205403c9f847b3f2ab2e2e122bc71480e4287e31c456c27804f79"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.419Z",
+    "createdAt": "2026-02-08T05:11:26.210Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 1721.807740639286,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19500,
+     "feePercentage": "97.5"
+    },
+    "tokenId": "9edad341-51ec-480b-b499-e6a02e4bf537",
+    "reserves": [
+     "0.736904885274502477",
+     "0.000000000000000006"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x05178d3074e6f598f94a62ccaa49756c873fb9877337aaaa34d662e6680cd6cc": {
+    "key": "ethereum:0x05178d3074e6f598f94a62ccaa49756c873fb9877337aaaa34d662e6680cd6cc",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x05178d3074e6f598f94a62ccaa49756c873fb9877337aaaa34d662e6680cd6cc",
+    "addresses": {
+     "ethereum": "0x05178d3074e6f598f94a62ccaa49756c873fb9877337aaaa34d662e6680cd6cc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.844Z",
+    "createdAt": "2026-06-10T14:30:09.383Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 998.6831174103847,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1040,
+     "feePercentage": "5.2"
+    },
+    "tokenId": "73bf8756-2b5e-4345-9243-d0886360157c",
+    "reserves": [
+     "546.477083",
+     "114106.996641234212970903"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x289e61ce63b06cd50191e7ef0ede0c54859bd2146df73cb735c3fd43d1cb152b": {
+    "key": "ethereum:0x289e61ce63b06cd50191e7ef0ede0c54859bd2146df73cb735c3fd43d1cb152b",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x289e61ce63b06cd50191e7ef0ede0c54859bd2146df73cb735c3fd43d1cb152b",
+    "addresses": {
+     "ethereum": "0x289e61ce63b06cd50191e7ef0ede0c54859bd2146df73cb735c3fd43d1cb152b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.844Z",
+    "createdAt": "2026-05-11T06:09:40.290Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 1094.3998380889188,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.953"
+    },
+    "tokenId": "ffc92ca1-80a1-477d-b2a2-42ce62025531",
+    "reserves": [
+     "0.000011",
+     "276090.987709359897940265"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x606a2ffd289a7b8ce3a39350aebacb319e5a89cb0b687e71bf4c2444958fdd09": {
+    "key": "ethereum:0x606a2ffd289a7b8ce3a39350aebacb319e5a89cb0b687e71bf4c2444958fdd09",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0x606a2ffd289a7b8ce3a39350aebacb319e5a89cb0b687e71bf4c2444958fdd09",
+    "addresses": {
+     "ethereum": "0x606a2ffd289a7b8ce3a39350aebacb319e5a89cb0b687e71bf4c2444958fdd09"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.913Z",
+    "createdAt": "2026-08-29T02:13:42.753Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 3527.744070612966,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1451.702"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2980,
+     "feePercentage": "29.8702"
+    },
+    "tokenId": "cc78dabe-4dff-4cb6-bcad-6ec30c93e8c2",
+    "reserves": [
+     "670036.169755755344326378",
+     "872.492078"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x89712a283846d499301d21cce12c7dfb249e16bf93f8a6655f40b70de263659f": {
+    "key": "ethereum:0x89712a283846d499301d21cce12c7dfb249e16bf93f8a6655f40b70de263659f",
+    "name": "Uniswap V4 LP WFCA/USDS",
+    "decimals": 18,
+    "symbol": "WFCA/USDS",
+    "price": 9007199254740990,
+    "address": "0x89712a283846d499301d21cce12c7dfb249e16bf93f8a6655f40b70de263659f",
+    "addresses": {
+     "ethereum": "0x89712a283846d499301d21cce12c7dfb249e16bf93f8a6655f40b70de263659f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://coin-images.coingecko.com/coins/images/39926/large/usds.webp?1726666683"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.850Z",
+    "createdAt": "2026-04-27T19:05:09.102Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdc035d45d973e3ec169d2276ddab16f1e407384f"
+    ],
+    "liquidity": 686.9030451541497,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19994,
+     "feePercentage": "99.969"
+    },
+    "tokenId": "3a0d129e-3a58-456f-95c8-3b24bb67fbb9",
+    "reserves": [
+     "173289.263670000000000001",
+     "0.000000000000000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f": {
+    "key": "ethereum:0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+    "name": "Wells Fargo (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WFCON",
+    "price": 85.34,
+    "address": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+    "addresses": {
+     "ethereum": "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f",
+     "bsc": "0x629520dee1620def11596f84e85de9f1ff653012"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1283662,
+    "image": "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+    "metrics": {
+     "volumeUsd1d": "99.854",
+     "volumeUsd7d": "458.361"
+    },
+    "metadata": {},
+    "tokenId": "e7246150-6f5f-484f-ac94-63dd6a21f1f8",
+    "totalSupply": "15041.189600648244",
+    "circulatingSupply": "15041.189600648244",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2a8a4f60a0d9f52c86a17304ba01405b2d5d8e41701eb4019d18f913642ef63a": {
+    "key": "ethereum:0x2a8a4f60a0d9f52c86a17304ba01405b2d5d8e41701eb4019d18f913642ef63a",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x2a8a4f60a0d9f52c86a17304ba01405b2d5d8e41701eb4019d18f913642ef63a",
+    "addresses": {
+     "ethereum": "0x2a8a4f60a0d9f52c86a17304ba01405b2d5d8e41701eb4019d18f913642ef63a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.171Z",
+    "createdAt": "2026-04-26T19:03:57.034Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 556.7962810059154,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.955"
+    },
+    "tokenId": "474d79c8-5189-40eb-8f0f-40fed8c00439",
+    "reserves": [
+     "0.000002",
+     "140466.428099097950000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x798519a97a8505c9b9d848b8e6cdce8b52921066b90120ce5aeab0960573b5c8": {
+    "key": "ethereum:0x798519a97a8505c9b9d848b8e6cdce8b52921066b90120ce5aeab0960573b5c8",
+    "name": "Uniswap V4 LP EGP/WFCon",
+    "decimals": 18,
+    "symbol": "EGP/WFCON",
+    "price": 9007199254740990,
+    "address": "0x798519a97a8505c9b9d848b8e6cdce8b52921066b90120ce5aeab0960573b5c8",
+    "addresses": {
+     "ethereum": "0x798519a97a8505c9b9d848b8e6cdce8b52921066b90120ce5aeab0960573b5c8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.292Z",
+    "createdAt": "2026-10-13T13:13:57.793Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f"
+    ],
+    "liquidity": 20062.40400453411,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.76"
+    },
+    "tokenId": "d6f4ce6f-242a-4c65-a997-a88f18583837",
+    "reserves": [
+     "19999.999999999999999978",
+     "0.325466185342427477"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1973715705db790e68252a2a54f019e69b54d521a5072be348bf43dcd612ae8e": {
+    "key": "ethereum:0x1973715705db790e68252a2a54f019e69b54d521a5072be348bf43dcd612ae8e",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x1973715705db790e68252a2a54f019e69b54d521a5072be348bf43dcd612ae8e",
+    "addresses": {
+     "ethereum": "0x1973715705db790e68252a2a54f019e69b54d521a5072be348bf43dcd612ae8e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:17:19.289Z",
+    "createdAt": "2026-08-01T13:33:52.597Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 1621.2117812247,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "50.051"
+    },
+    "tokenId": "6f3b52be-b80a-4b1f-a7e4-e14c09508b15",
+    "reserves": [
+     "1621.51987",
+     "0.000000000000000024"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6882618562cd02b20eaaf1ff851626f7caa900c5d19aa97df01b0264d2f9d5db": {
+    "key": "ethereum:0x6882618562cd02b20eaaf1ff851626f7caa900c5d19aa97df01b0264d2f9d5db",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x6882618562cd02b20eaaf1ff851626f7caa900c5d19aa97df01b0264d2f9d5db",
+    "addresses": {
+     "ethereum": "0x6882618562cd02b20eaaf1ff851626f7caa900c5d19aa97df01b0264d2f9d5db"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.540Z",
+    "createdAt": "2026-04-25T19:02:27.716Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 888.2649970947559,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.957"
+    },
+    "tokenId": "4d85f5e8-a4ed-465a-98c3-4b0b98ed6dba",
+    "reserves": [
+     "0.000006",
+     "224088.082498315035000002"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcad82d95e65340b8e553c3174fc43cde1b776cf00f91cdc915293b98d0d81234": {
+    "key": "ethereum:0xcad82d95e65340b8e553c3174fc43cde1b776cf00f91cdc915293b98d0d81234",
+    "name": "Uniswap V4 LP ETH/WFCA",
+    "decimals": 18,
+    "symbol": "ETH/WFCA",
+    "price": 9007199254740990,
+    "address": "0xcad82d95e65340b8e553c3174fc43cde1b776cf00f91cdc915293b98d0d81234",
+    "addresses": {
+     "ethereum": "0xcad82d95e65340b8e553c3174fc43cde1b776cf00f91cdc915293b98d0d81234"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:16:58.147Z",
+    "createdAt": "2025-11-17T17:32:34.087Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 508.11567917710056,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90"
+    },
+    "tokenId": "e01625d3-6ca0-4dba-b288-b3bf0f655192",
+    "reserves": [
+     "0.217383828746372353",
+     "47.848704448817277382"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2dc35ed00cd4b66c26ee9a920f273c09872443c04fd2cd5dd4a2ffe19fb4b602": {
+    "key": "ethereum:0x2dc35ed00cd4b66c26ee9a920f273c09872443c04fd2cd5dd4a2ffe19fb4b602",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0x2dc35ed00cd4b66c26ee9a920f273c09872443c04fd2cd5dd4a2ffe19fb4b602",
+    "addresses": {
+     "ethereum": "0x2dc35ed00cd4b66c26ee9a920f273c09872443c04fd2cd5dd4a2ffe19fb4b602"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:17:19.302Z",
+    "createdAt": "2026-02-18T05:09:56.861Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 602.9218929093707,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30"
+    },
+    "tokenId": "111d9274-2abb-4443-bae4-f51df5670409",
+    "reserves": [
+     "34273.024807860361402668",
+     "467.447677"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x444abda3e00b4aeca6740bbb8ee091c84d821a5311d66bf312d8572480643932": {
+    "key": "ethereum:0x444abda3e00b4aeca6740bbb8ee091c84d821a5311d66bf312d8572480643932",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0x444abda3e00b4aeca6740bbb8ee091c84d821a5311d66bf312d8572480643932",
+    "addresses": {
+     "ethereum": "0x444abda3e00b4aeca6740bbb8ee091c84d821a5311d66bf312d8572480643932"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.963Z",
+    "createdAt": "2026-04-20T23:06:24.740Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 638.1563092998354,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1620,
+     "feePercentage": "8.1"
+    },
+    "tokenId": "60976620-f061-46ba-9e84-f936cc687561",
+    "reserves": [
+     "27343.411834233209997835",
+     "530.2016"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4fd9ef81881fa4c2e8380a3574e1a687fec5640b12cc35242b4490fd9b8504ec": {
+    "key": "ethereum:0x4fd9ef81881fa4c2e8380a3574e1a687fec5640b12cc35242b4490fd9b8504ec",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x4fd9ef81881fa4c2e8380a3574e1a687fec5640b12cc35242b4490fd9b8504ec",
+    "addresses": {
+     "ethereum": "0x4fd9ef81881fa4c2e8380a3574e1a687fec5640b12cc35242b4490fd9b8504ec"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.797Z",
+    "createdAt": "2026-05-11T06:09:41.968Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 904.4572492730223,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19990,
+     "feePercentage": "99.951"
+    },
+    "tokenId": "bdbfe4a9-fefb-439e-bce0-106d326fc8d1",
+    "reserves": [
+     "0.000004",
+     "228173.002231075457643059"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfe37882306acfde73a73fbdbf757df373b6c6bb92e5848e2110ed5f5b4201cea": {
+    "key": "ethereum:0xfe37882306acfde73a73fbdbf757df373b6c6bb92e5848e2110ed5f5b4201cea",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0xfe37882306acfde73a73fbdbf757df373b6c6bb92e5848e2110ed5f5b4201cea",
+    "addresses": {
+     "ethereum": "0xfe37882306acfde73a73fbdbf757df373b6c6bb92e5848e2110ed5f5b4201cea"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.367Z",
+    "createdAt": "2026-05-03T05:08:41.399Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 1578.2813509922992,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19992,
+     "feePercentage": "99.958"
+    },
+    "tokenId": "e0e76a2e-4323-4291-9205-e969b555aaa1",
+    "reserves": [
+     "398162.759244992716226957",
+     "0.000008"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x19a52283d83dc808bc99b728cc3258ab47fe39fb20075121d05db9eb1e7daf5d": {
+    "key": "ethereum:0x19a52283d83dc808bc99b728cc3258ab47fe39fb20075121d05db9eb1e7daf5d",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x19a52283d83dc808bc99b728cc3258ab47fe39fb20075121d05db9eb1e7daf5d",
+    "addresses": {
+     "ethereum": "0x19a52283d83dc808bc99b728cc3258ab47fe39fb20075121d05db9eb1e7daf5d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.686Z",
+    "createdAt": "2026-05-14T05:05:16.963Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 1850.8135648901268,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9978,
+     "feePercentage": "49.89"
+    },
+    "tokenId": "3ee95487-f53e-4147-a4f2-cd1f6da857bb",
+    "reserves": [
+     "1096.942285",
+     "190236.332036871865261771"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x44f977d9f66342c857eb8ccb017ea320c1e2e837": {
+    "key": "arbitrum:0x44f977d9f66342c857eb8ccb017ea320c1e2e837",
+    "name": "Wells Fargo & Co rStock",
+    "decimals": 18,
+    "symbol": "RWFC",
+    "price": 82.71,
+    "address": "0x44f977d9f66342c857eb8ccb017ea320c1e2e837",
+    "addresses": {
+     "arbitrum": "0x44f977d9f66342c857eb8ccb017ea320c1e2e837"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4379.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102177184/large/fcee5a55e0bb4beb49ac808806fd5719.png?1789117088",
+    "metrics": {
+     "volumeUsd1d": "49.949",
+     "volumeUsd7d": "1393.223"
+    },
+    "metadata": {},
+    "tokenId": "111e510d-7d89-44a4-af31-a87513b050a8",
+    "totalSupply": "52.94701294199999",
+    "circulatingSupply": "52.94701294199999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xaf27a68d8817c5370393bc8d12ed772ff1e9a11adc2d1b81eedd2ad9990db760": {
+    "key": "ethereum:0xaf27a68d8817c5370393bc8d12ed772ff1e9a11adc2d1b81eedd2ad9990db760",
+    "name": "Uniswap V4 LP WFCA/USDT",
+    "decimals": 18,
+    "symbol": "WFCA/USDT",
+    "price": 9007199254740990,
+    "address": "0xaf27a68d8817c5370393bc8d12ed772ff1e9a11adc2d1b81eedd2ad9990db760",
+    "addresses": {
+     "ethereum": "0xaf27a68d8817c5370393bc8d12ed772ff1e9a11adc2d1b81eedd2ad9990db760"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.795Z",
+    "createdAt": "2026-04-28T19:07:01.242Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 594.330828804185,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.957"
+    },
+    "tokenId": "7d56fdef-9c5e-481e-b6ee-64cf081fa39f",
+    "reserves": [
+     "149935.500000000000000001",
+     "0.000001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x20742611cd7ca643220a2d03284dc98ecca4d234a495ae1f2fd40ddf0bce2cd7": {
+    "key": "ethereum:0x20742611cd7ca643220a2d03284dc98ecca4d234a495ae1f2fd40ddf0bce2cd7",
+    "name": "Uniswap V4 LP USDC/WFCA",
+    "decimals": 18,
+    "symbol": "USDC/WFCA",
+    "price": 9007199254740990,
+    "address": "0x20742611cd7ca643220a2d03284dc98ecca4d234a495ae1f2fd40ddf0bce2cd7",
+    "addresses": {
+     "ethereum": "0x20742611cd7ca643220a2d03284dc98ecca4d234a495ae1f2fd40ddf0bce2cd7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.693Z",
+    "createdAt": "2026-08-29T03:53:26.929Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    ],
+    "liquidity": 975.0643192295055,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5024,
+     "feePercentage": "50.2848"
+    },
+    "tokenId": "31eeeec2-50cc-4ff8-9044-37401b13f128",
+    "reserves": [
+     "284.962514",
+     "174109.893541267449162204"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x764427261c043d210c00b278a12a58de31d93fab7432c8a6388ab2b2ce916138": {
+    "key": "ethereum:0x764427261c043d210c00b278a12a58de31d93fab7432c8a6388ab2b2ce916138",
+    "name": "Uniswap V4 LP wUSDC/WFCon",
+    "decimals": 18,
+    "symbol": "WUSDC/WFCON",
+    "price": 9007199254740990,
+    "address": "0x764427261c043d210c00b278a12a58de31d93fab7432c8a6388ab2b2ce916138",
+    "addresses": {
+     "ethereum": "0x764427261c043d210c00b278a12a58de31d93fab7432c8a6388ab2b2ce916138"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68590/large/wfcon_160x160.png?1756129819",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.990Z",
+    "createdAt": "2026-09-28T10:39:20.872Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x4ad2118da8a65eaa81402a3d583fef6ee76bdf3f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "8bd8e5b0-5872-4b45-b278-9ab76b9aa90b",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf3aeecc39881e8b16b67d0e1a7085b6bbf923989e95bdcaf285e4c4153dc2823": {
+    "key": "ethereum:0xf3aeecc39881e8b16b67d0e1a7085b6bbf923989e95bdcaf285e4c4153dc2823",
+    "name": "Uniswap V4 LP WFCA/USDS",
+    "decimals": 18,
+    "symbol": "WFCA/USDS",
+    "price": 9007199254740990,
+    "address": "0xf3aeecc39881e8b16b67d0e1a7085b6bbf923989e95bdcaf285e4c4153dc2823",
+    "addresses": {
+     "ethereum": "0xf3aeecc39881e8b16b67d0e1a7085b6bbf923989e95bdcaf285e4c4153dc2823"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39926/large/usds.webp?1726666683",
+     "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798"
+    ],
+    "updatedAt": "2026-10-18T20:17:50.274Z",
+    "createdAt": "2026-05-02T05:07:40.320Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae4533189c7281501f04ba4b7c37e3aded402902",
+     "0xdc035d45d973e3ec169d2276ddab16f1e407384f"
+    ],
+    "liquidity": 792.6216365921679,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19994,
+     "feePercentage": "99.97"
+    },
+    "tokenId": "f4b90ea8-ccaa-4a97-b626-c4a15c4f0002",
+    "reserves": [
+     "199959.544135000000000001",
+     "0.000000000000000002"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xae4533189c7281501f04ba4b7c37e3aded402902": {
+    "key": "ethereum:0xae4533189c7281501f04ba4b7c37e3aded402902",
+    "name": "World Friendship Cash",
+    "decimals": 18,
+    "symbol": "WFCA",
+    "price": 0.00396391,
+    "address": "0xae4533189c7281501f04ba4b7c37e3aded402902",
+    "addresses": {
+     "ethereum": "0xae4533189c7281501f04ba4b7c37e3aded402902"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-02-29T07:12:10.399Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 785937,
+    "image": "https://assets.coingecko.com/coins/images/31997/large/wfca.jpg?1696530798",
+    "metrics": {
+     "volumeUsd1d": "25366.914",
+     "volumeUsd7d": "177747.717"
+    },
+    "metadata": {},
+    "tokenId": "443020e7-c459-4be5-8098-98852d230210",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "197947960.08872747",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,826 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US21037T1097",
+ "ticker": "CEG",
+ "name": "Constellation Energy",
+ "isin": "US21037T1097",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:13Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Constellation Energy",
+   "symbol": "CEG",
+   "slug": "constellation-energy",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 269.3855901363094,
+     "tokenized_market_cap": 568793.9892508754,
+     "tokenized_volume_24h": 773100.73237088,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 157,
+   "asset_type": "stock",
+   "rwa_rank": 171,
+   "has_tokens": true,
+   "average_tokenized_price": 269.3855901363094,
+   "tokenized_market_cap": 568793.9892508754,
+   "tokenized_volume_24h": 773100.73237088,
+   "last_updated": "2026-10-18T20:14:19.446Z",
+   "tokens": [
+    {
+     "symbol": "CEGon",
+     "name": "Constellation Energy Tokenized Stock (Ondo)",
+     "price": 269.38971618650737,
+     "crypto_id": 39253,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 568802.7,
+     "volume_24h": 774029.80889036
+    },
+    {
+     "symbol": "wCEGx",
+     "name": "Wrapped Constellation Energy Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41185,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "CEG",
+     "market_url": "https://www.binance.com/en/stocks/EQ_CEG"
+    }
+   ]
+  },
+  "info": {
+   "39253": {
+    "id": 39253,
+    "symbol": "CEGon",
+    "name": "Constellation Energy Tokenized Stock (Ondo)",
+    "slug": "constellation-energy-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39253.png",
+    "date_added": "2026-01-08T15:44:11.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x060505527c83e8bfeb9b4ff08248b82e688800f1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x65d84f0990b7394209d591380c2952c83d778aa3",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "7NWHifsBnn9DimUeNnsHdEXkTZhXmJTiXxcCngBondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41185": {
+    "id": 41185,
+    "symbol": "wCEGx",
+    "name": "Wrapped Constellation Energy Tokenized Stock (xStock)",
+    "slug": "wrapped-constellation-energy-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41185.png",
+    "date_added": "2026-08-11T16:21:08.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x05751A815c33557dbe18858cf6b318212e87c218"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x05751A815c33557dbe18858cf6b318212e87c218",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x65d84f0990b7394209d591380c2952c83d778aa3",
+   "ethereum:0x060505527c83e8bfeb9b4ff08248b82e688800f1"
+  ],
+  "exact": {
+   "bsc:0x65d84f0990b7394209d591380c2952c83d778aa3": {
+    "key": "bsc:0x65d84f0990b7394209d591380c2952c83d778aa3",
+    "name": "Constellation Energy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CEGON",
+    "price": 269.77,
+    "address": "0x65d84f0990b7394209d591380c2952c83d778aa3",
+    "addresses": {
+     "ethereum": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "bsc": "0x65d84f0990b7394209d591380c2952c83d778aa3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 569647,
+    "image": "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796",
+    "metrics": {
+     "volumeUsd1d": "146253.367",
+     "volumeUsd7d": "1197081.534"
+    },
+    "metadata": {},
+    "tokenId": "a0624bb4-3e5f-436a-84fa-a2e2bb29b5eb",
+    "totalSupply": "2111.449201726732",
+    "circulatingSupply": "2111.449201726732",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x060505527c83e8bfeb9b4ff08248b82e688800f1": {
+    "key": "ethereum:0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+    "name": "Constellation Energy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CEGON",
+    "price": 269.77,
+    "address": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+    "addresses": {
+     "ethereum": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "bsc": "0x65d84f0990b7394209d591380c2952c83d778aa3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 569647,
+    "image": "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796",
+    "metrics": {
+     "volumeUsd1d": "146546.974",
+     "volumeUsd7d": "1195481.476"
+    },
+    "metadata": {},
+    "tokenId": "a0624bb4-3e5f-436a-84fa-a2e2bb29b5eb",
+    "totalSupply": "2111.449201726732",
+    "circulatingSupply": "2111.449201726732",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "CEG": {
+    "total_items": 14,
+    "pages": 1,
+    "received": 14,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x65d84f0990b7394209d591380c2952c83d778aa3": {
+    "key": "bsc:0x65d84f0990b7394209d591380c2952c83d778aa3",
+    "name": "Constellation Energy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CEGON",
+    "price": 269.77,
+    "address": "0x65d84f0990b7394209d591380c2952c83d778aa3",
+    "addresses": {
+     "ethereum": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "bsc": "0x65d84f0990b7394209d591380c2952c83d778aa3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 569647,
+    "image": "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796",
+    "metrics": {
+     "volumeUsd1d": "146253.367",
+     "volumeUsd7d": "1197081.534"
+    },
+    "metadata": {},
+    "tokenId": "a0624bb4-3e5f-436a-84fa-a2e2bb29b5eb",
+    "totalSupply": "2111.449201726732",
+    "circulatingSupply": "2111.449201726732",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x34da21c11e9ba657ffa439d5198dc202b500ad40497f09bd1a20bdad090d28e4": {
+    "key": "ethereum:0x34da21c11e9ba657ffa439d5198dc202b500ad40497f09bd1a20bdad090d28e4",
+    "name": "Uniswap V4 LP CEGon/EGP",
+    "decimals": 18,
+    "symbol": "CEGON/EGP",
+    "price": 9007199254740990,
+    "address": "0x34da21c11e9ba657ffa439d5198dc202b500ad40497f09bd1a20bdad090d28e4",
+    "addresses": {
+     "ethereum": "0x34da21c11e9ba657ffa439d5198dc202b500ad40497f09bd1a20bdad090d28e4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.169Z",
+    "createdAt": "2026-10-14T06:54:27.260Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20059.25761178367,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.69"
+    },
+    "tokenId": "70bd883a-17a6-41da-8481-eb77c762fbf8",
+    "reserves": [
+     "0.091295887262042367",
+     "19999.99999999999999996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xae517a2903e68bd929dfd15be875f8369d53e94a": {
+    "key": "robinhood:0xae517a2903e68bd929dfd15be875f8369d53e94a",
+    "name": "Constellation Energy • Robinhood Token",
+    "decimals": 18,
+    "symbol": "CEG",
+    "price": 271.19,
+    "address": "0xae517a2903e68bd929dfd15be875f8369d53e94a",
+    "addresses": {
+     "robinhood": "0xae517a2903e68bd929dfd15be875f8369d53e94a"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xae517a2903e68bd929dfd15be875f8369d53e94a.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-08-09T17:22:26.668Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xae517a2903e68bd929dfd15be875f8369d53e94a",
+    "liquidity": 36138.3021056,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "11490.145"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000068576a5b6aee4a6bbc9f0d91f47e3918",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "0895e779-e270-45ea-9e0d-b77eb81ea613",
+    "totalSupply": "133.25824",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfa0405a0183971bf1d0cdbc162db042d219541b95cf47590d25ebf20cb665f69": {
+    "key": "robinhood:0xfa0405a0183971bf1d0cdbc162db042d219541b95cf47590d25ebf20cb665f69",
+    "name": "Uniswap V4 LP USDG/CEG",
+    "decimals": 18,
+    "symbol": "USDG/CEG",
+    "price": 9007199254740990,
+    "address": "0xfa0405a0183971bf1d0cdbc162db042d219541b95cf47590d25ebf20cb665f69",
+    "addresses": {
+     "robinhood": "0xfa0405a0183971bf1d0cdbc162db042d219541b95cf47590d25ebf20cb665f69"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.612Z",
+    "createdAt": "2026-09-09T20:23:46.976Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xae517a2903e68bd929dfd15be875f8369d53e94a"
+    ],
+    "liquidity": 941.4656545120305,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "38.344"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4808cde7-f966-4147-8f6c-ded169b28330",
+    "reserves": [
+     "22.691598",
+     "3.387934866742986545"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x319a45e08783e58a2a3206f6dbf991657f184c65": {
+    "key": "base:0x319a45e08783e58a2a3206f6dbf991657f184c65",
+    "name": "Aerodrome SlipStream Wrapped Constellation Energy Corporation ST0x/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "WTCEG/USDC",
+    "price": 9007199254740990,
+    "address": "0x319a45e08783e58a2a3206f6dbf991657f184c65",
+    "addresses": {
+     "base": "0x319a45e08783e58a2a3206f6dbf991657f184c65"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/102178387/large/CEG.png?1789459949",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.592Z",
+    "createdAt": "2026-09-15T14:14:19.827Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3af952888cd89dad3e8af67cf4b7e740b36829c3",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 1070.2395071298697,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "27.361"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "866e078b-1e94-42f0-8c7b-bdc9ab0c9cd2",
+    "reserves": [
+     "1.96103063325216201",
+     "536.004767"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x4f80c685167ca4ea978cce6fd28af43963067a8a": {
+    "key": "arbitrum:0x4f80c685167ca4ea978cce6fd28af43963067a8a",
+    "name": "Constellation Energy rStock",
+    "decimals": 18,
+    "symbol": "RCEG",
+    "price": 270.26,
+    "address": "0x4f80c685167ca4ea978cce6fd28af43963067a8a",
+    "addresses": {
+     "arbitrum": "0x4f80c685167ca4ea978cce6fd28af43963067a8a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 31237,
+    "image": "https://coin-images.coingecko.com/coins/images/102177029/large/cab6b92bf5eed7df7a08619b139535ab.png?1789116604",
+    "metrics": {
+     "volumeUsd1d": "0.01",
+     "volumeUsd7d": "4129.154"
+    },
+    "metadata": {},
+    "tokenId": "ed1f771a-b695-4fc3-a60e-c19202bcc7fd",
+    "totalSupply": "115.58374510600001",
+    "circulatingSupply": "115.58374510600001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7636244bab612264e1b2dfd4ba6e26d0311b1eb7": {
+    "key": "ethereum:0x7636244bab612264e1b2dfd4ba6e26d0311b1eb7",
+    "name": "Constellation Energy Corporation xStock",
+    "decimals": 18,
+    "symbol": "CEGX",
+    "price": 272.07,
+    "address": "0x7636244bab612264e1b2dfd4ba6e26d0311b1eb7",
+    "addresses": {
+     "ethereum": "0x7636244bab612264e1b2dfd4ba6e26d0311b1eb7"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.725Z",
+    "createdAt": "2026-04-01T22:44:19.368Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4635175.432196605,
+    "image": "https://coin-images.coingecko.com/coins/images/102172728/large/CEGx-logo.png?1775052068",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "constellation-energy-corporation-xstock"
+    },
+    "tokenId": "bfcd67af-d954-42b5-a6cf-ae957802ede4",
+    "totalSupply": "17036.701702490555",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x21e190d0a42ad1b36f957bf2490eef78825d13a579d3a326bf10aadc1d634f4f": {
+    "key": "robinhood:0x21e190d0a42ad1b36f957bf2490eef78825d13a579d3a326bf10aadc1d634f4f",
+    "name": "Uniswap V4 LP USDG/CEG",
+    "decimals": 18,
+    "symbol": "USDG/CEG",
+    "price": 9007199254740990,
+    "address": "0x21e190d0a42ad1b36f957bf2490eef78825d13a579d3a326bf10aadc1d634f4f",
+    "addresses": {
+     "robinhood": "0x21e190d0a42ad1b36f957bf2490eef78825d13a579d3a326bf10aadc1d634f4f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.460Z",
+    "createdAt": "2026-09-08T14:36:43.193Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xae517a2903e68bd929dfd15be875f8369d53e94a"
+    ],
+    "liquidity": 37961.71465728687,
+    "metrics": {
+     "apy": "1.045",
+     "baseApy": "1.045",
+     "volumeUsd1d": "108.827",
+     "volumeUsd7d": "16199.312"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "f16093a9-63a3-4557-b102-f047628fc785",
+    "reserves": [
+     "20445.393853",
+     "64.590585214376905103"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3d2d47e0a9f11a65a823984af53718d1ce22b393ee4fc94faa2144ffb48a64be": {
+    "key": "ethereum:0x3d2d47e0a9f11a65a823984af53718d1ce22b393ee4fc94faa2144ffb48a64be",
+    "name": "Uniswap V4 LP CEGon/wUSDC",
+    "decimals": 18,
+    "symbol": "CEGON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x3d2d47e0a9f11a65a823984af53718d1ce22b393ee4fc94faa2144ffb48a64be",
+    "addresses": {
+     "ethereum": "0x3d2d47e0a9f11a65a823984af53718d1ce22b393ee4fc94faa2144ffb48a64be"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.960Z",
+    "createdAt": "2026-09-28T10:37:10.374Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "0284a6fb-6c92-423f-863d-6adceae23950",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x633cca89d0bafdfa45a7052f9778394b170828c193e3f85a5fda47b911fb5275": {
+    "key": "robinhood:0x633cca89d0bafdfa45a7052f9778394b170828c193e3f85a5fda47b911fb5275",
+    "name": "Uniswap V4 LP ETH/CEG",
+    "decimals": 18,
+    "symbol": "ETH/CEG",
+    "price": 9007199254740990,
+    "address": "0x633cca89d0bafdfa45a7052f9778394b170828c193e3f85a5fda47b911fb5275",
+    "addresses": {
+     "robinhood": "0x633cca89d0bafdfa45a7052f9778394b170828c193e3f85a5fda47b911fb5275"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.586Z",
+    "createdAt": "2026-08-13T16:14:42.711Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xae517a2903e68bd929dfd15be875f8369d53e94a"
+    ],
+    "liquidity": 695.7130635772784,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "0afc1a97-92cf-44d8-be7b-0d6690193658",
+    "reserves": [
+     "0.070654004751871533",
+     "1.957196047140682837"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc9529b7dc74bf15da6cee01a282908e8c7ab6ba3": {
+    "key": "robinhood:0xc9529b7dc74bf15da6cee01a282908e8c7ab6ba3",
+    "name": "Uniswap V3 Global Dollar/Constellation Energy  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/CEG",
+    "price": 9007199254740990,
+    "address": "0xc9529b7dc74bf15da6cee01a282908e8c7ab6ba3",
+    "addresses": {
+     "robinhood": "0xc9529b7dc74bf15da6cee01a282908e8c7ab6ba3"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.323Z",
+    "createdAt": "2026-08-20T14:21:35.371Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xae517a2903e68bd929dfd15be875f8369d53e94a"
+    ],
+    "liquidity": 1405.9011326846437,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1233.481"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "4b790b79-46a7-4903-b1bf-e4284a080e2e",
+    "reserves": [
+     "281.230295",
+     "4.147169282365292699"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3af952888cd89dad3e8af67cf4b7e740b36829c3": {
+    "key": "base:0x3af952888cd89dad3e8af67cf4b7e740b36829c3",
+    "name": "Constellation Energy (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTCEG",
+    "price": 272.49,
+    "address": "0x3af952888cd89dad3e8af67cf4b7e740b36829c3",
+    "addresses": {
+     "base": "0x3af952888cd89dad3e8af67cf4b7e740b36829c3"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-15T08:21:31.719Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2345.26,
+    "image": "https://coin-images.coingecko.com/coins/images/102178387/large/CEG.png?1789459949",
+    "metrics": {
+     "volumeUsd1d": "8.149",
+     "volumeUsd7d": "59.024"
+    },
+    "metadata": {},
+    "tokenId": "927ecd83-3ade-4bad-8252-0a4644e663ec",
+    "totalSupply": "8.606882795611229",
+    "circulatingSupply": "8.606882795611229",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x060505527c83e8bfeb9b4ff08248b82e688800f1": {
+    "key": "ethereum:0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+    "name": "Constellation Energy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "CEGON",
+    "price": 269.77,
+    "address": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+    "addresses": {
+     "ethereum": "0x060505527c83e8bfeb9b4ff08248b82e688800f1",
+     "bsc": "0x65d84f0990b7394209d591380c2952c83d778aa3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 569647,
+    "image": "https://coin-images.coingecko.com/coins/images/71575/large/cegon_160x160.webp?1768404796",
+    "metrics": {
+     "volumeUsd1d": "146546.974",
+     "volumeUsd7d": "1195481.476"
+    },
+    "metadata": {},
+    "tokenId": "a0624bb4-3e5f-436a-84fa-a2e2bb29b5eb",
+    "totalSupply": "2111.449201726732",
+    "circulatingSupply": "2111.449201726732",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2aab082a8d49b17e2a4e29fda760a9e643ea7f616d233d621e9734ec0734a576": {
+    "key": "ethereum:0x2aab082a8d49b17e2a4e29fda760a9e643ea7f616d233d621e9734ec0734a576",
+    "name": "Uniswap V4 LP USDT/CEGx",
+    "decimals": 18,
+    "symbol": "USDT/CEGX",
+    "price": 9007199254740990,
+    "address": "0x2aab082a8d49b17e2a4e29fda760a9e643ea7f616d233d621e9734ec0734a576",
+    "addresses": {
+     "ethereum": "0x2aab082a8d49b17e2a4e29fda760a9e643ea7f616d233d621e9734ec0734a576"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.999Z",
+    "createdAt": "2026-10-18T18:58:00.628Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x7636244bab612264e1b2dfd4ba6e26d0311b1eb7"
+    ],
+    "liquidity": 3527.180966887563,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "b8758f8d-0860-438d-a66b-b219c452035a",
+    "reserves": [
+     "3999.99999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

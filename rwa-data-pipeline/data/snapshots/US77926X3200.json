@@ -1,0 +1,670 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US77926X3200",
+ "ticker": "DRAM",
+ "name": "Roundhill Memory ETF",
+ "isin": "US77926X3200",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:08Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Roundhill Memory ETF",
+   "symbol": "DRAM",
+   "slug": "roundhill-memory-etf",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 45.18038120775158,
+     "tokenized_market_cap": 18898242.348859053,
+     "tokenized_volume_24h": 8710429.72316183,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 4789,
+   "asset_type": "etf",
+   "rwa_rank": 7111,
+   "has_tokens": true,
+   "average_tokenized_price": 45.18038120775158,
+   "tokenized_market_cap": 18898242.348859053,
+   "tokenized_volume_24h": 8710429.72316183,
+   "last_updated": "2026-10-18T20:13:37.873Z",
+   "tokens": [
+    {
+     "symbol": "rDRAM",
+     "name": "Global X DRAM ETF Tokenized Stock (Reality)",
+     "price": 46.220445547085724,
+     "crypto_id": 40636,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 1089262.95,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "DRAM",
+     "name": "Roundhill Memory Tokenized ETF (Robinhood)",
+     "price": null,
+     "crypto_id": 40782,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "DRAMB",
+     "name": "Roundhill Memory ETF Tokenized bStocks",
+     "price": 45.171232585202915,
+     "crypto_id": 40798,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 17805373.24,
+     "volume_24h": 8708380.11279097
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "DRAM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_DRAM"
+    }
+   ]
+  },
+  "info": {
+   "40636": {
+    "id": 40636,
+    "symbol": "rDRAM",
+    "name": "Global X DRAM ETF Tokenized Stock (Reality)",
+    "slug": "global-x-dram-etf-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40636.png",
+    "date_added": "2026-07-02T07:39:16.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40782": {
+    "id": 40782,
+    "symbol": "DRAM",
+    "name": "Roundhill Memory Tokenized ETF (Robinhood)",
+    "slug": "roundhill-memory-tokenized-etf-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40782.png",
+    "date_added": "2026-08-04T07:32:05.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x33C18e2CC8AE9AE486e785090D86B2CE632FF994"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x33C18e2CC8AE9AE486e785090D86B2CE632FF994",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40798": {
+    "id": 40798,
+    "symbol": "DRAMB",
+    "name": "Roundhill Memory ETF Tokenized bStocks",
+    "slug": "roundhill-memory-etf-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40798.png",
+    "date_added": "2026-07-06T06:10:11.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x93862d63fd9fd488b1328e9b47717d75e994a84b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+   "bsc:0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+   "robinhood:0x33c18e2cc8ae9ae486e785090d86b2ce632ff994"
+  ],
+  "exact": {
+   "arbitrum:0xdaa61aa3d01ef52d71982b52b06dcc84479f8036": {
+    "key": "arbitrum:0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+    "name": "Roundhill Memory ETF rStock",
+    "decimals": 18,
+    "symbol": "RDRAM",
+    "price": 46.24,
+    "address": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+    "addresses": {
+     "arbitrum": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1089663,
+    "image": "https://coin-images.coingecko.com/coins/images/102177002/large/c803a9f3e8f0651de9b174aaa3d734f6.png?1789116372",
+    "metrics": {
+     "volumeUsd1d": "231.237",
+     "volumeUsd7d": "616687.621"
+    },
+    "metadata": {},
+    "tokenId": "4325354d-fe8e-4344-9fb3-c836c457bea1",
+    "totalSupply": "23566.690730011",
+    "circulatingSupply": "23566.690730011",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x93862d63fd9fd488b1328e9b47717d75e994a84b": {
+    "key": "bsc:0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+    "name": "Roundhill Memory ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DRAMB",
+    "price": 45.17,
+    "address": "0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+    "addresses": {
+     "bsc": "0x93862d63fd9fd488b1328e9b47717d75e994a84b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17805223,
+    "image": "https://coin-images.coingecko.com/coins/images/102174368/large/dramb-bstocks.png?1783453531",
+    "metrics": {
+     "volumeUsd1d": "5445762.026",
+     "volumeUsd7d": "28553111.169"
+    },
+    "metadata": {},
+    "tokenId": "a548a7d0-e57c-4dc6-a92d-8c9f51db7fa7",
+    "totalSupply": "394165.05844754",
+    "circulatingSupply": "394165.05844754",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "DRAM": {
+    "total_items": 11,
+    "pages": 1,
+    "received": 11,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d": {
+    "key": "ethereum:0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d",
+    "name": "Roundhill Memory ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "DRAMON",
+    "price": 45.97,
+    "address": "0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d",
+    "addresses": {
+     "bsc": "0x087b5761b161429013d41ea54cd2fb6022a21564",
+     "ethereum": "0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1875673,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "184350.042",
+     "volumeUsd7d": "1893930.048"
+    },
+    "metadata": {},
+    "tokenId": "1043626f-e0d0-41ab-9b23-a1795a1115b9",
+    "totalSupply": "40790.378064535056",
+    "circulatingSupply": "40790.378064535056",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xa17db5cf2f25213356f088a92245b9704bc4310f": {
+    "key": "base:0xa17db5cf2f25213356f088a92245b9704bc4310f",
+    "name": "Hydrex Wrapped Roundhill Memory ETF ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTDRAM/USDC",
+    "price": 9007199254740990,
+    "address": "0xa17db5cf2f25213356f088a92245b9704bc4310f",
+    "addresses": {
+     "base": "0xa17db5cf2f25213356f088a92245b9704bc4310f"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102178391/large/roundhill.png?1789459975",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-09-15T13:40:33.221Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 5885.826370587524,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "4339.888"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "e118c50c-2090-4eb9-9da0-413d3c3e3acc",
+    "reserves": [
+     "61.881528674696056557",
+     "2988.619697"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xdaa61aa3d01ef52d71982b52b06dcc84479f8036": {
+    "key": "arbitrum:0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+    "name": "Roundhill Memory ETF rStock",
+    "decimals": 18,
+    "symbol": "RDRAM",
+    "price": 46.24,
+    "address": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036",
+    "addresses": {
+     "arbitrum": "0xdaa61aa3d01ef52d71982b52b06dcc84479f8036"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1089663,
+    "image": "https://coin-images.coingecko.com/coins/images/102177002/large/c803a9f3e8f0651de9b174aaa3d734f6.png?1789116372",
+    "metrics": {
+     "volumeUsd1d": "231.237",
+     "volumeUsd7d": "616687.621"
+    },
+    "metadata": {},
+    "tokenId": "4325354d-fe8e-4344-9fb3-c836c457bea1",
+    "totalSupply": "23566.690730011",
+    "circulatingSupply": "23566.690730011",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x93862d63fd9fd488b1328e9b47717d75e994a84b": {
+    "key": "bsc:0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+    "name": "Roundhill Memory ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DRAMB",
+    "price": 45.17,
+    "address": "0x93862d63fd9fd488b1328e9b47717d75e994a84b",
+    "addresses": {
+     "bsc": "0x93862d63fd9fd488b1328e9b47717d75e994a84b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17805223,
+    "image": "https://coin-images.coingecko.com/coins/images/102174368/large/dramb-bstocks.png?1783453531",
+    "metrics": {
+     "volumeUsd1d": "5445762.026",
+     "volumeUsd7d": "28553111.169"
+    },
+    "metadata": {},
+    "tokenId": "a548a7d0-e57c-4dc6-a92d-8c9f51db7fa7",
+    "totalSupply": "394165.05844754",
+    "circulatingSupply": "394165.05844754",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xeded529b1eaabb4cd5d0290552316ab1c6aca64c95e877be92a8f7b9d3e07240": {
+    "key": "ethereum:0xeded529b1eaabb4cd5d0290552316ab1c6aca64c95e877be92a8f7b9d3e07240",
+    "name": "Uniswap V4 LP wUSDC/DRAMon",
+    "decimals": 18,
+    "symbol": "WUSDC/DRAMON",
+    "price": 9007199254740990,
+    "address": "0xeded529b1eaabb4cd5d0290552316ab1c6aca64c95e877be92a8f7b9d3e07240",
+    "addresses": {
+     "ethereum": "0xeded529b1eaabb4cd5d0290552316ab1c6aca64c95e877be92a8f7b9d3e07240"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.578Z",
+    "createdAt": "2026-09-28T10:39:19.806Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "318960d3-b480-45fe-9433-e361e972653e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x087b5761b161429013d41ea54cd2fb6022a21564": {
+    "key": "bsc:0x087b5761b161429013d41ea54cd2fb6022a21564",
+    "name": "Roundhill Memory ETF (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "DRAMON",
+    "price": 45.97,
+    "address": "0x087b5761b161429013d41ea54cd2fb6022a21564",
+    "addresses": {
+     "bsc": "0x087b5761b161429013d41ea54cd2fb6022a21564",
+     "ethereum": "0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-12T13:17:36.500Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1875673,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "183756.667",
+     "volumeUsd7d": "1735889.425"
+    },
+    "metadata": {},
+    "tokenId": "1043626f-e0d0-41ab-9b23-a1795a1115b9",
+    "totalSupply": "40790.378064535056",
+    "circulatingSupply": "40790.378064535056",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xba6c0aa66fc7e639d0fa28f3cd4055d5a46b5fbff14fa67ff4ed15bab96b25d5": {
+    "key": "ethereum:0xba6c0aa66fc7e639d0fa28f3cd4055d5a46b5fbff14fa67ff4ed15bab96b25d5",
+    "name": "Uniswap V4 LP EGP/DRAMon",
+    "decimals": 18,
+    "symbol": "EGP/DRAMON",
+    "price": 9007199254740990,
+    "address": "0xba6c0aa66fc7e639d0fa28f3cd4055d5a46b5fbff14fa67ff4ed15bab96b25d5",
+    "addresses": {
+     "ethereum": "0xba6c0aa66fc7e639d0fa28f3cd4055d5a46b5fbff14fa67ff4ed15bab96b25d5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.040Z",
+    "createdAt": "2026-10-14T06:54:49.432Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xdb5a8f5b4c17f2ee2e7192a150687e48eb3c415d"
+    ],
+    "liquidity": 20068.46413772616,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.93"
+    },
+    "tokenId": "eb7ffcfe-bfd4-4baa-b942-95f30683a8ff",
+    "reserves": [
+     "19999.999999999999999995",
+     "0.499128279458665009"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xffc7352c472111e08052ad1e6d2a0ec780fc046a5118faa40a15f6cc15d9440c": {
+    "key": "bsc:0xffc7352c472111e08052ad1e6d2a0ec780fc046a5118faa40a15f6cc15d9440c",
+    "name": "PancakeSwap Infinity LP USDT/DRAMB",
+    "decimals": 18,
+    "symbol": "USDT/DRAMB",
+    "price": 9007199254740990,
+    "address": "0xffc7352c472111e08052ad1e6d2a0ec780fc046a5118faa40a15f6cc15d9440c",
+    "addresses": {
+     "bsc": "0xffc7352c472111e08052ad1e6d2a0ec780fc046a5118faa40a15f6cc15d9440c"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174368/large/dramb-bstocks.png?1783453531"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.953Z",
+    "createdAt": "2026-08-27T15:48:09.588Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x93862d63fd9fd488b1328e9b47717d75e994a84b"
+    ],
+    "liquidity": 1036.2984861730258,
+    "metrics": {
+     "apy": "77.47",
+     "baseApy": "77.47",
+     "volumeUsd1d": "1037.933",
+     "volumeUsd7d": "35122.113"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x56a78328a880c6d2b28482d9c481c0061c3d82c0",
+     "tickSpacing": 10,
+     "feePercentage": "0.2237"
+    },
+    "tokenId": "b59ca55c-a6be-4ea4-93c9-f50c8ba7c53b",
+    "reserves": [
+     "-2864.789476334075039052",
+     "86.310161016967150438"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x5de9c21d0b8f649e9a3d52f09f8358f1eba30cbf": {
+    "key": "arbitrum:0x5de9c21d0b8f649e9a3d52f09f8358f1eba30cbf",
+    "name": "Roundhill T-REX 2X Long DRAM Daily Target ETF rStock",
+    "decimals": 18,
+    "symbol": "RRAM",
+    "price": 7.87,
+    "address": "0x5de9c21d0b8f649e9a3d52f09f8358f1eba30cbf",
+    "addresses": {
+     "arbitrum": "0x5de9c21d0b8f649e9a3d52f09f8358f1eba30cbf"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 254063,
+    "image": "https://coin-images.coingecko.com/coins/images/102177553/large/ea78ddcbf4b8aad0a0705cb91fe7cf90.png?1789118298",
+    "metrics": {
+     "volumeUsd1d": "78.031",
+     "volumeUsd7d": "104182.88"
+    },
+    "metadata": {},
+    "tokenId": "8332b4e6-0692-43b9-9ca5-923c7ff2238b",
+    "totalSupply": "32270",
+    "circulatingSupply": "32270",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8": {
+    "key": "base:0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8",
+    "name": "Roundhill Memory ETF (ST0x Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "WTDRAM",
+    "price": 46.83,
+    "address": "0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8",
+    "addresses": {
+     "base": "0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-15T08:21:31.719Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8830.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102178391/large/roundhill.png?1789459975",
+    "metrics": {
+     "volumeUsd1d": "14.958",
+     "volumeUsd7d": "4750.37"
+    },
+    "metadata": {},
+    "tokenId": "466bc65e-63af-44de-a0a0-c5dc46e2f951",
+    "totalSupply": "188.56342526900002",
+    "circulatingSupply": "188.56342526900002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x98c83e7b5348373e5866f4fdb3ae1682353b8574": {
+    "key": "base:0x98c83e7b5348373e5866f4fdb3ae1682353b8574",
+    "name": "Aerodrome SlipStream Wrapped Roundhill Memory ETF ST0x/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "WTDRAM/USDC",
+    "price": 9007199254740990,
+    "address": "0x98c83e7b5348373e5866f4fdb3ae1682353b8574",
+    "addresses": {
+     "base": "0x98c83e7b5348373e5866f4fdb3ae1682353b8574"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/102178391/large/roundhill.png?1789459975",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.792Z",
+    "createdAt": "2026-09-15T09:13:47.196Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1a91df4a970ebab1bb4af32eb6d10509028ee4b8",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 1076.7085490400655,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "314.178"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "6623042c-b093-432a-87ee-7f4ff4197b97",
+    "reserves": [
+     "12.085398320287451807",
+     "510.869911"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

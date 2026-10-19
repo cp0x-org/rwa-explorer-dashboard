@@ -1,0 +1,954 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0258161092",
+ "ticker": "AXP",
+ "name": "American Express",
+ "isin": "US0258161092",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:05Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "American Express Co",
+   "symbol": "AXP",
+   "slug": "american-express",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 317.0045282863769,
+     "tokenized_market_cap": 898081.8098107637,
+     "tokenized_volume_24h": 283964.07405225,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 47,
+   "asset_type": "stock",
+   "rwa_rank": 71,
+   "has_tokens": true,
+   "average_tokenized_price": 317.0045282863769,
+   "tokenized_market_cap": 898081.8098107637,
+   "tokenized_volume_24h": 283964.07405225,
+   "last_updated": "2026-10-18T20:13:35.288Z",
+   "tokens": [
+    {
+     "symbol": "AXPon",
+     "name": "American Express Tokenized Stock (Ondo)",
+     "price": 317.4810702589523,
+     "crypto_id": 38077,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 899431.87,
+     "volume_24h": 282910.77881377
+    },
+    {
+     "symbol": "wAXPx",
+     "name": "Wrapped American Express Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41841,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AXP",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AXP"
+    }
+   ]
+  },
+  "info": {
+   "38077": {
+    "id": 38077,
+    "symbol": "AXPon",
+    "name": "American Express Tokenized Stock (Ondo)",
+    "slug": "american-express-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38077.png",
+    "date_added": "2025-09-03T10:55:23.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x2Bc7Ff0C5dA9F1a4A51F96e77C5b0F7165DC06d2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2Bc7Ff0C5dA9F1a4A51F96e77C5b0F7165DC06d2",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "1WxT6NdK7uqpfXuKpALxL2n3f7Rq61XXeHA8UM4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41841": {
+    "id": 41841,
+    "symbol": "wAXPx",
+    "name": "Wrapped American Express Tokenized Stock (xStock)",
+    "slug": "wrapped-american-express-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41841.png",
+    "date_added": "2026-08-16T03:25:04.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x72d1515320DD910F68e2512863D30d1a154a6741"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x72d1515320DD910F68e2512863D30d1a154a6741",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xd803f8777187d6dee1ea57854aeb957043fb1675",
+   "ethereum:0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2"
+  ],
+  "exact": {
+   "ethereum:0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2": {
+    "key": "ethereum:0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+    "name": "American Express (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXPON",
+    "price": 316.41,
+    "address": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+    "addresses": {
+     "bsc": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+     "ethereum": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896284,
+    "image": "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+    "metrics": {
+     "volumeUsd1d": "149436.502",
+     "volumeUsd7d": "1049571.507"
+    },
+    "metadata": {},
+    "tokenId": "3fce8fac-0443-4634-97f2-104814bbc7eb",
+    "totalSupply": "2833.0251768520993",
+    "circulatingSupply": "2833.0251768520993",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd803f8777187d6dee1ea57854aeb957043fb1675": {
+    "key": "bsc:0xd803f8777187d6dee1ea57854aeb957043fb1675",
+    "name": "American Express (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXPON",
+    "price": 316.41,
+    "address": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+    "addresses": {
+     "bsc": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+     "ethereum": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896284,
+    "image": "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+    "metrics": {
+     "volumeUsd1d": "149653.018",
+     "volumeUsd7d": "1050301.559"
+    },
+    "metadata": {},
+    "tokenId": "3fce8fac-0443-4634-97f2-104814bbc7eb",
+    "totalSupply": "2833.0251768520993",
+    "circulatingSupply": "2833.0251768520993",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AXP": {
+    "total_items": 18,
+    "pages": 1,
+    "received": 18,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517": {
+    "key": "ethereum:0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517",
+    "name": "WAX",
+    "decimals": 8,
+    "symbol": "WAXP",
+    "price": 0.00455659,
+    "address": "0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517",
+    "addresses": {
+     "ethereum": "0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-12-13T13:02:10.471Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 21423639,
+    "image": "https://assets.coingecko.com/coins/images/1372/large/WAX_Coin_Tickers_P_512px.png?1696502430",
+    "metrics": {
+     "volumeUsd1d": "484859.236",
+     "volumeUsd7d": "6358872.135"
+    },
+    "metadata": {},
+    "tokenId": "3aecf93c-23d6-48e7-84a6-ebcebea4165d",
+    "totalSupply": "4701713159.74701",
+    "circulatingSupply": "4701713159.74701",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x68d636b2bc6eccac91356b47f4e469a29505b900c52ab28600b66494ed7c4595": {
+    "key": "ethereum:0x68d636b2bc6eccac91356b47f4e469a29505b900c52ab28600b66494ed7c4595",
+    "name": "Uniswap V4 LP AXPon/EGP",
+    "decimals": 18,
+    "symbol": "AXPON/EGP",
+    "price": 9007199254740990,
+    "address": "0x68d636b2bc6eccac91356b47f4e469a29505b900c52ab28600b66494ed7c4595",
+    "addresses": {
+     "ethereum": "0x68d636b2bc6eccac91356b47f4e469a29505b900c52ab28600b66494ed7c4595"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:54.557Z",
+    "createdAt": "2026-10-14T06:54:32.812Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20063.12146175523,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.38"
+    },
+    "tokenId": "7fa6857f-d820-4097-8fdf-b4fa352dad53",
+    "reserves": [
+     "0.090050066300815193",
+     "19999.999999999999999978"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xc074f7406f36af6f11e481f7c3ff0d6612b52914": {
+    "key": "arbitrum:0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+    "name": "American Express (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXP",
+    "price": 306.58,
+    "address": "0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+    "addresses": {
+     "base": "0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+     "avalanche": "0x1ed694e96424538fe8838cee64019a704b75c35c",
+     "arbitrum": "0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+     "ethereum": "0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 523.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175032/large/dinari-logo-green-with-margin.png?1785402963",
+    "metrics": {
+     "volumeUsd1d": "174.888",
+     "volumeUsd7d": "1224.216"
+    },
+    "metadata": {},
+    "tokenId": "68c9a047-1f0e-4a8b-8602-1a4087c6bdf9",
+    "totalSupply": "1.706872792035",
+    "circulatingSupply": "1.706872792035",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2": {
+    "key": "ethereum:0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+    "name": "American Express (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXPON",
+    "price": 316.41,
+    "address": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+    "addresses": {
+     "bsc": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+     "ethereum": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896284,
+    "image": "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+    "metrics": {
+     "volumeUsd1d": "149436.502",
+     "volumeUsd7d": "1049571.507"
+    },
+    "metadata": {},
+    "tokenId": "3fce8fac-0443-4634-97f2-104814bbc7eb",
+    "totalSupply": "2833.0251768520993",
+    "circulatingSupply": "2833.0251768520993",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe46b7b421f065fb2bc38d4d7367e683b1de1d5548abf508b053f79a05ad6b80b": {
+    "key": "ethereum:0xe46b7b421f065fb2bc38d4d7367e683b1de1d5548abf508b053f79a05ad6b80b",
+    "name": "Uniswap V4 LP AXPon/wUSDC",
+    "decimals": 18,
+    "symbol": "AXPON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xe46b7b421f065fb2bc38d4d7367e683b1de1d5548abf508b053f79a05ad6b80b",
+    "addresses": {
+     "ethereum": "0xe46b7b421f065fb2bc38d4d7367e683b1de1d5548abf508b053f79a05ad6b80b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.306Z",
+    "createdAt": "2026-09-28T10:38:57.355Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "08b6a50b-2d41-4172-8bae-0e7020ee085e",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x430be19e180fd8c2199ec5faeabe2f5cdba68c94": {
+    "key": "ethereum:0x430be19e180fd8c2199ec5faeabe2f5cdba68c94",
+    "name": "DOLA/FRAXPYUSD Convex Deposit",
+    "decimals": 18,
+    "symbol": "CVXCRVDOLA",
+    "price": 1.0056867802487424,
+    "address": "0x430be19e180fd8c2199ec5faeabe2f5cdba68c94",
+    "addresses": {
+     "ethereum": "0x430be19e180fd8c2199ec5faeabe2f5cdba68c94"
+    },
+    "platform": "convex",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/15585/large/convex.png",
+     "https://assets.coingecko.com/coins/images/14287/large/dola.png?1696513984",
+     "https://assets.coingecko.com/coins/images/31212/large/PYUSD_Logo_%282%29.png?1696530039",
+     "https://assets.coingecko.com/coins/images/13422/large/FRAX_icon.png?1696513182"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.194Z",
+    "createdAt": "2024-03-10T07:24:17.149Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xef484de8c07b6e2d732a92b5f78e81b38f99f95e"
+    ],
+    "poolAddress": "0xe8cbdbfd4a1d776ab1146b63abd1718b2f92a823",
+    "liquidity": 2357.4169534636408,
+    "metrics": {
+     "apy": "30.21",
+     "baseApy": "30.21",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1148.594"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ]
+    },
+    "tokenId": "d15b1d70-f86a-4e11-bc8e-5a4e3745f0ed",
+    "totalSupply": "2344.086647813514186277",
+    "reserves": [
+     "2344.086647813514186277"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x20eba9cce3c86ca7b2190e7d3a548e9742c47e3f": {
+    "key": "polygon:0x20eba9cce3c86ca7b2190e7d3a548e9742c47e3f",
+    "name": "QuickSwap V3 ASIAXPRO/(PoS) Tether USD",
+    "decimals": 18,
+    "symbol": "PRO/USDT",
+    "price": 9007199254740990,
+    "address": "0x20eba9cce3c86ca7b2190e7d3a548e9742c47e3f",
+    "addresses": {
+     "polygon": "0x20eba9cce3c86ca7b2190e7d3a548e9742c47e3f"
+    },
+    "platform": "quickswap-v3",
+    "network": "polygon",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/quickswap",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.886Z",
+    "createdAt": "2026-07-09T19:03:01.544Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0971ecbbdfdb14bbe77fc26537fdf8c93244ad88",
+     "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+    ],
+    "liquidity": 5617.752954595355,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "20.647"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.1325",
+     "communityFee0Percentage": "0",
+     "communityFee1Percentage": "0"
+    },
+    "tokenId": "9044bdca-d6d7-482c-a00f-63529ace3aa9",
+    "reserves": [
+     "38.699814033638415458",
+     "2799.828558"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7ec5a942c11e14314a31dafa3d00bf3ed8389da50c4f713e59455fd8d6b5fe6c": {
+    "key": "ethereum:0x7ec5a942c11e14314a31dafa3d00bf3ed8389da50c4f713e59455fd8d6b5fe6c",
+    "name": "Uniswap V4 LP WAXP/USDC",
+    "decimals": 18,
+    "symbol": "WAXP/USDC",
+    "price": 9007199254740990,
+    "address": "0x7ec5a942c11e14314a31dafa3d00bf3ed8389da50c4f713e59455fd8d6b5fe6c",
+    "addresses": {
+     "ethereum": "0x7ec5a942c11e14314a31dafa3d00bf3ed8389da50c4f713e59455fd8d6b5fe6c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://assets.coingecko.com/coins/images/1372/large/WAX_Coin_Tickers_P_512px.png?1696502430"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.289Z",
+    "createdAt": "2026-10-12T05:08:43.919Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 999.883953613039,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.206"
+    },
+    "tokenId": "53ed419a-fdba-4c26-9669-f9da890f8a87",
+    "reserves": [
+     "16.23003453",
+     "1000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0b343dce5310f29164611562bde3895ebc24dfd6": {
+    "key": "arbitrum:0x0b343dce5310f29164611562bde3895ebc24dfd6",
+    "name": "American Express rStock",
+    "decimals": 18,
+    "symbol": "RAXP",
+    "price": 313.19,
+    "address": "0x0b343dce5310f29164611562bde3895ebc24dfd6",
+    "addresses": {
+     "arbitrum": "0x0b343dce5310f29164611562bde3895ebc24dfd6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2405.69,
+    "image": "https://coin-images.coingecko.com/coins/images/102177187/large/1bd64824d316a80abba5e342bdfb9cc9.png?1789117098",
+    "metrics": {
+     "volumeUsd1d": "423.724",
+     "volumeUsd7d": "12884.933"
+    },
+    "metadata": {},
+    "tokenId": "ae50ae19-6d92-4106-a4b7-cf30866f7298",
+    "totalSupply": "7.681304508",
+    "circulatingSupply": "7.681304508",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5e2339bcb89b42782cee454b46c7c6f88c0e4f83": {
+    "key": "ethereum:0x5e2339bcb89b42782cee454b46c7c6f88c0e4f83",
+    "name": "Morpho Aerie x Plume USDC Core",
+    "decimals": 18,
+    "symbol": "AXP-USDC CORE",
+    "price": 1.004090978592,
+    "address": "0x5e2339bcb89b42782cee454b46c7c6f88c0e4f83",
+    "addresses": {
+     "ethereum": "0x5e2339bcb89b42782cee454b46c7c6f88c0e4f83"
+    },
+    "platform": "morpho",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/29837/large/Morpho-token-icon.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.391Z",
+    "createdAt": "2026-08-31T19:37:54.855Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 5563304.71438447,
+    "metrics": {
+     "apy": "14.949",
+     "baseApy": "7.131",
+     "rewardApy": "7.817",
+     "volumeUsd1d": "-64462.316",
+     "volumeUsd7d": "382060.503"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "collateralCorrelation": "high"
+    },
+    "tokenId": "20b115a3-1d45-438a-8f1c-b4b7c4492118",
+    "totalSupply": "5540638.082602523342847792",
+    "reserves": [
+     "5564617.964224"
+    ],
+    "pricePerShare": "1.00432800000000011",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa5588f7cdf560811710a2d82d3c9c99769db1dcb": {
+    "key": "ethereum:0xa5588f7cdf560811710a2d82d3c9c99769db1dcb",
+    "name": "FRAXPYUSD",
+    "decimals": 18,
+    "symbol": "FRAXPYUSD",
+    "price": 0.9964654342621027,
+    "address": "0xa5588f7cdf560811710a2d82d3c9c99769db1dcb",
+    "addresses": {
+     "ethereum": "0xa5588f7cdf560811710a2d82d3c9c99769db1dcb"
+    },
+    "platform": "curve",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+     "https://assets.coingecko.com/coins/images/13422/large/FRAX_icon.png?1696513182",
+     "https://assets.coingecko.com/coins/images/31212/large/PYUSD_Logo_%282%29.png?1696530039"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.171Z",
+    "createdAt": "2024-02-29T09:05:55.886Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x853d955acef822db058eb8505911ed77f175b99e",
+     "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+    ],
+    "poolAddress": "0xa5588f7cdf560811710a2d82d3c9c99769db1dcb",
+    "liquidity": 26814.30861641146,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "14.99",
+     "volumeUsd7d": "796.81"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isMetaPool": false,
+     "feePercentage": "0.01",
+     "implementation": "plainstableng",
+     "offpegFeeMultiplier": "10000000000",
+     "implementationAddress": "ethereum:0xdcc91f930b42619377c200ba05b7513f2958b202",
+     "amplificationCoefficient": "1500"
+    },
+    "tokenId": "1a96e193-fe13-4508-9520-c31decebdbb5",
+    "totalSupply": "26909.421736507952631543",
+    "reserves": [
+     "24335.283636765358425939",
+     "2692.238663"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c": {
+    "key": "ethereum:0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c",
+    "name": "American Express (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXP",
+    "price": 306.58,
+    "address": "0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c",
+    "addresses": {
+     "base": "0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+     "avalanche": "0x1ed694e96424538fe8838cee64019a704b75c35c",
+     "arbitrum": "0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+     "ethereum": "0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 523.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175032/large/dinari-logo-green-with-margin.png?1785402963",
+    "metrics": {
+     "volumeUsd1d": "174.888",
+     "volumeUsd7d": "1224.216"
+    },
+    "metadata": {},
+    "tokenId": "68c9a047-1f0e-4a8b-8602-1a4087c6bdf9",
+    "totalSupply": "1.706872792035",
+    "circulatingSupply": "1.706872792035",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xef484de8c07b6e2d732a92b5f78e81b38f99f95e": {
+    "key": "ethereum:0xef484de8c07b6e2d732a92b5f78e81b38f99f95e",
+    "name": "DOLA/FRAXPYUSD",
+    "decimals": 18,
+    "symbol": "CRVDOLA",
+    "price": 1.0053847777851694,
+    "address": "0xef484de8c07b6e2d732a92b5f78e81b38f99f95e",
+    "addresses": {
+     "ethereum": "0xef484de8c07b6e2d732a92b5f78e81b38f99f95e"
+    },
+    "platform": "curve",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12124/large/Curve.png",
+     "https://assets.coingecko.com/coins/images/14287/large/dola.png?1696513984",
+     "https://assets.coingecko.com/coins/images/31212/large/PYUSD_Logo_%282%29.png?1696530039",
+     "https://assets.coingecko.com/coins/images/13422/large/FRAX_icon.png?1696513182"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.612Z",
+    "createdAt": "2024-02-29T09:09:04.635Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x865377367054516e17014ccded1e7d814edc9ce4",
+     "0xa5588f7cdf560811710a2d82d3c9c99769db1dcb"
+    ],
+    "poolAddress": "0xef484de8c07b6e2d732a92b5f78e81b38f99f95e",
+    "liquidity": 10868.008413119518,
+    "metrics": {
+     "apy": "0.17",
+     "baseApy": "0.17",
+     "volumeUsd1d": "238.64",
+     "volumeUsd7d": "1362.39"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isMetaPool": true,
+     "feePercentage": "0.04",
+     "implementation": "metausdstableng2",
+     "underlyingCoins": [
+      "ethereum:0x865377367054516e17014ccded1e7d814edc9ce4",
+      "ethereum:0x853d955acef822db058eb8505911ed77f175b99e",
+      "ethereum:0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+     ],
+     "offpegFeeMultiplier": "20000000000",
+     "implementationAddress": "ethereum:0xede71f77d7c900dca5892720e76316c6e575f0f7",
+     "amplificationCoefficient": "200"
+    },
+    "tokenId": "a04be4ca-4557-4ac9-91b5-14917c02e470",
+    "totalSupply": "10809.80004199127911705",
+    "reserves": [
+     "3636.213716233386977479",
+     "7271.397562160791586044"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x48189ec3fa6bf32974cec740810493408fbd4e5f": {
+    "key": "base:0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+    "name": "American Express (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXP",
+    "price": 306.58,
+    "address": "0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+    "addresses": {
+     "base": "0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+     "avalanche": "0x1ed694e96424538fe8838cee64019a704b75c35c",
+     "arbitrum": "0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+     "ethereum": "0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 523.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175032/large/dinari-logo-green-with-margin.png?1785402963",
+    "metrics": {
+     "volumeUsd1d": "174.888",
+     "volumeUsd7d": "1224.216"
+    },
+    "metadata": {},
+    "tokenId": "68c9a047-1f0e-4a8b-8602-1a4087c6bdf9",
+    "totalSupply": "1.706872792035",
+    "circulatingSupply": "1.706872792035",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe61cedeb1593e2d9f06af1e212842c8b5e289863": {
+    "key": "ethereum:0xe61cedeb1593e2d9f06af1e212842c8b5e289863",
+    "name": "Uniswap V3 WAXP Token/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "WAXP TOKEN/TETHER USD",
+    "price": 9007199254740990,
+    "address": "0xe61cedeb1593e2d9f06af1e212842c8b5e289863",
+    "addresses": {
+     "ethereum": "0xe61cedeb1593e2d9f06af1e212842c8b5e289863"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/1372/large/WAX_Coin_Tickers_P_512px.png?1696502430",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.024Z",
+    "createdAt": "2025-02-21T12:34:05.930Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2a79324c19ef2b89ea98b23bc669b7e7c9f8a517",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 105095.32148128751,
+    "metrics": {
+     "apy": "3.241",
+     "baseApy": "3.241",
+     "volumeUsd1d": "3110.173",
+     "volumeUsd7d": "21481.496"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "e78c8520-798f-4093-afaf-22c9865a0314",
+    "reserves": [
+     "11396429.28821726",
+     "53142.657897"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x1ed694e96424538fe8838cee64019a704b75c35c": {
+    "key": "avalanche:0x1ed694e96424538fe8838cee64019a704b75c35c",
+    "name": "American Express (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXP",
+    "price": 306.58,
+    "address": "0x1ed694e96424538fe8838cee64019a704b75c35c",
+    "addresses": {
+     "base": "0x48189ec3fa6bf32974cec740810493408fbd4e5f",
+     "avalanche": "0x1ed694e96424538fe8838cee64019a704b75c35c",
+     "arbitrum": "0xc074f7406f36af6f11e481f7c3ff0d6612b52914",
+     "ethereum": "0xecc2d44ee5cdcde5741b74d9ea180d5b0d79213c"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 523.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175032/large/dinari-logo-green-with-margin.png?1785402963",
+    "metrics": {
+     "volumeUsd1d": "174.888",
+     "volumeUsd7d": "1224.216"
+    },
+    "metadata": {},
+    "tokenId": "68c9a047-1f0e-4a8b-8602-1a4087c6bdf9",
+    "totalSupply": "1.706872792035",
+    "circulatingSupply": "1.706872792035",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd803f8777187d6dee1ea57854aeb957043fb1675": {
+    "key": "bsc:0xd803f8777187d6dee1ea57854aeb957043fb1675",
+    "name": "American Express (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AXPON",
+    "price": 316.41,
+    "address": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+    "addresses": {
+     "bsc": "0xd803f8777187d6dee1ea57854aeb957043fb1675",
+     "ethereum": "0x2bc7ff0c5da9f1a4a51f96e77c5b0f7165dc06d2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896284,
+    "image": "https://coin-images.coingecko.com/coins/images/68607/large/axpon_160x160.png?1756130045",
+    "metrics": {
+     "volumeUsd1d": "149653.018",
+     "volumeUsd7d": "1050301.559"
+    },
+    "metadata": {},
+    "tokenId": "3fce8fac-0443-4634-97f2-104814bbc7eb",
+    "totalSupply": "2833.0251768520993",
+    "circulatingSupply": "2833.0251768520993",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x0971ecbbdfdb14bbe77fc26537fdf8c93244ad88": {
+    "key": "polygon:0x0971ecbbdfdb14bbe77fc26537fdf8c93244ad88",
+    "name": "ASIAXPRO",
+    "decimals": 18,
+    "symbol": "PRO",
+    "price": 72.88727473528881,
+    "address": "0x0971ecbbdfdb14bbe77fc26537fdf8c93244ad88",
+    "addresses": {
+     "polygon": "0x0971ecbbdfdb14bbe77fc26537fdf8c93244ad88"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-07-09T19:01:45.137Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 809850.509583794,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0.94",
+     "volumeUsd7d": "44.09"
+    },
+    "metadata": {},
+    "tokenId": "4edaf7a7-8e76-4160-93ac-871d12aad9c4",
+    "totalSupply": "11111",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

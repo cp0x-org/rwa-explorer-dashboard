@@ -1,0 +1,3417 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0231351067",
+ "ticker": "AMZN",
+ "name": "Amazon",
+ "isin": "US0231351067",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:16:12Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Amazon.com Inc",
+   "symbol": "AMZN",
+   "slug": "amazon",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 248.78453590326492,
+     "tokenized_market_cap": 26969085.7463532,
+     "tokenized_volume_24h": 9444794.39751253,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 6,
+   "asset_type": "stock",
+   "rwa_rank": 7,
+   "has_tokens": true,
+   "average_tokenized_price": 248.78453590326492,
+   "tokenized_market_cap": 26969085.7463532,
+   "tokenized_volume_24h": 9444794.39751253,
+   "last_updated": "2026-10-18T20:14:25.799Z",
+   "tokens": [
+    {
+     "symbol": "AMZNX",
+     "name": "Amazon tokenized stock (xStock)",
+     "price": 248.61163228237174,
+     "crypto_id": 37014,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 8964391.19,
+     "volume_24h": 2105306.77228509
+    },
+    {
+     "symbol": "AMZNon",
+     "name": "Amazon Tokenized Stock (Ondo)",
+     "price": 248.9746382948506,
+     "crypto_id": 38083,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 6788166.79,
+     "volume_24h": 1206234.8974034
+    },
+    {
+     "symbol": "AMZN",
+     "name": "Amazon.com Inc (Derivatives)",
+     "price": 248.80609222658234,
+     "crypto_id": 39471,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMZN",
+     "name": "Amazon Tokenized Stock (Hyperliquid)",
+     "price": 269.47741476968565,
+     "crypto_id": 39619,
+     "issuer_id": "699ed38db54c9320b15928e3",
+     "issuer_name": "Hyperliquid Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rAMZN",
+     "name": "Amazon Tokenized Stock (Reality)",
+     "price": 248.73315722590408,
+     "crypto_id": 40603,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 782551.56,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMZN",
+     "name": "Amazon Tokenized Stock (Robinhood)",
+     "price": 248.32562123378446,
+     "crypto_id": 40718,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 3188485.46,
+     "volume_24h": 178506.41510783
+    },
+    {
+     "symbol": "AMZNB",
+     "name": "Amazon Tokenized bStocks",
+     "price": 248.6017154287391,
+     "crypto_id": 40929,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 4072891.31,
+     "volume_24h": 1775865.02426549
+    },
+    {
+     "symbol": "WAMZNX",
+     "name": "Wrapped Amazon Tokenized stock (xStock)",
+     "price": 248.13408258718064,
+     "crypto_id": 37112,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 58942.08,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "AMZNc",
+     "name": "Amazon.com Inc. Tokenized Stock (Coinbase)",
+     "price": 249.71358901959326,
+     "crypto_id": 42425,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 3131434.69,
+     "volume_24h": 4194752.56069842
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "AMZN",
+     "market_url": "https://www.binance.com/en/stocks/EQ_AMZN"
+    }
+   ]
+  },
+  "info": {
+   "37014": {
+    "id": 37014,
+    "symbol": "AMZNX",
+    "name": "Amazon tokenized stock (xStock)",
+    "slug": "amazon-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37014.png",
+    "date_added": "2025-07-01T14:12:20.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCtD2-7qxHhQoNhxri2JSzH-dlmWqKYCDtlEZqRi3-56gd9",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x3557Ba345B01EFa20A1bdDC61F573BFD87195081",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "38083": {
+    "id": 38083,
+    "symbol": "AMZNon",
+    "name": "Amazon Tokenized Stock (Ondo)",
+    "slug": "amazon-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38083.png",
+    "date_added": "2025-09-03T10:55:12.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xbb8774FB97436d23d74C1b882E8E9A69322cFD31"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbb8774FB97436d23d74C1b882E8E9A69322cFD31",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "14Tqdo8V1FhzKsE3W2pFsZCzYPQxxupXRcqw9jv6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xeD68F063264a01fd7f93087DC19CC1E0D614e8De",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39471": {
+    "id": 39471,
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc (Derivatives)",
+    "slug": "amazon-com-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39471.png",
+    "date_added": "2026-01-29T01:38:26.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "39619": {
+    "id": 39619,
+    "symbol": "AMZN",
+    "name": "Amazon Tokenized Stock (Hyperliquid)",
+    "slug": "amazon-tokenized-stock-hyperliquid",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39619.png",
+    "date_added": "2026-02-25T10:53:00.000Z",
+    "platform": {
+     "id": "32196",
+     "name": "Hyperliquid",
+     "symbol": "HYPE",
+     "slug": "hyperliquid",
+     "token_address": "0xc304a9d52cf9165024ebc7814250ef3a5013f924"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc304a9d52cf9165024ebc7814250ef3a5013f924",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd35b9bc1770c7bdda96f65cf0f76d4d5",
+      "platform": {
+       "name": "Hyperliquid",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "40603": {
+    "id": 40603,
+    "symbol": "rAMZN",
+    "name": "Amazon Tokenized Stock (Reality)",
+    "slug": "amazon-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40603.png",
+    "date_added": "2026-07-02T07:39:03.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xfba9e358f9ad443236155e5c67f2aade032db7a1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40718": {
+    "id": 40718,
+    "symbol": "AMZN",
+    "name": "Amazon Tokenized Stock (Robinhood)",
+    "slug": "amazon-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40718.png",
+    "date_added": "2026-08-04T07:31:38.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x12f190a9F9d7D37a250758b26824B97CE941bF54"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x12f190a9F9d7D37a250758b26824B97CE941bF54",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40929": {
+    "id": 40929,
+    "symbol": "AMZNB",
+    "name": "Amazon Tokenized bStocks",
+    "slug": "amazon-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40929.png",
+    "date_added": "2026-07-28T07:16:57.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "37112": {
+    "id": 37112,
+    "symbol": "WAMZNX",
+    "name": "Wrapped Amazon Tokenized stock (xStock)",
+    "slug": "wrapped-amazon-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37112.png",
+    "date_added": "2025-07-02T13:36:43.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x910cabdE3EBa7Fc1Ce64fD14bD680b9f60fA0F90"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x910cabdE3EBa7Fc1Ce64fD14bD680b9f60fA0F90",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xac85d37acbadca37545e21ab0fb991bce8c1187c",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42425": {
+    "id": 42425,
+    "symbol": "AMZNc",
+    "name": "Amazon.com Inc. Tokenized Stock (Coinbase)",
+    "slug": "amazoncom-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42425.png",
+    "date_added": "2026-10-08T03:59:45.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000d9192b6B456483C2E8"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000d9192b6B456483C2E8",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+   "arbitrum:0xac85d37acbadca37545e21ab0fb991bce8c1187c",
+   "arbitrum:0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+   "base:0xb200000000000000000000d9192b6b456483c2e8",
+   "bsc:0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+   "bsc:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+   "bsc:0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+   "ethereum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+   "ethereum:0xbb8774fb97436d23d74c1b882e8e9a69322cfd31",
+   "hyperevm:0xc304a9d52cf9165024ebc7814250ef3a5013f924",
+   "hyperevm:0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+   "robinhood:0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+  ],
+  "exact": {
+   "bsc:0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00": {
+    "key": "bsc:0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+    "name": "Amazon (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNB",
+    "price": 248.71,
+    "address": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+    "addresses": {
+     "bsc": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4074678,
+    "image": "https://coin-images.coingecko.com/coins/images/102175185/large/amznb.png?1785456628",
+    "metrics": {
+     "volumeUsd1d": "958953.318",
+     "volumeUsd7d": "10138099.406"
+    },
+    "metadata": {},
+    "tokenId": "d3cafbcf-88a5-4c72-a96f-68ed9c2093bd",
+    "totalSupply": "16383.198744800002",
+    "circulatingSupply": "16383.198744800002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "bsc:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "bsc": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:19.431Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2487000,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "fd8d497e-ac67-4000-8436-d8f50980ca4a",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "ethereum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "ethereum": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.605Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 21587160,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "83fc6af8-1ac7-4be1-9bd5-359a2cfacdb3",
+    "totalSupply": "86800",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x12f190a9f9d7d37a250758b26824b97ce941bf54": {
+    "key": "robinhood:0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "name": "Amazon • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.15975,
+    "address": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "addresses": {
+     "robinhood": "0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "liquidity": 3199195.617515625,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "498056.849"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000004f508d5e2a7042299694d85c2f362ad2",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "aeeecaf3-56f8-4ef3-9a61-93c8784da24b",
+    "totalSupply": "12839.9375",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "arbitrum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "arbitrum": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:17.440Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11824938.9,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "2ca7ee57-f0d5-4a87-b26f-2bc6c0efc29d",
+    "totalSupply": "47547",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb200000000000000000000d9192b6b456483c2e8": {
+    "key": "base:0xb200000000000000000000d9192b6b456483c2e8",
+    "name": "Amazon.com Inc.",
+    "decimals": 8,
+    "symbol": "AMZNC",
+    "price": 249.83499999,
+    "address": "0xb200000000000000000000d9192b6b456483c2e8",
+    "addresses": {
+     "base": "0xb200000000000000000000d9192b6b456483c2e8"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-21T12:37:48.897Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb200000000000000000000d9192b6b456483c2e8",
+    "liquidity": 3132957.1938840915,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "948806.342"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "78dbf83d-bf67-4e53-a4a4-43e89ada704a",
+    "totalSupply": "12540.1052455",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xfba9e358f9ad443236155e5c67f2aade032db7a1": {
+    "key": "arbitrum:0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+    "name": "Amazon rStock",
+    "decimals": 18,
+    "symbol": "RAMZN",
+    "price": 248.82,
+    "address": "0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+    "addresses": {
+     "arbitrum": "0xfba9e358f9ad443236155e5c67f2aade032db7a1"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 783296,
+    "image": "https://coin-images.coingecko.com/coins/images/102176986/large/e8ee6c0d73a79e1d36d130b68addfd23.png?1789116291",
+    "metrics": {
+     "volumeUsd1d": "19.784",
+     "volumeUsd7d": "1487854.025"
+    },
+    "metadata": {},
+    "tokenId": "4778b36a-af5c-4cfc-8fe6-f7eae4acfe51",
+    "totalSupply": "3148.048507522",
+    "circulatingSupply": "3148.048507522",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xed68f063264a01fd7f93087dc19cc1e0d614e8de": {
+    "key": "hyperevm:0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "690194.419",
+     "volumeUsd7d": "6464312.679"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbb8774fb97436d23d74c1b882e8e9a69322cfd31": {
+    "key": "ethereum:0xbb8774fb97436d23d74c1b882e8e9a69322cfd31",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "689855.876",
+     "volumeUsd7d": "6262577.295"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4553cfe1c09f37f38b12dc509f676964e392f8fc": {
+    "key": "bsc:0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "691151.721",
+     "volumeUsd7d": "6366728.895"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "AMZN": {
+    "total_items": 58,
+    "pages": 1,
+    "received": 58,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xd32646872e6712af8cf778e34b6bbef1d2ae0bddd83764e1b07333518ad59333": {
+    "key": "robinhood:0xd32646872e6712af8cf778e34b6bbef1d2ae0bddd83764e1b07333518ad59333",
+    "name": "Uniswap V4 LP AMZN/USDG",
+    "decimals": 18,
+    "symbol": "AMZN/USDG",
+    "price": 9007199254740990,
+    "address": "0xd32646872e6712af8cf778e34b6bbef1d2ae0bddd83764e1b07333518ad59333",
+    "addresses": {
+     "robinhood": "0xd32646872e6712af8cf778e34b6bbef1d2ae0bddd83764e1b07333518ad59333"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.380Z",
+    "createdAt": "2026-07-16T20:47:35.725Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 8392.989403652946,
+    "metrics": {
+     "apy": "7.466",
+     "baseApy": "7.466",
+     "volumeUsd1d": "490.625",
+     "volumeUsd7d": "15983.654"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "f2c21787-d857-4b5f-afaa-8d3a4d8de6c4",
+    "reserves": [
+     "25.454580174578541598",
+     "2050.732571"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de": {
+    "key": "base:0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de",
+    "name": "Beefy CLM AMZNc-USDC Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWAERODROMEBASEUSDC-AMZNC",
+    "price": 2472859885056.664,
+    "address": "0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de",
+    "addresses": {
+     "base": "0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.123Z",
+    "createdAt": "2026-09-07T14:01:02.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa011f86058af8ecad68de247b134ed0dd6e173b6"
+    ],
+    "poolAddress": "0xa011f86058af8ecad68de247b134ed0dd6e173b6",
+    "liquidity": 136738.54803528354,
+    "metrics": {
+     "apy": "3.146",
+     "baseApy": "3.146",
+     "volumeUsd1d": "51.067",
+     "volumeUsd7d": "-1788.529"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-amznc",
+     "providerId": "aerodrome",
+     "tickSpacing": 10,
+     "managerAddress": "0xa011f86058af8ecad68de247b134ed0dd6e173b6",
+     "strategyAddress": "0xe5bcc2c6a9f3dcb9883a2df690e14568b8a354c4",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de",
+     "standardVaultAddress": "0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb200000000000000000000d9192b6b456483c2e8"
+     ]
+    },
+    "tokenId": "c745e411-a91d-4150-bde3-755d7d95ffa5",
+    "totalSupply": "0.000000055295712006",
+    "reserves": [
+     "0.000000055295712006"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x39d9399d323f8d570302668e1c25f3bf48dbdd04558d1994cf40cf41e33a17e2": {
+    "key": "robinhood:0x39d9399d323f8d570302668e1c25f3bf48dbdd04558d1994cf40cf41e33a17e2",
+    "name": "Uniswap V4 LP AMZN/MM",
+    "decimals": 18,
+    "symbol": "AMZN/MM",
+    "price": 9007199254740990,
+    "address": "0x39d9399d323f8d570302668e1c25f3bf48dbdd04558d1994cf40cf41e33a17e2",
+    "addresses": {
+     "robinhood": "0x39d9399d323f8d570302668e1c25f3bf48dbdd04558d1994cf40cf41e33a17e2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.772Z",
+    "createdAt": "2026-10-13T13:16:10.267Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
+    ],
+    "liquidity": 19995.24569041757,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9945,
+     "feePercentage": "99.45"
+    },
+    "tokenId": "dcda614d-5de4-4a76-9cac-1678a4bc2fd6",
+    "reserves": [
+     "0.0000479919252713",
+     "19999.999999999627466427"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x56f16f07b1e5d6ff61542a878b9f30547e724f52839eef07cc76a438467a5563": {
+    "key": "ethereum:0x56f16f07b1e5d6ff61542a878b9f30547e724f52839eef07cc76a438467a5563",
+    "name": "Uniswap V4 LP EGP/AMZNon",
+    "decimals": 18,
+    "symbol": "EGP/AMZNON",
+    "price": 9007199254740990,
+    "address": "0x56f16f07b1e5d6ff61542a878b9f30547e724f52839eef07cc76a438467a5563",
+    "addresses": {
+     "ethereum": "0x56f16f07b1e5d6ff61542a878b9f30547e724f52839eef07cc76a438467a5563"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.533Z",
+    "createdAt": "2026-10-14T06:54:28.904Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 20058.595856783788,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.52"
+    },
+    "tokenId": "a93ddcbd-7630-42ca-a590-68f2b56d642a",
+    "reserves": [
+     "19999.999999999999999973",
+     "0.107631944694353074"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x267d70816c37d531818dfe2224a1e5beac46fe74929f2370433c1918facb3a8d": {
+    "key": "ethereum:0x267d70816c37d531818dfe2224a1e5beac46fe74929f2370433c1918facb3a8d",
+    "name": "Uniswap V4 LP USDC/AMZNon",
+    "decimals": 18,
+    "symbol": "USDC/AMZNON",
+    "price": 9007199254740990,
+    "address": "0x267d70816c37d531818dfe2224a1e5beac46fe74929f2370433c1918facb3a8d",
+    "addresses": {
+     "ethereum": "0x267d70816c37d531818dfe2224a1e5beac46fe74929f2370433c1918facb3a8d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.620Z",
+    "createdAt": "2026-09-07T17:35:33.253Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 2173.2600799865368,
+    "metrics": {
+     "apy": "2.045",
+     "baseApy": "2.045",
+     "volumeUsd1d": "11.076",
+     "volumeUsd7d": "1498.962"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "1d59ae64-8bae-414e-b672-e8e9c4332da2",
+    "reserves": [
+     "944.267081",
+     "4.923943081072778233"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x2ef126abe792c3cb4f34cd116426bd490de7067905555c2871b75d102dfd796d": {
+    "key": "arbitrum:0x2ef126abe792c3cb4f34cd116426bd490de7067905555c2871b75d102dfd796d",
+    "name": "Uniswap V4 LP AMZNx/USDT",
+    "decimals": 18,
+    "symbol": "AMZNX/USDT",
+    "price": 9007199254740990,
+    "address": "0x2ef126abe792c3cb4f34cd116426bd490de7067905555c2871b75d102dfd796d",
+    "addresses": {
+     "arbitrum": "0x2ef126abe792c3cb4f34cd116426bd490de7067905555c2871b75d102dfd796d"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:21.166Z",
+    "createdAt": "2026-10-16T14:24:06.347Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "ca2f5c7b-3898-4e5a-a577-31c42357a8cf",
+    "reserves": [
+     "0",
+     "1999.999999999999999996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9ebbf26affc3a334744cced6b8a9af54adf6f6c0f63bfb624dd37a5ee324e63b": {
+    "key": "ethereum:0x9ebbf26affc3a334744cced6b8a9af54adf6f6c0f63bfb624dd37a5ee324e63b",
+    "name": "Uniswap V4 LP AMZNx/USDC",
+    "decimals": 18,
+    "symbol": "AMZNX/USDC",
+    "price": 9007199254740990,
+    "address": "0x9ebbf26affc3a334744cced6b8a9af54adf6f6c0f63bfb624dd37a5ee324e63b",
+    "addresses": {
+     "ethereum": "0x9ebbf26affc3a334744cced6b8a9af54adf6f6c0f63bfb624dd37a5ee324e63b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.653Z",
+    "createdAt": "2026-06-10T23:08:21.597Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1187.6236355030323,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "10.134"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "adc2db44-62f2-43f4-961e-56ee032442b8",
+    "reserves": [
+     "2.379533947183024789",
+     "596.227004"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb42fa18f04c59c4a2172f026464bb3e300e1bd30": {
+    "key": "robinhood:0xb42fa18f04c59c4a2172f026464bb3e300e1bd30",
+    "name": "Uniswap V3 Amazon  Robinhood Token/Alphabet Class A  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "AMZN/GOOGL",
+    "price": 9007199254740990,
+    "address": "0xb42fa18f04c59c4a2172f026464bb3e300e1bd30",
+    "addresses": {
+     "robinhood": "0xb42fa18f04c59c4a2172f026464bb3e300e1bd30"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606",
+     "https://coin-images.coingecko.com/coins/images/102174124/large/0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3.png?1782444601"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.244Z",
+    "createdAt": "2026-09-08T15:09:08.281Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3"
+    ],
+    "liquidity": 68196.96285494626,
+    "metrics": {
+     "apy": "0.292",
+     "baseApy": "0.292",
+     "volumeUsd1d": "181.643",
+     "volumeUsd7d": "59096.24"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "81c1b3f6-5abf-4512-9de8-7d6c875f2186",
+    "reserves": [
+     "179.982847279728334818",
+     "68.713095139489432384"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6122185073beec84636be40e0336c56b639cb8a6c0331c9458c56a6048a55b1c": {
+    "key": "robinhood:0x6122185073beec84636be40e0336c56b639cb8a6c0331c9458c56a6048a55b1c",
+    "name": "Uniswap V4 LP ETH/AMZN",
+    "decimals": 18,
+    "symbol": "ETH/AMZN",
+    "price": 9007199254740990,
+    "address": "0x6122185073beec84636be40e0336c56b639cb8a6c0331c9458c56a6048a55b1c",
+    "addresses": {
+     "robinhood": "0x6122185073beec84636be40e0336c56b639cb8a6c0331c9458c56a6048a55b1c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.948Z",
+    "createdAt": "2026-07-27T19:07:32.629Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+    ],
+    "liquidity": 6637.622822970998,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "149.803"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.19"
+    },
+    "tokenId": "b59ef025-ff9e-45a8-aad3-31f6bef8694b",
+    "reserves": [
+     "0.775034198782805513",
+     "19.372224721452548368"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00": {
+    "key": "bsc:0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+    "name": "Amazon (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNB",
+    "price": 248.71,
+    "address": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+    "addresses": {
+     "bsc": "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4074678,
+    "image": "https://coin-images.coingecko.com/coins/images/102175185/large/amznb.png?1785456628",
+    "metrics": {
+     "volumeUsd1d": "958953.318",
+     "volumeUsd7d": "10138099.406"
+    },
+    "metadata": {},
+    "tokenId": "d3cafbcf-88a5-4c72-a96f-68ed9c2093bd",
+    "totalSupply": "16383.198744800002",
+    "circulatingSupply": "16383.198744800002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9680aa7a4b6a4f8f624c22befd5f2e460ebc1d06c1bb694a87e0fc12e44635df": {
+    "key": "ethereum:0x9680aa7a4b6a4f8f624c22befd5f2e460ebc1d06c1bb694a87e0fc12e44635df",
+    "name": "Uniswap V4 LP ZQ/AMZNx",
+    "decimals": 18,
+    "symbol": "ZQ/AMZNX",
+    "price": 9007199254740990,
+    "address": "0x9680aa7a4b6a4f8f624c22befd5f2e460ebc1d06c1bb694a87e0fc12e44635df",
+    "addresses": {
+     "ethereum": "0x9680aa7a4b6a4f8f624c22befd5f2e460ebc1d06c1bb694a87e0fc12e44635df"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.693Z",
+    "createdAt": "2026-09-28T10:39:22.304Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    ],
+    "liquidity": 19993.405674037924,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9901,
+     "feePercentage": "99.012"
+    },
+    "tokenId": "0c62011a-1940-4c89-9b91-146578f0e002",
+    "reserves": [
+     "19998.071459749973988118",
+     "0.026348289618606872"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x4be684f77419999aa3e1162d25d9ae6ff64c05a0": {
+    "key": "base:0x4be684f77419999aa3e1162d25d9ae6ff64c05a0",
+    "name": "Uniswap V3 Amazon.com Inc./Delivery Guy 1%",
+    "decimals": 18,
+    "symbol": "AMZNC/DGUY",
+    "price": 9007199254740990,
+    "address": "0x4be684f77419999aa3e1162d25d9ae6ff64c05a0",
+    "addresses": {
+     "base": "0x4be684f77419999aa3e1162d25d9ae6ff64c05a0"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178440/large/logonew.png?1789568452"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.408Z",
+    "createdAt": "2026-09-16T15:14:02.947Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000d9192b6b456483c2e8",
+     "0xe34356dcd3d7bb991248f322e4ec31b5d60bc54e"
+    ],
+    "liquidity": 158318.19196503164,
+    "metrics": {
+     "apy": "237.394",
+     "baseApy": "237.394",
+     "volumeUsd1d": "105951.004",
+     "volumeUsd7d": "392325.593"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "03505189-e7d3-4d97-80de-4c082d623a9d",
+    "reserves": [
+     "282.05703129",
+     "62216168.011441099737594184"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd3dc2f3c97b2081de47ae61b567f932e175f710b9ee64cc486364a028250352d": {
+    "key": "ethereum:0xd3dc2f3c97b2081de47ae61b567f932e175f710b9ee64cc486364a028250352d",
+    "name": "Uniswap V4 LP ZQ/AMZNon",
+    "decimals": 18,
+    "symbol": "ZQ/AMZNON",
+    "price": 9007199254740990,
+    "address": "0xd3dc2f3c97b2081de47ae61b567f932e175f710b9ee64cc486364a028250352d",
+    "addresses": {
+     "ethereum": "0xd3dc2f3c97b2081de47ae61b567f932e175f710b9ee64cc486364a028250352d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.838Z",
+    "createdAt": "2026-09-30T05:25:12.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 19988.78347487855,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "55"
+    },
+    "tokenId": "d45ac3d7-852f-438f-a2a1-43f9bad1b733",
+    "reserves": [
+     "19999.999999999999999994",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa011f86058af8ecad68de247b134ed0dd6e173b6": {
+    "key": "base:0xa011f86058af8ecad68de247b134ed0dd6e173b6",
+    "name": "Beefy CLM AMZNc-USDC",
+    "decimals": 18,
+    "symbol": "COWAERODROMEBASEUSDC-AMZNC",
+    "price": 2472859885056.664,
+    "address": "0xa011f86058af8ecad68de247b134ed0dd6e173b6",
+    "addresses": {
+     "base": "0xa011f86058af8ecad68de247b134ed0dd6e173b6"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.123Z",
+    "createdAt": "2026-09-07T14:01:02.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "poolAddress": "0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b",
+    "liquidity": 136738.55050814344,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "51.067",
+     "volumeUsd7d": "-1788.529"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-amznc",
+     "providerId": "aerodrome",
+     "tickSpacing": 10,
+     "managerAddress": "0xa011f86058af8ecad68de247b134ed0dd6e173b6",
+     "strategyAddress": "0xe5bcc2c6a9f3dcb9883a2df690e14568b8a354c4",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x9f2e28958dd6b53d5d1a45f7efd0290d257d49de",
+     "standardVaultAddress": "0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb200000000000000000000d9192b6b456483c2e8"
+     ]
+    },
+    "tokenId": "633e1097-533c-46f2-9a67-196b76a540ba",
+    "totalSupply": "0.000000055295713006",
+    "reserves": [
+     "59676.512784",
+     "308.49496338"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x2864e4da1e818aae5982c2d9b7634e459c4e2e86": {
+    "key": "base:0x2864e4da1e818aae5982c2d9b7634e459c4e2e86",
+    "name": "Dialectic Yielding AMZNc",
+    "decimals": 18,
+    "symbol": "YAMZNC",
+    "price": 250.04797933079146,
+    "address": "0x2864e4da1e818aae5982c2d9b7634e459c4e2e86",
+    "addresses": {
+     "base": "0x2864e4da1e818aae5982c2d9b7634e459c4e2e86"
+    },
+    "platform": "makina",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/makina",
+     "https://icons.llamao.fi/icons/protocols/makina"
+    ],
+    "updatedAt": "2026-10-18T20:13:33.647Z",
+    "createdAt": "2026-10-13T05:12:39.382Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "poolAddress": "0x55f1b3cb53d2bfbc67f7cb01d3d84d240af7c2c4",
+    "liquidity": 49191.45384154534,
+    "metrics": {
+     "apy": "2.184",
+     "baseApy": "2.184",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "25236.792"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "interface": "ERC20",
+     "strategyName": "Dialectic Yielding AMZNc",
+     "strategySlug": "yamznc",
+     "machineAddress": "0x55f1b3cb53d2bfbc67f7cb01d3d84d240af7c2c4",
+     "redeemerAddress": "0x21d6569a214646c3267d089d806d570f2168eb50",
+     "depositorAddress": "0xd91e7e63dca7899c72646a6d0fb145c167cdd18b"
+    },
+    "tokenId": "95cfd718-c589-41f6-85a5-1fc71162802f",
+    "totalSupply": "196.728059126086041446",
+    "reserves": [
+     "196.89576658"
+    ],
+    "pricePerShare": "1.00085248",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x751e89b1e830a959e282377cf53bacc046ff7d6b67c6209504c3db692992c3cd": {
+    "key": "robinhood:0x751e89b1e830a959e282377cf53bacc046ff7d6b67c6209504c3db692992c3cd",
+    "name": "Uniswap V4 LP AMZN/USDG",
+    "decimals": 18,
+    "symbol": "AMZN/USDG",
+    "price": 9007199254740990,
+    "address": "0x751e89b1e830a959e282377cf53bacc046ff7d6b67c6209504c3db692992c3cd",
+    "addresses": {
+     "robinhood": "0x751e89b1e830a959e282377cf53bacc046ff7d6b67c6209504c3db692992c3cd"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.870Z",
+    "createdAt": "2026-09-09T09:55:27.351Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 2602.978215838687,
+    "metrics": {
+     "apy": "5.535",
+     "baseApy": "5.535",
+     "volumeUsd1d": "136.151",
+     "volumeUsd7d": "4364.427"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "868dfce0-bb6b-4525-ad69-6a3d3478903b",
+    "reserves": [
+     "5.197213225003986983",
+     "1308.041868"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0": {
+    "key": "robinhood:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "name": "Amazon aStock",
+    "decimals": 18,
+    "symbol": "AAMZN",
+    "price": 249.19,
+    "address": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "addresses": {
+     "ethereum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "base": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "robinhood": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "bsc": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "arbitrum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12498.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175669/large/AMZN.png?1787292213",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4fef9f27-ad1b-44b6-87f9-c51d2db346aa",
+    "totalSupply": "50.157961444",
+    "circulatingSupply": "50.157961444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb84a41d61d1742294ac331ab664d31bfdb7fd95787d4e2d8e7d8f9c2e3c4fe34": {
+    "key": "base:0xb84a41d61d1742294ac331ab664d31bfdb7fd95787d4e2d8e7d8f9c2e3c4fe34",
+    "name": "Uniswap V4 LP USDC/AMZNc",
+    "decimals": 18,
+    "symbol": "USDC/AMZNC",
+    "price": 9007199254740990,
+    "address": "0xb84a41d61d1742294ac331ab664d31bfdb7fd95787d4e2d8e7d8f9c2e3c4fe34",
+    "addresses": {
+     "base": "0xb84a41d61d1742294ac331ab664d31bfdb7fd95787d4e2d8e7d8f9c2e3c4fe34"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.588Z",
+    "createdAt": "2026-09-04T17:04:47.995Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 5935.105414496853,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "61.546"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 599,
+     "feePercentage": "6.0841"
+    },
+    "tokenId": "ad732d4a-5ff2-4f36-9d8c-d4a0e9f2bd51",
+    "reserves": [
+     "3469.838266",
+     "9.87009502"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635": {
+    "key": "base:0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635",
+    "name": "Uniswap V4 LP ETH/AMZNc",
+    "decimals": 18,
+    "symbol": "ETH/AMZNC",
+    "price": 9007199254740990,
+    "address": "0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635",
+    "addresses": {
+     "base": "0x893d654ad170fe1c68ac919814423d1e795d780c841b9aa4e8df2cdef79bc635"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.709Z",
+    "createdAt": "2026-09-04T17:04:49.411Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 8214.050799815004,
+    "metrics": {
+     "apy": "2.769",
+     "baseApy": "2.769",
+     "volumeUsd1d": "10.225",
+     "volumeUsd7d": "115.814"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 600,
+     "feePercentage": "6.094"
+    },
+    "tokenId": "9ebeb466-e58e-4569-87c1-c8c06709ca96",
+    "reserves": [
+     "2.205507001405142167",
+     "12.25188567"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8ac92da74ab5f3b1d024dc1943ad7e15dc4179ef": {
+    "key": "robinhood:0x8ac92da74ab5f3b1d024dc1943ad7e15dc4179ef",
+    "name": "Uniswap V3 Amazon  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "AMZN/USDG",
+    "price": 9007199254740990,
+    "address": "0x8ac92da74ab5f3b1d024dc1943ad7e15dc4179ef",
+    "addresses": {
+     "robinhood": "0x8ac92da74ab5f3b1d024dc1943ad7e15dc4179ef"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.698Z",
+    "createdAt": "2026-07-23T06:15:21.791Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 455474.9539130626,
+    "metrics": {
+     "apy": "6.32",
+     "baseApy": "6.32",
+     "volumeUsd1d": "26307.052",
+     "volumeUsd7d": "1370807.363"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "fa4f726e-71d0-489b-ad5e-6c49e9b7cdfe",
+    "reserves": [
+     "1211.69319925494616365",
+     "153569.77931"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdeb8544c782e8be4f91ff7565c1f10706f4919ee499dbab34b76e7109a29fc19": {
+    "key": "ethereum:0xdeb8544c782e8be4f91ff7565c1f10706f4919ee499dbab34b76e7109a29fc19",
+    "name": "Uniswap V4 LP ETH/AMZNon",
+    "decimals": 18,
+    "symbol": "ETH/AMZNON",
+    "price": 9007199254740990,
+    "address": "0xdeb8544c782e8be4f91ff7565c1f10706f4919ee499dbab34b76e7109a29fc19",
+    "addresses": {
+     "ethereum": "0xdeb8544c782e8be4f91ff7565c1f10706f4919ee499dbab34b76e7109a29fc19"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.549Z",
+    "createdAt": "2026-09-29T12:18:33.301Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 1096.0814194297707,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "18.615"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1369,
+     "feePercentage": "13.7764"
+    },
+    "tokenId": "0f86c2e3-8c7a-450c-aadc-075fff0b7ed1",
+    "reserves": [
+     "0.046311294335895107",
+     "3.957362775118302343"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "bsc:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "bsc": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:19.431Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2487000,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "fd8d497e-ac67-4000-8436-d8f50980ca4a",
+    "totalSupply": "10000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0": {
+    "key": "arbitrum:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "name": "Amazon aStock",
+    "decimals": 18,
+    "symbol": "AAMZN",
+    "price": 249.19,
+    "address": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "addresses": {
+     "ethereum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "base": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "robinhood": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "bsc": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "arbitrum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12498.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175669/large/AMZN.png?1787292213",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4fef9f27-ad1b-44b6-87f9-c51d2db346aa",
+    "totalSupply": "50.157961444",
+    "circulatingSupply": "50.157961444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xefc94885c96b02696b9b45de43eeeb8ac53c0199cab42b4daae4911b96fb8825": {
+    "key": "robinhood:0xefc94885c96b02696b9b45de43eeeb8ac53c0199cab42b4daae4911b96fb8825",
+    "name": "Uniswap V4 LP AMZN/USDG",
+    "decimals": 18,
+    "symbol": "AMZN/USDG",
+    "price": 9007199254740990,
+    "address": "0xefc94885c96b02696b9b45de43eeeb8ac53c0199cab42b4daae4911b96fb8825",
+    "addresses": {
+     "robinhood": "0xefc94885c96b02696b9b45de43eeeb8ac53c0199cab42b4daae4911b96fb8825"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.342Z",
+    "createdAt": "2026-09-08T14:43:04.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 56677.439193040125,
+    "metrics": {
+     "apy": "3.675",
+     "baseApy": "3.675",
+     "volumeUsd1d": "2048.051",
+     "volumeUsd7d": "80449.997"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 24,
+     "feePercentage": "0.2786"
+    },
+    "tokenId": "284e8a0f-435e-4073-bc0f-da5123d3dd4d",
+    "reserves": [
+     "177.955352724668104196",
+     "12338.127997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xf393d07e6ca9818a601055b4bb3c48a5bb98e701": {
+    "key": "base:0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+    "name": "Dinari AMZN dShares",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.26,
+    "address": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+    "addresses": {
+     "base": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+     "arbitrum": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+     "hyperevm": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+     "ethereum": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+     "avalanche": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96469,
+    "image": "https://coin-images.coingecko.com/coins/images/102174908/large/dinari-logo-green-with-margin.png?1785402523",
+    "metrics": {
+     "volumeUsd1d": "468.617",
+     "volumeUsd7d": "4337.947"
+    },
+    "metadata": {},
+    "tokenId": "597486fe-40b6-46f9-91f3-61eed8f512df",
+    "totalSupply": "387.01330147833295",
+    "circulatingSupply": "387.01330147833295",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x86cdb611dea49e510af32ddb2bdc5bc4a4f0e6af9fadc4113487204c56826029": {
+    "key": "ethereum:0x86cdb611dea49e510af32ddb2bdc5bc4a4f0e6af9fadc4113487204c56826029",
+    "name": "Uniswap V4 LP USDT/AMZNx",
+    "decimals": 18,
+    "symbol": "USDT/AMZNX",
+    "price": 9007199254740990,
+    "address": "0x86cdb611dea49e510af32ddb2bdc5bc4a4f0e6af9fadc4113487204c56826029",
+    "addresses": {
+     "ethereum": "0x86cdb611dea49e510af32ddb2bdc5bc4a4f0e6af9fadc4113487204c56826029"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.636Z",
+    "createdAt": "2026-10-18T18:58:07.976Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "7f717597-1bf0-4a6d-90b4-ed84f0438f31",
+    "reserves": [
+     "3999.999999999999999994",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "ethereum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "ethereum": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.605Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 21587160,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "83fc6af8-1ac7-4be1-9bd5-359a2cfacdb3",
+    "totalSupply": "86800",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x12f190a9f9d7d37a250758b26824b97ce941bf54": {
+    "key": "robinhood:0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "name": "Amazon • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.15975,
+    "address": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "addresses": {
+     "robinhood": "0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+    "liquidity": 3199195.617515625,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "498056.849"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000004f508d5e2a7042299694d85c2f362ad2",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "aeeecaf3-56f8-4ef3-9a61-93c8784da24b",
+    "totalSupply": "12839.9375",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xae39eb7ad99368e23688bb14fbd61d9ff1cfdfab892b0fd54b13db84eaeebf7d": {
+    "key": "ethereum:0xae39eb7ad99368e23688bb14fbd61d9ff1cfdfab892b0fd54b13db84eaeebf7d",
+    "name": "Uniswap V4 LP ETH/AMZNon",
+    "decimals": 18,
+    "symbol": "ETH/AMZNON",
+    "price": 9007199254740990,
+    "address": "0xae39eb7ad99368e23688bb14fbd61d9ff1cfdfab892b0fd54b13db84eaeebf7d",
+    "addresses": {
+     "ethereum": "0xae39eb7ad99368e23688bb14fbd61d9ff1cfdfab892b0fd54b13db84eaeebf7d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.813Z",
+    "createdAt": "2025-12-29T06:04:29.634Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 1212.3600344937759,
+    "metrics": {
+     "apy": "7.067",
+     "baseApy": "7.067",
+     "volumeUsd1d": "21.352",
+     "volumeUsd7d": "69.817"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "30b56e5b-7777-4ab3-8a8a-20c6feee5466",
+    "reserves": [
+     "0.18739290598522442",
+     "3.102680492915429136"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x84cbd08021c40fcea28f3389721ffefc73291340": {
+    "key": "bsc:0x84cbd08021c40fcea28f3389721ffefc73291340",
+    "name": "Uniswap V3 Amazon/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "AMZNB/USDT",
+    "price": 9007199254740990,
+    "address": "0x84cbd08021c40fcea28f3389721ffefc73291340",
+    "addresses": {
+     "bsc": "0x84cbd08021c40fcea28f3389721ffefc73291340"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175185/large/amznb.png?1785456628",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.917Z",
+    "createdAt": "2026-08-10T05:36:38.890Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 589.9803890475398,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3927.751"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "9b3ef76e-777e-4b1c-8c9b-34da7cd8e748",
+    "reserves": [
+     "0.944969989099526472",
+     "355.245362292778331056"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x4855b2756910b7525d5b466292c394669ee74e7e": {
+    "key": "base:0x4855b2756910b7525d5b466292c394669ee74e7e",
+    "name": "AMZN SuperVault",
+    "decimals": 8,
+    "symbol": "SUPERAMZN",
+    "price": 249.83499999,
+    "address": "0x4855b2756910b7525d5b466292c394669ee74e7e",
+    "addresses": {
+     "base": "0x4855b2756910b7525d5b466292c394669ee74e7e"
+    },
+    "platform": "superform",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/superform",
+     "https://icons.llamao.fi/icons/protocols/superform"
+    ],
+    "updatedAt": "2026-10-18T20:13:33.499Z",
+    "createdAt": "2026-10-02T02:09:17.129Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 16933.05032769738,
+    "metrics": {
+     "apy": "15",
+     "baseApy": "0",
+     "rewardApy": "15",
+     "volumeUsd1d": "61.276",
+     "volumeUsd7d": "666.262"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0,
+      "withdraw": 0,
+      "performance": 0
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [
+      "USDC",
+      "sUP"
+     ],
+     "interface": "ERC4626",
+     "description": "Amazon SuperVault gives users onchain access to Amazon-linked exposure through Superform. Over time, superAMZN can evolve from simple exposure into a structured vault strategy that seeks to accumulate Amazon-linked assets using liquidity provisioning, lending, and a variety of onchain strategies."
+    },
+    "tokenId": "53b07837-b521-428b-8d7f-ad2fb24f8968",
+    "totalSupply": "67.77693409",
+    "reserves": [
+     "67.77693409"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0": {
+    "key": "base:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "name": "Amazon aStock",
+    "decimals": 18,
+    "symbol": "AAMZN",
+    "price": 249.19,
+    "address": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "addresses": {
+     "ethereum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "base": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "robinhood": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "bsc": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "arbitrum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12498.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175669/large/AMZN.png?1787292213",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4fef9f27-ad1b-44b6-87f9-c51d2db346aa",
+    "totalSupply": "50.157961444",
+    "circulatingSupply": "50.157961444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x149ae2607d2d3c79bf053d720caccf831d48d55f": {
+    "key": "ethereum:0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+    "name": "Dinari AMZN dShares",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.26,
+    "address": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+    "addresses": {
+     "base": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+     "arbitrum": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+     "hyperevm": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+     "ethereum": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+     "avalanche": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96469,
+    "image": "https://coin-images.coingecko.com/coins/images/102174908/large/dinari-logo-green-with-margin.png?1785402523",
+    "metrics": {
+     "volumeUsd1d": "468.617",
+     "volumeUsd7d": "4338.439"
+    },
+    "metadata": {},
+    "tokenId": "597486fe-40b6-46f9-91f3-61eed8f512df",
+    "totalSupply": "387.01330147833295",
+    "circulatingSupply": "387.01330147833295",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x10a278a9022674297a1d8b75d136f40140c8cf03d8e87d12952ad19a0fd63b85": {
+    "key": "ethereum:0x10a278a9022674297a1d8b75d136f40140c8cf03d8e87d12952ad19a0fd63b85",
+    "name": "Uniswap V4 LP USDC/AMZNon",
+    "decimals": 18,
+    "symbol": "USDC/AMZNON",
+    "price": 9007199254740990,
+    "address": "0x10a278a9022674297a1d8b75d136f40140c8cf03d8e87d12952ad19a0fd63b85",
+    "addresses": {
+     "ethereum": "0x10a278a9022674297a1d8b75d136f40140c8cf03d8e87d12952ad19a0fd63b85"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.786Z",
+    "createdAt": "2026-10-14T06:54:25.777Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 1530.2444181801695,
+    "metrics": {
+     "apy": "6.937",
+     "baseApy": "6.937",
+     "volumeUsd1d": "13.858",
+     "volumeUsd7d": "51.231"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "623f0702-afee-4947-8d1e-bf82b97df70b",
+    "reserves": [
+     "930.80846",
+     "2.401972657578934793"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b": {
+    "key": "base:0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b",
+    "name": "Aerodrome SlipStream USD Coin/Amazon.com Inc. 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/AMZNC",
+    "price": 9007199254740990,
+    "address": "0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b",
+    "addresses": {
+     "base": "0xd03bc8c7f2faedce2aac81bf0444aea08ea06e9b"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.723Z",
+    "createdAt": "2026-09-03T21:11:46.439Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 2750033.542110753,
+    "metrics": {
+     "apy": "27.869",
+     "baseApy": "27.869",
+     "rewardApy": "0",
+     "volumeUsd1d": "4123446.923",
+     "volumeUsd7d": "43528626.825"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "769efcec-95fb-4ce1-9b08-f8752c339d66",
+    "reserves": [
+     "867164.215809",
+     "7537.07960494"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x53e6ccca753c4ddc50d8221512b259ecb7f20ed64dfd7fbc46afa8bf6240eb62": {
+    "key": "ethereum:0x53e6ccca753c4ddc50d8221512b259ecb7f20ed64dfd7fbc46afa8bf6240eb62",
+    "name": "Uniswap V4 LP wUSDC/AMZNon",
+    "decimals": 18,
+    "symbol": "WUSDC/AMZNON",
+    "price": 9007199254740990,
+    "address": "0x53e6ccca753c4ddc50d8221512b259ecb7f20ed64dfd7fbc46afa8bf6240eb62",
+    "addresses": {
+     "ethereum": "0x53e6ccca753c4ddc50d8221512b259ecb7f20ed64dfd7fbc46afa8bf6240eb62"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.201Z",
+    "createdAt": "2026-09-28T10:37:14.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "9275d376-fad0-4395-abd5-4739095957dd",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3557ba345b01efa20a1bddc61f573bfd87195081": {
+    "key": "arbitrum:0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "name": "Amazon.com xStock",
+    "decimals": 18,
+    "symbol": "AMZNX",
+    "price": 248.7,
+    "address": "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+    "addresses": {
+     "arbitrum": "0x3557ba345b01efa20a1bddc61f573bfd87195081"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:17.440Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 11824938.9,
+    "image": "https://coin-images.coingecko.com/coins/images/55590/large/Ticker_AMZN__Company_Name_Amazon.com_Inc.__size_200x200_2x.png?1746809003",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "amazon-xstock"
+    },
+    "tokenId": "2ca7ee57-f0d5-4a87-b26f-2bc6c0efc29d",
+    "totalSupply": "47547",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa198c9dca403682d14ecd25b2bec87e56180be037f33be12a0748d57cdc7e55a": {
+    "key": "ethereum:0xa198c9dca403682d14ecd25b2bec87e56180be037f33be12a0748d57cdc7e55a",
+    "name": "Uniswap V4 LP AMZNx/USDCc",
+    "decimals": 18,
+    "symbol": "AMZNX/USDCC",
+    "price": 9007199254740990,
+    "address": "0xa198c9dca403682d14ecd25b2bec87e56180be037f33be12a0748d57cdc7e55a",
+    "addresses": {
+     "ethereum": "0xa198c9dca403682d14ecd25b2bec87e56180be037f33be12a0748d57cdc7e55a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.869Z",
+    "createdAt": "2026-09-28T10:39:18.722Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3557ba345b01efa20a1bddc61f573bfd87195081",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 3998.953516273263,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.1893"
+    },
+    "tokenId": "27d3c853-254f-4855-90fe-6569cd9802bd",
+    "reserves": [
+     "0",
+     "4000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xaba4a08c36404f6eff79dc85b0b4c5172a095504": {
+    "key": "avalanche:0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+    "name": "Dinari AMZN dShares",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.26,
+    "address": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+    "addresses": {
+     "base": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+     "arbitrum": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+     "hyperevm": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+     "ethereum": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+     "avalanche": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96469,
+    "image": "https://coin-images.coingecko.com/coins/images/102174908/large/dinari-logo-green-with-margin.png?1785402523",
+    "metrics": {
+     "volumeUsd1d": "468.617",
+     "volumeUsd7d": "4337.118"
+    },
+    "metadata": {},
+    "tokenId": "597486fe-40b6-46f9-91f3-61eed8f512df",
+    "totalSupply": "387.01330147833295",
+    "circulatingSupply": "387.01330147833295",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb200000000000000000000d9192b6b456483c2e8": {
+    "key": "base:0xb200000000000000000000d9192b6b456483c2e8",
+    "name": "Amazon.com Inc.",
+    "decimals": 8,
+    "symbol": "AMZNC",
+    "price": 249.83499999,
+    "address": "0xb200000000000000000000d9192b6b456483c2e8",
+    "addresses": {
+     "base": "0xb200000000000000000000d9192b6b456483c2e8"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-21T12:37:48.897Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb200000000000000000000d9192b6b456483c2e8",
+    "liquidity": 3132957.1938840915,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "948806.342"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "78dbf83d-bf67-4e53-a4a4-43e89ada704a",
+    "totalSupply": "12540.1052455",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x42eb8552d5f954492f1b31af0e83ec34e4a565ea8f99b190e4c4dcecb822c7b1": {
+    "key": "base:0x42eb8552d5f954492f1b31af0e83ec34e4a565ea8f99b190e4c4dcecb822c7b1",
+    "name": "Uniswap V4 LP USDC/AMZNc",
+    "decimals": 18,
+    "symbol": "USDC/AMZNC",
+    "price": 9007199254740990,
+    "address": "0x42eb8552d5f954492f1b31af0e83ec34e4a565ea8f99b190e4c4dcecb822c7b1",
+    "addresses": {
+     "base": "0x42eb8552d5f954492f1b31af0e83ec34e4a565ea8f99b190e4c4dcecb822c7b1"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:57.077Z",
+    "createdAt": "2026-09-05T18:44:06.193Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 843.0773499251352,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "2f2b5a37-c459-4903-be1e-d51076c140e0",
+    "reserves": [
+     "460.394224",
+     "1.532077"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf3bac9a38d77b0bcfb24253b6190cf908d17bd8915ea730e0632a1da54f85a33": {
+    "key": "robinhood:0xf3bac9a38d77b0bcfb24253b6190cf908d17bd8915ea730e0632a1da54f85a33",
+    "name": "Uniswap V4 LP AMZN/SHROOM",
+    "decimals": 18,
+    "symbol": "AMZN/SHROOM",
+    "price": 9007199254740990,
+    "address": "0xf3bac9a38d77b0bcfb24253b6190cf908d17bd8915ea730e0632a1da54f85a33",
+    "addresses": {
+     "robinhood": "0xf3bac9a38d77b0bcfb24253b6190cf908d17bd8915ea730e0632a1da54f85a33"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.093Z",
+    "createdAt": "2026-09-08T14:43:04.825Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 5121.764677081034,
+    "metrics": {
+     "apy": "31.968",
+     "baseApy": "31.968",
+     "volumeUsd1d": "448.736",
+     "volumeUsd7d": "6674.358"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "67e9a076-3eb0-4e93-a087-cb388778edb7",
+    "reserves": [
+     "11.631992480022392852",
+     "460120.255841005243685636"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716": {
+    "key": "robinhood:0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716",
+    "name": "Beefy CLM AMZN-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODAMZN-USDG",
+    "price": 1064478840567.0344,
+    "address": "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716",
+    "addresses": {
+     "robinhood": "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0x8ac92da74ab5f3b1d024dc1943ad7e15dc4179ef",
+    "liquidity": 112788.13799167913,
+    "metrics": {
+     "apy": "5.629",
+     "baseApy": "5.629",
+     "volumeUsd1d": "151.52",
+     "volumeUsd7d": "2127.942"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-amzn-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716",
+     "strategyAddress": "0x260e2b479f2e6a5d9b638e540641527acf3e0011",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x6e80a9ed1717920d82658681747f050998043a78",
+     "depositTokenAddresses": [
+      "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "18a00506-8f8a-4ce1-aa58-40d0ca594eb4",
+    "totalSupply": "0.000000105956204758",
+    "reserves": [
+     "320.311974232110677657",
+     "32979.28657"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xfba9e358f9ad443236155e5c67f2aade032db7a1": {
+    "key": "arbitrum:0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+    "name": "Amazon rStock",
+    "decimals": 18,
+    "symbol": "RAMZN",
+    "price": 248.82,
+    "address": "0xfba9e358f9ad443236155e5c67f2aade032db7a1",
+    "addresses": {
+     "arbitrum": "0xfba9e358f9ad443236155e5c67f2aade032db7a1"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 783296,
+    "image": "https://coin-images.coingecko.com/coins/images/102176986/large/e8ee6c0d73a79e1d36d130b68addfd23.png?1789116291",
+    "metrics": {
+     "volumeUsd1d": "19.784",
+     "volumeUsd7d": "1487854.025"
+    },
+    "metadata": {},
+    "tokenId": "4778b36a-af5c-4cfc-8fe6-f7eae4acfe51",
+    "totalSupply": "3148.048507522",
+    "circulatingSupply": "3148.048507522",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xed68f063264a01fd7f93087dc19cc1e0d614e8de": {
+    "key": "hyperevm:0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "690194.419",
+     "volumeUsd7d": "6464312.679"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0": {
+    "key": "ethereum:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "name": "Amazon aStock",
+    "decimals": 18,
+    "symbol": "AAMZN",
+    "price": 249.19,
+    "address": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "addresses": {
+     "ethereum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "base": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "robinhood": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "bsc": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "arbitrum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12498.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175669/large/AMZN.png?1787292213",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4fef9f27-ad1b-44b6-87f9-c51d2db346aa",
+    "totalSupply": "50.157961444",
+    "circulatingSupply": "50.157961444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x8240affe697cde618ad05c3c8963f5bfe152650b": {
+    "key": "arbitrum:0x8240affe697cde618ad05c3c8963f5bfe152650b",
+    "name": "Dinari AMZN dShares",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.26,
+    "address": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+    "addresses": {
+     "base": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+     "arbitrum": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+     "hyperevm": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+     "ethereum": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+     "avalanche": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96469,
+    "image": "https://coin-images.coingecko.com/coins/images/102174908/large/dinari-logo-green-with-margin.png?1785402523",
+    "metrics": {
+     "volumeUsd1d": "468.617",
+     "volumeUsd7d": "4338.34"
+    },
+    "metadata": {},
+    "tokenId": "597486fe-40b6-46f9-91f3-61eed8f512df",
+    "totalSupply": "387.01330147833295",
+    "circulatingSupply": "387.01330147833295",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbb8774fb97436d23d74c1b882e8e9a69322cfd31": {
+    "key": "ethereum:0xbb8774fb97436d23d74c1b882e8e9a69322cfd31",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "689855.876",
+     "volumeUsd7d": "6262577.295"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4553cfe1c09f37f38b12dc509f676964e392f8fc": {
+    "key": "bsc:0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+    "name": "Amazon (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "AMZNON",
+    "price": 249.63,
+    "address": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+    "addresses": {
+     "hyperevm": "0xed68f063264a01fd7f93087dc19cc1e0d614e8de",
+     "bsc": "0x4553cfe1c09f37f38b12dc509f676964e392f8fc",
+     "ethereum": "0xbb8774fb97436d23d74c1b882e8e9a69322cfd31"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6804823,
+    "image": "https://coin-images.coingecko.com/coins/images/68604/large/amznon_160x160.png?1756129958",
+    "metrics": {
+     "volumeUsd1d": "691151.721",
+     "volumeUsd7d": "6366728.895"
+    },
+    "metadata": {},
+    "tokenId": "91d1c198-dd0d-43cb-ab49-9a77c731a9dd",
+    "totalSupply": "27264.49103828794",
+    "circulatingSupply": "27264.49103828794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x68beff3b4270ffbbb78a48d7670648909b9de6736456b0f450fee242e1d10a8b": {
+    "key": "robinhood:0x68beff3b4270ffbbb78a48d7670648909b9de6736456b0f450fee242e1d10a8b",
+    "name": "Uniswap V4 LP SPY/AMZN",
+    "decimals": 18,
+    "symbol": "SPY/AMZN",
+    "price": 9007199254740990,
+    "address": "0x68beff3b4270ffbbb78a48d7670648909b9de6736456b0f450fee242e1d10a8b",
+    "addresses": {
+     "robinhood": "0x68beff3b4270ffbbb78a48d7670648909b9de6736456b0f450fee242e1d10a8b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.348Z",
+    "createdAt": "2026-08-06T14:30:04.128Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+    ],
+    "liquidity": 545765.810016538,
+    "metrics": {
+     "apy": "4.929",
+     "baseApy": "4.929",
+     "volumeUsd1d": "117932.321",
+     "volumeUsd7d": "2538558.708"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "b9289a47-2521-4845-a012-47bda35115b8",
+    "reserves": [
+     "228.344388437244125411",
+     "1491.325352019277898725"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6e80a9ed1717920d82658681747f050998043a78": {
+    "key": "robinhood:0x6e80a9ed1717920d82658681747f050998043a78",
+    "name": "Beefy CLM AMZN-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODAMZN-USDG",
+    "price": 1064478840567.0344,
+    "address": "0x6e80a9ed1717920d82658681747f050998043a78",
+    "addresses": {
+     "robinhood": "0x6e80a9ed1717920d82658681747f050998043a78"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716"
+    ],
+    "poolAddress": "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716",
+    "liquidity": 112788.13692720029,
+    "metrics": {
+     "apy": "5.629",
+     "baseApy": "5.629",
+     "volumeUsd1d": "151.52",
+     "volumeUsd7d": "2127.942"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-amzn-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xaf5bfa1a18a9b1f77b5f240a8275ace8add82716",
+     "strategyAddress": "0x260e2b479f2e6a5d9b638e540641527acf3e0011",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x6e80a9ed1717920d82658681747f050998043a78",
+     "depositTokenAddresses": [
+      "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "9407bc5d-2260-4e22-af83-3718e3a6b73b",
+    "totalSupply": "0.000000105956203758",
+    "reserves": [
+     "0.000000105956203758"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae": {
+    "key": "base:0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae",
+    "name": "Beefy Moo Beefy Aerodrome Base USDC-AMZNc",
+    "decimals": 18,
+    "symbol": "MOOBEEFYAERODROMEBASEUSDC-AMZNC",
+    "price": 2544350106712.9146,
+    "address": "0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae",
+    "addresses": {
+     "base": "0xb65a7e6749c01f35ccb9258803f5ee15e1b375ae"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.947Z",
+    "createdAt": "2026-09-07T14:12:18.864Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa011f86058af8ecad68de247b134ed0dd6e173b6"
+    ],
+    "liquidity": 130600.90331920717,
+    "metrics": {
+     "apy": "2.888",
+     "baseApy": "2.888",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2049.984"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "4dc15b8b-f26b-464a-82ab-aff36cba346a",
+    "totalSupply": "0.000000051329769034",
+    "reserves": [
+     "0.000000052813709385"
+    ],
+    "pricePerShare": "1.028909936259737739",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7f030e5fd657795c0937a3e8af2929fd90da91c7": {
+    "key": "base:0x7f030e5fd657795c0937a3e8af2929fd90da91c7",
+    "name": "Uniswap V3 USD Coin/Amazon.com Inc. 1%",
+    "decimals": 18,
+    "symbol": "USDC/AMZNC",
+    "price": 9007199254740990,
+    "address": "0x7f030e5fd657795c0937a3e8af2929fd90da91c7",
+    "addresses": {
+     "base": "0x7f030e5fd657795c0937a3e8af2929fd90da91c7"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.316Z",
+    "createdAt": "2026-09-05T17:40:35.132Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000d9192b6b456483c2e8"
+    ],
+    "liquidity": 27168.723636802068,
+    "metrics": {
+     "apy": "119.917",
+     "baseApy": "119.917",
+     "volumeUsd1d": "8925.794",
+     "volumeUsd7d": "41547.678"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "365b2c34-a218-4fd5-8b40-6021b9c8b4fe",
+    "reserves": [
+     "13370.611045",
+     "55.23858816"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0": {
+    "key": "bsc:0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "name": "Amazon aStock",
+    "decimals": 18,
+    "symbol": "AAMZN",
+    "price": 249.19,
+    "address": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+    "addresses": {
+     "ethereum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "base": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "robinhood": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "bsc": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0",
+     "arbitrum": "0x06f272082339a90e81e1dcb8ab892fd1a8c5e4c0"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12498.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175669/large/AMZN.png?1787292213",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "4fef9f27-ad1b-44b6-87f9-c51d2db346aa",
+    "totalSupply": "50.157961444",
+    "circulatingSupply": "50.157961444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xaba4a08c36404f6eff79dc85b0b4c5172a095504": {
+    "key": "hyperevm:0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+    "name": "Dinari AMZN dShares",
+    "decimals": 18,
+    "symbol": "AMZN",
+    "price": 249.26,
+    "address": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+    "addresses": {
+     "base": "0xf393d07e6ca9818a601055b4bb3c48a5bb98e701",
+     "arbitrum": "0x8240affe697cde618ad05c3c8963f5bfe152650b",
+     "hyperevm": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504",
+     "ethereum": "0x149ae2607d2d3c79bf053d720caccf831d48d55f",
+     "avalanche": "0xaba4a08c36404f6eff79dc85b0b4c5172a095504"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 96469,
+    "image": "https://coin-images.coingecko.com/coins/images/102174908/large/dinari-logo-green-with-margin.png?1785402523",
+    "metrics": {
+     "volumeUsd1d": "468.617",
+     "volumeUsd7d": "4338.281"
+    },
+    "metadata": {},
+    "tokenId": "597486fe-40b6-46f9-91f3-61eed8f512df",
+    "totalSupply": "387.01330147833295",
+    "circulatingSupply": "387.01330147833295",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xd9482ae6b65734f8a2a059e128ce0e890bf85aea": {
+    "key": "base:0xd9482ae6b65734f8a2a059e128ce0e890bf85aea",
+    "name": "Aerodrome SlipStream Amazon.com Inc./Frax USD 0.05%",
+    "decimals": 18,
+    "symbol": "AMZNC/FRXUSD",
+    "price": 9007199254740990,
+    "address": "0xd9482ae6b65734f8a2a059e128ce0e890bf85aea",
+    "addresses": {
+     "base": "0xd9482ae6b65734f8a2a059e128ce0e890bf85aea"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://images.portals.fi/logos/frxUSD.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.217Z",
+    "createdAt": "2026-09-21T15:39:58.993Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb200000000000000000000d9192b6b456483c2e8",
+     "0xe5020a6d073a794b6e7f05678707de47986fb0b6"
+    ],
+    "liquidity": 689.5443639143749,
+    "metrics": {
+     "apy": "128.653",
+     "baseApy": "128.653",
+     "rewardApy": "0",
+     "volumeUsd1d": "4860.793",
+     "volumeUsd7d": "15431.551"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "3c65f6ff-42e7-4706-bcd6-cf28f98eea38",
+    "reserves": [
+     "1.00502447",
+     "438.47161432654824153"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfad1472a3bf9bbecc0abed3790849e3f1b4bb271c13ec642e42801e89a13e7b2": {
+    "key": "robinhood:0xfad1472a3bf9bbecc0abed3790849e3f1b4bb271c13ec642e42801e89a13e7b2",
+    "name": "Uniswap V4 LP ETH/AMZN",
+    "decimals": 18,
+    "symbol": "ETH/AMZN",
+    "price": 9007199254740990,
+    "address": "0xfad1472a3bf9bbecc0abed3790849e3f1b4bb271c13ec642e42801e89a13e7b2",
+    "addresses": {
+     "robinhood": "0xfad1472a3bf9bbecc0abed3790849e3f1b4bb271c13ec642e42801e89a13e7b2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174126/large/0x12f190a9f9d7d37a250758b26824b97ce941bf54.png?1782444606"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.052Z",
+    "createdAt": "2026-09-08T14:43:04.825Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x12f190a9f9d7d37a250758b26824b97ce941bf54"
+    ],
+    "liquidity": 25788.102006300956,
+    "metrics": {
+     "apy": "34.888",
+     "baseApy": "34.888",
+     "volumeUsd1d": "7068.374",
+     "volumeUsd7d": "60074.232"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 30,
+     "feePercentage": "0.3487"
+    },
+    "tokenId": "17911c3c-be56-4e3c-a733-fd3bb118082e",
+    "reserves": [
+     "6.26337511742583942",
+     "44.766114694243371463"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7530beb7bde5843f668cf31b996fa1f748c9b6b1": {
+    "key": "bsc:0x7530beb7bde5843f668cf31b996fa1f748c9b6b1",
+    "name": "PancakeSwap V3 Amazon/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "AMZNB/USDT",
+    "price": 9007199254740990,
+    "address": "0x7530beb7bde5843f668cf31b996fa1f748c9b6b1",
+    "addresses": {
+     "bsc": "0x7530beb7bde5843f668cf31b996fa1f748c9b6b1"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175185/large/amznb.png?1785456628",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.053Z",
+    "createdAt": "2026-08-03T16:54:32.731Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1a4b499833a79a09ad7cf1d42d7dacf71e92eb00",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 195893.48743867848,
+    "metrics": {
+     "apy": "3.738",
+     "baseApy": "3.738",
+     "volumeUsd1d": "8023.113",
+     "volumeUsd7d": "239198.519"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "b4f8271a-4a42-451c-9f3b-d5d69a2e80ff",
+    "reserves": [
+     "499.16110232309764232",
+     "71805.435693684134809856"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

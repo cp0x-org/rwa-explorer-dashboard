@@ -1,0 +1,2169 @@
+{
+ "schema_version": 1,
+ "underlying_id": "KR7000660001",
+ "ticker": "SKHY",
+ "name": "SK Hynix",
+ "isin": "KR7000660001",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:01Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "SK Hynix",
+   "symbol": "SKHY",
+   "slug": "sk-hynix",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 132.80550476187454,
+     "tokenized_market_cap": 30711326.625118297,
+     "tokenized_volume_24h": 9574753.13741638,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 8065,
+   "asset_type": "stock",
+   "rwa_rank": 15,
+   "has_tokens": true,
+   "average_tokenized_price": 132.80550476187454,
+   "tokenized_market_cap": 30711326.625118297,
+   "tokenized_volume_24h": 9574753.13741638,
+   "last_updated": "2026-10-18T20:13:34.341Z",
+   "tokens": [
+    {
+     "symbol": "SKHYx",
+     "name": "SK hynix tokenized stock (xStock)",
+     "price": 132.53284516564568,
+     "crypto_id": 40786,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 6867829.36,
+     "volume_24h": 1065016.20478484
+    },
+    {
+     "symbol": "SKHYB",
+     "name": "SK Hynix Tokenized bStocks",
+     "price": 132.5724439111288,
+     "crypto_id": 40813,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 19759630.7,
+     "volume_24h": 5710020.22359191
+    },
+    {
+     "symbol": "SKHYon",
+     "name": "SK Hynix Tokenized Stock (Ondo)",
+     "price": 133.73024532603768,
+     "crypto_id": 40823,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1049489.57,
+     "volume_24h": 1377738.85079879
+    },
+    {
+     "symbol": "SKHY",
+     "name": "SK Hynix (Derivatives)",
+     "price": 132.61922758802643,
+     "crypto_id": 40824,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "SKHY",
+     "name": "SK Hynix tokenized stock (Backpack)",
+     "price": 133.08936479221032,
+     "crypto_id": 40833,
+     "issuer_id": "6a2d54b697c45356b1a634f4",
+     "issuer_name": "Backpack",
+     "market_cap": 2987366.41,
+     "volume_24h": 1340888.79116311
+    },
+    {
+     "symbol": "wSKHYx",
+     "name": "Wrapped SK hynix Tokenized Stock (xStock)",
+     "price": 132.885415806178,
+     "crypto_id": 41523,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 76516.53524071
+    },
+    {
+     "symbol": "SKHYc",
+     "name": "SK hynix Inc. Tokenized Stock (Coinbase)",
+     "price": 143.4952649630533,
+     "crypto_id": 42557,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 47783.92,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": []
+  },
+  "info": {
+   "40786": {
+    "id": 40786,
+    "symbol": "SKHYx",
+    "name": "SK hynix tokenized stock (xStock)",
+    "slug": "sk-hynix-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40786.png",
+    "date_added": "2026-07-04T03:32:51.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsnhgGRQwhExfS2bmWzR6EYddKGPRGDEjeJsatkmKqU"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsnhgGRQwhExfS2bmWzR6EYddKGPRGDEjeJsatkmKqU",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4Afcd4eE4faDbD4244f3f895a341c56",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "Optimism",
+       "coin": {
+        "id": "11840",
+        "name": "Optimism",
+        "symbol": "OP",
+        "slug": "optimism-ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAAeiQvlTTyF48sbx1Am_muV5h6FXC0EMhrAJyK_yVG2qhB",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40813": {
+    "id": 40813,
+    "symbol": "SKHYB",
+    "name": "SK Hynix Tokenized bStocks",
+    "slug": "sk-hynix-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40813.png",
+    "date_added": "2026-07-09T01:45:56.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xca750ef65f295bbecd685abf54e82caf297bdb61",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40823": {
+    "id": 40823,
+    "symbol": "SKHYon",
+    "name": "SK Hynix Tokenized Stock (Ondo)",
+    "slug": "sk-hynix-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40823.png",
+    "date_added": "2026-06-12T09:35:08.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xc0fE36F4FFBDf1B38E192215073590a68f9A2Af7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc0fE36F4FFBDf1B38E192215073590a68f9A2Af7",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4268F2Bfb23A7496504AA5eD1Ee325248586299F",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "Huyb2fyDDjSuDKCRWsN9ci2rmcgPo6NFiLbx9ZDondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40824": {
+    "id": 40824,
+    "symbol": "SKHY",
+    "name": "SK Hynix (Derivatives)",
+    "slug": "sk-hynix-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40824.png",
+    "date_added": "2026-01-30T05:03:15.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40833": {
+    "id": 40833,
+    "symbol": "SKHY",
+    "name": "SK Hynix tokenized stock (Backpack)",
+    "slug": "sk-hynix-tokenized-stock-backpack",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40833.png",
+    "date_added": "2026-06-13T13:02:26.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "SKHYhSjuRWHgikq8eRKbtBbpABgJSkd7ytQV14i9EQ3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "SKHYhSjuRWHgikq8eRKbtBbpABgJSkd7ytQV14i9EQ3",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41523": {
+    "id": 41523,
+    "symbol": "wSKHYx",
+    "name": "Wrapped SK hynix Tokenized Stock (xStock)",
+    "slug": "wrapped-sk-hynix-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41523.png",
+    "date_added": "2026-08-11T16:24:42.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x6215a58ed045d71F2561AaAbe54f4C885C522998"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x6215a58ed045d71F2561AaAbe54f4C885C522998",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42557": {
+    "id": 42557,
+    "symbol": "SKHYc",
+    "name": "SK hynix Inc. Tokenized Stock (Coinbase)",
+    "slug": "sk-hynix-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42557.png",
+    "date_added": "2026-10-14T03:37:01.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000187f7071d6e321a7d2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000187f7071d6e321a7d2",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+   "base:0xb200000000000000000000187f7071d6e321a7d2",
+   "bsc:0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+   "bsc:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+   "bsc:0xca750ef65f295bbecd685abf54e82caf297bdb61",
+   "ethereum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+   "ethereum:0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7",
+   "hyperevm:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+   "optimism:0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+  ],
+  "exact": {
+   "bsc:0x4268f2bfb23a7496504aa5ed1ee325248586299f": {
+    "key": "bsc:0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+    "name": "SK Hynix (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SKHYON",
+    "price": 133.57,
+    "address": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+    "addresses": {
+     "bsc": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+     "ethereum": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-10T04:23:18.224Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1048156,
+    "image": "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418",
+    "metrics": {
+     "volumeUsd1d": "922472.12",
+     "volumeUsd7d": "7762585.154"
+    },
+    "metadata": {},
+    "tokenId": "4dad67bd-c0ea-461d-bc82-271a2ed647b0",
+    "totalSupply": "7847.81013602636",
+    "circulatingSupply": "7847.81013602636",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xca750ef65f295bbecd685abf54e82caf297bdb61": {
+    "key": "bsc:0xca750ef65f295bbecd685abf54e82caf297bdb61",
+    "name": "SK Hynix (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SKHYB",
+    "price": 132.65,
+    "address": "0xca750ef65f295bbecd685abf54e82caf297bdb61",
+    "addresses": {
+     "bsc": "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-14T06:48:06.962Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19771570,
+    "image": "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947",
+    "metrics": {
+     "volumeUsd1d": "4546849.65",
+     "volumeUsd7d": "126464029.298"
+    },
+    "metadata": {},
+    "tokenId": "6c11349c-1fd7-49c7-a6e3-cebdf35fea0b",
+    "totalSupply": "149047.79696546998",
+    "circulatingSupply": "149047.79696546998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x58100046a4afcd4ee4fadbd4244f3f895a341c56": {
+    "key": "bsc:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "name": "SK hynix xStock",
+    "decimals": 18,
+    "symbol": "SKHYX",
+    "price": 132.03,
+    "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "addresses": {
+     "bsc": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.046Z",
+    "createdAt": "2026-07-09T07:21:32.004Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3961247.164553571,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/SKHYx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "sk-hynix-xstock"
+    },
+    "tokenId": "e74cf1b0-3ffc-4ea9-b246-61522632d1ac",
+    "totalSupply": "30002.629436897457",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7": {
+    "key": "ethereum:0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7",
+    "name": "SK Hynix (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SKHYON",
+    "price": 133.57,
+    "address": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7",
+    "addresses": {
+     "bsc": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+     "ethereum": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-10T04:23:18.224Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1048156,
+    "image": "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418",
+    "metrics": {
+     "volumeUsd1d": "925758.084",
+     "volumeUsd7d": "7062073.23"
+    },
+    "metadata": {},
+    "tokenId": "4dad67bd-c0ea-461d-bc82-271a2ed647b0",
+    "totalSupply": "7847.81013602636",
+    "circulatingSupply": "7847.81013602636",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56": {
+    "key": "ethereum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "name": "SK hynix xStock",
+    "decimals": 18,
+    "symbol": "SKHYX",
+    "price": 132.03,
+    "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "addresses": {
+     "ethereum": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:13.400Z",
+    "createdAt": "2026-07-09T07:19:44.739Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3961247.164553571,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/SKHYx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "sk-hynix-xstock"
+    },
+    "tokenId": "8eb47fdf-8fec-481f-af9c-1bc14a47c84f",
+    "totalSupply": "30002.629436897457",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SKHY": {
+    "total_items": 35,
+    "pages": 1,
+    "received": 35,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x19acfe831508230dd2acb42760fbfadcb828f2a4": {
+    "key": "bsc:0x19acfe831508230dd2acb42760fbfadcb828f2a4",
+    "name": "PancakeSwap V3 Nasf/SK Hynix 0.25%",
+    "decimals": 18,
+    "symbol": "NASF/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x19acfe831508230dd2acb42760fbfadcb828f2a4",
+    "addresses": {
+     "bsc": "0x19acfe831508230dd2acb42760fbfadcb828f2a4"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/56052/large/NASF-logo.png?1748160573",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.942Z",
+    "createdAt": "2026-09-09T09:50:45.117Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7891d5f6c0eba5485d2fca5cc83b4c89a770f9a6",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 870.165461010349,
+    "metrics": {
+     "apy": "4.624",
+     "baseApy": "4.624",
+     "volumeUsd1d": "44.153",
+     "volumeUsd7d": "320.972"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "f9874341-5491-4663-b1c1-8023c1de1df2",
+    "reserves": [
+     "223835.684052864604685359",
+     "1.204458616368270028"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4268f2bfb23a7496504aa5ed1ee325248586299f": {
+    "key": "bsc:0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+    "name": "SK Hynix (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SKHYON",
+    "price": 133.57,
+    "address": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+    "addresses": {
+     "bsc": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+     "ethereum": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-10T04:23:18.224Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1048156,
+    "image": "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418",
+    "metrics": {
+     "volumeUsd1d": "922472.12",
+     "volumeUsd7d": "7762585.154"
+    },
+    "metadata": {},
+    "tokenId": "4dad67bd-c0ea-461d-bc82-271a2ed647b0",
+    "totalSupply": "7847.81013602636",
+    "circulatingSupply": "7847.81013602636",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdef5be4f6e340c46f68d02398dbd99f0242dc237": {
+    "key": "bsc:0xdef5be4f6e340c46f68d02398dbd99f0242dc237",
+    "name": "Beefy CLM USDT-SKHYB",
+    "decimals": 18,
+    "symbol": "COWPANCAKEBSCUSDT-SKHYB",
+    "price": 137.52487461184455,
+    "address": "0xdef5be4f6e340c46f68d02398dbd99f0242dc237",
+    "addresses": {
+     "bsc": "0xdef5be4f6e340c46f68d02398dbd99f0242dc237"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.478Z",
+    "createdAt": "2026-10-13T13:14:32.105Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "poolAddress": "0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52",
+    "liquidity": 3724.955931256128,
+    "metrics": {
+     "apy": "277.192",
+     "baseApy": "277.192",
+     "volumeUsd1d": "479.608",
+     "volumeUsd7d": "3922.096"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.25",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-bsc-usdt-skhyb",
+     "providerId": "pancakeswap",
+     "tickSpacing": 50,
+     "managerAddress": "0xdef5be4f6e340c46f68d02398dbd99f0242dc237",
+     "strategyAddress": "0x68b17302edb79e65345ec4911874a99601a4b467",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xad757f2fc4339849056f987ddc8aa71a51ae89cc",
+     "depositTokenAddresses": [
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+     ]
+    },
+    "tokenId": "5f82ab8a-88ea-4251-b1be-cc54217022fc",
+    "totalSupply": "27.085688620110258509",
+    "reserves": [
+     "1389.887637542444843987",
+     "17.611736769508994123"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9933c3f01a99492f8071e4c53ec938c9b6a16b43031e0d25ef8abbab23c699ea": {
+    "key": "ethereum:0x9933c3f01a99492f8071e4c53ec938c9b6a16b43031e0d25ef8abbab23c699ea",
+    "name": "Uniswap V4 LP EGP/SKHYon",
+    "decimals": 18,
+    "symbol": "EGP/SKHYON",
+    "price": 9007199254740990,
+    "address": "0x9933c3f01a99492f8071e4c53ec938c9b6a16b43031e0d25ef8abbab23c699ea",
+    "addresses": {
+     "ethereum": "0x9933c3f01a99492f8071e4c53ec938c9b6a16b43031e0d25ef8abbab23c699ea"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.589Z",
+    "createdAt": "2026-10-14T06:54:32.568Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    ],
+    "liquidity": 20054.344492364384,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.79"
+    },
+    "tokenId": "9f75856f-a522-4154-b42c-a9d30fe4e801",
+    "reserves": [
+     "19999.999999999999999959",
+     "0.169325431868288947"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3e281461efb3d53ec20db207674373ed8ef3bba9": {
+    "key": "bsc:0x3e281461efb3d53ec20db207674373ed8ef3bba9",
+    "name": "Venus SK Hynix",
+    "decimals": 8,
+    "symbol": "VSKHYB",
+    "price": 132.6500036728035,
+    "address": "0x3e281461efb3d53ec20db207674373ed8ef3bba9",
+    "addresses": {
+     "bsc": "0x3e281461efb3d53ec20db207674373ed8ef3bba9"
+    },
+    "platform": "venus",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12677/large/download.jpg",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:32.243Z",
+    "createdAt": "2026-07-18T05:51:24.176Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 6197.7870956143715,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-42152.712"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ]
+    },
+    "tokenId": "2cb5ff64-df6f-404e-bee6-e6e92c4ee44b",
+    "totalSupply": "46.72285657",
+    "totalBorrow": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1f7c5a78222df7c5e352f366a3ba860077c3260c9331d7bb4312bf22dd7edce9": {
+    "key": "robinhood:0x1f7c5a78222df7c5e352f366a3ba860077c3260c9331d7bb4312bf22dd7edce9",
+    "name": "Uniswap V4 LP SKHY/SHROOM",
+    "decimals": 18,
+    "symbol": "SKHY/SHROOM",
+    "price": 9007199254740990,
+    "address": "0x1f7c5a78222df7c5e352f366a3ba860077c3260c9331d7bb4312bf22dd7edce9",
+    "addresses": {
+     "robinhood": "0x1f7c5a78222df7c5e352f366a3ba860077c3260c9331d7bb4312bf22dd7edce9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.432Z",
+    "createdAt": "2026-09-08T14:36:35.935Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 766.8279698441434,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "284de91a-33ba-40d9-9adf-77398c8ed0a0",
+    "reserves": [
+     "2.489561059498819759",
+     "89911.951474357668086639"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x84cab63bc87912e71ad199ff14a0ba45de68fef8": {
+    "key": "robinhood:0x84cab63bc87912e71ad199ff14a0ba45de68fef8",
+    "name": "SK hynix Inc. American Depositary Shares • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SKHY",
+    "price": 133.48805599175867,
+    "address": "0x84cab63bc87912e71ad199ff14a0ba45de68fef8",
+    "addresses": {
+     "robinhood": "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x84cab63bc87912e71ad199ff14a0ba45de68fef8.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-25T19:23:52.755Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x84cab63bc87912e71ad199ff14a0ba45de68fef8",
+    "liquidity": 1681859.1709449794,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1002871.593"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000002b98fc3881db4479b3827d5ca058d31a",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000060353549285624",
+     "currentMultiplier": "1.000060353549285624",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "2694919e-ddd6-4f31-aa4e-9470186fa371",
+    "totalSupply": "12599.32327615",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa05bd3d917507ed0c018665cf39f32c9ed8d3252": {
+    "key": "bsc:0xa05bd3d917507ed0c018665cf39f32c9ed8d3252",
+    "name": "PancakeSwap V3 Wrapped BNB/SK Hynix 0.25%",
+    "decimals": 18,
+    "symbol": "WBNB/SKHYB",
+    "price": 9007199254740990,
+    "address": "0xa05bd3d917507ed0c018665cf39f32c9ed8d3252",
+    "addresses": {
+     "bsc": "0xa05bd3d917507ed0c018665cf39f32c9ed8d3252"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.464Z",
+    "createdAt": "2026-08-01T05:07:01.849Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 28626.790051055923,
+    "metrics": {
+     "apy": "16.962",
+     "baseApy": "16.962",
+     "volumeUsd1d": "5320.846",
+     "volumeUsd7d": "846874.621"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "552e0504-a3c6-4754-8717-2d4f44611922",
+    "reserves": [
+     "2.611735541264607162",
+     "201.920142151877758041"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xeba0eab01b9a2d991d5a71ff087047f78432e041608d1deb553a098f181f6d93": {
+    "key": "robinhood:0xeba0eab01b9a2d991d5a71ff087047f78432e041608d1deb553a098f181f6d93",
+    "name": "Uniswap V4 LP ETH/SKHY",
+    "decimals": 18,
+    "symbol": "ETH/SKHY",
+    "price": 9007199254740990,
+    "address": "0xeba0eab01b9a2d991d5a71ff087047f78432e041608d1deb553a098f181f6d93",
+    "addresses": {
+     "robinhood": "0xeba0eab01b9a2d991d5a71ff087047f78432e041608d1deb553a098f181f6d93"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.113Z",
+    "createdAt": "2026-10-08T07:25:09.755Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    ],
+    "liquidity": 505.70199509949833,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 7000,
+     "feePercentage": "70"
+    },
+    "tokenId": "c594e309-0ff4-4a79-859d-91ca4a389b4b",
+    "reserves": [
+     "0.104110067028342647",
+     "1.966108089895248123"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x994db79a9e80b73d726171d0e834dfe6fdce7987539dcf5cceef7b2b95c5fd95": {
+    "key": "robinhood:0x994db79a9e80b73d726171d0e834dfe6fdce7987539dcf5cceef7b2b95c5fd95",
+    "name": "Uniswap V4 LP USDG/SKHY",
+    "decimals": 18,
+    "symbol": "USDG/SKHY",
+    "price": 9007199254740990,
+    "address": "0x994db79a9e80b73d726171d0e834dfe6fdce7987539dcf5cceef7b2b95c5fd95",
+    "addresses": {
+     "robinhood": "0x994db79a9e80b73d726171d0e834dfe6fdce7987539dcf5cceef7b2b95c5fd95"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.113Z",
+    "createdAt": "2026-08-28T18:13:18.684Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    ],
+    "liquidity": 63779.02491513731,
+    "metrics": {
+     "apy": "98.275",
+     "baseApy": "98.275",
+     "volumeUsd1d": "17394.944",
+     "volumeUsd7d": "345706.847"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 89,
+     "feePercentage": "0.9872"
+    },
+    "tokenId": "f4f8631f-d180-4b7b-91fc-0e174a00aae0",
+    "reserves": [
+     "10914.850474",
+     "396.021756766021490354"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x759409935f8b17b6588b1fbd81b19f400709bcb3": {
+    "key": "base:0x759409935f8b17b6588b1fbd81b19f400709bcb3",
+    "name": "Hydrex USD Coin/Wrapped SK hynix Inc. ADR ST0x",
+    "decimals": 18,
+    "symbol": "USDC/WTSKHY",
+    "price": 9007199254740990,
+    "address": "0x759409935f8b17b6588b1fbd81b19f400709bcb3",
+    "addresses": {
+     "base": "0x759409935f8b17b6588b1fbd81b19f400709bcb3"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102178289/large/SKHY.png?1789234755"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.589Z",
+    "createdAt": "2026-09-12T20:31:07.533Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9"
+    ],
+    "liquidity": 814.9515226272672,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "83.212"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "4631428c-d1b0-487d-83bc-4477d0ed5b9d",
+    "reserves": [
+     "407.904688",
+     "2.966703092441851006"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3657a7399dedb515850d1c843b45b3be951868a7ce2a1c9dc86381e1caab00d0": {
+    "key": "bsc:0x3657a7399dedb515850d1c843b45b3be951868a7ce2a1c9dc86381e1caab00d0",
+    "name": "PancakeSwap Infinity LP FLOCK/SKHYB",
+    "decimals": 18,
+    "symbol": "FLOCK/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x3657a7399dedb515850d1c843b45b3be951868a7ce2a1c9dc86381e1caab00d0",
+    "addresses": {
+     "bsc": "0x3657a7399dedb515850d1c843b45b3be951868a7ce2a1c9dc86381e1caab00d0"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/53178/large/FLock_Token_Logo.png?1735561398",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:21.596Z",
+    "createdAt": "2026-08-19T14:26:25.437Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 9559.910981178165,
+    "metrics": {
+     "apy": "10.822",
+     "baseApy": "10.822",
+     "volumeUsd1d": "2836.948",
+     "volumeUsd7d": "46960.28"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0999"
+    },
+    "tokenId": "ad557cbb-8b84-497f-9678-a14e93b3caf1",
+    "reserves": [
+     "4360.503251250206078195",
+     "70.696704367256790311"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x67288afa1273b167f1a52a5c643788988228c89ddd7f940f6110c6157710ba13": {
+    "key": "bsc:0x67288afa1273b167f1a52a5c643788988228c89ddd7f940f6110c6157710ba13",
+    "name": "Uniswap V4 LP USDT/SKHYB",
+    "decimals": 18,
+    "symbol": "USDT/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x67288afa1273b167f1a52a5c643788988228c89ddd7f940f6110c6157710ba13",
+    "addresses": {
+     "bsc": "0x67288afa1273b167f1a52a5c643788988228c89ddd7f940f6110c6157710ba13"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.031Z",
+    "createdAt": "2026-10-03T04:52:30.075Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 99134.02800119082,
+    "metrics": {
+     "apy": "36.919",
+     "baseApy": "36.919",
+     "volumeUsd1d": "84039.689",
+     "volumeUsd7d": "5331998.78"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10,
+     "feePercentage": "0.1193"
+    },
+    "tokenId": "fb2ae2e3-600a-40f3-a221-f59accd45050",
+    "reserves": [
+     "21933.301532557913330173",
+     "582.122399619128104848"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x44435eec81ee79a5fe6692f92677c0a872610f50b96f8c2cac33e96e1bd377c8": {
+    "key": "bsc:0x44435eec81ee79a5fe6692f92677c0a872610f50b96f8c2cac33e96e1bd377c8",
+    "name": "Uniswap V4 LP USDT/SKHYB",
+    "decimals": 18,
+    "symbol": "USDT/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x44435eec81ee79a5fe6692f92677c0a872610f50b96f8c2cac33e96e1bd377c8",
+    "addresses": {
+     "bsc": "0x44435eec81ee79a5fe6692f92677c0a872610f50b96f8c2cac33e96e1bd377c8"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.152Z",
+    "createdAt": "2026-10-03T16:39:36.517Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 854.1088974559727,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0505"
+    },
+    "tokenId": "036f132a-4e2a-48ae-88f1-2320b3dafa51",
+    "reserves": [
+     "508.091945323918637466",
+     "2.611605901180981241"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52": {
+    "key": "bsc:0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52",
+    "name": "PancakeSwap V3 Tether USD/SK Hynix 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/SKHYB",
+    "price": 9007199254740990,
+    "address": "0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52",
+    "addresses": {
+     "bsc": "0xd7d30f434b12f7ed9b0ae11ff1c754745a10ad52"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "createdAt": "2026-07-14T06:50:18.876Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 853303.1058600117,
+    "metrics": {
+     "apy": "65.783",
+     "baseApy": "65.783",
+     "volumeUsd1d": "615078.023",
+     "volumeUsd7d": "14311489.25"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "00d020b3-c0b5-4873-827f-37c7d309b480",
+    "reserves": [
+     "144062.473631775274543221",
+     "5347.588473100831858451"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x787446ebc6600802eae6709c492a3d61f0353a67f95368aafe092889ebff7310": {
+    "key": "bsc:0x787446ebc6600802eae6709c492a3d61f0353a67f95368aafe092889ebff7310",
+    "name": "Uniswap V4 LP QQQB/SKHYB",
+    "decimals": 18,
+    "symbol": "QQQB/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x787446ebc6600802eae6709c492a3d61f0353a67f95368aafe092889ebff7310",
+    "addresses": {
+     "bsc": "0x787446ebc6600802eae6709c492a3d61f0353a67f95368aafe092889ebff7310"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174259/large/bstocks_qqqb.png?1782837726",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.061Z",
+    "createdAt": "2026-10-03T08:05:21.708Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x205812cdbed920aff76c6580abd681a46d11efc7",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 4550.13241411938,
+    "metrics": {
+     "apy": "2.669",
+     "baseApy": "2.669",
+     "volumeUsd1d": "278.841",
+     "volumeUsd7d": "11927.409"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10,
+     "feePercentage": "0.1193"
+    },
+    "tokenId": "2ace2138-354d-44c9-8a4a-2b60aace3869",
+    "reserves": [
+     "0.040730912994218685",
+     "34.085343281120430275"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x054acef38eedccfb51fa35f9c6e93bc62348cd73142fcd9fb0d73a142119c444": {
+    "key": "robinhood:0x054acef38eedccfb51fa35f9c6e93bc62348cd73142fcd9fb0d73a142119c444",
+    "name": "Uniswap V4 LP ETH/SKHY",
+    "decimals": 18,
+    "symbol": "ETH/SKHY",
+    "price": 9007199254740990,
+    "address": "0x054acef38eedccfb51fa35f9c6e93bc62348cd73142fcd9fb0d73a142119c444",
+    "addresses": {
+     "robinhood": "0x054acef38eedccfb51fa35f9c6e93bc62348cd73142fcd9fb0d73a142119c444"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.035Z",
+    "createdAt": "2026-08-04T16:55:42.458Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    ],
+    "liquidity": 4223.69823790359,
+    "metrics": {
+     "apy": "31.24",
+     "baseApy": "31.24",
+     "volumeUsd1d": "70.951",
+     "volumeUsd7d": "8605.299"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "44079721-1362-4750-80a4-1f67fab533b3",
+    "reserves": [
+     "0.315714267746761267",
+     "26.115005547436670693"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xca750ef65f295bbecd685abf54e82caf297bdb61": {
+    "key": "bsc:0xca750ef65f295bbecd685abf54e82caf297bdb61",
+    "name": "SK Hynix (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SKHYB",
+    "price": 132.65,
+    "address": "0xca750ef65f295bbecd685abf54e82caf297bdb61",
+    "addresses": {
+     "bsc": "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-14T06:48:06.962Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19771570,
+    "image": "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947",
+    "metrics": {
+     "volumeUsd1d": "4546849.65",
+     "volumeUsd7d": "126464029.298"
+    },
+    "metadata": {},
+    "tokenId": "6c11349c-1fd7-49c7-a6e3-cebdf35fea0b",
+    "totalSupply": "149047.79696546998",
+    "circulatingSupply": "149047.79696546998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x8c61758c719780d62d17470ec94362433bdfd8d5": {
+    "key": "arbitrum:0x8c61758c719780d62d17470ec94362433bdfd8d5",
+    "name": "SK hynix rStock",
+    "decimals": 18,
+    "symbol": "RSKHY",
+    "price": 136.8,
+    "address": "0x8c61758c719780d62d17470ec94362433bdfd8d5",
+    "addresses": {
+     "arbitrum": "0x8c61758c719780d62d17470ec94362433bdfd8d5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1084545,
+    "image": "https://coin-images.coingecko.com/coins/images/102177573/large/8ee15df859cb751cfbd539fc607fbc66.png?1789118361",
+    "metrics": {
+     "volumeUsd1d": "0.008",
+     "volumeUsd7d": "2353419.77"
+    },
+    "metadata": {},
+    "tokenId": "1b48ae74-b89f-44d4-afde-05e12a27014d",
+    "totalSupply": "7927.877946955",
+    "circulatingSupply": "7927.877946955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x01e488c56bfa6ecf1efffb19b179fb5ff4261fafb2972c763ac16e0d858ee6eb": {
+    "key": "bsc:0x01e488c56bfa6ecf1efffb19b179fb5ff4261fafb2972c763ac16e0d858ee6eb",
+    "name": "Uniswap V4 LP USDT/SKHYB",
+    "decimals": 18,
+    "symbol": "USDT/SKHYB",
+    "price": 9007199254740990,
+    "address": "0x01e488c56bfa6ecf1efffb19b179fb5ff4261fafb2972c763ac16e0d858ee6eb",
+    "addresses": {
+     "bsc": "0x01e488c56bfa6ecf1efffb19b179fb5ff4261fafb2972c763ac16e0d858ee6eb"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.232Z",
+    "createdAt": "2026-07-16T12:11:38.603Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 977.893576669071,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "77"
+    },
+    "tokenId": "d6a85945-5991-4fc4-b065-339e2b8d2636",
+    "reserves": [
+     "543.399614996641142677",
+     "3.278817958234505384"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9": {
+    "key": "base:0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9",
+    "name": "SK hynix (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTSKHY",
+    "price": 137.23,
+    "address": "0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9",
+    "addresses": {
+     "base": "0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-12T17:45:31.518Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17318.93,
+    "image": "https://coin-images.coingecko.com/coins/images/102178289/large/SKHY.png?1789234755",
+    "metrics": {
+     "volumeUsd1d": "1.292",
+     "volumeUsd7d": "21532.809"
+    },
+    "metadata": {},
+    "tokenId": "bf31c7f6-59f0-4caf-bd68-36922f31d59c",
+    "totalSupply": "126.20692022866388",
+    "circulatingSupply": "126.20692022866388",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7313b413727ed86b01cce08c2e2f9e0a8462f5c0": {
+    "key": "base:0x7313b413727ed86b01cce08c2e2f9e0a8462f5c0",
+    "name": "Aerodrome SlipStream USD Coin/Wrapped SK hynix Inc. ADR ST0x 0.3%",
+    "decimals": 18,
+    "symbol": "USDC/WTSKHY",
+    "price": 9007199254740990,
+    "address": "0x7313b413727ed86b01cce08c2e2f9e0a8462f5c0",
+    "addresses": {
+     "base": "0x7313b413727ed86b01cce08c2e2f9e0a8462f5c0"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102178289/large/SKHY.png?1789234755"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.296Z",
+    "createdAt": "2026-09-12T19:02:14.608Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xfcd17ac4c4bf6a72c93018096f3fc09e66573ff9"
+    ],
+    "liquidity": 12839.690882087001,
+    "metrics": {
+     "apy": "0.011",
+     "baseApy": "0.011",
+     "rewardApy": "0",
+     "volumeUsd1d": "1.292",
+     "volumeUsd7d": "20631.839"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "5314645a-3df6-43b4-b7bd-b57d4cdedd47",
+    "reserves": [
+     "4277.771836",
+     "62.396657602487194067"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x58100046a4afcd4ee4fadbd4244f3f895a341c56": {
+    "key": "bsc:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "name": "SK hynix xStock",
+    "decimals": 18,
+    "symbol": "SKHYX",
+    "price": 132.03,
+    "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "addresses": {
+     "bsc": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.046Z",
+    "createdAt": "2026-07-09T07:21:32.004Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3961247.164553571,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/SKHYx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "sk-hynix-xstock"
+    },
+    "tokenId": "e74cf1b0-3ffc-4ea9-b246-61522632d1ac",
+    "totalSupply": "30002.629436897457",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5f2a5025feb93a4c44da4e3b37e4fd3fb0ab5171": {
+    "key": "robinhood:0x5f2a5025feb93a4c44da4e3b37e4fd3fb0ab5171",
+    "name": "Uniswap V3 Global Dollar/SK hynix Inc. American Depositary Shares  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/SKHY",
+    "price": 9007199254740990,
+    "address": "0x5f2a5025feb93a4c44da4e3b37e4fd3fb0ab5171",
+    "addresses": {
+     "robinhood": "0x5f2a5025feb93a4c44da4e3b37e4fd3fb0ab5171"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.022Z",
+    "createdAt": "2026-09-08T09:33:38.867Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    ],
+    "liquidity": 52657.034320376,
+    "metrics": {
+     "apy": "164.859",
+     "baseApy": "164.859",
+     "volumeUsd1d": "79277.535",
+     "volumeUsd7d": "917231.271"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8dd5e7ec-02a2-47cb-9768-4c3f5b263d8d",
+    "reserves": [
+     "10541.133374",
+     "315.503140962485555606"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc7a3d7578cbffec97c2b092f47a298812697a91660b8403f4bd013cd11e8bb68": {
+    "key": "bsc:0xc7a3d7578cbffec97c2b092f47a298812697a91660b8403f4bd013cd11e8bb68",
+    "name": "PancakeSwap Infinity LP FLOCK/SKHYB",
+    "decimals": 18,
+    "symbol": "FLOCK/SKHYB",
+    "price": 9007199254740990,
+    "address": "0xc7a3d7578cbffec97c2b092f47a298812697a91660b8403f4bd013cd11e8bb68",
+    "addresses": {
+     "bsc": "0xc7a3d7578cbffec97c2b092f47a298812697a91660b8403f4bd013cd11e8bb68"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/53178/large/FLock_Token_Logo.png?1735561398",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.800Z",
+    "createdAt": "2026-09-05T01:46:13.229Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 2820.9936620936155,
+    "metrics": {
+     "apy": "16.48",
+     "baseApy": "16.48",
+     "volumeUsd1d": "425.183",
+     "volumeUsd7d": "6513.508"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.2999"
+    },
+    "tokenId": "a1c2539d-6637-4f97-9c91-2e2181d47a50",
+    "reserves": [
+     "23549.303561125741889977",
+     "13.856937336410645074"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe7f7473ba867b7aa6a7dfd255a82ed840e1c0f7a": {
+    "key": "bsc:0xe7f7473ba867b7aa6a7dfd255a82ed840e1c0f7a",
+    "name": "PancakeSwap LP WBNB/SKHYB",
+    "decimals": 18,
+    "symbol": "WBNB/SKHYB",
+    "price": 727.001067524203,
+    "address": "0xe7f7473ba867b7aa6a7dfd255a82ed840e1c0f7a",
+    "addresses": {
+     "bsc": "0xe7f7473ba867b7aa6a7dfd255a82ed840e1c0f7a"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.974Z",
+    "createdAt": "2026-10-13T05:41:03.360Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 14000.048377504167,
+    "metrics": {
+     "apy": "11.909",
+     "baseApy": "11.909",
+     "volumeUsd1d": "1828.007",
+     "volumeUsd7d": "39197.877"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "0b233d9a-603c-42dd-8aa2-0208d3f38ba5",
+    "totalSupply": "19.257259724777614928",
+    "reserves": [
+     "9.902122269957850967",
+     "52.890934936149220859"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7": {
+    "key": "ethereum:0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7",
+    "name": "SK Hynix (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "SKHYON",
+    "price": 133.57,
+    "address": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7",
+    "addresses": {
+     "bsc": "0x4268f2bfb23a7496504aa5ed1ee325248586299f",
+     "ethereum": "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-10T04:23:18.224Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1048156,
+    "image": "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418",
+    "metrics": {
+     "volumeUsd1d": "925758.084",
+     "volumeUsd7d": "7062073.23"
+    },
+    "metadata": {},
+    "tokenId": "4dad67bd-c0ea-461d-bc82-271a2ed647b0",
+    "totalSupply": "7847.81013602636",
+    "circulatingSupply": "7847.81013602636",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5556bf691c89bd6c1168653fccf477966dddeccee8814e21092ae0d459d4140b": {
+    "key": "ethereum:0x5556bf691c89bd6c1168653fccf477966dddeccee8814e21092ae0d459d4140b",
+    "name": "Uniswap V4 LP SKHYx/SKHYon",
+    "decimals": 18,
+    "symbol": "SKHYX/SKHYON",
+    "price": 9007199254740990,
+    "address": "0x5556bf691c89bd6c1168653fccf477966dddeccee8814e21092ae0d459d4140b",
+    "addresses": {
+     "ethereum": "0x5556bf691c89bd6c1168653fccf477966dddeccee8814e21092ae0d459d4140b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.936Z",
+    "createdAt": "2026-10-16T14:20:02.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+     "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    ],
+    "liquidity": 9219.443168748436,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0375"
+    },
+    "tokenId": "a390ab8b-0673-4d9a-a78c-455b39bc02be",
+    "reserves": [
+     "37.190067283724957827",
+     "32.262024296460502573"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56": {
+    "key": "ethereum:0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "name": "SK hynix xStock",
+    "decimals": 18,
+    "symbol": "SKHYX",
+    "price": 132.03,
+    "address": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+    "addresses": {
+     "ethereum": "0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:13.400Z",
+    "createdAt": "2026-07-09T07:19:44.739Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3961247.164553571,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/SKHYx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "sk-hynix-xstock"
+    },
+    "tokenId": "8eb47fdf-8fec-481f-af9c-1bc14a47c84f",
+    "totalSupply": "30002.629436897457",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x60e7b5a09c723525eefd5a02a1116e9bfe79dff1": {
+    "key": "robinhood:0x60e7b5a09c723525eefd5a02a1116e9bfe79dff1",
+    "name": "Uniswap V3 WETH/SK hynix Inc. American Depositary Shares  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "WETH/SKHY",
+    "price": 9007199254740990,
+    "address": "0x60e7b5a09c723525eefd5a02a1116e9bfe79dff1",
+    "addresses": {
+     "robinhood": "0x60e7b5a09c723525eefd5a02a1116e9bfe79dff1"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.026Z",
+    "createdAt": "2026-09-11T20:00:36.684Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x84cab63bc87912e71ad199ff14a0ba45de68fef8"
+    ],
+    "liquidity": 12066.144183998851,
+    "metrics": {
+     "apy": "2.247",
+     "baseApy": "2.247",
+     "volumeUsd1d": "74.279",
+     "volumeUsd7d": "11212.583"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "841c8b9e-92f3-43c6-b534-67b4ecc6cc78",
+    "reserves": [
+     "0.05334500583235427",
+     "89.457240818275744486"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xea533859935d10e42ff6ecc58b841c2bc6fbcd2ca345466f82c400e328d19301": {
+    "key": "bsc:0xea533859935d10e42ff6ecc58b841c2bc6fbcd2ca345466f82c400e328d19301",
+    "name": "Uniswap V4 LP NVDAB/SKHYB",
+    "decimals": 18,
+    "symbol": "NVDAB/SKHYB",
+    "price": 9007199254740990,
+    "address": "0xea533859935d10e42ff6ecc58b841c2bc6fbcd2ca345466f82c400e328d19301",
+    "addresses": {
+     "bsc": "0xea533859935d10e42ff6ecc58b841c2bc6fbcd2ca345466f82c400e328d19301"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102173743/large/nvidia-tokenized-bStocks-nvdab.png?1781196662",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.474Z",
+    "createdAt": "2026-09-08T05:01:34.597Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x02fca66c1d1afb4e2a7884261eb00f63598a7436",
+     "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+    ],
+    "liquidity": 3059.393333612602,
+    "metrics": {
+     "apy": "2.758",
+     "baseApy": "2.758",
+     "volumeUsd1d": "99.165",
+     "volumeUsd7d": "842.734"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2331"
+    },
+    "tokenId": "8fe892ce-ab44-4920-ab45-a5b3ded4b45e",
+    "reserves": [
+     "6.20690488101485171",
+     "13.166761268218247212"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4156d70a93fb8fbd3b9c11d00e3c8c090836aac3aaa7e1a23b1d2957b2eafd76": {
+    "key": "ethereum:0x4156d70a93fb8fbd3b9c11d00e3c8c090836aac3aaa7e1a23b1d2957b2eafd76",
+    "name": "Uniswap V4 LP USDT/SKHYx",
+    "decimals": 18,
+    "symbol": "USDT/SKHYX",
+    "price": 9007199254740990,
+    "address": "0x4156d70a93fb8fbd3b9c11d00e3c8c090836aac3aaa7e1a23b1d2957b2eafd76",
+    "addresses": {
+     "ethereum": "0x4156d70a93fb8fbd3b9c11d00e3c8c090836aac3aaa7e1a23b1d2957b2eafd76"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.900Z",
+    "createdAt": "2026-10-18T18:58:36.251Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x58100046a4afcd4ee4fadbd4244f3f895a341c56"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "b99dc678-2a60-4399-bdf1-b2a0ac10acd6",
+    "reserves": [
+     "3999.999999999999999992",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xad757f2fc4339849056f987ddc8aa71a51ae89cc": {
+    "key": "bsc:0xad757f2fc4339849056f987ddc8aa71a51ae89cc",
+    "name": "Beefy CLM USDT-SKHYB Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWPANCAKEBSCUSDT-SKHYB",
+    "price": 137.52487461184455,
+    "address": "0xad757f2fc4339849056f987ddc8aa71a51ae89cc",
+    "addresses": {
+     "bsc": "0xad757f2fc4339849056f987ddc8aa71a51ae89cc"
+    },
+    "platform": "beefy-clm",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174549/large/skhynix.png?1784001947"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.478Z",
+    "createdAt": "2026-10-13T13:14:32.105Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdef5be4f6e340c46f68d02398dbd99f0242dc237"
+    ],
+    "poolAddress": "0xdef5be4f6e340c46f68d02398dbd99f0242dc237",
+    "liquidity": 3724.9559312561278,
+    "metrics": {
+     "apy": "277.192",
+     "baseApy": "277.192",
+     "volumeUsd1d": "479.608",
+     "volumeUsd7d": "3922.096"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.25",
+     "interface": "ERC20",
+     "beefyClmId": "pancake-cow-bsc-usdt-skhyb",
+     "providerId": "pancakeswap",
+     "tickSpacing": 50,
+     "managerAddress": "0xdef5be4f6e340c46f68d02398dbd99f0242dc237",
+     "strategyAddress": "0x68b17302edb79e65345ec4911874a99601a4b467",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xad757f2fc4339849056f987ddc8aa71a51ae89cc",
+     "depositTokenAddresses": [
+      "0x55d398326f99059ff775485246999027b3197955",
+      "0xca750ef65f295bbecd685abf54e82caf297bdb61"
+     ]
+    },
+    "tokenId": "3da12dfe-d627-4691-8700-1ce47fd17337",
+    "totalSupply": "27.085688620110257509",
+    "reserves": [
+     "27.085688620110257509"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x580208d4e2c0d7e59d26a5525e32316abe40cfa7b54662520eb75056e51ce274": {
+    "key": "ethereum:0x580208d4e2c0d7e59d26a5525e32316abe40cfa7b54662520eb75056e51ce274",
+    "name": "Uniswap V4 LP SKHYx/USDCc",
+    "decimals": 18,
+    "symbol": "SKHYX/USDCC",
+    "price": 9007199254740990,
+    "address": "0x580208d4e2c0d7e59d26a5525e32316abe40cfa7b54662520eb75056e51ce274",
+    "addresses": {
+     "ethereum": "0x580208d4e2c0d7e59d26a5525e32316abe40cfa7b54662520eb75056e51ce274"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.704Z",
+    "createdAt": "2026-10-09T07:23:50.790Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x58100046a4afcd4ee4fadbd4244f3f895a341c56",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 2999.2151372049475,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.9504"
+    },
+    "tokenId": "5342e9b9-4372-4cf4-945d-52104d3a1dcb",
+    "reserves": [
+     "0",
+     "2999.999999999999999853"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf5773046c1d71c654efbc1b1321d9a2b96504b62453e48d04291c6882d34495b": {
+    "key": "ethereum:0xf5773046c1d71c654efbc1b1321d9a2b96504b62453e48d04291c6882d34495b",
+    "name": "Uniswap V4 LP wUSDC/SKHYon",
+    "decimals": 18,
+    "symbol": "WUSDC/SKHYON",
+    "price": 9007199254740990,
+    "address": "0xf5773046c1d71c654efbc1b1321d9a2b96504b62453e48d04291c6882d34495b",
+    "addresses": {
+     "ethereum": "0xf5773046c1d71c654efbc1b1321d9a2b96504b62453e48d04291c6882d34495b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174413/large/sk_hynix.png?1783648418"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.066Z",
+    "createdAt": "2026-09-28T10:37:34.483Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xc0fe36f4ffbdf1b38e192215073590a68f9a2af7"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1c75758e-cf22-4037-946a-2185b51f39ec",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

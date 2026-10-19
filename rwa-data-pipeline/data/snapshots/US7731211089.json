@@ -1,0 +1,1031 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US7731211089",
+ "ticker": "RKLB",
+ "name": "Rocket Lab",
+ "isin": "US7731211089",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:47Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Rocket Lab Corporation",
+   "symbol": "RKLB",
+   "slug": "rocket-lab-corporation",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 49.73749533275546,
+     "tokenized_market_cap": 9391905.955509482,
+     "tokenized_volume_24h": 1742020.35537541,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 297,
+   "asset_type": "stock",
+   "rwa_rank": 433,
+   "has_tokens": true,
+   "average_tokenized_price": 49.73749533275546,
+   "tokenized_market_cap": 9391905.955509482,
+   "tokenized_volume_24h": 1742020.35537541,
+   "last_updated": "2026-10-18T20:13:39.346Z",
+   "tokens": [
+    {
+     "symbol": "rRKLB",
+     "name": "Rocket Lab Tokenized Stock (Reality)",
+     "price": 50.89648313071614,
+     "crypto_id": 40666,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 916735.32,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "RKLB",
+     "name": "Rocket Lab Corporation Tokenized Stock (Robinhood)",
+     "price": 53.60777480856723,
+     "crypto_id": 40690,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 58554.5,
+     "volume_24h": 16.21602707
+    },
+    {
+     "symbol": "RKLBB",
+     "name": "Rocket Lab Tokenized bStocks",
+     "price": 49.734389969292806,
+     "crypto_id": 40849,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 8416096.74,
+     "volume_24h": 1739542.98662169
+    },
+    {
+     "symbol": "wRKLBx",
+     "name": "Wrapped Rocket Lab Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41489,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "RKLBc",
+     "name": "Rocket Lab Corporation Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42587,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "RKLB",
+     "market_url": "https://www.binance.com/en/stocks/EQ_RKLB"
+    }
+   ]
+  },
+  "info": {
+   "40666": {
+    "id": 40666,
+    "symbol": "rRKLB",
+    "name": "Rocket Lab Tokenized Stock (Reality)",
+    "slug": "rocket-lab-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40666.png",
+    "date_added": "2026-07-02T07:39:29.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xc18cd51b629960a9c73405eead4939f5b529f43c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc18cd51b629960a9c73405eead4939f5b529f43c",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40690": {
+    "id": 40690,
+    "symbol": "RKLB",
+    "name": "Rocket Lab Corporation Tokenized Stock (Robinhood)",
+    "slug": "rocket-lab-corporation-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40690.png",
+    "date_added": "2026-08-04T07:31:27.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x3b14C39E89D60D627b42a1A4CA45b5bb45Fc12e2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3b14C39E89D60D627b42a1A4CA45b5bb45Fc12e2",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40849": {
+    "id": 40849,
+    "symbol": "RKLBB",
+    "name": "Rocket Lab Tokenized bStocks",
+    "slug": "rocket-lab-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40849.png",
+    "date_added": "2026-07-13T10:44:19.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xc8da12cbcce7c45180692a6420b0076e03a5179a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41489": {
+    "id": 41489,
+    "symbol": "wRKLBx",
+    "name": "Wrapped Rocket Lab Tokenized Stock (xStock)",
+    "slug": "wrapped-rocket-lab-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41489.png",
+    "date_added": "2026-08-11T16:24:21.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x5AA45CF9d8c8555c9a76cf0207519501C227a235"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5AA45CF9d8c8555c9a76cf0207519501C227a235",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42587": {
+    "id": 42587,
+    "symbol": "RKLBc",
+    "name": "Rocket Lab Corporation Tokenized Stock (Coinbase)",
+    "slug": "rocket-lab-corporation-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42587.png",
+    "date_added": "2026-10-14T03:36:45.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000e8e50cbbb9a3861a3c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000e8e50cbbb9a3861a3c",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xc18cd51b629960a9c73405eead4939f5b529f43c",
+   "base:0xb200000000000000000000e8e50cbbb9a3861a3c",
+   "bsc:0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+   "robinhood:0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2"
+  ],
+  "exact": {
+   "robinhood:0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2": {
+    "key": "robinhood:0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "name": "Rocket Lab Corporation • Robinhood Token",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 50.86,
+    "address": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "addresses": {
+     "robinhood": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "liquidity": 55553.1690578,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "16640.848"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000007cacd0cd4c0547d480e89459e648592b",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "b12f01a0-5026-4b70-8ac2-6dac1e703c86",
+    "totalSupply": "1092.27623",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc8da12cbcce7c45180692a6420b0076e03a5179a": {
+    "key": "bsc:0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+    "name": "Rocket Lab (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RKLBB",
+    "price": 49.76,
+    "address": "0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+    "addresses": {
+     "bsc": "0xc8da12cbcce7c45180692a6420b0076e03a5179a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8421760,
+    "image": "https://coin-images.coingecko.com/coins/images/102174593/large/rklbb-bstocks.png?1784151033",
+    "metrics": {
+     "volumeUsd1d": "896262.798",
+     "volumeUsd7d": "6920414.324"
+    },
+    "metadata": {},
+    "tokenId": "b7961a04-c0ae-4e71-ac9d-55d067b29c1f",
+    "totalSupply": "169220.86997777998",
+    "circulatingSupply": "169220.86997777998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc18cd51b629960a9c73405eead4939f5b529f43c": {
+    "key": "arbitrum:0xc18cd51b629960a9c73405eead4939f5b529f43c",
+    "name": "Rocket Lab rStock",
+    "decimals": 18,
+    "symbol": "RRKLB",
+    "price": 50.91,
+    "address": "0xc18cd51b629960a9c73405eead4939f5b529f43c",
+    "addresses": {
+     "arbitrum": "0xc18cd51b629960a9c73405eead4939f5b529f43c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 917225,
+    "image": "https://coin-images.coingecko.com/coins/images/102176993/large/d4182ea28d30f8b7e117ad967d7d92ee.png?1789116310",
+    "metrics": {
+     "volumeUsd1d": "136.935",
+     "volumeUsd7d": "975021.514"
+    },
+    "metadata": {},
+    "tokenId": "46a3ad76-d45e-4bf7-8f1f-354d7991c93f",
+    "totalSupply": "18015.528356605",
+    "circulatingSupply": "18015.528356605",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "RKLB": {
+    "total_items": 16,
+    "pages": 1,
+    "received": 16,
+    "complete": true
+   }
+  },
+  "records": {
+   "avalanche:0x421ff0997aa7e403715611dde8f977915beafdee": {
+    "key": "avalanche:0x421ff0997aa7e403715611dde8f977915beafdee",
+    "name": "Dinari RKLB",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 51.01,
+    "address": "0x421ff0997aa7e403715611dde8f977915beafdee",
+    "addresses": {
+     "ethereum": "0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+     "base": "0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+     "arbitrum": "0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+     "avalanche": "0x421ff0997aa7e403715611dde8f977915beafdee"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19090.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102174979/large/dinari-logo-green-with-margin.png?1785402776",
+    "metrics": {
+     "volumeUsd1d": "1543.117",
+     "volumeUsd7d": "17659.64"
+    },
+    "metadata": {},
+    "tokenId": "5bf82181-1eb3-49d3-9899-920482eebf54",
+    "totalSupply": "374.23857143940774",
+    "circulatingSupply": "374.23857143940774",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x07b06053a723cc8c02bf10f6a7e9cfb7bb819c264455b8197913179384829f07": {
+    "key": "ethereum:0x07b06053a723cc8c02bf10f6a7e9cfb7bb819c264455b8197913179384829f07",
+    "name": "Uniswap V4 LP wUSDC/RKLBon",
+    "decimals": 18,
+    "symbol": "WUSDC/RKLBON",
+    "price": 9007199254740990,
+    "address": "0x07b06053a723cc8c02bf10f6a7e9cfb7bb819c264455b8197913179384829f07",
+    "addresses": {
+     "ethereum": "0x07b06053a723cc8c02bf10f6a7e9cfb7bb819c264455b8197913179384829f07"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172439/large/rklbon_160x160.png?1773419655"
+    ],
+    "updatedAt": "2026-10-18T20:12:48.666Z",
+    "createdAt": "2026-09-28T10:37:10.224Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "8dc0b494-1672-46b5-83d9-f088b9dbca39",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2": {
+    "key": "robinhood:0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "name": "Rocket Lab Corporation • Robinhood Token",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 50.86,
+    "address": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "addresses": {
+     "robinhood": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+    "liquidity": 55553.1690578,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "16640.848"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000007cacd0cd4c0547d480e89459e648592b",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "b12f01a0-5026-4b70-8ac2-6dac1e703c86",
+    "totalSupply": "1092.27623",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x90d19ab43466620d48f9795cac6838445722271a029a32da80ee12167323a33d": {
+    "key": "robinhood:0x90d19ab43466620d48f9795cac6838445722271a029a32da80ee12167323a33d",
+    "name": "Uniswap V4 LP RKLB/USDG",
+    "decimals": 18,
+    "symbol": "RKLB/USDG",
+    "price": 9007199254740990,
+    "address": "0x90d19ab43466620d48f9795cac6838445722271a029a32da80ee12167323a33d",
+    "addresses": {
+     "robinhood": "0x90d19ab43466620d48f9795cac6838445722271a029a32da80ee12167323a33d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174133/large/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png?1782444624",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.146Z",
+    "createdAt": "2026-09-09T08:13:45.382Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 827.5974169999973,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 497,
+     "feePercentage": "5.0651"
+    },
+    "tokenId": "977defce-1ea4-4ad9-b750-e4b625e361a0",
+    "reserves": [
+     "16.271799999999947031",
+     "0.013669"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc8da12cbcce7c45180692a6420b0076e03a5179a": {
+    "key": "bsc:0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+    "name": "Rocket Lab (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "RKLBB",
+    "price": 49.76,
+    "address": "0xc8da12cbcce7c45180692a6420b0076e03a5179a",
+    "addresses": {
+     "bsc": "0xc8da12cbcce7c45180692a6420b0076e03a5179a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8421760,
+    "image": "https://coin-images.coingecko.com/coins/images/102174593/large/rklbb-bstocks.png?1784151033",
+    "metrics": {
+     "volumeUsd1d": "896262.798",
+     "volumeUsd7d": "6920414.324"
+    },
+    "metadata": {},
+    "tokenId": "b7961a04-c0ae-4e71-ac9d-55d067b29c1f",
+    "totalSupply": "169220.86997777998",
+    "circulatingSupply": "169220.86997777998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7": {
+    "key": "ethereum:0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+    "name": "Dinari RKLB",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 51.01,
+    "address": "0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+    "addresses": {
+     "ethereum": "0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+     "base": "0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+     "arbitrum": "0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+     "avalanche": "0x421ff0997aa7e403715611dde8f977915beafdee"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19090.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102174979/large/dinari-logo-green-with-margin.png?1785402776",
+    "metrics": {
+     "volumeUsd1d": "1543.117",
+     "volumeUsd7d": "17601.599"
+    },
+    "metadata": {},
+    "tokenId": "5bf82181-1eb3-49d3-9899-920482eebf54",
+    "totalSupply": "374.23857143940774",
+    "circulatingSupply": "374.23857143940774",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac": {
+    "key": "arbitrum:0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+    "name": "Dinari RKLB",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 51.01,
+    "address": "0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+    "addresses": {
+     "ethereum": "0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+     "base": "0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+     "arbitrum": "0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+     "avalanche": "0x421ff0997aa7e403715611dde8f977915beafdee"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19090.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102174979/large/dinari-logo-green-with-margin.png?1785402776",
+    "metrics": {
+     "volumeUsd1d": "1543.117",
+     "volumeUsd7d": "17644.675"
+    },
+    "metadata": {},
+    "tokenId": "5bf82181-1eb3-49d3-9899-920482eebf54",
+    "totalSupply": "374.23857143940774",
+    "circulatingSupply": "374.23857143940774",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xb4d695569236273745b4cd54b539b1b9cc1513af": {
+    "key": "bsc:0xb4d695569236273745b4cd54b539b1b9cc1513af",
+    "name": "Rocket Lab (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "RKLBON",
+    "price": 50.07,
+    "address": "0xb4d695569236273745b4cd54b539b1b9cc1513af",
+    "addresses": {
+     "bsc": "0xb4d695569236273745b4cd54b539b1b9cc1513af",
+     "ethereum": "0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1235478,
+    "image": "https://coin-images.coingecko.com/coins/images/102172439/large/rklbon_160x160.png?1773419655",
+    "metrics": {
+     "volumeUsd1d": "180196.191",
+     "volumeUsd7d": "2431092.971"
+    },
+    "metadata": {},
+    "tokenId": "3006e450-d846-4d37-a6ec-9f3dc134fc1a",
+    "totalSupply": "24698.483715008577",
+    "circulatingSupply": "24698.483715008577",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc18cd51b629960a9c73405eead4939f5b529f43c": {
+    "key": "arbitrum:0xc18cd51b629960a9c73405eead4939f5b529f43c",
+    "name": "Rocket Lab rStock",
+    "decimals": 18,
+    "symbol": "RRKLB",
+    "price": 50.91,
+    "address": "0xc18cd51b629960a9c73405eead4939f5b529f43c",
+    "addresses": {
+     "arbitrum": "0xc18cd51b629960a9c73405eead4939f5b529f43c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 917225,
+    "image": "https://coin-images.coingecko.com/coins/images/102176993/large/d4182ea28d30f8b7e117ad967d7d92ee.png?1789116310",
+    "metrics": {
+     "volumeUsd1d": "136.935",
+     "volumeUsd7d": "975021.514"
+    },
+    "metadata": {},
+    "tokenId": "46a3ad76-d45e-4bf7-8f1f-354d7991c93f",
+    "totalSupply": "18015.528356605",
+    "circulatingSupply": "18015.528356605",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x20887ceb169f6947cb1bd9b6705b01dcfeaeec6ebffc072fe1b0600c72e2c0ba": {
+    "key": "robinhood:0x20887ceb169f6947cb1bd9b6705b01dcfeaeec6ebffc072fe1b0600c72e2c0ba",
+    "name": "Uniswap V4 LP RKLB/OLQD",
+    "decimals": 18,
+    "symbol": "RKLB/OLQD",
+    "price": 9007199254740990,
+    "address": "0x20887ceb169f6947cb1bd9b6705b01dcfeaeec6ebffc072fe1b0600c72e2c0ba",
+    "addresses": {
+     "robinhood": "0x20887ceb169f6947cb1bd9b6705b01dcfeaeec6ebffc072fe1b0600c72e2c0ba"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174133/large/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png?1782444624",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.203Z",
+    "createdAt": "2026-08-14T05:16:26.485Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
+    ],
+    "liquidity": 954.1537091112388,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19963,
+     "feePercentage": "99.8189"
+    },
+    "tokenId": "48424f12-941d-4ac0-8f0c-c0ef3b04a6a0",
+    "reserves": [
+     "0.145307752224952184",
+     "946.802762026191382689"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbbc15d66fef8391f53569e19016e86545be9de3f302b82db93ed6165236d22f3": {
+    "key": "robinhood:0xbbc15d66fef8391f53569e19016e86545be9de3f302b82db93ed6165236d22f3",
+    "name": "Uniswap V4 LP RKLB/USDG",
+    "decimals": 18,
+    "symbol": "RKLB/USDG",
+    "price": 9007199254740990,
+    "address": "0xbbc15d66fef8391f53569e19016e86545be9de3f302b82db93ed6165236d22f3",
+    "addresses": {
+     "robinhood": "0xbbc15d66fef8391f53569e19016e86545be9de3f302b82db93ed6165236d22f3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174133/large/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png?1782444624",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.470Z",
+    "createdAt": "2026-09-09T05:31:46.846Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 16005.7655749211,
+    "metrics": {
+     "apy": "0.326",
+     "baseApy": "0.326",
+     "volumeUsd1d": "14.3",
+     "volumeUsd7d": "19466.778"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "d6c34130-189c-42e4-89c1-64433d503275",
+    "reserves": [
+     "302.70024596777627182",
+     "610.431065"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa740be4aefa4e1b965a1a44b8b125bacbfdbc21439ec355f8814c7c4c3a27641": {
+    "key": "robinhood:0xa740be4aefa4e1b965a1a44b8b125bacbfdbc21439ec355f8814c7c4c3a27641",
+    "name": "Uniswap V4 LP wUSDG/RKLB",
+    "decimals": 18,
+    "symbol": "WUSDG/RKLB",
+    "price": 9007199254740990,
+    "address": "0xa740be4aefa4e1b965a1a44b8b125bacbfdbc21439ec355f8814c7c4c3a27641",
+    "addresses": {
+     "robinhood": "0xa740be4aefa4e1b965a1a44b8b125bacbfdbc21439ec355f8814c7c4c3a27641"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174133/large/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png?1782444624"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.397Z",
+    "createdAt": "2026-08-20T02:58:54.718Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2"
+    ],
+    "liquidity": 10096.696526367903,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "0a8e71bc-518d-4c5b-ba1f-87c8f8a95197",
+    "reserves": [
+     "9999.999999",
+     "0.000000007633569069"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b": {
+    "key": "ethereum:0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b",
+    "name": "Rocket Lab (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "RKLBON",
+    "price": 50.07,
+    "address": "0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b",
+    "addresses": {
+     "bsc": "0xb4d695569236273745b4cd54b539b1b9cc1513af",
+     "ethereum": "0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-03-14T13:06:25.338Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1235478,
+    "image": "https://coin-images.coingecko.com/coins/images/102172439/large/rklbon_160x160.png?1773419655",
+    "metrics": {
+     "volumeUsd1d": "179953.124",
+     "volumeUsd7d": "2425623.018"
+    },
+    "metadata": {},
+    "tokenId": "3006e450-d846-4d37-a6ec-9f3dc134fc1a",
+    "totalSupply": "24698.483715008577",
+    "circulatingSupply": "24698.483715008577",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbd5a81db7103ab739ad07814b94460f8ca6bb3b15f1fdb74c5ab45dba90df209": {
+    "key": "robinhood:0xbd5a81db7103ab739ad07814b94460f8ca6bb3b15f1fdb74c5ab45dba90df209",
+    "name": "Uniswap V4 LP ETH/RKLB",
+    "decimals": 18,
+    "symbol": "ETH/RKLB",
+    "price": 9007199254740990,
+    "address": "0xbd5a81db7103ab739ad07814b94460f8ca6bb3b15f1fdb74c5ab45dba90df209",
+    "addresses": {
+     "robinhood": "0xbd5a81db7103ab739ad07814b94460f8ca6bb3b15f1fdb74c5ab45dba90df209"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174133/large/0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2.png?1782444624",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.596Z",
+    "createdAt": "2026-07-19T04:41:01.300Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x3b14c39e89d60d627b42a1a4ca45b5bb45fc12e2"
+    ],
+    "liquidity": 2188.7011514832493,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "197.479"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "59ef6ac5-177a-4ef8-9114-224fcae474eb",
+    "reserves": [
+     "0.083773054607043263",
+     "39.185370086227509106"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf07fc7157f0c88b023b3e462b96f7398442daf927161da9d563e59dadabdcd03": {
+    "key": "ethereum:0xf07fc7157f0c88b023b3e462b96f7398442daf927161da9d563e59dadabdcd03",
+    "name": "Uniswap V4 LP RKLBon/EGP",
+    "decimals": 18,
+    "symbol": "RKLBON/EGP",
+    "price": 9007199254740990,
+    "address": "0xf07fc7157f0c88b023b3e462b96f7398442daf927161da9d563e59dadabdcd03",
+    "addresses": {
+     "ethereum": "0xf07fc7157f0c88b023b3e462b96f7398442daf927161da9d563e59dadabdcd03"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172439/large/rklbon_160x160.png?1773419655",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.665Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x36e3b8d9aad0e51ac08e56a75a8f6005bf68535b",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20052.199902844935,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.79"
+    },
+    "tokenId": "59c05b9e-58e4-479a-b93c-4b65f3c0cf08",
+    "reserves": [
+     "0.408871747856952946",
+     "19999.999999999999999991"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa26a3903cbba4e6c2c757d7601fbc569efc479ef": {
+    "key": "base:0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+    "name": "Dinari RKLB",
+    "decimals": 18,
+    "symbol": "RKLB",
+    "price": 51.01,
+    "address": "0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+    "addresses": {
+     "ethereum": "0xc3260a0e1dd1f7ac6508ae29cb00f4fa4b544ba7",
+     "base": "0xa26a3903cbba4e6c2c757d7601fbc569efc479ef",
+     "arbitrum": "0xe3b82cfbfeda73dc6870d76090061bc3c97d25ac",
+     "avalanche": "0x421ff0997aa7e403715611dde8f977915beafdee"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19090.04,
+    "image": "https://coin-images.coingecko.com/coins/images/102174979/large/dinari-logo-green-with-margin.png?1785402776",
+    "metrics": {
+     "volumeUsd1d": "1543.117",
+     "volumeUsd7d": "17642.178"
+    },
+    "metadata": {},
+    "tokenId": "5bf82181-1eb3-49d3-9899-920482eebf54",
+    "totalSupply": "374.23857143940774",
+    "circulatingSupply": "374.23857143940774",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

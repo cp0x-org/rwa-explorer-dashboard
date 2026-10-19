@@ -1,0 +1,2339 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US5801351017",
+ "ticker": "MCD",
+ "name": "McDonald's",
+ "isin": "US5801351017",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:51Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "McDonald's Corp",
+   "symbol": "MCD",
+   "slug": "mcdonald",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 247.2541298991847,
+     "tokenized_market_cap": 4637644.173664298,
+     "tokenized_volume_24h": 1313235.01675724,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 68,
+   "asset_type": "stock",
+   "rwa_rank": 90,
+   "has_tokens": true,
+   "average_tokenized_price": 247.2541298991847,
+   "tokenized_market_cap": 4637644.173664298,
+   "tokenized_volume_24h": 1313235.01675724,
+   "last_updated": "2026-10-18T20:13:46.552Z",
+   "tokens": [
+    {
+     "symbol": "MCDX",
+     "name": "McDonald's tokenized stock (xStock)",
+     "price": 246.27674904300312,
+     "crypto_id": 37052,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1997859.92,
+     "volume_24h": 723825.19455505
+    },
+    {
+     "symbol": "MCDon",
+     "name": "McDonald's Tokenized Stock (Ondo)",
+     "price": 248.16250585099743,
+     "crypto_id": 38049,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2587301.06,
+     "volume_24h": 589665.99911101
+    },
+    {
+     "symbol": "WMCDX",
+     "name": "Wrapped McDonald's Tokenized stock (xStock)",
+     "price": 247.4443392096492,
+     "crypto_id": 37209,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 49067.72,
+     "volume_24h": 595.38594095
+    },
+    {
+     "symbol": "MCD",
+     "name": "McDonald's Corp (Derivatives)",
+     "price": 240.80487287338718,
+     "crypto_id": 42406,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "MCD",
+     "market_url": "https://www.binance.com/en/stocks/EQ_MCD"
+    }
+   ]
+  },
+  "info": {
+   "37052": {
+    "id": 37052,
+    "symbol": "MCDX",
+    "name": "McDonald's tokenized stock (xStock)",
+    "slug": "mcdonald-s-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37052.png",
+    "date_added": "2025-07-01T18:39:58.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x80a77a372c1e12accda84299492f404902e2da67",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x80a77a372c1e12accda84299492f404902e2da67",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x80a77a372c1e12accda84299492f404902e2da67",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBUtLkOu9vzKu3PW58c50WX7w89BtzwYYZlZGmvOr_Aq66U",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x80a77a372c1e12accda84299492f404902e2da67",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     }
+    ]
+   },
+   "38049": {
+    "id": 38049,
+    "symbol": "MCDon",
+    "name": "McDonald's Tokenized Stock (Ondo)",
+    "slug": "mcdonalds-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38049.png",
+    "date_added": "2025-09-03T10:55:09.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x4C82c8cD9a218612DCe60b156B73A36705645e3b"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4C82c8cD9a218612DCe60b156B73A36705645e3b",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EUbJjmDt8JA222M91bVLZs211siZ2jzbFArH9N3ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37209": {
+    "id": 37209,
+    "symbol": "WMCDX",
+    "name": "Wrapped McDonald's Tokenized stock (xStock)",
+    "slug": "wrapped-mcdonald-s-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37209.png",
+    "date_added": "2025-07-06T10:54:48.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xc6639026a3a862cd4fcbae3f67cB2D25A2959d37"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc6639026a3a862cd4fcbae3f67cB2D25A2959d37",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x1717d8be2bcb27f4e8f36c817088fa6a2c0b3b30",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42406": {
+    "id": 42406,
+    "symbol": "MCD",
+    "name": "McDonald's Corp (Derivatives)",
+    "slug": "mcdonalds-corp-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42406.png",
+    "date_added": "2026-01-30T05:34:51.000Z",
+    "platform": null,
+    "contract_address": null
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x1717d8be2bcb27f4e8f36c817088fa6a2c0b3b30",
+   "arbitrum:0x80a77a372c1e12accda84299492f404902e2da67",
+   "bsc:0x80a77a372c1e12accda84299492f404902e2da67",
+   "bsc:0x995add4ba29a628a57930a8a185c62ca044ec090",
+   "ethereum:0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+   "ethereum:0x80a77a372c1e12accda84299492f404902e2da67"
+  ],
+  "exact": {
+   "bsc:0x995add4ba29a628a57930a8a185c62ca044ec090": {
+    "key": "bsc:0x995add4ba29a628a57930a8a185c62ca044ec090",
+    "name": "McDonald's (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MCDON",
+    "price": 247.05,
+    "address": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+    "addresses": {
+     "bsc": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+     "ethereum": "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2574740,
+    "image": "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+    "metrics": {
+     "volumeUsd1d": "167196.577",
+     "volumeUsd7d": "1963830.69"
+    },
+    "metadata": {},
+    "tokenId": "37ea8765-eea2-4725-89e5-861b8470fb46",
+    "totalSupply": "10425.833889731271",
+    "circulatingSupply": "10425.833889731271",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "ethereum:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "ethereum": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.782Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8205168.9748187065,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "6597717f-850c-46b6-9f98-195fe282c9e4",
+    "totalSupply": "33220.652556049662648414",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "bsc:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "bsc": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.364Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2522214.2121360204,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "4620915e-0e08-40d3-9efa-c0411e75abfa",
+    "totalSupply": "10211.807004882871",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4c82c8cd9a218612dce60b156b73a36705645e3b": {
+    "key": "ethereum:0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+    "name": "McDonald's (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MCDON",
+    "price": 247.05,
+    "address": "0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+    "addresses": {
+     "bsc": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+     "ethereum": "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2574740,
+    "image": "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+    "metrics": {
+     "volumeUsd1d": "166887.926",
+     "volumeUsd7d": "1926950.867"
+    },
+    "metadata": {},
+    "tokenId": "37ea8765-eea2-4725-89e5-861b8470fb46",
+    "totalSupply": "10425.833889731271",
+    "circulatingSupply": "10425.833889731271",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "arbitrum:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "arbitrum": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7652211.24564577,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "ecf35029-ffe1-4e20-a4c1-07aadb98fa7d",
+    "totalSupply": "30981.866657134984736803",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "MCD": {
+    "total_items": 45,
+    "pages": 1,
+    "received": 45,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x850cd68840dd3725359e6aec94fdd9d490ac57b1": {
+    "key": "robinhood:0x850cd68840dd3725359e6aec94fdd9d490ac57b1",
+    "name": "UniswapV2 LP MCD/SHROOM",
+    "decimals": 18,
+    "symbol": "MCD/SHROOM",
+    "price": 0.043004699638657544,
+    "address": "0x850cd68840dd3725359e6aec94fdd9d490ac57b1",
+    "addresses": {
+     "robinhood": "0x850cd68840dd3725359e6aec94fdd9d490ac57b1"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:13.538Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 4621.649677763214,
+    "metrics": {
+     "apy": "3.242",
+     "baseApy": "3.242",
+     "volumeUsd1d": "136.773",
+     "volumeUsd7d": "2557.176"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "8f0128ca-a381-4fe3-9522-fc50e81518c9",
+    "totalSupply": "107468.479412625546738748",
+    "reserves": [
+     "25538.625001311053591047",
+     "469944.66778316556980415"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1c7d14d2147795daf0b534521fec5dbb6579b2d6": {
+    "key": "robinhood:0x1c7d14d2147795daf0b534521fec5dbb6579b2d6",
+    "name": "UniswapV2 LP WETH/MCD",
+    "decimals": 18,
+    "symbol": "WETH/MCD",
+    "price": 29.894556434034566,
+    "address": "0x1c7d14d2147795daf0b534521fec5dbb6579b2d6",
+    "addresses": {
+     "robinhood": "0x1c7d14d2147795daf0b534521fec5dbb6579b2d6"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-09-29T13:25:23.091Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14"
+    ],
+    "liquidity": 229114.42627768952,
+    "metrics": {
+     "apy": "1.944",
+     "baseApy": "1.944",
+     "volumeUsd1d": "4069.059",
+     "volumeUsd7d": "49851.024"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "eda45fd5-376a-46b3-b19d-682928e6aa1d",
+    "totalSupply": "7664.085158221170567781",
+    "reserves": [
+     "48.875349069669097731",
+     "1248972.232754303313666874"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x995add4ba29a628a57930a8a185c62ca044ec090": {
+    "key": "bsc:0x995add4ba29a628a57930a8a185c62ca044ec090",
+    "name": "McDonald's (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MCDON",
+    "price": 247.05,
+    "address": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+    "addresses": {
+     "bsc": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+     "ethereum": "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2574740,
+    "image": "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+    "metrics": {
+     "volumeUsd1d": "167196.577",
+     "volumeUsd7d": "1963830.69"
+    },
+    "metadata": {},
+    "tokenId": "37ea8765-eea2-4725-89e5-861b8470fb46",
+    "totalSupply": "10425.833889731271",
+    "circulatingSupply": "10425.833889731271",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "ethereum:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "ethereum": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.782Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8205168.9748187065,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "6597717f-850c-46b6-9f98-195fe282c9e4",
+    "totalSupply": "33220.652556049662648414",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xae4666fe48b72aca7b0f948ec084c88ba631a1726a1c9c0a3bd9fdd0c6867e3c": {
+    "key": "ethereum:0xae4666fe48b72aca7b0f948ec084c88ba631a1726a1c9c0a3bd9fdd0c6867e3c",
+    "name": "Uniswap V4 LP wUSDC/MCDon",
+    "decimals": 18,
+    "symbol": "WUSDC/MCDON",
+    "price": 9007199254740990,
+    "address": "0xae4666fe48b72aca7b0f948ec084c88ba631a1726a1c9c0a3bd9fdd0c6867e3c",
+    "addresses": {
+     "ethereum": "0xae4666fe48b72aca7b0f948ec084c88ba631a1726a1c9c0a3bd9fdd0c6867e3c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.563Z",
+    "createdAt": "2026-09-28T10:39:17.559Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "69a9ed5a-0e5f-4380-b347-9a4c2fc5f9d6",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x7ecae30ed8ee4f72653ada7b0941bde7a0a8ee8d": {
+    "key": "base:0x7ecae30ed8ee4f72653ada7b0941bde7a0a8ee8d",
+    "name": "McDonald's (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTMCD",
+    "price": 243.29,
+    "address": "0x7ecae30ed8ee4f72653ada7b0941bde7a0a8ee8d",
+    "addresses": {
+     "base": "0x7ecae30ed8ee4f72653ada7b0941bde7a0a8ee8d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-12T17:34:33.746Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24444,
+    "image": "https://coin-images.coingecko.com/coins/images/102178260/large/MCD.png?1789229240",
+    "metrics": {
+     "volumeUsd1d": "2.068",
+     "volumeUsd7d": "14223.328"
+    },
+    "metadata": {},
+    "tokenId": "e74f246e-bae1-45a6-8c89-874471f19bc5",
+    "totalSupply": "100.472820549",
+    "circulatingSupply": "100.472820549",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x142ba4e6849dae421b100b729c158b1e642a6536": {
+    "key": "robinhood:0x142ba4e6849dae421b100b729c158b1e642a6536",
+    "name": "UniswapV2 LP MCD/RKST",
+    "decimals": 18,
+    "symbol": "MCD/RKST",
+    "price": 0.024448041512849534,
+    "address": "0x142ba4e6849dae421b100b729c158b1e642a6536",
+    "addresses": {
+     "robinhood": "0x142ba4e6849dae421b100b729c158b1e642a6536"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176781/large/rkst.jpg?1788703486",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:12.000Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x8d1612b4b78ebf08cfbf01a04fa270ccbb0509a2"
+    ],
+    "liquidity": 9312.486456641442,
+    "metrics": {
+     "apy": "2.522",
+     "baseApy": "2.522",
+     "volumeUsd1d": "214.504",
+     "volumeUsd7d": "24081.66"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "becfd013-1c70-4733-8354-6077bcc1f232",
+    "totalSupply": "380909.303174527727589075",
+    "reserves": [
+     "50523.664010604339776409",
+     "2915350.25902835697119884"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x08e91b659a545bfb52f1a5e588bf6dc2fa85de7a": {
+    "key": "robinhood:0x08e91b659a545bfb52f1a5e588bf6dc2fa85de7a",
+    "name": "McDonald's  Robinhood Token",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 261.1732911376768,
+    "address": "0x08e91b659a545bfb52f1a5e588bf6dc2fa85de7a",
+    "addresses": {
+     "robinhood": "0x08e91b659a545bfb52f1a5e588bf6dc2fa85de7a"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 261173291.13767684,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6.39"
+    },
+    "metadata": {},
+    "tokenId": "383919f2-4a67-47ec-a3e2-6678db495697",
+    "totalSupply": "1000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb11581c98e80dd1ffabec5a34c5b11f24cf2b99e68830fa47033ba62e09992d0": {
+    "key": "ethereum:0xb11581c98e80dd1ffabec5a34c5b11f24cf2b99e68830fa47033ba62e09992d0",
+    "name": "Uniswap V4 LP ETH/MCDon",
+    "decimals": 18,
+    "symbol": "ETH/MCDON",
+    "price": 9007199254740990,
+    "address": "0xb11581c98e80dd1ffabec5a34c5b11f24cf2b99e68830fa47033ba62e09992d0",
+    "addresses": {
+     "ethereum": "0xb11581c98e80dd1ffabec5a34c5b11f24cf2b99e68830fa47033ba62e09992d0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.943Z",
+    "createdAt": "2025-10-12T10:36:43.510Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    ],
+    "liquidity": 1201.7668408820352,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9200,
+     "feePercentage": "46.054"
+    },
+    "tokenId": "d8d710e0-dc8a-4909-ad98-b3135cf3358f",
+    "reserves": [
+     "0.375101049311216983",
+     "1.319964348413245077"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1be6bd39ef13fbad75c71c5d947b7b4c299de8567db8d34bd160c7f131e1234a": {
+    "key": "robinhood:0x1be6bd39ef13fbad75c71c5d947b7b4c299de8567db8d34bd160c7f131e1234a",
+    "name": "Uniswap V4 LP MCD/USDG",
+    "decimals": 18,
+    "symbol": "MCD/USDG",
+    "price": 9007199254740990,
+    "address": "0x1be6bd39ef13fbad75c71c5d947b7b4c299de8567db8d34bd160c7f131e1234a",
+    "addresses": {
+     "robinhood": "0x1be6bd39ef13fbad75c71c5d947b7b4c299de8567db8d34bd160c7f131e1234a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.728Z",
+    "createdAt": "2026-10-16T14:26:04.195Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 14777.338643396666,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "46c0e5ec-1977-4abe-9677-5f1069896999",
+    "reserves": [
+     "160499.986042381969523837",
+     "5.561928"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x0150958b2b183a8e63264b8a6d82b4f747df3f62": {
+    "key": "base:0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+    "name": "Dinari MCD",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 242.75,
+    "address": "0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+    "addresses": {
+     "arbitrum": "0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+     "ethereum": "0xec3e2998c87ac9bced45381f84932c877cad6930",
+     "base": "0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+     "avalanche": "0x64c69324e058f9af28f7d3c10f17231236cab0b2"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25191,
+    "image": "https://coin-images.coingecko.com/coins/images/102174926/large/dinari-logo-green-with-margin.png?1785402587",
+    "metrics": {
+     "volumeUsd1d": "51.882",
+     "volumeUsd7d": "552.841"
+    },
+    "metadata": {},
+    "tokenId": "5aae1b9b-32d7-4f47-86b7-8c789a7ee254",
+    "totalSupply": "103.7710841428175",
+    "circulatingSupply": "103.7710841428175",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x378a50eac56f45fb74e4ce7f1962dbca33515c14": {
+    "key": "robinhood:0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+    "name": "Meridian Capital",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 0.092036,
+    "address": "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+    "addresses": {
+     "robinhood": "0x378a50eac56f45fb74e4ce7f1962dbca33515c14"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-29T13:19:41.415Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1547544,
+    "image": "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+    "metrics": {
+     "volumeUsd1d": "45721.176",
+     "volumeUsd7d": "537416.004"
+    },
+    "metadata": {},
+    "tokenId": "1563f3cb-7434-4fc1-b9a7-42a713fa74e3",
+    "totalSupply": "16814571",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4d6c6371022ea1f248d6dc0c70fb92ef42480b1ec0708a99a719bd65499f10d9": {
+    "key": "ethereum:0x4d6c6371022ea1f248d6dc0c70fb92ef42480b1ec0708a99a719bd65499f10d9",
+    "name": "Uniswap V4 LP USDT/MCDx",
+    "decimals": 18,
+    "symbol": "USDT/MCDX",
+    "price": 9007199254740990,
+    "address": "0x4d6c6371022ea1f248d6dc0c70fb92ef42480b1ec0708a99a719bd65499f10d9",
+    "addresses": {
+     "ethereum": "0x4d6c6371022ea1f248d6dc0c70fb92ef42480b1ec0708a99a719bd65499f10d9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:57.830Z",
+    "createdAt": "2026-10-18T18:58:06.421Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x80a77a372c1e12accda84299492f404902e2da67"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "6dbf34a6-35dd-4a16-95ae-ab0331f2453c",
+    "reserves": [
+     "3999.999999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0d2d41ddd9425d57261e71156537de8410e57d8d": {
+    "key": "bsc:0x0d2d41ddd9425d57261e71156537de8410e57d8d",
+    "name": "PancakeSwap V3 Tether USD/McDonald's (Ondo Tokenized) 1%",
+    "decimals": 18,
+    "symbol": "USDT/MCDON",
+    "price": 9007199254740990,
+    "address": "0x0d2d41ddd9425d57261e71156537de8410e57d8d",
+    "addresses": {
+     "bsc": "0x0d2d41ddd9425d57261e71156537de8410e57d8d"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.484Z",
+    "createdAt": "2026-03-26T09:17:30.061Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x995add4ba29a628a57930a8a185c62ca044ec090"
+    ],
+    "liquidity": 1964.158609985995,
+    "metrics": {
+     "apy": "9.914",
+     "baseApy": "9.914",
+     "volumeUsd1d": "53.498",
+     "volumeUsd7d": "4825.248"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "639b35fa-6aac-47d0-86db-e6ef86eaf7a7",
+    "reserves": [
+     "865.926631174417453739",
+     "4.448390786727890627"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe9e40db5ae597171a9d47bd5908ad4bf6b3260107a7380c6cdac5cbe8769bbaa": {
+    "key": "robinhood:0xe9e40db5ae597171a9d47bd5908ad4bf6b3260107a7380c6cdac5cbe8769bbaa",
+    "name": "Uniswap V4 LP MCD/USDG",
+    "decimals": 18,
+    "symbol": "MCD/USDG",
+    "price": 9007199254740990,
+    "address": "0xe9e40db5ae597171a9d47bd5908ad4bf6b3260107a7380c6cdac5cbe8769bbaa",
+    "addresses": {
+     "robinhood": "0xe9e40db5ae597171a9d47bd5908ad4bf6b3260107a7380c6cdac5cbe8769bbaa"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.155Z",
+    "createdAt": "2026-10-11T05:10:03.157Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 13839.577269289939,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "53864.474"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.0095"
+    },
+    "tokenId": "8a44b35a-c703-4516-9fe3-a1bea25e9f12",
+    "reserves": [
+     "150326.20968197161745512",
+     "4.154235"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb371290c8118b628a58ef2d1faec4c470a3cd0695fc8c3c5ff01551e9d29adf6": {
+    "key": "bsc:0xb371290c8118b628a58ef2d1faec4c470a3cd0695fc8c3c5ff01551e9d29adf6",
+    "name": "Uniswap V4 LP USDT/MCDx",
+    "decimals": 18,
+    "symbol": "USDT/MCDX",
+    "price": 9007199254740990,
+    "address": "0xb371290c8118b628a58ef2d1faec4c470a3cd0695fc8c3c5ff01551e9d29adf6",
+    "addresses": {
+     "bsc": "0xb371290c8118b628a58ef2d1faec4c470a3cd0695fc8c3c5ff01551e9d29adf6"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:19.895Z",
+    "createdAt": "2026-06-13T13:35:31.402Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x80a77a372c1e12accda84299492f404902e2da67"
+    ],
+    "liquidity": 613.9662644517058,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.038"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17800,
+     "feePercentage": "89.011"
+    },
+    "tokenId": "012ce8f2-7374-4c99-ba54-68ab9ac078f3",
+    "reserves": [
+     "578.576250949924906599",
+     "0.145779062944696611"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "bsc:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "bsc": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:52.364Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2522214.2121360204,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "4620915e-0e08-40d3-9efa-c0411e75abfa",
+    "totalSupply": "10211.807004882871",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xec3e2998c87ac9bced45381f84932c877cad6930": {
+    "key": "ethereum:0xec3e2998c87ac9bced45381f84932c877cad6930",
+    "name": "Dinari MCD",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 242.75,
+    "address": "0xec3e2998c87ac9bced45381f84932c877cad6930",
+    "addresses": {
+     "arbitrum": "0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+     "ethereum": "0xec3e2998c87ac9bced45381f84932c877cad6930",
+     "base": "0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+     "avalanche": "0x64c69324e058f9af28f7d3c10f17231236cab0b2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25191,
+    "image": "https://coin-images.coingecko.com/coins/images/102174926/large/dinari-logo-green-with-margin.png?1785402587",
+    "metrics": {
+     "volumeUsd1d": "51.882",
+     "volumeUsd7d": "552.901"
+    },
+    "metadata": {},
+    "tokenId": "5aae1b9b-32d7-4f47-86b7-8c789a7ee254",
+    "totalSupply": "103.7710841428175",
+    "circulatingSupply": "103.7710841428175",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x22e660655f106c12ae737999f43323c5962bc8fe": {
+    "key": "bsc:0x22e660655f106c12ae737999f43323c5962bc8fe",
+    "name": "PancakeSwap V3 Tether USD/McDonald's (Ondo Tokenized) 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/MCDON",
+    "price": 9007199254740990,
+    "address": "0x22e660655f106c12ae737999f43323c5962bc8fe",
+    "addresses": {
+     "bsc": "0x22e660655f106c12ae737999f43323c5962bc8fe"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.749Z",
+    "createdAt": "2026-09-11T17:35:54.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x995add4ba29a628a57930a8a185c62ca044ec090"
+    ],
+    "liquidity": 1680.4033835151226,
+    "metrics": {
+     "apy": "5.028",
+     "baseApy": "5.028",
+     "volumeUsd1d": "92.862",
+     "volumeUsd7d": "62547.855"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "a426cf20-c1ca-4617-863c-d592e8f5e5c0",
+    "reserves": [
+     "669.546637858231219869",
+     "4.094034473475708352"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4c82c8cd9a218612dce60b156b73a36705645e3b": {
+    "key": "ethereum:0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+    "name": "McDonald's (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MCDON",
+    "price": 247.05,
+    "address": "0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+    "addresses": {
+     "bsc": "0x995add4ba29a628a57930a8a185c62ca044ec090",
+     "ethereum": "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2574740,
+    "image": "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+    "metrics": {
+     "volumeUsd1d": "166887.926",
+     "volumeUsd7d": "1926950.867"
+    },
+    "metadata": {},
+    "tokenId": "37ea8765-eea2-4725-89e5-861b8470fb46",
+    "totalSupply": "10425.833889731271",
+    "circulatingSupply": "10425.833889731271",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2c55d9c038afd013ddf4ea7363df39a5b739f6ed": {
+    "key": "robinhood:0x2c55d9c038afd013ddf4ea7363df39a5b739f6ed",
+    "name": "UniswapV2 LP MCD/wsNET",
+    "decimals": 18,
+    "symbol": "MCD/WSNET",
+    "price": 16.404915404446157,
+    "address": "0x2c55d9c038afd013ddf4ea7363df39a5b739f6ed",
+    "addresses": {
+     "robinhood": "0x2c55d9c038afd013ddf4ea7363df39a5b739f6ed"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:11.266Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x63c12667638f2ae6fc6ae09b43d98ec84a8586ea"
+    ],
+    "liquidity": 973.0841708528224,
+    "metrics": {
+     "apy": "0.483",
+     "baseApy": "0.483",
+     "volumeUsd1d": "4.29",
+     "volumeUsd7d": "463.621"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "d695c7cc-c465-41fb-b6f5-1aa9d2fe03da",
+    "totalSupply": "59.316622296576510754",
+    "reserves": [
+     "5348.361386356265007419",
+     "0.672264879753538252"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd0cd6db73d5ce1349def9017a5a67caeed0300a0": {
+    "key": "robinhood:0xd0cd6db73d5ce1349def9017a5a67caeed0300a0",
+    "name": "UniswapV2 LP MCD/BONER",
+    "decimals": 18,
+    "symbol": "MCD/BONER",
+    "price": 0.06553057035113798,
+    "address": "0xd0cd6db73d5ce1349def9017a5a67caeed0300a0",
+    "addresses": {
+     "robinhood": "0xd0cd6db73d5ce1349def9017a5a67caeed0300a0"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/102176671/large/boner.jpg?1788451067"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:14.444Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x98096d17e191b3da1d5f99a6d7b3584351b11e18"
+    ],
+    "liquidity": 751.6525816945045,
+    "metrics": {
+     "apy": "8.532",
+     "baseApy": "8.532",
+     "volumeUsd1d": "59.868",
+     "volumeUsd7d": "639.328"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "a231ee0b-e571-46b1-b507-ad2c670be3fa",
+    "totalSupply": "11470.258501747522698538",
+    "reserves": [
+     "4114.217283137099982183",
+     "32699.97184301571698678"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc2ab809642fc8bcb6e1efc9f9721a3c3f84b37f3": {
+    "key": "robinhood:0xc2ab809642fc8bcb6e1efc9f9721a3c3f84b37f3",
+    "name": "UniswapV2 LP MCD/USDG",
+    "decimals": 18,
+    "symbol": "MCD/USDG",
+    "price": 614903.5091031721,
+    "address": "0xc2ab809642fc8bcb6e1efc9f9721a3c3f84b37f3",
+    "addresses": {
+     "robinhood": "0xc2ab809642fc8bcb6e1efc9f9721a3c3f84b37f3"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:14.975Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 94454.71234857179,
+    "metrics": {
+     "apy": "1.358",
+     "baseApy": "1.358",
+     "volumeUsd1d": "1171.789",
+     "volumeUsd7d": "17471.726"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "f653b99a-19ff-40cf-b56b-4f8bbb6bae2d",
+    "totalSupply": "0.153608998729463451",
+    "reserves": [
+     "509337.461890692726921768",
+     "47577.329706"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x424cce3de4c7e92980f977da9521e9bca0f62058": {
+    "key": "robinhood:0x424cce3de4c7e92980f977da9521e9bca0f62058",
+    "name": "UniswapV2 LP MCD/NVDA",
+    "decimals": 18,
+    "symbol": "MCD/NVDA",
+    "price": 8.948931651895796,
+    "address": "0x424cce3de4c7e92980f977da9521e9bca0f62058",
+    "addresses": {
+     "robinhood": "0x424cce3de4c7e92980f977da9521e9bca0f62058"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/102174110/large/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec.png?1782444565"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:12.349Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    ],
+    "liquidity": 48811.91494502404,
+    "metrics": {
+     "apy": "0.879",
+     "baseApy": "0.879",
+     "volumeUsd1d": "391.71",
+     "volumeUsd7d": "2693.076"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "5addfc37-d122-41ef-a0fc-01061ff03018",
+    "totalSupply": "5454.496340318280538835",
+    "reserves": [
+     "261151.385581136857046824",
+     "115.46215418760667463"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc7e8b83507437ad26145d34c53faa8d8ca3b05e8": {
+    "key": "ethereum:0xc7e8b83507437ad26145d34c53faa8d8ca3b05e8",
+    "name": "McDollar",
+    "decimals": 18,
+    "symbol": "MCDOLLAR",
+    "price": 0.0009856629437939072,
+    "address": "0xc7e8b83507437ad26145d34c53faa8d8ca3b05e8",
+    "addresses": {
+     "ethereum": "0xc7e8b83507437ad26145d34c53faa8d8ca3b05e8"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-12-01T00:22:21.816Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 985.6629437939072,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "22.36",
+     "volumeUsd7d": "156.52"
+    },
+    "metadata": {},
+    "tokenId": "02b6ad9f-61b2-41dd-8386-90469d973650",
+    "totalSupply": "1000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x91f30e16106cf798b2f0d7147fac38c1df8b8099": {
+    "key": "robinhood:0x91f30e16106cf798b2f0d7147fac38c1df8b8099",
+    "name": "UniswapV2 LP SPY/MCD",
+    "decimals": 18,
+    "symbol": "SPY/MCD",
+    "price": 16.867604734576588,
+    "address": "0x91f30e16106cf798b2f0d7147fac38c1df8b8099",
+    "addresses": {
+     "robinhood": "0x91f30e16106cf798b2f0d7147fac38c1df8b8099"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:17.303Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14"
+    ],
+    "liquidity": 12193.72415234929,
+    "metrics": {
+     "apy": "1.136",
+     "baseApy": "1.136",
+     "volumeUsd1d": "126.535",
+     "volumeUsd7d": "1269.427"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "07aacddb-99c0-4296-b824-8511d93dcedb",
+    "totalSupply": "722.907866542165458323",
+    "reserves": [
+     "8.06341667921652338",
+     "65656.067610554395600033"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad": {
+    "key": "arbitrum:0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+    "name": "Dinari MCD",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 242.75,
+    "address": "0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+    "addresses": {
+     "arbitrum": "0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+     "ethereum": "0xec3e2998c87ac9bced45381f84932c877cad6930",
+     "base": "0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+     "avalanche": "0x64c69324e058f9af28f7d3c10f17231236cab0b2"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25191,
+    "image": "https://coin-images.coingecko.com/coins/images/102174926/large/dinari-logo-green-with-margin.png?1785402587",
+    "metrics": {
+     "volumeUsd1d": "51.882",
+     "volumeUsd7d": "553.098"
+    },
+    "metadata": {},
+    "tokenId": "5aae1b9b-32d7-4f47-86b7-8c789a7ee254",
+    "totalSupply": "103.7710841428175",
+    "circulatingSupply": "103.7710841428175",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x166be558c7527587c93ec721be322290da8fc6dd": {
+    "key": "arbitrum:0x166be558c7527587c93ec721be322290da8fc6dd",
+    "name": "McDonald's rStock",
+    "decimals": 18,
+    "symbol": "RMCD",
+    "price": 242.72,
+    "address": "0x166be558c7527587c93ec721be322290da8fc6dd",
+    "addresses": {
+     "arbitrum": "0x166be558c7527587c93ec721be322290da8fc6dd"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 541583,
+    "image": "https://coin-images.coingecko.com/coins/images/102177219/large/70957bb6c4531fcfd1cd752341d8aa9f.png?1789117201",
+    "metrics": {
+     "volumeUsd1d": "3633.535",
+     "volumeUsd7d": "352967.06"
+    },
+    "metadata": {},
+    "tokenId": "6f07bfca-2823-4847-84a0-b6e9b061a4c6",
+    "totalSupply": "2231.352578224",
+    "circulatingSupply": "2231.352578224",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc6639026a3a862cd4fcbae3f67cb2d25a2959d37": {
+    "key": "ethereum:0xc6639026a3a862cd4fcbae3f67cb2d25a2959d37",
+    "name": "Wrapped McDonald's xStock",
+    "decimals": 18,
+    "symbol": "WMCDX",
+    "price": 251.38405303920163,
+    "address": "0xc6639026a3a862cd4fcbae3f67cb2d25a2959d37",
+    "addresses": {
+     "ethereum": "0xc6639026a3a862cd4fcbae3f67cb2d25a2959d37"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.470Z",
+    "createdAt": "2026-07-03T11:38:30.250Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x80a77a372c1e12accda84299492f404902e2da67"
+    ],
+    "liquidity": 770.3149801153944,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MCDx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "01ed2348-6ebc-46e6-bada-2c6c3c841532",
+    "totalSupply": "3.064295331395858399",
+    "reserves": [
+     "3.129199253017810537"
+    ],
+    "pricePerShare": "1.021180700488287099",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xae63ed912a5f23a4811c61421d100d332461d41df248d0e9f7c5266de2c9159d": {
+    "key": "ethereum:0xae63ed912a5f23a4811c61421d100d332461d41df248d0e9f7c5266de2c9159d",
+    "name": "Uniswap V4 LP EGP/MCDon",
+    "decimals": 18,
+    "symbol": "EGP/MCDON",
+    "price": 9007199254740990,
+    "address": "0xae63ed912a5f23a4811c61421d100d332461d41df248d0e9f7c5266de2c9159d",
+    "addresses": {
+     "ethereum": "0xae63ed912a5f23a4811c61421d100d332461d41df248d0e9f7c5266de2c9159d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.401Z",
+    "createdAt": "2026-10-14T06:54:51.637Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x4c82c8cd9a218612dce60b156b73a36705645e3b"
+    ],
+    "liquidity": 20074.07850556344,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.35"
+    },
+    "tokenId": "abe585fa-ac91-4a4e-a4dd-ef5ee823bd9f",
+    "reserves": [
+     "19999.999999999999999977",
+     "0.115601274414064521"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x06b1b48dcd1e074d5822e3dabd552df4754799f90dc7c5921e731737e117d484": {
+    "key": "ethereum:0x06b1b48dcd1e074d5822e3dabd552df4754799f90dc7c5921e731737e117d484",
+    "name": "Uniswap V4 LP MCDx/USDCc",
+    "decimals": 18,
+    "symbol": "MCDX/USDCC",
+    "price": 9007199254740990,
+    "address": "0x06b1b48dcd1e074d5822e3dabd552df4754799f90dc7c5921e731737e117d484",
+    "addresses": {
+     "ethereum": "0x06b1b48dcd1e074d5822e3dabd552df4754799f90dc7c5921e731737e117d484"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.183Z",
+    "createdAt": "2026-10-09T07:24:03.579Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x80a77a372c1e12accda84299492f404902e2da67",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 3001.2800476835682,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.0428"
+    },
+    "tokenId": "0847d63f-7872-4bb3-a861-7b991d3809b6",
+    "reserves": [
+     "0",
+     "2999.999999999999999981"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x212a23781035e9ae75f000e80f664ad1721e36f9": {
+    "key": "robinhood:0x212a23781035e9ae75f000e80f664ad1721e36f9",
+    "name": "UniswapV2 LP MCD/PONS",
+    "decimals": 18,
+    "symbol": "MCD/PONS",
+    "price": 0.3028453157976662,
+    "address": "0x212a23781035e9ae75f000e80f664ad1721e36f9",
+    "addresses": {
+     "robinhood": "0x212a23781035e9ae75f000e80f664ad1721e36f9"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174571/large/jhitvkisdq8fhxvimdkpcw7y3dx5.?1784093932",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:12.439Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    ],
+    "liquidity": 16581.190502975947,
+    "metrics": {
+     "apy": "5.151",
+     "baseApy": "5.151",
+     "volumeUsd1d": "781.73",
+     "volumeUsd7d": "5796.351"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "44acb120-b462-43a3-aec6-2a379d3a6c3a",
+    "totalSupply": "54751.352053448943802245",
+    "reserves": [
+     "90471.586388842398981905",
+     "33680.345913019757848845"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa393261448a3a7fd07b1f36a659412788735010594a89c627de04c4d2ac39a6b": {
+    "key": "robinhood:0xa393261448a3a7fd07b1f36a659412788735010594a89c627de04c4d2ac39a6b",
+    "name": "Uniswap V4 LP MCD/USDG",
+    "decimals": 18,
+    "symbol": "MCD/USDG",
+    "price": 9007199254740990,
+    "address": "0xa393261448a3a7fd07b1f36a659412788735010594a89c627de04c4d2ac39a6b",
+    "addresses": {
+     "robinhood": "0xa393261448a3a7fd07b1f36a659412788735010594a89c627de04c4d2ac39a6b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.424Z",
+    "createdAt": "2026-10-09T07:28:40.344Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 6929.613887,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9"
+    },
+    "tokenId": "3dec6aa1-e120-464b-8c20-4a296a5633b6",
+    "reserves": [
+     "0",
+     "6929.613887"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2aecec317c4294843ee472e6de628c6b700bbac7": {
+    "key": "ethereum:0x2aecec317c4294843ee472e6de628c6b700bbac7",
+    "name": "UniswapV2 LP USDC/McDollar",
+    "decimals": 18,
+    "symbol": "USDC/MCDOLLAR",
+    "price": 64868.67685923946,
+    "address": "0x2aecec317c4294843ee472e6de628c6b700bbac7",
+    "addresses": {
+     "ethereum": "0x2aecec317c4294843ee472e6de628c6b700bbac7"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:12.048Z",
+    "createdAt": "2025-12-01T00:23:10.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xc7e8b83507437ad26145d34c53faa8d8ca3b05e8"
+    ],
+    "liquidity": 1376.072438813029,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "e0aec14d-a86d-4b64-b1bd-7cbdb2d1df90",
+    "totalSupply": "0.021213203435596675",
+    "reserves": [
+     "687.921518",
+     "698325.197903754090607367"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1bd04e4d45aa98bbeb4f783480c231a68b3e55476b9c68ff64b08fbc1a7841f4": {
+    "key": "ethereum:0x1bd04e4d45aa98bbeb4f783480c231a68b3e55476b9c68ff64b08fbc1a7841f4",
+    "name": "Uniswap V4 LP MCDon/USDC",
+    "decimals": 18,
+    "symbol": "MCDON/USDC",
+    "price": 9007199254740990,
+    "address": "0x1bd04e4d45aa98bbeb4f783480c231a68b3e55476b9c68ff64b08fbc1a7841f4",
+    "addresses": {
+     "ethereum": "0x1bd04e4d45aa98bbeb4f783480c231a68b3e55476b9c68ff64b08fbc1a7841f4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.075Z",
+    "createdAt": "2026-09-28T10:37:07.915Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 4309.841889561083,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6373.786"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "8f9011eb-0d65-408c-9cfb-94de1567bfd4",
+    "reserves": [
+     "10.693200481491500858",
+     "1668.480472"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0da8320b555bb38b852c1eb1af99179cf424ebf9": {
+    "key": "robinhood:0x0da8320b555bb38b852c1eb1af99179cf424ebf9",
+    "name": "UniswapV2 LP CASHCAT/MCD",
+    "decimals": 18,
+    "symbol": "CASHCAT/MCD",
+    "price": 0.19176218003314197,
+    "address": "0x0da8320b555bb38b852c1eb1af99179cf424ebf9",
+    "addresses": {
+     "robinhood": "0x0da8320b555bb38b852c1eb1af99179cf424ebf9"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174280/large/cashcat-logo.jpg?1782922765",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:12.237Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14"
+    ],
+    "liquidity": 11853.515412346798,
+    "metrics": {
+     "apy": "3.669",
+     "baseApy": "3.669",
+     "volumeUsd1d": "397.985",
+     "volumeUsd7d": "3416.935"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "3eb33f8f-ff59-43ac-9e8e-6fce2d7c7cac",
+    "totalSupply": "61813.624617211659825598",
+    "reserves": [
+     "59658.786541729131716687",
+     "65004.916801120685691591"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x80a77a372c1e12accda84299492f404902e2da67": {
+    "key": "arbitrum:0x80a77a372c1e12accda84299492f404902e2da67",
+    "name": "McDonald's xStock",
+    "decimals": 18,
+    "symbol": "MCDX",
+    "price": 246.99,
+    "address": "0x80a77a372c1e12accda84299492f404902e2da67",
+    "addresses": {
+     "arbitrum": "0x80a77a372c1e12accda84299492f404902e2da67"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.902Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7652211.24564577,
+    "image": "https://coin-images.coingecko.com/coins/images/55625/large/Ticker_MCD__Company_Name_McDonalds__size_200x200_2x.png?1746862066",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "mcdonald-s-xstock"
+    },
+    "tokenId": "ecf35029-ffe1-4e20-a4c1-07aadb98fa7d",
+    "totalSupply": "30981.866657134984736803",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe9c3157a499bb2820de56a0ff661eecc1fd903b0": {
+    "key": "robinhood:0xe9c3157a499bb2820de56a0ff661eecc1fd903b0",
+    "name": "UniswapV2 LP MCD/RVH",
+    "decimals": 18,
+    "symbol": "MCD/RVH",
+    "price": 0.041603705741960706,
+    "address": "0xe9c3157a499bb2820de56a0ff661eecc1fd903b0",
+    "addresses": {
+     "robinhood": "0xe9c3157a499bb2820de56a0ff661eecc1fd903b0"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/102174431/large/ba178407-dda3-4969-a7e3-071cec79c121.png?1783670771"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:14.550Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0x96765066f6a040a21eb027167d2315b707c82633"
+    ],
+    "liquidity": 3006.6369916913586,
+    "metrics": {
+     "apy": "4.302",
+     "baseApy": "4.302",
+     "volumeUsd1d": "117.104",
+     "volumeUsd7d": "669.285"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "14fd13b1-de71-4288-a588-4bea66ee4dca",
+    "totalSupply": "72268.489983547834051424",
+    "reserves": [
+     "16364.665059608870407711",
+     "328566.040248049836398601"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x519ad6af575388f48fc9f4ee876b70fa55f5d4ec": {
+    "key": "base:0x519ad6af575388f48fc9f4ee876b70fa55f5d4ec",
+    "name": "Hydrex Wrapped McDonald's Corporation ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTMCD/USDC",
+    "price": 9007199254740990,
+    "address": "0x519ad6af575388f48fc9f4ee876b70fa55f5d4ec",
+    "addresses": {
+     "base": "0x519ad6af575388f48fc9f4ee876b70fa55f5d4ec"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102178260/large/MCD.png?1789229240",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.747Z",
+    "createdAt": "2026-09-13T11:19:09.536Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7ecae30ed8ee4f72653ada7b0941bde7a0a8ee8d",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 28975.23276875988,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "2.068",
+     "volumeUsd7d": "5485.353"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "c98ebdd2-f966-4a36-a809-15bbfac0d9a7",
+    "reserves": [
+     "93.091877783488086244",
+     "6328.403326"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x64c69324e058f9af28f7d3c10f17231236cab0b2": {
+    "key": "avalanche:0x64c69324e058f9af28f7d3c10f17231236cab0b2",
+    "name": "Dinari MCD",
+    "decimals": 18,
+    "symbol": "MCD",
+    "price": 242.75,
+    "address": "0x64c69324e058f9af28f7d3c10f17231236cab0b2",
+    "addresses": {
+     "arbitrum": "0x0c29891dc5060618c779e2a45fbe4808aa5ae6ad",
+     "ethereum": "0xec3e2998c87ac9bced45381f84932c877cad6930",
+     "base": "0x0150958b2b183a8e63264b8a6d82b4f747df3f62",
+     "avalanche": "0x64c69324e058f9af28f7d3c10f17231236cab0b2"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25191,
+    "image": "https://coin-images.coingecko.com/coins/images/102174926/large/dinari-logo-green-with-margin.png?1785402587",
+    "metrics": {
+     "volumeUsd1d": "51.882",
+     "volumeUsd7d": "553.13"
+    },
+    "metadata": {},
+    "tokenId": "5aae1b9b-32d7-4f47-86b7-8c789a7ee254",
+    "totalSupply": "103.7710841428175",
+    "circulatingSupply": "103.7710841428175",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x44fb5c570d21bcdacd479fbc387868db7d2063e1d30ed2210564e777987ba16c": {
+    "key": "bsc:0x44fb5c570d21bcdacd479fbc387868db7d2063e1d30ed2210564e777987ba16c",
+    "name": "Uniswap V4 LP USDT/MCDon",
+    "decimals": 18,
+    "symbol": "USDT/MCDON",
+    "price": 9007199254740990,
+    "address": "0x44fb5c570d21bcdacd479fbc387868db7d2063e1d30ed2210564e777987ba16c",
+    "addresses": {
+     "bsc": "0x44fb5c570d21bcdacd479fbc387868db7d2063e1d30ed2210564e777987ba16c"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244"
+    ],
+    "updatedAt": "2026-10-18T20:15:26.708Z",
+    "createdAt": "2026-09-14T06:48:07.839Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x995add4ba29a628a57930a8a185c62ca044ec090"
+    ],
+    "liquidity": 3637.1907367059525,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "67.841"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "9c39287c-40c8-4d2c-8592-986a3eacf097",
+    "reserves": [
+     "915.845130379734133986",
+     "11.01854443006712975"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xf3bcabeb5c0298bfdaca11d8a5b9926812c9d9ea284bff5c9e9367d56cd12388": {
+    "key": "bsc:0xf3bcabeb5c0298bfdaca11d8a5b9926812c9d9ea284bff5c9e9367d56cd12388",
+    "name": "Uniswap V4 LP USDT/MCDon",
+    "decimals": 18,
+    "symbol": "USDT/MCDON",
+    "price": 9007199254740990,
+    "address": "0xf3bcabeb5c0298bfdaca11d8a5b9926812c9d9ea284bff5c9e9367d56cd12388",
+    "addresses": {
+     "bsc": "0xf3bcabeb5c0298bfdaca11d8a5b9926812c9d9ea284bff5c9e9367d56cd12388"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244"
+    ],
+    "updatedAt": "2026-10-18T20:15:26.728Z",
+    "createdAt": "2026-09-10T16:11:18.159Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x995add4ba29a628a57930a8a185c62ca044ec090"
+    ],
+    "liquidity": 215451.84803663948,
+    "metrics": {
+     "apy": "1.13",
+     "baseApy": "1.13",
+     "volumeUsd1d": "131.333",
+     "volumeUsd7d": "103950.475"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "e8c8a344-9727-4273-b0f1-bd3f50415114",
+    "reserves": [
+     "81633.025179892308861635",
+     "541.950471533501401344"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3c02085dc8abef1ef552520da95845183c4daa06": {
+    "key": "robinhood:0x3c02085dc8abef1ef552520da95845183c4daa06",
+    "name": "UniswapV2 LP MCD/UFG",
+    "decimals": 18,
+    "symbol": "MCD/UFG",
+    "price": 0.02107620540203988,
+    "address": "0x3c02085dc8abef1ef552520da95845183c4daa06",
+    "addresses": {
+     "robinhood": "0x3c02085dc8abef1ef552520da95845183c4daa06"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179205/large/meridian-mark-1024.png?1791342218",
+     "https://coin-images.coingecko.com/coins/images/102176615/large/logo-small.png?1788338479"
+    ],
+    "updatedAt": "2026-10-18T20:15:58.663Z",
+    "createdAt": "2026-10-07T07:21:12.349Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x378a50eac56f45fb74e4ce7f1962dbca33515c14",
+     "0xefab538cf3c29237a47c6afb145d50ddf204a0a3"
+    ],
+    "liquidity": 10291.851472697097,
+    "metrics": {
+     "apy": "5.868",
+     "baseApy": "5.868",
+     "volumeUsd1d": "550.875",
+     "volumeUsd7d": "11106.006"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "6a1ce318-c673-4bde-af7b-f7eed4197d2d",
+    "totalSupply": "488316.149723089638089004",
+    "reserves": [
+     "55637.214974182766522753",
+     "4382951.015241948266423369"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1abedd1314101e6fe212055d56e017e1b7daf1f6529be852239d24001a67ec64": {
+    "key": "ethereum:0x1abedd1314101e6fe212055d56e017e1b7daf1f6529be852239d24001a67ec64",
+    "name": "Uniswap V4 LP MCDon/USDC",
+    "decimals": 18,
+    "symbol": "MCDON/USDC",
+    "price": 9007199254740990,
+    "address": "0x1abedd1314101e6fe212055d56e017e1b7daf1f6529be852239d24001a67ec64",
+    "addresses": {
+     "ethereum": "0x1abedd1314101e6fe212055d56e017e1b7daf1f6529be852239d24001a67ec64"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68620/large/mcdon_160x160.png?1756130244",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.318Z",
+    "createdAt": "2026-10-17T14:21:00.746Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4c82c8cd9a218612dce60b156b73a36705645e3b",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1410.9948707528297,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5.209"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.0901"
+    },
+    "tokenId": "063ca553-407d-4acf-a83c-963a4c51face",
+    "reserves": [
+     "3.369695999551061012",
+     "578.648035"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x4e02be6e611730139488ae5fd512837efe5349bbcc49f0a88a9188d2a62a659d": {
+    "key": "arbitrum:0x4e02be6e611730139488ae5fd512837efe5349bbcc49f0a88a9188d2a62a659d",
+    "name": "Uniswap V4 LP MCDx/USDT",
+    "decimals": 18,
+    "symbol": "MCDX/USDT",
+    "price": 9007199254740990,
+    "address": "0x4e02be6e611730139488ae5fd512837efe5349bbcc49f0a88a9188d2a62a659d",
+    "addresses": {
+     "arbitrum": "0x4e02be6e611730139488ae5fd512837efe5349bbcc49f0a88a9188d2a62a659d"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.961Z",
+    "createdAt": "2026-10-16T14:24:05.657Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x80a77a372c1e12accda84299492f404902e2da67",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "80ed115a-fdfe-4bdd-ad67-83e3fdf03499",
+    "reserves": [
+     "0",
+     "1999.999999999999999999"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

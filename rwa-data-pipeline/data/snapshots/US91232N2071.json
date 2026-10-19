@@ -1,0 +1,3176 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US91232N2071",
+ "ticker": "USO",
+ "name": "United States Oil Fund",
+ "isin": "US91232N2071",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:27Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "United States Oil Fund LP",
+   "symbol": "USO",
+   "slug": "united-states-oil-fund",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 160.0605216540968,
+     "tokenized_market_cap": 5734724.222289329,
+     "tokenized_volume_24h": 876746.58852402,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 183,
+   "asset_type": "etf",
+   "rwa_rank": 7771,
+   "has_tokens": true,
+   "average_tokenized_price": 160.0605216540968,
+   "tokenized_market_cap": 5734724.222289329,
+   "tokenized_volume_24h": 876746.58852402,
+   "last_updated": "2026-10-18T20:13:44.689Z",
+   "tokens": [
+    {
+     "symbol": "USOon",
+     "name": "United States Oil Tokenized Fund (Ondo)",
+     "price": 159.21751516310252,
+     "crypto_id": 39250,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 3902548.61,
+     "volume_24h": 757149.85073032
+    },
+    {
+     "symbol": "USO",
+     "name": "United States Oil Fund LP (Derivatives)",
+     "price": 160.32172953698267,
+     "crypto_id": 39515,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "USO",
+     "name": "United States Oil Fund Tokenized Commodity (Robinhood)",
+     "price": 162.02325353486287,
+     "crypto_id": 40737,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1817111.43,
+     "volume_24h": 114889.5501838
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "USO",
+     "market_url": "https://www.binance.com/en/stocks/EQ_USO"
+    }
+   ]
+  },
+  "info": {
+   "39250": {
+    "id": 39250,
+    "symbol": "USOon",
+    "name": "United States Oil Tokenized Fund (Ondo)",
+    "slug": "united-states-oil-tokenized-fund-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39250.png",
+    "date_added": "2026-01-08T15:44:18.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "rpydAzWdCy85HEmoQkH5PVxYtDYQWjmLxgHHadxondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xA4dB50bB345151f3649539300523e83a8b8A6BC7",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39515": {
+    "id": 39515,
+    "symbol": "USO",
+    "name": "United States Oil Fund LP (Derivatives)",
+    "slug": "united-states-oil-fund-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39515.png",
+    "date_added": "2026-01-30T06:54:54.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40737": {
+    "id": 40737,
+    "symbol": "USO",
+    "name": "United States Oil Fund Tokenized Commodity (Robinhood)",
+    "slug": "united-states-oil-fund-tokenized-commodity-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40737.png",
+    "date_added": "2026-08-04T07:31:45.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xa30FA36Db767ad9eD3f7a60fC79526fB4d56D344"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xa30FA36Db767ad9eD3f7a60fC79526fB4d56D344",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+   "ethereum:0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+   "hyperevm:0xa4db50bb345151f3649539300523e83a8b8a6bc7",
+   "robinhood:0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+  ],
+  "exact": {
+   "robinhood:0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344": {
+    "key": "robinhood:0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "name": "United States Oil Fund • Robinhood Token",
+    "decimals": 18,
+    "symbol": "USO",
+    "price": 162.20999999,
+    "address": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "addresses": {
+     "robinhood": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "liquidity": 1819205.8154418487,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1835213.507"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000949bd039a8ae465d9cf9336068188b55",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "850804cb-eea4-4155-9695-6ef8e1be8399",
+    "totalSupply": "11215.1274",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x94174e3d1335db402dd03a092f7aa7ac2cb32be4": {
+    "key": "bsc:0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "657628.339",
+     "volumeUsd7d": "5294347.648"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415": {
+    "key": "ethereum:0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "658839.148",
+     "volumeUsd7d": "5290491.969"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xa4db50bb345151f3649539300523e83a8b8a6bc7": {
+    "key": "hyperevm:0xa4db50bb345151f3649539300523e83a8b8a6bc7",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0xa4db50bb345151f3649539300523e83a8b8a6bc7",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "661944.296",
+     "volumeUsd7d": "5287590.336"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "USO": {
+    "total_items": 64,
+    "pages": 1,
+    "received": 64,
+    "complete": true
+   }
+  },
+  "records": {
+   "polygon:0x7e26081d41fd9a18a32b66268c8cc5c621eb1cf2": {
+    "key": "polygon:0x7e26081d41fd9a18a32b66268c8cc5c621eb1cf2",
+    "name": "Butterfly Solution",
+    "decimals": 6,
+    "symbol": "BUSO",
+    "price": 0.0033736821813762706,
+    "address": "0x7e26081d41fd9a18a32b66268c8cc5c621eb1cf2",
+    "addresses": {
+     "polygon": "0x7e26081d41fd9a18a32b66268c8cc5c621eb1cf2"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-07T09:17:54.815Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 38355.04931744795,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "273.08",
+     "volumeUsd7d": "570.01"
+    },
+    "metadata": {},
+    "tokenId": "0920f905-244a-4c7c-a36c-0c5159273224",
+    "totalSupply": "11368898.211331",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd031584bc01da2b14d9b96a845865ab9eb5218bd5fffec2e71419a7bcce722e9": {
+    "key": "ethereum:0xd031584bc01da2b14d9b96a845865ab9eb5218bd5fffec2e71419a7bcce722e9",
+    "name": "Uniswap V4 LP EGP/TMUSon",
+    "decimals": 18,
+    "symbol": "EGP/TMUSON",
+    "price": 9007199254740990,
+    "address": "0xd031584bc01da2b14d9b96a845865ab9eb5218bd5fffec2e71419a7bcce722e9",
+    "addresses": {
+     "ethereum": "0xd031584bc01da2b14d9b96a845865ab9eb5218bd5fffec2e71419a7bcce722e9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71581/large/tmuson_160x160.webp?1768405444"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.482Z",
+    "createdAt": "2026-10-13T13:14:00.506Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xdeb3c23f93349229823a006657cfe1a6552b6340"
+    ],
+    "liquidity": 20075.585088252374,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.08"
+    },
+    "tokenId": "4cf4d560-b20a-4c75-a072-8b9f79255dfd",
+    "reserves": [
+     "19999.999999999999999982",
+     "0.185214547729489483"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x57b4e34d106a25580790bec37925bde7a239d40bb964c5236eeeec58fa0482f9": {
+    "key": "robinhood:0x57b4e34d106a25580790bec37925bde7a239d40bb964c5236eeeec58fa0482f9",
+    "name": "Uniswap V4 LP ETH/USO",
+    "decimals": 18,
+    "symbol": "ETH/USO",
+    "price": 9007199254740990,
+    "address": "0x57b4e34d106a25580790bec37925bde7a239d40bb964c5236eeeec58fa0482f9",
+    "addresses": {
+     "robinhood": "0x57b4e34d106a25580790bec37925bde7a239d40bb964c5236eeeec58fa0482f9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:36.114Z",
+    "createdAt": "2026-08-10T09:57:24.244Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "liquidity": 12269.38080030512,
+    "metrics": {
+     "apy": "77.133",
+     "baseApy": "77.133",
+     "volumeUsd1d": "2360.58",
+     "volumeUsd7d": "19050.691"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "5e30a198-8099-4067-acc8-13ada794d4e4",
+    "reserves": [
+     "4.282198362352324692",
+     "14.010428121061249004"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df": {
+    "key": "base:0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df",
+    "name": "Beefy Moo Beefy Aerodrome WETH-uSOL",
+    "decimals": 18,
+    "symbol": "MOOBEEFYAERODROMEWETH-USOL",
+    "price": 113.55983305032196,
+    "address": "0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df",
+    "addresses": {
+     "base": "0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.795Z",
+    "createdAt": "2026-08-26T12:36:11.301Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdbb76dd03ed05213ee8abe03486fad4f3228288d"
+    ],
+    "liquidity": 2647.3760616071613,
+    "metrics": {
+     "apy": "4.604",
+     "baseApy": "4.604",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "a3c4f9a9-686c-4d64-a8cd-99ea500a5ba9",
+    "totalSupply": "23.312609665725957234",
+    "reserves": [
+     "30.883114552304355534"
+    ],
+    "pricePerShare": "1.32473862837022935",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x974d4e66927eec57821dbb644f17c19a1b67cf99ff201a2cc873d2fcebd39576": {
+    "key": "ethereum:0x974d4e66927eec57821dbb644f17c19a1b67cf99ff201a2cc873d2fcebd39576",
+    "name": "Uniswap V4 LP USOon/wUSDC",
+    "decimals": 18,
+    "symbol": "USOON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x974d4e66927eec57821dbb644f17c19a1b67cf99ff201a2cc873d2fcebd39576",
+    "addresses": {
+     "ethereum": "0x974d4e66927eec57821dbb644f17c19a1b67cf99ff201a2cc873d2fcebd39576"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.414Z",
+    "createdAt": "2026-09-28T10:39:22.304Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "f1d195fb-1854-4d73-8af1-8514cf23a41f",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f": {
+    "key": "bsc:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "name": "US Oil Fund aStock",
+    "decimals": 18,
+    "symbol": "AUSO",
+    "price": 161.88,
+    "address": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "addresses": {
+     "bsc": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "ethereum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "arbitrum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "robinhood": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "base": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 835.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175736/large/USO.png?1787292436",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c67b9ce5-1f99-4f18-9e6b-dfa86af3f533",
+    "totalSupply": "5.161737683",
+    "circulatingSupply": "5.161737683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdeb3c23f93349229823a006657cfe1a6552b6340": {
+    "key": "ethereum:0xdeb3c23f93349229823a006657cfe1a6552b6340",
+    "name": "T-Mobile US (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TMUSON",
+    "price": 162.33,
+    "address": "0xdeb3c23f93349229823a006657cfe1a6552b6340",
+    "addresses": {
+     "bsc": "0x2588f20bad92da8dcce7fac8311b5f8ab4690e43",
+     "ethereum": "0xdeb3c23f93349229823a006657cfe1a6552b6340"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 26897,
+    "image": "https://coin-images.coingecko.com/coins/images/71581/large/tmuson_160x160.webp?1768405444",
+    "metrics": {
+     "volumeUsd1d": "1.761",
+     "volumeUsd7d": "552.252"
+    },
+    "metadata": {},
+    "tokenId": "edb2f2c1-aabb-40d3-a07b-2528fb8e4c8d",
+    "totalSupply": "165.69257304058925",
+    "circulatingSupply": "165.69257304058925",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f": {
+    "key": "robinhood:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "name": "US Oil Fund aStock",
+    "decimals": 18,
+    "symbol": "AUSO",
+    "price": 161.88,
+    "address": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "addresses": {
+     "bsc": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "ethereum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "arbitrum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "robinhood": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "base": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 835.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175736/large/USO.png?1787292436",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c67b9ce5-1f99-4f18-9e6b-dfa86af3f533",
+    "totalSupply": "5.161737683",
+    "circulatingSupply": "5.161737683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x36bab7792e2c51b57824670ae80783da3e9d088d7c02c84647c09e93c2bfbbe2": {
+    "key": "arbitrum:0x36bab7792e2c51b57824670ae80783da3e9d088d7c02c84647c09e93c2bfbbe2",
+    "name": "Uniswap V4 LP uSOL/USDC",
+    "decimals": 18,
+    "symbol": "USOL/USDC",
+    "price": 9007199254740990,
+    "address": "0x36bab7792e2c51b57824670ae80783da3e9d088d7c02c84647c09e93c2bfbbe2",
+    "addresses": {
+     "arbitrum": "0x36bab7792e2c51b57824670ae80783da3e9d088d7c02c84647c09e93c2bfbbe2"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.968Z",
+    "createdAt": "2026-07-17T12:31:48.109Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 655.3092780208483,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99"
+    },
+    "tokenId": "6918f196-e093-41ff-815c-8375566f1133",
+    "reserves": [
+     "0.61183563966843049",
+     "594.076247"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x9b8df6e244526ab5f6e6400d331db28c8fdddb55": {
+    "key": "arbitrum:0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+    "name": "Wrapped Solana (Universal)",
+    "decimals": 18,
+    "symbol": "USOL",
+    "price": 100.31,
+    "address": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+    "addresses": {
+     "arbitrum": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "base": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-05-15T10:32:20.258Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2579737,
+    "image": "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+    "metrics": {
+     "volumeUsd1d": "245406.948",
+     "volumeUsd7d": "2483544.288"
+    },
+    "metadata": {},
+    "tokenId": "1677c7d1-da68-422c-9c18-9c43e4fac31c",
+    "totalSupply": "25716.239746613202",
+    "circulatingSupply": "25716.239746613202",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x8e6eefb57bb2e2ef2445d85f426b09a2ffa83f97": {
+    "key": "hyperevm:0x8e6eefb57bb2e2ef2445d85f426b09a2ffa83f97",
+    "name": "Project X Unit Solana/USD0 1%",
+    "decimals": 18,
+    "symbol": "USOL/USD0",
+    "price": 9007199254740990,
+    "address": "0x8e6eefb57bb2e2ef2445d85f426b09a2ffa83f97",
+    "addresses": {
+     "hyperevm": "0x8e6eefb57bb2e2ef2445d85f426b09a2ffa83f97"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.302Z",
+    "createdAt": "2025-11-25T10:56:26.835Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
+    ],
+    "liquidity": 521.539050130672,
+    "metrics": {
+     "apy": "9.147",
+     "baseApy": "9.147",
+     "volumeUsd1d": "13.093",
+     "volumeUsd7d": "147.765"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "55a386a8-13a0-4502-9044-758ce4a0bc7f",
+    "reserves": [
+     "3.470123318",
+     "172.836404"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f": {
+    "key": "arbitrum:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "name": "US Oil Fund aStock",
+    "decimals": 18,
+    "symbol": "AUSO",
+    "price": 161.88,
+    "address": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "addresses": {
+     "bsc": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "ethereum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "arbitrum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "robinhood": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "base": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 835.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175736/large/USO.png?1787292436",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c67b9ce5-1f99-4f18-9e6b-dfa86af3f533",
+    "totalSupply": "5.161737683",
+    "circulatingSupply": "5.161737683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x72ef11d8d9b55696bd6e30d3d4a9aa3beebb96f5": {
+    "key": "bsc:0x72ef11d8d9b55696bd6e30d3d4a9aa3beebb96f5",
+    "name": "PancakeSwap LP BANANA/USOon",
+    "decimals": 18,
+    "symbol": "BANANA/USOON",
+    "price": 473.9224737615355,
+    "address": "0x72ef11d8d9b55696bd6e30d3d4a9aa3beebb96f5",
+    "addresses": {
+     "bsc": "0x72ef11d8d9b55696bd6e30d3d4a9aa3beebb96f5"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/14870/large/banana.png?1696514534",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.618Z",
+    "createdAt": "2026-08-24T11:52:57.110Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x603c7f932ed1fc6575303d8fb018fdcbb0f39a95",
+     "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4"
+    ],
+    "liquidity": 46235.48046641812,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "36868d66-2335-4253-8978-242fbcf08065",
+    "totalSupply": "97.559164264665187248",
+    "reserves": [
+     "98715683.486451677876408842",
+     "0.000098483746472131"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0xb3d448bdc50a99c776fb4882c0f31f3b1a2f00ca": {
+    "key": "hyperevm:0xb3d448bdc50a99c776fb4882c0f31f3b1a2f00ca",
+    "name": "Project X Unit Solana/Unit Ethereum 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/UETH",
+    "price": 9007199254740990,
+    "address": "0xb3d448bdc50a99c776fb4882c0f31f3b1a2f00ca",
+    "addresses": {
+     "hyperevm": "0xb3d448bdc50a99c776fb4882c0f31f3b1a2f00ca"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/55069/large/eth.jpg?1743582414"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.302Z",
+    "createdAt": "2025-11-25T10:56:26.835Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0xbe6727b535545c67d5caa73dea54865b92cf7907"
+    ],
+    "liquidity": 1176.6668767959086,
+    "metrics": {
+     "apy": "2.072",
+     "baseApy": "2.072",
+     "volumeUsd1d": "22.304",
+     "volumeUsd7d": "645.069"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "69084fd2-3594-4379-b6ca-cc2d59d0e0b9",
+    "reserves": [
+     "5.029980828",
+     "0.287408643579020905"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x8215ef17c71cc3701d751b2e30fd53135334f97a": {
+    "key": "hyperevm:0x8215ef17c71cc3701d751b2e30fd53135334f97a",
+    "name": "Project X Unit Solana/USDC 0.2%",
+    "decimals": 18,
+    "symbol": "USOL/USDC",
+    "price": 9007199254740990,
+    "address": "0x8215ef17c71cc3701d751b2e30fd53135334f97a",
+    "addresses": {
+     "hyperevm": "0x8215ef17c71cc3701d751b2e30fd53135334f97a"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.302Z",
+    "createdAt": "2026-01-27T05:17:37.283Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0xb88339cb7199b77e23db6e890353e22632ba630f"
+    ],
+    "liquidity": 16494.7629206533,
+    "metrics": {
+     "apy": "41.776",
+     "baseApy": "41.776",
+     "volumeUsd1d": "9460.521",
+     "volumeUsd7d": "84200.813"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.2"
+    },
+    "tokenId": "6e300b28-731f-4a91-9719-e7c71a380569",
+    "reserves": [
+     "135.271505067",
+     "2895.24908"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8779fe774bbdc95c35a6c977282641cda09bf45540c9039186cc5a13acd30131": {
+    "key": "ethereum:0x8779fe774bbdc95c35a6c977282641cda09bf45540c9039186cc5a13acd30131",
+    "name": "Uniswap V4 LP wUSDC/TMUSon",
+    "decimals": 18,
+    "symbol": "WUSDC/TMUSON",
+    "price": 9007199254740990,
+    "address": "0x8779fe774bbdc95c35a6c977282641cda09bf45540c9039186cc5a13acd30131",
+    "addresses": {
+     "ethereum": "0x8779fe774bbdc95c35a6c977282641cda09bf45540c9039186cc5a13acd30131"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71581/large/tmuson_160x160.webp?1768405444",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.637Z",
+    "createdAt": "2026-09-28T10:37:12.402Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xdeb3c23f93349229823a006657cfe1a6552b6340"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "10f1f947-f407-48da-a3e5-198c067a2585",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x15ccb4ac43863b159297c2520afb49b1c83b6226": {
+    "key": "arbitrum:0x15ccb4ac43863b159297c2520afb49b1c83b6226",
+    "name": "United States Oil Fund LP rStock",
+    "decimals": 18,
+    "symbol": "RUSO",
+    "price": 161.58,
+    "address": "0x15ccb4ac43863b159297c2520afb49b1c83b6226",
+    "addresses": {
+     "arbitrum": "0x15ccb4ac43863b159297c2520afb49b1c83b6226"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 30219,
+    "image": "https://coin-images.coingecko.com/coins/images/102177054/large/3b3bb8eec12187f6f2e886a60c495752.png?1789116683",
+    "metrics": {
+     "volumeUsd1d": "87.574",
+     "volumeUsd7d": "304620.063"
+    },
+    "metadata": {},
+    "tokenId": "4709ef0d-99f0-4787-bc80-a5c7152d5ac1",
+    "totalSupply": "187.015287808",
+    "circulatingSupply": "187.015287808",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa1fdff9d5fb238cc5f054b1441cd852192fabd4ee075d4282f07f80d468ec690": {
+    "key": "ethereum:0xa1fdff9d5fb238cc5f054b1441cd852192fabd4ee075d4282f07f80d468ec690",
+    "name": "Uniswap V4 LP USOon/EGP",
+    "decimals": 18,
+    "symbol": "USOON/EGP",
+    "price": 9007199254740990,
+    "address": "0xa1fdff9d5fb238cc5f054b1441cd852192fabd4ee075d4282f07f80d468ec690",
+    "addresses": {
+     "ethereum": "0xa1fdff9d5fb238cc5f054b1441cd852192fabd4ee075d4282f07f80d468ec690"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.352Z",
+    "createdAt": "2026-10-14T06:54:48.425Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20076.36272550822,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.56"
+    },
+    "tokenId": "fe13ed7b-75bd-4dd5-bdd1-beecf55fad1f",
+    "reserves": [
+     "0.192351199181643113",
+     "19999.999999999999999944"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0xc477f349f2912e034eac45bc41ec1f643580db2e": {
+    "key": "hyperevm:0xc477f349f2912e034eac45bc41ec1f643580db2e",
+    "name": "Project X Unit Solana/Wrapped HYPE 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/WHYPE",
+    "price": 9007199254740990,
+    "address": "0xc477f349f2912e034eac45bc41ec1f643580db2e",
+    "addresses": {
+     "hyperevm": "0xc477f349f2912e034eac45bc41ec1f643580db2e"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.555Z",
+    "createdAt": "2025-11-25T10:56:24.916Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0x5555555555555555555555555555555555555555"
+    ],
+    "liquidity": 414765.2243646737,
+    "metrics": {
+     "apy": "17.194",
+     "baseApy": "17.194",
+     "volumeUsd1d": "65278.265",
+     "volumeUsd7d": "779779.805"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "7f9d9c76-1afa-46e6-930f-65d20cf92399",
+    "reserves": [
+     "1616.445693802",
+     "3305.999663300401663462"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x0a01eb207891a4313a80009e5abf9aa0d19f13ea": {
+    "key": "hyperevm:0x0a01eb207891a4313a80009e5abf9aa0d19f13ea",
+    "name": "Hyperswap V3 Unit Solana/USD0 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/USD0",
+    "price": 9007199254740990,
+    "address": "0x0a01eb207891a4313a80009e5abf9aa0d19f13ea",
+    "addresses": {
+     "hyperevm": "0x0a01eb207891a4313a80009e5abf9aa0d19f13ea"
+    },
+    "platform": "hyperswap-v3",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hyperswap",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.275Z",
+    "createdAt": "2025-11-25T10:56:26.641Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
+    ],
+    "liquidity": 35181.77762442559,
+    "metrics": {
+     "apy": "21.503",
+     "baseApy": "21.503",
+     "volumeUsd1d": "6924.764",
+     "volumeUsd7d": "63607.271"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "be1cfca3-52bb-4d26-b31b-b5c102e26c1a",
+    "reserves": [
+     "302.300145963",
+     "4793.611765"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa260a129622c5600e67d75b6006fb3c612cf26c3": {
+    "key": "base:0xa260a129622c5600e67d75b6006fb3c612cf26c3",
+    "name": "Aerodrome Stable AMM - SOL/uSOL",
+    "decimals": 18,
+    "symbol": "SAMM-SOL/USOL",
+    "price": 71266104.81838225,
+    "address": "0xa260a129622c5600e67d75b6006fb3c612cf26c3",
+    "addresses": {
+     "base": "0xa260a129622c5600e67d75b6006fb3c612cf26c3"
+    },
+    "platform": "aerodrome",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/71099/large/solana.jpg?1765793164",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.255Z",
+    "createdAt": "2026-01-10T21:07:40.340Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x311935cd80b76769bf2ecc9d8ab7635b2139cf82",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "poolAddress": "0x351c645031eec5596e62c93bd7eb28b2f4674822",
+    "liquidity": 3471.5582301071872,
+    "metrics": {
+     "apy": "17.654",
+     "rewardApy": "17.654",
+     "volumeUsd1d": "1924.768",
+     "volumeUsd7d": "16472.811"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isStable": true,
+     "feePercentage": "0.05"
+    },
+    "tokenId": "c1b8ce80-3097-4020-b7c2-ce46b2d91503",
+    "totalSupply": "0.000048712613646477",
+    "reserves": [
+     "15.43793799",
+     "19.13496106661935404"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344": {
+    "key": "robinhood:0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "name": "United States Oil Fund • Robinhood Token",
+    "decimals": 18,
+    "symbol": "USO",
+    "price": 162.20999999,
+    "address": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "addresses": {
+     "robinhood": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+    "liquidity": 1819205.8154418487,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1835213.507"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000949bd039a8ae465d9cf9336068188b55",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "850804cb-eea4-4155-9695-6ef8e1be8399",
+    "totalSupply": "11215.1274",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x94174e3d1335db402dd03a092f7aa7ac2cb32be4": {
+    "key": "bsc:0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "657628.339",
+     "volumeUsd7d": "5294347.648"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x62046274558e152f0e318d12666a9da93ccd2cc8": {
+    "key": "base:0x62046274558e152f0e318d12666a9da93ccd2cc8",
+    "name": "Equalizer Stableswap 2pool - Solana paired with Solana (Universal)",
+    "decimals": 18,
+    "symbol": "S-SOL/USOL",
+    "price": 6353502.609376499,
+    "address": "0x62046274558e152f0e318d12666a9da93ccd2cc8",
+    "addresses": {
+     "base": "0x62046274558e152f0e318d12666a9da93ccd2cc8"
+    },
+    "platform": "equalizer",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/28231/large/hq_png_icon_file.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/71099/large/solana.jpg?1765793164"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.506Z",
+    "createdAt": "2026-03-29T06:15:53.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x311935cd80b76769bf2ecc9d8ab7635b2139cf82",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "poolAddress": "0x7ef325c7654f1a60c0f681b5a53191b1473bc93a",
+    "liquidity": 22908.468661441064,
+    "metrics": {
+     "apy": "8.447",
+     "rewardApy": "8.447",
+     "volumeUsd1d": "7253.315",
+     "volumeUsd7d": "80282.977"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isStable": true,
+     "feePercentage": "0.0042"
+    },
+    "tokenId": "67567210-ba90-4f6a-b069-49f2e2b9bd5f",
+    "totalSupply": "0.0036056440155754",
+    "reserves": [
+     "101.874018764",
+     "126.26911389600741945"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x9b8df6e244526ab5f6e6400d331db28c8fdddb55": {
+    "key": "base:0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+    "name": "Wrapped Solana (Universal)",
+    "decimals": 18,
+    "symbol": "USOL",
+    "price": 100.31,
+    "address": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+    "addresses": {
+     "arbitrum": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "base": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-08-31T11:20:12.205Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2579737,
+    "image": "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+    "metrics": {
+     "volumeUsd1d": "245392.989",
+     "volumeUsd7d": "2468731.873"
+    },
+    "metadata": {},
+    "tokenId": "1677c7d1-da68-422c-9c18-9c43e4fac31c",
+    "totalSupply": "25716.239746613202",
+    "circulatingSupply": "25716.239746613202",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x03ccbee1b5ceb8b47cb55c03d3ed70efcf814919a505e707a3f5ad7700979dbb": {
+    "key": "ethereum:0x03ccbee1b5ceb8b47cb55c03d3ed70efcf814919a505e707a3f5ad7700979dbb",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x03ccbee1b5ceb8b47cb55c03d3ed70efcf814919a505e707a3f5ad7700979dbb",
+    "addresses": {
+     "ethereum": "0x03ccbee1b5ceb8b47cb55c03d3ed70efcf814919a505e707a3f5ad7700979dbb"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.931Z",
+    "createdAt": "2026-02-03T05:21:17.508Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2290.8360016956003,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15200,
+     "feePercentage": "76"
+    },
+    "tokenId": "9effa42a-8ff3-4fc6-a07e-3fa450f0c2e5",
+    "reserves": [
+     "2.960161864347616867",
+     "1816.602765"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x4909d93dbea0138633ccd7278b32d9bf322ccafa": {
+    "key": "hyperevm:0x4909d93dbea0138633ccd7278b32d9bf322ccafa",
+    "name": "Project X Unit Solana/Unit Bitcoin 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/UBTC",
+    "price": 9007199254740990,
+    "address": "0x4909d93dbea0138633ccd7278b32d9bf322ccafa",
+    "addresses": {
+     "hyperevm": "0x4909d93dbea0138633ccd7278b32d9bf322ccafa"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/55066/large/ubtc.jpg?1743580113"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.555Z",
+    "createdAt": "2025-11-25T10:56:23.730Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0x9fdbda0a5e284c32744d2f17ee5c74b284993463"
+    ],
+    "liquidity": 7424.20923267012,
+    "metrics": {
+     "apy": "8.654",
+     "baseApy": "8.654",
+     "volumeUsd1d": "588.068",
+     "volumeUsd7d": "20173.013"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "31bf73f4-3942-4727-be15-296c813a2f1a",
+    "reserves": [
+     "57.474110778",
+     "0.02037717"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x56421a923ef742d972bc3a4e27c066c0a11327c0b4dbb65439cb1b16f80232f9": {
+    "key": "ethereum:0x56421a923ef742d972bc3a4e27c066c0a11327c0b4dbb65439cb1b16f80232f9",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x56421a923ef742d972bc3a4e27c066c0a11327c0b4dbb65439cb1b16f80232f9",
+    "addresses": {
+     "ethereum": "0x56421a923ef742d972bc3a4e27c066c0a11327c0b4dbb65439cb1b16f80232f9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.087Z",
+    "createdAt": "2026-01-28T05:17:27.019Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 3162.406059863224,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15000,
+     "feePercentage": "75"
+    },
+    "tokenId": "a1f7e1d2-e868-41aa-93ff-8ffb7e9cfa43",
+    "reserves": [
+     "5.12840187088144651",
+     "2340.619206"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x3987a9c6e10da7095e8fc9fb93f666321a446f82c3be615a685b3781dc2639c9": {
+    "key": "arbitrum:0x3987a9c6e10da7095e8fc9fb93f666321a446f82c3be615a685b3781dc2639c9",
+    "name": "Uniswap V4 LP uSOL/USDC",
+    "decimals": 18,
+    "symbol": "USOL/USDC",
+    "price": 9007199254740990,
+    "address": "0x3987a9c6e10da7095e8fc9fb93f666321a446f82c3be615a685b3781dc2639c9",
+    "addresses": {
+     "arbitrum": "0x3987a9c6e10da7095e8fc9fb93f666321a446f82c3be615a685b3781dc2639c9"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.528Z",
+    "createdAt": "2026-01-30T05:13:12.242Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    ],
+    "liquidity": 1470.272963618441,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17000,
+     "feePercentage": "85.015"
+    },
+    "tokenId": "6cab0f45-c8ef-45d4-b7c3-08c848daf055",
+    "reserves": [
+     "2.796769234882514105",
+     "1190.009884"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415": {
+    "key": "ethereum:0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "658839.148",
+     "volumeUsd7d": "5290491.969"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x02175608f1b5e6b5ed221ccfdc7be197d111d915": {
+    "key": "robinhood:0x02175608f1b5e6b5ed221ccfdc7be197d111d915",
+    "name": "Uniswap V3 Global Dollar/United States Oil Fund  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/USO",
+    "price": 9007199254740990,
+    "address": "0x02175608f1b5e6b5ed221ccfdc7be197d111d915",
+    "addresses": {
+     "robinhood": "0x02175608f1b5e6b5ed221ccfdc7be197d111d915"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.251Z",
+    "createdAt": "2026-07-17T23:41:15.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "liquidity": 2194604.467567977,
+    "metrics": {
+     "apy": "2.704",
+     "baseApy": "2.704",
+     "volumeUsd1d": "54200.509",
+     "volumeUsd7d": "6674698.971"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "0a72237d-bdd0-4407-991d-43f838de4679",
+    "reserves": [
+     "1502403.243975",
+     "4267.315354390297536831"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29": {
+    "key": "hyperevm:0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+    "name": "Unit Solana",
+    "decimals": 9,
+    "symbol": "USOL",
+    "price": 100.54,
+    "address": "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+    "addresses": {
+     "hyperevm": "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-11-25T10:53:11.930Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1943674,
+    "image": "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+    "metrics": {
+     "volumeUsd1d": "2255963.883",
+     "volumeUsd7d": "31256183.832"
+    },
+    "metadata": {},
+    "tokenId": "026f09cd-0bc7-48fd-a2eb-7d69d9b479ee",
+    "totalSupply": "19322.576185405",
+    "circulatingSupply": "19322.576185405254",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2908684941bddda08a4e12133d8d70c4dccce502c4685e772c75b3717cce4f21": {
+    "key": "ethereum:0x2908684941bddda08a4e12133d8d70c4dccce502c4685e772c75b3717cce4f21",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x2908684941bddda08a4e12133d8d70c4dccce502c4685e772c75b3717cce4f21",
+    "addresses": {
+     "ethereum": "0x2908684941bddda08a4e12133d8d70c4dccce502c4685e772c75b3717cce4f21"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.851Z",
+    "createdAt": "2026-02-12T05:21:57.285Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1922.981992122172,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "77"
+    },
+    "tokenId": "85dce4e9-09f9-468e-b069-eb0caa68f1de",
+    "reserves": [
+     "0.000000000000000006",
+     "1923.435923"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2588f20bad92da8dcce7fac8311b5f8ab4690e43": {
+    "key": "bsc:0x2588f20bad92da8dcce7fac8311b5f8ab4690e43",
+    "name": "T-Mobile US (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "TMUSON",
+    "price": 162.33,
+    "address": "0x2588f20bad92da8dcce7fac8311b5f8ab4690e43",
+    "addresses": {
+     "bsc": "0x2588f20bad92da8dcce7fac8311b5f8ab4690e43",
+     "ethereum": "0xdeb3c23f93349229823a006657cfe1a6552b6340"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-01-14T20:23:41.648Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 26897,
+    "image": "https://coin-images.coingecko.com/coins/images/71581/large/tmuson_160x160.webp?1768405444",
+    "metrics": {
+     "volumeUsd1d": "1.761",
+     "volumeUsd7d": "552.402"
+    },
+    "metadata": {},
+    "tokenId": "edb2f2c1-aabb-40d3-a07b-2528fb8e4c8d",
+    "totalSupply": "165.69257304058925",
+    "circulatingSupply": "165.69257304058925",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x9a394479e8a140a4fb06187577765efc1238ec552f0e8a3f110b1bf061ed643e": {
+    "key": "ethereum:0x9a394479e8a140a4fb06187577765efc1238ec552f0e8a3f110b1bf061ed643e",
+    "name": "Uniswap V4 LP USOon/wUSDC",
+    "decimals": 18,
+    "symbol": "USOON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x9a394479e8a140a4fb06187577765efc1238ec552f0e8a3f110b1bf061ed643e",
+    "addresses": {
+     "ethereum": "0x9a394479e8a140a4fb06187577765efc1238ec552f0e8a3f110b1bf061ed643e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.503Z",
+    "createdAt": "2026-09-30T09:01:10.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "e2f0514d-806c-4375-a2cf-bb0565e0a229",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1176141bdbe958576a2c064b15ca0e94f0a5981f": {
+    "key": "robinhood:0x1176141bdbe958576a2c064b15ca0e94f0a5981f",
+    "name": "Beefy CLM USO-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSO-USDG",
+    "price": 144.5771606873351,
+    "address": "0x1176141bdbe958576a2c064b15ca0e94f0a5981f",
+    "addresses": {
+     "robinhood": "0x1176141bdbe958576a2c064b15ca0e94f0a5981f"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "poolAddress": "0x02175608f1b5e6b5ed221ccfdc7be197d111d915",
+    "liquidity": 43127.90299592701,
+    "metrics": {
+     "apy": "0.395",
+     "baseApy": "0.395",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-239.939"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-uso-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x1176141bdbe958576a2c064b15ca0e94f0a5981f",
+     "strategyAddress": "0xe9e25ad74b77c434cb13f1ebbac9a56fe07e38ba",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x7627e96758938951498f071988cb47c6bb52dd7f",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+     ]
+    },
+    "tokenId": "af658ac2-dd14-4f29-a792-f42745b239ae",
+    "totalSupply": "298.303707106242846958",
+    "reserves": [
+     "37221.58964",
+     "36.411524297460875893"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f": {
+    "key": "ethereum:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "name": "US Oil Fund aStock",
+    "decimals": 18,
+    "symbol": "AUSO",
+    "price": 161.88,
+    "address": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "addresses": {
+     "bsc": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "ethereum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "arbitrum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "robinhood": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "base": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 835.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175736/large/USO.png?1787292436",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c67b9ce5-1f99-4f18-9e6b-dfa86af3f533",
+    "totalSupply": "5.161737683",
+    "circulatingSupply": "5.161737683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3acaf39cc30505b314dbe8f54c32b8e2e957b55daf5d8490c15a13d4a734afee": {
+    "key": "bsc:0x3acaf39cc30505b314dbe8f54c32b8e2e957b55daf5d8490c15a13d4a734afee",
+    "name": "Uniswap V4 LP USDT/USOon",
+    "decimals": 18,
+    "symbol": "USDT/USOON",
+    "price": 9007199254740990,
+    "address": "0x3acaf39cc30505b314dbe8f54c32b8e2e957b55daf5d8490c15a13d4a734afee",
+    "addresses": {
+     "bsc": "0x3acaf39cc30505b314dbe8f54c32b8e2e957b55daf5d8490c15a13d4a734afee"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.464Z",
+    "createdAt": "2026-06-10T05:15:08.756Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4"
+    ],
+    "liquidity": 714.8542983447943,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "77.023"
+    },
+    "tokenId": "da279990-d532-446e-b2fe-d011b10ece30",
+    "reserves": [
+     "526.60537252284778776",
+     "1.176805445784665183"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x372aaa0dcd79c82516055d39cf94414e73a58b9a4ee3ba241e90f8e030b24466": {
+    "key": "ethereum:0x372aaa0dcd79c82516055d39cf94414e73a58b9a4ee3ba241e90f8e030b24466",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x372aaa0dcd79c82516055d39cf94414e73a58b9a4ee3ba241e90f8e030b24466",
+    "addresses": {
+     "ethereum": "0x372aaa0dcd79c82516055d39cf94414e73a58b9a4ee3ba241e90f8e030b24466"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.802Z",
+    "createdAt": "2026-04-22T01:12:42.427Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 4217.782392909328,
+    "metrics": {
+     "apy": "0.237",
+     "baseApy": "0.237",
+     "volumeUsd1d": "7.81",
+     "volumeUsd7d": "3159.675"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "d87b01f1-977d-46ed-9067-dbfa495b751b",
+    "reserves": [
+     "2.907784430463986056",
+     "3752.404727"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x6c06e0cfe45c72f181bb202674c0f65fa354a104": {
+    "key": "hyperevm:0x6c06e0cfe45c72f181bb202674c0f65fa354a104",
+    "name": "Hyperswap V3 Unit Solana/Wrapped HYPE 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/WHYPE",
+    "price": 9007199254740990,
+    "address": "0x6c06e0cfe45c72f181bb202674c0f65fa354a104",
+    "addresses": {
+     "hyperevm": "0x6c06e0cfe45c72f181bb202674c0f65fa354a104"
+    },
+    "platform": "hyperswap-v3",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hyperswap",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.283Z",
+    "createdAt": "2025-11-25T10:56:28.803Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0x5555555555555555555555555555555555555555"
+    ],
+    "liquidity": 1848.0307544219431,
+    "metrics": {
+     "apy": "0.85",
+     "baseApy": "0.85",
+     "volumeUsd1d": "14.385",
+     "volumeUsd7d": "187.562"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8020b0de-29e9-46e6-8c5a-1e7a79629530",
+    "reserves": [
+     "13.024532442",
+     "7.058247217605021766"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f": {
+    "key": "base:0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "name": "US Oil Fund aStock",
+    "decimals": 18,
+    "symbol": "AUSO",
+    "price": 161.88,
+    "address": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+    "addresses": {
+     "bsc": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "ethereum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "arbitrum": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "robinhood": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f",
+     "base": "0x7388ed3371407471d48637b4ad8445b8d4fc3f8f"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 835.58,
+    "image": "https://coin-images.coingecko.com/coins/images/102175736/large/USO.png?1787292436",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "c67b9ce5-1f99-4f18-9e6b-dfa86af3f533",
+    "totalSupply": "5.161737683",
+    "circulatingSupply": "5.161737683",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x4b1c654692969505573abe14ab4f742002d6a557": {
+    "key": "hyperevm:0x4b1c654692969505573abe14ab4f742002d6a557",
+    "name": "Project X Unit Solana/Kinetiq Staked HYPE 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/KHYPE",
+    "price": 9007199254740990,
+    "address": "0x4b1c654692969505573abe14ab4f742002d6a557",
+    "addresses": {
+     "hyperevm": "0x4b1c654692969505573abe14ab4f742002d6a557"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://coin-images.coingecko.com/coins/images/67159/large/solana.jpg?1751940039",
+     "https://coin-images.coingecko.com/coins/images/67388/large/khype.png?1752632397"
+    ],
+    "updatedAt": "2026-10-18T20:15:51.555Z",
+    "createdAt": "2025-11-25T10:56:23.730Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+     "0xfd739d4e423301ce9385c1fb8850539d657c296d"
+    ],
+    "liquidity": 14075.489736821732,
+    "metrics": {
+     "apy": "0.265",
+     "baseApy": "0.265",
+     "volumeUsd1d": "34.201",
+     "volumeUsd7d": "482.287"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "127e7be4-8ee6-4824-a2f0-8f7589e9d14d",
+    "reserves": [
+     "132.527706171",
+     "9.570189419528616657"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0xa4db50bb345151f3649539300523e83a8b8a6bc7": {
+    "key": "hyperevm:0xa4db50bb345151f3649539300523e83a8b8a6bc7",
+    "name": "United States Oil Fund (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "USOON",
+    "price": 160.35,
+    "address": "0xa4db50bb345151f3649539300523e83a8b8a6bc7",
+    "addresses": {
+     "bsc": "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4",
+     "ethereum": "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "hyperevm": "0xa4db50bb345151f3649539300523e83a8b8a6bc7"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3930260,
+    "image": "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+    "metrics": {
+     "volumeUsd1d": "661944.296",
+     "volumeUsd7d": "5287590.336"
+    },
+    "metadata": {},
+    "tokenId": "1ea1033d-680b-45bd-acd9-440b6bd24004",
+    "totalSupply": "24510.799590424325",
+    "circulatingSupply": "24510.799590424325",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xdbb76dd03ed05213ee8abe03486fad4f3228288d": {
+    "key": "base:0xdbb76dd03ed05213ee8abe03486fad4f3228288d",
+    "name": "Beefy CLM WETH-uSOL",
+    "decimals": 18,
+    "symbol": "COWAERODROMEWETH-USOL",
+    "price": 85.67869534555817,
+    "address": "0xdbb76dd03ed05213ee8abe03486fad4f3228288d",
+    "addresses": {
+     "base": "0xdbb76dd03ed05213ee8abe03486fad4f3228288d"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.023Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "poolAddress": "0x0225ba893d5f8ecd6d2022f9dec59b34f61098a1",
+    "liquidity": 2692.99401507235,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.327",
+     "volumeUsd7d": "2.985"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.30",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-weth-usol",
+     "providerId": "aerodrome",
+     "tickSpacing": 200,
+     "managerAddress": "0xdbb76dd03ed05213ee8abe03486fad4f3228288d",
+     "strategyAddress": "0x2224fd3e9ef9195956a8f6a3c9c103878e11b426",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xb413cf0e811a40c2536b7d9c386cf0d1559de598",
+     "standardVaultAddress": "0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df",
+     "depositTokenAddresses": [
+      "0x4200000000000000000000000000000000000006",
+      "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+     ]
+    },
+    "tokenId": "b2618599-2305-4902-81cc-4e7e55ee9cc3",
+    "totalSupply": "31.431314450004200268",
+    "reserves": [
+     "0.843138215702651552",
+     "7.209268969635015038"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x733c3904df8f7e044677e8eb500a21f685f2853e": {
+    "key": "base:0x733c3904df8f7e044677e8eb500a21f685f2853e",
+    "name": "Aerodrome Volatile AMM - uSOL/uSUI",
+    "decimals": 18,
+    "symbol": "VAMM-USOL/USUI",
+    "price": 19.34870279268703,
+    "address": "0x733c3904df8f7e044677e8eb500a21f685f2853e",
+    "addresses": {
+     "base": "0x733c3904df8f7e044677e8eb500a21f685f2853e"
+    },
+    "platform": "aerodrome",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/50482/large/UA-SUI-PAD.png?1727888681"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.323Z",
+    "createdAt": "2025-01-03T01:20:46.999Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "0xb0505e5a99abd03d94a1169e638b78edfed26ea4"
+    ],
+    "poolAddress": "0x76b665e58046a1a0c3359be1805ea238ddbc430d",
+    "liquidity": 2513.145156480187,
+    "metrics": {
+     "apy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "52.645",
+     "volumeUsd7d": "294.487"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ],
+     "isStable": false,
+     "feePercentage": "0.3"
+    },
+    "tokenId": "cb28d5ae-7bec-4fca-a861-f555096e97c2",
+    "totalSupply": "129.887010173625004175",
+    "reserves": [
+     "12.545327622374219319",
+     "1345.071816600912357126"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x47398a89c00dcb4a7d47bf3d7a48dc496ec020a5c603a26f4922ef4513280302": {
+    "key": "robinhood:0x47398a89c00dcb4a7d47bf3d7a48dc496ec020a5c603a26f4922ef4513280302",
+    "name": "Uniswap V4 LP ETH/USO",
+    "decimals": 18,
+    "symbol": "ETH/USO",
+    "price": 9007199254740990,
+    "address": "0x47398a89c00dcb4a7d47bf3d7a48dc496ec020a5c603a26f4922ef4513280302",
+    "addresses": {
+     "robinhood": "0x47398a89c00dcb4a7d47bf3d7a48dc496ec020a5c603a26f4922ef4513280302"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.833Z",
+    "createdAt": "2026-07-24T23:11:15.711Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "liquidity": 56913.9047844176,
+    "metrics": {
+     "apy": "53.42",
+     "baseApy": "53.42",
+     "volumeUsd1d": "1635.401",
+     "volumeUsd7d": "10314.097"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "ca951111-c501-4ebc-99c8-c4a5d399aeaa",
+    "reserves": [
+     "11.220788021942770366",
+     "189.378505375539182206"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6f70776d44bc22be7d8dfc803119312c527b83255bf31600bc40e4cba0d793d7": {
+    "key": "bsc:0x6f70776d44bc22be7d8dfc803119312c527b83255bf31600bc40e4cba0d793d7",
+    "name": "Uniswap V4 LP USDT/USOon",
+    "decimals": 18,
+    "symbol": "USDT/USOON",
+    "price": 9007199254740990,
+    "address": "0x6f70776d44bc22be7d8dfc803119312c527b83255bf31600bc40e4cba0d793d7",
+    "addresses": {
+     "bsc": "0x6f70776d44bc22be7d8dfc803119312c527b83255bf31600bc40e4cba0d793d7"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.731Z",
+    "createdAt": "2026-09-28T14:27:43.198Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4"
+    ],
+    "liquidity": 1599.3680995584095,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "4.8952"
+    },
+    "tokenId": "8e84b3ec-e6d7-4953-af09-0237b7494795",
+    "reserves": [
+     "1025.120412286652680511",
+     "3.586699348833793287"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x1f2ad5a274a776d8e1408292bde1d92d8fa7b6444acf14ad60b9c3e4e5b66420": {
+    "key": "robinhood:0x1f2ad5a274a776d8e1408292bde1d92d8fa7b6444acf14ad60b9c3e4e5b66420",
+    "name": "Uniswap V4 LP USDG/USO",
+    "decimals": 18,
+    "symbol": "USDG/USO",
+    "price": 9007199254740990,
+    "address": "0x1f2ad5a274a776d8e1408292bde1d92d8fa7b6444acf14ad60b9c3e4e5b66420",
+    "addresses": {
+     "robinhood": "0x1f2ad5a274a776d8e1408292bde1d92d8fa7b6444acf14ad60b9c3e4e5b66420"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.006Z",
+    "createdAt": "2026-09-08T14:36:37.006Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "liquidity": 267226.7795034253,
+    "metrics": {
+     "apy": "10.543",
+     "baseApy": "10.543",
+     "volumeUsd1d": "54322.295",
+     "volumeUsd7d": "1271510.024"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15,
+     "feePercentage": "0.1421"
+    },
+    "tokenId": "3bbbb8a0-fa5c-45f5-aaf0-fdbad73506a0",
+    "reserves": [
+     "194886.476921",
+     "445.966972362277189962"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8dffc546f8ea298831fa4818fcf0a141f0daeef156855c8626d600ac4821c25d": {
+    "key": "ethereum:0x8dffc546f8ea298831fa4818fcf0a141f0daeef156855c8626d600ac4821c25d",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x8dffc546f8ea298831fa4818fcf0a141f0daeef156855c8626d600ac4821c25d",
+    "addresses": {
+     "ethereum": "0x8dffc546f8ea298831fa4818fcf0a141f0daeef156855c8626d600ac4821c25d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.984Z",
+    "createdAt": "2026-07-31T13:22:37.867Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2865.571633660603,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80"
+    },
+    "tokenId": "3591f5ba-a4ec-49fc-8ae5-34853de13e10",
+    "reserves": [
+     "9.99999999298626121",
+     "1262.369554"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x55a0d7694c8c6bb73e27523648554fbdc8efd9d0": {
+    "key": "ethereum:0x55a0d7694c8c6bb73e27523648554fbdc8efd9d0",
+    "name": "Uniswap V3 United States Oil Fund (Ondo Tokenized)/USD Coin 1%",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x55a0d7694c8c6bb73e27523648554fbdc8efd9d0",
+    "addresses": {
+     "ethereum": "0x55a0d7694c8c6bb73e27523648554fbdc8efd9d0"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.799Z",
+    "createdAt": "2026-03-10T12:13:59.279Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2443.711326011364,
+    "metrics": {
+     "apy": "2.191",
+     "baseApy": "2.191",
+     "volumeUsd1d": "14.663",
+     "volumeUsd7d": "2624.692"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "c97939e6-7440-435d-9f5d-9c23e8aaf700",
+    "reserves": [
+     "2.459424060183946809",
+     "2049.826437"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd3ae7dfbf7832f8a18dc45dec7ae9409439abc99": {
+    "key": "base:0xd3ae7dfbf7832f8a18dc45dec7ae9409439abc99",
+    "name": "Uniswap V3 Solana (Universal)/Sui (Universal) 0.3%",
+    "decimals": 18,
+    "symbol": "USOL/USUI",
+    "price": 9007199254740990,
+    "address": "0xd3ae7dfbf7832f8a18dc45dec7ae9409439abc99",
+    "addresses": {
+     "base": "0xd3ae7dfbf7832f8a18dc45dec7ae9409439abc99"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/50482/large/UA-SUI-PAD.png?1727888681"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.159Z",
+    "createdAt": "2025-07-23T11:01:02.389Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "0xb0505e5a99abd03d94a1169e638b78edfed26ea4"
+    ],
+    "liquidity": 2563.646305106277,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "365f566a-f743-4b4e-828e-9d3a302f421f",
+    "reserves": [
+     "2.052279099998562486",
+     "2527.558278127226987455"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x0225ba893d5f8ecd6d2022f9dec59b34f61098a1": {
+    "key": "base:0x0225ba893d5f8ecd6d2022f9dec59b34f61098a1",
+    "name": "Aerodrome SlipStream Wrapped Ether/Solana (Universal) 0.15%",
+    "decimals": 18,
+    "symbol": "WETH/USOL",
+    "price": 9007199254740990,
+    "address": "0x0225ba893d5f8ecd6d2022f9dec59b34f61098a1",
+    "addresses": {
+     "base": "0x0225ba893d5f8ecd6d2022f9dec59b34f61098a1"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.792Z",
+    "createdAt": "2025-07-23T11:00:32.854Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "liquidity": 1160230.3771393981,
+    "metrics": {
+     "apy": "9.157",
+     "baseApy": "9.157",
+     "rewardApy": "0",
+     "volumeUsd1d": "203445.465",
+     "volumeUsd7d": "1981477.185"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.15",
+     "factoryAddress": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a"
+    },
+    "tokenId": "5491ab64-b7ea-477f-8c12-78cba4369417",
+    "reserves": [
+     "176.299341249800386034",
+     "7460.277770751441519758"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb413cf0e811a40c2536b7d9c386cf0d1559de598": {
+    "key": "base:0xb413cf0e811a40c2536b7d9c386cf0d1559de598",
+    "name": "Beefy CLM WETH-uSOL Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWAERODROMEWETH-USOL",
+    "price": 85.72244412471757,
+    "address": "0xb413cf0e811a40c2536b7d9c386cf0d1559de598",
+    "addresses": {
+     "base": "0xb413cf0e811a40c2536b7d9c386cf0d1559de598"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.034Z",
+    "createdAt": "2026-08-26T11:45:13.449Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdbb76dd03ed05213ee8abe03486fad4f3228288d"
+    ],
+    "poolAddress": "0xdbb76dd03ed05213ee8abe03486fad4f3228288d",
+    "liquidity": 2694.369096706913,
+    "metrics": {
+     "apy": "4.974",
+     "baseApy": "4.974",
+     "volumeUsd1d": "0.327",
+     "volumeUsd7d": "2.988"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.30",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-weth-usol",
+     "providerId": "aerodrome",
+     "tickSpacing": 200,
+     "managerAddress": "0xdbb76dd03ed05213ee8abe03486fad4f3228288d",
+     "strategyAddress": "0x2224fd3e9ef9195956a8f6a3c9c103878e11b426",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xb413cf0e811a40c2536b7d9c386cf0d1559de598",
+     "standardVaultAddress": "0x58f80e976d181ca3c6c3c9c2c962109f3a06f1df",
+     "depositTokenAddresses": [
+      "0x4200000000000000000000000000000000000006",
+      "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+     ]
+    },
+    "tokenId": "dba1b02e-8e43-4c4c-8132-374d70044cbf",
+    "totalSupply": "31.431314450004199268",
+    "reserves": [
+     "31.431314450004199268"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb0da27c7d628d049a1d8ce2d00777147cef9f9cc54f165b1fde3aa95a2f3a8dd": {
+    "key": "ethereum:0xb0da27c7d628d049a1d8ce2d00777147cef9f9cc54f165b1fde3aa95a2f3a8dd",
+    "name": "Uniswap V4 LP ETH/USOon",
+    "decimals": 18,
+    "symbol": "ETH/USOON",
+    "price": 9007199254740990,
+    "address": "0xb0da27c7d628d049a1d8ce2d00777147cef9f9cc54f165b1fde3aa95a2f3a8dd",
+    "addresses": {
+     "ethereum": "0xb0da27c7d628d049a1d8ce2d00777147cef9f9cc54f165b1fde3aa95a2f3a8dd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.772Z",
+    "createdAt": "2026-09-29T12:16:00.935Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415"
+    ],
+    "liquidity": 1318.2291879058455,
+    "metrics": {
+     "apy": "11.603",
+     "baseApy": "11.603",
+     "volumeUsd1d": "3.036",
+     "volumeUsd7d": "96.732"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1369,
+     "feePercentage": "13.7764"
+    },
+    "tokenId": "6ca275e7-42cc-40d4-8120-ad7d78a37fb7",
+    "reserves": [
+     "0.149688713666221816",
+     "6.04167373083372193"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7627e96758938951498f071988cb47c6bb52dd7f": {
+    "key": "robinhood:0x7627e96758938951498f071988cb47c6bb52dd7f",
+    "name": "Beefy CLM USO-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSO-USDG",
+    "price": 144.5771606873351,
+    "address": "0x7627e96758938951498f071988cb47c6bb52dd7f",
+    "addresses": {
+     "robinhood": "0x7627e96758938951498f071988cb47c6bb52dd7f"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1176141bdbe958576a2c064b15ca0e94f0a5981f"
+    ],
+    "poolAddress": "0x1176141bdbe958576a2c064b15ca0e94f0a5981f",
+    "liquidity": 43127.90299592702,
+    "metrics": {
+     "apy": "0.395",
+     "baseApy": "0.395",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-239.939"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-uso-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x1176141bdbe958576a2c064b15ca0e94f0a5981f",
+     "strategyAddress": "0xe9e25ad74b77c434cb13f1ebbac9a56fe07e38ba",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x7627e96758938951498f071988cb47c6bb52dd7f",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+     ]
+    },
+    "tokenId": "e49678ed-2b0e-474f-99eb-e5045f0a7b57",
+    "totalSupply": "298.303707106242845958",
+    "reserves": [
+     "298.303707106242845958"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4f92351d648d49496612dfd26382a250c7ad01f765b8c87ee1d6ff0599bc0061": {
+    "key": "ethereum:0x4f92351d648d49496612dfd26382a250c7ad01f765b8c87ee1d6ff0599bc0061",
+    "name": "Uniswap V4 LP USOon/USDC",
+    "decimals": 18,
+    "symbol": "USOON/USDC",
+    "price": 9007199254740990,
+    "address": "0x4f92351d648d49496612dfd26382a250c7ad01f765b8c87ee1d6ff0599bc0061",
+    "addresses": {
+     "ethereum": "0x4f92351d648d49496612dfd26382a250c7ad01f765b8c87ee1d6ff0599bc0061"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.667Z",
+    "createdAt": "2026-02-26T05:27:42.882Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 9527.212282659384,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "82.018"
+    },
+    "tokenId": "cb107050-bd8f-4b8d-91d2-5ead1b6d8a1e",
+    "reserves": [
+     "39.954745657241914412",
+     "3121.205421"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3fe4715422683192cf0a29ef503d7fcb3d6fb9e0318578642f0c7c68463a9215": {
+    "key": "ethereum:0x3fe4715422683192cf0a29ef503d7fcb3d6fb9e0318578642f0c7c68463a9215",
+    "name": "Uniswap V4 LP wUSDC/TMUSon",
+    "decimals": 18,
+    "symbol": "WUSDC/TMUSON",
+    "price": 9007199254740990,
+    "address": "0x3fe4715422683192cf0a29ef503d7fcb3d6fb9e0318578642f0c7c68463a9215",
+    "addresses": {
+     "ethereum": "0x3fe4715422683192cf0a29ef503d7fcb3d6fb9e0318578642f0c7c68463a9215"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71581/large/tmuson_160x160.webp?1768405444"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.590Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xdeb3c23f93349229823a006657cfe1a6552b6340"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "56a47489-0b9e-438c-ae75-6d5b240946c5",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd52c89a57acc47e300ac1468441b3495676280ad": {
+    "key": "base:0xd52c89a57acc47e300ac1468441b3495676280ad",
+    "name": "Aerodrome SlipStream CF Large Cap Index/Solana (Universal) 0.3%",
+    "decimals": 18,
+    "symbol": "LCAP/USOL",
+    "price": 9007199254740990,
+    "address": "0xd52c89a57acc47e300ac1468441b3495676280ad",
+    "addresses": {
+     "base": "0xd52c89a57acc47e300ac1468441b3495676280ad"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/69331/large/LCAP_1024.png?1758220127",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.792Z",
+    "createdAt": "2025-09-24T08:40:35.754Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4da9a0f397db1397902070f93a4d6ddbc0e0e6e8",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "liquidity": 5235.745988933909,
+    "metrics": {
+     "apy": "13.13",
+     "baseApy": "13.13",
+     "rewardApy": "0",
+     "volumeUsd1d": "627.963",
+     "volumeUsd7d": "1133.325"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3",
+     "factoryAddress": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a"
+    },
+    "tokenId": "db192ed3-cf5c-4436-abba-169802472e9f",
+    "reserves": [
+     "705.367730303923997956",
+     "5.785255397547702592"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdbb6bee0b40bc7da2d4be347c9fbc5c821b01824b3bb5e9819b187a79f1b2ca0": {
+    "key": "ethereum:0xdbb6bee0b40bc7da2d4be347c9fbc5c821b01824b3bb5e9819b187a79f1b2ca0",
+    "name": "Uniswap V4 LP USOon/USDCc",
+    "decimals": 18,
+    "symbol": "USOON/USDCC",
+    "price": 9007199254740990,
+    "address": "0xdbb6bee0b40bc7da2d4be347c9fbc5c821b01824b3bb5e9819b187a79f1b2ca0",
+    "addresses": {
+     "ethereum": "0xdbb6bee0b40bc7da2d4be347c9fbc5c821b01824b3bb5e9819b187a79f1b2ca0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.956Z",
+    "createdAt": "2026-09-28T10:37:18.037Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1f5fc5c3c8b0f15c7e21af623936ff2b210b6415",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 4001.7067302447576,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.5902"
+    },
+    "tokenId": "833f7d94-159d-46b6-8890-fa0771ea96e5",
+    "reserves": [
+     "0",
+     "4000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6ed11c7dfd8e2ca5620eed29a7b9b53ae90dd0d2": {
+    "key": "robinhood:0x6ed11c7dfd8e2ca5620eed29a7b9b53ae90dd0d2",
+    "name": "Uniswap V3 Global Dollar/United States Oil Fund  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/USO",
+    "price": 9007199254740990,
+    "address": "0x6ed11c7dfd8e2ca5620eed29a7b9b53ae90dd0d2",
+    "addresses": {
+     "robinhood": "0x6ed11c7dfd8e2ca5620eed29a7b9b53ae90dd0d2"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174125/large/0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344.png?1782444603"
+    ],
+    "updatedAt": "2026-10-18T20:15:24.251Z",
+    "createdAt": "2026-07-23T21:08:04.727Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344"
+    ],
+    "liquidity": 155812.68049308,
+    "metrics": {
+     "apy": "7.276",
+     "baseApy": "7.276",
+     "volumeUsd1d": "3106.078",
+     "volumeUsd7d": "230454.14"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "dc9bfe19-978d-4945-a09c-c833f0a10c25",
+    "reserves": [
+     "125562.918394",
+     "186.485186492477932261"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0x240b83e5611350644a9f90f7dafefcdae6958b7f": {
+    "key": "polygon:0x240b83e5611350644a9f90f7dafefcdae6958b7f",
+    "name": "QuickSwap V3 Butterfly Solution/(PoS) Tether USD",
+    "decimals": 18,
+    "symbol": "BUSO/USDT",
+    "price": 9007199254740990,
+    "address": "0x240b83e5611350644a9f90f7dafefcdae6958b7f",
+    "addresses": {
+     "polygon": "0x240b83e5611350644a9f90f7dafefcdae6958b7f"
+    },
+    "platform": "quickswap-v3",
+    "network": "polygon",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/quickswap",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.954Z",
+    "createdAt": "2025-10-08T09:21:41.989Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7e26081d41fd9a18a32b66268c8cc5c621eb1cf2",
+     "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+    ],
+    "liquidity": 52402.91504237957,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "271.972"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.01",
+     "communityFee0Percentage": "0",
+     "communityFee1Percentage": "0"
+    },
+    "tokenId": "0d1d6a06-e878-44fe-badd-57f8c5620c10",
+    "reserves": [
+     "7757444.277499",
+     "26259.65126"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xca16400d8ceea330cde2298836cc89381618ae9e170997045c7c95ea8ebcffde": {
+    "key": "bsc:0xca16400d8ceea330cde2298836cc89381618ae9e170997045c7c95ea8ebcffde",
+    "name": "Uniswap V4 LP USDT/USOon",
+    "decimals": 18,
+    "symbol": "USDT/USOON",
+    "price": 9007199254740990,
+    "address": "0xca16400d8ceea330cde2298836cc89381618ae9e170997045c7c95ea8ebcffde",
+    "addresses": {
+     "bsc": "0xca16400d8ceea330cde2298836cc89381618ae9e170997045c7c95ea8ebcffde"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/71471/large/usoon_160x160.png?1767892001"
+    ],
+    "updatedAt": "2026-10-18T20:15:27.476Z",
+    "createdAt": "2026-09-14T23:18:24.348Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x94174e3d1335db402dd03a092f7aa7ac2cb32be4"
+    ],
+    "liquidity": 33059.60083017206,
+    "metrics": {
+     "apy": "0.266",
+     "baseApy": "0.266",
+     "volumeUsd1d": "4.724",
+     "volumeUsd7d": "5460.241"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "362435f5-9293-49ce-81d8-6fab18f2cb8e",
+    "reserves": [
+     "12781.617404299716267489",
+     "126.529155307796879361"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xc900ea56b5227ae2d95c288a2597b278cbf741dd": {
+    "key": "base:0xc900ea56b5227ae2d95c288a2597b278cbf741dd",
+    "name": "Aerodrome SlipStream Solana (Universal)/Coinbase Wrapped BTC 0.15%",
+    "decimals": 18,
+    "symbol": "USOL/CBBTC",
+    "price": 9007199254740990,
+    "address": "0xc900ea56b5227ae2d95c288a2597b278cbf741dd",
+    "addresses": {
+     "base": "0xc900ea56b5227ae2d95c288a2597b278cbf741dd"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.792Z",
+    "createdAt": "2025-07-23T11:00:36.145Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55",
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+    ],
+    "liquidity": 55571.67369073353,
+    "metrics": {
+     "apy": "19.689",
+     "baseApy": "19.689",
+     "rewardApy": "0",
+     "volumeUsd1d": "20025.59",
+     "volumeUsd7d": "117564.2"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.15",
+     "factoryAddress": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a"
+    },
+    "tokenId": "7967cc3f-1a63-47cd-9f35-b5ba7a4f3168",
+    "reserves": [
+     "465.280933204202229213",
+     "0.11026867"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xab04a352d4ec8d0f1812a4e5ebe7807fa67acd48": {
+    "key": "base:0xab04a352d4ec8d0f1812a4e5ebe7807fa67acd48",
+    "name": "Uniswap V3 Wrapped Ether/Solana (Universal) 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/USOL",
+    "price": 9007199254740990,
+    "address": "0xab04a352d4ec8d0f1812a4e5ebe7807fa67acd48",
+    "addresses": {
+     "base": "0xab04a352d4ec8d0f1812a4e5ebe7807fa67acd48"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://coin-images.coingecko.com/coins/images/39987/large/UA-SOL_1.png?1725027946"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.778Z",
+    "createdAt": "2025-07-23T11:01:01.289Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+    ],
+    "liquidity": 506328.36108761915,
+    "metrics": {
+     "apy": "3.944",
+     "baseApy": "3.944",
+     "volumeUsd1d": "18258.824",
+     "volumeUsd7d": "230399.857"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "6e7ee80e-96e2-4449-a4ed-65150b2531cc",
+    "reserves": [
+     "102.68428869429316249",
+     "2656.026623150783475205"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,2060 @@
+{
+ "schema_version": 1,
+ "underlying_id": "USN070592100",
+ "ticker": "ASML",
+ "name": "ASML Holding",
+ "isin": "USN070592100",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:40Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "ASML Holding NV",
+   "symbol": "ASML",
+   "slug": "asml",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 1639.0610628207978,
+     "tokenized_market_cap": 5757317.602036669,
+     "tokenized_volume_24h": 3006174.54829685,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 26,
+   "asset_type": "stock",
+   "rwa_rank": 22,
+   "has_tokens": true,
+   "average_tokenized_price": 1639.0610628207978,
+   "tokenized_market_cap": 5757317.602036669,
+   "tokenized_volume_24h": 3006174.54829685,
+   "last_updated": "2026-10-18T20:13:41.965Z",
+   "tokens": [
+    {
+     "symbol": "ASMLon",
+     "name": "ASML Holding NV Tokenized Stock (Ondo)",
+     "price": 1645.099565936628,
+     "crypto_id": 38050,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 3233453.18,
+     "volume_24h": 1971331.9475102
+    },
+    {
+     "symbol": "ASML",
+     "name": "ASML Holding NV (Derivatives)",
+     "price": 1628.3660938647863,
+     "crypto_id": 39677,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "ASMLx",
+     "name": "ASML tokenized stock (xStock)",
+     "price": 1642.830225516522,
+     "crypto_id": 40184,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1090476.19,
+     "volume_24h": 140939.22160612
+    },
+    {
+     "symbol": "rASML",
+     "name": "ASML Tokenized Stock (Reality)",
+     "price": 1638.24402289664,
+     "crypto_id": 40652,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 266265.72,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "ASML",
+     "name": "ASML Holding NV Tokenized Stock (Robinhood)",
+     "price": 1627.2106380144855,
+     "crypto_id": 40726,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 145846.79,
+     "volume_24h": 957.58924105
+    },
+    {
+     "symbol": "ASMLB",
+     "name": "ASML Tokenized bStocks",
+     "price": 1626.198102232006,
+     "crypto_id": 40968,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1022001.75,
+     "volume_24h": 894164.30749729
+    },
+    {
+     "symbol": "wASMLx",
+     "name": "Wrapped ASML Tokenized Stock (xStock)",
+     "price": 1638.5746192507481,
+     "crypto_id": 41170,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "ASML",
+     "market_url": "https://www.binance.com/en/stocks/EQ_ASML"
+    }
+   ]
+  },
+  "info": {
+   "38050": {
+    "id": 38050,
+    "symbol": "ASMLon",
+    "name": "ASML Holding NV Tokenized Stock (Ondo)",
+    "slug": "asml-holding-nv-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38050.png",
+    "date_added": "2025-09-03T10:55:33.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xE51bA774ebF6392c45Bf1d9E6b334d07992460d3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xE51bA774ebF6392c45Bf1d9E6b334d07992460d3",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "1eLZPRsn8bAKmoxsqDMH9Q2m2k7GMNp6RLSQGm8ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39677": {
+    "id": 39677,
+    "symbol": "ASML",
+    "name": "ASML Holding NV (Derivatives)",
+    "slug": "asml-holding-nv-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39677.png",
+    "date_added": "2026-03-11T08:54:30.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40184": {
+    "id": 40184,
+    "symbol": "ASMLx",
+    "name": "ASML tokenized stock (xStock)",
+    "slug": "asml-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40184.png",
+    "date_added": "2026-06-10T06:33:38.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XshuHQ6o6SVpUNawvnnTMxsZ4tacZsNgVCLorv7TkFq"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XshuHQ6o6SVpUNawvnnTMxsZ4tacZsNgVCLorv7TkFq",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQAjZBfuIt31444PsyHaGKmKsqCvOWzOghdFXeTZeNr8iney",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xC0B417e7F83db438631Eb5E096684dd742E5294F",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "40652": {
+    "id": 40652,
+    "symbol": "rASML",
+    "name": "ASML Tokenized Stock (Reality)",
+    "slug": "asml-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40652.png",
+    "date_added": "2026-07-02T07:39:23.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40726": {
+    "id": 40726,
+    "symbol": "ASML",
+    "name": "ASML Holding NV Tokenized Stock (Robinhood)",
+    "slug": "asml-holding-nv-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40726.png",
+    "date_added": "2026-08-04T07:31:41.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x47F93d52cBeC7C6D2CfC080e154002370a60dAEA"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x47F93d52cBeC7C6D2CfC080e154002370a60dAEA",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40968": {
+    "id": 40968,
+    "symbol": "ASMLB",
+    "name": "ASML Tokenized bStocks",
+    "slug": "asml-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40968.png",
+    "date_added": "2026-08-04T03:48:05.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41170": {
+    "id": 41170,
+    "symbol": "wASMLx",
+    "name": "Wrapped ASML Tokenized Stock (xStock)",
+    "slug": "wrapped-asml-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41170.png",
+    "date_added": "2026-08-11T16:20:59.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x9147b03c16B18FC4F686f610f189f91Ddf4347b4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9147b03c16B18FC4F686f610f189f91Ddf4347b4",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+   "arbitrum:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+   "bsc:0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+   "bsc:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+   "bsc:0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+   "ethereum:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+   "ethereum:0xe51ba774ebf6392c45bf1d9e6b334d07992460d3",
+   "hyperevm:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+   "robinhood:0x47f93d52cbec7c6d2cfc080e154002370a60daea"
+  ],
+  "exact": {
+   "bsc:0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6": {
+    "key": "bsc:0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+    "name": "ASML Holding NV (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLON",
+    "price": 1646.61,
+    "address": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+    "addresses": {
+     "bsc": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+     "ethereum": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3236442,
+    "image": "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077",
+    "metrics": {
+     "volumeUsd1d": "1488683.465",
+     "volumeUsd7d": "11812338.426"
+    },
+    "metadata": {},
+    "tokenId": "f5976e8c-d72d-4d70-8dab-91ab6004e4e6",
+    "totalSupply": "1965.5060712617446",
+    "circulatingSupply": "1965.5060712617446",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe51ba774ebf6392c45bf1d9e6b334d07992460d3": {
+    "key": "ethereum:0xe51ba774ebf6392c45bf1d9e6b334d07992460d3",
+    "name": "ASML Holding NV (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLON",
+    "price": 1646.61,
+    "address": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3",
+    "addresses": {
+     "bsc": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+     "ethereum": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3236442,
+    "image": "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077",
+    "metrics": {
+     "volumeUsd1d": "1489509.244",
+     "volumeUsd7d": "11816159.249"
+    },
+    "metadata": {},
+    "tokenId": "f5976e8c-d72d-4d70-8dab-91ab6004e4e6",
+    "totalSupply": "1965.5060712617446",
+    "circulatingSupply": "1965.5060712617446",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x10d1107c665ae9c1d0c2de4d90222289dc8d317e": {
+    "key": "arbitrum:0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+    "name": "ASML Holding rStock",
+    "decimals": 18,
+    "symbol": "RASML",
+    "price": 1638.8,
+    "address": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+    "addresses": {
+     "arbitrum": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 266356,
+    "image": "https://coin-images.coingecko.com/coins/images/102176995/large/ad0d56ac8ac8ca9f2c31a8e09633182d.png?1789116316",
+    "metrics": {
+     "volumeUsd1d": "51.417",
+     "volumeUsd7d": "122545.745"
+    },
+    "metadata": {},
+    "tokenId": "daf33b0b-a489-4ae1-afe0-b69efed73047",
+    "totalSupply": "162.531169183",
+    "circulatingSupply": "162.531169183",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc0b417e7f83db438631eb5e096684dd742e5294f": {
+    "key": "ethereum:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+    "name": "ASML xStock",
+    "decimals": 18,
+    "symbol": "ASMLX",
+    "price": 1649.32,
+    "address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+    "addresses": {
+     "ethereum": "0xc0b417e7f83db438631eb5e096684dd742e5294f"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:13.400Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15548046.525161834,
+    "image": "https://coin-images.coingecko.com/coins/images/69643/large/Ticker_ASMLx__Company_Name_ASML_xStock__size_200x200.png?1759233775",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "asml-xstock"
+    },
+    "tokenId": "5adb1a4b-8534-4d43-99c8-e907f159f909",
+    "totalSupply": "9426.94354349782656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x47f93d52cbec7c6d2cfc080e154002370a60daea": {
+    "key": "robinhood:0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "name": "ASML Holding NV • Robinhood Token",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1635.14361128,
+    "address": "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "addresses": {
+     "robinhood": "0x47f93d52cbec7c6d2cfc080e154002370a60daea"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "liquidity": 146542.97563627883,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "40160.951"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000f6e013126d524981acc9df053b0c19ea",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000101323251417769",
+     "currentMultiplier": "1.000101323251417769",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "383b2dee-f31d-4d96-ae67-76fb2524c91b",
+    "totalSupply": "89.62085937",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9": {
+    "key": "bsc:0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+    "name": "ASML (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLB",
+    "price": 1625.4,
+    "address": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+    "addresses": {
+     "bsc": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:23:26.149Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1021499,
+    "metrics": {
+     "volumeUsd1d": "74470.825",
+     "volumeUsd7d": "1131336.432"
+    },
+    "metadata": {},
+    "tokenId": "6d7ca4f7-c1f8-4840-97f8-46b2b4ceeea8",
+    "totalSupply": "628.4607919800001",
+    "circulatingSupply": "628.4607919800001",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "ASML": {
+    "total_items": 34,
+    "pages": 1,
+    "received": 34,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af": {
+    "key": "ethereum:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "name": "ASML aStock",
+    "decimals": 18,
+    "symbol": "AASML",
+    "price": 1639.11,
+    "address": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "addresses": {
+     "ethereum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "arbitrum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "base": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "bsc": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "robinhood": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12226.36,
+    "image": "https://coin-images.coingecko.com/coins/images/102175673/large/ASML.png?1787292226",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ced6d30f-a328-4a8d-bafb-cda54381cae5",
+    "totalSupply": "7.459147043000001",
+    "circulatingSupply": "7.459147043000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6": {
+    "key": "bsc:0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+    "name": "ASML Holding NV (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLON",
+    "price": 1646.61,
+    "address": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+    "addresses": {
+     "bsc": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+     "ethereum": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3236442,
+    "image": "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077",
+    "metrics": {
+     "volumeUsd1d": "1488683.465",
+     "volumeUsd7d": "11812338.426"
+    },
+    "metadata": {},
+    "tokenId": "f5976e8c-d72d-4d70-8dab-91ab6004e4e6",
+    "totalSupply": "1965.5060712617446",
+    "circulatingSupply": "1965.5060712617446",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf15156b8b12a90cbb83f24f50f1719429b48676bd1080585d20068652a542389": {
+    "key": "robinhood:0xf15156b8b12a90cbb83f24f50f1719429b48676bd1080585d20068652a542389",
+    "name": "Uniswap V4 LP ASML/USDG",
+    "decimals": 18,
+    "symbol": "ASML/USDG",
+    "price": 9007199254740990,
+    "address": "0xf15156b8b12a90cbb83f24f50f1719429b48676bd1080585d20068652a542389",
+    "addresses": {
+     "robinhood": "0xf15156b8b12a90cbb83f24f50f1719429b48676bd1080585d20068652a542389"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.064Z",
+    "createdAt": "2026-09-23T04:58:56.182Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 934.7085859453756,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "64.085"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "3.1969"
+    },
+    "tokenId": "51a34f33-af16-459d-bdd3-f8d7e943ae10",
+    "reserves": [
+     "0.570351378014635563",
+     "2.102174"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3b7539824fcefc3f23f9f14cbf2a5b83e52c9bb74590f153fdf0e2df614f6d5f": {
+    "key": "bsc:0x3b7539824fcefc3f23f9f14cbf2a5b83e52c9bb74590f153fdf0e2df614f6d5f",
+    "name": "Uniswap V4 LP USDT/ASMLon",
+    "decimals": 18,
+    "symbol": "USDT/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x3b7539824fcefc3f23f9f14cbf2a5b83e52c9bb74590f153fdf0e2df614f6d5f",
+    "addresses": {
+     "bsc": "0x3b7539824fcefc3f23f9f14cbf2a5b83e52c9bb74590f153fdf0e2df614f6d5f"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.108Z",
+    "createdAt": "2026-06-10T05:15:08.756Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6"
+    ],
+    "liquidity": 572.1650866346749,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15400,
+     "feePercentage": "77"
+    },
+    "tokenId": "1d4d549f-5dcc-438b-a616-edd63f3df7a7",
+    "reserves": [
+     "294.921986924164088314",
+     "0.168517485235661902"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe51ba774ebf6392c45bf1d9e6b334d07992460d3": {
+    "key": "ethereum:0xe51ba774ebf6392c45bf1d9e6b334d07992460d3",
+    "name": "ASML Holding NV (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLON",
+    "price": 1646.61,
+    "address": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3",
+    "addresses": {
+     "bsc": "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6",
+     "ethereum": "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3236442,
+    "image": "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077",
+    "metrics": {
+     "volumeUsd1d": "1489509.244",
+     "volumeUsd7d": "11816159.249"
+    },
+    "metadata": {},
+    "tokenId": "f5976e8c-d72d-4d70-8dab-91ab6004e4e6",
+    "totalSupply": "1965.5060712617446",
+    "circulatingSupply": "1965.5060712617446",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x10d1107c665ae9c1d0c2de4d90222289dc8d317e": {
+    "key": "arbitrum:0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+    "name": "ASML Holding rStock",
+    "decimals": 18,
+    "symbol": "RASML",
+    "price": 1638.8,
+    "address": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e",
+    "addresses": {
+     "arbitrum": "0x10d1107c665ae9c1d0c2de4d90222289dc8d317e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 266356,
+    "image": "https://coin-images.coingecko.com/coins/images/102176995/large/ad0d56ac8ac8ca9f2c31a8e09633182d.png?1789116316",
+    "metrics": {
+     "volumeUsd1d": "51.417",
+     "volumeUsd7d": "122545.745"
+    },
+    "metadata": {},
+    "tokenId": "daf33b0b-a489-4ae1-afe0-b69efed73047",
+    "totalSupply": "162.531169183",
+    "circulatingSupply": "162.531169183",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5b8d43207e7a3026bddbfd202800f80d75e058e70051df0846c5d8b3979b73c9": {
+    "key": "robinhood:0x5b8d43207e7a3026bddbfd202800f80d75e058e70051df0846c5d8b3979b73c9",
+    "name": "Uniswap V4 LP ASML/USDG",
+    "decimals": 18,
+    "symbol": "ASML/USDG",
+    "price": 9007199254740990,
+    "address": "0x5b8d43207e7a3026bddbfd202800f80d75e058e70051df0846c5d8b3979b73c9",
+    "addresses": {
+     "robinhood": "0x5b8d43207e7a3026bddbfd202800f80d75e058e70051df0846c5d8b3979b73c9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.060Z",
+    "createdAt": "2026-09-09T07:57:18.794Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 503.0608347172936,
+    "metrics": {
+     "apy": "5.308",
+     "baseApy": "5.308",
+     "volumeUsd1d": "15.573",
+     "volumeUsd7d": "963.31"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 40,
+     "feePercentage": "0.4698"
+    },
+    "tokenId": "5eb22323-3719-4b70-b03b-fd54aadb5beb",
+    "reserves": [
+     "0.179119038656195586",
+     "210.175483"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2beb09530c59689b88a78216e3adb3045f7f21ec3eb4ba7d1958fcde5fb42f90": {
+    "key": "ethereum:0x2beb09530c59689b88a78216e3adb3045f7f21ec3eb4ba7d1958fcde5fb42f90",
+    "name": "Uniswap V4 LP EGP/ASMLon",
+    "decimals": 18,
+    "symbol": "EGP/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x2beb09530c59689b88a78216e3adb3045f7f21ec3eb4ba7d1958fcde5fb42f90",
+    "addresses": {
+     "ethereum": "0x2beb09530c59689b88a78216e3adb3045f7f21ec3eb4ba7d1958fcde5fb42f90"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.216Z",
+    "createdAt": "2026-10-14T06:54:48.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 20057.23817038184,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.58"
+    },
+    "tokenId": "00293e22-61a7-4a54-930c-7c64c0497f9c",
+    "reserves": [
+     "19999.999999999999999952",
+     "0.015492725024202292"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97": {
+    "key": "arbitrum:0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+    "name": "ASML Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1642.62,
+    "address": "0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+    "addresses": {
+     "arbitrum": "0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+     "avalanche": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+     "base": "0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+     "ethereum": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13411.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175081/large/dinari-logo-green-with-margin.png?1785403137",
+    "metrics": {
+     "volumeUsd1d": "0.164",
+     "volumeUsd7d": "1094.249"
+    },
+    "metadata": {},
+    "tokenId": "8bc4e45d-3cae-4c80-aebe-372e6d4103d8",
+    "totalSupply": "8.16438677",
+    "circulatingSupply": "8.16438677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af": {
+    "key": "base:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "name": "ASML aStock",
+    "decimals": 18,
+    "symbol": "AASML",
+    "price": 1639.11,
+    "address": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "addresses": {
+     "ethereum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "arbitrum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "base": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "bsc": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "robinhood": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12226.36,
+    "image": "https://coin-images.coingecko.com/coins/images/102175673/large/ASML.png?1787292226",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ced6d30f-a328-4a8d-bafb-cda54381cae5",
+    "totalSupply": "7.459147043000001",
+    "circulatingSupply": "7.459147043000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x45ae7cab6c58edffeaf557448af4ddc3b72645237781180b83097b36e9705aa4": {
+    "key": "robinhood:0x45ae7cab6c58edffeaf557448af4ddc3b72645237781180b83097b36e9705aa4",
+    "name": "Uniswap V4 LP ASML/SHROOM",
+    "decimals": 18,
+    "symbol": "ASML/SHROOM",
+    "price": 9007199254740990,
+    "address": "0x45ae7cab6c58edffeaf557448af4ddc3b72645237781180b83097b36e9705aa4",
+    "addresses": {
+     "robinhood": "0x45ae7cab6c58edffeaf557448af4ddc3b72645237781180b83097b36e9705aa4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/102176720/large/shroom.jpg?1788592860"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.113Z",
+    "createdAt": "2026-09-08T15:09:09.271Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0xab093def657f15df31b33922a95e047add645b29"
+    ],
+    "liquidity": 637.8225367829116,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "842cdf6b-f29d-4f1f-afa2-b728320adf3c",
+    "reserves": [
+     "0.17274434396752951",
+     "73535.283115155418893413"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x04978c5445720caf2fbedc27ac66b65759ae75afe0abf96ff4d406490ed06b05": {
+    "key": "bsc:0x04978c5445720caf2fbedc27ac66b65759ae75afe0abf96ff4d406490ed06b05",
+    "name": "Uniswap V4 LP USDT/ASMLon",
+    "decimals": 18,
+    "symbol": "USDT/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x04978c5445720caf2fbedc27ac66b65759ae75afe0abf96ff4d406490ed06b05",
+    "addresses": {
+     "bsc": "0x04978c5445720caf2fbedc27ac66b65759ae75afe0abf96ff4d406490ed06b05"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.556Z",
+    "createdAt": "2025-10-30T06:07:53.425Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xb034f6cb52b7f2fd5a7eeeffca6b9adcd6b9a6f6"
+    ],
+    "liquidity": 1020.2621775214518,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80"
+    },
+    "tokenId": "352ce0f3-7301-4fd1-93a0-8d8a2ba239c7",
+    "reserves": [
+     "407.221821616919277962",
+     "0.37250534129131091"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af": {
+    "key": "arbitrum:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "name": "ASML aStock",
+    "decimals": 18,
+    "symbol": "AASML",
+    "price": 1639.11,
+    "address": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "addresses": {
+     "ethereum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "arbitrum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "base": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "bsc": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "robinhood": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12226.36,
+    "image": "https://coin-images.coingecko.com/coins/images/102175673/large/ASML.png?1787292226",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ced6d30f-a328-4a8d-bafb-cda54381cae5",
+    "totalSupply": "7.459147043000001",
+    "circulatingSupply": "7.459147043000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af": {
+    "key": "bsc:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "name": "ASML aStock",
+    "decimals": 18,
+    "symbol": "AASML",
+    "price": 1639.11,
+    "address": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "addresses": {
+     "ethereum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "arbitrum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "base": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "bsc": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "robinhood": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12226.36,
+    "image": "https://coin-images.coingecko.com/coins/images/102175673/large/ASML.png?1787292226",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ced6d30f-a328-4a8d-bafb-cda54381cae5",
+    "totalSupply": "7.459147043000001",
+    "circulatingSupply": "7.459147043000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af": {
+    "key": "robinhood:0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "name": "ASML aStock",
+    "decimals": 18,
+    "symbol": "AASML",
+    "price": 1639.11,
+    "address": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+    "addresses": {
+     "ethereum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "arbitrum": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "base": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "bsc": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af",
+     "robinhood": "0xfae6ba6d36a6388c5a944a9366e55b6597e4f8af"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12226.36,
+    "image": "https://coin-images.coingecko.com/coins/images/102175673/large/ASML.png?1787292226",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "ced6d30f-a328-4a8d-bafb-cda54381cae5",
+    "totalSupply": "7.459147043000001",
+    "circulatingSupply": "7.459147043000001",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x714d77997df9fad1908fe6002347f28ce5aceb7ed69dbb31174d73f323c45c4e": {
+    "key": "ethereum:0x714d77997df9fad1908fe6002347f28ce5aceb7ed69dbb31174d73f323c45c4e",
+    "name": "Uniswap V4 LP ETH/ASMLon",
+    "decimals": 18,
+    "symbol": "ETH/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x714d77997df9fad1908fe6002347f28ce5aceb7ed69dbb31174d73f323c45c4e",
+    "addresses": {
+     "ethereum": "0x714d77997df9fad1908fe6002347f28ce5aceb7ed69dbb31174d73f323c45c4e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.566Z",
+    "createdAt": "2026-01-23T08:30:00.135Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 541.7489208381713,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16800,
+     "feePercentage": "84"
+    },
+    "tokenId": "925d77b7-803b-42e3-b469-3cbc0191f66d",
+    "reserves": [
+     "0.090917889310871223",
+     "0.199999999999999998"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x53ff4e6116fb26104d27053b929386d062be859f": {
+    "key": "bsc:0x53ff4e6116fb26104d27053b929386d062be859f",
+    "name": "Uniswap V3 Nasf/ASML 0.3%",
+    "decimals": 18,
+    "symbol": "NASF/ASMLB",
+    "price": 9007199254740990,
+    "address": "0x53ff4e6116fb26104d27053b929386d062be859f",
+    "addresses": {
+     "bsc": "0x53ff4e6116fb26104d27053b929386d062be859f"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/56052/large/NASF-logo.png?1748160573"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.164Z",
+    "createdAt": "2026-09-09T17:13:51.573Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7891d5f6c0eba5485d2fca5cc83b4c89a770f9a6",
+     "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9"
+    ],
+    "liquidity": 905.702649428591,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "35.876"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "7d5cfa9b-6a03-458f-b35e-eaf7f255b1fd",
+    "reserves": [
+     "269260.474263125036863907",
+     "0.031464626827539811"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb4c59c3c5619e2204ba250e525fb4e79d941fdb453bb4bf67a166a031938ebd9": {
+    "key": "ethereum:0xb4c59c3c5619e2204ba250e525fb4e79d941fdb453bb4bf67a166a031938ebd9",
+    "name": "Uniswap V4 LP USDC/ASMLon",
+    "decimals": 18,
+    "symbol": "USDC/ASMLON",
+    "price": 9007199254740990,
+    "address": "0xb4c59c3c5619e2204ba250e525fb4e79d941fdb453bb4bf67a166a031938ebd9",
+    "addresses": {
+     "ethereum": "0xb4c59c3c5619e2204ba250e525fb4e79d941fdb453bb4bf67a166a031938ebd9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.232Z",
+    "createdAt": "2025-09-26T08:45:50.931Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 748.9430864300499,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "d5b006c5-ed6f-4e69-a32b-182b33459ebe",
+    "reserves": [
+     "373.841179",
+     "0.227843613656815463"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbb1eeb4ee50857657d1a269fe5cef8e1608d40b746c6faaf786067caf40807c5": {
+    "key": "ethereum:0xbb1eeb4ee50857657d1a269fe5cef8e1608d40b746c6faaf786067caf40807c5",
+    "name": "Uniswap V4 LP USDT/ASMLx",
+    "decimals": 18,
+    "symbol": "USDT/ASMLX",
+    "price": 9007199254740990,
+    "address": "0xbb1eeb4ee50857657d1a269fe5cef8e1608d40b746c6faaf786067caf40807c5",
+    "addresses": {
+     "ethereum": "0xbb1eeb4ee50857657d1a269fe5cef8e1608d40b746c6faaf786067caf40807c5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.628Z",
+    "createdAt": "2026-10-18T18:58:36.335Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xc0b417e7f83db438631eb5e096684dd742e5294f"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "0b1c584d-b484-4f52-a6c7-b8c7ced1cb5c",
+    "reserves": [
+     "3999.999999999999999986",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe888c87f50c2f326b5d5f33571de1204fe9d68e6": {
+    "key": "ethereum:0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+    "name": "ASML Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1642.62,
+    "address": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+    "addresses": {
+     "arbitrum": "0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+     "avalanche": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+     "base": "0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+     "ethereum": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13411.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175081/large/dinari-logo-green-with-margin.png?1785403137",
+    "metrics": {
+     "volumeUsd1d": "0.164",
+     "volumeUsd7d": "1093.583"
+    },
+    "metadata": {},
+    "tokenId": "8bc4e45d-3cae-4c80-aebe-372e6d4103d8",
+    "totalSupply": "8.16438677",
+    "circulatingSupply": "8.16438677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65": {
+    "key": "robinhood:0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65",
+    "name": "Uniswap V3 ASML Holding NV  Robinhood Token/Taiwan Semiconductor Manufacturing  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "ASML/TSM",
+    "price": 9007199254740990,
+    "address": "0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65",
+    "addresses": {
+     "robinhood": "0xbcc24e00dbc06aa064bf3a4bb9973546bde24a65"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/102174148/large/0x58ffe4a942d3885baa22d7520691f611ef09e7aa.png?1782444664"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.294Z",
+    "createdAt": "2026-09-08T09:35:06.493Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x58ffe4a942d3885baa22d7520691f611ef09e7aa"
+    ],
+    "liquidity": 1789.832261220483,
+    "metrics": {
+     "apy": "5.767",
+     "baseApy": "5.767",
+     "volumeUsd1d": "94.271",
+     "volumeUsd7d": "9951.396"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "78175e9b-95ed-49d3-aac3-4cf5a5e8c934",
+    "reserves": [
+     "0.216417784260770874",
+     "3.473111364678704322"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbe0b2dbf5b16d858331e3cd8c23f996c2ef51e12c3e710cb719fcf9b5f8629c2": {
+    "key": "robinhood:0xbe0b2dbf5b16d858331e3cd8c23f996c2ef51e12c3e710cb719fcf9b5f8629c2",
+    "name": "Uniswap V4 LP ETH/ASML",
+    "decimals": 18,
+    "symbol": "ETH/ASML",
+    "price": 9007199254740990,
+    "address": "0xbe0b2dbf5b16d858331e3cd8c23f996c2ef51e12c3e710cb719fcf9b5f8629c2",
+    "addresses": {
+     "robinhood": "0xbe0b2dbf5b16d858331e3cd8c23f996c2ef51e12c3e710cb719fcf9b5f8629c2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.601Z",
+    "createdAt": "2026-08-20T14:21:42.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea"
+    ],
+    "liquidity": 5071.744518524398,
+    "metrics": {
+     "apy": "0.002",
+     "baseApy": "0.002",
+     "volumeUsd1d": "0.007",
+     "volumeUsd7d": "74.82"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "c01a789b-1b70-47be-8ad6-b6e8bb8da6f6",
+    "reserves": [
+     "0.263438242824109809",
+     "2.725282927182639279"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1b7c33621e1ce56d67c33923d3be01e4c8aae5d0dc0ebe1c18fa2255b832ae6f": {
+    "key": "ethereum:0x1b7c33621e1ce56d67c33923d3be01e4c8aae5d0dc0ebe1c18fa2255b832ae6f",
+    "name": "Uniswap V4 LP wUSDC/ASMLon",
+    "decimals": 18,
+    "symbol": "WUSDC/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x1b7c33621e1ce56d67c33923d3be01e4c8aae5d0dc0ebe1c18fa2255b832ae6f",
+    "addresses": {
+     "ethereum": "0x1b7c33621e1ce56d67c33923d3be01e4c8aae5d0dc0ebe1c18fa2255b832ae6f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.786Z",
+    "createdAt": "2026-09-28T10:37:07.915Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "ff6cdf4c-7a4e-459a-8ecb-442aeafd2720",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xe888c87f50c2f326b5d5f33571de1204fe9d68e6": {
+    "key": "avalanche:0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+    "name": "ASML Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1642.62,
+    "address": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+    "addresses": {
+     "arbitrum": "0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+     "avalanche": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+     "base": "0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+     "ethereum": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13411.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175081/large/dinari-logo-green-with-margin.png?1785403137",
+    "metrics": {
+     "volumeUsd1d": "0.164",
+     "volumeUsd7d": "1095.205"
+    },
+    "metadata": {},
+    "tokenId": "8bc4e45d-3cae-4c80-aebe-372e6d4103d8",
+    "totalSupply": "8.16438677",
+    "circulatingSupply": "8.16438677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x95dfd3468383956e449265b3e3d1dac182d0faad0eec5d409f943acaaec3104f": {
+    "key": "robinhood:0x95dfd3468383956e449265b3e3d1dac182d0faad0eec5d409f943acaaec3104f",
+    "name": "Uniswap V4 LP ASML/USDG",
+    "decimals": 18,
+    "symbol": "ASML/USDG",
+    "price": 9007199254740990,
+    "address": "0x95dfd3468383956e449265b3e3d1dac182d0faad0eec5d409f943acaaec3104f",
+    "addresses": {
+     "robinhood": "0x95dfd3468383956e449265b3e3d1dac182d0faad0eec5d409f943acaaec3104f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.440Z",
+    "createdAt": "2026-09-09T07:57:19.518Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 751.3355906357709,
+    "metrics": {
+     "apy": "5.413",
+     "baseApy": "5.413",
+     "volumeUsd1d": "13.94",
+     "volumeUsd7d": "739.843"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 70,
+     "feePercentage": "0.7993"
+    },
+    "tokenId": "fee39ddb-979b-4aec-9cc5-bd3979bbe186",
+    "reserves": [
+     "0.336501227072678587",
+     "201.107759"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc0b417e7f83db438631eb5e096684dd742e5294f": {
+    "key": "ethereum:0xc0b417e7f83db438631eb5e096684dd742e5294f",
+    "name": "ASML xStock",
+    "decimals": 18,
+    "symbol": "ASMLX",
+    "price": 1649.32,
+    "address": "0xc0b417e7f83db438631eb5e096684dd742e5294f",
+    "addresses": {
+     "ethereum": "0xc0b417e7f83db438631eb5e096684dd742e5294f"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:13.400Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15548046.525161834,
+    "image": "https://coin-images.coingecko.com/coins/images/69643/large/Ticker_ASMLx__Company_Name_ASML_xStock__size_200x200.png?1759233775",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "asml-xstock"
+    },
+    "tokenId": "5adb1a4b-8534-4d43-99c8-e907f159f909",
+    "totalSupply": "9426.94354349782656",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x11d0be5c9777bd8b7a09a226f0c00a089520d44c4423a846255986444027ac43": {
+    "key": "bsc:0x11d0be5c9777bd8b7a09a226f0c00a089520d44c4423a846255986444027ac43",
+    "name": "Uniswap V4 LP USDT/ASMLB",
+    "decimals": 18,
+    "symbol": "USDT/ASMLB",
+    "price": 9007199254740990,
+    "address": "0x11d0be5c9777bd8b7a09a226f0c00a089520d44c4423a846255986444027ac43",
+    "addresses": {
+     "bsc": "0x11d0be5c9777bd8b7a09a226f0c00a089520d44c4423a846255986444027ac43"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.894Z",
+    "createdAt": "2026-08-08T18:10:58.948Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9"
+    ],
+    "liquidity": 566.9884155431437,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "d318da62-6853-498c-a237-70b9e0a20413",
+    "reserves": [
+     "363.855367022224704529",
+     "0.12515596104278394"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xce79c1b7b5f9ae1aab3b1796e7fcd2f5f24cf265": {
+    "key": "robinhood:0xce79c1b7b5f9ae1aab3b1796e7fcd2f5f24cf265",
+    "name": "Uniswap V3 ASML Holding NV  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "ASML/USDG",
+    "price": 9007199254740990,
+    "address": "0xce79c1b7b5f9ae1aab3b1796e7fcd2f5f24cf265",
+    "addresses": {
+     "robinhood": "0xce79c1b7b5f9ae1aab3b1796e7fcd2f5f24cf265"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.252Z",
+    "createdAt": "2026-09-03T10:20:08.304Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1186.8540246367427,
+    "metrics": {
+     "apy": "27.491",
+     "baseApy": "27.491",
+     "volumeUsd1d": "297.967",
+     "volumeUsd7d": "3206.146"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "14cbedc4-9218-4b05-94af-10932d55ee6d",
+    "reserves": [
+     "0.383545334067510262",
+     "559.702322"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0e9110d96e0ca906b5e4455b7ab26317ef183562c0fc2c81cdfbb2122848c14d": {
+    "key": "ethereum:0x0e9110d96e0ca906b5e4455b7ab26317ef183562c0fc2c81cdfbb2122848c14d",
+    "name": "Uniswap V4 LP USDm/ASMLon",
+    "decimals": 18,
+    "symbol": "USDM/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x0e9110d96e0ca906b5e4455b7ab26317ef183562c0fc2c81cdfbb2122848c14d",
+    "addresses": {
+     "ethereum": "0x0e9110d96e0ca906b5e4455b7ab26317ef183562c0fc2c81cdfbb2122848c14d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.062Z",
+    "createdAt": "2026-10-14T18:45:03.040Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3a0ff81672c45f233f8f2ad39044417b04aaa40e",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 4993.602365018821,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.2118"
+    },
+    "tokenId": "60eed798-bf2c-4d08-924a-a5fac0690267",
+    "reserves": [
+     "5000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1bf181ec43771ad57825c595a17a7c090818683d1b0f4b89f1df99a421c69046": {
+    "key": "ethereum:0x1bf181ec43771ad57825c595a17a7c090818683d1b0f4b89f1df99a421c69046",
+    "name": "Uniswap V4 LP USDT/ASMLon",
+    "decimals": 18,
+    "symbol": "USDT/ASMLON",
+    "price": 9007199254740990,
+    "address": "0x1bf181ec43771ad57825c595a17a7c090818683d1b0f4b89f1df99a421c69046",
+    "addresses": {
+     "ethereum": "0x1bf181ec43771ad57825c595a17a7c090818683d1b0f4b89f1df99a421c69046"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68642/large/asmlon_160x160.png?1756156077"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.715Z",
+    "createdAt": "2025-09-26T08:45:48.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xe51ba774ebf6392c45bf1d9e6b334d07992460d3"
+    ],
+    "liquidity": 662.5743176631723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "2f860a4d-1eff-4698-b2cd-207c271c225e",
+    "reserves": [
+     "328.834382",
+     "0.202845208750922381"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c": {
+    "key": "base:0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+    "name": "ASML Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1642.62,
+    "address": "0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+    "addresses": {
+     "arbitrum": "0xf0f9a47ed3806b3149d76e56698e22d4ce2d9b97",
+     "avalanche": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6",
+     "base": "0x94659ba5f3a5dbbd2a648616fe7bb400ca06fc1c",
+     "ethereum": "0xe888c87f50c2f326b5d5f33571de1204fe9d68e6"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13411.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102175081/large/dinari-logo-green-with-margin.png?1785403137",
+    "metrics": {
+     "volumeUsd1d": "0.164",
+     "volumeUsd7d": "1095.116"
+    },
+    "metadata": {},
+    "tokenId": "8bc4e45d-3cae-4c80-aebe-372e6d4103d8",
+    "totalSupply": "8.16438677",
+    "circulatingSupply": "8.16438677",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xedb22516b14eb2d1c86927db373b0e8bf70f5cd1": {
+    "key": "robinhood:0xedb22516b14eb2d1c86927db373b0e8bf70f5cd1",
+    "name": "Uniswap V3 ASML Holding NV  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "ASML/USDG",
+    "price": 9007199254740990,
+    "address": "0xedb22516b14eb2d1c86927db373b0e8bf70f5cd1",
+    "addresses": {
+     "robinhood": "0xedb22516b14eb2d1c86927db373b0e8bf70f5cd1"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174168/large/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png?1782444718",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.484Z",
+    "createdAt": "2026-07-19T04:42:28.619Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 24633.60749817193,
+    "metrics": {
+     "apy": "8.828",
+     "baseApy": "8.828",
+     "volumeUsd1d": "595.82",
+     "volumeUsd7d": "39920.159"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "61d9e024-32cd-4bf5-ab4a-9f49e4d26549",
+    "reserves": [
+     "9.530972365156528744",
+     "9049.098926"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x47f93d52cbec7c6d2cfc080e154002370a60daea": {
+    "key": "robinhood:0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "name": "ASML Holding NV • Robinhood Token",
+    "decimals": 18,
+    "symbol": "ASML",
+    "price": 1635.14361128,
+    "address": "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "addresses": {
+     "robinhood": "0x47f93d52cbec7c6d2cfc080e154002370a60daea"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x47f93d52cbec7c6d2cfc080e154002370a60daea.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+    "liquidity": 146542.97563627883,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "40160.951"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000f6e013126d524981acc9df053b0c19ea",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000101323251417769",
+     "currentMultiplier": "1.000101323251417769",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "383b2dee-f31d-4d96-ae67-76fb2524c91b",
+    "totalSupply": "89.62085937",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9": {
+    "key": "bsc:0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+    "name": "ASML (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ASMLB",
+    "price": 1625.4,
+    "address": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9",
+    "addresses": {
+     "bsc": "0xfbfb4f79cfb4c34dcd7c82bdee5a0fa199b2e7f9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:23:26.149Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1021499,
+    "metrics": {
+     "volumeUsd1d": "74470.825",
+     "volumeUsd7d": "1131336.432"
+    },
+    "metadata": {},
+    "tokenId": "6d7ca4f7-c1f8-4840-97f8-46b2b4ceeea8",
+    "totalSupply": "628.4607919800001",
+    "circulatingSupply": "628.4607919800001",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

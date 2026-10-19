@@ -1,0 +1,1151 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US8740541094",
+ "ticker": "TTWO",
+ "name": "Take-Two Interactive",
+ "isin": "US8740541094",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:15Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Take-Two Interactive Software, Inc.",
+   "symbol": "TTWO",
+   "slug": "take-two-interactive-software-inc",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 202.9266124054614,
+     "tokenized_market_cap": 1138434.1599420325,
+     "tokenized_volume_24h": 29408.54366895,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 466,
+   "asset_type": "stock",
+   "rwa_rank": 384,
+   "has_tokens": true,
+   "average_tokenized_price": 202.9266124054614,
+   "tokenized_market_cap": 1138434.1599420325,
+   "tokenized_volume_24h": 29408.54366895,
+   "last_updated": "2026-10-18T20:13:43.330Z",
+   "tokens": [
+    {
+     "symbol": "TTWO",
+     "name": "Take-Two Interactive Software, Inc. Common Stock (Derivatives)",
+     "price": 203.2775054797054,
+     "crypto_id": 40679,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "TTWO",
+     "name": "Take-Two Interactive Software Tokenized Stock (Robinhood)",
+     "price": 202.92937342733865,
+     "crypto_id": 40753,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1135125.75,
+     "volume_24h": 29448.34159576
+    },
+    {
+     "symbol": "wTTWOx",
+     "name": "Wrapped Take-Two Interactive Software Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41680,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "TTWOc",
+     "name": "Take-Two Interactive Software, Inc. Tokenized Stock (Coinbase)",
+     "price": 225.02410175936453,
+     "crypto_id": 42458,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 3323.85,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "TTWO",
+     "market_url": "https://www.binance.com/en/stocks/EQ_TTWO"
+    }
+   ]
+  },
+  "info": {
+   "40679": {
+    "id": 40679,
+    "symbol": "TTWO",
+    "name": "Take-Two Interactive Software, Inc. Common Stock (Derivatives)",
+    "slug": "take-two-interactive-software-inc-common-stock-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40679.png",
+    "date_added": "2026-07-02T11:50:39.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40753": {
+    "id": 40753,
+    "symbol": "TTWO",
+    "name": "Take-Two Interactive Software Tokenized Stock (Robinhood)",
+    "slug": "take-two-interactive-software-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40753.png",
+    "date_added": "2026-08-04T07:31:52.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x5e81213613b6B86EaB4c6c50d718d34359459786"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5e81213613b6B86EaB4c6c50d718d34359459786",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41680": {
+    "id": 41680,
+    "symbol": "wTTWOx",
+    "name": "Wrapped Take-Two Interactive Software Tokenized Stock (xStock)",
+    "slug": "wrapped-take-two-interactive-software-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41680.png",
+    "date_added": "2026-08-11T16:26:29.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xC30A91A854cFff001656cEA8F76005009bf62546"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xC30A91A854cFff001656cEA8F76005009bf62546",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42458": {
+    "id": 42458,
+    "symbol": "TTWOc",
+    "name": "Take-Two Interactive Software, Inc. Tokenized Stock (Coinbase)",
+    "slug": "take-two-interactive-software-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42458.png",
+    "date_added": "2026-10-08T03:59:59.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB200000000000000000000f720C26062Bc3067Da"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB200000000000000000000f720C26062Bc3067Da",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "base:0xb200000000000000000000f720c26062bc3067da",
+   "robinhood:0x5e81213613b6b86eab4c6c50d718d34359459786"
+  ],
+  "exact": {
+   "robinhood:0x5e81213613b6b86eab4c6c50d718d34359459786": {
+    "key": "robinhood:0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "name": "Take-Two Interactive Software • Robinhood Token",
+    "decimals": 18,
+    "symbol": "TTWO",
+    "price": 205.45499999999998,
+    "address": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "addresses": {
+     "robinhood": "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x5e81213613b6b86eab4c6c50d718d34359459786.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "liquidity": 1149253.3458629998,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "183257.757"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000032d0504fcc1a48ff8ac9b29185578559",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "7a4607d5-4545-4920-bdb1-73b241070e20",
+    "totalSupply": "5593.6986",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb200000000000000000000f720c26062bc3067da": {
+    "key": "base:0xb200000000000000000000f720c26062bc3067da",
+    "name": "Take-Two Interactive Software, Inc. (Coinbase Tokenized Stock)",
+    "decimals": 8,
+    "symbol": "TTWOC",
+    "price": 224.79,
+    "address": "0xb200000000000000000000f720c26062bc3067da",
+    "addresses": {
+     "base": "0xb200000000000000000000f720c26062bc3067da"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-08T07:18:41.143Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3320.27,
+    "image": "https://coin-images.coingecko.com/coins/images/102179263/large/TTWOc-icon-200.png?1791375817",
+    "metrics": {
+     "volumeUsd1d": "255.036",
+     "volumeUsd7d": "38630.788"
+    },
+    "metadata": {},
+    "tokenId": "913441fe-fff0-4161-8422-d8ff5d261892",
+    "totalSupply": "14.7710943",
+    "circulatingSupply": "14.7710943",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "TTWO": {
+    "total_items": 18,
+    "pages": 1,
+    "received": 18,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x131e6ebeeedb524a1e7590aa3eea3bc8782b5425a78d5128c0ca955190d0ea69": {
+    "key": "robinhood:0x131e6ebeeedb524a1e7590aa3eea3bc8782b5425a78d5128c0ca955190d0ea69",
+    "name": "Uniswap V4 LP TTWO/USDG",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0x131e6ebeeedb524a1e7590aa3eea3bc8782b5425a78d5128c0ca955190d0ea69",
+    "addresses": {
+     "robinhood": "0x131e6ebeeedb524a1e7590aa3eea3bc8782b5425a78d5128c0ca955190d0ea69"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.728Z",
+    "createdAt": "2026-08-14T07:04:03.532Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1470.253810344248,
+    "metrics": {
+     "apy": "4.789",
+     "baseApy": "4.789",
+     "volumeUsd1d": "17.552",
+     "volumeUsd7d": "817.927"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "ace91716-42f4-4aff-bccb-c8a7d3b4cea3",
+    "reserves": [
+     "5.198174803943676708",
+     "402.262806"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc9dad63b6fb9afe1fe888ebc7b023c587c58b9498f5bd17166226c0995dbc4eb": {
+    "key": "robinhood:0xc9dad63b6fb9afe1fe888ebc7b023c587c58b9498f5bd17166226c0995dbc4eb",
+    "name": "Uniswap V4 LP TTWO/USDG",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0xc9dad63b6fb9afe1fe888ebc7b023c587c58b9498f5bd17166226c0995dbc4eb",
+    "addresses": {
+     "robinhood": "0xc9dad63b6fb9afe1fe888ebc7b023c587c58b9498f5bd17166226c0995dbc4eb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.409Z",
+    "createdAt": "2026-08-14T15:04:40.636Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 102395.01393913562,
+    "metrics": {
+     "apy": "23.518",
+     "baseApy": "23.518",
+     "volumeUsd1d": "7337.171",
+     "volumeUsd7d": "211692.117"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 80,
+     "feePercentage": "0.8992"
+    },
+    "tokenId": "60a4d761-d091-4b66-9632-ba0a3360ee44",
+    "reserves": [
+     "310.360045835514483376",
+     "38629.990722"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x060b5785d6a69bec0a043be8632537e9f6f338d6": {
+    "key": "arbitrum:0x060b5785d6a69bec0a043be8632537e9f6f338d6",
+    "name": "Take-Two Interactive Software rStock",
+    "decimals": 18,
+    "symbol": "RTTWO",
+    "price": 204.97,
+    "address": "0x060b5785d6a69bec0a043be8632537e9f6f338d6",
+    "addresses": {
+     "arbitrum": "0x060b5785d6a69bec0a043be8632537e9f6f338d6"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 172434,
+    "image": "https://coin-images.coingecko.com/coins/images/102177234/large/44080a650b9cd0cb52aff7daeb44d7e3.png?1789117249",
+    "metrics": {
+     "volumeUsd1d": "123.077",
+     "volumeUsd7d": "160244.193"
+    },
+    "metadata": {},
+    "tokenId": "45e8a8c8-d8cb-4490-97ff-761bffb795b8",
+    "totalSupply": "841.264965278",
+    "circulatingSupply": "841.264965278",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe69fe23b708362ef5817048f16e4171e0831341c": {
+    "key": "robinhood:0xe69fe23b708362ef5817048f16e4171e0831341c",
+    "name": "Uniswap V3 WETH/Take-Two Interactive Software  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/TTWO",
+    "price": 9007199254740990,
+    "address": "0xe69fe23b708362ef5817048f16e4171e0831341c",
+    "addresses": {
+     "robinhood": "0xe69fe23b708362ef5817048f16e4171e0831341c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740"
+    ],
+    "updatedAt": "2026-10-18T20:17:54.640Z",
+    "createdAt": "2026-09-09T01:14:56.472Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    ],
+    "liquidity": 5648.128943172708,
+    "metrics": {
+     "apy": "75.317",
+     "baseApy": "75.317",
+     "volumeUsd1d": "3885.458",
+     "volumeUsd7d": "41571.78"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "ab89c7af-089d-47bd-8776-931ca293d59e",
+    "reserves": [
+     "1.859136043964918728",
+     "6.353662113044189134"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x377b04c6efe045bbf4df453d5cbdc2cfe5c5634a9a8699cfa089c826150cd0be": {
+    "key": "robinhood:0x377b04c6efe045bbf4df453d5cbdc2cfe5c5634a9a8699cfa089c826150cd0be",
+    "name": "Uniswap V4 LP ETH/TTWO",
+    "decimals": 18,
+    "symbol": "ETH/TTWO",
+    "price": 9007199254740990,
+    "address": "0x377b04c6efe045bbf4df453d5cbdc2cfe5c5634a9a8699cfa089c826150cd0be",
+    "addresses": {
+     "robinhood": "0x377b04c6efe045bbf4df453d5cbdc2cfe5c5634a9a8699cfa089c826150cd0be"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.727Z",
+    "createdAt": "2026-08-24T14:19:13.939Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    ],
+    "liquidity": 633.0361112721,
+    "metrics": {
+     "apy": "5.244",
+     "baseApy": "5.244",
+     "volumeUsd1d": "7.005",
+     "volumeUsd7d": "183.998"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 120,
+     "feePercentage": "1.2988"
+    },
+    "tokenId": "b221afa3-f4d6-4705-b45c-aa5864fb58b8",
+    "reserves": [
+     "0.149887474411589634",
+     "1.378040452327702974"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9": {
+    "key": "robinhood:0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9",
+    "name": "Beefy CLM TTWO-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODTTWO-USDG",
+    "price": 1025369995399.4185,
+    "address": "0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9",
+    "addresses": {
+     "robinhood": "0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8df8a07a294eb8fd8da556901f1fd6a92526f729"
+    ],
+    "poolAddress": "0x8df8a07a294eb8fd8da556901f1fd6a92526f729",
+    "liquidity": 3236.885405240056,
+    "metrics": {
+     "apy": "32.311",
+     "baseApy": "32.311",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-ttwo-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x8df8a07a294eb8fd8da556901f1fd6a92526f729",
+     "strategyAddress": "0x6af36d931908ac6b447a045ce09f8417765d43e9",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9",
+     "depositTokenAddresses": [
+      "0x5e81213613b6b86eab4c6c50d718d34359459786",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "dee6fc8a-e902-4c04-9399-8acebfbeac83",
+    "totalSupply": "0.000000003156797468",
+    "reserves": [
+     "0.000000003156797468"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xaf313f02e31e8adbc5aabbdfa5b02377bfa794089b06c60404a63d1a54b042fa": {
+    "key": "robinhood:0xaf313f02e31e8adbc5aabbdfa5b02377bfa794089b06c60404a63d1a54b042fa",
+    "name": "Uniswap V4 LP TTWO/USDG",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0xaf313f02e31e8adbc5aabbdfa5b02377bfa794089b06c60404a63d1a54b042fa",
+    "addresses": {
+     "robinhood": "0xaf313f02e31e8adbc5aabbdfa5b02377bfa794089b06c60404a63d1a54b042fa"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.890Z",
+    "createdAt": "2026-07-28T21:08:25.018Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1144.7894318131605,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "17.217"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "4.096"
+    },
+    "tokenId": "dc32cd62-2d8b-40c4-9ce9-6b6e2bfcb810",
+    "reserves": [
+     "5.522761742538076589",
+     "10.110418"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5e81213613b6b86eab4c6c50d718d34359459786": {
+    "key": "robinhood:0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "name": "Take-Two Interactive Software • Robinhood Token",
+    "decimals": 18,
+    "symbol": "TTWO",
+    "price": 205.45499999999998,
+    "address": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "addresses": {
+     "robinhood": "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x5e81213613b6b86eab4c6c50d718d34359459786.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+    "liquidity": 1149253.3458629998,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "183257.757"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000032d0504fcc1a48ff8ac9b29185578559",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "7a4607d5-4545-4920-bdb1-73b241070e20",
+    "totalSupply": "5593.6986",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x07c50bd0d16ed4d2f0e650c5a5ef2219e2278bdf7d5b968cb6f75556ce6739ed": {
+    "key": "robinhood:0x07c50bd0d16ed4d2f0e650c5a5ef2219e2278bdf7d5b968cb6f75556ce6739ed",
+    "name": "Uniswap V4 LP TTWO/MM",
+    "decimals": 18,
+    "symbol": "TTWO/MM",
+    "price": 9007199254740990,
+    "address": "0x07c50bd0d16ed4d2f0e650c5a5ef2219e2278bdf7d5b968cb6f75556ce6739ed",
+    "addresses": {
+     "robinhood": "0x07c50bd0d16ed4d2f0e650c5a5ef2219e2278bdf7d5b968cb6f75556ce6739ed"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.932Z",
+    "createdAt": "2026-07-31T08:01:24.646Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
+    ],
+    "liquidity": 19996.68069145026,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9900,
+     "feePercentage": "99.001"
+    },
+    "tokenId": "46100828-944d-4dec-91f0-7ea45e7995f4",
+    "reserves": [
+     "0.000030687847821202",
+     "20000.943251963855333049"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb200000000000000000000f720c26062bc3067da": {
+    "key": "base:0xb200000000000000000000f720c26062bc3067da",
+    "name": "Take-Two Interactive Software, Inc. (Coinbase Tokenized Stock)",
+    "decimals": 8,
+    "symbol": "TTWOC",
+    "price": 224.79,
+    "address": "0xb200000000000000000000f720c26062bc3067da",
+    "addresses": {
+     "base": "0xb200000000000000000000f720c26062bc3067da"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-10-08T07:18:41.143Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3320.27,
+    "image": "https://coin-images.coingecko.com/coins/images/102179263/large/TTWOc-icon-200.png?1791375817",
+    "metrics": {
+     "volumeUsd1d": "255.036",
+     "volumeUsd7d": "38630.788"
+    },
+    "metadata": {},
+    "tokenId": "913441fe-fff0-4161-8422-d8ff5d261892",
+    "totalSupply": "14.7710943",
+    "circulatingSupply": "14.7710943",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd9ab4b7fae6dc2f7020134ec744a8f53ef3e5e24": {
+    "key": "robinhood:0xd9ab4b7fae6dc2f7020134ec744a8f53ef3e5e24",
+    "name": "Uniswap V3 Take-Two Interactive Software  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0xd9ab4b7fae6dc2f7020134ec744a8f53ef3e5e24",
+    "addresses": {
+     "robinhood": "0xd9ab4b7fae6dc2f7020134ec744a8f53ef3e5e24"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:17:54.915Z",
+    "createdAt": "2026-08-28T17:08:40.061Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 171281.54290154995,
+    "metrics": {
+     "apy": "12.808",
+     "baseApy": "12.808",
+     "volumeUsd1d": "20034.222",
+     "volumeUsd7d": "393794.098"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8df28b62-e3d0-4a7e-a172-7a26409bd910",
+    "reserves": [
+     "716.264470947652604238",
+     "24121.426023"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb57a4c6e01555c5a6c3402f637c7a75bde6245580b069edd63e5139b0cc5131a": {
+    "key": "robinhood:0xb57a4c6e01555c5a6c3402f637c7a75bde6245580b069edd63e5139b0cc5131a",
+    "name": "Uniswap V4 LP ETH/TTWO",
+    "decimals": 18,
+    "symbol": "ETH/TTWO",
+    "price": 9007199254740990,
+    "address": "0xb57a4c6e01555c5a6c3402f637c7a75bde6245580b069edd63e5139b0cc5131a",
+    "addresses": {
+     "robinhood": "0xb57a4c6e01555c5a6c3402f637c7a75bde6245580b069edd63e5139b0cc5131a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.320Z",
+    "createdAt": "2026-09-08T15:09:09.403Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    ],
+    "liquidity": 2372.4896074354333,
+    "metrics": {
+     "apy": "26.061",
+     "baseApy": "26.061",
+     "volumeUsd1d": "505.129",
+     "volumeUsd7d": "6318.784"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 29,
+     "feePercentage": "0.3355"
+    },
+    "tokenId": "ff12100a-c3e7-447d-864e-9ef30484857d",
+    "reserves": [
+     "0.619501979614507",
+     "4.508376194520274413"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xb61a76509fa69fac5b6269c34cffc1bbd2e71e91": {
+    "key": "base:0xb61a76509fa69fac5b6269c34cffc1bbd2e71e91",
+    "name": "Aerodrome SlipStream USD Coin/Take-Two Interactive Software, Inc. 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/TTWOC",
+    "price": 9007199254740990,
+    "address": "0xb61a76509fa69fac5b6269c34cffc1bbd2e71e91",
+    "addresses": {
+     "base": "0xb61a76509fa69fac5b6269c34cffc1bbd2e71e91"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102179263/large/TTWOc-icon-200.png?1791375817"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.579Z",
+    "createdAt": "2026-10-08T07:22:15.649Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000f720c26062bc3067da"
+    ],
+    "liquidity": 3804.666082355144,
+    "metrics": {
+     "apy": "1.225",
+     "baseApy": "1.225",
+     "rewardApy": "0",
+     "volumeUsd1d": "255.384",
+     "volumeUsd7d": "35532.944"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "c19897e2-c1d4-4f2a-b8a3-334191ef1a03",
+    "reserves": [
+     "1311.806196",
+     "11.09159833"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf425e1582a4935dfd5e0384d86379e6b40fa4fac2d51137456aca636b56d7731": {
+    "key": "robinhood:0xf425e1582a4935dfd5e0384d86379e6b40fa4fac2d51137456aca636b56d7731",
+    "name": "Uniswap V4 LP TTWO/USDG",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0xf425e1582a4935dfd5e0384d86379e6b40fa4fac2d51137456aca636b56d7731",
+    "addresses": {
+     "robinhood": "0xf425e1582a4935dfd5e0384d86379e6b40fa4fac2d51137456aca636b56d7731"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.688Z",
+    "createdAt": "2026-08-25T14:29:46.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 4344.273789593604,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "105.471"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 78,
+     "feePercentage": "0.8793"
+    },
+    "tokenId": "e8538ab0-e6e6-4242-baed-7639e1471aa5",
+    "reserves": [
+     "21.09909871063544214",
+     "9.358464"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8df8a07a294eb8fd8da556901f1fd6a92526f729": {
+    "key": "robinhood:0x8df8a07a294eb8fd8da556901f1fd6a92526f729",
+    "name": "Beefy CLM TTWO-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODTTWO-USDG",
+    "price": 1025369995399.4185,
+    "address": "0x8df8a07a294eb8fd8da556901f1fd6a92526f729",
+    "addresses": {
+     "robinhood": "0x8df8a07a294eb8fd8da556901f1fd6a92526f729"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0xd9ab4b7fae6dc2f7020134ec744a8f53ef3e5e24",
+    "liquidity": 3236.8864306100513,
+    "metrics": {
+     "apy": "32.311",
+     "baseApy": "32.311",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-ttwo-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x8df8a07a294eb8fd8da556901f1fd6a92526f729",
+     "strategyAddress": "0x6af36d931908ac6b447a045ce09f8417765d43e9",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x68a0bf2e2d48076e0d3c23a675b13f845ba963d9",
+     "depositTokenAddresses": [
+      "0x5e81213613b6b86eab4c6c50d718d34359459786",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "b5accfe5-58cb-4c84-a8db-249c81965ce3",
+    "totalSupply": "0.000000003156798468",
+    "reserves": [
+     "5.476100258499678171",
+     "2111.794252"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd5850279c17e422d8ad108691254df010af9c6f8fcec0b586b89133100096556": {
+    "key": "robinhood:0xd5850279c17e422d8ad108691254df010af9c6f8fcec0b586b89133100096556",
+    "name": "Uniswap V4 LP TTWO/USDG",
+    "decimals": 18,
+    "symbol": "TTWO/USDG",
+    "price": 9007199254740990,
+    "address": "0xd5850279c17e422d8ad108691254df010af9c6f8fcec0b586b89133100096556",
+    "addresses": {
+     "robinhood": "0xd5850279c17e422d8ad108691254df010af9c6f8fcec0b586b89133100096556"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.864Z",
+    "createdAt": "2026-09-08T14:43:04.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5e81213613b6b86eab4c6c50d718d34359459786",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 15420.35128055174,
+    "metrics": {
+     "apy": "27.653",
+     "baseApy": "27.653",
+     "volumeUsd1d": "5011.824",
+     "volumeUsd7d": "107184.604"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2,
+     "feePercentage": "0.2331"
+    },
+    "tokenId": "e00c218e-22d7-4258-a733-41aa8cd41f20",
+    "reserves": [
+     "61.266968847444655066",
+     "2832.746196"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0f032fb852dbab206123eea288ce86f7abb5a00d634cc9432c1a51e6a1e7855c": {
+    "key": "robinhood:0x0f032fb852dbab206123eea288ce86f7abb5a00d634cc9432c1a51e6a1e7855c",
+    "name": "Uniswap V4 LP ETH/TTWO",
+    "decimals": 18,
+    "symbol": "ETH/TTWO",
+    "price": 9007199254740990,
+    "address": "0x0f032fb852dbab206123eea288ce86f7abb5a00d634cc9432c1a51e6a1e7855c",
+    "addresses": {
+     "robinhood": "0x0f032fb852dbab206123eea288ce86f7abb5a00d634cc9432c1a51e6a1e7855c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.131Z",
+    "createdAt": "2026-10-18T19:03:01.248Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x92d5d308201542ebe1c5da5dac0927ba35162968"
+    ],
+    "liquidity": 1557.6699880279941,
+    "metrics": {
+     "apy": "22786.84",
+     "baseApy": "22786.84",
+     "volumeUsd1d": "97274.792"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1"
+    },
+    "tokenId": "e700070a-b07e-47a3-982e-94427ec6fa96",
+    "reserves": [
+     "0.237875097239257295",
+     "3368365.416788507211774133"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa7990c09f22af37884562c542bcab0d2a621929a8247981a3a9e82b790ec0b09": {
+    "key": "robinhood:0xa7990c09f22af37884562c542bcab0d2a621929a8247981a3a9e82b790ec0b09",
+    "name": "Uniswap V4 LP ETH/TTWO",
+    "decimals": 18,
+    "symbol": "ETH/TTWO",
+    "price": 9007199254740990,
+    "address": "0xa7990c09f22af37884562c542bcab0d2a621929a8247981a3a9e82b790ec0b09",
+    "addresses": {
+     "robinhood": "0xa7990c09f22af37884562c542bcab0d2a621929a8247981a3a9e82b790ec0b09"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174176/large/0x5e81213613b6b86eab4c6c50d718d34359459786.png?1782444740"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.173Z",
+    "createdAt": "2026-07-28T03:55:05.771Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x5e81213613b6b86eab4c6c50d718d34359459786"
+    ],
+    "liquidity": 1774.9642112190897,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "38.174"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "e87db6e0-89cc-4765-8038-8364d41e661a",
+    "reserves": [
+     "0.340405991662954415",
+     "4.771311614425734484"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

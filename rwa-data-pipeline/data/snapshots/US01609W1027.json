@@ -1,0 +1,2016 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US01609W1027",
+ "ticker": "BABA",
+ "name": "Alibaba Group (ADR)",
+ "isin": "US01609W1027",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:18Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Alibaba Group Holding Ltd",
+   "symbol": "BABA",
+   "slug": "alibaba",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 109.4791786722621,
+     "tokenized_market_cap": 12793530.187297355,
+     "tokenized_volume_24h": 2757311.71232081,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 63,
+   "asset_type": "stock",
+   "rwa_rank": 51,
+   "has_tokens": true,
+   "average_tokenized_price": 109.4791786722621,
+   "tokenized_market_cap": 12793530.187297355,
+   "tokenized_volume_24h": 2757311.71232081,
+   "last_updated": "2026-10-18T20:13:38.261Z",
+   "tokens": [
+    {
+     "symbol": "BABAon",
+     "name": "Alibaba Tokenized Stock (Ondo)",
+     "price": 110.42468893813498,
+     "crypto_id": 38076,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2600077.77,
+     "volume_24h": 1777701.69319002
+    },
+    {
+     "symbol": "BABA",
+     "name": "Alibaba Group Holding Limited (Derivatives)",
+     "price": 108.26192434514806,
+     "crypto_id": 39486,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 3470.66390895
+    },
+    {
+     "symbol": "rBABA",
+     "name": "Alibaba Tokenized Stock (Reality)",
+     "price": 109.2069766264501,
+     "crypto_id": 40656,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 261541.99,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "BABA",
+     "name": "Alibaba Tokenized Stock (Robinhood)",
+     "price": 107.71501696807094,
+     "crypto_id": 40739,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 1616140.08,
+     "volume_24h": 39463.61297918
+    },
+    {
+     "symbol": "BABAB",
+     "name": "Alibaba Tokenized bStocks",
+     "price": 108.24560777773846,
+     "crypto_id": 40852,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 8324053.06,
+     "volume_24h": 937127.38000294
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "BABA",
+     "market_url": "https://www.binance.com/en/stocks/EQ_BABA"
+    }
+   ]
+  },
+  "info": {
+   "38076": {
+    "id": 38076,
+    "symbol": "BABAon",
+    "name": "Alibaba Tokenized Stock (Ondo)",
+    "slug": "alibaba-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38076.png",
+    "date_added": "2025-09-03T10:55:04.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x41765F0FCddC276309195166C7A62AE522FA09ef"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x41765F0FCddC276309195166C7A62AE522FA09ef",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "1zvb9ELBFShBCWKEk5jRTJAaPAwtVt7quEXx1X4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x799Bf997B733CAb2e1377D0411b63E35133991eb",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39486": {
+    "id": 39486,
+    "symbol": "BABA",
+    "name": "Alibaba Group Holding Limited (Derivatives)",
+    "slug": "alibaba-group-holding-limited-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39486.png",
+    "date_added": "2026-01-30T05:30:25.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40656": {
+    "id": 40656,
+    "symbol": "rBABA",
+    "name": "Alibaba Tokenized Stock (Reality)",
+    "slug": "alibaba-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40656.png",
+    "date_added": "2026-07-02T07:39:25.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40739": {
+    "id": 40739,
+    "symbol": "BABA",
+    "name": "Alibaba Tokenized Stock (Robinhood)",
+    "slug": "alibaba-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40739.png",
+    "date_added": "2026-08-04T07:31:46.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xad25Ac6C84D497db898fa1E8387bf6Af3532a1c4",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40852": {
+    "id": 40852,
+    "symbol": "BABAB",
+    "name": "Alibaba Tokenized bStocks",
+    "slug": "alibaba-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40852.png",
+    "date_added": "2026-07-13T10:56:44.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+   "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+   "bsc:0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+   "ethereum:0x41765f0fcddc276309195166c7a62ae522fa09ef",
+   "hyperevm:0x799bf997b733cab2e1377d0411b63e35133991eb",
+   "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+  ],
+  "exact": {
+   "ethereum:0x41765f0fcddc276309195166c7a62ae522fa09ef": {
+    "key": "ethereum:0x41765f0fcddc276309195166c7a62ae522fa09ef",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1272033.674",
+     "volumeUsd7d": "13031395.731"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x7d310a5f26e8e3184280799b6ac1e2e724cee37c": {
+    "key": "arbitrum:0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+    "name": "Alibaba rStock",
+    "decimals": 18,
+    "symbol": "RBABA",
+    "price": 109.24,
+    "address": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+    "addresses": {
+     "arbitrum": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 261620,
+    "image": "https://coin-images.coingecko.com/coins/images/102177065/large/a87b122c8913c07a7c3c92ccee7199e8.png?1789116718",
+    "metrics": {
+     "volumeUsd1d": "109.2",
+     "volumeUsd7d": "122144.536"
+    },
+    "metadata": {},
+    "tokenId": "5242dde3-dbf1-47e2-bffb-4f37306d93bc",
+    "totalSupply": "2394.9201704",
+    "circulatingSupply": "2394.9201704",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec": {
+    "key": "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+    "name": "Alibaba (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAB",
+    "price": 108.59,
+    "address": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+    "addresses": {
+     "bsc": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8350555,
+    "image": "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+    "metrics": {
+     "volumeUsd1d": "159355.246",
+     "volumeUsd7d": "22799725.694"
+    },
+    "metadata": {},
+    "tokenId": "29d06e55-3fdd-4d6e-919c-41d83f237fcb",
+    "totalSupply": "76899.68425591",
+    "circulatingSupply": "76899.68425591",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4": {
+    "key": "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "name": "Alibaba • Robinhood Token",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 109.245,
+    "address": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "addresses": {
+     "robinhood": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "liquidity": 1639095.72106665,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "825130.565"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000006ef9da606f504495ad7de6a7a58b87cd",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "0bf3c2fe-af51-4623-9ba1-042e02525393",
+    "totalSupply": "15003.85117",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd5964f3fcee8d649995ab88f04b8982539c282d2": {
+    "key": "bsc:0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1268595.893",
+     "volumeUsd7d": "13026836.132"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x799bf997b733cab2e1377d0411b63e35133991eb": {
+    "key": "hyperevm:0x799bf997b733cab2e1377d0411b63e35133991eb",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1268526.377",
+     "volumeUsd7d": "12972914.866"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "BABA": {
+    "total_items": 35,
+    "pages": 1,
+    "received": 35,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xf34bb48c19fd0a9e19680a82e60c13249584bae3": {
+    "key": "ethereum:0xf34bb48c19fd0a9e19680a82e60c13249584bae3",
+    "name": "Uniswap V3 Alibaba (Ondo Tokenized)/USD Coin 1%",
+    "decimals": 18,
+    "symbol": "BABAON/USDC",
+    "price": 9007199254740990,
+    "address": "0xf34bb48c19fd0a9e19680a82e60c13249584bae3",
+    "addresses": {
+     "ethereum": "0xf34bb48c19fd0a9e19680a82e60c13249584bae3"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.492Z",
+    "createdAt": "2025-09-26T08:45:58.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 4480.00760479532,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "43404.894"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "60a9a7d3-2ed3-4834-ba35-4087d4d2b9c3",
+    "reserves": [
+     "34.917382223009665177",
+     "623.844828"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3db198b913522aceaa2149be87a02ae3487491c6a5281846ffe444e20f5bf1ca": {
+    "key": "robinhood:0x3db198b913522aceaa2149be87a02ae3487491c6a5281846ffe444e20f5bf1ca",
+    "name": "Uniswap V4 LP ETH/BABA",
+    "decimals": 18,
+    "symbol": "ETH/BABA",
+    "price": 9007199254740990,
+    "address": "0x3db198b913522aceaa2149be87a02ae3487491c6a5281846ffe444e20f5bf1ca",
+    "addresses": {
+     "robinhood": "0x3db198b913522aceaa2149be87a02ae3487491c6a5281846ffe444e20f5bf1ca"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.772Z",
+    "createdAt": "2026-07-24T15:57:20.620Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 2542.064691803301,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "335.868"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "7cc3ac33-da9a-484e-91d9-70ffe85ef711",
+    "reserves": [
+     "0.081495462638467896",
+     "21.526413000250810747"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6db0d255a669a6178aed47ac4a69e514883b15a01af281fadc8d25d0fae582da": {
+    "key": "bsc:0x6db0d255a669a6178aed47ac4a69e514883b15a01af281fadc8d25d0fae582da",
+    "name": "Uniswap V4 LP USDT/BABAon",
+    "decimals": 18,
+    "symbol": "USDT/BABAON",
+    "price": 9007199254740990,
+    "address": "0x6db0d255a669a6178aed47ac4a69e514883b15a01af281fadc8d25d0fae582da",
+    "addresses": {
+     "bsc": "0x6db0d255a669a6178aed47ac4a69e514883b15a01af281fadc8d25d0fae582da"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.520Z",
+    "createdAt": "2026-10-17T14:25:05.959Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    ],
+    "liquidity": 33226.19041501274,
+    "metrics": {
+     "apy": "0.016",
+     "baseApy": "0.016",
+     "volumeUsd1d": "0.279",
+     "volumeUsd7d": "0.279"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4cd5872f-88d7-4762-a3fe-2ab7210520f7",
+    "reserves": [
+     "23232.98209405019291737",
+     "90.656225121540356289"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xfd95cb1391999006eb91797a7c62acfe88b20292": {
+    "key": "bsc:0xfd95cb1391999006eb91797a7c62acfe88b20292",
+    "name": "PancakeSwap V3 Alibaba/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0xfd95cb1391999006eb91797a7c62acfe88b20292",
+    "addresses": {
+     "bsc": "0xfd95cb1391999006eb91797a7c62acfe88b20292"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.376Z",
+    "createdAt": "2026-08-03T16:54:35.115Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2508925.2258236464,
+    "metrics": {
+     "apy": "3.15",
+     "baseApy": "3.15",
+     "volumeUsd1d": "86443.088",
+     "volumeUsd7d": "14551378.126"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "0e80d224-46df-47ab-92f4-6ea8c7d35117",
+    "reserves": [
+     "17421.971045370479011387",
+     "617574.86079383059028156"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3c519f6bb91158a4148b276baa2d4fe3e8a26614": {
+    "key": "bsc:0x3c519f6bb91158a4148b276baa2d4fe3e8a26614",
+    "name": "Uniswap V3 Alibaba/Tether USD 0.05%",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0x3c519f6bb91158a4148b276baa2d4fe3e8a26614",
+    "addresses": {
+     "bsc": "0x3c519f6bb91158a4148b276baa2d4fe3e8a26614"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.879Z",
+    "createdAt": "2026-09-19T02:32:55.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 4590.604570308548,
+    "metrics": {
+     "apy": "64.423",
+     "baseApy": "64.423",
+     "volumeUsd1d": "16177.896",
+     "volumeUsd7d": "4223013.173"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "6ecea184-a81b-4b60-a1a6-ab450bac56c9",
+    "reserves": [
+     "28.284540987489969303",
+     "1520.42084620413061305"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x25c3f5165b38aa9966369c17a6d1296bcf0b6f38969d6d97b5d934f63f25ae3d": {
+    "key": "ethereum:0x25c3f5165b38aa9966369c17a6d1296bcf0b6f38969d6d97b5d934f63f25ae3d",
+    "name": "Uniswap V4 LP wUSDC/BABAon",
+    "decimals": 18,
+    "symbol": "WUSDC/BABAON",
+    "price": 9007199254740990,
+    "address": "0x25c3f5165b38aa9966369c17a6d1296bcf0b6f38969d6d97b5d934f63f25ae3d",
+    "addresses": {
+     "ethereum": "0x25c3f5165b38aa9966369c17a6d1296bcf0b6f38969d6d97b5d934f63f25ae3d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.622Z",
+    "createdAt": "2026-09-28T10:37:10.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x41765f0fcddc276309195166c7a62ae522fa09ef"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "248572b5-ffa4-46b5-9386-3a0111e127a7",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x607c9eb459c2c229dd27318a6a1bc18b3eeaaa1f37d147124f0a883d6efefdec": {
+    "key": "robinhood:0x607c9eb459c2c229dd27318a6a1bc18b3eeaaa1f37d147124f0a883d6efefdec",
+    "name": "Uniswap V4 LP USDG/BABA",
+    "decimals": 18,
+    "symbol": "USDG/BABA",
+    "price": 9007199254740990,
+    "address": "0x607c9eb459c2c229dd27318a6a1bc18b3eeaaa1f37d147124f0a883d6efefdec",
+    "addresses": {
+     "robinhood": "0x607c9eb459c2c229dd27318a6a1bc18b3eeaaa1f37d147124f0a883d6efefdec"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.852Z",
+    "createdAt": "2026-08-31T01:31:32.767Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 7535.335118369779,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "11.108"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "27457396-0263-41ba-8195-753426e91af0",
+    "reserves": [
+     "2808.677434",
+     "43.266581393837511008"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x626af89dd72c5848ba701bd30645d8d232d7ea3a": {
+    "key": "arbitrum:0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+    "name": "Alibaba Group Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 111.67,
+    "address": "0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+    "addresses": {
+     "base": "0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+     "arbitrum": "0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+     "avalanche": "0xf9879f509cc783a67126a37a665d2d592f339278",
+     "ethereum": "0xf9879f509cc783a67126a37a665d2d592f339278"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3321.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175165/large/dinari-logo-green-with-margin.png?1785403433",
+    "metrics": {
+     "volumeUsd1d": "4032.714",
+     "volumeUsd7d": "28228.998"
+    },
+    "metadata": {},
+    "tokenId": "b785dfc1-e8c8-49e7-b99a-9ff45554d8f5",
+    "totalSupply": "29.741780074721863",
+    "circulatingSupply": "29.74178007472186",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa57ab582b310dd6f9e934ea1eeea152741545e6a": {
+    "key": "robinhood:0xa57ab582b310dd6f9e934ea1eeea152741545e6a",
+    "name": "Uniswap V3 Global Dollar/Alibaba  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/BABA",
+    "price": 9007199254740990,
+    "address": "0xa57ab582b310dd6f9e934ea1eeea152741545e6a",
+    "addresses": {
+     "robinhood": "0xa57ab582b310dd6f9e934ea1eeea152741545e6a"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.443Z",
+    "createdAt": "2026-09-03T10:19:13.029Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 61773.5287504524,
+    "metrics": {
+     "apy": "6.5",
+     "baseApy": "6.5",
+     "volumeUsd1d": "3667.126",
+     "volumeUsd7d": "593229.898"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "e96b3218-5ad2-47c8-8b0d-22c1d833455e",
+    "reserves": [
+     "16852.54319",
+     "411.194888191243541596"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf9879f509cc783a67126a37a665d2d592f339278": {
+    "key": "ethereum:0xf9879f509cc783a67126a37a665d2d592f339278",
+    "name": "Alibaba Group Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 111.67,
+    "address": "0xf9879f509cc783a67126a37a665d2d592f339278",
+    "addresses": {
+     "base": "0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+     "arbitrum": "0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+     "avalanche": "0xf9879f509cc783a67126a37a665d2d592f339278",
+     "ethereum": "0xf9879f509cc783a67126a37a665d2d592f339278"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3321.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175165/large/dinari-logo-green-with-margin.png?1785403433",
+    "metrics": {
+     "volumeUsd1d": "4032.714",
+     "volumeUsd7d": "28228.998"
+    },
+    "metadata": {},
+    "tokenId": "b785dfc1-e8c8-49e7-b99a-9ff45554d8f5",
+    "totalSupply": "29.741780074721863",
+    "circulatingSupply": "29.74178007472186",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e": {
+    "key": "base:0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+    "name": "Alibaba Group Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 111.67,
+    "address": "0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+    "addresses": {
+     "base": "0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+     "arbitrum": "0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+     "avalanche": "0xf9879f509cc783a67126a37a665d2d592f339278",
+     "ethereum": "0xf9879f509cc783a67126a37a665d2d592f339278"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3321.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175165/large/dinari-logo-green-with-margin.png?1785403433",
+    "metrics": {
+     "volumeUsd1d": "4032.714",
+     "volumeUsd7d": "28228.998"
+    },
+    "metadata": {},
+    "tokenId": "b785dfc1-e8c8-49e7-b99a-9ff45554d8f5",
+    "totalSupply": "29.741780074721863",
+    "circulatingSupply": "29.74178007472186",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x41765f0fcddc276309195166c7a62ae522fa09ef": {
+    "key": "ethereum:0x41765f0fcddc276309195166c7a62ae522fa09ef",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1272033.674",
+     "volumeUsd7d": "13031395.731"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439": {
+    "key": "robinhood:0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+    "name": "Uniswap V4 LP USDG/BABA",
+    "decimals": 18,
+    "symbol": "USDG/BABA",
+    "price": 9007199254740990,
+    "address": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439",
+    "addresses": {
+     "robinhood": "0x1791fc651cc794a282e5dbcb56d0b2b38eff8754b677c8876e86901521ecc439"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.086Z",
+    "createdAt": "2026-09-08T14:36:41.118Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 61209.09244101464,
+    "metrics": {
+     "apy": "19.323",
+     "baseApy": "19.323",
+     "volumeUsd1d": "27161.367",
+     "volumeUsd7d": "2914827.871"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10,
+     "feePercentage": "0.1193"
+    },
+    "tokenId": "31f2f6da-fcf8-44ce-a20e-ceaff232690f",
+    "reserves": [
+     "19054.260052",
+     "385.874249521851249687"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9eda4bcb3ebfede532f3cae3864fc0cefff782aa": {
+    "key": "robinhood:0x9eda4bcb3ebfede532f3cae3864fc0cefff782aa",
+    "name": "Uniswap V3 Global Dollar/Alibaba  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/BABA",
+    "price": 9007199254740990,
+    "address": "0x9eda4bcb3ebfede532f3cae3864fc0cefff782aa",
+    "addresses": {
+     "robinhood": "0x9eda4bcb3ebfede532f3cae3864fc0cefff782aa"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.686Z",
+    "createdAt": "2026-08-30T19:09:59.198Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 798.2677097504264,
+    "metrics": {
+     "apy": "1.356",
+     "baseApy": "1.356",
+     "volumeUsd1d": "2.966",
+     "volumeUsd7d": "1217.756"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "ee726bfe-d507-4bbd-9eea-df6c052c21e5",
+    "reserves": [
+     "191.459985",
+     "5.554558329904584926"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x126a5d1d403fd2ebc0615e2479eeac1de8ee640995f203e1c272b5e4fb55a7de": {
+    "key": "robinhood:0x126a5d1d403fd2ebc0615e2479eeac1de8ee640995f203e1c272b5e4fb55a7de",
+    "name": "Uniswap V4 LP USDG/BABA",
+    "decimals": 18,
+    "symbol": "USDG/BABA",
+    "price": 9007199254740990,
+    "address": "0x126a5d1d403fd2ebc0615e2479eeac1de8ee640995f203e1c272b5e4fb55a7de",
+    "addresses": {
+     "robinhood": "0x126a5d1d403fd2ebc0615e2479eeac1de8ee640995f203e1c272b5e4fb55a7de"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.457Z",
+    "createdAt": "2026-09-08T14:36:34.490Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 2036.7433499395056,
+    "metrics": {
+     "apy": "11.21",
+     "baseApy": "11.21",
+     "volumeUsd1d": "62.607",
+     "volumeUsd7d": "8570.622"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "d8298424-ffc5-4045-8121-1ae23288efc0",
+    "reserves": [
+     "1125.510972",
+     "8.341181545512432223"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3a3854b2694ec25da89df3a4e6bcc6b268bbaf8564695ca12d19cf1006ce8c3d": {
+    "key": "robinhood:0x3a3854b2694ec25da89df3a4e6bcc6b268bbaf8564695ca12d19cf1006ce8c3d",
+    "name": "Uniswap V4 LP wUSDG/BABA",
+    "decimals": 18,
+    "symbol": "WUSDG/BABA",
+    "price": 9007199254740990,
+    "address": "0x3a3854b2694ec25da89df3a4e6bcc6b268bbaf8564695ca12d19cf1006ce8c3d",
+    "addresses": {
+     "robinhood": "0x3a3854b2694ec25da89df3a4e6bcc6b268bbaf8564695ca12d19cf1006ce8c3d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.528Z",
+    "createdAt": "2026-08-19T02:38:21.224Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 10096.696526177431,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "4f3a904c-15f9-4553-b961-4293e94519f0",
+    "reserves": [
+     "9999.99998",
+     "0.000000177413098835"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x17847161e9edd3b41228ee044848ccb4317f47777ac463cdabfe7523107379bb": {
+    "key": "bsc:0x17847161e9edd3b41228ee044848ccb4317f47777ac463cdabfe7523107379bb",
+    "name": "Uniswap V4 LP USDT/BABAon",
+    "decimals": 18,
+    "symbol": "USDT/BABAON",
+    "price": 9007199254740990,
+    "address": "0x17847161e9edd3b41228ee044848ccb4317f47777ac463cdabfe7523107379bb",
+    "addresses": {
+     "bsc": "0x17847161e9edd3b41228ee044848ccb4317f47777ac463cdabfe7523107379bb"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.370Z",
+    "createdAt": "2026-09-08T17:43:36.655Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    ],
+    "liquidity": 663.5285984176226,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 700,
+     "feePercentage": "7.093"
+    },
+    "tokenId": "e98ab915-dea9-4666-8c9c-1c9b9b43cee1",
+    "reserves": [
+     "86.126892591738194903",
+     "5.228826882132097462"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x7d310a5f26e8e3184280799b6ac1e2e724cee37c": {
+    "key": "arbitrum:0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+    "name": "Alibaba rStock",
+    "decimals": 18,
+    "symbol": "RBABA",
+    "price": 109.24,
+    "address": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c",
+    "addresses": {
+     "arbitrum": "0x7d310a5f26e8e3184280799b6ac1e2e724cee37c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 261620,
+    "image": "https://coin-images.coingecko.com/coins/images/102177065/large/a87b122c8913c07a7c3c92ccee7199e8.png?1789116718",
+    "metrics": {
+     "volumeUsd1d": "109.2",
+     "volumeUsd7d": "122144.536"
+    },
+    "metadata": {},
+    "tokenId": "5242dde3-dbf1-47e2-bffb-4f37306d93bc",
+    "totalSupply": "2394.9201704",
+    "circulatingSupply": "2394.9201704",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9d6061265561c5a761b7b253ab7b04e84415f32a12569fe2e7614d812df29b94": {
+    "key": "bsc:0x9d6061265561c5a761b7b253ab7b04e84415f32a12569fe2e7614d812df29b94",
+    "name": "Uniswap V4 LP BABAB/USDT",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0x9d6061265561c5a761b7b253ab7b04e84415f32a12569fe2e7614d812df29b94",
+    "addresses": {
+     "bsc": "0x9d6061265561c5a761b7b253ab7b04e84415f32a12569fe2e7614d812df29b94"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.693Z",
+    "createdAt": "2026-08-10T14:21:16.263Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2329.353115250963,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2318"
+    },
+    "tokenId": "800e99fe-2695-4826-97f7-253be4e65841",
+    "reserves": [
+     "8.807521006242040083",
+     "1374.060146021709565413"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x4acf44e509c5481704eb660a4616ba5de3a1857a": {
+    "key": "robinhood:0x4acf44e509c5481704eb660a4616ba5de3a1857a",
+    "name": "Beefy CLM BABA-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-BABA",
+    "price": 112.6113101001202,
+    "address": "0x4acf44e509c5481704eb660a4616ba5de3a1857a",
+    "addresses": {
+     "robinhood": "0x4acf44e509c5481704eb660a4616ba5de3a1857a"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-28T13:41:33.886Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "poolAddress": "0xa57ab582b310dd6f9e934ea1eeea152741545e6a",
+    "liquidity": 853.5794013294447,
+    "metrics": {
+     "apy": "0.612",
+     "baseApy": "0.612",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "598.21"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-baba",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x4acf44e509c5481704eb660a4616ba5de3a1857a",
+     "strategyAddress": "0x7aa97a5e772c8ea6c5f271adff3248b82a36ee7c",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+     ]
+    },
+    "tokenId": "7694f130-8545-43a3-b6e7-bbefddfb6d1c",
+    "totalSupply": "7.579872754970582516",
+    "reserves": [
+     "307.953496",
+     "4.994516044939765626"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7942a4dbf0c599edb3466a85627ed276ef748256": {
+    "key": "base:0x7942a4dbf0c599edb3466a85627ed276ef748256",
+    "name": "Hydrex Wrapped Alibaba Group Holding Limited ADR ST0x/USD Coin",
+    "decimals": 18,
+    "symbol": "WTBABA/USDC",
+    "price": 9007199254740990,
+    "address": "0x7942a4dbf0c599edb3466a85627ed276ef748256",
+    "addresses": {
+     "base": "0x7942a4dbf0c599edb3466a85627ed276ef748256"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/102178388/large/BABA.png?1789459958",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.589Z",
+    "createdAt": "2026-09-15T14:25:14.084Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 934.1105807879957,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2436.729"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "b2c02aec-4b33-4ff6-8277-0d6726567f74",
+    "reserves": [
+     "8.107208632937966071",
+     "35.838351"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec": {
+    "key": "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+    "name": "Alibaba (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAB",
+    "price": 108.59,
+    "address": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+    "addresses": {
+     "bsc": "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T02:44:57.251Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8350555,
+    "image": "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+    "metrics": {
+     "volumeUsd1d": "159355.246",
+     "volumeUsd7d": "22799725.694"
+    },
+    "metadata": {},
+    "tokenId": "29d06e55-3fdd-4d6e-919c-41d83f237fcb",
+    "totalSupply": "76899.68425591",
+    "circulatingSupply": "76899.68425591",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4": {
+    "key": "robinhood:0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "name": "Alibaba • Robinhood Token",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 109.245,
+    "address": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "addresses": {
+     "robinhood": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4",
+    "liquidity": 1639095.72106665,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "825130.565"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000006ef9da606f504495ad7de6a7a58b87cd",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "0bf3c2fe-af51-4623-9ba1-042e02525393",
+    "totalSupply": "15003.85117",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa523532781672b44742dfa81089dd707c94ead1b47cf8fe513b1e54b4f87b7d4": {
+    "key": "ethereum:0xa523532781672b44742dfa81089dd707c94ead1b47cf8fe513b1e54b4f87b7d4",
+    "name": "Uniswap V4 LP BABAon/USDCc",
+    "decimals": 18,
+    "symbol": "BABAON/USDCC",
+    "price": 9007199254740990,
+    "address": "0xa523532781672b44742dfa81089dd707c94ead1b47cf8fe513b1e54b4f87b7d4",
+    "addresses": {
+     "ethereum": "0xa523532781672b44742dfa81089dd707c94ead1b47cf8fe513b1e54b4f87b7d4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.871Z",
+    "createdAt": "2026-09-30T09:25:07.089Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 3998.953516273263,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "90.582"
+    },
+    "tokenId": "547e598c-fa63-4d19-be0b-31bb3fd7c247",
+    "reserves": [
+     "0",
+     "4000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe3397c66ba42bb7be685399f21942150d02444237652ee2214fd2126b271c077": {
+    "key": "ethereum:0xe3397c66ba42bb7be685399f21942150d02444237652ee2214fd2126b271c077",
+    "name": "Uniswap V4 LP EGP/BABAon",
+    "decimals": 18,
+    "symbol": "EGP/BABAON",
+    "price": 9007199254740990,
+    "address": "0xe3397c66ba42bb7be685399f21942150d02444237652ee2214fd2126b271c077",
+    "addresses": {
+     "ethereum": "0xe3397c66ba42bb7be685399f21942150d02444237652ee2214fd2126b271c077"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.873Z",
+    "createdAt": "2026-10-14T06:54:36.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x41765f0fcddc276309195166c7a62ae522fa09ef"
+    ],
+    "liquidity": 20059.56198984671,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.7"
+    },
+    "tokenId": "667a55cd-e13e-4cc4-9e9f-598569689481",
+    "reserves": [
+     "19999.999999999999999987",
+     "0.252030925543046121"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xa0e022ad5d4636f6326cb5c43519de528d4c2701fef28cc156e4efb0e735e9e2": {
+    "key": "bsc:0xa0e022ad5d4636f6326cb5c43519de528d4c2701fef28cc156e4efb0e735e9e2",
+    "name": "Uniswap V4 LP BABAB/USDT",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0xa0e022ad5d4636f6326cb5c43519de528d4c2701fef28cc156e4efb0e735e9e2",
+    "addresses": {
+     "bsc": "0xa0e022ad5d4636f6326cb5c43519de528d4c2701fef28cc156e4efb0e735e9e2"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.054Z",
+    "createdAt": "2026-09-19T11:23:32.836Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1386.4270612840935,
+    "metrics": {
+     "apy": "1.503",
+     "baseApy": "1.503",
+     "volumeUsd1d": "91.249",
+     "volumeUsd7d": "3948.055"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5,
+     "feePercentage": "0.0625"
+    },
+    "tokenId": "da53fdd8-1090-4e31-984d-10d158b9f0ec",
+    "reserves": [
+     "7.043928096768980231",
+     "622.031999239332264996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x436bbc61a24a69095a1c012884b3a3d4f943376c6f462923653f5666fd229b84": {
+    "key": "robinhood:0x436bbc61a24a69095a1c012884b3a3d4f943376c6f462923653f5666fd229b84",
+    "name": "Uniswap V4 LP ETH/BABA",
+    "decimals": 18,
+    "symbol": "ETH/BABA",
+    "price": 9007199254740990,
+    "address": "0x436bbc61a24a69095a1c012884b3a3d4f943376c6f462923653f5666fd229b84",
+    "addresses": {
+     "robinhood": "0x436bbc61a24a69095a1c012884b3a3d4f943376c6f462923653f5666fd229b84"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.093Z",
+    "createdAt": "2026-09-09T05:45:09.555Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+    ],
+    "liquidity": 1860.2172304060712,
+    "metrics": {
+     "apy": "6.811",
+     "baseApy": "6.811",
+     "volumeUsd1d": "119.726",
+     "volumeUsd7d": "4253.983"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "fc944772-2725-4108-9d0a-9c3ee871c6e3",
+    "reserves": [
+     "0.55357849221795118",
+     "5.188317000261749389"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd5964f3fcee8d649995ab88f04b8982539c282d2": {
+    "key": "bsc:0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0xd5964f3fcee8d649995ab88f04b8982539c282d2",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1268595.893",
+     "volumeUsd7d": "13026836.132"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd": {
+    "key": "base:0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd",
+    "name": "Alibaba (ST0x Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "WTBABA",
+    "price": 110.8,
+    "address": "0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd",
+    "addresses": {
+     "base": "0x7e5cc7eae0455a07ab4abf354e0f5657ba2888bd"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-15T08:21:31.719Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1664.44,
+    "image": "https://coin-images.coingecko.com/coins/images/102178388/large/BABA.png?1789459958",
+    "metrics": {
+     "volumeUsd1d": "1842.059",
+     "volumeUsd7d": "9317.845"
+    },
+    "metadata": {},
+    "tokenId": "351f7a3b-4ddb-45ca-b065-8642f571dba2",
+    "totalSupply": "15.570470222",
+    "circulatingSupply": "15.021999408",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa": {
+    "key": "robinhood:0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa",
+    "name": "Beefy CLM BABA-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-BABA",
+    "price": 112.6113101001202,
+    "address": "0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa",
+    "addresses": {
+     "robinhood": "0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174135/large/0xad25ac6c84d497db898fa1e8387bf6af3532a1c4.png?1782444629",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-28T13:41:33.886Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4acf44e509c5481704eb660a4616ba5de3a1857a"
+    ],
+    "poolAddress": "0x4acf44e509c5481704eb660a4616ba5de3a1857a",
+    "liquidity": 853.5794013294445,
+    "metrics": {
+     "apy": "0.612",
+     "baseApy": "0.612",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "598.21"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-baba",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x4acf44e509c5481704eb660a4616ba5de3a1857a",
+     "strategyAddress": "0x7aa97a5e772c8ea6c5f271adff3248b82a36ee7c",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xb1fa0b71286443a7abc6f8296acb9c1bca07b5aa",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xad25ac6c84d497db898fa1e8387bf6af3532a1c4"
+     ]
+    },
+    "tokenId": "a6a39e2b-f4a5-4aaf-a157-d6b52b9651ff",
+    "totalSupply": "7.579872754970581516",
+    "reserves": [
+     "7.579872754970581516"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x082a0a013f0d9152e53e435b274276e798f75cd5": {
+    "key": "bsc:0x082a0a013f0d9152e53e435b274276e798f75cd5",
+    "name": "PancakeSwap LP BABAB/WBNB",
+    "decimals": 18,
+    "symbol": "BABAB/WBNB",
+    "price": 726.4304730612862,
+    "address": "0x082a0a013f0d9152e53e435b274276e798f75cd5",
+    "addresses": {
+     "bsc": "0x082a0a013f0d9152e53e435b274276e798f75cd5"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:17.922Z",
+    "createdAt": "2026-10-13T05:16:31.589Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 10321.975376899894,
+    "metrics": {
+     "apy": "6.015",
+     "baseApy": "6.015",
+     "volumeUsd1d": "679.663",
+     "volumeUsd7d": "94818.251"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "866f60f6-614b-42fa-b4b2-26aa7a7ca62b",
+    "totalSupply": "14.20917177854826521",
+    "reserves": [
+     "47.647380088571619669",
+     "7.298842173061351795"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9812a87b8d75de652a5794a731a25308307db8fb6e1af82ebcdacca8d38755e7": {
+    "key": "bsc:0x9812a87b8d75de652a5794a731a25308307db8fb6e1af82ebcdacca8d38755e7",
+    "name": "Uniswap V4 LP BABAB/USDT",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0x9812a87b8d75de652a5794a731a25308307db8fb6e1af82ebcdacca8d38755e7",
+    "addresses": {
+     "bsc": "0x9812a87b8d75de652a5794a731a25308307db8fb6e1af82ebcdacca8d38755e7"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.396Z",
+    "createdAt": "2026-08-10T13:40:56.611Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 3066.298052722538,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.2558"
+    },
+    "tokenId": "dd5516c3-6b97-47cb-9e30-e9d4f1f5de75",
+    "reserves": [
+     "13.488982431184398719",
+     "1602.830949251016235092"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x799bf997b733cab2e1377d0411b63e35133991eb": {
+    "key": "hyperevm:0x799bf997b733cab2e1377d0411b63e35133991eb",
+    "name": "Alibaba (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABAON",
+    "price": 110.44,
+    "address": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+    "addresses": {
+     "ethereum": "0x41765f0fcddc276309195166c7a62ae522fa09ef",
+     "hyperevm": "0x799bf997b733cab2e1377d0411b63e35133991eb",
+     "bsc": "0xd5964f3fcee8d649995ab88f04b8982539c282d2"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-08T05:02:27.044Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2600349,
+    "image": "https://coin-images.coingecko.com/coins/images/68600/large/babaon_160x160.png?1756129931",
+    "metrics": {
+     "volumeUsd1d": "1268526.377",
+     "volumeUsd7d": "12972914.866"
+    },
+    "metadata": {},
+    "tokenId": "f9b8f385-0257-4e8e-b1a8-afbd8ca19c9c",
+    "totalSupply": "23546.16340702483",
+    "circulatingSupply": "23546.16340702483",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x8acced10048c8cb48fca9f52ca37f01ad1541292d89ec227cae7ee63cfc656f6": {
+    "key": "bsc:0x8acced10048c8cb48fca9f52ca37f01ad1541292d89ec227cae7ee63cfc656f6",
+    "name": "Uniswap V4 LP BABAB/USDT",
+    "decimals": 18,
+    "symbol": "BABAB/USDT",
+    "price": 9007199254740990,
+    "address": "0x8acced10048c8cb48fca9f52ca37f01ad1541292d89ec227cae7ee63cfc656f6",
+    "addresses": {
+     "bsc": "0x8acced10048c8cb48fca9f52ca37f01ad1541292d89ec227cae7ee63cfc656f6"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174588/large/babab-bstocks.png?1784149906",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.495Z",
+    "createdAt": "2026-09-20T10:21:21.050Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2551.4667285348496,
+    "metrics": {
+     "apy": "0.017",
+     "baseApy": "0.017",
+     "volumeUsd1d": "2.299",
+     "volumeUsd7d": "26044.634"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0505"
+    },
+    "tokenId": "72f1199d-cb10-4fe1-88c7-ab6a57b0ac77",
+    "reserves": [
+     "11.395072219835244011",
+     "1315.143732894050336874"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xf9879f509cc783a67126a37a665d2d592f339278": {
+    "key": "avalanche:0xf9879f509cc783a67126a37a665d2d592f339278",
+    "name": "Alibaba Group Holding (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BABA",
+    "price": 111.67,
+    "address": "0xf9879f509cc783a67126a37a665d2d592f339278",
+    "addresses": {
+     "base": "0x7951f24de147e7d0a15bc3b51ed405a9bee23f0e",
+     "arbitrum": "0x626af89dd72c5848ba701bd30645d8d232d7ea3a",
+     "avalanche": "0xf9879f509cc783a67126a37a665d2d592f339278",
+     "ethereum": "0xf9879f509cc783a67126a37a665d2d592f339278"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3321.29,
+    "image": "https://coin-images.coingecko.com/coins/images/102175165/large/dinari-logo-green-with-margin.png?1785403433",
+    "metrics": {
+     "volumeUsd1d": "4032.714",
+     "volumeUsd7d": "28228.998"
+    },
+    "metadata": {},
+    "tokenId": "b785dfc1-e8c8-49e7-b99a-9ff45554d8f5",
+    "totalSupply": "29.741780074721863",
+    "circulatingSupply": "29.74178007472186",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

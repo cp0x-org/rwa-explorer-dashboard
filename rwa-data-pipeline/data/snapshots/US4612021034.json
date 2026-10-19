@@ -1,0 +1,1300 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US4612021034",
+ "ticker": "INTU",
+ "name": "Intuit",
+ "isin": "US4612021034",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:19Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Intuit Inc",
+   "symbol": "INTU",
+   "slug": "intuit",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 328.59377233132335,
+     "tokenized_market_cap": 734965.8852589142,
+     "tokenized_volume_24h": 506069.13111391,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 201,
+   "asset_type": "stock",
+   "rwa_rank": 196,
+   "has_tokens": true,
+   "average_tokenized_price": 328.59377233132335,
+   "tokenized_market_cap": 734965.8852589142,
+   "tokenized_volume_24h": 506069.13111391,
+   "last_updated": "2026-10-18T20:13:41.571Z",
+   "tokens": [
+    {
+     "symbol": "INTUon",
+     "name": "Intuit Tokenized Stock (Ondo)",
+     "price": 328.9555016577286,
+     "crypto_id": 38079,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 726909.79,
+     "volume_24h": 506927.55822533
+    },
+    {
+     "symbol": "INTU",
+     "name": "Intuit Tokenized Stock (Robinhood)",
+     "price": 323.9124139916681,
+     "crypto_id": 40734,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 8868.72,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wINTUx",
+     "name": "Wrapped Intuit Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41309,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "INTU",
+     "market_url": "https://www.binance.com/en/stocks/EQ_INTU"
+    }
+   ]
+  },
+  "info": {
+   "38079": {
+    "id": 38079,
+    "symbol": "INTUon",
+    "name": "Intuit Tokenized Stock (Ondo)",
+    "slug": "intuit-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38079.png",
+    "date_added": "2025-09-03T10:55:24.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x6cc0afD51CE4Cb6920B775F3D6376Ab82b9A93Bb"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x6cc0afD51CE4Cb6920B775F3D6376Ab82b9A93Bb",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "CozoH5HBTyyeYSQxHcWpGzd4Sq5XBaKzBzvTtN3ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40734": {
+    "id": 40734,
+    "symbol": "INTU",
+    "name": "Intuit Tokenized Stock (Robinhood)",
+    "slug": "intuit-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40734.png",
+    "date_added": "2026-08-04T07:31:44.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x56d23beE5f41A7120170b0c603Dae30128e460e9"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x56d23beE5f41A7120170b0c603Dae30128e460e9",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41309": {
+    "id": 41309,
+    "symbol": "wINTUx",
+    "name": "Wrapped Intuit Tokenized Stock (xStock)",
+    "slug": "wrapped-intuit-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41309.png",
+    "date_added": "2026-08-11T16:22:29.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xa0E97225E06faf16978F2a469ba6F2B06061eF67"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xa0E97225E06faf16978F2a469ba6F2B06061eF67",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+   "ethereum:0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+   "robinhood:0x56d23bee5f41a7120170b0c603dae30128e460e9"
+  ],
+  "exact": {
+   "robinhood:0x56d23bee5f41a7120170b0c603dae30128e460e9": {
+    "key": "robinhood:0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "name": "Intuit • Robinhood Token",
+    "decimals": 18,
+    "symbol": "INTU",
+    "price": 325.79293081173404,
+    "address": "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "addresses": {
+     "robinhood": "0x56d23bee5f41a7120170b0c603dae30128e460e9"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x56d23bee5f41a7120170b0c603dae30128e460e9.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "liquidity": 8891.518100037529,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-567.025"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000482927a418d1476c8ee89e119bf61fc7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1003226934400018698",
+     "currentMultiplier": "1.003226934400018698",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "0b0644c3-fb4b-49ac-8b33-e2dc55df134b",
+    "totalSupply": "27.29193073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab": {
+    "key": "bsc:0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+    "name": "Intuit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTUON",
+    "price": 329.51,
+    "address": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+    "addresses": {
+     "ethereum": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+     "bsc": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 727934,
+    "image": "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237",
+    "metrics": {
+     "volumeUsd1d": "152284.753",
+     "volumeUsd7d": "1095128.389"
+    },
+    "metadata": {},
+    "tokenId": "cdf7b3ca-12d5-4450-850f-16018db14a95",
+    "totalSupply": "2209.751139266796",
+    "circulatingSupply": "2209.751139266796",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb": {
+    "key": "ethereum:0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+    "name": "Intuit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTUON",
+    "price": 329.51,
+    "address": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+    "addresses": {
+     "ethereum": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+     "bsc": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 727934,
+    "image": "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237",
+    "metrics": {
+     "volumeUsd1d": "152550.945",
+     "volumeUsd7d": "1096872.907"
+    },
+    "metadata": {},
+    "tokenId": "cdf7b3ca-12d5-4450-850f-16018db14a95",
+    "totalSupply": "2209.751139266796",
+    "circulatingSupply": "2209.751139266796",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "INTU": {
+    "total_items": 24,
+    "pages": 1,
+    "received": 24,
+    "complete": true
+   }
+  },
+  "records": {
+   "polygon:0x0a150d8aa755074f2491adf07e671adcfbcec818": {
+    "key": "polygon:0x0a150d8aa755074f2491adf07e671adcfbcec818",
+    "name": "Tint International Token",
+    "decimals": 18,
+    "symbol": "TINTUP",
+    "price": 0.00010783379969802488,
+    "address": "0x0a150d8aa755074f2491adf07e671adcfbcec818",
+    "addresses": {
+     "polygon": "0x0a150d8aa755074f2491adf07e671adcfbcec818"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-07T09:17:54.815Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1078337.9969802487,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0.11",
+     "volumeUsd7d": "0.77"
+    },
+    "metadata": {},
+    "tokenId": "1f71f577-9a5a-426a-aa17-e364c08968bd",
+    "totalSupply": "10000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x56d23bee5f41a7120170b0c603dae30128e460e9": {
+    "key": "robinhood:0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "name": "Intuit • Robinhood Token",
+    "decimals": 18,
+    "symbol": "INTU",
+    "price": 325.79293081173404,
+    "address": "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "addresses": {
+     "robinhood": "0x56d23bee5f41a7120170b0c603dae30128e460e9"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x56d23bee5f41a7120170b0c603dae30128e460e9.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+    "liquidity": 8891.518100037529,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-567.025"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000482927a418d1476c8ee89e119bf61fc7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1003226934400018698",
+     "currentMultiplier": "1.003226934400018698",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "0b0644c3-fb4b-49ac-8b33-e2dc55df134b",
+    "totalSupply": "27.29193073",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x52448e17dabcb3b6654045974afd572090bcc1f5": {
+    "key": "base:0x52448e17dabcb3b6654045974afd572090bcc1f5",
+    "name": "Aerodrome SlipStream Intuition/USD Coin 1%",
+    "decimals": 18,
+    "symbol": "TRUST/USDC",
+    "price": 9007199254740990,
+    "address": "0x52448e17dabcb3b6654045974afd572090bcc1f5",
+    "addresses": {
+     "base": "0x52448e17dabcb3b6654045974afd572090bcc1f5"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/55976/large/intuition_trust.jpg?1747904133",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.592Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 4067.741529271048,
+    "metrics": {
+     "apy": "185.247",
+     "baseApy": "185.247",
+     "rewardApy": "0",
+     "volumeUsd1d": "2069.593",
+     "volumeUsd7d": "8860.234"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1",
+     "factoryAddress": "0xade65c38cd4849adba595a4323a8c7ddfe89716a"
+    },
+    "tokenId": "466d716a-b470-40a6-b778-11d2e1c103c6",
+    "reserves": [
+     "67117.602057212177420601",
+     "1022.102067"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa5d4968421ba94814be3b136b15cf422101ac1a3": {
+    "key": "robinhood:0xa5d4968421ba94814be3b136b15cf422101ac1a3",
+    "name": "Intuitive Machines • Robinhood Token",
+    "decimals": 18,
+    "symbol": "LUNR",
+    "price": 10.175,
+    "address": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
+    "addresses": {
+     "robinhood": "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
+    "liquidity": 8505.02741275,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "198.718"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c8fa21fd16c744c9ac5c7f5a60ca433a",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "178d1188-c184-43fd-a3f8-a5f982ef3da6",
+    "totalSupply": "835.87493",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5a17841bf2af77e57cf0fff4f90c8dc6ba5e3a357aed1f7e7b133a1af078460b": {
+    "key": "ethereum:0x5a17841bf2af77e57cf0fff4f90c8dc6ba5e3a357aed1f7e7b133a1af078460b",
+    "name": "Uniswap V4 LP wUSDC/INTUon",
+    "decimals": 18,
+    "symbol": "WUSDC/INTUON",
+    "price": 9007199254740990,
+    "address": "0x5a17841bf2af77e57cf0fff4f90c8dc6ba5e3a357aed1f7e7b133a1af078460b",
+    "addresses": {
+     "ethereum": "0x5a17841bf2af77e57cf0fff4f90c8dc6ba5e3a357aed1f7e7b133a1af078460b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.285Z",
+    "createdAt": "2026-09-30T08:51:49.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "10ee397c-d0d8-44cf-8b09-ab7f3b387c44",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15": {
+    "key": "bsc:0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15",
+    "name": "Intuitive Machines (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LUNRON",
+    "price": 10.62,
+    "address": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15",
+    "addresses": {
+     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
+     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-13T13:03:26.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 103661,
+    "image": "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077",
+    "metrics": {
+     "volumeUsd1d": "154114.352",
+     "volumeUsd7d": "1095533.342"
+    },
+    "metadata": {},
+    "tokenId": "d46be704-b8f3-4f32-9a42-814e76f1b998",
+    "totalSupply": "9723.503805172779",
+    "circulatingSupply": "9723.503805172779",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x42473e27f793b7a3b71b225729e3962651c5dfea6d7fa078a44dc8a4adf3d9bf": {
+    "key": "robinhood:0x42473e27f793b7a3b71b225729e3962651c5dfea6d7fa078a44dc8a4adf3d9bf",
+    "name": "Uniswap V4 LP INTU/USDG",
+    "decimals": 18,
+    "symbol": "INTU/USDG",
+    "price": 9007199254740990,
+    "address": "0x42473e27f793b7a3b71b225729e3962651c5dfea6d7fa078a44dc8a4adf3d9bf",
+    "addresses": {
+     "robinhood": "0x42473e27f793b7a3b71b225729e3962651c5dfea6d7fa078a44dc8a4adf3d9bf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174179/large/0x56d23bee5f41a7120170b0c603dae30128e460e9.png?1782444747",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.047Z",
+    "createdAt": "2026-09-09T20:19:20.939Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1020.5449517172035,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "da43ca95-8833-4c2d-aaa3-c210a7fc460b",
+    "reserves": [
+     "3.080922468809601987",
+     "16.802191"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0fa43596ae9bd0bd515e4bae75e9e03d077e6221f92946ce8e27ef95c804fdfc": {
+    "key": "ethereum:0x0fa43596ae9bd0bd515e4bae75e9e03d077e6221f92946ce8e27ef95c804fdfc",
+    "name": "Uniswap V4 LP wUSDC/INTUon",
+    "decimals": 18,
+    "symbol": "WUSDC/INTUON",
+    "price": 9007199254740990,
+    "address": "0x0fa43596ae9bd0bd515e4bae75e9e03d077e6221f92946ce8e27ef95c804fdfc",
+    "addresses": {
+     "ethereum": "0x0fa43596ae9bd0bd515e4bae75e9e03d077e6221f92946ce8e27ef95c804fdfc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.364Z",
+    "createdAt": "2026-09-28T10:37:11.211Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "e3586f70-ad65-4522-b483-fa24758ae888",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe7718d78ba922b371354c7c1060d76714dc50f50c12c603f668fdcd3cd21e6d8": {
+    "key": "robinhood:0xe7718d78ba922b371354c7c1060d76714dc50f50c12c603f668fdcd3cd21e6d8",
+    "name": "Uniswap V4 LP ETH/INTU",
+    "decimals": 18,
+    "symbol": "ETH/INTU",
+    "price": 9007199254740990,
+    "address": "0xe7718d78ba922b371354c7c1060d76714dc50f50c12c603f668fdcd3cd21e6d8",
+    "addresses": {
+     "robinhood": "0xe7718d78ba922b371354c7c1060d76714dc50f50c12c603f668fdcd3cd21e6d8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174179/large/0x56d23bee5f41a7120170b0c603dae30128e460e9.png?1782444747"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.250Z",
+    "createdAt": "2026-08-24T21:02:48.288Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x56d23bee5f41a7120170b0c603dae30128e460e9"
+    ],
+    "liquidity": 2875.223970080908,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "225.772"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "c175fc8d-6e06-4e85-a2a4-780e21374675",
+    "reserves": [
+     "0.135530176331199944",
+     "7.85416099226584021"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x784584933c2192caa062e90d8140d94768ce62d8": {
+    "key": "bsc:0x784584933c2192caa062e90d8140d94768ce62d8",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x784584933c2192caa062e90d8140d94768ce62d8",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151864.813",
+     "volumeUsd7d": "1091489.561"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60": {
+    "key": "arbitrum:0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60",
+    "name": "Intuitive Surgical rStock",
+    "decimals": 18,
+    "symbol": "RISRG",
+    "price": 425.19,
+    "address": "0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60",
+    "addresses": {
+     "arbitrum": "0xbe25a39c8bef9e1cbaa540fac332bcf8d4891f60"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10441.56,
+    "image": "https://coin-images.coingecko.com/coins/images/102177377/large/ISRG.png?1789117717",
+    "metrics": {
+     "volumeUsd1d": "17.048",
+     "volumeUsd7d": "27069.04"
+    },
+    "metadata": {},
+    "tokenId": "41adc121-a8c0-4166-bd4c-a38a4edb2d9e",
+    "totalSupply": "24.557362408",
+    "circulatingSupply": "24.557362408",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xeff370558391e6b62bc1b3ea816148d2bd186458": {
+    "key": "base:0xeff370558391e6b62bc1b3ea816148d2bd186458",
+    "name": "Uniswap V3 Intuition/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "TRUST/USDC",
+    "price": 9007199254740990,
+    "address": "0xeff370558391e6b62bc1b3ea816148d2bd186458",
+    "addresses": {
+     "base": "0xeff370558391e6b62bc1b3ea816148d2bd186458"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/55976/large/intuition_trust.jpg?1747904133",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.214Z",
+    "createdAt": "2025-11-06T13:21:03.851Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 18512.62545206311,
+    "metrics": {
+     "apy": "7.638",
+     "baseApy": "7.638",
+     "volumeUsd1d": "1294.968",
+     "volumeUsd7d": "21330.279"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "70a31614-848b-4063-a9cf-3a56030b36d4",
+    "reserves": [
+     "389879.074401420012583969",
+     "819.619137"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3": {
+    "key": "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+    "name": "Intuition",
+    "decimals": 18,
+    "symbol": "TRUST",
+    "price": 0.04539902,
+    "address": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+    "addresses": {
+     "base": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-11-05T12:13:08.205Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8154339,
+    "image": "https://coin-images.coingecko.com/coins/images/55976/large/intuition_trust.jpg?1747904133",
+    "metrics": {
+     "volumeUsd1d": "1557907.144",
+     "volumeUsd7d": "7154508.892"
+    },
+    "metadata": {},
+    "tokenId": "1cec87e1-7123-4add-94c3-7b0810428d4e",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "179647832",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xe6ba10d68455eec1a4eb19d6a2ce8e7dc90ccc27": {
+    "key": "arbitrum:0xe6ba10d68455eec1a4eb19d6a2ce8e7dc90ccc27",
+    "name": "Intuit rStock",
+    "decimals": 18,
+    "symbol": "RINTU",
+    "price": 324.15,
+    "address": "0xe6ba10d68455eec1a4eb19d6a2ce8e7dc90ccc27",
+    "addresses": {
+     "arbitrum": "0xe6ba10d68455eec1a4eb19d6a2ce8e7dc90ccc27"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17835.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102177132/large/d0a96798da37f038f92d1db8e5139f8d.png?1789116930",
+    "metrics": {
+     "volumeUsd1d": "162.735",
+     "volumeUsd7d": "12385.724"
+    },
+    "metadata": {},
+    "tokenId": "09459032-582e-41a2-a0c2-cbcc31825d5b",
+    "totalSupply": "54.523877012",
+    "circulatingSupply": "55.023877012",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f": {
+    "key": "arbitrum:0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f",
+    "name": "Intuitive Machines rStock",
+    "decimals": 18,
+    "symbol": "RLUNR",
+    "price": 10.77,
+    "address": "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f",
+    "addresses": {
+     "arbitrum": "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 41714,
+    "image": "https://coin-images.coingecko.com/coins/images/102177046/large/69715a510afc89a85528c503971bc7f6.png?1789116658",
+    "metrics": {
+     "volumeUsd1d": "55.262",
+     "volumeUsd7d": "8035.334"
+    },
+    "metadata": {},
+    "tokenId": "dc97aff4-ff08-4867-aa35-0985d541cd4d",
+    "totalSupply": "3869.1507469020003",
+    "circulatingSupply": "3874.050746902",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55": {
+    "key": "ethereum:0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "name": "Intuitive Surgical (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ISRGON",
+    "price": 424.84,
+    "address": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55",
+    "addresses": {
+     "bsc": "0x784584933c2192caa062e90d8140d94768ce62d8",
+     "ethereum": "0x2691b13fca1e02322685b9554b5ae0f5f3f05c55"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 435926,
+    "image": "https://coin-images.coingecko.com/coins/images/71428/large/isrgon_160x160.png?1767882550",
+    "metrics": {
+     "volumeUsd1d": "151497.159",
+     "volumeUsd7d": "1091787.691"
+    },
+    "metadata": {},
+    "tokenId": "e7145964-f0c8-4d73-8ab6-1a60b5cccc88",
+    "totalSupply": "1026.1971915288118",
+    "circulatingSupply": "1026.1971915288118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab": {
+    "key": "bsc:0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+    "name": "Intuit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTUON",
+    "price": 329.51,
+    "address": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab",
+    "addresses": {
+     "ethereum": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+     "bsc": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 727934,
+    "image": "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237",
+    "metrics": {
+     "volumeUsd1d": "152284.753",
+     "volumeUsd7d": "1095128.389"
+    },
+    "metadata": {},
+    "tokenId": "cdf7b3ca-12d5-4450-850f-16018db14a95",
+    "totalSupply": "2209.751139266796",
+    "circulatingSupply": "2209.751139266796",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x58a2edf0169ede82904e47a0e2a3a4008edebb60": {
+    "key": "ethereum:0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
+    "name": "Intuitive Machines (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LUNRON",
+    "price": 10.62,
+    "address": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
+    "addresses": {
+     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
+     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-03-13T13:03:26.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 103661,
+    "image": "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077",
+    "metrics": {
+     "volumeUsd1d": "154244.065",
+     "volumeUsd7d": "1091189.462"
+    },
+    "metadata": {},
+    "tokenId": "d46be704-b8f3-4f32-9a42-814e76f1b998",
+    "totalSupply": "9723.503805172779",
+    "circulatingSupply": "9723.503805172779",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x081da57d3b27c552860d494751efe15ddfff1ef7519002a727e4960c1c9ba523": {
+    "key": "polygon:0x081da57d3b27c552860d494751efe15ddfff1ef7519002a727e4960c1c9ba523",
+    "name": "Uniswap V4 LP TintUp/USDC",
+    "decimals": 18,
+    "symbol": "TINTUP/USDC",
+    "price": 9007199254740990,
+    "address": "0x081da57d3b27c552860d494751efe15ddfff1ef7519002a727e4960c1c9ba523",
+    "addresses": {
+     "polygon": "0x081da57d3b27c552860d494751efe15ddfff1ef7519002a727e4960c1c9ba523"
+    },
+    "platform": "uniswap-v4",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:45.299Z",
+    "createdAt": "2025-10-09T09:25:03.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0a150d8aa755074f2491adf07e671adcfbcec818",
+     "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"
+    ],
+    "liquidity": 3513.588952360312,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "54ec5f0f-b0fd-4184-a5a7-4780070a3ff3",
+    "reserves": [
+     "8979952.044369094787635993",
+     "2546.07058"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x17f707cf3edbbd5d9251d4bcdf9ad70a247d7b84": {
+    "key": "base:0x17f707cf3edbbd5d9251d4bcdf9ad70a247d7b84",
+    "name": "Aerodrome SlipStream Intuition/USD Coin 0.02%",
+    "decimals": 18,
+    "symbol": "TRUST/USDC",
+    "price": 9007199254740990,
+    "address": "0x17f707cf3edbbd5d9251d4bcdf9ad70a247d7b84",
+    "addresses": {
+     "base": "0x17f707cf3edbbd5d9251d4bcdf9ad70a247d7b84"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/55976/large/intuition_trust.jpg?1747904133",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:54.792Z",
+    "createdAt": "2026-09-01T12:11:48.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    ],
+    "liquidity": 245711.79106864237,
+    "metrics": {
+     "apy": "69.056",
+     "baseApy": "69.056",
+     "rewardApy": "0",
+     "volumeUsd1d": "1035329.1",
+     "volumeUsd7d": "3565029.548"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.23",
+     "factoryAddress": "0xade65c38cd4849adba595a4323a8c7ddfe89716a"
+    },
+    "tokenId": "ff305865-8fba-40a2-9d6c-e835524abb77",
+    "reserves": [
+     "3543417.794385174340478539",
+     "84927.105084"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb27ee264bf765a67250eda20ca7276994bf954547af1baec313683a6531ce770": {
+    "key": "ethereum:0xb27ee264bf765a67250eda20ca7276994bf954547af1baec313683a6531ce770",
+    "name": "Uniswap V4 LP EGP/INTUon",
+    "decimals": 18,
+    "symbol": "EGP/INTUON",
+    "price": 9007199254740990,
+    "address": "0xb27ee264bf765a67250eda20ca7276994bf954547af1baec313683a6531ce770",
+    "addresses": {
+     "ethereum": "0xb27ee264bf765a67250eda20ca7276994bf954547af1baec313683a6531ce770"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.495Z",
+    "createdAt": "2026-10-14T06:54:51.637Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb"
+    ],
+    "liquidity": 20064.706431586146,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.13"
+    },
+    "tokenId": "355c87f0-a27a-4edd-8103-7c1783276f4f",
+    "reserves": [
+     "19999.999999999999999976",
+     "0.091280116867945971"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5f7a6fd0947736734f6c4404437bf610527e9b1c5f268a27c08d9ba414152306": {
+    "key": "robinhood:0x5f7a6fd0947736734f6c4404437bf610527e9b1c5f268a27c08d9ba414152306",
+    "name": "Uniswap V4 LP wUSDG/INTU",
+    "decimals": 18,
+    "symbol": "WUSDG/INTU",
+    "price": 9007199254740990,
+    "address": "0x5f7a6fd0947736734f6c4404437bf610527e9b1c5f268a27c08d9ba414152306",
+    "addresses": {
+     "robinhood": "0x5f7a6fd0947736734f6c4404437bf610527e9b1c5f268a27c08d9ba414152306"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174179/large/0x56d23bee5f41a7120170b0c603dae30128e460e9.png?1782444747"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.984Z",
+    "createdAt": "2026-08-18T02:01:54.661Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x56d23bee5f41a7120170b0c603dae30128e460e9"
+    ],
+    "liquidity": 10097.224352767871,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "800348ce-052d-494f-b41a-3e7d80a7cd3c",
+    "reserves": [
+     "9996.979316",
+     "0.010210557342362825"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb": {
+    "key": "ethereum:0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+    "name": "Intuit (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "INTUON",
+    "price": 329.51,
+    "address": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+    "addresses": {
+     "ethereum": "0x6cc0afd51ce4cb6920b775f3d6376ab82b9a93bb",
+     "bsc": "0x6e3e077a6c0e3c27fd6d00b97387d9b7bd451bab"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 727934,
+    "image": "https://coin-images.coingecko.com/coins/images/68619/large/intuon_160x160.png?1756130237",
+    "metrics": {
+     "volumeUsd1d": "152550.945",
+     "volumeUsd7d": "1096872.907"
+    },
+    "metadata": {},
+    "tokenId": "cdf7b3ca-12d5-4450-850f-16018db14a95",
+    "totalSupply": "2209.751139266796",
+    "circulatingSupply": "2209.751139266796",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x3110946d50b4f1d2a5a956d5a6e2181961d8b2081f9cb99aa8cef2299ac1f842": {
+    "key": "robinhood:0x3110946d50b4f1d2a5a956d5a6e2181961d8b2081f9cb99aa8cef2299ac1f842",
+    "name": "Uniswap V4 LP INTU/USDG",
+    "decimals": 18,
+    "symbol": "INTU/USDG",
+    "price": 9007199254740990,
+    "address": "0x3110946d50b4f1d2a5a956d5a6e2181961d8b2081f9cb99aa8cef2299ac1f842",
+    "addresses": {
+     "robinhood": "0x3110946d50b4f1d2a5a956d5a6e2181961d8b2081f9cb99aa8cef2299ac1f842"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174179/large/0x56d23bee5f41a7120170b0c603dae30128e460e9.png?1782444747",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.663Z",
+    "createdAt": "2026-10-06T06:16:30.596Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x56d23bee5f41a7120170b0c603dae30128e460e9",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 3761.052520562704,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "972.87"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "9c8c1cf2-df7a-48ca-a187-bc665710c52a",
+    "reserves": [
+     "8.582257106058728854",
+     "965.013825"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

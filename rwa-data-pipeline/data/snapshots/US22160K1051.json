@@ -1,0 +1,1416 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US22160K1051",
+ "ticker": "COST",
+ "name": "Costco Wholesale",
+ "isin": "US22160K1051",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:00Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Costco Wholesale Corp",
+   "symbol": "COST",
+   "slug": "costco-wholesale",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 989.6489259480979,
+     "tokenized_market_cap": 2045571.6964475503,
+     "tokenized_volume_24h": 4006561.35760465,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 31,
+   "asset_type": "stock",
+   "rwa_rank": 29,
+   "has_tokens": true,
+   "average_tokenized_price": 989.6489259480979,
+   "tokenized_market_cap": 2045571.6964475503,
+   "tokenized_volume_24h": 4006561.35760465,
+   "last_updated": "2026-10-18T20:14:27.679Z",
+   "tokens": [
+    {
+     "symbol": "COSTon",
+     "name": "Costco Tokenized Stock (Ondo)",
+     "price": 992.7230709706309,
+     "crypto_id": 38019,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1279247.73,
+     "volume_24h": 4010479.58383563
+    },
+    {
+     "symbol": "COST",
+     "name": "Costco Tokenized Stock (Robinhood)",
+     "price": 977.6745371274718,
+     "crypto_id": 40762,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 770236.14,
+     "volume_24h": 12791.82219159
+    },
+    {
+     "symbol": "wCOSTx",
+     "name": "Wrapped Costco Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41837,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "COST",
+     "market_url": "https://www.binance.com/en/stocks/EQ_COST"
+    }
+   ]
+  },
+  "info": {
+   "38019": {
+    "id": 38019,
+    "symbol": "COSTon",
+    "name": "Costco Tokenized Stock (Ondo)",
+    "slug": "costco-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38019.png",
+    "date_added": "2025-09-03T10:55:42.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x0c8276E4FeC072cf7854Be69c70F7773D1610857"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0c8276E4FeC072cf7854Be69c70F7773D1610857",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "6btaz134wjHkR8sqhAYrtSM6tavftfxnRvnyMd8ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40762": {
+    "id": 40762,
+    "symbol": "COST",
+    "name": "Costco Tokenized Stock (Robinhood)",
+    "slug": "costco-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40762.png",
+    "date_added": "2026-08-04T07:31:56.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4EA005168D7F09a7A0Ba9D1DEf21a479950E44C2",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41837": {
+    "id": 41837,
+    "symbol": "wCOSTx",
+    "name": "Wrapped Costco Tokenized Stock (xStock)",
+    "slug": "wrapped-costco-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41837.png",
+    "date_added": "2026-08-16T03:25:03.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x4E913B799fE60b658E2a8EC13e7Fde503F2606c1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4E913B799fE60b658E2a8EC13e7Fde503F2606c1",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+   "ethereum:0x0c8276e4fec072cf7854be69c70f7773d1610857",
+   "robinhood:0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+  ],
+  "exact": {
+   "bsc:0x34375f826fd3dd4e15f883d4f4786bb45eb705ac": {
+    "key": "bsc:0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+    "name": "Costco (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COSTON",
+    "price": 989.81,
+    "address": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+    "addresses": {
+     "bsc": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+     "ethereum": "0x0c8276e4fec072cf7854be69c70f7773d1610857"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1275492,
+    "image": "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+    "metrics": {
+     "volumeUsd1d": "3441840.988",
+     "volumeUsd7d": "23996332.89"
+    },
+    "metadata": {},
+    "tokenId": "141d2717-391b-4305-ade7-d1c7ab09aea3",
+    "totalSupply": "1288.6249670039622",
+    "circulatingSupply": "1288.6249670039622",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0c8276e4fec072cf7854be69c70f7773d1610857": {
+    "key": "ethereum:0x0c8276e4fec072cf7854be69c70f7773d1610857",
+    "name": "Costco (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COSTON",
+    "price": 989.81,
+    "address": "0x0c8276e4fec072cf7854be69c70f7773d1610857",
+    "addresses": {
+     "bsc": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+     "ethereum": "0x0c8276e4fec072cf7854be69c70f7773d1610857"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1275492,
+    "image": "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+    "metrics": {
+     "volumeUsd1d": "3451578.493",
+     "volumeUsd7d": "23996166.464"
+    },
+    "metadata": {},
+    "tokenId": "141d2717-391b-4305-ade7-d1c7ab09aea3",
+    "totalSupply": "1288.6249670039622",
+    "circulatingSupply": "1288.6249670039622",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4ea005168d7f09a7a0ba9d1def21a479950e44c2": {
+    "key": "robinhood:0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "name": "Costco • Robinhood Token",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 991.9267277864881,
+    "address": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "addresses": {
+     "robinhood": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "liquidity": 780986.3720214189,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "252703.175"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000e0e44220991548d0b030699e3062c2a7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000612040296259656",
+     "currentMultiplier": "1.000612040296259656",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "69125418-968f-4738-ada5-ce58b3ba84c6",
+    "totalSupply": "787.34280481",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "COST": {
+    "total_items": 25,
+    "pages": 1,
+    "received": 25,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xd8fd9b17af6d19705f00dde755ecae2bf6205740489bdb114442b2d7ad6ab0ec": {
+    "key": "ethereum:0xd8fd9b17af6d19705f00dde755ecae2bf6205740489bdb114442b2d7ad6ab0ec",
+    "name": "Uniswap V4 LP COSTon/EGP",
+    "decimals": 18,
+    "symbol": "COSTON/EGP",
+    "price": 9007199254740990,
+    "address": "0xd8fd9b17af6d19705f00dde755ecae2bf6205740489bdb114442b2d7ad6ab0ec",
+    "addresses": {
+     "ethereum": "0xd8fd9b17af6d19705f00dde755ecae2bf6205740489bdb114442b2d7ad6ab0ec"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:14:34.402Z",
+    "createdAt": "2026-10-14T06:54:54.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c8276e4fec072cf7854be69c70f7773d1610857",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20074.568347945613,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.44"
+    },
+    "tokenId": "b588f5af-5c36-400a-bbbd-ddadb9c56ebe",
+    "reserves": [
+     "0.029348195336645779",
+     "19999.999999999999999901"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xd17aff8fcf7698aabfb5f8be90aa2692774fa810": {
+    "key": "arbitrum:0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+    "name": "Dinari COST",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 987.99,
+    "address": "0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+    "addresses": {
+     "ethereum": "0xe5ad37798daa0231279859d4699cf8f466e8b020",
+     "arbitrum": "0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+     "avalanche": "0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+     "base": "0x70e97cac0d4eb845872cd41ae848e47d070ef45c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 744.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102174999/large/dinari-logo-green-with-margin.png?1785402847",
+    "metrics": {
+     "volumeUsd1d": "70.353",
+     "volumeUsd7d": "664.618"
+    },
+    "metadata": {},
+    "tokenId": "0910640f-0b1a-44ea-a530-51db7917281b",
+    "totalSupply": "0.753795042",
+    "circulatingSupply": "0.753795042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x12bb2b075b67d3e085e3dada83fb56c1c045cdc400994e7f2da84c2dd271d51e": {
+    "key": "ethereum:0x12bb2b075b67d3e085e3dada83fb56c1c045cdc400994e7f2da84c2dd271d51e",
+    "name": "Uniswap V4 LP COSTon/wUSDC",
+    "decimals": 18,
+    "symbol": "COSTON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x12bb2b075b67d3e085e3dada83fb56c1c045cdc400994e7f2da84c2dd271d51e",
+    "addresses": {
+     "ethereum": "0x12bb2b075b67d3e085e3dada83fb56c1c045cdc400994e7f2da84c2dd271d51e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.323Z",
+    "createdAt": "2026-09-28T10:37:10.891Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c8276e4fec072cf7854be69c70f7773d1610857",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "3828475c-30a3-4f12-8d5d-674aa844f69a",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb6a4fd8a086b0c27a0061f0edb50861eb6cbec1c": {
+    "key": "ethereum:0xb6a4fd8a086b0c27a0061f0edb50861eb6cbec1c",
+    "name": "UniswapV2 LP Costco/WETH",
+    "decimals": 18,
+    "symbol": "COSTCO/WETH",
+    "price": 532.4109479097117,
+    "address": "0xb6a4fd8a086b0c27a0061f0edb50861eb6cbec1c",
+    "addresses": {
+     "ethereum": "0xb6a4fd8a086b0c27a0061f0edb50861eb6cbec1c"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:08.783Z",
+    "createdAt": "2025-09-02T06:59:37.353Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x6189c2e585404dca1af108ec502b811383652f1a",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 9644.403521879556,
+    "metrics": {
+     "apy": "0.021",
+     "baseApy": "0.021",
+     "volumeUsd1d": "1.859",
+     "volumeUsd7d": "0.159"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "12c78508-88fb-42b9-bc75-0bd93bd89ec4",
+    "totalSupply": "18.114585283687838267",
+    "reserves": [
+     "319219071023.700647848",
+     "2.062952675908528294"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0a2121a50a09ed0796ae81f9c53ff9398355a398": {
+    "key": "robinhood:0x0a2121a50a09ed0796ae81f9c53ff9398355a398",
+    "name": "Uniswap V3 Costco  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0x0a2121a50a09ed0796ae81f9c53ff9398355a398",
+    "addresses": {
+     "robinhood": "0x0a2121a50a09ed0796ae81f9c53ff9398355a398"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.167Z",
+    "createdAt": "2026-07-23T06:14:08.488Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 476470.99733173294,
+    "metrics": {
+     "apy": "1.006",
+     "baseApy": "1.006",
+     "volumeUsd1d": "4378.795",
+     "volumeUsd7d": "550638.084"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "b83c8220-3f47-49b8-8e78-5837e1b4a5b2",
+    "reserves": [
+     "131.278196211446787795",
+     "346252.645734"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6189c2e585404dca1af108ec502b811383652f1a": {
+    "key": "ethereum:0x6189c2e585404dca1af108ec502b811383652f1a",
+    "name": "Costco",
+    "decimals": 9,
+    "symbol": "COSTCO",
+    "price": 1.5114092463697098e-08,
+    "address": "0x6189c2e585404dca1af108ec502b811383652f1a",
+    "addresses": {
+     "ethereum": "0x6189c2e585404dca1af108ec502b811383652f1a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6358.347558552732,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "1.99",
+     "volumeUsd7d": "0.33"
+    },
+    "metadata": {},
+    "tokenId": "65899ea8-5380-4e5e-80f9-0089c35992d7",
+    "totalSupply": "420690000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x60e5a65900e41e0ccbf3d2aba38c033fcddf6a8df376311af8ed10e3a82505bb": {
+    "key": "robinhood:0x60e5a65900e41e0ccbf3d2aba38c033fcddf6a8df376311af8ed10e3a82505bb",
+    "name": "Uniswap V4 LP ETH/COST",
+    "decimals": 18,
+    "symbol": "ETH/COST",
+    "price": 9007199254740990,
+    "address": "0x60e5a65900e41e0ccbf3d2aba38c033fcddf6a8df376311af8ed10e3a82505bb",
+    "addresses": {
+     "robinhood": "0x60e5a65900e41e0ccbf3d2aba38c033fcddf6a8df376311af8ed10e3a82505bb"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.525Z",
+    "createdAt": "2026-07-23T21:06:09.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+    ],
+    "liquidity": 14326.972749244751,
+    "metrics": {
+     "apy": "0.019",
+     "baseApy": "0.019",
+     "volumeUsd1d": "0.146",
+     "volumeUsd7d": "2661.73"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "3e0cba57-6c1c-44cc-a708-e4b37eead8f5",
+    "reserves": [
+     "3.869491539988852794",
+     "5.336768629946260563"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x8873577d0fbd9c485dc47b141765b2a90558a1e706be079d4c9f596377a5717d": {
+    "key": "ethereum:0x8873577d0fbd9c485dc47b141765b2a90558a1e706be079d4c9f596377a5717d",
+    "name": "Uniswap V4 LP ETH/Costco",
+    "decimals": 18,
+    "symbol": "ETH/COSTCO",
+    "price": 9007199254740990,
+    "address": "0x8873577d0fbd9c485dc47b141765b2a90558a1e706be079d4c9f596377a5717d",
+    "addresses": {
+     "ethereum": "0x8873577d0fbd9c485dc47b141765b2a90558a1e706be079d4c9f596377a5717d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.578Z",
+    "createdAt": "2025-09-04T07:04:37.220Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x6189c2e585404dca1af108ec502b811383652f1a"
+    ],
+    "liquidity": 852.3771624519397,
+    "metrics": {
+     "apy": "0.079",
+     "baseApy": "0.079",
+     "volumeUsd1d": "0.168",
+     "volumeUsd7d": "0.168"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "582f3097-936a-4a87-ba27-6536b42ff4c4",
+    "reserves": [
+     "0.360277901402656331",
+     "748440862.964355016"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe5ad37798daa0231279859d4699cf8f466e8b020": {
+    "key": "ethereum:0xe5ad37798daa0231279859d4699cf8f466e8b020",
+    "name": "Dinari COST",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 987.99,
+    "address": "0xe5ad37798daa0231279859d4699cf8f466e8b020",
+    "addresses": {
+     "ethereum": "0xe5ad37798daa0231279859d4699cf8f466e8b020",
+     "arbitrum": "0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+     "avalanche": "0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+     "base": "0x70e97cac0d4eb845872cd41ae848e47d070ef45c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 744.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102174999/large/dinari-logo-green-with-margin.png?1785402847",
+    "metrics": {
+     "volumeUsd1d": "70.353",
+     "volumeUsd7d": "665.699"
+    },
+    "metadata": {},
+    "tokenId": "0910640f-0b1a-44ea-a530-51db7917281b",
+    "totalSupply": "0.753795042",
+    "circulatingSupply": "0.753795042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x1ea627476e38277e15d2c477d4dfd11eae56d124": {
+    "key": "arbitrum:0x1ea627476e38277e15d2c477d4dfd11eae56d124",
+    "name": "Costco rStock",
+    "decimals": 18,
+    "symbol": "RCOST",
+    "price": 984.51,
+    "address": "0x1ea627476e38277e15d2c477d4dfd11eae56d124",
+    "addresses": {
+     "arbitrum": "0x1ea627476e38277e15d2c477d4dfd11eae56d124"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 26585,
+    "image": "https://coin-images.coingecko.com/coins/images/102177091/large/4187c769a38741d45df1aa593ddafa7f.png?1789116800",
+    "metrics": {
+     "volumeUsd1d": "1092.921",
+     "volumeUsd7d": "10825.73"
+    },
+    "metadata": {},
+    "tokenId": "1b5b788a-06a3-4774-82b2-8239c7e21dda",
+    "totalSupply": "27.003175846",
+    "circulatingSupply": "27.003175846",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x70e97cac0d4eb845872cd41ae848e47d070ef45c": {
+    "key": "base:0x70e97cac0d4eb845872cd41ae848e47d070ef45c",
+    "name": "Dinari COST",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 987.99,
+    "address": "0x70e97cac0d4eb845872cd41ae848e47d070ef45c",
+    "addresses": {
+     "ethereum": "0xe5ad37798daa0231279859d4699cf8f466e8b020",
+     "arbitrum": "0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+     "avalanche": "0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+     "base": "0x70e97cac0d4eb845872cd41ae848e47d070ef45c"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 744.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102174999/large/dinari-logo-green-with-margin.png?1785402847",
+    "metrics": {
+     "volumeUsd1d": "70.353",
+     "volumeUsd7d": "665.326"
+    },
+    "metadata": {},
+    "tokenId": "0910640f-0b1a-44ea-a530-51db7917281b",
+    "totalSupply": "0.753795042",
+    "circulatingSupply": "0.753795042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc478a811a0002be4321a142d5446247456b1cb05": {
+    "key": "robinhood:0xc478a811a0002be4321a142d5446247456b1cb05",
+    "name": "Uniswap V3 WETH/Costco  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "WETH/COST",
+    "price": 9007199254740990,
+    "address": "0xc478a811a0002be4321a142d5446247456b1cb05",
+    "addresses": {
+     "robinhood": "0xc478a811a0002be4321a142d5446247456b1cb05"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675"
+    ],
+    "updatedAt": "2026-10-18T20:15:14.227Z",
+    "createdAt": "2026-08-28T06:55:48.724Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+    ],
+    "liquidity": 9393.30373792528,
+    "metrics": {
+     "apy": "171.074",
+     "baseApy": "171.074",
+     "volumeUsd1d": "3908.057",
+     "volumeUsd7d": "50883.119"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "0350cacf-5f2a-4048-8e9b-70b6d4b33c27",
+    "reserves": [
+     "3.422412669019830478",
+     "1.410551543960966801"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x34375f826fd3dd4e15f883d4f4786bb45eb705ac": {
+    "key": "bsc:0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+    "name": "Costco (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COSTON",
+    "price": 989.81,
+    "address": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+    "addresses": {
+     "bsc": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+     "ethereum": "0x0c8276e4fec072cf7854be69c70f7773d1610857"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1275492,
+    "image": "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+    "metrics": {
+     "volumeUsd1d": "3441840.988",
+     "volumeUsd7d": "23996332.89"
+    },
+    "metadata": {},
+    "tokenId": "141d2717-391b-4305-ade7-d1c7ab09aea3",
+    "totalSupply": "1288.6249670039622",
+    "circulatingSupply": "1288.6249670039622",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xacb583f29cdf6906d81c7a3b28a05c409fec4973": {
+    "key": "avalanche:0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+    "name": "Dinari COST",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 987.99,
+    "address": "0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+    "addresses": {
+     "ethereum": "0xe5ad37798daa0231279859d4699cf8f466e8b020",
+     "arbitrum": "0xd17aff8fcf7698aabfb5f8be90aa2692774fa810",
+     "avalanche": "0xacb583f29cdf6906d81c7a3b28a05c409fec4973",
+     "base": "0x70e97cac0d4eb845872cd41ae848e47d070ef45c"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 744.74,
+    "image": "https://coin-images.coingecko.com/coins/images/102174999/large/dinari-logo-green-with-margin.png?1785402847",
+    "metrics": {
+     "volumeUsd1d": "70.353",
+     "volumeUsd7d": "665.064"
+    },
+    "metadata": {},
+    "tokenId": "0910640f-0b1a-44ea-a530-51db7917281b",
+    "totalSupply": "0.753795042",
+    "circulatingSupply": "0.753795042",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x429d238c62cb0ba523f268adbc728cf843c6a330": {
+    "key": "robinhood:0x429d238c62cb0ba523f268adbc728cf843c6a330",
+    "name": "Beefy CLM COST-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODCOST-USDG",
+    "price": 1056487199951.9828,
+    "address": "0x429d238c62cb0ba523f268adbc728cf843c6a330",
+    "addresses": {
+     "robinhood": "0x429d238c62cb0ba523f268adbc728cf843c6a330"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0x0a2121a50a09ed0796ae81f9c53ff9398355a398",
+    "liquidity": 11575.427604958753,
+    "metrics": {
+     "apy": "0.247",
+     "baseApy": "0.247",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-cost-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x429d238c62cb0ba523f268adbc728cf843c6a330",
+     "strategyAddress": "0xdd2182eeae54e8deab5929833cefc4d3881a2377",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x911eb23632037dcf7bdf774bdc76e7ce6697f224",
+     "depositTokenAddresses": [
+      "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "0d3c9d31-2202-4de8-8866-803504902559",
+    "totalSupply": "0.00000001095652423",
+    "reserves": [
+     "2.070899579994899995",
+     "9521.246961"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xef80475656c35520d4cca0273859913ac67b2b98ca4847ab6a87fbe667d81320": {
+    "key": "robinhood:0xef80475656c35520d4cca0273859913ac67b2b98ca4847ab6a87fbe667d81320",
+    "name": "Uniswap V4 LP COST/USDG",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0xef80475656c35520d4cca0273859913ac67b2b98ca4847ab6a87fbe667d81320",
+    "addresses": {
+     "robinhood": "0xef80475656c35520d4cca0273859913ac67b2b98ca4847ab6a87fbe667d81320"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.572Z",
+    "createdAt": "2026-07-31T08:01:32.854Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1121.4950086667375,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "40.06"
+    },
+    "tokenId": "736c181d-00a8-4f7d-99b7-9b97e1ddef74",
+    "reserves": [
+     "0.586143758787681431",
+     "540.083348"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x096ca74a297f13fa25747b622c0b4d6301535c43e55d2dcd67e4d27319826a32": {
+    "key": "robinhood:0x096ca74a297f13fa25747b622c0b4d6301535c43e55d2dcd67e4d27319826a32",
+    "name": "Uniswap V4 LP COST/USDG",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0x096ca74a297f13fa25747b622c0b4d6301535c43e55d2dcd67e4d27319826a32",
+    "addresses": {
+     "robinhood": "0x096ca74a297f13fa25747b622c0b4d6301535c43e55d2dcd67e4d27319826a32"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.598Z",
+    "createdAt": "2026-08-30T08:01:08.132Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 10251.878293828653,
+    "metrics": {
+     "apy": "0.043",
+     "baseApy": "0.043",
+     "volumeUsd1d": "5.224",
+     "volumeUsd7d": "8522.858"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2331"
+    },
+    "tokenId": "5a68fa88-5d29-4393-898f-7d5fe37b89fb",
+    "reserves": [
+     "0.788398184988706227",
+     "9469.845062"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x264ad13bfc0585208b7d8b1712df51b096a5f55c": {
+    "key": "robinhood:0x264ad13bfc0585208b7d8b1712df51b096a5f55c",
+    "name": "Uniswap V3 hotdog/Costco  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "HOTDOG/COST",
+    "price": 9007199254740990,
+    "address": "0x264ad13bfc0585208b7d8b1712df51b096a5f55c",
+    "addresses": {
+     "robinhood": "0x264ad13bfc0585208b7d8b1712df51b096a5f55c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178964/large/hotdog.jpg?1790773100",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675"
+    ],
+    "updatedAt": "2026-10-18T20:15:19.097Z",
+    "createdAt": "2026-09-30T13:53:01.881Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x45443a4a7b58ab26a4b4d72616cf36d5aae7188c",
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+    ],
+    "liquidity": 134202.6682552994,
+    "metrics": {
+     "apy": "6.728",
+     "baseApy": "6.728",
+     "volumeUsd1d": "2508.828",
+     "volumeUsd7d": "60438.935"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "e934183e-c72c-4dd9-a332-685669a8a86c",
+    "reserves": [
+     "52994157.600936915589343426",
+     "66.204581310896194311"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x78a9e67ba8b59e58e4200dbe7d8fd3801083bdaecc9fab45d45d5f211ad92d0f": {
+    "key": "robinhood:0x78a9e67ba8b59e58e4200dbe7d8fd3801083bdaecc9fab45d45d5f211ad92d0f",
+    "name": "Uniswap V4 LP COST/USDG",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0x78a9e67ba8b59e58e4200dbe7d8fd3801083bdaecc9fab45d45d5f211ad92d0f",
+    "addresses": {
+     "robinhood": "0x78a9e67ba8b59e58e4200dbe7d8fd3801083bdaecc9fab45d45d5f211ad92d0f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.785Z",
+    "createdAt": "2026-09-09T20:20:29.680Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1057.2772752373014,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "37.182"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "84de2ba6-db9b-4f09-950a-6cac05132761",
+    "reserves": [
+     "1.028329389322456111",
+     "37.249869"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xdb073638f94a384b8b7a647d73274decac9e7ca5": {
+    "key": "robinhood:0xdb073638f94a384b8b7a647d73274decac9e7ca5",
+    "name": "Uniswap V3 Costco  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0xdb073638f94a384b8b7a647d73274decac9e7ca5",
+    "addresses": {
+     "robinhood": "0xdb073638f94a384b8b7a647d73274decac9e7ca5"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:17.847Z",
+    "createdAt": "2026-07-17T23:43:38.681Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 932.1177124603294,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "196.042"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "c4e8f4ae-806d-40b9-95a4-7c7d3381ce3d",
+    "reserves": [
+     "0.270196707027355673",
+     "664.102377"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1b32f65fe6ad3ab481f4184c178a07827b2ddaf61474e7b7abceab5e63a7fff5": {
+    "key": "ethereum:0x1b32f65fe6ad3ab481f4184c178a07827b2ddaf61474e7b7abceab5e63a7fff5",
+    "name": "Uniswap V4 LP COSTon/USDC",
+    "decimals": 18,
+    "symbol": "COSTON/USDC",
+    "price": 9007199254740990,
+    "address": "0x1b32f65fe6ad3ab481f4184c178a07827b2ddaf61474e7b7abceab5e63a7fff5",
+    "addresses": {
+     "ethereum": "0x1b32f65fe6ad3ab481f4184c178a07827b2ddaf61474e7b7abceab5e63a7fff5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.191Z",
+    "createdAt": "2025-09-26T08:45:48.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0c8276e4fec072cf7854be69c70f7773d1610857",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 852.4254944813559,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "9.629"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "bec079fc-0322-497c-8112-3c7897ba91c9",
+    "reserves": [
+     "0.290517404256234952",
+     "565.001803"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x0c8276e4fec072cf7854be69c70f7773d1610857": {
+    "key": "ethereum:0x0c8276e4fec072cf7854be69c70f7773d1610857",
+    "name": "Costco (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COSTON",
+    "price": 989.81,
+    "address": "0x0c8276e4fec072cf7854be69c70f7773d1610857",
+    "addresses": {
+     "bsc": "0x34375f826fd3dd4e15f883d4f4786bb45eb705ac",
+     "ethereum": "0x0c8276e4fec072cf7854be69c70f7773d1610857"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1275492,
+    "image": "https://coin-images.coingecko.com/coins/images/68648/large/coston_160x160.png?1756156219",
+    "metrics": {
+     "volumeUsd1d": "3451578.493",
+     "volumeUsd7d": "23996166.464"
+    },
+    "metadata": {},
+    "tokenId": "141d2717-391b-4305-ade7-d1c7ab09aea3",
+    "totalSupply": "1288.6249670039622",
+    "circulatingSupply": "1288.6249670039622",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xd0f36f913c83d95ab0e5f2cd2b991fc74bad741745ba9e7aeb6df8394c761f7b": {
+    "key": "robinhood:0xd0f36f913c83d95ab0e5f2cd2b991fc74bad741745ba9e7aeb6df8394c761f7b",
+    "name": "Uniswap V4 LP COST/USDG",
+    "decimals": 18,
+    "symbol": "COST/USDG",
+    "price": 9007199254740990,
+    "address": "0xd0f36f913c83d95ab0e5f2cd2b991fc74bad741745ba9e7aeb6df8394c761f7b",
+    "addresses": {
+     "robinhood": "0xd0f36f913c83d95ab0e5f2cd2b991fc74bad741745ba9e7aeb6df8394c761f7b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.286Z",
+    "createdAt": "2026-09-08T14:43:04.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 17067.09055621057,
+    "metrics": {
+     "apy": "0.799",
+     "baseApy": "0.799",
+     "volumeUsd1d": "353.386",
+     "volumeUsd7d": "44170.415"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9,
+     "feePercentage": "0.1057"
+    },
+    "tokenId": "31d5d7f5-c317-451b-826e-97896aaf61d6",
+    "reserves": [
+     "3.133026633071537954",
+     "13959.3577"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x911eb23632037dcf7bdf774bdc76e7ce6697f224": {
+    "key": "robinhood:0x911eb23632037dcf7bdf774bdc76e7ce6697f224",
+    "name": "Beefy CLM COST-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODCOST-USDG",
+    "price": 1056487199951.9828,
+    "address": "0x911eb23632037dcf7bdf774bdc76e7ce6697f224",
+    "addresses": {
+     "robinhood": "0x911eb23632037dcf7bdf774bdc76e7ce6697f224"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174152/large/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png?1782444675"
+    ],
+    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x429d238c62cb0ba523f268adbc728cf843c6a330"
+    ],
+    "poolAddress": "0x429d238c62cb0ba523f268adbc728cf843c6a330",
+    "liquidity": 11575.426548471554,
+    "metrics": {
+     "apy": "0.247",
+     "baseApy": "0.247",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-cost-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x429d238c62cb0ba523f268adbc728cf843c6a330",
+     "strategyAddress": "0xdd2182eeae54e8deab5929833cefc4d3881a2377",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x911eb23632037dcf7bdf774bdc76e7ce6697f224",
+     "depositTokenAddresses": [
+      "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "81365c98-219f-444f-a897-37b6f05f095e",
+    "totalSupply": "0.00000001095652323",
+    "reserves": [
+     "0.00000001095652323"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4ea005168d7f09a7a0ba9d1def21a479950e44c2": {
+    "key": "robinhood:0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "name": "Costco • Robinhood Token",
+    "decimals": 18,
+    "symbol": "COST",
+    "price": 991.9267277864881,
+    "address": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "addresses": {
+     "robinhood": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x4ea005168d7f09a7a0ba9d1def21a479950e44c2.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+    "liquidity": 780986.3720214189,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "252703.175"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000e0e44220991548d0b030699e3062c2a7",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000612040296259656",
+     "currentMultiplier": "1.000612040296259656",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "69125418-968f-4738-ada5-ce58b3ba84c6",
+    "totalSupply": "787.34280481",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

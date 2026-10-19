@@ -1,0 +1,787 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US92189F6768",
+ "ticker": "SMH",
+ "name": "VanEck Semiconductor ETF",
+ "isin": "US92189F6768",
+ "asset_type": "etf",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:16Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "VanEck Semiconductor ETF",
+   "symbol": "SMH",
+   "slug": "vaneck-semiconductor-etf",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 540.7038148701937,
+     "tokenized_market_cap": 2372171.827539522,
+     "tokenized_volume_24h": 1593542.56721805,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 7733,
+   "asset_type": "etf",
+   "rwa_rank": 5325,
+   "has_tokens": true,
+   "average_tokenized_price": 540.7038148701937,
+   "tokenized_market_cap": 2372171.827539522,
+   "tokenized_volume_24h": 1593542.56721805,
+   "last_updated": "2026-10-18T20:13:31.878Z",
+   "tokens": [
+    {
+     "symbol": "SMH",
+     "name": "VanEck Semiconductor ETF (Derivatives)",
+     "price": 539.8653949827271,
+     "crypto_id": 39498,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "SMHx",
+     "name": "VanEck Semiconductor tokenized ETF (xStock)",
+     "price": 560.03,
+     "crypto_id": 40139,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 980661.12,
+     "volume_24h": 14672.69527514
+    },
+    {
+     "symbol": "SMHB",
+     "name": "VanEck Semiconductor ETF Tokenized bStocks",
+     "price": 540.6588834212129,
+     "crypto_id": 40928,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1391857.4,
+     "volume_24h": 1577685.41030893
+    },
+    {
+     "symbol": "wSMHx",
+     "name": "Wrapped VanEck Semiconductor ETF Tokenized ETF (xStock)",
+     "price": null,
+     "crypto_id": 41627,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SMH",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SMH"
+    }
+   ]
+  },
+  "info": {
+   "39498": {
+    "id": 39498,
+    "symbol": "SMH",
+    "name": "VanEck Semiconductor ETF (Derivatives)",
+    "slug": "vaneck-semiconductor-etf-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39498.png",
+    "date_added": "2026-05-13T13:31:31.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40139": {
+    "id": 40139,
+    "symbol": "SMHx",
+    "name": "VanEck Semiconductor tokenized ETF (xStock)",
+    "slug": "vaneck-semiconductor-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40139.png",
+    "date_added": "2026-06-10T06:33:29.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XstuBvLo7soZzj3beCCPonHpR3eUfPNSeQzw35Swons"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XstuBvLo7soZzj3beCCPonHpR3eUfPNSeQzw35Swons",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8d512a03600981b8e86556fd5c0fbdd726fe1821",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8d512a03600981b8e86556fd5c0fbdd726fe1821",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8d512a03600981b8e86556fd5c0fbdd726fe1821",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBJ_mtXWenfUbO3X1o8LQSJ3VHmp2Pl_Ipcwi3xUk1-1ySN",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8d512a03600981b8e86556fd5c0fbdd726fe1821",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40928": {
+    "id": 40928,
+    "symbol": "SMHB",
+    "name": "VanEck Semiconductor ETF Tokenized bStocks",
+    "slug": "vaneck-semiconductor-etf-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40928.png",
+    "date_added": "2026-07-28T07:29:31.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xbe1fced7047fdce935f45700727845df2c76877a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbe1fced7047fdce935f45700727845df2c76877a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41627": {
+    "id": 41627,
+    "symbol": "wSMHx",
+    "name": "Wrapped VanEck Semiconductor ETF Tokenized ETF (xStock)",
+    "slug": "wrapped-vaneck-semiconductor-etf-tokenized-etf-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41627.png",
+    "date_added": "2026-08-11T16:25:51.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x23c4BDDea5e7E284fB4027c6050bC5E6f7FaE23f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x23c4BDDea5e7E284fB4027c6050bC5E6f7FaE23f",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x8d512a03600981b8e86556fd5c0fbdd726fe1821",
+   "bsc:0xbe1fced7047fdce935f45700727845df2c76877a",
+   "ethereum:0x8d512a03600981b8e86556fd5c0fbdd726fe1821"
+  ],
+  "exact": {
+   "bsc:0xbe1fced7047fdce935f45700727845df2c76877a": {
+    "key": "bsc:0xbe1fced7047fdce935f45700727845df2c76877a",
+    "name": "VanEck Semiconductor ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SMHB",
+    "price": 540.73,
+    "address": "0xbe1fced7047fdce935f45700727845df2c76877a",
+    "addresses": {
+     "bsc": "0xbe1fced7047fdce935f45700727845df2c76877a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1392069,
+    "image": "https://coin-images.coingecko.com/coins/images/102175189/large/SMHB.png?1785457887",
+    "metrics": {
+     "volumeUsd1d": "782214.146",
+     "volumeUsd7d": "5402965.179"
+    },
+    "metadata": {},
+    "tokenId": "53b92660-941d-4798-acee-9d63581f02c7",
+    "totalSupply": "2574.37257136",
+    "circulatingSupply": "2574.37257136",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SMH": {
+    "total_items": 12,
+    "pages": 1,
+    "received": 12,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xd55a1afbcb039f6120cc98a844c08642c202bd633632a7b51cb06e7f7b01fa6f": {
+    "key": "robinhood:0xd55a1afbcb039f6120cc98a844c08642c202bd633632a7b51cb06e7f7b01fa6f",
+    "name": "Uniswap V4 LP SMH/USDG",
+    "decimals": 18,
+    "symbol": "SMH/USDG",
+    "price": 9007199254740990,
+    "address": "0xd55a1afbcb039f6120cc98a844c08642c202bd633632a7b51cb06e7f7b01fa6f",
+    "addresses": {
+     "robinhood": "0xd55a1afbcb039f6120cc98a844c08642c202bd633632a7b51cb06e7f7b01fa6f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.061Z",
+    "createdAt": "2026-09-19T15:21:17.558Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 3031.4234677187824,
+    "metrics": {
+     "apy": "4.345",
+     "baseApy": "4.345",
+     "volumeUsd1d": "5.161",
+     "volumeUsd7d": "163.857"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 690,
+     "feePercentage": "6.9931"
+    },
+    "tokenId": "3384b591-d0aa-4910-944d-c06cf205a7b5",
+    "reserves": [
+     "5.079429715410589686",
+     "275.98523"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd4c09b469af5c558fc87d242967efa1f2dcb7e5d2e7bcc5c6a7228e9fe2c7665": {
+    "key": "robinhood:0xd4c09b469af5c558fc87d242967efa1f2dcb7e5d2e7bcc5c6a7228e9fe2c7665",
+    "name": "Uniswap V4 LP ETH/SMH",
+    "decimals": 18,
+    "symbol": "ETH/SMH",
+    "price": 9007199254740990,
+    "address": "0xd4c09b469af5c558fc87d242967efa1f2dcb7e5d2e7bcc5c6a7228e9fe2c7665",
+    "addresses": {
+     "robinhood": "0xd4c09b469af5c558fc87d242967efa1f2dcb7e5d2e7bcc5c6a7228e9fe2c7665"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.386Z",
+    "createdAt": "2026-09-09T20:23:39.054Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x072f979c2cac8e1391b0162a87fee094bf8744a0"
+    ],
+    "liquidity": 502.91408865643666,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "65.981"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "fe5d396d-1821-464c-9157-215d2153a92a",
+    "reserves": [
+     "0.047882868690187346",
+     "0.721020536670933354"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x667c1ae4a75e5f8232e61485be214fe5cf861a22": {
+    "key": "base:0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+    "name": "VanEck Semiconductor ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SMH",
+    "price": 542.55,
+    "address": "0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+    "addresses": {
+     "avalanche": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "ethereum": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "base": "0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+     "arbitrum": "0x827f892083eee74cfb43146c9f5e397517e16d7e"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19621.32,
+    "image": "https://coin-images.coingecko.com/coins/images/102175127/large/dinari-logo-green-with-margin.png?1785403299",
+    "metrics": {
+     "volumeUsd1d": "9.82",
+     "volumeUsd7d": "573.425"
+    },
+    "metadata": {},
+    "tokenId": "5b796ad6-e077-48cc-b61b-1f00d3e0a521",
+    "totalSupply": "35.625658817",
+    "circulatingSupply": "36.165158817",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xb15448a28c3af8b3cd419bc9e9966c8237c27b87": {
+    "key": "avalanche:0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+    "name": "VanEck Semiconductor ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SMH",
+    "price": 542.55,
+    "address": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+    "addresses": {
+     "avalanche": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "ethereum": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "base": "0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+     "arbitrum": "0x827f892083eee74cfb43146c9f5e397517e16d7e"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19621.32,
+    "image": "https://coin-images.coingecko.com/coins/images/102175127/large/dinari-logo-green-with-margin.png?1785403299",
+    "metrics": {
+     "volumeUsd1d": "9.82",
+     "volumeUsd7d": "573.636"
+    },
+    "metadata": {},
+    "tokenId": "5b796ad6-e077-48cc-b61b-1f00d3e0a521",
+    "totalSupply": "35.625658817",
+    "circulatingSupply": "36.165158817",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x072f979c2cac8e1391b0162a87fee094bf8744a0": {
+    "key": "robinhood:0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+    "name": "VanEck Semiconductor ETF • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SMH",
+    "price": 542.47,
+    "address": "0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+    "addresses": {
+     "robinhood": "0x072f979c2cac8e1391b0162a87fee094bf8744a0"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x072f979c2cac8e1391b0162a87fee094bf8744a0.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-10T13:38:25.611Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+    "liquidity": 113591.6014394,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "943.582"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000008f38b46a1c554840a92533677cce89ad",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "41a50390-cd57-4c5b-b3f0-51049c96a710",
+    "totalSupply": "209.39702",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x827f892083eee74cfb43146c9f5e397517e16d7e": {
+    "key": "arbitrum:0x827f892083eee74cfb43146c9f5e397517e16d7e",
+    "name": "VanEck Semiconductor ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SMH",
+    "price": 542.55,
+    "address": "0x827f892083eee74cfb43146c9f5e397517e16d7e",
+    "addresses": {
+     "avalanche": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "ethereum": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "base": "0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+     "arbitrum": "0x827f892083eee74cfb43146c9f5e397517e16d7e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19621.32,
+    "image": "https://coin-images.coingecko.com/coins/images/102175127/large/dinari-logo-green-with-margin.png?1785403299",
+    "metrics": {
+     "volumeUsd1d": "9.82",
+     "volumeUsd7d": "573.422"
+    },
+    "metadata": {},
+    "tokenId": "5b796ad6-e077-48cc-b61b-1f00d3e0a521",
+    "totalSupply": "35.625658817",
+    "circulatingSupply": "36.165158817",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb15448a28c3af8b3cd419bc9e9966c8237c27b87": {
+    "key": "ethereum:0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+    "name": "VanEck Semiconductor ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "SMH",
+    "price": 542.55,
+    "address": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+    "addresses": {
+     "avalanche": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "ethereum": "0xb15448a28c3af8b3cd419bc9e9966c8237c27b87",
+     "base": "0x667c1ae4a75e5f8232e61485be214fe5cf861a22",
+     "arbitrum": "0x827f892083eee74cfb43146c9f5e397517e16d7e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19621.32,
+    "image": "https://coin-images.coingecko.com/coins/images/102175127/large/dinari-logo-green-with-margin.png?1785403299",
+    "metrics": {
+     "volumeUsd1d": "9.82",
+     "volumeUsd7d": "573.464"
+    },
+    "metadata": {},
+    "tokenId": "5b796ad6-e077-48cc-b61b-1f00d3e0a521",
+    "totalSupply": "35.625658817",
+    "circulatingSupply": "36.165158817",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbe1fced7047fdce935f45700727845df2c76877a": {
+    "key": "bsc:0xbe1fced7047fdce935f45700727845df2c76877a",
+    "name": "VanEck Semiconductor ETF (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SMHB",
+    "price": 540.73,
+    "address": "0xbe1fced7047fdce935f45700727845df2c76877a",
+    "addresses": {
+     "bsc": "0xbe1fced7047fdce935f45700727845df2c76877a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1392069,
+    "image": "https://coin-images.coingecko.com/coins/images/102175189/large/SMHB.png?1785457887",
+    "metrics": {
+     "volumeUsd1d": "782214.146",
+     "volumeUsd7d": "5402965.179"
+    },
+    "metadata": {},
+    "tokenId": "53b92660-941d-4798-acee-9d63581f02c7",
+    "totalSupply": "2574.37257136",
+    "circulatingSupply": "2574.37257136",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x79eae5afc7f64aebfc6a8df722130e7ff494cb7ac60721657c72556f9e862f2c": {
+    "key": "robinhood:0x79eae5afc7f64aebfc6a8df722130e7ff494cb7ac60721657c72556f9e862f2c",
+    "name": "Uniswap V4 LP SMH/USDG",
+    "decimals": 18,
+    "symbol": "SMH/USDG",
+    "price": 9007199254740990,
+    "address": "0x79eae5afc7f64aebfc6a8df722130e7ff494cb7ac60721657c72556f9e862f2c",
+    "addresses": {
+     "robinhood": "0x79eae5afc7f64aebfc6a8df722130e7ff494cb7ac60721657c72556f9e862f2c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.424Z",
+    "createdAt": "2026-10-16T14:26:15.930Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 2394.0676146087003,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "413.89"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "b51412d3-de3a-4a72-aad5-105f3de7f90d",
+    "reserves": [
+     "3.270943188763803249",
+     "619.679063"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x99baa5a39dde70af936a5a91dedcabad096da7342cc2436e136f83e8eca391c4": {
+    "key": "robinhood:0x99baa5a39dde70af936a5a91dedcabad096da7342cc2436e136f83e8eca391c4",
+    "name": "Uniswap V4 LP SMH/USDG",
+    "decimals": 18,
+    "symbol": "SMH/USDG",
+    "price": 9007199254740990,
+    "address": "0x99baa5a39dde70af936a5a91dedcabad096da7342cc2436e136f83e8eca391c4",
+    "addresses": {
+     "robinhood": "0x99baa5a39dde70af936a5a91dedcabad096da7342cc2436e136f83e8eca391c4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.571Z",
+    "createdAt": "2026-09-10T03:24:09.212Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x072f979c2cac8e1391b0162a87fee094bf8744a0",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 930.7261976195323,
+    "metrics": {
+     "apy": "2.185",
+     "baseApy": "2.185",
+     "volumeUsd1d": "1.094",
+     "volumeUsd7d": "27.816"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "2bb9df7d-3dfd-4cdd-827f-282d4cc49764",
+    "reserves": [
+     "0.836254605083289966",
+     "477.083162"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x25a02eefffe70897d4cba1c7459380788cc1cba7": {
+    "key": "arbitrum:0x25a02eefffe70897d4cba1c7459380788cc1cba7",
+    "name": "VanEck Semiconductor ETF rStock",
+    "decimals": 18,
+    "symbol": "RSMH",
+    "price": 541.51,
+    "address": "0x25a02eefffe70897d4cba1c7459380788cc1cba7",
+    "addresses": {
+     "arbitrum": "0x25a02eefffe70897d4cba1c7459380788cc1cba7"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 167113,
+    "image": "https://coin-images.coingecko.com/coins/images/102177231/large/8212fc1ac945a7feec1ce7f43287ed67.png?1789117239",
+    "metrics": {
+     "volumeUsd1d": "49.933",
+     "volumeUsd7d": "2827735.99"
+    },
+    "metadata": {},
+    "tokenId": "cceb4b92-e76d-4b1d-a858-316a32d6dc42",
+    "totalSupply": "308.603428219",
+    "circulatingSupply": "308.603428219",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x884615b493343f1c177f4e895d8a9fdf0beda39e9eac9319ca84f146e061e390": {
+    "key": "bsc:0x884615b493343f1c177f4e895d8a9fdf0beda39e9eac9319ca84f146e061e390",
+    "name": "Uniswap V4 LP USDT/SMHB",
+    "decimals": 18,
+    "symbol": "USDT/SMHB",
+    "price": 9007199254740990,
+    "address": "0x884615b493343f1c177f4e895d8a9fdf0beda39e9eac9319ca84f146e061e390",
+    "addresses": {
+     "bsc": "0x884615b493343f1c177f4e895d8a9fdf0beda39e9eac9319ca84f146e061e390"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102175189/large/SMHB.png?1785457887"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.112Z",
+    "createdAt": "2026-08-03T15:18:58.331Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xbe1fced7047fdce935f45700727845df2c76877a"
+    ],
+    "liquidity": 780.8367237567728,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "d8c7847e-5576-4eb4-9575-1aae2b778477",
+    "reserves": [
+     "254.891586896801004574",
+     "0.97306203436378453"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

@@ -1,0 +1,497 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US8825081040",
+ "ticker": "TXN",
+ "name": "Texas Instruments",
+ "isin": "US8825081040",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:07Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Texas Instruments Inc",
+   "symbol": "TXN",
+   "slug": "texas-instruments",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 279.6014089372638,
+     "tokenized_market_cap": 729783.6517574559,
+     "tokenized_volume_24h": 308810.54397502,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 45,
+   "asset_type": "stock",
+   "rwa_rank": 57,
+   "has_tokens": true,
+   "average_tokenized_price": 279.6014089372638,
+   "tokenized_market_cap": 729783.6517574559,
+   "tokenized_volume_24h": 308810.54397502,
+   "last_updated": "2026-10-18T20:13:45.284Z",
+   "tokens": [
+    {
+     "symbol": "TXNon",
+     "name": "Texas Instruments Tokenized Stock (Ondo)",
+     "price": 279.80534292284324,
+     "crypto_id": 39258,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 730315.94,
+     "volume_24h": 308061.35908529
+    },
+    {
+     "symbol": "TXN",
+     "name": "Texas Instruments Incorporated Common Stock (Derivatives)",
+     "price": 275.9756007632275,
+     "crypto_id": 40682,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wTXNx",
+     "name": "Wrapped Texas Instruments Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41729,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "TXN",
+     "market_url": "https://www.binance.com/en/stocks/EQ_TXN"
+    }
+   ]
+  },
+  "info": {
+   "39258": {
+    "id": 39258,
+    "symbol": "TXNon",
+    "name": "Texas Instruments Tokenized Stock (Ondo)",
+    "slug": "texas-instruments-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39258.png",
+    "date_added": "2026-01-08T15:44:24.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "81xLFvCzFaUM3KDxSHC75pXu3RPCeSeCbmGBY8aondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40682": {
+    "id": 40682,
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated Common Stock (Derivatives)",
+    "slug": "texas-instruments-incorporated-common-stock-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40682.png",
+    "date_added": "2026-07-02T12:14:55.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41729": {
+    "id": 41729,
+    "symbol": "wTXNx",
+    "name": "Wrapped Texas Instruments Tokenized Stock (xStock)",
+    "slug": "wrapped-texas-instruments-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41729.png",
+    "date_added": "2026-08-11T16:26:58.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x61CFbD23E59f60eE2AE2b381a0C8a3BC06a2E2A5"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x61CFbD23E59f60eE2AE2b381a0C8a3BC06a2E2A5",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+   "ethereum:0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e"
+  ],
+  "exact": {
+   "bsc:0xca3a5c955f1f01f20aacf9501b03e4aa235e478b": {
+    "key": "bsc:0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+    "name": "Texas Instruments (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TXNON",
+    "price": 278.5,
+    "address": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+    "addresses": {
+     "ethereum": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+     "bsc": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 726654,
+    "image": "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853",
+    "metrics": {
+     "volumeUsd1d": "153037.872",
+     "volumeUsd7d": "1227523.81"
+    },
+    "metadata": {},
+    "tokenId": "92b4a854-ec71-4dfe-a83e-37a8c1d974e4",
+    "totalSupply": "2610.0857450319118",
+    "circulatingSupply": "2610.0857450319118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e": {
+    "key": "ethereum:0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+    "name": "Texas Instruments (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TXNON",
+    "price": 278.5,
+    "address": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+    "addresses": {
+     "ethereum": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+     "bsc": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 726654,
+    "image": "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853",
+    "metrics": {
+     "volumeUsd1d": "153003.156",
+     "volumeUsd7d": "1226066.791"
+    },
+    "metadata": {},
+    "tokenId": "92b4a854-ec71-4dfe-a83e-37a8c1d974e4",
+    "totalSupply": "2610.0857450319118",
+    "circulatingSupply": "2610.0857450319118",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "TXN": {
+    "total_items": 6,
+    "pages": 1,
+    "received": 6,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0xca3a5c955f1f01f20aacf9501b03e4aa235e478b": {
+    "key": "bsc:0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+    "name": "Texas Instruments (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TXNON",
+    "price": 278.5,
+    "address": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b",
+    "addresses": {
+     "ethereum": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+     "bsc": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 726654,
+    "image": "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853",
+    "metrics": {
+     "volumeUsd1d": "153037.872",
+     "volumeUsd7d": "1227523.81"
+    },
+    "metadata": {},
+    "tokenId": "92b4a854-ec71-4dfe-a83e-37a8c1d974e4",
+    "totalSupply": "2610.0857450319118",
+    "circulatingSupply": "2610.0857450319118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x6daf2fc6fc8a2cd82db1cb53f3fa0b51ec56829a": {
+    "key": "arbitrum:0x6daf2fc6fc8a2cd82db1cb53f3fa0b51ec56829a",
+    "name": "Texas Instruments rStock",
+    "decimals": 18,
+    "symbol": "RTXN",
+    "price": 276.89,
+    "address": "0x6daf2fc6fc8a2cd82db1cb53f3fa0b51ec56829a",
+    "addresses": {
+     "arbitrum": "0x6daf2fc6fc8a2cd82db1cb53f3fa0b51ec56829a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2290.24,
+    "image": "https://coin-images.coingecko.com/coins/images/102177073/large/219bf078ed98872ab26f6edaf67ee6ca.png?1789116743",
+    "metrics": {
+     "volumeUsd1d": "152.631",
+     "volumeUsd7d": "717.303"
+    },
+    "metadata": {},
+    "tokenId": "973ee6ab-6098-42af-824b-982045ab8d4b",
+    "totalSupply": "8.271334885",
+    "circulatingSupply": "8.271334885",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x05411dfe46660633e2046f39a8a1e211fbb6c86c2eae2219e4fded411d3d26ad": {
+    "key": "ethereum:0x05411dfe46660633e2046f39a8a1e211fbb6c86c2eae2219e4fded411d3d26ad",
+    "name": "Uniswap V4 LP wUSDC/TXNon",
+    "decimals": 18,
+    "symbol": "WUSDC/TXNON",
+    "price": 9007199254740990,
+    "address": "0x05411dfe46660633e2046f39a8a1e211fbb6c86c2eae2219e4fded411d3d26ad",
+    "addresses": {
+     "ethereum": "0x05411dfe46660633e2046f39a8a1e211fbb6c86c2eae2219e4fded411d3d26ad"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.042Z",
+    "createdAt": "2026-09-30T09:01:07.744Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "c93e816a-e55e-4394-82c1-0a450cd6e173",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e": {
+    "key": "ethereum:0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+    "name": "Texas Instruments (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "TXNON",
+    "price": 278.5,
+    "address": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+    "addresses": {
+     "ethereum": "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e",
+     "bsc": "0xca3a5c955f1f01f20aacf9501b03e4aa235e478b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T21:21:35.487Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 726654,
+    "image": "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853",
+    "metrics": {
+     "volumeUsd1d": "153003.156",
+     "volumeUsd7d": "1226066.791"
+    },
+    "metadata": {},
+    "tokenId": "92b4a854-ec71-4dfe-a83e-37a8c1d974e4",
+    "totalSupply": "2610.0857450319118",
+    "circulatingSupply": "2610.0857450319118",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc8e989cdf213f5905fbaf25ee5b6ea69c19e962d00b5f5f41606398d3fc1683e": {
+    "key": "ethereum:0xc8e989cdf213f5905fbaf25ee5b6ea69c19e962d00b5f5f41606398d3fc1683e",
+    "name": "Uniswap V4 LP wUSDC/TXNon",
+    "decimals": 18,
+    "symbol": "WUSDC/TXNON",
+    "price": 9007199254740990,
+    "address": "0xc8e989cdf213f5905fbaf25ee5b6ea69c19e962d00b5f5f41606398d3fc1683e",
+    "addresses": {
+     "ethereum": "0xc8e989cdf213f5905fbaf25ee5b6ea69c19e962d00b5f5f41606398d3fc1683e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.495Z",
+    "createdAt": "2026-09-28T10:38:27.490Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "1a9911b6-9888-4290-a164-5527c34e8cce",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6eddc0757a08952f33cb5fa8f6f5e7b1f1b5beac0e7c5ee7f93147c7a338d545": {
+    "key": "ethereum:0x6eddc0757a08952f33cb5fa8f6f5e7b1f1b5beac0e7c5ee7f93147c7a338d545",
+    "name": "Uniswap V4 LP EGP/TXNon",
+    "decimals": 18,
+    "symbol": "EGP/TXNON",
+    "price": 9007199254740990,
+    "address": "0x6eddc0757a08952f33cb5fa8f6f5e7b1f1b5beac0e7c5ee7f93147c7a338d545",
+    "addresses": {
+     "ethereum": "0x6eddc0757a08952f33cb5fa8f6f5e7b1f1b5beac0e7c5ee7f93147c7a338d545"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71470/large/txnon_160x160.png?1767891853"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.955Z",
+    "createdAt": "2026-10-14T06:54:32.550Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x58fc9d573ea773ef9a25c3de66f990b87ee5f50e"
+    ],
+    "liquidity": 20061.464993078444,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.62"
+    },
+    "tokenId": "a7b1cb09-c88c-4a99-88c9-d0c82c8c65a2",
+    "reserves": [
+     "19999.999999999999999901",
+     "0.096360045965724512"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

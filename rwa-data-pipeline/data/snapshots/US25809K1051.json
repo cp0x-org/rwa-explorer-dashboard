@@ -1,0 +1,671 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US25809K1051",
+ "ticker": "DASH",
+ "name": "DoorDash",
+ "isin": "US25809K1051",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:03Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "DoorDash Inc",
+   "symbol": "DASH",
+   "slug": "doordash",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 188.92226123348374,
+     "tokenized_market_cap": 893193.2142178194,
+     "tokenized_volume_24h": 21592.60071987,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 199,
+   "asset_type": "stock",
+   "rwa_rank": 207,
+   "has_tokens": true,
+   "average_tokenized_price": 188.92226123348374,
+   "tokenized_market_cap": 893193.2142178194,
+   "tokenized_volume_24h": 21592.60071987,
+   "last_updated": "2026-10-18T20:14:22.764Z",
+   "tokens": [
+    {
+     "symbol": "DASHon",
+     "name": "DoorDash Tokenized Stock (Ondo)",
+     "price": 189.05669712576446,
+     "crypto_id": 38078,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 893828.8,
+     "volume_24h": 21500.38660768
+    },
+    {
+     "symbol": "wDASHx",
+     "name": "Wrapped DoorDash Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41178,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "DASH",
+     "market_url": "https://www.binance.com/en/stocks/EQ_DASH"
+    }
+   ]
+  },
+  "info": {
+   "38078": {
+    "id": 38078,
+    "symbol": "DASHon",
+    "name": "DoorDash Tokenized Stock (Ondo)",
+    "slug": "doordash-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38078.png",
+    "date_added": "2025-09-03T10:55:23.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x241958c86c7744d15d5f6314BA1Ea4c81DDA2896"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x241958c86c7744d15d5f6314BA1Ea4c81DDA2896",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7567c2a46bce46373b454682f3d95e6535bde144",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "83P1gCFBZfGRCwJuBt9juxJKEsZwejJoG66eTZ6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41178": {
+    "id": 41178,
+    "symbol": "wDASHx",
+    "name": "Wrapped DoorDash Tokenized Stock (xStock)",
+    "slug": "wrapped-doordash-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41178.png",
+    "date_added": "2026-08-11T16:21:04.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x2d79E847b24fd2748FB9E7C1479b9B7c74429716"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2d79E847b24fd2748FB9E7C1479b9B7c74429716",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x7567c2a46bce46373b454682f3d95e6535bde144",
+   "ethereum:0x241958c86c7744d15d5f6314ba1ea4c81dda2896"
+  ],
+  "exact": {
+   "bsc:0x7567c2a46bce46373b454682f3d95e6535bde144": {
+    "key": "bsc:0x7567c2a46bce46373b454682f3d95e6535bde144",
+    "name": "DoorDash (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DASHON",
+    "price": 189.22,
+    "address": "0x7567c2a46bce46373b454682f3d95e6535bde144",
+    "addresses": {
+     "ethereum": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "bsc": "0x7567c2a46bce46373b454682f3d95e6535bde144"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 894577,
+    "image": "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+    "metrics": {
+     "volumeUsd1d": "4.947",
+     "volumeUsd7d": "2828.725"
+    },
+    "metadata": {},
+    "tokenId": "31a027f3-5764-4c8c-9813-19d8ff32c3ee",
+    "totalSupply": "4727.83465742252",
+    "circulatingSupply": "4727.83465742252",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x241958c86c7744d15d5f6314ba1ea4c81dda2896": {
+    "key": "ethereum:0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+    "name": "DoorDash (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DASHON",
+    "price": 189.22,
+    "address": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+    "addresses": {
+     "ethereum": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "bsc": "0x7567c2a46bce46373b454682f3d95e6535bde144"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 894577,
+    "image": "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+    "metrics": {
+     "volumeUsd1d": "4.947",
+     "volumeUsd7d": "2845.145"
+    },
+    "metadata": {},
+    "tokenId": "31a027f3-5764-4c8c-9813-19d8ff32c3ee",
+    "totalSupply": "4727.83465742252",
+    "circulatingSupply": "4727.83465742252",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "DASH": {
+    "total_items": 11,
+    "pages": 1,
+    "received": 11,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x4dd942baa75810a3c1e876e79d5cd35e09c97a76": {
+    "key": "ethereum:0x4dd942baa75810a3c1e876e79d5cd35e09c97a76",
+    "name": "Dash 2 Trade",
+    "decimals": 18,
+    "symbol": "D2T",
+    "price": 8.116e-05,
+    "address": "0x4dd942baa75810a3c1e876e79d5cd35e09c97a76",
+    "addresses": {
+     "ethereum": "0x4dd942baa75810a3c1e876e79d5cd35e09c97a76"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 38430,
+    "image": "https://assets.coingecko.com/coins/images/28707/large/logo.png?1696527689",
+    "metrics": {
+     "volumeUsd1d": "239.241",
+     "volumeUsd7d": "838.141"
+    },
+    "metadata": {},
+    "tokenId": "c64f7ffb-0751-44d5-a6cf-50bfc8db6956",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "473500000.00000006",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf491a68f58841c96f2b7f9c1d05eadb7e536ce95959c7a302f0d0db96c93eaec": {
+    "key": "ethereum:0xf491a68f58841c96f2b7f9c1d05eadb7e536ce95959c7a302f0d0db96c93eaec",
+    "name": "Uniswap V4 LP DASHon/EGP",
+    "decimals": 18,
+    "symbol": "DASHON/EGP",
+    "price": 9007199254740990,
+    "address": "0xf491a68f58841c96f2b7f9c1d05eadb7e536ce95959c7a302f0d0db96c93eaec",
+    "addresses": {
+     "ethereum": "0xf491a68f58841c96f2b7f9c1d05eadb7e536ce95959c7a302f0d0db96c93eaec"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.913Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20061.72336120069,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.67"
+    },
+    "tokenId": "9f93692f-fad8-4ba5-bd4a-c9b0ac3c5d5c",
+    "reserves": [
+     "0.143191210885223657",
+     "19999.999999999999999949"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891": {
+    "key": "ethereum:0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891",
+    "name": "Uniswap V3 Dash 2 Trade/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "D2T/USDT",
+    "price": 9007199254740990,
+    "address": "0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891",
+    "addresses": {
+     "ethereum": "0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/28707/large/logo.png?1696527689",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.793Z",
+    "createdAt": "2025-08-24T12:11:06.527Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4dd942baa75810a3c1e876e79d5cd35e09c97a76",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 32610.93445235876,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.193"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "bc73e339-c057-4151-b257-a60474030bc2",
+    "reserves": [
+     "27784989.579655761553749488",
+     "30380.66494"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd4d919fb423fa0759b72ddf2abad0f5a7eb6fa44193b11e06ec94d729a3a873d": {
+    "key": "ethereum:0xd4d919fb423fa0759b72ddf2abad0f5a7eb6fa44193b11e06ec94d729a3a873d",
+    "name": "Uniswap V4 LP DASHon/USDT",
+    "decimals": 18,
+    "symbol": "DASHON/USDT",
+    "price": 9007199254740990,
+    "address": "0xd4d919fb423fa0759b72ddf2abad0f5a7eb6fa44193b11e06ec94d729a3a873d",
+    "addresses": {
+     "ethereum": "0xd4d919fb423fa0759b72ddf2abad0f5a7eb6fa44193b11e06ec94d729a3a873d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:16:57.100Z",
+    "createdAt": "2025-09-26T08:45:50.015Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 604.0295579209337,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "17.851"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "b37215a1-bad9-4f8d-9e10-71cc6e3b0f00",
+    "reserves": [
+     "0.871736072972908045",
+     "439.4378"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7567c2a46bce46373b454682f3d95e6535bde144": {
+    "key": "bsc:0x7567c2a46bce46373b454682f3d95e6535bde144",
+    "name": "DoorDash (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DASHON",
+    "price": 189.22,
+    "address": "0x7567c2a46bce46373b454682f3d95e6535bde144",
+    "addresses": {
+     "ethereum": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "bsc": "0x7567c2a46bce46373b454682f3d95e6535bde144"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 894577,
+    "image": "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+    "metrics": {
+     "volumeUsd1d": "4.947",
+     "volumeUsd7d": "2828.725"
+    },
+    "metadata": {},
+    "tokenId": "31a027f3-5764-4c8c-9813-19d8ff32c3ee",
+    "totalSupply": "4727.83465742252",
+    "circulatingSupply": "4727.83465742252",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5b48b634ca326e023e1b68ea0e048874d1660b1dc9ddff83a380fef6d661db4c": {
+    "key": "ethereum:0x5b48b634ca326e023e1b68ea0e048874d1660b1dc9ddff83a380fef6d661db4c",
+    "name": "Uniswap V4 LP DASHon/wUSDC",
+    "decimals": 18,
+    "symbol": "DASHON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x5b48b634ca326e023e1b68ea0e048874d1660b1dc9ddff83a380fef6d661db4c",
+    "addresses": {
+     "ethereum": "0x5b48b634ca326e023e1b68ea0e048874d1660b1dc9ddff83a380fef6d661db4c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.069Z",
+    "createdAt": "2026-09-28T10:37:13.131Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "7a50c289-37fc-4d41-baa2-87ab50204d4f",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x91d79a8fbd4e04c5488e8a1a3392e9d5f35c3cf724a7cf88c57ec83e718fdc01": {
+    "key": "ethereum:0x91d79a8fbd4e04c5488e8a1a3392e9d5f35c3cf724a7cf88c57ec83e718fdc01",
+    "name": "Uniswap V4 LP DASHon/USDC",
+    "decimals": 18,
+    "symbol": "DASHON/USDC",
+    "price": 9007199254740990,
+    "address": "0x91d79a8fbd4e04c5488e8a1a3392e9d5f35c3cf724a7cf88c57ec83e718fdc01",
+    "addresses": {
+     "ethereum": "0x91d79a8fbd4e04c5488e8a1a3392e9d5f35c3cf724a7cf88c57ec83e718fdc01"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:17:48.715Z",
+    "createdAt": "2025-09-26T08:45:50.077Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1064.0401133523774,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "58.599"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "7d050238-ace4-4dbc-b747-074a988bdf2a",
+    "reserves": [
+     "1.674856235354652973",
+     "747.265797"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x241958c86c7744d15d5f6314ba1ea4c81dda2896": {
+    "key": "ethereum:0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+    "name": "DoorDash (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "DASHON",
+    "price": 189.22,
+    "address": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+    "addresses": {
+     "ethereum": "0x241958c86c7744d15d5f6314ba1ea4c81dda2896",
+     "bsc": "0x7567c2a46bce46373b454682f3d95e6535bde144"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 894577,
+    "image": "https://coin-images.coingecko.com/coins/images/68609/large/dashon_160x160.png?1756130064",
+    "metrics": {
+     "volumeUsd1d": "4.947",
+     "volumeUsd7d": "2845.145"
+    },
+    "metadata": {},
+    "tokenId": "31a027f3-5764-4c8c-9813-19d8ff32c3ee",
+    "totalSupply": "4727.83465742252",
+    "circulatingSupply": "4727.83465742252",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcaaa93712bdac37f736c323c93d4d5fdefcc31cc": {
+    "key": "ethereum:0xcaaa93712bdac37f736c323c93d4d5fdefcc31cc",
+    "name": "CryptalDash",
+    "decimals": 18,
+    "symbol": "CRD",
+    "price": 3.544131492736475e-05,
+    "address": "0xcaaa93712bdac37f736c323c93d4d5fdefcc31cc",
+    "addresses": {
+     "ethereum": "0xcaaa93712bdac37f736c323c93d4d5fdefcc31cc"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-09-11T07:27:03.126Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35441.31492736476,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0.23",
+     "volumeUsd7d": "0.23"
+    },
+    "metadata": {},
+    "tokenId": "b30970b1-6271-4b69-97f3-6d44e34cbc9d",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xedc3be0080f65c628964f44ba3f2b6057e60f8dc": {
+    "key": "ethereum:0xedc3be0080f65c628964f44ba3f2b6057e60f8dc",
+    "name": "DASH",
+    "decimals": 18,
+    "symbol": "DASH",
+    "price": 1.586e-05,
+    "address": "0xedc3be0080f65c628964f44ba3f2b6057e60f8dc",
+    "addresses": {
+     "ethereum": "0xedc3be0080f65c628964f44ba3f2b6057e60f8dc"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2024-09-24T08:11:28.729Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 15846.92,
+    "image": "https://coin-images.coingecko.com/coins/images/50329/large/DASH.png?1727163821",
+    "metrics": {
+     "volumeUsd1d": "8.593",
+     "volumeUsd7d": "643.709"
+    },
+    "metadata": {},
+    "tokenId": "8bfca3c9-8916-4e2f-be9e-8103f1b9c2cb",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x10e900520fea25740c98f96fd1717868183ac20d": {
+    "key": "ethereum:0x10e900520fea25740c98f96fd1717868183ac20d",
+    "name": "UniswapV2 LP WETH/DASH",
+    "decimals": 18,
+    "symbol": "WETH/DASH",
+    "price": 0.41372034409850783,
+    "address": "0x10e900520fea25740c98f96fd1717868183ac20d",
+    "addresses": {
+     "ethereum": "0x10e900520fea25740c98f96fd1717868183ac20d"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://coin-images.coingecko.com/coins/images/50329/large/DASH.png?1727163821"
+    ],
+    "updatedAt": "2026-10-18T20:17:53.623Z",
+    "createdAt": "2024-09-24T08:12:19.567Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xedc3be0080f65c628964f44ba3f2b6057e60f8dc"
+    ],
+    "liquidity": 18502.13626157735,
+    "metrics": {
+     "apy": "0.052",
+     "baseApy": "0.052",
+     "volumeUsd1d": "8.744",
+     "volumeUsd7d": "142.862"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "3b6458d9-b735-40bf-bbb6-01f0ccdb7633",
+    "totalSupply": "44721.359549995793928183",
+    "reserves": [
+     "3.95177041102541756",
+     "583946744.504649122874473711"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

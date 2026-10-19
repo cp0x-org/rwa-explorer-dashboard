@@ -1,0 +1,1310 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US70450Y1038",
+ "ticker": "PYPL",
+ "name": "PayPal",
+ "isin": "US70450Y1038",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:48Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "PayPal Holdings Inc",
+   "symbol": "PYPL",
+   "slug": "paypal",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 56.51761137333121,
+     "tokenized_market_cap": 2400898.5979126524,
+     "tokenized_volume_24h": 2364519.30881143,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 93,
+   "asset_type": "stock",
+   "rwa_rank": 329,
+   "has_tokens": true,
+   "average_tokenized_price": 56.51761137333121,
+   "tokenized_market_cap": 2400898.5979126524,
+   "tokenized_volume_24h": 2364519.30881143,
+   "last_updated": "2026-10-18T20:13:33.178Z",
+   "tokens": [
+    {
+     "symbol": "PYPL.D",
+     "name": "Paypal tokenized stock (Dinari)",
+     "price": null,
+     "crypto_id": 28623,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "PYPLon",
+     "name": "PayPal Tokenized Stock (Ondo)",
+     "price": 56.88230173019289,
+     "crypto_id": 38010,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1176128.49,
+     "volume_24h": 533803.50471793
+    },
+    {
+     "symbol": "PYPLx",
+     "name": "PayPal tokenized stock (xStock)",
+     "price": 55.96999999999999,
+     "crypto_id": 40165,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 345964.83,
+     "volume_24h": 559.7
+    },
+    {
+     "symbol": "PYPLB",
+     "name": "Paypal Tokenized bStocks",
+     "price": 56.40613966247156,
+     "crypto_id": 40935,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 871201.69,
+     "volume_24h": 1822692.01423892
+    },
+    {
+     "symbol": "PYPL",
+     "name": "PayPal Holdings Inc (Derivatives)",
+     "price": 56.546874263342055,
+     "crypto_id": 40941,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wPYPLx",
+     "name": "Wrapped PayPal Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41616,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "PYPLc",
+     "name": "PayPal Holdings, Inc. Tokenized Stock (Coinbase)",
+     "price": 64.3885577383001,
+     "crypto_id": 42420,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 10370.95,
+     "volume_24h": 7597.8027758
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "PYPL",
+     "market_url": "https://www.binance.com/en/stocks/EQ_PYPL"
+    }
+   ]
+  },
+  "info": {
+   "28623": {
+    "id": 28623,
+    "symbol": "PYPL.D",
+    "name": "Paypal tokenized stock (Dinari)",
+    "slug": "dinari-pypl",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/28623.png",
+    "date_added": "2023-12-07T11:06:21.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x5B6424769823e82A1829B0A8bcAf501bFFD90d25"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5B6424769823e82A1829B0A8bcAf501bFFD90d25",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "38010": {
+    "id": 38010,
+    "symbol": "PYPLon",
+    "name": "PayPal Tokenized Stock (Ondo)",
+    "slug": "paypal-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38010.png",
+    "date_added": "2025-09-03T10:55:35.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x4EFD92F372898B57F292De69fCe377dd7D912bDd"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4EFD92F372898B57F292De69fCe377dd7D912bDd",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "hM7B3UQTTR81mS27SxDDPzBbjejmo8fnpFjzgv9ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40165": {
+    "id": 40165,
+    "symbol": "PYPLx",
+    "name": "PayPal tokenized stock (xStock)",
+    "slug": "paypal-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40165.png",
+    "date_added": "2026-06-10T06:33:38.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XshWQWYVp5ff8CrAEsGmLVKD47nBWi3Ygn5v8wXK27G"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XshWQWYVp5ff8CrAEsGmLVKD47nBWi3Ygn5v8wXK27G",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBNPjGHTdAZ8B9_J0yb0XjrApgT6MnaCXm9day7wRqrGmqI",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40935": {
+    "id": 40935,
+    "symbol": "PYPLB",
+    "name": "Paypal Tokenized bStocks",
+    "slug": "paypal-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40935.png",
+    "date_added": "2026-07-28T07:27:38.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x2806a561fc1f9259b2d54a281796bde0d92762ae"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40941": {
+    "id": 40941,
+    "symbol": "PYPL",
+    "name": "PayPal Holdings Inc (Derivatives)",
+    "slug": "paypal-holdings-inc-derivaties",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40941.png",
+    "date_added": "2026-06-23T11:23:49.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41616": {
+    "id": 41616,
+    "symbol": "wPYPLx",
+    "name": "Wrapped PayPal Tokenized Stock (xStock)",
+    "slug": "wrapped-paypal-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41616.png",
+    "date_added": "2026-08-11T16:25:43.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x24641A370DA1d10E792D0C0E180E4936198E08cc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x24641A370DA1d10E792D0C0E180E4936198E08cc",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "42420": {
+    "id": 42420,
+    "symbol": "PYPLc",
+    "name": "PayPal Holdings, Inc. Tokenized Stock (Coinbase)",
+    "slug": "paypal-holdings-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42420.png",
+    "date_added": "2026-10-08T03:59:50.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb200000000000000000000450ad3abe5d4846c6e"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb200000000000000000000450ad3abe5d4846c6e",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+   "arbitrum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+   "base:0xb200000000000000000000450ad3abe5d4846c6e",
+   "bsc:0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+   "bsc:0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+   "bsc:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+   "ethereum:0x4efd92f372898b57f292de69fce377dd7d912bdd",
+   "ethereum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+   "hyperevm:0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+  ],
+  "exact": {
+   "ethereum:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "ethereum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "ethereum": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9394706.035935171,
+    "image": "https://coin-images.coingecko.com/coins/images/69635/large/Ticker_PYPLx__Company_Name_PYPLx__size_200x200.png?1759233606",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "1ac28d16-2917-4f9a-adfa-c84844c8f6a2",
+    "totalSupply": "167672.7830793355587",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f": {
+    "key": "bsc:0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+    "name": "PayPal (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLON",
+    "price": 56.68,
+    "address": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+    "addresses": {
+     "bsc": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+     "ethereum": "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1171141,
+    "image": "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+    "metrics": {
+     "volumeUsd1d": "151538.679",
+     "volumeUsd7d": "1107582.559"
+    },
+    "metadata": {},
+    "tokenId": "e343d941-c937-4e9e-896c-8e30c364edc9",
+    "totalSupply": "20676.52766313067",
+    "circulatingSupply": "20676.52766313067",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "arbitrum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "arbitrum": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.688Z",
+    "createdAt": "2026-06-22T11:35:00.981Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13917778.818577444,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/PYPLx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "2dcd423b-afa9-42ef-b0f8-f22cd725d5bc",
+    "totalSupply": "248398.6938885854843922",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "bsc:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "bsc": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.263Z",
+    "createdAt": "2026-06-22T11:31:13.955Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6652233.910060568,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/PYPLx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "1e21403f-911f-45a6-9561-9493cae9e00b",
+    "totalSupply": "118726.287882573050846998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5b6424769823e82a1829b0a8bcaf501bffd90d25": {
+    "key": "arbitrum:0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+    "name": "Dinari PYPL dShares",
+    "decimals": 18,
+    "symbol": "PYPL",
+    "price": 55.49,
+    "address": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+    "addresses": {
+     "arbitrum": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+     "ethereum": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+     "avalanche": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+     "base": "0xd6558a27008788041fd9b9e013e649bcab329218"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12807.97,
+    "image": "https://coin-images.coingecko.com/coins/images/102174916/large/dinari-logo-green-with-margin.png?1785402552",
+    "metrics": {
+     "volumeUsd1d": "31.499",
+     "volumeUsd7d": "220.493"
+    },
+    "metadata": {},
+    "tokenId": "a9394561-846c-49cf-8f59-7589f51fba59",
+    "totalSupply": "229.91848092678234",
+    "circulatingSupply": "230.81045192678232",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2806a561fc1f9259b2d54a281796bde0d92762ae": {
+    "key": "bsc:0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+    "name": "Paypal (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLB",
+    "price": 56.57,
+    "address": "0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+    "addresses": {
+     "bsc": "0x2806a561fc1f9259b2d54a281796bde0d92762ae"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 872332,
+    "image": "https://coin-images.coingecko.com/coins/images/102175184/large/pyplb.png?1785456368",
+    "metrics": {
+     "volumeUsd1d": "1126862.588",
+     "volumeUsd7d": "5165232.171"
+    },
+    "metadata": {},
+    "tokenId": "83dd5b31-8cb7-47b5-8643-0736cb9b5501",
+    "totalSupply": "15417.84018917",
+    "circulatingSupply": "15417.84018917",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4efd92f372898b57f292de69fce377dd7d912bdd": {
+    "key": "ethereum:0x4efd92f372898b57f292de69fce377dd7d912bdd",
+    "name": "PayPal (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLON",
+    "price": 56.68,
+    "address": "0x4efd92f372898b57f292de69fce377dd7d912bdd",
+    "addresses": {
+     "bsc": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+     "ethereum": "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1171141,
+    "image": "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+    "metrics": {
+     "volumeUsd1d": "152510.247",
+     "volumeUsd7d": "1106673.676"
+    },
+    "metadata": {},
+    "tokenId": "e343d941-c937-4e9e-896c-8e30c364edc9",
+    "totalSupply": "20676.52766313067",
+    "circulatingSupply": "20676.52766313067",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "PYPL": {
+    "total_items": 17,
+    "pages": 1,
+    "received": 17,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x9a3de458b966d30325acf15e53e08b59df5d66f26bb88a46d71d414f85806855": {
+    "key": "ethereum:0x9a3de458b966d30325acf15e53e08b59df5d66f26bb88a46d71d414f85806855",
+    "name": "Uniswap V4 LP PYPLon/USDT",
+    "decimals": 18,
+    "symbol": "PYPLON/USDT",
+    "price": 9007199254740990,
+    "address": "0x9a3de458b966d30325acf15e53e08b59df5d66f26bb88a46d71d414f85806855",
+    "addresses": {
+     "ethereum": "0x9a3de458b966d30325acf15e53e08b59df5d66f26bb88a46d71d414f85806855"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.373Z",
+    "createdAt": "2025-09-26T08:45:51.052Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4efd92f372898b57f292de69fce377dd7d912bdd",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 594.0364043072675,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "40231463-c329-456e-9da0-05e8c6ce192c",
+    "reserves": [
+     "5.588731858740710779",
+     "277.505182"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x91d12a3205cd060719526f4ae7a0c66329138326af85077cd681e97c1389619a": {
+    "key": "ethereum:0x91d12a3205cd060719526f4ae7a0c66329138326af85077cd681e97c1389619a",
+    "name": "Uniswap V4 LP EGP/PYPLon",
+    "decimals": 18,
+    "symbol": "EGP/PYPLON",
+    "price": 9007199254740990,
+    "address": "0x91d12a3205cd060719526f4ae7a0c66329138326af85077cd681e97c1389619a",
+    "addresses": {
+     "ethereum": "0x91d12a3205cd060719526f4ae7a0c66329138326af85077cd681e97c1389619a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.535Z",
+    "createdAt": "2026-10-14T06:54:33.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    ],
+    "liquidity": 20073.753477702136,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.98"
+    },
+    "tokenId": "e8dca665-4ba9-4aa3-bdb0-6ac2748d689a",
+    "reserves": [
+     "19999.999999999999999972",
+     "0.498134562150491158"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1eac416cfc02395ade0e96aed391a33abf0a49893a2f9eb8c7dacb5f830fd075": {
+    "key": "ethereum:0x1eac416cfc02395ade0e96aed391a33abf0a49893a2f9eb8c7dacb5f830fd075",
+    "name": "Uniswap V4 LP USDT/PYPLx",
+    "decimals": 18,
+    "symbol": "USDT/PYPLX",
+    "price": 9007199254740990,
+    "address": "0x1eac416cfc02395ade0e96aed391a33abf0a49893a2f9eb8c7dacb5f830fd075",
+    "addresses": {
+     "ethereum": "0x1eac416cfc02395ade0e96aed391a33abf0a49893a2f9eb8c7dacb5f830fd075"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.392Z",
+    "createdAt": "2026-10-18T18:58:01.507Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "272cb931-77f9-453f-8b83-053e451fae40",
+    "reserves": [
+     "3999.999999999999999997",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "ethereum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "ethereum": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9394706.035935171,
+    "image": "https://coin-images.coingecko.com/coins/images/69635/large/Ticker_PYPLx__Company_Name_PYPLx__size_200x200.png?1759233606",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "1ac28d16-2917-4f9a-adfa-c84844c8f6a2",
+    "totalSupply": "167672.7830793355587",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f": {
+    "key": "bsc:0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+    "name": "PayPal (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLON",
+    "price": 56.68,
+    "address": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+    "addresses": {
+     "bsc": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+     "ethereum": "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1171141,
+    "image": "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+    "metrics": {
+     "volumeUsd1d": "151538.679",
+     "volumeUsd7d": "1107582.559"
+    },
+    "metadata": {},
+    "tokenId": "e343d941-c937-4e9e-896c-8e30c364edc9",
+    "totalSupply": "20676.52766313067",
+    "circulatingSupply": "20676.52766313067",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "arbitrum:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "arbitrum": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.688Z",
+    "createdAt": "2026-06-22T11:35:00.981Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 13917778.818577444,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/PYPLx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "2dcd423b-afa9-42ef-b0f8-f22cd725d5bc",
+    "totalSupply": "248398.6938885854843922",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7fb1199fe20d2bafd3f7ca65666d9784c2593dab8103b140c3a8d7ec3ab7b2a4": {
+    "key": "ethereum:0x7fb1199fe20d2bafd3f7ca65666d9784c2593dab8103b140c3a8d7ec3ab7b2a4",
+    "name": "Uniswap V4 LP wUSDC/PYPLon",
+    "decimals": 18,
+    "symbol": "WUSDC/PYPLON",
+    "price": 9007199254740990,
+    "address": "0x7fb1199fe20d2bafd3f7ca65666d9784c2593dab8103b140c3a8d7ec3ab7b2a4",
+    "addresses": {
+     "ethereum": "0x7fb1199fe20d2bafd3f7ca65666d9784c2593dab8103b140c3a8d7ec3ab7b2a4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.871Z",
+    "createdAt": "2026-09-28T10:39:38.681Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "423de13a-f9dc-4e6f-b5e2-def1495f44f6",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x6be970970472be1b8743fd7c39a38313d3e34667": {
+    "key": "arbitrum:0x6be970970472be1b8743fd7c39a38313d3e34667",
+    "name": "PayPal rStock",
+    "decimals": 18,
+    "symbol": "RPYPL",
+    "price": 56.16,
+    "address": "0x6be970970472be1b8743fd7c39a38313d3e34667",
+    "addresses": {
+     "arbitrum": "0x6be970970472be1b8743fd7c39a38313d3e34667"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8397.84,
+    "image": "https://coin-images.coingecko.com/coins/images/102177222/large/c35316886af1fe0aa57d5f51bdb1e771.png?1789117211",
+    "metrics": {
+     "volumeUsd1d": "31.447",
+     "volumeUsd7d": "610.519"
+    },
+    "metadata": {},
+    "tokenId": "cffedf7c-c1a2-4a92-a75d-96cbf91b6b23",
+    "totalSupply": "149.542981167",
+    "circulatingSupply": "149.542981167",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf706585e7e8900be0267bee3b9a2f70835ec6628": {
+    "key": "bsc:0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "name": "PayPal xStock",
+    "decimals": 18,
+    "symbol": "PYPLX",
+    "price": 56.03,
+    "address": "0xf706585e7e8900be0267bee3b9a2f70835ec6628",
+    "addresses": {
+     "bsc": "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.263Z",
+    "createdAt": "2026-06-22T11:31:13.955Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6652233.910060568,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/PYPLx.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "paypal-xstock"
+    },
+    "tokenId": "1e21403f-911f-45a6-9561-9493cae9e00b",
+    "totalSupply": "118726.287882573050846998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x961ca9d6e644b5509654f3d5a250bb03f2e702b6": {
+    "key": "ethereum:0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+    "name": "Dinari PYPL dShares",
+    "decimals": 18,
+    "symbol": "PYPL",
+    "price": 55.49,
+    "address": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+    "addresses": {
+     "arbitrum": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+     "ethereum": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+     "avalanche": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+     "base": "0xd6558a27008788041fd9b9e013e649bcab329218"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12807.97,
+    "image": "https://coin-images.coingecko.com/coins/images/102174916/large/dinari-logo-green-with-margin.png?1785402552",
+    "metrics": {
+     "volumeUsd1d": "31.499",
+     "volumeUsd7d": "220.493"
+    },
+    "metadata": {},
+    "tokenId": "a9394561-846c-49cf-8f59-7589f51fba59",
+    "totalSupply": "229.91848092678234",
+    "circulatingSupply": "230.81045192678232",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbaf39170daac98f4fca7b1b7a10e974259437e986e7a77025a28439f68470cf0": {
+    "key": "arbitrum:0xbaf39170daac98f4fca7b1b7a10e974259437e986e7a77025a28439f68470cf0",
+    "name": "Uniswap V4 LP USDT/PYPLx",
+    "decimals": 18,
+    "symbol": "USDT/PYPLX",
+    "price": 9007199254740990,
+    "address": "0xbaf39170daac98f4fca7b1b7a10e974259437e986e7a77025a28439f68470cf0",
+    "addresses": {
+     "arbitrum": "0xbaf39170daac98f4fca7b1b7a10e974259437e986e7a77025a28439f68470cf0"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.397Z",
+    "createdAt": "2026-10-16T14:24:08.494Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xf706585e7e8900be0267bee3b9a2f70835ec6628"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "0ea58b04-899b-419b-a81d-6a23e09a1fc7",
+    "reserves": [
+     "1999.999999999999999996",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd6558a27008788041fd9b9e013e649bcab329218": {
+    "key": "base:0xd6558a27008788041fd9b9e013e649bcab329218",
+    "name": "Dinari PYPL dShares",
+    "decimals": 18,
+    "symbol": "PYPL",
+    "price": 55.49,
+    "address": "0xd6558a27008788041fd9b9e013e649bcab329218",
+    "addresses": {
+     "arbitrum": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+     "ethereum": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+     "avalanche": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+     "base": "0xd6558a27008788041fd9b9e013e649bcab329218"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12807.97,
+    "image": "https://coin-images.coingecko.com/coins/images/102174916/large/dinari-logo-green-with-margin.png?1785402552",
+    "metrics": {
+     "volumeUsd1d": "31.499",
+     "volumeUsd7d": "220.493"
+    },
+    "metadata": {},
+    "tokenId": "a9394561-846c-49cf-8f59-7589f51fba59",
+    "totalSupply": "229.91848092678234",
+    "circulatingSupply": "230.81045192678232",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x5b6424769823e82a1829b0a8bcaf501bffd90d25": {
+    "key": "arbitrum:0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+    "name": "Dinari PYPL dShares",
+    "decimals": 18,
+    "symbol": "PYPL",
+    "price": 55.49,
+    "address": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+    "addresses": {
+     "arbitrum": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+     "ethereum": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+     "avalanche": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+     "base": "0xd6558a27008788041fd9b9e013e649bcab329218"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12807.97,
+    "image": "https://coin-images.coingecko.com/coins/images/102174916/large/dinari-logo-green-with-margin.png?1785402552",
+    "metrics": {
+     "volumeUsd1d": "31.499",
+     "volumeUsd7d": "220.493"
+    },
+    "metadata": {},
+    "tokenId": "a9394561-846c-49cf-8f59-7589f51fba59",
+    "totalSupply": "229.91848092678234",
+    "circulatingSupply": "230.81045192678232",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a": {
+    "key": "avalanche:0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+    "name": "Dinari PYPL dShares",
+    "decimals": 18,
+    "symbol": "PYPL",
+    "price": 55.49,
+    "address": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+    "addresses": {
+     "arbitrum": "0x5b6424769823e82a1829b0a8bcaf501bffd90d25",
+     "ethereum": "0x961ca9d6e644b5509654f3d5a250bb03f2e702b6",
+     "avalanche": "0x2f6e0db24ac68b966364c04a1d74c2b2fa1a118a",
+     "base": "0xd6558a27008788041fd9b9e013e649bcab329218"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12807.97,
+    "image": "https://coin-images.coingecko.com/coins/images/102174916/large/dinari-logo-green-with-margin.png?1785402552",
+    "metrics": {
+     "volumeUsd1d": "31.499",
+     "volumeUsd7d": "220.493"
+    },
+    "metadata": {},
+    "tokenId": "a9394561-846c-49cf-8f59-7589f51fba59",
+    "totalSupply": "229.91848092678234",
+    "circulatingSupply": "230.81045192678232",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2806a561fc1f9259b2d54a281796bde0d92762ae": {
+    "key": "bsc:0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+    "name": "Paypal (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLB",
+    "price": 56.57,
+    "address": "0x2806a561fc1f9259b2d54a281796bde0d92762ae",
+    "addresses": {
+     "bsc": "0x2806a561fc1f9259b2d54a281796bde0d92762ae"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-31T05:05:32.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 872332,
+    "image": "https://coin-images.coingecko.com/coins/images/102175184/large/pyplb.png?1785456368",
+    "metrics": {
+     "volumeUsd1d": "1126862.588",
+     "volumeUsd7d": "5165232.171"
+    },
+    "metadata": {},
+    "tokenId": "83dd5b31-8cb7-47b5-8643-0736cb9b5501",
+    "totalSupply": "15417.84018917",
+    "circulatingSupply": "15417.84018917",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4efd92f372898b57f292de69fce377dd7d912bdd": {
+    "key": "ethereum:0x4efd92f372898b57f292de69fce377dd7d912bdd",
+    "name": "PayPal (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PYPLON",
+    "price": 56.68,
+    "address": "0x4efd92f372898b57f292de69fce377dd7d912bdd",
+    "addresses": {
+     "bsc": "0x374d03a6c0d5bd4be0a5117ebe1b49d52ac8a53f",
+     "ethereum": "0x4efd92f372898b57f292de69fce377dd7d912bdd"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1171141,
+    "image": "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+    "metrics": {
+     "volumeUsd1d": "152510.247",
+     "volumeUsd7d": "1106673.676"
+    },
+    "metadata": {},
+    "tokenId": "e343d941-c937-4e9e-896c-8e30c364edc9",
+    "totalSupply": "20676.52766313067",
+    "circulatingSupply": "20676.52766313067",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x83c43021706753fba605235a56b6a7014264e150686b8cf4a6f5045dd5593cf5": {
+    "key": "ethereum:0x83c43021706753fba605235a56b6a7014264e150686b8cf4a6f5045dd5593cf5",
+    "name": "Uniswap V4 LP PYPLon/USDC",
+    "decimals": 18,
+    "symbol": "PYPLON/USDC",
+    "price": 9007199254740990,
+    "address": "0x83c43021706753fba605235a56b6a7014264e150686b8cf4a6f5045dd5593cf5",
+    "addresses": {
+     "ethereum": "0x83c43021706753fba605235a56b6a7014264e150686b8cf4a6f5045dd5593cf5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68551/large/pyplon_160x160.png?1756105622",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:07.001Z",
+    "createdAt": "2025-09-26T08:45:50.143Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4efd92f372898b57f292de69fce377dd7d912bdd",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 516.1634415806942,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "fa683ba4-bdb3-46bb-bad0-b77bf818a168",
+    "reserves": [
+     "4.166467838359318581",
+     "280.074142"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

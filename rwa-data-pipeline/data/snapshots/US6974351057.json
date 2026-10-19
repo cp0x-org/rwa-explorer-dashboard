@@ -1,0 +1,773 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US6974351057",
+ "ticker": "PANW",
+ "name": "Palo Alto Networks",
+ "isin": "US6974351057",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:22Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Palo Alto Networks Inc",
+   "symbol": "PANW",
+   "slug": "palo-alto-networks",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 340.63937726840373,
+     "tokenized_market_cap": 2710908.0417022035,
+     "tokenized_volume_24h": 475049.67047341,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 43,
+   "asset_type": "stock",
+   "rwa_rank": 49,
+   "has_tokens": true,
+   "average_tokenized_price": 340.63937726840373,
+   "tokenized_market_cap": 2710908.0417022035,
+   "tokenized_volume_24h": 475049.67047341,
+   "last_updated": "2026-10-18T20:13:46.304Z",
+   "tokens": [
+    {
+     "symbol": "PANWon",
+     "name": "Palo Alto Networks Tokenized Stock (Ondo)",
+     "price": 340.75764012369274,
+     "crypto_id": 38061,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2711849.21,
+     "volume_24h": 475754.29570475
+    },
+    {
+     "symbol": "PANW",
+     "name": "Palo Alto Networks Inc (Derivatives)",
+     "price": 341.07021267339206,
+     "crypto_id": 40199,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wPANWx",
+     "name": "Wrapped Palo Alto Networks Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41673,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "PANW",
+     "market_url": "https://www.binance.com/en/stocks/EQ_PANW"
+    }
+   ]
+  },
+  "info": {
+   "38061": {
+    "id": 38061,
+    "symbol": "PANWon",
+    "name": "Palo Alto Networks Tokenized Stock (Ondo)",
+    "slug": "palo-alto-networks-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38061.png",
+    "date_added": "2025-09-03T10:55:01.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x34bfdFF25F0fdA6d3ad0c33F1e06c0D40bD68885"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x34bfdFF25F0fdA6d3ad0c33F1e06c0D40bD68885",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "M7hVQomhw4Q2D2op3HvBrZjHu9SryjNvD5haEZ1ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40199": {
+    "id": 40199,
+    "symbol": "PANW",
+    "name": "Palo Alto Networks Inc (Derivatives)",
+    "slug": "palo-alto-networks-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40199.png",
+    "date_added": "2026-06-08T07:30:34.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "41673": {
+    "id": 41673,
+    "symbol": "wPANWx",
+    "name": "Wrapped Palo Alto Networks Tokenized Stock (xStock)",
+    "slug": "wrapped-palo-alto-networks-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41673.png",
+    "date_added": "2026-08-11T16:26:24.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xCfc43783146dCB2047F618Ee5B07AcabFcBf87a7"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xCfc43783146dCB2047F618Ee5B07AcabFcBf87a7",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+   "ethereum:0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885"
+  ],
+  "exact": {
+   "bsc:0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb": {
+    "key": "bsc:0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+    "name": "Palo Alto Networks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PANWON",
+    "price": 340.19,
+    "address": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+    "addresses": {
+     "ethereum": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "bsc": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2706824,
+    "image": "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+    "metrics": {
+     "volumeUsd1d": "148509.913",
+     "volumeUsd7d": "1089318.8"
+    },
+    "metadata": {},
+    "tokenId": "6085c654-a502-4dd3-9e31-7b5470d8da80",
+    "totalSupply": "7958.293205678798",
+    "circulatingSupply": "7958.293205678798",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885": {
+    "key": "ethereum:0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+    "name": "Palo Alto Networks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PANWON",
+    "price": 340.19,
+    "address": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+    "addresses": {
+     "ethereum": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "bsc": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2706824,
+    "image": "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+    "metrics": {
+     "volumeUsd1d": "149174.552",
+     "volumeUsd7d": "1088887.616"
+    },
+    "metadata": {},
+    "tokenId": "6085c654-a502-4dd3-9e31-7b5470d8da80",
+    "totalSupply": "7958.293205678798",
+    "circulatingSupply": "7958.293205678798",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "PANW": {
+    "total_items": 12,
+    "pages": 1,
+    "received": 12,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb": {
+    "key": "bsc:0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+    "name": "Palo Alto Networks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PANWON",
+    "price": 340.19,
+    "address": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb",
+    "addresses": {
+     "ethereum": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "bsc": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2706824,
+    "image": "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+    "metrics": {
+     "volumeUsd1d": "148509.913",
+     "volumeUsd7d": "1089318.8"
+    },
+    "metadata": {},
+    "tokenId": "6085c654-a502-4dd3-9e31-7b5470d8da80",
+    "totalSupply": "7958.293205678798",
+    "circulatingSupply": "7958.293205678798",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1a3e844592bd72351166d375dfddfb8148a848c7ac7149bc610462c1ad6f2653": {
+    "key": "ethereum:0x1a3e844592bd72351166d375dfddfb8148a848c7ac7149bc610462c1ad6f2653",
+    "name": "Uniswap V4 LP wUSDC/PANWon",
+    "decimals": 18,
+    "symbol": "WUSDC/PANWON",
+    "price": 9007199254740990,
+    "address": "0x1a3e844592bd72351166d375dfddfb8148a848c7ac7149bc610462c1ad6f2653",
+    "addresses": {
+     "ethereum": "0x1a3e844592bd72351166d375dfddfb8148a848c7ac7149bc610462c1ad6f2653"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.953Z",
+    "createdAt": "2026-09-28T10:37:07.915Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "827e09d3-7282-42c9-a268-14d709249088",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xc2cc87b49cf7df803bde7fa6453466aa6bbaea4d": {
+    "key": "arbitrum:0xc2cc87b49cf7df803bde7fa6453466aa6bbaea4d",
+    "name": "Palo Alto Networks rStock",
+    "decimals": 18,
+    "symbol": "RPANW",
+    "price": 340.53,
+    "address": "0xc2cc87b49cf7df803bde7fa6453466aa6bbaea4d",
+    "addresses": {
+     "arbitrum": "0xc2cc87b49cf7df803bde7fa6453466aa6bbaea4d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35487,
+    "image": "https://coin-images.coingecko.com/coins/images/102177026/large/390c8e61594d0b517d70ab2bae9cf591.png?1789116594",
+    "metrics": {
+     "volumeUsd1d": "13.838",
+     "volumeUsd7d": "10296.122"
+    },
+    "metadata": {},
+    "tokenId": "b7026dad-8a47-41ce-abbb-a391929134cd",
+    "totalSupply": "104.210877129",
+    "circulatingSupply": "104.210877129",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x86920eff4c8538fbabb355513f4d259d229d989d84a6de4a184d78a48692ed22": {
+    "key": "ethereum:0x86920eff4c8538fbabb355513f4d259d229d989d84a6de4a184d78a48692ed22",
+    "name": "Uniswap V4 LP USDT/PANWx",
+    "decimals": 18,
+    "symbol": "USDT/PANWX",
+    "price": 9007199254740990,
+    "address": "0x86920eff4c8538fbabb355513f4d259d229d989d84a6de4a184d78a48692ed22",
+    "addresses": {
+     "ethereum": "0x86920eff4c8538fbabb355513f4d259d229d989d84a6de4a184d78a48692ed22"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.317Z",
+    "createdAt": "2026-10-18T18:58:07.976Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xe12bb32d77be4db10ddc82088b230d35d097e9c5"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "a08a6481-319b-456a-aa2b-f3906c7f5d2e",
+    "reserves": [
+     "3999.999999999999999985",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x38f44c508b4e5a3432ea8915bf7c424ec591ff349ba7f2b74821576351748efd": {
+    "key": "robinhood:0x38f44c508b4e5a3432ea8915bf7c424ec591ff349ba7f2b74821576351748efd",
+    "name": "Uniswap V4 LP ETH/PANW",
+    "decimals": 18,
+    "symbol": "ETH/PANW",
+    "price": 9007199254740990,
+    "address": "0x38f44c508b4e5a3432ea8915bf7c424ec591ff349ba7f2b74821576351748efd",
+    "addresses": {
+     "robinhood": "0x38f44c508b4e5a3432ea8915bf7c424ec591ff349ba7f2b74821576351748efd"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.525Z",
+    "createdAt": "2026-08-20T15:51:57.659Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb039597ed45cba7b6e2fb9e8be51802969cee5be"
+    ],
+    "liquidity": 2479.5490293162325,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "115.203"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d392175e-a9e1-4d9b-b933-ed6455bff691",
+    "reserves": [
+     "0.160461776304699861",
+     "6.163843681261123228"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd0c104ad22ebd35e388558af3112b3b4be86d26252c82fa4520ba7153299419b": {
+    "key": "ethereum:0xd0c104ad22ebd35e388558af3112b3b4be86d26252c82fa4520ba7153299419b",
+    "name": "Uniswap V4 LP PANWon/EGP",
+    "decimals": 18,
+    "symbol": "PANWON/EGP",
+    "price": 9007199254740990,
+    "address": "0xd0c104ad22ebd35e388558af3112b3b4be86d26252c82fa4520ba7153299419b",
+    "addresses": {
+     "ethereum": "0xd0c104ad22ebd35e388558af3112b3b4be86d26252c82fa4520ba7153299419b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.404Z",
+    "createdAt": "2026-10-14T06:54:41.300Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20068.090761400505,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "98.39"
+    },
+    "tokenId": "f15b94fa-936e-4c08-a8af-0a6ee9e5865f",
+    "reserves": [
+     "0.066349835918336475",
+     "19999.999999999999999937"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9b2796ddb2b2452e6a7160e81f22d41df8d5dc3491aad78f578c7e73cd2fafad": {
+    "key": "robinhood:0x9b2796ddb2b2452e6a7160e81f22d41df8d5dc3491aad78f578c7e73cd2fafad",
+    "name": "Uniswap V4 LP USDG/PANW",
+    "decimals": 18,
+    "symbol": "USDG/PANW",
+    "price": 9007199254740990,
+    "address": "0x9b2796ddb2b2452e6a7160e81f22d41df8d5dc3491aad78f578c7e73cd2fafad",
+    "addresses": {
+     "robinhood": "0x9b2796ddb2b2452e6a7160e81f22d41df8d5dc3491aad78f578c7e73cd2fafad"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.580Z",
+    "createdAt": "2026-09-18T14:31:32.398Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xb039597ed45cba7b6e2fb9e8be51802969cee5be"
+    ],
+    "liquidity": 950.5929441506378,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "135.048"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 420,
+     "feePercentage": "4.2958"
+    },
+    "tokenId": "a6fd7f63-be41-4823-b156-f22fa7f10398",
+    "reserves": [
+     "21.196578",
+     "2.72151205314974453"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885": {
+    "key": "ethereum:0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+    "name": "Palo Alto Networks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "PANWON",
+    "price": 340.19,
+    "address": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+    "addresses": {
+     "ethereum": "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "bsc": "0x0eaa1a75bd682a5669ab2371a559fbd039c6b9eb"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2706824,
+    "image": "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+    "metrics": {
+     "volumeUsd1d": "149174.552",
+     "volumeUsd7d": "1088887.616"
+    },
+    "metadata": {},
+    "tokenId": "6085c654-a502-4dd3-9e31-7b5470d8da80",
+    "totalSupply": "7958.293205678798",
+    "circulatingSupply": "7958.293205678798",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb039597ed45cba7b6e2fb9e8be51802969cee5be": {
+    "key": "robinhood:0xb039597ed45cba7b6e2fb9e8be51802969cee5be",
+    "name": "Palo Alto Networks • Robinhood Token",
+    "decimals": 18,
+    "symbol": "PANW",
+    "price": 341.5,
+    "address": "0xb039597ed45cba7b6e2fb9e8be51802969cee5be",
+    "addresses": {
+     "robinhood": "0xb039597ed45cba7b6e2fb9e8be51802969cee5be"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xb039597ed45cba7b6e2fb9e8be51802969cee5be.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-09T19:02:28.788Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb039597ed45cba7b6e2fb9e8be51802969cee5be",
+    "liquidity": 5651.825,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-9.262"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000423f62d0b1e146a3b90e9b1ffcbf6e16",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "c39436b3-4356-4d26-8629-800717c90902",
+    "totalSupply": "16.55",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x41c9ec9295e1cdbf05e6137214a1a7bb8bbbc53d7bbb5e5d4bdc1f0bceb894cf": {
+    "key": "robinhood:0x41c9ec9295e1cdbf05e6137214a1a7bb8bbbc53d7bbb5e5d4bdc1f0bceb894cf",
+    "name": "Uniswap V4 LP USDG/PANW",
+    "decimals": 18,
+    "symbol": "USDG/PANW",
+    "price": 9007199254740990,
+    "address": "0x41c9ec9295e1cdbf05e6137214a1a7bb8bbbc53d7bbb5e5d4bdc1f0bceb894cf",
+    "addresses": {
+     "robinhood": "0x41c9ec9295e1cdbf05e6137214a1a7bb8bbbc53d7bbb5e5d4bdc1f0bceb894cf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.833Z",
+    "createdAt": "2026-09-09T20:19:20.939Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xb039597ed45cba7b6e2fb9e8be51802969cee5be"
+    ],
+    "liquidity": 1979.0548561819294,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "127.615"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 498,
+     "feePercentage": "5.0751"
+    },
+    "tokenId": "905420c0-999e-40ac-aedc-15b75796c86e",
+    "reserves": [
+     "491.93374",
+     "4.354673839478563089"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x29514529d8c4bb7fb18efb0b3ef5b6f9f9357e7947fe96a3672402dbe378b93d": {
+    "key": "ethereum:0x29514529d8c4bb7fb18efb0b3ef5b6f9f9357e7947fe96a3672402dbe378b93d",
+    "name": "Uniswap V4 LP PANWon/USDT",
+    "decimals": 18,
+    "symbol": "PANWON/USDT",
+    "price": 9007199254740990,
+    "address": "0x29514529d8c4bb7fb18efb0b3ef5b6f9f9357e7947fe96a3672402dbe378b93d",
+    "addresses": {
+     "ethereum": "0x29514529d8c4bb7fb18efb0b3ef5b6f9f9357e7947fe96a3672402dbe378b93d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68599/large/panwon_160x160.png?1756129923",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.772Z",
+    "createdAt": "2025-09-26T08:45:50.081Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x34bfdff25f0fda6d3ad0c33f1e06c0d40bd68885",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 515.7781222368166,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50"
+    },
+    "tokenId": "3ad8eeed-b256-42e8-830b-5cf1e3422d3d",
+    "reserves": [
+     "0.654847487841137522",
+     "293.25717"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe12bb32d77be4db10ddc82088b230d35d097e9c5": {
+    "key": "ethereum:0xe12bb32d77be4db10ddc82088b230d35d097e9c5",
+    "name": "Palo Alto Networks xStock",
+    "decimals": 18,
+    "symbol": "PANWX",
+    "price": 415.88,
+    "address": "0xe12bb32d77be4db10ddc82088b230d35d097e9c5",
+    "addresses": {
+     "ethereum": "0xe12bb32d77be4db10ddc82088b230d35d097e9c5"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:46.451Z",
+    "createdAt": "2025-10-01T09:00:49.665Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 22041640,
+    "image": "https://coin-images.coingecko.com/coins/images/69647/large/Ticker_PANWx__Company_Name_Palo_Alto_Networks__size_200x200.png?1759233779",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "palo-alto-networks-xstock"
+    },
+    "tokenId": "fbbbe57f-fb28-460e-b25f-a5daa5874eea",
+    "totalSupply": "53000",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,873 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US2193501051",
+ "ticker": "GLW",
+ "name": "Corning",
+ "isin": "US2193501051",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:54Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Corning Incorporated",
+   "symbol": "GLW",
+   "slug": "corning-incorporated",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 128.71868392511243,
+     "tokenized_market_cap": 2162625.6497745356,
+     "tokenized_volume_24h": 2009850.4528039,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 256,
+   "asset_type": "stock",
+   "rwa_rank": 146,
+   "has_tokens": true,
+   "average_tokenized_price": 128.71868392511243,
+   "tokenized_market_cap": 2162625.6497745356,
+   "tokenized_volume_24h": 2009850.4528039,
+   "last_updated": "2026-10-18T20:14:25.366Z",
+   "tokens": [
+    {
+     "symbol": "GLW",
+     "name": "Corning Tokenized Stock (Robinhood)",
+     "price": 135.41028305985597,
+     "crypto_id": 40713,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 7646.21,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "GLWB",
+     "name": "Corning Tokenized bStocks",
+     "price": 128.7695088832751,
+     "crypto_id": 40795,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1698088.77,
+     "volume_24h": 2001121.21858609
+    },
+    {
+     "symbol": "wGLWx",
+     "name": "Wrapped Corning Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41402,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "GLWx",
+     "name": "Corning tokenized stock (xStock)",
+     "price": 130.5913156131767,
+     "crypto_id": 41906,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 457689.68,
+     "volume_24h": 8594.45632114
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "GLW",
+     "market_url": "https://www.binance.com/en/stocks/EQ_GLW"
+    }
+   ]
+  },
+  "info": {
+   "40713": {
+    "id": 40713,
+    "symbol": "GLW",
+    "name": "Corning Tokenized Stock (Robinhood)",
+    "slug": "corning-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40713.png",
+    "date_added": "2026-08-04T07:31:36.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x7c04E6A3368F2A1DE3874f0e80d2e0A1a9915da6"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x7c04E6A3368F2A1DE3874f0e80d2e0A1a9915da6",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40795": {
+    "id": 40795,
+    "symbol": "GLWB",
+    "name": "Corning Tokenized bStocks",
+    "slug": "corning-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40795.png",
+    "date_added": "2026-07-06T06:10:08.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x740e075cbbea22a082b9d6679e65e82767875b6a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x740e075cbbea22a082b9d6679e65e82767875b6a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41402": {
+    "id": 41402,
+    "symbol": "wGLWx",
+    "name": "Wrapped Corning Tokenized Stock (xStock)",
+    "slug": "wrapped-corning-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41402.png",
+    "date_added": "2026-08-11T16:23:24.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x4Cecfc4Ff06b983AF580f164B7ADC19785A053e1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x4Cecfc4Ff06b983AF580f164B7ADC19785A053e1",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "41906": {
+    "id": 41906,
+    "symbol": "GLWx",
+    "name": "Corning tokenized stock (xStock)",
+    "slug": "corning-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41906.png",
+    "date_added": "2025-07-01T12:44:26.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xDC12f19AF085310e952e0A03b173fAaCdDeAD8c2"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xDC12f19AF085310e952e0A03b173fAaCdDeAD8c2",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xDC12f19AF085310e952e0A03b173fAaCdDeAD8c2",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "Xsg3UgvjxpUgV3WZx9Wt9deLx7qvKYp6ZLY6xMY2Dfq",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xDC12f19AF085310e952e0A03b173fAaCdDeAD8c2",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xDC12f19AF085310e952e0A03b173fAaCdDeAD8c2",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "EQDb_R6oAj2XJx6J51iCZW0_HMhvaGqAq3Cjr-yMr6FBqEgS",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdc12f19af085310e952e0a03b173faacddead8c2",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdc12f19af085310e952e0a03b173faacddead8c2",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xdc12f19af085310e952e0a03b173faacddead8c2",
+   "bsc:0x740e075cbbea22a082b9d6679e65e82767875b6a",
+   "bsc:0xdc12f19af085310e952e0a03b173faacddead8c2",
+   "ethereum:0xdc12f19af085310e952e0a03b173faacddead8c2",
+   "robinhood:0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+  ],
+  "exact": {
+   "robinhood:0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6": {
+    "key": "robinhood:0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "name": "Corning • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GLW",
+    "price": 131.12,
+    "address": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "addresses": {
+     "robinhood": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "liquidity": 7403.95304,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "796.564"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000040b2153b3d3d4715b8d22a15ba1acff2",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "5642b55e-d8f0-42e6-b717-7c61087c75b0",
+    "totalSupply": "56.467",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x740e075cbbea22a082b9d6679e65e82767875b6a": {
+    "key": "bsc:0x740e075cbbea22a082b9d6679e65e82767875b6a",
+    "name": "Corning (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GLWB",
+    "price": 128.94,
+    "address": "0x740e075cbbea22a082b9d6679e65e82767875b6a",
+    "addresses": {
+     "bsc": "0x740e075cbbea22a082b9d6679e65e82767875b6a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1698117,
+    "image": "https://coin-images.coingecko.com/coins/images/102174370/large/glwb-bstocks.png?1783453962",
+    "metrics": {
+     "volumeUsd1d": "1126916.011",
+     "volumeUsd7d": "8510105.469"
+    },
+    "metadata": {},
+    "tokenId": "8e36cc34-59d1-4100-93d8-015af9ecbf60",
+    "totalSupply": "13170.047925109999",
+    "circulatingSupply": "13170.047925109999",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "GLW": {
+    "total_items": 11,
+    "pages": 1,
+    "received": 11,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0xb3226fa38cbcbbc863a0827ec8a5d2f36235d8a83c9e184d974ff2924093a974": {
+    "key": "ethereum:0xb3226fa38cbcbbc863a0827ec8a5d2f36235d8a83c9e184d974ff2924093a974",
+    "name": "Uniswap V4 LP wUSDC/GLWon",
+    "decimals": 18,
+    "symbol": "WUSDC/GLWON",
+    "price": 9007199254740990,
+    "address": "0xb3226fa38cbcbbc863a0827ec8a5d2f36235d8a83c9e184d974ff2924093a974",
+    "addresses": {
+     "ethereum": "0xb3226fa38cbcbbc863a0827ec8a5d2f36235d8a83c9e184d974ff2924093a974"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102173732/large/glwon_160x160.png?1781494196",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.430Z",
+    "createdAt": "2026-09-28T10:39:20.537Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xe45575b8895664dedf7beffee98b078f2cf1a192"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "79d9fbb4-c93b-4c31-b820-e49a46be18da",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf6c6a016b44976f0acfc496fa043b4ff02f185c608d554f0360418327c3384fc": {
+    "key": "robinhood:0xf6c6a016b44976f0acfc496fa043b4ff02f185c608d554f0360418327c3384fc",
+    "name": "Uniswap V4 LP USDG/GLW",
+    "decimals": 18,
+    "symbol": "USDG/GLW",
+    "price": 9007199254740990,
+    "address": "0xf6c6a016b44976f0acfc496fa043b4ff02f185c608d554f0360418327c3384fc",
+    "addresses": {
+     "robinhood": "0xf6c6a016b44976f0acfc496fa043b4ff02f185c608d554f0360418327c3384fc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174144/large/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png?1782444653"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.728Z",
+    "createdAt": "2026-09-09T07:57:21.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    ],
+    "liquidity": 920.8356544850768,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 450,
+     "feePercentage": "4.5955"
+    },
+    "tokenId": "17cb84fd-6993-4943-8ca7-5042efb2b87c",
+    "reserves": [
+     "2.741184",
+     "7.001940745005161449"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x62b7f2452948cdb2404e5ec3be8a553531084235": {
+    "key": "arbitrum:0x62b7f2452948cdb2404e5ec3be8a553531084235",
+    "name": "Corning rStock",
+    "decimals": 18,
+    "symbol": "RGLW",
+    "price": 131.3,
+    "address": "0x62b7f2452948cdb2404e5ec3be8a553531084235",
+    "addresses": {
+     "arbitrum": "0x62b7f2452948cdb2404e5ec3be8a553531084235"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 392359,
+    "image": "https://coin-images.coingecko.com/coins/images/102177375/large/GLW.png?1789117711",
+    "metrics": {
+     "volumeUsd1d": "0.006",
+     "volumeUsd7d": "109069.157"
+    },
+    "metadata": {},
+    "tokenId": "7dd25568-3019-422b-9ac1-b257d6a645cb",
+    "totalSupply": "2988.242577646",
+    "circulatingSupply": "2988.242577646",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6": {
+    "key": "robinhood:0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "name": "Corning • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GLW",
+    "price": 131.12,
+    "address": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "addresses": {
+     "robinhood": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6",
+    "liquidity": 7403.95304,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "796.564"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000040b2153b3d3d4715b8d22a15ba1acff2",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "5642b55e-d8f0-42e6-b717-7c61087c75b0",
+    "totalSupply": "56.467",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x898bed143b3c1a96c5413418ceb3aeebecb0c3a46669f7d21ad9c2d2bb40010f": {
+    "key": "ethereum:0x898bed143b3c1a96c5413418ceb3aeebecb0c3a46669f7d21ad9c2d2bb40010f",
+    "name": "Uniswap V4 LP EGP/GLWon",
+    "decimals": 18,
+    "symbol": "EGP/GLWON",
+    "price": 9007199254740990,
+    "address": "0x898bed143b3c1a96c5413418ceb3aeebecb0c3a46669f7d21ad9c2d2bb40010f",
+    "addresses": {
+     "ethereum": "0x898bed143b3c1a96c5413418ceb3aeebecb0c3a46669f7d21ad9c2d2bb40010f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102173732/large/glwon_160x160.png?1781494196"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.367Z",
+    "createdAt": "2026-10-14T06:54:33.772Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xe45575b8895664dedf7beffee98b078f2cf1a192"
+    ],
+    "liquidity": 20068.862147087846,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.32"
+    },
+    "tokenId": "d6f183a8-0a3d-4adc-aa69-0e07dca3a2fd",
+    "reserves": [
+     "19999.99999999999999998",
+     "0.178544717518753585"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6e19db65fbc9aa265f3faf5f92b58bd778ebaea6b1a40235cc0599d7f1dda1c4": {
+    "key": "robinhood:0x6e19db65fbc9aa265f3faf5f92b58bd778ebaea6b1a40235cc0599d7f1dda1c4",
+    "name": "Uniswap V4 LP OLQD/GLW",
+    "decimals": 18,
+    "symbol": "OLQD/GLW",
+    "price": 9007199254740990,
+    "address": "0x6e19db65fbc9aa265f3faf5f92b58bd778ebaea6b1a40235cc0599d7f1dda1c4",
+    "addresses": {
+     "robinhood": "0x6e19db65fbc9aa265f3faf5f92b58bd778ebaea6b1a40235cc0599d7f1dda1c4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174144/large/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png?1782444653",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.229Z",
+    "createdAt": "2026-08-12T05:11:58.021Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    ],
+    "liquidity": 996.0774971957774,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19998,
+     "feePercentage": "99.9924"
+    },
+    "tokenId": "8a933aea-51bd-49f1-b073-396fa5eebd5b",
+    "reserves": [
+     "995.775700993682438311",
+     "0.002428765131170509"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x684aa60e68b957a5fb3cb83c55473cd35ba5cb27ac3eb1ec840dcc42439618f8": {
+    "key": "robinhood:0x684aa60e68b957a5fb3cb83c55473cd35ba5cb27ac3eb1ec840dcc42439618f8",
+    "name": "Uniswap V4 LP USDG/GLW",
+    "decimals": 18,
+    "symbol": "USDG/GLW",
+    "price": 9007199254740990,
+    "address": "0x684aa60e68b957a5fb3cb83c55473cd35ba5cb27ac3eb1ec840dcc42439618f8",
+    "addresses": {
+     "robinhood": "0x684aa60e68b957a5fb3cb83c55473cd35ba5cb27ac3eb1ec840dcc42439618f8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174144/large/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png?1782444653"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.438Z",
+    "createdAt": "2026-09-10T03:24:07.076Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    ],
+    "liquidity": 983.3123124457217,
+    "metrics": {
+     "apy": "5.674",
+     "baseApy": "5.674",
+     "volumeUsd1d": "3",
+     "volumeUsd7d": "42.581"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "b2f438c3-4766-46cf-99fd-7b49c2ba56db",
+    "reserves": [
+     "507.434361",
+     "3.629331539396900626"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x25a4dbae9a0cd8c75656d6b50ffdf4900cc20d8f": {
+    "key": "bsc:0x25a4dbae9a0cd8c75656d6b50ffdf4900cc20d8f",
+    "name": "Corning (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLWON",
+    "price": 130.74,
+    "address": "0x25a4dbae9a0cd8c75656d6b50ffdf4900cc20d8f",
+    "addresses": {
+     "ethereum": "0xe45575b8895664dedf7beffee98b078f2cf1a192",
+     "bsc": "0x25a4dbae9a0cd8c75656d6b50ffdf4900cc20d8f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-16T11:02:38.155Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896187,
+    "image": "https://coin-images.coingecko.com/coins/images/102173732/large/glwon_160x160.png?1781494196",
+    "metrics": {
+     "volumeUsd1d": "164349.268",
+     "volumeUsd7d": "1389868.798"
+    },
+    "metadata": {},
+    "tokenId": "edc1173f-adad-43cc-8ef1-ef0bf1c7dd2d",
+    "totalSupply": "6856.780342619747",
+    "circulatingSupply": "6856.780342619747",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1a58c296650d8fd8925637075d221ba7d1d784beb2d2260370531471793e0e12": {
+    "key": "robinhood:0x1a58c296650d8fd8925637075d221ba7d1d784beb2d2260370531471793e0e12",
+    "name": "Uniswap V4 LP wUSDG/GLW",
+    "decimals": 18,
+    "symbol": "WUSDG/GLW",
+    "price": 9007199254740990,
+    "address": "0x1a58c296650d8fd8925637075d221ba7d1d784beb2d2260370531471793e0e12",
+    "addresses": {
+     "robinhood": "0x1a58c296650d8fd8925637075d221ba7d1d784beb2d2260370531471793e0e12"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174144/large/0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6.png?1782444653"
+    ],
+    "updatedAt": "2026-10-18T20:15:41.810Z",
+    "createdAt": "2026-08-14T14:53:45.414Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7c04e6a3368f2a1de3874f0e80d2e0a1a9915da6"
+    ],
+    "liquidity": 10166.4457899464,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "f3e7aaaa-7198-4d2b-ac21-2d5089901d0c",
+    "reserves": [
+     "9747.335896",
+     "2.475683514884470055"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x740e075cbbea22a082b9d6679e65e82767875b6a": {
+    "key": "bsc:0x740e075cbbea22a082b9d6679e65e82767875b6a",
+    "name": "Corning (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GLWB",
+    "price": 128.94,
+    "address": "0x740e075cbbea22a082b9d6679e65e82767875b6a",
+    "addresses": {
+     "bsc": "0x740e075cbbea22a082b9d6679e65e82767875b6a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-07T20:52:38.333Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1698117,
+    "image": "https://coin-images.coingecko.com/coins/images/102174370/large/glwb-bstocks.png?1783453962",
+    "metrics": {
+     "volumeUsd1d": "1126916.011",
+     "volumeUsd7d": "8510105.469"
+    },
+    "metadata": {},
+    "tokenId": "8e36cc34-59d1-4100-93d8-015af9ecbf60",
+    "totalSupply": "13170.047925109999",
+    "circulatingSupply": "13170.047925109999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe45575b8895664dedf7beffee98b078f2cf1a192": {
+    "key": "ethereum:0xe45575b8895664dedf7beffee98b078f2cf1a192",
+    "name": "Corning (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "GLWON",
+    "price": 130.74,
+    "address": "0xe45575b8895664dedf7beffee98b078f2cf1a192",
+    "addresses": {
+     "ethereum": "0xe45575b8895664dedf7beffee98b078f2cf1a192",
+     "bsc": "0x25a4dbae9a0cd8c75656d6b50ffdf4900cc20d8f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-06-16T11:02:38.155Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 896187,
+    "image": "https://coin-images.coingecko.com/coins/images/102173732/large/glwon_160x160.png?1781494196",
+    "metrics": {
+     "volumeUsd1d": "164586.628",
+     "volumeUsd7d": "1390199.807"
+    },
+    "metadata": {},
+    "tokenId": "edc1173f-adad-43cc-8ef1-ef0bf1c7dd2d",
+    "totalSupply": "6856.780342619747",
+    "circulatingSupply": "6856.780342619747",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

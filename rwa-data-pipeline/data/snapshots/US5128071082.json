@@ -1,0 +1,862 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US5128071082",
+ "ticker": "LRCX",
+ "name": "Lam Research",
+ "isin": "US5128071082",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:21Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Lam Research Corp",
+   "symbol": "LRCX",
+   "slug": "lam-research",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 262.0415151733186,
+     "tokenized_market_cap": 707654.3885358357,
+     "tokenized_volume_24h": 1040331.59255417,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 32,
+   "asset_type": "stock",
+   "rwa_rank": 38,
+   "has_tokens": true,
+   "average_tokenized_price": 262.0415151733186,
+   "tokenized_market_cap": 707654.3885358357,
+   "tokenized_volume_24h": 1040331.59255417,
+   "last_updated": "2026-10-18T20:13:42.818Z",
+   "tokens": [
+    {
+     "symbol": "LRCXon",
+     "name": "Lam Research Tokenized Stock (Ondo)",
+     "price": 261.6929660961855,
+     "crypto_id": 39304,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 283019.67,
+     "volume_24h": 1040278.82936182
+    },
+    {
+     "symbol": "LRCXx",
+     "name": "Lam Research Corporation tokenized stock (xStock)",
+     "price": 277.87,
+     "crypto_id": 40152,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 318774.65,
+     "volume_24h": 27.78727787
+    },
+    {
+     "symbol": "LRCX",
+     "name": "Lam Research Corp (Derivatives)",
+     "price": 260.86340041903844,
+     "crypto_id": 40547,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rLRCX",
+     "name": "Lam Research Tokenized Stock (Reality)",
+     "price": 264.6467391246896,
+     "crypto_id": 40642,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 105483.57,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wLRCXx",
+     "name": "Wrapped Lam Research Corporation Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41375,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "LRCX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_LRCX"
+    }
+   ]
+  },
+  "info": {
+   "39304": {
+    "id": 39304,
+    "symbol": "LRCXon",
+    "name": "Lam Research Tokenized Stock (Ondo)",
+    "slug": "lam-research-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39304.png",
+    "date_added": "2026-01-08T15:44:23.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x21be23f5bf87a749670c088f6dee26760f1ab80f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "wFJoeEYpKg9oRhyJy6BWTT3J95gmXBLvoeikDQNondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40152": {
+    "id": 40152,
+    "symbol": "LRCXx",
+    "name": "Lam Research Corporation tokenized stock (xStock)",
+    "slug": "lam-research-corporation-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40152.png",
+    "date_added": "2026-06-10T06:33:33.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsSN912SN4Whn2xn59vWZHt1uLbw9WnoNGp5MigmHFf"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsSN912SN4Whn2xn59vWZHt1uLbw9WnoNGp5MigmHFf",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4",
+      "platform": {
+       "name": "Mantle",
+       "coin": {
+        "id": "27075",
+        "name": "Mantle",
+        "symbol": "MNT",
+        "slug": "mantle"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQCdj0cwXkebNDgm1RJlMZD0TV2MaGgdbp8pEiX0HTZTHFIi",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40547": {
+    "id": 40547,
+    "symbol": "LRCX",
+    "name": "Lam Research Corp (Derivatives)",
+    "slug": "lam-research-corp-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40547.png",
+    "date_added": "2026-06-22T11:53:06.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40642": {
+    "id": 40642,
+    "symbol": "rLRCX",
+    "name": "Lam Research Tokenized Stock (Reality)",
+    "slug": "lam-research-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40642.png",
+    "date_added": "2026-07-02T07:39:19.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x87735529ab74fabffc02c9007a8df26f73f3b59d"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "41375": {
+    "id": 41375,
+    "symbol": "wLRCXx",
+    "name": "Wrapped Lam Research Corporation Tokenized Stock (xStock)",
+    "slug": "wrapped-lam-research-corporation-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41375.png",
+    "date_added": "2026-08-11T16:23:08.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xD1c5184cA506561a669e7ad1CC500088002Dc578"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xD1c5184cA506561a669e7ad1CC500088002Dc578",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+   "bsc:0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+   "bsc:0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4",
+   "ethereum:0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+   "ethereum:0x4177d16a5d2465cf4bd52e07c1c56ab500243fd4"
+  ],
+  "exact": {
+   "bsc:0x35895a1fa1aff7fb3204fb01257409fd75acb24c": {
+    "key": "bsc:0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+    "name": "Lam Research (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LRCXON",
+    "price": 261.91,
+    "address": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+    "addresses": {
+     "bsc": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+     "ethereum": "0x21be23f5bf87a749670c088f6dee26760f1ab80f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 283255,
+    "image": "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373",
+    "metrics": {
+     "volumeUsd1d": "481926.447",
+     "volumeUsd7d": "4358396.248"
+    },
+    "metadata": {},
+    "tokenId": "5134dea5-ecac-47ff-9595-6fc6cd497e7f",
+    "totalSupply": "1081.4951183182416",
+    "circulatingSupply": "1081.4951183182416",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x21be23f5bf87a749670c088f6dee26760f1ab80f": {
+    "key": "ethereum:0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+    "name": "Lam Research (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LRCXON",
+    "price": 261.91,
+    "address": "0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+    "addresses": {
+     "bsc": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+     "ethereum": "0x21be23f5bf87a749670c088f6dee26760f1ab80f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 283255,
+    "image": "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373",
+    "metrics": {
+     "volumeUsd1d": "481304.192",
+     "volumeUsd7d": "4351396.379"
+    },
+    "metadata": {},
+    "tokenId": "5134dea5-ecac-47ff-9595-6fc6cd497e7f",
+    "totalSupply": "1081.4951183182416",
+    "circulatingSupply": "1081.4951183182416",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x87735529ab74fabffc02c9007a8df26f73f3b59d": {
+    "key": "arbitrum:0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+    "name": "Lam Research rStock",
+    "decimals": 18,
+    "symbol": "RLRCX",
+    "price": 264.74,
+    "address": "0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+    "addresses": {
+     "arbitrum": "0x87735529ab74fabffc02c9007a8df26f73f3b59d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 105520,
+    "image": "https://coin-images.coingecko.com/coins/images/102177023/large/3eae823fa5badbd3f6de9ba838d53898.png?1789116585",
+    "metrics": {
+     "volumeUsd1d": "19.922",
+     "volumeUsd7d": "26920.969"
+    },
+    "metadata": {},
+    "tokenId": "5db5b99c-d1f7-46b6-99ef-363929c589cd",
+    "totalSupply": "398.58254842099996",
+    "circulatingSupply": "398.58254842099996",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "LRCX": {
+    "total_items": 10,
+    "pages": 1,
+    "received": 10,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0x35895a1fa1aff7fb3204fb01257409fd75acb24c": {
+    "key": "bsc:0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+    "name": "Lam Research (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LRCXON",
+    "price": 261.91,
+    "address": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+    "addresses": {
+     "bsc": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+     "ethereum": "0x21be23f5bf87a749670c088f6dee26760f1ab80f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 283255,
+    "image": "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373",
+    "metrics": {
+     "volumeUsd1d": "481926.447",
+     "volumeUsd7d": "4358396.248"
+    },
+    "metadata": {},
+    "tokenId": "5134dea5-ecac-47ff-9595-6fc6cd497e7f",
+    "totalSupply": "1081.4951183182416",
+    "circulatingSupply": "1081.4951183182416",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1f965aad2e24f87d325c5f3a107ffb2753ab7379adce010d3adf05096ec6bea4": {
+    "key": "robinhood:0x1f965aad2e24f87d325c5f3a107ffb2753ab7379adce010d3adf05096ec6bea4",
+    "name": "Uniswap V4 LP LRCX/USDG",
+    "decimals": 18,
+    "symbol": "LRCX/USDG",
+    "price": 9007199254740990,
+    "address": "0x1f965aad2e24f87d325c5f3a107ffb2753ab7379adce010d3adf05096ec6bea4",
+    "addresses": {
+     "robinhood": "0x1f965aad2e24f87d325c5f3a107ffb2753ab7379adce010d3adf05096ec6bea4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:36.114Z",
+    "createdAt": "2026-09-08T14:36:35.935Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 747.4084267250099,
+    "metrics": {
+     "apy": "1.175",
+     "baseApy": "1.175",
+     "volumeUsd1d": "0.595",
+     "volumeUsd7d": "92.36"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 395,
+     "feePercentage": "4.0461"
+    },
+    "tokenId": "57d7f33d-3645-404d-b29e-65e5af38cc9c",
+    "reserves": [
+     "2.768875255076989521",
+     "6.898286"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x21be23f5bf87a749670c088f6dee26760f1ab80f": {
+    "key": "ethereum:0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+    "name": "Lam Research (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "LRCXON",
+    "price": 261.91,
+    "address": "0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+    "addresses": {
+     "bsc": "0x35895a1fa1aff7fb3204fb01257409fd75acb24c",
+     "ethereum": "0x21be23f5bf87a749670c088f6dee26760f1ab80f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-01-08T16:37:32.786Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 283255,
+    "image": "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373",
+    "metrics": {
+     "volumeUsd1d": "481304.192",
+     "volumeUsd7d": "4351396.379"
+    },
+    "metadata": {},
+    "tokenId": "5134dea5-ecac-47ff-9595-6fc6cd497e7f",
+    "totalSupply": "1081.4951183182416",
+    "circulatingSupply": "1081.4951183182416",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x57b0030166db0c31690d1a5aa167e2e26e2c29a4": {
+    "key": "robinhood:0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+    "name": "Lam Research Corp • Robinhood Token",
+    "decimals": 18,
+    "symbol": "LRCX",
+    "price": 267.440773782501,
+    "address": "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+    "addresses": {
+     "robinhood": "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x57b0030166db0c31690d1a5aa167e2e26e2c29a4.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "createdAt": "2026-08-07T16:45:31.980Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+    "liquidity": 7133.7364747879865,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-264.275"
+    },
+    "metadata": {
+     "uid": "0x0000000000000000000000000000000065968801094d4f8794208f387f3fe9f9",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000732562938505984",
+     "currentMultiplier": "1.000732562938505984",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "913de9cc-20a6-4fdb-88c0-98e584d603dd",
+    "totalSupply": "26.67407955",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x418770b0685112b2c69bd3c74e45594eb2b50aab201469ca53011f3e510c0c7f": {
+    "key": "robinhood:0x418770b0685112b2c69bd3c74e45594eb2b50aab201469ca53011f3e510c0c7f",
+    "name": "Uniswap V4 LP LRCX/USDG",
+    "decimals": 18,
+    "symbol": "LRCX/USDG",
+    "price": 9007199254740990,
+    "address": "0x418770b0685112b2c69bd3c74e45594eb2b50aab201469ca53011f3e510c0c7f",
+    "addresses": {
+     "robinhood": "0x418770b0685112b2c69bd3c74e45594eb2b50aab201469ca53011f3e510c0c7f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.726Z",
+    "createdAt": "2026-09-16T04:07:41.188Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 987.5274412778891,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "162.545"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 690,
+     "feePercentage": "6.9931"
+    },
+    "tokenId": "c075944f-d62d-42b9-a71d-08e9e2ff3ad5",
+    "reserves": [
+     "3.556742454878914665",
+     "36.309487"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf07fb0db2035bdbf349262d4bcb7f687b7a347e4bb8c500ada960139edb1b0c0": {
+    "key": "robinhood:0xf07fb0db2035bdbf349262d4bcb7f687b7a347e4bb8c500ada960139edb1b0c0",
+    "name": "Uniswap V4 LP LRCX/USDG",
+    "decimals": 18,
+    "symbol": "LRCX/USDG",
+    "price": 9007199254740990,
+    "address": "0xf07fb0db2035bdbf349262d4bcb7f687b7a347e4bb8c500ada960139edb1b0c0",
+    "addresses": {
+     "robinhood": "0xf07fb0db2035bdbf349262d4bcb7f687b7a347e4bb8c500ada960139edb1b0c0"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:40.831Z",
+    "createdAt": "2026-09-19T15:21:26.987Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 859.0695329225299,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "31.811"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "f304575c-6834-4c56-a53a-446889e9c4c1",
+    "reserves": [
+     "1.573930747242222131",
+     "438.136276"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5818c87024d21c8a2bd7df95ac5bcadfb6f5438eeea548c1a7f992a6ef7cbf3e": {
+    "key": "ethereum:0x5818c87024d21c8a2bd7df95ac5bcadfb6f5438eeea548c1a7f992a6ef7cbf3e",
+    "name": "Uniswap V4 LP LRCXon/wUSDC",
+    "decimals": 18,
+    "symbol": "LRCXON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x5818c87024d21c8a2bd7df95ac5bcadfb6f5438eeea548c1a7f992a6ef7cbf3e",
+    "addresses": {
+     "ethereum": "0x5818c87024d21c8a2bd7df95ac5bcadfb6f5438eeea548c1a7f992a6ef7cbf3e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373"
+    ],
+    "updatedAt": "2026-10-18T20:17:00.867Z",
+    "createdAt": "2026-09-28T10:37:14.094Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "6ad5cc19-5b98-4c68-85df-f7177bcf6c7e",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x87735529ab74fabffc02c9007a8df26f73f3b59d": {
+    "key": "arbitrum:0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+    "name": "Lam Research rStock",
+    "decimals": 18,
+    "symbol": "RLRCX",
+    "price": 264.74,
+    "address": "0x87735529ab74fabffc02c9007a8df26f73f3b59d",
+    "addresses": {
+     "arbitrum": "0x87735529ab74fabffc02c9007a8df26f73f3b59d"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 105520,
+    "image": "https://coin-images.coingecko.com/coins/images/102177023/large/3eae823fa5badbd3f6de9ba838d53898.png?1789116585",
+    "metrics": {
+     "volumeUsd1d": "19.922",
+     "volumeUsd7d": "26920.969"
+    },
+    "metadata": {},
+    "tokenId": "5db5b99c-d1f7-46b6-99ef-363929c589cd",
+    "totalSupply": "398.58254842099996",
+    "circulatingSupply": "398.58254842099996",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4240d156e4ede654462b8789b5467575fd0832f43d8d9a3a35071b51c48bf929": {
+    "key": "ethereum:0x4240d156e4ede654462b8789b5467575fd0832f43d8d9a3a35071b51c48bf929",
+    "name": "Uniswap V4 LP LRCXon/EGP",
+    "decimals": 18,
+    "symbol": "LRCXON/EGP",
+    "price": 9007199254740990,
+    "address": "0x4240d156e4ede654462b8789b5467575fd0832f43d8d9a3a35071b51c48bf929",
+    "addresses": {
+     "ethereum": "0x4240d156e4ede654462b8789b5467575fd0832f43d8d9a3a35071b51c48bf929"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71438/large/lrcxon_160x160.png?1767889373",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.163Z",
+    "createdAt": "2026-10-14T06:54:29.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x21be23f5bf87a749670c088f6dee26760f1ab80f",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20057.321814769883,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.71"
+    },
+    "tokenId": "d6cadffe-56e3-4655-9c66-545b822467d3",
+    "reserves": [
+     "0.086644627898498108",
+     "19999.999999999999999913"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x545f5bc9a76365f5d838a9aef6e184177f49d491519306f639c93743365c1656": {
+    "key": "robinhood:0x545f5bc9a76365f5d838a9aef6e184177f49d491519306f639c93743365c1656",
+    "name": "Uniswap V4 LP ETH/LRCX",
+    "decimals": 18,
+    "symbol": "ETH/LRCX",
+    "price": 9007199254740990,
+    "address": "0x545f5bc9a76365f5d838a9aef6e184177f49d491519306f639c93743365c1656",
+    "addresses": {
+     "robinhood": "0x545f5bc9a76365f5d838a9aef6e184177f49d491519306f639c93743365c1656"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.006Z",
+    "createdAt": "2026-09-16T04:14:53.319Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x57b0030166db0c31690d1a5aa167e2e26e2c29a4"
+    ],
+    "liquidity": 2027.801935617088,
+    "metrics": {
+     "apy": "0.594",
+     "baseApy": "0.594",
+     "volumeUsd1d": "0.647",
+     "volumeUsd7d": "165.301"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "8d951475-c7df-4422-a6e3-b373fe33d765",
+    "reserves": [
+     "0.091163151877161717",
+     "6.7864837643172025"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

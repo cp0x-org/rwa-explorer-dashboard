@@ -1,0 +1,1226 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US6701002056",
+ "ticker": "NVO",
+ "name": "Novo Nordisk (ADR)",
+ "isin": "US6701002056",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:39Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Novo Nordisk A/S",
+   "symbol": "NVO",
+   "slug": "novo-nordisk",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 39.97932304613686,
+     "tokenized_market_cap": 2639264.9662766955,
+     "tokenized_volume_24h": 1430612.11783053,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 65,
+   "asset_type": "stock",
+   "rwa_rank": 92,
+   "has_tokens": true,
+   "average_tokenized_price": 39.97932304613686,
+   "tokenized_market_cap": 2639264.9662766955,
+   "tokenized_volume_24h": 1430612.11783053,
+   "last_updated": "2026-10-18T20:13:38.110Z",
+   "tokens": [
+    {
+     "symbol": "NVOon",
+     "name": "Novo Nordisk Tokenized Stock (Ondo)",
+     "price": 39.98561848017186,
+     "crypto_id": 38002,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2101674.97,
+     "volume_24h": 1429381.62904169
+    },
+    {
+     "symbol": "NVOX",
+     "name": "Novo Nordisk tokenized stock (xStock)",
+     "price": 39.31204403415946,
+     "crypto_id": 37058,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 499248.62,
+     "volume_24h": 490.94856333
+    },
+    {
+     "symbol": "NVO",
+     "name": "Novo Nordisk (Derivatives)",
+     "price": 38.41535222289687,
+     "crypto_id": 40104,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WNVOX",
+     "name": "Wrapped Novo Nordisk Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37217,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "NVOc",
+     "name": "Novo Nordisk A/S Tokenized Stock (Coinbase)",
+     "price": 40.3973102053448,
+     "crypto_id": 42586,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 38660.23,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "NVO",
+     "market_url": "https://www.binance.com/en/stocks/EQ_NVO"
+    }
+   ]
+  },
+  "info": {
+   "38002": {
+    "id": 38002,
+    "symbol": "NVOon",
+    "name": "Novo Nordisk Tokenized Stock (Ondo)",
+    "slug": "novo-nordisk-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38002.png",
+    "date_added": "2025-09-03T10:55:00.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x28151F5888833D3d767C4d6945a0Ee50D1B193E3"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x28151F5888833D3d767C4d6945a0Ee50D1B193E3",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x08a513779f46ffb7a34f16094a94016d010128a8",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "GeV7S8vjP8qdYZpdGv2Xi6e7MUMCk8NAAp2z7g5ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "37058": {
+    "id": 37058,
+    "symbol": "NVOX",
+    "name": "Novo Nordisk tokenized stock (xStock)",
+    "slug": "novo-nordisk-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37058.png",
+    "date_added": "2025-07-01T18:40:23.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsfAzPzYrYjd4Dpa9BU3cusBsvWfVB9gBcyGC87S57n"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsfAzPzYrYjd4Dpa9BU3cusBsvWfVB9gBcyGC87S57n",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQA2RgMKPUwdYNgSmB1A8saoGHj1DPEPk_3hYkI3vqhgLFrf",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "40104": {
+    "id": 40104,
+    "symbol": "NVO",
+    "name": "Novo Nordisk (Derivatives)",
+    "slug": "novo-nordisk-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40104.png",
+    "date_added": "2026-06-01T05:17:48.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37217": {
+    "id": 37217,
+    "symbol": "WNVOX",
+    "name": "Wrapped Novo Nordisk Tokenized stock (xStock)",
+    "slug": "wrapped-novo-nordisk-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37217.png",
+    "date_added": "2025-07-06T11:28:32.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x02c7eba704fC8DD930BC07252eb178104b8d96cb"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x02c7eba704fC8DD930BC07252eb178104b8d96cb",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x16e443aebc83e2089aa90431a1c0d311854eec69",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42586": {
+    "id": 42586,
+    "symbol": "NVOc",
+    "name": "Novo Nordisk A/S Tokenized Stock (Coinbase)",
+    "slug": "novo-nordisk-as-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42586.png",
+    "date_added": "2026-10-14T03:36:59.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000008d5328e9208773dc58"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000008d5328e9208773dc58",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x16e443aebc83e2089aa90431a1c0d311854eec69",
+   "arbitrum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+   "base:0xb2000000000000000000008d5328e9208773dc58",
+   "bsc:0x08a513779f46ffb7a34f16094a94016d010128a8",
+   "bsc:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+   "ethereum:0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+   "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+  ],
+  "exact": {
+   "bsc:0x08a513779f46ffb7a34f16094a94016d010128a8": {
+    "key": "bsc:0x08a513779f46ffb7a34f16094a94016d010128a8",
+    "name": "Novo Nordisk (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVOON",
+    "price": 39.97,
+    "address": "0x08a513779f46ffb7a34f16094a94016d010128a8",
+    "addresses": {
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2100256,
+    "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+    "metrics": {
+     "volumeUsd1d": "1083220.965",
+     "volumeUsd7d": "7730589.965"
+    },
+    "metadata": {},
+    "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
+    "totalSupply": "52560.77182835847",
+    "circulatingSupply": "52560.77182835847",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "bsc:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "bsc": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5705149.590725768,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "fd618dfd-04b5-4f08-8f8f-5186a5bce211",
+    "totalSupply": "146812.907635763460540823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "ethereum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7780496.140272811,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "d45dbadb-a41b-41d9-b06e-f60fd227d667",
+    "totalSupply": "200218.634592712591281682",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x28151f5888833d3d767c4d6945a0ee50d1b193e3": {
+    "key": "ethereum:0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+    "name": "Novo Nordisk (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVOON",
+    "price": 39.97,
+    "address": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+    "addresses": {
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2100256,
+    "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+    "metrics": {
+     "volumeUsd1d": "1084288.793",
+     "volumeUsd7d": "7723084.284"
+    },
+    "metadata": {},
+    "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
+    "totalSupply": "52560.77182835847",
+    "circulatingSupply": "52560.77182835847",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "arbitrum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "arbitrum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8416280.164120287,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "74f9ba66-d8f5-4dd0-b792-4b88e98224c6",
+    "totalSupply": "216579.520435416550843279",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "NVO": {
+    "total_items": 19,
+    "pages": 1,
+    "received": 19,
+    "complete": true
+   }
+  },
+  "records": {
+   "avalanche:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759": {
+    "key": "avalanche:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+    "name": "Novo Nordisk (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVO",
+    "price": 39.21,
+    "address": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+    "addresses": {
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+     "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+     "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4132.9,
+    "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
+    "metrics": {
+     "volumeUsd1d": "51.45",
+     "volumeUsd7d": "4146.546"
+    },
+    "metadata": {},
+    "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
+    "totalSupply": "105.395748223",
+    "circulatingSupply": "105.395748223",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x08a513779f46ffb7a34f16094a94016d010128a8": {
+    "key": "bsc:0x08a513779f46ffb7a34f16094a94016d010128a8",
+    "name": "Novo Nordisk (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVOON",
+    "price": 39.97,
+    "address": "0x08a513779f46ffb7a34f16094a94016d010128a8",
+    "addresses": {
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2100256,
+    "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+    "metrics": {
+     "volumeUsd1d": "1083220.965",
+     "volumeUsd7d": "7730589.965"
+    },
+    "metadata": {},
+    "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
+    "totalSupply": "52560.77182835847",
+    "circulatingSupply": "52560.77182835847",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d": {
+    "key": "base:0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d",
+    "name": "Prefrontal Cortex Convo Agent by Virtuals",
+    "decimals": 18,
+    "symbol": "CONVO",
+    "price": 0.0006716,
+    "address": "0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d",
+    "addresses": {
+     "base": "0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2024-10-26T08:43:25.502Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 671596,
+    "image": "https://coin-images.coingecko.com/coins/images/51064/large/Convo_Agent_89ef084f87.jpg?1729926154",
+    "metrics": {
+     "volumeUsd1d": "3.494",
+     "volumeUsd7d": "415.647"
+    },
+    "metadata": {},
+    "tokenId": "c868e431-da51-4085-b1a1-1156387022ac",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x80881a00d0f5a6e96a8a91309ee7ee8822b87c046d1dc78a025c6dcb3ae7f2c0": {
+    "key": "arbitrum:0x80881a00d0f5a6e96a8a91309ee7ee8822b87c046d1dc78a025c6dcb3ae7f2c0",
+    "name": "Uniswap V4 LP USDT/NVOx",
+    "decimals": 18,
+    "symbol": "USDT/NVOX",
+    "price": 9007199254740990,
+    "address": "0x80881a00d0f5a6e96a8a91309ee7ee8822b87c046d1dc78a025c6dcb3ae7f2c0",
+    "addresses": {
+     "arbitrum": "0x80881a00d0f5a6e96a8a91309ee7ee8822b87c046d1dc78a025c6dcb3ae7f2c0"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:52.746Z",
+    "createdAt": "2026-10-16T14:24:10.103Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "4328b06b-471d-4cd3-9d1d-7dd2c8263998",
+    "reserves": [
+     "1999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x18ac4fdfa6bdda304f8a5e5731682ab1ded61284": {
+    "key": "ethereum:0x18ac4fdfa6bdda304f8a5e5731682ab1ded61284",
+    "name": "UniswapV2 LP INVOX/WETH",
+    "decimals": 18,
+    "symbol": "INVOX/WETH",
+    "price": 2.834429160081612,
+    "address": "0x18ac4fdfa6bdda304f8a5e5731682ab1ded61284",
+    "addresses": {
+     "ethereum": "0x18ac4fdfa6bdda304f8a5e5731682ab1ded61284"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:15:10.147Z",
+    "createdAt": "2025-09-08T07:18:49.508Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4485561db76614ff727f8e0a3ea95690b8b16022",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 11123.10322788666,
+    "metrics": {
+     "apy": "0.043",
+     "baseApy": "0.043",
+     "volumeUsd1d": "4.331",
+     "volumeUsd7d": "4.331"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "70d3d2f6-2bc5-4f95-bf74-b7d10f178150",
+    "totalSupply": "3924.283374069716693705",
+    "reserves": [
+     "6661646.36746248077609146",
+     "2.380758286106316976"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c": {
+    "key": "arbitrum:0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+    "name": "Novo Nordisk (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVO",
+    "price": 39.21,
+    "address": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+    "addresses": {
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+     "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+     "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4132.9,
+    "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
+    "metrics": {
+     "volumeUsd1d": "51.45",
+     "volumeUsd7d": "4146.996"
+    },
+    "metadata": {},
+    "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
+    "totalSupply": "105.395748223",
+    "circulatingSupply": "105.395748223",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "bsc:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "bsc": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5705149.590725768,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "fd618dfd-04b5-4f08-8f8f-5186a5bce211",
+    "totalSupply": "146812.907635763460540823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xce6709d66854e09de838cc56e7f4a0661fa3c432": {
+    "key": "base:0xce6709d66854e09de838cc56e7f4a0661fa3c432",
+    "name": "Uniswap V3 Wrapped Ether/Prefrontal Cortex Convo Agent by Virtuals 1%",
+    "decimals": 18,
+    "symbol": "WETH/CONVO",
+    "price": 9007199254740990,
+    "address": "0xce6709d66854e09de838cc56e7f4a0661fa3c432",
+    "addresses": {
+     "base": "0xce6709d66854e09de838cc56e7f4a0661fa3c432"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://coin-images.coingecko.com/coins/images/51064/large/Convo_Agent_89ef084f87.jpg?1729926154"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.430Z",
+    "createdAt": "2025-07-23T11:01:01.586Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d"
+    ],
+    "liquidity": 959.0121002239764,
+    "metrics": {
+     "apy": "0.94",
+     "baseApy": "0.94",
+     "volumeUsd1d": "2.472",
+     "volumeUsd7d": "10.642"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "9d4834bf-a6d7-4d79-a557-05c2cb1dd364",
+    "reserves": [
+     "0.230162486248893597",
+     "627279.901691220609538665"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759": {
+    "key": "ethereum:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+    "name": "Novo Nordisk (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVO",
+    "price": 39.21,
+    "address": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+    "addresses": {
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+     "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+     "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4132.9,
+    "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
+    "metrics": {
+     "volumeUsd1d": "51.45",
+     "volumeUsd7d": "4148.151"
+    },
+    "metadata": {},
+    "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
+    "totalSupply": "105.395748223",
+    "circulatingSupply": "105.395748223",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf253d1d82563de437cd0f5cac88c3770b8241e434a8564fe297132b646bded20": {
+    "key": "ethereum:0xf253d1d82563de437cd0f5cac88c3770b8241e434a8564fe297132b646bded20",
+    "name": "Uniswap V4 LP NVOon/EGP",
+    "decimals": 18,
+    "symbol": "NVOON/EGP",
+    "price": 9007199254740990,
+    "address": "0xf253d1d82563de437cd0f5cac88c3770b8241e434a8564fe297132b646bded20",
+    "addresses": {
+     "ethereum": "0xf253d1d82563de437cd0f5cac88c3770b8241e434a8564fe297132b646bded20"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.505Z",
+    "createdAt": "2026-10-14T06:54:36.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20073.99431707002,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.33"
+    },
+    "tokenId": "4d31e01f-514b-47a0-bd23-c9c844894850",
+    "reserves": [
+     "0.712411967740171361",
+     "19999.999999999999999997"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x3268d7efa254e648ffe968664e47ca226e27cd04": {
+    "key": "base:0x3268d7efa254e648ffe968664e47ca226e27cd04",
+    "name": "UniswapV2 LP VIRTUAL/CONVO",
+    "decimals": 18,
+    "symbol": "VIRTUAL/CONVO",
+    "price": 0.04539507644301153,
+    "address": "0x3268d7efa254e648ffe968664e47ca226e27cd04",
+    "addresses": {
+     "base": "0x3268d7efa254e648ffe968664e47ca226e27cd04"
+    },
+    "platform": "uniswapv2",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51064/large/Convo_Agent_89ef084f87.jpg?1729926154",
+     "https://assets.coingecko.com/coins/images/34057/large/WhatsApp_Image_2023-12-25_at_00.04.11.jpeg?1703749465"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.394Z",
+    "createdAt": "2024-10-26T08:45:56.236Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+     "0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d"
+    ],
+    "liquidity": 703258.916151199,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "volumeUsd1d": "3.599",
+     "volumeUsd7d": "317.797"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "d0a2ffbd-35d3-4c7a-b577-fd13166daf5b",
+    "totalSupply": "15491964.575366721897653193",
+    "reserves": [
+     "563174.710126478530427331",
+     "524297733.826562620695590722"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4485561db76614ff727f8e0a3ea95690b8b16022": {
+    "key": "ethereum:0x4485561db76614ff727f8e0a3ea95690b8b16022",
+    "name": "Invox Finance Token",
+    "decimals": 18,
+    "symbol": "INVOX",
+    "price": 0.0008347656915015508,
+    "address": "0x4485561db76614ff727f8e0a3ea95690b8b16022",
+    "addresses": {
+     "ethereum": "0x4485561db76614ff727f8e0a3ea95690b8b16022"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 387331.28085671953,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "4.32",
+     "volumeUsd7d": "4.32"
+    },
+    "metadata": {},
+    "tokenId": "54e0e0b1-24b0-4eb1-a386-5dd739460ccf",
+    "totalSupply": "464000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc4024e2902aba1d554fae231a72086217425af152cfca98ccfe2697f6d81508f": {
+    "key": "ethereum:0xc4024e2902aba1d554fae231a72086217425af152cfca98ccfe2697f6d81508f",
+    "name": "Uniswap V4 LP NVOon/wUSDC",
+    "decimals": 18,
+    "symbol": "NVOON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xc4024e2902aba1d554fae231a72086217425af152cfca98ccfe2697f6d81508f",
+    "addresses": {
+     "ethereum": "0xc4024e2902aba1d554fae231a72086217425af152cfca98ccfe2697f6d81508f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.931Z",
+    "createdAt": "2026-09-28T10:37:32.126Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "a2e11a0b-cfd5-4ec3-9b1b-4cfa24189404",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "ethereum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7780496.140272811,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "d45dbadb-a41b-41d9-b06e-f60fd227d667",
+    "totalSupply": "200218.634592712591281682",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x28151f5888833d3d767c4d6945a0ee50d1b193e3": {
+    "key": "ethereum:0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+    "name": "Novo Nordisk (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVOON",
+    "price": 39.97,
+    "address": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+    "addresses": {
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2100256,
+    "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
+    "metrics": {
+     "volumeUsd1d": "1084288.793",
+     "volumeUsd7d": "7723084.284"
+    },
+    "metadata": {},
+    "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
+    "totalSupply": "52560.77182835847",
+    "circulatingSupply": "52560.77182835847",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
+    "key": "arbitrum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "name": "Novo Nordisk xStock",
+    "decimals": 18,
+    "symbol": "NVOX",
+    "price": 38.86,
+    "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
+    "addresses": {
+     "arbitrum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8416280.164120287,
+    "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "novo-nordisk-xstock"
+    },
+    "tokenId": "74f9ba66-d8f5-4dd0-b792-4b88e98224c6",
+    "totalSupply": "216579.520435416550843279",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe661ff5de22e7fe83450fa3c5b67a239cc9a32cfa6b9cbf55437c95cefee70e4": {
+    "key": "ethereum:0xe661ff5de22e7fe83450fa3c5b67a239cc9a32cfa6b9cbf55437c95cefee70e4",
+    "name": "Uniswap V4 LP USDT/NVOx",
+    "decimals": 18,
+    "symbol": "USDT/NVOX",
+    "price": 9007199254740990,
+    "address": "0xe661ff5de22e7fe83450fa3c5b67a239cc9a32cfa6b9cbf55437c95cefee70e4",
+    "addresses": {
+     "ethereum": "0xe661ff5de22e7fe83450fa3c5b67a239cc9a32cfa6b9cbf55437c95cefee70e4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.719Z",
+    "createdAt": "2026-10-18T18:58:13.728Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "2f70ca37-b198-4526-8d2b-44a3e37e87b5",
+    "reserves": [
+     "4000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f": {
+    "key": "base:0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+    "name": "Novo Nordisk (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVO",
+    "price": 39.21,
+    "address": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+    "addresses": {
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
+     "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
+     "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4132.9,
+    "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
+    "metrics": {
+     "volumeUsd1d": "51.45",
+     "volumeUsd7d": "4147.85"
+    },
+    "metadata": {},
+    "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
+    "totalSupply": "105.395748223",
+    "circulatingSupply": "105.395748223",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x0e49db0b454608762c05f28249b8e162692b0ece": {
+    "key": "arbitrum:0x0e49db0b454608762c05f28249b8e162692b0ece",
+    "name": "Novo Nordisk A/S rStock",
+    "decimals": 18,
+    "symbol": "RNVO",
+    "price": 38.7,
+    "address": "0x0e49db0b454608762c05f28249b8e162692b0ece",
+    "addresses": {
+     "arbitrum": "0x0e49db0b454608762c05f28249b8e162692b0ece"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 295228,
+    "image": "https://coin-images.coingecko.com/coins/images/102177061/large/a14ddaa9de79c3720bf617e16ce708ac.png?1789116705",
+    "metrics": {
+     "volumeUsd1d": "193.428",
+     "volumeUsd7d": "76968.709"
+    },
+    "metadata": {},
+    "tokenId": "76944f57-690a-470d-87ea-c271fdd92147",
+    "totalSupply": "7629.486901642999",
+    "circulatingSupply": "7629.486901642999",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

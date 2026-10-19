@@ -1,0 +1,857 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US19247G1076",
+ "ticker": "COHR",
+ "name": "Coherent",
+ "isin": "US19247G1076",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:18:33Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Coherent",
+   "symbol": "COHR",
+   "slug": "coherent",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 229.3803432489994,
+     "tokenized_market_cap": 10468695.65294967,
+     "tokenized_volume_24h": 1818138.55407812,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 188,
+   "asset_type": "stock",
+   "rwa_rank": 343,
+   "has_tokens": true,
+   "average_tokenized_price": 229.3803432489994,
+   "tokenized_market_cap": 10468695.65294967,
+   "tokenized_volume_24h": 1818138.55407812,
+   "last_updated": "2026-10-18T20:14:25.262Z",
+   "tokens": [
+    {
+     "symbol": "COHRon",
+     "name": "Coherent Tokenized Stock (Ondo)",
+     "price": 231.5966250104213,
+     "crypto_id": 39751,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1177697.08,
+     "volume_24h": 879568.90503261
+    },
+    {
+     "symbol": "COHR",
+     "name": "Coherent (Derivatives)",
+     "price": 227.50593857919992,
+     "crypto_id": 39995,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "rCOHR",
+     "name": "Coherent Tokenized Stock (Reality)",
+     "price": 231.40667421321433,
+     "crypto_id": 40626,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 260686.36,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "COHRB",
+     "name": "Coherent Tokenized bStocks",
+     "price": 227.18183424456993,
+     "crypto_id": 40965,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 9028291.55,
+     "volume_24h": 936353.48151916
+    },
+    {
+     "symbol": "wCOHRx",
+     "name": "Wrapped Coherent Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41149,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "COHR",
+     "market_url": "https://www.binance.com/en/stocks/EQ_COHR"
+    }
+   ]
+  },
+  "info": {
+   "39751": {
+    "id": 39751,
+    "symbol": "COHRon",
+    "name": "Coherent Tokenized Stock (Ondo)",
+    "slug": "coherent-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39751.png",
+    "date_added": "2026-03-24T02:56:06.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "BXMkru8ded26p71gJ3AMMwJmwZaYYfQjRo8vbZzondo"
+    },
+    "contract_address": [
+     {
+      "contract_address": "BXMkru8ded26p71gJ3AMMwJmwZaYYfQjRo8vbZzondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x2B7727076B9C9B1834a2f95B81f12EEdD30db9f1",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x0585756aAFB241b0f8A9Df62Db26c566091Bde0b",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "39995": {
+    "id": 39995,
+    "symbol": "COHR",
+    "name": "Coherent (Derivatives)",
+    "slug": "coherent-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39995.png",
+    "date_added": "2026-05-13T10:22:25.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40626": {
+    "id": 40626,
+    "symbol": "rCOHR",
+    "name": "Coherent Tokenized Stock (Reality)",
+    "slug": "coherent-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40626.png",
+    "date_added": "2026-07-02T07:39:12.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40965": {
+    "id": 40965,
+    "symbol": "COHRB",
+    "name": "Coherent Tokenized bStocks",
+    "slug": "coherent-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40965.png",
+    "date_added": "2026-08-04T17:11:01.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41149": {
+    "id": 41149,
+    "symbol": "wCOHRx",
+    "name": "Wrapped Coherent Tokenized Stock (xStock)",
+    "slug": "wrapped-coherent-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41149.png",
+    "date_added": "2026-08-11T16:20:45.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0xB41B6811aa99Bba82426e8C07D7114Dad62B23Ba"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB41B6811aa99Bba82426e8C07D7114Dad62B23Ba",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+   "bsc:0x0585756aafb241b0f8a9df62db26c566091bde0b",
+   "bsc:0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+   "ethereum:0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1"
+  ],
+  "exact": {
+   "ethereum:0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1": {
+    "key": "ethereum:0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+    "name": "Coherent (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "COHRON",
+    "price": 231.37,
+    "address": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+    "addresses": {
+     "ethereum": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "bsc": "0x0585756aafb241b0f8a9df62db26c566091bde0b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1176590,
+    "image": "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+    "metrics": {
+     "volumeUsd1d": "783300.585",
+     "volumeUsd7d": "5954507.163"
+    },
+    "metadata": {},
+    "tokenId": "defe179b-8bda-4a1c-820e-508260940525",
+    "totalSupply": "5085.121957046394",
+    "circulatingSupply": "5085.121957046394",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc0f92951471c10781fb8cb0bde5957c6c8c32c49": {
+    "key": "arbitrum:0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+    "name": "Coherent rStock",
+    "decimals": 18,
+    "symbol": "RCOHR",
+    "price": 231.48,
+    "address": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+    "addresses": {
+     "arbitrum": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 260768,
+    "image": "https://coin-images.coingecko.com/coins/images/102177041/large/92f67af93eb29fa486619731940a45af.png?1789116642",
+    "metrics": {
+     "volumeUsd1d": "13.979",
+     "volumeUsd7d": "93348.82"
+    },
+    "metadata": {},
+    "tokenId": "5d2c4b31-90eb-4d4a-a4fc-172bf0f2d746",
+    "totalSupply": "1126.5291447089999",
+    "circulatingSupply": "1126.5291447089999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0585756aafb241b0f8a9df62db26c566091bde0b": {
+    "key": "bsc:0x0585756aafb241b0f8a9df62db26c566091bde0b",
+    "name": "Coherent (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "COHRON",
+    "price": 231.37,
+    "address": "0x0585756aafb241b0f8a9df62db26c566091bde0b",
+    "addresses": {
+     "ethereum": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "bsc": "0x0585756aafb241b0f8a9df62db26c566091bde0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1176590,
+    "image": "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+    "metrics": {
+     "volumeUsd1d": "784346.792",
+     "volumeUsd7d": "5959130.509"
+    },
+    "metadata": {},
+    "tokenId": "defe179b-8bda-4a1c-820e-508260940525",
+    "totalSupply": "5085.121957046394",
+    "circulatingSupply": "5085.121957046394",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x5131859a059b2446abeefe0f5d313b3c54ff3d36": {
+    "key": "bsc:0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+    "name": "Coherent (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COHRB",
+    "price": 227.38,
+    "address": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+    "addresses": {
+     "bsc": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-07T06:42:28.871Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9036309,
+    "metrics": {
+     "volumeUsd1d": "78551.517",
+     "volumeUsd7d": "3115698.935"
+    },
+    "metadata": {},
+    "tokenId": "829a392a-3e4e-41dc-820a-787288f1826c",
+    "totalSupply": "39740.37618065",
+    "circulatingSupply": "39740.37618065",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "COHR": {
+    "total_items": 11,
+    "pages": 1,
+    "received": 11,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0x92f9f459f1a9a5ad266b182be7bffd1c6c666894": {
+    "key": "robinhood:0x92f9f459f1a9a5ad266b182be7bffd1c6c666894",
+    "name": "Coherent • Robinhood Token",
+    "decimals": 18,
+    "symbol": "COHR",
+    "price": 227.08,
+    "address": "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894",
+    "addresses": {
+     "robinhood": "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x92f9f459f1a9a5ad266b182be7bffd1c6c666894.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-08-07T16:45:31.980Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894",
+    "liquidity": 5378.3920708,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "246.333"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000bf2748d148654427a4034359cbfb6f91",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "47c4e9b3-afd7-475d-b5f4-154c09a008a3",
+    "totalSupply": "23.68501",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf630e3ddabc02fec5c77eae4c65ce42f5a28818ba3ec1826d732648db10e9d28": {
+    "key": "robinhood:0xf630e3ddabc02fec5c77eae4c65ce42f5a28818ba3ec1826d732648db10e9d28",
+    "name": "Uniswap V4 LP USDG/COHR",
+    "decimals": 18,
+    "symbol": "USDG/COHR",
+    "price": 9007199254740990,
+    "address": "0xf630e3ddabc02fec5c77eae4c65ce42f5a28818ba3ec1826d732648db10e9d28",
+    "addresses": {
+     "robinhood": "0xf630e3ddabc02fec5c77eae4c65ce42f5a28818ba3ec1826d732648db10e9d28"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:39.707Z",
+    "createdAt": "2026-09-08T15:09:09.381Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894"
+    ],
+    "liquidity": 1790.5702485366664,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "177.045"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "76270d5a-77c3-409c-96d3-0f8d4ad61f78",
+    "reserves": [
+     "43.58262",
+     "7.693269458061769136"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1": {
+    "key": "ethereum:0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+    "name": "Coherent (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "COHRON",
+    "price": 231.37,
+    "address": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+    "addresses": {
+     "ethereum": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "bsc": "0x0585756aafb241b0f8a9df62db26c566091bde0b"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1176590,
+    "image": "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+    "metrics": {
+     "volumeUsd1d": "783300.585",
+     "volumeUsd7d": "5954507.163"
+    },
+    "metadata": {},
+    "tokenId": "defe179b-8bda-4a1c-820e-508260940525",
+    "totalSupply": "5085.121957046394",
+    "circulatingSupply": "5085.121957046394",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc0f92951471c10781fb8cb0bde5957c6c8c32c49": {
+    "key": "arbitrum:0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+    "name": "Coherent rStock",
+    "decimals": 18,
+    "symbol": "RCOHR",
+    "price": 231.48,
+    "address": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49",
+    "addresses": {
+     "arbitrum": "0xc0f92951471c10781fb8cb0bde5957c6c8c32c49"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 260768,
+    "image": "https://coin-images.coingecko.com/coins/images/102177041/large/92f67af93eb29fa486619731940a45af.png?1789116642",
+    "metrics": {
+     "volumeUsd1d": "13.979",
+     "volumeUsd7d": "93348.82"
+    },
+    "metadata": {},
+    "tokenId": "5d2c4b31-90eb-4d4a-a4fc-172bf0f2d746",
+    "totalSupply": "1126.5291447089999",
+    "circulatingSupply": "1126.5291447089999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0585756aafb241b0f8a9df62db26c566091bde0b": {
+    "key": "bsc:0x0585756aafb241b0f8a9df62db26c566091bde0b",
+    "name": "Coherent (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "COHRON",
+    "price": 231.37,
+    "address": "0x0585756aafb241b0f8a9df62db26c566091bde0b",
+    "addresses": {
+     "ethereum": "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "bsc": "0x0585756aafb241b0f8a9df62db26c566091bde0b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-03-15T13:08:29.292Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1176590,
+    "image": "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+    "metrics": {
+     "volumeUsd1d": "784346.792",
+     "volumeUsd7d": "5959130.509"
+    },
+    "metadata": {},
+    "tokenId": "defe179b-8bda-4a1c-820e-508260940525",
+    "totalSupply": "5085.121957046394",
+    "circulatingSupply": "5085.121957046394",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x526cda6b719dbcf100b8478eee409b9b0917ad04455598ba66aad31adaec59e5": {
+    "key": "ethereum:0x526cda6b719dbcf100b8478eee409b9b0917ad04455598ba66aad31adaec59e5",
+    "name": "Uniswap V4 LP COHRon/wUSDC",
+    "decimals": 18,
+    "symbol": "COHRON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x526cda6b719dbcf100b8478eee409b9b0917ad04455598ba66aad31adaec59e5",
+    "addresses": {
+     "ethereum": "0x526cda6b719dbcf100b8478eee409b9b0917ad04455598ba66aad31adaec59e5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.786Z",
+    "createdAt": "2026-09-28T10:37:14.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "4348d09c-2a2f-4a4f-aebf-f1509f20b748",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xf99a6f44cbae082575091b76beefa05d131a4e6bf8e947fd92c95eaafb530b11": {
+    "key": "bsc:0xf99a6f44cbae082575091b76beefa05d131a4e6bf8e947fd92c95eaafb530b11",
+    "name": "Uniswap V4 LP COHRB/USDT",
+    "decimals": 18,
+    "symbol": "COHRB/USDT",
+    "price": 9007199254740990,
+    "address": "0xf99a6f44cbae082575091b76beefa05d131a4e6bf8e947fd92c95eaafb530b11",
+    "addresses": {
+     "bsc": "0xf99a6f44cbae082575091b76beefa05d131a4e6bf8e947fd92c95eaafb530b11"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.043Z",
+    "createdAt": "2026-08-14T02:14:13.444Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 714.7659970793958,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "d69f001b-517c-4156-afaa-5928aa117a68",
+    "reserves": [
+     "1.213282424387431074",
+     "439.266730276759212853"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x5131859a059b2446abeefe0f5d313b3c54ff3d36": {
+    "key": "bsc:0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+    "name": "Coherent (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "COHRB",
+    "price": 227.38,
+    "address": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36",
+    "addresses": {
+     "bsc": "0x5131859a059b2446abeefe0f5d313b3c54ff3d36"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-08-07T06:42:28.871Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9036309,
+    "metrics": {
+     "volumeUsd1d": "78551.517",
+     "volumeUsd7d": "3115698.935"
+    },
+    "metadata": {},
+    "tokenId": "829a392a-3e4e-41dc-820a-787288f1826c",
+    "totalSupply": "39740.37618065",
+    "circulatingSupply": "39740.37618065",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3d10c4374798f003cbc64eb89bed130816414e6051a2b726c41673621dbd0094": {
+    "key": "ethereum:0x3d10c4374798f003cbc64eb89bed130816414e6051a2b726c41673621dbd0094",
+    "name": "Uniswap V4 LP COHRon/EGP",
+    "decimals": 18,
+    "symbol": "COHRON/EGP",
+    "price": 9007199254740990,
+    "address": "0x3d10c4374798f003cbc64eb89bed130816414e6051a2b726c41673621dbd0094",
+    "addresses": {
+     "ethereum": "0x3d10c4374798f003cbc64eb89bed130816414e6051a2b726c41673621dbd0094"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172481/large/cohron_160x160.png?1773506851",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.449Z",
+    "createdAt": "2026-10-14T06:54:29.022Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2b7727076b9c9b1834a2f95b81f12eedd30db9f1",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20065.998052683663,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.95"
+    },
+    "tokenId": "8441cea0-7edb-4438-98ec-dd8f1cef8f8c",
+    "reserves": [
+     "0.088511224291041438",
+     "19999.999999999999999968"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x12fa5c5cdf005323bfe33ffe2bf7ada9e4a333bd65d9eaf844425207cd0ee231": {
+    "key": "robinhood:0x12fa5c5cdf005323bfe33ffe2bf7ada9e4a333bd65d9eaf844425207cd0ee231",
+    "name": "Uniswap V4 LP ETH/COHR",
+    "decimals": 18,
+    "symbol": "ETH/COHR",
+    "price": 9007199254740990,
+    "address": "0x12fa5c5cdf005323bfe33ffe2bf7ada9e4a333bd65d9eaf844425207cd0ee231",
+    "addresses": {
+     "robinhood": "0x12fa5c5cdf005323bfe33ffe2bf7ada9e4a333bd65d9eaf844425207cd0ee231"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.003Z",
+    "createdAt": "2026-08-20T15:51:56.249Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894"
+    ],
+    "liquidity": 1882.5362044322997,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "283.998"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "0edb1b26-23d8-4c6e-b831-a94e56af77ac",
+    "reserves": [
+     "0.061674747723505772",
+     "7.656143749424223009"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd8df019a93e6168277559efe10f7a2a7b019e2f43c344fc9490dd9686349d43a": {
+    "key": "robinhood:0xd8df019a93e6168277559efe10f7a2a7b019e2f43c344fc9490dd9686349d43a",
+    "name": "Uniswap V4 LP USDG/COHR",
+    "decimals": 18,
+    "symbol": "USDG/COHR",
+    "price": 9007199254740990,
+    "address": "0xd8df019a93e6168277559efe10f7a2a7b019e2f43c344fc9490dd9686349d43a",
+    "addresses": {
+     "robinhood": "0xd8df019a93e6168277559efe10f7a2a7b019e2f43c344fc9490dd9686349d43a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:15:42.486Z",
+    "createdAt": "2026-09-23T05:27:01.389Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x92f9f459f1a9a5ad266b182be7bffd1c6c666894"
+    ],
+    "liquidity": 855.2299661970502,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "42.35"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "10.09"
+    },
+    "tokenId": "d7f24a00-9366-4c5a-aeb1-36b46a7ed01c",
+    "reserves": [
+     "456.204274",
+     "1.757203153941563126"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

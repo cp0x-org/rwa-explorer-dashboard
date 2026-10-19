@@ -1,0 +1,69 @@
+{
+ "run_id": "20261008T211152Z",
+ "started_at": "2026-10-08T21:11:52Z",
+ "mode": "add",
+ "selected": [
+  "NVDA",
+  "AAPL",
+  "MSFT",
+  "AMZN",
+  "GOOGL",
+  "META",
+  "TSLA",
+  "COIN",
+  "SPY",
+  "QQQ"
+ ],
+ "skipped_existing": [
+  "NVDA"
+ ],
+ "completed": [
+  {
+   "ticker": "AAPL",
+   "status": "ok"
+  },
+  {
+   "ticker": "MSFT",
+   "status": "ok"
+  },
+  {
+   "ticker": "AMZN",
+   "status": "ok"
+  },
+  {
+   "ticker": "GOOGL",
+   "status": "ok"
+  },
+  {
+   "ticker": "META",
+   "status": "ok"
+  },
+  {
+   "ticker": "TSLA",
+   "status": "ok"
+  },
+  {
+   "ticker": "COIN",
+   "status": "ok"
+  },
+  {
+   "ticker": "SPY",
+   "status": "ok"
+  },
+  {
+   "ticker": "QQQ",
+   "status": "ok"
+  }
+ ],
+ "failed": {},
+ "warnings": [
+  "CMC rejected ids for /v2/cryptocurrency/info: [39839]"
+ ],
+ "finished_at": "2026-10-08T21:12:34Z",
+ "requests": {
+  "cmc": 4,
+  "portals": 34
+ },
+ "cmc_credits": 3,
+ "exit_code": 0
+}

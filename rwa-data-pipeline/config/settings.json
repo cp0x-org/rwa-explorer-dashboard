@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "portals_page_limit": 250,
+  "requests_per_minute": {"cmc": 20, "portals": 60},
+  "request_timeout_seconds": 30,
+  "max_retries": 4,
+  "max_graph_depth": 3,
+  "min_eligible_liquidity_usd": "10000",
+  "max_position_age_hours": 48,
+  "yield_apy_review_threshold_percent": "1000",
+
+  "chain_mapping": {
+    "Ethereum": "ethereum",
+    "BNB Smart Chain (BEP20)": "bsc",
+    "Arbitrum": "arbitrum",
+    "Base": "base",
+    "HyperEVM": "hyperevm",
+    "Robinhood Chain": "robinhood",
+    "Avalanche C-Chain": "avalanche",
+    "Polygon": "polygon",
+    "Optimism": "optimism",
+    "Sonic": "sonic",
+    "Plasma": "plasma",
+    "Flare": "flare",
+    "Solana": null,
+    "TON": null,
+    "X Layer": null,
+    "Ink": null,
+    "Hyperliquid": null
+  },
+
+  "platform_categories": {
+    "xstocks": "wrapper",
+    "spectra": "yield_market",
+    "spectra-pt": "yield_market",
+    "spectra-yt": "yield_market",
+    "pendle": "yield_market",
+    "pendle-pt": "yield_market",
+    "pendle-yt": "yield_market"
+  },
+
+  "tag_categories": [
+    ["#lending", "lending_supply"],
+    ["#yield-aggregator", "vault"],
+    ["#clp", "dex_lp"],
+    ["#pool", "dex_lp"],
+    ["#staking", "staking"],
+    ["#yield", "vault"],
+    ["#rwa", "wrapper"]
+  ]
+}

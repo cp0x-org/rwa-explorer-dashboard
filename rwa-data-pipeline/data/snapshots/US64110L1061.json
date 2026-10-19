@@ -1,0 +1,2290 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US64110L1061",
+ "ticker": "NFLX",
+ "name": "Netflix",
+ "isin": "US64110L1061",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:38Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Netflix",
+   "symbol": "NFLX",
+   "slug": "netflix",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 70.22199479760077,
+     "tokenized_market_cap": 5682645.458963835,
+     "tokenized_volume_24h": 2501638.98750589,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 37,
+   "asset_type": "stock",
+   "rwa_rank": 45,
+   "has_tokens": true,
+   "average_tokenized_price": 70.22199479760077,
+   "tokenized_market_cap": 5682645.458963835,
+   "tokenized_volume_24h": 2501638.98750589,
+   "last_updated": "2026-10-18T20:14:20.843Z",
+   "tokens": [
+    {
+     "symbol": "NFLXX",
+     "name": "Netflix tokenized stock (xStock)",
+     "price": 70.3988298410597,
+     "crypto_id": 37060,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1974294.74,
+     "volume_24h": 29377.60588976
+    },
+    {
+     "symbol": "NFLX.D",
+     "name": "Netflix tokenized stock (Dinari)",
+     "price": null,
+     "crypto_id": 28617,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "NFLXon",
+     "name": "Netflix Tokenized Stock (Ondo)",
+     "price": 702.4685957933475,
+     "crypto_id": 38032,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 953332.33,
+     "volume_24h": 1664534.61501583
+    },
+    {
+     "symbol": "NFLX",
+     "name": "Netflix (Derivatives)",
+     "price": 70.38564721181041,
+     "crypto_id": 39479,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "NFLX",
+     "name": "Netflix Tokenized ETF (Robinhood)",
+     "price": 70.84836535159491,
+     "crypto_id": 40688,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 757439.41,
+     "volume_24h": 2785.10565709
+    },
+    {
+     "symbol": "NFLXB",
+     "name": "Netflix Tokenized bStocks",
+     "price": 70.30088961055199,
+     "crypto_id": 40973,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 1941280.81,
+     "volume_24h": 800504.72850792
+    },
+    {
+     "symbol": "WNFLXX",
+     "name": "Wrapped Netflix Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37216,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "NFLXc",
+     "name": "Netflix Inc Tokenized Stock (Coinbase)",
+     "price": 70.58836245887558,
+     "crypto_id": 42468,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 57182.75,
+     "volume_24h": 4425.93840717
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "NFLX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_NFLX"
+    }
+   ]
+  },
+  "info": {
+   "37060": {
+    "id": 37060,
+    "symbol": "NFLXX",
+    "name": "Netflix tokenized stock (xStock)",
+    "slug": "netflix-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37060.png",
+    "date_added": "2025-07-01T18:40:23.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsEH7wWfJJu2ZT3UCFeVfALnVA6CP5ur7Ee11KmzVpL"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsEH7wWfJJu2ZT3UCFeVfALnVA6CP5ur7Ee11KmzVpL",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBOkh_7Wk6FlQ6vR03S6BiT3obZ1189MGD16ug3M355Mapq",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     }
+    ]
+   },
+   "28617": {
+    "id": 28617,
+    "symbol": "NFLX.D",
+    "name": "Netflix tokenized stock (Dinari)",
+    "slug": "dinari-nflx",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/28617.png",
+    "date_added": "2023-12-07T10:57:04.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x3AD63B3C0eA6d7A093ff98fdE040baddc389EcDc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x3AD63B3C0eA6d7A093ff98fdE040baddc389EcDc",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "38032": {
+    "id": 38032,
+    "symbol": "NFLXon",
+    "name": "Netflix Tokenized Stock (Ondo)",
+    "slug": "netflix-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38032.png",
+    "date_added": "2025-09-03T10:55:23.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x032deC3372F25C41EA8054B4987a7c4832CDB338"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x032deC3372F25C41EA8054B4987a7c4832CDB338",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "g4KnPrxPLeeKkwvDmZFMtYQPM64eHeShbD55vK6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x81Ebb420a81855f1Bf1B0fF95eCa9d3Bd736ea89",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39479": {
+    "id": 39479,
+    "symbol": "NFLX",
+    "name": "Netflix (Derivatives)",
+    "slug": "netflix-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39479.png",
+    "date_added": "2026-01-29T04:29:34.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40688": {
+    "id": 40688,
+    "symbol": "NFLX",
+    "name": "Netflix Tokenized ETF (Robinhood)",
+    "slug": "netflix-tokenized-etf-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40688.png",
+    "date_added": "2026-08-04T07:31:26.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xE0444EF8BF4eD74f74FD73686e2ddF4C1c5591E8",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40973": {
+    "id": 40973,
+    "symbol": "NFLXB",
+    "name": "Netflix Tokenized bStocks",
+    "slug": "netflix-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40973.png",
+    "date_added": "2026-08-04T03:57:39.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xd6829ea836b6fa224d099d40e54b31262f874631",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "37216": {
+    "id": 37216,
+    "symbol": "WNFLXX",
+    "name": "Wrapped Netflix Tokenized stock (xStock)",
+    "slug": "wrapped-netflix-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37216.png",
+    "date_added": "2025-07-06T11:24:51.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x7d87fD6A379714194a797c0bBB8B40c30D250856"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x7d87fD6A379714194a797c0bBB8B40c30D250856",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xfe0d2545f9e7f3678cb35ed3cdf70488c5570d11",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42468": {
+    "id": 42468,
+    "symbol": "NFLXc",
+    "name": "Netflix Inc Tokenized Stock (Coinbase)",
+    "slug": "netflix-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42468.png",
+    "date_added": "2026-10-08T04:00:03.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb20000000000000000000058B8c947e44011dFE6"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb20000000000000000000058B8c947e44011dFE6",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+   "arbitrum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+   "arbitrum:0xfe0d2545f9e7f3678cb35ed3cdf70488c5570d11",
+   "base:0xb20000000000000000000058b8c947e44011dfe6",
+   "bsc:0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+   "bsc:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+   "bsc:0xd6829ea836b6fa224d099d40e54b31262f874631",
+   "ethereum:0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+   "ethereum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+   "hyperevm:0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+   "robinhood:0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+  ],
+  "exact": {
+   "bsc:0xd6829ea836b6fa224d099d40e54b31262f874631": {
+    "key": "bsc:0xd6829ea836b6fa224d099d40e54b31262f874631",
+    "name": "Netflix (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXB",
+    "price": 70.3,
+    "address": "0xd6829ea836b6fa224d099d40e54b31262f874631",
+    "addresses": {
+     "bsc": "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:42:28.871Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1941298,
+    "metrics": {
+     "volumeUsd1d": "54646.888",
+     "volumeUsd7d": "1339207.792"
+    },
+    "metadata": {},
+    "tokenId": "c1108799-0709-4ca6-8c27-161ccbc34a65",
+    "totalSupply": "27613.886796259998",
+    "circulatingSupply": "27613.886796259998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x032dec3372f25c41ea8054b4987a7c4832cdb338": {
+    "key": "ethereum:0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1107982.186",
+     "volumeUsd7d": "9995886.789"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89": {
+    "key": "hyperevm:0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1104270.974",
+     "volumeUsd7d": "10002340.575"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc": {
+    "key": "arbitrum:0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+    "name": "Dinari NFLX dShares",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.43,
+    "address": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+    "addresses": {
+     "arbitrum": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+     "base": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+     "ethereum": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+     "avalanche": "0x8594968fd6cd9560decd47894a8464422fab958a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35809,
+    "image": "https://coin-images.coingecko.com/coins/images/102174913/large/dinari-logo-green-with-margin.png?1785402541",
+    "metrics": {
+     "volumeUsd1d": "49.961",
+     "volumeUsd7d": "1435.859"
+    },
+    "metadata": {},
+    "tokenId": "5a9cbd07-7a9f-46c3-8120-69ee7d885009",
+    "totalSupply": "508.41321281892255",
+    "circulatingSupply": "508.41321281892255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "arbitrum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "arbitrum": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:15.136Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8575460.95,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "cb202cdf-3b00-4fe3-90b7-f3683955c353",
+    "totalSupply": "121655",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "ethereum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "ethereum": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.605Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7584724,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "cefb2d9f-c44c-4a02-bcdb-02caadfbfcd9",
+    "totalSupply": "107600",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8": {
+    "key": "robinhood:0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "name": "Netflix • Robinhood Token",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.35,
+    "address": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "addresses": {
+     "robinhood": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "liquidity": 752111.3934285,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "114928.102"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000500f14b2a92f44d6998e0e2b9cc9387e",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "265e536a-2695-4ffe-bdca-c22ea820a566",
+    "totalSupply": "10690.99351",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "bsc:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "bsc": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:23.084Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7049000,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "0d44913f-51f4-499b-8037-ec6edb3da85f",
+    "totalSupply": "100000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x7048f5227b032326cc8dbc53cf3fddd947a2c757": {
+    "key": "bsc:0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1104433.381",
+     "volumeUsd7d": "9999622.325"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "NFLX": {
+    "total_items": 35,
+    "pages": 1,
+    "received": 35,
+    "complete": true
+   }
+  },
+  "records": {
+   "bsc:0xd6829ea836b6fa224d099d40e54b31262f874631": {
+    "key": "bsc:0xd6829ea836b6fa224d099d40e54b31262f874631",
+    "name": "Netflix (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXB",
+    "price": 70.3,
+    "address": "0xd6829ea836b6fa224d099d40e54b31262f874631",
+    "addresses": {
+     "bsc": "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-07T06:42:28.871Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1941298,
+    "metrics": {
+     "volumeUsd1d": "54646.888",
+     "volumeUsd7d": "1339207.792"
+    },
+    "metadata": {},
+    "tokenId": "c1108799-0709-4ca6-8c27-161ccbc34a65",
+    "totalSupply": "27613.886796259998",
+    "circulatingSupply": "27613.886796259998",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x3890b611eb11569072c93244f6a6110074295828": {
+    "key": "robinhood:0x3890b611eb11569072c93244f6a6110074295828",
+    "name": "Beefy CLM NFLX-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODNFLX-USDG",
+    "price": 85.57982454851555,
+    "address": "0x3890b611eb11569072c93244f6a6110074295828",
+    "addresses": {
+     "robinhood": "0x3890b611eb11569072c93244f6a6110074295828"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749"
+    ],
+    "poolAddress": "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749",
+    "liquidity": 43059.99789219199,
+    "metrics": {
+     "apy": "0.24",
+     "baseApy": "0.24",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2249.19"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-nflx-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749",
+     "strategyAddress": "0x30e3b0aa970c44b4f0d1014c2344cd5c2d1a9af2",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x3890b611eb11569072c93244f6a6110074295828",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+     ]
+    },
+    "tokenId": "933553b7-a702-4d3b-b89e-a15255131cdc",
+    "totalSupply": "503.155949657049160437",
+    "reserves": [
+     "503.155949657049160437"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x37e33ea3b071695a3d6b5965ff0be0921ff5bad7b337fb57fb1c7dfa8d3ef06f": {
+    "key": "robinhood:0x37e33ea3b071695a3d6b5965ff0be0921ff5bad7b337fb57fb1c7dfa8d3ef06f",
+    "name": "Uniswap V4 LP USDG/NFLX",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0x37e33ea3b071695a3d6b5965ff0be0921ff5bad7b337fb57fb1c7dfa8d3ef06f",
+    "addresses": {
+     "robinhood": "0x37e33ea3b071695a3d6b5965ff0be0921ff5bad7b337fb57fb1c7dfa8d3ef06f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.685Z",
+    "createdAt": "2026-10-09T07:28:32.599Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 9419.948883051615,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1215.123"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 50,
+     "feePercentage": "0.5899"
+    },
+    "tokenId": "b89ac5bc-7c4e-466f-8544-ea6d34ffdd78",
+    "reserves": [
+     "3.985056",
+     "133.844546226746484992"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdfc5aaabbde18612486627b7f483124e906ec5642bcd04db53cd5efc05d312d9": {
+    "key": "ethereum:0xdfc5aaabbde18612486627b7f483124e906ec5642bcd04db53cd5efc05d312d9",
+    "name": "Uniswap V4 LP NFLXon/EGP",
+    "decimals": 18,
+    "symbol": "NFLXON/EGP",
+    "price": 9007199254740990,
+    "address": "0xdfc5aaabbde18612486627b7f483124e906ec5642bcd04db53cd5efc05d312d9",
+    "addresses": {
+     "ethereum": "0xdfc5aaabbde18612486627b7f483124e906ec5642bcd04db53cd5efc05d312d9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.622Z",
+    "createdAt": "2026-10-14T06:54:54.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20058.05331517808,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.91"
+    },
+    "tokenId": "d28369e0-c5d1-419c-bdfb-3d16ab959cd9",
+    "reserves": [
+     "0.037495543011458108",
+     "19999.999999999999999993"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x032dec3372f25c41ea8054b4987a7c4832cdb338": {
+    "key": "ethereum:0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1107982.186",
+     "volumeUsd7d": "9995886.789"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe4930a6215f21aa3b37c01adbded3362f56ae31b9a60066f5f9641e601d5111f": {
+    "key": "robinhood:0xe4930a6215f21aa3b37c01adbded3362f56ae31b9a60066f5f9641e601d5111f",
+    "name": "Uniswap V4 LP USDG/NFLX",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0xe4930a6215f21aa3b37c01adbded3362f56ae31b9a60066f5f9641e601d5111f",
+    "addresses": {
+     "robinhood": "0xe4930a6215f21aa3b37c01adbded3362f56ae31b9a60066f5f9641e601d5111f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.192Z",
+    "createdAt": "2026-07-19T04:41:12.000Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 101506.67143000997,
+    "metrics": {
+     "apy": "4.783",
+     "baseApy": "4.783",
+     "volumeUsd1d": "1210.235",
+     "volumeUsd7d": "45290.144"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "e20ff5e7-0163-498d-89e7-0007d9819bba",
+    "reserves": [
+     "45529.119439",
+     "795.700810106751483565"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x31a03eb2751456ee01b09546fbb5be2e3b9e7ba9": {
+    "key": "robinhood:0x31a03eb2751456ee01b09546fbb5be2e3b9e7ba9",
+    "name": "UniswapV2 LP CHILLZ/NFLX",
+    "decimals": 18,
+    "symbol": "CHILLZ/NFLX",
+    "price": 0.0773471966676437,
+    "address": "0x31a03eb2751456ee01b09546fbb5be2e3b9e7ba9",
+    "addresses": {
+     "robinhood": "0x31a03eb2751456ee01b09546fbb5be2e3b9e7ba9"
+    },
+    "platform": "uniswapv2",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102176662/large/chill.jpg?1788421040",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:26.032Z",
+    "createdAt": "2026-09-03T10:18:57.396Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5b6ef408c4ebb166788c0ca4cb644f12ac757777",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 13850.254555278167,
+    "metrics": {
+     "apy": "0.009",
+     "baseApy": "0.009",
+     "volumeUsd1d": "1.154",
+     "volumeUsd7d": "1864.849"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "c3c0ec8c-a1eb-4033-9bd2-48b237573e4f",
+    "totalSupply": "179066.018575849456211247",
+    "reserves": [
+     "385495049.109617007800517951",
+     "98.406659883132193804"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x0f1a1ca8db34bc35ac8b58805cf49bce68ded8968d3ae599b4e09ed61a5ee9ea": {
+    "key": "ethereum:0x0f1a1ca8db34bc35ac8b58805cf49bce68ded8968d3ae599b4e09ed61a5ee9ea",
+    "name": "Uniswap V4 LP NFLXon/wUSDC",
+    "decimals": 18,
+    "symbol": "NFLXON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x0f1a1ca8db34bc35ac8b58805cf49bce68ded8968d3ae599b4e09ed61a5ee9ea",
+    "addresses": {
+     "ethereum": "0x0f1a1ca8db34bc35ac8b58805cf49bce68ded8968d3ae599b4e09ed61a5ee9ea"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.409Z",
+    "createdAt": "2026-09-28T10:37:11.211Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "a13c73ff-8ce5-4037-83cf-d4e5e02415f6",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc3ce6292ae631e73a6adc6faaad7d10e326a9d11517a6dfcd001345d20097df4": {
+    "key": "robinhood:0xc3ce6292ae631e73a6adc6faaad7d10e326a9d11517a6dfcd001345d20097df4",
+    "name": "Uniswap V4 LP USDG/NFLX",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0xc3ce6292ae631e73a6adc6faaad7d10e326a9d11517a6dfcd001345d20097df4",
+    "addresses": {
+     "robinhood": "0xc3ce6292ae631e73a6adc6faaad7d10e326a9d11517a6dfcd001345d20097df4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.789Z",
+    "createdAt": "2026-09-08T15:09:10.424Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 3384.646048938668,
+    "metrics": {
+     "apy": "0.684",
+     "baseApy": "0.684",
+     "volumeUsd1d": "35.978",
+     "volumeUsd7d": "3144.764"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 15,
+     "feePercentage": "0.1762"
+    },
+    "tokenId": "bfe7a929-688d-4aa4-aede-a888d5e0c8bf",
+    "reserves": [
+     "361.390049",
+     "42.974498933030109205"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x077d7abf542c7d99e3bae81795fbf134a554e6c8ac2b7473ad0392120404821c": {
+    "key": "ethereum:0x077d7abf542c7d99e3bae81795fbf134a554e6c8ac2b7473ad0392120404821c",
+    "name": "Uniswap V4 LP USDT/NFLXx",
+    "decimals": 18,
+    "symbol": "USDT/NFLXX",
+    "price": 9007199254740990,
+    "address": "0x077d7abf542c7d99e3bae81795fbf134a554e6c8ac2b7473ad0392120404821c",
+    "addresses": {
+     "ethereum": "0x077d7abf542c7d99e3bae81795fbf134a554e6c8ac2b7473ad0392120404821c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.577Z",
+    "createdAt": "2026-10-18T18:58:08.613Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "3ec29cb8-e929-4fc1-9ada-59819c4c432c",
+    "reserves": [
+     "3999.999999999999999994",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x8594968fd6cd9560decd47894a8464422fab958a": {
+    "key": "avalanche:0x8594968fd6cd9560decd47894a8464422fab958a",
+    "name": "Dinari NFLX dShares",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.43,
+    "address": "0x8594968fd6cd9560decd47894a8464422fab958a",
+    "addresses": {
+     "arbitrum": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+     "base": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+     "ethereum": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+     "avalanche": "0x8594968fd6cd9560decd47894a8464422fab958a"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35809,
+    "image": "https://coin-images.coingecko.com/coins/images/102174913/large/dinari-logo-green-with-margin.png?1785402541",
+    "metrics": {
+     "volumeUsd1d": "49.961",
+     "volumeUsd7d": "1435.685"
+    },
+    "metadata": {},
+    "tokenId": "5a9cbd07-7a9f-46c3-8120-69ee7d885009",
+    "totalSupply": "508.41321281892255",
+    "circulatingSupply": "508.41321281892255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749": {
+    "key": "robinhood:0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749",
+    "name": "Beefy CLM NFLX-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODNFLX-USDG",
+    "price": 85.57982454851555,
+    "address": "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749",
+    "addresses": {
+     "robinhood": "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-01T17:02:14.047Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "poolAddress": "0x59895c0302f41aeaa129d2fa2442cec01e7ef45e",
+    "liquidity": 43059.99789219199,
+    "metrics": {
+     "apy": "0.24",
+     "baseApy": "0.24",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2249.19"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.3",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-nflx-usdg",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0xc1a40784f4aeb84d7469cc93bdb6e23f3fbe5749",
+     "strategyAddress": "0x30e3b0aa970c44b4f0d1014c2344cd5c2d1a9af2",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x3890b611eb11569072c93244f6a6110074295828",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+     ]
+    },
+    "tokenId": "a7b40b34-50c0-4202-ad16-1eb6279098e8",
+    "totalSupply": "503.155949657049161437",
+    "reserves": [
+     "20078.118783",
+     "326.679162888301209999"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89": {
+    "key": "hyperevm:0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1104270.974",
+     "volumeUsd7d": "10002340.575"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc": {
+    "key": "arbitrum:0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+    "name": "Dinari NFLX dShares",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.43,
+    "address": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+    "addresses": {
+     "arbitrum": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+     "base": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+     "ethereum": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+     "avalanche": "0x8594968fd6cd9560decd47894a8464422fab958a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35809,
+    "image": "https://coin-images.coingecko.com/coins/images/102174913/large/dinari-logo-green-with-margin.png?1785402541",
+    "metrics": {
+     "volumeUsd1d": "49.961",
+     "volumeUsd7d": "1435.859"
+    },
+    "metadata": {},
+    "tokenId": "5a9cbd07-7a9f-46c3-8120-69ee7d885009",
+    "totalSupply": "508.41321281892255",
+    "circulatingSupply": "508.41321281892255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x600751e5a6224deca2fcc627b22121c968fd2ad15e07b94d2262b8d092d9c53b": {
+    "key": "ethereum:0x600751e5a6224deca2fcc627b22121c968fd2ad15e07b94d2262b8d092d9c53b",
+    "name": "Uniswap V4 LP USDCc/NFLXx",
+    "decimals": 18,
+    "symbol": "USDCC/NFLXX",
+    "price": 9007199254740990,
+    "address": "0x600751e5a6224deca2fcc627b22121c968fd2ad15e07b94d2262b8d092d9c53b",
+    "addresses": {
+     "ethereum": "0x600751e5a6224deca2fcc627b22121c968fd2ad15e07b94d2262b8d092d9c53b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.948Z",
+    "createdAt": "2026-10-09T07:23:52.348Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    ],
+    "liquidity": 2999.2151372049475,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.5821"
+    },
+    "tokenId": "aa1cf5ac-7653-41cb-afa6-787ce1a42689",
+    "reserves": [
+     "2999.999999999999999974",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6e34bab336dc07ea6ec001e1c9668cdeccde8d60022a45b1d31b1e8f265aa4cd": {
+    "key": "bsc:0x6e34bab336dc07ea6ec001e1c9668cdeccde8d60022a45b1d31b1e8f265aa4cd",
+    "name": "Uniswap V4 LP USDT/NFLXB",
+    "decimals": 18,
+    "symbol": "USDT/NFLXB",
+    "price": 9007199254740990,
+    "address": "0x6e34bab336dc07ea6ec001e1c9668cdeccde8d60022a45b1d31b1e8f265aa4cd",
+    "addresses": {
+     "bsc": "0x6e34bab336dc07ea6ec001e1c9668cdeccde8d60022a45b1d31b1e8f265aa4cd"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.232Z",
+    "createdAt": "2026-09-28T10:59:45.199Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    ],
+    "liquidity": 631.6577933449455,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "20.443"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "1e658cdd-6cff-4892-a3c3-3bfb8bce2c3a",
+    "reserves": [
+     "381.038011351586468006",
+     "3.569405190022425548"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x2697ad04aed55beda8f865bb827249d5f7cb25982f804442c9b4749784fe033d": {
+    "key": "robinhood:0x2697ad04aed55beda8f865bb827249d5f7cb25982f804442c9b4749784fe033d",
+    "name": "Uniswap V4 LP USDG/NFLX",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0x2697ad04aed55beda8f865bb827249d5f7cb25982f804442c9b4749784fe033d",
+    "addresses": {
+     "robinhood": "0x2697ad04aed55beda8f865bb827249d5f7cb25982f804442c9b4749784fe033d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.457Z",
+    "createdAt": "2026-10-09T07:28:36.223Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 580.1891398254448,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9510,
+     "feePercentage": "95.1"
+    },
+    "tokenId": "47877722-9ad3-4b16-8d8b-f77f99471d0c",
+    "reserves": [
+     "118.243338",
+     "6.566393771505967243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "arbitrum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "arbitrum": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:15.136Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8575460.95,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "cb202cdf-3b00-4fe3-90b7-f3683955c353",
+    "totalSupply": "121655",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x16da39788135332b00eec0bdc883f00b1faa59a2": {
+    "key": "ethereum:0x16da39788135332b00eec0bdc883f00b1faa59a2",
+    "name": "Uniswap V3 Netflix (Ondo Tokenized)/Tether USD 0.3%",
+    "decimals": 18,
+    "symbol": "NFLXON/USDT",
+    "price": 9007199254740990,
+    "address": "0x16da39788135332b00eec0bdc883f00b1faa59a2",
+    "addresses": {
+     "ethereum": "0x16da39788135332b00eec0bdc883f00b1faa59a2"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.887Z",
+    "createdAt": "2026-10-08T07:21:11.276Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2054.026947378767,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "10259.271"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "86907a92-4981-4a22-83a1-6f8cae6cf280",
+    "reserves": [
+     "1.466049494384929487",
+     "1025.546341"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "ethereum:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "ethereum": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.605Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7584724,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "cefb2d9f-c44c-4a02-bcdb-02caadfbfcd9",
+    "totalSupply": "107600",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928": {
+    "key": "ethereum:0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+    "name": "Dinari NFLX dShares",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.43,
+    "address": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+    "addresses": {
+     "arbitrum": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+     "base": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+     "ethereum": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+     "avalanche": "0x8594968fd6cd9560decd47894a8464422fab958a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35809,
+    "image": "https://coin-images.coingecko.com/coins/images/102174913/large/dinari-logo-green-with-margin.png?1785402541",
+    "metrics": {
+     "volumeUsd1d": "49.961",
+     "volumeUsd7d": "1436.407"
+    },
+    "metadata": {},
+    "tokenId": "5a9cbd07-7a9f-46c3-8120-69ee7d885009",
+    "totalSupply": "508.41321281892255",
+    "circulatingSupply": "508.41321281892255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xbe77f3af2bbf537defc7e3f946ffc417bb73c540": {
+    "key": "arbitrum:0xbe77f3af2bbf537defc7e3f946ffc417bb73c540",
+    "name": "Netflix rStock",
+    "decimals": 18,
+    "symbol": "RNFLX",
+    "price": 70.29,
+    "address": "0xbe77f3af2bbf537defc7e3f946ffc417bb73c540",
+    "addresses": {
+     "arbitrum": "0xbe77f3af2bbf537defc7e3f946ffc417bb73c540"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 221957,
+    "image": "https://coin-images.coingecko.com/coins/images/102177062/large/c18a2e4d30c14d108de0849707adfd50.png?1789116709",
+    "metrics": {
+     "volumeUsd1d": "138.542",
+     "volumeUsd7d": "54237.87"
+    },
+    "metadata": {},
+    "tokenId": "2e38d61b-9959-4f67-ad52-4de491fb9d24",
+    "totalSupply": "3157.905634444",
+    "circulatingSupply": "3157.905634444",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x59895c0302f41aeaa129d2fa2442cec01e7ef45e": {
+    "key": "robinhood:0x59895c0302f41aeaa129d2fa2442cec01e7ef45e",
+    "name": "Uniswap V3 Global Dollar/Netflix  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0x59895c0302f41aeaa129d2fa2442cec01e7ef45e",
+    "addresses": {
+     "robinhood": "0x59895c0302f41aeaa129d2fa2442cec01e7ef45e"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.965Z",
+    "createdAt": "2026-08-03T00:38:33.305Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 194640.3320093338,
+    "metrics": {
+     "apy": "0.177",
+     "baseApy": "0.177",
+     "volumeUsd1d": "315.004",
+     "volumeUsd7d": "445298.241"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "4b4f3b6f-006e-41fa-a6be-6803904375e8",
+    "reserves": [
+     "48323.247247",
+     "2079.844843814268681996"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8": {
+    "key": "robinhood:0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "name": "Netflix • Robinhood Token",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.35,
+    "address": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "addresses": {
+     "robinhood": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+    "liquidity": 752111.3934285,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "114928.102"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000500f14b2a92f44d6998e0e2b9cc9387e",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "265e536a-2695-4ffe-bdca-c22ea820a566",
+    "totalSupply": "10690.99351",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc86ffc4c06c08fe68938c1de45829e475482d88525b3210b0a42a35705169b40": {
+    "key": "arbitrum:0xc86ffc4c06c08fe68938c1de45829e475482d88525b3210b0a42a35705169b40",
+    "name": "Uniswap V4 LP NFLXx/USDT",
+    "decimals": 18,
+    "symbol": "NFLXX/USDT",
+    "price": 9007199254740990,
+    "address": "0xc86ffc4c06c08fe68938c1de45829e475482d88525b3210b0a42a35705169b40",
+    "addresses": {
+     "arbitrum": "0xc86ffc4c06c08fe68938c1de45829e475482d88525b3210b0a42a35705169b40"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.805Z",
+    "createdAt": "2026-10-16T14:24:04.147Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "81582c1d-0bd6-459c-9c26-58b994975cc0",
+    "reserves": [
+     "0",
+     "1999.999999999999999993"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x35c6fc86f413a48157e7d1785bf209b07f4e5110": {
+    "key": "base:0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+    "name": "Dinari NFLX dShares",
+    "decimals": 18,
+    "symbol": "NFLX",
+    "price": 70.43,
+    "address": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+    "addresses": {
+     "arbitrum": "0x3ad63b3c0ea6d7a093ff98fde040baddc389ecdc",
+     "base": "0x35c6fc86f413a48157e7d1785bf209b07f4e5110",
+     "ethereum": "0xc4c29b8cf6fc1cd975d7df3442b4487fe73ba928",
+     "avalanche": "0x8594968fd6cd9560decd47894a8464422fab958a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35809,
+    "image": "https://coin-images.coingecko.com/coins/images/102174913/large/dinari-logo-green-with-margin.png?1785402541",
+    "metrics": {
+     "volumeUsd1d": "49.961",
+     "volumeUsd7d": "1435.298"
+    },
+    "metadata": {},
+    "tokenId": "5a9cbd07-7a9f-46c3-8120-69ee7d885009",
+    "totalSupply": "508.41321281892255",
+    "circulatingSupply": "508.41321281892255",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961": {
+    "key": "bsc:0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "name": "Netflix xStock",
+    "decimals": 18,
+    "symbol": "NFLXX",
+    "price": 70.49,
+    "address": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961",
+    "addresses": {
+     "bsc": "0xa6a65ac27e76cd53cb790473e4345c46e5ebf961"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:23.084Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7049000,
+    "image": "https://coin-images.coingecko.com/coins/images/55632/large/Ticker_NFLX__Company_Name_Netflix_Inc.__size_200x200_2x.png?1746862692",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "netflix-xstock"
+    },
+    "tokenId": "0d44913f-51f4-499b-8037-ec6edb3da85f",
+    "totalSupply": "100000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xdc15311937d13606c8e0d716c33ce8c9899df658": {
+    "key": "ethereum:0xdc15311937d13606c8e0d716c33ce8c9899df658",
+    "name": "Uniswap V3 Netflix (Ondo Tokenized)/USD Coin 0.3%",
+    "decimals": 18,
+    "symbol": "NFLXON/USDC",
+    "price": 9007199254740990,
+    "address": "0xdc15311937d13606c8e0d716c33ce8c9899df658",
+    "addresses": {
+     "ethereum": "0xdc15311937d13606c8e0d716c33ce8c9899df658"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.255Z",
+    "createdAt": "2026-10-12T05:08:30.867Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x032dec3372f25c41ea8054b4987a7c4832cdb338",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2032.1918036568698,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "9119.62"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "fe756fb8-9c98-46e3-b647-68fef3952426",
+    "reserves": [
+     "1.434573922747666497",
+     "1025.163007"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xea75ea625d83ae276b9ae8b0a3dc205916ee65cf": {
+    "key": "robinhood:0xea75ea625d83ae276b9ae8b0a3dc205916ee65cf",
+    "name": "Uniswap V3 Global Dollar/Netflix  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/NFLX",
+    "price": 9007199254740990,
+    "address": "0xea75ea625d83ae276b9ae8b0a3dc205916ee65cf",
+    "addresses": {
+     "robinhood": "0xea75ea625d83ae276b9ae8b0a3dc205916ee65cf"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.324Z",
+    "createdAt": "2026-07-17T16:26:48.465Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 4068.4735515470907,
+    "metrics": {
+     "apy": "0.232",
+     "baseApy": "0.232",
+     "volumeUsd1d": "2.581",
+     "volumeUsd7d": "2971.626"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "43d045d6-0d84-40c5-a536-91e456035b1c",
+    "reserves": [
+     "1846.155046",
+     "31.589459922488853221"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xafab4441d8b354bba790229c0e235e7e6187b3d0": {
+    "key": "bsc:0xafab4441d8b354bba790229c0e235e7e6187b3d0",
+    "name": "PancakeSwap V3 Tether USD/Netflix 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/NFLXB",
+    "price": 9007199254740990,
+    "address": "0xafab4441d8b354bba790229c0e235e7e6187b3d0",
+    "addresses": {
+     "bsc": "0xafab4441d8b354bba790229c0e235e7e6187b3d0"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.995Z",
+    "createdAt": "2026-08-10T09:04:06.294Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    ],
+    "liquidity": 164304.3456816576,
+    "metrics": {
+     "apy": "2.928",
+     "baseApy": "2.928",
+     "volumeUsd1d": "5274.071",
+     "volumeUsd7d": "261082.095"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "bc1035ac-157e-45ba-8f8e-5d7bac060d46",
+    "reserves": [
+     "75534.028374362468927986",
+     "1263.608121455691821358"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa9b2283e74df7b4b544b29aa42c2bf6804b9cac7dbbd65e2eab2faec1aa34796": {
+    "key": "robinhood:0xa9b2283e74df7b4b544b29aa42c2bf6804b9cac7dbbd65e2eab2faec1aa34796",
+    "name": "Uniswap V4 LP ETH/NFLX",
+    "decimals": 18,
+    "symbol": "ETH/NFLX",
+    "price": 9007199254740990,
+    "address": "0xa9b2283e74df7b4b544b29aa42c2bf6804b9cac7dbbd65e2eab2faec1aa34796",
+    "addresses": {
+     "robinhood": "0xa9b2283e74df7b4b544b29aa42c2bf6804b9cac7dbbd65e2eab2faec1aa34796"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.666Z",
+    "createdAt": "2026-07-19T04:41:00.073Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 5048.993568958361,
+    "metrics": {
+     "apy": "0.029",
+     "baseApy": "0.029",
+     "volumeUsd1d": "0.079",
+     "volumeUsd7d": "555.567"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "1584172b-5dcf-4cfe-8742-73d452e7081c",
+    "reserves": [
+     "0.69336831501866155",
+     "48.7414257564564132"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5ef99bf4ae7096e5fa9e3be002fe61ee304a87bc": {
+    "key": "robinhood:0x5ef99bf4ae7096e5fa9e3be002fe61ee304a87bc",
+    "name": "Uniswap V3 SPDR S&P 500 ETF Trust  Robinhood Token/Netflix  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "SPY/NFLX",
+    "price": 9007199254740990,
+    "address": "0x5ef99bf4ae7096e5fa9e3be002fe61ee304a87bc",
+    "addresses": {
+     "robinhood": "0x5ef99bf4ae7096e5fa9e3be002fe61ee304a87bc"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174165/large/0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8.png?1782444710"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.366Z",
+    "createdAt": "2026-08-24T04:31:21.423Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8"
+    ],
+    "liquidity": 4170.676833373813,
+    "metrics": {
+     "apy": "5.554",
+     "baseApy": "5.554",
+     "volumeUsd1d": "1269.316",
+     "volumeUsd7d": "41349.171"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "374d74e7-e688-4748-9721-8b4ed9d9489c",
+    "reserves": [
+     "3.507634837163521629",
+     "21.250231235207645017"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x9fb721f883f56c0f0788a6723aacece9dbab29ff29a89a0aae0eec5685df6bc1": {
+    "key": "bsc:0x9fb721f883f56c0f0788a6723aacece9dbab29ff29a89a0aae0eec5685df6bc1",
+    "name": "Uniswap V4 LP USDT/NFLXB",
+    "decimals": 18,
+    "symbol": "USDT/NFLXB",
+    "price": 9007199254740990,
+    "address": "0x9fb721f883f56c0f0788a6723aacece9dbab29ff29a89a0aae0eec5685df6bc1",
+    "addresses": {
+     "bsc": "0x9fb721f883f56c0f0788a6723aacece9dbab29ff29a89a0aae0eec5685df6bc1"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.462Z",
+    "createdAt": "2026-08-14T12:55:35.326Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    ],
+    "liquidity": 585.5882545526862,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "ad116318-7608-4c80-9dd4-68aad337119e",
+    "reserves": [
+     "300.125662397888887466",
+     "4.064100913124671441"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7048f5227b032326cc8dbc53cf3fddd947a2c757": {
+    "key": "bsc:0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+    "name": "Netflix (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NFLXON",
+    "price": 702.1,
+    "address": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+    "addresses": {
+     "bsc": "0x7048f5227b032326cc8dbc53cf3fddd947a2c757",
+     "hyperevm": "0x81ebb420a81855f1bf1b0ff95eca9d3bd736ea89",
+     "ethereum": "0x032dec3372f25c41ea8054b4987a7c4832cdb338"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 952629,
+    "image": "https://coin-images.coingecko.com/coins/images/68649/large/nflxon_160x160.png?1756156245",
+    "metrics": {
+     "volumeUsd1d": "1104433.381",
+     "volumeUsd7d": "9999622.325"
+    },
+    "metadata": {},
+    "tokenId": "725fef62-bf3e-4060-81f6-8a59df5c01f6",
+    "totalSupply": "1357.1173622250094",
+    "circulatingSupply": "1357.1173622250094",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x597320c444c32617c89236a9c68525a6e3ed3bc831c029630e1c81fd0990d6cd": {
+    "key": "bsc:0x597320c444c32617c89236a9c68525a6e3ed3bc831c029630e1c81fd0990d6cd",
+    "name": "Uniswap V4 LP USDT/NFLXB",
+    "decimals": 18,
+    "symbol": "USDT/NFLXB",
+    "price": 9007199254740990,
+    "address": "0x597320c444c32617c89236a9c68525a6e3ed3bc831c029630e1c81fd0990d6cd",
+    "addresses": {
+     "bsc": "0x597320c444c32617c89236a9c68525a6e3ed3bc831c029630e1c81fd0990d6cd"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.471Z",
+    "createdAt": "2026-08-29T05:50:27.273Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xd6829ea836b6fa224d099d40e54b31262f874631"
+    ],
+    "liquidity": 691.4308895942617,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 46,
+     "feePercentage": "0.2672"
+    },
+    "tokenId": "d5333142-aa45-4814-a396-59a5e01a3608",
+    "reserves": [
+     "360.798481956269936719",
+     "4.707331095381794601"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

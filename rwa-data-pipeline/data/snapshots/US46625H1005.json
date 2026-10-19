@@ -1,0 +1,1479 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US46625H1005",
+ "ticker": "JPM",
+ "name": "JPMorgan Chase",
+ "isin": "US46625H1005",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:57Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "JPmorgan Chase & Co",
+   "symbol": "JPM",
+   "slug": "jpmorgan",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 342.6233304389897,
+     "tokenized_market_cap": 3998522.2365339575,
+     "tokenized_volume_24h": 1975886.20769022,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 16,
+   "asset_type": "stock",
+   "rwa_rank": 18,
+   "has_tokens": true,
+   "average_tokenized_price": 342.6233304389897,
+   "tokenized_market_cap": 3998522.2365339575,
+   "tokenized_volume_24h": 1975886.20769022,
+   "last_updated": "2026-10-18T20:13:44.436Z",
+   "tokens": [
+    {
+     "symbol": "JPMX",
+     "name": "JPMorgan Chase tokenized stock (xStock)",
+     "price": 337.32681269019776,
+     "crypto_id": 37031,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 451498.67,
+     "volume_24h": 11604.96530263
+    },
+    {
+     "symbol": "JPMon",
+     "name": "JPMorgan Chase Tokenized Stock (Ondo)",
+     "price": 345.1498002631549,
+     "crypto_id": 38082,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 2824113.72,
+     "volume_24h": 918536.76645749
+    },
+    {
+     "symbol": "JPM",
+     "name": "JPmorgan Chase & Co (Derivatives)",
+     "price": 340.1799763602331,
+     "crypto_id": 40013,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "WJPMX",
+     "name": "Wrapped JPMorgan Chase Tokenized stock (xStock)",
+     "price": null,
+     "crypto_id": 37204,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "JPMB",
+     "name": "JPMorgan Chase Tokenized bStocks",
+     "price": 340.480823890507,
+     "crypto_id": 42416,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 722911.22,
+     "volume_24h": 1044122.40846253
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "JPM",
+     "market_url": "https://www.binance.com/en/stocks/EQ_JPM"
+    }
+   ]
+  },
+  "info": {
+   "37031": {
+    "id": 37031,
+    "symbol": "JPMX",
+    "name": "JPMorgan Chase tokenized stock (xStock)",
+    "slug": "jpmorgan-chase-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37031.png",
+    "date_added": "2025-07-01T15:48:48.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsMAqkcKsUewDrzVkait4e5u4y8REgtyS7jWgCpLV2C"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsMAqkcKsUewDrzVkait4e5u4y8REgtyS7jWgCpLV2C",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBWUD28L0CaFpHzFoYxifiNOUAnybaYSRL27i4fvOZNWUUx",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "38082": {
+    "id": 38082,
+    "symbol": "JPMon",
+    "name": "JPMorgan Chase Tokenized Stock (Ondo)",
+    "slug": "jpmorgan-chase-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38082.png",
+    "date_added": "2025-09-03T10:55:29.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x03C1EC4CA9DBb168E6Db0DeF827c085999CBffaF"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x03C1EC4CA9DBb168E6Db0DeF827c085999CBffaF",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "E5Gczsavxcomqf6Cw1sGCKLabL1xYD2FzKxVoB4ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "40013": {
+    "id": 40013,
+    "symbol": "JPM",
+    "name": "JPmorgan Chase & Co (Derivatives)",
+    "slug": "jpmorgan-chase-co-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40013.png",
+    "date_added": "2026-01-29T01:38:26.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "37204": {
+    "id": 37204,
+    "symbol": "WJPMX",
+    "name": "Wrapped JPMorgan Chase Tokenized stock (xStock)",
+    "slug": "wrapped-jpmorgan-chase-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37204.png",
+    "date_added": "2025-07-06T08:43:24.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x15302e0D167EfBcf61129125C89035411842809B"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x15302e0D167EfBcf61129125C89035411842809B",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xab635f839f81a12dc8db8ab31006af14e26292fe",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42416": {
+    "id": 42416,
+    "symbol": "JPMB",
+    "name": "JPMorgan Chase Tokenized bStocks",
+    "slug": "jpmorgan-chase-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42416.png",
+    "date_added": "2026-10-07T05:58:49.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xab635f839f81a12dc8db8ab31006af14e26292fe",
+   "arbitrum:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+   "bsc:0x317bf42b43a394860718266dec445dcc9fd9da49",
+   "bsc:0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+   "bsc:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+   "ethereum:0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+   "ethereum:0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+  ],
+  "exact": {
+   "ethereum:0x03c1ec4ca9dbb168e6db0def827c085999cbffaf": {
+    "key": "ethereum:0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+    "name": "JPMorgan Chase (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMON",
+    "price": 345.49,
+    "address": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+    "addresses": {
+     "bsc": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+     "ethereum": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2826211,
+    "image": "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+    "metrics": {
+     "volumeUsd1d": "507388.066",
+     "volumeUsd7d": "4132984.615"
+    },
+    "metadata": {},
+    "tokenId": "4436927e-4ed5-44b3-b1e5-48616192a5e7",
+    "totalSupply": "8182.284101246293",
+    "circulatingSupply": "8182.284101246293",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "ethereum:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "ethereum": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10524190.899669172,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "47929ebd-3088-4ca9-b779-3aa6f35dfcfd",
+    "totalSupply": "31446.472344904449543429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x317bf42b43a394860718266dec445dcc9fd9da49": {
+    "key": "bsc:0x317bf42b43a394860718266dec445dcc9fd9da49",
+    "name": "JPMorgan Chase (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMON",
+    "price": 345.49,
+    "address": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+    "addresses": {
+     "bsc": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+     "ethereum": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2826211,
+    "image": "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+    "metrics": {
+     "volumeUsd1d": "508353.921",
+     "volumeUsd7d": "4236649.311"
+    },
+    "metadata": {},
+    "tokenId": "4436927e-4ed5-44b3-b1e5-48616192a5e7",
+    "totalSupply": "8182.284101246293",
+    "circulatingSupply": "8182.284101246293",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "arbitrum:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "arbitrum": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.302Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10486474.087537596,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "4695ad56-3b34-4baa-bf4f-7cc2585f957b",
+    "totalSupply": "31333.77382955626835522",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbd49d695ba2cc46c8c603eb62afcd7fff4698281": {
+    "key": "bsc:0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+    "name": "JPMorgan Chase (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMB",
+    "price": 340.6,
+    "address": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+    "addresses": {
+     "bsc": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-09T07:20:40.699Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 723161,
+    "image": "https://coin-images.coingecko.com/coins/images/102179332/large/jpmorgan.png?1791471543",
+    "metrics": {
+     "volumeUsd1d": "1028056.098",
+     "volumeUsd7d": "3110712.61"
+    },
+    "metadata": {},
+    "tokenId": "f9509fbd-0dc2-4d3c-b220-bcd2f5512204",
+    "totalSupply": "2123.20686002",
+    "circulatingSupply": "2123.20686002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "bsc:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "bsc": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.578Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3402045.4607376945,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "5bc04cfd-16e8-4234-887d-8de1ca8ea560",
+    "totalSupply": "10165.373235538573697745",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "JPM": {
+    "total_items": 24,
+    "pages": 1,
+    "received": 24,
+    "complete": true
+   }
+  },
+  "records": {
+   "base:0x687838649383f180024435b96fe014b351854a2d": {
+    "key": "base:0x687838649383f180024435b96fe014b351854a2d",
+    "name": "Dinari JPM",
+    "decimals": 18,
+    "symbol": "JPM",
+    "price": 339.75,
+    "address": "0x687838649383f180024435b96fe014b351854a2d",
+    "addresses": {
+     "base": "0x687838649383f180024435b96fe014b351854a2d",
+     "ethereum": "0x4026f916beda6ca2b347c44517a83f5efab3f569",
+     "avalanche": "0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+     "arbitrum": "0xe15602ceeb794feb4163b049fe82a1f8432781b2"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2362.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102174983/large/dinari-logo-green-with-margin.png?1785402790",
+    "metrics": {
+     "volumeUsd1d": "203.626",
+     "volumeUsd7d": "751.753"
+    },
+    "metadata": {},
+    "tokenId": "f0e7c4db-2ebf-4c18-a560-1b29bad2fc04",
+    "totalSupply": "6.952201694",
+    "circulatingSupply": "6.952201694",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf477df6b045f54075a2a4eb634e1480d1864accfee59b3015ad1ffce47230228": {
+    "key": "ethereum:0xf477df6b045f54075a2a4eb634e1480d1864accfee59b3015ad1ffce47230228",
+    "name": "Uniswap V4 LP JPMon/USDCc",
+    "decimals": 18,
+    "symbol": "JPMON/USDCC",
+    "price": 9007199254740990,
+    "address": "0xf477df6b045f54075a2a4eb634e1480d1864accfee59b3015ad1ffce47230228",
+    "addresses": {
+     "ethereum": "0xf477df6b045f54075a2a4eb634e1480d1864accfee59b3015ad1ffce47230228"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.414Z",
+    "createdAt": "2026-10-16T14:20:30.019Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 5002.133412805947,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.5263"
+    },
+    "tokenId": "5164c6b9-c33c-46e0-a3af-231a2f4a633d",
+    "reserves": [
+     "0",
+     "5000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x03c1ec4ca9dbb168e6db0def827c085999cbffaf": {
+    "key": "ethereum:0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+    "name": "JPMorgan Chase (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMON",
+    "price": 345.49,
+    "address": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+    "addresses": {
+     "bsc": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+     "ethereum": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2826211,
+    "image": "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+    "metrics": {
+     "volumeUsd1d": "507388.066",
+     "volumeUsd7d": "4132984.615"
+    },
+    "metadata": {},
+    "tokenId": "4436927e-4ed5-44b3-b1e5-48616192a5e7",
+    "totalSupply": "8182.284101246293",
+    "circulatingSupply": "8182.284101246293",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x683cd7fb60a13923a669ecf5b6de303a2096b9871471aad59893e28263e3e0a1": {
+    "key": "ethereum:0x683cd7fb60a13923a669ecf5b6de303a2096b9871471aad59893e28263e3e0a1",
+    "name": "Uniswap V4 LP USDT/JPMx",
+    "decimals": 18,
+    "symbol": "USDT/JPMX",
+    "price": 9007199254740990,
+    "address": "0x683cd7fb60a13923a669ecf5b6de303a2096b9871471aad59893e28263e3e0a1",
+    "addresses": {
+     "ethereum": "0x683cd7fb60a13923a669ecf5b6de303a2096b9871471aad59893e28263e3e0a1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.404Z",
+    "createdAt": "2026-10-18T18:58:06.298Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    ],
+    "liquidity": 3529.098283706609,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "a859d2e8-8bf7-4cf2-b811-0f83865cb556",
+    "reserves": [
+     "3999.999999999999999984",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "ethereum:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "ethereum": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:15:44.727Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10524190.899669172,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "47929ebd-3088-4ca9-b779-3aa6f35dfcfd",
+    "totalSupply": "31446.472344904449543429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xe15602ceeb794feb4163b049fe82a1f8432781b2": {
+    "key": "arbitrum:0xe15602ceeb794feb4163b049fe82a1f8432781b2",
+    "name": "Dinari JPM",
+    "decimals": 18,
+    "symbol": "JPM",
+    "price": 339.75,
+    "address": "0xe15602ceeb794feb4163b049fe82a1f8432781b2",
+    "addresses": {
+     "base": "0x687838649383f180024435b96fe014b351854a2d",
+     "ethereum": "0x4026f916beda6ca2b347c44517a83f5efab3f569",
+     "avalanche": "0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+     "arbitrum": "0xe15602ceeb794feb4163b049fe82a1f8432781b2"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2362.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102174983/large/dinari-logo-green-with-margin.png?1785402790",
+    "metrics": {
+     "volumeUsd1d": "203.626",
+     "volumeUsd7d": "751.422"
+    },
+    "metadata": {},
+    "tokenId": "f0e7c4db-2ebf-4c18-a560-1b29bad2fc04",
+    "totalSupply": "6.952201694",
+    "circulatingSupply": "6.952201694",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xb6cfbbe4dd47c748aca1cd6df0486159d5193cb6b37a13dedbce59a6cbd09faa": {
+    "key": "bsc:0xb6cfbbe4dd47c748aca1cd6df0486159d5193cb6b37a13dedbce59a6cbd09faa",
+    "name": "Uniswap V4 LP USDT/JPMB",
+    "decimals": 18,
+    "symbol": "USDT/JPMB",
+    "price": 9007199254740990,
+    "address": "0xb6cfbbe4dd47c748aca1cd6df0486159d5193cb6b37a13dedbce59a6cbd09faa",
+    "addresses": {
+     "bsc": "0xb6cfbbe4dd47c748aca1cd6df0486159d5193cb6b37a13dedbce59a6cbd09faa"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102179332/large/jpmorgan.png?1791471543",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:15:20.102Z",
+    "createdAt": "2026-10-09T07:26:01.818Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281"
+    ],
+    "liquidity": 9386.695471150031,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "155.033"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "3e572c39-1ca5-4491-ba75-d040cf4f9b56",
+    "reserves": [
+     "1719.551499495665240755",
+     "22.515030378276373889"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0a902fa0be1e740955174be617058aea0780ad8a": {
+    "key": "arbitrum:0x0a902fa0be1e740955174be617058aea0780ad8a",
+    "name": "JPMorgan Equity Premium Income ETF rStock",
+    "decimals": 18,
+    "symbol": "RJEPI",
+    "price": 57.3,
+    "address": "0x0a902fa0be1e740955174be617058aea0780ad8a",
+    "addresses": {
+     "arbitrum": "0x0a902fa0be1e740955174be617058aea0780ad8a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T10:57:29.228Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3623.48,
+    "image": "https://coin-images.coingecko.com/coins/images/102177693/large/finnhub_logo20260911-1-lysfu0.png?1789120572",
+    "metrics": {
+     "volumeUsd1d": "217.197",
+     "volumeUsd7d": "5537.47"
+    },
+    "metadata": {},
+    "tokenId": "099aab2d-f5fe-491a-bb30-f7ad342caf2c",
+    "totalSupply": "63.242302173",
+    "circulatingSupply": "63.242302173",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x317bf42b43a394860718266dec445dcc9fd9da49": {
+    "key": "bsc:0x317bf42b43a394860718266dec445dcc9fd9da49",
+    "name": "JPMorgan Chase (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMON",
+    "price": 345.49,
+    "address": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+    "addresses": {
+     "bsc": "0x317bf42b43a394860718266dec445dcc9fd9da49",
+     "ethereum": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2826211,
+    "image": "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+    "metrics": {
+     "volumeUsd1d": "508353.921",
+     "volumeUsd7d": "4236649.311"
+    },
+    "metadata": {},
+    "tokenId": "4436927e-4ed5-44b3-b1e5-48616192a5e7",
+    "totalSupply": "8182.284101246293",
+    "circulatingSupply": "8182.284101246293",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4bf98e0d3dc54337a1bbda485b2b25595a194a71": {
+    "key": "arbitrum:0x4bf98e0d3dc54337a1bbda485b2b25595a194a71",
+    "name": "JPMorgan rStock",
+    "decimals": 18,
+    "symbol": "RJPM",
+    "price": 339,
+    "address": "0x4bf98e0d3dc54337a1bbda485b2b25595a194a71",
+    "addresses": {
+     "arbitrum": "0x4bf98e0d3dc54337a1bbda485b2b25595a194a71"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 42866,
+    "image": "https://coin-images.coingecko.com/coins/images/102177089/large/6fb19f29b31bd2ddfad53d9771d17b5b.png?1789116794",
+    "metrics": {
+     "volumeUsd1d": "186.75",
+     "volumeUsd7d": "22104.266"
+    },
+    "metadata": {},
+    "tokenId": "9c048b61-a118-4898-9303-17acdf56f840",
+    "totalSupply": "126.449322191",
+    "circulatingSupply": "126.449322191",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4026f916beda6ca2b347c44517a83f5efab3f569": {
+    "key": "ethereum:0x4026f916beda6ca2b347c44517a83f5efab3f569",
+    "name": "Dinari JPM",
+    "decimals": 18,
+    "symbol": "JPM",
+    "price": 339.75,
+    "address": "0x4026f916beda6ca2b347c44517a83f5efab3f569",
+    "addresses": {
+     "base": "0x687838649383f180024435b96fe014b351854a2d",
+     "ethereum": "0x4026f916beda6ca2b347c44517a83f5efab3f569",
+     "avalanche": "0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+     "arbitrum": "0xe15602ceeb794feb4163b049fe82a1f8432781b2"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2362.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102174983/large/dinari-logo-green-with-margin.png?1785402790",
+    "metrics": {
+     "volumeUsd1d": "203.626",
+     "volumeUsd7d": "751.749"
+    },
+    "metadata": {},
+    "tokenId": "f0e7c4db-2ebf-4c18-a560-1b29bad2fc04",
+    "totalSupply": "6.952201694",
+    "circulatingSupply": "6.952201694",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "arbitrum:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "arbitrum": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:15:46.302Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10486474.087537596,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "4695ad56-3b34-4baa-bf4f-7cc2585f957b",
+    "totalSupply": "31333.77382955626835522",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5c16405b61181112d305f4a2a79911e2f4b45d9ae992fa4f5f9f033a8b0100f7": {
+    "key": "ethereum:0x5c16405b61181112d305f4a2a79911e2f4b45d9ae992fa4f5f9f033a8b0100f7",
+    "name": "Uniswap V4 LP JPMon/USDT",
+    "decimals": 18,
+    "symbol": "JPMON/USDT",
+    "price": 9007199254740990,
+    "address": "0x5c16405b61181112d305f4a2a79911e2f4b45d9ae992fa4f5f9f033a8b0100f7",
+    "addresses": {
+     "ethereum": "0x5c16405b61181112d305f4a2a79911e2f4b45d9ae992fa4f5f9f033a8b0100f7"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.500Z",
+    "createdAt": "2025-09-26T08:45:50.522Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 804.1699246919702,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "dd632de3-5176-4f20-bf06-770f459ead37",
+    "reserves": [
+     "0.691657274233905969",
+     "565.694619"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x12238085a3e57b2da3d173ed1b0c13e55baf3d76": {
+    "key": "avalanche:0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+    "name": "Dinari JPM",
+    "decimals": 18,
+    "symbol": "JPM",
+    "price": 339.75,
+    "address": "0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+    "addresses": {
+     "base": "0x687838649383f180024435b96fe014b351854a2d",
+     "ethereum": "0x4026f916beda6ca2b347c44517a83f5efab3f569",
+     "avalanche": "0x12238085a3e57b2da3d173ed1b0c13e55baf3d76",
+     "arbitrum": "0xe15602ceeb794feb4163b049fe82a1f8432781b2"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2362.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102174983/large/dinari-logo-green-with-margin.png?1785402790",
+    "metrics": {
+     "volumeUsd1d": "203.626",
+     "volumeUsd7d": "751.876"
+    },
+    "metadata": {},
+    "tokenId": "f0e7c4db-2ebf-4c18-a560-1b29bad2fc04",
+    "totalSupply": "6.952201694",
+    "circulatingSupply": "6.952201694",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xbd49d695ba2cc46c8c603eb62afcd7fff4698281": {
+    "key": "bsc:0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+    "name": "JPMorgan Chase (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "JPMB",
+    "price": 340.6,
+    "address": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281",
+    "addresses": {
+     "bsc": "0xbd49d695ba2cc46c8c603eb62afcd7fff4698281"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-10-09T07:20:40.699Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 723161,
+    "image": "https://coin-images.coingecko.com/coins/images/102179332/large/jpmorgan.png?1791471543",
+    "metrics": {
+     "volumeUsd1d": "1028056.098",
+     "volumeUsd7d": "3110712.61"
+    },
+    "metadata": {},
+    "tokenId": "f9509fbd-0dc2-4d3c-b220-bcd2f5512204",
+    "totalSupply": "2123.20686002",
+    "circulatingSupply": "2123.20686002",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6a3362ed98374ab8a7d6afdeec63505702a208284c9dfb8db8b72c66d157b451": {
+    "key": "ethereum:0x6a3362ed98374ab8a7d6afdeec63505702a208284c9dfb8db8b72c66d157b451",
+    "name": "Uniswap V4 LP JPMon/USDC",
+    "decimals": 18,
+    "symbol": "JPMON/USDC",
+    "price": 9007199254740990,
+    "address": "0x6a3362ed98374ab8a7d6afdeec63505702a208284c9dfb8db8b72c66d157b451",
+    "addresses": {
+     "ethereum": "0x6a3362ed98374ab8a7d6afdeec63505702a208284c9dfb8db8b72c66d157b451"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.814Z",
+    "createdAt": "2025-09-26T08:45:50.488Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 775.8129670967661,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "5755ac12-54e7-4f22-a32a-47db410b12aa",
+    "reserves": [
+     "0.772203126684356009",
+     "509.144667"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x42aa1b84c78deb38308a406ef7e47ba0cf68c686b06151d638f6141d2d0ee255": {
+    "key": "ethereum:0x42aa1b84c78deb38308a406ef7e47ba0cf68c686b06151d638f6141d2d0ee255",
+    "name": "Uniswap V4 LP JPMon/wUSDC",
+    "decimals": 18,
+    "symbol": "JPMON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x42aa1b84c78deb38308a406ef7e47ba0cf68c686b06151d638f6141d2d0ee255",
+    "addresses": {
+     "ethereum": "0x42aa1b84c78deb38308a406ef7e47ba0cf68c686b06151d638f6141d2d0ee255"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.636Z",
+    "createdAt": "2026-09-28T10:37:12.502Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "375adc32-31a5-4c38-90f3-f9afde4b66d4",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x09508d9f5fd0001784198fb969284c5b710c27d63a78aaaef16f9eb75919eb5d": {
+    "key": "ethereum:0x09508d9f5fd0001784198fb969284c5b710c27d63a78aaaef16f9eb75919eb5d",
+    "name": "Uniswap V4 LP JPMon/EGP",
+    "decimals": 18,
+    "symbol": "JPMON/EGP",
+    "price": 9007199254740990,
+    "address": "0x09508d9f5fd0001784198fb969284c5b710c27d63a78aaaef16f9eb75919eb5d",
+    "addresses": {
+     "ethereum": "0x09508d9f5fd0001784198fb969284c5b710c27d63a78aaaef16f9eb75919eb5d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.880Z",
+    "createdAt": "2026-10-14T06:54:25.777Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+    ],
+    "liquidity": 20073.98264967847,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.89"
+    },
+    "tokenId": "a687a45d-128e-4d15-994f-c479ab4ccb37",
+    "reserves": [
+     "0.082385710032200799",
+     "19999.99999999999999991"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x403b6462e57624dbd911e9275ac86de1254d5b04a5aee4aad50c43b529fd37b5": {
+    "key": "ethereum:0x403b6462e57624dbd911e9275ac86de1254d5b04a5aee4aad50c43b529fd37b5",
+    "name": "Uniswap V4 LP JPMon/wUSDC",
+    "decimals": 18,
+    "symbol": "JPMON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x403b6462e57624dbd911e9275ac86de1254d5b04a5aee4aad50c43b529fd37b5",
+    "addresses": {
+     "ethereum": "0x403b6462e57624dbd911e9275ac86de1254d5b04a5aee4aad50c43b529fd37b5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.737Z",
+    "createdAt": "2026-09-30T08:51:49.799Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "9d4510b8-7f26-4bd7-a309-40ac3bf74df1",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd9fc3e075d45254a1d834fea18af8041207dea0a": {
+    "key": "bsc:0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "name": "JPMorgan Chase xStock",
+    "decimals": 18,
+    "symbol": "JPMX",
+    "price": 334.67,
+    "address": "0xd9fc3e075d45254a1d834fea18af8041207dea0a",
+    "addresses": {
+     "bsc": "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:15:54.578Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3402045.4607376945,
+    "image": "https://coin-images.coingecko.com/coins/images/55621/large/Ticker_JPM__Company_Name_JPMorganChase__size_200x200_2x.png?1746861978",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "jpmorgan-chase-xstock"
+    },
+    "tokenId": "5bc04cfd-16e8-4234-887d-8de1ca8ea560",
+    "totalSupply": "10165.373235538573697745",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x3fa5974b87b69afe40e40f743813bd7b5fd779a1289127c043309507657c3eb2": {
+    "key": "ethereum:0x3fa5974b87b69afe40e40f743813bd7b5fd779a1289127c043309507657c3eb2",
+    "name": "Uniswap V4 LP JPMon/USDT",
+    "decimals": 18,
+    "symbol": "JPMON/USDT",
+    "price": 9007199254740990,
+    "address": "0x3fa5974b87b69afe40e40f743813bd7b5fd779a1289127c043309507657c3eb2",
+    "addresses": {
+     "ethereum": "0x3fa5974b87b69afe40e40f743813bd7b5fd779a1289127c043309507657c3eb2"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.806Z",
+    "createdAt": "2025-09-24T08:40:02.433Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 543.9828964907532,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80"
+    },
+    "tokenId": "57d7c5ea-c324-49dd-9eb4-4d2c7cfd0319",
+    "reserves": [
+     "0.182933968741165224",
+     "481.193904"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd4a9c5992c95d137a0d336071193b5418de146f1000e960f5d0fcaa5c021ab1d": {
+    "key": "ethereum:0xd4a9c5992c95d137a0d336071193b5418de146f1000e960f5d0fcaa5c021ab1d",
+    "name": "Uniswap V4 LP JPMon/USDC",
+    "decimals": 18,
+    "symbol": "JPMON/USDC",
+    "price": 9007199254740990,
+    "address": "0xd4a9c5992c95d137a0d336071193b5418de146f1000e960f5d0fcaa5c021ab1d",
+    "addresses": {
+     "ethereum": "0xd4a9c5992c95d137a0d336071193b5418de146f1000e960f5d0fcaa5c021ab1d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68602/large/jpmon_160x160.png?1756129944",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:05.806Z",
+    "createdAt": "2025-09-26T08:45:50.015Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 539.2396204164684,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14000,
+     "feePercentage": "70"
+    },
+    "tokenId": "33ea40b3-6d47-4315-93c2-aa5c81438997",
+    "reserves": [
+     "0.318448062206582864",
+     "429.320319"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x364b5a8e67a4fe1e3e6055655aa8f429ab57ae5dd4ab8d1bf2ac2543f2183ec4": {
+    "key": "arbitrum:0x364b5a8e67a4fe1e3e6055655aa8f429ab57ae5dd4ab8d1bf2ac2543f2183ec4",
+    "name": "Uniswap V4 LP USDT/JPMx",
+    "decimals": 18,
+    "symbol": "USDT/JPMX",
+    "price": 9007199254740990,
+    "address": "0x364b5a8e67a4fe1e3e6055655aa8f429ab57ae5dd4ab8d1bf2ac2543f2183ec4",
+    "addresses": {
+     "arbitrum": "0x364b5a8e67a4fe1e3e6055655aa8f429ab57ae5dd4ab8d1bf2ac2543f2183ec4"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:56.397Z",
+    "createdAt": "2026-10-16T14:24:01.633Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xd9fc3e075d45254a1d834fea18af8041207dea0a"
+    ],
+    "liquidity": 1999.524976005723,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "10d56370-48a0-4d87-9697-f045f39676e0",
+    "reserves": [
+     "1999.999999999999999998",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x7ca286e12bc8ae4137709e39c2a0ec403f447d8c": {
+    "key": "arbitrum:0x7ca286e12bc8ae4137709e39c2a0ec403f447d8c",
+    "name": "JPMorgan Nasdaq Equity Premium Income ETF rStock",
+    "decimals": 18,
+    "symbol": "RJEPQ",
+    "price": 58.69,
+    "address": "0x7ca286e12bc8ae4137709e39c2a0ec403f447d8c",
+    "addresses": {
+     "arbitrum": "0x7ca286e12bc8ae4137709e39c2a0ec403f447d8c"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16217.03,
+    "image": "https://coin-images.coingecko.com/coins/images/102177576/large/1115650499d572b37df35c43e62267b1.png?1789118371",
+    "metrics": {
+     "volumeUsd1d": "59.904",
+     "volumeUsd7d": "10238.41"
+    },
+    "metadata": {},
+    "tokenId": "1998a7eb-4bc3-4404-a5ce-30bdd9fbd580",
+    "totalSupply": "276.337965883",
+    "circulatingSupply": "276.337965883",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

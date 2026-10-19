@@ -1,0 +1,1253 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US0090661010",
+ "ticker": "ABNB",
+ "name": "Airbnb",
+ "isin": "US0090661010",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:47Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Airbnb Inc",
+   "symbol": "ABNB",
+   "slug": "airbnb",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 172.62228688924887,
+     "tokenized_market_cap": 1542439.6561058399,
+     "tokenized_volume_24h": 579091.8151718,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 193,
+   "asset_type": "stock",
+   "rwa_rank": 161,
+   "has_tokens": true,
+   "average_tokenized_price": 172.62228688924887,
+   "tokenized_market_cap": 1542439.6561058399,
+   "tokenized_volume_24h": 579091.8151718,
+   "last_updated": "2026-10-18T20:13:37.569Z",
+   "tokens": [
+    {
+     "symbol": "ABNBon",
+     "name": "Airbnb Tokenized Stock (Ondo)",
+     "price": 173.70140133332728,
+     "crypto_id": 38044,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1552081.92,
+     "volume_24h": 578266.90099611
+    },
+    {
+     "symbol": "wABNBx",
+     "name": "Wrapped Airbnb Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41084,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "ABNB",
+     "market_url": "https://www.binance.com/en/stocks/EQ_ABNB"
+    }
+   ]
+  },
+  "info": {
+   "38044": {
+    "id": 38044,
+    "symbol": "ABNBon",
+    "name": "Airbnb Tokenized Stock (Ondo)",
+    "slug": "airbnb-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38044.png",
+    "date_added": "2025-09-03T10:55:11.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xb035c3d5083bdc80074F380aeBc9Fcb68aBa0A28"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb035c3d5083bdc80074F380aeBc9Fcb68aBa0A28",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "128qNYovdGv2YqayErcJgU7gDwbNVX1VuoxbtWz8ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41084": {
+    "id": 41084,
+    "symbol": "wABNBx",
+    "name": "Wrapped Airbnb Tokenized Stock (xStock)",
+    "slug": "wrapped-airbnb-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41084.png",
+    "date_added": "2026-08-11T16:20:04.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x19d3beD60d022E58e56c44A0786cBDcE79076722"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x19d3beD60d022E58e56c44A0786cBDcE79076722",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+   "ethereum:0xb035c3d5083bdc80074f380aebc9fcb68aba0a28"
+  ],
+  "exact": {
+   "ethereum:0xb035c3d5083bdc80074f380aebc9fcb68aba0a28": {
+    "key": "ethereum:0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+    "name": "Airbnb (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABNBON",
+    "price": 174.16,
+    "address": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+    "addresses": {
+     "ethereum": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+     "bsc": "0xef80743f78d98fc2b47a2253b293152ce8b879ba"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1555283,
+    "image": "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088",
+    "metrics": {
+     "volumeUsd1d": "143730.49",
+     "volumeUsd7d": "1055560.477"
+    },
+    "metadata": {},
+    "tokenId": "11f8cb6f-b3e4-4911-a527-73263b3f8051",
+    "totalSupply": "8935.344814979737",
+    "circulatingSupply": "8935.344814979737",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xef80743f78d98fc2b47a2253b293152ce8b879ba": {
+    "key": "bsc:0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+    "name": "Airbnb (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABNBON",
+    "price": 174.16,
+    "address": "0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+    "addresses": {
+     "ethereum": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+     "bsc": "0xef80743f78d98fc2b47a2253b293152ce8b879ba"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1555283,
+    "image": "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088",
+    "metrics": {
+     "volumeUsd1d": "143698.886",
+     "volumeUsd7d": "1055275.151"
+    },
+    "metadata": {},
+    "tokenId": "11f8cb6f-b3e4-4911-a527-73263b3f8051",
+    "totalSupply": "8935.344814979737",
+    "circulatingSupply": "8935.344814979737",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "ABNB": {
+    "total_items": 23,
+    "pages": 1,
+    "received": 23,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x6c09667f5736c11cf2790f0c44b990455395fa7d027520ed6f33556dfa11159d": {
+    "key": "ethereum:0x6c09667f5736c11cf2790f0c44b990455395fa7d027520ed6f33556dfa11159d",
+    "name": "Uniswap V4 LP ZQ/ABNBon",
+    "decimals": 18,
+    "symbol": "ZQ/ABNBON",
+    "price": 9007199254740990,
+    "address": "0x6c09667f5736c11cf2790f0c44b990455395fa7d027520ed6f33556dfa11159d",
+    "addresses": {
+     "ethereum": "0x6c09667f5736c11cf2790f0c44b990455395fa7d027520ed6f33556dfa11159d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088"
+    ],
+    "updatedAt": "2026-10-18T20:16:37.684Z",
+    "createdAt": "2026-09-30T05:25:12.291Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28"
+    ],
+    "liquidity": 19991.67828147738,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "55"
+    },
+    "tokenId": "19f730b6-83da-4984-ae41-73d036ba784d",
+    "reserves": [
+     "19999.999999999999999995",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbdfd4e51d3c14a232135f04988a42576efb31519": {
+    "key": "bsc:0xbdfd4e51d3c14a232135f04988a42576efb31519",
+    "name": "Aave BNB Smart Chain wstETH",
+    "decimals": 18,
+    "symbol": "ABNBWSTETH",
+    "price": 2909.62,
+    "address": "0xbdfd4e51d3c14a232135f04988a42576efb31519",
+    "addresses": {
+     "bsc": "0xbdfd4e51d3c14a232135f04988a42576efb31519"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://coin-images.coingecko.com/coins/images/69610/large/wsteth.png?1759219970"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-09-30T08:58:04.475Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x26c5e01524d2e6280a48f2c50ff6de7e52e9611c"
+    ],
+    "liquidity": 2546725.8379300972,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0.005",
+     "baseBorrowApy": "0.005",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-3099.589"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0x2c391998308c56d7572a8f501d58cb56fb9fe1c5"
+    },
+    "tokenId": "3309d310-92a2-4773-934f-d59e9c728e10",
+    "totalSupply": "875.277815635752121871",
+    "totalBorrow": "0.268309441162160661",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x75bd1a659bdc62e4c313950d44a2416fab43e785": {
+    "key": "bsc:0x75bd1a659bdc62e4c313950d44a2416fab43e785",
+    "name": "Aave BNB Smart Chain FDUSD",
+    "decimals": 18,
+    "symbol": "ABNBFDUSD",
+    "price": 0.997239,
+    "address": "0x75bd1a659bdc62e4c313950d44a2416fab43e785",
+    "addresses": {
+     "bsc": "0x75bd1a659bdc62e4c313950d44a2416fab43e785"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/31079/large/firstfigital.jpeg?1696529912"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc5f0f7b66764f6ec8c8dff7ba683102295e16409"
+    ],
+    "liquidity": 555407.4765543295,
+    "metrics": {
+     "apy": "4.479",
+     "baseApy": "4.479",
+     "borrowApy": "9.797",
+     "baseBorrowApy": "9.797",
+     "volumeUsd1d": "47.86",
+     "volumeUsd7d": "-3972.914"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0xe628b8a123e6037f1542e662b9f55141a16945c8"
+    },
+    "tokenId": "aca00e29-d99f-4dea-8d1f-ddfd14f54d8a",
+    "totalSupply": "556945.202257763123712491",
+    "totalBorrow": "509424.231580049987040907",
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0": {
+    "key": "bsc:0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0",
+    "name": "Lista DAO BNB Vault",
+    "decimals": 18,
+    "symbol": "LISTABNB",
+    "price": 716.5154046080308,
+    "address": "0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0",
+    "addresses": {
+     "bsc": "0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0"
+    },
+    "platform": "lista",
+    "network": "bsc",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/lista-dao",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.271Z",
+    "createdAt": "2025-08-12T11:39:34.601Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 344119858.02609694,
+    "metrics": {
+     "apy": "0.05",
+     "baseApy": "0.05",
+     "volumeUsd1d": "-1492.654",
+     "volumeUsd7d": "-1644.706"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626"
+    },
+    "tokenId": "9d68ad07-3ed9-4486-8cc4-0bf191343359",
+    "totalSupply": "480268.61085331087611884",
+    "reserves": [
+     "488147.894213911502912863"
+    ],
+    "pricePerShare": "1.016405992776836309",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x92bda97a25f668537ddc952a7d033f3c97079c3134ca350cbf777d79131262aa": {
+    "key": "bsc:0x92bda97a25f668537ddc952a7d033f3c97079c3134ca350cbf777d79131262aa",
+    "name": "Uniswap V4 LP USDT/ListaBNB",
+    "decimals": 18,
+    "symbol": "USDT/LISTABNB",
+    "price": 9007199254740990,
+    "address": "0x92bda97a25f668537ddc952a7d033f3c97079c3134ca350cbf777d79131262aa",
+    "addresses": {
+     "bsc": "0x92bda97a25f668537ddc952a7d033f3c97079c3134ca350cbf777d79131262aa"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.776Z",
+    "createdAt": "2026-04-10T13:19:07.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0"
+    ],
+    "liquidity": 1595.9663144959466,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2,
+     "feePercentage": "99.9901"
+    },
+    "tokenId": "990dfe6e-a5b7-49c8-ac05-927f4ff993c0",
+    "reserves": [
+     "1593.282393764026877157",
+     "0.005558074337586541"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x388f84a2d579b1d3e2275ce5f987cfe5bdef32f029b2162ffba612b5545c6102": {
+    "key": "ethereum:0x388f84a2d579b1d3e2275ce5f987cfe5bdef32f029b2162ffba612b5545c6102",
+    "name": "Uniswap V4 LP EGP/ABNBon",
+    "decimals": 18,
+    "symbol": "EGP/ABNBON",
+    "price": 9007199254740990,
+    "address": "0x388f84a2d579b1d3e2275ce5f987cfe5bdef32f029b2162ffba612b5545c6102",
+    "addresses": {
+     "ethereum": "0x388f84a2d579b1d3e2275ce5f987cfe5bdef32f029b2162ffba612b5545c6102"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088"
+    ],
+    "updatedAt": "2026-10-18T20:16:55.563Z",
+    "createdAt": "2026-10-14T06:54:27.260Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28"
+    ],
+    "liquidity": 20063.777170712296,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.02"
+    },
+    "tokenId": "cefd7fd4-69e2-488b-a1b2-dcfeeb185939",
+    "reserves": [
+     "19999.999999999999999985",
+     "0.167577615472621363"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb035c3d5083bdc80074f380aebc9fcb68aba0a28": {
+    "key": "ethereum:0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+    "name": "Airbnb (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABNBON",
+    "price": 173.94,
+    "address": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+    "addresses": {
+     "ethereum": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+     "bsc": "0xef80743f78d98fc2b47a2253b293152ce8b879ba"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1554406,
+    "image": "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088",
+    "metrics": {
+     "volumeUsd1d": "143730.49",
+     "volumeUsd7d": "1055560.477"
+    },
+    "metadata": {},
+    "tokenId": "11f8cb6f-b3e4-4911-a527-73263b3f8051",
+    "totalSupply": "8935.344814979737",
+    "circulatingSupply": "8935.344814979737",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2e94171493fabe316b6205f1585779c887771e2f": {
+    "key": "bsc:0x2e94171493fabe316b6205f1585779c887771e2f",
+    "name": "Aave BNB Smart Chain ETH",
+    "decimals": 18,
+    "symbol": "ABNBETH",
+    "price": 2336.31,
+    "address": "0x2e94171493fabe316b6205f1585779c887771e2f",
+    "addresses": {
+     "bsc": "0x2e94171493fabe316b6205f1585779c887771e2f"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2170ed0880ac9a755fd29b2688956bd959f933f8"
+    ],
+    "liquidity": 17999822.455479037,
+    "metrics": {
+     "apy": "0.565",
+     "baseApy": "0.565",
+     "borrowApy": "1.442",
+     "baseBorrowApy": "1.442",
+     "volumeUsd1d": "-198541.191",
+     "volumeUsd7d": "-189055.374"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0x8fdea7891b4d6dbdc746309245b316af691a636c"
+    },
+    "tokenId": "54631b01-ad06-4c06-b36c-cdb907fc53dc",
+    "totalSupply": "7704.381034828015258275",
+    "totalBorrow": "3553.565787605246609669",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2ecbd508c00bbc8aa0cdc9100bf3956fcabe7677": {
+    "key": "bsc:0x2ecbd508c00bbc8aa0cdc9100bf3956fcabe7677",
+    "name": "Gamma Thena aBNBX-WBNB",
+    "decimals": 18,
+    "symbol": "ABNBX-WBNB",
+    "price": 3616.906618822788,
+    "address": "0x2ecbd508c00bbc8aa0cdc9100bf3956fcabe7677",
+    "addresses": {
+     "bsc": "0x2ecbd508c00bbc8aa0cdc9100bf3956fcabe7677"
+    },
+    "platform": "gamma-thena",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/21975/large/gamma-token-200.png",
+     "https://assets.coingecko.com/coins/images/26842/large/BNBx_Logo.png?1696525902",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:15:59.480Z",
+    "createdAt": "2024-05-15T09:59:39.388Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1bdd3cf7f79cfb8edbb955f20ad99211551ba275",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 38400.35148118184,
+    "metrics": {
+     "apy": "0.001",
+     "baseApy": "0.001",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "6d8187da-b6cd-466b-8be0-caae794b401d",
+    "totalSupply": "10.616904313023205123",
+    "reserves": [
+     "18.216966833697629788",
+     "34.215522676801628715"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xf6e17746aa392d659eb4d4ffdc5b86f2b02397a7": {
+    "key": "arbitrum:0xf6e17746aa392d659eb4d4ffdc5b86f2b02397a7",
+    "name": "Airbnb rStock",
+    "decimals": 18,
+    "symbol": "RABNB",
+    "price": 172.94,
+    "address": "0xf6e17746aa392d659eb4d4ffdc5b86f2b02397a7",
+    "addresses": {
+     "arbitrum": "0xf6e17746aa392d659eb4d4ffdc5b86f2b02397a7"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1454.83,
+    "image": "https://coin-images.coingecko.com/coins/images/102177103/large/cd1a1cc4ee9c906e45eb38185ec213b3.png?1789116837",
+    "metrics": {
+     "volumeUsd1d": "79.929",
+     "volumeUsd7d": "493.822"
+    },
+    "metadata": {},
+    "tokenId": "b2cdae5e-a8ee-4b95-95a0-a1dec80e438a",
+    "totalSupply": "8.412484665",
+    "circulatingSupply": "8.412484665",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xed2fe09a1b413a0f6e94e9ee2978854f1be0c25708941f31e4c8275ad6b64178": {
+    "key": "bsc:0xed2fe09a1b413a0f6e94e9ee2978854f1be0c25708941f31e4c8275ad6b64178",
+    "name": "Uniswap V4 LP BNB/ListaBNB",
+    "decimals": 18,
+    "symbol": "BNB/LISTABNB",
+    "price": 9007199254740990,
+    "address": "0xed2fe09a1b413a0f6e94e9ee2978854f1be0c25708941f31e4c8275ad6b64178",
+    "addresses": {
+     "bsc": "0xed2fe09a1b413a0f6e94e9ee2978854f1be0c25708941f31e4c8275ad6b64178"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.822Z",
+    "createdAt": "2026-03-10T12:19:11.743Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0"
+    ],
+    "liquidity": 673.1620201962438,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16800,
+     "feePercentage": "84.016"
+    },
+    "tokenId": "16feb8a4-cfc6-46a3-8abe-460621fa746b",
+    "reserves": [
+     "0.905627038820201882",
+     "0.046930348888435803"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xf18380614cff4b180951ff41328ed58a1aa96693": {
+    "key": "arbitrum:0xf18380614cff4b180951ff41328ed58a1aa96693",
+    "name": "Lagoon AB Nexus wBTC Vault",
+    "decimals": 18,
+    "symbol": "ABNBTC",
+    "price": 81061.66108286301,
+    "address": "0xf18380614cff4b180951ff41328ed58a1aa96693",
+    "addresses": {
+     "arbitrum": "0xf18380614cff4b180951ff41328ed58a1aa96693"
+    },
+    "platform": "lagoon",
+    "network": "arbitrum",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/lagoon",
+     "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336"
+    ],
+    "updatedAt": "2026-10-18T20:15:53.702Z",
+    "createdAt": "2025-12-08T12:22:49.148Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"
+    ],
+    "liquidity": 31792.608876309994,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "fees": {
+      "deposit": 0,
+      "trading": 0,
+      "platform": 0,
+      "withdraw": 0,
+      "performance": 0
+     },
+     "tags": [
+      "#yield"
+     ],
+     "points": [],
+     "interface": "ERC4626"
+    },
+    "tokenId": "1db72092-0ba2-491e-94bf-be1c9cf5c6b2",
+    "totalSupply": "0.392202780594526591",
+    "reserves": [
+     "0.39419981"
+    ],
+    "pricePerShare": "1.005091828779097846",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3df872450d2666157efa7d7ec5c622fdf2d055da17f1e80b7e0aafe221176dd4": {
+    "key": "bsc:0x3df872450d2666157efa7d7ec5c622fdf2d055da17f1e80b7e0aafe221176dd4",
+    "name": "Uniswap V4 LP BNB/aBnbWBNB",
+    "decimals": 18,
+    "symbol": "BNB/ABNBWBNB",
+    "price": 9007199254740990,
+    "address": "0x3df872450d2666157efa7d7ec5c622fdf2d055da17f1e80b7e0aafe221176dd4",
+    "addresses": {
+     "bsc": "0x3df872450d2666157efa7d7ec5c622fdf2d055da17f1e80b7e0aafe221176dd4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:17:55.973Z",
+    "createdAt": "2025-12-18T20:05:30.321Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9b00a09492a626678e5a3009982191586c444df9"
+    ],
+    "liquidity": 1835.5335526745523,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9000,
+     "feePercentage": "45.055"
+    },
+    "tokenId": "d643e9c1-881f-409b-98f8-d8bd3ae5d7da",
+    "reserves": [
+     "1.416531232815929152",
+     "1.184775553847222475"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x56a7ddc4e848ebf43845854205ad71d5d5f72d3d": {
+    "key": "bsc:0x56a7ddc4e848ebf43845854205ad71d5d5f72d3d",
+    "name": "Aave BNB Smart Chain BTCB",
+    "decimals": 18,
+    "symbol": "ABNBBTCB",
+    "price": 80773,
+    "address": "0x56a7ddc4e848ebf43845854205ad71d5d5f72d3d",
+    "addresses": {
+     "bsc": "0x56a7ddc4e848ebf43845854205ad71d5d5f72d3d"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"
+    ],
+    "liquidity": 86185335.69234106,
+    "metrics": {
+     "apy": "0.008",
+     "baseApy": "0.008",
+     "borrowApy": "0.714",
+     "baseBorrowApy": "0.714",
+     "volumeUsd1d": "-109219.907",
+     "volumeUsd7d": "22512.232"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0x7b1e82f4f542fbb25d64c5523fe3e44abe4f2702"
+    },
+    "tokenId": "8fa60ec7-6ef4-478e-835a-6085e75b534f",
+    "totalSupply": "1067.006743495240386316",
+    "totalBorrow": "14.707205977147080945",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xa9251ca9de909cb71783723713b21e4233fbf1b1": {
+    "key": "bsc:0xa9251ca9de909cb71783723713b21e4233fbf1b1",
+    "name": "Aave BNB Smart Chain USDT",
+    "decimals": 18,
+    "symbol": "ABNBUSDT",
+    "price": 0.999142,
+    "address": "0xa9251ca9de909cb71783723713b21e4233fbf1b1",
+    "addresses": {
+     "bsc": "0xa9251ca9de909cb71783723713b21e4233fbf1b1"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 65630028.3945065,
+    "metrics": {
+     "apy": "2.868",
+     "baseApy": "2.868",
+     "borrowApy": "3.992",
+     "baseBorrowApy": "3.992",
+     "volumeUsd1d": "240824.296",
+     "volumeUsd7d": "1165157.932"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0xf8bb2be50647447fb355e3a77b81be4db64107cd"
+    },
+    "tokenId": "83020752-6459-4666-8e9f-dfe7aff2eb5b",
+    "totalSupply": "65686387.314822619534400382",
+    "totalBorrow": "52438998.554909678559145059",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x9b00a09492a626678e5a3009982191586c444df9": {
+    "key": "bsc:0x9b00a09492a626678e5a3009982191586c444df9",
+    "name": "Aave BNB Smart Chain WBNB",
+    "decimals": 18,
+    "symbol": "ABNBWBNB",
+    "price": 704.95,
+    "address": "0x9b00a09492a626678e5a3009982191586c444df9",
+    "addresses": {
+     "bsc": "0x9b00a09492a626678e5a3009982191586c444df9"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 89963322.30910394,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "borrowApy": "0.311",
+     "baseBorrowApy": "0.311",
+     "volumeUsd1d": "-10908.843",
+     "volumeUsd7d": "-147595.14"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0x0e76414d433ddfe8004d2a7505d218874875a996"
+    },
+    "tokenId": "c93353f6-dd75-46b3-a671-1e1ab5d7b4af",
+    "totalSupply": "127616.60019732453003104",
+    "totalBorrow": "2551.511976156970470861",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x2a8a4046230ed854eb9475e8593d7c1073d7e1d27430731884a16b91ccc58278": {
+    "key": "bsc:0x2a8a4046230ed854eb9475e8593d7c1073d7e1d27430731884a16b91ccc58278",
+    "name": "Uniswap V4 LP BNB/aBnbWBNB",
+    "decimals": 18,
+    "symbol": "BNB/ABNBWBNB",
+    "price": 9007199254740990,
+    "address": "0x2a8a4046230ed854eb9475e8593d7c1073d7e1d27430731884a16b91ccc58278",
+    "addresses": {
+     "bsc": "0x2a8a4046230ed854eb9475e8593d7c1073d7e1d27430731884a16b91ccc58278"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.272Z",
+    "createdAt": "2025-08-31T12:32:45.631Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9b00a09492a626678e5a3009982191586c444df9"
+    ],
+    "liquidity": 847.3761415161863,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "d03b9845-ce16-491a-b400-0170c8d45515",
+    "reserves": [
+     "0.412355390916880343",
+     "0.788962354150654325"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x00901a076785e0906d1028c7d6372d247bec7d61": {
+    "key": "bsc:0x00901a076785e0906d1028c7d6372d247bec7d61",
+    "name": "Aave BNB Smart Chain USDC",
+    "decimals": 18,
+    "symbol": "ABNBUSDC",
+    "price": 0.999764,
+    "address": "0x00901a076785e0906d1028c7d6372d247bec7d61",
+    "addresses": {
+     "bsc": "0x00901a076785e0906d1028c7d6372d247bec7d61"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ],
+    "liquidity": 13766954.70575528,
+    "metrics": {
+     "apy": "3.16",
+     "baseApy": "3.16",
+     "borrowApy": "4.19",
+     "baseBorrowApy": "4.19",
+     "volumeUsd1d": "606996.833",
+     "volumeUsd7d": "45295.983"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0xcdbbed5606d9c5c98eeedd67933991dc17f0c68d"
+    },
+    "tokenId": "81c3ab80-9e3b-439f-adb4-583f884c5f30",
+    "totalSupply": "13770204.474011147805691266",
+    "totalBorrow": "11541369.269604715446569432",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xf5b137e3f07532d2023e0895adaf2619cc7ee67fb70ef82d33488bd4c0332d50": {
+    "key": "bsc:0xf5b137e3f07532d2023e0895adaf2619cc7ee67fb70ef82d33488bd4c0332d50",
+    "name": "Uniswap V4 LP BNB/ListaBNB",
+    "decimals": 18,
+    "symbol": "BNB/LISTABNB",
+    "price": 9007199254740990,
+    "address": "0xf5b137e3f07532d2023e0895adaf2619cc7ee67fb70ef82d33488bd4c0332d50",
+    "addresses": {
+     "bsc": "0xf5b137e3f07532d2023e0895adaf2619cc7ee67fb70ef82d33488bd4c0332d50"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970"
+    ],
+    "updatedAt": "2026-10-18T20:17:56.065Z",
+    "createdAt": "2026-04-03T22:54:17.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x57134a64b7cd9f9eb72f8255a671f5bf2fe3e2d0"
+    ],
+    "liquidity": 564.944,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88"
+    },
+    "tokenId": "64db3d37-fcda-4aa8-bd33-d1f7f0d6f8cd",
+    "reserves": [
+     "0.799999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbb3c8d77a1bf9aa4041993c4e71c948a3641f65117a2dfe7bd8530db3a98edf9": {
+    "key": "ethereum:0xbb3c8d77a1bf9aa4041993c4e71c948a3641f65117a2dfe7bd8530db3a98edf9",
+    "name": "Uniswap V4 LP wUSDC/ABNBon",
+    "decimals": 18,
+    "symbol": "WUSDC/ABNBON",
+    "price": 9007199254740990,
+    "address": "0xbb3c8d77a1bf9aa4041993c4e71c948a3641f65117a2dfe7bd8530db3a98edf9",
+    "addresses": {
+     "ethereum": "0xbb3c8d77a1bf9aa4041993c4e71c948a3641f65117a2dfe7bd8530db3a98edf9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088"
+    ],
+    "updatedAt": "2026-10-18T20:17:44.422Z",
+    "createdAt": "2026-09-28T10:38:28.541Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "410df24d-fafe-4902-a651-30b2b67366d4",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xef80743f78d98fc2b47a2253b293152ce8b879ba": {
+    "key": "bsc:0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+    "name": "Airbnb (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "ABNBON",
+    "price": 173.94,
+    "address": "0xef80743f78d98fc2b47a2253b293152ce8b879ba",
+    "addresses": {
+     "ethereum": "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28",
+     "bsc": "0xef80743f78d98fc2b47a2253b293152ce8b879ba"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1554406,
+    "image": "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088",
+    "metrics": {
+     "volumeUsd1d": "143698.886",
+     "volumeUsd7d": "1055275.151"
+    },
+    "metadata": {},
+    "tokenId": "11f8cb6f-b3e4-4911-a527-73263b3f8051",
+    "totalSupply": "8935.344814979737",
+    "circulatingSupply": "8935.344814979737",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7ddd9753ceaa43eb16fc54c66ce0822eb0db44b8ecc12182e1c73c5531ae2e0d": {
+    "key": "ethereum:0x7ddd9753ceaa43eb16fc54c66ce0822eb0db44b8ecc12182e1c73c5531ae2e0d",
+    "name": "Uniswap V4 LP USDCc/ABNBon",
+    "decimals": 18,
+    "symbol": "USDCC/ABNBON",
+    "price": 9007199254740990,
+    "address": "0x7ddd9753ceaa43eb16fc54c66ce0822eb0db44b8ecc12182e1c73c5531ae2e0d",
+    "addresses": {
+     "ethereum": "0x7ddd9753ceaa43eb16fc54c66ce0822eb0db44b8ecc12182e1c73c5531ae2e0d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68565/large/abnbon_160x160.png?1756106088"
+    ],
+    "updatedAt": "2026-10-18T20:17:49.754Z",
+    "createdAt": "2026-10-16T14:20:09.759Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xb035c3d5083bdc80074f380aebc9fcb68aba0a28"
+    ],
+    "liquidity": 4999.415813648179,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.6541"
+    },
+    "tokenId": "9b5f1188-3611-4d67-ad1a-44add7cf0bd9",
+    "reserves": [
+     "5000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x4199cc1f5ed0d796563d7ccb2e036253e2c18281": {
+    "key": "bsc:0x4199cc1f5ed0d796563d7ccb2e036253e2c18281",
+    "name": "Aave BNB Smart Chain CAKE",
+    "decimals": 18,
+    "symbol": "ABNBCAKE",
+    "price": 2.11,
+    "address": "0x4199cc1f5ed0d796563d7ccb2e036253e2c18281",
+    "addresses": {
+     "bsc": "0x4199cc1f5ed0d796563d7ccb2e036253e2c18281"
+    },
+    "platform": "aavev3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12645/large/AAVE.png",
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png?1696512440"
+    ],
+    "updatedAt": "2026-10-18T20:16:05.404Z",
+    "createdAt": "2025-07-11T10:30:30.016Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+    ],
+    "liquidity": 857731.8699741521,
+    "metrics": {
+     "apy": "0.004",
+     "baseApy": "0.004",
+     "borrowApy": "0.349",
+     "baseBorrowApy": "0.349",
+     "volumeUsd1d": "0.24",
+     "volumeUsd7d": "-813.811"
+    },
+    "metadata": {
+     "tags": [
+      "#lending"
+     ],
+     "stableDebtTokenAddress": "0x57e95511de39890d3e782df4b19f0d97a05df64a",
+     "variableDebtTokenAddress": "0xe20dbc7119c635b1b51462f844861258770e0699"
+    },
+    "tokenId": "cb8a6080-785b-4664-873e-193889b760e9",
+    "totalSupply": "406507.995248413319059886",
+    "totalBorrow": "9133.193578057328622431",
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

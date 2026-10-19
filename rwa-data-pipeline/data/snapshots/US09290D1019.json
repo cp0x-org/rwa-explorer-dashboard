@@ -1,0 +1,1278 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US09290D1019",
+ "ticker": "BLK",
+ "name": "BlackRock",
+ "isin": "US09290D1019",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:31Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "BlackRock Inc",
+   "symbol": "BLK",
+   "slug": "blackrock",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 1149.9396209795536,
+     "tokenized_market_cap": 1978966.909245676,
+     "tokenized_volume_24h": 503877.59313384,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 139,
+   "asset_type": "stock",
+   "rwa_rank": 88,
+   "has_tokens": true,
+   "average_tokenized_price": 1149.9396209795536,
+   "tokenized_market_cap": 1978966.909245676,
+   "tokenized_volume_24h": 503877.59313384,
+   "last_updated": "2026-10-18T20:13:39.690Z",
+   "tokens": [
+    {
+     "symbol": "BLKon",
+     "name": "Blackrock, Inc. Tokenized Stock (Ondo)",
+     "price": 1149.5387269202915,
+     "crypto_id": 38030,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1978277,
+     "volume_24h": 502654.477151
+    },
+    {
+     "symbol": "wBLKx",
+     "name": "Wrapped BlackRock Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41838,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "BLK",
+     "market_url": "https://www.binance.com/en/stocks/EQ_BLK"
+    }
+   ]
+  },
+  "info": {
+   "38030": {
+    "id": 38030,
+    "symbol": "BLKon",
+    "name": "Blackrock, Inc. Tokenized Stock (Ondo)",
+    "slug": "blackrock-inc-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38030.png",
+    "date_added": "2025-09-03T10:55:29.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x7a0F89c1606f71499950AA2590d547c3975B728E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x7a0F89c1606f71499950AA2590d547c3975B728E",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x24f5471183ea549987f245d6ce236b6108869c92",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "5H1VpMzRuoNtRbPTRCz35ETtEUtnkt8hJuQb9v7ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41838": {
+    "id": 41838,
+    "symbol": "wBLKx",
+    "name": "Wrapped BlackRock Tokenized Stock (xStock)",
+    "slug": "wrapped-blackrock-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41838.png",
+    "date_added": "2026-08-16T03:25:03.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x8cDcf0A84502C7E0A160047B4561D5756B28b68D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x8cDcf0A84502C7E0A160047B4561D5756B28b68D",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x24f5471183ea549987f245d6ce236b6108869c92",
+   "ethereum:0x7a0f89c1606f71499950aa2590d547c3975b728e"
+  ],
+  "exact": {
+   "ethereum:0x7a0f89c1606f71499950aa2590d547c3975b728e": {
+    "key": "ethereum:0x7a0f89c1606f71499950aa2590d547c3975b728e",
+    "name": "Blackrock, Inc. (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BLKON",
+    "price": 1151.32,
+    "address": "0x7a0f89c1606f71499950aa2590d547c3975b728e",
+    "addresses": {
+     "bsc": "0x24f5471183ea549987f245d6ce236b6108869c92",
+     "ethereum": "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1981180,
+    "image": "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+    "metrics": {
+     "volumeUsd1d": "149995.367",
+     "volumeUsd7d": "1092739.165"
+    },
+    "metadata": {},
+    "tokenId": "40568fc5-e3e9-44f8-92eb-900c23f16da2",
+    "totalSupply": "1720.931145553554",
+    "circulatingSupply": "1720.931145553554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x24f5471183ea549987f245d6ce236b6108869c92": {
+    "key": "bsc:0x24f5471183ea549987f245d6ce236b6108869c92",
+    "name": "Blackrock, Inc. (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BLKON",
+    "price": 1151.32,
+    "address": "0x24f5471183ea549987f245d6ce236b6108869c92",
+    "addresses": {
+     "bsc": "0x24f5471183ea549987f245d6ce236b6108869c92",
+     "ethereum": "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1981180,
+    "image": "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+    "metrics": {
+     "volumeUsd1d": "150061.648",
+     "volumeUsd7d": "1091276.87"
+    },
+    "metadata": {},
+    "tokenId": "40568fc5-e3e9-44f8-92eb-900c23f16da2",
+    "totalSupply": "1720.931145553554",
+    "circulatingSupply": "1720.931145553554",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "BLK": {
+    "total_items": 27,
+    "pages": 1,
+    "received": 27,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x7a0f89c1606f71499950aa2590d547c3975b728e": {
+    "key": "ethereum:0x7a0f89c1606f71499950aa2590d547c3975b728e",
+    "name": "Blackrock, Inc. (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BLKON",
+    "price": 1151.32,
+    "address": "0x7a0f89c1606f71499950aa2590d547c3975b728e",
+    "addresses": {
+     "bsc": "0x24f5471183ea549987f245d6ce236b6108869c92",
+     "ethereum": "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1981180,
+    "image": "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+    "metrics": {
+     "volumeUsd1d": "149995.367",
+     "volumeUsd7d": "1092739.165"
+    },
+    "metadata": {},
+    "tokenId": "40568fc5-e3e9-44f8-92eb-900c23f16da2",
+    "totalSupply": "1720.931145553554",
+    "circulatingSupply": "1720.931145553554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2f2822173e671502fe527614076175cd555d812fac4b3dd5209ed6f995fb3472": {
+    "key": "ethereum:0x2f2822173e671502fe527614076175cd555d812fac4b3dd5209ed6f995fb3472",
+    "name": "Uniswap V4 LP USDT/BLKHIon",
+    "decimals": 18,
+    "symbol": "USDT/BLKHION",
+    "price": 9007199254740990,
+    "address": "0x2f2822173e671502fe527614076175cd555d812fac4b3dd5209ed6f995fb3472",
+    "addresses": {
+     "ethereum": "0x2f2822173e671502fe527614076175cd555d812fac4b3dd5209ed6f995fb3472"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102178494/large/brainon_160x160.png?1789710092"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.414Z",
+    "createdAt": "2026-10-12T05:08:41.939Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x787769d6fc857169f5243ef66d3f0a954149d3ba"
+    ],
+    "liquidity": 1764.5491418533045,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "24bd6694-6df7-4d1a-be72-38cc5a26ddff",
+    "reserves": [
+     "2000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6e17534a1fc047907d8f422ca166944d6469e053": {
+    "key": "ethereum:0x6e17534a1fc047907d8f422ca166944d6469e053",
+    "name": "Ondo Diversified Growth Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKDIGON",
+    "price": 4.91,
+    "address": "0x6e17534a1fc047907d8f422ca166944d6469e053",
+    "addresses": {
+     "bsc": "0xe658c62195f32bc53226e7e2642e3d76b4382fb8",
+     "ethereum": "0x6e17534a1fc047907d8f422ca166944d6469e053"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:53:34.929Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2604315,
+    "image": "https://coin-images.coingecko.com/coins/images/102178495/large/brainon_160x160.png?1789710250",
+    "metrics": {
+     "volumeUsd1d": "3406.892",
+     "volumeUsd7d": "2085264.9"
+    },
+    "metadata": {},
+    "tokenId": "1af1fdc6-b824-4d9b-978d-31b6d69f18de",
+    "totalSupply": "530652.4149626718",
+    "circulatingSupply": "530652.4149626718",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x12646b84ac2bb8bd49db0ad37e8e9ebbc9d7b42f20adada20b34d344014decc6": {
+    "key": "ethereum:0x12646b84ac2bb8bd49db0ad37e8e9ebbc9d7b42f20adada20b34d344014decc6",
+    "name": "Uniswap V4 LP wUSDC/BLKon",
+    "decimals": 18,
+    "symbol": "WUSDC/BLKON",
+    "price": 9007199254740990,
+    "address": "0x12646b84ac2bb8bd49db0ad37e8e9ebbc9d7b42f20adada20b34d344014decc6",
+    "addresses": {
+     "ethereum": "0x12646b84ac2bb8bd49db0ad37e8e9ebbc9d7b42f20adada20b34d344014decc6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:01.429Z",
+    "createdAt": "2026-09-28T10:37:10.891Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "be92f905-118e-484b-8739-34b2b0c4abef",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xf78155dc15b838b7577002bc53bbe1041ca48622": {
+    "key": "bsc:0xf78155dc15b838b7577002bc53bbe1041ca48622",
+    "name": "Ondo High Income Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKHION",
+    "price": 4.85,
+    "address": "0xf78155dc15b838b7577002bc53bbe1041ca48622",
+    "addresses": {
+     "ethereum": "0x787769d6fc857169f5243ef66d3f0a954149d3ba",
+     "bsc": "0xf78155dc15b838b7577002bc53bbe1041ca48622"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:53:34.929Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3931787,
+    "image": "https://coin-images.coingecko.com/coins/images/102178494/large/brainon_160x160.png?1789710092",
+    "metrics": {
+     "volumeUsd1d": "15797.469",
+     "volumeUsd7d": "2173773.864"
+    },
+    "metadata": {},
+    "tokenId": "533aa79a-c07f-4161-ae9c-6d82eb8a17b2",
+    "totalSupply": "811210.7422972133",
+    "circulatingSupply": "811210.7422972133",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2382ebc7d13aca7f112ff4a2f8c21633f2f326ec485880e5599723a9f7d5b74f": {
+    "key": "ethereum:0x2382ebc7d13aca7f112ff4a2f8c21633f2f326ec485880e5599723a9f7d5b74f",
+    "name": "Uniswap V4 LP USDCc/BLKGRWon",
+    "decimals": 18,
+    "symbol": "USDCC/BLKGRWON",
+    "price": 9007199254740990,
+    "address": "0x2382ebc7d13aca7f112ff4a2f8c21633f2f326ec485880e5599723a9f7d5b74f",
+    "addresses": {
+     "ethereum": "0x2382ebc7d13aca7f112ff4a2f8c21633f2f326ec485880e5599723a9f7d5b74f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102178496/large/brainon_160x160.png?1789710384"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.079Z",
+    "createdAt": "2026-10-08T07:21:30.447Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xc90341cb9cb8d65af044fab23b659b7b4279399b"
+    ],
+    "liquidity": 500.2133412805947,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.2292"
+    },
+    "tokenId": "6c29fa82-fb8b-4c84-a1cb-2dca31c9fe3c",
+    "reserves": [
+     "499.999999999999999988",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xf2f26eee8b40447f664f20ad3513e894153fe09e": {
+    "key": "arbitrum:0xf2f26eee8b40447f664f20ad3513e894153fe09e",
+    "name": "Dinari BLK",
+    "decimals": 18,
+    "symbol": "BLK",
+    "price": 1131.82,
+    "address": "0xf2f26eee8b40447f664f20ad3513e894153fe09e",
+    "addresses": {
+     "ethereum": "0x8476f0710a02f622eff6577b47875751193b06de",
+     "base": "0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+     "avalanche": "0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+     "arbitrum": "0xf2f26eee8b40447f664f20ad3513e894153fe09e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7890.6,
+    "image": "https://coin-images.coingecko.com/coins/images/102174984/large/dinari-logo-green-with-margin.png?1785402794",
+    "metrics": {
+     "volumeUsd1d": "2.968",
+     "volumeUsd7d": "382.082"
+    },
+    "metadata": {},
+    "tokenId": "629c4bf9-4727-48f6-abe1-a52447bec0e3",
+    "totalSupply": "6.9716185899425",
+    "circulatingSupply": "6.9716185899425",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x3ad1521c7742301e011d2dd6ba6f1758c55de090": {
+    "key": "base:0x3ad1521c7742301e011d2dd6ba6f1758c55de090",
+    "name": "UniswapV2 LP VIRTUAL/BLKH",
+    "decimals": 18,
+    "symbol": "VIRTUAL/BLKH",
+    "price": 0.023010279604298727,
+    "address": "0x3ad1521c7742301e011d2dd6ba6f1758c55de090",
+    "addresses": {
+     "base": "0x3ad1521c7742301e011d2dd6ba6f1758c55de090"
+    },
+    "platform": "uniswapv2",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://icons.llamao.fi/icons/protocols/virtuals-protocol",
+     "https://coin-images.coingecko.com/coins/images/70836/large/dexscreener-icon.png?1764102990"
+    ],
+    "updatedAt": "2026-10-18T20:15:57.392Z",
+    "createdAt": "2025-11-25T22:06:09.695Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b",
+     "0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d"
+    ],
+    "liquidity": 52429.143450016316,
+    "metrics": {
+     "apy": "0.051",
+     "baseApy": "0.051",
+     "volumeUsd1d": "24.476",
+     "volumeUsd7d": "1020.109"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "703456cf-57e0-4401-b527-fc4bb18f1d54",
+    "totalSupply": "2278509.620553312393991604",
+    "reserves": [
+     "41958.868689629791633942",
+     "166240775.294568448405826878"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x45afb331111126f5bf8d37c7816c540c1ec6f544": {
+    "key": "base:0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+    "name": "Dinari BLK",
+    "decimals": 18,
+    "symbol": "BLK",
+    "price": 1131.82,
+    "address": "0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+    "addresses": {
+     "ethereum": "0x8476f0710a02f622eff6577b47875751193b06de",
+     "base": "0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+     "avalanche": "0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+     "arbitrum": "0xf2f26eee8b40447f664f20ad3513e894153fe09e"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7890.6,
+    "image": "https://coin-images.coingecko.com/coins/images/102174984/large/dinari-logo-green-with-margin.png?1785402794",
+    "metrics": {
+     "volumeUsd1d": "2.968",
+     "volumeUsd7d": "382.082"
+    },
+    "metadata": {},
+    "tokenId": "629c4bf9-4727-48f6-abe1-a52447bec0e3",
+    "totalSupply": "6.9716185899425",
+    "circulatingSupply": "6.9716185899425",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xb4c39b7067a7604d16414b65a3f46c3638d1c1e6c1787bad0ebd04bf95ad3626": {
+    "key": "ethereum:0xb4c39b7067a7604d16414b65a3f46c3638d1c1e6c1787bad0ebd04bf95ad3626",
+    "name": "Uniswap V4 LP EGP/BLKDIGon",
+    "decimals": 18,
+    "symbol": "EGP/BLKDIGON",
+    "price": 9007199254740990,
+    "address": "0xb4c39b7067a7604d16414b65a3f46c3638d1c1e6c1787bad0ebd04bf95ad3626",
+    "addresses": {
+     "ethereum": "0xb4c39b7067a7604d16414b65a3f46c3638d1c1e6c1787bad0ebd04bf95ad3626"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102178495/large/brainon_160x160.png?1789710250"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.335Z",
+    "createdAt": "2026-10-14T18:45:08.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x6e17534a1fc047907d8f422ca166944d6469e053"
+    ],
+    "liquidity": 20071.603479323392,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.28"
+    },
+    "tokenId": "1cc1a37a-5827-4970-89cf-feff9cb17794",
+    "reserves": [
+     "19999.999999999999999999",
+     "5.312478330742854348"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x17eefe6b6d55f77dd7a1be29f86586aadba8cce2": {
+    "key": "base:0x17eefe6b6d55f77dd7a1be29f86586aadba8cce2",
+    "name": "Uniswap V3 Wrapped Ether/BLACK HOLE 1%",
+    "decimals": 18,
+    "symbol": "WETH/BLKH",
+    "price": 9007199254740990,
+    "address": "0x17eefe6b6d55f77dd7a1be29f86586aadba8cce2",
+    "addresses": {
+     "base": "0x17eefe6b6d55f77dd7a1be29f86586aadba8cce2"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://coin-images.coingecko.com/coins/images/70836/large/dexscreener-icon.png?1764102990"
+    ],
+    "updatedAt": "2026-10-18T20:15:46.047Z",
+    "createdAt": "2025-11-25T22:06:10.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d"
+    ],
+    "liquidity": 567.8143261446374,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "294b4162-a648-428b-8735-e0efe9498f2f",
+    "reserves": [
+     "0.000520829035158688",
+     "3585833.226134459197291945"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2ca203a609ff4f7bf825395bc60803014c18d6eca6d25266930eb0e00982906a": {
+    "key": "ethereum:0x2ca203a609ff4f7bf825395bc60803014c18d6eca6d25266930eb0e00982906a",
+    "name": "Uniswap V4 LP EGP/BLKon",
+    "decimals": 18,
+    "symbol": "EGP/BLKON",
+    "price": 9007199254740990,
+    "address": "0x2ca203a609ff4f7bf825395bc60803014c18d6eca6d25266930eb0e00982906a",
+    "addresses": {
+     "ethereum": "0x2ca203a609ff4f7bf825395bc60803014c18d6eca6d25266930eb0e00982906a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.699Z",
+    "createdAt": "2026-10-14T06:54:48.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    ],
+    "liquidity": 20074.7971217361,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.96"
+    },
+    "tokenId": "456fc7df-aa49-43f1-88ff-a115d1b9e5c7",
+    "reserves": [
+     "19999.999999999999999956",
+     "0.025429863996677412"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x787769d6fc857169f5243ef66d3f0a954149d3ba": {
+    "key": "ethereum:0x787769d6fc857169f5243ef66d3f0a954149d3ba",
+    "name": "Ondo High Income Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKHION",
+    "price": 4.85,
+    "address": "0x787769d6fc857169f5243ef66d3f0a954149d3ba",
+    "addresses": {
+     "ethereum": "0x787769d6fc857169f5243ef66d3f0a954149d3ba",
+     "bsc": "0xf78155dc15b838b7577002bc53bbe1041ca48622"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:53:34.929Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3931787,
+    "image": "https://coin-images.coingecko.com/coins/images/102178494/large/brainon_160x160.png?1789710092",
+    "metrics": {
+     "volumeUsd1d": "15786.82",
+     "volumeUsd7d": "2157880.308"
+    },
+    "metadata": {},
+    "tokenId": "533aa79a-c07f-4161-ae9c-6d82eb8a17b2",
+    "totalSupply": "811210.7422972133",
+    "circulatingSupply": "811210.7422972133",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x6fdded677ceffe261442ca40cdc843d983cc4bbd080fcdda696a41964c4be1ba": {
+    "key": "ethereum:0x6fdded677ceffe261442ca40cdc843d983cc4bbd080fcdda696a41964c4be1ba",
+    "name": "Uniswap V4 LP USDT/BLKGRWon",
+    "decimals": 18,
+    "symbol": "USDT/BLKGRWON",
+    "price": 9007199254740990,
+    "address": "0x6fdded677ceffe261442ca40cdc843d983cc4bbd080fcdda696a41964c4be1ba",
+    "addresses": {
+     "ethereum": "0x6fdded677ceffe261442ca40cdc843d983cc4bbd080fcdda696a41964c4be1ba"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178496/large/brainon_160x160.png?1789710384",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.599Z",
+    "createdAt": "2026-10-12T05:08:43.342Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xc90341cb9cb8d65af044fab23b659b7b4279399b"
+    ],
+    "liquidity": 1764.5491418533045,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "3068bcd6-15ce-4bb2-87c6-9e66ef751db4",
+    "reserves": [
+     "1999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc90341cb9cb8d65af044fab23b659b7b4279399b": {
+    "key": "ethereum:0xc90341cb9cb8d65af044fab23b659b7b4279399b",
+    "name": "Ondo High Growth Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKGRWON",
+    "price": 4.66,
+    "address": "0xc90341cb9cb8d65af044fab23b659b7b4279399b",
+    "addresses": {
+     "ethereum": "0xc90341cb9cb8d65af044fab23b659b7b4279399b",
+     "bsc": "0xe4bd77247671746caa3119e9feaa146f8a4ee237"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:56:35.396Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3451237,
+    "image": "https://coin-images.coingecko.com/coins/images/102178496/large/brainon_160x160.png?1789710384",
+    "metrics": {
+     "volumeUsd1d": "2659.125",
+     "volumeUsd7d": "2574806.694"
+    },
+    "metadata": {},
+    "tokenId": "6313c313-c736-42ec-ba6a-02b566821b0f",
+    "totalSupply": "740454.0350772399",
+    "circulatingSupply": "740454.0350772399",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d": {
+    "key": "base:0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d",
+    "name": "BLACK HOLE",
+    "decimals": 18,
+    "symbol": "BLKH",
+    "price": 0.00015801,
+    "address": "0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d",
+    "addresses": {
+     "base": "0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-11-25T22:04:08.087Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 87483,
+    "image": "https://coin-images.coingecko.com/coins/images/70836/large/dexscreener-icon.png?1764102990",
+    "metrics": {
+     "volumeUsd1d": "23.432",
+     "volumeUsd7d": "1016.527"
+    },
+    "metadata": {},
+    "tokenId": "a660ebfa-254c-4c25-9e2b-b92749e3430d",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "553661284.918631",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x24f5471183ea549987f245d6ce236b6108869c92": {
+    "key": "bsc:0x24f5471183ea549987f245d6ce236b6108869c92",
+    "name": "Blackrock, Inc. (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BLKON",
+    "price": 1151.32,
+    "address": "0x24f5471183ea549987f245d6ce236b6108869c92",
+    "addresses": {
+     "bsc": "0x24f5471183ea549987f245d6ce236b6108869c92",
+     "ethereum": "0x7a0f89c1606f71499950aa2590d547c3975b728e"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1981180,
+    "image": "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+    "metrics": {
+     "volumeUsd1d": "150061.648",
+     "volumeUsd7d": "1091276.87"
+    },
+    "metadata": {},
+    "tokenId": "40568fc5-e3e9-44f8-92eb-900c23f16da2",
+    "totalSupply": "1720.931145553554",
+    "circulatingSupply": "1720.931145553554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x43e3f25342f7a48b05af350738e9d918ac8f045e47277836fc16e9bd9678e6dd": {
+    "key": "ethereum:0x43e3f25342f7a48b05af350738e9d918ac8f045e47277836fc16e9bd9678e6dd",
+    "name": "Uniswap V4 LP EGP/BLKHIon",
+    "decimals": 18,
+    "symbol": "EGP/BLKHION",
+    "price": 9007199254740990,
+    "address": "0x43e3f25342f7a48b05af350738e9d918ac8f045e47277836fc16e9bd9678e6dd",
+    "addresses": {
+     "ethereum": "0x43e3f25342f7a48b05af350738e9d918ac8f045e47277836fc16e9bd9678e6dd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102178494/large/brainon_160x160.png?1789710092",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.464Z",
+    "createdAt": "2026-10-14T18:45:04.455Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x787769d6fc857169f5243ef66d3f0a954149d3ba"
+    ],
+    "liquidity": 20074.33676156027,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.487"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.053"
+    },
+    "tokenId": "1ccf44ad-cf26-49b2-aca6-3b68d318941c",
+    "reserves": [
+     "19999.513570605151026176",
+     "6.042286047377328084"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1f3c48910169bbfeec9163c6a42e842ea0f8b525a5c9095eefdf544a86234a49": {
+    "key": "ethereum:0x1f3c48910169bbfeec9163c6a42e842ea0f8b525a5c9095eefdf544a86234a49",
+    "name": "Uniswap V4 LP BLKon/USDC",
+    "decimals": 18,
+    "symbol": "BLKON/USDC",
+    "price": 9007199254740990,
+    "address": "0x1f3c48910169bbfeec9163c6a42e842ea0f8b525a5c9095eefdf544a86234a49",
+    "addresses": {
+     "ethereum": "0x1f3c48910169bbfeec9163c6a42e842ea0f8b525a5c9095eefdf544a86234a49"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68629/large/blkon_160x160.png?1756130314",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.795Z",
+    "createdAt": "2025-09-26T08:45:48.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7a0f89c1606f71499950aa2590d547c3975b728e",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 929.7934648696978,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.139"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "32ea63b6-98b7-4da9-a5c9-d8962df8a992",
+    "reserves": [
+     "0.325129620443085995",
+     "555.596351"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x817092b623aa2698c65e1d16f21ddd8f042bf69ce2ca05b68506c0edacf1cbba": {
+    "key": "ethereum:0x817092b623aa2698c65e1d16f21ddd8f042bf69ce2ca05b68506c0edacf1cbba",
+    "name": "Uniswap V4 LP EGP/BLKGRWon",
+    "decimals": 18,
+    "symbol": "EGP/BLKGRWON",
+    "price": 9007199254740990,
+    "address": "0x817092b623aa2698c65e1d16f21ddd8f042bf69ce2ca05b68506c0edacf1cbba",
+    "addresses": {
+     "ethereum": "0x817092b623aa2698c65e1d16f21ddd8f042bf69ce2ca05b68506c0edacf1cbba"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102178496/large/brainon_160x160.png?1789710384"
+    ],
+    "updatedAt": "2026-10-18T20:15:04.139Z",
+    "createdAt": "2026-10-14T18:45:45.614Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xc90341cb9cb8d65af044fab23b659b7b4279399b"
+    ],
+    "liquidity": 20071.8338127474,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0.344"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.2608"
+    },
+    "tokenId": "b1e2f468-12ec-417c-8aec-d4bc28470384",
+    "reserves": [
+     "19999.656388807936079549",
+     "5.720814434663565252"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87": {
+    "key": "avalanche:0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+    "name": "Dinari BLK",
+    "decimals": 18,
+    "symbol": "BLK",
+    "price": 1131.82,
+    "address": "0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+    "addresses": {
+     "ethereum": "0x8476f0710a02f622eff6577b47875751193b06de",
+     "base": "0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+     "avalanche": "0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+     "arbitrum": "0xf2f26eee8b40447f664f20ad3513e894153fe09e"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7890.6,
+    "image": "https://coin-images.coingecko.com/coins/images/102174984/large/dinari-logo-green-with-margin.png?1785402794",
+    "metrics": {
+     "volumeUsd1d": "2.968",
+     "volumeUsd7d": "382.082"
+    },
+    "metadata": {},
+    "tokenId": "629c4bf9-4727-48f6-abe1-a52447bec0e3",
+    "totalSupply": "6.9716185899425",
+    "circulatingSupply": "6.9716185899425",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x8476f0710a02f622eff6577b47875751193b06de": {
+    "key": "ethereum:0x8476f0710a02f622eff6577b47875751193b06de",
+    "name": "Dinari BLK",
+    "decimals": 18,
+    "symbol": "BLK",
+    "price": 1131.82,
+    "address": "0x8476f0710a02f622eff6577b47875751193b06de",
+    "addresses": {
+     "ethereum": "0x8476f0710a02f622eff6577b47875751193b06de",
+     "base": "0x45afb331111126f5bf8d37c7816c540c1ec6f544",
+     "avalanche": "0xce05e31d034f7ecfdd908c501eb42e3ea48e5f87",
+     "arbitrum": "0xf2f26eee8b40447f664f20ad3513e894153fe09e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7890.6,
+    "image": "https://coin-images.coingecko.com/coins/images/102174984/large/dinari-logo-green-with-margin.png?1785402794",
+    "metrics": {
+     "volumeUsd1d": "2.968",
+     "volumeUsd7d": "382.067"
+    },
+    "metadata": {},
+    "tokenId": "629c4bf9-4727-48f6-abe1-a52447bec0e3",
+    "totalSupply": "6.9716185899425",
+    "circulatingSupply": "6.9716185899425",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe658c62195f32bc53226e7e2642e3d76b4382fb8": {
+    "key": "bsc:0xe658c62195f32bc53226e7e2642e3d76b4382fb8",
+    "name": "Ondo Diversified Growth Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKDIGON",
+    "price": 4.91,
+    "address": "0xe658c62195f32bc53226e7e2642e3d76b4382fb8",
+    "addresses": {
+     "bsc": "0xe658c62195f32bc53226e7e2642e3d76b4382fb8",
+     "ethereum": "0x6e17534a1fc047907d8f422ca166944d6469e053"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:53:34.929Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2604315,
+    "image": "https://coin-images.coingecko.com/coins/images/102178495/large/brainon_160x160.png?1789710250",
+    "metrics": {
+     "volumeUsd1d": "3406.888",
+     "volumeUsd7d": "2100759.183"
+    },
+    "metadata": {},
+    "tokenId": "1af1fdc6-b824-4d9b-978d-31b6d69f18de",
+    "totalSupply": "530652.4149626718",
+    "circulatingSupply": "530652.4149626718",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb65af135f649ca56b8d43b4194198ac4b7dc7e20": {
+    "key": "base:0xb65af135f649ca56b8d43b4194198ac4b7dc7e20",
+    "name": "Uniswap V3 USD Coin/BLACK HOLE 0.3%",
+    "decimals": 18,
+    "symbol": "USDC/BLKH",
+    "price": 9007199254740990,
+    "address": "0xb65af135f649ca56b8d43b4194198ac4b7dc7e20",
+    "addresses": {
+     "base": "0xb65af135f649ca56b8d43b4194198ac4b7dc7e20"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/70836/large/dexscreener-icon.png?1764102990",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:15:47.177Z",
+    "createdAt": "2026-01-07T12:05:50.915Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xd63f21e7f4205d59c5b486273c42e261d5cd4d1d"
+    ],
+    "liquidity": 9184.419277675765,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "990cf6e4-00bd-4b19-9620-1adb8c001aca",
+    "reserves": [
+     "0.05544",
+     "58125206.320863259603901582"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xda8f48ee393001539ef00084527c08ca376f440a6e24a28ff0c2748da61de947": {
+    "key": "ethereum:0xda8f48ee393001539ef00084527c08ca376f440a6e24a28ff0c2748da61de947",
+    "name": "Uniswap V4 LP USDT/BLKDIGon",
+    "decimals": 18,
+    "symbol": "USDT/BLKDIGON",
+    "price": 9007199254740990,
+    "address": "0xda8f48ee393001539ef00084527c08ca376f440a6e24a28ff0c2748da61de947",
+    "addresses": {
+     "ethereum": "0xda8f48ee393001539ef00084527c08ca376f440a6e24a28ff0c2748da61de947"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102178495/large/brainon_160x160.png?1789710250"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.759Z",
+    "createdAt": "2026-10-12T05:08:47.842Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0x6e17534a1fc047907d8f422ca166944d6469e053"
+    ],
+    "liquidity": 1764.5491418533045,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "6c034a72-45af-4ec3-aab8-b2b165fdd8b8",
+    "reserves": [
+     "1999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xfce329757a86b05029428f4443533fbb6b7b5ad0": {
+    "key": "arbitrum:0xfce329757a86b05029428f4443533fbb6b7b5ad0",
+    "name": "Blackrock rStock",
+    "decimals": 18,
+    "symbol": "RBLK",
+    "price": 1129.37,
+    "address": "0xfce329757a86b05029428f4443533fbb6b7b5ad0",
+    "addresses": {
+     "arbitrum": "0xfce329757a86b05029428f4443533fbb6b7b5ad0"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 29494,
+    "image": "https://coin-images.coingecko.com/coins/images/102177319/large/6762645b05085c5605bf15a2f35794bb.png?1789117526",
+    "metrics": {
+     "volumeUsd1d": "0.002",
+     "volumeUsd7d": "1517.388"
+    },
+    "metadata": {},
+    "tokenId": "14563191-e5f6-498e-8390-e233591f46be",
+    "totalSupply": "26.115273237",
+    "circulatingSupply": "26.115273237",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe4bd77247671746caa3119e9feaa146f8a4ee237": {
+    "key": "bsc:0xe4bd77247671746caa3119e9feaa146f8a4ee237",
+    "name": "Ondo High Growth Powered by BlackRock",
+    "decimals": 18,
+    "symbol": "BLKGRWON",
+    "price": 4.66,
+    "address": "0xe4bd77247671746caa3119e9feaa146f8a4ee237",
+    "addresses": {
+     "ethereum": "0xc90341cb9cb8d65af044fab23b659b7b4279399b",
+     "bsc": "0xe4bd77247671746caa3119e9feaa146f8a4ee237"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-18T05:56:35.396Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3451237,
+    "image": "https://coin-images.coingecko.com/coins/images/102178496/large/brainon_160x160.png?1789710384",
+    "metrics": {
+     "volumeUsd1d": "2659.122",
+     "volumeUsd7d": "2591902.996"
+    },
+    "metadata": {},
+    "tokenId": "6313c313-c736-42ec-ba6a-02b566821b0f",
+    "totalSupply": "740454.0350772399",
+    "circulatingSupply": "740454.0350772399",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

@@ -1,0 +1,5469 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US36467W1099",
+ "ticker": "GME",
+ "name": "GameStop",
+ "isin": "US36467W1099",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:20Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "GameStop Corp",
+   "symbol": "GME",
+   "slug": "gamestop",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 27.07617233488404,
+     "tokenized_market_cap": 13059505.071768837,
+     "tokenized_volume_24h": 2684125.95270178,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 116,
+   "asset_type": "stock",
+   "rwa_rank": 741,
+   "has_tokens": true,
+   "average_tokenized_price": 27.07617233488404,
+   "tokenized_market_cap": 13059505.071768837,
+   "tokenized_volume_24h": 2684125.95270178,
+   "last_updated": "2026-10-18T20:14:26.618Z",
+   "tokens": [
+    {
+     "symbol": "GMEX",
+     "name": "Gamestop tokenized stock (xStock)",
+     "price": 27.069894709849297,
+     "crypto_id": 37023,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 1996753.26,
+     "volume_24h": 322792.73483453
+    },
+    {
+     "symbol": "GME.D",
+     "name": "GME Tokenized Stock (Dinari)",
+     "price": null,
+     "crypto_id": 37117,
+     "issuer_id": "688c6172abae9b5b9fb30359",
+     "issuer_name": "Dinari Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "GMEon",
+     "name": "GameStop Tokenized Stock (Ondo)",
+     "price": 27.48720438203926,
+     "crypto_id": 37997,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 513637.24,
+     "volume_24h": 789244.44153592
+    },
+    {
+     "symbol": "GME",
+     "name": "GameStop Corp (Derivatives)",
+     "price": 26.887252671489755,
+     "crypto_id": 39928,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "GME",
+     "name": "GameStop Tokenized Stock (Robinhood)",
+     "price": 26.907999603595936,
+     "crypto_id": 40704,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 3065994.42,
+     "volume_24h": 415411.10689526
+    },
+    {
+     "symbol": "GMEB",
+     "name": "GameStop Tokenized bStocks",
+     "price": 26.873611282312282,
+     "crypto_id": 41077,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 7286610.58,
+     "volume_24h": 1017543.94286355
+    },
+    {
+     "symbol": "WGMEX",
+     "name": "Wrapped Gamestop Tokenized stock (xStock)",
+     "price": 27.00446734051779,
+     "crypto_id": 37120,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 137794.03,
+     "volume_24h": 13755.06609805
+    },
+    {
+     "symbol": "GMEc",
+     "name": "GameStop Corp. Tokenized Stock (Coinbase)",
+     "price": 28.172366771052598,
+     "crypto_id": 42460,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 56063.22,
+     "volume_24h": 200.11772997
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "GME",
+     "market_url": "https://www.binance.com/en/stocks/EQ_GME"
+    }
+   ]
+  },
+  "info": {
+   "37023": {
+    "id": 37023,
+    "symbol": "GMEX",
+    "name": "Gamestop tokenized stock (xStock)",
+    "slug": "gamestop-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37023.png",
+    "date_added": "2025-07-01T15:49:25.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc"
+    },
+    "contract_address": [
+     {
+      "contract_address": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xE5f6d3b2405ABdfE6F660e63202B25D23763160d",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "EQA2ezTnOiUce55zBQ_Yhum4lOCVahIMZRi-yyrR0MNON9vZ",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "37117": {
+    "id": 37117,
+    "symbol": "GME.D",
+    "name": "GME Tokenized Stock (Dinari)",
+    "slug": "gme-tokenized-stock-dinari",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37117.png",
+    "date_added": "2025-07-03T06:25:03.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7FB5Da212239593f4BF544fBe2EC70CE91F0AfDB",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     }
+    ]
+   },
+   "37997": {
+    "id": 37997,
+    "symbol": "GMEon",
+    "name": "GameStop Tokenized Stock (Ondo)",
+    "slug": "gamestop-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37997.png",
+    "date_added": "2025-09-03T10:54:57.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x71d24Baeb0A033ec5F90FF65C4210545AF378D97"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x71d24Baeb0A033ec5F90FF65C4210545AF378D97",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "aznKt8v32CwYMEcTcB4bGTv8DXWStCpHrcCtyy7ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "39928": {
+    "id": 39928,
+    "symbol": "GME",
+    "name": "GameStop Corp (Derivatives)",
+    "slug": "gamestop-corp-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39928.png",
+    "date_added": "2026-05-04T03:46:31.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40704": {
+    "id": 40704,
+    "symbol": "GME",
+    "name": "GameStop Tokenized Stock (Robinhood)",
+    "slug": "gamestop-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40704.png",
+    "date_added": "2026-08-04T07:31:32.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x1b0E319c6A659F002271B69dB8A7df2F911c153E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x1b0E319c6A659F002271B69dB8A7df2F911c153E",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "41077": {
+    "id": 41077,
+    "symbol": "GMEB",
+    "name": "GameStop Tokenized bStocks",
+    "slug": "gamestop-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41077.png",
+    "date_added": "2026-08-11T03:55:00.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0x46ceefda28dd7207059ed19b0acdc026955bb15c"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "37120": {
+    "id": 37120,
+    "symbol": "WGMEX",
+    "name": "Wrapped Gamestop Tokenized stock (xStock)",
+    "slug": "wrapped-gamestop-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37120.png",
+    "date_added": "2025-07-03T07:45:20.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x459D3ae62B86cC6125e06260DddFd3AFED24A877"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x459D3ae62B86cC6125e06260DddFd3AFED24A877",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xb2f6ed0ed3eeb22bef7a648794ffc19b8af3761c",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42460": {
+    "id": 42460,
+    "symbol": "GMEc",
+    "name": "GameStop Corp. Tokenized Stock (Coinbase)",
+    "slug": "gamestop-corp-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42460.png",
+    "date_added": "2026-10-08T03:59:54.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000007790ed6E48e06eD935"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000007790ed6E48e06eD935",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xb2f6ed0ed3eeb22bef7a648794ffc19b8af3761c",
+   "arbitrum:0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+   "arbitrum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+   "base:0xb2000000000000000000007790ed6e48e06ed935",
+   "bsc:0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+   "bsc:0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+   "bsc:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+   "ethereum:0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+   "ethereum:0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+   "ethereum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+   "robinhood:0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+  ],
+  "exact": {
+   "ethereum:0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb": {
+    "key": "ethereum:0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.889"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "ethereum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "ethereum": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12893091.882443465,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "7576a335-2b6e-42aa-9b6a-5f370fd06cd1",
+    "totalSupply": "478053.091673839999999999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "arbitrum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "arbitrum": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:14.907Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10796630.4,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "4b683efd-f4c4-44b9-84d8-fb92b1c42fba",
+    "totalSupply": "400319.999999999999999999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3": {
+    "key": "bsc:0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+    "name": "GameStop (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEON",
+    "price": 27.43,
+    "address": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+    "addresses": {
+     "bsc": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+     "ethereum": "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 512543,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "487054.837",
+     "volumeUsd7d": "3601889.784"
+    },
+    "metadata": {},
+    "tokenId": "84b9899f-9758-497d-adef-94f02e7b57fd",
+    "totalSupply": "18686.41246116429",
+    "circulatingSupply": "18686.41246116429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x46ceefda28dd7207059ed19b0acdc026955bb15c": {
+    "key": "bsc:0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+    "name": "GameStop (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEB",
+    "price": 26.94,
+    "address": "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+    "addresses": {
+     "bsc": "0x46ceefda28dd7207059ed19b0acdc026955bb15c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-13T10:14:27.918Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7305657,
+    "image": "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+    "metrics": {
+     "volumeUsd1d": "272817.189",
+     "volumeUsd7d": "3497904.839"
+    },
+    "metadata": {},
+    "tokenId": "eb7eba57-8fc9-496c-a908-68f4fd9d24af",
+    "totalSupply": "271143.70687521",
+    "circulatingSupply": "271143.70687521",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "bsc:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "bsc": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:23.084Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6508171.774522863,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "24e94906-32df-4fdb-ac43-ad20dfa71f76",
+    "totalSupply": "241311.522970814368859999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb415998a7bb6f11dc589e0eb20adf586ba32f12a": {
+    "key": "arbitrum:0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.262"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x71d24baeb0a033ec5f90ff65c4210545af378d97": {
+    "key": "ethereum:0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+    "name": "GameStop (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEON",
+    "price": 27.43,
+    "address": "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+    "addresses": {
+     "bsc": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+     "ethereum": "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 512543,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "488896.074",
+     "volumeUsd7d": "3592312.965"
+    },
+    "metadata": {},
+    "tokenId": "84b9899f-9758-497d-adef-94f02e7b57fd",
+    "totalSupply": "18686.41246116429",
+    "circulatingSupply": "18686.41246116429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1b0e319c6a659f002271b69db8a7df2f911c153e": {
+    "key": "robinhood:0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "name": "GameStop • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 26.785,
+    "address": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "addresses": {
+     "robinhood": "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "liquidity": 3051979.40608715,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1290624.441"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c5ac9420091c4f9eb3ff1fdd1d2b60c6",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "44302d11-4895-477c-8600-219f14aef257",
+    "totalSupply": "113943.60299",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "GME": {
+    "total_items": 110,
+    "pages": 1,
+    "received": 110,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xca11843fcb588e837565f1b728dfa6832fa25d64d0825147a10843d25f800804": {
+    "key": "robinhood:0xca11843fcb588e837565f1b728dfa6832fa25d64d0825147a10843d25f800804",
+    "name": "Uniswap V4 LP ETH/GME",
+    "decimals": 18,
+    "symbol": "ETH/GME",
+    "price": 9007199254740990,
+    "address": "0xca11843fcb588e837565f1b728dfa6832fa25d64d0825147a10843d25f800804",
+    "addresses": {
+     "robinhood": "0xca11843fcb588e837565f1b728dfa6832fa25d64d0825147a10843d25f800804"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.380Z",
+    "createdAt": "2026-08-10T02:42:13.134Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 65679.57603859791,
+    "metrics": {
+     "apy": "68.807",
+     "baseApy": "68.807",
+     "volumeUsd1d": "11264.723",
+     "volumeUsd7d": "89699.478"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "58de635b-ada8-4a5e-9b95-e180698c7062",
+    "reserves": [
+     "23.815111548924177813",
+     "374.697866637410286864"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0a0675689c2ad2a3ade86539bcbd27b6c0764e9d": {
+    "key": "robinhood:0x0a0675689c2ad2a3ade86539bcbd27b6c0764e9d",
+    "name": "Uniswap V3 GameStop  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0x0a0675689c2ad2a3ade86539bcbd27b6c0764e9d",
+    "addresses": {
+     "robinhood": "0x0a0675689c2ad2a3ade86539bcbd27b6c0764e9d"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.626Z",
+    "createdAt": "2026-07-23T13:51:07.169Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 2423.3838681028387,
+    "metrics": {
+     "apy": "7.24",
+     "baseApy": "7.24",
+     "volumeUsd1d": "160.227",
+     "volumeUsd7d": "19515.623"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8c9e463e-c5f3-4078-aba0-f9a799f1b519",
+    "reserves": [
+     "33.079271611082276728",
+     "1537.355578"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc32e0a4fd976cb2285c1ba7528aaff9473dd1e18": {
+    "key": "robinhood:0xc32e0a4fd976cb2285c1ba7528aaff9473dd1e18",
+    "name": "GAMESTOP",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 0.0029696505163349885,
+    "address": "0xc32e0a4fd976cb2285c1ba7528aaff9473dd1e18",
+    "addresses": {
+     "robinhood": "0xc32e0a4fd976cb2285c1ba7528aaff9473dd1e18"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-10T08:22:26.853Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2969650.5163349886,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "64ad8c1a-baf5-4cc5-8136-91ae32938523",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xd469610118c41b0ba413e919a3d9af5298a08e683afbf0f47cbfe56b2d62bb7a": {
+    "key": "ethereum:0xd469610118c41b0ba413e919a3d9af5298a08e683afbf0f47cbfe56b2d62bb7a",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0xd469610118c41b0ba413e919a3d9af5298a08e683afbf0f47cbfe56b2d62bb7a",
+    "addresses": {
+     "ethereum": "0xd469610118c41b0ba413e919a3d9af5298a08e683afbf0f47cbfe56b2d62bb7a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.533Z",
+    "createdAt": "2026-01-23T08:30:04.370Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1048.5194577096486,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90"
+    },
+    "tokenId": "6696b3fb-998b-429c-8650-ab073b0dcb6f",
+    "reserves": [
+     "20.000363022590174495",
+     "500"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7e86381a763f0ecca2bdf27c54eac403ddd48123": {
+    "key": "robinhood:0x7e86381a763f0ecca2bdf27c54eac403ddd48123",
+    "name": "GameStop",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 3.136e-05,
+    "address": "0x7e86381a763f0ecca2bdf27c54eac403ddd48123",
+    "addresses": {
+     "robinhood": "0x7e86381a763f0ecca2bdf27c54eac403ddd48123"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 31363,
+    "image": "https://coin-images.coingecko.com/coins/images/102174374/large/70586C54-4D0E-42E2-86DC-DEC527DE759C.jpeg?1783777485",
+    "metrics": {
+     "volumeUsd1d": "7.866",
+     "volumeUsd7d": "673.891"
+    },
+    "metadata": {},
+    "tokenId": "34cf1bb5-75b6-4ced-b9c2-a40d5834b863",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcc74188beb1949ef02168e4dc2ee1998b46cba88": {
+    "key": "ethereum:0xcc74188beb1949ef02168e4dc2ee1998b46cba88",
+    "name": "Uniswap V3 The Meme Games/Wrapped Ether 0.3%",
+    "decimals": 18,
+    "symbol": "MGMES/WETH",
+    "price": 9007199254740990,
+    "address": "0xcc74188beb1949ef02168e4dc2ee1998b46cba88",
+    "addresses": {
+     "ethereum": "0xcc74188beb1949ef02168e4dc2ee1998b46cba88"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.458Z",
+    "createdAt": "2025-10-06T09:15:29.184Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 8502.302233290913,
+    "metrics": {
+     "apy": "0.033",
+     "baseApy": "0.033",
+     "volumeUsd1d": "2.559",
+     "volumeUsd7d": "3.784"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "cd8142a0-f8e6-4372-817d-6c986e73251c",
+    "reserves": [
+     "16380032.303122802809351839",
+     "1.971603140485600747"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb": {
+    "key": "ethereum:0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.889"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c": {
+    "key": "robinhood:0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "name": "Uniswap V3 WETH/RobinhoodTrumpGMEShrekNokia4663Doge 1%",
+    "decimals": 18,
+    "symbol": "WETH/NASDAQ",
+    "price": 9007199254740990,
+    "address": "0x434de0f0800d9653d26f96becd9702d8d740ee3c",
+    "addresses": {
+     "robinhood": "0x434de0f0800d9653d26f96becd9702d8d740ee3c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.514Z",
+    "createdAt": "2026-07-17T08:50:20.652Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    ],
+    "liquidity": 4639.830422309339,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "25.754"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "830109f7-1fad-4e43-a717-6d18a83ba4bd",
+    "reserves": [
+     "0.311208307223458652",
+     "824831725.06329220529433026"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa": {
+    "key": "bsc:0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa",
+    "addresses": {
+     "bsc": "0x11c5c2d1d3dc0371965296330aa1236feb78ba9b3a27c5da9d835b5d2d46c8aa"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.548Z",
+    "createdAt": "2026-08-13T10:16:23.045Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 41663.107920866205,
+    "metrics": {
+     "apy": "10.503",
+     "baseApy": "10.503",
+     "volumeUsd1d": "25233.307",
+     "volumeUsd7d": "355118.794"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4,
+     "feePercentage": "0.0475"
+    },
+    "tokenId": "bb73c6aa-9ceb-416b-bec4-8885310d5492",
+    "reserves": [
+     "884.740616764989256307",
+     "17842.683964596650028808"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x0741b9da9622f55b97314c880ccbf2b43053cc387420629e0f41d04376fec291": {
+    "key": "bsc:0x0741b9da9622f55b97314c880ccbf2b43053cc387420629e0f41d04376fec291",
+    "name": "Uniswap V4 LP GMEB/USDC",
+    "decimals": 18,
+    "symbol": "GMEB/USDC",
+    "price": 9007199254740990,
+    "address": "0x0741b9da9622f55b97314c880ccbf2b43053cc387420629e0f41d04376fec291",
+    "addresses": {
+     "bsc": "0x0741b9da9622f55b97314c880ccbf2b43053cc387420629e0f41d04376fec291"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35220/large/USDC.jpg?1707919050"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.464Z",
+    "createdAt": "2026-09-06T13:07:34.090Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    ],
+    "liquidity": 7200.740946427256,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3750.631"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "8de1d463-3f18-4177-91aa-ebf1246304a6",
+    "reserves": [
+     "155.900508607471046588",
+     "3001.324484273639771164"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xd9e1140ca22a5a24495cffea99e5728ef4f41713993a38d5646a956860cf8c16": {
+    "key": "bsc:0xd9e1140ca22a5a24495cffea99e5728ef4f41713993a38d5646a956860cf8c16",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0xd9e1140ca22a5a24495cffea99e5728ef4f41713993a38d5646a956860cf8c16",
+    "addresses": {
+     "bsc": "0xd9e1140ca22a5a24495cffea99e5728ef4f41713993a38d5646a956860cf8c16"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.513Z",
+    "createdAt": "2026-08-13T10:16:22.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 3305.5241025022956,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8,
+     "feePercentage": "0.0966"
+    },
+    "tokenId": "55c89544-8d2c-4cff-a499-f6cf95396300",
+    "reserves": [
+     "74.985263718787788394",
+     "1286.46570807310789208"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6a24a877bb7d07fba59397decbbaed5f92890aea": {
+    "key": "bsc:0x6a24a877bb7d07fba59397decbbaed5f92890aea",
+    "name": "PancakeSwap LP GMEE/WBNB",
+    "decimals": 18,
+    "symbol": "GMEE/WBNB",
+    "price": 2.8101854312402366,
+    "address": "0x6a24a877bb7d07fba59397decbbaed5f92890aea",
+    "addresses": {
+     "bsc": "0x6a24a877bb7d07fba59397decbbaed5f92890aea"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.483Z",
+    "createdAt": "2024-02-29T09:06:54.899Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x84e9a6f9d240fdd33801f7135908bfa16866939a",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 20361.74893513969,
+    "metrics": {
+     "apy": "0.015",
+     "baseApy": "0.015",
+     "volumeUsd1d": "3.385",
+     "volumeUsd7d": "295.309"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "cb018037-8215-40f3-af57-37a1db1e8a7d",
+    "totalSupply": "7245.695856502008035965",
+    "reserves": [
+     "5143320.290576897995763496",
+     "19.888553540550286101"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x32a62138b7cc884eab8666dc56d3bf782ea47ced010a4a6051c1474b89cab3f4": {
+    "key": "bsc:0x32a62138b7cc884eab8666dc56d3bf782ea47ced010a4a6051c1474b89cab3f4",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x32a62138b7cc884eab8666dc56d3bf782ea47ced010a4a6051c1474b89cab3f4",
+    "addresses": {
+     "bsc": "0x32a62138b7cc884eab8666dc56d3bf782ea47ced010a4a6051c1474b89cab3f4"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.387Z",
+    "createdAt": "2026-08-13T14:08:09.418Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 2154.2743398669227,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2,
+     "feePercentage": "0.2786"
+    },
+    "tokenId": "a78bb40a-7436-4912-ae85-4f996f278bdd",
+    "reserves": [
+     "46.502118324941386172",
+     "902.239890984481247861"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xebb2a752338b030fb5fd857a3676c6f5e7cd264de2b1e2f59bf01d58ec6c806e": {
+    "key": "ethereum:0xebb2a752338b030fb5fd857a3676c6f5e7cd264de2b1e2f59bf01d58ec6c806e",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0xebb2a752338b030fb5fd857a3676c6f5e7cd264de2b1e2f59bf01d58ec6c806e",
+    "addresses": {
+     "ethereum": "0xebb2a752338b030fb5fd857a3676c6f5e7cd264de2b1e2f59bf01d58ec6c806e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.700Z",
+    "createdAt": "2026-08-02T06:40:41.881Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 540.9207180356757,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 2000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "c2c097d8-03e7-4ac6-90fd-686040e6d390",
+    "reserves": [
+     "3.646438322499733802",
+     "440.978732"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "ethereum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "ethereum": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 12893091.882443465,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "7576a335-2b6e-42aa-9b6a-5f370fd06cd1",
+    "totalSupply": "478053.091673839999999999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xfc4b4ec763722b71eb1d729749b447a9645f5f30": {
+    "key": "ethereum:0xfc4b4ec763722b71eb1d729749b447a9645f5f30",
+    "name": "DumbMoney",
+    "decimals": 9,
+    "symbol": "GME",
+    "price": 0.00019602,
+    "address": "0xfc4b4ec763722b71eb1d729749b447a9645f5f30",
+    "addresses": {
+     "ethereum": "0xfc4b4ec763722b71eb1d729749b447a9645f5f30"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19601.66,
+    "image": "https://assets.coingecko.com/coins/images/32058/large/DumbMoney_-_GME_-_Official_Logo_200x200px.png?1696530855",
+    "metrics": {
+     "volumeUsd1d": "2.005",
+     "volumeUsd7d": "271.675"
+    },
+    "metadata": {},
+    "tokenId": "fd48a763-1c28-48d4-9bff-c24cccf7cbf9",
+    "totalSupply": "100000000",
+    "circulatingSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x90c8c09dd4a6bf3b0a2dcf179c72a2c8c6e09fee": {
+    "key": "robinhood:0x90c8c09dd4a6bf3b0a2dcf179c72a2c8c6e09fee",
+    "name": "Uniswap V3 WETH/GameStop 1%",
+    "decimals": 18,
+    "symbol": "WETH/GME",
+    "price": 9007199254740990,
+    "address": "0x90c8c09dd4a6bf3b0a2dcf179c72a2c8c6e09fee",
+    "addresses": {
+     "robinhood": "0x90c8c09dd4a6bf3b0a2dcf179c72a2c8c6e09fee"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174374/large/70586C54-4D0E-42E2-86DC-DEC527DE759C.jpeg?1783777485"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.467Z",
+    "createdAt": "2026-07-16T20:29:57.272Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x7e86381a763f0ecca2bdf27c54eac403ddd48123"
+    ],
+    "liquidity": 16869.0275486446,
+    "metrics": {
+     "apy": "0.175",
+     "baseApy": "0.175",
+     "volumeUsd1d": "8.081",
+     "volumeUsd7d": "640.361"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "9c65d5d0-892f-48b6-91b4-691e1226d03e",
+    "reserves": [
+     "2.947235694730480317",
+     "318275874.475791948216421201"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x28a7d169942bb50f51a2e53262ca736980fe183f": {
+    "key": "robinhood:0x28a7d169942bb50f51a2e53262ca736980fe183f",
+    "name": "Beefy CLM GME-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODGME-USDG",
+    "price": 1288596918593.5505,
+    "address": "0x28a7d169942bb50f51a2e53262ca736980fe183f",
+    "addresses": {
+     "robinhood": "0x28a7d169942bb50f51a2e53262ca736980fe183f"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0"
+    ],
+    "poolAddress": "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0",
+    "liquidity": 55879.65666244279,
+    "metrics": {
+     "apy": "37.395",
+     "baseApy": "37.395",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-497.232"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-gme-usdg-10000",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0",
+     "strategyAddress": "0x724b83d5fb39faeebf0b92bd1ea36c3423059b98",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x28a7d169942bb50f51a2e53262ca736980fe183f",
+     "depositTokenAddresses": [
+      "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "e58cbd42-bd9a-4b4f-9b23-e5de87e15560",
+    "totalSupply": "0.000000043364729386",
+    "reserves": [
+     "0.000000043364729386"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1a342620f43fe2a82444cbc363f2185c8a7bd44131269ef215d845e5ee84d6cf": {
+    "key": "robinhood:0x1a342620f43fe2a82444cbc363f2185c8a7bd44131269ef215d845e5ee84d6cf",
+    "name": "Uniswap V4 LP USDG/GME",
+    "decimals": 18,
+    "symbol": "USDG/GME",
+    "price": 9007199254740990,
+    "address": "0x1a342620f43fe2a82444cbc363f2185c8a7bd44131269ef215d845e5ee84d6cf",
+    "addresses": {
+     "robinhood": "0x1a342620f43fe2a82444cbc363f2185c8a7bd44131269ef215d845e5ee84d6cf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.315Z",
+    "createdAt": "2026-07-23T13:51:07.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3"
+    ],
+    "liquidity": 560.7906016907976,
+    "metrics": {
+     "apy": "49.471",
+     "baseApy": "49.471",
+     "volumeUsd1d": "14.941",
+     "volumeUsd7d": "1669.548"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 998,
+     "feePercentage": "5.0872"
+    },
+    "tokenId": "6a7cc49e-3844-47ce-8eb3-605e4da2cab2",
+    "reserves": [
+     "149.32974",
+     "63562092.728167038199212801"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xdff598a7c3225bcc8dd51fb3548d85d39def195fd131f8456afe477436e9b8e0": {
+    "key": "robinhood:0xdff598a7c3225bcc8dd51fb3548d85d39def195fd131f8456afe477436e9b8e0",
+    "name": "Uniswap V4 LP wUSDG/GME",
+    "decimals": 18,
+    "symbol": "WUSDG/GME",
+    "price": 9007199254740990,
+    "address": "0xdff598a7c3225bcc8dd51fb3548d85d39def195fd131f8456afe477436e9b8e0",
+    "addresses": {
+     "robinhood": "0xdff598a7c3225bcc8dd51fb3548d85d39def195fd131f8456afe477436e9b8e0"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.113Z",
+    "createdAt": "2026-08-20T22:31:04.623Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 10134.140004800023,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "af91d11a-564f-4f92-ac1c-b2ed9f32741c",
+    "reserves": [
+     "9860.674157",
+     "6.649861987100615078"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "arbitrum:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "arbitrum": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:14.907Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10796630.4,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "4b683efd-f4c4-44b9-84d8-fb92b1c42fba",
+    "totalSupply": "400319.999999999999999999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x27851d2ab70f70bf399c24bf6aa82f700e5eb9da660559f3a86c132aaf305997": {
+    "key": "ethereum:0x27851d2ab70f70bf399c24bf6aa82f700e5eb9da660559f3a86c132aaf305997",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x27851d2ab70f70bf399c24bf6aa82f700e5eb9da660559f3a86c132aaf305997",
+    "addresses": {
+     "ethereum": "0x27851d2ab70f70bf399c24bf6aa82f700e5eb9da660559f3a86c132aaf305997"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.766Z",
+    "createdAt": "2025-09-26T08:45:50.081Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 3585.6758413365674,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14000,
+     "feePercentage": "70.03"
+    },
+    "tokenId": "09e2795a-73b6-49a7-89a3-65b509088a0b",
+    "reserves": [
+     "10.037701810080502691",
+     "3310.940961"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x2bb9282552228734cca01a1671605122258e276a": {
+    "key": "base:0x2bb9282552228734cca01a1671605122258e276a",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0x2bb9282552228734cca01a1671605122258e276a",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.23"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc0440511329a3aae308b098236efc1fc303681c5aeec1ec705bf2dd2bc1dac9a": {
+    "key": "ethereum:0xc0440511329a3aae308b098236efc1fc303681c5aeec1ec705bf2dd2bc1dac9a",
+    "name": "Uniswap V4 LP USDT/GMEx",
+    "decimals": 18,
+    "symbol": "USDT/GMEX",
+    "price": 9007199254740990,
+    "address": "0xc0440511329a3aae308b098236efc1fc303681c5aeec1ec705bf2dd2bc1dac9a",
+    "addresses": {
+     "ethereum": "0xc0440511329a3aae308b098236efc1fc303681c5aeec1ec705bf2dd2bc1dac9a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.924Z",
+    "createdAt": "2026-10-18T18:58:14.305Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "81720c96-95e3-4687-a189-3f7eacc3726a",
+    "reserves": [
+     "3999.999999999999999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x52c1ba92ac1c48c1293f5f268b1653309be66c6d792de51c7adae0f7dc8b590f": {
+    "key": "bsc:0x52c1ba92ac1c48c1293f5f268b1653309be66c6d792de51c7adae0f7dc8b590f",
+    "name": "Uniswap V4 LP USDT/GMEon",
+    "decimals": 18,
+    "symbol": "USDT/GMEON",
+    "price": 9007199254740990,
+    "address": "0x52c1ba92ac1c48c1293f5f268b1653309be66c6d792de51c7adae0f7dc8b590f",
+    "addresses": {
+     "bsc": "0x52c1ba92ac1c48c1293f5f268b1653309be66c6d792de51c7adae0f7dc8b590f"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.558Z",
+    "createdAt": "2026-08-01T16:53:24.891Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3"
+    ],
+    "liquidity": 558.0365232715166,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "651d9fe5-26be-4cd1-bb40-a053918fedcb",
+    "reserves": [
+     "469.683925451463736782",
+     "3.234924577744056135"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x692963bb065632bd56ae81850403a7161ac25f663fe0e2a60628826942506eba": {
+    "key": "ethereum:0x692963bb065632bd56ae81850403a7161ac25f663fe0e2a60628826942506eba",
+    "name": "Uniswap V4 LP ETH/GMEE",
+    "decimals": 18,
+    "symbol": "ETH/GMEE",
+    "price": 9007199254740990,
+    "address": "0x692963bb065632bd56ae81850403a7161ac25f663fe0e2a60628826942506eba",
+    "addresses": {
+     "ethereum": "0x692963bb065632bd56ae81850403a7161ac25f663fe0e2a60628826942506eba"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:12:50.753Z",
+    "createdAt": "2026-07-17T06:37:14.662Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 1847.295,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5"
+    },
+    "tokenId": "f8aa08a2-5f6d-4b4c-ae7b-923110da3b1b",
+    "reserves": [
+     "0",
+     "1499999.999999999999999055"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9c20f5c34231c9244edf45c137870e66bcb69c90fdd1015e3262eb658d4335d5": {
+    "key": "robinhood:0x9c20f5c34231c9244edf45c137870e66bcb69c90fdd1015e3262eb658d4335d5",
+    "name": "Uniswap V4 LP USDG/GME",
+    "decimals": 18,
+    "symbol": "USDG/GME",
+    "price": 9007199254740990,
+    "address": "0x9c20f5c34231c9244edf45c137870e66bcb69c90fdd1015e3262eb658d4335d5",
+    "addresses": {
+     "robinhood": "0x9c20f5c34231c9244edf45c137870e66bcb69c90fdd1015e3262eb658d4335d5"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.127Z",
+    "createdAt": "2026-09-08T15:09:10.329Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3"
+    ],
+    "liquidity": 1191.017036107017,
+    "metrics": {
+     "apy": "25.119",
+     "baseApy": "25.119",
+     "volumeUsd1d": "32.467",
+     "volumeUsd7d": "188.864"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 243,
+     "feePercentage": "2.5246"
+    },
+    "tokenId": "10a79022-989d-4460-b24d-c0c9c4811e27",
+    "reserves": [
+     "607.464235",
+     "90146696.099663078518907956"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x51f6eeab2f7311d13002e6a124fc1a81e6c01e18": {
+    "key": "robinhood:0x51f6eeab2f7311d13002e6a124fc1a81e6c01e18",
+    "name": "GameStop",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 0.00010612671446145623,
+    "address": "0x51f6eeab2f7311d13002e6a124fc1a81e6c01e18",
+    "addresses": {
+     "robinhood": "0x51f6eeab2f7311d13002e6a124fc1a81e6c01e18"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-10T08:34:22.622Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 106126.71446145623,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "39abc4ed-9b31-483d-9645-bd560ae875b4",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe9713f453adb9245b19559790c96f470a18f2fdf": {
+    "key": "robinhood:0xe9713f453adb9245b19559790c96f470a18f2fdf",
+    "name": "Uniswap V3 GameStop  Robinhood Token/Global Dollar 1%",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0xe9713f453adb9245b19559790c96f470a18f2fdf",
+    "addresses": {
+     "robinhood": "0xe9713f453adb9245b19559790c96f470a18f2fdf"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.696Z",
+    "createdAt": "2026-07-17T23:43:39.356Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 324350.82118313946,
+    "metrics": {
+     "apy": "43.523",
+     "baseApy": "43.523",
+     "volumeUsd1d": "38675.487",
+     "volumeUsd7d": "658517.493"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "534e3e57-6090-4aa8-a314-c1e8148f969d",
+    "reserves": [
+     "5404.222119923071385656",
+     "179598.731701"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x6ae2d458d298229a367d835d6ccf138618f0b53018c87c0762bd0eccf787ff43": {
+    "key": "bsc:0x6ae2d458d298229a367d835d6ccf138618f0b53018c87c0762bd0eccf787ff43",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x6ae2d458d298229a367d835d6ccf138618f0b53018c87c0762bd0eccf787ff43",
+    "addresses": {
+     "bsc": "0x6ae2d458d298229a367d835d6ccf138618f0b53018c87c0762bd0eccf787ff43"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.315Z",
+    "createdAt": "2026-08-13T10:16:22.584Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 7529.944178395536,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 50,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "6eb9988e-8598-4d7e-872c-267ccd3501c3",
+    "reserves": [
+     "168.804237376997851298",
+     "2984.781666172145583919"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xef67e3064bef1a27e81925ec7132f23e533bd5f6": {
+    "key": "robinhood:0xef67e3064bef1a27e81925ec7132f23e533bd5f6",
+    "name": "Greatest Meme Ever",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 0.00128682,
+    "address": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6",
+    "addresses": {
+     "robinhood": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-06T20:41:27.593Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1286813,
+    "image": "https://coin-images.coingecko.com/coins/images/102176793/large/greatest_meme_ever.png?1788726223",
+    "metrics": {
+     "volumeUsd1d": "37954.782",
+     "volumeUsd7d": "596756.024"
+    },
+    "metadata": {},
+    "tokenId": "49f52525-17e2-428f-bea4-935cfb09819e",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x591b48173816cac67db17ecce09fce3d71c0c5e049fe55379dfd7392487702ea": {
+    "key": "ethereum:0x591b48173816cac67db17ecce09fce3d71c0c5e049fe55379dfd7392487702ea",
+    "name": "Uniswap V4 LP ETH/GMEE",
+    "decimals": 18,
+    "symbol": "ETH/GMEE",
+    "price": 9007199254740990,
+    "address": "0x591b48173816cac67db17ecce09fce3d71c0c5e049fe55379dfd7392487702ea",
+    "addresses": {
+     "ethereum": "0x591b48173816cac67db17ecce09fce3d71c0c5e049fe55379dfd7392487702ea"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.566Z",
+    "createdAt": "2026-08-04T16:52:36.116Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 7706.797880438337,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1690,
+     "feePercentage": "16.9"
+    },
+    "tokenId": "dac000da-a111-474d-9593-a5f70e7a362c",
+    "reserves": [
+     "0",
+     "6257905.110259870042584473"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xbeb0fd48c2ba0f1aacad2814605f09e08a96b94e": {
+    "key": "base:0xbeb0fd48c2ba0f1aacad2814605f09e08a96b94e",
+    "name": "GameStop",
+    "decimals": 9,
+    "symbol": "GME",
+    "price": 0.00042086,
+    "address": "0xbeb0fd48c2ba0f1aacad2814605f09e08a96b94e",
+    "addresses": {
+     "base": "0xbeb0fd48c2ba0f1aacad2814605f09e08a96b94e"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-04-23T09:37:11.496Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 42086,
+    "image": "https://assets.coingecko.com/coins/images/37229/large/gamestop.jpeg?1713780481",
+    "metrics": {
+     "volumeUsd1d": "1.15",
+     "volumeUsd7d": "23.31"
+    },
+    "metadata": {},
+    "tokenId": "2007ae5f-5f95-47d3-b9d8-4ebde1babccd",
+    "totalSupply": "100000000",
+    "circulatingSupply": "100000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x659e64f089e5d9ea30c4c50d01d365008cfd336b396c05853ea7700af3eb78f5": {
+    "key": "robinhood:0x659e64f089e5d9ea30c4c50d01d365008cfd336b396c05853ea7700af3eb78f5",
+    "name": "Uniswap V4 LP GME/USDG",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0x659e64f089e5d9ea30c4c50d01d365008cfd336b396c05853ea7700af3eb78f5",
+    "addresses": {
+     "robinhood": "0x659e64f089e5d9ea30c4c50d01d365008cfd336b396c05853ea7700af3eb78f5"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.702Z",
+    "createdAt": "2026-07-23T17:33:16.176Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1154.4481507984228,
+    "metrics": {
+     "apy": "79.407",
+     "baseApy": "79.407",
+     "volumeUsd1d": "1018.053",
+     "volumeUsd7d": "7685.166"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 42,
+     "feePercentage": "0.2467"
+    },
+    "tokenId": "db2d8eca-32df-4221-9e17-5c242b757679",
+    "reserves": [
+     "13.780941340243521488",
+     "785.325637"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373": {
+    "key": "ethereum:0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+    "name": "GAMEE",
+    "decimals": 18,
+    "symbol": "GMEE",
+    "price": 0.00123153,
+    "address": "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+    "addresses": {
+     "polygon": "0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
+     "ethereum": "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+     "bsc": "0x84e9a6f9d240fdd33801f7135908bfa16866939a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2178157,
+    "image": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386",
+    "metrics": {
+     "volumeUsd1d": "211958.312",
+     "volumeUsd7d": "1811338.33"
+    },
+    "metadata": {},
+    "tokenId": "c628d345-2d6c-4aa7-a818-5ae3e0b2a41b",
+    "totalSupply": "3180000000",
+    "circulatingSupply": "1769305126.1584601",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1c9973863e64f4f2595be10de357f78503365821ac97a1c520494cdf561607f9": {
+    "key": "robinhood:0x1c9973863e64f4f2595be10de357f78503365821ac97a1c520494cdf561607f9",
+    "name": "Uniswap V4 LP ETH/GME",
+    "decimals": 18,
+    "symbol": "ETH/GME",
+    "price": 9007199254740990,
+    "address": "0x1c9973863e64f4f2595be10de357f78503365821ac97a1c520494cdf561607f9",
+    "addresses": {
+     "robinhood": "0x1c9973863e64f4f2595be10de357f78503365821ac97a1c520494cdf561607f9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.001Z",
+    "createdAt": "2026-07-20T22:11:21.233Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 9314.553885167032,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "6.243"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d117b584-3ec7-40a5-a4be-0b7f71bfb5a2",
+    "reserves": [
+     "3.907937086018644478",
+     "6.861158177974611405"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfbfb8c1548f121400512d78fd9fee58f59735de23e9b95d592fe08364c8f5e4c": {
+    "key": "robinhood:0xfbfb8c1548f121400512d78fd9fee58f59735de23e9b95d592fe08364c8f5e4c",
+    "name": "Uniswap V4 LP GME/NVDA",
+    "decimals": 18,
+    "symbol": "GME/NVDA",
+    "price": 9007199254740990,
+    "address": "0xfbfb8c1548f121400512d78fd9fee58f59735de23e9b95d592fe08364c8f5e4c",
+    "addresses": {
+     "robinhood": "0xfbfb8c1548f121400512d78fd9fee58f59735de23e9b95d592fe08364c8f5e4c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/102174110/large/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec.png?1782444565"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.001Z",
+    "createdAt": "2026-08-06T08:19:24.871Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    ],
+    "liquidity": 6772.807199679333,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "baab65f9-5ade-4184-b7fc-9fe982032e38",
+    "reserves": [
+     "1.843102361138007347",
+     "31.332114560588286172"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xccba56a480f89263f544191c12017c8b265febef7a04a453fc3701833c9879ec": {
+    "key": "bsc:0xccba56a480f89263f544191c12017c8b265febef7a04a453fc3701833c9879ec",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0xccba56a480f89263f544191c12017c8b265febef7a04a453fc3701833c9879ec",
+    "addresses": {
+     "bsc": "0xccba56a480f89263f544191c12017c8b265febef7a04a453fc3701833c9879ec"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.384Z",
+    "createdAt": "2026-08-14T05:10:31.648Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 908.6139449635425,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3,
+     "feePercentage": "0.0374"
+    },
+    "tokenId": "92671348-22ec-4a81-be4c-b079dc4a7d85",
+    "reserves": [
+     "20.016167296525824924",
+     "369.678576999660486413"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0": {
+    "key": "robinhood:0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0",
+    "name": "Beefy CLM GME-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODGME-USDG",
+    "price": 1288596918593.5505,
+    "address": "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0",
+    "addresses": {
+     "robinhood": "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "poolAddress": "0xe9713f453adb9245b19559790c96f470a18f2fdf",
+    "liquidity": 55879.65795103971,
+    "metrics": {
+     "apy": "37.395",
+     "baseApy": "37.395",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-497.232"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-gme-usdg-10000",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x3ab58808c6fec9cc0ec56a04800e306c08ffb5e0",
+     "strategyAddress": "0x724b83d5fb39faeebf0b92bd1ea36c3423059b98",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x28a7d169942bb50f51a2e53262ca736980fe183f",
+     "depositTokenAddresses": [
+      "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     ]
+    },
+    "tokenId": "c0661c18-d50d-44c1-a309-38357fa0151d",
+    "totalSupply": "0.000000043364730386",
+    "reserves": [
+     "882.3728065349901489",
+     "32245.302328"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3": {
+    "key": "bsc:0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+    "name": "GameStop (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEON",
+    "price": 27.43,
+    "address": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+    "addresses": {
+     "bsc": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+     "ethereum": "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 512543,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "487054.837",
+     "volumeUsd7d": "3601889.784"
+    },
+    "metadata": {},
+    "tokenId": "84b9899f-9758-497d-adef-94f02e7b57fd",
+    "totalSupply": "18686.41246116429",
+    "circulatingSupply": "18686.41246116429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d": {
+    "key": "robinhood:0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "name": "RobinhoodTrumpGMEShrekNokia4663Doge",
+    "decimals": 18,
+    "symbol": "NASDAQ",
+    "price": 4.743409722081664e-06,
+    "address": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d",
+    "addresses": {
+     "robinhood": "0x2e897abb6bf1d77c61eb3fa6c093ae71de0efd2d"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-16T20:16:31.944Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4743.409722081664,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "18.22",
+     "volumeUsd7d": "30.7"
+    },
+    "metadata": {},
+    "tokenId": "3f9e42b8-6af7-4f2d-b1a9-36dac85aedf3",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x46ceefda28dd7207059ed19b0acdc026955bb15c": {
+    "key": "bsc:0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+    "name": "GameStop (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEB",
+    "price": 26.94,
+    "address": "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+    "addresses": {
+     "bsc": "0x46ceefda28dd7207059ed19b0acdc026955bb15c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-13T10:14:27.918Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 7305657,
+    "image": "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+    "metrics": {
+     "volumeUsd1d": "272817.189",
+     "volumeUsd7d": "3497904.839"
+    },
+    "metadata": {},
+    "tokenId": "eb7eba57-8fc9-496c-a908-68f4fd9d24af",
+    "totalSupply": "271143.70687521",
+    "circulatingSupply": "271143.70687521",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1e41f758a5930e10d0cc47166320c92e90e3ac1eea8f2b0ecd93d46600d3a582": {
+    "key": "ethereum:0x1e41f758a5930e10d0cc47166320c92e90e3ac1eea8f2b0ecd93d46600d3a582",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x1e41f758a5930e10d0cc47166320c92e90e3ac1eea8f2b0ecd93d46600d3a582",
+    "addresses": {
+     "ethereum": "0x1e41f758a5930e10d0cc47166320c92e90e3ac1eea8f2b0ecd93d46600d3a582"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.957Z",
+    "createdAt": "2025-09-26T08:45:48.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1379.8363131623012,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "15.756"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "9c27931d-592f-478a-99e4-77c71ab15cab",
+    "reserves": [
+     "21.040905480048452646",
+     "802.829588"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf7de6c47e7c76ec034fc4cc4840d24aa7394d3a3249237b545e48d1121dd222c": {
+    "key": "robinhood:0xf7de6c47e7c76ec034fc4cc4840d24aa7394d3a3249237b545e48d1121dd222c",
+    "name": "Uniswap V4 LP ETH/GME",
+    "decimals": 18,
+    "symbol": "ETH/GME",
+    "price": 9007199254740990,
+    "address": "0xf7de6c47e7c76ec034fc4cc4840d24aa7394d3a3249237b545e48d1121dd222c",
+    "addresses": {
+     "robinhood": "0xf7de6c47e7c76ec034fc4cc4840d24aa7394d3a3249237b545e48d1121dd222c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102176793/large/greatest_meme_ever.png?1788726223"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.528Z",
+    "createdAt": "2026-09-09T05:31:36.750Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    ],
+    "liquidity": 1362.6465609292202,
+    "metrics": {
+     "apy": "30.451",
+     "baseApy": "30.451",
+     "volumeUsd1d": "392.104",
+     "volumeUsd7d": "5946.991"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "6b4cc8ed-5a26-4ebb-b991-89abc958cc18",
+    "reserves": [
+     "0.28775403999897236",
+     "536452.556762267604398796"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xc99e9169794c982f19bef7ce466da90935fba6f335ab8d93cd7fb53196cca4d4": {
+    "key": "ethereum:0xc99e9169794c982f19bef7ce466da90935fba6f335ab8d93cd7fb53196cca4d4",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0xc99e9169794c982f19bef7ce466da90935fba6f335ab8d93cd7fb53196cca4d4",
+    "addresses": {
+     "ethereum": "0xc99e9169794c982f19bef7ce466da90935fba6f335ab8d93cd7fb53196cca4d4"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.289Z",
+    "createdAt": "2026-01-23T08:30:02.528Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1704.5986304213552,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 13800,
+     "feePercentage": "69.031"
+    },
+    "tokenId": "700afd3c-d9ed-49de-9d12-f76cadb645da",
+    "reserves": [
+     "20.811366242335914757",
+     "1133.948099"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf4ed7b619ac2accad5933961b05e668b42703178": {
+    "key": "ethereum:0xf4ed7b619ac2accad5933961b05e668b42703178",
+    "name": "SushiSwap V3 REVV/GAMEE 0.3%",
+    "decimals": 18,
+    "symbol": "REVV/GMEE",
+    "price": 9007199254740990,
+    "address": "0xf4ed7b619ac2accad5933961b05e668b42703178",
+    "addresses": {
+     "ethereum": "0xf4ed7b619ac2accad5933961b05e668b42703178"
+    },
+    "platform": "sushiswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png",
+     "https://assets.coingecko.com/coins/images/12373/large/REVV_TOKEN_Refined_2021_%281%29.png?1696512197",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.909Z",
+    "createdAt": "2025-07-23T10:59:05.966Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x557b933a7c2c45672b610f8954a3deb39a51a8ca",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 1778.86219532005,
+    "metrics": {
+     "apy": "4.896",
+     "baseApy": "4.896",
+     "volumeUsd1d": "79.75",
+     "volumeUsd7d": "371.707"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "aedf9caf-7cd9-4e95-9152-d1e8e1d0ac98",
+    "reserves": [
+     "12768331.020224331920958705",
+     "461455.856773753913131269"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb40837244b8f80978fd90579db89a1cd3de651fbf9c4dea6f5346f611a2a67e3": {
+    "key": "robinhood:0xb40837244b8f80978fd90579db89a1cd3de651fbf9c4dea6f5346f611a2a67e3",
+    "name": "Uniswap V4 LP USDG/GME",
+    "decimals": 18,
+    "symbol": "USDG/GME",
+    "price": 9007199254740990,
+    "address": "0xb40837244b8f80978fd90579db89a1cd3de651fbf9c4dea6f5346f611a2a67e3",
+    "addresses": {
+     "robinhood": "0xb40837244b8f80978fd90579db89a1cd3de651fbf9c4dea6f5346f611a2a67e3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102176793/large/greatest_meme_ever.png?1788726223"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.566Z",
+    "createdAt": "2026-09-08T14:43:04.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    ],
+    "liquidity": 25750.694475773693,
+    "metrics": {
+     "apy": "58.376",
+     "baseApy": "58.376",
+     "volumeUsd1d": "1005.467",
+     "volumeUsd7d": "14529.295"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "4.096"
+    },
+    "tokenId": "87e75d45-19d8-4cc4-821b-7f2a104789ee",
+    "reserves": [
+     "20250.566495",
+     "4274201.505085166466839275"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2bc17718b12234fa11869db04f9cdc93057e90d4647792cc567c50ba6b0946e1": {
+    "key": "bsc:0x2bc17718b12234fa11869db04f9cdc93057e90d4647792cc567c50ba6b0946e1",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x2bc17718b12234fa11869db04f9cdc93057e90d4647792cc567c50ba6b0946e1",
+    "addresses": {
+     "bsc": "0x2bc17718b12234fa11869db04f9cdc93057e90d4647792cc567c50ba6b0946e1"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.391Z",
+    "createdAt": "2026-08-13T10:16:23.045Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 5845.472019575198,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 50,
+     "feePercentage": "0.2672"
+    },
+    "tokenId": "7b32f7fc-fd05-47e1-b082-448f3ef16490",
+    "reserves": [
+     "125.051128509494399675",
+     "2478.607246613668813017"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xdecd008e1b3972b20bf6b718242eaa333f0e83d357f0c5bef9d654dbb5dd3570": {
+    "key": "ethereum:0xdecd008e1b3972b20bf6b718242eaa333f0e83d357f0c5bef9d654dbb5dd3570",
+    "name": "Uniswap V4 LP EGP/GMEon",
+    "decimals": 18,
+    "symbol": "EGP/GMEON",
+    "price": 9007199254740990,
+    "address": "0xdecd008e1b3972b20bf6b718242eaa333f0e83d357f0c5bef9d654dbb5dd3570",
+    "addresses": {
+     "ethereum": "0xdecd008e1b3972b20bf6b718242eaa333f0e83d357f0c5bef9d654dbb5dd3570"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.413Z",
+    "createdAt": "2026-10-14T06:54:54.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    ],
+    "liquidity": 20060.614041531102,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.41"
+    },
+    "tokenId": "7fde5338-5436-4677-bf35-fd17a7a8ef35",
+    "reserves": [
+     "19999.999999999999999989",
+     "1.053093222798647191"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "polygon:0xcf32822ff397ef82425153a9dcb726e5ff61dca7": {
+    "key": "polygon:0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
+    "name": "GAMEE",
+    "decimals": 18,
+    "symbol": "GMEE",
+    "price": 0.00123153,
+    "address": "0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
+    "addresses": {
+     "polygon": "0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
+     "ethereum": "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+     "bsc": "0x84e9a6f9d240fdd33801f7135908bfa16866939a"
+    },
+    "platform": "basic",
+    "network": "polygon",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2178157,
+    "image": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386",
+    "metrics": {
+     "volumeUsd1d": "214082.333",
+     "volumeUsd7d": "1789914.948"
+    },
+    "metadata": {},
+    "tokenId": "c628d345-2d6c-4aa7-a818-5ae3e0b2a41b",
+    "totalSupply": "3180000000",
+    "circulatingSupply": "1769305126.1584601",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x459d3ae62b86cc6125e06260dddfd3afed24a877": {
+    "key": "hyperevm:0x459d3ae62b86cc6125e06260dddfd3afed24a877",
+    "name": "Wrapped Gamestop xStock",
+    "decimals": 18,
+    "symbol": "WGMEX",
+    "price": 26.765745179746933,
+    "address": "0x459d3ae62b86cc6125e06260dddfd3afed24a877",
+    "addresses": {
+     "hyperevm": "0x459d3ae62b86cc6125e06260dddfd3afed24a877"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-22T12:53:38.234Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4684.070165342352,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "529.47",
+     "volumeUsd7d": "7659.15"
+    },
+    "metadata": {},
+    "tokenId": "953cdbdd-ec16-47a8-a446-5910e8d926f4",
+    "totalSupply": "175.002419468847352794",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0x7afa3085f397972acc067cea6c8955ffedf92c44": {
+    "key": "polygon:0x7afa3085f397972acc067cea6c8955ffedf92c44",
+    "name": "QuickSwap LP WMATIC/GMEE",
+    "decimals": 18,
+    "symbol": "WMATIC/GMEE",
+    "price": 0.09144241018085793,
+    "address": "0x7afa3085f397972acc067cea6c8955ffedf92c44",
+    "addresses": {
+     "polygon": "0x7afa3085f397972acc067cea6c8955ffedf92c44"
+    },
+    "platform": "quickswap",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/25393/large/quickswap.jpg",
+     "https://assets.coingecko.com/coins/images/14073/large/matic.png?1696513797",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.391Z",
+    "createdAt": "2024-02-29T09:06:41.056Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+     "0xcf32822ff397ef82425153a9dcb726e5ff61dca7"
+    ],
+    "liquidity": 1441.5813028571004,
+    "metrics": {
+     "apy": "0.092",
+     "baseApy": "0.092",
+     "volumeUsd1d": "1.213",
+     "volumeUsd7d": "14.814"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "1c701f8e-3791-4735-815c-d5a476bedb51",
+    "totalSupply": "15764.909301995557598917",
+    "reserves": [
+     "1587.070749817496144848",
+     "1057066.875343209844616359"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x67f8e3d710cfebfde0fced2be423b7fdcd076f57a30d854d00fbdb02f6fcd1e9": {
+    "key": "bsc:0x67f8e3d710cfebfde0fced2be423b7fdcd076f57a30d854d00fbdb02f6fcd1e9",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x67f8e3d710cfebfde0fced2be423b7fdcd076f57a30d854d00fbdb02f6fcd1e9",
+    "addresses": {
+     "bsc": "0x67f8e3d710cfebfde0fced2be423b7fdcd076f57a30d854d00fbdb02f6fcd1e9"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.429Z",
+    "createdAt": "2026-08-13T10:16:22.584Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1237.4994290675859,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "ec4bdfb2-b65a-4e23-90c2-ad2e0d25b693",
+    "reserves": [
+     "28.554449628680210374",
+     "468.62307801028527701"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3f4b2d3bf822b377e2e7fcd4b619af8ea01ce33232f94fabad620b6a2b2dfc64": {
+    "key": "ethereum:0x3f4b2d3bf822b377e2e7fcd4b619af8ea01ce33232f94fabad620b6a2b2dfc64",
+    "name": "Uniswap V4 LP GMEon/USDT",
+    "decimals": 18,
+    "symbol": "GMEON/USDT",
+    "price": 9007199254740990,
+    "address": "0x3f4b2d3bf822b377e2e7fcd4b619af8ea01ce33232f94fabad620b6a2b2dfc64",
+    "addresses": {
+     "ethereum": "0x3f4b2d3bf822b377e2e7fcd4b619af8ea01ce33232f94fabad620b6a2b2dfc64"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.203Z",
+    "createdAt": "2025-09-24T08:40:02.433Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 4886.289630413496,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "7f40accb-ca56-4bfa-a6f5-eb4b64fe98c2",
+    "reserves": [
+     "15.176888187717815306",
+     "4473.620167"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x187da07e0d34244f24150c3554dbb8f72d992127": {
+    "key": "avalanche:0x187da07e0d34244f24150c3554dbb8f72d992127",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.315"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x879a8835ef1082ebe503274bbded5d3b2a45dbec7d971d219ad6a76f6585be5b": {
+    "key": "ethereum:0x879a8835ef1082ebe503274bbded5d3b2a45dbec7d971d219ad6a76f6585be5b",
+    "name": "Uniswap V4 LP GMEon/USDCc",
+    "decimals": 18,
+    "symbol": "GMEON/USDCC",
+    "price": 9007199254740990,
+    "address": "0x879a8835ef1082ebe503274bbded5d3b2a45dbec7d971d219ad6a76f6585be5b",
+    "addresses": {
+     "ethereum": "0x879a8835ef1082ebe503274bbded5d3b2a45dbec7d971d219ad6a76f6585be5b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.570Z",
+    "createdAt": "2026-10-16T14:20:21.138Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f"
+    ],
+    "liquidity": 4998.691895341579,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.1003"
+    },
+    "tokenId": "f3ac9eba-cea4-45f8-9206-831820a701e0",
+    "reserves": [
+     "0",
+     "5000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x9eae13a89c01b035c0897b4525e8a1a2e3b780e4": {
+    "key": "arbitrum:0x9eae13a89c01b035c0897b4525e8a1a2e3b780e4",
+    "name": "GameStop rStock",
+    "decimals": 18,
+    "symbol": "RGME",
+    "price": 26.8,
+    "address": "0x9eae13a89c01b035c0897b4525e8a1a2e3b780e4",
+    "addresses": {
+     "arbitrum": "0x9eae13a89c01b035c0897b4525e8a1a2e3b780e4"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 31569,
+    "image": "https://coin-images.coingecko.com/coins/images/102177096/large/b57ffed0826994d600c0ac4e8c83c3eb.png?1789116815",
+    "metrics": {
+     "volumeUsd1d": "4.023",
+     "volumeUsd7d": "13705.295"
+    },
+    "metadata": {},
+    "tokenId": "d3673fbf-d35d-4078-82ad-be1e853e9085",
+    "totalSupply": "1178.136389054",
+    "circulatingSupply": "1178.136389054",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7e719a19e681f06bf980b272c449aca571bbd37fede58fc5cb724773c3cec27b": {
+    "key": "robinhood:0x7e719a19e681f06bf980b272c449aca571bbd37fede58fc5cb724773c3cec27b",
+    "name": "Uniswap V4 LP ETH/GME",
+    "decimals": 18,
+    "symbol": "ETH/GME",
+    "price": 9007199254740990,
+    "address": "0x7e719a19e681f06bf980b272c449aca571bbd37fede58fc5cb724773c3cec27b",
+    "addresses": {
+     "robinhood": "0x7e719a19e681f06bf980b272c449aca571bbd37fede58fc5cb724773c3cec27b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.586Z",
+    "createdAt": "2026-09-08T14:42:57.115Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 1630.1432815235573,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "290.495"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 490,
+     "feePercentage": "4.9951"
+    },
+    "tokenId": "09164336-3112-45c3-ba7f-f132abd3f83f",
+    "reserves": [
+     "0.5976935126643667",
+     "8.723177897653333403"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xc557fd382c8e5633b2d75d50155b721d8c05b21f": {
+    "key": "bsc:0xc557fd382c8e5633b2d75d50155b721d8c05b21f",
+    "name": "PancakeSwap V3 GameStop/Wrapped BNB 1%",
+    "decimals": 18,
+    "symbol": "GMEB/WBNB",
+    "price": 9007199254740990,
+    "address": "0xc557fd382c8e5633b2d75d50155b721d8c05b21f",
+    "addresses": {
+     "bsc": "0xc557fd382c8e5633b2d75d50155b721d8c05b21f"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.720Z",
+    "createdAt": "2026-08-13T10:16:26.948Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 547.4155545484415,
+    "metrics": {
+     "apy": "5.743",
+     "baseApy": "5.743",
+     "volumeUsd1d": "8.617",
+     "volumeUsd7d": "1213.831"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "81077390-ec8e-4272-91d6-63bd121dea5d",
+    "reserves": [
+     "9.411989254777865552",
+     "0.416634620272966224"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x852edfc1051132f9d42e045a7e2501e6f8510d36f8c8c13b24ff32bdad395ddb": {
+    "key": "bsc:0x852edfc1051132f9d42e045a7e2501e6f8510d36f8c8c13b24ff32bdad395ddb",
+    "name": "PancakeSwap Infinity LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x852edfc1051132f9d42e045a7e2501e6f8510d36f8c8c13b24ff32bdad395ddb",
+    "addresses": {
+     "bsc": "0x852edfc1051132f9d42e045a7e2501e6f8510d36f8c8c13b24ff32bdad395ddb"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.772Z",
+    "createdAt": "2026-08-19T16:23:39.532Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 543.1601175630636,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "21993.56"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x56a78328a880c6d2b28482d9c481c0061c3d82c0",
+     "tickSpacing": 10,
+     "feePercentage": "0.3726"
+    },
+    "tokenId": "667be9c5-acdc-4e5c-bd24-53ff0728a7d2",
+    "reserves": [
+     "-227.689050193350496826",
+     "6682.529343598928378226"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x65d012401ba1176ae6ca82296cee7854ee5a43ed": {
+    "key": "ethereum:0x65d012401ba1176ae6ca82296cee7854ee5a43ed",
+    "name": "UniswapV2 LP MYTH/GMEE",
+    "decimals": 18,
+    "symbol": "MYTH/GMEE",
+    "price": 0.0036843075408928214,
+    "address": "0x65d012401ba1176ae6ca82296cee7854ee5a43ed",
+    "addresses": {
+     "ethereum": "0x65d012401ba1176ae6ca82296cee7854ee5a43ed"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/28045/large/Mythos_Logos_200x200.png?1696527059",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:00.634Z",
+    "createdAt": "2024-04-12T03:04:01.201Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xba41ddf06b7ffd89d1267b5a93bfef2424eb2003",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 775.4225873702999,
+    "metrics": {
+     "apy": "0.43",
+     "baseApy": "0.43",
+     "volumeUsd1d": "3.049",
+     "volumeUsd7d": "83.001"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "70c44600-cf36-4915-9283-1500eb1623ff",
+    "totalSupply": "210466.303033538562144527",
+    "reserves": [
+     "236353.924930315854220331",
+     "311850.768747157641184173"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbd3cf98e153412952b5b919d44d86c6585567eb5111060b77d3bdecb213321ac": {
+    "key": "ethereum:0xbd3cf98e153412952b5b919d44d86c6585567eb5111060b77d3bdecb213321ac",
+    "name": "Uniswap V4 LP GMEon/USDT",
+    "decimals": 18,
+    "symbol": "GMEON/USDT",
+    "price": 9007199254740990,
+    "address": "0xbd3cf98e153412952b5b919d44d86c6585567eb5111060b77d3bdecb213321ac",
+    "addresses": {
+     "ethereum": "0xbd3cf98e153412952b5b919d44d86c6585567eb5111060b77d3bdecb213321ac"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.267Z",
+    "createdAt": "2026-09-04T14:36:35.492Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 2282.5137183681313,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 16001,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "b7cc1619-b1aa-4bc3-97db-b6d4d0ed788b",
+    "reserves": [
+     "34.297441723810543122",
+     "1342.825266"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2a73552f84f04964a84be7cc615f3561d132a089": {
+    "key": "bsc:0x2a73552f84f04964a84be7cc615f3561d132a089",
+    "name": "PancakeSwap V3 Tether USD/GameStop (Ondo Tokenized) 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/GMEON",
+    "price": 9007199254740990,
+    "address": "0x2a73552f84f04964a84be7cc615f3561d132a089",
+    "addresses": {
+     "bsc": "0x2a73552f84f04964a84be7cc615f3561d132a089"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.720Z",
+    "createdAt": "2026-08-03T16:54:34.982Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3"
+    ],
+    "liquidity": 48484.46123212402,
+    "metrics": {
+     "apy": "2.166",
+     "baseApy": "2.166",
+     "volumeUsd1d": "1151.338",
+     "volumeUsd7d": "39476.129"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "452a2e33-b548-46df-adf1-33190f1fdab1",
+    "reserves": [
+     "44719.663480729529789755",
+     "138.57492228001608728"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xfcab1e112704f0aa0f9bbbc8e012de538546b734d8578bb80bd3d4fd6e3c55bf": {
+    "key": "bsc:0xfcab1e112704f0aa0f9bbbc8e012de538546b734d8578bb80bd3d4fd6e3c55bf",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0xfcab1e112704f0aa0f9bbbc8e012de538546b734d8578bb80bd3d4fd6e3c55bf",
+    "addresses": {
+     "bsc": "0xfcab1e112704f0aa0f9bbbc8e012de538546b734d8578bb80bd3d4fd6e3c55bf"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.757Z",
+    "createdAt": "2026-08-13T10:16:21.900Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 993.6763787626564,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 50,
+     "feePercentage": "0.1761"
+    },
+    "tokenId": "4c575a66-2114-490a-877b-85a0dd9dade9",
+    "reserves": [
+     "22.49962829382754867",
+     "387.851327805120017099"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c": {
+    "key": "ethereum:0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c",
+    "name": "The Meme Games",
+    "decimals": 18,
+    "symbol": "MGMES",
+    "price": 0.0002377185556535632,
+    "address": "0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c",
+    "addresses": {
+     "ethereum": "0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 240571.17832140595,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "2.55",
+     "volumeUsd7d": "3.78"
+    },
+    "metadata": {},
+    "tokenId": "66ed3964-1e4f-44e9-83df-86a8b53df15f",
+    "totalSupply": "1012000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x9a82aa6af873870874cf11cf9e99bb81c9ebf28cc5b394e4fa4996a6805c7c06": {
+    "key": "robinhood:0x9a82aa6af873870874cf11cf9e99bb81c9ebf28cc5b394e4fa4996a6805c7c06",
+    "name": "Uniswap V4 LP GME/USDG",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0x9a82aa6af873870874cf11cf9e99bb81c9ebf28cc5b394e4fa4996a6805c7c06",
+    "addresses": {
+     "robinhood": "0x9a82aa6af873870874cf11cf9e99bb81c9ebf28cc5b394e4fa4996a6805c7c06"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.772Z",
+    "createdAt": "2026-09-09T09:23:34.530Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 2610.1450757182092,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 98,
+     "feePercentage": "1.0791"
+    },
+    "tokenId": "20cfc8eb-544b-4232-b7ff-1443cc58bdcc",
+    "reserves": [
+     "0.000000026813865235",
+     "2610.145075"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x93dbcd73b352b1556d8eed29a84762be08f39413": {
+    "key": "ethereum:0x93dbcd73b352b1556d8eed29a84762be08f39413",
+    "name": "Uniswap V3 TOWER/GAMEE 0.3%",
+    "decimals": 18,
+    "symbol": "TOWER/GMEE",
+    "price": 9007199254740990,
+    "address": "0x93dbcd73b352b1556d8eed29a84762be08f39413",
+    "addresses": {
+     "ethereum": "0x93dbcd73b352b1556d8eed29a84762be08f39413"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/14134/large/tower-circular-1000.png?1696513854",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.920Z",
+    "createdAt": "2025-08-18T11:55:56.641Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1c9922314ed1415c95b9fd453c3818fd41867d0b",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 7121.094877648128,
+    "metrics": {
+     "apy": "1.487",
+     "baseApy": "1.487",
+     "volumeUsd1d": "96.867",
+     "volumeUsd7d": "96.867"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "de171671-cd38-428a-9268-1d36816a4e2e",
+    "reserves": [
+     "997535.119594080872779352",
+     "5643951.774231295339584691"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe5f6d3b2405abdfe6f660e63202b25d23763160d": {
+    "key": "bsc:0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "name": "Gamestop xStock",
+    "decimals": 18,
+    "symbol": "GMEX",
+    "price": 26.97,
+    "address": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d",
+    "addresses": {
+     "bsc": "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:23.084Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6508171.774522863,
+    "image": "https://coin-images.coingecko.com/coins/images/55607/large/Ticker_GME__Company_Name_gamestop__size_200x200_2x.png?1746858467",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "gamestop-xstock"
+    },
+    "tokenId": "24e94906-32df-4fdb-ac43-ad20dfa71f76",
+    "totalSupply": "241311.522970814368859999",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1873c31d00d9334a385d3033929c5765fe7b3c42d0bff4a8375d186acebeb41f": {
+    "key": "robinhood:0x1873c31d00d9334a385d3033929c5765fe7b3c42d0bff4a8375d186acebeb41f",
+    "name": "Uniswap V4 LP Index/GME",
+    "decimals": 18,
+    "symbol": "INDEX/GME",
+    "price": 9007199254740990,
+    "address": "0x1873c31d00d9334a385d3033929c5765fe7b3c42d0bff4a8375d186acebeb41f",
+    "addresses": {
+     "robinhood": "0x1873c31d00d9334a385d3033929c5765fe7b3c42d0bff4a8375d186acebeb41f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174740/large/qffiSdBd_400x400_%281%29.jpg?1784708104",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.087Z",
+    "createdAt": "2026-09-30T20:43:37.778Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x56910d4409f3a0c78c64dd8d0545ff0705389870",
+     "0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3"
+    ],
+    "liquidity": 769.0250619889206,
+    "metrics": {
+     "apy": "99.233",
+     "baseApy": "99.233",
+     "volumeUsd1d": "67.504",
+     "volumeUsd7d": "387.162"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "cba4f005-7c0d-4342-984b-87f1d48a3d6f",
+    "reserves": [
+     "51770.956913643057660794",
+     "60545794.06230391178860469"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x100742feed71cff7e868a9fbd2929033efcaaf14a3723ec6f07164583b802b82": {
+    "key": "ethereum:0x100742feed71cff7e868a9fbd2929033efcaaf14a3723ec6f07164583b802b82",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x100742feed71cff7e868a9fbd2929033efcaaf14a3723ec6f07164583b802b82",
+    "addresses": {
+     "ethereum": "0x100742feed71cff7e868a9fbd2929033efcaaf14a3723ec6f07164583b802b82"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.786Z",
+    "createdAt": "2026-09-04T02:55:59.717Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 5014.549980614666,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "978.058"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3000,
+     "feePercentage": "20.08"
+    },
+    "tokenId": "51c634d8-e9bc-4cc2-9d00-e92f9a1c96a4",
+    "reserves": [
+     "82.657823701681523999",
+     "2747.743218"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfa7005f1442b474c9c136cca717d9e41dba02358": {
+    "key": "ethereum:0xfa7005f1442b474c9c136cca717d9e41dba02358",
+    "name": "UniswapV2 LP WETH/GME",
+    "decimals": 18,
+    "symbol": "WETH/GME",
+    "price": 71862.5159122221,
+    "address": "0xfa7005f1442b474c9c136cca717d9e41dba02358",
+    "addresses": {
+     "ethereum": "0xfa7005f1442b474c9c136cca717d9e41dba02358"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://assets.coingecko.com/coins/images/32058/large/DumbMoney_-_GME_-_Official_Logo_200x200px.png?1696530855"
+    ],
+    "updatedAt": "2026-10-18T20:13:00.780Z",
+    "createdAt": "2024-04-12T03:04:05.778Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xfc4b4ec763722b71eb1d729749b447a9645f5f30"
+    ],
+    "liquidity": 21013.371746789915,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3.534"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "ea8618b6-f3d9-44ea-b923-920c7efc4662",
+    "totalSupply": "0.292410744044323684",
+    "reserves": [
+     "4.422346451260511843",
+     "54466333.56129257"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x7bdc9582aca6ca25e5db1f2c8e59003b880672cb": {
+    "key": "bsc:0x7bdc9582aca6ca25e5db1f2c8e59003b880672cb",
+    "name": "PancakeSwap LP GMEB/memestock",
+    "decimals": 18,
+    "symbol": "GMEB/MEMESTOCK",
+    "price": 0.49091721685628403,
+    "address": "0x7bdc9582aca6ca25e5db1f2c8e59003b880672cb",
+    "addresses": {
+     "bsc": "0x7bdc9582aca6ca25e5db1f2c8e59003b880672cb"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/102175837/large/memestock.jpg?1787731705"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.974Z",
+    "createdAt": "2026-08-26T09:00:49.763Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x6ff45323817d1d53bbb8a8dfba9245ae74057777"
+    ],
+    "liquidity": 149381.35196790233,
+    "metrics": {
+     "apy": "45.399",
+     "baseApy": "45.399",
+     "volumeUsd1d": "74675.673",
+     "volumeUsd7d": "533193.263"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "50deee8f-4e65-42d7-89c0-dc47a56a6a07",
+    "totalSupply": "304290.309727787954875889",
+    "reserves": [
+     "2790.873812638054618745",
+     "76760549.003117328118027959"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x718e6151067d2154842a0305ac904cf57faf78013a525febf12f6d2a2d8c85d6": {
+    "key": "robinhood:0x718e6151067d2154842a0305ac904cf57faf78013a525febf12f6d2a2d8c85d6",
+    "name": "Uniswap V4 LP GMEx3L/USDG",
+    "decimals": 18,
+    "symbol": "GMEX3L/USDG",
+    "price": 9007199254740990,
+    "address": "0x718e6151067d2154842a0305ac904cf57faf78013a525febf12f6d2a2d8c85d6",
+    "addresses": {
+     "robinhood": "0x718e6151067d2154842a0305ac904cf57faf78013a525febf12f6d2a2d8c85d6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.154Z",
+    "createdAt": "2026-09-09T20:19:28.876Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x36c092a1ae464f46f77d5e55cffd9e39d4497d54",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 995.1874125460761,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 395,
+     "feePercentage": "4.0461"
+    },
+    "tokenId": "17a2d293-5b9e-407c-bb87-9e265e00e9dd",
+    "reserves": [
+     "41.222752072831213064",
+     "181.676786"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2854491b6d6591a86494729a43e4366b8ffe6fc7": {
+    "key": "bsc:0x2854491b6d6591a86494729a43e4366b8ffe6fc7",
+    "name": "ApeSwap LP TRUSTNFT/GMEE",
+    "decimals": 18,
+    "symbol": "TRUSTNFT/GMEE",
+    "price": 0.0006452041305978499,
+    "address": "0x2854491b6d6591a86494729a43e4366b8ffe6fc7",
+    "addresses": {
+     "bsc": "0x2854491b6d6591a86494729a43e4366b8ffe6fc7"
+    },
+    "platform": "apeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/14870/large/banana.png",
+     "https://assets.coingecko.com/coins/images/20478/large/logo-3_%281%29.png?1696519886",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.138Z",
+    "createdAt": "2024-02-29T09:06:49.368Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x08f725d2809fda409bc23493f3615a4c85a22d7d",
+     "0x84e9a6f9d240fdd33801f7135908bfa16866939a"
+    ],
+    "liquidity": 1245.759091286248,
+    "metrics": {
+     "apy": "0.5",
+     "baseApy": "0.5",
+     "volumeUsd1d": "8.534",
+     "volumeUsd7d": "56.55"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "22e192f5-44fb-46ce-b45d-6646a9af4f98",
+    "totalSupply": "1930798.381795727526137494",
+    "reserves": [
+     "13195891.36032847930736086",
+     "315719.394855599576483345"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5c3b9a9b021e86b54202abcb4580f1f5c271875b": {
+    "key": "robinhood:0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+    "name": "Arcus GME (5x Long)",
+    "decimals": 18,
+    "symbol": "PGME5X",
+    "price": 128.02,
+    "address": "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+    "addresses": {
+     "robinhood": "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-10-01T17:44:39.488Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 39214,
+    "image": "https://coin-images.coingecko.com/coins/images/102179085/large/5xGME_Long.png?1791134625",
+    "metrics": {
+     "volumeUsd1d": "23.711",
+     "volumeUsd7d": "10251.11"
+    },
+    "metadata": {},
+    "tokenId": "049b6f02-b208-42ce-a7f1-7722fc50bef7",
+    "totalSupply": "307.41447315539045",
+    "circulatingSupply": "306.307371057536",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x5acb54868d292443cafc3ce88496589f6b4f1e18": {
+    "key": "robinhood:0x5acb54868d292443cafc3ce88496589f6b4f1e18",
+    "name": "GME MASCOT",
+    "decimals": 18,
+    "symbol": "BUCK",
+    "price": 3.532798666481914e-05,
+    "address": "0x5acb54868d292443cafc3ce88496589f6b4f1e18",
+    "addresses": {
+     "robinhood": "0x5acb54868d292443cafc3ce88496589f6b4f1e18"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-23T13:27:58.309Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 35327.98666481914,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "37.23",
+     "volumeUsd7d": "113.79"
+    },
+    "metadata": {},
+    "tokenId": "03a72498-8bf5-45c8-9f34-bdf56d40d1ce",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc6bcc95043dc48c204bb2d57fb264a10efe0a607": {
+    "key": "robinhood:0xc6bcc95043dc48c204bb2d57fb264a10efe0a607",
+    "name": "Uniswap V3 WETH/GameStop  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "WETH/GME",
+    "price": 9007199254740990,
+    "address": "0xc6bcc95043dc48c204bb2d57fb264a10efe0a607",
+    "addresses": {
+     "robinhood": "0xc6bcc95043dc48c204bb2d57fb264a10efe0a607"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.371Z",
+    "createdAt": "2026-07-24T14:20:11.395Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 33904.74012915138,
+    "metrics": {
+     "apy": "63.744",
+     "baseApy": "63.744",
+     "volumeUsd1d": "118383.7",
+     "volumeUsd7d": "1298998.436"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "f187b4af-3394-4229-8935-7cf1173f9f52",
+    "reserves": [
+     "13.839729291045556935",
+     "58.253649241274672287"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b": {
+    "key": "robinhood:0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b",
+    "name": "Uniswap V4 LP pGME5x/USDG",
+    "decimals": 18,
+    "symbol": "PGME5X/USDG",
+    "price": 9007199254740990,
+    "address": "0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b",
+    "addresses": {
+     "robinhood": "0x00d001e025852cb0ff4d93af086022c2bae2d0f4d9dd39d663970756c5b20d4b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.954Z",
+    "createdAt": "2026-10-01T18:14:47.400Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5c3b9a9b021e86b54202abcb4580f1f5c271875b",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 5380.658022474907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2426.001"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "5c194bd5-d7de-455a-8c68-0b67969fb742",
+    "reserves": [
+     "22.567978077448109216",
+     "2491.505469"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x908d49048eb3a7bedfd238972403842805eaf2be": {
+    "key": "bsc:0x908d49048eb3a7bedfd238972403842805eaf2be",
+    "name": "PancakeSwap V3 GameStop/Tether USD 0.25%",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x908d49048eb3a7bedfd238972403842805eaf2be",
+    "addresses": {
+     "bsc": "0x908d49048eb3a7bedfd238972403842805eaf2be"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.797Z",
+    "createdAt": "2026-08-13T10:16:28.167Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 171773.22994002877,
+    "metrics": {
+     "apy": "67.506",
+     "baseApy": "67.506",
+     "volumeUsd1d": "127060.268",
+     "volumeUsd7d": "2229311.431"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "ab7bf23e-e243-443e-9a83-c769970cc7af",
+    "reserves": [
+     "2194.484271755128028545",
+     "112745.372901741848194761"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe9d78bf51ae04c7e1263a76ed89a65537b9ca903": {
+    "key": "bsc:0xe9d78bf51ae04c7e1263a76ed89a65537b9ca903",
+    "name": "Game Coin",
+    "decimals": 9,
+    "symbol": "GMEX",
+    "price": 5.741e-05,
+    "address": "0xe9d78bf51ae04c7e1263a76ed89a65537b9ca903",
+    "addresses": {
+     "bsc": "0xe9d78bf51ae04c7e1263a76ed89a65537b9ca903"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5742146,
+    "image": "https://assets.coingecko.com/coins/images/19893/large/gmex.png?1696519314",
+    "metrics": {
+     "volumeUsd1d": "4.491",
+     "volumeUsd7d": "30.909"
+    },
+    "metadata": {},
+    "tokenId": "920c69aa-f055-45aa-8c72-ba3d0be9194f",
+    "totalSupply": "100000000000",
+    "circulatingSupply": "0",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe2ab715823f6431714e971e2209e377f2a833f05": {
+    "key": "bsc:0xe2ab715823f6431714e971e2209e377f2a833f05",
+    "name": "ApeSwap LP GMEE/WBNB",
+    "decimals": 18,
+    "symbol": "GMEE/WBNB",
+    "price": 2.4086340925605536,
+    "address": "0xe2ab715823f6431714e971e2209e377f2a833f05",
+    "addresses": {
+     "bsc": "0xe2ab715823f6431714e971e2209e377f2a833f05"
+    },
+    "platform": "apeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/14870/large/banana.png",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:25.229Z",
+    "createdAt": "2024-02-29T09:06:50.756Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x84e9a6f9d240fdd33801f7135908bfa16866939a",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 17934.458006333574,
+    "metrics": {
+     "apy": "0.006",
+     "baseApy": "0.006",
+     "volumeUsd1d": "1.446",
+     "volumeUsd7d": "290.704"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "61a83438-b167-45c6-ad2f-7eb008ed32b2",
+    "totalSupply": "7445.903909492512072128",
+    "reserves": [
+     "4530755.5875802279123174",
+     "17.516689934299666507"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "polygon:0xfe4ba2ab8562b6204a17f19651c760818a361571": {
+    "key": "polygon:0xfe4ba2ab8562b6204a17f19651c760818a361571",
+    "name": "QuickSwap LP QUICK/GMEE",
+    "decimals": 18,
+    "symbol": "QUICK/GMEE",
+    "price": 0.5399271694062524,
+    "address": "0xfe4ba2ab8562b6204a17f19651c760818a361571",
+    "addresses": {
+     "polygon": "0xfe4ba2ab8562b6204a17f19651c760818a361571"
+    },
+    "platform": "quickswap",
+    "network": "polygon",
+    "images": [
+     "https://assets.coingecko.com/coins/images/25393/large/quickswap.jpg",
+     "https://assets.coingecko.com/coins/images/13970/large/quick.png?1696513704",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.457Z",
+    "createdAt": "2024-02-29T09:06:41.347Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x831753dd7087cac61ab5644b308642cc1c33dc13",
+     "0xcf32822ff397ef82425153a9dcb726e5ff61dca7"
+    ],
+    "liquidity": 7249.667243119636,
+    "metrics": {
+     "apy": "0.005",
+     "baseApy": "0.005",
+     "volumeUsd1d": "0.331",
+     "volumeUsd7d": "13.668"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "8d0d2a2a-e6cc-42e0-871b-7b59bc859c5e",
+    "totalSupply": "13427.120644978757917894",
+    "reserves": [
+     "63.350324207338321767",
+     "5312641.693637783979524565"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x45e8abbd59b3b204db305dbd38bbd7c01125a56371ce481ec805e84848678646": {
+    "key": "bsc:0x45e8abbd59b3b204db305dbd38bbd7c01125a56371ce481ec805e84848678646",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x45e8abbd59b3b204db305dbd38bbd7c01125a56371ce481ec805e84848678646",
+    "addresses": {
+     "bsc": "0x45e8abbd59b3b204db305dbd38bbd7c01125a56371ce481ec805e84848678646"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.907Z",
+    "createdAt": "2026-08-14T02:14:12.451Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 1023.1196709947712,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3,
+     "feePercentage": "0.0396"
+    },
+    "tokenId": "eccf817e-f338-41f5-9a41-13177dd5c105",
+    "reserves": [
+     "22.364176441737645388",
+     "420.970585770004260612"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x08b30a03293a77622cd0a3f53a0355aae6a3c5ee832c01db429aed46ddfa328a": {
+    "key": "robinhood:0x08b30a03293a77622cd0a3f53a0355aae6a3c5ee832c01db429aed46ddfa328a",
+    "name": "Uniswap V4 LP ETH/GME",
+    "decimals": 18,
+    "symbol": "ETH/GME",
+    "price": 9007199254740990,
+    "address": "0x08b30a03293a77622cd0a3f53a0355aae6a3c5ee832c01db429aed46ddfa328a",
+    "addresses": {
+     "robinhood": "0x08b30a03293a77622cd0a3f53a0355aae6a3c5ee832c01db429aed46ddfa328a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.386Z",
+    "createdAt": "2026-09-08T14:36:00.416Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    ],
+    "liquidity": 1159.7680050464974,
+    "metrics": {
+     "apy": "0.019",
+     "baseApy": "0.019",
+     "volumeUsd1d": "0.171",
+     "volumeUsd7d": "3.263"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "98ee27a6-fdc4-42f9-a4da-3a41b1afd963",
+    "reserves": [
+     "0.482538327523205168",
+     "1.207081535872842798"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x99847733e36dee658c744fa898ae609a9a7e84e51a91ad88871c355ceed3c721": {
+    "key": "ethereum:0x99847733e36dee658c744fa898ae609a9a7e84e51a91ad88871c355ceed3c721",
+    "name": "Uniswap V4 LP wUSDC/GMEon",
+    "decimals": 18,
+    "symbol": "WUSDC/GMEON",
+    "price": 9007199254740990,
+    "address": "0x99847733e36dee658c744fa898ae609a9a7e84e51a91ad88871c355ceed3c721",
+    "addresses": {
+     "ethereum": "0x99847733e36dee658c744fa898ae609a9a7e84e51a91ad88871c355ceed3c721"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.873Z",
+    "createdAt": "2026-09-28T10:39:13.051Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "5c3648df-0c8d-4ef6-8109-ef0a28945d39",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb415998a7bb6f11dc589e0eb20adf586ba32f12a": {
+    "key": "arbitrum:0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+    "name": "Dinari GME",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 27.84,
+    "address": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+    "addresses": {
+     "ethereum": "0x7fb5da212239593f4bf544fbe2ec70ce91f0afdb",
+     "arbitrum": "0xb415998a7bb6f11dc589e0eb20adf586ba32f12a",
+     "avalanche": "0x187da07e0d34244f24150c3554dbb8f72d992127",
+     "base": "0x2bb9282552228734cca01a1671605122258e276a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-08-09T11:25:11.299Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16913.2,
+    "image": "https://coin-images.coingecko.com/coins/images/102174947/large/dinari-logo-green-with-margin.png?1785402661",
+    "metrics": {
+     "volumeUsd1d": "18.107",
+     "volumeUsd7d": "136.262"
+    },
+    "metadata": {},
+    "tokenId": "30f6b12d-8620-4d7b-8db3-34a55ffcd8ef",
+    "totalSupply": "607.4919652052263",
+    "circulatingSupply": "607.4919652052263",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4c083084c9d50334b343c44ec97d16011303cc73": {
+    "key": "ethereum:0x4c083084c9d50334b343c44ec97d16011303cc73",
+    "name": "UniswapV2 LP WETH/GMEE",
+    "decimals": 18,
+    "symbol": "WETH/GMEE",
+    "price": 6.592943960586739,
+    "address": "0x4c083084c9d50334b343c44ec97d16011303cc73",
+    "addresses": {
+     "ethereum": "0x4c083084c9d50334b343c44ec97d16011303cc73"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386"
+    ],
+    "updatedAt": "2026-10-18T20:13:01.577Z",
+    "createdAt": "2024-04-12T03:04:01.957Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373"
+    ],
+    "liquidity": 138999.35175392436,
+    "metrics": {
+     "apy": "1.406",
+     "baseApy": "1.406",
+     "volumeUsd1d": "1786.255",
+     "volumeUsd7d": "24098.301"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "fb6a95aa-8597-43e1-9c21-24dbbd7efd58",
+    "totalSupply": "21083.047661996828053447",
+    "reserves": [
+     "29.786138258989528272",
+     "56333695.861730579609067759"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x5d5d3920281c5c99155c463ab3fb7197c307e6d892e903b62efa0dd1d2a3c10a": {
+    "key": "ethereum:0x5d5d3920281c5c99155c463ab3fb7197c307e6d892e903b62efa0dd1d2a3c10a",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x5d5d3920281c5c99155c463ab3fb7197c307e6d892e903b62efa0dd1d2a3c10a",
+    "addresses": {
+     "ethereum": "0x5d5d3920281c5c99155c463ab3fb7197c307e6d892e903b62efa0dd1d2a3c10a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.043Z",
+    "createdAt": "2026-01-25T06:12:02.033Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1409.2235596567716,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 13600,
+     "feePercentage": "68.032"
+    },
+    "tokenId": "16d77f50-40af-4bf3-ae1e-2f2ada13a75b",
+    "reserves": [
+     "13.882251542134580867",
+     "1028.61958"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3d436b4fdc532c61a0bf15d6cae80a66eb8f28ee9daec34dbec4b5bc9964063b": {
+    "key": "robinhood:0x3d436b4fdc532c61a0bf15d6cae80a66eb8f28ee9daec34dbec4b5bc9964063b",
+    "name": "Uniswap V4 LP GME/USDG",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0x3d436b4fdc532c61a0bf15d6cae80a66eb8f28ee9daec34dbec4b5bc9964063b",
+    "addresses": {
+     "robinhood": "0x3d436b4fdc532c61a0bf15d6cae80a66eb8f28ee9daec34dbec4b5bc9964063b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.093Z",
+    "createdAt": "2026-07-23T13:51:07.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 4343.166744791651,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5048.394"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "655a515e-28e7-4cd0-ac87-e5af92f30804",
+    "reserves": [
+     "37.470897397485543505",
+     "3339.508758"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0ce850323acb7820696cb54a14869107ca72ce7204040083cacf04ef2a3cc28c": {
+    "key": "arbitrum:0x0ce850323acb7820696cb54a14869107ca72ce7204040083cacf04ef2a3cc28c",
+    "name": "Uniswap V4 LP USDT/GMEx",
+    "decimals": 18,
+    "symbol": "USDT/GMEX",
+    "price": 9007199254740990,
+    "address": "0x0ce850323acb7820696cb54a14869107ca72ce7204040083cacf04ef2a3cc28c",
+    "addresses": {
+     "arbitrum": "0x0ce850323acb7820696cb54a14869107ca72ce7204040083cacf04ef2a3cc28c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.545Z",
+    "createdAt": "2026-10-16T14:24:01.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xe5f6d3b2405abdfe6f660e63202b25d23763160d"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "db405254-9ee4-403a-b6d1-650d4b494960",
+    "reserves": [
+     "1999.999999999999999998",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x93eff1f9142f3a00b284876ad37e0cdd87c67477": {
+    "key": "base:0x93eff1f9142f3a00b284876ad37e0cdd87c67477",
+    "name": "UniswapV2 LP WETH/GME",
+    "decimals": 18,
+    "symbol": "WETH/GME",
+    "price": 120233.4068142115,
+    "address": "0x93eff1f9142f3a00b284876ad37e0cdd87c67477",
+    "addresses": {
+     "base": "0x93eff1f9142f3a00b284876ad37e0cdd87c67477"
+    },
+    "platform": "uniswapv2",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://assets.coingecko.com/coins/images/37229/large/gamestop.jpeg?1713780481"
+    ],
+    "updatedAt": "2026-10-18T20:13:24.663Z",
+    "createdAt": "2024-08-12T13:58:54.359Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0xbeb0fd48c2ba0f1aacad2814605f09e08a96b94e"
+    ],
+    "liquidity": 37639.00991241487,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1.809"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "249f03ad-28d3-4646-b55c-1a7749790d3b",
+    "totalSupply": "0.313049516849970557",
+    "reserves": [
+     "7.850363025007700933",
+     "45833327.877444678"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xd0a1c0100f7bd5140617c78c0822f1fb7de2c1c0": {
+    "key": "bsc:0xd0a1c0100f7bd5140617c78c0822f1fb7de2c1c0",
+    "name": "PancakeSwap LP GMEB/WBNB",
+    "decimals": 18,
+    "symbol": "GMEB/WBNB",
+    "price": 421.11650688939596,
+    "address": "0xd0a1c0100f7bd5140617c78c0822f1fb7de2c1c0",
+    "addresses": {
+     "bsc": "0xd0a1c0100f7bd5140617c78c0822f1fb7de2c1c0"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
+    ],
+    "updatedAt": "2026-10-18T20:13:17.924Z",
+    "createdAt": "2026-10-13T05:38:30.650Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    ],
+    "liquidity": 23653.134063458318,
+    "metrics": {
+     "apy": "3.444",
+     "baseApy": "3.444",
+     "volumeUsd1d": "891.037",
+     "volumeUsd7d": "12228.689"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "a6c71c63-2359-44d9-89c0-26e7ef74f216",
+    "totalSupply": "56.167672547850726988",
+    "reserves": [
+     "439.688553100897701014",
+     "16.741467500702008761"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc56c7a0eaa804f854b536a5f3d5f49d2ec4b12b8": {
+    "key": "ethereum:0xc56c7a0eaa804f854b536a5f3d5f49d2ec4b12b8",
+    "name": "GameStop (Ethereum)",
+    "decimals": 9,
+    "symbol": "GME",
+    "price": 4.8e-06,
+    "address": "0xc56c7a0eaa804f854b536a5f3d5f49d2ec4b12b8",
+    "addresses": {
+     "ethereum": "0xc56c7a0eaa804f854b536a5f3d5f49d2ec4b12b8"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-05-16T10:00:12.118Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1972560,
+    "image": "https://assets.coingecko.com/coins/images/37895/large/GME200.jpg?1715847521",
+    "metrics": {
+     "volumeUsd1d": "2704.068",
+     "volumeUsd7d": "164433.72"
+    },
+    "metadata": {},
+    "tokenId": "6e6a2f29-9947-4b84-851d-20d847f9ac82",
+    "totalSupply": "411297452497.74554",
+    "circulatingSupply": "411297452497.74554",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2aeee741fa1e21120a21e57db9ee545428e683c9": {
+    "key": "ethereum:0x2aeee741fa1e21120a21e57db9ee545428e683c9",
+    "name": "UniswapV2 LP WETH/GME",
+    "decimals": 18,
+    "symbol": "WETH/GME",
+    "price": 22561.02956668901,
+    "address": "0x2aeee741fa1e21120a21e57db9ee545428e683c9",
+    "addresses": {
+     "ethereum": "0x2aeee741fa1e21120a21e57db9ee545428e683c9"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://assets.coingecko.com/coins/images/37895/large/GME200.jpg?1715847521"
+    ],
+    "updatedAt": "2026-10-18T20:13:01.742Z",
+    "createdAt": "2024-05-16T10:01:48.752Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xc56c7a0eaa804f854b536a5f3d5f49d2ec4b12b8"
+    ],
+    "liquidity": 554933.0089816796,
+    "metrics": {
+     "apy": "0.542",
+     "baseApy": "0.542",
+     "volumeUsd1d": "2747.317",
+     "volumeUsd7d": "91570.384"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "796a0e92-d3de-4aa2-bacf-025252325e4e",
+    "totalSupply": "24.596971842146297473",
+    "reserves": [
+     "118.482013761344495823",
+     "57914745911.591195544"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x36c092a1ae464f46f77d5e55cffd9e39d4497d54": {
+    "key": "robinhood:0x36c092a1ae464f46f77d5e55cffd9e39d4497d54",
+    "name": "GME 3x Long",
+    "decimals": 18,
+    "symbol": "GMEX3L",
+    "price": 19.73450547670345,
+    "address": "0x36c092a1ae464f46f77d5e55cffd9e39d4497d54",
+    "addresses": {
+     "robinhood": "0x36c092a1ae464f46f77d5e55cffd9e39d4497d54"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1072527.4715608282,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "2.18"
+    },
+    "metadata": {},
+    "tokenId": "a1d7dc09-0e30-4ebb-b89f-f4c3462c136d",
+    "totalSupply": "54347.826087",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x632963e19c9c420c22c5422a7625e80e454f6f2b": {
+    "key": "bsc:0x632963e19c9c420c22c5422a7625e80e454f6f2b",
+    "name": "PancakeSwap LP WBNB/GMEX",
+    "decimals": 18,
+    "symbol": "WBNB/GMEX",
+    "price": 13430.554369624875,
+    "address": "0x632963e19c9c420c22c5422a7625e80e454f6f2b",
+    "addresses": {
+     "bsc": "0x632963e19c9c420c22c5422a7625e80e454f6f2b"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://assets.coingecko.com/coins/images/19893/large/gmex.png?1696519314"
+    ],
+    "updatedAt": "2026-10-18T20:13:17.922Z",
+    "createdAt": "2024-02-29T09:06:54.074Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xe9d78bf51ae04c7e1263a76ed89a65537b9ca903"
+    ],
+    "liquidity": 1031222.731247352,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "4.525",
+     "volumeUsd7d": "5.061"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "a565972c-2774-4f51-ac09-1b27c05bda37",
+    "totalSupply": "76.781844059960034948",
+    "reserves": [
+     "730.131416556883203794",
+     "8992401007.41363229"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x71d24baeb0a033ec5f90ff65c4210545af378d97": {
+    "key": "ethereum:0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+    "name": "GameStop (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "GMEON",
+    "price": 27.43,
+    "address": "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+    "addresses": {
+     "bsc": "0xdabb9aff4cf02f26d2014e4ca9f94ac6fe6572a3",
+     "ethereum": "0x71d24baeb0a033ec5f90ff65c4210545af378d97"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 512543,
+    "image": "missing_large.png",
+    "metrics": {
+     "volumeUsd1d": "488896.074",
+     "volumeUsd7d": "3592312.965"
+    },
+    "metadata": {},
+    "tokenId": "84b9899f-9758-497d-adef-94f02e7b57fd",
+    "totalSupply": "18686.41246116429",
+    "circulatingSupply": "18686.41246116429",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x84e9a6f9d240fdd33801f7135908bfa16866939a": {
+    "key": "bsc:0x84e9a6f9d240fdd33801f7135908bfa16866939a",
+    "name": "GAMEE",
+    "decimals": 18,
+    "symbol": "GMEE",
+    "price": 0.00123153,
+    "address": "0x84e9a6f9d240fdd33801f7135908bfa16866939a",
+    "addresses": {
+     "polygon": "0xcf32822ff397ef82425153a9dcb726e5ff61dca7",
+     "ethereum": "0xd9016a907dc0ecfa3ca425ab20b6b785b42f2373",
+     "bsc": "0x84e9a6f9d240fdd33801f7135908bfa16866939a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2178157,
+    "image": "https://assets.coingecko.com/coins/images/14716/large/gmee-200x200.png?1696514386",
+    "metrics": {
+     "volumeUsd1d": "214082.333",
+     "volumeUsd7d": "1820900.127"
+    },
+    "metadata": {},
+    "tokenId": "c628d345-2d6c-4aa7-a818-5ae3e0b2a41b",
+    "totalSupply": "3180000000",
+    "circulatingSupply": "1769305126.1584601",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1b0e319c6a659f002271b69db8a7df2f911c153e": {
+    "key": "robinhood:0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "name": "GameStop • Robinhood Token",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 26.785,
+    "address": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "addresses": {
+     "robinhood": "0x1b0e319c6a659f002271b69db8a7df2f911c153e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+    "liquidity": 3051979.40608715,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1290624.441"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c5ac9420091c4f9eb3ff1fdd1d2b60c6",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "44302d11-4895-477c-8600-219f14aef257",
+    "totalSupply": "113943.60299",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xe2b46c905e12ab8e2f864e4821a4325884c1b126": {
+    "key": "robinhood:0xe2b46c905e12ab8e2f864e4821a4325884c1b126",
+    "name": "Uniswap V3 GameStop  Robinhood Token/Global Dollar 0.05%",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0xe2b46c905e12ab8e2f864e4821a4325884c1b126",
+    "addresses": {
+     "robinhood": "0xe2b46c905e12ab8e2f864e4821a4325884c1b126"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.359Z",
+    "createdAt": "2026-07-23T21:08:31.041Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 137194.34535318404,
+    "metrics": {
+     "apy": "27.271",
+     "baseApy": "27.271",
+     "volumeUsd1d": "205007.804",
+     "volumeUsd7d": "5377349.83"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "cbb365d7-70d1-4fd2-90c6-c27b9d50ef93",
+    "reserves": [
+     "2812.72725335762712001",
+     "61855.445872"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb767c50c20c9ec37e540cf9f85a3344c0a9f0877a4400bc152a39c7ad3033cf3": {
+    "key": "robinhood:0xb767c50c20c9ec37e540cf9f85a3344c0a9f0877a4400bc152a39c7ad3033cf3",
+    "name": "Uniswap V4 LP GME/USDG",
+    "decimals": 18,
+    "symbol": "GME/USDG",
+    "price": 9007199254740990,
+    "address": "0xb767c50c20c9ec37e540cf9f85a3344c0a9f0877a4400bc152a39c7ad3033cf3",
+    "addresses": {
+     "robinhood": "0xb767c50c20c9ec37e540cf9f85a3344c0a9f0877a4400bc152a39c7ad3033cf3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174150/large/0x1b0e319c6a659f002271b69db8a7df2f911c153e.png?1782444670",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.913Z",
+    "createdAt": "2026-07-20T17:48:33.322Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1562.1144724896058,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18200,
+     "feePercentage": "91.009"
+    },
+    "tokenId": "b7b22679-ac51-4e4e-94e9-c1bc3bed6226",
+    "reserves": [
+     "4.295530949770609261",
+     "1447.058676"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x9f21235031ad8b1ada90ead9c4717b161c2c0cda": {
+    "key": "hyperevm:0x9f21235031ad8b1ada90ead9c4717b161c2c0cda",
+    "name": "Project X Wrapped Gamestop xStock/Wrapped HYPE 1%",
+    "decimals": 18,
+    "symbol": "WGMEX/WHYPE",
+    "price": 9007199254740990,
+    "address": "0x9f21235031ad8b1ada90ead9c4717b161c2c0cda",
+    "addresses": {
+     "hyperevm": "0x9f21235031ad8b1ada90ead9c4717b161c2c0cda"
+    },
+    "platform": "project-x",
+    "network": "hyperevm",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/project-x",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/54469/large/_UP3jBsi_400x400.jpg?1739905920"
+    ],
+    "updatedAt": "2026-10-18T20:13:19.908Z",
+    "createdAt": "2026-09-22T12:58:36.452Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x459d3ae62b86cc6125e06260dddfd3afed24a877",
+     "0x5555555555555555555555555555555555555555"
+    ],
+    "liquidity": 12422.56559105634,
+    "metrics": {
+     "apy": "15.852",
+     "baseApy": "15.852",
+     "volumeUsd1d": "538.478",
+     "volumeUsd7d": "4288.183"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "8d24f375-f803-45c1-b575-892b76fb8ef8",
+    "reserves": [
+     "143.831221983416292665",
+     "112.136242701852257826"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x866cf6949f678a8c26e7e0fd10ed89aa79453f7dde08bb7c51e5cc02b7d20c63": {
+    "key": "bsc:0x866cf6949f678a8c26e7e0fd10ed89aa79453f7dde08bb7c51e5cc02b7d20c63",
+    "name": "Uniswap V4 LP GMEB/USDT",
+    "decimals": 18,
+    "symbol": "GMEB/USDT",
+    "price": 9007199254740990,
+    "address": "0x866cf6949f678a8c26e7e0fd10ed89aa79453f7dde08bb7c51e5cc02b7d20c63",
+    "addresses": {
+     "bsc": "0x866cf6949f678a8c26e7e0fd10ed89aa79453f7dde08bb7c51e5cc02b7d20c63"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175530/large/gamestop_bstock.png?1786614133",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.476Z",
+    "createdAt": "2026-08-15T17:35:25.752Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x46ceefda28dd7207059ed19b0acdc026955bb15c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 20112.535001642715,
+    "metrics": {
+     "apy": "0.002",
+     "baseApy": "0.002",
+     "volumeUsd1d": "3.681",
+     "volumeUsd7d": "54.885"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3,
+     "feePercentage": "0.0373"
+    },
+    "tokenId": "678e5b7a-b955-497d-af21-382846873dee",
+    "reserves": [
+     "646.649829927904342825",
+     "2693.976091971652224789"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3": {
+    "key": "robinhood:0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3",
+    "name": "GameStop",
+    "decimals": 18,
+    "symbol": "GME",
+    "price": 6.473368701853046e-06,
+    "address": "0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3",
+    "addresses": {
+     "robinhood": "0xc2362aff2a2a4cc1f48cf3dab2c4e2605eb94ba3"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-23T03:14:06.738Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 647336.8701853045,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "32.47",
+     "volumeUsd7d": "226.39"
+    },
+    "metadata": {},
+    "tokenId": "08ba9794-a522-440d-bffa-953bd563dc11",
+    "totalSupply": "100000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf2fd48691c5b75935f9828417d12e4ce36cc2b2568ee6c1d0d6a56c4b22f2763": {
+    "key": "robinhood:0xf2fd48691c5b75935f9828417d12e4ce36cc2b2568ee6c1d0d6a56c4b22f2763",
+    "name": "Uniswap V4 LP USDG/GME",
+    "decimals": 18,
+    "symbol": "USDG/GME",
+    "price": 9007199254740990,
+    "address": "0xf2fd48691c5b75935f9828417d12e4ce36cc2b2568ee6c1d0d6a56c4b22f2763",
+    "addresses": {
+     "robinhood": "0xf2fd48691c5b75935f9828417d12e4ce36cc2b2568ee6c1d0d6a56c4b22f2763"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102176793/large/greatest_meme_ever.png?1788726223"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.418Z",
+    "createdAt": "2026-09-08T14:43:04.825Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    ],
+    "liquidity": 80333.69552768658,
+    "metrics": {
+     "apy": "125.382",
+     "baseApy": "125.382",
+     "volumeUsd1d": "6944.239",
+     "volumeUsd7d": "96507.506"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 388,
+     "feePercentage": "3.9738"
+    },
+    "tokenId": "20cf099a-15d5-49a4-b6a3-ad4d57ca2aa3",
+    "reserves": [
+     "44550.34022",
+     "27807584.050361806286801271"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x10986d2f7429d9c9f6bf18858e979ee12a7126acdef0a2d096d2973b2bbb22ff": {
+    "key": "ethereum:0x10986d2f7429d9c9f6bf18858e979ee12a7126acdef0a2d096d2973b2bbb22ff",
+    "name": "Uniswap V4 LP GMEon/USDT",
+    "decimals": 18,
+    "symbol": "GMEON/USDT",
+    "price": 9007199254740990,
+    "address": "0x10986d2f7429d9c9f6bf18858e979ee12a7126acdef0a2d096d2973b2bbb22ff",
+    "addresses": {
+     "ethereum": "0x10986d2f7429d9c9f6bf18858e979ee12a7126acdef0a2d096d2973b2bbb22ff"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.033Z",
+    "createdAt": "2025-09-26T08:45:48.670Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 826.7328776703813,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "9b69d09c-1a8a-4d02-8602-80d2c402ba8b",
+    "reserves": [
+     "14.002477194478937492",
+     "443.004648"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x303af49891f02549e080fd7c06bc3d862b2ba3fa": {
+    "key": "ethereum:0x303af49891f02549e080fd7c06bc3d862b2ba3fa",
+    "name": "Uniswap V3 The Meme Games/Wrapped Ether 1%",
+    "decimals": 18,
+    "symbol": "MGMES/WETH",
+    "price": 9007199254740990,
+    "address": "0x303af49891f02549e080fd7c06bc3d862b2ba3fa",
+    "addresses": {
+     "ethereum": "0x303af49891f02549e080fd7c06bc3d862b2ba3fa"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.422Z",
+    "createdAt": "2025-09-02T06:59:01.287Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x92f8a244ae2fc152b7d2ad1d18dea7ca56d9816c",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 5736.1672332564085,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "7403d15d-f3f1-4bcb-9206-3a5e4acfbf5a",
+    "reserves": [
+     "11363757.179291411624320201",
+     "1.298350869675729954"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5b52f36f995de56b661631576830f3acc06f63e1f17fa4949e6659927a6c500a": {
+    "key": "ethereum:0x5b52f36f995de56b661631576830f3acc06f63e1f17fa4949e6659927a6c500a",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x5b52f36f995de56b661631576830f3acc06f63e1f17fa4949e6659927a6c500a",
+    "addresses": {
+     "ethereum": "0x5b52f36f995de56b661631576830f3acc06f63e1f17fa4949e6659927a6c500a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.964Z",
+    "createdAt": "2026-01-22T08:04:07.643Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 585.1792593124676,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 14800,
+     "feePercentage": "74.026"
+    },
+    "tokenId": "48771ea8-e4d6-4ddb-9434-c6e1868fdbf5",
+    "reserves": [
+     "11.28019834222342809",
+     "275.813341"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9d5769a93ebff40a32d3159b57fd77cf1f42031dcbc6d45902a34060e8458b23": {
+    "key": "ethereum:0x9d5769a93ebff40a32d3159b57fd77cf1f42031dcbc6d45902a34060e8458b23",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x9d5769a93ebff40a32d3159b57fd77cf1f42031dcbc6d45902a34060e8458b23",
+    "addresses": {
+     "ethereum": "0x9d5769a93ebff40a32d3159b57fd77cf1f42031dcbc6d45902a34060e8458b23"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.193Z",
+    "createdAt": "2026-09-14T02:57:28.952Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 1177.9844706722313,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 4800,
+     "feePercentage": "48"
+    },
+    "tokenId": "4dc6e31f-b838-4412-88fb-02e70a3687c0",
+    "reserves": [
+     "24.326114275398624479",
+     "510.811613"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x6951864e6273a4dbf84bd7c145f920c205d3f6a7d63905f7439499e169bf3acd": {
+    "key": "ethereum:0x6951864e6273a4dbf84bd7c145f920c205d3f6a7d63905f7439499e169bf3acd",
+    "name": "Uniswap V4 LP GMEon/USDC",
+    "decimals": 18,
+    "symbol": "GMEON/USDC",
+    "price": 9007199254740990,
+    "address": "0x6951864e6273a4dbf84bd7c145f920c205d3f6a7d63905f7439499e169bf3acd",
+    "addresses": {
+     "ethereum": "0x6951864e6273a4dbf84bd7c145f920c205d3f6a7d63905f7439499e169bf3acd"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "missing_large.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.066Z",
+    "createdAt": "2026-09-29T15:04:37.574Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x71d24baeb0a033ec5f90ff65c4210545af378d97",
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    ],
+    "liquidity": 2771.5056954484126,
+    "metrics": {
+     "apy": "285.628",
+     "baseApy": "285.628",
+     "volumeUsd1d": "426.122",
+     "volumeUsd7d": "6001.308"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "2690d695-0773-475e-b7dc-8a83ae460e1a",
+    "reserves": [
+     "42.905129878018715282",
+     "1594.906661"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

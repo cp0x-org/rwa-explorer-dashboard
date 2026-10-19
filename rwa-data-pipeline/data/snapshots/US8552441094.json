@@ -1,0 +1,699 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US8552441094",
+ "ticker": "SBUX",
+ "name": "Starbucks",
+ "isin": "US8552441094",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:19:35Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Starbucks Corp",
+   "symbol": "SBUX",
+   "slug": "starbucks",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 96.0120179062498,
+     "tokenized_market_cap": 1918700.8499424825,
+     "tokenized_volume_24h": 6887.2345113,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 129,
+   "asset_type": "stock",
+   "rwa_rank": 149,
+   "has_tokens": true,
+   "average_tokenized_price": 96.0120179062498,
+   "tokenized_market_cap": 1918700.8499424825,
+   "tokenized_volume_24h": 6887.2345113,
+   "last_updated": "2026-10-18T20:13:32.910Z",
+   "tokens": [
+    {
+     "symbol": "SBUXon",
+     "name": "Starbucks Tokenized Stock (Ondo)",
+     "price": 96.0227387102223,
+     "crypto_id": 38055,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 1918915.09,
+     "volume_24h": 6888.00417542
+    },
+    {
+     "symbol": "wSBUXx",
+     "name": "Wrapped Starbucks Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41626,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SBUX",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SBUX"
+    }
+   ]
+  },
+  "info": {
+   "38055": {
+    "id": 38055,
+    "symbol": "SBUXon",
+    "name": "Starbucks Tokenized Stock (Ondo)",
+    "slug": "starbucks-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38055.png",
+    "date_added": "2025-09-03T10:54:59.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xf15FbC1349ab99ABAd63db3f9A510BF413bE3BeF"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xf15FbC1349ab99ABAd63db3f9A510BF413bE3BeF",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "iPFqjcZQTNMNXA4kbShbMhfAVD8yr8Uq9UtXMV6ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x94d7754541b829a87321d56121bc544167ac490d",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41626": {
+    "id": 41626,
+    "symbol": "wSBUXx",
+    "name": "Wrapped Starbucks Tokenized Stock (xStock)",
+    "slug": "wrapped-starbucks-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41626.png",
+    "date_added": "2026-08-11T16:25:50.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x70E2478001aFbF50A974f334E36Bc331B714c22D"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x70E2478001aFbF50A974f334E36Bc331B714c22D",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x94d7754541b829a87321d56121bc544167ac490d",
+   "ethereum:0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+  ],
+  "exact": {
+   "ethereum:0xf15fbc1349ab99abad63db3f9a510bf413be3bef": {
+    "key": "ethereum:0xf15fbc1349ab99abad63db3f9a510bf413be3bef",
+    "name": "Starbucks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SBUXON",
+    "price": 96.06,
+    "address": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef",
+    "addresses": {
+     "bsc": "0x94d7754541b829a87321d56121bc544167ac490d",
+     "ethereum": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1919639,
+    "image": "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053",
+    "metrics": {
+     "volumeUsd1d": "5255.708",
+     "volumeUsd7d": "264987.44"
+    },
+    "metadata": {},
+    "tokenId": "821f28dd-984b-4fbe-bbf2-68b016f7c5e6",
+    "totalSupply": "19983.965463740704",
+    "circulatingSupply": "19983.965463740704",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x94d7754541b829a87321d56121bc544167ac490d": {
+    "key": "bsc:0x94d7754541b829a87321d56121bc544167ac490d",
+    "name": "Starbucks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SBUXON",
+    "price": 96.06,
+    "address": "0x94d7754541b829a87321d56121bc544167ac490d",
+    "addresses": {
+     "bsc": "0x94d7754541b829a87321d56121bc544167ac490d",
+     "ethereum": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1919639,
+    "image": "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053",
+    "metrics": {
+     "volumeUsd1d": "5255.479",
+     "volumeUsd7d": "265623.321"
+    },
+    "metadata": {},
+    "tokenId": "821f28dd-984b-4fbe-bbf2-68b016f7c5e6",
+    "totalSupply": "19983.965463740704",
+    "circulatingSupply": "19983.965463740704",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SBUX": {
+    "total_items": 12,
+    "pages": 1,
+    "received": 12,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x353b8f5e61f0f4f1a05ed81a39a0c0144d57a327910e4b26ae21b013ee027b6d": {
+    "key": "ethereum:0x353b8f5e61f0f4f1a05ed81a39a0c0144d57a327910e4b26ae21b013ee027b6d",
+    "name": "Uniswap V4 LP USDT/SBUXon",
+    "decimals": 18,
+    "symbol": "USDT/SBUXON",
+    "price": 9007199254740990,
+    "address": "0x353b8f5e61f0f4f1a05ed81a39a0c0144d57a327910e4b26ae21b013ee027b6d",
+    "addresses": {
+     "ethereum": "0x353b8f5e61f0f4f1a05ed81a39a0c0144d57a327910e4b26ae21b013ee027b6d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+     "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053"
+    ],
+    "updatedAt": "2026-10-18T20:15:02.485Z",
+    "createdAt": "2025-09-26T08:45:49.327Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    ],
+    "liquidity": 1130.0859712082774,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "c416a94d-c7ad-47cd-b42e-4ada4d83f570",
+    "reserves": [
+     "649.173025",
+     "5.012179228229517213"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf15fbc1349ab99abad63db3f9a510bf413be3bef": {
+    "key": "ethereum:0xf15fbc1349ab99abad63db3f9a510bf413be3bef",
+    "name": "Starbucks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SBUXON",
+    "price": 96.06,
+    "address": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef",
+    "addresses": {
+     "bsc": "0x94d7754541b829a87321d56121bc544167ac490d",
+     "ethereum": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1919639,
+    "image": "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053",
+    "metrics": {
+     "volumeUsd1d": "5255.708",
+     "volumeUsd7d": "264987.44"
+    },
+    "metadata": {},
+    "tokenId": "821f28dd-984b-4fbe-bbf2-68b016f7c5e6",
+    "totalSupply": "19983.965463740704",
+    "circulatingSupply": "19983.965463740704",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xf13177ea76d01cdf2c63a42c09d78b58687a55cc16c9418fe6f55c6c6535f6c3": {
+    "key": "ethereum:0xf13177ea76d01cdf2c63a42c09d78b58687a55cc16c9418fe6f55c6c6535f6c3",
+    "name": "Uniswap V4 LP wUSDC/SBUXon",
+    "decimals": 18,
+    "symbol": "WUSDC/SBUXON",
+    "price": 9007199254740990,
+    "address": "0xf13177ea76d01cdf2c63a42c09d78b58687a55cc16c9418fe6f55c6c6535f6c3",
+    "addresses": {
+     "ethereum": "0xf13177ea76d01cdf2c63a42c09d78b58687a55cc16c9418fe6f55c6c6535f6c3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.352Z",
+    "createdAt": "2026-09-28T10:37:34.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    ],
+    "liquidity": 10026.535376675458,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "755b09c8-37ad-4210-b2f8-897d2c74946e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x55b49b8cf944af7d64343e7882c6e65d50f1274ccb255d6f65b48ff5ad218a98": {
+    "key": "ethereum:0x55b49b8cf944af7d64343e7882c6e65d50f1274ccb255d6f65b48ff5ad218a98",
+    "name": "Uniswap V4 LP EGP/SBUXon",
+    "decimals": 18,
+    "symbol": "EGP/SBUXON",
+    "price": 9007199254740990,
+    "address": "0x55b49b8cf944af7d64343e7882c6e65d50f1274ccb255d6f65b48ff5ad218a98",
+    "addresses": {
+     "ethereum": "0x55b49b8cf944af7d64343e7882c6e65d50f1274ccb255d6f65b48ff5ad218a98"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053"
+    ],
+    "updatedAt": "2026-10-18T20:15:03.360Z",
+    "createdAt": "2026-10-14T06:54:28.904Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    ],
+    "liquidity": 20074.313139449925,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.58"
+    },
+    "tokenId": "aa8e224b-3f88-4c45-8b16-3e1c5f5d1fa0",
+    "reserves": [
+     "19999.999999999999999976",
+     "0.299749414225251272"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xa0a51c0be1037c1a32a5a252ed591b9132ddfc4309d7c65e20e19a64fc0c530a": {
+    "key": "bsc:0xa0a51c0be1037c1a32a5a252ed591b9132ddfc4309d7c65e20e19a64fc0c530a",
+    "name": "Uniswap V4 LP USDT/SBUXon",
+    "decimals": 18,
+    "symbol": "USDT/SBUXON",
+    "price": 9007199254740990,
+    "address": "0xa0a51c0be1037c1a32a5a252ed591b9132ddfc4309d7c65e20e19a64fc0c530a",
+    "addresses": {
+     "bsc": "0xa0a51c0be1037c1a32a5a252ed591b9132ddfc4309d7c65e20e19a64fc0c530a"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053"
+    ],
+    "updatedAt": "2026-10-18T20:15:25.464Z",
+    "createdAt": "2026-10-17T14:24:35.109Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x94d7754541b829a87321d56121bc544167ac490d"
+    ],
+    "liquidity": 31240.366151402457,
+    "metrics": {
+     "apy": "0.345",
+     "baseApy": "0.345",
+     "volumeUsd1d": "5.795",
+     "volumeUsd7d": "9710.857"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "9c0ae491-78b9-458f-b562-513c599962a8",
+    "reserves": [
+     "21464.866355350782275168",
+     "101.956242467047309563"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x94d7754541b829a87321d56121bc544167ac490d": {
+    "key": "bsc:0x94d7754541b829a87321d56121bc544167ac490d",
+    "name": "Starbucks (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SBUXON",
+    "price": 96.06,
+    "address": "0x94d7754541b829a87321d56121bc544167ac490d",
+    "addresses": {
+     "bsc": "0x94d7754541b829a87321d56121bc544167ac490d",
+     "ethereum": "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1919639,
+    "image": "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053",
+    "metrics": {
+     "volumeUsd1d": "5255.479",
+     "volumeUsd7d": "265623.321"
+    },
+    "metadata": {},
+    "tokenId": "821f28dd-984b-4fbe-bbf2-68b016f7c5e6",
+    "totalSupply": "19983.965463740704",
+    "circulatingSupply": "19983.965463740704",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df": {
+    "key": "ethereum:0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+    "name": "Dinari SBUX",
+    "decimals": 18,
+    "symbol": "SBUX",
+    "price": 103.37,
+    "address": "0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+    "addresses": {
+     "arbitrum": "0x4b72de2da8be112cad87773b47537cf550676ffa",
+     "ethereum": "0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+     "base": "0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+     "avalanche": "0xb79509f6407061cfcceeb94cbf699e7ea5a346f9"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1541.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175001/large/dinari-logo-green-with-margin.png?1785402854",
+    "metrics": {
+     "volumeUsd1d": "59.18",
+     "volumeUsd7d": "414.26"
+    },
+    "metadata": {},
+    "tokenId": "2bc4aef6-955e-4e1c-9800-c874d38dd806",
+    "totalSupply": "14.9152451245625",
+    "circulatingSupply": "14.9152451245625",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x4b72de2da8be112cad87773b47537cf550676ffa": {
+    "key": "arbitrum:0x4b72de2da8be112cad87773b47537cf550676ffa",
+    "name": "Dinari SBUX",
+    "decimals": 18,
+    "symbol": "SBUX",
+    "price": 103.37,
+    "address": "0x4b72de2da8be112cad87773b47537cf550676ffa",
+    "addresses": {
+     "arbitrum": "0x4b72de2da8be112cad87773b47537cf550676ffa",
+     "ethereum": "0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+     "base": "0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+     "avalanche": "0xb79509f6407061cfcceeb94cbf699e7ea5a346f9"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1541.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175001/large/dinari-logo-green-with-margin.png?1785402854",
+    "metrics": {
+     "volumeUsd1d": "59.18",
+     "volumeUsd7d": "414.26"
+    },
+    "metadata": {},
+    "tokenId": "2bc4aef6-955e-4e1c-9800-c874d38dd806",
+    "totalSupply": "14.9152451245625",
+    "circulatingSupply": "14.9152451245625",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0xb79509f6407061cfcceeb94cbf699e7ea5a346f9": {
+    "key": "avalanche:0xb79509f6407061cfcceeb94cbf699e7ea5a346f9",
+    "name": "Dinari SBUX",
+    "decimals": 18,
+    "symbol": "SBUX",
+    "price": 103.37,
+    "address": "0xb79509f6407061cfcceeb94cbf699e7ea5a346f9",
+    "addresses": {
+     "arbitrum": "0x4b72de2da8be112cad87773b47537cf550676ffa",
+     "ethereum": "0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+     "base": "0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+     "avalanche": "0xb79509f6407061cfcceeb94cbf699e7ea5a346f9"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1541.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175001/large/dinari-logo-green-with-margin.png?1785402854",
+    "metrics": {
+     "volumeUsd1d": "59.18",
+     "volumeUsd7d": "414.26"
+    },
+    "metadata": {},
+    "tokenId": "2bc4aef6-955e-4e1c-9800-c874d38dd806",
+    "totalSupply": "14.9152451245625",
+    "circulatingSupply": "14.9152451245625",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x9b42e4afcc2046070fa00ff8213d59eef6e4264e": {
+    "key": "base:0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+    "name": "Dinari SBUX",
+    "decimals": 18,
+    "symbol": "SBUX",
+    "price": 103.37,
+    "address": "0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+    "addresses": {
+     "arbitrum": "0x4b72de2da8be112cad87773b47537cf550676ffa",
+     "ethereum": "0x86ccbf2471be7ebca2c2c92a12fcf7089a44b4df",
+     "base": "0x9b42e4afcc2046070fa00ff8213d59eef6e4264e",
+     "avalanche": "0xb79509f6407061cfcceeb94cbf699e7ea5a346f9"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1541.86,
+    "image": "https://coin-images.coingecko.com/coins/images/102175001/large/dinari-logo-green-with-margin.png?1785402854",
+    "metrics": {
+     "volumeUsd1d": "59.18",
+     "volumeUsd7d": "414.26"
+    },
+    "metadata": {},
+    "tokenId": "2bc4aef6-955e-4e1c-9800-c874d38dd806",
+    "totalSupply": "14.9152451245625",
+    "circulatingSupply": "14.9152451245625",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xabc6625d494568349704cae6ba77bbec96470683b4d0384e83823d59f2240ea9": {
+    "key": "ethereum:0xabc6625d494568349704cae6ba77bbec96470683b4d0384e83823d59f2240ea9",
+    "name": "Uniswap V4 LP USDC/SBUXon",
+    "decimals": 18,
+    "symbol": "USDC/SBUXON",
+    "price": 9007199254740990,
+    "address": "0xabc6625d494568349704cae6ba77bbec96470683b4d0384e83823d59f2240ea9",
+    "addresses": {
+     "ethereum": "0xabc6625d494568349704cae6ba77bbec96470683b4d0384e83823d59f2240ea9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68564/large/sbuxon_160x160.png?1756106053"
+    ],
+    "updatedAt": "2026-10-18T20:15:06.601Z",
+    "createdAt": "2025-09-26T08:45:50.931Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xf15fbc1349ab99abad63db3f9a510bf413be3bef"
+    ],
+    "liquidity": 692.2454791470298,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "8fdd89f5-4bd3-48c5-99c2-cfa15c74284c",
+    "reserves": [
+     "407.808388",
+     "2.962037621555254243"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x68d6af5db9549fa1d329234218b6bb1bd196d407": {
+    "key": "arbitrum:0x68d6af5db9549fa1d329234218b6bb1bd196d407",
+    "name": "Starbucks rStock",
+    "decimals": 18,
+    "symbol": "RSBUX",
+    "price": 96.92,
+    "address": "0x68d6af5db9549fa1d329234218b6bb1bd196d407",
+    "addresses": {
+     "arbitrum": "0x68d6af5db9549fa1d329234218b6bb1bd196d407"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "createdAt": "2026-09-11T09:23:28.703Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 625.01,
+    "image": "https://coin-images.coingecko.com/coins/images/102177354/large/SBUX.png?1789117641",
+    "metrics": {
+     "volumeUsd1d": "10.881",
+     "volumeUsd7d": "3828.716"
+    },
+    "metadata": {},
+    "tokenId": "7839d440-7e7a-4ce5-8769-a1ea8ad85572",
+    "totalSupply": "6.448700085",
+    "circulatingSupply": "6.448700085",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

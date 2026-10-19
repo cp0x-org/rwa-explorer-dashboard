@@ -1,0 +1,448 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US78409V1044",
+ "ticker": "SPGI",
+ "name": "S&P Global",
+ "isin": "US78409V1044",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:20:01Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "S&P Global Inc",
+   "symbol": "SPGI",
+   "slug": "spgi",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 451.1997855871611,
+     "tokenized_market_cap": 962132.4504801003,
+     "tokenized_volume_24h": 0,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 134,
+   "asset_type": "stock",
+   "rwa_rank": 125,
+   "has_tokens": true,
+   "average_tokenized_price": 451.1997855871611,
+   "tokenized_market_cap": 962132.4504801003,
+   "tokenized_volume_24h": 0,
+   "last_updated": "2026-10-18T20:13:38.832Z",
+   "tokens": [
+    {
+     "symbol": "SPGIon",
+     "name": "S&P Global Tokenized Stock (Ondo)",
+     "price": 451.1997855871611,
+     "crypto_id": 38074,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 962132.45,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "wSPGIx",
+     "name": "Wrapped S&P Global Tokenized Stock (xStock)",
+     "price": null,
+     "crypto_id": 41850,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "SPGI",
+     "market_url": "https://www.binance.com/en/stocks/EQ_SPGI"
+    }
+   ]
+  },
+  "info": {
+   "38074": {
+    "id": 38074,
+    "symbol": "SPGIon",
+    "name": "S&P Global Tokenized Stock (Ondo)",
+    "slug": "sp-global-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38074.png",
+    "date_added": "2025-09-03T10:55:41.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xbc843b147DB4C7E00721d76037b8b92e13AfE13f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xbc843b147DB4C7E00721d76037b8b92e13AfE13f",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "JrTYw7A9jihX5TwpRStYviEbsYf2X2VJpZ13719ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
+   },
+   "41850": {
+    "id": 41850,
+    "symbol": "wSPGIx",
+    "name": "Wrapped S&P Global Tokenized Stock (xStock)",
+    "slug": "wrapped-sp-global-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41850.png",
+    "date_added": "2026-08-16T03:25:07.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x0F66B853D1D1fa688740CC77079280F20515d24E"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x0F66B853D1D1fa688740CC77079280F20515d24E",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8",
+   "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+  ],
+  "exact": {
+   "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f": {
+    "key": "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32562.877"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8": {
+    "key": "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32351.587"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "SPGI": {
+    "total_items": 5,
+    "pages": 1,
+    "received": 5,
+    "complete": true
+   }
+  },
+  "records": {
+   "ethereum:0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702": {
+    "key": "ethereum:0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702",
+    "name": "Uniswap V4 LP EGP/SPGIon",
+    "decimals": 18,
+    "symbol": "EGP/SPGION",
+    "price": 9007199254740990,
+    "address": "0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702",
+    "addresses": {
+     "ethereum": "0x45eb2cf753b362f9b0e0b5880946471a405ee47cf42b5a7efe70f45482225702"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:37.617Z",
+    "createdAt": "2026-10-13T13:13:56.500Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 20064.90510155371,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "97.85"
+    },
+    "tokenId": "9bdcfb40-8677-4f4b-bf0c-e30658aaba0e",
+    "reserves": [
+     "19999.999999999999999977",
+     "0.066161974774860838"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84": {
+    "key": "ethereum:0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84",
+    "name": "Uniswap V4 LP wUSDC/SPGIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SPGION",
+    "price": 9007199254740990,
+    "address": "0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84",
+    "addresses": {
+     "ethereum": "0x64dc817d5122712c56ae784226a8a2240d835e74904fd80ff79858ba9f9abd84"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:16:56.536Z",
+    "createdAt": "2026-09-28T10:37:14.780Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2195564b-1db2-4d93-89d5-e62aa2eed61a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f": {
+    "key": "ethereum:0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0xbc843b147db4c7e00721d76037b8b92e13afe13f",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32562.877"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8": {
+    "key": "bsc:0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "name": "S&P Global (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "SPGION",
+    "price": 457.61,
+    "address": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+    "addresses": {
+     "bsc": "0x55b370b704240a914f42b5bbb3195431c031f9f8",
+     "ethereum": "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 975810,
+    "image": "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901",
+    "metrics": {
+     "volumeUsd1d": "62.201",
+     "volumeUsd7d": "32351.587"
+    },
+    "metadata": {},
+    "tokenId": "63f9c37c-65a6-43e5-af3e-903b3242099e",
+    "totalSupply": "2132.3867634981684",
+    "circulatingSupply": "2132.3867634981684",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe": {
+    "key": "ethereum:0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe",
+    "name": "Uniswap V4 LP wUSDC/SPGIon",
+    "decimals": 18,
+    "symbol": "WUSDC/SPGION",
+    "price": 9007199254740990,
+    "address": "0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe",
+    "addresses": {
+     "ethereum": "0x49968eca807922791a2ae4dd630dab2b5554ac5fc4d3eb7f475ffb22d10b2bbe"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68596/large/spgion_160x160.png?1756129901"
+    ],
+    "updatedAt": "2026-10-18T20:17:25.890Z",
+    "createdAt": "2026-09-30T08:55:59.843Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xbc843b147db4c7e00721d76037b8b92e13afe13f"
+    ],
+    "liquidity": 10021.088080122907,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "ca355339-1439-480e-b770-0f7c30ea7c1a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  }
+ }
+}

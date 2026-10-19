@@ -1,0 +1,1003 @@
+{
+ "schema_version": 1,
+ "underlying_id": "NL0009805522",
+ "ticker": "NBIS",
+ "name": "Nebius Group",
+ "isin": "NL0009805522",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:17:30Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "Nebius Group N.V.",
+   "symbol": "NBIS",
+   "slug": "nebius-group-n-v",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 160.63934091972354,
+     "tokenized_market_cap": 7274000.077437072,
+     "tokenized_volume_24h": 3398418.69541102,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 254,
+   "asset_type": "stock",
+   "rwa_rank": 346,
+   "has_tokens": true,
+   "average_tokenized_price": 160.63934091972354,
+   "tokenized_market_cap": 7274000.077437072,
+   "tokenized_volume_24h": 3398418.69541102,
+   "last_updated": "2026-10-18T20:13:34.186Z",
+   "tokens": [
+    {
+     "symbol": "rNBIS",
+     "name": "Nebius Tokenized Stock (Reality)",
+     "price": 165.24190479916672,
+     "crypto_id": 40650,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 788069.47,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "NBIS",
+     "name": "Nebius Group Tokenized Stock (Robinhood)",
+     "price": 160.15999315166826,
+     "crypto_id": 40770,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 386993.14,
+     "volume_24h": 24031.39199229
+    },
+    {
+     "symbol": "NBISB",
+     "name": "Nebius Tokenized bStocks",
+     "price": 160.78716507937494,
+     "crypto_id": 40797,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 6104420.12,
+     "volume_24h": 3361801.83084992
+    },
+    {
+     "symbol": "wNBISx",
+     "name": "Wrapped Nebius Tokenized Stock (xStock)",
+     "price": 184.71121599288963,
+     "crypto_id": 41481,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 0,
+     "volume_24h": 0
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "NBIS",
+     "market_url": "https://www.binance.com/en/stocks/EQ_NBIS"
+    }
+   ]
+  },
+  "info": {
+   "40650": {
+    "id": 40650,
+    "symbol": "rNBIS",
+    "name": "Nebius Tokenized Stock (Reality)",
+    "slug": "nebius-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40650.png",
+    "date_added": "2026-07-02T07:39:22.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40770": {
+    "id": 40770,
+    "symbol": "NBIS",
+    "name": "Nebius Group Tokenized Stock (Robinhood)",
+    "slug": "nebius-group-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40770.png",
+    "date_added": "2026-08-04T07:32:00.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x9D9c6684F596F66a64C030B93A886D51Fd4D7931"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x9D9c6684F596F66a64C030B93A886D51Fd4D7931",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "40797": {
+    "id": 40797,
+    "symbol": "NBISB",
+    "name": "Nebius Tokenized bStocks",
+    "slug": "nebius-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40797.png",
+    "date_added": "2026-07-06T06:10:10.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "41481": {
+    "id": 41481,
+    "symbol": "wNBISx",
+    "name": "Wrapped Nebius Tokenized Stock (xStock)",
+    "slug": "wrapped-nebius-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/41481.png",
+    "date_added": "2026-08-11T16:24:17.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x43A7B7acfaE969b0682E56142B52E63E07D59b7d"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x43A7B7acfaE969b0682E56142B52E63E07D59b7d",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+   "bsc:0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+   "robinhood:0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+  ],
+  "exact": {
+   "robinhood:0x9d9c6684f596f66a64c030b93a886d51fd4d7931": {
+    "key": "robinhood:0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "name": "Nebius Group • Robinhood Token",
+    "decimals": 18,
+    "symbol": "NBIS",
+    "price": 165.35,
+    "address": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "addresses": {
+     "robinhood": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "liquidity": 399533.7085825,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "193402.156"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000994b82ab24514d439fccc87156df35f9",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "59d8a831-6962-4083-99ab-99449be1f57d",
+    "totalSupply": "2416.29095",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1": {
+    "key": "bsc:0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+    "name": "Nebius (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NBISB",
+    "price": 160.74,
+    "address": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+    "addresses": {
+     "bsc": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-07T19:49:45.198Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6102272,
+    "image": "https://coin-images.coingecko.com/coins/images/102174367/large/nbisb-bstocks.png?1783453205",
+    "metrics": {
+     "volumeUsd1d": "2055815.915",
+     "volumeUsd7d": "18967876.48"
+    },
+    "metadata": {},
+    "tokenId": "63687ae5-3c10-448e-9b41-64bd46009d1b",
+    "totalSupply": "37965.84211848",
+    "circulatingSupply": "37965.84211848",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633": {
+    "key": "arbitrum:0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+    "name": "NEBIUS rStock",
+    "decimals": 18,
+    "symbol": "RNBIS",
+    "price": 165.3,
+    "address": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+    "addresses": {
+     "arbitrum": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 789981,
+    "image": "https://coin-images.coingecko.com/coins/images/102177131/large/9f57d808836eaf2b6e7f14e43717f371.png?1789116927",
+    "metrics": {
+     "volumeUsd1d": "87.292",
+     "volumeUsd7d": "652087.355"
+    },
+    "metadata": {},
+    "tokenId": "b662fae4-91c1-4346-ae5e-6aab214d95bc",
+    "totalSupply": "4778.9741931319995",
+    "circulatingSupply": "4778.9741931319995",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "NBIS": {
+    "total_items": 15,
+    "pages": 1,
+    "received": 15,
+    "complete": true
+   }
+  },
+  "records": {
+   "robinhood:0xb64be42d6c673d3d90de15e9abd1e054ba4893d911085e06ea2aaeb3273e6341": {
+    "key": "robinhood:0xb64be42d6c673d3d90de15e9abd1e054ba4893d911085e06ea2aaeb3273e6341",
+    "name": "Uniswap V4 LP ETH/NBIS",
+    "decimals": 18,
+    "symbol": "ETH/NBIS",
+    "price": 9007199254740990,
+    "address": "0xb64be42d6c673d3d90de15e9abd1e054ba4893d911085e06ea2aaeb3273e6341",
+    "addresses": {
+     "robinhood": "0xb64be42d6c673d3d90de15e9abd1e054ba4893d911085e06ea2aaeb3273e6341"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174160/large/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png?1782444697"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.064Z",
+    "createdAt": "2026-07-24T23:11:20.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    ],
+    "liquidity": 2037.2623539956355,
+    "metrics": {
+     "apy": "54.765",
+     "baseApy": "54.765",
+     "volumeUsd1d": "59.994",
+     "volumeUsd7d": "378.705"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "07976992-2659-4d72-a8fd-047a8f5c6f4a",
+    "reserves": [
+     "0.022532082080567226",
+     "12.002520835662851905"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xafa65f050c1991c582301c454f12613974f4e10675f390e724683abfe3b9ab95": {
+    "key": "bsc:0xafa65f050c1991c582301c454f12613974f4e10675f390e724683abfe3b9ab95",
+    "name": "Uniswap V4 LP USDT/NBISB",
+    "decimals": 18,
+    "symbol": "USDT/NBISB",
+    "price": 9007199254740990,
+    "address": "0xafa65f050c1991c582301c454f12613974f4e10675f390e724683abfe3b9ab95",
+    "addresses": {
+     "bsc": "0xafa65f050c1991c582301c454f12613974f4e10675f390e724683abfe3b9ab95"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174367/large/nbisb-bstocks.png?1783453205"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.464Z",
+    "createdAt": "2026-08-03T06:33:19.495Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    ],
+    "liquidity": 1268.5026142291727,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8800,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "c501cebc-7cd3-4d27-989a-7c45ae532e91",
+    "reserves": [
+     "1143.145631281335745944",
+     "0.78564898096576644"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8f8ace1d7f849e6186bc59bcfffc2c0a053a80b43dbedf90192889d05f358976": {
+    "key": "robinhood:0x8f8ace1d7f849e6186bc59bcfffc2c0a053a80b43dbedf90192889d05f358976",
+    "name": "Uniswap V4 LP MM/NBIS",
+    "decimals": 18,
+    "symbol": "MM/NBIS",
+    "price": 9007199254740990,
+    "address": "0x8f8ace1d7f849e6186bc59bcfffc2c0a053a80b43dbedf90192889d05f358976",
+    "addresses": {
+     "robinhood": "0x8f8ace1d7f849e6186bc59bcfffc2c0a053a80b43dbedf90192889d05f358976"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.030Z",
+    "createdAt": "2026-10-13T13:16:13.993Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104",
+     "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    ],
+    "liquidity": 4998.827698560083,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9975,
+     "feePercentage": "99.75"
+    },
+    "tokenId": "10a1cae0-35e2-4498-873c-2d161accee9f",
+    "reserves": [
+     "5000.000000000429480579",
+     "0.000116512665216786"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9d9c6684f596f66a64c030b93a886d51fd4d7931": {
+    "key": "robinhood:0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "name": "Nebius Group • Robinhood Token",
+    "decimals": 18,
+    "symbol": "NBIS",
+    "price": 165.35,
+    "address": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "addresses": {
+     "robinhood": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+    "liquidity": 399533.7085825,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "193402.156"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000994b82ab24514d439fccc87156df35f9",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "59d8a831-6962-4083-99ab-99449be1f57d",
+    "totalSupply": "2416.29095",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x33acb032ef20edd963457f3daa5a6d4ae6e67e8e3b906a2617d42def318deec3": {
+    "key": "ethereum:0x33acb032ef20edd963457f3daa5a6d4ae6e67e8e3b906a2617d42def318deec3",
+    "name": "Uniswap V4 LP EGP/NBISon",
+    "decimals": 18,
+    "symbol": "EGP/NBISON",
+    "price": 9007199254740990,
+    "address": "0x33acb032ef20edd963457f3daa5a6d4ae6e67e8e3b906a2617d42def318deec3",
+    "addresses": {
+     "ethereum": "0x33acb032ef20edd963457f3daa5a6d4ae6e67e8e3b906a2617d42def318deec3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172431/large/nbison_160x160.png?1773395603"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.171Z",
+    "createdAt": "2026-10-14T06:54:27.260Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc"
+    ],
+    "liquidity": 20051.920858302597,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "96.66"
+    },
+    "tokenId": "a3b6874d-7897-48ea-aad0-0e9c37c0a605",
+    "reserves": [
+     "19999.999999999999999983",
+     "0.124372775762883785"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1": {
+    "key": "bsc:0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+    "name": "Nebius (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NBISB",
+    "price": 160.74,
+    "address": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1",
+    "addresses": {
+     "bsc": "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-07T19:49:45.198Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6102272,
+    "image": "https://coin-images.coingecko.com/coins/images/102174367/large/nbisb-bstocks.png?1783453205",
+    "metrics": {
+     "volumeUsd1d": "2055815.915",
+     "volumeUsd7d": "18967876.48"
+    },
+    "metadata": {},
+    "tokenId": "63687ae5-3c10-448e-9b41-64bd46009d1b",
+    "totalSupply": "37965.84211848",
+    "circulatingSupply": "37965.84211848",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0bde0d1ffa519605f580bf0a2b58d9a4f010b67087db5d776be3bdc67d03d511": {
+    "key": "robinhood:0x0bde0d1ffa519605f580bf0a2b58d9a4f010b67087db5d776be3bdc67d03d511",
+    "name": "Uniswap V4 LP USDG/NBIS",
+    "decimals": 18,
+    "symbol": "USDG/NBIS",
+    "price": 9007199254740990,
+    "address": "0x0bde0d1ffa519605f580bf0a2b58d9a4f010b67087db5d776be3bdc67d03d511",
+    "addresses": {
+     "robinhood": "0x0bde0d1ffa519605f580bf0a2b58d9a4f010b67087db5d776be3bdc67d03d511"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174160/large/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png?1782444697",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.035Z",
+    "createdAt": "2026-10-09T07:28:26.382Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    ],
+    "liquidity": 2142.7529987079056,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "197.093"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 310,
+     "feePercentage": "3.1"
+    },
+    "tokenId": "b1b1ad23-9e18-496a-a477-d3f3556121d0",
+    "reserves": [
+     "0.00103",
+     "12.958887019703088792"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3cdcb29a64cdd14f9d289c4dd96097b6548e93e517e811b00d5713c9a4255a35": {
+    "key": "bsc:0x3cdcb29a64cdd14f9d289c4dd96097b6548e93e517e811b00d5713c9a4255a35",
+    "name": "Uniswap V4 LP USDT/NBISB",
+    "decimals": 18,
+    "symbol": "USDT/NBISB",
+    "price": 9007199254740990,
+    "address": "0x3cdcb29a64cdd14f9d289c4dd96097b6548e93e517e811b00d5713c9a4255a35",
+    "addresses": {
+     "bsc": "0x3cdcb29a64cdd14f9d289c4dd96097b6548e93e517e811b00d5713c9a4255a35"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174367/large/nbisb-bstocks.png?1783453205"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.265Z",
+    "createdAt": "2026-10-08T07:23:08.162Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    ],
+    "liquidity": 3640.3159395994026,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "3368.648"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "8d35cd9b-fbd1-4403-bbe3-06300192643b",
+    "reserves": [
+     "16.572404071537956992",
+     "22.544214211272679967"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633": {
+    "key": "arbitrum:0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+    "name": "NEBIUS rStock",
+    "decimals": 18,
+    "symbol": "RNBIS",
+    "price": 165.3,
+    "address": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633",
+    "addresses": {
+     "arbitrum": "0xb9ed8f34a0b5bf06ee9687a0208dcd708f38e633"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 789981,
+    "image": "https://coin-images.coingecko.com/coins/images/102177131/large/9f57d808836eaf2b6e7f14e43717f371.png?1789116927",
+    "metrics": {
+     "volumeUsd1d": "87.292",
+     "volumeUsd7d": "652087.355"
+    },
+    "metadata": {},
+    "tokenId": "b662fae4-91c1-4346-ae5e-6aab214d95bc",
+    "totalSupply": "4778.9741931319995",
+    "circulatingSupply": "4778.9741931319995",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x7c2f9ce1214ba9baf56d1b6a1fc640c1b63e9a711172c0c7d10e5a9c4a3d4f0c": {
+    "key": "robinhood:0x7c2f9ce1214ba9baf56d1b6a1fc640c1b63e9a711172c0c7d10e5a9c4a3d4f0c",
+    "name": "Uniswap V4 LP USDG/NBIS",
+    "decimals": 18,
+    "symbol": "USDG/NBIS",
+    "price": 9007199254740990,
+    "address": "0x7c2f9ce1214ba9baf56d1b6a1fc640c1b63e9a711172c0c7d10e5a9c4a3d4f0c",
+    "addresses": {
+     "robinhood": "0x7c2f9ce1214ba9baf56d1b6a1fc640c1b63e9a711172c0c7d10e5a9c4a3d4f0c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174160/large/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png?1782444697"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.271Z",
+    "createdAt": "2026-09-09T05:45:08.390Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    ],
+    "liquidity": 153171.12478954016,
+    "metrics": {
+     "apy": "62.357",
+     "baseApy": "62.357",
+     "volumeUsd1d": "24027.288",
+     "volumeUsd7d": "173398.809"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 99,
+     "feePercentage": "1.0891"
+    },
+    "tokenId": "ae887a6d-d56d-4c71-870d-66990ef3bd83",
+    "reserves": [
+     "78063.229949",
+     "454.235832116964902577"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7f3f5717c3b3e965381adf7f69fa498febd527522b106b6bca15723e4995c5fc": {
+    "key": "robinhood:0x7f3f5717c3b3e965381adf7f69fa498febd527522b106b6bca15723e4995c5fc",
+    "name": "Uniswap V4 LP USDG/NBIS",
+    "decimals": 18,
+    "symbol": "USDG/NBIS",
+    "price": 9007199254740990,
+    "address": "0x7f3f5717c3b3e965381adf7f69fa498febd527522b106b6bca15723e4995c5fc",
+    "addresses": {
+     "robinhood": "0x7f3f5717c3b3e965381adf7f69fa498febd527522b106b6bca15723e4995c5fc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174160/large/0x9d9c6684f596f66a64c030b93a886d51fd4d7931.png?1782444697"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.367Z",
+    "createdAt": "2026-09-08T15:09:10.962Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x9d9c6684f596f66a64c030b93a886d51fd4d7931"
+    ],
+    "liquidity": 2850.7766329830715,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "53.784"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "6d88e843-324f-46b4-808f-ecfb8a7fcef7",
+    "reserves": [
+     "77.005091",
+     "16.775152960284676795"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x33b5161de04db87f4dba54819efb6927e4e08c921ac53bb57265fb78f158092d": {
+    "key": "ethereum:0x33b5161de04db87f4dba54819efb6927e4e08c921ac53bb57265fb78f158092d",
+    "name": "Uniswap V4 LP wUSDC/NBISon",
+    "decimals": 18,
+    "symbol": "WUSDC/NBISON",
+    "price": 9007199254740990,
+    "address": "0x33b5161de04db87f4dba54819efb6927e4e08c921ac53bb57265fb78f158092d",
+    "addresses": {
+     "ethereum": "0x33b5161de04db87f4dba54819efb6927e4e08c921ac53bb57265fb78f158092d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102172431/large/nbison_160x160.png?1773395603",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.656Z",
+    "createdAt": "2026-09-28T10:37:11.160Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "2fe49025-ec0b-48fc-aab9-4ed53d3236e7",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xb048b3f2083456ce5ddf27307f4e750b1520d09edf2d671d12849d314975421d": {
+    "key": "bsc:0xb048b3f2083456ce5ddf27307f4e750b1520d09edf2d671d12849d314975421d",
+    "name": "Uniswap V4 LP USDT/NBISB",
+    "decimals": 18,
+    "symbol": "USDT/NBISB",
+    "price": 9007199254740990,
+    "address": "0xb048b3f2083456ce5ddf27307f4e750b1520d09edf2d671d12849d314975421d",
+    "addresses": {
+     "bsc": "0xb048b3f2083456ce5ddf27307f4e750b1520d09edf2d671d12849d314975421d"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174367/large/nbisb-bstocks.png?1783453205"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.827Z",
+    "createdAt": "2026-08-18T14:59:36.622Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xe256bc2a4f5297f8ba6f043f180a46300ecbcbb1"
+    ],
+    "liquidity": 1086.8432486001648,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8500,
+     "feePercentage": "85"
+    },
+    "tokenId": "b19c2069-a294-496a-82bd-5122d3d463a9",
+    "reserves": [
+     "448.345478024571761378",
+     "3.974504336840543121"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xee268780473e7a0e47bac41547c6e01512555a16": {
+    "key": "bsc:0xee268780473e7a0e47bac41547c6e01512555a16",
+    "name": "Nebius Group (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "NBISON",
+    "price": 162.36,
+    "address": "0xee268780473e7a0e47bac41547c6e01512555a16",
+    "addresses": {
+     "ethereum": "0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc",
+     "bsc": "0xee268780473e7a0e47bac41547c6e01512555a16"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-03-13T13:03:26.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3885691,
+    "image": "https://coin-images.coingecko.com/coins/images/102172431/large/nbison_160x160.png?1773395603",
+    "metrics": {
+     "volumeUsd1d": "1180259.463",
+     "volumeUsd7d": "12510373.318"
+    },
+    "metadata": {},
+    "tokenId": "ef345da5-1af4-4468-a361-36a6de223c2a",
+    "totalSupply": "23914.3378046559",
+    "circulatingSupply": "23914.3378046559",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc": {
+    "key": "ethereum:0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc",
+    "name": "Nebius Group (Ondo Tokenized)",
+    "decimals": 18,
+    "symbol": "NBISON",
+    "price": 162.36,
+    "address": "0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc",
+    "addresses": {
+     "ethereum": "0xe4babaa960ba7d37860f3fe00d7b95d3868e8edc",
+     "bsc": "0xee268780473e7a0e47bac41547c6e01512555a16"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-03-13T13:03:26.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3885691,
+    "image": "https://coin-images.coingecko.com/coins/images/102172431/large/nbison_160x160.png?1773395603",
+    "metrics": {
+     "volumeUsd1d": "1180393.718",
+     "volumeUsd7d": "12473440.951"
+    },
+    "metadata": {},
+    "tokenId": "ef345da5-1af4-4468-a361-36a6de223c2a",
+    "totalSupply": "23914.3378046559",
+    "circulatingSupply": "23914.3378046559",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}

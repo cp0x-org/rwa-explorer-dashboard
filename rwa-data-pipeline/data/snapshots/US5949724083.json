@@ -1,0 +1,5737 @@
+{
+ "schema_version": 1,
+ "underlying_id": "US5949724083",
+ "ticker": "MSTR",
+ "name": "Strategy (MicroStrategy)",
+ "isin": "US5949724083",
+ "asset_type": "stock",
+ "run_id": "20261018T201453Z",
+ "fetched_at": "2026-10-18T20:16:43Z",
+ "status": "ok",
+ "cmc": {
+  "rwa": {
+   "name": "MicroStrategy Inc",
+   "symbol": "MSTR",
+   "slug": "microstrategy",
+   "quotes": [
+    {
+     "symbol": "USD",
+     "crypto_id": 2781,
+     "average_tokenized_price": 134.27415007715985,
+     "tokenized_market_cap": 245554935.9295146,
+     "tokenized_volume_24h": 28621555.49725299,
+     "last_updated": "2026-10-18T20:14:02.000Z"
+    }
+   ],
+   "rwa_id": 114,
+   "asset_type": "stock",
+   "rwa_rank": 286,
+   "has_tokens": true,
+   "average_tokenized_price": 134.27415007715985,
+   "tokenized_market_cap": 245554935.9295146,
+   "tokenized_volume_24h": 28621555.49725299,
+   "last_updated": "2026-10-18T20:14:25.684Z",
+   "tokens": [
+    {
+     "symbol": "MSTRX",
+     "name": "MicroStrategy tokenized stock (xStock)",
+     "price": 134.2658212870773,
+     "crypto_id": 37003,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 108721887.94,
+     "volume_24h": 4009765.31715719
+    },
+    {
+     "symbol": "MSTRon",
+     "name": "MicroStrategy Tokenized Stock (Ondo)",
+     "price": 135.06132517941066,
+     "crypto_id": 38092,
+     "issuer_id": "688ca4ccabae9b5b9fb3167a",
+     "issuer_name": "Ondo Assets",
+     "market_cap": 25680221.2,
+     "volume_24h": 2106107.28950711
+    },
+    {
+     "symbol": "MSTR",
+     "name": "MicroStrategy Inc (Derivatives)",
+     "price": 134.3078539116643,
+     "crypto_id": 39473,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "MSTRB",
+     "name": "Strategy Tokenized bStocks",
+     "price": 134.1270144711681,
+     "crypto_id": 40536,
+     "issuer_id": "6a2aed5097c45356b1a5f710",
+     "issuer_name": "bStocks",
+     "market_cap": 92932577.63,
+     "volume_24h": 10687738.15026395
+    },
+    {
+     "symbol": "rMSTR",
+     "name": "MicroStrategy Tokenized Stock (Reality)",
+     "price": 135.31672950377944,
+     "crypto_id": 40632,
+     "issuer_id": "6a43600c282e7240b76c8bbb",
+     "issuer_name": "Reality",
+     "market_cap": 9240770.05,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "MSTR",
+     "name": "Strategy Inc. Tokenized Stock (Robinhood)",
+     "price": 134.16758369008082,
+     "crypto_id": 40745,
+     "issuer_id": "6a465832fbe3004b1a0ea2dd",
+     "issuer_name": "Robinhood",
+     "market_cap": 6671167.9,
+     "volume_24h": 2852537.62701925
+    },
+    {
+     "symbol": "WMSTRX",
+     "name": "Wrapped MicroStrategy Tokenized stock (xStock)",
+     "price": 134.57654984493377,
+     "crypto_id": 37215,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 216163.39,
+     "volume_24h": 46516.12452534
+    },
+    {
+     "symbol": "MSTRc",
+     "name": "Strategy Inc. Tokenized Stock (Coinbase)",
+     "price": 134.70937221800187,
+     "crypto_id": 42467,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": 2242111.04,
+     "volume_24h": 8856771.69764225
+    }
+   ],
+   "tradfi_markets": [
+    {
+     "exchange": {
+      "slug": "binance",
+      "name": "Binance",
+      "exchange_id": 270
+     },
+     "ticker": "MSTR",
+     "market_url": "https://www.binance.com/en/stocks/EQ_MSTR"
+    }
+   ]
+  },
+  "info": {
+   "37003": {
+    "id": 37003,
+    "symbol": "MSTRX",
+    "name": "MicroStrategy tokenized stock (xStock)",
+    "slug": "microstrategy-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37003.png",
+    "date_added": "2025-07-01T12:32:41.000Z",
+    "platform": {
+     "id": "5426",
+     "name": "Solana",
+     "symbol": "SOL",
+     "slug": "solana",
+     "token_address": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ"
+    },
+    "contract_address": [
+     {
+      "contract_address": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+      "platform": {
+       "name": "Ink",
+       "coin": {
+        "id": "36851",
+        "name": "INK",
+        "symbol": "INK",
+        "slug": "ink-token"
+       }
+      }
+     },
+     {
+      "contract_address": "EQBbsLYH5sD74gYO4DOoj0QsHaNL81NLD13AdhkmD0Up-46H",
+      "platform": {
+       "name": "TON",
+       "coin": {
+        "id": "11419",
+        "name": "Gram (prev. Toncoin)",
+        "symbol": "GRAM",
+        "slug": "gram"
+       }
+      }
+     },
+     {
+      "contract_address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xAE2f842EF90C0d5213259Ab82639D5BBF649b08E",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     }
+    ]
+   },
+   "38092": {
+    "id": 38092,
+    "symbol": "MSTRon",
+    "name": "MicroStrategy Tokenized Stock (Ondo)",
+    "slug": "microstrategy-tokenized-stock-ondo",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/38092.png",
+    "date_added": "2025-09-03T10:55:37.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xCabD955322dfbf94C084929ac5E9Eca3fEB5556F"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xCabD955322dfbf94C084929ac5E9Eca3fEB5556F",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x7313ea16493b2f55054df0131a3a14b043ec8992",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "FSz4ouiqXpHuGPcpacZfTzbMjScoj5FfzHkiyu2ondo",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x8a64FDf0857c1C734A594cd1DB20B3f8E3f133f6",
+      "platform": {
+       "name": "HyperEVM",
+       "coin": {
+        "id": "32196",
+        "name": "Hyperliquid",
+        "symbol": "HYPE",
+        "slug": "hyperliquid"
+       }
+      }
+     }
+    ]
+   },
+   "39473": {
+    "id": 39473,
+    "symbol": "MSTR",
+    "name": "MicroStrategy Inc (Derivatives)",
+    "slug": "microstrategy-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39473.png",
+    "date_added": "2026-01-29T01:43:58.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "40536": {
+    "id": 40536,
+    "symbol": "MSTRB",
+    "name": "Strategy Tokenized bStocks",
+    "slug": "strategy-tokenized-bstocks",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40536.png",
+    "date_added": "2026-06-21T05:20:40.000Z",
+    "platform": {
+     "id": "1839",
+     "name": "BNB",
+     "symbol": "BNB",
+     "slug": "bnb",
+     "token_address": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     }
+    ]
+   },
+   "40632": {
+    "id": 40632,
+    "symbol": "rMSTR",
+    "name": "MicroStrategy Tokenized Stock (Reality)",
+    "slug": "microstrategy-tokenized-stock-reality",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40632.png",
+    "date_added": "2026-07-02T07:39:15.000Z",
+    "platform": {
+     "id": "11841",
+     "name": "Arbitrum",
+     "symbol": "ARB",
+     "slug": "arbitrum",
+     "token_address": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "40745": {
+    "id": 40745,
+    "symbol": "MSTR",
+    "name": "Strategy Inc. Tokenized Stock (Robinhood)",
+    "slug": "strategy-inc-tokenized-stock-robinhood",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/40745.png",
+    "date_added": "2026-08-04T07:31:49.000Z",
+    "platform": {
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0xec262a75e413fAfD0dF80480274532C79D42da09"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xec262a75e413fAfD0dF80480274532C79D42da09",
+      "platform": {
+       "name": "Robinhood Chain",
+       "coin": {
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
+       }
+      }
+     }
+    ]
+   },
+   "37215": {
+    "id": 37215,
+    "symbol": "WMSTRX",
+    "name": "Wrapped MicroStrategy Tokenized stock (xStock)",
+    "slug": "wrapped-microstrategy-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/37215.png",
+    "date_added": "2025-07-06T11:20:44.000Z",
+    "platform": {
+     "id": "3897",
+     "name": "OKB",
+     "symbol": "OKB",
+     "slug": "okb",
+     "token_address": "0x30987adF0B11dc698438a99BA04ec3a1AB2c7EaB"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x30987adF0B11dc698438a99BA04ec3a1AB2c7EaB",
+      "platform": {
+       "name": "X Layer",
+       "coin": {
+        "id": "3897",
+        "name": "OKB",
+        "symbol": "OKB",
+        "slug": "okb"
+       }
+      }
+     },
+     {
+      "contract_address": "0x266e5923f6118f8b340ca5a23ae7f71897361476",
+      "platform": {
+       "name": "Arbitrum",
+       "coin": {
+        "id": "11841",
+        "name": "Arbitrum",
+        "symbol": "ARB",
+        "slug": "arbitrum"
+       }
+      }
+     }
+    ]
+   },
+   "42467": {
+    "id": 42467,
+    "symbol": "MSTRc",
+    "name": "Strategy Inc. Tokenized Stock (Coinbase)",
+    "slug": "strategy-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42467.png",
+    "date_added": "2026-10-08T03:59:57.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000004884b426556b92883d"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000004884b426556b92883d",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
+   }
+  },
+  "invalid_ids": []
+ },
+ "portals": {
+  "networks": [
+   "ethereum",
+   "avalanche",
+   "polygon",
+   "bsc",
+   "optimism",
+   "arbitrum",
+   "base",
+   "sonic",
+   "hyperevm",
+   "plasma",
+   "flare",
+   "robinhood",
+   "arc"
+  ],
+  "looked_up": [
+   "arbitrum:0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+   "arbitrum:0x266e5923f6118f8b340ca5a23ae7f71897361476",
+   "arbitrum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+   "base:0xb2000000000000000000004884b426556b92883d",
+   "bsc:0x7313ea16493b2f55054df0131a3a14b043ec8992",
+   "bsc:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+   "bsc:0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+   "ethereum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+   "ethereum:0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+   "hyperevm:0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+   "robinhood:0xec262a75e413fafd0df80480274532c79d42da09"
+  ],
+  "exact": {
+   "ethereum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "ethereum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "ethereum": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17847270,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "2d4699e6-4a98-4aee-bfa0-69a2b3d22867",
+    "totalSupply": "133000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xec262a75e413fafd0df80480274532c79d42da09": {
+    "key": "robinhood:0xec262a75e413fafd0df80480274532c79d42da09",
+    "name": "Strategy Inc. • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.4,
+    "address": "0xec262a75e413fafd0df80480274532c79d42da09",
+    "addresses": {
+     "robinhood": "0xec262a75e413fafd0df80480274532c79d42da09"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xec262a75e413fafd0df80480274532c79d42da09.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xec262a75e413fafd0df80480274532c79d42da09",
+    "liquidity": 6732446.900718,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5549746.471"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c91ba6e57a1c493f99cae2174e43c86e",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "18a85f12-d7e2-42e1-ac4d-6bf200ec0b24",
+    "totalSupply": "49722.65067",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x7313ea16493b2f55054df0131a3a14b043ec8992": {
+    "key": "bsc:0x7313ea16493b2f55054df0131a3a14b043ec8992",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0x7313ea16493b2f55054df0131a3a14b043ec8992",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1536957.442",
+     "volumeUsd7d": "14924078.533"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "arbitrum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "arbitrum": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:15.550Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19890312.75,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "aa379ae2-d30d-4033-8dd8-a2c18f347ee2",
+    "totalSupply": "148225",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa": {
+    "key": "arbitrum:0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+    "name": "MicroStrategy rStock",
+    "decimals": 18,
+    "symbol": "RMSTR",
+    "price": 135.37,
+    "address": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+    "addresses": {
+     "arbitrum": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9264769,
+    "image": "https://coin-images.coingecko.com/coins/images/102177025/large/e9ea7f64e4d755d3eeec374d1fd708b5.png?1789116591",
+    "metrics": {
+     "volumeUsd1d": "1998.194",
+     "volumeUsd7d": "5381909.546"
+    },
+    "metadata": {},
+    "tokenId": "fd23067b-9374-4733-8333-50bc06b3a681",
+    "totalSupply": "68441.266072653",
+    "circulatingSupply": "68441.266072653",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xe87afb3076aeb0f9b14e368de8145ae6a2826a14": {
+    "key": "bsc:0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+    "name": "Strategy Tokenized bStocks",
+    "decimals": 18,
+    "symbol": "MSTRB",
+    "price": 134.13,
+    "address": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+    "addresses": {
+     "bsc": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T07:57:28.861Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 49000469,
+    "image": "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298",
+    "metrics": {
+     "volumeUsd1d": "6035753.86",
+     "volumeUsd7d": "94452971.872"
+    },
+    "metadata": {},
+    "tokenId": "0e0b2842-ad28-479c-8843-1089b77c7337",
+    "totalSupply": "365333.003289",
+    "circulatingSupply": "365333.003289",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xcabd955322dfbf94c084929ac5e9eca3feb5556f": {
+    "key": "ethereum:0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1523113.501",
+     "volumeUsd7d": "14253170.654"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "bsc:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "bsc": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.484Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4152772.941817998,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "2b981cfd-0964-402f-8a8a-4d740c31ea11",
+    "totalSupply": "30946.962827468499022",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb2000000000000000000004884b426556b92883d": {
+    "key": "base:0xb2000000000000000000004884b426556b92883d",
+    "name": "Strategy Inc.",
+    "decimals": 8,
+    "symbol": "MSTRC",
+    "price": 135.4,
+    "address": "0xb2000000000000000000004884b426556b92883d",
+    "addresses": {
+     "base": "0xb2000000000000000000004884b426556b92883d"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-21T12:37:48.897Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb2000000000000000000004884b426556b92883d",
+    "liquidity": 2253605.891190566,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "455616.652"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "bee61b68-c154-4f8b-b727-69d9d3b59d2e",
+    "totalSupply": "16644.06123479",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "hyperevm:0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6": {
+    "key": "hyperevm:0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1535266.898",
+     "volumeUsd7d": "14821230.562"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  },
+  "searches": {
+   "MSTR": {
+    "total_items": 116,
+    "pages": 1,
+    "received": 116,
+    "complete": true
+   }
+  },
+  "records": {
+   "base:0x8c81b4c816d66d36c4bf348bdec01dbcbc70e987": {
+    "key": "base:0x8c81b4c816d66d36c4bf348bdec01dbcbc70e987",
+    "name": "Briun Armstrung",
+    "decimals": 18,
+    "symbol": "BRIUN",
+    "price": 5.949e-05,
+    "address": "0x8c81b4c816d66d36c4bf348bdec01dbcbc70e987",
+    "addresses": {
+     "base": "0x8c81b4c816d66d36c4bf348bdec01dbcbc70e987"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-03-19T07:33:12.578Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 45772,
+    "image": "https://assets.coingecko.com/coins/images/36183/large/200x200.png?1710758416",
+    "metrics": {
+     "volumeUsd1d": "4.79",
+     "volumeUsd7d": "1596.353"
+    },
+    "metadata": {},
+    "tokenId": "6433555c-13fc-4bee-91a8-af402aecf597",
+    "totalSupply": "769456161.4927691",
+    "circulatingSupply": "769456161.4927691",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa8e87d16318306dcacc841254115c397d8feee545c759bf895059fa4c4949440": {
+    "key": "robinhood:0xa8e87d16318306dcacc841254115c397d8feee545c759bf895059fa4c4949440",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0xa8e87d16318306dcacc841254115c397d8feee545c759bf895059fa4c4949440",
+    "addresses": {
+     "robinhood": "0xa8e87d16318306dcacc841254115c397d8feee545c759bf895059fa4c4949440"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.019Z",
+    "createdAt": "2026-08-30T08:01:33.621Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 500.110925014405,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50.05"
+    },
+    "tokenId": "98561288-c415-4e02-826b-9e714110ca14",
+    "reserves": [
+     "306.435424",
+     "1.430395133045827213"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x5de98c65a9a3c414550e6663666bc725c23c2e7b": {
+    "key": "base:0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+    "name": "Strategy (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.62,
+    "address": "0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+    "addresses": {
+     "base": "0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+     "ethereum": "0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+     "arbitrum": "0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+     "avalanche": "0x7944e6f238f13740121323f837f2f1022b38525e"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1049267,
+    "image": "https://coin-images.coingecko.com/coins/images/102174991/large/dinari-logo-green-with-margin.png?1785402819",
+    "metrics": {
+     "volumeUsd1d": "13.66",
+     "volumeUsd7d": "74666.759"
+    },
+    "metadata": {},
+    "tokenId": "b231bf67-a2ae-4b5d-ac28-bdd6d0fe399d",
+    "totalSupply": "7736.966407350879",
+    "circulatingSupply": "7736.966407350879",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0b6a7e03794c2a66e59bdcfefa29c01553f1b429": {
+    "key": "robinhood:0x0b6a7e03794c2a66e59bdcfefa29c01553f1b429",
+    "name": "haMSTR",
+    "decimals": 18,
+    "symbol": "HAMSTR",
+    "price": 5.097556592493734e-06,
+    "address": "0x0b6a7e03794c2a66e59bdcfefa29c01553f1b429",
+    "addresses": {
+     "robinhood": "0x0b6a7e03794c2a66e59bdcfefa29c01553f1b429"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T15:02:29.296Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5097.556592493735,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "dd513a93-95eb-4cfe-a8b5-5936686fd07c",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc6c9b46b9683266bea88b1082745cb2149f35768bc286db84c6a407091bf270e": {
+    "key": "bsc:0xc6c9b46b9683266bea88b1082745cb2149f35768bc286db84c6a407091bf270e",
+    "name": "PancakeSwap Infinity LP USDT/MSTRon",
+    "decimals": 18,
+    "symbol": "USDT/MSTRON",
+    "price": 9007199254740990,
+    "address": "0xc6c9b46b9683266bea88b1082745cb2149f35768bc286db84c6a407091bf270e",
+    "addresses": {
+     "bsc": "0xc6c9b46b9683266bea88b1082745cb2149f35768bc286db84c6a407091bf270e"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:13:21.107Z",
+    "createdAt": "2026-08-27T03:05:10.416Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    ],
+    "liquidity": 2281.8000391564146,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "79"
+    },
+    "tokenId": "b4588a30-b2aa-4c27-874e-311b17935dbc",
+    "reserves": [
+     "2207.296203932113512287",
+     "0.564989334581560504"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x48ebf5188c1b5b26e14a2324caf52ba79eab78fb9ce4a3028df02179649c430f": {
+    "key": "bsc:0x48ebf5188c1b5b26e14a2324caf52ba79eab78fb9ce4a3028df02179649c430f",
+    "name": "Uniswap V4 LP USDT/MSTRon",
+    "decimals": 18,
+    "symbol": "USDT/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x48ebf5188c1b5b26e14a2324caf52ba79eab78fb9ce4a3028df02179649c430f",
+    "addresses": {
+     "bsc": "0x48ebf5188c1b5b26e14a2324caf52ba79eab78fb9ce4a3028df02179649c430f"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.484Z",
+    "createdAt": "2026-06-15T23:44:26.067Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    ],
+    "liquidity": 1069.4516977871479,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3780,
+     "feePercentage": "18.9811"
+    },
+    "tokenId": "2c820667-fcec-4abb-bb95-47dd463ac449",
+    "reserves": [
+     "928.489177883186945593",
+     "1.049440559215062726"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x987c1ed184b9f6bc0507da9a29f5c1db202209b3": {
+    "key": "base:0x987c1ed184b9f6bc0507da9a29f5c1db202209b3",
+    "name": "Beefy CLM MSTRc-USDC Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWAERODROMEBASEUSDC-MSTRC",
+    "price": 1251250935120.878,
+    "address": "0x987c1ed184b9f6bc0507da9a29f5c1db202209b3",
+    "addresses": {
+     "base": "0x987c1ed184b9f6bc0507da9a29f5c1db202209b3"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.123Z",
+    "createdAt": "2026-09-07T14:01:02.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0"
+    ],
+    "poolAddress": "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0",
+    "liquidity": 40984.69533584765,
+    "metrics": {
+     "apy": "22.917",
+     "baseApy": "22.917",
+     "volumeUsd1d": "70.958",
+     "volumeUsd7d": "-4749.065"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-mstrc",
+     "providerId": "aerodrome",
+     "tickSpacing": 10,
+     "managerAddress": "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0",
+     "strategyAddress": "0xe835ef8b2756389946894443be2cd5e1b3e9e161",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x987c1ed184b9f6bc0507da9a29f5c1db202209b3",
+     "standardVaultAddress": "0x944a37603ca610ccbac7a09264b3e73c3b7fba28",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb2000000000000000000004884b426556b92883d"
+     ]
+    },
+    "tokenId": "4187719a-d344-4f45-8098-cd10f8cd188a",
+    "totalSupply": "0.000000032754976788",
+    "reserves": [
+     "0.000000032754976788"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb": {
+    "key": "robinhood:0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb",
+    "name": "Beefy CLM MSTR-USDG",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODUSDG-MSTR",
+    "price": 134.3500757207661,
+    "address": "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb",
+    "addresses": {
+     "robinhood": "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "poolAddress": "0x17578c0e0d15da44f31677263114f71ae76653ea",
+    "liquidity": 8268.955267805928,
+    "metrics": {
+     "apy": "13.361",
+     "baseApy": "13.361",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-16953.063"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb",
+     "strategyAddress": "0x947c84a189ec771125735ca2e52bf32a35610900",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "c2c0a128-8b45-477f-a1d2-f117a1fa5b67",
+    "totalSupply": "61.5478273714721686",
+    "reserves": [
+     "1155.576956",
+     "52.536028890738018869"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x0fe9c174701ad0e0d7497856ca5dd8fed4603187": {
+    "key": "bsc:0x0fe9c174701ad0e0d7497856ca5dd8fed4603187",
+    "name": "PancakeSwap V3 BTCB Token/Strategy Inc. 1%",
+    "decimals": 18,
+    "symbol": "BTCB/MSTRB",
+    "price": 9007199254740990,
+    "address": "0x0fe9c174701ad0e0d7497856ca5dd8fed4603187",
+    "addresses": {
+     "bsc": "0x0fe9c174701ad0e0d7497856ca5dd8fed4603187"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829",
+     "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.425Z",
+    "createdAt": "2026-09-10T20:16:38.779Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+     "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    ],
+    "liquidity": 12852.784177265517,
+    "metrics": {
+     "apy": "7.026",
+     "baseApy": "7.026",
+     "volumeUsd1d": "247.639",
+     "volumeUsd7d": "11813.104"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "d5014df6-532c-448e-850f-92d8dc7a4817",
+    "reserves": [
+     "0.07398507550654605",
+     "51.254678866298335271"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x55daf55f1556683878ba38d0468ed3ebdc25330c": {
+    "key": "bsc:0x55daf55f1556683878ba38d0468ed3ebdc25330c",
+    "name": "PancakeSwap LP WBNB/MSTRB",
+    "decimals": 18,
+    "symbol": "WBNB/MSTRB",
+    "price": 674.9021132573868,
+    "address": "0x55daf55f1556683878ba38d0468ed3ebdc25330c",
+    "addresses": {
+     "bsc": "0x55daf55f1556683878ba38d0468ed3ebdc25330c"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
+     "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.483Z",
+    "createdAt": "2026-10-13T05:25:53.713Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+     "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    ],
+    "liquidity": 9519.938142894836,
+    "metrics": {
+     "apy": "0.942",
+     "baseApy": "0.942",
+     "volumeUsd1d": "98.323",
+     "volumeUsd7d": "1953.45"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "cbf4470d-a0a6-4741-b0c8-e48c6839947b",
+    "totalSupply": "14.105657629292718418",
+    "reserves": [
+     "6.750368567843436509",
+     "35.479278970470311452"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x692081209619735f25700557078ab084d3e5d007": {
+    "key": "bsc:0x692081209619735f25700557078ab084d3e5d007",
+    "name": "PancakeSwap V3 Tether USD/Strategy Inc. 0.25%",
+    "decimals": 18,
+    "symbol": "USDT/MSTRB",
+    "price": 9007199254740990,
+    "address": "0x692081209619735f25700557078ab084d3e5d007",
+    "addresses": {
+     "bsc": "0x692081209619735f25700557078ab084d3e5d007"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.464Z",
+    "createdAt": "2026-09-09T09:50:22.759Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    ],
+    "liquidity": 298833.5422432254,
+    "metrics": {
+     "apy": "17.88",
+     "baseApy": "17.88",
+     "volumeUsd1d": "58594.591",
+     "volumeUsd7d": "1550255.604"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "f6a8972a-bbaa-46aa-af7d-0aabbd17b8cb",
+    "reserves": [
+     "59317.490808885594050932",
+     "1786.059921247122866218"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7deac8b826edf609978d82f934e624b4d0d6eb0ac5907fb9c7e8ee0d9e054229": {
+    "key": "ethereum:0x7deac8b826edf609978d82f934e624b4d0d6eb0ac5907fb9c7e8ee0d9e054229",
+    "name": "Uniswap V4 LP USDC/MSTRx",
+    "decimals": 18,
+    "symbol": "USDC/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x7deac8b826edf609978d82f934e624b4d0d6eb0ac5907fb9c7e8ee0d9e054229",
+    "addresses": {
+     "ethereum": "0x7deac8b826edf609978d82f934e624b4d0d6eb0ac5907fb9c7e8ee0d9e054229"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:49.693Z",
+    "createdAt": "2026-04-03T22:53:32.364Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 523.0060457857888,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.9998"
+    },
+    "tokenId": "ed7f0d26-b11b-48c9-9b47-411dc75d601f",
+    "reserves": [
+     "0.000004",
+     "3.89373169882752273"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2": {
+    "key": "bsc:0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+    "name": "Monsterra",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 0.00037979,
+    "address": "0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+    "addresses": {
+     "bsc": "0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+     "avalanche": "0xe397784960f814ba35c9ee0bc4c9dffdf86925f9"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37486,
+    "image": "https://assets.coingecko.com/coins/images/24377/large/MSTR.png?1696523560",
+    "metrics": {
+     "volumeUsd1d": "11.774",
+     "volumeUsd7d": "63.538"
+    },
+    "metadata": {},
+    "tokenId": "f493b4a5-3395-4379-b6ce-2eacd06baf25",
+    "totalSupply": "98700000",
+    "circulatingSupply": "98700000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xb472a10e3a17c6aac7a2206528673eef87c58273": {
+    "key": "robinhood:0xb472a10e3a17c6aac7a2206528673eef87c58273",
+    "name": "Uniswap V3 Coinbase Wrapped BTC/Strategy Inc.  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "CBBTC/MSTR",
+    "price": 9007199254740990,
+    "address": "0xb472a10e3a17c6aac7a2206528673eef87c58273",
+    "addresses": {
+     "robinhood": "0xb472a10e3a17c6aac7a2206528673eef87c58273"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.451Z",
+    "createdAt": "2026-08-31T09:07:44.247Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 4472.61701927807,
+    "metrics": {
+     "apy": "5.365",
+     "baseApy": "5.365",
+     "volumeUsd1d": "1314.999",
+     "volumeUsd7d": "31797.301"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "4bdd39b7-ab47-4f68-8a20-9f7e4d348279",
+    "reserves": [
+     "0.00864947",
+     "27.875135962762704802"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x0151a001b2eab292a36ffd8c1a42396dae221848": {
+    "key": "robinhood:0x0151a001b2eab292a36ffd8c1a42396dae221848",
+    "name": "Beefy CLM MSTR-WETH",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODWETH-MSTR",
+    "price": 145.47512064904538,
+    "address": "0x0151a001b2eab292a36ffd8c1a42396dae221848",
+    "addresses": {
+     "robinhood": "0x0151a001b2eab292a36ffd8c1a42396dae221848"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "poolAddress": "0x70504a6fafdbfb75fe971faa4dd716e79ac5624c",
+    "liquidity": 39499.59387451717,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2651.712"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-weth-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x0151a001b2eab292a36ffd8c1a42396dae221848",
+     "strategyAddress": "0xe7eba9327678c5c997d93b5874e1ac611a19ff20",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe",
+     "depositTokenAddresses": [
+      "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "45eb4099-32db-438b-94ed-026a25c080cc",
+    "totalSupply": "271.521299987843491165",
+    "reserves": [
+     "7.418376878682883562",
+     "163.680412279569935966"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "ethereum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "ethereum": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.515Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 17847270,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "2d4699e6-4a98-4aee-bfa0-69a2b3d22867",
+    "totalSupply": "133000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x266e5923f6118f8b340ca5a23ae7f71897361476": {
+    "key": "ethereum:0x266e5923f6118f8b340ca5a23ae7f71897361476",
+    "name": "Wrapped MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "WMSTRX",
+    "price": 134.32,
+    "address": "0x266e5923f6118f8b340ca5a23ae7f71897361476",
+    "addresses": {
+     "ethereum": "0x266e5923f6118f8b340ca5a23ae7f71897361476"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:11.462Z",
+    "createdAt": "2025-12-19T06:03:44.771Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 1378.2146423577935,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MSTRx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-3.627"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "7cf9227a-5054-4082-b9c5-0f183f9c85d6",
+    "totalSupply": "10.260680779912102318",
+    "reserves": [
+     "10.260680779912102318"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x2b90d50e10a03c8fef583a90322c9a747cf84085": {
+    "key": "avalanche:0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+    "name": "YieldMax MSTR Option Income Strategy ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTY",
+    "price": 16.14,
+    "address": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+    "addresses": {
+     "ethereum": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "arbitrum": "0xc9418591233d3dd0652c9c96891895b6f67f0712",
+     "avalanche": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "base": "0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10617.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175146/large/dinari-logo-green-with-margin.png?1785403366",
+    "metrics": {
+     "volumeUsd1d": "179.4",
+     "volumeUsd7d": "1255.8"
+    },
+    "metadata": {},
+    "tokenId": "80fbcc14-b5ad-484f-b0c9-a4eee3a42bc3",
+    "totalSupply": "657.9441830888",
+    "circulatingSupply": "657.9441830888",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xa0b6e70e8ef2bdcb592e03a7e22b90b2dcc5c91e937b57eb1c4eb782491efadd": {
+    "key": "robinhood:0xa0b6e70e8ef2bdcb592e03a7e22b90b2dcc5c91e937b57eb1c4eb782491efadd",
+    "name": "Uniswap V4 LP ETH/MSTR",
+    "decimals": 18,
+    "symbol": "ETH/MSTR",
+    "price": 9007199254740990,
+    "address": "0xa0b6e70e8ef2bdcb592e03a7e22b90b2dcc5c91e937b57eb1c4eb782491efadd",
+    "addresses": {
+     "robinhood": "0xa0b6e70e8ef2bdcb592e03a7e22b90b2dcc5c91e937b57eb1c4eb782491efadd"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.134Z",
+    "createdAt": "2026-07-26T11:55:32.063Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 1928.932386370101,
+    "metrics": {
+     "apy": "5.914",
+     "baseApy": "5.914",
+     "volumeUsd1d": "28.435",
+     "volumeUsd7d": "700.183"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 200,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "5d87b8e3-b795-4a48-8fa3-abd0c2daf64e",
+    "reserves": [
+     "0.366817794952084081",
+     "7.91634869275040767"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2": {
+    "key": "base:0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2",
+    "name": "MicroStrategy Incorporated ST0x",
+    "decimals": 18,
+    "symbol": "WTMSTR",
+    "price": 135.35,
+    "address": "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2",
+    "addresses": {
+     "base": "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-03-28T06:08:02.059Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 24597,
+    "image": "https://coin-images.coingecko.com/coins/images/102172667/large/MSTR.png?1774599522",
+    "metrics": {
+     "volumeUsd1d": "67.673",
+     "volumeUsd7d": "36578.983"
+    },
+    "metadata": {},
+    "tokenId": "35ab4a77-42d2-4d3e-9389-806cea3e8272",
+    "totalSupply": "181.73487320941513",
+    "circulatingSupply": "181.73487320941513",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x7944e6f238f13740121323f837f2f1022b38525e": {
+    "key": "avalanche:0x7944e6f238f13740121323f837f2f1022b38525e",
+    "name": "Strategy (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.62,
+    "address": "0x7944e6f238f13740121323f837f2f1022b38525e",
+    "addresses": {
+     "base": "0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+     "ethereum": "0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+     "arbitrum": "0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+     "avalanche": "0x7944e6f238f13740121323f837f2f1022b38525e"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1049267,
+    "image": "https://coin-images.coingecko.com/coins/images/102174991/large/dinari-logo-green-with-margin.png?1785402819",
+    "metrics": {
+     "volumeUsd1d": "13.66",
+     "volumeUsd7d": "74653.978"
+    },
+    "metadata": {},
+    "tokenId": "b231bf67-a2ae-4b5d-ac28-bdd6d0fe399d",
+    "totalSupply": "7736.966407350879",
+    "circulatingSupply": "7736.966407350879",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x25639cbc069a26b0e87e987939904e35ea4cba28": {
+    "key": "bsc:0x25639cbc069a26b0e87e987939904e35ea4cba28",
+    "name": "PancakeSwap LP MSTR/USDT",
+    "decimals": 18,
+    "symbol": "MSTR/USDT",
+    "price": 0.05295042105215416,
+    "address": "0x25639cbc069a26b0e87e987939904e35ea4cba28",
+    "addresses": {
+     "bsc": "0x25639cbc069a26b0e87e987939904e35ea4cba28"
+    },
+    "platform": "pancakeswap",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://assets.coingecko.com/coins/images/24377/large/MSTR.png?1696523560",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:13:15.778Z",
+    "createdAt": "2024-02-29T09:06:51.278Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 14510.804760503912,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "45.679"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "bbfd1413-982f-451b-b042-4af5242f8d3f",
+    "totalSupply": "274045.125084299499026185",
+    "reserves": [
+     "19090999.338743949383290142",
+     "7266.134222631124058207"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x76e36d721d52f2e3000598af48d7aead62759f10ca3dbef8685d2af66b9a3191": {
+    "key": "base:0x76e36d721d52f2e3000598af48d7aead62759f10ca3dbef8685d2af66b9a3191",
+    "name": "Uniswap V4 LP ETH/MSTRc",
+    "decimals": 18,
+    "symbol": "ETH/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x76e36d721d52f2e3000598af48d7aead62759f10ca3dbef8685d2af66b9a3191",
+    "addresses": {
+     "base": "0x76e36d721d52f2e3000598af48d7aead62759f10ca3dbef8685d2af66b9a3191"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.465Z",
+    "createdAt": "2026-09-05T04:48:46.719Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 2151.622168430443,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9200,
+     "feePercentage": "92.008"
+    },
+    "tokenId": "ae5c70a5-f8da-468f-9aca-e6881b3872cf",
+    "reserves": [
+     "0.920157381568966402",
+     "0.01257054"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xfb7aebca176adfd610e264e7fccf814f08d13d9d": {
+    "key": "robinhood:0xfb7aebca176adfd610e264e7fccf814f08d13d9d",
+    "name": "Beefy CLM MSTR-cbBTC Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODCBBTC-MSTR",
+    "price": 135.61188377626428,
+    "address": "0xfb7aebca176adfd610e264e7fccf814f08d13d9d",
+    "addresses": {
+     "robinhood": "0xfb7aebca176adfd610e264e7fccf814f08d13d9d"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb"
+    ],
+    "poolAddress": "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb",
+    "liquidity": 59893.25460914464,
+    "metrics": {
+     "apy": "4.601",
+     "baseApy": "4.601",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-83.224"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "0.30",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-cbbtc-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb",
+     "strategyAddress": "0x5f6972bf4a9f5f964a5e9d4cacda57b782e44e66",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xfb7aebca176adfd610e264e7fccf814f08d13d9d",
+     "depositTokenAddresses": [
+      "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "4ef63ce2-d113-4cee-9cf8-13502203626c",
+    "totalSupply": "441.651962507636568287",
+    "reserves": [
+     "441.651962507636568287"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xcb401d23495bd2bfa5005c55abf87e95e26eb3c8387bcb748227db4ff6d7488a": {
+    "key": "robinhood:0xcb401d23495bd2bfa5005c55abf87e95e26eb3c8387bcb748227db4ff6d7488a",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0xcb401d23495bd2bfa5005c55abf87e95e26eb3c8387bcb748227db4ff6d7488a",
+    "addresses": {
+     "robinhood": "0xcb401d23495bd2bfa5005c55abf87e95e26eb3c8387bcb748227db4ff6d7488a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.552Z",
+    "createdAt": "2026-09-21T00:12:55.120Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 1772.3605116084223,
+    "metrics": {
+     "apy": "0.056",
+     "baseApy": "0.056",
+     "volumeUsd1d": "1.173",
+     "volumeUsd7d": "6426.266"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "0.2336"
+    },
+    "tokenId": "73ab2c42-dbb3-4b46-91ad-dcd4d61cb542",
+    "reserves": [
+     "194.745549",
+     "11.651513756339899038"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe": {
+    "key": "robinhood:0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe",
+    "name": "Beefy CLM MSTR-WETH Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODWETH-MSTR",
+    "price": 145.47512064904538,
+    "address": "0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe",
+    "addresses": {
+     "robinhood": "0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-08-26T12:37:21.769Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0151a001b2eab292a36ffd8c1a42396dae221848"
+    ],
+    "poolAddress": "0x0151a001b2eab292a36ffd8c1a42396dae221848",
+    "liquidity": 39499.59387451717,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-2651.712"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-weth-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0x0151a001b2eab292a36ffd8c1a42396dae221848",
+     "strategyAddress": "0xe7eba9327678c5c997d93b5874e1ac611a19ff20",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0xc6a55d8e2a0700ffa760d1c8361a82ec4dee0dfe",
+     "depositTokenAddresses": [
+      "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "ca124b2f-18cb-453e-aaf8-3e3c9c91683b",
+    "totalSupply": "271.521299987843490165",
+    "reserves": [
+     "271.521299987843490165"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x2de02593023b8f276d673146a9bee4586c7fd95c": {
+    "key": "base:0x2de02593023b8f276d673146a9bee4586c7fd95c",
+    "name": "T-Rex 2X Long MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTU",
+    "price": 30.6,
+    "address": "0x2de02593023b8f276d673146a9bee4586c7fd95c",
+    "addresses": {
+     "avalanche": "0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+     "ethereum": "0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+     "base": "0x2de02593023b8f276d673146a9bee4586c7fd95c",
+     "arbitrum": "0x3918d009d2157b37bb9806efdec941723b9efec5"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5227.19,
+    "image": "https://coin-images.coingecko.com/coins/images/102174997/large/dinari-logo-green-with-margin.png?1785402840",
+    "metrics": {
+     "volumeUsd1d": "91.789",
+     "volumeUsd7d": "10419.213"
+    },
+    "metadata": {},
+    "tokenId": "061f6e47-8ed8-4605-84f3-f77d0f4c320d",
+    "totalSupply": "170.84413671832",
+    "circulatingSupply": "170.84413671832",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x1dae69f15c48eef452c79360cc8df58f5d5c3c1e6324ff8777d58c1feb053cdc": {
+    "key": "robinhood:0x1dae69f15c48eef452c79360cc8df58f5d5c3c1e6324ff8777d58c1feb053cdc",
+    "name": "Uniswap V4 LP ETH/MSTR",
+    "decimals": 18,
+    "symbol": "ETH/MSTR",
+    "price": 9007199254740990,
+    "address": "0x1dae69f15c48eef452c79360cc8df58f5d5c3c1e6324ff8777d58c1feb053cdc",
+    "addresses": {
+     "robinhood": "0x1dae69f15c48eef452c79360cc8df58f5d5c3c1e6324ff8777d58c1feb053cdc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.619Z",
+    "createdAt": "2026-08-31T08:20:55.950Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 138765.29711913934,
+    "metrics": {
+     "apy": "15.201",
+     "baseApy": "15.201",
+     "volumeUsd1d": "19933.026",
+     "volumeUsd7d": "500942.37"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "6c89b0ec-4b89-4b95-9868-8fb866b0076c",
+    "reserves": [
+     "26.527121490398772911",
+     "567.100986487941775523"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8c9fcdf8016bd9a6646e78c8a2d6e39b34416204": {
+    "key": "bsc:0x8c9fcdf8016bd9a6646e78c8a2d6e39b34416204",
+    "name": "PancakeSwap V3 BitMine Immersion Technologies/Strategy Inc. 0.25%",
+    "decimals": 18,
+    "symbol": "BMNRB/MSTRB",
+    "price": 9007199254740990,
+    "address": "0x8c9fcdf8016bd9a6646e78c8a2d6e39b34416204",
+    "addresses": {
+     "bsc": "0x8c9fcdf8016bd9a6646e78c8a2d6e39b34416204"
+    },
+    "platform": "pancakeswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298"
+    ],
+    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "createdAt": "2026-09-19T16:50:06.511Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3548da95a9effe481e8604664d75e95821e557f5",
+     "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    ],
+    "liquidity": 8188.300612134732,
+    "metrics": {
+     "apy": "22.516",
+     "baseApy": "22.516",
+     "volumeUsd1d": "2021.627",
+     "volumeUsd7d": "24166.304"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.25"
+    },
+    "tokenId": "dce217bf-7e7d-400b-b6a8-e6ae16e40b2b",
+    "reserves": [
+     "282.383422754548502231",
+     "17.23627514062907443"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x318ba85ca49a3b12d3cf9c72cc72b29316971802": {
+    "key": "ethereum:0x318ba85ca49a3b12d3cf9c72cc72b29316971802",
+    "name": "UniswapV2 LP MSTR/WETH",
+    "decimals": 18,
+    "symbol": "MSTR/WETH",
+    "price": 939324.258115433,
+    "address": "0x318ba85ca49a3b12d3cf9c72cc72b29316971802",
+    "addresses": {
+     "ethereum": "0x318ba85ca49a3b12d3cf9c72cc72b29316971802"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/50600/large/MSTR2100.png?1728446322",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:12:59.211Z",
+    "createdAt": "2024-10-09T08:27:45.417Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 217812.96792007037,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "746.549"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "1b2070d0-36cc-4088-8da1-77dab97b2273",
+    "totalSupply": "0.231882617784266193",
+    "reserves": [
+     "5252184.405760944",
+     "46.283629122773976264"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x07dfe1d0406846de8924550d04c125c8e3645fdb": {
+    "key": "arbitrum:0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+    "name": "T-Rex 2X Inverse MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTZ",
+    "price": 3.19,
+    "address": "0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+    "addresses": {
+     "ethereum": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+     "base": "0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+     "arbitrum": "0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+     "avalanche": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 522.73,
+    "image": "https://coin-images.coingecko.com/coins/images/102175068/large/dinari-logo-green-with-margin.png?1785403091",
+    "metrics": {
+     "volumeUsd1d": "5.899",
+     "volumeUsd7d": "648.831"
+    },
+    "metadata": {},
+    "tokenId": "7d4a20c9-7f8a-47b2-9d08-6c8f5c822fdb",
+    "totalSupply": "163.70634479903782",
+    "circulatingSupply": "163.70634479903782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x041fdf3f472d2c8a7ecc458fc3b7f543e6c57ef7": {
+    "key": "base:0x041fdf3f472d2c8a7ecc458fc3b7f543e6c57ef7",
+    "name": "Shiba Armstrong",
+    "decimals": 9,
+    "symbol": "SHIBA",
+    "price": 1.735e-05,
+    "address": "0x041fdf3f472d2c8a7ecc458fc3b7f543e6c57ef7",
+    "addresses": {
+     "base": "0x041fdf3f472d2c8a7ecc458fc3b7f543e6c57ef7"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-05-10T09:54:11.495Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 173509,
+    "image": "https://assets.coingecko.com/coins/images/37708/large/LOGO256.png?1715273986",
+    "metrics": {
+     "volumeUsd1d": "2.464",
+     "volumeUsd7d": "17.248"
+    },
+    "metadata": {},
+    "tokenId": "dcfec992-363e-49bf-858f-341e9f501d11",
+    "totalSupply": "10000000000",
+    "circulatingSupply": "10000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x4b9c8bd3aca114f1377986438fb8470e5f452ed8bb1d35157a6e1dafa17daedd": {
+    "key": "base:0x4b9c8bd3aca114f1377986438fb8470e5f452ed8bb1d35157a6e1dafa17daedd",
+    "name": "Uniswap V4 LP USDC/MSTRc",
+    "decimals": 18,
+    "symbol": "USDC/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x4b9c8bd3aca114f1377986438fb8470e5f452ed8bb1d35157a6e1dafa17daedd",
+    "addresses": {
+     "base": "0x4b9c8bd3aca114f1377986438fb8470e5f452ed8bb1d35157a6e1dafa17daedd"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.459Z",
+    "createdAt": "2026-10-15T14:25:52.460Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 5018.932992334191,
+    "metrics": {
+     "apy": "20.471",
+     "baseApy": "20.471",
+     "volumeUsd1d": "100.626",
+     "volumeUsd7d": "5986.913"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "2.7973"
+    },
+    "tokenId": "6acf54d1-fb76-41f5-ad83-44c319b4d345",
+    "reserves": [
+     "2086.937789",
+     "21.65711181"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xec262a75e413fafd0df80480274532c79d42da09": {
+    "key": "robinhood:0xec262a75e413fafd0df80480274532c79d42da09",
+    "name": "Strategy Inc. • Robinhood Token",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.4,
+    "address": "0xec262a75e413fafd0df80480274532c79d42da09",
+    "addresses": {
+     "robinhood": "0xec262a75e413fafd0df80480274532c79d42da09"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xec262a75e413fafd0df80480274532c79d42da09.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xec262a75e413fafd0df80480274532c79d42da09",
+    "liquidity": 6732446.900718,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "5549746.471"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000c91ba6e57a1c493f99cae2174e43c86e",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "18a85f12-d7e2-42e1-ac4d-6bf200ec0b24",
+    "totalSupply": "49722.65067",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x70acec10bf24e34d490f4562e642bf1dd389378344e98b1f49a2d4f171490c23": {
+    "key": "robinhood:0x70acec10bf24e34d490f4562e642bf1dd389378344e98b1f49a2d4f171490c23",
+    "name": "Uniswap V4 LP cbBTC/MSTR",
+    "decimals": 18,
+    "symbol": "CBBTC/MSTR",
+    "price": 9007199254740990,
+    "address": "0x70acec10bf24e34d490f4562e642bf1dd389378344e98b1f49a2d4f171490c23",
+    "addresses": {
+     "robinhood": "0x70acec10bf24e34d490f4562e642bf1dd389378344e98b1f49a2d4f171490c23"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.994Z",
+    "createdAt": "2026-09-18T10:27:48.098Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 147510.2023916364,
+    "metrics": {
+     "apy": "2.94",
+     "baseApy": "2.94",
+     "volumeUsd1d": "4098.766",
+     "volumeUsd7d": "820332.954"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "20b0d98e-c280-4398-ac42-3ef1be195aeb",
+    "reserves": [
+     "0.31835537",
+     "899.611988473533296445"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x294f40996134d067b56dcbacbf6a36396bbbea7a": {
+    "key": "arbitrum:0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "name": "Strategy aStock",
+    "decimals": 18,
+    "symbol": "AMSTR",
+    "price": 135.46,
+    "address": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "addresses": {
+     "robinhood": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "bsc": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "ethereum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "base": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "arbitrum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1006.35,
+    "image": "https://coin-images.coingecko.com/coins/images/102175703/large/MSTR.png?1787292326",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "af096965-facd-45ec-b000-52ed509db61d",
+    "totalSupply": "7.429157",
+    "circulatingSupply": "7.429157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xeee5561e9e8a47379178f5959d019def1a5b1c402784149f070f0b43a1c23672": {
+    "key": "ethereum:0xeee5561e9e8a47379178f5959d019def1a5b1c402784149f070f0b43a1c23672",
+    "name": "Uniswap V4 LP USDC/MSTRon",
+    "decimals": 18,
+    "symbol": "USDC/MSTRON",
+    "price": 9007199254740990,
+    "address": "0xeee5561e9e8a47379178f5959d019def1a5b1c402784149f070f0b43a1c23672",
+    "addresses": {
+     "ethereum": "0xeee5561e9e8a47379178f5959d019def1a5b1c402784149f070f0b43a1c23672"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.238Z",
+    "createdAt": "2025-09-26T08:45:52.397Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f"
+    ],
+    "liquidity": 698.0850008144993,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 5800,
+     "feePercentage": "29.071"
+    },
+    "tokenId": "63ed8bbb-8dc9-4c2c-9319-91a7ad562ff6",
+    "reserves": [
+     "419.56719",
+     "2.063046152813161393"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x055036f511567711e0b2e127a1a468802bb93065": {
+    "key": "robinhood:0x055036f511567711e0b2e127a1a468802bb93065",
+    "name": "Uniswap V3 WETH/Strategy Inc.  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/MSTR",
+    "price": 9007199254740990,
+    "address": "0x055036f511567711e0b2e127a1a468802bb93065",
+    "addresses": {
+     "robinhood": "0x055036f511567711e0b2e127a1a468802bb93065"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.713Z",
+    "createdAt": "2026-09-09T13:24:22.864Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 67761.13959010645,
+    "metrics": {
+     "apy": "3.164",
+     "baseApy": "3.164",
+     "volumeUsd1d": "1957.42",
+     "volumeUsd7d": "39600.576"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "467d8a6c-13cb-446c-9ea6-f6697f487c81",
+    "reserves": [
+     "16.162720820328044202",
+     "221.475108142853669219"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb003581b64319eaa1dbaa55cf820f1949ceaa4f0": {
+    "key": "ethereum:0xb003581b64319eaa1dbaa55cf820f1949ceaa4f0",
+    "name": "BOOK OF MSTR2100",
+    "decimals": 9,
+    "symbol": "$BOMSTR2100",
+    "price": 9.304137505569466e-07,
+    "address": "0xb003581b64319eaa1dbaa55cf820f1949ceaa4f0",
+    "addresses": {
+     "ethereum": "0xb003581b64319eaa1dbaa55cf820f1949ceaa4f0"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-09-14T07:36:05.485Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 930.4137505569466,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "3.35",
+     "volumeUsd7d": "3.35"
+    },
+    "metadata": {},
+    "tokenId": "2d451e70-85f9-4da1-ba38-828911c1a1e5",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6d772a02e4db5db3d4de33f1e014eb67ae8cb88eea1f32dbf8e4f765d6947007": {
+    "key": "robinhood:0x6d772a02e4db5db3d4de33f1e014eb67ae8cb88eea1f32dbf8e4f765d6947007",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x6d772a02e4db5db3d4de33f1e014eb67ae8cb88eea1f32dbf8e4f765d6947007",
+    "addresses": {
+     "robinhood": "0x6d772a02e4db5db3d4de33f1e014eb67ae8cb88eea1f32dbf8e4f765d6947007"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.702Z",
+    "createdAt": "2026-07-27T21:44:56.837Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 13414.735221920178,
+    "metrics": {
+     "apy": "95.177",
+     "baseApy": "95.177",
+     "volumeUsd1d": "1129.469",
+     "volumeUsd7d": "9629.288"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 600,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "e7b3cbcf-e57a-453a-86c7-71fad8277c03",
+    "reserves": [
+     "5959.101899",
+     "55.063761616840313889"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9e01386db5bf7f5addc53486f89dd44d8aa94445df9b8b61bcac4add2c87f4b6": {
+    "key": "ethereum:0x9e01386db5bf7f5addc53486f89dd44d8aa94445df9b8b61bcac4add2c87f4b6",
+    "name": "Uniswap V4 LP MSTRon/USDT",
+    "decimals": 18,
+    "symbol": "MSTRON/USDT",
+    "price": 9007199254740990,
+    "address": "0x9e01386db5bf7f5addc53486f89dd44d8aa94445df9b8b61bcac4add2c87f4b6",
+    "addresses": {
+     "ethereum": "0x9e01386db5bf7f5addc53486f89dd44d8aa94445df9b8b61bcac4add2c87f4b6"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.549Z",
+    "createdAt": "2025-09-26T08:45:51.052Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    ],
+    "liquidity": 541.8584502207298,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 10000,
+     "feePercentage": "50"
+    },
+    "tokenId": "e10ee8b2-62ad-4c0e-b046-32ce558c68e6",
+    "reserves": [
+     "1.318879131743230193",
+     "364.052623"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfd53664c760b515d957433f3aec4f59f9d059e4e00e79f1a8f9a4da9a5e05a5c": {
+    "key": "ethereum:0xfd53664c760b515d957433f3aec4f59f9d059e4e00e79f1a8f9a4da9a5e05a5c",
+    "name": "Uniswap V4 LP ETH/MSTRon",
+    "decimals": 18,
+    "symbol": "ETH/MSTRON",
+    "price": 9007199254740990,
+    "address": "0xfd53664c760b515d957433f3aec4f59f9d059e4e00e79f1a8f9a4da9a5e05a5c",
+    "addresses": {
+     "ethereum": "0xfd53664c760b515d957433f3aec4f59f9d059e4e00e79f1a8f9a4da9a5e05a5c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.319Z",
+    "createdAt": "2026-10-06T06:13:23.424Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f"
+    ],
+    "liquidity": 1654.7239181229434,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1369,
+     "feePercentage": "13.7764"
+    },
+    "tokenId": "74e68f3e-476a-44bb-8801-6d6ebb9f3b04",
+    "reserves": [
+     "0.248436958138794115",
+     "7.955112696537285556"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x845c872c1f15f80acf0c2f1d934f1481115107d194761b90e2e8244a0276cf48": {
+    "key": "ethereum:0x845c872c1f15f80acf0c2f1d934f1481115107d194761b90e2e8244a0276cf48",
+    "name": "Uniswap V4 LP USDCc/MSTRx",
+    "decimals": 18,
+    "symbol": "USDCC/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x845c872c1f15f80acf0c2f1d934f1481115107d194761b90e2e8244a0276cf48",
+    "addresses": {
+     "ethereum": "0x845c872c1f15f80acf0c2f1d934f1481115107d194761b90e2e8244a0276cf48"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.668Z",
+    "createdAt": "2026-09-28T10:37:16.097Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x82036d77d1875b1c43f7e9e05efe37e99a0b613f",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 3998.953516273263,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "99.3088"
+    },
+    "tokenId": "e457a9d0-b5c9-4e58-8286-92bc6221359f",
+    "reserves": [
+     "4000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x7313ea16493b2f55054df0131a3a14b043ec8992": {
+    "key": "bsc:0x7313ea16493b2f55054df0131a3a14b043ec8992",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0x7313ea16493b2f55054df0131a3a14b043ec8992",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1536957.442",
+     "volumeUsd7d": "14924078.533"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e": {
+    "key": "ethereum:0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+    "name": "T-Rex 2X Inverse MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTZ",
+    "price": 3.19,
+    "address": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+    "addresses": {
+     "ethereum": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+     "base": "0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+     "arbitrum": "0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+     "avalanche": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 522.73,
+    "image": "https://coin-images.coingecko.com/coins/images/102175068/large/dinari-logo-green-with-margin.png?1785403091",
+    "metrics": {
+     "volumeUsd1d": "5.899",
+     "volumeUsd7d": "651.439"
+    },
+    "metadata": {},
+    "tokenId": "7d4a20c9-7f8a-47b2-9d08-6c8f5c822fdb",
+    "totalSupply": "163.70634479903782",
+    "circulatingSupply": "163.70634479903782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x2c08bcef714bc8124972b7181494fc598e8ed111": {
+    "key": "robinhood:0x2c08bcef714bc8124972b7181494fc598e8ed111",
+    "name": "Uniswap V3 Global Dollar/Strategy Inc.  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x2c08bcef714bc8124972b7181494fc598e8ed111",
+    "addresses": {
+     "robinhood": "0x2c08bcef714bc8124972b7181494fc598e8ed111"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.732Z",
+    "createdAt": "2026-09-08T09:33:32.961Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 7455.33043668385,
+    "metrics": {
+     "apy": "34.687",
+     "baseApy": "34.687",
+     "volumeUsd1d": "2361.681",
+     "volumeUsd7d": "44417.84"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "68846291-e856-4a58-b6f1-76afa17df43c",
+    "reserves": [
+     "1483.583036",
+     "44.104485972554281881"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1": {
+    "key": "ethereum:0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+    "name": "Strategy (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.62,
+    "address": "0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+    "addresses": {
+     "base": "0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+     "ethereum": "0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+     "arbitrum": "0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+     "avalanche": "0x7944e6f238f13740121323f837f2f1022b38525e"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1049267,
+    "image": "https://coin-images.coingecko.com/coins/images/102174991/large/dinari-logo-green-with-margin.png?1785402819",
+    "metrics": {
+     "volumeUsd1d": "13.66",
+     "volumeUsd7d": "74451.13"
+    },
+    "metadata": {},
+    "tokenId": "b231bf67-a2ae-4b5d-ac28-bdd6d0fe399d",
+    "totalSupply": "7736.966407350879",
+    "circulatingSupply": "7736.966407350879",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x740e5ae399d04ea8cb7f9b6bee43f18f750cebb7c5411f405e5d164c96c1586b": {
+    "key": "ethereum:0x740e5ae399d04ea8cb7f9b6bee43f18f750cebb7c5411f405e5d164c96c1586b",
+    "name": "Uniswap V4 LP USDC/MSTRx",
+    "decimals": 18,
+    "symbol": "USDC/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x740e5ae399d04ea8cb7f9b6bee43f18f750cebb7c5411f405e5d164c96c1586b",
+    "addresses": {
+     "ethereum": "0x740e5ae399d04ea8cb7f9b6bee43f18f750cebb7c5411f405e5d164c96c1586b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:51.909Z",
+    "createdAt": "2026-06-19T02:23:36.484Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 688.688957737484,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17400,
+     "feePercentage": "87.013"
+    },
+    "tokenId": "66324155-26cc-45d2-bb4f-482597bb6b36",
+    "reserves": [
+     "489.427234",
+     "1.484144655053885644"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x17578c0e0d15da44f31677263114f71ae76653ea": {
+    "key": "robinhood:0x17578c0e0d15da44f31677263114f71ae76653ea",
+    "name": "Uniswap V3 Global Dollar/Strategy Inc.  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x17578c0e0d15da44f31677263114f71ae76653ea",
+    "addresses": {
+     "robinhood": "0x17578c0e0d15da44f31677263114f71ae76653ea"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.869Z",
+    "createdAt": "2026-07-19T07:56:15.713Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 566513.481655392,
+    "metrics": {
+     "apy": "20.914",
+     "baseApy": "20.914",
+     "volumeUsd1d": "32459.707",
+     "volumeUsd7d": "1274646.879"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "a7d10b6e-4420-42cd-9023-980a621036b9",
+    "reserves": [
+     "80693.554403",
+     "3588.034913237754308606"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x944a37603ca610ccbac7a09264b3e73c3b7fba28": {
+    "key": "base:0x944a37603ca610ccbac7a09264b3e73c3b7fba28",
+    "name": "Beefy Moo Beefy Aerodrome Base USDC-MSTRc",
+    "decimals": 18,
+    "symbol": "MOOBEEFYAERODROMEBASEUSDC-MSTRC",
+    "price": 1349314622973.5789,
+    "address": "0x944a37603ca610ccbac7a09264b3e73c3b7fba28",
+    "addresses": {
+     "base": "0x944a37603ca610ccbac7a09264b3e73c3b7fba28"
+    },
+    "platform": "beefy",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:29.795Z",
+    "createdAt": "2026-09-07T14:12:18.864Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0"
+    ],
+    "liquidity": 13550.01101387786,
+    "metrics": {
+     "apy": "23.04",
+     "baseApy": "23.04",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-433.515"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ]
+    },
+    "tokenId": "d47e0808-bb5b-4f9e-a5a5-8a61af99871e",
+    "totalSupply": "0.000000010042143458",
+    "reserves": [
+     "0.000000010829168377"
+    ],
+    "pricePerShare": "1.078372204329845772",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6f8dc7122b56017c46892f91d38d871acf787f9b": {
+    "key": "robinhood:0x6f8dc7122b56017c46892f91d38d871acf787f9b",
+    "name": "Uniswap V3 Coinbase Wrapped BTC/Strategy Inc.  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "CBBTC/MSTR",
+    "price": 9007199254740990,
+    "address": "0x6f8dc7122b56017c46892f91d38d871acf787f9b",
+    "addresses": {
+     "robinhood": "0x6f8dc7122b56017c46892f91d38d871acf787f9b"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.764Z",
+    "createdAt": "2026-09-03T10:19:31.094Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 128822.42806866826,
+    "metrics": {
+     "apy": "5.612",
+     "baseApy": "5.612",
+     "volumeUsd1d": "6603.075",
+     "volumeUsd7d": "397880.4"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "0d55aacc-57a7-4c34-80a1-d22602c96937",
+    "reserves": [
+     "0.22890868",
+     "814.928041951168845643"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "arbitrum:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "arbitrum": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:13:15.550Z",
+    "createdAt": "2025-05-10T10:17:53.793Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 19890312.75,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "aa379ae2-d30d-4033-8dd8-a2c18f347ee2",
+    "totalSupply": "148225",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x3918d009d2157b37bb9806efdec941723b9efec5": {
+    "key": "arbitrum:0x3918d009d2157b37bb9806efdec941723b9efec5",
+    "name": "T-Rex 2X Long MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTU",
+    "price": 30.6,
+    "address": "0x3918d009d2157b37bb9806efdec941723b9efec5",
+    "addresses": {
+     "avalanche": "0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+     "ethereum": "0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+     "base": "0x2de02593023b8f276d673146a9bee4586c7fd95c",
+     "arbitrum": "0x3918d009d2157b37bb9806efdec941723b9efec5"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5227.19,
+    "image": "https://coin-images.coingecko.com/coins/images/102174997/large/dinari-logo-green-with-margin.png?1785402840",
+    "metrics": {
+     "volumeUsd1d": "91.789",
+     "volumeUsd7d": "10471.508"
+    },
+    "metadata": {},
+    "tokenId": "061f6e47-8ed8-4605-84f3-f77d0f4c320d",
+    "totalSupply": "170.84413671832",
+    "circulatingSupply": "170.84413671832",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xc9418591233d3dd0652c9c96891895b6f67f0712": {
+    "key": "arbitrum:0xc9418591233d3dd0652c9c96891895b6f67f0712",
+    "name": "YieldMax MSTR Option Income Strategy ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTY",
+    "price": 16.14,
+    "address": "0xc9418591233d3dd0652c9c96891895b6f67f0712",
+    "addresses": {
+     "ethereum": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "arbitrum": "0xc9418591233d3dd0652c9c96891895b6f67f0712",
+     "avalanche": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "base": "0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10617.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175146/large/dinari-logo-green-with-margin.png?1785403366",
+    "metrics": {
+     "volumeUsd1d": "179.4",
+     "volumeUsd7d": "1255.8"
+    },
+    "metadata": {},
+    "tokenId": "80fbcc14-b5ad-484f-b0c9-a4eee3a42bc3",
+    "totalSupply": "657.9441830888",
+    "circulatingSupply": "657.9441830888",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x66ac668da04877b4795c4905c4538efc3a2a12f49553252facada59868a7a03a": {
+    "key": "robinhood:0x66ac668da04877b4795c4905c4538efc3a2a12f49553252facada59868a7a03a",
+    "name": "Uniswap V4 LP cbBTC/MSTR",
+    "decimals": 18,
+    "symbol": "CBBTC/MSTR",
+    "price": 9007199254740990,
+    "address": "0x66ac668da04877b4795c4905c4538efc3a2a12f49553252facada59868a7a03a",
+    "addresses": {
+     "robinhood": "0x66ac668da04877b4795c4905c4538efc3a2a12f49553252facada59868a7a03a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.342Z",
+    "createdAt": "2026-10-16T14:26:15.381Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 650120.7717348516,
+    "metrics": {
+     "apy": "3.62",
+     "baseApy": "3.62",
+     "volumeUsd1d": "29084.777",
+     "volumeUsd7d": "383363.185"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19,
+     "feePercentage": "0.2217"
+    },
+    "tokenId": "00e642a3-c45f-4787-8026-6a43718ff0a6",
+    "reserves": [
+     "0.10121864",
+     "4741.128387118254437854"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x95e9d017f305a486fd6500a5b01ad5d98c3ae7c73324ce14c0c3c7d77fba71ae": {
+    "key": "ethereum:0x95e9d017f305a486fd6500a5b01ad5d98c3ae7c73324ce14c0c3c7d77fba71ae",
+    "name": "Uniswap V4 LP EGP/MSTRon",
+    "decimals": 18,
+    "symbol": "EGP/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x95e9d017f305a486fd6500a5b01ad5d98c3ae7c73324ce14c0c3c7d77fba71ae",
+    "addresses": {
+     "ethereum": "0x95e9d017f305a486fd6500a5b01ad5d98c3ae7c73324ce14c0c3c7d77fba71ae"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:12:52.523Z",
+    "createdAt": "2026-10-14T06:54:33.476Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f"
+    ],
+    "liquidity": 20055.779239891537,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "95.07"
+    },
+    "tokenId": "56d6ec58-840c-4dbb-ab8b-2b1c8a67b8cc",
+    "reserves": [
+     "19999.999999999999999988",
+     "0.178106823621147107"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x82ad659c2f152aad59bb37cbc5e7663a2de0c607": {
+    "key": "base:0x82ad659c2f152aad59bb37cbc5e7663a2de0c607",
+    "name": "Uniswap V3 Wrapped Ether/Briun Armstrung 1%",
+    "decimals": 18,
+    "symbol": "WETH/BRIUN",
+    "price": 9007199254740990,
+    "address": "0x82ad659c2f152aad59bb37cbc5e7663a2de0c607",
+    "addresses": {
+     "base": "0x82ad659c2f152aad59bb37cbc5e7663a2de0c607"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
+     "https://assets.coingecko.com/coins/images/36183/large/200x200.png?1710758416"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.624Z",
+    "createdAt": "2025-07-23T11:00:59.894Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4200000000000000000000000000000000000006",
+     "0x8c81b4c816d66d36c4bf348bdec01dbcbc70e987"
+    ],
+    "liquidity": 34594.41017295886,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1626.936"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "824e3e8e-4f06-425b-819f-bd33f5548a89",
+    "reserves": [
+     "8.846876523329368684",
+     "233914003.190423981211104356"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc105b8300ff65d750a0e4e63c7a879e20504069b770713464a5315e797735326": {
+    "key": "robinhood:0xc105b8300ff65d750a0e4e63c7a879e20504069b770713464a5315e797735326",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0xc105b8300ff65d750a0e4e63c7a879e20504069b770713464a5315e797735326",
+    "addresses": {
+     "robinhood": "0xc105b8300ff65d750a0e4e63c7a879e20504069b770713464a5315e797735326"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.499Z",
+    "createdAt": "2026-09-18T10:05:05.113Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 770752.8938368007,
+    "metrics": {
+     "apy": "18.674",
+     "baseApy": "18.674",
+     "volumeUsd1d": "141537.119",
+     "volumeUsd7d": "5278763.079"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 24,
+     "feePercentage": "0.2786"
+    },
+    "tokenId": "bcd7bcf4-c7b0-4e43-8633-909d5dfdd6c8",
+    "reserves": [
+     "124367.486024",
+     "4773.89518325554406448"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x70504a6fafdbfb75fe971faa4dd716e79ac5624c": {
+    "key": "robinhood:0x70504a6fafdbfb75fe971faa4dd716e79ac5624c",
+    "name": "Uniswap V3 WETH/Strategy Inc.  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "WETH/MSTR",
+    "price": 9007199254740990,
+    "address": "0x70504a6fafdbfb75fe971faa4dd716e79ac5624c",
+    "addresses": {
+     "robinhood": "0x70504a6fafdbfb75fe971faa4dd716e79ac5624c"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.009Z",
+    "createdAt": "2026-07-24T17:29:09.089Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 503304.0275537408,
+    "metrics": {
+     "apy": "19.469",
+     "baseApy": "19.469",
+     "volumeUsd1d": "26844.083",
+     "volumeUsd7d": "801655.281"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "12201c24-1298-4ef2-9d48-0c49af18d12b",
+    "reserves": [
+     "61.05148650981787576",
+     "2663.38574576248685342"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x9091db7c6bcbbb4c6893365f596d119fecd14ada65d1c8e2336c23dec84bbb12": {
+    "key": "base:0x9091db7c6bcbbb4c6893365f596d119fecd14ada65d1c8e2336c23dec84bbb12",
+    "name": "Uniswap V4 LP USDC/MSTRc",
+    "decimals": 18,
+    "symbol": "USDC/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x9091db7c6bcbbb4c6893365f596d119fecd14ada65d1c8e2336c23dec84bbb12",
+    "addresses": {
+     "base": "0x9091db7c6bcbbb4c6893365f596d119fecd14ada65d1c8e2336c23dec84bbb12"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.954Z",
+    "createdAt": "2026-10-16T14:25:55.755Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 9980.077472344185,
+    "metrics": {
+     "apy": "8.944",
+     "baseApy": "8.944",
+     "volumeUsd1d": "76.493",
+     "volumeUsd7d": "1278.129"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 310,
+     "feePercentage": "3.1969"
+    },
+    "tokenId": "474ffbad-6f82-4a21-96ea-6af581e27917",
+    "reserves": [
+     "8715.387336",
+     "9.35205038"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x30987adf0b11dc698438a99ba04ec3a1ab2c7eab": {
+    "key": "ethereum:0x30987adf0b11dc698438a99ba04ec3a1ab2c7eab",
+    "name": "Wrapped MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "WMSTRX",
+    "price": 134.32,
+    "address": "0x30987adf0b11dc698438a99ba04ec3a1ab2c7eab",
+    "addresses": {
+     "ethereum": "0x30987adf0b11dc698438a99ba04ec3a1ab2c7eab"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.605Z",
+    "createdAt": "2026-07-03T11:38:30.664Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 7722.194390555854,
+    "image": "https://xstocks-metadata.backed.fi/logos/tokens/MSTRx.png",
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "762.986"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa",
+      "#yield"
+     ],
+     "paused": false,
+     "interface": "ERC4626"
+    },
+    "tokenId": "fe86a03b-0cf2-4a9e-9a94-a2db502f26b0",
+    "totalSupply": "57.491024348986410803",
+    "reserves": [
+     "57.491024348986410803"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0b7651084eb6758980efbccf73d95c680dd26e80800fbc91927d94a7f804d8bf": {
+    "key": "robinhood:0x0b7651084eb6758980efbccf73d95c680dd26e80800fbc91927d94a7f804d8bf",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x0b7651084eb6758980efbccf73d95c680dd26e80800fbc91927d94a7f804d8bf",
+    "addresses": {
+     "robinhood": "0x0b7651084eb6758980efbccf73d95c680dd26e80800fbc91927d94a7f804d8bf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.586Z",
+    "createdAt": "2026-09-08T14:36:11.955Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 2350.432746451258,
+    "metrics": {
+     "apy": "15.377",
+     "baseApy": "15.377",
+     "volumeUsd1d": "422.801",
+     "volumeUsd7d": "7076.584"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 20,
+     "feePercentage": "0.2342"
+    },
+    "tokenId": "7b858b3a-daf7-49d6-8ada-95cbbac19f6a",
+    "reserves": [
+     "1032.103842",
+     "9.736550254440604332"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb": {
+    "key": "robinhood:0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb",
+    "name": "Beefy CLM MSTR-cbBTC",
+    "decimals": 18,
+    "symbol": "COWUNISWAPROBINHOODCBBTC-MSTR",
+    "price": 135.61188377626428,
+    "address": "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb",
+    "addresses": {
+     "robinhood": "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "poolAddress": "0x6f8dc7122b56017c46892f91d38d871acf787f9b",
+    "liquidity": 59893.25460914464,
+    "metrics": {
+     "apy": "4.601",
+     "baseApy": "4.601",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-83.224"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.30",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-cbbtc-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 60,
+     "managerAddress": "0x5fa82f7e34ea4dfd9fb81dca63d6fdd824356cbb",
+     "strategyAddress": "0x5f6972bf4a9f5f964a5e9d4cacda57b782e44e66",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0xfb7aebca176adfd610e264e7fccf814f08d13d9d",
+     "depositTokenAddresses": [
+      "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "3c918bd5-879b-495e-92e1-2623d645d02c",
+    "totalSupply": "441.651962507636569287",
+    "reserves": [
+     "0.17161668",
+     "340.011893151142092655"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa": {
+    "key": "arbitrum:0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+    "name": "MicroStrategy rStock",
+    "decimals": 18,
+    "symbol": "RMSTR",
+    "price": 135.37,
+    "address": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa",
+    "addresses": {
+     "arbitrum": "0x10fe806857055d3b5ae00d2eabafd3e61f0e89aa"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 9264769,
+    "image": "https://coin-images.coingecko.com/coins/images/102177025/large/e9ea7f64e4d755d3eeec374d1fd708b5.png?1789116591",
+    "metrics": {
+     "volumeUsd1d": "1998.194",
+     "volumeUsd7d": "5381909.546"
+    },
+    "metadata": {},
+    "tokenId": "fd23067b-9374-4733-8333-50bc06b3a681",
+    "totalSupply": "68441.266072653",
+    "circulatingSupply": "68441.266072653",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x992751162761aca618bfa920f637c05a4de9c3c995ae8b2be7ae4666cb09b748": {
+    "key": "robinhood:0x992751162761aca618bfa920f637c05a4de9c3c995ae8b2be7ae4666cb09b748",
+    "name": "Uniswap V4 LP GOOGL/MSTR",
+    "decimals": 18,
+    "symbol": "GOOGL/MSTR",
+    "price": 9007199254740990,
+    "address": "0x992751162761aca618bfa920f637c05a4de9c3c995ae8b2be7ae4666cb09b748",
+    "addresses": {
+     "robinhood": "0x992751162761aca618bfa920f637c05a4de9c3c995ae8b2be7ae4666cb09b748"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174124/large/0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3.png?1782444601",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.601Z",
+    "createdAt": "2026-10-08T07:24:52.918Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 835.4872844693193,
+    "metrics": {
+     "apy": "18.459",
+     "baseApy": "18.459",
+     "volumeUsd1d": "145.746",
+     "volumeUsd7d": "48301.382"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "7a7c83a4-f5e5-4145-aaf3-0517c1c33f59",
+    "reserves": [
+     "0.796596384127368527",
+     "4.171049521970598319"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xda05409634fbfc7d86274d254f1d91c46f7c3ef9": {
+    "key": "base:0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+    "name": "T-Rex 2X Inverse MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTZ",
+    "price": 3.19,
+    "address": "0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+    "addresses": {
+     "ethereum": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+     "base": "0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+     "arbitrum": "0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+     "avalanche": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 522.73,
+    "image": "https://coin-images.coingecko.com/coins/images/102175068/large/dinari-logo-green-with-margin.png?1785403091",
+    "metrics": {
+     "volumeUsd1d": "5.899",
+     "volumeUsd7d": "648.014"
+    },
+    "metadata": {},
+    "tokenId": "7d4a20c9-7f8a-47b2-9d08-6c8f5c822fdb",
+    "totalSupply": "163.70634479903782",
+    "circulatingSupply": "163.70634479903782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x7095fad9560d8d915c02789a96d5e38cb89562638ecb4417b166f5919481a2dc": {
+    "key": "ethereum:0x7095fad9560d8d915c02789a96d5e38cb89562638ecb4417b166f5919481a2dc",
+    "name": "Uniswap V4 LP wUSDC/MSTRon",
+    "decimals": 18,
+    "symbol": "WUSDC/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x7095fad9560d8d915c02789a96d5e38cb89562638ecb4417b166f5919481a2dc",
+    "addresses": {
+     "ethereum": "0x7095fad9560d8d915c02789a96d5e38cb89562638ecb4417b166f5919481a2dc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.135Z",
+    "createdAt": "2026-09-28T10:37:14.751Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f"
+    ],
+    "liquidity": 10019.63702076244,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "70"
+    },
+    "tokenId": "ca7fe288-146a-4647-8c5e-21bf53cc34c8",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe": {
+    "key": "robinhood:0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe",
+    "name": "Uniswap V4 LP USDG/MSTR",
+    "decimals": 18,
+    "symbol": "USDG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe",
+    "addresses": {
+     "robinhood": "0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:08.601Z",
+    "createdAt": "2026-08-25T04:57:03.188Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 1377038.267365699,
+    "metrics": {
+     "apy": "19.329",
+     "baseApy": "19.329",
+     "volumeUsd1d": "251501.449",
+     "volumeUsd7d": "8288057.257"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "5d683664-cee5-4c45-bf3a-e40397bc203b",
+    "reserves": [
+     "418522.277134",
+     "7079.143207028796192975"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x8b27f626ab668197000bc722a1012022caed10e2": {
+    "key": "base:0x8b27f626ab668197000bc722a1012022caed10e2",
+    "name": "Aerodrome SlipStream USD Coin/Strategy Inc. 0.05%",
+    "decimals": 18,
+    "symbol": "USDC/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x8b27f626ab668197000bc722a1012022caed10e2",
+    "addresses": {
+     "base": "0x8b27f626ab668197000bc722a1012022caed10e2"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.723Z",
+    "createdAt": "2026-09-03T21:11:46.439Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 1813623.3396449757,
+    "metrics": {
+     "apy": "74.439",
+     "baseApy": "74.439",
+     "rewardApy": "0",
+     "volumeUsd1d": "8741777.469",
+     "volumeUsd7d": "100093169.875"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "e76262a1-c006-4769-8594-206ad1e7b693",
+    "reserves": [
+     "316898.272698",
+     "11054.52308371"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x8a2fa2c16f74911c299ef07dc0185143202e7624": {
+    "key": "arbitrum:0x8a2fa2c16f74911c299ef07dc0185143202e7624",
+    "name": "T-Rex 2X Long MSTR Daily Target ETF rStock",
+    "decimals": 18,
+    "symbol": "RMSTU",
+    "price": 29.96,
+    "address": "0x8a2fa2c16f74911c299ef07dc0185143202e7624",
+    "addresses": {
+     "arbitrum": "0x8a2fa2c16f74911c299ef07dc0185143202e7624"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6283041,
+    "image": "https://coin-images.coingecko.com/coins/images/102177258/large/MSTU.png?1789117325",
+    "metrics": {
+     "volumeUsd1d": "3385.778",
+     "volumeUsd7d": "809396.19"
+    },
+    "metadata": {},
+    "tokenId": "90a2f48c-d793-4665-aec8-e0c0d4fe9fd9",
+    "totalSupply": "209714",
+    "circulatingSupply": "209714",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0": {
+    "key": "base:0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0",
+    "name": "Beefy CLM MSTRc-USDC",
+    "decimals": 18,
+    "symbol": "COWAERODROMEBASEUSDC-MSTRC",
+    "price": 1251251300391.3247,
+    "address": "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0",
+    "addresses": {
+     "base": "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0"
+    },
+    "platform": "beefy-clm",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:13:23.092Z",
+    "createdAt": "2026-09-07T14:01:02.760Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "poolAddress": "0x8b27f626ab668197000bc722a1012022caed10e2",
+    "liquidity": 40984.70855152395,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "70.959",
+     "volumeUsd7d": "-4749.061"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp"
+     ],
+     "feeTier": "0.05",
+     "interface": "ERC20",
+     "beefyClmId": "aerodrome-cow-base-usdc-mstrc",
+     "providerId": "aerodrome",
+     "tickSpacing": 10,
+     "managerAddress": "0x7ec3a9cb1e2512f6318a18aa69ebf113cb1759f0",
+     "strategyAddress": "0xe835ef8b2756389946894443be2cd5e1b3e9e161",
+     "beefyClmTokenType": "manager",
+     "rewardPoolAddress": "0x987c1ed184b9f6bc0507da9a29f5c1db202209b3",
+     "standardVaultAddress": "0x944a37603ca610ccbac7a09264b3e73c3b7fba28",
+     "depositTokenAddresses": [
+      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "0xb2000000000000000000004884b426556b92883d"
+     ]
+    },
+    "tokenId": "da9bae1e-10df-4b4f-aac1-87ab98a22d95",
+    "totalSupply": "0.000000032754977788",
+    "reserves": [
+     "6108.066166",
+     "257.5904575"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x9dd227375fbe6beb2b52c75c0ee9d515f4870f80": {
+    "key": "base:0x9dd227375fbe6beb2b52c75c0ee9d515f4870f80",
+    "name": "Hydrex USD Coin/Wrapped MicroStrategy Incorporated ST0x",
+    "decimals": 18,
+    "symbol": "USDC/WTMSTR",
+    "price": 9007199254740990,
+    "address": "0x9dd227375fbe6beb2b52c75c0ee9d515f4870f80",
+    "addresses": {
+     "base": "0x9dd227375fbe6beb2b52c75c0ee9d515f4870f80"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/102172667/large/MSTR.png?1774599522"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.589Z",
+    "createdAt": "2026-08-24T15:17:23.846Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2"
+    ],
+    "liquidity": 665.2122538551479,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "12033.054"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "bc208272-efa7-42bb-a74e-2320d8558bf1",
+    "reserves": [
+     "665.324084",
+     "0.000063491055425818"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x294f40996134d067b56dcbacbf6a36396bbbea7a": {
+    "key": "bsc:0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "name": "Strategy aStock",
+    "decimals": 18,
+    "symbol": "AMSTR",
+    "price": 135.46,
+    "address": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "addresses": {
+     "robinhood": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "bsc": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "ethereum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "base": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "arbitrum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T11:45:30.700Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1006.35,
+    "image": "https://coin-images.coingecko.com/coins/images/102175703/large/MSTR.png?1787292326",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "af096965-facd-45ec-b000-52ed509db61d",
+    "totalSupply": "7.429157",
+    "circulatingSupply": "7.429157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x455428ca1eece6a632a664b8fd0f4ba25a9c145833994ad5ad59e9774a1720af": {
+    "key": "ethereum:0x455428ca1eece6a632a664b8fd0f4ba25a9c145833994ad5ad59e9774a1720af",
+    "name": "Uniswap V4 LP USDC/MSTRx",
+    "decimals": 18,
+    "symbol": "USDC/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x455428ca1eece6a632a664b8fd0f4ba25a9c145833994ad5ad59e9774a1720af",
+    "addresses": {
+     "ethereum": "0x455428ca1eece6a632a664b8fd0f4ba25a9c145833994ad5ad59e9774a1720af"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:53.267Z",
+    "createdAt": "2026-02-19T05:12:17.879Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 2754.5793472367977,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 17600,
+     "feePercentage": "88.012"
+    },
+    "tokenId": "bc4bd7d8-a349-43a8-b852-e54bf56d89c8",
+    "reserves": [
+     "1699.817211",
+     "7.854897283740237842"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb64246cc7a09541496e7b789e6fe2f3bd5d34af152c4e6dedb9d7e877ee756b9": {
+    "key": "robinhood:0xb64246cc7a09541496e7b789e6fe2f3bd5d34af152c4e6dedb9d7e877ee756b9",
+    "name": "Uniswap V4 LP SPY/MSTR",
+    "decimals": 18,
+    "symbol": "SPY/MSTR",
+    "price": 9007199254740990,
+    "address": "0xb64246cc7a09541496e7b789e6fe2f3bd5d34af152c4e6dedb9d7e877ee756b9",
+    "addresses": {
+     "robinhood": "0xb64246cc7a09541496e7b789e6fe2f3bd5d34af152c4e6dedb9d7e877ee756b9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.240Z",
+    "createdAt": "2026-10-17T14:25:57.619Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 12200.037392051958,
+    "metrics": {
+     "apy": "65.244",
+     "baseApy": "65.244",
+     "volumeUsd1d": "7522.193",
+     "volumeUsd7d": "8683.85"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "3cebde6c-3dd1-4012-8602-872f46a97039",
+    "reserves": [
+     "4.464195291181676075",
+     "64.95290218450423688"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x47fc06fc7727bd9d9d33241ed49d96fd6f63f7ca": {
+    "key": "base:0x47fc06fc7727bd9d9d33241ed49d96fd6f63f7ca",
+    "name": "ICHI Vault wtMSTR-cbBTC (HYDX)",
+    "decimals": 18,
+    "symbol": "IV-HYDX-226-WTMSTR-CBBTC",
+    "price": 0.13408452051012054,
+    "address": "0x47fc06fc7727bd9d9d33241ed49d96fd6f63f7ca",
+    "addresses": {
+     "base": "0x47fc06fc7727bd9d9d33241ed49d96fd6f63f7ca"
+    },
+    "platform": "ichi",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/ichi",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102172667/large/MSTR.png?1774599522"
+    ],
+    "updatedAt": "2026-10-18T20:13:16.075Z",
+    "createdAt": "2026-08-19T08:37:01.536Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2"
+    ],
+    "poolAddress": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923",
+    "liquidity": 11880.978139264349,
+    "metrics": {
+     "apy": "0.278",
+     "baseApy": "0.278",
+     "volumeUsd1d": "205.729",
+     "volumeUsd7d": "205.729"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "poolAddress": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923"
+    },
+    "tokenId": "a555bb12-7cde-49eb-ae58-4a2aea6494a1",
+    "totalSupply": "88608.126382251461799246",
+    "reserves": [
+     "0.01242909",
+     "80.365741625595493763"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x294f40996134d067b56dcbacbf6a36396bbbea7a": {
+    "key": "base:0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "name": "Strategy aStock",
+    "decimals": 18,
+    "symbol": "AMSTR",
+    "price": 135.46,
+    "address": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "addresses": {
+     "robinhood": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "bsc": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "ethereum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "base": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "arbitrum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1006.35,
+    "image": "https://coin-images.coingecko.com/coins/images/102175703/large/MSTR.png?1787292326",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "af096965-facd-45ec-b000-52ed509db61d",
+    "totalSupply": "7.429157",
+    "circulatingSupply": "7.429157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39": {
+    "key": "ethereum:0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39",
+    "name": "MSTR2100",
+    "decimals": 9,
+    "symbol": "MSTR",
+    "price": 0.02087297,
+    "address": "0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39",
+    "addresses": {
+     "ethereum": "0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2024-10-09T08:26:31.167Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 430938,
+    "image": "https://coin-images.coingecko.com/coins/images/50600/large/MSTR2100.png?1728446322",
+    "metrics": {
+     "volumeUsd1d": "52917.585",
+     "volumeUsd7d": "400876.284"
+    },
+    "metadata": {},
+    "tokenId": "3c3a4253-0f85-4362-bbc3-283ef78be09f",
+    "totalSupply": "20645815.354111586",
+    "circulatingSupply": "20645815.354111586",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d": {
+    "key": "base:0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d",
+    "name": "Uniswap V4 LP USDC/MSTRc",
+    "decimals": 18,
+    "symbol": "USDC/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d",
+    "addresses": {
+     "base": "0x17ecfe141bada18d94b2c41a2bbaffde8726309a6b4340e1ad7a6910bc7cdf8d"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.977Z",
+    "createdAt": "2026-09-04T18:17:31.428Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 4010.746698695957,
+    "metrics": {
+     "apy": "0.338",
+     "baseApy": "0.338",
+     "volumeUsd1d": "1.201",
+     "volumeUsd7d": "556.991"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "940fe82d-7a44-4fed-a05a-49a39c194a0d",
+    "reserves": [
+     "1994.473503",
+     "14.893901"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe87afb3076aeb0f9b14e368de8145ae6a2826a14": {
+    "key": "bsc:0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+    "name": "Strategy Tokenized bStocks",
+    "decimals": 18,
+    "symbol": "MSTRB",
+    "price": 134.13,
+    "address": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14",
+    "addresses": {
+     "bsc": "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-09T07:57:28.861Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 49000469,
+    "image": "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298",
+    "metrics": {
+     "volumeUsd1d": "6035753.86",
+     "volumeUsd7d": "94452971.872"
+    },
+    "metadata": {},
+    "tokenId": "0e0b2842-ad28-479c-8843-1089b77c7337",
+    "totalSupply": "365333.003289",
+    "circulatingSupply": "365333.003289",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95": {
+    "key": "robinhood:0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95",
+    "name": "Beefy CLM MSTR-USDG Reward Pool",
+    "decimals": 18,
+    "symbol": "RCOWUNISWAPROBINHOODUSDG-MSTR",
+    "price": 134.3500757207661,
+    "address": "0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95",
+    "addresses": {
+     "robinhood": "0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95"
+    },
+    "platform": "beefy-clm",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12704/large/token.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.361Z",
+    "createdAt": "2026-09-07T14:01:59.412Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb"
+    ],
+    "poolAddress": "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb",
+    "liquidity": 8268.955267805926,
+    "metrics": {
+     "apy": "13.361",
+     "baseApy": "13.361",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-16953.063"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator",
+      "#clp",
+      "#yield"
+     ],
+     "feeTier": "1",
+     "interface": "ERC20",
+     "beefyClmId": "uniswap-cow-robinhood-usdg-mstr",
+     "providerId": "uniswap",
+     "tickSpacing": 200,
+     "managerAddress": "0xb35200b74159b7dbd18b6be47cd2b7c2c50f5dfb",
+     "strategyAddress": "0x947c84a189ec771125735ca2e52bf32a35610900",
+     "beefyClmTokenType": "reward-pool",
+     "rewardPoolAddress": "0x8c9f485a9a9f9c147d850e71de2eb25aa2b99d95",
+     "depositTokenAddresses": [
+      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+      "0xec262a75e413fafd0df80480274532c79d42da09"
+     ]
+    },
+    "tokenId": "be423b92-3a7d-4f3f-91d7-e9f25418645a",
+    "totalSupply": "61.5478273714721676",
+    "reserves": [
+     "61.5478273714721676"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x9898be1859e3f192a61061bbf18a2e71e951e180": {
+    "key": "base:0x9898be1859e3f192a61061bbf18a2e71e951e180",
+    "name": "Aerodrome SlipStream Strategy Inc./Coinbase Wrapped BTC 0.05%",
+    "decimals": 18,
+    "symbol": "MSTRC/CBBTC",
+    "price": 9007199254740990,
+    "address": "0x9898be1859e3f192a61061bbf18a2e71e951e180",
+    "addresses": {
+     "base": "0x9898be1859e3f192a61061bbf18a2e71e951e180"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.723Z",
+    "createdAt": "2026-10-08T07:22:15.649Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb2000000000000000000004884b426556b92883d",
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+    ],
+    "liquidity": 46883.953590698,
+    "metrics": {
+     "apy": "31.373",
+     "baseApy": "31.373",
+     "rewardApy": "0",
+     "volumeUsd1d": "80621.938",
+     "volumeUsd7d": "607604.619"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "c51c0866-089a-48df-befe-f0915b254a21",
+    "reserves": [
+     "274.48874897",
+     "0.12036981"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x8861f7e1b00b75799e223b33c54dc4319b6e22d1fb631363e5be586c03b4270e": {
+    "key": "bsc:0x8861f7e1b00b75799e223b33c54dc4319b6e22d1fb631363e5be586c03b4270e",
+    "name": "Uniswap V4 LP USDT/MSTRx",
+    "decimals": 18,
+    "symbol": "USDT/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x8861f7e1b00b75799e223b33c54dc4319b6e22d1fb631363e5be586c03b4270e",
+    "addresses": {
+     "bsc": "0x8861f7e1b00b75799e223b33c54dc4319b6e22d1fb631363e5be586c03b4270e"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:04.983Z",
+    "createdAt": "2026-06-26T10:25:14.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 700.3484567586613,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 30,
+     "feePercentage": "99.99"
+    },
+    "tokenId": "1914172f-505d-4a88-96ad-e9de2441e98c",
+    "reserves": [
+     "699.999999999999897361",
+     "0.006825913926901282"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xe8aa998d7a0578abe80210eed39b599b5f14b522": {
+    "key": "base:0xe8aa998d7a0578abe80210eed39b599b5f14b522",
+    "name": "Aerodrome SlipStream Strategy Inc./Frax USD 0.05%",
+    "decimals": 18,
+    "symbol": "MSTRC/FRXUSD",
+    "price": 9007199254740990,
+    "address": "0xe8aa998d7a0578abe80210eed39b599b5f14b522",
+    "addresses": {
+     "base": "0xe8aa998d7a0578abe80210eed39b599b5f14b522"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://images.portals.fi/logos/frxUSD.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.723Z",
+    "createdAt": "2026-10-15T14:20:49.123Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb2000000000000000000004884b426556b92883d",
+     "0xe5020a6d073a794b6e7f05678707de47986fb0b6"
+    ],
+    "liquidity": 2533.2812973590867,
+    "metrics": {
+     "apy": "592.946",
+     "baseApy": "592.946",
+     "rewardApy": "0",
+     "volumeUsd1d": "17941.108",
+     "volumeUsd7d": "27876.926"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "e5975f3d-ad18-4932-ae38-027c658d6e2e",
+    "reserves": [
+     "17.05196335",
+     "224.454437946604748848"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x842293fa6ee0642bf61ebf8310e7e546039ba7f4": {
+    "key": "ethereum:0x842293fa6ee0642bf61ebf8310e7e546039ba7f4",
+    "name": "Uniswap V3 MSTR2100/Wrapped Ether 1%",
+    "decimals": 18,
+    "symbol": "MSTR2100/WRAPPED ETHER",
+    "price": 9007199254740990,
+    "address": "0x842293fa6ee0642bf61ebf8310e7e546039ba7f4",
+    "addresses": {
+     "ethereum": "0x842293fa6ee0642bf61ebf8310e7e546039ba7f4"
+    },
+    "platform": "uniswap-v3",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/50600/large/MSTR2100.png?1728446322",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:13:06.255Z",
+    "createdAt": "2025-02-21T12:34:05.930Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x42069026eac8eee0fd9b5f7adfa4f6e6d69a2b39",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 1598.6493722878254,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "49a42696-6724-431c-b7d8-81710c767329",
+    "reserves": [
+     "44101.841992008",
+     "0.290111724655347431"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x184452d046730432962ad341c74b319a31c60f15": {
+    "key": "ethereum:0x184452d046730432962ad341c74b319a31c60f15",
+    "name": "UniswapV2 LP MSTR/WETH",
+    "decimals": 18,
+    "symbol": "MSTR/WETH",
+    "price": 0.0004676658979696266,
+    "address": "0x184452d046730432962ad341c74b319a31c60f15",
+    "addresses": {
+     "ethereum": "0x184452d046730432962ad341c74b319a31c60f15"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:13:01.507Z",
+    "createdAt": "2026-10-18T18:58:29.599Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa339df29f1e5308aefd55558962ef5b1ffa5a521",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 23543.622325343218,
+    "metrics": {
+     "apy": "21.408",
+     "baseApy": "21.408",
+     "volumeUsd1d": "4602.596"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "b34d99ab-dbdb-4f83-99c8-8858231043f0",
+    "totalSupply": "50342824.712167274255588768",
+    "reserves": [
+     "503696911129157.537470237108364063",
+     "5.03817601475085246"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x997eabc01cac614e20fe8f658b5f82d84288a2d8": {
+    "key": "ethereum:0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+    "name": "T-Rex 2X Long MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTU",
+    "price": 30.6,
+    "address": "0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+    "addresses": {
+     "avalanche": "0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+     "ethereum": "0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+     "base": "0x2de02593023b8f276d673146a9bee4586c7fd95c",
+     "arbitrum": "0x3918d009d2157b37bb9806efdec941723b9efec5"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5227.19,
+    "image": "https://coin-images.coingecko.com/coins/images/102174997/large/dinari-logo-green-with-margin.png?1785402840",
+    "metrics": {
+     "volumeUsd1d": "91.789",
+     "volumeUsd7d": "10414.416"
+    },
+    "metadata": {},
+    "tokenId": "061f6e47-8ed8-4605-84f3-f77d0f4c320d",
+    "totalSupply": "170.84413671832",
+    "circulatingSupply": "170.84413671832",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x22d7a67527c9e31a5d70de34435a3011db80327b9627d5f5f8d18c307c2d4439": {
+    "key": "arbitrum:0x22d7a67527c9e31a5d70de34435a3011db80327b9627d5f5f8d18c307c2d4439",
+    "name": "Uniswap V4 LP USDT/MSTRx",
+    "decimals": 18,
+    "symbol": "USDT/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x22d7a67527c9e31a5d70de34435a3011db80327b9627d5f5f8d18c307c2d4439",
+    "addresses": {
+     "arbitrum": "0x22d7a67527c9e31a5d70de34435a3011db80327b9627d5f5f8d18c307c2d4439"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.437Z",
+    "createdAt": "2026-10-16T14:24:02.162Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 1999.547654892614,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "75"
+    },
+    "tokenId": "31813488-171d-40cd-8833-5442c0f99090",
+    "reserves": [
+     "1999.999999999999999993",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xcabd955322dfbf94c084929ac5e9eca3feb5556f": {
+    "key": "ethereum:0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-25T12:14:19.677Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1523113.501",
+     "volumeUsd7d": "14253170.654"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x3e848634d91a162aed8152389d87211375b5273dcd177852b8177eed06358772": {
+    "key": "bsc:0x3e848634d91a162aed8152389d87211375b5273dcd177852b8177eed06358772",
+    "name": "PancakeSwap Infinity LP USDT/MSTRon",
+    "decimals": 18,
+    "symbol": "USDT/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x3e848634d91a162aed8152389d87211375b5273dcd177852b8177eed06358772",
+    "addresses": {
+     "bsc": "0x3e848634d91a162aed8152389d87211375b5273dcd177852b8177eed06358772"
+    },
+    "platform": "pancakeswap-infinity",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:13:20.873Z",
+    "createdAt": "2026-08-27T03:05:08.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    ],
+    "liquidity": 4917.641910947143,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "77"
+    },
+    "tokenId": "2e7943b9-ce03-4156-a248-21cbe6122240",
+    "reserves": [
+     "4745.226473421685903636",
+     "1.305306290150142618"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4220b0573da2b419531a7c77470bdd91d0325e729e874ece2b3891b842f38901": {
+    "key": "ethereum:0x4220b0573da2b419531a7c77470bdd91d0325e729e874ece2b3891b842f38901",
+    "name": "Uniswap V4 LP USDC/MSTRx",
+    "decimals": 18,
+    "symbol": "USDC/MSTRX",
+    "price": 9007199254740990,
+    "address": "0x4220b0573da2b419531a7c77470bdd91d0325e729e874ece2b3891b842f38901",
+    "addresses": {
+     "ethereum": "0x4220b0573da2b419531a7c77470bdd91d0325e729e874ece2b3891b842f38901"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:54.789Z",
+    "createdAt": "2026-09-02T13:15:09.149Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 564.328382966159,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "8c246bb2-efc7-4dde-bf57-b7fdaa229fa8",
+    "reserves": [
+     "379.898928",
+     "1.373572190828819089"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598": {
+    "key": "base:0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598",
+    "name": "YieldMax MSTR Option Income Strategy ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTY",
+    "price": 16.14,
+    "address": "0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598",
+    "addresses": {
+     "ethereum": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "arbitrum": "0xc9418591233d3dd0652c9c96891895b6f67f0712",
+     "avalanche": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "base": "0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598"
+    },
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10617.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175146/large/dinari-logo-green-with-margin.png?1785403366",
+    "metrics": {
+     "volumeUsd1d": "179.4",
+     "volumeUsd7d": "1255.8"
+    },
+    "metadata": {},
+    "tokenId": "80fbcc14-b5ad-484f-b0c9-a4eee3a42bc3",
+    "totalSupply": "657.9441830888",
+    "circulatingSupply": "657.9441830888",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x0e8ed4dfa57c8b265bd4844954e28d9132ba07bd3386e6d25969a2ad1f926e63": {
+    "key": "robinhood:0x0e8ed4dfa57c8b265bd4844954e28d9132ba07bd3386e6d25969a2ad1f926e63",
+    "name": "Uniswap V4 LP ETH/MSTR",
+    "decimals": 18,
+    "symbol": "ETH/MSTR",
+    "price": 9007199254740990,
+    "address": "0x0e8ed4dfa57c8b265bd4844954e28d9132ba07bd3386e6d25969a2ad1f926e63",
+    "addresses": {
+     "robinhood": "0x0e8ed4dfa57c8b265bd4844954e28d9132ba07bd3386e6d25969a2ad1f926e63"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.077Z",
+    "createdAt": "2026-07-23T17:33:17.255Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 4145.95672481973,
+    "metrics": {
+     "apy": "0.489",
+     "baseApy": "0.489",
+     "volumeUsd1d": "1.091",
+     "volumeUsd7d": "134.509"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1000,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "76c1cffb-12ad-4519-96c8-f013c00a770f",
+    "reserves": [
+     "0.875694870433800886",
+     "15.509024600422950044"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x1de20975249c05c52055bc83ac0985f37091b836ee8563209635f45d6acffaac": {
+    "key": "ethereum:0x1de20975249c05c52055bc83ac0985f37091b836ee8563209635f45d6acffaac",
+    "name": "Uniswap V4 LP USDC/MSTRon",
+    "decimals": 18,
+    "symbol": "USDC/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x1de20975249c05c52055bc83ac0985f37091b836ee8563209635f45d6acffaac",
+    "addresses": {
+     "ethereum": "0x1de20975249c05c52055bc83ac0985f37091b836ee8563209635f45d6acffaac"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.048Z",
+    "createdAt": "2025-09-26T08:45:48.720Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "0xcabd955322dfbf94c084929ac5e9eca3feb5556f"
+    ],
+    "liquidity": 513.4580145934341,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 6000,
+     "feePercentage": "30.07"
+    },
+    "tokenId": "3497f795-320c-4568-be72-1b5f54ac3774",
+    "reserves": [
+     "322.217103",
+     "1.416611617958213214"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xae2f842ef90c0d5213259ab82639d5bbf649b08e": {
+    "key": "bsc:0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "name": "MicroStrategy xStock",
+    "decimals": 18,
+    "symbol": "MSTRX",
+    "price": 134.19,
+    "address": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e",
+    "addresses": {
+     "bsc": "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:20.484Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4152772.941817998,
+    "image": "https://coin-images.coingecko.com/coins/images/55631/large/Ticker_MSTR__Company_Name_MicroStrategy__size_200x200_2x.png?1746862528",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "microstrategy-xstock"
+    },
+    "tokenId": "2b981cfd-0964-402f-8a8a-4d740c31ea11",
+    "totalSupply": "30946.962827468499022",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x4cb4986597e752e9978d3a7e77aa82dc1f544e18": {
+    "key": "ethereum:0x4cb4986597e752e9978d3a7e77aa82dc1f544e18",
+    "name": "UniswapV2 LP $BOMSTR2100/WETH",
+    "decimals": 18,
+    "symbol": "$BOMSTR2100/WETH",
+    "price": 3013.0393133114057,
+    "address": "0x4cb4986597e752e9978d3a7e77aa82dc1f544e18",
+    "addresses": {
+     "ethereum": "0x4cb4986597e752e9978d3a7e77aa82dc1f544e18"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
+    ],
+    "updatedAt": "2026-10-18T20:13:01.641Z",
+    "createdAt": "2025-09-14T07:36:55.208Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xb003581b64319eaa1dbaa55cf820f1949ceaa4f0",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 1760.1153412745068,
+    "metrics": {
+     "apy": "0.208",
+     "baseApy": "0.208",
+     "volumeUsd1d": "3.35",
+     "volumeUsd7d": "3.35"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "52fe2cd6-8e84-474d-90a0-df0784fe0c83",
+    "totalSupply": "0.58416607227739613",
+    "reserves": [
+     "945514391.032655839",
+     "0.376652784056030236"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2b90d50e10a03c8fef583a90322c9a747cf84085": {
+    "key": "ethereum:0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+    "name": "YieldMax MSTR Option Income Strategy ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTY",
+    "price": 16.14,
+    "address": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+    "addresses": {
+     "ethereum": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "arbitrum": "0xc9418591233d3dd0652c9c96891895b6f67f0712",
+     "avalanche": "0x2b90d50e10a03c8fef583a90322c9a747cf84085",
+     "base": "0xd1b55162ddacfe6a29bdb3c7d37141ee4bc2c598"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 10617.82,
+    "image": "https://coin-images.coingecko.com/coins/images/102175146/large/dinari-logo-green-with-margin.png?1785403366",
+    "metrics": {
+     "volumeUsd1d": "179.4",
+     "volumeUsd7d": "1255.8"
+    },
+    "metadata": {},
+    "tokenId": "80fbcc14-b5ad-484f-b0c9-a4eee3a42bc3",
+    "totalSupply": "657.9441830888",
+    "circulatingSupply": "657.9441830888",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0x1912a052860c3442f22c7deea3f10ed6c5ee6c6f0b8064ca24e5bb255bdcf6b9": {
+    "key": "bsc:0x1912a052860c3442f22c7deea3f10ed6c5ee6c6f0b8064ca24e5bb255bdcf6b9",
+    "name": "Uniswap V4 LP USDT/MSTRon",
+    "decimals": 18,
+    "symbol": "USDT/MSTRON",
+    "price": 9007199254740990,
+    "address": "0x1912a052860c3442f22c7deea3f10ed6c5ee6c6f0b8064ca24e5bb255bdcf6b9",
+    "addresses": {
+     "bsc": "0x1912a052860c3442f22c7deea3f10ed6c5ee6c6f0b8064ca24e5bb255bdcf6b9"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941"
+    ],
+    "updatedAt": "2026-10-18T20:13:05.358Z",
+    "createdAt": "2026-08-27T03:05:20.705Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    ],
+    "liquidity": 3103.237828808324,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 18000,
+     "feePercentage": "90.01"
+    },
+    "tokenId": "4d15d939-4b81-43b8-b112-0566f6720106",
+    "reserves": [
+     "3019.218265794087227631",
+     "0.640337442580432387"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712": {
+    "key": "robinhood:0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712",
+    "name": "Uniswap V4 LP GLD/MSTR",
+    "decimals": 18,
+    "symbol": "GLD/MSTR",
+    "price": 9007199254740990,
+    "address": "0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712",
+    "addresses": {
+     "robinhood": "0x7e96292791b55953ab0b9b41c1d80e7362a0a2577edec1906106d0a06dd68712"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:09.444Z",
+    "createdAt": "2026-10-16T14:26:37.042Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 4526.975653372447,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "207.517"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 25,
+     "feePercentage": "0.2899"
+    },
+    "tokenId": "56d17c62-4b4e-40aa-be53-55d7e2710ca8",
+    "reserves": [
+     "0.000742879322456492",
+     "33.431995049960376569"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x81b3bc0ef974c16d71b8614adb8c22ccc045da01": {
+    "key": "base:0x81b3bc0ef974c16d71b8614adb8c22ccc045da01",
+    "name": "Uniswap V3 Shiba Armstrong/Wrapped Ether 0.3%",
+    "decimals": 18,
+    "symbol": "SHIBA/WETH",
+    "price": 9007199254740990,
+    "address": "0x81b3bc0ef974c16d71b8614adb8c22ccc045da01",
+    "addresses": {
+     "base": "0x81b3bc0ef974c16d71b8614adb8c22ccc045da01"
+    },
+    "platform": "uniswap-v3",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/37708/large/LOGO256.png?1715273986",
+     "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
+    ],
+    "updatedAt": "2026-10-18T20:13:13.316Z",
+    "createdAt": "2025-07-23T11:00:59.894Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x041fdf3f472d2c8a7ecc458fc3b7f543e6c57ef7",
+     "0x4200000000000000000000000000000000000006"
+    ],
+    "liquidity": 55289.60160247318,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "eb956316-bdbf-46c9-8d22-0555d1726eaf",
+    "reserves": [
+     "1647870007.881537485",
+     "11.422447384607177126"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e": {
+    "key": "avalanche:0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+    "name": "T-Rex 2X Inverse MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTZ",
+    "price": 3.19,
+    "address": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+    "addresses": {
+     "ethereum": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e",
+     "base": "0xda05409634fbfc7d86274d254f1d91c46f7c3ef9",
+     "arbitrum": "0x07dfe1d0406846de8924550d04c125c8e3645fdb",
+     "avalanche": "0x1abf70f54ceddaf54b5ed05ec02c529c1fa72f7e"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 522.73,
+    "image": "https://coin-images.coingecko.com/coins/images/102175068/large/dinari-logo-green-with-margin.png?1785403091",
+    "metrics": {
+     "volumeUsd1d": "5.899",
+     "volumeUsd7d": "648.537"
+    },
+    "metadata": {},
+    "tokenId": "7d4a20c9-7f8a-47b2-9d08-6c8f5c822fdb",
+    "totalSupply": "163.70634479903782",
+    "circulatingSupply": "163.70634479903782",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x20294f4e81d97a2d772e5d8120aec93164470f148c183329840b2666e640235c": {
+    "key": "robinhood:0x20294f4e81d97a2d772e5d8120aec93164470f148c183329840b2666e640235c",
+    "name": "Uniswap V4 LP MBG/MSTR",
+    "decimals": 18,
+    "symbol": "MBG/MSTR",
+    "price": 9007199254740990,
+    "address": "0x20294f4e81d97a2d772e5d8120aec93164470f148c183329840b2666e640235c",
+    "addresses": {
+     "robinhood": "0x20294f4e81d97a2d772e5d8120aec93164470f148c183329840b2666e640235c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.386Z",
+    "createdAt": "2026-09-29T06:20:35.377Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x977689834cb1822ea31d80307303a76aaa313368",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 1024.4447597292833,
+    "metrics": {
+     "apy": "129.262",
+     "baseApy": "129.262",
+     "volumeUsd1d": "330.114",
+     "volumeUsd7d": "3463.759"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "c0884244-26ec-4604-8359-82e5018eb0e9",
+    "reserves": [
+     "10144.075060014071703099",
+     "3.562728250353662055"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x99656e3e1a258a4213360b9c10f892302bc823ee": {
+    "key": "base:0x99656e3e1a258a4213360b9c10f892302bc823ee",
+    "name": "ICHI Vault cbBTC-wtMSTR (HYDX)",
+    "decimals": 18,
+    "symbol": "IV-HYDX-225-CBBTC-WTMSTR",
+    "price": 0.1350004638466009,
+    "address": "0x99656e3e1a258a4213360b9c10f892302bc823ee",
+    "addresses": {
+     "base": "0x99656e3e1a258a4213360b9c10f892302bc823ee"
+    },
+    "platform": "ichi",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/ichi",
+     "https://coin-images.coingecko.com/coins/images/102172667/large/MSTR.png?1774599522",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727"
+    ],
+    "updatedAt": "2026-10-18T20:13:16.075Z",
+    "createdAt": "2026-08-19T08:37:01.536Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2"
+    ],
+    "poolAddress": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923",
+    "liquidity": 3802.617429661897,
+    "metrics": {
+     "apy": "0.278",
+     "baseApy": "0.278",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#yield-aggregator"
+     ],
+     "poolAddress": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923"
+    },
+    "tokenId": "a833389a-59e5-441e-a60d-0e8ecfac8feb",
+    "totalSupply": "28167.43973548681758775",
+    "reserves": [
+     "0.04430019",
+     "1.669725081801969626"
+    ],
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xbe24354ed2c603c5a0473a6769fd1752af9a6d554f5e066223da5ce5588dd5c8": {
+    "key": "ethereum:0xbe24354ed2c603c5a0473a6769fd1752af9a6d554f5e066223da5ce5588dd5c8",
+    "name": "Uniswap V4 LP USDT/MSTRx",
+    "decimals": 18,
+    "symbol": "USDT/MSTRX",
+    "price": 9007199254740990,
+    "address": "0xbe24354ed2c603c5a0473a6769fd1752af9a6d554f5e066223da5ce5588dd5c8",
+    "addresses": {
+     "ethereum": "0xbe24354ed2c603c5a0473a6769fd1752af9a6d554f5e066223da5ce5588dd5c8"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-10-18T20:12:55.467Z",
+    "createdAt": "2026-10-18T18:58:36.335Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
+     "0xae2f842ef90c0d5213259ab82639d5bbf649b08e"
+    ],
+    "liquidity": 3526.670229039823,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1,
+     "feePercentage": "78"
+    },
+    "tokenId": "18aec2c1-d10d-4313-89fc-32f2228b38aa",
+    "reserves": [
+     "4000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "avalanche:0xe397784960f814ba35c9ee0bc4c9dffdf86925f9": {
+    "key": "avalanche:0xe397784960f814ba35c9ee0bc4c9dffdf86925f9",
+    "name": "Monsterra",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 0.00037979,
+    "address": "0xe397784960f814ba35c9ee0bc4c9dffdf86925f9",
+    "addresses": {
+     "bsc": "0x2290c6bd9560e6498dfdf10f9ecb17997ca131f2",
+     "avalanche": "0xe397784960f814ba35c9ee0bc4c9dffdf86925f9"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-10-12T14:08:09.479Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 37486,
+    "image": "https://assets.coingecko.com/coins/images/24377/large/MSTR.png?1696523560",
+    "metrics": {
+     "volumeUsd1d": "11.774",
+     "volumeUsd7d": "63.538"
+    },
+    "metadata": {},
+    "tokenId": "f493b4a5-3395-4379-b6ce-2eacd06baf25",
+    "totalSupply": "98700000",
+    "circulatingSupply": "98700000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xb2000000000000000000004884b426556b92883d": {
+    "key": "base:0xb2000000000000000000004884b426556b92883d",
+    "name": "Strategy Inc.",
+    "decimals": 8,
+    "symbol": "MSTRC",
+    "price": 135.4,
+    "address": "0xb2000000000000000000004884b426556b92883d",
+    "addresses": {
+     "base": "0xb2000000000000000000004884b426556b92883d"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-21T12:37:48.897Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb2000000000000000000004884b426556b92883d",
+    "liquidity": 2253605.891190566,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "455616.652"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000000000000000000",
+     "pausedFeatures": []
+    },
+    "tokenId": "bee61b68-c154-4f8b-b727-69d9d3b59d2e",
+    "totalSupply": "16644.06123479",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x37077d100b369ab48c9e6b7b21c15eee4fdf9923": {
+    "key": "base:0x37077d100b369ab48c9e6b7b21c15eee4fdf9923",
+    "name": "Hydrex Coinbase Wrapped BTC/Wrapped MicroStrategy Incorporated ST0x",
+    "decimals": 18,
+    "symbol": "CBBTC/WTMSTR",
+    "price": 9007199254740990,
+    "address": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923",
+    "addresses": {
+     "base": "0x37077d100b369ab48c9e6b7b21c15eee4fdf9923"
+    },
+    "platform": "hydrex",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/hydrex",
+     "https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727",
+     "https://coin-images.coingecko.com/coins/images/102172667/large/MSTR.png?1774599522"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.589Z",
+    "createdAt": "2026-08-19T13:15:22.455Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "0xff05e1bd696900dc6a52ca35ca61bb1024eda8e2"
+    ],
+    "liquidity": 26996.175594648445,
+    "metrics": {
+     "apy": "0.278",
+     "baseApy": "0.278",
+     "volumeUsd1d": "68.486",
+     "volumeUsd7d": "25208.97"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "b68e2ce6-8a57-4b5d-8398-3cc0ea4921f6",
+    "reserves": [
+     "0.09843748",
+     "140.73680982170997149"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x294f40996134d067b56dcbacbf6a36396bbbea7a": {
+    "key": "robinhood:0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "name": "Strategy aStock",
+    "decimals": 18,
+    "symbol": "AMSTR",
+    "price": 135.46,
+    "address": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "addresses": {
+     "robinhood": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "bsc": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "ethereum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "base": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "arbitrum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-08T09:29:14.254Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1006.35,
+    "image": "https://coin-images.coingecko.com/coins/images/102175703/large/MSTR.png?1787292326",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "af096965-facd-45ec-b000-52ed509db61d",
+    "totalSupply": "7.429157",
+    "circulatingSupply": "7.429157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x5a9400426114a95f03322f67f2a3f22f906026c2": {
+    "key": "base:0x5a9400426114a95f03322f67f2a3f22f906026c2",
+    "name": "Aerodrome SlipStream HarryPotterObamaSonic10Inu/Strategy Inc. 1%",
+    "decimals": 18,
+    "symbol": "BITCOIN/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x5a9400426114a95f03322f67f2a3f22f906026c2",
+    "addresses": {
+     "base": "0x5a9400426114a95f03322f67f2a3f22f906026c2"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/30323/large/hpos10i_logo_casino_night-dexview.png?1696529224"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.217Z",
+    "createdAt": "2026-10-13T13:15:10.178Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2a06a17cbc6d0032cac2c6696da90f29d39a1a29",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 5881.392788636361,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "rewardApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "808.556"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "2dce3b6d-d773-460e-9fef-35f2e707fa48",
+    "reserves": [
+     "398865.8845416",
+     "2.62388096"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x47de5989f808a32c53fc076d5fe7fea6f07e17b8": {
+    "key": "arbitrum:0x47de5989f808a32c53fc076d5fe7fea6f07e17b8",
+    "name": "T-Rex 2X Inverse MSTR Daily Target ETF rStock",
+    "decimals": 18,
+    "symbol": "RMSTZ",
+    "price": 3.23,
+    "address": "0x47de5989f808a32c53fc076d5fe7fea6f07e17b8",
+    "addresses": {
+     "arbitrum": "0x47de5989f808a32c53fc076d5fe7fea6f07e17b8"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T09:10:27.949Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 773573,
+    "image": "https://coin-images.coingecko.com/coins/images/102177255/large/eceffb0e995429bffeb549accb2118f9.png?1789117315",
+    "metrics": {
+     "volumeUsd1d": "48.335",
+     "volumeUsd7d": "543118.316"
+    },
+    "metadata": {},
+    "tokenId": "4b3f62f6-987e-4690-880d-3ba4d475dca0",
+    "totalSupply": "239718.140152783",
+    "circulatingSupply": "239718.140152783",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "avalanche:0x367cda8503bf1ef3f84cc54df3328954ff9d86fe": {
+    "key": "avalanche:0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+    "name": "T-Rex 2X Long MSTR Daily Target ETF (Dinari Tokenized ETF)",
+    "decimals": 18,
+    "symbol": "MSTU",
+    "price": 30.6,
+    "address": "0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+    "addresses": {
+     "avalanche": "0x367cda8503bf1ef3f84cc54df3328954ff9d86fe",
+     "ethereum": "0x997eabc01cac614e20fe8f658b5f82d84288a2d8",
+     "base": "0x2de02593023b8f276d673146a9bee4586c7fd95c",
+     "arbitrum": "0x3918d009d2157b37bb9806efdec941723b9efec5"
+    },
+    "platform": "basic",
+    "network": "avalanche",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 5227.19,
+    "image": "https://coin-images.coingecko.com/coins/images/102174997/large/dinari-logo-green-with-margin.png?1785402840",
+    "metrics": {
+     "volumeUsd1d": "91.789",
+     "volumeUsd7d": "10452.989"
+    },
+    "metadata": {},
+    "tokenId": "061f6e47-8ed8-4605-84f3-f77d0f4c320d",
+    "totalSupply": "170.84413671832",
+    "circulatingSupply": "170.84413671832",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0x0ecc74c47acad38f5b000f1c35ec6da167db8a20f5531c95b8586b2ad56dd5af": {
+    "key": "base:0x0ecc74c47acad38f5b000f1c35ec6da167db8a20f5531c95b8586b2ad56dd5af",
+    "name": "Uniswap V4 LP ETH/MSTRc",
+    "decimals": 18,
+    "symbol": "ETH/MSTRC",
+    "price": 9007199254740990,
+    "address": "0x0ecc74c47acad38f5b000f1c35ec6da167db8a20f5531c95b8586b2ad56dd5af",
+    "addresses": {
+     "base": "0x0ecc74c47acad38f5b000f1c35ec6da167db8a20f5531c95b8586b2ad56dd5af"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-10-18T20:12:57.106Z",
+    "createdAt": "2026-10-14T07:00:24.371Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xb2000000000000000000004884b426556b92883d"
+    ],
+    "liquidity": 11118.19767415815,
+    "metrics": {
+     "apy": "30.428",
+     "baseApy": "30.428",
+     "volumeUsd1d": "927.673",
+     "volumeUsd7d": "10817.252"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "a5ca8972-01b5-4c81-87b2-6bc5dd7f8566",
+    "reserves": [
+     "1.312567821242365508",
+     "59.4639759"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x294f40996134d067b56dcbacbf6a36396bbbea7a": {
+    "key": "ethereum:0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "name": "Strategy aStock",
+    "decimals": 18,
+    "symbol": "AMSTR",
+    "price": 135.46,
+    "address": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+    "addresses": {
+     "robinhood": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "bsc": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "ethereum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "base": "0x294f40996134d067b56dcbacbf6a36396bbbea7a",
+     "arbitrum": "0x294f40996134d067b56dcbacbf6a36396bbbea7a"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-08-27T09:26:37.806Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1006.35,
+    "image": "https://coin-images.coingecko.com/coins/images/102175703/large/MSTR.png?1787292326",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {},
+    "tokenId": "af096965-facd-45ec-b000-52ed509db61d",
+    "totalSupply": "7.429157",
+    "circulatingSupply": "7.429157",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460": {
+    "key": "arbitrum:0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+    "name": "Strategy (Dinari Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTR",
+    "price": 135.62,
+    "address": "0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+    "addresses": {
+     "base": "0x5de98c65a9a3c414550e6663666bc725c23c2e7b",
+     "ethereum": "0xcd08eb87d94bdb0957541a86e2252c81c0c8a9d1",
+     "arbitrum": "0xdf7a6ce3b9087251f5859f42ca79ce34f4a88460",
+     "avalanche": "0x7944e6f238f13740121323f837f2f1022b38525e"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 1049267,
+    "image": "https://coin-images.coingecko.com/coins/images/102174991/large/dinari-logo-green-with-margin.png?1785402819",
+    "metrics": {
+     "volumeUsd1d": "13.66",
+     "volumeUsd7d": "74680.871"
+    },
+    "metadata": {},
+    "tokenId": "b231bf67-a2ae-4b5d-ac28-bdd6d0fe399d",
+    "totalSupply": "7736.966407350879",
+    "circulatingSupply": "7736.966407350879",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x4751491148bd43304df216b9c70db6f2dd86bacac2cb1fa5ad689d9e6679beab": {
+    "key": "robinhood:0x4751491148bd43304df216b9c70db6f2dd86bacac2cb1fa5ad689d9e6679beab",
+    "name": "Uniswap V4 LP hOHM/MSTR",
+    "decimals": 18,
+    "symbol": "HOHM/MSTR",
+    "price": 9007199254740990,
+    "address": "0x4751491148bd43304df216b9c70db6f2dd86bacac2cb1fa5ad689d9e6679beab",
+    "addresses": {
+     "robinhood": "0x4751491148bd43304df216b9c70db6f2dd86bacac2cb1fa5ad689d9e6679beab"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174143/large/0xec262a75e413fafd0df80480274532c79d42da09.png?1782444651"
+    ],
+    "updatedAt": "2026-10-18T20:13:10.016Z",
+    "createdAt": "2026-09-19T12:13:35.884Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x76cf788606f3d968b93b8a243d0e185c974ee407",
+     "0xec262a75e413fafd0df80480274532c79d42da09"
+    ],
+    "liquidity": 58954.69146543366,
+    "metrics": {
+     "apy": "1.944",
+     "baseApy": "1.944",
+     "volumeUsd1d": "311.891",
+     "volumeUsd7d": "9311.882"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 90,
+     "feePercentage": "0.9991"
+    },
+    "tokenId": "14de96d3-04d5-4c1e-ba15-e8b12554f539",
+    "reserves": [
+     "3472003.284009431645396648",
+     "214.678573681561494995"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "hyperevm:0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6": {
+    "key": "hyperevm:0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+    "name": "MicroStrategy (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "MSTRON",
+    "price": 135.04,
+    "address": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+    "addresses": {
+     "hyperevm": "0x8a64fdf0857c1c734a594cd1db20b3f8e3f133f6",
+     "ethereum": "0xcabd955322dfbf94c084929ac5e9eca3feb5556f",
+     "bsc": "0x7313ea16493b2f55054df0131a3a14b043ec8992"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 25673801,
+    "image": "https://coin-images.coingecko.com/coins/images/68530/large/mstron_160x160.png?1756100941",
+    "metrics": {
+     "volumeUsd1d": "1535266.898",
+     "volumeUsd7d": "14821230.562"
+    },
+    "metadata": {},
+    "tokenId": "1d6d6826-4402-4a54-9849-585501e27384",
+    "totalSupply": "190137.48879430885",
+    "circulatingSupply": "190137.48879430885",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  }
+ }
+}
