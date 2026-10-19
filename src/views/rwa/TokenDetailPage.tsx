@@ -15,7 +15,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import { relationRows, RwaIndex } from 'api/rwa';
+import { relationRows, RwaIndex, tokenProtocols } from 'api/rwa';
 import { CopyableAddress } from 'components/CopyableAddress';
 import { Token } from 'types/rwa';
 import { categoryLabel, excludedReason, networkName } from 'utils/rwa';
@@ -111,7 +111,11 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
         stats={[
           { label: t('stat.usefulness'), value: f.num(token.usefulness_score), hint: t('stat.usefulness.hint') },
           { label: t('stat.rawConfirmed'), value: f.num(c.raw_confirmed_opportunities_count), hint: t('stat.rawConfirmed.hint') },
-          { label: t('stat.protocols'), value: f.num(c.eligible_protocols_count) },
+          {
+            label: t('stat.protocols'),
+            value: f.num(c.eligible_protocols_count),
+            hint: tokenProtocols(index, token).join(', ') || undefined
+          },
           { label: t('stat.networks'), value: f.num(c.eligible_networks_count) },
           {
             label: t('stat.directIndirect'),

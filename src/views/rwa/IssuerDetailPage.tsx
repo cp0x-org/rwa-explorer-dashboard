@@ -9,7 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import { isReportedYield, logoUrl, relationRows, RwaIndex } from 'api/rwa';
+import { isReportedYield, logoUrl, relationRows, RwaIndex, tokenProtocols } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import { Issuer, RelationRow, Token } from 'types/rwa';
 import { compareNullable, num } from 'utils/rwa';
@@ -25,6 +25,7 @@ import TableCaption from './components/TableCaption';
 import { compareTokens, NetworkChips, TokenSortField } from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
+import ProtocolsCell from './components/ProtocolsCell';
 
 // Token columns sort by the token itself; "liquidity" and "updated" sort by the token's best reported-APY position.
 type Field = TokenSortField | 'liquidity' | 'updated';
@@ -90,7 +91,11 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
         stats={[
           { label: t('stat.score'), value: f.num(issuer.issuer_usefulness_score), hint: t('stat.score.hint') },
           { label: t('stat.rawConfirmed'), value: f.num(issuer.raw_confirmed_opportunities_count) },
-          { label: t('stat.protocols'), value: f.num(issuer.eligible_protocols_count) },
+          {
+            label: t('stat.protocols'),
+            value: f.num(issuer.eligible_protocols_count),
+            hint: issuer.eligible_platforms.join(', ') || undefined
+          },
           { label: t('stat.networks'), value: f.num(issuer.eligible_networks_count) },
           {
             label: t('stat.relative', { n: issuer.compared_underlyings_count }),
@@ -172,7 +177,9 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
                       {tk.usefulness_score}
                     </Typography>
                   </TableCell>
-                  <TableCell>{tk.counts.eligible_protocols_count}</TableCell>
+                  <TableCell>
+                    <ProtocolsCell count={tk.counts.eligible_protocols_count} names={tokenProtocols(index, tk)} />
+                  </TableCell>
                   <TableCell>
                     <NetworkChips token={tk} />
                   </TableCell>

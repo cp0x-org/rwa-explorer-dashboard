@@ -3,12 +3,12 @@
 // no ratings, prices or legal details, only what the page shows.
 import { RwaExport } from 'types/rwa';
 import { getFormat, localizePath, OG_LOCALE } from 'i18n';
-import { intlFor, PageMeta, SITE_NAME } from './pageMeta';
+import { intlFor, PageMeta } from './pageMeta';
 
 const ORGANIZATION = {
   '@type': 'Organization',
   '@id': 'https://cp0x.com/#organization',
-  name: SITE_NAME,
+  name: 'cp0x',
   url: 'https://cp0x.com',
   sameAs: ['https://x.com/cp0xdotcom', 'https://t.me/cp0xdotcom', 'https://github.com/cp0x-org']
 };

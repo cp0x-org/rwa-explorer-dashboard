@@ -4,7 +4,8 @@ import type { MessageId } from './index';
 
 const zh: Record<MessageId, string> = {
   // ---------- site ----------
-  'site.name': 'cp0x 代币化股票 DeFi 数据分析',
+  'site.name': 'RWA Explorer — cp0x 代币化股票 DeFi 数据分析',
+  'site.title': 'RWA Explorer',
   'site.brand': 'cp0x',
   'site.noscript': '当前已禁用 JavaScript：这是页面的静态快照。排序、筛选和分页需要启用 JavaScript。',
   'site.skipToContent': '跳到正文',
@@ -28,7 +29,7 @@ const zh: Record<MessageId, string> = {
   'header.openMenu': '打开菜单',
   'header.closeMenu': '关闭菜单',
   'header.menu': '菜单',
-  'header.logo': 'cp0x — 代币化股票 DeFi 数据分析，首页',
+  'header.logo': 'RWA Explorer by cp0x — 首页',
   'lang.label': '语言',
   'lang.switchTo': '切换到{language}',
   'footer.logo': 'cp0x',
@@ -171,6 +172,8 @@ const zh: Record<MessageId, string> = {
   'col.positionsWithApy': '有 APY 的头寸',
   'col.avgApy': '平均 APY',
   'sort.hint': '点击按{label}排序',
+  'protocols.more': '+{n} 个',
+  'protocols.none': '无',
 
   // table captions (visually hidden)
   'table.assets': '按代币化资产的 DeFi 用量排名的标的资产',

@@ -24,6 +24,7 @@ import Legend from './components/Legend';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
+import ProtocolsCell from './components/ProtocolsCell';
 
 type Field = 'ticker' | 'versions' | 'issuers' | 'eligible' | 'raw' | 'protocols' | 'mcap';
 
@@ -64,7 +65,7 @@ function AssetsView({ index }: { index: RwaIndex }) {
       </Typography>
       <MethodNote data={index.data} />
 
-      <Box sx={{ marginBottom: 3 }}>
+      <Box sx={{ marginBottom: 2 }}>
         <StatGrid
           stats={[
             { label: t('stat.underlyings'), value: f.num(summary.underlyings_count) },
@@ -135,7 +136,9 @@ function AssetsView({ index }: { index: RwaIndex }) {
                 <TableCell>{u.issuers_count}</TableCell>
                 <TableCell>{u.eligible_opportunities_count}</TableCell>
                 <TableCell>{u.raw_confirmed_opportunities_count}</TableCell>
-                <TableCell>{u.eligible_protocols_count}</TableCell>
+                <TableCell>
+                  <ProtocolsCell count={u.eligible_protocols_count} names={u.eligible_platforms} />
+                </TableCell>
                 <TableCell>{f.usd(u.tokenized_market_cap_usd)}</TableCell>
                 <TableCell>
                   <Age iso={u.fetched_at} />

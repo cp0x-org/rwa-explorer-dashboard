@@ -15,7 +15,7 @@ test.describe('metadata', () => {
         const title = html.match(/<title>([^<]*)<\/title>/)![1];
         expect(titles.has(title), `${path}: ${title}`).toBe(false);
         titles.add(title);
-        expect(title).toMatch(/\| cp0x$/);
+        expect(title).toMatch(/\| RWA Explorer$/);
         const description = attr(html, /<meta name="description" content="([^"]*)"/)[0];
         expect(description.length).toBeGreaterThan(40);
         expect(attr(html, /<meta property="og:title" content="([^"]*)"/)[0]).toBe(title);

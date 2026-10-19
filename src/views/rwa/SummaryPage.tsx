@@ -42,6 +42,7 @@ import { StatGrid } from './components/StatGrid';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
+import ProtocolsCell from './components/ProtocolsCell';
 
 // ==============================|| AGGREGATES ||============================== //
 
@@ -406,7 +407,11 @@ function IssuersSection({ stats }: { stats: Stats }) {
                     ({shareOf(f, i.inDefi, i.versions)})
                   </Typography>
                 </TableCell>
-                <TableCell align="right">{i.platforms.size}</TableCell>
+                <TableCell align="right">
+                  <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <ProtocolsCell count={i.platforms.size} names={Array.from(i.platforms.values()).sort((a, b) => a.localeCompare(b))} />
+                  </Box>
+                </TableCell>
                 <TableCell align="right">{i.yield?.count ?? 0}</TableCell>
                 <TableCell align="right">{pctOf(f, i.yield?.average)}</TableCell>
                 <TableCell align="right">{pctOf(f, i.yield?.max)}</TableCell>

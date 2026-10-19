@@ -4,7 +4,8 @@
 
 const en = {
   // ---------- site ----------
-  'site.name': 'Tokenized Stocks in DeFi by cp0x',
+  'site.name': 'RWA Explorer — Tokenized Stocks in DeFi by cp0x',
+  'site.title': 'RWA Explorer',
   'site.brand': 'cp0x',
   'site.noscript': 'JavaScript is off: this is a static snapshot of the page. Sorting, filters and paging need JavaScript.',
   'site.skipToContent': 'Skip to content',
@@ -23,12 +24,12 @@ const en = {
   'nav.summary.short': 'Summary',
   'header.home': 'Home',
   'header.pi': 'Permissionless Interfaces',
-  'header.referrals': 'cp0x Referrals',
+  'header.referrals': 'cp0x',
   'header.siteMenu': 'Site menu',
   'header.openMenu': 'Open menu',
   'header.closeMenu': 'Close menu',
   'header.menu': 'Menu',
-  'header.logo': 'cp0x — Tokenized Stocks in DeFi, home',
+  'header.logo': 'RWA Explorer by cp0x — home',
   'lang.label': 'Language',
   'lang.switchTo': 'Switch to {language}',
   'footer.logo': 'cp0x',
@@ -173,6 +174,8 @@ const en = {
   'col.positionsWithApy': 'Positions with APY',
   'col.avgApy': 'Avg APY',
   'sort.hint': 'Click to sort by {label}',
+  'protocols.more': '+{n} more',
+  'protocols.none': 'none',
 
   // table captions (visually hidden)
   'table.assets': 'Underlying assets ranked by DeFi usage of their tokenized assets',

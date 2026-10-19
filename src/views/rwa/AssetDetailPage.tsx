@@ -60,7 +60,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
           { label: t('stat.issuers'), value: f.num(u.issuers_count) },
           { label: t('stat.eligible'), value: f.num(u.eligible_opportunities_count), hint: t('stat.eligible.hintDistinct') },
           { label: t('stat.rawConfirmed'), value: f.num(u.raw_confirmed_opportunities_count) },
-          { label: t('stat.protocols'), value: f.num(u.eligible_protocols_count) },
+          { label: t('stat.protocols'), value: f.num(u.eligible_protocols_count), hint: u.eligible_platforms.join(', ') || undefined },
           { label: t('stat.networks'), value: f.num(u.eligible_networks_count) },
           { label: t('stat.tokenizedMcap'), value: f.usd(u.tokenized_market_cap_usd) },
           { label: t('stat.avgPrice'), value: f.usd(u.average_tokenized_price_usd) }
@@ -71,7 +71,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
       <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
         {t('asset.tokenizedAssets')}
       </Typography>
-      <VersionsTable tokens={tokens} />
+      <VersionsTable index={index} tokens={tokens} />
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
         <Typography variant="h3" component="h2">

@@ -91,7 +91,7 @@ function TokenizedAssetsView({ index }: { index: RwaIndex }) {
         </Grid>
       </FilterPanel>
 
-      <VersionsTable tokens={tokens} showUnderlying underlyingLogos={underlyingLogos} paginate />
+      <VersionsTable index={index} tokens={tokens} showUnderlying underlyingLogos={underlyingLogos} paginate />
       <Typography variant="body2" color="text.secondary" role="status">
         {t('tokenized.showing', { n: tokens.length, total: allTokens.length })}
         {filtered ? t('tokenized.filtered') : ''}

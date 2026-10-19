@@ -29,12 +29,14 @@ export interface RwaIndex {
   issuerById: Map<string, Issuer>;
   opportunityByKey: Map<string, Opportunity>;
   symbolByKey: Map<string, string>;
+  platformNameBySlug: Map<string, string>; // Portals platform slug -> protocol name
 }
 
 function buildIndex(data: RwaExport): RwaIndex {
   const symbolByKey = new Map<string, string>();
   data.tokens.forEach((t) => t.deployments.forEach((d) => d.key && t.symbol && symbolByKey.set(d.key, t.symbol)));
   data.opportunities.forEach((o) => o.symbol && symbolByKey.set(o.key, o.symbol));
+  const platformNameBySlug = new Map(data.opportunities.map((o) => [o.platform, o.platform_name]));
   return {
     data,
     underlyingById: new Map(data.underlyings.map((u) => [u.id, u])),
@@ -42,9 +44,17 @@ function buildIndex(data: RwaExport): RwaIndex {
     tokenById: new Map(data.tokens.map((t) => [t.id, t])),
     issuerById: new Map(data.issuers.map((i) => [i.id, i])),
     opportunityByKey: new Map(data.opportunities.map((o) => [o.key, o])),
-    symbolByKey
+    symbolByKey,
+    platformNameBySlug
   };
 }
+
+// Names of the protocols with at least one eligible position of the token, alphabetically.
+export const tokenProtocols = (index: RwaIndex, token: Token): string[] =>
+  Object.entries(token.by_platform)
+    .filter(([, v]) => v.eligible > 0)
+    .map(([slug]) => index.platformNameBySlug.get(slug) ?? slug)
+    .sort((a, b) => a.localeCompare(b));
 
 export function useRwaData() {
   const preloaded = useContext(RwaDataContext);

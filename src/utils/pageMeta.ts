@@ -14,7 +14,7 @@ import {
   stripLocale
 } from 'i18n';
 
-export const SITE_NAME = 'cp0x';
+export const SITE_NAME = 'RWA Explorer'; // title suffix and site name; the publisher stays cp0x
 
 export interface Crumb {
   name: string;

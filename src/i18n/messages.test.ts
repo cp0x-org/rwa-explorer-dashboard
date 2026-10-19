@@ -60,7 +60,7 @@ describe('dictionaries', () => {
     const latinWords = (m: string) => /[a-z]{3,}/i.test(m.replace(/\{[^}]*\}/g, ''));
     const untranslated = ids.filter((id) => !cjk.test(zh[id]) && latinWords(zh[id]));
     // allowed: brand/product names and technical labels that stay in Latin script
-    expect(untranslated.sort()).toEqual(['asset.isin', 'category.dex_lp', 'header.pi', 'token.cmc'].sort());
+    expect(untranslated.sort()).toEqual(['asset.isin', 'category.dex_lp', 'header.pi', 'site.title', 'token.cmc'].sort());
   });
 
   it('tickers, symbols and addresses never appear in UI messages', () => {

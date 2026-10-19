@@ -19,6 +19,7 @@ import SortHeader, { HeaderCell, useSort } from './components/SortHeader';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
+import ProtocolsCell from './components/ProtocolsCell';
 
 type Field = 'score' | 'relative' | 'raw' | 'protocols' | 'assets' | 'yield' | 'pools';
 
@@ -106,7 +107,9 @@ function IssuersView({ index }: { index: RwaIndex }) {
                   )}
                 </TableCell>
                 <TableCell>{i.raw_confirmed_opportunities_count}</TableCell>
-                <TableCell>{i.eligible_protocols_count}</TableCell>
+                <TableCell>
+                  <ProtocolsCell count={i.eligible_protocols_count} names={i.eligible_platforms} />
+                </TableCell>
                 <TableCell>
                   {i.basket_underlyings_count} / {i.basket_tokens_count}
                 </TableCell>

@@ -9,7 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { logoUrl } from 'api/rwa';
+import { logoUrl, RwaIndex, tokenProtocols } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import VisuallyHidden from 'ui-component/VisuallyHidden';
 import DataTableContainer from './DataTableContainer';
@@ -21,6 +21,7 @@ import { compareNullable, deploymentChip, networkName, num } from 'utils/rwa';
 import { useFormat, useLocaleNavigate, useT } from 'i18n';
 import SortHeader, { HeaderCell, SortOrder, useSort } from './SortHeader';
 import TablePager from './TablePager';
+import ProtocolsCell from './ProtocolsCell';
 
 export type TokenSortField = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
 type Field = TokenSortField;
@@ -80,6 +81,7 @@ export function NetworkChips({ token }: { token: Token }) {
 }
 
 interface VersionsTableProps {
+  index: RwaIndex;
   tokens: Token[];
   showUnderlying?: boolean; // one table for many underlyings
   underlyingLogos?: Map<string, string | null>; // ticker -> logo path, for showUnderlying
@@ -87,7 +89,7 @@ interface VersionsTableProps {
 }
 
 // Comparison of tokenized versions, ranked by usefulness score.
-export default function VersionsTable({ tokens, showUnderlying = false, underlyingLogos, paginate = false }: VersionsTableProps) {
+export default function VersionsTable({ index, tokens, showUnderlying = false, underlyingLogos, paginate = false }: VersionsTableProps) {
   const t = useT();
   const f = useFormat();
   const navigate = useLocaleNavigate();
@@ -180,7 +182,9 @@ export default function VersionsTable({ tokens, showUnderlying = false, underlyi
                   </Typography>
                 </TableCell>
                 <TableCell>{tk.counts.raw_confirmed_opportunities_count}</TableCell>
-                <TableCell>{tk.counts.eligible_protocols_count}</TableCell>
+                <TableCell>
+                  <ProtocolsCell count={tk.counts.eligible_protocols_count} names={tokenProtocols(index, tk)} />
+                </TableCell>
                 <TableCell>
                   {tk.counts.direct_eligible_count} / {tk.counts.indirect_eligible_count}
                 </TableCell>

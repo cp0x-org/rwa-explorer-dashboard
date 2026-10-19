@@ -23,14 +23,14 @@ export function StatGrid({ stats }: { stats: Stat[] }) {
   const theme = useTheme();
   // only the vertical <dl> margins are reset: the horizontal ones are the grid's own spacing compensation
   return (
-    <Grid container component="dl" spacing={{ xs: 1, sm: 2 }} sx={{ marginTop: 0, marginBottom: 0 }}>
+    <Grid container component="dl" spacing={{ xs: 1, sm: 1.5 }} sx={{ marginTop: 0, marginBottom: 0 }}>
       {/* each card is one <div> group straight inside the <dl>: dt before dd in the markup (screen readers read
           "label, value"), the value shown above the label */}
       {stats.map((s) => (
         <Grid
           key={s.label}
           size={{ xs: 6, sm: 4, md: 3 }}
-          sx={{ display: 'flex', flexDirection: 'column-reverse', gap: { xs: 0.5, sm: 1 }, padding: { xs: 1, sm: 2.5 } }}
+          sx={{ display: 'flex', flexDirection: 'column-reverse', gap: { xs: 0.25, sm: 0.5 }, padding: { xs: 1, sm: '10px 16px' } }}
         >
           <HintTooltip title={s.hint}>
             <Typography
