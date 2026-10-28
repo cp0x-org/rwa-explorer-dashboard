@@ -6,15 +6,18 @@ import Typography from '@mui/material/Typography';
 import Loader from 'ui-component/Loader';
 import { RwaIndex, useRwaData } from 'api/rwa';
 import { RwaExport } from 'types/rwa';
+import { trackPageView } from 'utils/analytics';
 import { pageMeta, SITE_NAME } from 'utils/pageMeta';
 import { MessageId, useT, Values } from 'i18n';
 
-// Same title as the prerendered <head> of this path, kept current on client-side navigation.
+// Same title as the prerendered <head> of this path, kept current on client-side navigation; then the page view, which
+// carries this title.
 export function useDocumentTitle(data?: RwaExport) {
   const { pathname } = useLocation();
   const t = useT();
   useEffect(() => {
     document.title = data ? pageMeta(pathname, data).title : `${t('notFound.page')} | ${SITE_NAME}`;
+    trackPageView();
   }, [pathname, data, t]);
 }
 

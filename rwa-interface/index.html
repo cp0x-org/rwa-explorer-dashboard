@@ -22,6 +22,17 @@
         <meta name="author" content="cp0x" />
         <!-- the whole dataset behind every page -->
         <link rel="alternate" type="application/json" href="/data/rwa.json" title="Dataset (JSON)" />
+        <!-- Google Analytics, off on localhost -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G824LXXGBP"></script>
+        <script>
+            if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function gtag() { dataLayer.push(arguments); };
+                gtag('js', new Date());
+                // SPA: page views are sent by the app (src/utils/analytics.ts), the first one included
+                gtag('config', 'G-G824LXXGBP', { send_page_view: false });
+            }
+        </script>
         <!-- canonical, hreflang, og:url, og:locale, robots, JSON-LD and critical CSS of the page: scripts/prerender.mjs -->
         <!--prerender-head-->
     </head>
