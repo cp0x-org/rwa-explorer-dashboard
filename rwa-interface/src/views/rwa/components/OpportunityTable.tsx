@@ -23,6 +23,7 @@ import { EligibilityChip } from './StatusChip';
 import SortHeader, { useSort } from './SortHeader';
 import TablePager from './TablePager';
 import OpportunityDialog from './OpportunityDialog';
+import { PositionLink } from './OutboundLinks';
 
 type Field = 'apy' | 'liquidity' | 'updated';
 
@@ -103,12 +104,13 @@ export default function OpportunityTable({
               />
               <TableCell>{t('col.status')}</TableCell>
               <SortHeader field="updated" label={t('col.updated')} {...{ sortField, sortOrder }} onSort={handleSort} />
+              <TableCell>{t('col.open')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
-                <TableCell colSpan={showToken ? 10 : 9} sx={{ color: 'text.secondary' }}>
+                <TableCell colSpan={showToken ? 11 : 10} sx={{ color: 'text.secondary' }}>
                   {emptyText ?? t('positions.empty')}
                 </TableCell>
               </TableRow>
@@ -193,6 +195,9 @@ export default function OpportunityTable({
                   </TableCell>
                   <TableCell>
                     <Age iso={o.updated_at} />
+                  </TableCell>
+                  <TableCell>
+                    <PositionLink opportunity={o} iconOnly />
                   </TableCell>
                 </TableRow>
               );

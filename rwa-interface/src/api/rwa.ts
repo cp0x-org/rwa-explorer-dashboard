@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo } from 'react';
 import useSWR from 'swr';
 
-import { Issuer, Opportunity, RelationRow, RwaExport, Token, Underlying } from 'types/rwa';
+import { Issuer, Opportunity, RelationRow, RightsProfile, RwaExport, Token, Underlying } from 'types/rwa';
 
 // Static JSON produced by rwa-data-pipeline; the browser never calls CMC or Portals.
 const DATA_URL = `${import.meta.env.BASE_URL}data/rwa.json`;
@@ -23,6 +23,7 @@ export const logoUrl = (path: string | null | undefined): string | undefined => 
 
 export interface RwaIndex {
   data: RwaExport;
+  rightsById: Map<string, RightsProfile>;
   underlyingById: Map<string, Underlying>;
   underlyingByTicker: Map<string, Underlying>;
   tokenById: Map<number, Token>;
@@ -32,13 +33,14 @@ export interface RwaIndex {
   platformNameBySlug: Map<string, string>; // Portals platform slug -> protocol name
 }
 
-function buildIndex(data: RwaExport): RwaIndex {
+export function buildIndex(data: RwaExport): RwaIndex {
   const symbolByKey = new Map<string, string>();
   data.tokens.forEach((t) => t.deployments.forEach((d) => d.key && t.symbol && symbolByKey.set(d.key, t.symbol)));
   data.opportunities.forEach((o) => o.symbol && symbolByKey.set(o.key, o.symbol));
   const platformNameBySlug = new Map(data.opportunities.map((o) => [o.platform, o.platform_name]));
   return {
     data,
+    rightsById: new Map((data.rights_profiles ?? []).map((profile) => [profile.id, profile])),
     underlyingById: new Map(data.underlyings.map((u) => [u.id, u])),
     underlyingByTicker: new Map(data.underlyings.map((u) => [u.ticker, u])),
     tokenById: new Map(data.tokens.map((t) => [t.id, t])),

@@ -410,7 +410,7 @@ def test_tables_cover_every_token_relation_and_deployment(tmp_path):
     export = build_export([NVDA], SETTINGS, tmp_path)
     tables = {t.name: t for t in build_tables(export)}
 
-    assert set(tables) == {"summary", "underlyings", "tokens", "issuers", "opportunities", "relations", "deployments", "breakdowns"}
+    assert set(tables) == {"summary", "underlyings", "tokens", "issuers", "opportunities", "relations", "deployments", "breakdowns", "rights_profiles", "rights_facts", "rights_tokens"}
     assert len(tables["tokens"].rows) == len(export["tokens"])  # excluded tokens are kept, marked by kind
     assert len(tables["underlyings"].rows) == 1 and len(tables["opportunities"].rows) == len(export["opportunities"])
     assert len(tables["deployments"].rows) == sum(len(t["deployments"]) for t in export["tokens"])

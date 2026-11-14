@@ -7,9 +7,10 @@ Decimal strings of the export stay numbers (float), `null` stays an empty cell, 
 
 import csv
 import os
+import re
 import tempfile
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
@@ -54,6 +55,17 @@ OPPORTUNITY_FIELDS = [
 # Columns whose values are decimal strings in the export; everything else is kept as is.
 NUMERIC_SUFFIXES = ("_usd", "_percent", "_score", "_count", "per_underlying", "per_token", "_size")
 TIME_FIELDS = {"fetched_at", "oldest_fetched_at", "newest_fetched_at", "updated_at", "generated_at"}
+DATE_FIELDS = {"reviewed_at", "retrieved_at"}
+RIGHTS_PROFILE_FIELDS = [
+    "profile_id", "issuer_id", "issuer_name", "product", "scope_basis", "tokens_count",
+    "legal_issuer_name", "legal_issuer_country", "legal_issuer_zone", "legal_issuer_note_en",
+    "legal_issuer_quotes", "legal_issuer_urls", "reviewed_at", "stale",
+]
+RIGHTS_FACT_FIELDS = [
+    "profile_id", "issuer_id", "product", "fact", "group", "value", "who", "countries", "zones",
+    "us_persons", "note_en", "quote", "url", "title", "doc_date", "retrieved_at", "checked", "reviewed_at", "stale",
+]
+RIGHTS_TOKEN_FIELDS = ["token_id", "symbol", "ticker", "issuer_name", "rights_profile_id", "reviewed_at", "stale"]
 
 
 @dataclass
@@ -150,6 +162,7 @@ def build_tables(export: dict) -> list[Table]:
         row["cmc_slug"] = t["cmc_slug"]
         row["cmc_url"] = CMC_URL.format(slug=t["cmc_slug"]) if t["cmc_slug"] else None
         row["logo"] = t["logo"]
+        row["swap_urls"] = _join([link["url"] for link in t.get("links", []) if link.get("kind") == "swap"])
         token_rows.append(row)
 
         for d in t["deployments"]:
@@ -207,6 +220,8 @@ def build_tables(export: dict) -> list[Table]:
         row["coverage"] = i["coverage"]
         row["oldest_fetched_at"] = i["oldest_fetched_at"]
         row["logo"] = i["logo"]
+        row["app_url"] = (i.get("app") or {}).get("url")
+        row["referral_url"] = (i.get("referral") or {}).get("url")
         issuer_rows.append(row)
         for dimension in ("network", "category"):
             for key, counts in i[f"by_{dimension}"].items():
@@ -227,7 +242,54 @@ def build_tables(export: dict) -> list[Table]:
         row["linked_tokens"] = _join(t["symbol"] for t in users)
         row["linked_tickers"] = _join(sorted({t["ticker"] for t in users}))
         row["linked_issuers"] = _join(sorted({t["issuer_name"] for t in users if t["issuer_name"]}))
+        row["link_url"] = (o.get("link") or {}).get("url")
+        row["link_kind"] = (o.get("link") or {}).get("kind")
+        row["referral_url"] = (o.get("referral") or {}).get("url")
         opportunity_rows.append(row)
+
+    # ---- rights: profiles, fact citations and every token's review status ----
+    profiles = {p["id"]: p for p in export.get("rights_profiles", [])}
+    groups = {f["key"]: f["group"] for f in export.get("rights_schema", {}).get("facts", [])}
+    rights_profile_rows = []
+    rights_fact_rows = []
+    for profile in profiles.values():
+        legal_issuer = profile["legal_issuer"]
+        evidence = legal_issuer["evidence"]
+        rights_profile_rows.append({
+            "profile_id": profile["id"],
+            **_pick(profile, ["issuer_id", "product", "scope_basis", "reviewed_at", "stale"]),
+            "issuer_name": issuer_by_id[profile["issuer_id"]]["name"],
+            "tokens_count": len(profile["token_ids"]),
+            "legal_issuer_name": legal_issuer["name"],
+            "legal_issuer_country": legal_issuer.get("country"),
+            "legal_issuer_zone": legal_issuer.get("zone"),
+            "legal_issuer_note_en": (legal_issuer.get("note") or {}).get("en"),
+            "legal_issuer_quotes": " | ".join(citation["quote"] for citation in evidence),
+            "legal_issuer_urls": _join(dict.fromkeys(citation["url"] for citation in evidence)),
+        })
+        for key, fact in profile["facts"].items():
+            unknown = fact["value"] == "unknown"
+            for citation in [{}] if unknown else fact["evidence"]:
+                rights_fact_rows.append({
+                    "profile_id": profile["id"],
+                    **_pick(profile, ["issuer_id", "product", "reviewed_at", "stale"]),
+                    "fact": key,
+                    "group": groups.get(key),
+                    **_pick(fact, ["value", "who", "us_persons"]),
+                    "countries": _join(fact.get("countries")),
+                    "zones": _join(fact.get("zones")),
+                    "note_en": (fact.get("note") or {}).get("en"),
+                    **_pick(citation, ["quote", "url", "title", "doc_date", "retrieved_at"]),
+                    "checked": _join(fact.get("checked")) if unknown else None,
+                })
+    rights_token_rows = []
+    for token in export["tokens"]:
+        profile = profiles.get(token.get("rights_profile_id"), {})
+        rights_token_rows.append({
+            "token_id": token["id"],
+            **_pick(token, ["symbol", "ticker", "issuer_name", "rights_profile_id"]),
+            **_pick(profile, ["reviewed_at", "stale"]),
+        })
 
     def table(name, rows, description, first=None):
         columns = list(first or [])
@@ -244,6 +306,9 @@ def build_tables(export: dict) -> list[Table]:
         table("relations", relation_rows, "Token x position links: direct, indirect (via LP/vault) and unconfirmed symbol matches"),
         table("deployments", deployment_rows, "Token contracts per network and their Portals status"),
         table("breakdowns", breakdown_rows, "Raw/eligible position counts of tokens and issuers by network, category, platform, underlying"),
+        table("rights_profiles", rights_profile_rows, "One row per published rights profile, with its legal issuer and supporting quotes", RIGHTS_PROFILE_FIELDS),
+        table("rights_facts", rights_fact_rows, "Reviewed holder rights: one row per fact citation, or one row with checked documents for unknown", RIGHTS_FACT_FIELDS),
+        table("rights_tokens", rights_token_rows, "Every token and its rights profile; an empty profile means unreviewed", RIGHTS_TOKEN_FIELDS),
     ]
 
 
@@ -267,6 +332,13 @@ def _cell(column: str, value):
     if value is None or value == "":
         return None
     if isinstance(value, (bool, int, float)):
+        return value
+    if column in DATE_FIELDS and isinstance(value, str):
+        if re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", value):
+            try:
+                return date.fromisoformat(value)
+            except ValueError:
+                pass
         return value
     if column in TIME_FIELDS and isinstance(value, str):
         try:
@@ -342,7 +414,9 @@ def write_xlsx(tables: list[Table], path: Path) -> Path:
             sample = [str(r.get(column)) for r in t.rows[:200] if r.get(column) is not None]
             width = max([len(column)] + [len(s) for s in sample]) if sample else len(column)
             ws.column_dimensions[letter].width = min(max(width + 2, 8), 60)
-            if column in TIME_FIELDS:
+            if column in DATE_FIELDS:
+                fmt = "yyyy-mm-dd"
+            elif column in TIME_FIELDS:
                 fmt = "yyyy-mm-dd hh:mm"
             elif column.endswith("_usd"):
                 fmt = "#,##0.00"
