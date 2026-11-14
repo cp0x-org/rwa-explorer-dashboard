@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIR = PROJECT_ROOT / "config"
 DEFAULT_DATA_DIR = PROJECT_ROOT / "data"
-DEFAULT_FRONTEND_DIR = PROJECT_ROOT.parent / "pi-rwa-interface"
+DEFAULT_FRONTEND_DIR = PROJECT_ROOT.parent / "rwa-interface"
 
 ASSET_TYPES = {"stock", "etf"}
 

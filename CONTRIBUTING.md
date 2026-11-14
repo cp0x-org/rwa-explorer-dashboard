@@ -1,7 +1,7 @@
 # Contributing
 
 Thank you for your interest in RWA Explorer. This file covers both projects in the repository:
-the data pipeline (`rwa-data-pipeline/`, Python) and the site (`pi-rwa-interface/`, TypeScript/React).
+the data pipeline (`rwa-data-pipeline/`, Python) and the site (`rwa-interface/`, TypeScript/React).
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ the data pipeline (`rwa-data-pipeline/`, Python) and the site (`pi-rwa-interface
 
 ```bash
 cd rwa-data-pipeline && uv sync && cp .env.example .env     # keys into .env
-cd ../pi-rwa-interface && pnpm install
+cd ../rwa-interface && pnpm install
 ```
 
 ## Workflow
@@ -27,7 +27,7 @@ cd ../pi-rwa-interface && pnpm install
 
 Commit messages: one line in the imperative, e.g. `Add ProtocolsCell to the tokenized assets table`.
 
-## Site (`pi-rwa-interface/`)
+## Site (`rwa-interface/`)
 
 ```bash
 pnpm lint          # eslint
@@ -76,7 +76,7 @@ Conventions:
 ## Documentation
 
 - `README.md` (root) — overview and quick start
-- `rwa-data-pipeline/README.md`, `pi-rwa-interface/README.md` — each project in detail
+- `rwa-data-pipeline/README.md`, `rwa-interface/README.md` — each project in detail
 - `docs/workflow.md` — the full flow from collection to deploy
 - `docs/i18n-ssr-seo-plan.md` — i18n, prerender, SEO and accessibility design notes and audit
 

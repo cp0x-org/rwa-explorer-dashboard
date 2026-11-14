@@ -21,6 +21,7 @@ import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 import VersionsTable from './components/VersionsTable';
+import RightsCompareTable from './components/RightsCompareTable';
 import { stickyColumn } from './components/tableSx';
 
 function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string }) {
@@ -72,6 +73,7 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
         {t('asset.tokenizedAssets')}
       </Typography>
       <VersionsTable index={index} tokens={tokens} />
+      <RightsCompareTable index={index} tokens={tokens} />
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
         <Typography variant="h3" component="h2">

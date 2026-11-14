@@ -1,6 +1,6 @@
 # i18n (EN / 简体中文), accessibility, technical SEO and prerendering
 
-Plan and record of the work on `pi-rwa-interface`. Written before the implementation, updated with what was done.
+Plan and record of the work on `rwa-interface`. Written before the implementation, updated with what was done.
 
 ## 1. Audit (confirmed from the repository and production)
 
