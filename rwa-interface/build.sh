@@ -15,6 +15,7 @@ echo "Building version $VERSION..."
 docker buildx build \
   --platform $PLATFORMS \
   -t cp0x/pi-rwa-interface:$VERSION \
+  -t cp0x/pi-rwa-interface:latest \
   --push \
   .
 

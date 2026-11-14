@@ -239,6 +239,8 @@ def build_tables(export: dict) -> list[Table]:
         users = tokens_by_opp.get(o["key"], [])
         row = _opportunity_columns(o, opp_by_key)
         row["linked_tokens_count"] = len(users)
+        if row["eligibility"] == "eligible" and not users:
+            row["eligibility"] = "unconfirmed"
         row["linked_tokens"] = _join(t["symbol"] for t in users)
         row["linked_tickers"] = _join(sorted({t["ticker"] for t in users}))
         row["linked_issuers"] = _join(sorted({t["issuer_name"] for t in users if t["issuer_name"]}))
@@ -302,7 +304,7 @@ def build_tables(export: dict) -> list[Table]:
         table("underlyings", underlying_rows, "One row per underlying stock/ETF of the basket"),
         table("tokens", token_rows, "One row per tokenized asset (CMC token); kind/excluded_reason mark derivatives and other share classes"),
         table("issuers", issuer_rows, "Issuer rating over the basket"),
-        table("opportunities", opportunity_rows, "One row per DeFi position (Portals) linked to at least one token"),
+        table("opportunities", opportunity_rows, "One row per DeFi position (Portals); unconfirmed means otherwise eligible but no confirmed basket token link (symbol match only)"),
         table("relations", relation_rows, "Token x position links: direct, indirect (via LP/vault) and unconfirmed symbol matches"),
         table("deployments", deployment_rows, "Token contracts per network and their Portals status"),
         table("breakdowns", breakdown_rows, "Raw/eligible position counts of tokens and issuers by network, category, platform, underlying"),

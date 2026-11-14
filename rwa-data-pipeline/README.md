@@ -229,6 +229,10 @@ figures the site computes on the fly (average APY, tokenized assets "in DeFi", p
 | `rights_facts`  | fact citation (one row for `unknown`)     | `profile_id`, `issuer_id`, `product`, `fact`, `group`, `value`, `who`, `countries`, `zones`, `us_persons`, `note_en`, `quote`, `url`, `title`, `doc_date`, `retrieved_at`, `checked`, `reviewed_at`, `stale` |
 | `rights_tokens` | every exported token                     | `token_id`, `symbol`, `ticker`, `issuer_name`, `rights_profile_id`, `reviewed_at`, `stale`; empty profile means unreviewed |
 
+In `opportunities`, an otherwise `eligible` position with `linked_tokens_count` = 0 has `eligibility` = `unconfirmed`:
+only a symbol match exists, with no confirmed basket token link. Other eligibility values are copied unchanged.
+This table-only status does not change the site's JSON, counts or ratings.
+
 In `rights_facts`, `countries`, `zones` and `checked` are joined with `; `; `checked` is populated only for `unknown`.
 In `rights_profiles`, legal issuer quotes are joined with ` | ` and their URLs with `; `, deduplicated in source order.
 Exports without rights fields yield empty `rights_profiles` and `rights_facts` tables and `rights_tokens` rows without profiles.
