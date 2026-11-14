@@ -67,9 +67,11 @@ class Api:
                 attempt += 1
                 continue
 
+            non_json = False
             try:
                 body = resp.json()
             except ValueError:
+                non_json = True
                 body = {"_non_json_body": resp.text[:2000]}
             self._save_raw(path, params, resp.status_code, body)
             if self.on_request:
@@ -79,6 +81,8 @@ class Api:
                 raise AuthError(self.provider, resp.status_code, _error_message(body))
             if resp.status_code >= 400:
                 raise ApiError(self.provider, resp.status_code, _error_message(body))
+            if 200 <= resp.status_code < 300 and non_json:
+                raise ApiError(self.provider, resp.status_code, "non-JSON body")
             return body
 
     def _backoff(self, attempt: int, retry_after: str | None) -> None:

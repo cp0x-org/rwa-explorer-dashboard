@@ -62,11 +62,12 @@ interface DetailHeaderProps {
   logo?: string | null;
   subtitle?: ReactNode;
   chips?: ReactNode;
+  actions?: ReactNode;
   stats: Stat[];
 }
 
 // Same structure as the template's vault details header: breadcrumb, large title (the page's h1), stat cards.
-export default function DetailHeader({ crumbs, title, logo, subtitle, chips, stats }: DetailHeaderProps) {
+export default function DetailHeader({ crumbs, title, logo, subtitle, chips, actions, stats }: DetailHeaderProps) {
   const theme = useTheme();
   const t = useT();
   return (
@@ -128,6 +129,7 @@ export default function DetailHeader({ crumbs, title, logo, subtitle, chips, sta
         </Box>
         {chips && <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>{chips}</Box>}
       </Box>
+      {actions && <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 1.5, marginBottom: 2 }}>{actions}</Box>}
       <StatGrid stats={stats} />
     </Box>
   );
