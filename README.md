@@ -6,16 +6,16 @@ Read-only: no wallet, no transactions. Live at [rwa.cp0x.com](https://rwa.cp0x.c
 
 This repository holds both halves of the product:
 
-| Folder                                     | What it is                                                                                        | Stack                                |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------|
-| [`rwa-data-pipeline/`](rwa-data-pipeline/) | Collects tokenized assets and their DeFi positions, computes ratings, publishes one JSON file      | Python 3.12, uv, httpx, typer        |
-| [`pi-rwa-interface/`](pi-rwa-interface/)   | The site: reads that JSON, prerenders every page in both languages, served as static files         | React 19, Vite, MUI 7, react-intl    |
-| [`docs/`](docs/)                           | Cross-project documentation: the end-to-end workflow and design notes                             |                                      |
+| Folder                                     | What it is                                                                                    | Stack                             |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|
+| [`rwa-data-pipeline/`](rwa-data-pipeline/) | Collects tokenized assets and their DeFi positions, computes ratings, publishes one JSON file | Python 3.12, uv, httpx, typer     |
+| [`rwa-interface/`](rwa-interface/)         | The site: reads that JSON, prerenders every page in both languages, served as static files    | React 19, Vite, MUI 7, react-intl |
+| [`docs/`](docs/)                           | Cross-project documentation: the end-to-end workflow and design notes                         |                                   |
 
 ## How it works
 
 ```
-rwa-data-pipeline/                                        pi-rwa-interface/
+rwa-data-pipeline/                                    rwa-interface/
 config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.json
                                                           │
                        logos (CMC, websites) ──► data/logos/**
@@ -42,11 +42,11 @@ picks the version from `package.json`), API keys for CoinMarketCap and Portals.
 cd rwa-data-pipeline
 uv sync
 cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env
-uv run rwa-pipeline sync        # fetch underlyings without a snapshot, then build -> ../pi-rwa-interface/public/data/rwa.json
+uv run rwa-pipeline sync        # fetch underlyings without a snapshot, then build -> ../rwa-interface/public/data/rwa.json
 uv run pytest
 
 # 2. site
-cd ../pi-rwa-interface
+cd ../rwa-interface
 pnpm install
 pnpm start                      # dev server, reads public/data/rwa.json
 pnpm build                      # tsc + vite build + prerender into dist/
@@ -81,14 +81,14 @@ What each command does, how the numbers are computed and the known limitations: 
 | `/summary`       | charts: issuer shares, yield, breakdown per underlying                  |
 
 Every page also exists under `/zh/...`. Prerendering, i18n, SEO and accessibility rules:
-[pi-rwa-interface/README.md](pi-rwa-interface/README.md) and [docs/i18n-ssr-seo-plan.md](docs/i18n-ssr-seo-plan.md).
+[rwa-interface/README.md](rwa-interface/README.md) and [docs/i18n-ssr-seo-plan.md](docs/i18n-ssr-seo-plan.md).
 
 ## Deployment
 
 The site is a Docker image with `dist/` served as plain static files (clean URLs, real 404s):
 
 ```bash
-cd pi-rwa-interface
+cd rwa-interface
 ./build.sh <version>            # multi-arch image cp0x/pi-rwa-interface:<version>, pushed to the registry
 docker compose up -d            # or run it locally on http://localhost:3301
 ```

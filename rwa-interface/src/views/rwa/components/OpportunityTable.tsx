@@ -71,7 +71,9 @@ export default function OpportunityTable({
     return [...rows].sort((a, b) => compareNullable(value(a), value(b), sortOrder) || a.opportunity.key.localeCompare(b.opportunity.key));
   }, [rows, sortField, sortOrder]);
 
-  const visible = sorted.slice((page - 1) * rowsPerPage, page * rowsPerPage);
+  const pageCount = Math.max(1, Math.ceil(rows.length / rowsPerPage));
+  const currentPage = Math.min(page, pageCount); // filters may shrink the list
+  const visible = sorted.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage);
   const handleSort = (fl: Field) => {
     onSort(fl);
     setPage(1);
@@ -198,7 +200,7 @@ export default function OpportunityTable({
           </TableBody>
         </Table>
       </DataTableContainer>
-      <TablePager count={rows.length} page={page} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
+      <TablePager count={rows.length} page={currentPage} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
       <OpportunityDialog index={index} row={selected} onClose={() => setSelected(null)} />
     </Box>
   );

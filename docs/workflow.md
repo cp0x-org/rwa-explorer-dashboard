@@ -5,7 +5,7 @@ All paths below are relative to the repository root.
 Two projects, one data file. Nothing has to be copied by hand: the pipeline writes straight into the frontend folder.
 
 ```
-rwa-data-pipeline/                                   pi-rwa-interface/
+rwa-data-pipeline/                                rwa-interface/
 config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.json
                                                      │
                        logos (CMC, websites) ──► data/logos/**
@@ -22,7 +22,7 @@ Only the site build (`pnpm build`) is a separate step, because the prerender bak
 
 ```bash
 cd rwa-data-pipeline && uv sync && cp .env.example .env   # put CMC_API_KEY and PORTALS_API_KEY into .env
-cd ../pi-rwa-interface && pnpm install
+cd ../rwa-interface && pnpm install
 ```
 
 ## 2. Collect everything from scratch or refresh everything
@@ -32,7 +32,7 @@ cd rwa-data-pipeline
 uv run rwa-pipeline sync --refresh             # re-fetches ALL enabled underlyings in config/assets.json:
                                                #   CMC: tokenized assets, contracts, issuers, RWA metadata
                                                #   Portals: contract lookup + text search per underlying (the slow part)
-                                               #   then logos, then build -> ../pi-rwa-interface/public/data/rwa.json
+                                               #   then logos, then build -> ../rwa-interface/public/data/rwa.json
 uv run rwa-pipeline sync --refresh -v          # same, plus a line per HTTP request
 uv run rwa-pipeline sync --refresh --format all   # same, plus data/exports/rwa.xlsx and csv/
 ```
@@ -55,7 +55,7 @@ uv run rwa-pipeline export                     # tables for manual analysis -> d
 ## 4. Publish the site
 
 ```bash
-cd pi-rwa-interface
+cd rwa-interface
 pnpm start                                     # dev server: reads public/data/rwa.json on every reload
 pnpm build                                     # tsc + vite + prerender of every page into dist/ (data baked in)
 ./build.sh <version>                           # Docker image with dist/ (see Dockerfile), after pnpm build is green
