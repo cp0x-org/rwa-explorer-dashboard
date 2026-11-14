@@ -1,6 +1,6 @@
 """Portals: supported networks, exact token lookup, paginated text search."""
 
-from rwa_pipeline.api import Api
+from rwa_pipeline.api import Api, ApiError
 
 PORTALS_BASE_URL = "https://api.portals.fi"
 LOOKUP_BATCH = 25
@@ -13,7 +13,9 @@ def make_client(api_key: str, settings: dict, raw_dir=None) -> Api:
 
 def fetch_networks(api: Api) -> list[str]:
     body = api.get("/v1/networks", {})
-    return [n for n in body if isinstance(n, str)] if isinstance(body, list) else []
+    if not isinstance(body, list) or not body or not all(isinstance(n, str) and n.strip() for n in body):
+        raise ApiError("portals", None, "invalid networks response: expected a nonempty list of nonempty strings")
+    return body
 
 
 def fetch_platform_names(api: Api) -> dict[str, str]:
@@ -46,7 +48,12 @@ def lookup(api: Api, keys: list[str], limit: int) -> dict[str, dict]:
     found: dict[str, dict] = {}
     unique = sorted(set(keys))
     for start in range(0, len(unique), LOOKUP_BATCH):
-        items, _ = _paginate(api, {"ids": ",".join(unique[start : start + LOOKUP_BATCH])}, limit)
+        items, meta = _paginate(api, {"ids": ",".join(unique[start : start + LOOKUP_BATCH])}, limit)
+        received, total = meta["received"], meta["total_items"]
+        if total is not None and received < total:
+            raise ApiError("portals", None, f"incomplete lookup (count_mismatch): received {received}, reported {total}")
+        if not meta["complete"]:
+            raise ApiError("portals", None, f"incomplete lookup (MAX_PAGES reached): received {received}, reported {total}")
         found.update(items)
     return found
 

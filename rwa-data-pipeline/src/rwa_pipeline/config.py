@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIR = PROJECT_ROOT / "config"
 DEFAULT_DATA_DIR = PROJECT_ROOT / "data"
-DEFAULT_FRONTEND_DIR = PROJECT_ROOT.parent / "pi-rwa-interface"
+DEFAULT_FRONTEND_DIR = PROJECT_ROOT.parent / "rwa-interface"
 
 ASSET_TYPES = {"stock", "etf"}
 
@@ -29,6 +29,7 @@ class Asset:
     asset_type: str
     isin: str | None
     enabled: bool
+    symbol_aliases: tuple[str, ...] = ()
 
     @property
     def id(self) -> str:
@@ -74,7 +75,11 @@ def load_assets(path: Path = CONFIG_DIR / "assets.json") -> list[Asset]:
             raise ConfigError(f"{ticker}: asset_type must be one of {sorted(ASSET_TYPES)}")
         if isin is not None and not isin_is_valid(isin):
             raise ConfigError(f"{ticker}: invalid ISIN {isin!r} (format or check digit)")
-        asset = Asset(ticker, item.get("name") or ticker, asset_type, isin, bool(item.get("enabled", True)))
+        aliases = item.get("symbol_aliases", [])
+        if not isinstance(aliases, list) or any(not isinstance(alias, str) or not alias.strip() for alias in aliases):
+            raise ConfigError(f"{ticker}: symbol_aliases must be a list of nonempty strings")
+        symbol_aliases = tuple(dict.fromkeys(alias.strip().upper() for alias in aliases))
+        asset = Asset(ticker, item.get("name") or ticker, asset_type, isin, bool(item.get("enabled", True)), symbol_aliases)
         if asset.id in seen_ids or ticker in seen_tickers:
             raise ConfigError(f"{ticker}: duplicate ticker or ISIN")
         seen_ids.add(asset.id)

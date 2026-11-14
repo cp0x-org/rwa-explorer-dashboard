@@ -291,7 +291,7 @@ def test_refresh_is_scoped_and_failure_keeps_last_snapshot(tmp_path, monkeypatch
     calls = []
     _patch_network(monkeypatch, calls, fail_search=True)
     code, report = collect.sync([NVDA, AAPL], SETTINGS, tmp_path, ["NVDA"], refresh=True)
-    assert code == 2 and "NVDA" in report["failed"]
+    assert code == 1 and "NVDA" in report["failed"]  # the only selected underlying failed: nothing was saved
     assert _digest(nvda_path) == nvda_before  # failed Portals search does not wipe positions
     assert _digest(aapl_path) == aapl_before
 
@@ -410,7 +410,7 @@ def test_tables_cover_every_token_relation_and_deployment(tmp_path):
     export = build_export([NVDA], SETTINGS, tmp_path)
     tables = {t.name: t for t in build_tables(export)}
 
-    assert set(tables) == {"summary", "underlyings", "tokens", "issuers", "opportunities", "relations", "deployments", "breakdowns"}
+    assert set(tables) == {"summary", "underlyings", "tokens", "issuers", "opportunities", "relations", "deployments", "breakdowns", "rights_profiles", "rights_facts", "rights_tokens"}
     assert len(tables["tokens"].rows) == len(export["tokens"])  # excluded tokens are kept, marked by kind
     assert len(tables["underlyings"].rows) == 1 and len(tables["opportunities"].rows) == len(export["opportunities"])
     assert len(tables["deployments"].rows) == sum(len(t["deployments"]) for t in export["tokens"])

@@ -3,6 +3,14 @@
 
 export type Decimal = string | null;
 
+export interface Referral {
+  url: string;
+  deal: string;
+  bonus: string | null;
+  page_url: string | null;
+  as_of: string;
+}
+
 export type Coverage = 'search' | 'partial' | 'not_indexed' | 'unsupported_by_portals' | 'no_contracts' | 'data_unavailable' | 'no_tokens';
 
 export type DeploymentStatus = 'indexed' | 'not_indexed' | 'unsupported_network' | 'unmapped_network' | 'not_checked' | 'data_unavailable';
@@ -59,7 +67,52 @@ export interface YieldProfile extends YieldSummary {
   anomaly_count: number;
 }
 
+export interface RightsEvidence {
+  quote: string;
+  url: string;
+  title: string;
+  doc_date: string;
+  retrieved_at: string;
+}
+
+export interface RightsFact {
+  value: string;
+  who?: string;
+  countries?: string[];
+  zones?: string[];
+  us_persons?: boolean;
+  note?: { en: string; zh: string };
+  evidence?: RightsEvidence[];
+  checked?: string[];
+}
+
+export interface RightsProfile {
+  id: string;
+  issuer_id: string;
+  product: string;
+  token_ids: number[];
+  scope_basis: 'per_token_documents' | 'programme_documents';
+  scope_evidence?: RightsEvidence[];
+  reviewed_at: string;
+  stale: boolean;
+  legal_issuer: {
+    name: string;
+    country?: string;
+    zone?: string;
+    note?: { en: string; zh: string };
+    evidence?: RightsEvidence[];
+  };
+  facts: Record<string, RightsFact>;
+  documents: { url: string; title: string; doc_date: string; type?: string }[];
+}
+
+export interface RightsSchema {
+  who: string[];
+  facts: { key: string; group: string; values: string[]; needs_who: string[] }[];
+}
+
 export interface Token {
+  rights_profile_id?: string | null;
   id: number;
   symbol: string | null;
   name: string | null;
@@ -86,6 +139,7 @@ export interface Token {
   by_category: Breakdown;
   by_platform: Breakdown;
   yield: YieldProfile;
+  links?: { kind: 'swap'; label: string | null; url: string; network: string }[];
 }
 
 export interface Underlying extends OpportunityCounts, YieldSummary {
@@ -115,6 +169,8 @@ export interface Underlying extends OpportunityCounts, YieldSummary {
 }
 
 export interface Issuer extends OpportunityCounts, YieldSummary {
+  rights_profile_ids?: string[];
+  rights_reviewed_tokens_count?: number;
   id: string;
   name: string | null;
   cmc_label: string | null;
@@ -144,6 +200,8 @@ export interface Issuer extends OpportunityCounts, YieldSummary {
   basket_market_cap_usd: Decimal;
   coverage: Coverage;
   oldest_fetched_at: string | null;
+  app?: { url: string; label: string | null } | null;
+  referral?: Referral | null;
 }
 
 export interface Opportunity {
@@ -171,9 +229,13 @@ export interface Opportunity {
   updated_at: string | null;
   flags: string[];
   eligibility: Eligibility;
+  link?: { url: string; kind: 'position' | 'home' } | null;
+  referral?: Referral | null;
 }
 
 export interface RwaExport {
+  rights_profiles?: RightsProfile[];
+  rights_schema?: RightsSchema;
   schema_version: number;
   generated_at: string;
   score_version: string;
@@ -195,6 +257,13 @@ export interface RwaExport {
       coverage: Coverage;
       oldest_fetched_at: string | null;
       newest_fetched_at: string | null;
+      rights_profiles_count?: number;
+      rights_reviewed_tokens_count?: number;
+      rights_review_valid_days?: number | null;
+      rights_excluded_profiles_count?: number;
+      rights_warnings_count?: number;
+      links_deals_fetched_at?: string | null;
+      links_deals_max_age_days?: number | null;
     };
   underlyings: Underlying[];
   tokens: Token[];
