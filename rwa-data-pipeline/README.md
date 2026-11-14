@@ -50,7 +50,10 @@ Exit codes: `0` success or nothing to add, `2` some underlyings failed (their pr
 - **add** (default) never touches existing snapshots. A repeated add with nothing new prints `nothing_to_add`, makes no
   requests and no new export. An underlying whose CMC roster is empty is saved as `no_tracked_tokens` and is not retried.
 - **refresh** replaces the snapshot of each selected underlying only after all its requests succeeded; a failed
-  Portals/CMC call keeps the last good snapshot. Discovering a new issuer or network of a known ticker = refresh.
+  Portals/CMC call keeps the last good snapshot. This includes 2xx responses with a non-JSON body, CMC responses
+  missing `status`/`data` or with a non-object `status`, truncated Portals contract lookups (`count_mismatch` or
+  `MAX_PAGES` reached with `more` still true), and empty or invalid network lists.
+  Discovering a new issuer or network of a known ticker = refresh.
 - **build** is where all rules live, so changing `config/settings.json` (thresholds, categories, chain mapping) only needs
   `build`, not new requests.
 
