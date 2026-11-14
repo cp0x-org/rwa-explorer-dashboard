@@ -167,7 +167,7 @@ def test_a_truncated_portals_lookup_keeps_the_previous_snapshot(tmp_path, monkey
     truncated = {"tokens": [{"key": "base:0x0000000000000000000000000000000000000001"}], "more": False, "totalItems": 5}
     monkeypatch.setattr(portals, "make_client", lambda key, settings, raw_dir=None: FakeApi([truncated] * 20))
     code, report = collect.sync([NVDA], SETTINGS, tmp_path, None, refresh=True)
-    assert code == 2, report
+    assert code == 1, report  # the only selected underlying failed: nothing was saved
     assert "NVDA" in report["failed"]
     assert path.read_bytes() == before
 

@@ -44,8 +44,9 @@ Options: `--data-dir` (default `data/`), `--frontend-dir` (default `../rwa-inter
 `all`; `sync` and `build` write tables only when it is given, `export` defaults to `xlsx`).
 `sync`, `build`, `logos`, `deals` and `export` also accept `--config-dir` for the directory containing `links.json`, `issuers.json` and `rights_profiles.json`; assets and settings
 are still read from their default paths.
-Exit codes: `0` success or nothing to add, `2` some underlyings failed (their previous snapshots are kept) or rights profiles were excluded, `1` fatal
-(auth/config error, CMC unavailable).
+Exit codes: `0` success or nothing to add, `2` a partial run (some underlyings saved, some failed; previous snapshots
+of failed underlyings are kept) or rights profiles were excluded, `1` a failed collection where nothing was saved
+(including fatal auth/CMC errors), or a config error.
 
 - **add** (default) never touches existing snapshots. A repeated add with nothing new prints `nothing_to_add`, makes no
   requests and no new export. An underlying whose CMC roster is empty is saved as `no_tracked_tokens` and is not retried.
@@ -53,6 +54,9 @@ Exit codes: `0` success or nothing to add, `2` some underlyings failed (their pr
   Portals/CMC call keeps the last good snapshot. This includes 2xx responses with a non-JSON body, CMC responses
   missing `status`/`data` or with a non-object `status`, truncated Portals contract lookups (`count_mismatch` or
   `MAX_PAGES` reached with `more` still true), and empty or invalid network lists.
+  A snapshot with CMC tokens is never replaced by one without tokens, including when the ticker disappears,
+  its RWA ID changes, its CMC match becomes ambiguous, or its token roster becomes empty. The underlying is marked
+  failed and the run continues. To remove an asset from the basket, set `enabled: false`.
   Discovering a new issuer or network of a known ticker = refresh.
 - **build** is where all rules live, so changing `config/settings.json` (thresholds, categories, chain mapping) only needs
   `build`, not new requests.
@@ -265,6 +269,10 @@ or `1` on a config error, before writing tables.
    Name matches without an address link (e.g. Morpho markets that list only the loan asset) are stored as
    *unconfirmed* and never counted. Tracked tokens themselves (root, other tokenized assets, wrappers tracked by CMC)
    are not positions.
+   A version found through a configured alias counts as covered by search only after a search term matching a
+   substring of its symbol (case-insensitively) was searched. Otherwise, `search` coverage becomes `partial`;
+   an underlying's search is complete only when all searches are complete and every included version's symbol
+   contains a searched term.
 4. **Category** — `platform_categories` override, otherwise the first matching Portals tag from `tag_categories`
    (`#lending` → lending supply, `#yield-aggregator` → vault, `#clp`/`#pool` → DEX LP, ...). `wrapper`/`unknown` are
    never eligible.

@@ -17,6 +17,11 @@ def snapshot_path(data_dir: Path, asset: Asset) -> Path:
     return data_dir / "snapshots" / f"{asset.storage_id}.json"
 
 
+def _token_count(snapshot: dict | None) -> int:
+    rwa = (((snapshot or {}).get("cmc") or {}).get("rwa") or {})
+    return sum(1 for token in rwa.get("tokens") or [] if token.get("crypto_id"))
+
+
 def select_assets(assets: list[Asset], symbols: list[str] | None) -> list[Asset]:
     enabled = [a for a in assets if a.enabled]
     if not symbols:
@@ -96,8 +101,10 @@ def sync(
         say(f"[1/5] CMC: tokenized assets (RWA quotes) for {len(todo)} tickers, one request")
         quotes = cmc.fetch_rwa_quotes(cmc_api, [a.ticker for a in todo])
         resolved = {}
+        previous_token_counts = {}
         for a in todo:
             previous = read_json(snapshot_path(data_dir, a))
+            previous_token_counts[a.id] = _token_count(previous)
             known_rwa_id = ((previous or {}).get("cmc") or {}).get("rwa", {}).get("rwa_id")
             resolved[a.id] = cmc.pick_rwa_asset(quotes.get(a.ticker, []), a, known_rwa_id)
         found = [a for a in todo if resolved[a.id][0]]
@@ -162,6 +169,11 @@ def sync(
             report["failed"][asset.ticker] = str(e)
             say(f"{prefix}: failed, previous snapshot kept: {e}")
             continue
+        if previous_token_counts[asset.id] and not _token_count(snapshot):
+            message = f"{snapshot['status']}: previous snapshot with {previous_token_counts[asset.id]} tokens kept"
+            report["failed"][asset.ticker] = message
+            say(f"{prefix}: failed, {message}")
+            continue
         write_json(snapshot_path(data_dir, asset), snapshot)
         report["completed"].append({"ticker": asset.ticker, "status": snapshot["status"]})
         per_asset = (time.monotonic() - asset_started) / n
@@ -171,7 +183,8 @@ def sync(
             + (f", ~{_fmt_seconds(eta)} left" if n < len(todo) else "")
         )
 
-    code = 1 if "fatal" in report and not report["completed"] else (2 if report["failed"] else 0)
+    failed = bool(report["failed"]) or "fatal" in report
+    code = (2 if report["completed"] else 1) if failed else 0
     say(
         f"done: {len(report['completed'])} saved, {len(report['failed'])} failed; "
         f"requests cmc={cmc_api.requests} portals={portals_api.requests}, cmc credits={cmc_api.credits}"

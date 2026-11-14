@@ -341,6 +341,11 @@ def token_coverage(deployments: list[dict], info_ok: bool) -> str:
     return "unsupported_by_portals"
 
 
+def _symbol_searched(symbol: str | None, searches: dict) -> bool:
+    """Portals searches substrings, so a searched term must occur in the token symbol."""
+    return any(term.casefold() in (symbol or "").casefold() for term in searches)
+
+
 def build(
     snapshots: list[dict], issuers_cache: dict, settings: dict, platform_names: dict,
     symbol_aliases: dict[str, tuple[str, ...]] | None = None,
@@ -352,6 +357,7 @@ def build(
     for snap in snapshots:
         cmc = snap.get("cmc") or {}
         info = cmc.get("info") or {}
+        searches = (snap.get("portals") or {}).get("searches") or {}
         for t in (cmc.get("rwa") or {}).get("tokens") or []:
             cid = t.get("crypto_id")
             if cid is None:
@@ -366,6 +372,9 @@ def build(
                 d["decimals"] = exact.get("decimals") if exact else None
                 d["portals_platform"] = exact.get("platform") if exact else None
                 d.pop("address_raw", None)
+            coverage = token_coverage(deployments, token_info is not None)
+            if coverage == "search" and not _symbol_searched(t.get("symbol"), searches):
+                coverage = "partial"
             tokens.append(
                 {
                     "id": cid,
@@ -383,7 +392,7 @@ def build(
                     "logo": (token_info or {}).get("logo"),
                     "cmc_slug": (token_info or {}).get("slug"),
                     "deployments": deployments,
-                    "coverage": token_coverage(deployments, token_info is not None),
+                    "coverage": coverage,
                     "fetched_at": snap.get("fetched_at"),
                 }
             )
@@ -441,6 +450,7 @@ def build(
                     rel[r["key"]] = r
         rwa = (snap.get("cmc") or {}).get("rwa") or {}
         coverages = {t["coverage"] for t in included}
+        searches = (snap.get("portals") or {}).get("searches") or {}
         underlyings.append(
             {
                 "id": snap["underlying_id"],
@@ -462,8 +472,9 @@ def build(
                 "tokens_in_defi_count": sum(1 for t in included if t["counts"]["eligible_opportunities_count"] > 0),
                 "eligible_platforms": eligible_platforms(rel, opps, platform_names),
                 "coverage": next((c for c in COVERAGE_PRIORITY if c in coverages), "no_tokens"),
-                "search_terms": sorted(((snap.get("portals") or {}).get("searches") or {}).keys()),
-                "search_complete": all(m.get("complete") for m in ((snap.get("portals") or {}).get("searches") or {}).values()),
+                "search_terms": sorted(searches),
+                "search_complete": all(m.get("complete") for m in searches.values())
+                and all(_symbol_searched(t["symbol"], searches) for t in included),
                 **opportunity_counts(rel, opps),
                 **yield_summary(rel, opps),
             }

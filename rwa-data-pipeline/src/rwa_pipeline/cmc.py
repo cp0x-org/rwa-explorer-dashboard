@@ -17,13 +17,15 @@ def make_client(api_key: str, settings: dict, raw_dir=None) -> Api:
 
 
 def _checked(api: Api, body: dict) -> dict:
-    if not isinstance(body, dict) or not isinstance(body.get("status"), dict) or "data" not in body:
-        raise ApiError("cmc", None, "invalid response: expected an object with status object and data key")
+    if not isinstance(body, dict) or not isinstance(body.get("status"), dict):
+        raise ApiError("cmc", None, "invalid response: expected an object with status object")
     # CMC reports errors in status.error_code (sometimes as a string) even with HTTP 200.
     status = body["status"]
     api.credits += int(status.get("credit_count") or 0)
     if str(status.get("error_code", "0")) != "0":
         raise ApiError("cmc", status.get("error_code"), str(status.get("error_message")))
+    if "data" not in body:
+        raise ApiError("cmc", None, "invalid response: expected a data key")
     return body
 
 

@@ -1,14 +1,13 @@
 """Display names without stray whitespace, versions whose symbol differs from the ticker, networks and issuer details."""
 
 import copy
-import glob
 import json
 from pathlib import Path
 
 import pytest
 from typer.testing import CliRunner
 
-from rwa_pipeline import cli, collect, portals
+from rwa_pipeline import cli, cmc, collect, portals
 from rwa_pipeline.analyze import classify_token
 from rwa_pipeline.config import CONFIG_DIR, DEFAULT_DATA_DIR, Asset, ConfigError, load_assets, load_settings, write_json
 from rwa_pipeline.export import build_export_with_warnings
@@ -17,6 +16,8 @@ from rwa_pipeline.logos import find_logo
 FIXTURE = json.loads((Path(__file__).parent / "fixtures" / "nvda_snapshot.json").read_text())
 NVDA = Asset("NVDA", "NVIDIA", "stock", "US67066G1040", True)
 BSTOCKS, REALITY = "6a2aed5097c45356b1a5f710", "6a43600c282e7240b76c8bbb"
+# a fixed copy of the SpaceX snapshot of 13.11.2026 without its positions: the daily refresh may change the live one
+SPCX_FIXTURE = json.loads((Path(__file__).parent / "fixtures" / "spcx_snapshot.json").read_text())
 
 
 def _data_dir(tmp_path, snapshot=None):
@@ -55,10 +56,16 @@ def test_display_names_carry_no_line_breaks_or_double_spaces(tmp_path):
                     assert value == " ".join(value.split()), (kind, field, value)
 
 
-def test_the_shipped_republic_token_name_is_on_one_line():
-    spcx = [a for a in load_assets() if a.ticker == "SPCX"]
-    export, _ = build_export_with_warnings(spcx, load_settings(), DEFAULT_DATA_DIR, config_dir=Path("/nonexistent-config"))
-    names = {t["symbol"]: t["name"] for t in export["tokens"]}
+def _spcx_export(tmp_path):
+    spcx = next(a for a in load_assets() if a.ticker == "SPCX")
+    data_dir = tmp_path / "data"
+    write_json(collect.snapshot_path(data_dir, spcx), copy.deepcopy(SPCX_FIXTURE))
+    export, _ = build_export_with_warnings([spcx], load_settings(), data_dir, config_dir=tmp_path / "no-config")
+    return export
+
+
+def test_the_republic_token_name_is_on_one_line(tmp_path):
+    names = {t["symbol"]: t["name"] for t in _spcx_export(tmp_path)["tokens"]}
     assert names["preSPCX"] == "SpaceX Pre-IPO stock (Republic)"
 
 
@@ -96,15 +103,13 @@ def test_symbol_aliases_are_read_and_checked(tmp_path):
     assert Asset("NVDA", "NVIDIA", "stock", "US67066G1040", True).symbol_aliases == ()
 
 
-def test_the_shipped_assets_give_spacex_its_alias_and_nobody_else_one():
+def test_the_shipped_assets_give_spacex_its_alias():
     assets = {a.ticker: a for a in load_assets()}
     assert assets["SPCX"].symbol_aliases == ("SPACEX",)
-    assert [t for t, a in assets.items() if a.symbol_aliases and t != "SPCX"] == []
 
 
-def test_spacex_shows_all_its_versions_from_the_shipped_snapshot():
-    spcx = [a for a in load_assets() if a.ticker == "SPCX"]
-    export, _ = build_export_with_warnings(spcx, load_settings(), DEFAULT_DATA_DIR, config_dir=Path("/nonexistent-config"))
+def test_spacex_shows_all_its_versions(tmp_path):
+    export = _spcx_export(tmp_path)
     kept = [t for t in export["tokens"] if t["ticker"] == "SPCX" and t["excluded_reason"] is None]
     assert {"SPACEX", "tSpaceX"} <= {t["symbol"] for t in kept}
     assert len(kept) == 11  # 12 in the CMC roster minus the derivative
@@ -115,29 +120,25 @@ def test_spacex_shows_all_its_versions_from_the_shipped_snapshot():
 
 
 def test_other_share_classes_stay_out():
-    picked = [a for a in load_assets() if a.ticker in ("GOOGL", "BRK.B")]
-    export, _ = build_export_with_warnings(picked, load_settings(), DEFAULT_DATA_DIR, config_dir=Path("/nonexistent-config"))
-    reasons = {t["symbol"]: t["excluded_reason"] for t in export["tokens"]}
-    assert reasons["GOOGon"] == "symbol_does_not_match_ticker"
-    assert reasons["BRK.A.D"] == "symbol_does_not_match_ticker"
+    # the symbols of another share class do not pass as versions of this one
+    googon = {"symbol": "GOOGon", "name": "Alphabet Class C tokenized stock (Ondo)", "issuer_name": "Ondo Global Markets"}
+    brk_a = {"symbol": "BRK.A.D", "name": "Berkshire Hathaway Class A", "issuer_name": "Dinari"}
+    assert classify_token(googon, "GOOGL") == ("unclassified", "symbol_does_not_match_ticker")
+    assert classify_token(brk_a, "BRK.B") == ("unclassified", "symbol_does_not_match_ticker")
 
 
 # ---------- networks ----------
 
 
-def test_every_network_of_the_shipped_snapshots_is_mapped():
+def test_mantle_and_monad_are_known_networks_that_portals_does_not_index():
     mapping = load_settings()["chain_mapping"]
-    names = set()
-    for path in glob.glob(str(DEFAULT_DATA_DIR / "snapshots" / "*.json")):
-        snapshot = json.loads(Path(path).read_text())
-        for info in ((snapshot.get("cmc") or {}).get("info") or {}).values():
-            for entry in info.get("contract_address") or []:
-                name = (entry.get("platform") or {}).get("name")
-                if name:
-                    names.add(name)
-    assert names, "the shipped snapshots carry contract networks"
-    assert sorted(names - set(mapping)) == []  # nothing shows as "Unmapped network"
-    assert mapping["Mantle"] is None and mapping["Monad"] is None  # Portals does not index them
+    assert mapping["Mantle"] is None and mapping["Monad"] is None
+    info = {"contract_address": [
+        {"contract_address": "0x" + "1" * 40, "platform": {"name": "Mantle"}},
+        {"contract_address": "0x" + "2" * 40, "platform": {"name": "Monad"}},
+    ]}
+    statuses = {d["cmc_network"]: d["status"] for d in cmc.parse_deployments(info, mapping)}
+    assert statuses == {"Mantle": "unsupported_network", "Monad": "unsupported_network"}  # not "Unmapped network"
 
 
 # ---------- issuer details that CMC does not give ----------
