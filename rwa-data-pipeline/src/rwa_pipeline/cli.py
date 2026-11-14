@@ -11,7 +11,7 @@ from rwa_pipeline.collect import sync as run_sync
 from rwa_pipeline.config import CONFIG_DIR, DEFAULT_DATA_DIR, DEFAULT_FRONTEND_DIR, ConfigError, load_assets, load_settings, read_json, write_json
 from rwa_pipeline.curated import load_links, referenced_deals
 from rwa_pipeline.deals import refresh_deals
-from rwa_pipeline.export import build_export_with_warnings, write_export
+from rwa_pipeline.export import build_export_with_warnings, load_issuer_overrides, write_export
 from rwa_pipeline.logos import download_logos
 from rwa_pipeline.rights import load_rights_profiles
 from rwa_pipeline.tables import write_tables
@@ -27,7 +27,7 @@ class TablesFormat(str, Enum):
 
 DataDir = Annotated[Path, typer.Option(help="Where snapshots, raw responses and run reports live")]
 FrontendDir = Annotated[Path, typer.Option(help="rwa-interface root; JSON goes to public/data/rwa.json")]
-ConfigDir = Annotated[Path, typer.Option(help="Directory containing links.json and rights_profiles.json; assets and settings use their default paths")]
+ConfigDir = Annotated[Path, typer.Option(help="Directory containing links.json, issuers.json and rights_profiles.json; assets and settings use their default paths")]
 Verbose = Annotated[bool, typer.Option("--verbose", "-v", help="Log every HTTP request (provider, path, params, status, time)")]
 Format = Annotated[
     TablesFormat | None,
@@ -50,6 +50,7 @@ def sync(
         assets, settings = load_assets(), load_settings()
         links = load_links(config_dir / "links.json")
         load_rights_profiles(config_dir / "rights_profiles.json")
+        load_issuer_overrides(config_dir / "issuers.json")
         code, report = run_sync(assets, settings, data_dir, symbols.split(",") if symbols else None, refresh, log=typer.echo, verbose=verbose)
     except ConfigError as e:
         typer.echo(f"config error: {e}", err=True)
@@ -100,6 +101,7 @@ def logos(
         assets, settings = load_assets(), load_settings()
         load_links(config_dir / "links.json")
         load_rights_profiles(config_dir / "rights_profiles.json")
+        load_issuer_overrides(config_dir / "issuers.json")
     except ConfigError as e:
         typer.echo(f"config error: {e}", err=True)
         raise typer.Exit(1)
@@ -142,6 +144,7 @@ def deals(
         assets, settings = load_assets(), load_settings()
         links = load_links(config_dir / "links.json")
         load_rights_profiles(config_dir / "rights_profiles.json")
+        load_issuer_overrides(config_dir / "issuers.json")
         _deals(data_dir, referenced_deals(links))
         _build(assets, settings, data_dir, frontend_dir, config_dir=config_dir)
     except ConfigError as e:

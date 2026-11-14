@@ -242,7 +242,7 @@ def collect_asset(asset, rwa, error, info, invalid_ids, networks, portals_api, s
         if d["key"] and d["network"] in networks
     ]
     limit = settings["portals_page_limit"]
-    included = [t for t in tokens if classify_token(t, asset.ticker)[0] not in EXCLUDED_KINDS]
+    included = [t for t in tokens if classify_token(t, asset.ticker, asset.symbol_aliases)[0] not in EXCLUDED_KINDS]
     say(
         f"{prefix}: {len(tokens)} tokens in CMC ({len(included)} tokenized: {', '.join(t['symbol'] for t in included if t.get('symbol'))}), "
         f"{len(set(keys))} contracts on Portals networks"

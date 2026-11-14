@@ -51,10 +51,15 @@ def _norm(s: str) -> str:
     return re.sub(r"[^A-Z0-9]", "", s.upper())
 
 
+def normalize_name(value: str | None) -> str | None:
+    """Collapse whitespace in display names without changing source records."""
+    return " ".join(value.split()) if value is not None else None
+
+
 # ---------- tokens ----------
 
 
-def classify_token(token: dict, ticker: str) -> tuple[str, str | None]:
+def classify_token(token: dict, ticker: str, aliases: tuple[str, ...] = ()) -> tuple[str, str | None]:
     """Returns (kind, excluded_reason). Derivatives and tokens of another share class stay out of rankings."""
     symbol = token.get("symbol")
     name = (token.get("name") or "").lower()
@@ -63,7 +68,7 @@ def classify_token(token: dict, ticker: str) -> tuple[str, str | None]:
         return "unclassified", "missing_symbol"
     if "(derivatives)" in name or "(derivatives)" in issuer:
         return "derivative", "derivative"
-    if _norm(ticker) not in _norm(symbol):
+    if not any(_norm(candidate) in _norm(symbol) for candidate in (ticker, *aliases)):
         return "unclassified", "symbol_does_not_match_ticker"
     if name.startswith("wrapped"):
         return "wrapper", None
@@ -131,7 +136,7 @@ def normalize_opportunity(record: dict, settings: dict, platform_names: dict) ->
         "platform": platform,
         "platform_name": platform_names.get(platform, platform),
         "symbol": record.get("symbol"),
-        "name": record.get("name"),
+        "name": normalize_name(record.get("name")),
         "address": address,
         # 32-byte V4/Infinity pool ids are not ERC-20 contracts.
         "position_kind": "pool_id" if len(address) == 66 else "contract",
@@ -336,7 +341,10 @@ def token_coverage(deployments: list[dict], info_ok: bool) -> str:
     return "unsupported_by_portals"
 
 
-def build(snapshots: list[dict], issuers_cache: dict, settings: dict, platform_names: dict) -> dict:
+def build(
+    snapshots: list[dict], issuers_cache: dict, settings: dict, platform_names: dict,
+    symbol_aliases: dict[str, tuple[str, ...]] | None = None,
+) -> dict:
     snapshots = sorted(snapshots, key=lambda s: s.get("fetched_at") or "")
 
     # 1. tokens and the basket-wide set of tracked deployment keys
@@ -349,7 +357,7 @@ def build(snapshots: list[dict], issuers_cache: dict, settings: dict, platform_n
             if cid is None:
                 continue
             token_info = info.get(str(cid))
-            kind, excluded_reason = classify_token(t, snap["ticker"])
+            kind, excluded_reason = classify_token(t, snap["ticker"], (symbol_aliases or {}).get(snap["ticker"], ()))
             deployments = parse_deployments(token_info, settings["chain_mapping"])
             for d in deployments:
                 d["status"] = deployment_status(d, snap.get("portals"))
@@ -362,13 +370,13 @@ def build(snapshots: list[dict], issuers_cache: dict, settings: dict, platform_n
                 {
                     "id": cid,
                     "symbol": t.get("symbol"),
-                    "name": t.get("name"),
+                    "name": normalize_name(t.get("name")),
                     "kind": kind,
                     "excluded_reason": excluded_reason,
                     "underlying_id": snap["underlying_id"],
                     "ticker": snap["ticker"],
                     "issuer_id": t.get("issuer_id"),
-                    "issuer_name": t.get("issuer_name"),
+                    "issuer_name": normalize_name(t.get("issuer_name")),
                     "price_usd": dstr(dec(t.get("price"))),
                     "market_cap_usd": dstr(dec(t.get("market_cap"))),
                     "volume_24h_usd": dstr(dec(t.get("volume_24h"))),
@@ -437,13 +445,13 @@ def build(snapshots: list[dict], issuers_cache: dict, settings: dict, platform_n
             {
                 "id": snap["underlying_id"],
                 "ticker": snap["ticker"],
-                "name": snap["name"],
+                "name": normalize_name(snap["name"]),
                 "isin": snap.get("isin"),
                 "asset_type": snap["asset_type"],
                 "status": snap["status"],
                 "fetched_at": snap.get("fetched_at"),
                 "cmc_rwa_id": rwa.get("rwa_id"),
-                "cmc_name": rwa.get("name"),
+                "cmc_name": normalize_name(rwa.get("name")),
                 "tokenized_market_cap_usd": dstr(dec(rwa.get("tokenized_market_cap"))),
                 "tokenized_volume_24h_usd": dstr(dec(rwa.get("tokenized_volume_24h"))),
                 "average_tokenized_price_usd": dstr(dec(rwa.get("average_tokenized_price"))),
@@ -542,7 +550,7 @@ def build_issuers(tokens: list[dict], opps: dict, issuers_cache: dict, underlyin
         out.append(
             {
                 "id": issuer_id,
-                "name": meta.get("name") or own[0]["issuer_name"],
+                "name": normalize_name(meta.get("name") or own[0]["issuer_name"]),
                 "cmc_label": own[0]["issuer_name"],
                 "website": meta.get("website"),
                 "logo": meta.get("logo"),

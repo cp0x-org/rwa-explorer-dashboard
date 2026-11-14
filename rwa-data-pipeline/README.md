@@ -42,7 +42,7 @@ uv run pytest                                     # tests
 
 Options: `--data-dir` (default `data/`), `--frontend-dir` (default `../rwa-interface`), `--format/-f` (`csv`, `xlsx`,
 `all`; `sync` and `build` write tables only when it is given, `export` defaults to `xlsx`).
-`sync`, `build`, `logos`, `deals` and `export` also accept `--config-dir` for the directory containing `links.json` and `rights_profiles.json`; assets and settings
+`sync`, `build`, `logos`, `deals` and `export` also accept `--config-dir` for the directory containing `links.json`, `issuers.json` and `rights_profiles.json`; assets and settings
 are still read from their default paths.
 Exit codes: `0` success or nothing to add, `2` some underlyings failed (their previous snapshots are kept) or rights profiles were excluded, `1` fatal
 (auth/config error, CMC unavailable).
@@ -68,6 +68,9 @@ Add an entry to `config/assets.json` and run `uv run rwa-pipeline sync`:
 The ISIN (format and check digit are validated) identifies the underlying; CMC is queried by ticker and the resolved
 `rwa_id` is checked on later refreshes. `enabled: false` removes the asset from the published basket but keeps its
 snapshot. Being in the config does not guarantee CMC tracks tokenized assets of it.
+Optional `symbol_aliases` is a list of nonempty strings for versions with a different symbol, such as
+`"symbol_aliases": ["SPACEX"]` for SPCX. Aliases are trimmed, uppercased and deduplicated in their original order;
+the default is an empty list. A symbol may contain the normalized ticker or any normalized alias.
 
 ## Data
 
@@ -97,6 +100,19 @@ CMC) put it at `data/logos/issuers/<issuer_id>.png` or `data/logos/underlyings/<
 The export (`public/data/rwa.json`) contains `summary`, `settings`, `underlyings`, `tokens`, `issuers`, `opportunities`.
 Money/APY/liquidity are decimal strings, `null` means "not reported" (never zero). It is written atomically as one
 file, so the site never mixes data of two builds.
+Display names (token `name` and `issuer_name`, position, issuer and underlying `name`) have whitespace runs,
+including line breaks and tabs, collapsed to single spaces and their edges trimmed. Saved snapshots stay unchanged.
+
+Optional `config/issuers.json` supplies issuer websites missing from CMC:
+
+```json
+{"schema_version": 1, "issuers": {"6a43600c282e7240b76c8bbb": {"website": "https://realityfinance.xyz"}}}
+```
+
+The top level must be an object with `schema_version: 1` and an `issuers` object keyed by issuer ID. Each entry must
+contain only `website`, a clean absolute HTTPS URL without credentials or unsafe characters. Invalid config stops
+the command with exit code `1`. A CMC website always takes precedence; a missing config leaves issuer data unchanged.
+This file is read from `--config-dir`, alongside `links.json`, and is separate from the CMC cache `data/issuers.json`.
 
 ## Outbound links and cp0x deals
 
@@ -232,11 +248,12 @@ or `1` on a config error, before writing tables.
 ## How the numbers are computed
 
 1. **Tokenized assets** — every token in CMC `quotes/latest` for the ticker. `(Derivatives)` entries, tokens without
-   symbol and tokens whose symbol does not contain the ticker (e.g. `GOOGon` listed under GOOGL) are kept but excluded
+   symbol and tokens whose normalized symbol contains neither the ticker nor a configured `symbol_aliases` entry
+   (e.g. `GOOGon` listed under GOOGL) are kept but excluded
    from ratings. Names starting with "Wrapped" are marked as wrappers.
 2. **Deployments** — all `contract_address[]` from CMC `cryptocurrency/info`, one per network+address. CMC network
    names map to Portals slugs via `chain_mapping` in settings: `null` = known but not in Portals
-   (`unsupported_network`), missing = `unmapped_network`. Portals exact lookup marks each supported deployment
+   (`unsupported_network`), including Solana, TON, Mantle and Monad; missing = `unmapped_network`. Portals exact lookup marks each supported deployment
    `indexed` or `not_indexed`.
 3. **Positions** — Portals `/v2/tokens?search=` over the ticker and the symbols of its tokenized assets (substring
    search, so redundant terms are dropped), all pages. A position is **confirmed** only if its `tokens[]` contains the
@@ -264,7 +281,7 @@ or `1` on a config error, before writing tables.
 
 - Coverage is **search-limited**: positions whose Portals name/symbol does not contain the ticker or the symbol of a
   tokenized asset are not found. A full-catalog discovery mode was intentionally left out to keep the pipeline simple.
-- Only networks indexed by Portals are covered (Solana, TON, X Layer, Ink, Hyperliquid core are not). Unsupported
+- Only networks indexed by Portals are covered (Solana, TON, Mantle, Monad, X Layer, Ink, Hyperliquid core are not). Unsupported
   means unknown usage, not zero.
 - Portals does not expose lending collateral parameters; collateral use is never counted as confirmed.
 - Issuer names are CMC labels, not verified legal entities.
