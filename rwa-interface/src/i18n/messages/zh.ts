@@ -509,7 +509,7 @@ const zh: Record<MessageId, string> = {
   'coverage.search.noPositions': '无头寸',
   'coverage.search.noPositions.hint': '当前覆盖范围内没有已确认的头寸：Portals 搜索未找到包含该代币地址的头寸',
   'coverage.partial': '部分获取',
-  'coverage.partial.hint': '上次运行中部分部署未被检查',
+  'coverage.partial.hint': '上次运行中部分部署未被检查，或部分代币符号未被搜索',
   'coverage.not_indexed': '未索引',
   'coverage.not_indexed.hint': '网络受支持，但 Portals 未索引该代币',
   'coverage.unsupported_by_portals': 'Portals 不支持',

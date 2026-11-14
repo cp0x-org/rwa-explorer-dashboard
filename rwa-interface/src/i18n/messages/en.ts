@@ -556,7 +556,7 @@ const en = {
   'coverage.search.noPositions.hint':
     'No confirmed positions in current coverage: Portals search found no position containing this token’s address',
   'coverage.partial': 'Partial fetch',
-  'coverage.partial.hint': 'Some deployments were not checked in the last run',
+  'coverage.partial.hint': 'Some deployments were not checked, or some symbols were not searched, in the last run',
   'coverage.not_indexed': 'Not indexed',
   'coverage.not_indexed.hint': 'Supported network, but Portals does not index this token',
   'coverage.unsupported_by_portals': 'Unsupported by Portals',
