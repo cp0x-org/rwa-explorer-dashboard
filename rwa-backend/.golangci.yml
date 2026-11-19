@@ -1,0 +1,17 @@
+# golangci-lint v2 format.
+version: "2"
+linters:
+  default: none
+  enable:
+    - govet
+    - staticcheck
+    - errcheck
+    - gosec
+    - revive
+  exclusions:
+    presets:
+      - std-error-handling
+      - common-false-positives
+formatters:
+  enable:
+    - gofmt
