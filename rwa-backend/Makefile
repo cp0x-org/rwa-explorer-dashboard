@@ -1,7 +1,7 @@
 VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
 GO ?= go
 
-.PHONY: build test test-integration lint dev-db dev-db-down migrate parity
+.PHONY: docker build test test-integration lint dev-db dev-db-down migrate parity
 
 build:
 	$(GO) build -ldflags "-X main.version=$(VERSION)" -o bin/rwa ./cmd/rwa
@@ -31,3 +31,7 @@ migrate:
 # Compares the Go compute with the 1.x export over the 1.x data (rwa-data-pipeline/data, or RWA_V1_DATA_DIR).
 parity:
 	$(GO) test -tags parity -count=1 -run TestParity ./internal/compute/ -v
+
+# Local single-arch image, not pushed (release images: ./build.sh <version>).
+docker:
+	docker build --build-arg VERSION=$(VERSION) -t cp0x/pi-rwa-backend:dev .
