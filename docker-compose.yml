@@ -1,0 +1,148 @@
+# Whole project from source, for local use: PostgreSQL -> migrate -> import of the 1.x data -> api + web + collector.
+#   cp .env.example .env     # put CMC_API_KEY and PORTALS_API_KEY into .env
+#   docker compose up --build
+#   open http://localhost:3000
+# DEVELOPMENT ONLY: throwaway database credentials (rwa/rwa/rwa), everything is published on 127.0.0.1 only.
+# This is not the production stack. For just a database next to `go run` use rwa-backend/docker-compose.dev.yml.
+name: rwa-explorer
+
+# Built from POSTGRES_* (defaults rwa/rwa/rwa are for local use only).
+x-database-url: &database-url postgres://${POSTGRES_USER:-rwa}:${POSTGRES_PASSWORD:-rwa}@postgres:5432/${POSTGRES_DB:-rwa}?sslmode=disable
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+# One image, several commands (the ENTRYPOINT is `rwa`).
+x-backend: &backend
+  build:
+    context: ./rwa-backend
+    args:
+      VERSION: dev
+  image: rwa-backend:dev
+  logging: *logging
+
+services:
+  postgres:
+    image: postgres:16.10
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-rwa}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rwa}
+      POSTGRES_DB: ${POSTGRES_DB:-rwa}
+    volumes:
+      - rwa-pgdata:/var/lib/postgresql/data
+    # Not published. To connect from the host (psql, a GUI) uncomment:
+    # ports:
+    #   - "127.0.0.1:5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # One-shot: applies migrations and exits.
+  migrate:
+    <<: *backend
+    command: ["migrate", "up"]
+    restart: "no"
+    environment:
+      DATABASE_URL: *database-url
+      LOG_FORMAT: text
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      disable: true
+
+  # One-shot: loads the 1.x data as the first run. Idempotent: the next `up` prints "import skipped" and exits 0.
+  import:
+    <<: *backend
+    command: ["import-v1", "--data-dir", "/import"]
+    restart: "no"
+    environment:
+      DATABASE_URL: *database-url
+      LOG_FORMAT: text
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    volumes:
+      - ./rwa-data-pipeline/data:/import:ro
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      disable: true
+
+  collector:
+    <<: *backend
+    command: ["collector"]
+    restart: unless-stopped
+    # The collector waits up to 30 s for a running job on SIGTERM, plus 5 s for the pool.
+    stop_grace_period: 45s
+    environment:
+      DATABASE_URL: *database-url
+      MIGRATE_ON_START: "false"
+      CMC_API_KEY: ${CMC_API_KEY:?set it in .env}
+      PORTALS_API_KEY: ${PORTALS_API_KEY:?set it in .env}
+      # A live run starts right away when the last successful run is older than the interval (the imported 1.x data is).
+      # A live run costs about 22 CMC credits; set COLLECT_ON_START=false in .env to skip it.
+      COLLECT_ON_START: ${COLLECT_ON_START:-true}
+      COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}
+      LOG_FORMAT: text
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      RUN_EVENTS_LEVEL: debug   # new variable of the run journal; older builds ignore unknown variables
+    depends_on:
+      import:
+        condition: service_completed_successfully
+    healthcheck:
+      disable: true   # no HTTP server; the image HEALTHCHECK belongs to api
+
+  api:
+    <<: *backend
+    command: ["api"]
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: *database-url
+      HTTP_ADDR: ":8080"
+      # Dev token for the admin endpoints (manual run request); never use it outside localhost.
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-devtoken}
+      COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}   # same as the collector: api computes next_run_at in /status from it
+      LOG_FORMAT: text
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:${API_PORT:-8080}:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/readyz"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      # /readyz is 503 until the import has published the first build
+      start_period: 120s
+      start_interval: 3s
+
+  web:
+    build:
+      context: ./rwa-interface
+      args:
+        VITE_APP_VERSION: v2.0.0-dev
+    image: rwa-interface:dev
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      API_URL: http://api:8080
+      SITE_URL: http://localhost:${WEB_PORT:-3000}
+      PORT: "4173"
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3000}:4173"
+    depends_on:
+      api:
+        condition: service_started
+
+volumes:
+  rwa-pgdata:

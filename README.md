@@ -33,6 +33,54 @@ Portals ───────┘   (cron, default     snapshots                /
 
 Step by step, including manual runs: [docs/workflow.md](docs/workflow.md).
 
+## Run everything with Docker (local)
+
+Runs the whole project from source on your machine: database, import of the 1.x data, API, site and the collector, so
+you can watch a collection run, the parsing and the result on the site. Not the production stack.
+
+Prerequisites: Docker Desktop (Compose v2), a CoinMarketCap and a Portals API key.
+
+```bash
+cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env (ignored by Git, never commit it)
+docker compose up --build       # first build takes a few minutes; `make up` does the same in the background
+```
+
+Then open http://localhost:3000. If 3000 or 8080 is busy, set `WEB_PORT` / `API_PORT` in `.env`.
+
+What happens, in order:
+
+1. `postgres` starts; `migrate` applies the migrations and exits.
+2. `import` loads the 1.x data from `rwa-data-pipeline/data` as the first run (about 125 snapshots, no keys needed).
+   It is idempotent: the next `up` prints "import skipped".
+3. `api` and `web` come up; the site already shows the October data.
+4. `collector` starts a live run at once, because the imported data is stale (`COLLECT_ON_START=true`). It takes about
+   7 minutes; the site then switches to the new build.
+
+Where to look:
+
+- site: http://localhost:3000; `/updates` shows the runs (and, once the run journal ships, the journal of each run)
+- API status: http://localhost:8080/api/v1/status
+- the run itself: `docker compose logs -f collector` (or `make logs` for collector, api and web)
+
+Another run: `make run` (`docker compose exec collector rwa run-once`; a subset:
+`docker compose exec collector rwa run-once --symbols NVDA`), or through the admin API with the dev token
+(`ADMIN_TOKEN`, default `devtoken`; the collector picks the request up within 30 s):
+
+```bash
+curl -X POST http://localhost:8080/api/v1/admin/runs -H "Authorization: Bearer devtoken" \
+  -H "Content-Type: application/json" -d '{"mode":"refresh","symbols":["NVDA"]}'
+```
+
+Stop with `make down` (data stays in the `rwa-pgdata` volume); `make reset` also deletes the database and asks first.
+`make psql` opens a SQL shell.
+
+A full live run costs about 22 CMC credits (`COLLECT_ON_START=false` in `.env` skips the run on start). The keys stay in
+`.env`, which Git ignores. The database credentials (`rwa`/`rwa`) are for local use only, and the ports are bound to
+127.0.0.1.
+
+Which file to use: this root `docker-compose.yml` runs everything; `rwa-backend/docker-compose.dev.yml` is only a
+PostgreSQL on 127.0.0.1:5433 for working on the code with `go run` and `pnpm start` (see below).
+
 ## Quick start (development)
 
 Prerequisites: Go 1.26, Docker (for the dev database), Node.js 22 with pnpm (`corepack enable` picks the version from

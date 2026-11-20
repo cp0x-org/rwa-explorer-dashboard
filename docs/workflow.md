@@ -89,6 +89,9 @@ cd ../rwa-interface && pnpm install && pnpm start                 # /api proxied
 `go run ./cmd/rwa run-once` collects for real and needs `CMC_API_KEY` and `PORTALS_API_KEY` in `rwa-backend/.env`
 (about 4–5 s per underlying, so a full refresh takes minutes). Without the backend: `pnpm mock:api` in `rwa-interface/`.
 
+To run the whole stack from source in Docker (database, import, api, site, collector) use the root `docker-compose.yml`:
+see "Run everything with Docker (local)" in the root README.
+
 ## Legacy (1.x)
 
 The Python pipeline in `rwa-data-pipeline/` wrote `public/data/rwa.json` for a static site. It is not part of the 2.0
