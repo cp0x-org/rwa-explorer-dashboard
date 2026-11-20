@@ -1,72 +1,96 @@
-# Workflow: from data collection to the published site
+# Workflow: from data collection to the published site (2.0)
 
-All paths below are relative to the repository root.
-
-Two projects, one data file. Nothing has to be copied by hand: the pipeline writes straight into the frontend folder.
+All paths are relative to the repository root. Deployment itself (compose files, reverse proxy, secrets) lives in the
+private pi-infra repository, `stacks/rwa`.
 
 ```
-rwa-data-pipeline/                                   pi-rwa-interface/
-config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.json
-                                                     │
-                       logos (CMC, websites) ──► data/logos/**
-                                                     │
-                       build (no network) ──────► public/data/rwa.json ──► pnpm mock:api  (2.0: the file is served as build 1 of the API)
-                                             └──► public/logos/**     ──► pnpm build && pnpm serve  (pages rendered per request)
-                       export (no network) ─────► data/exports/rwa.xlsx, data/exports/csv/*.csv   (manual analysis)
+CMC + Portals ──► collector ──► snapshots ──► publish ──► builds + current state + history ──► logos
+ (cron, 0 6 * * * UTC;           (one per        (ratings,        │
+  manual: run-once / admin API)   underlying)     export)         ▼
+                                                            rwa api ──► site (SSR) ──► /updates, charts
 ```
 
-`sync` runs `logos` and `build` by itself, so one command refreshes everything up to the frontend JSON.
-The site (2.0) no longer bakes the data into `dist/`: `server/` renders every page on request from the API's
-`/api/v1/export`. Until `rwa-backend` takes over the collection, `pnpm mock:api` serves `public/data/rwa.json` as that
-API, so the frontend can be run and tested with the 1.x pipeline's output. `pnpm build` is needed for code changes only.
+## 1. Scheduled run
 
-## 1. One-time setup
+The `rwa collector` container runs one job per schedule tick (`COLLECT_CRON`, default `0 6 * * *`, UTC, or
+`COLLECT_INTERVAL`). On start it also runs once when the last successful run is stale (`COLLECT_ON_START`). A job:
+
+1. collect every enabled underlying from CoinMarketCap and Portals into `snapshots` (a failed underlying keeps its
+   previous snapshot);
+2. publish: compute ratings, store the export as a new build, update the current-state tables, add history rows;
+3. fetch missing logos (a rebuild of the export follows when new logos arrived);
+4. delete snapshots older than `SNAPSHOT_RETENTION_DAYS`.
+
+A publish failure leaves the previous build current and is recorded on the run. Jobs never overlap. The site picks up a
+new build by itself (it polls `/api/v1/status`), so there is no rebuild or redeploy.
+
+## 2. Manual run
+
+On the server, in the stack directory:
 
 ```bash
-cd rwa-data-pipeline && uv sync && cp .env.example .env   # put CMC_API_KEY and PORTALS_API_KEY into .env
-cd ../pi-rwa-interface && pnpm install
+docker compose exec rwa-collector rwa run-once                      # refresh every enabled underlying
+docker compose exec rwa-collector rwa run-once --symbols NVDA,TSLA  # a subset
+docker compose exec rwa-collector rwa run-once --mode add           # only underlyings without a snapshot
 ```
 
-## 2. Collect everything from scratch or refresh everything
+Or through the admin API (enabled when `ADMIN_TOKEN` is set in the server `.env`; the collector picks the request up
+within 30 s):
 
 ```bash
-cd rwa-data-pipeline
-uv run rwa-pipeline sync --refresh             # re-fetches ALL enabled underlyings in config/assets.json:
-                                               #   CMC: tokenized assets, contracts, issuers, RWA metadata
-                                               #   Portals: contract lookup + text search per underlying (the slow part)
-                                               #   then logos, then build -> ../pi-rwa-interface/public/data/rwa.json
-uv run rwa-pipeline sync --refresh -v          # same, plus a line per HTTP request
-uv run rwa-pipeline sync --refresh --format all   # same, plus data/exports/rwa.xlsx and csv/
+curl -X POST https://rwa.cp0x.com/api/v1/admin/runs \
+  -H "Authorization: Bearer $ADMIN_TOKEN" -H "Content-Type: application/json" \
+  -d '{"mode":"refresh","symbols":["NVDA"]}'          # 202 {"request_id": N}
+curl -H "Authorization: Bearer $ADMIN_TOKEN" https://rwa.cp0x.com/api/v1/admin/runs/N   # outcome, run_id, error
 ```
 
-Progress is printed per step (`[1/5] CMC ...`, `[5/5] Portals ...`) and per underlying (`[17/125] NVDA: search 'NVDA'
--> 412 positions ...`, with the estimated time left). Budget: about 4–5 s per underlying, 125 underlyings ≈ 10 min,
-≈ 10 CMC credits. Each underlying is saved as soon as it is done, so an interrupted run keeps what it finished;
-a failed underlying keeps its previous snapshot (exit code 2) and can be redone with `--symbols`.
+`mode` is `refresh`, `add` or `rebuild`. Take `ADMIN_TOKEN` from the server `.env`; never paste it into files or chats.
 
 ## 3. Everyday changes
 
+| Change                                  | Do this                                                                                          |
+|-----------------------------------------|--------------------------------------------------------------------------------------------------|
+| Rating rules (`settings.json`) changed  | `rwa build`: recomputes the export from stored snapshots, no network, no history rows            |
+| Add an underlying                       | add an entry with a valid ISIN to `rwa-backend/config/assets.json` (and the copy in the stack), restart the collector, or run `rwa run-once --mode add` |
+| Refresh one ticker                      | `rwa run-once --symbols NVDA`                                                                    |
+| Run stopped after the snapshots         | `rwa publish --run <id>` (after `run-once --no-publish`, or a failed publish)                    |
+
+`enabled: false` in `assets.json` removes an underlying from the basket but keeps its snapshots.
+`rwa-backend/config/*.json` are the defaults baked into the image; the stack mounts its own copies over them.
+
+## 4. History and `/updates`
+
+Every publish of a collection run adds history points (summary, underlyings, tokens, issuers, positions). A `rebuild`
+adds none. The site shows them as charts on `/summary`, the asset, token and issuer pages. `/updates` lists the runs
+(status, duration, requests, credits, changes); `/updates/:id` shows warnings and per-asset results of one run.
+
+## 5. After a run, check
+
+| Check                    | What to look for                                                                       |
+|--------------------------|----------------------------------------------------------------------------------------|
+| `GET /api/v1/status`     | `current_build` (id, `generated_at`), `last_run` (status, counts), `next_run_at`                       |
+| `GET /api/v1/runs`       | the run has status `succeeded` (or `partial` with the failed underlyings listed)       |
+| `/updates` on the site   | the run is the newest row, warnings and changes look plausible                         |
+
 ```bash
-uv run rwa-pipeline sync                       # only underlyings that have no snapshot yet (after adding to assets.json)
-uv run rwa-pipeline sync --refresh --symbols NVDA,TSLA   # refresh a few tickers
-uv run rwa-pipeline build                      # recompute ratings after editing config/settings.json, no network
-uv run rwa-pipeline logos                      # fetch logos that were missing (e.g. after placing a file by hand)
-uv run rwa-pipeline export                     # tables for manual analysis -> data/exports/rwa.xlsx (or --format csv)
+curl -s https://rwa.cp0x.com/api/v1/status
+curl -s https://rwa.cp0x.com/api/v1/runs
 ```
 
-## 4. Publish the site
+## 6. Local development flow
 
 ```bash
-cd pi-rwa-interface
-pnpm mock:api                                  # mock API on :8080 serving public/data/rwa.json (restart after a new build of the JSON)
-pnpm start                                     # dev server (client render): /api is proxied to :8080 (or VITE_API_URL)
-pnpm build && pnpm serve                       # production-like: tsc + vite + SSR bundle, then the server on :4173 (API_URL=http://127.0.0.1:8080)
-./build.sh <version>                           # Docker image (dist/, dist-ssr/, server/; see Dockerfile), after pnpm build is green
+cd rwa-backend && make dev-db && make migrate
+go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # 1.x data as the first run
+go run ./cmd/rwa api                                              # needs DATABASE_URL in .env
+cd ../rwa-interface && pnpm install && pnpm start                 # /api proxied to localhost:8080
 ```
 
-Check: `data/runs/<run-id>.json` has the request counts and failures of the last sync; `public/data/rwa.json` ->
-`generated_at` shows the build time; the site footer/summary page shows `newest_fetched_at`.
+`go run ./cmd/rwa run-once` collects for real and needs `CMC_API_KEY` and `PORTALS_API_KEY` in `rwa-backend/.env`
+(about 4–5 s per underlying, so a full refresh takes minutes). Without the backend: `pnpm mock:api` in `rwa-interface/`.
 
-## Order of operations, in one line
+## Legacy (1.x)
 
-`sync --refresh` (data) → *(automatic: logos → build → JSON in the frontend)* → `pnpm mock:api` / the real API → the site renders from it.
+The Python pipeline in `rwa-data-pipeline/` wrote `public/data/rwa.json` for a static site. It is not part of the 2.0
+flow. It stays for `rwa import-v1` and `make parity` (in `rwa-backend/`) and will be removed in 2.1. Its commands are in
+[rwa-data-pipeline/README.md](../rwa-data-pipeline/README.md).

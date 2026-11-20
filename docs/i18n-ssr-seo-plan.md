@@ -1,3 +1,5 @@
+> Note: the build-time prerender described here was replaced by the SSR server (`rwa-interface/server/`) in 2.0. The i18n, SEO and accessibility parts still apply.
+
 # i18n (EN / 简体中文), accessibility, technical SEO and prerendering
 
 Plan and record of the work on `pi-rwa-interface`. Written before the implementation, updated with what was done.

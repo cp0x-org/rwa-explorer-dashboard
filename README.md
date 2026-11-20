@@ -4,97 +4,115 @@ Research site about tokenized stocks and ETFs: which on-chain tokens exist for a
 where they are used in DeFi (Portals), and how tokenized assets and their issuers rate against each other.
 Read-only: no wallet, no transactions. Live at [rwa.cp0x.com](https://rwa.cp0x.com/), in English and Simplified Chinese.
 
-This repository holds both halves of the product:
+Version 2.0: a Go collector writes to PostgreSQL on a schedule, an API serves the data, and the site renders every page
+on a Node server from that API. History of every number is kept and shown as charts and on `/updates`.
 
-| Folder                                     | What it is                                                                                        | Stack                                |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------|
-| [`rwa-data-pipeline/`](rwa-data-pipeline/) | Collects tokenized assets and their DeFi positions, computes ratings, publishes one JSON file      | Python 3.12, uv, httpx, typer        |
-| [`pi-rwa-interface/`](pi-rwa-interface/)   | The site: reads the API (2.0; the mock API serves that JSON), renders every page in both languages per request | React 19, Vite, MUI 7, react-intl    |
-| [`docs/`](docs/)                           | Cross-project documentation: the end-to-end workflow and design notes                             |                                      |
+| Folder                                     | What it is                                                                          | Stack                                  |
+|--------------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------|
+| [`rwa-backend/`](rwa-backend/)             | Collector (CMC + Portals, scheduled), ratings, history, logos, HTTP API             | Go 1.26, PostgreSQL 16                 |
+| [`rwa-interface/`](rwa-interface/)         | The site: server-side rendering from the API, English and Chinese                   | React 19, Vite, MUI 7, Node SSR server |
+| [`rwa-data-pipeline/`](rwa-data-pipeline/) | Legacy 1.x pipeline; used for `rwa import-v1` and the parity test (`make parity`)   | Python 3.12, uv                        |
+| [`docs/`](docs/)                           | Cross-project documentation: the workflow and design notes                          |                                        |
 
 ## How it works
 
 ```
-rwa-data-pipeline/                                        pi-rwa-interface/
-config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.json
-                                                          │
-                       logos (CMC, websites) ──► data/logos/**
-                                                          │
-                       build (no network) ──────────► public/data/rwa.json ──► pnpm mock:api (2.0: served as build 1)
-                                                 └──► public/logos/**     ──► pnpm build && pnpm serve (pages rendered per request)
-                       export (no network) ─────► data/exports/rwa.xlsx, csv/*.csv   (manual analysis)
+CoinMarketCap ─┐
+               ├─► rwa collector ──► PostgreSQL ──► rwa api ──► site (Node SSR server) ──► browser
+Portals ───────┘   (cron, default     snapshots                /api/v1/export            pages in EN / ZH,
+                    0 6 * * * UTC)    current state            /api/v1/status, runs,     history charts,
+                                      history                  history                   /updates
+                                      builds (export)          /logos/...
+                                      logos
 ```
 
-- The pipeline writes straight into the frontend folder; nothing is copied by hand.
-- The browser never calls CoinMarketCap or Portals. API keys live only in `rwa-data-pipeline/.env`.
-- The site (2.0) renders pages on request from the API's `/api/v1/export` (server/, sitemap and robots included): a data
-  refresh needs no site rebuild.
+- The collector fetches every underlying, stores the raw snapshots, computes ratings, publishes a new build (one export
+  document) with history rows, then fetches missing logos.
+- The browser never calls CoinMarketCap or Portals. API keys live only on the server and in developers' local `.env`.
+- A data refresh needs no site rebuild: the site reads the newest build from the API.
 
-Step-by-step commands from collection to deploy: [docs/workflow.md](docs/workflow.md).
+Step by step, including manual runs: [docs/workflow.md](docs/workflow.md).
 
-## Quick start
+## Quick start (development)
 
-Prerequisites: [uv](https://docs.astral.sh/uv/) (installs Python itself), Node.js 22 with pnpm (`corepack enable`
-picks the version from `package.json`), API keys for CoinMarketCap and Portals.
+Prerequisites: Go 1.26, Docker (for the dev database), Node.js 22 with pnpm (`corepack enable` picks the version from
+`package.json`), API keys for CoinMarketCap and Portals (only to collect new data).
 
 ```bash
-# 1. data pipeline
-cd rwa-data-pipeline
-uv sync
-cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env
-uv run rwa-pipeline sync        # fetch underlyings without a snapshot, then build -> ../pi-rwa-interface/public/data/rwa.json
-uv run pytest
+# 1. database and data
+cd rwa-backend
+make dev-db && make migrate                 # PostgreSQL 16 on 127.0.0.1:5433
+cp .env.example .env                        # put CMC_API_KEY and PORTALS_API_KEY into .env (never commit it)
+go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # load the 1.x data: no keys needed
+go run ./cmd/rwa api                        # API on http://localhost:8080 (HTTP_ADDR)
 
-# 2. site
-cd ../pi-rwa-interface
+# 2. site (second terminal)
+cd rwa-interface
 pnpm install
-pnpm mock:api                   # mock API on :8080 serving public/data/rwa.json
-pnpm start                      # dev server (client render), /api proxied to the mock
-pnpm build                      # tsc + vite build + SSR bundle (pnpm serve then renders pages)
-pnpm test && pnpm lint
+pnpm start                                  # dev server, client render; /api and /logos are proxied to http://localhost:8080
 ```
 
-The repository already ships snapshots and the published JSON, so the site runs without API keys; keys are needed
-only to refresh or extend the data.
+`pnpm start` proxies `/api` and `/logos` to `VITE_API_URL`, or to `http://localhost:8080` when it is unset. Set
+`VITE_API_URL` only for an API on another host; the browser then calls it directly and the API needs `CORS_ORIGINS`.
 
-## Pipeline in short
+| Command (in `rwa-interface/`)       | What it does                                                                                  |
+|-------------------------------------|-----------------------------------------------------------------------------------------------|
+| `pnpm build && pnpm serve`          | production-like: client bundle and SSR bundle, then the SSR server on http://localhost:4173    |
+| `pnpm mock:api`                     | mock API on :8080 (serves `public/data/rwa.json` as build 1): work without the backend         |
+| `pnpm test && pnpm lint`            | unit tests and eslint                                                                          |
+| `pnpm test:e2e`                     | Playwright; starts the mock API and the server itself (run `pnpm build` first)                 |
 
-```bash
-uv run rwa-pipeline sync                         # add underlyings that have no snapshot yet
-uv run rwa-pipeline sync --refresh               # re-fetch every enabled underlying
-uv run rwa-pipeline sync --refresh --symbols NVDA
-uv run rwa-pipeline build                        # recompute ratings from saved snapshots, no network
-uv run rwa-pipeline export                       # flat tables: data/exports/rwa.xlsx (or --format csv)
-```
+`pnpm serve` reads the API at `API_URL` (default `http://127.0.0.1:8080`).
 
-Underlyings are listed in `rwa-data-pipeline/config/assets.json`, all rating rules in `config/settings.json`.
-What each command does, how the numbers are computed and the known limitations: [rwa-data-pipeline/README.md](rwa-data-pipeline/README.md).
+## Backend in short
+
+One binary, `rwa`. Run from `rwa-backend/` with `go run ./cmd/rwa <command>` or `bin/rwa <command>` (`make build`).
+
+| Command                                  | What it does                                                                                       |
+|------------------------------------------|----------------------------------------------------------------------------------------------------|
+| `rwa run-once [--mode add] [--symbols NVDA,TSLA] [--no-publish]` | one collection job without the scheduler: collect, publish, logos. Exit 0 succeeded, 2 partial or usage error, 1 failed |
+| `rwa publish --run <id>`                 | publish an existing collection run (the way to finish `run-once --no-publish`)                     |
+| `rwa build [--run <id>]`                 | recompute the export from stored snapshots, no network, no history rows                            |
+| `rwa import-v1 --data-dir <path> [--force]` | load 1.x pipeline data into an empty database; skips when already imported (exit 0)             |
+| `rwa collector`                          | long-running scheduler (`COLLECT_CRON` or `COLLECT_INTERVAL`) and poller of manual run requests    |
+| `rwa migrate up \| status \| down-to <v> --yes` | database migrations                                                                         |
+| `rwa probe --provider cmc\|portals --symbols NVDA` | dev only: live check of the API keys and source clients                                  |
+
+Configuration, endpoints and details: [rwa-backend/README.md](rwa-backend/README.md).
 
 ## Site in short
 
-| Path             | Page                                                                    |
-|------------------|-------------------------------------------------------------------------|
-| `/assets`        | underlying assets of the basket; `/assets/:ticker` compares its tokens  |
-| `/tokenized`     | all tokenized assets in one sortable, filterable table                  |
-| `/tokens/:cmcId` | one tokenized asset: deployments, positions, breakdowns                 |
-| `/issuers`       | issuer rating; `/issuers/:issuerId` lists the issuer's tokens           |
-| `/opportunities` | every token–position link with filters                                  |
-| `/summary`       | charts: issuer shares, yield, breakdown per underlying                  |
+| Path             | Page                                                                              |
+|------------------|-----------------------------------------------------------------------------------|
+| `/assets`        | underlying assets of the basket; `/assets/:ticker` compares its tokens            |
+| `/tokenized`     | all tokenized assets in one sortable, filterable table                            |
+| `/tokens/:cmcId` | one tokenized asset: deployments, positions, breakdowns, history                  |
+| `/issuers`       | issuer rating; `/issuers/:issuerId` lists the issuer's tokens                     |
+| `/opportunities` | every token–position link with filters                                            |
+| `/summary`       | charts: issuer shares, yield, breakdown per underlying; trends of the basket      |
+| `/updates`       | data collection runs; `/updates/:id` shows one run (warnings, per-asset results)  |
 
-Every page also exists under `/zh/...`. Prerendering, i18n, SEO and accessibility rules:
-[pi-rwa-interface/README.md](pi-rwa-interface/README.md) and [docs/i18n-ssr-seo-plan.md](docs/i18n-ssr-seo-plan.md).
+Every page also exists under `/zh/...`. Server rendering, i18n, SEO and accessibility rules:
+[rwa-interface/README.md](rwa-interface/README.md) and [docs/i18n-ssr-seo-plan.md](docs/i18n-ssr-seo-plan.md).
 
 ## Deployment
 
-The site is a Docker image with `dist/` served as plain static files (clean URLs, real 404s):
+Two Docker images, both built per folder:
 
 ```bash
-cd pi-rwa-interface
-./build.sh <version>            # multi-arch image cp0x/pi-rwa-interface:<version>, pushed to the registry
-docker compose up -d            # or run it locally on http://localhost:3301
+cd rwa-backend && ./build.sh <version>      # multi-arch image cp0x/pi-rwa-backend:<version>, pushed to the registry
+cd rwa-interface && ./build.sh <version>    # multi-arch image cp0x/pi-rwa-interface:<version>, pushed to the registry
 ```
 
-Rebuild the image after every `rwa-pipeline sync`, because the data is part of the build.
+The backend image runs `rwa api` and `rwa collector` (two containers). The stack (compose files, reverse proxy,
+secrets) lives in the private pi-infra repository, `stacks/rwa`. nginx there routes `/api/` and `/logos/` to the API and
+everything else to the site. A data refresh needs no rebuild or redeploy; images change only with code.
+
+## 1.x (legacy)
+
+`rwa-data-pipeline/` is the Python pipeline of 1.x. The site no longer reads its output. It stays as the parity
+reference (`make parity` in `rwa-backend/` compares the Go compute with `rwa-interface/public/data/rwa.json`) and as the
+source for `rwa import-v1`. It will be removed in 2.1. Its own README: [rwa-data-pipeline/README.md](rwa-data-pipeline/README.md).
 
 ## Links
 
@@ -107,4 +125,4 @@ Rebuild the image after every `rwa-pipeline sync`, because the data is part of t
 Development setup, checks to run before a pull request and project conventions: [CONTRIBUTING.md](CONTRIBUTING.md).
 Reporting a vulnerability or a leaked key: [SECURITY.md](SECURITY.md).
 
-Both projects are released under the GNU General Public License v3.0, see [LICENSE](LICENSE).
+All projects are released under the GNU General Public License v3.0, see [LICENSE](LICENSE).

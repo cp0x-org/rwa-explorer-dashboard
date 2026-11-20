@@ -1,3 +1,5 @@
+> **Legacy (1.x).** The site no longer reads this pipeline's output. It is kept for `rwa import-v1` and the backend parity test (`make parity`) and will be removed in 2.1.
+
 # rwa-data-pipeline
 
 Collects tokenized assets (on-chain tokens of stocks/ETFs) from CoinMarketCap, finds their DeFi usage in Portals,

@@ -1,0 +1,52 @@
+name: frontend
+
+on:
+  push:
+    branches: [v2.0]
+    paths: ["rwa-interface/**", ".github/workflows/frontend.yml"]
+  pull_request:
+    branches: [v2.0]
+    paths: ["rwa-interface/**", ".github/workflows/frontend.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontend-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: rwa-interface
+    steps:
+      - uses: actions/checkout@v4
+      # pnpm version comes from "packageManager" in package.json
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: rwa-interface/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - run: npx playwright install --with-deps chromium
+      # the config's CI reporter is `github` only; add `html` so playwright-report/ exists for the artifact
+      - run: pnpm test:e2e --reporter=github,html
+        env:
+          CI: "1"
+          PLAYWRIGHT_HTML_OPEN: never
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            rwa-interface/playwright-report
+            rwa-interface/test-results
+          if-no-files-found: ignore
+          retention-days: 7

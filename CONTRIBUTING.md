@@ -1,21 +1,24 @@
 # Contributing
 
-Thank you for your interest in RWA Explorer. This file covers both projects in the repository:
-the data pipeline (`rwa-data-pipeline/`, Python) and the site (`pi-rwa-interface/`, TypeScript/React).
+Thank you for your interest in RWA Explorer. This file covers the projects in the repository: the backend
+(`rwa-backend/`, Go), the site (`rwa-interface/`, TypeScript/React) and the legacy 1.x pipeline (`rwa-data-pipeline/`, Python).
 
 ## Prerequisites
 
-- [uv](https://docs.astral.sh/uv/) — installs Python 3.12+ by itself
-- Node.js 22 and pnpm — run `corepack enable` once, the pnpm version comes from `package.json`
-- API keys for CoinMarketCap and Portals, only if you need to refresh the data
-  (the repository ships snapshots and the published JSON, so the site builds without keys)
+- Go 1.26 (`go.mod` pins the toolchain)
+- Docker, for the development database (`make dev-db`)
+- Node.js 22 and pnpm: run `corepack enable` once, the pnpm version comes from `package.json`
+- API keys for CoinMarketCap and Portals, only to collect new data; the 1.x data in `rwa-data-pipeline/data` can be
+  imported without keys (`rwa import-v1`)
 
 ## Setup
 
 ```bash
-cd rwa-data-pipeline && uv sync && cp .env.example .env     # keys into .env
-cd ../pi-rwa-interface && pnpm install
+cd rwa-backend && make dev-db && make migrate && cp .env.example .env   # keys into .env, never commit it
+cd ../rwa-interface && pnpm install
 ```
+
+The full local run is in the root [README.md](README.md#quick-start-development).
 
 ## Workflow
 
@@ -23,18 +26,40 @@ cd ../pi-rwa-interface && pnpm install
 2. Make the change together with its tests and documentation (the READMEs describe behaviour, keep them true).
 3. Run the checks of every project you touched (below).
 4. Open a pull request with a short description of what changed and why. Keep data refreshes
-   (`rwa-pipeline sync`) in separate commits from code changes, so the diff of the code stays readable.
+   (data imports, `config/assets.json`) in separate commits from code changes, so the diff of the code stays readable.
 
 Commit messages: one line in the imperative, e.g. `Add ProtocolsCell to the tokenized assets table`.
 
-## Site (`pi-rwa-interface/`)
+## Backend (`rwa-backend/`)
+
+```bash
+make build         # bin/rwa
+make test          # unit tests; integration tests are skipped without TEST_DATABASE_URL
+make lint          # golangci-lint (config v2 in .golangci.yml); go vet only if it is not installed
+make dev-db        # PostgreSQL 16 on 127.0.0.1:5433
+export TEST_DATABASE_URL='postgres://rwa:rwa@127.0.0.1:5433/rwa?sslmode=disable'
+make test-integration   # db and store tests against the dev database
+make parity        # Go compute vs the 1.x export: must report 0 differences
+```
+
+Conventions:
+
+- **Migrations are append-only.** SQL files in `internal/db/migrations/` (`NNNN_<name>.sql`). One new file per schema
+  change; never edit a file that has been applied anywhere.
+- **Compute changes keep parity.** A change to ratings or the export must keep `make parity` at 0 differences. Until 2.1
+  removes the 1.x pipeline, a deliberate difference needs an explanation in the pull request.
+- **Secrets only through the environment** (`.env`, git-ignored). Keys must never reach logs, snapshots, exports or
+  test fixtures; the config masks them and a test enforces it.
+
+## Site (`rwa-interface/`)
 
 ```bash
 pnpm lint          # eslint
 pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSON-LD
 pnpm build         # tsc + vite build + SSR bundle (pages are rendered per request by server/)
-pnpm test:e2e      # playwright against dist/ with the mock API and server/ (run pnpm build first): rendering, SEO tags, i18n, hydration, interactions, axe
-pnpm serve         # the SSR server like production (needs an API: pnpm mock:api), http://localhost:4173
+pnpm test:e2e      # playwright: starts the mock API and the server itself (run pnpm build first): rendering, SEO tags, i18n, hydration, interactions, axe
+pnpm serve         # the SSR server like production, http://localhost:4173 (API_URL, default http://127.0.0.1:8080: run the backend or pnpm mock:api)
+pnpm mock:api      # mock API on :8080 serving public/data/rwa.json, to work without the backend
 ```
 
 `pnpm test:e2e` needs Chromium for Playwright once: `npx playwright install chromium`.
@@ -52,37 +77,24 @@ Conventions:
   tables, every control with an accessible name. The e2e axe suite enforces WCAG 2.2 AA.
 - **Dependencies.** Avoid adding dependencies: supply-chain risk, and the build must stay deterministic
   (`pnpm install --frozen-lockfile` in the Dockerfile).
-- **Data.** The site reads only `public/data/rwa.json` and `public/logos/`; never call external APIs from the browser.
+- **Data.** The site reads only our API (`/api/v1/...`, `/logos/...`); never call external APIs from the browser. `public/data/rwa.json` is the mock API's fixture, not a data source.
 
-## Pipeline (`rwa-data-pipeline/`)
+## Legacy pipeline (1.x)
 
-```bash
-uv run pytest                      # tests (fixtures in tests/fixtures/, no network)
-uv run rwa-pipeline build          # recompute ratings from saved snapshots, no network
-uv run rwa-pipeline sync --refresh --symbols NVDA   # re-fetch one underlying to check a collector change
-```
-
-Conventions:
-
-- **Rules live in `build`.** Thresholds, categories and the chain mapping are in `config/settings.json`; changing them
-  needs only `build`, not new requests. Collection (`sync`) stores raw facts, `build` interprets them.
-- **Snapshots are the source.** `sync` replaces a snapshot only after all requests for that underlying succeeded.
-  Never edit `data/snapshots/*.json` by hand; add or fix an asset in `config/assets.json` and run `sync`.
-- **Secrets.** Keys are read from `.env` / environment only and must never appear in snapshots, raw responses, run
-  reports or exports. `.env` and `data/raw/` are git-ignored; keep it that way.
-- **Adding an underlying.** Add an entry with a valid ISIN to `config/assets.json`, run `uv run rwa-pipeline sync`,
-  then rebuild the site. `enabled: false` removes an asset from the basket but keeps its snapshot.
+`rwa-data-pipeline/` is kept only for `rwa import-v1` and `make parity` and will be removed in 2.1. Do not add features
+to it; its tests (`uv run pytest`) must keep passing while it exists.
 
 ## Documentation
 
-- `README.md` (root) — overview and quick start
-- `rwa-data-pipeline/README.md`, `pi-rwa-interface/README.md` — each project in detail
-- `docs/workflow.md` — the full flow from collection to deploy
-- `docs/i18n-ssr-seo-plan.md` — i18n, prerender, SEO and accessibility design notes and audit
+- `README.md` (root): overview and quick start
+- `rwa-backend/README.md`, `rwa-interface/README.md`: each project in detail
+- `rwa-data-pipeline/README.md`: the legacy 1.x pipeline
+- `docs/workflow.md`: the 2.0 flow from collection to the published site
+- `docs/i18n-ssr-seo-plan.md`: i18n, SEO and accessibility design notes and audit (history; the prerender part was replaced by the SSR server)
 
 When behaviour changes, update the matching file in the same pull request.
 
 ## Reporting issues
 
-Open a GitHub issue with steps to reproduce; for site bugs include the URL and language, for pipeline bugs include
-the command, the ticker and the relevant `data/runs/<run-id>.json`. Security issues: see [SECURITY.md](SECURITY.md).
+Open a GitHub issue with steps to reproduce; for site bugs include the URL and language, for backend bugs the command,
+the ticker and the run id (`/updates/<id>` or `GET /api/v1/runs/<id>`). Security issues: see [SECURITY.md](SECURITY.md).

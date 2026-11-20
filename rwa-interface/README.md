@@ -13,7 +13,7 @@ history); client: `src/api/rwa.ts` (`API_BASE`, `DATA_URL`, `exportUrl(buildId)`
 (`useHistory`, `useHistoryMetrics`). The last three fetch in the browser only.
 
 `API_BASE` is `VITE_API_URL` (empty = same origin, as in production behind the reverse proxy).
-Until the backend runs, `pnpm mock:api` (`mock-api/server.mjs`, no dependencies) serves `public/data/rwa.json` as build 1
+Without the backend, `pnpm mock:api` (`mock-api/server.mjs`, no dependencies) serves `public/data/rwa.json` as build 1
 plus synthetic status, runs (partial, refresh, rebuild, import; with warnings, per-asset results and changes) and history
 (10 daily points per entity): `--port 8080`, `--fail` (every `/api/*` answers 503), `--delay-ms`. Mock-only: `history/...?points=N`
 keeps the last N points (the one-point and no-point states of the charts in e2e).
@@ -56,7 +56,7 @@ CJK fonts (`themes/typography.tsx`), no extra font download.
 ```bash
 pnpm install
 pnpm mock:api     # mock API on http://localhost:8080 (or run rwa-backend there)
-pnpm start        # dev server, client render only; /api is proxied to http://localhost:8080 (or set VITE_API_URL=http://localhost:8080)
+pnpm start        # dev server, client render only; /api and /logos are proxied to VITE_API_URL, default http://localhost:8080
 pnpm build        # tsc + vite build (client, dist/) + vite build --ssr (server bundle, dist-ssr/)
 pnpm serve        # the SSR server on http://localhost:4173 (API_URL=http://127.0.0.1:8080 by default); pnpm build first
 pnpm lint         # eslint

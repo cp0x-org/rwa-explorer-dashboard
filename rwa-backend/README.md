@@ -1,8 +1,8 @@
 # rwa-backend
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
-One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`
-
+One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`, `probe`
+and `version`. All subcommands are implemented. Part of the root [README](../README.md); the 2.0 flow is in [docs/workflow.md](../docs/workflow.md).
 
 ## Build and test
 
@@ -12,7 +12,8 @@ Requires Go 1.26 (`go.mod` pins `toolchain go1.26.4`).
 cd rwa-backend
 make build        # bin/rwa, version from git describe
 make test
-make lint         # golangci-lint if installed, otherwise go vet
+make lint         # golangci-lint (config v2, .golangci.yml) if installed, otherwise go vet
+make parity       # Go compute vs the 1.x export (rwa-interface/public/data/rwa.json), needs ../rwa-data-pipeline/data
 ./bin/rwa --help
 ```
 
@@ -79,6 +80,18 @@ wrong token is 401 (constant-time comparison); without `ADMIN_TOKEN` the endpoin
 Errors are `{"error":{"code","message"}}` with `not_found`, `bad_request`, `unknown_metric` (adds `metric` and
 `allowed`), `unauthorized`, `unavailable`, `internal`. Every response carries `X-Request-ID` (an incoming one is kept);
 the access log records method, path (no query), status, duration and the request id.
+
+## Docker
+
+```bash
+make docker                  # local single-arch image cp0x/pi-rwa-backend:dev, not pushed
+./build.sh <version>         # release: multi-arch (linux/amd64, linux/arm64) cp0x/pi-rwa-backend:<version>, pushed
+```
+
+`build.sh` refuses a dirty working tree in this folder unless `--allow-dirty` is given. One image serves both roles: the
+stack runs `rwa api` and `rwa collector` as two containers (compose files and secrets: private pi-infra repository,
+`stacks/rwa`). The image carries default `config/*.json` under `/config`; the stack mounts its own copies over them. The
+`HEALTHCHECK` polls `/readyz` and fits only the API container. Set `stop_grace_period` of the collector to at least 40 s.
 
 ## Development database
 
