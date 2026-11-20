@@ -41,8 +41,9 @@ const zh: Record<MessageId, string> = {
   // ---------- data loading / not found ----------
   'data.loading': '正在加载数据…',
   'data.unavailable': '数据不可用',
-  'data.exportMissing': '未找到导出文件。',
-  'data.publishHint': '请在 rwa-data-pipeline 中运行 `uv run rwa-pipeline build` 生成数据。',
+  'data.apiError': '数据服务返回错误（HTTP {status}）。',
+  'data.retryHint': '请稍后重试。',
+  'data.reload': '重新加载',
   'notFound.asset': '当前数据中没有资产 {ticker}',
   'notFound.token': '当前数据中没有代币 {id}',
   'notFound.issuer': '当前数据中没有该发行方',

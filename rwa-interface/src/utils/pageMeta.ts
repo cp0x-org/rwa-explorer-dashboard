@@ -37,7 +37,7 @@ export interface PageMeta {
 const cache = createIntlCache();
 const intls = new Map<Locale, IntlShape>();
 
-// A react-intl instance outside React: the prerender and `document.title` on navigation use the same strings as the UI.
+// A react-intl instance outside React: the server render and `document.title` on navigation use the same strings as the UI.
 export function intlFor(locale: Locale): IntlShape {
   let intl = intls.get(locale);
   if (!intl) {
@@ -47,7 +47,7 @@ export function intlFor(locale: Locale): IntlShape {
   return intl;
 }
 
-// Title, description and breadcrumbs of a page: written into the prerendered <head> and set as document.title on
+// Title, description and breadcrumbs of a page: written into the server-rendered <head> and set as document.title on
 // navigation. `pathname` may carry the locale prefix (/zh/assets) or not.
 export function pageMeta(pathname: string, data: RwaExport): PageMeta {
   const locale = localeFromPath(pathname);

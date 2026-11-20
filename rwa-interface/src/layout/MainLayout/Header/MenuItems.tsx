@@ -22,7 +22,7 @@ export default function MenuItems() {
   const theme = useTheme();
   const t = useT();
 
-  // below md the MobileMenu button replaces these links; CSS decides, so the prerendered header fits any width
+  // below md the MobileMenu button replaces these links; CSS decides, so the server-rendered header fits any width
   return (
     <Box component="nav" aria-label={t('header.siteMenu')} sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', ml: 3 }}>
       <Stack direction="row" spacing={1}>

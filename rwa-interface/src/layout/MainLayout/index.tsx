@@ -130,7 +130,7 @@ export default function MainLayout() {
     document.documentElement.dataset.hydrated = 'true'; // after the first commit: tests wait for this before interacting
   }, [locale]);
 
-  // top of the page on navigation, but not on the first render: a prerendered page may already be scrolled when React takes over
+  // top of the page on navigation, but not on the first render: a server-rendered page may already be scrolled when React takes over
   const firstPath = useRef(true);
   useEffect(() => {
     if (firstPath.current) {
@@ -182,7 +182,7 @@ export default function MainLayout() {
           {/* overflow: visible — Card clips by default, which would make it the sticky container and keep table headers from sticking under the app bar */}
           <MainCard sx={{ borderRadius: { xs: 0, sm: `${borderRadius}px` }, overflow: 'visible' }} contentSX={{ p: { xs: 2, sm: 3 } }}>
             {/* both navs are in the markup and CSS picks one (the hidden one is display:none, so it is not in the
-                accessibility tree); the prerendered page is right at any width without JS */}
+                accessibility tree); the server-rendered page is right at any width without JS */}
             <SectionGrid
               aria-label={t('nav.sections')}
               sx={{

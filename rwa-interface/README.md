@@ -5,11 +5,16 @@ ratings of tokenized assets and issuers. Based on the Berry MUI template (React 
 
 ## Data
 
-The site reads one static file, `public/data/rwa.json`, produced by `../rwa-data-pipeline`
-(`uv run rwa-pipeline sync` / `uv run rwa-pipeline build`). The browser never calls CMC or Portals.
-Types of the file: `src/types/rwa.ts`; loading: `src/api/rwa.ts`.
-Token and issuer logos are published by the pipeline to `public/logos/`.
-The pipeline writes both files into this folder itself; the full flow is in [`docs/workflow.md`](../docs/workflow.md).
+The site reads the API of `rwa-backend` (2.0): `GET /api/v1/export` is the same document as the 1.x `rwa.json` plus
+`build_id` and `run_id` (`?build=<id>` returns one build for ever, immutable). The browser calls only our API and our
+logos (`/logos/...`), never CMC or Portals. Types: `src/types/rwa.ts` (export), `src/types/api.ts` (status, runs,
+history); client: `src/api/rwa.ts` (`API_BASE`, `DATA_URL`, `exportUrl(buildId)`, `logoUrl`, SWR options: refresh every
+10 minutes, no revalidation on focus), `src/api/runs.ts` (`useStatus`, `useRuns`, `useRun`), `src/api/history.ts`
+(`useHistory`, `useHistoryMetrics`). The last three fetch in the browser only.
+
+`API_BASE` is `VITE_API_URL` (empty = same origin, as in production behind the reverse proxy).
+Until the backend runs, `pnpm mock:api` (`mock-api/server.mjs`, no dependencies) serves `public/data/rwa.json` as build 1
+plus synthetic status, runs and history: `--port 8080`, `--fail` (every `/api/*` answers 503), `--delay-ms`.
 
 ## Pages
 
@@ -37,36 +42,51 @@ CJK fonts (`themes/typography.tsx`), no extra font download.
 
 ```bash
 pnpm install
-pnpm start        # dev server
-pnpm build        # tsc + vite build + prerender of every page in both languages into dist/
+pnpm mock:api     # mock API on http://localhost:8080 (or run rwa-backend there)
+pnpm start        # dev server, client render only; /api is proxied to http://localhost:8080 (or set VITE_API_URL=http://localhost:8080)
+pnpm build        # tsc + vite build (client, dist/) + vite build --ssr (server bundle, dist-ssr/)
+pnpm serve        # the SSR server on http://localhost:4173 (API_URL=http://127.0.0.1:8080 by default); pnpm build first
 pnpm lint         # eslint
-pnpm test         # vitest: dictionaries (key and ICU-argument parity), locale paths, page metadata, JSON-LD
-pnpm test:e2e     # playwright against dist/ (run `pnpm build` first): rendering, SEO tags, i18n, interactions, axe
-pnpm serve        # serves dist/ like the Dockerfile does (clean URLs, real 404s), http://localhost:4173
+pnpm test         # vitest: dictionaries (key and ICU-argument parity), locale paths, page metadata, JSON-LD, API types and keys
+pnpm test:e2e     # playwright: starts the mock API and the server itself (run `pnpm build` first): rendering, SEO tags, i18n, hydration, interactions, axe, API down
 ```
 
 `pnpm test:e2e` needs a Chromium for Playwright once: `npx playwright install chromium`.
+Server environment: `PORT` (4173), `API_URL` (`http://127.0.0.1:8080`), `SITE_URL` (public address for canonical links
+and the sitemap; default `VITE_SITE_URL` from `.env.production`). Docker: `docker-compose.yml` passes `API_URL` and `SITE_URL`.
 
-## Prerender
+## Server rendering
 
-`pnpm build` also writes static HTML for every page in both languages (`dist/<path>/index.html`, `dist/zh/<path>/index.html`;
-`dist/index.html` and `dist/zh/index.html` are the assets pages), so pages are readable without JavaScript — crawlers,
-AI agents, link previews — and show the data before the script loads. `vite build --ssr src/entry-server.tsx` bundles the
-app for Node into `dist-ssr/`, `scripts/prerender.mjs` renders each route with the data from `dist/data/rwa.json`.
+Data changes with every collection run, so pages are rendered per request, not at build time. `vite build --ssr
+src/entry-server.tsx` bundles the app for Node into `dist-ssr/`; `server/index.mjs` (plain Node `http`, no dependencies)
+renders each page with the export it keeps in memory and fills the template `dist/index.html`:
+
+- `server/data.mjs` — cache of `/api/v1/export` (`If-None-Match`, refreshed every 60 s, retried every 10 s until the
+  first success, the cached export keeps being served when the API fails later) and, lazily with a 60 s TTL, of `/api/v1/status`.
+- `server/render.mjs` — `render(path, data)` from the bundle; the `<head>` gets `<meta name="rwa-build" content="N">`
+  and `<link rel="preload" as="fetch" href="/api/v1/export?build=N">` (same-origin; with `VITE_API_URL` set the client calls an absolute URL and the preload goes unused, which is fine for the dev server). The page ETag covers the build id, the template (bundle hashes) and `SITE_URL`. A page that is not found (unknown ticker, token,
+  issuer or path) is rendered in the language of the URL with HTTP 404 and `noindex`. Before the first export loads,
+  every page is a plain "Data unavailable" page with HTTP 503 (`Retry-After: 10`); no restart is needed afterwards.
+- `server/static.mjs` — `dist/assets/**` with `Cache-Control: public, max-age=31536000, immutable`, other files of `dist/`
+  with a short cache; `dist/index.html` is never served for an unknown path.
+- `server/sitemap.mjs` — `/sitemap.xml` (every page in both languages with `xhtml:link` alternates, `lastmod` = newest
+  data collection) and `/robots.txt`, regenerated when the build id changes.
+- `/healthz` — 200 once an export is cached, 503 before. `/api/*` and `/logos/*` are forwarded to `API_URL` (in
+  production a reverse proxy sends them to the API directly; the forwarding makes the server usable on its own).
+
+The browser (`src/index.tsx`) reads `rwa-build`, loads exactly `/api/v1/export?build=N` (immutable, preloaded by the page),
+hydrates the page when it was rendered for this location, and does not download the export again: `/api/v1/status` is polled every minute and a newer
+build is then fetched once and replaces the data without a reload. If the export cannot be loaded at all, the server
+markup stays as it is and the load is retried with a growing delay. `window.__RWA_BUILD__` holds the build the page hydrated with (e2e tests).
+Without server markup (dev server) the app renders on the client.
+
 The `<head>` of every page comes from `src/utils/pageMeta.ts` (title, description, breadcrumbs) and `src/utils/seo.ts`
 (canonical, `hreflang` en / zh-CN / x-default, Open Graph, JSON-LD: `WebSite`, `Organization`, `WebPage`, `Dataset` +
-`ItemList` on listing pages, `BreadcrumbList` on detail pages). The browser then hydrates the page (`src/index.tsx`)
-once the data and the dictionary of the URL's language are loaded. With `VITE_SITE_URL` (`.env.production`) the
-prerender also writes `dist/sitemap.xml` (every page in both languages with `xhtml:link` alternates, `lastmod` = newest
-data collection) and `dist/robots.txt` pointing to it.
+`ItemList` on listing pages, `BreadcrumbList` on detail pages).
 
-- The data is baked in at build time: after `rwa-pipeline sync` rebuild, as before.
-- Serve `dist/` as plain static files, not as a single-page app: `serve dist -c ../serve.json` (Dockerfile), not
-  `serve -s`, which would answer every path with `dist/index.html`. Unknown paths and unknown ids get `dist/404.html`
-  with status 404: a prerendered "Page not found" page (`noindex`); the client router then shows "not found" in the
-  language of the URL.
-- Output that depends on the viewer (relative "2d ago" times, media queries) must not differ between the prerender and
+- Output that depends on the viewer (relative "2d ago" times, media queries) must not differ between the server render and
   the first browser render: use `hooks/useHydrated` and responsive `sx` values instead of `useMediaQuery` for layout.
+  Data hooks that are not part of the first render (`useStatus`, `useRuns`, `useHistory`) fetch only in the browser.
 - A row that opens a page gets a real link in its name cell (`RowLink`, chart rows via `to`): crawlers and agents
   follow links, not `onClick`.
 - Accessibility rules kept by the e2e tests (axe, WCAG 2.2 AA): one `h1` per page, `header` / `nav` / `main` / `footer`

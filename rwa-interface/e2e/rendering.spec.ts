@@ -5,7 +5,7 @@ import { CJK, ROUTES, SAMPLE } from './helpers';
 // Raw HTTP responses: what crawlers and users without JavaScript get.
 test.describe('server-rendered HTML', () => {
   for (const route of ROUTES) {
-    test(`${route} and /zh${route} are prerendered with real content`, async ({ request }) => {
+    test(`${route} and /zh${route} are server-rendered with real content`, async ({ request }) => {
       const en = await request.get(route);
       expect(en.status()).toBe(200);
       const enHtml = await en.text();
@@ -75,7 +75,9 @@ test.describe('server-rendered HTML', () => {
       expect(res.status(), path).toBe(404);
       const html = await res.text();
       expect(html).toContain('<meta name="robots" content="noindex" />');
-      expect(html).toMatch(/<h1[^>]*>Page not found<\/h1>/);
+      // the not-found page of the address itself, in the language of the URL (not one English page for everything)
+      expect(html).toContain(`<html lang="${path.startsWith('/zh') ? 'zh-CN' : 'en'}">`);
+      expect(html.match(/<h1[^>]*>([^<]+)<\/h1>/)?.[1]).toMatch(path.startsWith('/zh') ? CJK : /not found/i);
     }
   });
 

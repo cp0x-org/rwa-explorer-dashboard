@@ -16,11 +16,13 @@ export default defineConfig(({ mode, isSsrBuild }) => {
       open: true,
       // this sets a default port to 3000
       port: PORT,
-      host: true
+      host: true,
+      // `pnpm start` next to `pnpm mock:api` (or any API on VITE_API_URL): the app calls /api on its own origin
+      proxy: Object.fromEntries(['/api', '/logos'].map((p) => [p, env.VITE_API_URL || 'http://localhost:8080']))
     },
     build: {
       chunkSizeWarningLimit: 1600,
-      // `vite build --ssr src/entry-server.tsx`: a Node module for scripts/prerender.mjs, without a copy of public/
+      // `vite build --ssr src/entry-server.tsx`: a Node module for server/render.mjs, without a copy of public/
       ...(isSsrBuild && {
         copyPublicDir: false,
         rollupOptions: { output: { entryFileNames: '[name].mjs', chunkFileNames: '[name]-[hash].mjs' } }

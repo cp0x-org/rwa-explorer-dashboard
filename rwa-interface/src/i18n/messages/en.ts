@@ -41,8 +41,9 @@ const en = {
   // ---------- data loading / not found ----------
   'data.loading': 'Loading data…',
   'data.unavailable': 'Data unavailable',
-  'data.exportMissing': 'Export not found.',
-  'data.publishHint': 'Publish it with `uv run rwa-pipeline build` in rwa-data-pipeline.',
+  'data.apiError': 'The data service answered with an error (HTTP {status}).',
+  'data.retryHint': 'Try again in a moment.',
+  'data.reload': 'Reload',
   'notFound.asset': 'Asset {ticker} not found in the current data',
   'notFound.token': 'Token {id} not found in the current data',
   'notFound.issuer': 'Issuer not found in the current data',

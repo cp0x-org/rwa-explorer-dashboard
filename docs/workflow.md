@@ -10,13 +10,15 @@ config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.jso
                                                      │
                        logos (CMC, websites) ──► data/logos/**
                                                      │
-                       build (no network) ──────► public/data/rwa.json ──► pnpm start   (dev, reloads the JSON)
-                                             └──► public/logos/**     ──► pnpm build   (dist/ with prerendered pages)
+                       build (no network) ──────► public/data/rwa.json ──► pnpm mock:api  (2.0: the file is served as build 1 of the API)
+                                             └──► public/logos/**     ──► pnpm build && pnpm serve  (pages rendered per request)
                        export (no network) ─────► data/exports/rwa.xlsx, data/exports/csv/*.csv   (manual analysis)
 ```
 
 `sync` runs `logos` and `build` by itself, so one command refreshes everything up to the frontend JSON.
-Only the site build (`pnpm build`) is a separate step, because the prerender bakes the data into `dist/`.
+The site (2.0) no longer bakes the data into `dist/`: `server/` renders every page on request from the API's
+`/api/v1/export`. Until `rwa-backend` takes over the collection, `pnpm mock:api` serves `public/data/rwa.json` as that
+API, so the frontend can be run and tested with the 1.x pipeline's output. `pnpm build` is needed for code changes only.
 
 ## 1. One-time setup
 
@@ -56,9 +58,10 @@ uv run rwa-pipeline export                     # tables for manual analysis -> d
 
 ```bash
 cd pi-rwa-interface
-pnpm start                                     # dev server: reads public/data/rwa.json on every reload
-pnpm build                                     # tsc + vite + prerender of every page into dist/ (data baked in)
-./build.sh <version>                           # Docker image with dist/ (see Dockerfile), after pnpm build is green
+pnpm mock:api                                  # mock API on :8080 serving public/data/rwa.json (restart after a new build of the JSON)
+pnpm start                                     # dev server (client render): /api is proxied to :8080 (or VITE_API_URL)
+pnpm build && pnpm serve                       # production-like: tsc + vite + SSR bundle, then the server on :4173 (API_URL=http://127.0.0.1:8080)
+./build.sh <version>                           # Docker image (dist/, dist-ssr/, server/; see Dockerfile), after pnpm build is green
 ```
 
 Check: `data/runs/<run-id>.json` has the request counts and failures of the last sync; `public/data/rwa.json` ->
@@ -66,4 +69,4 @@ Check: `data/runs/<run-id>.json` has the request counts and failures of the last
 
 ## Order of operations, in one line
 
-`sync --refresh` (data) → *(automatic: logos → build → JSON in the frontend)* → `pnpm build` (site) → deploy.
+`sync --refresh` (data) → *(automatic: logos → build → JSON in the frontend)* → `pnpm mock:api` / the real API → the site renders from it.

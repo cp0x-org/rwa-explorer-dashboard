@@ -59,7 +59,7 @@ export default function ThemeCustomization({ children }: Props) {
     </ThemeProvider>
   );
 
-  // MUI's injectFirst cache is one per process and browser-only; the prerender gives every page a fresh cache instead
+  // MUI's injectFirst cache is one per process and browser-only; the server render gives every page a fresh cache instead
   // (entry-server.tsx) and puts the collected styles first in <head>, as injectFirst does in the browser.
   if (typeof document === 'undefined') return content;
   return <StyledEngineProvider injectFirst>{content}</StyledEngineProvider>;

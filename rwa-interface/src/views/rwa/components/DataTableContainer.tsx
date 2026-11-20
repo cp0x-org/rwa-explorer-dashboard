@@ -22,7 +22,7 @@ interface Props {
 // so then the header is shifted with a transform on every scroll frame instead.
 export default function DataTableContainer({ sx = [], children }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const [fits, setFits] = useState(false); // prerendered HTML keeps the safe scrolling layout; measured on mount
+  const [fits, setFits] = useState(false); // server-rendered HTML keeps the safe scrolling layout; measured on mount
   const [top, setTop] = useState(APP_BAR_FALLBACK);
 
   useEffect(() => {

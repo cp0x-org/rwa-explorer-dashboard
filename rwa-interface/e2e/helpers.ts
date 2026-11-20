@@ -8,7 +8,7 @@ export interface Data {
   issuers: { id: string; name: string | null }[];
 }
 
-// The same export the build baked into dist/.
+// The export the mock API serves as build 1 (mock-api/server.mjs).
 export const data: Data = JSON.parse(readFileSync(path.resolve(__dirname, '..', 'public', 'data', 'rwa.json'), 'utf8'));
 
 export const SAMPLE = {
@@ -40,7 +40,7 @@ export function watchErrors(page: Page): string[] {
   return errors;
 }
 
-// Waits until React has hydrated the prerendered page: the language links keep working either way, but the sort
+// Waits until React has hydrated the server-rendered page: the language links keep working either way, but the sort
 // buttons only respond after hydration, so the test waits for the data load + hydration to finish.
 export async function hydrated(page: Page) {
   await page.waitForFunction(() => document.documentElement.dataset.hydrated === 'true', null, { timeout: 20_000 });

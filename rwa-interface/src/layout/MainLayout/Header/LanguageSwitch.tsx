@@ -11,7 +11,7 @@ import { LOCALE_LABEL, LOCALE_NAME, LOCALES, switchLocale, useLocale, useT } fro
 
 // ==============================|| LANGUAGE SWITCH: EN | 中文 ||============================== //
 
-// Plain links to the same page in the other language (query string kept): a full navigation to the prerendered page
+// Plain links to the same page in the other language (query string kept): a full navigation to the server-rendered page
 // of that language, so <html lang>, dictionary and metadata always agree. Works without JavaScript.
 export default function LanguageSwitch() {
   const { locale } = useLocale();

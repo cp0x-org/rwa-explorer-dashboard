@@ -32,9 +32,9 @@ Commit messages: one line in the imperative, e.g. `Add ProtocolsCell to the toke
 ```bash
 pnpm lint          # eslint
 pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSON-LD
-pnpm build         # tsc + vite build + prerender of every page in both languages
-pnpm test:e2e      # playwright against dist/ (run pnpm build first): rendering, SEO tags, i18n, interactions, axe
-pnpm serve         # serve dist/ like production does, http://localhost:4173
+pnpm build         # tsc + vite build + SSR bundle (pages are rendered per request by server/)
+pnpm test:e2e      # playwright against dist/ with the mock API and server/ (run pnpm build first): rendering, SEO tags, i18n, hydration, interactions, axe
+pnpm serve         # the SSR server like production (needs an API: pnpm mock:api), http://localhost:4173
 ```
 
 `pnpm test:e2e` needs Chromium for Playwright once: `npx playwright install chromium`.
@@ -45,7 +45,7 @@ Conventions:
   (`tsc` and `pnpm test` fail otherwise). Components use `useT()` and `useFormat()`; links use `LocaleLink` /
   `useLocaleNavigate` with locale-free paths. Tickers, symbols, addresses and protocol/network/issuer names are data
   and never go through the dictionaries.
-- **Prerender.** Output must not differ between the prerender and the first browser render: use
+- **Server render.** Output must not differ between the server render and the first browser render: use
   `hooks/useHydrated` and responsive `sx` values instead of `useMediaQuery`. Rows that open a page get a real link
   (`RowLink`), not only `onClick`.
 - **Accessibility.** One `h1` per page, landmarks (`header` / `nav` / `main` / `footer`), captions and `aria-sort` on

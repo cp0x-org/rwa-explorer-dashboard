@@ -7,9 +7,15 @@ services:
     platform: linux/amd64
     ports:
       - "${PORT:-3301}:4173"
+    environment:
+      # where the server reads the export from (the API of rwa-backend). `rwa-api` resolves only inside the pi-infra stack
+      # network; for a standalone run set API_URL (the default reaches an API on the host, e.g. `pnpm mock:api`)
+      API_URL: ${API_URL:-http://host.docker.internal:8080}
+      # public address of the site: canonical links, hreflang, sitemap.xml, robots.txt
+      SITE_URL: ${SITE_URL:-https://rwa.cp0x.com}
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:4173/"]
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:4173/healthz"]
       interval: 30s
       timeout: 5s
       retries: 3

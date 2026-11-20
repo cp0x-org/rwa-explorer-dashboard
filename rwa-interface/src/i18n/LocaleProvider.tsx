@@ -15,7 +15,7 @@ const LocaleContext = createContext<LocaleContextValue>({ locale: DEFAULT_LOCALE
 export const useLocale = () => useContext(LocaleContext);
 
 // Mounted once per locale in the route tree (routes/index.tsx), so the locale comes from the URL in the browser and in
-// the prerender alike. Messages of the locale are registered before the first render (index.tsx, entry-server.tsx);
+// the server render alike. Messages of the locale are registered before the first render (index.tsx, entry-server.tsx);
 // the English fallback below only covers an unexpected client-side jump into another locale.
 export function LocaleProvider({ locale, children }: { locale: Locale; children: ReactNode }) {
   const [messages, setMessages] = useState<Messages>(() => getMessages(locale) ?? ENGLISH);

@@ -47,13 +47,15 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build": "tsc && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr",
     "build-stage": "env-cmd -f .env.qa vite build",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" e2e",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "serve": "node scripts/serve-dist.mjs",
+    "serve": "NODE_ENV=production node server/index.mjs",
+    "dev:ssr": "pnpm build && node mock-api/dev-ssr.mjs",
+    "mock:api": "node mock-api/server.mjs",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "knip": "knip"

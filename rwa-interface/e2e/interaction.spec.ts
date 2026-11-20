@@ -81,7 +81,7 @@ test.describe('hydrated pages keep working', () => {
     await expect(page.getByText(/评分 = 包含该代币的符合条件的 DeFi 头寸数量/)).toBeVisible();
   });
 
-  test('every prerendered page hydrates without console errors', async ({ page }) => {
+  test('every server-rendered page hydrates without console errors', async ({ page }) => {
     for (const path of [
       '/assets',
       `/assets/${SAMPLE.ticker}`,

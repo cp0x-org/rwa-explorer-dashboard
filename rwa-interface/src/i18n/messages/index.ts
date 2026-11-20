@@ -1,4 +1,4 @@
-// Message registry: English is bundled (first render and prerender), Chinese is a separate chunk that index.tsx loads
+// Message registry: English is bundled (first render and server render), Chinese is a separate chunk that index.tsx loads
 // before it hydrates a Chinese page, and entry-server.tsx registers statically.
 import en from './en';
 import type { Locale } from '../locale';

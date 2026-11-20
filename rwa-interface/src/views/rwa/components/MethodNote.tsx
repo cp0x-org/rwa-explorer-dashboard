@@ -11,7 +11,7 @@ import { useFormat, useT } from 'i18n';
 // Update time and counting method, always next to the data. The method text is a disclosure (a real button, in the
 // page for crawlers and screen readers), not a hover-only tooltip.
 export default function MethodNote({ data }: { data: RwaExport }) {
-  const hydrated = useHydrated(); // the age needs the viewer's clock, so the prerendered HTML has only the date
+  const hydrated = useHydrated(); // the age needs the viewer's clock, so the server-rendered HTML has only the date
   const t = useT();
   const f = useFormat();
   const [open, setOpen] = useState(false);

@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { LocaleLink, useT } from 'i18n';
 import { useDocumentTitle } from './components/DataGate';
 
-// The catch-all route: an address that no page answers. The prerendered dist/404.html is this page (in English);
+// The catch-all route: an address that no page answers. The server renders it with status 404 for any such address;
 // the client router shows it in the language of the URL.
 export default function NotFoundPage() {
   const t = useT();

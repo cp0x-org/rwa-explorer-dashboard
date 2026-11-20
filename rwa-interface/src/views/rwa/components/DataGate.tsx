@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import Loader from 'ui-component/Loader';
-import { RwaIndex, useRwaData } from 'api/rwa';
+import { ApiError, RwaIndex, useRwaData } from 'api/rwa';
 import { RwaExport } from 'types/rwa';
 import { trackPageView } from 'utils/analytics';
 import { pageMeta, SITE_NAME } from 'utils/pageMeta';
 import { MessageId, useT, Values } from 'i18n';
 
-// Same title as the prerendered <head> of this path, kept current on client-side navigation; then the page view, which
+// Same title as the server-rendered <head> of this path, kept current on client-side navigation; then the page view, which
 // carries this title.
 export function useDocumentTitle(data?: RwaExport) {
   const { pathname } = useLocation();
@@ -38,14 +38,16 @@ export default function DataGate({ children }: { children: (index: RwaIndex) => 
     );
   }
 
-  if (error || !index) {
+  // data already on screen stays when a later revalidation fails: only a page without data shows the error
+  if (!index) {
     return (
       <Box sx={{ padding: 2 }} role="alert">
         <Typography variant="h4" component="h1" color="error" gutterBottom>
           {t('data.unavailable')}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {error?.message ?? t('data.exportMissing')} {t('data.publishHint')}
+          {error instanceof ApiError ? `${t('data.apiError', { status: error.status })} ` : ''}
+          {t('data.retryHint')}
         </Typography>
       </Box>
     );
@@ -55,7 +57,7 @@ export default function DataGate({ children }: { children: (index: RwaIndex) => 
 }
 
 // An asset, token or issuer that is not in the current data: a real page with a heading, served with HTTP 404 by the
-// static server (the prerender writes no file for it).
+// server (server/render.mjs, `meta.found` is false).
 export function NotFound({ id, values }: { id: MessageId; values?: Values }) {
   const t = useT();
   return (

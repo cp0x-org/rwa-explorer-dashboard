@@ -8,7 +8,7 @@ import ThemeCustomization from 'themes';
 
 // ==============================|| APP ||============================== //
 
-// `router` is the router provider: the browser one in index.tsx, a static one in the prerender (entry-server.tsx).
+// `router` is the router provider: the browser one in index.tsx, a static one in the server render (entry-server.tsx).
 // The language provider (react-intl) sits inside the route tree, because the language comes from the URL.
 export default function App({ router }: { router: ReactNode }) {
   return (

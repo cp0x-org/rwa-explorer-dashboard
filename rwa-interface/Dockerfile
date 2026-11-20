@@ -10,20 +10,31 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-# Site data (public/data, public/logos) is baked into dist: rebuild the image after `rwa-pipeline sync`
-RUN pnpm run build
+# Client bundle (dist/) and server bundle (dist-ssr/). The data comes from the API at runtime, not from the image:
+# public/data and public/logos are copied into dist/ by Vite but never served from it, so they are dropped.
+RUN pnpm run build && rm -rf dist/data dist/logos
 
 FROM node:22-alpine
 
 WORKDIR /app
 
-RUN npm install -g serve@14.2.4
-
+# server/ is plain Node (no dependencies): the app bundle in dist-ssr/ already contains everything it renders with
 COPY --from=builder /app/dist ./dist
-COPY serve.json ./
+COPY --from=builder /app/dist-ssr ./dist-ssr
+COPY server ./server
+COPY package.json ./
+
+# API_URL: where the server reads the export from; SITE_URL: public address (canonical links, sitemap.xml)
+ENV NODE_ENV=production \
+    PORT=4173 \
+    API_URL=http://rwa-api:8080 \
+    SITE_URL=https://rwa.cp0x.com
 
 EXPOSE 4173
 
-# No --single: every page is prerendered to <path>/index.html (scripts/prerender.mjs), and --single would answer every
-# path with the root index.html. Unknown paths get dist/404.html, the app shell, with status 404.
-CMD ["serve", "dist", "-l", "4173", "-c", "../serve.json"]
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+  CMD wget -q -O /dev/null "http://127.0.0.1:${PORT}/healthz" || exit 1
+
+USER node
+
+CMD ["node", "server/index.mjs"]

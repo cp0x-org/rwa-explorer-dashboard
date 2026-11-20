@@ -1,4 +1,4 @@
-// Shape of public/data/rwa.json written by rwa-data-pipeline (`rwa-pipeline build`).
+// Shape of GET /api/v1/export (rwa-backend; the 1.x public/data/rwa.json of rwa-data-pipeline plus build_id and run_id).
 // Money, APY and liquidity are decimal strings; null means "not reported", never zero.
 
 export type Decimal = string | null;
@@ -174,6 +174,8 @@ export interface Opportunity {
 }
 
 export interface RwaExport {
+  build_id: number; // build of the API this document belongs to (`/api/v1/export?build=<id>` returns the same document)
+  run_id: number; // collector run that produced it
   schema_version: number;
   generated_at: string;
   score_version: string;

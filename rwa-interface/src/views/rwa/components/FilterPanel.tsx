@@ -6,7 +6,7 @@ import { IconAdjustmentsHorizontal } from '@tabler/icons-react';
 import { useT } from 'i18n';
 
 // Filters stay open on wider screens; on phones they fold behind one button so the data starts on the first screen.
-// Breakpoints are CSS, not a JS media query, so the prerendered page already has the right layout before React loads.
+// Breakpoints are CSS, not a JS media query, so the server-rendered page already has the right layout before React loads.
 export default function FilterPanel({ active, children }: { active: number; children: ReactNode }) {
   const t = useT();
   const [open, setOpen] = useState(false);

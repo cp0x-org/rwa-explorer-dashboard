@@ -9,7 +9,7 @@ receipt and keep you informed about the fix.
 ## Scope
 
 - **The site is read-only.** It has no wallet connection, no transactions, and never calls external APIs from the
-  browser. It serves prerendered static files and one JSON file.
+  browser. It renders pages on a Node server from one export document of our own API.
 - **API keys** (CoinMarketCap, Portals) are used only by the data pipeline, read from `rwa-data-pipeline/.env` or the
   environment, and are git-ignored. They must never be written to snapshots, raw responses, run reports, exports or
   logs. If you find a key in the repository history or in generated data, report it as a vulnerability.

@@ -1,5 +1,5 @@
-// Structured data (schema.org JSON-LD) and hreflang links of a page, written into the prerendered <head>
-// (scripts/prerender.mjs). Everything comes from the same export that renders the page, nothing is invented:
+// Structured data (schema.org JSON-LD) and hreflang links of a page, written into the server-rendered <head>
+// (server/render.mjs). Everything comes from the same export that renders the page, nothing is invented:
 // no ratings, prices or legal details, only what the page shows.
 import { RwaExport } from 'types/rwa';
 import { getFormat, localizePath, OG_LOCALE } from 'i18n';
@@ -91,7 +91,7 @@ export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string): object
       dateModified: modified,
       keywords: meta.keywords.split(',').map((k) => k.trim()),
       isAccessibleForFree: true,
-      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${siteUrl}/data/rwa.json` }],
+      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${siteUrl}/api/v1/export` }],
       variableMeasured: ['eligible DeFi positions', 'reported APY', 'liquidity (USD)', 'market cap (USD)']
     };
     graph.push(dataset);

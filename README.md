@@ -9,7 +9,7 @@ This repository holds both halves of the product:
 | Folder                                     | What it is                                                                                        | Stack                                |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------|
 | [`rwa-data-pipeline/`](rwa-data-pipeline/) | Collects tokenized assets and their DeFi positions, computes ratings, publishes one JSON file      | Python 3.12, uv, httpx, typer        |
-| [`pi-rwa-interface/`](pi-rwa-interface/)   | The site: reads that JSON, prerenders every page in both languages, served as static files         | React 19, Vite, MUI 7, react-intl    |
+| [`pi-rwa-interface/`](pi-rwa-interface/)   | The site: reads the API (2.0; the mock API serves that JSON), renders every page in both languages per request | React 19, Vite, MUI 7, react-intl    |
 | [`docs/`](docs/)                           | Cross-project documentation: the end-to-end workflow and design notes                             |                                      |
 
 ## How it works
@@ -20,15 +20,15 @@ config/assets.json ──► sync (CMC + Portals) ──► data/snapshots/*.jso
                                                           │
                        logos (CMC, websites) ──► data/logos/**
                                                           │
-                       build (no network) ──────────► public/data/rwa.json ──► pnpm start   (dev)
-                                                 └──► public/logos/**     ──► pnpm build   (dist/ with prerendered pages)
+                       build (no network) ──────────► public/data/rwa.json ──► pnpm mock:api (2.0: served as build 1)
+                                                 └──► public/logos/**     ──► pnpm build && pnpm serve (pages rendered per request)
                        export (no network) ─────► data/exports/rwa.xlsx, csv/*.csv   (manual analysis)
 ```
 
 - The pipeline writes straight into the frontend folder; nothing is copied by hand.
 - The browser never calls CoinMarketCap or Portals. API keys live only in `rwa-data-pipeline/.env`.
-- `pnpm build` bakes the data into `dist/` (static HTML for every page, sitemap, robots), so a data refresh is
-  followed by a site rebuild.
+- The site (2.0) renders pages on request from the API's `/api/v1/export` (server/, sitemap and robots included): a data
+  refresh needs no site rebuild.
 
 Step-by-step commands from collection to deploy: [docs/workflow.md](docs/workflow.md).
 
@@ -48,8 +48,9 @@ uv run pytest
 # 2. site
 cd ../pi-rwa-interface
 pnpm install
-pnpm start                      # dev server, reads public/data/rwa.json
-pnpm build                      # tsc + vite build + prerender into dist/
+pnpm mock:api                   # mock API on :8080 serving public/data/rwa.json
+pnpm start                      # dev server (client render), /api proxied to the mock
+pnpm build                      # tsc + vite build + SSR bundle (pnpm serve then renders pages)
 pnpm test && pnpm lint
 ```
 

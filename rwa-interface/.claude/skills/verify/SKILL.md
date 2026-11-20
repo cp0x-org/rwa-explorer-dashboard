@@ -10,16 +10,23 @@ description: Build, launch, and drive pi-rwa-interface (RWA Explorer, React 19 +
 ```bash
 pnpm install
 pnpm lint          # eslint (must be clean)
-pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSON-LD
-pnpm build         # tsc && vite build && SSR bundle && prerender of every page in both languages into dist/
-pnpm start         # dev server on http://localhost:3000 (reads public/data/rwa.json on every reload)
-pnpm serve         # serves dist/ like production (clean URLs, real 404s) on http://localhost:4173
+pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSON-LD, API types/keys against mock fixtures
+pnpm build         # tsc && vite build (dist/) && vite build --ssr (dist-ssr/); no prerender step any more
+pnpm mock:api      # mock API on http://localhost:8080: public/data/rwa.json as build 1, status, runs, history (--fail, --delay-ms)
+pnpm serve         # SSR server on http://localhost:4173 reading API_URL (default http://127.0.0.1:8080); needs pnpm build + the API
+pnpm start         # dev server on http://localhost:3000, client render only, /api proxied to :8080 (or VITE_API_URL)
 ```
+
+Quick SSR checks: `curl -sI localhost:4173/assets/NVDA` (200), `curl -s .../assets/NVDA | grep -o 'rwa-build[^>]*'`,
+`curl -sI .../tokens/999999` (404), `curl -s .../sitemap.xml | head`, `curl -sI .../healthz` (200 once the export is cached).
+Start the server against `pnpm mock:api -- --fail` to see the 503 "Data unavailable" page; start the good mock on the
+same port afterwards and the server recovers within 10 s, without a restart.
 
 ## Drive (Playwright)
 
-Playwright is in the repo: `playwright.config.ts`, specs in `e2e/` (`rendering`, `seo`, `i18n`, `interaction`, `a11y`),
-shared helpers and sample ids in `e2e/helpers.ts` (`ROUTES`, `SAMPLE`). Tests run against `dist/`, so `pnpm build` first.
+Playwright is in the repo: `playwright.config.ts`, specs in `e2e/` (`rendering`, `seo`, `i18n`, `interaction`, `a11y`,
+`hydration`, `unavailable`), shared helpers and sample ids in `e2e/helpers.ts` (`ROUTES`, `SAMPLE`). Tests run against
+`dist/` and `dist-ssr/`, so `pnpm build` first.
 
 ```bash
 npx playwright install chromium          # once
@@ -28,12 +35,14 @@ pnpm test:e2e -- e2e/interaction.spec.ts # one spec
 pnpm test:e2e -- --headed                # watch it
 ```
 
-The config starts `scripts/serve-dist.mjs` on port 4321 by itself. For an ad-hoc check write a temporary spec in
-`e2e/` and delete it afterwards, do not hand-roll `playwright-core` scripts.
+The config starts, by itself, the mock API (port 8180) and `server/index.mjs` (4321) on it, plus a second pair (mock with
+`--fail` on 8181, server on 4322) for `unavailable.spec.ts`. Ports: `E2E_PORT`, `E2E_API_PORT`, `E2E_DOWN_PORT`,
+`E2E_DOWN_API_PORT`. For an ad-hoc check write a temporary spec in `e2e/` and delete it afterwards, do not hand-roll
+`playwright-core` scripts.
 
 ## Flows worth driving
 
-- `/assets` — basket table (data from `public/data/rwa.json`); row link → `/assets/:ticker`
+- `/assets` — basket table (data from the API, `public/data/rwa.json` via the mock); row link → `/assets/:ticker`
 - `/assets/NVDA` — tokenized assets table; row link → `/tokens/:cmcId`
 - `/tokenized` — all tokenized assets, sort + filters
 - `/tokens/<id>` — deployments, breakdowns, positions; position row → detail dialog (`[role="dialog"]`, `OpportunityDialog`)
@@ -41,16 +50,16 @@ The config starts `scripts/serve-dist.mjs` on port 4321 by itself. For an ad-hoc
 - `/opportunities?underlying=NVDA` — filters + pagination
 - `/summary` — charts with accessible legend and text summary
 - `/zh/...` — every page in Simplified Chinese; header switcher `EN | 中文` links to the same page
-- Error state: route `**/data/rwa.json` to 404 → "Data unavailable"
-- Unknown path or id → `dist/404.html` with HTTP 404, "Page not found" in the language of the URL
+- Error state: route `/api/v1/export` to 503 in a spec (or start the server on a `--fail` mock) → "Data unavailable"
+- Unknown path or id → server-rendered not-found page with HTTP 404 in the language of the URL
 
 ## Gotchas
 
-- Prerendered pages must match the first browser render: no `useMediaQuery` for layout, use `hooks/useHydrated` and
+- Server-rendered pages must match the first browser render: no `useMediaQuery` for layout, use `hooks/useHydrated` and
   responsive `sx`. A hydration mismatch shows up as a console error in the e2e run.
 - MUI `Typography variant="h2"` often renders as `span` (component prop) — don't select by tag.
 - Nav tabs are defined in `src/layout/MainLayout/index.tsx`; header links in `src/layout/MainLayout/Header/MenuItems.tsx`
   and `MobileMenu.tsx`.
 - Rows that open a page use a real link (`RowLink`); select by role `link`, not by clicking the row.
 - All UI text goes through `useT()`; `src/i18n/messages/en.ts` and `zh.ts` must have the same keys.
-- No external requests are expected: all data comes from `public/data/rwa.json` and `public/logos/`.
+- No external requests are expected: the browser calls only `/api/v1/*` and `/logos/*` of our own origin (`grep` the bundle for `coinmarketcap`/`portals.fi` API hosts: only the outbound CMC page link may appear).
