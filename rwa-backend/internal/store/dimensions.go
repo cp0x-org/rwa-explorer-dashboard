@@ -40,15 +40,19 @@ type UnderlyingFactsRow struct {
 	Industry   *string
 	Status     *string
 	LastRunID  int64
+	// KeepInfo leaves website, cmc_logo_url and industry as stored: the run learned nothing new about them (CMC
+	// metadata request failed or had no entry), and a missing answer must not wipe a known value.
+	KeepInfo bool
 }
 
 // UpsertUnderlyingFacts updates CMC facts, status and last_run_id of underlyings created by SyncUnderlyings.
 func (s *Store) UpsertUnderlyingFacts(ctx context.Context, rows []UnderlyingFactsRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`UPDATE underlyings SET cmc_rwa_id = $2, cmc_name = $3, website = $4, cmc_logo_url = $5, industry = $6,
-			status = $7, last_run_id = $8, updated_at = now() WHERE id = $1`,
-			r.ID, r.CMCRwaID, r.CMCName, r.Website, r.CMCLogoURL, r.Industry, r.Status, r.LastRunID)
+		b.Queue(`UPDATE underlyings SET cmc_rwa_id = $2, cmc_name = $3,
+			website = CASE WHEN $9 THEN website ELSE $4 END, cmc_logo_url = CASE WHEN $9 THEN cmc_logo_url ELSE $5 END,
+			industry = CASE WHEN $9 THEN industry ELSE $6 END, status = $7, last_run_id = $8, updated_at = now() WHERE id = $1`,
+			r.ID, r.CMCRwaID, r.CMCName, r.Website, r.CMCLogoURL, r.Industry, r.Status, r.LastRunID, r.KeepInfo)
 	}
 	br := s.q.SendBatch(ctx, b)
 	defer func() { _ = br.Close() }()

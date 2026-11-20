@@ -26,10 +26,6 @@ type command struct {
 // stubs are subcommands that are not implemented yet.
 var stubs = []command{
 	{"api", "serve the HTTP API"},
-	{"collector", "run the scheduled data collector"},
-	{"import-v1", "import 1.x pipeline data into the database"},
-	{"run-once", "run one collection and exit"},
-	{"build", "recompute the export from stored snapshots"},
 }
 
 func usage(w io.Writer) {
@@ -38,6 +34,11 @@ func usage(w io.Writer) {
 	for _, c := range stubs {
 		_, _ = fmt.Fprintf(w, "  %-10s %s\n", c.name, c.desc)
 	}
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "collector", "run the scheduled data collector (cron/interval, run requests)")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "run-once", "one collection job: collect, publish, logos: --mode refresh|add --symbols NVDA[,X] --raw-dir DIR --no-publish")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "import-v1", "import 1.x pipeline data into the database: --data-dir <path> [--force]")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "build", "recompute the export from stored snapshots, no history: [--run <id>]")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "publish", "publish an existing collection run with history (no build yet): --run <id>")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "migrate", "database migrations: up | status | down-to <version> [--yes]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "probe", "dev only: live check of a source client: --provider cmc|portals --symbols NVDA[,X]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "version", "print the version")
@@ -79,6 +80,18 @@ func run(args []string, stdout, stderr io.Writer) int {
 	}
 	if args[0] == "probe" {
 		return runProbe(args[1:], stdout, stderr)
+	}
+	switch args[0] {
+	case "collector":
+		return runCollector(args[1:], stdout, stderr)
+	case "run-once":
+		return runOnce(args[1:], stdout, stderr)
+	case "import-v1":
+		return runImportV1(args[1:], stdout, stderr)
+	case "build":
+		return runBuild(args[1:], stdout, stderr)
+	case "publish":
+		return runPublish(args[1:], stdout, stderr)
 	}
 	for _, c := range stubs {
 		if c.name == args[0] {

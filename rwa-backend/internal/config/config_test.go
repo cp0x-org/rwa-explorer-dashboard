@@ -15,7 +15,7 @@ import (
 func clearEnv(t *testing.T) {
 	t.Helper()
 	for _, k := range []string{"DATABASE_URL", "CMC_API_KEY", "PORTALS_API_KEY", "ASSETS_PATH", "SETTINGS_PATH",
-		"COLLECT_CRON", "COLLECT_INTERVAL", "COLLECT_ON_START", "SNAPSHOT_RETENTION_DAYS", "RAW_CAPTURE_DIR",
+		"COLLECT_CRON", "COLLECT_INTERVAL", "COLLECT_ON_START", "SNAPSHOT_RETENTION_DAYS", "RUN_TIMEOUT", "RAW_CAPTURE_DIR",
 		"HTTP_ADDR", "CORS_ORIGINS", "ADMIN_TOKEN", "LOG_LEVEL", "LOG_FORMAT", "ENV_FILE"} {
 		t.Setenv(k, "") // registers restore of the original value
 		if err := os.Unsetenv(k); err != nil {
@@ -38,7 +38,7 @@ func TestDefaults(t *testing.T) {
 	c := mustLoad(t)
 	if c.AssetsPath != "/config/assets.json" || c.SettingsPath != "/config/settings.json" ||
 		c.CollectCron != "0 6 * * *" || !c.CollectOnStart || c.SnapshotRetentionDays != 90 ||
-		c.HTTPAddr != ":8080" || c.LogLevel != "info" || c.LogFormat != "json" || c.CollectInterval != 0 {
+		c.HTTPAddr != ":8080" || c.LogLevel != "info" || c.LogFormat != "json" || c.CollectInterval != 0 || c.RunTimeout != 2*time.Hour {
 		t.Errorf("unexpected defaults: %s", c)
 	}
 }
@@ -93,6 +93,15 @@ func TestValidate(t *testing.T) {
 	t.Setenv("SNAPSHOT_RETENTION_DAYS", "0")
 	if err := mustLoad(t).ValidateCollector(); err == nil || !strings.Contains(err.Error(), "SNAPSHOT_RETENTION_DAYS") {
 		t.Errorf("retention 0: %v", err)
+	}
+	os.Unsetenv("SNAPSHOT_RETENTION_DAYS")
+	t.Setenv("RUN_TIMEOUT", "30m")
+	if c := mustLoad(t); c.RunTimeout != 30*time.Minute || !strings.Contains(c.String(), "RunTimeout:30m0s") {
+		t.Errorf("RUN_TIMEOUT=30m: %s", c)
+	}
+	t.Setenv("RUN_TIMEOUT", "0s")
+	if err := mustLoad(t).ValidateCollector(); err == nil || !strings.Contains(err.Error(), "RUN_TIMEOUT") {
+		t.Errorf("run timeout 0: %v", err)
 	}
 }
 

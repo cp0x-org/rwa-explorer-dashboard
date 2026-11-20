@@ -3,19 +3,16 @@
 package compute_test
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
 	"slices"
 	"sort"
-	"strconv"
 	"strings"
 	"testing"
 	"time"
 
-	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/require"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
@@ -69,24 +66,17 @@ func TestParity(t *testing.T) {
 	want, err := os.ReadFile(filepath.Join("..", "..", "testdata", "golden", "rwa.json"))
 	require.NoError(t, err)
 
-	wantTree, err := parseTree(want)
-	require.NoError(t, err)
-	gotTree, err := parseTree(got)
-	require.NoError(t, err)
 	// build_id and run_id are 2.0-only fields (absent from the 1.x export); compute leaves them null.
-	gotObj := gotTree.(*object)
-	for _, k := range []string{"build_id", "run_id"} {
-		require.Nil(t, gotObj.values[k], k)
-		delete(gotObj.values, k)
-		gotObj.keys = slices.DeleteFunc(gotObj.keys, func(s string) bool { return s == k })
-	}
-	var diffs []string
+	require.Nil(t, exp.BuildID)
+	require.Nil(t, exp.RunID)
+	diffs, err := compute.DiffExports(want, got, compute.DiffOptions{IgnorePaths: []string{"generated_at", "build_id", "run_id"}})
+	require.NoError(t, err)
 	perSection := map[string]int{}
-	cmpTree("", "", wantTree, gotTree, func(path string, w, g any) {
-		section := strings.SplitN(strings.SplitN(path, ".", 2)[0], "[", 2)[0]
+	for _, d := range diffs {
+		path, _, _ := strings.Cut(d, ": want ")
+		section := strings.SplitN(strings.SplitN(strings.SplitN(path, ".", 2)[0], "[", 2)[0], " ", 2)[0]
 		perSection[section]++
-		diffs = append(diffs, fmt.Sprintf("%s: want %s got %s", path, show(w), show(g)))
-	})
+	}
 	if len(diffs) == 0 {
 		t.Logf("PARITY OK: 0 differences (underlyings=%d tokens=%d issuers=%d opportunities=%d)",
 			len(exp.Underlyings), len(exp.Tokens), len(exp.Issuers), len(exp.Opportunities))
@@ -122,162 +112,4 @@ func (f fsLogos) Find(kind, entityID string) (string, bool) {
 	}
 	slices.Sort(names)
 	return strings.TrimPrefix(names[0], entityID+"."), true
-}
-
-// object is a JSON object that remembers its key order.
-type object struct {
-	keys   []string
-	values map[string]any
-}
-
-func parseTree(b []byte) (any, error) {
-	dec := json.NewDecoder(bytes.NewReader(b))
-	dec.UseNumber()
-	v, err := readValue(dec)
-	if err != nil {
-		return nil, err
-	}
-	return v, nil
-}
-
-func readValue(dec *json.Decoder) (any, error) {
-	tok, err := dec.Token()
-	if err != nil {
-		return nil, err
-	}
-	switch d := tok.(type) {
-	case json.Delim:
-		switch d {
-		case '{':
-			o := &object{values: map[string]any{}}
-			for dec.More() {
-				kt, err := dec.Token()
-				if err != nil {
-					return nil, err
-				}
-				k := kt.(string)
-				v, err := readValue(dec)
-				if err != nil {
-					return nil, err
-				}
-				o.keys = append(o.keys, k)
-				o.values[k] = v
-			}
-			_, err := dec.Token()
-			return o, err
-		case '[':
-			arr := []any{}
-			for dec.More() {
-				v, err := readValue(dec)
-				if err != nil {
-					return nil, err
-				}
-				arr = append(arr, v)
-			}
-			_, err := dec.Token()
-			return arr, err
-		}
-	}
-	return tok, nil
-}
-
-// orderedKeys are the objects whose key order is part of the result (sorted breakdowns).
-var orderedKeys = map[string]bool{"by_network": true, "by_category": true, "by_platform": true, "by_underlying": true}
-
-func show(v any) string {
-	switch x := v.(type) {
-	case nil:
-		return "null"
-	case *object:
-		return fmt.Sprintf("object(%d keys)", len(x.keys))
-	case []any:
-		return fmt.Sprintf("array(%d)", len(x))
-	case string:
-		return strconv.Quote(x)
-	case json.Number:
-		return x.String()
-	}
-	return fmt.Sprint(v)
-}
-
-func decimalOf(v any) (decimal.Decimal, bool) {
-	switch x := v.(type) {
-	case json.Number:
-		d, err := decimal.NewFromString(x.String())
-		return d, err == nil
-	case string:
-		d, err := decimal.NewFromString(x)
-		return d, err == nil
-	}
-	return decimal.Decimal{}, false
-}
-
-// cmpTree walks both trees; generated_at is ignored, decimals are compared as decimals, arrays in order.
-func cmpTree(path, key string, want, got any, report func(path string, w, g any)) {
-	if path == "generated_at" {
-		return
-	}
-	switch w := want.(type) {
-	case *object:
-		g, ok := got.(*object)
-		if !ok {
-			report(path, want, got)
-			return
-		}
-		for _, k := range w.keys {
-			sub := path + "." + k
-			if path == "" {
-				sub = k
-			}
-			gv, ok := g.values[k]
-			if !ok {
-				report(sub, w.values[k], "<missing>")
-				continue
-			}
-			cmpTree(sub, k, w.values[k], gv, report)
-		}
-		for _, k := range g.keys {
-			if _, ok := w.values[k]; !ok {
-				report(path+"."+k, "<missing>", g.values[k])
-			}
-		}
-		if orderedKeys[key] && !slices.Equal(w.keys, g.keys) {
-			report(path+" (key order)", strings.Join(w.keys, ","), strings.Join(g.keys, ","))
-		}
-	case []any:
-		g, ok := got.([]any)
-		if !ok {
-			report(path, want, got)
-			return
-		}
-		if len(w) != len(g) {
-			report(path+" (length)", len(w), len(g))
-		}
-		for i := range min(len(w), len(g)) {
-			cmpTree(fmt.Sprintf("%s[%d]", path, i), key, w[i], g[i], report)
-		}
-	default:
-		if want == nil || got == nil {
-			if want != got {
-				report(path, want, got)
-			}
-			return
-		}
-		if ws, ok := want.(string); ok {
-			if gs, ok := got.(string); ok && ws == gs {
-				return
-			}
-		}
-		wd, wok := decimalOf(want)
-		gd, gok := decimalOf(got)
-		if wok && gok && fmt.Sprintf("%T", want) == fmt.Sprintf("%T", got) {
-			if !wd.Equal(gd) {
-				report(path, want, got)
-			}
-			return
-		}
-		if want != got {
-			report(path, want, got)
-		}
-	}
 }

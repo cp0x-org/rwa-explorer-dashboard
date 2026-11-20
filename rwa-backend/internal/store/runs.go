@@ -77,7 +77,18 @@ type RunRequest struct {
 	Symbols     []string // nil = all enabled
 	TakenAt     *time.Time
 	RunID       *int64
+	FinishedAt  *time.Time
+	Outcome     *string // done | nothing_to_do | rejected | released; nil while the request is pending or being served
+	Error       *string
 }
+
+// Outcomes of a run request.
+const (
+	OutcomeDone        = "done"
+	OutcomeNothingToDo = "nothing_to_do"
+	OutcomeRejected    = "rejected"
+	OutcomeReleased    = "released"
+)
 
 const runColumns = `id, run_key, mode, trigger, status, started_at, finished_at, selected_count, completed_count,
 	failed_count, cmc_requests, portals_requests, cmc_credits, warnings, error, collector_version, settings`
@@ -225,17 +236,58 @@ func (s *Store) CreateRunRequest(ctx context.Context, requestedBy, mode string, 
 }
 
 // TakeNextRunRequest claims the oldest pending request (FOR UPDATE SKIP LOCKED, one atomic statement)
-// and sets taken_at. It returns ErrNotFound when nothing is pending.
+// and sets taken_at; a previous outcome, error and run link of a released request are cleared. It returns
+// ErrNotFound when nothing is pending.
 func (s *Store) TakeNextRunRequest(ctx context.Context) (*RunRequest, error) {
 	var r RunRequest
-	err := s.q.QueryRow(ctx, `UPDATE run_requests SET taken_at = now()
+	err := s.q.QueryRow(ctx, `UPDATE run_requests SET taken_at = now(), finished_at = NULL, outcome = NULL, error = NULL, run_id = NULL
 		WHERE id = (SELECT id FROM run_requests WHERE taken_at IS NULL ORDER BY requested_at, id FOR UPDATE SKIP LOCKED LIMIT 1)
-		RETURNING id, requested_at, requested_by, mode, symbols, taken_at, run_id`).
-		Scan(&r.ID, &r.RequestedAt, &r.RequestedBy, &r.Mode, &r.Symbols, &r.TakenAt, &r.RunID)
+		RETURNING id, requested_at, requested_by, mode, symbols, taken_at, run_id, finished_at, outcome, error`).
+		Scan(&r.ID, &r.RequestedAt, &r.RequestedBy, &r.Mode, &r.Symbols, &r.TakenAt, &r.RunID, &r.FinishedAt, &r.Outcome, &r.Error)
 	if err != nil {
 		return nil, fmt.Errorf("store: take run request: %w", notFound(err))
 	}
 	return &r, nil
+}
+
+// ReleaseRunRequest gives a taken request back to the queue: taken_at is cleared so the next poll serves it again.
+// outcome becomes 'released' and error holds the reason (empty = none) until the request is taken again.
+func (s *Store) ReleaseRunRequest(ctx context.Context, id int64, reason string) error {
+	var errArg *string
+	if reason != "" {
+		errArg = &reason
+	}
+	tag, err := s.q.Exec(ctx, `UPDATE run_requests SET taken_at = NULL, outcome = 'released', error = $2
+		WHERE id = $1 AND finished_at IS NULL`, id, errArg)
+	if err != nil {
+		return fmt.Errorf("store: release run request %d: %w", id, err)
+	}
+	if tag.RowsAffected() == 0 {
+		return fmt.Errorf("store: release run request %d: %w", id, ErrNotFound)
+	}
+	return nil
+}
+
+// FinishRunRequest records the final outcome (done | nothing_to_do | rejected) and an optional error text.
+func (s *Store) FinishRunRequest(ctx context.Context, id int64, outcome string, runErr error) error {
+	switch outcome {
+	case OutcomeDone, OutcomeNothingToDo, OutcomeRejected:
+	default:
+		return fmt.Errorf("store: finish run request %d: invalid outcome %q", id, outcome)
+	}
+	var errArg *string
+	if runErr != nil {
+		t := runErr.Error()
+		errArg = &t
+	}
+	tag, err := s.q.Exec(ctx, `UPDATE run_requests SET finished_at = now(), outcome = $2, error = $3 WHERE id = $1`, id, outcome, errArg)
+	if err != nil {
+		return fmt.Errorf("store: finish run request %d: %w", id, err)
+	}
+	if tag.RowsAffected() == 0 {
+		return fmt.Errorf("store: finish run request %d: %w", id, ErrNotFound)
+	}
+	return nil
 }
 
 // AttachRunToRequest links the run started for a request.
@@ -248,4 +300,59 @@ func (s *Store) AttachRunToRequest(ctx context.Context, requestID, runID int64) 
 		return fmt.Errorf("store: attach run to request %d: %w", requestID, ErrNotFound)
 	}
 	return nil
+}
+
+// MarkRunPublishFailed records that the publish of a finished run failed: status failed, error "publish: <err>".
+// The snapshots of the run stay; `rwa publish --run <id>` can retry. It ignores cancellation of ctx.
+func (s *Store) MarkRunPublishFailed(ctx context.Context, runID int64, cause error) error {
+	ctx, cancel := context.WithTimeout(context.WithoutCancel(ctx), 10*time.Second)
+	defer cancel()
+	tag, err := s.q.Exec(ctx, `UPDATE collection_runs SET status = 'failed', error = $2, finished_at = COALESCE(finished_at, now())
+		WHERE id = $1`, runID, "publish: "+cause.Error())
+	if err != nil {
+		return fmt.Errorf("store: mark run %d publish failed: %w", runID, err)
+	}
+	if tag.RowsAffected() == 0 {
+		return fmt.Errorf("store: mark run %d publish failed: %w", runID, ErrNotFound)
+	}
+	return nil
+}
+
+// ClearRunPublishFailed undoes MarkRunPublishFailed after a later successful publish of the run: the status goes back to
+// partial (some underlyings failed) or succeeded. A run that failed for another reason is left alone.
+func (s *Store) ClearRunPublishFailed(ctx context.Context, runID int64) error {
+	if _, err := s.q.Exec(ctx, `UPDATE collection_runs SET status = CASE WHEN failed_count > 0 THEN 'partial' ELSE 'succeeded' END, error = NULL
+		WHERE id = $1 AND status = 'failed' AND error LIKE 'publish: %'`, runID); err != nil {
+		return fmt.Errorf("store: clear publish failure of run %d: %w", runID, err)
+	}
+	return nil
+}
+
+// AbandonRunningRuns marks every run still 'running' as failed with error 'abandoned': the process that owned it is gone.
+// Call it only while holding the collector advisory lock. It returns the number of runs changed.
+func (s *Store) AbandonRunningRuns(ctx context.Context) (int64, error) {
+	tag, err := s.q.Exec(ctx, `UPDATE collection_runs SET status = 'failed', error = 'abandoned', finished_at = COALESCE(finished_at, now())
+		WHERE status = 'running'`)
+	if err != nil {
+		return 0, fmt.Errorf("store: abandon running runs: %w", err)
+	}
+	return tag.RowsAffected(), nil
+}
+
+// RunHasBuild reports whether a build exists for the run.
+func (s *Store) RunHasBuild(ctx context.Context, runID int64) (bool, error) {
+	var ok bool
+	if err := s.q.QueryRow(ctx, `SELECT EXISTS (SELECT 1 FROM builds WHERE run_id = $1)`, runID).Scan(&ok); err != nil {
+		return false, fmt.Errorf("store: run %d has build: %w", runID, err)
+	}
+	return ok, nil
+}
+
+// HasRuns reports whether collection_runs has any row.
+func (s *Store) HasRuns(ctx context.Context) (bool, error) {
+	var ok bool
+	if err := s.q.QueryRow(ctx, `SELECT EXISTS (SELECT 1 FROM collection_runs)`).Scan(&ok); err != nil {
+		return false, fmt.Errorf("store: has runs: %w", err)
+	}
+	return ok, nil
 }

@@ -1,8 +1,8 @@
 # rwa-backend
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
-One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`
-(`migrate` works; the others are stubs that exit with code 2).
+One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`
+(`api` is still a stub that exits with code 2; everything else works).
 
 ## Build and test
 
@@ -28,10 +28,12 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `PORTALS_API_KEY` | required for collector | collector | Portals key (a leading `Bearer ` is stripped) |
 | `ASSETS_PATH` | `/config/assets.json` | collector | underlyings list |
 | `SETTINGS_PATH` | `/config/settings.json` | collector | rating settings |
-| `COLLECT_CRON` | `0 6 * * *` | collector | cron schedule (UTC) |
+| `COLLECT_CRON` | `0 6 * * *` | collector | cron schedule, always UTC; a `CRON_TZ=`/`TZ=` prefix is rejected, as is a schedule that never fires |
 | `COLLECT_INTERVAL` | empty | collector | alternative to cron, e.g. `12h`; setting both is an error |
-| `COLLECT_ON_START` | `true` | collector | run on start if the last run is stale |
+| `COLLECT_ON_START` | `true` | collector | run on start if the last successful run is older than the interval (cron: older than 24 h) |
+| `MIGRATE_ON_START` | `true` | collector | apply pending migrations when the collector starts; when `false` it refuses to start with pending ones |
 | `SNAPSHOT_RETENTION_DAYS` | `90` | collector | snapshot retention |
+| `RUN_TIMEOUT` | `2h` | collector | deadline of one job (collect + publish + logos) and of `run-once`; a run that exceeds it ends `failed` with `error='timeout'` |
 | `RAW_CAPTURE_DIR` | empty | collector | write raw API responses here (debug) |
 | `HTTP_ADDR` | `:8080` | api | listen address |
 | `CORS_ORIGINS` | empty | api | comma-separated allowed origins (dev) |
@@ -61,6 +63,54 @@ rwa migrate status            # list migrations and whether they are applied
 rwa migrate down-to <version> --yes  # roll back until <version> is current (0 = everything); --yes is required
 ```
 
+## Import, rebuild and the collector
+
+```
+rwa import-v1 --data-dir ../rwa-data-pipeline/data [--force]   # needs DATABASE_URL, ASSETS_PATH, SETTINGS_PATH; migrations applied
+rwa build [--run <id>]                               # recompute the export from stored snapshots, no network, no history
+rwa publish --run <id>                               # publish an existing collection run (no build yet) with history
+rwa collector                                        # long-running scheduler
+```
+
+`import-v1` loads the 1.x pipeline data as one run (`mode=import`, `run_key` = the newest `data/runs/*.json` run id)
+in a single transaction: the snapshot documents verbatim (their `fetched_at` starts the history at the 1.x
+date), `issuers.json`, `rwa_info.json`, `portals_platforms.json`, `data/logos/**`, then a published build. It is
+idempotent: when a run with that `run_key` exists it prints "import skipped" and exits 0. Without `data/runs/*.json` the
+`run_key` is the `run_id` of the newest snapshot. It is meant for an empty database: when `collection_runs` already has
+rows it refuses unless `--force` is given. It holds the collector advisory lock, so it fails while a collector run is in
+progress. Logo files keep the case of their extension (`X.PNG` is stored as `PNG`); unknown extensions are stored as
+`application/octet-stream`. The stored export matches the 1.x `rwa.json` structurally (`TestImportV1Parity`).
+
+`build` creates a run with `mode=rebuild` and a new current build from the latest stored snapshot of every enabled
+underlying. A rebuild is not a new observation, so it writes **no history rows**; `--run <id>` must name an existing
+run and is only recorded in the new run's key (point-in-time rebuilds are not supported).
+
+`publish --run <id>` publishes an existing collection run WITH history rows: the way to finish a `run-once --no-publish`
+run, or to retry a run whose publish failed (`status=failed`, `error='publish: ...'`; the status is restored on
+success). It refuses a run that already has a build, a rebuild run, a running run and a run that failed during
+collection. History points are added only for underlyings refreshed by the run (and their tokens and positions); a
+`--symbols` run adds points for those underlyings plus the basket (summary) and issuer aggregates. Every export carries its own `build_id` (the `builds.id` it is stored under); publishes are serialized by
+a database lock, so `build_changes` always refers to the build that was current before.
+
+`collector` runs jobs on `COLLECT_CRON` (UTC) or `COLLECT_INTERVAL`, once at start when the data are stale
+(`COLLECT_ON_START`), and for every manual request it polls from `run_requests` every 30 s (its mode and symbols are
+used). A job is: collect, then publish, then logos, then snapshot retention (`SNAPSHOT_RETENTION_DAYS`). Jobs never
+overlap (a tick during a job is skipped with a warning); a publish failure leaves the previous build current and skips
+logos and retention, and is recorded on the run (`status=failed`, `error='publish: ...'`). Each job has a deadline
+(`RUN_TIMEOUT`, error `timeout`; a SIGTERM stop is `interrupted`). On SIGTERM/SIGINT the running job gets a cancelled
+context and the process waits up to 30 s for it, then at most 5 s for the pool to close. **Docker `stop_grace_period`
+must therefore be at least 40 s.** At start, after the migrations, runs left `running` by a crashed process are marked
+`failed` with `error='abandoned'` (only when the collector lock is free). `COLLECT_ON_START` counts only `refresh` and
+`import` runs that have a published build, so an `add` run over a few symbols or a run that failed to publish does not
+make the basket look fresh.
+
+A manual request (`run_requests`) always ends visibly: `outcome` is `done` (the run is linked in `run_id`; `error` holds
+a post-run problem such as a failed publish), `nothing_to_do` (mode add), `rejected` (unknown symbols) or `released`:
+the request goes back to the queue and is retried on a later poll (another collector run in progress, shutdown, a
+database error before the run started). The scheduler claims a request only while none of its own jobs runs. Retries
+of a request that keeps failing before a run starts are not capped. Underlyings a failed or interrupted run did not
+reach get a `run_underlyings` row with status `skipped`; `selected_count` is the number of selected tickers.
+
 ## Probe (dev only)
 
 `rwa probe` makes a few live calls to check the API keys and the source clients (`internal/source/{httpx,cmc,portals}`).
@@ -75,9 +125,34 @@ ENV_FILE=../rwa-data-pipeline/.env SETTINGS_PATH=./config/settings.json go run .
 (`--type etf` for ETFs); `--provider portals` prints network/platform counts and search totals per term.
 Per-request progress goes to stderr. Source-client tests run on recorded responses in `testdata/raw/`.
 
+## Run once
+
+`rwa run-once` performs one scheduler job without the scheduler: a collection run (port of 1.x `sync`, one snapshot
+per underlying in `snapshots`), then the publish (export, current-state tables, history rows), then missing logos
+(with a rebuild of the export when new logos arrived). `--no-publish` stops after the snapshots (publish later with `rwa publish --run <id>`). It needs the
+collector configuration (`DATABASE_URL`, `CMC_API_KEY`, `PORTALS_API_KEY`, `ASSETS_PATH`, `SETTINGS_PATH`) and an
+up-to-date schema (it fails if a migration is pending).
+
+```bash
+rwa run-once                          # refresh: every enabled underlying
+rwa run-once --mode add               # only underlyings without any snapshot (nothing to do: no run row, exit 0)
+rwa run-once --symbols NVDA,TSLA      # a subset (unknown or disabled symbols are an error)
+rwa run-once --raw-dir /tmp/raw       # keep raw API responses in <dir>/<run_key>/ (default $RAW_CAPTURE_DIR)
+rwa run-once --no-publish             # snapshots only; publish later with `rwa publish --run <id>`
+```
+
+Steps and per-underlying progress (elapsed, ETA) are logged to stderr with `log/slog`; per-request lines appear at
+`LOG_LEVEL=debug`. The report goes to stdout. Exit code: `0` succeeded, `2` partial (some underlyings failed, or a
+usage/config error), `1` failed (fatal error such as a 401, interruption, another run in progress). A logos problem after a successful publish is logged and does not change the exit code; a publish error exits `1` and is recorded on the run. The whole command is bounded by `RUN_TIMEOUT`. A run holds the
+PostgreSQL advisory lock `hashtext('rwa-collector-run')`, so only one collector run exists at a time.
+
+`internal/logos` (`FetchMissing`) downloads missing token, issuer and underlying logos into the `logos` table (CMC
+logo, then Google favicon service for the website, then the site's `<link rel=icon>`); the scheduler calls it after
+publishing.
+
 ## Integration tests
 
-Tests under `internal/db` and `internal/store` run against a real PostgreSQL 16. Each test creates its own
+Tests under `internal/db`, `internal/store`, `internal/collect`, `internal/logos`, `internal/publish` and `internal/importer` run against a real PostgreSQL 16. Each test creates its own
 throwaway database (`rwa_test_<random>`), migrates it and drops it afterwards. They are skipped when
 `TEST_DATABASE_URL` is unset, so `make test` works without a database.
 

@@ -88,6 +88,8 @@ func relationKeys(tokens ...*model.Token) map[string]bool {
 // eligible_liquidity_usd sums every eligible position linked to the entity, so nested positions (an LP and a
 // vault holding that LP) are both summed, as specified; it is a "liquidity touching the entity" figure, not a
 // de-duplicated TVL.
+// HistoryRows returns every row of the export; the caller (publish) keeps only the underlying, token and position rows
+// of snapshots collected by the run being published, and always the summary and issuer rows.
 func HistoryRows(exp *model.Export, side *Side, runID int64) (*History, error) {
 	fallback, ok := time.Time{}, false
 	if exp.Summary.NewestFetchedAt != nil {

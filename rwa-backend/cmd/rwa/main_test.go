@@ -57,6 +57,27 @@ func TestNoArgsAndUnknown(t *testing.T) {
 	}
 }
 
+func TestNewCommandsUsage(t *testing.T) {
+	t.Setenv("DATABASE_URL", "")
+	if code, _, e := exec("import-v1"); code != 2 || !strings.Contains(e, "--data-dir") {
+		t.Errorf("import-v1 without flag: %d %q", code, e)
+	}
+	if code, _, e := exec("build", "extra"); code != 2 || !strings.Contains(e, "usage") {
+		t.Errorf("build extra: %d %q", code, e)
+	}
+	if code, _, e := exec("collector", "extra"); code != 2 || !strings.Contains(e, "usage") {
+		t.Errorf("collector extra: %d %q", code, e)
+	}
+	for _, args := range [][]string{{"publish"}, {"publish", "--run", "0"}, {"publish", "--run", "1", "extra"}} {
+		if code, _, e := exec(args...); code != 2 || !strings.Contains(e, "usage: rwa publish --run") {
+			t.Errorf("%v: %d %q", args, code, e)
+		}
+	}
+	if code, out, _ := exec("--help"); code != 0 || !strings.Contains(out, "import-v1") || !strings.Contains(out, "collector") || !strings.Contains(out, "build") || !strings.Contains(out, "publish") {
+		t.Errorf("help lacks new commands: %q", out)
+	}
+}
+
 func TestMigrateUsage(t *testing.T) {
 	t.Setenv("DATABASE_URL", "")
 	for _, args := range [][]string{

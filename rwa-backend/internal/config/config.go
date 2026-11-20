@@ -27,7 +27,9 @@ type Config struct {
 	CollectInterval       time.Duration `env:"COLLECT_INTERVAL"`
 	CollectOnStart        bool          `env:"COLLECT_ON_START" envDefault:"true"`
 	SnapshotRetentionDays int           `env:"SNAPSHOT_RETENTION_DAYS" envDefault:"90"`
+	RunTimeout            time.Duration `env:"RUN_TIMEOUT" envDefault:"2h"`
 	RawCaptureDir         string        `env:"RAW_CAPTURE_DIR"`
+	MigrateOnStart        bool          `env:"MIGRATE_ON_START" envDefault:"true"`
 
 	HTTPAddr    string   `env:"HTTP_ADDR" envDefault:":8080"`
 	CORSOrigins []string `env:"CORS_ORIGINS" envSeparator:","`
@@ -111,6 +113,9 @@ func (c *Config) ValidateCollector() error {
 	if c.CollectInterval < 0 {
 		errs = append(errs, errors.New("COLLECT_INTERVAL must be > 0"))
 	}
+	if c.RunTimeout <= 0 {
+		errs = append(errs, errors.New("RUN_TIMEOUT must be > 0"))
+	}
 	if c.SnapshotRetentionDays < 1 {
 		errs = append(errs, errors.New("SNAPSHOT_RETENTION_DAYS must be >= 1"))
 	}
@@ -143,10 +148,10 @@ func mask(s string) string {
 // both Config and *Config in %v / %+v.
 func (c Config) String() string {
 	return fmt.Sprintf("Config{DatabaseURL:%s CMCAPIKey:%s PortalsAPIKey:%s AssetsPath:%s SettingsPath:%s "+
-		"CollectCron:%q CollectInterval:%s CollectOnStart:%t SnapshotRetentionDays:%d RawCaptureDir:%s "+
+		"CollectCron:%q CollectInterval:%s CollectOnStart:%t SnapshotRetentionDays:%d RunTimeout:%s RawCaptureDir:%s MigrateOnStart:%t "+
 		"HTTPAddr:%s CORSOrigins:%v AdminToken:%s LogLevel:%s LogFormat:%s}",
 		maskDSN(c.DatabaseURL), mask(c.CMCAPIKey), mask(c.PortalsAPIKey), c.AssetsPath, c.SettingsPath,
-		c.CollectCron, c.CollectInterval, c.CollectOnStart, c.SnapshotRetentionDays, c.RawCaptureDir,
+		c.CollectCron, c.CollectInterval, c.CollectOnStart, c.SnapshotRetentionDays, c.RunTimeout, c.RawCaptureDir, c.MigrateOnStart,
 		c.HTTPAddr, c.CORSOrigins, mask(c.AdminToken), c.LogLevel, c.LogFormat)
 }
 

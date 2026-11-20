@@ -11,6 +11,7 @@ import (
 
 // BuildRow is the input of InsertBuild.
 type BuildRow struct {
+	ID            int64 // optional: an id from ReserveBuildID; zero lets the database assign one
 	RunID         int64
 	GeneratedAt   time.Time
 	SchemaVersion int
@@ -64,13 +65,28 @@ func scanBuildMeta(row pgx.Row, extra ...any) (*BuildMeta, error) {
 	return &m, nil
 }
 
-// InsertBuild inserts a non-current build. Low-level: production code publishes with PublishBuild. It takes a transaction so that InsertBuild, InsertBuildChanges
-// and SetCurrentBuild commit together: if the transaction fails the previous build stays current.
+// ReserveBuildID takes the next builds.id from the sequence, so the export can carry its own build_id before it is
+// inserted. Sequences are not transactional: an id reserved by a rolled-back transaction is simply never used.
+func (s *Store) ReserveBuildID(ctx context.Context) (int64, error) {
+	var id int64
+	if err := s.q.QueryRow(ctx, `SELECT nextval(pg_get_serial_sequence('builds', 'id'))`).Scan(&id); err != nil {
+		return 0, fmt.Errorf("store: reserve build id: %w", err)
+	}
+	return id, nil
+}
+
+// InsertBuild inserts a non-current build (with b.ID when set, see ReserveBuildID). Low-level: production code publishes
+// with PublishBuild. It takes a transaction so that InsertBuild, InsertBuildChanges and SetCurrentBuild commit together:
+// if the transaction fails the previous build stays current.
 func (s *Store) InsertBuild(ctx context.Context, tx pgx.Tx, b BuildRow) (int64, error) {
 	var id int64
-	err := tx.QueryRow(ctx, `INSERT INTO builds (run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256)
-		VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING id`,
-		b.RunID, b.GeneratedAt, b.SchemaVersion, b.ScoreVersion, jsonOr(b.Settings, "{}"), jsonOr(b.Summary, "{}"), b.Export, b.ExportSHA256).Scan(&id)
+	var preset *int64
+	if b.ID != 0 {
+		preset = &b.ID
+	}
+	err := tx.QueryRow(ctx, `INSERT INTO builds (id, run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256)
+		VALUES (COALESCE($1, nextval(pg_get_serial_sequence('builds', 'id'))), $2, $3, $4, $5, $6, $7, $8, $9) RETURNING id`,
+		preset, b.RunID, b.GeneratedAt, b.SchemaVersion, b.ScoreVersion, jsonOr(b.Settings, "{}"), jsonOr(b.Summary, "{}"), b.Export, b.ExportSHA256).Scan(&id)
 	if err != nil {
 		return 0, fmt.Errorf("store: insert build: %w", err)
 	}
