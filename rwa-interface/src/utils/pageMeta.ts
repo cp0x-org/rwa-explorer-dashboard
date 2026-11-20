@@ -29,6 +29,9 @@ export interface PageMeta {
   keywords: string;
   // false for an unknown asset, token or issuer: the page exists in the app but is not a real page
   found: boolean;
+  // a real page that must not be indexed (an update's detail page: the server does not know the runs): the server sends
+  // `noindex`, writes no canonical link or structured data, and the sitemap does not list it
+  noindex?: boolean;
   crumbs: Crumb[]; // breadcrumb trail, last item is the page itself (empty on top-level pages)
   // the same page in every locale, for hreflang and the switcher
   alternates: { locale: Locale; path: string }[];
@@ -77,6 +80,18 @@ export function pageMeta(pathname: string, data: RwaExport): PageMeta {
   });
   const [section, id, ...rest] = path.split('/').filter(Boolean);
   if (rest.length) return page(t('meta.notFound.title'), basket, [], false); // deeper paths are never pages
+
+  if (section === 'updates' && id) {
+    // any numeric id is a page for the server; whether the run exists is known to the browser only
+    if (!/^\d+$/.test(id)) return page(t('meta.notFound.title'), basket, [], false);
+    return {
+      ...page(t('meta.update.title', { id }), t('meta.update.description', { id }), [
+        { name: t('update.crumb'), path: '/updates' },
+        { name: `#${id}`, path }
+      ]),
+      noindex: true
+    };
+  }
 
   if (section === 'assets' && id) {
     const u = data.underlyings.find((x) => x.ticker === decodeURIComponent(id));
@@ -159,6 +174,9 @@ export function pageMeta(pathname: string, data: RwaExport): PageMeta {
       break;
     case 'summary':
       if (!id) return page(t('meta.summary.title'), t('meta.summary.description', { basket }));
+      break;
+    case 'updates':
+      if (!id) return page(t('meta.updates.title'), t('meta.updates.description', { basket }));
       break;
   }
   // unknown asset, token, issuer or path: the page says "not found" and must not be indexed

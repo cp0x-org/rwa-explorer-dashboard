@@ -50,6 +50,7 @@ export function pagePaths(data: RwaExport): string[] {
     '/issuers',
     '/opportunities',
     '/summary',
+    '/updates',
     ...data.underlyings.map((u) => `/assets/${encodeURIComponent(u.ticker)}`),
     ...data.tokens.map((t) => `/tokens/${t.id}`),
     ...data.issuers.map((i) => `/issuers/${encodeURIComponent(i.id)}`)
@@ -80,7 +81,7 @@ export function sitemapHeads(data: RwaExport, site: string | undefined = siteUrl
 
 // HTML of one page with the data already in place, its critical CSS and <head> metadata. Used by server/render.mjs.
 // `meta.found` is false for an address that is not a page (unknown ticker, token or issuer, unknown path): the server
-// answers it with HTTP 404.
+// answers it with HTTP 404. `meta.noindex` marks a page that exists but is not for search engines (/updates/:id).
 export async function render(path: string, data: RwaExport, site: string | undefined = siteUrl): Promise<RenderedPage> {
   const handler = createStaticHandler(routes, { basename: import.meta.env.VITE_APP_BASE_NAME });
   const context = await handler.query(new Request(new URL(path, 'http://ssr.local')));
@@ -111,7 +112,7 @@ export async function render(path: string, data: RwaExport, site: string | undef
     meta,
     lang: meta.locale,
     noscript: intl.formatMessage({ id: 'site.noscript', defaultMessage: ENGLISH['site.noscript'] }),
-    head: site && meta.found ? headLinks(meta, site) : null,
+    head: site && meta.found && !meta.noindex ? headLinks(meta, site) : null,
     jsonLd: site ? jsonLd(meta, data, site) : null
   };
 }

@@ -14,6 +14,7 @@ import { CopyableAddress } from 'components/CopyableAddress';
 import { RelationRow } from 'types/rwa';
 import { categoryLabel, DASH, eligibilityChip, flagLabel, networkName } from 'utils/rwa';
 import { MessageId, useFormat, useT } from 'i18n';
+import { PositionTrends } from './Sparkline';
 import { EligibilityChip } from './StatusChip';
 
 function Field({ label, children }: { label: string; children: ReactNode }) {
@@ -108,6 +109,7 @@ export default function OpportunityDialog({ index, row, onClose }: { index: RwaI
             </Field>
           )}
         </Box>
+        <PositionTrends key={o.key} positionKey={o.key} />
         <Typography variant="caption" color="text.secondary" sx={{ display: 'block', marginTop: 1 }}>
           {t('dialog.source')}
         </Typography>

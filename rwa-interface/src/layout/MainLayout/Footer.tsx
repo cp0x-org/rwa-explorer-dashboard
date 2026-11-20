@@ -1,6 +1,43 @@
 import { Stack, Box, Typography, Link } from '@mui/material';
 import { ReactComponent as Cp0xLogo } from '@/assets/images/cp0x-logo.svg';
-import { LocaleLink, useT } from 'i18n';
+import { useContext } from 'react';
+import { useIntl } from 'react-intl';
+import useSWR from 'swr';
+import { DATA_URL, RwaDataContext } from 'api/rwa';
+import { useStatus } from 'api/runs';
+import useHydrated from 'hooks/useHydrated';
+import { RwaExport } from 'types/rwa';
+import { ENGLISH, LocaleLink, MessageId, useFormat, useT } from 'i18n';
+import Age from 'views/rwa/components/Age';
+
+// "Data collected 3h ago · next collection ~Nov 21, 2026, 06:00 UTC", then "Update history". The time of the last collection
+// is read from the export the page already has (the preloaded one, or the cache of the page's own request: no request or
+// poller of the footer's own); the server shows the UTC time, the browser the age. The next collection comes from /status, asked
+// for in the browser after hydration, so the server markup does not depend on it.
+function DataStatus() {
+  const t = useT();
+  const intl = useIntl();
+  const f = useFormat();
+  const hydrated = useHydrated();
+  const preloaded = useContext(RwaDataContext);
+  const { data: cached } = useSWR<RwaExport>(DATA_URL); // cache only: there is no fetcher here
+  const { data: status } = useStatus();
+  const newest = (cached ?? preloaded)?.summary.newest_fetched_at;
+  const nextRun = hydrated ? status?.next_run_at : null;
+  const next = nextRun && Date.parse(nextRun) > Date.now() ? nextRun : null; // a collection that is overdue is not announced
+  const id: MessageId = next ? 'footer.collectedNext' : 'footer.collected';
+
+  return (
+    <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center', mt: 2, px: 3 }}>
+      {newest && (
+        <>{intl.formatMessage({ id, defaultMessage: ENGLISH[id] }, { age: <Age iso={newest} />, next: next ? f.date(next) : '' })} · </>
+      )}
+      <Link component={LocaleLink} to="/updates" color="inherit" underline="always">
+        {t('footer.updates')}
+      </Link>
+    </Typography>
+  );
+}
 
 export default function Footer() {
   const t = useT();
@@ -196,6 +233,7 @@ export default function Footer() {
           </Link>
         </Box>
       </Stack>
+      <DataStatus />
     </Box>
   );
 }

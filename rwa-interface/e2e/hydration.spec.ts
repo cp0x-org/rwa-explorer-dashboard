@@ -4,7 +4,7 @@ import { hydrated } from './helpers';
 
 // The server renders from build N and says so in <meta name="rwa-build">; the client loads exactly that build before it
 // hydrates, so the data behind the markup and behind the first client render are the same: no hydration mismatch.
-for (const route of ['/assets/NVDA', '/zh/tokens/36992']) {
+for (const route of ['/assets/NVDA', '/zh/tokens/36992', '/summary', '/updates', '/zh/updates/2']) {
   test(`${route} hydrates the server markup without console errors or warnings`, async ({ page }) => {
     const problems: string[] = [];
     page.on('console', (msg) => {

@@ -28,11 +28,13 @@ export function ChartCard({
   title,
   subtitle,
   action,
+  level = 'h3',
   children
 }: {
   title: string;
   subtitle?: ReactNode;
   action?: ReactNode;
+  level?: 'h2' | 'h3'; // the heading level that fits the page: h3 inside a section, h2 straight under the page title
   children: ReactNode;
 }) {
   const id = useId();
@@ -44,7 +46,7 @@ export function ChartCard({
     >
       <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 2, marginBottom: 2, flexWrap: 'wrap' }}>
         <Box sx={{ minWidth: 0 }}>
-          <Typography variant="h4" component="h3" id={id}>
+          <Typography variant="h4" component={level} id={id}>
             {title}
           </Typography>
           {subtitle && (

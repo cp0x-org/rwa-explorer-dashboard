@@ -37,7 +37,9 @@ import {
 import DataTableContainer from './components/DataTableContainer';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
+import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
+import { SparklineStats } from './components/Sparkline';
 import { StatGrid } from './components/StatGrid';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
@@ -69,6 +71,16 @@ interface IssuerStat {
 }
 
 const OTHER_ID = '__other__';
+
+const SUMMARY_HISTORY_METRICS = [
+  'eligible_opportunities_count',
+  'tokens_in_defi_count',
+  'tokenized_market_cap_usd',
+  'median_reported_apy_percent',
+  'max_reported_apy_percent',
+  'eligible_liquidity_usd',
+  'eligible_protocols_count'
+];
 
 // Average and maximum over positions with a positive reported APY; zero and missing APY never enter the average.
 function yieldStats(index: RwaIndex, keys: Iterable<string>): YieldStats | null {
@@ -825,6 +837,17 @@ function SummaryView({ index }: { index: RwaIndex }) {
     hours: s.max_position_age_hours,
     threshold: f.pct(s.yield_apy_review_threshold_percent, 0)
   };
+  // the cards' values are known to the server (the export): only their sparklines are loaded in the browser
+  const trendItems = [
+    { metric: 'eligible_opportunities_count', label: t('stat.eligible'), current: f.num(summary.eligible_opportunities_count) },
+    { metric: 'tokens_in_defi_count', label: t('summary.stat.tokensInDefi'), current: f.num(summary.tokens_in_defi_count) },
+    {
+      metric: 'tokenized_market_cap_usd',
+      label: t('history.metric.tokenized_market_cap_usd'),
+      current: f.usd(index.data.underlyings.reduce((sum, u) => sum + Number(u.tokenized_market_cap_usd ?? 0), 0))
+    },
+    { metric: 'median_reported_apy_percent', label: t('stat.medianReportedApy'), current: f.pct(summary.median_reported_apy_percent) }
+  ];
   const inDefi = stats.tokens.filter((tk) => tk.eligible.size > 0).length;
   const overall = stats.overallYield;
   const best = stats.tokens.reduce<TokenStat | null>(
@@ -885,6 +908,23 @@ function SummaryView({ index }: { index: RwaIndex }) {
               hint: t('summary.stat.tokensWithApy.hint', { total: stats.tokens.length })
             }
           ]}
+        />
+      </Box>
+
+      <Box component="section" aria-labelledby="trends-title" sx={{ marginBottom: 4 }}>
+        <Typography variant="h3" component="h2" id="trends-title" gutterBottom sx={{ marginBottom: 2 }}>
+          {t('history.stats.title')}
+        </Typography>
+        <Box sx={{ marginBottom: 2 }}>
+          <SparklineStats entity="summary" id={null} items={trendItems} requestMetrics={SUMMARY_HISTORY_METRICS} />
+        </Box>
+        <HistoryChart
+          entity="summary"
+          id={null}
+          level="h3"
+          metrics={SUMMARY_HISTORY_METRICS}
+          title={t('history.summary.title')}
+          subtitle={t('history.summary.subtitle')}
         />
       </Box>
 

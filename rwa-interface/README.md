@@ -14,7 +14,9 @@ history); client: `src/api/rwa.ts` (`API_BASE`, `DATA_URL`, `exportUrl(buildId)`
 
 `API_BASE` is `VITE_API_URL` (empty = same origin, as in production behind the reverse proxy).
 Until the backend runs, `pnpm mock:api` (`mock-api/server.mjs`, no dependencies) serves `public/data/rwa.json` as build 1
-plus synthetic status, runs and history: `--port 8080`, `--fail` (every `/api/*` answers 503), `--delay-ms`.
+plus synthetic status, runs (partial, refresh, rebuild, import; with warnings, per-asset results and changes) and history
+(10 daily points per entity): `--port 8080`, `--fail` (every `/api/*` answers 503), `--delay-ms`. Mock-only: `history/...?points=N`
+keeps the last N points (the one-point and no-point states of the charts in e2e).
 
 ## Pages
 
@@ -23,7 +25,18 @@ plus synthetic status, runs and history: `--port 8080`, `--fail` (every `/api/*`
 - `/tokens/:cmcId` — one tokenized asset: deployments and their Portals status, positions (direct and via LP → vault), breakdowns
 - `/issuers` — issuer rating; `/issuers/:issuerId` — issuer's tokenized assets in the basket
 - `/opportunities` — all token–position links with filters (asset, issuer, network, category, protocol, status, link)
-- `/summary` — charts: issuers' share of eligible positions, yield (APY > 0 only), breakdown per underlying
+- `/summary` — charts: issuers' share of eligible positions, yield (APY > 0 only), breakdown per underlying; trend cards
+  (sparklines) and a history chart of the basket's key numbers
+- `/updates` — data collection runs (date, status, duration, requests, credits, changes; rebuilds behind a toggle);
+  `/updates/:runId` — one run: warnings, per-asset results (filter: only non-ok), new tokens and issuers, details by network and
+  platform. The server renders only the shell of both (the export has no runs): the runs are fetched in the browser, the
+  list is in the sitemap, a detail page is `noindex` (any numeric id answers 200; an unknown run says "not found" in the browser).
+
+History charts (`components/HistoryChart.tsx`, `Sparkline.tsx`) sit on `/summary`, `/assets/:ticker`, `/tokens/:id`,
+`/issuers/:id` and in the position dialog. They are hand-written SVG, load after hydration (the server renders a placeholder of
+the same height), have a range selector (30 / 90 / 365 days / all), toggle chips for the metrics (up to 3 lines, each with its
+own scale), a legend, one Tab stop with arrow-key navigation along the points, and a hidden text summary; one point shows
+"history starts on ...", none shows "No history yet."
 
 Every page exists in English (the paths above) and Simplified Chinese under `/zh/...` (`/zh/assets/NVDA`). The language
 comes from the URL only; the switcher in the header (`EN | 中文`) links to the same page in the other language.
@@ -82,7 +95,8 @@ Without server markup (dev server) the app renders on the client.
 
 The `<head>` of every page comes from `src/utils/pageMeta.ts` (title, description, breadcrumbs) and `src/utils/seo.ts`
 (canonical, `hreflang` en / zh-CN / x-default, Open Graph, JSON-LD: `WebSite`, `Organization`, `WebPage`, `Dataset` +
-`ItemList` on listing pages, `BreadcrumbList` on detail pages).
+`ItemList` on listing pages, `BreadcrumbList` on detail pages; `/updates` is a plain `WebPage`, `/updates/:id` has no
+canonical link or JSON-LD and sends `noindex`).
 
 - Output that depends on the viewer (relative "2d ago" times, media queries) must not differ between the server render and
   the first browser render: use `hooks/useHydrated` and responsive `sx` values instead of `useMediaQuery` for layout.

@@ -19,6 +19,7 @@ import Age from './components/Age';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
 import Legend from './components/Legend';
+import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
 import SortHeader, { useSort } from './components/SortHeader';
 import TableCaption from './components/TableCaption';
@@ -39,6 +40,8 @@ function bestYieldByToken(rows: RelationRow[]): Map<number, RelationRow> {
   });
   return best;
 }
+
+const ISSUER_HISTORY_METRICS = ['issuer_usefulness_score', 'basket_relative_score', 'tokens_in_defi_count'];
 
 function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }) {
   const t = useT();
@@ -108,6 +111,17 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
         ]}
       />
       <MethodNote data={index.data} />
+
+      <Box sx={{ marginBottom: 4 }}>
+        <HistoryChart
+          key={`issuers:${issuer.id}`}
+          entity="issuers"
+          id={issuer.id}
+          metrics={ISSUER_HISTORY_METRICS}
+          title={t('history.issuer.title')}
+          subtitle={t('history.subtitle')}
+        />
+      </Box>
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
         <Typography variant="h3" component="h2">

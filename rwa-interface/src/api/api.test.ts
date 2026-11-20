@@ -28,11 +28,12 @@ describe('response types match the mock API fixtures', () => {
 
   it('runs and run detail', () => {
     const list: RunsResponse = runs;
-    expect(list.items.map((r) => r.mode)).toEqual(['refresh', 'refresh', 'import']);
-    expect(list.items.map((r) => r.trigger)).toEqual(['schedule', 'schedule', 'import']);
-    expect(list.items[1].changes?.eligible_delta).toBe(8);
+    expect(list.items.map((r) => r.mode)).toEqual(['rebuild', 'refresh', 'refresh', 'import']);
+    expect(list.items.map((r) => r.trigger)).toEqual(['manual', 'schedule', 'schedule', 'import']);
+    expect(list.items[2].changes?.eligible_delta).toBe(8);
     const refreshed: RunDetail = run2;
     expect(refreshed.changes?.new_tokens).toHaveLength(2);
+    expect(Object.keys(refreshed.changes?.details ?? {})).toEqual(['eligible_by_network', 'eligible_by_platform', 'reclassified']); // as compute/changes.go writes them
     const partial: RunDetail = run3;
     expect(partial.underlyings.filter((u) => u.status === 'failed')).toHaveLength(1);
     expect(partial.warnings).toHaveLength(partial.warnings_count);

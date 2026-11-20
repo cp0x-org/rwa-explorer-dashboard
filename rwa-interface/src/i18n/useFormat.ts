@@ -35,8 +35,12 @@ export function makeFormat(locale: Locale) {
     minute: '2-digit',
     hour12: false
   });
+  const monthDayOnly = new Intl.DateTimeFormat(locale, { timeZone: 'UTC', month: 'short', day: 'numeric' });
   const dateOnly = new Intl.DateTimeFormat(locale, { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' });
   const relative = new Intl.RelativeTimeFormat(locale, { numeric: 'always', style: 'narrow' });
+  const unit = (u: 'second' | 'minute' | 'hour') =>
+    new Intl.NumberFormat(locale, { style: 'unit', unit: u, unitDisplay: 'narrow', maximumFractionDigits: 1 });
+  const [secondsFormat, minutesFormat, hoursFormat] = [unit('second'), unit('minute'), unit('hour')];
 
   // $1.23K / $4.56M / $7.89B: compact USD amounts, same thresholds as before.
   const shortUsd = (n: number): string => {
@@ -65,6 +69,20 @@ export function makeFormat(locale: Locale) {
       if (!iso) return DASH;
       const d = new Date(iso);
       return Number.isNaN(d.getTime()) ? DASH : `${dateTime.format(d)} UTC`;
+    },
+    // 12.5 s / 9m 0s style: "4.2s", "9m 5s", "1h 3m" in the locale's narrow units
+    duration: (seconds: number | string | null | undefined): string => {
+      const n = toNumber(seconds);
+      if (n === null || n < 0) return DASH;
+      if (n < 60) return secondsFormat.format(Math.round(n * 10) / 10);
+      const total = Math.round(n);
+      if (total < 3600) return `${minutesFormat.format(Math.floor(total / 60))} ${secondsFormat.format(total % 60)}`;
+      return `${hoursFormat.format(Math.floor(total / 3600))} ${minutesFormat.format(Math.floor((total % 3600) / 60))}`;
+    },
+    monthDay: (iso: string | null | undefined): string => {
+      if (!iso) return DASH;
+      const d = new Date(iso);
+      return Number.isNaN(d.getTime()) ? DASH : monthDayOnly.format(d);
     },
     day: (iso: string | null | undefined): string => {
       if (!iso) return DASH;

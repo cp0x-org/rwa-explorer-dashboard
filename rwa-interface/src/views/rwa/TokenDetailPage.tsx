@@ -25,6 +25,7 @@ import BreakdownTable from './components/BreakdownTable';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
 import Legend from './components/Legend';
+import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
@@ -32,6 +33,14 @@ import { CoverageChip, DeploymentChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
 import FilterPanel from './components/FilterPanel';
+
+const TOKEN_HISTORY_METRICS = [
+  'market_cap_usd',
+  'price_usd',
+  'eligible_opportunities_count',
+  'max_reported_apy_percent',
+  'median_reported_apy_percent'
+];
 
 function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
   const t = useT();
@@ -128,6 +137,17 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
         ]}
       />
       <MethodNote data={index.data} />
+
+      <Box sx={{ marginBottom: 4 }}>
+        <HistoryChart
+          key={`tokens:${token.id}`}
+          entity="tokens"
+          id={token.id}
+          metrics={TOKEN_HISTORY_METRICS}
+          title={t('history.token.title')}
+          subtitle={t('history.subtitle')}
+        />
+      </Box>
 
       {token.excluded_reason && (
         <Typography variant="body1" color="warning.main" sx={{ marginBottom: 3 }}>

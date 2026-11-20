@@ -1,7 +1,9 @@
+import { useEffect, useRef } from 'react';
 import useSWR from 'swr';
 
-import { HistoryEntity, HistoryMetricsResponse, HistoryResponse, HistoryStep } from 'types/api';
-import { apiUrl, fetchJson, SWR_OPTIONS } from './rwa';
+import { HistoryEntity, HistoryMetricsResponse, HistoryResponse, HistoryStep, StatusResponse } from 'types/api';
+import { ApiError, apiUrl, fetchJson, SWR_OPTIONS } from './rwa';
+import { statusKey } from './runs';
 
 export interface HistoryRange {
   from?: string; // ISO date or timestamp
@@ -25,7 +27,23 @@ const clientKey = (key: string | null) => (typeof window === 'undefined' ? null 
 
 export function useHistory(entity: HistoryEntity, id: string | number | null, metrics: string[], range: HistoryRange = {}) {
   const key = metrics.length ? historyKey(entity, id, metrics, range) : null;
-  return useSWR<HistoryResponse>(clientKey(key), fetchJson, SWR_OPTIONS);
+  // History changes with a build, not by the clock: no interval refresh; a new build id in the status that the pages already
+  // poll (read from the cache, no request of its own) revalidates it. The previous range stays on screen while the next loads.
+  const { data: status } = useSWR<StatusResponse>(clientKey(statusKey()));
+  const build = status?.current_build?.id;
+  const seen = useRef(build);
+  const result = useSWR<HistoryResponse>(clientKey(key), fetchJson, {
+    revalidateOnFocus: false,
+    dedupingInterval: SWR_OPTIONS.dedupingInterval,
+    keepPreviousData: true,
+    shouldRetryOnError: (error) => !(error instanceof ApiError && error.status === 404)
+  });
+  const { mutate } = result;
+  useEffect(() => {
+    if (build !== undefined && seen.current !== undefined && seen.current !== build) mutate();
+    seen.current = build;
+  }, [build, mutate]);
+  return result;
 }
 
 export const useHistoryMetrics = () => useSWR<HistoryMetricsResponse>(clientKey(historyMetricsKey()), fetchJson, SWR_OPTIONS);

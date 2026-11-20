@@ -71,6 +71,28 @@ describe('pageMeta', () => {
   });
 });
 
+describe('update pages', () => {
+  it('lists /updates as a page, and an update as a noindex page that is never "not found" for the server', () => {
+    const list = pageMeta('/zh/updates', data);
+    expect(list.found).toBe(true);
+    expect(list.noindex).toBeUndefined();
+    expect(list.title).toMatch(/[一-鿿]/);
+    const one = pageMeta('/updates/12', data);
+    expect(one.found).toBe(true);
+    expect(one.noindex).toBe(true);
+    expect(one.title).toContain('#12');
+    expect(one.crumbs.map((c) => c.path)).toEqual(['/updates', '/updates/12']);
+    expect(pageMeta('/updates/abc', data).found).toBe(false);
+    expect(pageMeta('/updates/1/2', data).found).toBe(false);
+  });
+
+  it('describes the listing as a plain WebPage without a data set, and an update with nothing at all', () => {
+    const list = jsonLd(pageMeta('/updates', data), data, SITE) as any;
+    expect(list['@graph'].map((n: any) => n['@type'])).toEqual(['Organization', 'WebSite', 'WebPage']);
+    expect(jsonLd(pageMeta('/updates/12', data), data, SITE)).toBeNull();
+  });
+});
+
 describe('seo', () => {
   it('builds self-canonical and bidirectional hreflang links', () => {
     const en = headLinks(pageMeta('/assets/NVDA', data), SITE);

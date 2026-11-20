@@ -3,13 +3,17 @@ import { expect, test } from '@playwright/test';
 
 import { hydrated, ROUTES, SAMPLE } from './helpers';
 
-const PAGES = [...ROUTES, ...ROUTES.map((r) => `/zh${r}`)];
+// the update pages load their runs in the browser: axe runs after hydration, when the table is there
+const ROUTES_WITH_UPDATES = [...ROUTES, '/updates', '/updates/3'];
+const PAGES = [...ROUTES_WITH_UPDATES, ...ROUTES_WITH_UPDATES.map((r) => `/zh${r}`)];
 
 test.describe('accessibility', () => {
   for (const path of PAGES) {
     test(`${path} has no critical or serious axe violations`, async ({ page }) => {
       await page.goto(path);
       await hydrated(page);
+      // wait for the browser-loaded parts (runs, history charts) so axe sees them
+      await page.waitForFunction(() => !document.querySelector('[aria-busy="true"]'), null, { timeout: 15_000 });
       const results = await new AxeBuilder({ page })
         .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'])
         .analyze();
@@ -28,7 +32,7 @@ test.describe('accessibility', () => {
   }
 
   test('document structure: one h1, landmarks, no duplicate active navigation', async ({ page }) => {
-    for (const path of ['/assets', `/zh/tokens/${SAMPLE.token}`, '/summary']) {
+    for (const path of ['/assets', `/zh/tokens/${SAMPLE.token}`, '/summary', '/updates', '/zh/updates/3']) {
       await page.goto(path);
       await hydrated(page);
       expect(await page.getByRole('heading', { level: 1 }).count(), path).toBe(1);
@@ -38,7 +42,8 @@ test.describe('accessibility', () => {
       // the section navigation exists twice in the markup (desktop strip / phone grid) but only once per viewport
       const sections = page.getByRole('navigation', { name: path.startsWith('/zh') ? '栏目' : 'Sections' });
       expect(await sections.count(), path).toBe(1);
-      await expect(sections.locator('a[aria-current="page"]')).toHaveCount(1);
+      // (the update pages are reached from the header menu and the footer, they are not a section)
+      await expect(sections.locator('a[aria-current="page"]')).toHaveCount(path.includes('/updates') ? 0 : 1);
       // metric values are not headings
       const headings = await page.getByRole('heading').allTextContents();
       expect(
@@ -87,7 +92,10 @@ test.describe('accessibility', () => {
 
     await page.goto('/summary');
     await hydrated(page);
-    expect(await page.locator('svg:not([aria-hidden="true"]) [tabindex]').count()).toBe(0);
+    // (the history chart is the one chart with focusable points: a group with a roving tabindex, one Tab stop)
+    await expect(page.locator('svg[data-history-chart]')).toBeVisible();
+    expect(await page.locator('svg:not([aria-hidden="true"]):not([data-history-chart]) [tabindex]').count()).toBe(0);
+    expect(await page.locator('svg[data-history-chart] [tabindex="0"]').count()).toBe(1);
     await expect(page.getByRole('region', { name: 'Protocol diversity' }).getByRole('link').first()).toBeVisible();
   });
 

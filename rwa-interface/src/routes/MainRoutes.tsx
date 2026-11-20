@@ -11,6 +11,8 @@ import IssuerDetailPage from 'views/rwa/IssuerDetailPage';
 import OpportunitiesPage from 'views/rwa/OpportunitiesPage';
 import SummaryPage from 'views/rwa/SummaryPage';
 import NotFoundPage from 'views/rwa/NotFoundPage';
+import UpdatesPage from 'views/rwa/UpdatesPage';
+import UpdateDetailPage from 'views/rwa/UpdateDetailPage';
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -26,6 +28,8 @@ export const pageRoutes: RouteObject[] = [
   { path: 'issuers/:issuerId', element: <IssuerDetailPage /> },
   { path: 'opportunities', element: <OpportunitiesPage /> },
   { path: 'summary', element: <SummaryPage /> },
+  { path: 'updates', element: <UpdatesPage /> },
+  { path: 'updates/:runId', element: <UpdateDetailPage /> },
   { path: '*', element: <NotFoundPage /> }
 ];
 

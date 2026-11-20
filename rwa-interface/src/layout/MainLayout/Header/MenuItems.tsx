@@ -29,6 +29,9 @@ export default function MenuItems() {
         <Button component={LocaleLink} to="/" sx={menuButtonStyle(theme)}>
           {t('header.home')}
         </Button>
+        <Button component={LocaleLink} to="/updates" sx={menuButtonStyle(theme)}>
+          {t('header.updates')}
+        </Button>
         <Button href="https://pi.cp0x.com" rel="noopener noreferrer" sx={menuButtonStyle(theme)}>
           {t('header.pi')}
         </Button>

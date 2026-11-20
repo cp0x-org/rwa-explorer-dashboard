@@ -25,7 +25,7 @@ same port afterwards and the server recovers within 10 s, without a restart.
 ## Drive (Playwright)
 
 Playwright is in the repo: `playwright.config.ts`, specs in `e2e/` (`rendering`, `seo`, `i18n`, `interaction`, `a11y`,
-`hydration`, `unavailable`), shared helpers and sample ids in `e2e/helpers.ts` (`ROUTES`, `SAMPLE`). Tests run against
+`hydration`, `unavailable`, `updates`, `history`), shared helpers and sample ids in `e2e/helpers.ts` (`ROUTES`, `SAMPLE`). Tests run against
 `dist/` and `dist-ssr/`, so `pnpm build` first.
 
 ```bash
@@ -48,7 +48,12 @@ The config starts, by itself, the mock API (port 8180) and `server/index.mjs` (4
 - `/tokens/<id>` — deployments, breakdowns, positions; position row → detail dialog (`[role="dialog"]`, `OpportunityDialog`)
 - `/issuers` → row link → `/issuers/:issuerId`
 - `/opportunities?underlying=NVDA` — filters + pagination
-- `/summary` — charts with accessible legend and text summary
+- `/summary` — charts with accessible legend and text summary; trend sparkline cards and the history chart (range toggle, metric chips)
+- `/updates` — runs table (client-only: `curl` shows the heading and a busy placeholder, no table); "Show rebuilds" switch;
+  date link → `/updates/3` (warnings, per-asset table with the "only not ok" switch) and `/updates/2` (new tokens/issuers, details)
+- `/updates/999` — 200 + `noindex` from the server, "Update #999 not found" in the browser; `/updates/abc` — 404
+- History states: the mock's `?points=1` / `?points=0` (rewrite the request with `page.route`, see `e2e/history.spec.ts`) give "history starts on ..." and "No history yet."
+- Footer: "Data collected ... · next collection ~... · Update history" (the last two parts after hydration)
 - `/zh/...` — every page in Simplified Chinese; header switcher `EN | 中文` links to the same page
 - Error state: route `/api/v1/export` to 503 in a spec (or start the server on a `--fail` mock) → "Data unavailable"
 - Unknown path or id → server-rendered not-found page with HTTP 404 in the language of the URL

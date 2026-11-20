@@ -2,7 +2,7 @@ import Chip from '@mui/material/Chip';
 
 import VisuallyHidden from 'ui-component/VisuallyHidden';
 import { coverageChip, deploymentChip, eligibilityChip } from 'utils/rwa';
-import { useT } from 'i18n';
+import { MessageId, useT } from 'i18n';
 import HintTooltip from './HintTooltip';
 
 // A status chip whose explanation is a tooltip for the eye and hidden text for assistive technology.
@@ -20,6 +20,27 @@ function HintChip({ label, color, hint }: { label: string; color: Parameters<typ
         }
       />
     </HintTooltip>
+  );
+}
+
+const RUN_STATUS_COLOR: Record<string, Parameters<typeof Chip>[0]['color']> = {
+  succeeded: 'success',
+  partial: 'warning',
+  failed: 'error',
+  running: 'info'
+};
+
+// Status of a data collection run; a status the UI does not know is shown as the API names it.
+export function RunStatusChip({ status }: { status: string }) {
+  const t = useT();
+  const known = status in RUN_STATUS_COLOR;
+  return (
+    <Chip
+      size="small"
+      variant={status === 'succeeded' ? 'filled' : 'outlined'}
+      color={RUN_STATUS_COLOR[status] ?? 'default'}
+      label={known ? t(`run.status.${status}` as MessageId) : status}
+    />
   );
 }
 

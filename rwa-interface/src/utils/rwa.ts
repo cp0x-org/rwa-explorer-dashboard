@@ -40,6 +40,15 @@ const CATEGORIES = new Set(['dex_lp', 'lending_supply', 'vault', 'staking', 'yie
 export const categoryLabel = (t: T, category: string): string =>
   CATEGORIES.has(category) ? t(`category.${category}` as MessageId) : category;
 
+// "Refresh · scheduled": what kind of run it was and what started it; values the UI does not know are shown as they are.
+export function runKind(t: T, run: { mode: string; trigger: string }): string {
+  const mode = ['refresh', 'add', 'import', 'rebuild'].includes(run.mode) ? t(`run.mode.${run.mode}` as MessageId) : run.mode;
+  const trigger = ['schedule', 'startup', 'manual', 'import', 'cli'].includes(run.trigger)
+    ? t(`run.trigger.${run.trigger}` as MessageId)
+    : run.trigger;
+  return mode.toLowerCase() === trigger.toLowerCase() ? mode : `${mode} · ${trigger}`;
+}
+
 export type ChipColor = 'default' | 'success' | 'warning' | 'error' | 'info' | 'primary' | 'secondary';
 
 // `search` (the normal case: positions found via Portals search and confirmed by address) has no chip, only problems are shown.

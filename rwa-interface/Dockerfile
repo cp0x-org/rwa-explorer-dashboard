@@ -1,4 +1,4 @@
-FROM node:22-alpine AS builder
+FROM --platform=$BUILDPLATFORM node:22.21.0-alpine AS builder
 
 WORKDIR /app
 
@@ -10,11 +10,15 @@ RUN pnpm install --frozen-lockfile
 
 COPY . .
 
+# shown in the UI; overrides VITE_APP_VERSION from .env.production (build.sh passes v<version>)
+ARG VITE_APP_VERSION
+ENV VITE_APP_VERSION=${VITE_APP_VERSION:-v2.0.0}
+
 # Client bundle (dist/) and server bundle (dist-ssr/). The data comes from the API at runtime, not from the image:
 # public/data and public/logos are copied into dist/ by Vite but never served from it, so they are dropped.
 RUN pnpm run build && rm -rf dist/data dist/logos
 
-FROM node:22-alpine
+FROM node:22.21.0-alpine
 
 WORKDIR /app
 

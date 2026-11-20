@@ -56,6 +56,9 @@ export default function MobileMenu() {
           <ListItemButton component={LocaleLink} to="/" onClick={toggle}>
             <ListItemText primary={t('header.home')} />
           </ListItemButton>
+          <ListItemButton component={LocaleLink} to="/updates" onClick={toggle}>
+            <ListItemText primary={t('header.updates')} />
+          </ListItemButton>
           <ListItemButton component="a" href="https://pi.cp0x.com" rel="noopener noreferrer" onClick={toggle}>
             <ListItemText primary={t('header.pi')} />
           </ListItemButton>

@@ -2,6 +2,9 @@
 // Serves public/data/rwa.json as build 1 plus synthetic status, runs and history.
 //   node mock-api/server.mjs [--port 8080] [--fail] [--delay-ms 0]
 // --fail: every /api/* answers 503 (error-state tests). The mock is read-only and keeps no state.
+// Mock-only extras (not in the API contract): `history/...?points=N` keeps the last N points (0 = an empty series), for the
+// one-point and no-point states of the charts; the history clock is the export's own (see CLOCK below), so ranges such as
+// `from=<30 days ago>` keep selecting the mock's points however old the export file gets.
 import { createHash } from 'node:crypto';
 import { createReadStream, readFileSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
@@ -32,8 +35,16 @@ const exportSha = createHash('sha256').update(exportBody).digest('hex');
 const started = Date.parse(rwa.generated_at);
 const iso = (ms) => new Date(ms).toISOString().replace(/\.\d{3}Z$/, 'Z');
 
-const sample = rwa.underlyings.slice(0, 3);
-const okRows = (seconds) => sample.map((u) => ({ underlying_id: u.id, ticker: u.ticker, status: 'ok', error: null, duration_seconds: seconds }));
+const okRows = (seconds, count = 3) =>
+  rwa.underlyings.slice(0, count).map((u) => ({ underlying_id: u.id, ticker: u.ticker, status: 'ok', error: null, duration_seconds: seconds }));
+const firstValues = (list, pick, n) => [...new Set(list.map(pick))].slice(0, n);
+// like compute/changes.go: signed eligible-position deltas per network and protocol, reclassified CMC ids (first_build only on the first build)
+const detailsOf = () => ({
+  eligible_by_network: Object.fromEntries(firstValues(rwa.opportunities, (o) => o.network, 3).map((n, i) => [n, 5 - 4 * i])),
+  eligible_by_platform: Object.fromEntries(firstValues(rwa.opportunities, (o) => o.platform, 3).map((p, i) => [p, 4 - 3 * i])),
+  reclassified: rwa.tokens.slice(2, 3).map((t) => t.id)
+});
+const namedIssuer = rwa.issuers.find((i) => i.name) ?? rwa.issuers[0];
 
 // `detail` is what /runs/{id} adds to the list item
 const RUNS = [
@@ -86,17 +97,41 @@ const RUNS = [
     changes: { new_tokens_count: 2, removed_tokens_count: 0, new_positions_count: 14, gone_positions_count: 6, eligible_delta: 8 },
     detail: {
       warnings: [],
-      underlyings: okRows(4.0),
+      underlyings: [
+        ...okRows(4.0, 7),
+        { underlying_id: rwa.underlyings[7].id, ticker: rwa.underlyings[7].ticker, status: 'skipped', error: 'not due yet', duration_seconds: 0 }
+      ],
       changes: {
         new_tokens: rwa.tokens.slice(0, 2).map((t) => t.id),
-        removed_tokens: [],
-        new_issuers: [],
+        removed_tokens: [999999],
+        new_issuers: [namedIssuer.id],
         new_positions_count: 14,
         gone_positions_count: 6,
         eligible_delta: 8,
-        details: {}
+        details: detailsOf()
       }
     }
+  },
+  {
+    id: 4,
+    run_key: 'mock-rebuild',
+    mode: 'rebuild',
+    trigger: 'manual',
+    status: 'succeeded',
+    started_at: iso(started + 3 * 86400_000),
+    finished_at: iso(started + 3 * 86400_000 + 20_000),
+    duration_seconds: 20,
+    selected_count: 125,
+    completed_count: 125,
+    failed_count: 0,
+    cmc_requests: 0,
+    portals_requests: 0,
+    cmc_credits: 0,
+    warnings_count: 0,
+    error: null,
+    build_id: BUILD_ID,
+    changes: null,
+    detail: { warnings: [], underlyings: [], changes: null }
   },
   {
     id: 1,
@@ -120,6 +155,8 @@ const RUNS = [
     detail: { warnings: [], underlyings: [], changes: null }
   }
 ];
+
+RUNS.sort((a, b) => b.id - a.id); // newest first, like the API
 
 function run(id, withDetail) {
   const found = RUNS.find((r) => r.id === id);
@@ -211,8 +248,10 @@ function history(entity, id, query) {
 
   const step = query.get('step') ?? 'run';
   if (!['run', 'day', 'week'].includes(step)) return bad('step must be run, day or week');
-  const from = query.get('from') ? Date.parse(query.get('from')) : Date.now() - 365 * DAY_MS;
-  const to = query.get('to') ? Date.parse(query.get('to')) : Infinity;
+  // CLOCK: "now" of the mock history is the day after the export, so a range counted from the real today still holds its points
+  const clockShift = Date.now() - (Math.floor(Date.parse(rwa.generated_at) / DAY_MS) * DAY_MS + DAY_MS * 1.5);
+  const from = (query.get('from') ? Date.parse(query.get('from')) : Date.now() - 365 * DAY_MS) - clockShift; // default: a year back, like the API
+  const to = query.get('to') ? Date.parse(query.get('to')) - clockShift : Infinity;
   if (Number.isNaN(from) || Number.isNaN(to)) return bad('from and to must be dates');
   const limitRaw = query.get('limit') === null ? LIMIT_DEFAULT : Number(query.get('limit'));
   if (!Number.isInteger(limitRaw) || limitRaw < 1) return bad('limit must be a positive integer');
@@ -242,9 +281,11 @@ function history(entity, id, query) {
     }
     points.push({ run_id: RUN_ID + (DAYS - 1 - d), observed_at: iso(observed), values });
   }
+  const keep = query.get('points') === null ? points.length : Number(query.get('points'));
+  const limited = keep > 0 ? points.slice(-keep) : keep === 0 ? [] : points;
   return {
     status: 200,
-    body: { entity, id: entity === 'summary' ? null : id, metrics, step, points: points.slice(-limit), truncated: points.length > limit }
+    body: { entity, id: entity === 'summary' ? null : id, metrics, step, points: limited.slice(-limit), truncated: limited.length > limit }
   };
 }
 

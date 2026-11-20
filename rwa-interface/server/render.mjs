@@ -36,7 +36,7 @@ export async function createRenderer({ root, siteUrl }) {
       tags.push(`<meta property="og:locale" content="${ogLocale}" />`);
       ogLocaleAlternates.forEach((l) => tags.push(`<meta property="og:locale:alternate" content="${l}" />`));
     }
-    if (!page.meta.found) tags.push('<meta name="robots" content="noindex" />');
+    if (!page.meta.found || page.meta.noindex) tags.push('<meta name="robots" content="noindex" />');
     if (page.jsonLd) tags.push(`<script type="application/ld+json">${escapeJson(page.jsonLd)}</script>`);
     return tags.join('\n        ');
   };

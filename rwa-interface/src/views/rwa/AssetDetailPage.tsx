@@ -16,12 +16,21 @@ import { LocaleLink, useFormat, useT } from 'i18n';
 import DataTableContainer from './components/DataTableContainer';
 import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
+import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
 import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 import VersionsTable from './components/VersionsTable';
 import { stickyColumn } from './components/tableSx';
+
+const ASSET_HISTORY_METRICS = [
+  'tokenized_market_cap_usd',
+  'eligible_opportunities_count',
+  'tokens_in_defi_count',
+  'versions_count',
+  'issuers_count'
+];
 
 function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string }) {
   const t = useT();
@@ -67,6 +76,17 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
         ]}
       />
       <MethodNote data={index.data} />
+
+      <Box sx={{ marginBottom: 4 }}>
+        <HistoryChart
+          key={`underlyings:${u.id}`}
+          entity="underlyings"
+          id={u.ticker}
+          metrics={ASSET_HISTORY_METRICS}
+          title={t('history.asset.title')}
+          subtitle={t('history.subtitle')}
+        />
+      </Box>
 
       <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
         {t('asset.tokenizedAssets')}

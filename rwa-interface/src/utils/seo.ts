@@ -35,7 +35,7 @@ export function headLinks(meta: PageMeta, siteUrl: string): HeadLinks {
 
 // JSON-LD graph of a page. Listing pages describe the data set and list their rows; detail pages carry breadcrumbs.
 export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string): object | null {
-  if (!meta.found) return null;
+  if (!meta.found || meta.noindex) return null;
   const { locale, path } = meta;
   const url = (p: string) => siteUrl + localizePath(p, locale);
   const intl = intlFor(locale);
@@ -79,7 +79,8 @@ export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string): object
   }
 
   const [section, id] = path.split('/').filter(Boolean);
-  if (!id) {
+  if (!id && section !== 'updates') {
+    // the update history is a plain WebPage: the data set is described on the data pages
     const dataset = {
       '@type': 'Dataset',
       '@id': `${siteUrl}/#dataset`,
