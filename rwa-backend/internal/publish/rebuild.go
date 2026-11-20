@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
@@ -29,12 +30,17 @@ func (p *Publisher) Rebuild(ctx context.Context, rp RebuildParams) (int64, *Resu
 	if err != nil {
 		return 0, nil, fmt.Errorf("publish: rebuild: %w", err)
 	}
+	log := p.log.With("run_id", runID, "step", "run")
+	log.Info("rebuild started", "trigger", rp.Trigger, "run_key", runKey)
 	res, err := p.Publish(ctx, runID, ModeRebuild)
 	if err != nil {
 		// Record the failure even when ctx was cancelled.
 		fctx, cancel := context.WithTimeout(context.WithoutCancel(ctx), 10*time.Second)
 		defer cancel()
 		_ = st.FinishRun(fctx, runID, "failed", store.RunCounters{}, nil, err.Error())
+		// Warn: Publish has already logged the error event of this failure.
+		log.Warn("run finished", "status", "failed", "error", err.Error(), "duration", time.Since(now))
+		runlog.CloseRun(p.log, runID)
 		return runID, nil, err
 	}
 	if p.afterPublish != nil {
@@ -44,7 +50,10 @@ func (p *Publisher) Rebuild(ctx context.Context, rp RebuildParams) (int64, *Resu
 	fctx, cancel := context.WithTimeout(context.WithoutCancel(ctx), 10*time.Second)
 	defer cancel()
 	if err := st.FinishRun(fctx, runID, "succeeded", store.RunCounters{}, res.Warnings, ""); err != nil {
+		runlog.CloseRun(p.log, runID)
 		return runID, res, fmt.Errorf("publish: rebuild: %w", err)
 	}
+	log.Info("run finished", "status", "succeeded", "warnings", len(res.Warnings), "duration", time.Since(now))
+	runlog.CloseRun(p.log, runID)
 	return runID, res, nil
 }

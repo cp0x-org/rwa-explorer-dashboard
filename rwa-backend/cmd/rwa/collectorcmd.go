@@ -19,6 +19,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/logos"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/publish"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/scheduler"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
@@ -55,7 +56,7 @@ func runCollector(args []string, _, stderr io.Writer) int {
 	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
-	log := newLogger(cfg, stderr)
+	log, jh := newJournalLogger(cfg, stderr)
 
 	if cfg.MigrateOnStart {
 		if err := db.Up(ctx, cfg.DatabaseURL); err != nil {
@@ -72,13 +73,15 @@ func runCollector(args []string, _, stderr io.Writer) int {
 		return 1
 	}
 	defer closePool(pool, log)
+	st := store.New(pool)
+	jh.SetSink(st)
+	defer jh.Close() // runs before closePool: the last events are written while the pool is open
 
 	if _, err := collect.AbandonRunningRuns(ctx, pool, log); err != nil {
 		log.Error("abandoned-run cleanup failed", "err", err)
 		return 1
 	}
 
-	st := store.New(pool)
 	pub := publish.New(pool, settings, assets, log)
 	version := buildVersion()
 	collect.Version = version
@@ -93,7 +96,8 @@ func runCollector(args []string, _, stderr io.Writer) int {
 			}
 			// The run id travels with an error too (interrupted run, FinishRun failure): the request is attached to it.
 			if res.Err != nil {
-				log.Error("collection run finished with a fatal error", "run_id", res.RunID, "err", res.Err)
+				// Not journaled (no run_id): collect.Run has logged the fatal error in the run's journal already.
+				log.Error("collection run finished with a fatal error", "collection_run", res.RunID, "err", res.Err)
 			}
 			return scheduler.CollectResult{RunID: res.RunID, Status: res.Status, NothingToDo: res.NothingToDo}, err
 		},
@@ -114,19 +118,23 @@ func runCollector(args []string, _, stderr io.Writer) int {
 		// arrived, a rebuild (no history rows) puts their paths into the current export right away, as 1.x did by
 		// fetching logos before build.
 		Logos: func(ctx context.Context, trigger string) error {
-			rep, err := fetcher.FetchMissing(ctx)
+			rlog := log.With("run_id", runlog.RunID(ctx), "step", "logos")
+			rep, err := fetcher.WithLogger(rlog).FetchMissing(ctx)
 			if err != nil {
 				return err
 			}
 			if len(rep.Downloaded) == 0 {
 				return nil
 			}
-			log.Info("new logos downloaded, rebuilding the export", "count", len(rep.Downloaded))
+			rlog.Info("new logos downloaded, rebuilding the export", "count", len(rep.Downloaded))
 			_, _, err = pub.Rebuild(ctx, publish.RebuildParams{Trigger: trigger, CollectorVersion: version, SettingsJSON: settingsJSON})
 			return err
 		},
 		Retention: func(ctx context.Context, cutoff time.Time) (int64, error) {
 			return st.DeleteSnapshotsOlderThan(ctx, cutoff)
+		},
+		EventsRetention: func(ctx context.Context, cutoff time.Time) (int64, error) {
+			return st.DeleteRunEventsOlderThan(ctx, cutoff)
 		},
 		TakeRequest:    st.TakeNextRunRequest,
 		AttachRun:      st.AttachRunToRequest,
@@ -142,7 +150,8 @@ func runCollector(args []string, _, stderr io.Writer) int {
 	}
 	sched, err := scheduler.New(scheduler.Config{
 		Cron: cfg.CollectCron, Interval: cfg.CollectInterval, OnStart: cfg.CollectOnStart, RetentionDays: cfg.SnapshotRetentionDays,
-		RunTimeout: cfg.RunTimeout,
+		EventsRetentionDays: cfg.RunEventsRetentionDays,
+		RunTimeout:          cfg.RunTimeout,
 	}, deps, log)
 	if err != nil {
 		log.Error("scheduler configuration invalid", "err", err)

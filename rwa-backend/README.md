@@ -34,6 +34,8 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `COLLECT_ON_START` | `true` | collector | run on start if the last successful run is older than the interval (cron: older than 24 h) |
 | `MIGRATE_ON_START` | `true` | collector | apply pending migrations when the collector starts; when `false` it refuses to start with pending ones |
 | `SNAPSHOT_RETENTION_DAYS` | `90` | collector | snapshot retention |
+| `RUN_EVENTS_LEVEL` | `info` | collector, `run-once`, `build`, `publish` | minimum level stored in the run journal (`run_events`): `debug` also stores every provider request |
+| `RUN_EVENTS_RETENTION_DAYS` | `30` | collector | run journal retention (the events of the current build's run are kept) |
 | `RUN_TIMEOUT` | `2h` | collector | deadline of one job (collect + publish + logos) and of `run-once`; a run that exceeds it ends `failed` with `error='timeout'` |
 | `RAW_CAPTURE_DIR` | empty | collector | write raw API responses here (debug) |
 | `HTTP_ADDR` | `:8080` | api | listen address |
@@ -60,7 +62,8 @@ curl localhost:8080/api/v1/status
 |---|---|
 | `GET /api/v1/export` | stored build bytes verbatim; `?build=<id>` for a specific build |
 | `GET /api/v1/{status,summary,underlyings[/{idOrTicker}],tokens[/{id}],issuers[/{id}],opportunities}` | narrow views over the same in-memory build; `opportunities` is cursor-paginated |
-| `GET /api/v1/runs`, `/runs/{id}` | run history with per-build changes |
+| `GET /api/v1/runs`, `/runs/{id}` | run history with per-build changes; the detail has `events_count` and `errors_count` |
+| `GET /api/v1/runs/{id}/events` | the run journal, see [Run journal](#run-journal) |
 | `GET /api/v1/history/{summary,underlyings,tokens,issuers,opportunities}[/{id}]?metrics=` | time series; `GET /api/v1/history/metrics` lists the metrics |
 | `GET /logos/{kind}/{entityId}.{ext}` | logo bytes from the database |
 | `GET /healthz`, `GET /readyz` | liveness; readiness (database reachable and a build loaded, else 503) |
@@ -80,6 +83,44 @@ wrong token is 401 (constant-time comparison); without `ADMIN_TOKEN` the endpoin
 Errors are `{"error":{"code","message"}}` with `not_found`, `bad_request`, `unknown_metric` (adds `metric` and
 `allowed`), `unauthorized`, `unavailable`, `internal`. Every response carries `X-Request-ID` (an incoming one is kept);
 the access log records method, path (no query), status, duration and the request id.
+
+## Run journal
+
+Every collection run (and every rebuild) keeps a journal in the `run_events` table: the five global collection steps, one
+line per underlying (saved or failed, with its duration), warnings, the publish (start, end, summary, warnings), the logos
+report, retention and a `run finished` event with the status and duration. `run finished` is not the last event: the
+run is finished before publish, logos, retention and `job ended` write into it, so the job that owns the run ends the
+journal with a terminal event `journal closed` (`step=run`, written by the scheduler, `rwa run-once`, `rwa publish --run`
+and the rebuild itself). Provider requests (provider, path,
+status, `duration_ms`) are stored only with `RUN_EVENTS_LEVEL=debug`; so are the names of the downloaded, failed and
+source-less logos. `LOG_LEVEL` and `RUN_EVENTS_LEVEL` are independent: the process log (stdout) is unchanged, the journal
+is an additional copy of the records that belong to a run.
+
+How it works: `internal/runlog` is a `slog.Handler` that forwards every record to the stdout handler and, when the record
+carries a run id (the attribute `run_id`, or a context set with `runlog.WithRun`), buffers it as an event. The attribute
+`step` names the stage: `collect.cmc`, `collect.portals`, `collect.underlying`, `publish`, `logos`, `retention`,
+`scheduler` or `run` (default). Other attributes become the JSONB `attrs` (durations as `<name>_ms`); text values whose
+name contains `key`, `token`, `password` or `authorization` are stored as `[redacted]`. Events are written in batches
+(200 events or every 2 s, and when a run, publish or job ends) through the pool, never inside the run's own transaction. A
+failed write is logged to stdout once per flush, the events are kept for the next flush (at most 30 attempts, about a
+minute, then the batch is dropped with one stdout error and one warning event per run), and the run is never affected.
+A row the database rejects for its content (SQLSTATE class 22/23) is dropped on its own after the rest of the batch is
+stored row by row; NUL characters are removed from messages and attributes, NaN/Inf numbers are stored as text. A run
+buffers at most 10 000 unwritten events (the oldest are dropped, with one warning event). Scheduler messages before
+the run row exists (`job started`, a skipped run) have no run id and go to stdout only.
+
+Read it with `GET /api/v1/runs/{id}/events?level=info&after=<id>&limit=500` (`level` is the minimum: `debug` < `info` <
+`warn` < `error`; `limit` 1..2000). The response is `{"run_id", "run_status", "journal_open", "items": [{"id", "ts", "level", "step",
+"message", "attrs"}], "next_after"}`; pass `next_after` as `after` for the next page, or poll with the last seen `id` while
+`journal_open` is true. `journal_open` is true while the run is `running` or its terminal `journal closed` event does not
+exist yet (a finished run with no event for 15 minutes counts as closed, for runs of older versions and crashed
+writers); clients must poll while `journal_open`, not while `run_status` is `running`, or they miss publish, logos and
+retention. Such a response is `no-store`, a closed journal's is cached for 60 s. `GET /api/v1/runs/{id}` carries the same
+`journal_open` and is `no-store` while it is true (`max-age=30` otherwise). The scheduler deletes the events of runs that
+started before the `RUN_EVENTS_RETENTION_DAYS` cutoff, whole runs only, together with the snapshot retention; the events
+of the 3 newest runs and of the run behind the current build are always kept. `rwa run-once`, `rwa build` and
+`rwa publish --run` journal into their run too; their events are written by the 2 s flusher and at the latest when the
+command ends.
 
 ## Docker
 
@@ -149,8 +190,9 @@ used). A job is: collect, then publish, then logos, then snapshot retention (`SN
 overlap (a tick during a job is skipped with a warning); a publish failure leaves the previous build current and skips
 logos and retention, and is recorded on the run (`status=failed`, `error='publish: ...'`). Each job has a deadline
 (`RUN_TIMEOUT`, error `timeout`; a SIGTERM stop is `interrupted`). On SIGTERM/SIGINT the running job gets a cancelled
-context and the process waits up to 30 s for it, then at most 5 s for the pool to close. **Docker `stop_grace_period`
-must therefore be at least 40 s.** At start, after the migrations, runs left `running` by a crashed process are marked
+context and the process waits up to 30 s for it, then at most 5 s for the pool to close, and at most 5 s to flush the run journal. **Docker
+`stop_grace_period` must therefore be at least 40 s; the compose value of 45 s covers 30 s scheduler + 5 s journal + 5 s
+pool.** At start, after the migrations, runs left `running` by a crashed process are marked
 `failed` with `error='abandoned'` (only when the collector lock is free). `COLLECT_ON_START` counts only `refresh` and
 `import` runs that have a published build, so an `add` run over a few symbols or a run that failed to publish does not
 make the basket look fresh.

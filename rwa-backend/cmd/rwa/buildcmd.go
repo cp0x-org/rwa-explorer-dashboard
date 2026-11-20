@@ -67,7 +67,9 @@ func runBuild(args []string, stdout, stderr io.Writer) int {
 		return 1
 	}
 	defer pool.Close()
-	log := newLogger(cfg, stderr)
+	log, jh := newJournalLogger(cfg, stderr)
+	jh.SetSink(store.New(pool))
+	defer jh.Close()
 	st := store.New(pool)
 
 	suffix := ""

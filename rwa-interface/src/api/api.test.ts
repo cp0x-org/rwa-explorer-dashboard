@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { HistoryMetricsResponse, HistoryResponse, RunDetail, RunsResponse, StatusResponse } from 'types/api';
+import { HistoryMetricsResponse, HistoryResponse, RunDetail, RunEvent, RunEventsResponse, RunsResponse, StatusResponse } from 'types/api';
 import { RwaExport } from 'types/rwa';
 import { historyKey, historyMetricsKey } from './history';
 import { DATA_URL, exportUrl, logoUrl } from './rwa';
@@ -11,10 +11,35 @@ import status from './__fixtures__/status.json';
 import runs from './__fixtures__/runs.json';
 import run2 from './__fixtures__/run-2.json';
 import run3 from './__fixtures__/run-3.json';
+import runEvents from './__fixtures__/run-events.json';
 import historySummary from './__fixtures__/history-summary.json';
 import historyToken from './__fixtures__/history-token.json';
 import historyMetrics from './__fixtures__/history-metrics.json';
 import error400 from './__fixtures__/error-400.json';
+
+const LEVELS: RunEvent['level'][] = ['debug', 'info', 'warn', 'error'];
+const STATUSES: RunEventsResponse['run_status'][] = ['running', 'succeeded', 'partial', 'failed'];
+
+// A JSON fixture cannot be assigned to RunEventsResponse (`level` is a string there): check the shape at run time and
+// return the typed value.
+function asRunEvents(v: unknown): RunEventsResponse {
+  const r = v as Record<string, unknown>;
+  expect(typeof r.run_id).toBe('number');
+  expect(STATUSES).toContain(r.run_status);
+  expect(typeof r.journal_open).toBe('boolean');
+  expect(r.next_after === null || typeof r.next_after === 'number').toBe(true);
+  expect(Array.isArray(r.items)).toBe(true);
+  const items = (r.items as Record<string, unknown>[]).map((e) => {
+    expect(typeof e.id).toBe('number');
+    expect(typeof e.ts).toBe('string');
+    expect(LEVELS).toContain(e.level);
+    expect(typeof e.step).toBe('string');
+    expect(typeof e.message).toBe('string');
+    expect(e.attrs !== null && typeof e.attrs === 'object' && !Array.isArray(e.attrs)).toBe(true);
+    return e as unknown as RunEvent;
+  });
+  return { ...(r as unknown as RunEventsResponse), items };
+}
 
 // Fixtures are responses captured from `pnpm mock:api`; assigning them to the types is the check (tsc, and vitest
 // for the values the types cannot express).
@@ -37,6 +62,14 @@ describe('response types match the mock API fixtures', () => {
     const partial: RunDetail = run3;
     expect(partial.underlyings.filter((u) => u.status === 'failed')).toHaveLength(1);
     expect(partial.warnings).toHaveLength(partial.warnings_count);
+    const journal = asRunEvents(runEvents);
+    expect(journal.journal_open).toBe(false);
+    expect(refreshed.journal_open).toBe(false);
+    expect(journal.run_id).toBe(partial.id);
+    expect(journal.items).toHaveLength(partial.events_count);
+    expect(journal.items.filter((e) => e.level === 'error')).toHaveLength(partial.errors_count);
+    expect(journal.items.map((e) => e.id)).toEqual([...journal.items.map((e) => e.id)].sort((a, b) => a - b)); // id order: the cursor relies on it
+    expect(journal.next_after).toBeNull();
   });
 
   it('history', () => {

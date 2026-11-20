@@ -60,6 +60,8 @@ type RunUnderlying struct {
 type RunDetail struct {
 	Run
 	Underlyings []RunUnderlying
+	EventsCount int // run_events rows of the run
+	ErrorsCount int // of them with level error
 }
 
 // RunCursor is the keyset position for ListRuns pagination: the last run of the previous page.
@@ -217,6 +219,10 @@ func (s *Store) GetRun(ctx context.Context, id int64) (*RunDetail, error) {
 	}
 	if err := rows.Err(); err != nil {
 		return nil, fmt.Errorf("store: get run %d: underlyings: %w", id, err)
+	}
+	rows.Close()
+	if d.EventsCount, d.ErrorsCount, err = s.RunEventCounts(ctx, id); err != nil {
+		return nil, fmt.Errorf("store: get run %d: %w", id, err)
 	}
 	return d, nil
 }

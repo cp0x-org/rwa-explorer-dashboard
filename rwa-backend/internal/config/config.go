@@ -35,6 +35,9 @@ type Config struct {
 	CORSOrigins []string `env:"CORS_ORIGINS" envSeparator:","`
 	AdminToken  string   `env:"ADMIN_TOKEN" json:"-"`
 
+	RunEventsLevel         string `env:"RUN_EVENTS_LEVEL" envDefault:"info"`
+	RunEventsRetentionDays int    `env:"RUN_EVENTS_RETENTION_DAYS" envDefault:"30"`
+
 	LogLevel  string `env:"LOG_LEVEL" envDefault:"info"`
 	LogFormat string `env:"LOG_FORMAT" envDefault:"json"`
 
@@ -129,6 +132,14 @@ func (c *Config) validateCommon() []error {
 	default:
 		errs = append(errs, fmt.Errorf("LOG_LEVEL must be debug, info, warn or error, got %q", c.LogLevel))
 	}
+	switch c.RunEventsLevel {
+	case "debug", "info", "warn", "error":
+	default:
+		errs = append(errs, fmt.Errorf("RUN_EVENTS_LEVEL must be debug, info, warn or error, got %q", c.RunEventsLevel))
+	}
+	if c.RunEventsRetentionDays < 1 {
+		errs = append(errs, errors.New("RUN_EVENTS_RETENTION_DAYS must be >= 1"))
+	}
 	switch c.LogFormat {
 	case "json", "text":
 	default:
@@ -149,10 +160,10 @@ func mask(s string) string {
 func (c Config) String() string {
 	return fmt.Sprintf("Config{DatabaseURL:%s CMCAPIKey:%s PortalsAPIKey:%s AssetsPath:%s SettingsPath:%s "+
 		"CollectCron:%q CollectInterval:%s CollectOnStart:%t SnapshotRetentionDays:%d RunTimeout:%s RawCaptureDir:%s MigrateOnStart:%t "+
-		"HTTPAddr:%s CORSOrigins:%v AdminToken:%s LogLevel:%s LogFormat:%s}",
+		"HTTPAddr:%s CORSOrigins:%v AdminToken:%s LogLevel:%s LogFormat:%s RunEventsLevel:%s RunEventsRetentionDays:%d}",
 		maskDSN(c.DatabaseURL), mask(c.CMCAPIKey), mask(c.PortalsAPIKey), c.AssetsPath, c.SettingsPath,
 		c.CollectCron, c.CollectInterval, c.CollectOnStart, c.SnapshotRetentionDays, c.RunTimeout, c.RawCaptureDir, c.MigrateOnStart,
-		c.HTTPAddr, c.CORSOrigins, mask(c.AdminToken), c.LogLevel, c.LogFormat)
+		c.HTTPAddr, c.CORSOrigins, mask(c.AdminToken), c.LogLevel, c.LogFormat, c.RunEventsLevel, c.RunEventsRetentionDays)
 }
 
 // LogValue makes slog print the masked form regardless of the handler.

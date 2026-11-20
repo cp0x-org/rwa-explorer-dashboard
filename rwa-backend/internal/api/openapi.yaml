@@ -337,6 +337,32 @@ paths:
         '404': {$ref: '#/components/responses/NotFound'}
         '500': {$ref: '#/components/responses/Internal'}
 
+  /api/v1/runs/{id}/events:
+    get:
+      tags: [Runs]
+      operationId: getRunEvents
+      summary: Run journal
+      description: |
+        The events of one run, oldest first: steps, per-underlying results, provider requests (only when the collector
+        runs with `RUN_EVENTS_LEVEL=debug`), publish, logos, retention. Page with `after` (strict `id >` cursor) and
+        `next_after`. While the run is `running` the response is `no-store`; poll with the last seen id.
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: integer, format: int64}}
+        - {name: level, in: query, description: 'Minimum level (debug < info < warn < error).', schema: {type: string, enum: [debug, info, warn, error], default: info}}
+        - {name: after, in: query, description: Return events with an id greater than this., schema: {type: integer, format: int64, minimum: 0}}
+        - {name: limit, in: query, schema: {type: integer, minimum: 1, maximum: 2000, default: 500}}
+      responses:
+        '200':
+          description: A page of events.
+          headers:
+            Cache-Control: {description: '`no-store` while the run is running, otherwise `public, max-age=60`.', schema: {type: string}}
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RunEvents'}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+
   /api/v1/history/metrics:
     get:
       tags: [History]
@@ -1017,8 +1043,11 @@ components:
       allOf:
         - $ref: '#/components/schemas/RunItem'
         - type: object
-          required: [warnings, underlyings, changes]
+          required: [warnings, underlyings, changes, events_count, errors_count, journal_open]
           properties:
+            journal_open: {type: boolean, description: 'True while the job that owns the run may still write journal events (status running, or no terminal "journal closed" event yet). The response is no-store while true. Poll while journal_open, not while run status is running.'}
+            events_count: {type: integer, description: Rows of the run journal.}
+            errors_count: {type: integer, description: Journal events with level error.}
             warnings: {type: array, items: {type: string}}
             underlyings:
               type: array
@@ -1044,6 +1073,27 @@ components:
                     eligible_delta: {type: integer}
                     details: {type: object, additionalProperties: true}
                 - type: 'null'
+
+    RunEvents:
+      type: object
+      required: [run_id, run_status, journal_open, items, next_after]
+      properties:
+        run_id: {type: integer, format: int64}
+        journal_open: {type: boolean, description: 'True while the job that owns the run may still write events: status running, or no terminal event (step run, message "journal closed") yet. publish, logos, retention and "job ended" follow the run status change, so poll while journal_open, not while run_status is running. no-store while true, max-age=60 otherwise.'}
+        run_status: {type: string, enum: [running, succeeded, partial, failed]}
+        items:
+          type: array
+          items:
+            type: object
+            required: [id, ts, level, step, message, attrs]
+            properties:
+              id: {type: integer, format: int64}
+              ts: {type: string, format: date-time}
+              level: {type: string, enum: [debug, info, warn, error]}
+              step: {type: string, description: 'collect.cmc, collect.portals, collect.underlying, publish, logos, retention, scheduler or run.'}
+              message: {type: string}
+              attrs: {type: object, additionalProperties: true, description: 'underlying, provider, path, status, duration_ms, count, ... Secrets are redacted.'}
+        next_after: {type: [integer, 'null'], format: int64, description: Pass as `after` to get the next page; null when there is none.}
 
     RunRequest:
       type: object

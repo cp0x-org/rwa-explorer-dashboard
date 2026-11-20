@@ -66,9 +66,36 @@ export interface RunChangesDetail {
 }
 
 export interface RunDetail extends Omit<RunSummary, 'changes'> {
+  events_count: number;
+  errors_count: number;
+  journal_open?: boolean; // true while the job still writes events (also after `status` left `running`); absent on older servers
   warnings: string[];
   underlyings: RunUnderlying[];
   changes: RunChangesDetail | null;
+}
+
+export type RunEventLevel = 'debug' | 'info' | 'warn' | 'error';
+
+// One line of a run's journal. `step`: collect.cmc | collect.portals | collect.underlying | publish | logos | retention |
+// scheduler | run (a plain string: the server may add steps). `attrs` are key/value pairs of any JSON; the ticker of the
+// asset a line is about is under `underlying`.
+export type Json = string | number | boolean | null | Json[] | { [key: string]: Json };
+
+export interface RunEvent {
+  id: number;
+  ts: string;
+  level: RunEventLevel;
+  step: string;
+  message: string;
+  attrs: Record<string, Json>;
+}
+
+export interface RunEventsResponse {
+  run_id: number;
+  run_status: 'running' | 'succeeded' | 'partial' | 'failed';
+  journal_open?: boolean; // true until the terminal `journal closed` event (step `run`); absent on older servers
+  items: RunEvent[];
+  next_after: number | null;
 }
 
 export interface RunsResponse {

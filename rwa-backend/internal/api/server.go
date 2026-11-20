@@ -62,6 +62,7 @@ func (s *Server) Handler() http.Handler {
 
 	mux.HandleFunc("GET /api/v1/runs", s.handleRuns)
 	mux.HandleFunc("GET /api/v1/runs/{id}", s.handleRun)
+	mux.HandleFunc("GET /api/v1/runs/{id}/events", s.handleRunEvents)
 	mux.HandleFunc("POST /api/v1/admin/runs", s.admin(s.handleAdminCreateRun))
 	mux.HandleFunc("GET /api/v1/admin/runs/{id}", s.admin(s.handleAdminGetRun))
 

@@ -29,7 +29,7 @@ keeps the last N points (the one-point and no-point states of the charts in e2e)
   (sparklines) and a history chart of the basket's key numbers
 - `/updates` — data collection runs (date, status, duration, requests, credits, changes; rebuilds behind a toggle);
   `/updates/:runId` — one run: warnings, per-asset results (filter: only non-ok), new tokens and issuers, details by network and
-  platform. The server renders only the shell of both (the export has no runs): the runs are fetched in the browser, the
+  platform, and the run's journal (`GET /api/v1/runs/{id}/events`: level filter, step chips, Load more by `after` cursor; while the journal is open (`journal_open`, which stays true after the status left `running` until the terminal `journal closed` event; `running` on a server without it) the page polls every 5 s, fetches the next page at once when one is full, has a Follow switch, and stops polling when the journal closes). The server renders only the shell of both (the export has no runs): the runs are fetched in the browser, the
   list is in the sitemap, a detail page is `noindex` (any numeric id answers 200; an unknown run says "not found" in the browser).
 
 History charts (`components/HistoryChart.tsx`, `Sparkline.tsx`) sit on `/summary`, `/assets/:ticker`, `/tokens/:id`,

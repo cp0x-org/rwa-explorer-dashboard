@@ -156,13 +156,151 @@ const RUNS = [
   }
 ];
 
+// Run 5 is a live run for the journal's tailing: started 2 minutes before the mock booted, its journal grows by 3 events
+// every 5 s and it turns `succeeded` after 60 s of mock uptime. Mock-only: it is not in the /runs list (the list tests
+// count rows and statuses) and not in /status; it is reachable by id.
+// `GET /__mock/restart-live[?id=N]` (mock-only, not under /api) restarts the clock of a live run: e2e starts from a running run.
+// Run 5 is for the journal tests, run 6 (the same, its own clock) for the accessibility check, so that the two do not disturb each other.
+const BOOTS = new Map([[5, Date.now()], [6, Date.now()]]);
+const isLive = (id) => BOOTS.has(id);
+const LIVE_ASSETS = 12;
+const liveRun = (LIVE_ID) => ({
+  id: LIVE_ID,
+  hidden: true,
+  run_key: 'mock-running',
+  mode: 'refresh',
+  trigger: 'manual',
+  status: 'running',
+  get started_at() {
+    return iso(BOOTS.get(LIVE_ID) - 120_000);
+  },
+  finished_at: null,
+  duration_seconds: null,
+  selected_count: LIVE_ASSETS,
+  completed_count: 0,
+  failed_count: 0,
+  cmc_requests: 0,
+  portals_requests: 0,
+  cmc_credits: 0,
+  warnings_count: 0,
+  error: null,
+  build_id: null,
+  changes: null,
+  detail: { warnings: [], underlyings: okRows(3.1, LIVE_ASSETS), changes: null }
+});
+RUNS.push(liveRun(5), { ...liveRun(6), run_key: 'mock-running-2' });
+
 RUNS.sort((a, b) => b.id - a.id); // newest first, like the API
+
+// ---- run journal (GET /runs/{id}/events) ---------------------------------------------------------------------------------
+// A deterministic journal per run, built from the run's own detail: steps, one info per asset, several debug request
+// lines per asset, a warn per warning, an error for a failed asset, publish / logos / run-finished lines.
+const LEVEL_RANK = { debug: 0, info: 1, warn: 2, error: 3 };
+const journals = new Map();
+function journalOf(r) {
+  if (journals.has(r.id)) return journals.get(r.id);
+  const t0 = Date.parse(r.started_at);
+  const items = [];
+  const add = (level, step, message, attrs = {}) =>
+    items.push({ id: items.length + 1, ts: iso(t0 + items.length * 1000).replace('Z', `.${String((items.length * 37) % 1000).padStart(3, '0')}Z`), level, step, message, attrs });
+  add('info', 'run', `run started: ${r.mode}`, { mode: r.mode, trigger: r.trigger });
+  if (r.mode === 'import' || r.mode === 'rebuild') {
+    add('info', 'publish', 'export built', { build_id: r.build_id });
+    add('info', 'run', 'run finished', { status: r.status });
+    journals.set(r.id, items);
+    return items;
+  }
+  add('debug', 'scheduler', 'run claimed by the scheduler', { trigger: r.trigger });
+  add('info', 'collect.cmc', 'collecting CMC listings', { selected: r.selected_count });
+  r.detail.warnings.forEach((w, i) => add('warn', i === 0 ? 'collect.portals' : 'collect.cmc', w));
+  for (const u of r.detail.underlyings) {
+    if (u.status === 'skipped') {
+      add('info', 'collect.underlying', `skipped ${u.ticker}: ${u.error}`, { underlying: u.ticker, duration_ms: 0 });
+      continue;
+    }
+    const ms = Math.round((u.duration_seconds ?? 0) * 1000);
+    add('debug', 'collect.cmc', 'request', { provider: 'cmc', path: '/v2/cryptocurrency/quotes/latest', status: 200, duration_ms: 180 + (u.ticker.length * 23) % 90, underlying: u.ticker });
+    add('debug', 'collect.portals', 'request', { provider: 'portals', path: '/v2/tokens', status: 200, duration_ms: 240 + (u.ticker.length * 41) % 160, underlying: u.ticker });
+    add('debug', 'collect.portals', 'request', { provider: 'portals', path: '/v2/portfolio', status: u.status === 'failed' ? 502 : 200, duration_ms: 310 + (u.ticker.length * 17) % 120, underlying: u.ticker });
+    if (u.status === 'failed') {
+      add('warn', 'collect.portals', `retrying ${u.ticker} after HTTP 502`, { provider: 'portals', attempt: 3, underlying: u.ticker });
+      add('error', 'collect.underlying', `${u.ticker} failed: ${u.error}`, { underlying: u.ticker, duration_ms: ms });
+    } else {
+      add('debug', 'collect.underlying', 'positions normalised', { underlying: u.ticker, positions: 3 + (u.ticker.length % 5), networks: ['ethereum', 'base', 'arbitrum', 'optimism', 'polygon', 'bsc', 'avalanche'], shares: { ethereum: 0.5, base: 0.5 } });
+      add('info', 'collect.underlying', `collected ${u.ticker}`, { underlying: u.ticker, duration_ms: ms });
+    }
+  }
+  finishJournal(r, items);
+  return items;
+}
+function finishJournal(r, items) {
+  const add = (level, step, message, attrs = {}) =>
+    items.push({ id: items.length + 1, ts: iso(Date.parse(r.started_at) + items.length * 1000), level, step, message, attrs });
+  add('info', 'publish', 'export built', { build_id: r.build_id });
+  add('debug', 'logos', 'logo cache checked', { missing: 0 });
+  add('info', 'logos', 'logos up to date');
+  add('info', 'retention', 'old events pruned', { removed: 0 });
+  add('info', 'run', 'run finished', { status: r.status === 'running' ? 'succeeded' : r.status });
+  journals.set(r.id, items);
+}
+
+// the live run shows 12 events at boot (+3 every 5 s), turns `succeeded` after 60 s and keeps its journal open for 10 s more
+// (the job is still publishing); then the terminal "journal closed" event is written and `journal_open` is false.
+const JOURNAL_TAIL_MS = 10_000;
+const liveState = (id) => {
+  const age = Date.now() - BOOTS.get(id);
+  return { done: age >= 60_000, closed: age >= 60_000 + JOURNAL_TAIL_MS, visible: 12 + Math.floor(age / 5000) * 3 };
+};
+function eventsOf(r) {
+  const all = journalOf(r);
+  if (!isLive(r.id)) return { status: r.status, events: all, open: false };
+  const { done, closed, visible } = liveState(r.id);
+  if (!done) return { status: 'running', events: all.slice(0, Math.min(visible, all.length - 1)), open: true };
+  if (!closed) return { status: 'succeeded', events: all, open: true };
+  const last = all[all.length - 1];
+  const end = { id: last.id + 1, ts: iso(Date.parse(last.ts) + 1000), level: 'info', step: 'run', message: 'journal closed', attrs: {} };
+  return { status: 'succeeded', events: [...all, end], open: false };
+}
 
 function run(id, withDetail) {
   const found = RUNS.find((r) => r.id === id);
   if (!found) return null;
-  const { detail, ...item } = found;
-  return withDetail ? { ...item, warnings: detail.warnings, underlyings: detail.underlyings, changes: detail.changes } : item;
+  const { detail, hidden, ...item } = found;
+  const { status, events, open } = eventsOf(found);
+  if (isLive(found.id)) {
+    item.status = status;
+    if (status === 'succeeded') {
+      item.finished_at = iso(BOOTS.get(found.id) + 60_000);
+      item.duration_seconds = 180;
+      item.completed_count = LIVE_ASSETS;
+    } else {
+      item.completed_count = events.filter((e) => e.step === 'collect.underlying' && e.level === 'info').length;
+    }
+  }
+  const counts = { events_count: events.length, errors_count: events.filter((e) => e.level === 'error').length, journal_open: open };
+  return withDetail
+    ? { ...item, ...counts, warnings: detail.warnings, underlyings: detail.underlyings, changes: detail.changes }
+    : item;
+}
+
+// Like the Go API: `level` filters `>=` (default info; empty = default), `after` is a strict id cursor, limit 1..2000 (default 200;
+// empty = default). Parameters are validated before the run is looked up.
+const parseEventsQuery = (q) => {
+  const level = q.get('level') || 'info';
+  if (!(level in LEVEL_RANK)) return { message: 'level must be one of debug, info, warn, error' };
+  const limitText = q.get('limit');
+  const limit = limitText ? Number(limitText) : 200;
+  if (!Number.isInteger(limit) || limit < 1 || limit > 2000) return { message: 'limit must be an integer between 1 and 2000' };
+  const afterText = q.get('after');
+  const after = afterText ? Number(afterText) : 0;
+  if (!Number.isInteger(after) || after < 0) return { message: 'after must be a non-negative event id' };
+  return { level, limit, after };
+};
+function runEvents(r, { level, limit, after }) {
+  const { status, events, open } = eventsOf(r);
+  const rows = events.filter((e) => e.id > after && LEVEL_RANK[e.level] >= LEVEL_RANK[level]);
+  const items = rows.slice(0, limit);
+  return { run_id: r.id, run_status: status, journal_open: open, items, next_after: rows.length > limit ? items[items.length - 1].id : null };
 }
 
 const lastRun = ({ id, run_key, mode, trigger, status, started_at, finished_at, completed_count, failed_count, error }) => ({
@@ -313,6 +451,13 @@ async function handle(req, res) {
   }
   if (req.method !== 'GET' && req.method !== 'HEAD') return err(res, 405, 'method_not_allowed', 'only GET and HEAD are supported');
 
+  if (p === '/__mock/restart-live') {
+    const id = Number(url.searchParams.get('id') ?? 5);
+    if (!isLive(id)) return err(res, 400, 'bad_request', 'not a live run');
+    BOOTS.set(id, Date.now());
+    journals.delete(id);
+    return json(res, 200, { ok: true });
+  }
   if (p.startsWith('/logos/')) {
     const logos = path.join(publicDir, 'logos');
     const file = path.join(publicDir, decodeURIComponent(p));
@@ -348,13 +493,26 @@ async function handle(req, res) {
   if (route === 'runs') {
     const limit = Math.max(1, Number(url.searchParams.get('limit') ?? 50));
     const after = url.searchParams.get('cursor') ? Number(url.searchParams.get('cursor')) : Infinity; // cursor = last id seen
-    const rows = RUNS.filter((r) => r.id < after).map((r) => run(r.id, false));
+    const rows = RUNS.filter((r) => !r.hidden && r.id < after).map((r) => run(r.id, false));
     return json(res, 200, { items: rows.slice(0, limit), next_cursor: rows.length > limit ? String(rows[limit - 1].id) : null });
+  }
+  const eventsMatch = route.match(/^runs\/(\d+)\/events$/);
+  if (eventsMatch) {
+    const id = Number(eventsMatch[1]);
+    if (id < 1) return err(res, 400, 'bad_request', 'run id must be a positive integer');
+    const q = parseEventsQuery(url.searchParams);
+    if (q.message) return err(res, 400, 'bad_request', q.message);
+    const found = RUNS.find((r) => r.id === id);
+    if (!found) return err(res, 404, 'not_found', `run ${id} does not exist`);
+    const body = runEvents(found, q);
+    return json(res, 200, body, { 'cache-control': body.journal_open ? 'no-store' : 'public, max-age=60' });
   }
   const runMatch = route.match(/^runs\/(\d+)$/);
   if (runMatch) {
-    const r = run(Number(runMatch[1]), true);
-    return r ? json(res, 200, r) : err(res, 404, 'not_found', `run ${runMatch[1]} not found`);
+    const id = Number(runMatch[1]);
+    const r = id < 1 ? null : run(id, true);
+    if (!r) return err(res, id < 1 ? 400 : 404, id < 1 ? 'bad_request' : 'not_found', id < 1 ? 'run id must be a positive integer' : `run ${id} does not exist`);
+    return json(res, 200, r, { 'cache-control': r.journal_open ? 'no-store' : 'public, max-age=30' });
   }
   if (route === 'history/metrics') {
     const entities = Object.fromEntries(

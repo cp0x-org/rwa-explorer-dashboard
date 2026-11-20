@@ -15,6 +15,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/publish"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
@@ -60,7 +61,9 @@ func runPublish(args []string, stdout, stderr io.Writer) int {
 		return 1
 	}
 	defer pool.Close()
-	log := newLogger(cfg, stderr)
+	log, jh := newJournalLogger(cfg, stderr)
+	jh.SetSink(store.New(pool))
+	defer jh.Close()
 	st := store.New(pool)
 
 	run, err := st.GetRun(ctx, *runID)
@@ -76,6 +79,7 @@ func runPublish(args []string, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintf(stderr, "rwa publish: run %d: %v\n", run.ID, err)
 		return 1
 	}
+	defer runlog.CloseRun(log, run.ID) // the last event of the run; runs before jh.Close
 	res, err := publish.New(pool, settings, assets, log).PublishWith(ctx, run.ID, publish.Options{WriteHistory: true})
 	if err != nil {
 		if merr := st.MarkRunPublishFailed(ctx, run.ID, err); merr != nil {

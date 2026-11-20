@@ -65,6 +65,9 @@ type Config struct {
 	MaxRetries        int
 	// RawDir, when set, receives <RawDir>/<provider>/NNNN_<path>.json for every answered request.
 	RawDir string
+	// Logger receives the client's warnings (long Retry-After, raw capture failures); the collector passes the run's
+	// logger so they reach the run journal. Nil means slog.Default().
+	Logger *slog.Logger
 	// OnRequest is called after every answered request (not for retried attempts).
 	OnRequest func(provider, path string, params url.Values, status int, d time.Duration)
 	// HTTPClient overrides the transport; its Timeout is set from Config.Timeout when zero.
@@ -166,13 +169,20 @@ func retryable(status int) bool {
 	return false
 }
 
+func (c *Client) logger() *slog.Logger {
+	if c.cfg.Logger != nil {
+		return c.cfg.Logger
+	}
+	return slog.Default()
+}
+
 func (c *Client) backoff(ctx context.Context, attempt int, retryAfter string) error {
 	d := min(60*time.Second, time.Duration(1<<min(attempt, 6))*time.Second) + c.jitter()
 	if secs, err := strconv.Atoi(strings.TrimSpace(retryAfter)); err == nil && secs >= 0 {
 		// A server's Retry-After is honoured (ignoring it invites bans), capped at maxRetryAfter.
 		ra := min(time.Duration(secs)*time.Second, maxRetryAfter)
 		if ra > 60*time.Second {
-			slog.Warn("long Retry-After", "provider", c.cfg.Provider, "seconds", int(ra/time.Second))
+			c.logger().Warn("long Retry-After", "step", "collect."+c.cfg.Provider, "provider", c.cfg.Provider, "seconds", int(ra/time.Second))
 		}
 		d = max(d, ra)
 	}
@@ -306,7 +316,7 @@ func (c *Client) saveRaw(seq int64, path string, params url.Values, status int, 
 		}
 	}
 	if err != nil {
-		slog.Warn("raw capture failed", "provider", c.cfg.Provider, "err", err)
+		c.logger().Warn("raw capture failed", "step", "collect."+c.cfg.Provider, "provider", c.cfg.Provider, "err", err)
 	}
 }
 

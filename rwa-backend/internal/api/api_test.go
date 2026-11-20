@@ -41,6 +41,7 @@ type fakeStore struct {
 	requests  map[int64]*store.RunRequest
 	lastSucc  time.Time
 	lastRun   *store.Run
+	events    map[int64][]store.RunEvent
 }
 
 func (f *fakeStore) Ping(context.Context) error { return f.pingErr }

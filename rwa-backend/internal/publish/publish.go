@@ -21,6 +21,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
@@ -81,6 +82,9 @@ func (p *Publisher) Publish(ctx context.Context, runID int64, mode string) (*Res
 
 // PublishWith is Publish with explicit options.
 func (p *Publisher) PublishWith(ctx context.Context, runID int64, opts Options) (*Result, error) {
+	log := p.log.With("run_id", runID, "step", "publish")
+	started := time.Now()
+	log.Info("publish started", "history", opts.WriteHistory)
 	var res *Result
 	err := db.WithTx(ctx, p.pool, func(tx pgx.Tx) error {
 		var err error
@@ -88,10 +92,16 @@ func (p *Publisher) PublishWith(ctx context.Context, runID int64, opts Options) 
 		return err
 	})
 	if err != nil {
+		log.Error("publish failed, the previous build stays current", "err", err, "duration", time.Since(started))
+		runlog.Flush(p.log)
 		return nil, err
 	}
-	p.log.Info("build published", "run_id", runID, "build_id", res.BuildID, "bytes", res.ExportBytes,
-		"history", opts.WriteHistory, "warnings", len(res.Warnings))
+	for _, w := range res.Warnings {
+		log.Warn(w)
+	}
+	log.Info("build published", "build_id", res.BuildID, "bytes", res.ExportBytes, "history", opts.WriteHistory,
+		"warnings", len(res.Warnings), "duration", time.Since(started), "summary", res.Line())
+	runlog.Flush(p.log)
 	return res, nil
 }
 

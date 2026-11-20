@@ -82,6 +82,14 @@ func newFetcher(st *store.Store, log *slog.Logger, httpClient *http.Client) *Fet
 	return &Fetcher{store: st, log: log, hc: httpClient, faviconFmt: faviconService}
 }
 
+// WithLogger returns a copy of the fetcher that logs to log (the collector passes one carrying the run id and
+// step=logos, so the report lands in the run journal).
+func (f *Fetcher) WithLogger(log *slog.Logger) *Fetcher {
+	c := *f
+	c.log = log
+	return &c
+}
+
 // FetchMissing downloads a logo for every token, issuer and underlying without a logos row. Network errors only
 // skip that logo; a database error or a cancelled context ends the call.
 func (f *Fetcher) FetchMissing(ctx context.Context) (Report, error) {
@@ -99,7 +107,7 @@ func (f *Fetcher) FetchMissing(ctx context.Context) (Report, error) {
 		logo, website := nonEmpty(j.LogoURL), nonEmpty(j.Website)
 		if logo == "" && website == "" {
 			rep.MissingSource = append(rep.MissingSource, name)
-			f.log.Info("logos: no logo or website in CMC, skipped", "progress", progress(n, len(jobs)), "entity", name)
+			f.log.Debug("logos: no logo or website in CMC, skipped", "progress", progress(n, len(jobs)), "entity", name)
 			continue
 		}
 		img, source := f.fetch(ctx, logo, website)
@@ -118,9 +126,15 @@ func (f *Fetcher) FetchMissing(ctx context.Context) (Report, error) {
 			return rep, fmt.Errorf("logos: %w", err)
 		}
 		rep.Downloaded = append(rep.Downloaded, name)
-		f.log.Info("logos: saved", "progress", progress(n, len(jobs)), "entity", name, "ext", img.ext, "inserted", inserted)
+		f.log.Debug("logos: saved", "progress", progress(n, len(jobs)), "entity", name, "ext", img.ext, "inserted", inserted)
 	}
-	f.log.Info("logos: done", "downloaded", len(rep.Downloaded), "failed", len(rep.Failed), "missing_source", len(rep.MissingSource))
+	doneLevel := slog.LevelInfo
+	if len(rep.Failed) > 0 {
+		doneLevel = slog.LevelWarn // the one summary event that surfaces failures at warn
+	}
+	f.log.Log(ctx, doneLevel, "logos: done", "downloaded", len(rep.Downloaded), "failed", len(rep.Failed),
+		"missing_source", len(rep.MissingSource))
+	f.log.Debug("logos: report", "downloaded", rep.Downloaded, "failed", rep.Failed, "missing_source", rep.MissingSource)
 	return rep, nil
 }
 

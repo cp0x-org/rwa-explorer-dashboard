@@ -24,6 +24,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/config"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/cmc"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/httpx"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/portals"
@@ -121,9 +122,10 @@ func (r *Runner) newClient(provider, base string, headers map[string]string, raw
 		RequestsPerMinute: rpm,
 		MaxRetries:        r.settings.MaxRetries,
 		RawDir:            rawDir,
+		Logger:            log,
 		HTTPClient:        r.httpClient,
 		OnRequest: func(p, path string, _ url.Values, status int, d time.Duration) {
-			log.Debug("request", "provider", p, "path", path, "status", status, "duration_ms", d.Milliseconds())
+			log.Debug("request", "step", "collect."+p, "provider", p, "path", path, "status", status, "duration_ms", d.Milliseconds())
 		},
 	})
 }
@@ -205,13 +207,14 @@ func (r *Runner) Run(ctx context.Context, opts Options) (res *Result, err error)
 		if p == nil {
 			return
 		}
-		log.Error("run panicked", "panic", fmt.Sprint(p), "stack", string(debug.Stack()))
+		log.Error("run panicked", "step", "run", "panic", fmt.Sprint(p), "stack", string(debug.Stack()))
 		fctx, cancel := context.WithTimeout(context.WithoutCancel(ctx), 30*time.Second)
 		defer cancel()
 		text := fmt.Sprintf("panic: %v", p)
 		if ferr := r.store.FinishRun(fctx, runID, RunFailed, store.RunCounters{Selected: len(selected)}, nil, text); ferr != nil {
-			log.Error("finish run after panic failed", "err", ferr)
+			log.Error("finish run after panic failed", "step", "run", "err", ferr)
 		}
+		runlog.Flush(r.log)
 		res = &Result{RunID: runID, RunKey: runKey, Status: RunFailed, Selected: len(selected)}
 		err = fmt.Errorf("collect: run %d: %s", runID, text)
 	}()
@@ -220,7 +223,7 @@ func (r *Runner) Run(ctx context.Context, opts Options) (res *Result, err error)
 	if r.cfg.RawCaptureDir != "" {
 		rawDir = filepath.Join(r.cfg.RawCaptureDir, runKey)
 	}
-	log.Info("run started", "mode", mode, "trigger", trigger, "selected", len(selected), "to_fetch", len(todo),
+	log.Info("run started", "step", "run", "mode", mode, "trigger", trigger, "selected", len(selected), "to_fetch", len(todo),
 		"already_have_snapshot", len(selected)-len(todo), "raw_dir", rawDir)
 
 	cmcHTTP := r.newClient("cmc", r.cmcBase, map[string]string{"X-CMC_PRO_API_KEY": r.cfg.CMCAPIKey}, rawDir, r.settings.RequestsPerMinute.CMC, log)
@@ -252,9 +255,17 @@ func (r *Runner) Run(ctx context.Context, opts Options) (res *Result, err error)
 		rn.warnings, errText); err != nil {
 		return res, fmt.Errorf("collect: %w", err)
 	}
-	log.Info("run finished", "status", res.Status, "completed", rn.completed, "failed", rn.failed, "warnings", len(rn.warnings),
+	level := slog.LevelInfo
+	switch res.Status {
+	case RunPartial:
+		level = slog.LevelWarn
+	case RunFailed:
+		level = slog.LevelError
+	}
+	log.Log(ctx, level, "run finished", "step", "run", "duration_ms", time.Since(rn.started).Milliseconds(), "status", res.Status, "completed", rn.completed, "failed", rn.failed, "warnings", len(rn.warnings),
 		"cmc_requests", res.CMCRequests, "portals_requests", res.PortalsRequests, "cmc_credits", res.CMCCredits,
 		"elapsed", fmtDuration(time.Since(rn.started)), "error", errText)
+	runlog.Flush(r.log)
 	if rn.interrupted {
 		return res, ctx.Err()
 	}
@@ -289,10 +300,13 @@ type run struct {
 	recorded    map[string]bool // underlyings with a run_underlyings row
 }
 
-func (rn *run) warn(format string, args ...any) {
+func (rn *run) warn(format string, args ...any) { rn.warnAt("run", format, args...) }
+
+// warnAt records a run warning and logs it under the given journal step.
+func (rn *run) warnAt(step, format string, args ...any) {
 	msg := fmt.Sprintf(format, args...)
 	rn.warnings = append(rn.warnings, msg)
-	rn.log.Warn(msg)
+	rn.log.Warn(msg, "step", step)
 }
 
 // stop classifies an error that ends the run: a cancelled context is an interruption, anything else fatal.
@@ -302,7 +316,7 @@ func (rn *run) stop(ctx context.Context, err error) {
 		return
 	}
 	rn.fatal = err
-	rn.log.Error("fatal", "err", err)
+	rn.log.Error("fatal", "step", "run", "err", err)
 }
 
 func (rn *run) execute(ctx context.Context, todo []model.Asset) {
@@ -310,7 +324,7 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 	if !ok {
 		return
 	}
-	rn.log.Info("Portals per underlying: exact lookup, then text search per term", "to_go", len(todo))
+	rn.log.Info("Portals per underlying: exact lookup, then text search per term", "step", "collect.underlying", "to_go", len(todo))
 	loopStarted := time.Now()
 	width := len(strconv.Itoa(len(todo)))
 	for n, asset := range todo {
@@ -320,7 +334,7 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 		}
 		res := resolved[asset.ID()]
 		prefix := fmt.Sprintf("[%*d/%d] %s", width, n+1, len(todo), asset.Ticker)
-		ulog := rn.log.With("underlying", asset.Ticker, "progress", prefix)
+		ulog := rn.log.With("step", "collect.underlying", "underlying", asset.Ticker, "progress", prefix)
 		t0 := time.Now()
 		startedAt := rn.now().UTC()
 		reqBefore := rn.portalsHTTP.Requests()
@@ -344,7 +358,7 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 			rn.recordUnderlying(ctx, ru)
 			if errors.Is(err, httpx.ErrAuth) {
 				rn.fatal = err
-				ulog.Error("fatal", "err", err)
+				rn.log.Error("fatal", "step", "run", "err", err)
 				return
 			}
 			continue
@@ -354,7 +368,7 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 		rn.recordUnderlying(ctx, ru)
 		perAsset := time.Since(loopStarted) / time.Duration(n+1)
 		eta := perAsset * time.Duration(len(todo)-n-1)
-		args := []any{"status", status, "took", fmtDuration(time.Since(t0)), "elapsed", fmtDuration(time.Since(rn.started))}
+		args := []any{"status", status, "took", fmtDuration(time.Since(t0)), "duration_ms", time.Since(t0).Milliseconds(), "elapsed", fmtDuration(time.Since(rn.started))}
 		if n+1 < len(todo) {
 			args = append(args, "eta", fmtDuration(eta))
 		}
@@ -421,7 +435,7 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 		tickers[i] = a.Ticker
 	}
 
-	rn.log.Info("[1/5] CMC: tokenized assets (RWA quotes), one request", "step", 1, "tickers", len(tickers))
+	rn.log.Info("[1/5] CMC: tokenized assets (RWA quotes), one request", "step", "collect.cmc", "n", 1, "tickers", len(tickers))
 	quotes, err := rn.cmc.FetchRWAQuotes(ctx, tickers)
 	if err != nil {
 		rn.stop(ctx, err)
@@ -448,7 +462,7 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 			notResolved = append(notResolved, fmt.Sprintf("%s (%s)", a.Ticker, reason))
 		}
 	}
-	rn.log.Info("tickers tracked by CMC", "step", 1, "found", found, "not_resolved", notResolved)
+	rn.log.Info("tickers tracked by CMC", "step", "collect.cmc", "n", 1, "found", found, "not_resolved", notResolved)
 
 	var cryptoIDs []int
 	issuerIDs := map[string]bool{}
@@ -475,14 +489,14 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 		}
 	}
 
-	rn.log.Info("[2/5] CMC: contract addresses (cryptocurrency/info)", "step", 2, "tokens", len(uniqueInts(cryptoIDs)), "batch", cmc.InfoBatch)
+	rn.log.Info("[2/5] CMC: contract addresses (cryptocurrency/info)", "step", "collect.cmc", "n", 2, "tokens", len(uniqueInts(cryptoIDs)), "batch", cmc.InfoBatch)
 	sh.info, sh.invalid, err = rn.cmc.FetchCryptoInfo(ctx, cryptoIDs)
 	if err != nil {
 		rn.stop(ctx, err)
 		return nil, sh, false
 	}
 	if len(sh.invalid) > 0 {
-		rn.warn("CMC rejected ids for /v2/cryptocurrency/info: %s", formatIDs(sh.invalid))
+		rn.warnAt("collect.cmc", "CMC rejected ids for /v2/cryptocurrency/info: %s", formatIDs(sh.invalid))
 	}
 
 	var haveIssuers map[string]bool
@@ -499,7 +513,7 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 		}
 	}
 	sort.Strings(toFetch)
-	rn.log.Info("[3/5] CMC: issuers (one request each)", "step", 3, "to_fetch", len(toFetch), "total", len(issuerIDs))
+	rn.log.Info("[3/5] CMC: issuers (one request each)", "step", "collect.cmc", "n", 3, "to_fetch", len(toFetch), "total", len(issuerIDs))
 	for _, id := range toFetch {
 		iss, err := rn.cmc.FetchIssuer(ctx, id)
 		if err != nil {
@@ -507,17 +521,17 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 				rn.stop(ctx, err)
 				return nil, sh, false
 			}
-			rn.warn("issuer %s: %v", id, err)
+			rn.warnAt("collect.cmc", "issuer %s: %v", id, err)
 			continue
 		}
 		if err := rn.upsertIssuer(ctx, iss, issuerLabels[id]); err != nil {
 			rn.stop(ctx, err)
 			return nil, sh, false
 		}
-		rn.log.Info("issuer fetched", "step", 3, "issuer", id, "name", deref(iss.Name), "roster_size", iss.RosterSize)
+		rn.log.Info("issuer fetched", "step", "collect.cmc", "n", 3, "issuer", id, "name", deref(iss.Name), "roster_size", iss.RosterSize)
 	}
 
-	rn.log.Info("[4/5] CMC: RWA metadata (website, logo, industry)", "step", 4, "underlyings", len(rwaIDs))
+	rn.log.Info("[4/5] CMC: RWA metadata (website, logo, industry)", "step", "collect.cmc", "n", 4, "underlyings", len(rwaIDs))
 	rn.rwaInfo = map[string]cmc.RWAInfo{}
 	if len(rwaIDs) > 0 {
 		info, err := rn.cmc.FetchRWAInfo(ctx, rwaIDs)
@@ -528,12 +542,12 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 			rn.stop(ctx, err)
 			return nil, sh, false
 		default:
-			rn.warn("rwa info: %v", err)
+			rn.warnAt("collect.cmc", "rwa info: %v", err)
 		}
 	}
-	rn.log.Info("CMC done", "step", 4, "requests", rn.cmcHTTP.Requests(), "credits", rn.cmcHTTP.Credits())
+	rn.log.Info("CMC done", "step", "collect.cmc", "n", 4, "requests", rn.cmcHTTP.Requests(), "credits", rn.cmcHTTP.Credits())
 
-	rn.log.Info("[5/5] Portals: supported networks and platform names", "step", 5)
+	rn.log.Info("[5/5] Portals: supported networks and platform names", "step", "collect.portals", "n", 5)
 	sh.networks, err = rn.portals.FetchNetworks(ctx)
 	if err != nil {
 		rn.stop(ctx, err)
@@ -568,7 +582,7 @@ func (rn *run) globalSteps(ctx context.Context, todo []model.Asset) (map[string]
 			return nil, sh, false
 		}
 	}
-	rn.log.Info("Portals networks", "step", 5, "count", len(sh.networks), "networks", sh.networks)
+	rn.log.Info("Portals networks", "step", "collect.portals", "n", 5, "count", len(sh.networks), "networks", sh.networks)
 	return resolved, sh, true
 }
 

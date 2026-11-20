@@ -4,12 +4,14 @@ import { expect, test } from '@playwright/test';
 import { hydrated, ROUTES, SAMPLE } from './helpers';
 
 // the update pages load their runs in the browser: axe runs after hydration, when the table is there
-const ROUTES_WITH_UPDATES = [...ROUTES, '/updates', '/updates/3'];
+const ROUTES_WITH_UPDATES = [...ROUTES, '/updates', '/updates/3', '/updates/2', '/updates/6'];
 const PAGES = [...ROUTES_WITH_UPDATES, ...ROUTES_WITH_UPDATES.map((r) => `/zh${r}`)];
 
 test.describe('accessibility', () => {
   for (const path of PAGES) {
-    test(`${path} has no critical or serious axe violations`, async ({ page }) => {
+    test(`${path} has no critical or serious axe violations`, async ({ page, request }) => {
+      // the mock's live run: restart its clock (run 6 is run 5's twin with its own clock, so that the journal test is not disturbed) so that it is still running (and its journal growing) during the check
+      if (path.endsWith('/updates/6')) await request.get(`http://127.0.0.1:${process.env.E2E_API_PORT ?? 8180}/__mock/restart-live?id=6`);
       await page.goto(path);
       await hydrated(page);
       // wait for the browser-loaded parts (runs, history charts) so axe sees them

@@ -21,6 +21,7 @@ import { DASH, LocaleLink, MessageId, T, useFormat, useT } from 'i18n';
 import DataGate, { NotFound } from './components/DataGate';
 import DataTableContainer from './components/DataTableContainer';
 import { StatGrid } from './components/StatGrid';
+import RunJournal from './components/RunJournal';
 import { RunStatusChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 
@@ -292,6 +293,11 @@ function RunView({ index, run, id }: { index: RwaIndex; run: RunDetail; id: stri
           </span>
         </Box>
       </Typography>
+      {typeof run.events_count === 'number' && (
+        <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }}>
+          {t('update.journal.counts', { events: run.events_count, errors: run.errors_count ?? 0 })}
+        </Typography>
+      )}
       {run.error && (
         <Typography variant="body1" color="error" role="alert" sx={{ marginBottom: 2 }}>
           {t('update.runError', { message: run.error })}
@@ -340,6 +346,11 @@ function RunView({ index, run, id }: { index: RwaIndex; run: RunDetail; id: stri
         {t('update.underlyings')}
       </Typography>
       <Underlyings key={id} index={index} run={run} />
+
+      <Typography variant="h3" component="h2" gutterBottom sx={{ marginTop: 4, marginBottom: 2 }}>
+        {t('update.journal')}
+      </Typography>
+      <RunJournal runId={run.id} index={index} />
     </>
   );
 }
@@ -374,6 +385,9 @@ function UpdateDetailView({ index, id }: { index: RwaIndex; id: string }) {
               {t('update.loading')}
             </Typography>
           )}
+          <Typography variant="h3" component="h2" gutterBottom sx={{ marginTop: 4 }}>
+            {t('update.journal')}
+          </Typography>
         </Box>
       ) : (
         <RunView index={index} run={data} id={id} />

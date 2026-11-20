@@ -15,6 +15,7 @@ import (
 	"github.com/robfig/cron/v3"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/collect"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
@@ -40,6 +41,8 @@ type Config struct {
 	Interval      time.Duration // COLLECT_INTERVAL; takes precedence over Cron
 	OnStart       bool          // COLLECT_ON_START
 	RetentionDays int           // SNAPSHOT_RETENTION_DAYS; <= 0 disables the retention step
+
+	EventsRetentionDays int // RUN_EVENTS_RETENTION_DAYS; <= 0 disables the run journal retention
 
 	RunTimeout      time.Duration // deadline of one job (RUN_TIMEOUT); default 2h
 	PollInterval    time.Duration // run_requests poll period; default 30s
@@ -69,6 +72,8 @@ type Deps struct {
 	Logos func(ctx context.Context, trigger string) error
 	// Retention deletes snapshots fetched before cutoff.
 	Retention func(ctx context.Context, cutoff time.Time) (int64, error)
+	// EventsRetention deletes run journal events older than cutoff, except those of the current build's run.
+	EventsRetention func(ctx context.Context, cutoff time.Time) (int64, error)
 	// TakeRequest claims the oldest pending run request; it returns store.ErrNotFound (or nil, nil) when none is pending.
 	TakeRequest func(ctx context.Context) (*store.RunRequest, error)
 	// AttachRun links the run that served a request.
@@ -274,7 +279,7 @@ type outcome struct {
 // failed) Publish, Logos, Retention. Retention runs only after a successful Publish; a Logos error does not stop it.
 // A job started for a run request always ends with the request finished or released.
 func (s *Scheduler) runJob(ctx context.Context, j job) {
-	log := s.log.With("trigger", j.trigger, "mode", j.mode)
+	log := s.log.With("trigger", j.trigger, "mode", j.mode, "step", "scheduler")
 	start := s.deps.Now()
 	log.Info("job started", "symbols", j.symbols, "timeout", s.cfg.RunTimeout)
 
@@ -298,6 +303,11 @@ func (s *Scheduler) runJob(ctx context.Context, j job) {
 	s.attach(j, out.runID, log)
 	s.finishRequest(j, out, log)
 	log.Info("job ended", "run_id", out.runID, "duration", s.deps.Now().Sub(start))
+	if j.mode == "rebuild" {
+		runlog.Flush(s.log) // the rebuild run closes its own journal
+	} else {
+		runlog.CloseRun(s.log, out.runID) // the last event of the run: clients stop polling after it
+	}
 }
 
 func (s *Scheduler) collectPublish(ctx, parent context.Context, j job, log *slog.Logger) outcome {
@@ -335,8 +345,12 @@ func (s *Scheduler) collectPublish(ctx, parent context.Context, j job, log *slog
 		log.Warn("run failed, nothing to publish", "run_id", res.RunID)
 		return out
 	}
+	log.Info("collection run ended, publishing", "run_id", res.RunID, "status", res.Status)
+	// Everything below belongs to the run: its context carries the id for callbacks that log without a run attribute.
+	ctx = runlog.WithRun(ctx, res.RunID)
 	if err := s.deps.Publish(ctx, res.RunID); err != nil {
-		log.Error("publish failed, the previous build stays current; skipping logos and retention", "run_id", res.RunID, "err", err)
+		// Warn: the publish step has logged the error event of this failure in the run's journal.
+		log.Warn("publish failed, the previous build stays current; skipping logos and retention", "run_id", res.RunID, "err", err)
 		if s.deps.MarkPublishFailed != nil {
 			if merr := s.deps.MarkPublishFailed(ctx, res.RunID, err); merr != nil {
 				log.Error("recording the publish failure on the run failed", "run_id", res.RunID, "err", merr)
@@ -350,13 +364,23 @@ func (s *Scheduler) collectPublish(ctx, parent context.Context, j job, log *slog
 			log.Error("logos step failed", "run_id", res.RunID, "err", err)
 		}
 	}
+	rlog := s.log.With("run_id", res.RunID, "step", "retention")
 	if s.deps.Retention != nil && s.cfg.RetentionDays > 0 {
 		cutoff := s.deps.Now().AddDate(0, 0, -s.cfg.RetentionDays)
 		n, err := s.deps.Retention(ctx, cutoff)
 		if err != nil {
-			log.Error("retention failed", "err", err)
+			rlog.Error("snapshot retention failed", "err", err)
 		} else {
-			log.Info("retention done", "deleted_snapshots", n, "cutoff", cutoff)
+			rlog.Info("snapshot retention done", "deleted_snapshots", n, "cutoff", cutoff)
+		}
+	}
+	if s.deps.EventsRetention != nil && s.cfg.EventsRetentionDays > 0 {
+		cutoff := s.deps.Now().AddDate(0, 0, -s.cfg.EventsRetentionDays)
+		n, err := s.deps.EventsRetention(ctx, cutoff)
+		if err != nil {
+			rlog.Error("run events retention failed", "err", err)
+		} else {
+			rlog.Info("run events retention done", "deleted_events", n, "cutoff", cutoff)
 		}
 	}
 	log.Info("job finished", "run_id", res.RunID, "status", res.Status)
@@ -370,13 +394,14 @@ func (s *Scheduler) rebuild(ctx context.Context, j job, log *slog.Logger) outcom
 	}
 	runID, err := s.deps.Rebuild(ctx)
 	if err != nil {
-		log.Error("rebuild failed", "run_id", runID, "err", err)
+		log.Warn("rebuild failed", "run_id", runID, "err", err)
 		if ctx.Err() != nil && !errors.Is(ctx.Err(), context.DeadlineExceeded) {
 			return outcome{runID: runID, release: true, err: err}
 		}
 		return outcome{runID: runID, kind: store.OutcomeDone, err: err}
 	}
 	log.Info("rebuild finished", "run_id", runID)
+	runlog.Flush(s.log)
 	return outcome{runID: runID, kind: store.OutcomeDone}
 }
 

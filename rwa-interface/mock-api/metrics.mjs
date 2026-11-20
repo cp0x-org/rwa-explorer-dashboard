@@ -80,4 +80,5 @@ export const COLUMNS = {
   ]
 };
 
-export const metricType = (name) => (/_usd(_|$)/.test(name) ? 'money' : name.endsWith('_percent') ? 'percent' : name.endsWith('_score') ? 'score' : 'count');
+export const metricType = (name) =>
+  /_usd(_|$)/.test(name) ? 'money' : name.endsWith('_percent') ? 'percent' : name.endsWith('_score') ? 'score' : 'count';

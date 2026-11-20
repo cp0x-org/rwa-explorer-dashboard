@@ -50,7 +50,8 @@ The config starts, by itself, the mock API (port 8180) and `server/index.mjs` (4
 - `/opportunities?underlying=NVDA` — filters + pagination
 - `/summary` — charts with accessible legend and text summary; trend sparkline cards and the history chart (range toggle, metric chips)
 - `/updates` — runs table (client-only: `curl` shows the heading and a busy placeholder, no table); "Show rebuilds" switch;
-  date link → `/updates/3` (warnings, per-asset table with the "only not ok" switch) and `/updates/2` (new tokens/issuers, details)
+  date link → `/updates/3` (warnings, per-asset table with the "only not ok" switch) and `/updates/2` (new tokens/issuers, details); both end in the "Journal" section (level toggle, step chips, `<table>` of events; server HTML has only its heading)
+- `/updates/5` — the mock's live run: journal grows every 5 s ("Running… N events", Follow switch), `succeeded` after ~60 s of mock uptime; `GET <mock>/__mock/restart-live` restarts that clock (e2e does)
 - `/updates/999` — 200 + `noindex` from the server, "Update #999 not found" in the browser; `/updates/abc` — 404
 - History states: the mock's `?points=1` / `?points=0` (rewrite the request with `page.route`, see `e2e/history.spec.ts`) give "history starts on ..." and "No history yet."
 - Footer: "Data collected ... · next collection ~... · Update history" (the last two parts after hydration)

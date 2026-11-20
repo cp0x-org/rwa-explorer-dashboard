@@ -1,6 +1,7 @@
 package api
 
 import (
+	"context"
 	"crypto/subtle"
 	"encoding/base64"
 	"encoding/json"
@@ -73,6 +74,9 @@ type runDetailResponse struct {
 	Warnings    []string        `json:"warnings"`
 	Underlyings []runUnderlying `json:"underlyings"`
 	Changes     *changesFull    `json:"changes"`
+	EventsCount int             `json:"events_count"`
+	ErrorsCount int             `json:"errors_count"`
+	JournalOpen bool            `json:"journal_open"`
 }
 
 func duration(start time.Time, end *time.Time) *float64 {
@@ -199,7 +203,8 @@ func (s *Server) handleRun(w http.ResponseWriter, r *http.Request) {
 	if c, ok := changes[id]; ok {
 		bc = &c
 	}
-	resp := runDetailResponse{runItem: toRunItem(&d.Run, bc), Warnings: []string{}, Underlyings: []runUnderlying{}}
+	resp := runDetailResponse{runItem: toRunItem(&d.Run, bc), Warnings: []string{}, Underlyings: []runUnderlying{},
+		EventsCount: d.EventsCount, ErrorsCount: d.ErrorsCount}
 	_ = json.Unmarshal(d.Warnings, &resp.Warnings)
 	if resp.Warnings == nil {
 		resp.Warnings = []string{}
@@ -224,8 +229,101 @@ func (s *Server) handleRun(w http.ResponseWriter, r *http.Request) {
 		}
 		resp.Underlyings = append(resp.Underlyings, runUnderlying{u.UnderlyingID, t, u.Status, u.Error, duration2(u.StartedAt, u.FinishedAt)})
 	}
-	w.Header().Set("Cache-Control", "public, max-age=30")
+	resp.JournalOpen, err = s.journalOpen(r.Context(), id, d.Status)
+	if err != nil {
+		s.internalError(w, r, "run journal state", err)
+		return
+	}
+	if resp.JournalOpen {
+		w.Header().Set("Cache-Control", "no-store")
+	} else {
+		w.Header().Set("Cache-Control", "public, max-age=30")
+	}
 	writeJSON(w, r, http.StatusOK, resp)
+}
+
+// journalOpen reports whether the job that owns run id may still write: the run is running, or its terminal
+// "journal closed" event is missing.
+func (s *Server) journalOpen(ctx context.Context, id int64, status string) (bool, error) {
+	if status == "running" {
+		return true, nil
+	}
+	closed, err := s.st.RunJournalClosed(ctx, id)
+	return !closed, err
+}
+
+const (
+	defaultEventsLimit = 500
+	maxEventsLimit     = 2000
+)
+
+type runEventItem struct {
+	ID      int64           `json:"id"`
+	TS      time.Time       `json:"ts"`
+	Level   string          `json:"level"`
+	Step    string          `json:"step"`
+	Message string          `json:"message"`
+	Attrs   json.RawMessage `json:"attrs"`
+}
+
+// handleRunEvents serves the run journal: events of one run with id > after and level >= level, oldest first.
+// journal_open is true while the job that owns the run may still write events (the run is running or its terminal
+// "journal closed" event is missing); clients poll while it is true. The run status alone is not enough: publish,
+// logos and retention log after the run is finished.
+func (s *Server) handleRunEvents(w http.ResponseWriter, r *http.Request) {
+	id, err := strconv.ParseInt(r.PathValue("id"), 10, 64)
+	if err != nil || id <= 0 {
+		writeError(w, r, http.StatusBadRequest, codeBadRequest, "run id must be a positive integer")
+		return
+	}
+	limit, ok := parseLimit(w, r, defaultEventsLimit, maxEventsLimit)
+	if !ok {
+		return
+	}
+	level := r.URL.Query().Get("level")
+	if level == "" {
+		level = "info"
+	}
+	if !store.ValidEventLevel(level) {
+		writeError(w, r, http.StatusBadRequest, codeBadRequest, "level must be debug, info, warn or error")
+		return
+	}
+	var after int64
+	if v := r.URL.Query().Get("after"); v != "" {
+		if after, err = strconv.ParseInt(v, 10, 64); err != nil || after < 0 {
+			writeError(w, r, http.StatusBadRequest, codeBadRequest, "after must be a non-negative event id")
+			return
+		}
+	}
+	status, err := s.st.RunStatus(r.Context(), id)
+	if err != nil {
+		if errors.Is(err, store.ErrNotFound) {
+			writeError(w, r, http.StatusNotFound, codeNotFound, fmt.Sprintf("run %d does not exist", id))
+			return
+		}
+		s.internalError(w, r, "get run status", err)
+		return
+	}
+	open, err := s.journalOpen(r.Context(), id, status)
+	if err != nil {
+		s.internalError(w, r, "run journal state", err)
+		return
+	}
+	events, next, err := s.st.ListRunEvents(r.Context(), id, after, level, limit)
+	if err != nil {
+		s.internalError(w, r, "list run events", err)
+		return
+	}
+	items := make([]runEventItem, len(events))
+	for i, e := range events {
+		items[i] = runEventItem{ID: e.ID, TS: e.TS.UTC(), Level: e.Level, Step: e.Step, Message: e.Message, Attrs: jsonOrObject(e.Attrs)}
+	}
+	if open {
+		w.Header().Set("Cache-Control", "no-store")
+	} else {
+		w.Header().Set("Cache-Control", "public, max-age=60")
+	}
+	writeJSON(w, r, http.StatusOK, map[string]any{"run_id": id, "run_status": status, "journal_open": open, "items": items, "next_after": next})
 }
 
 func duration2(start, end *time.Time) *float64 {

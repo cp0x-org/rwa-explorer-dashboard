@@ -20,6 +20,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/logos"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/publish"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
@@ -90,8 +91,15 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 	defer pool.Close()
 
 	collect.Version = buildVersion()
-	log := newLogger(cfg, stderr)
+	log, jh := newJournalLogger(cfg, stderr)
+	jh.SetSink(store.New(pool))
+	defer jh.Close()
+	var journalRun int64
+	defer func() { runlog.CloseRun(log, journalRun) }() // the last event of the run; runs before jh.Close
 	res, err := collect.NewRunner(pool, *cfg, settings, assets, log).Run(ctx, collect.Options{Mode: *mode, Symbols: syms, Trigger: "cli"})
+	if res != nil {
+		journalRun = res.RunID
+	}
 	if res != nil && res.RunID != 0 {
 		printRunReport(ctx, stdout, store.New(pool), res)
 	}
@@ -130,7 +138,7 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 	pubRes, err := pub.Publish(ctx, res.RunID, *mode)
 	if err != nil {
 		if merr := st.MarkRunPublishFailed(ctx, res.RunID, err); merr != nil {
-			log.Error("recording the publish failure on the run failed", "run_id", res.RunID, "err", merr)
+			log.Error("recording the publish failure on the run failed", "run_id", res.RunID, "step", "publish", "err", merr)
 		}
 		_, _ = fmt.Fprintln(stderr, "rwa run-once: publish:", err)
 		return 1
@@ -138,7 +146,7 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 	printPublish(stdout, pubRes)
 	// The export is published; a logos problem does not change the outcome of the collection.
 	if err := logosAndRebuild(ctx, stdout, pool, pub, cfg, res.RunID, log); err != nil {
-		log.Error("logos step failed", "run_id", res.RunID, "err", err)
+		log.Error("logos step failed", "run_id", res.RunID, "step", "logos", "err", err)
 		_, _ = fmt.Fprintln(stderr, "rwa run-once: logos:", err)
 	}
 	return code
@@ -154,7 +162,7 @@ func printPublish(w io.Writer, res *publish.Result) {
 // logosAndRebuild downloads missing logos and, when new logos arrived, rebuilds the export (no history) so their
 // paths are served.
 func logosAndRebuild(ctx context.Context, w io.Writer, pool *pgxpool.Pool, pub *publish.Publisher, cfg *config.Config, runID int64, log *slog.Logger) error {
-	rep, err := logos.NewFetcher(pool, log, nil).FetchMissing(ctx)
+	rep, err := logos.NewFetcher(pool, log.With("run_id", runID, "step", "logos"), nil).FetchMissing(ctx)
 	if err != nil {
 		return err
 	}
