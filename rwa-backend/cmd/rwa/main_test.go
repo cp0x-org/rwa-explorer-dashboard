@@ -4,6 +4,8 @@ import (
 	"bytes"
 	"strings"
 	"testing"
+
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/testdb"
 )
 
 func exec(args ...string) (int, string, string) {
@@ -52,5 +54,47 @@ func TestNoArgsAndUnknown(t *testing.T) {
 	code, out, errOut = exec("nope")
 	if code != 2 || out != "" || !strings.Contains(errOut, "unknown command") {
 		t.Errorf("unknown: %d %q %q", code, out, errOut)
+	}
+}
+
+func TestMigrateUsage(t *testing.T) {
+	t.Setenv("DATABASE_URL", "")
+	for _, args := range [][]string{
+		{"migrate"},
+		{"migrate", "sideways"},
+		{"migrate", "up", "extra"},
+		{"migrate", "down-to"},
+		{"migrate", "down-to", "abc"},
+		{"migrate", "down-to", "-1"},
+		{"migrate", "down-to", "1", "2"},
+	} {
+		code, out, errOut := exec(args...)
+		if code != 2 || out != "" || errOut == "" {
+			t.Errorf("%v: code=%d out=%q err=%q", args, code, out, errOut)
+		}
+	}
+	code, _, errOut := exec("migrate", "up")
+	if code != 2 || !strings.Contains(errOut, "DATABASE_URL is required") {
+		t.Errorf("migrate up without DATABASE_URL: code=%d err=%q", code, errOut)
+	}
+}
+
+func TestMigrateDownRequiresYes(t *testing.T) {
+	u := testdb.Empty(t)
+	t.Setenv("DATABASE_URL", u)
+	if code, _, e := exec("migrate", "up"); code != 0 {
+		t.Fatalf("up: %d %s", code, e)
+	}
+	if code, _, e := exec("migrate", "down-to", "0"); code != 2 || !strings.Contains(e, "--yes") {
+		t.Fatalf("down-to without --yes: %d %q", code, e)
+	}
+	if code, out, e := exec("migrate", "status"); code != 0 || !strings.Contains(out, "applied") {
+		t.Fatalf("status: %d %q %q", code, out, e)
+	}
+	if code, _, e := exec("migrate", "down-to", "0", "--yes"); code != 0 {
+		t.Fatalf("down-to --yes: %d %s", code, e)
+	}
+	if code, out, _ := exec("migrate", "down-to", "0"); code != 0 || !strings.Contains(out, "nothing to roll back") {
+		t.Fatalf("down-to at target: %d %q", code, out)
 	}
 }

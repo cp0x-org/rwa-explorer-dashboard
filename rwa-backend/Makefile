@@ -1,13 +1,18 @@
 VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
 GO ?= go
 
-.PHONY: build test lint dev-db dev-db-down migrate parity
+.PHONY: build test test-integration lint dev-db dev-db-down migrate parity
 
 build:
 	$(GO) build -ldflags "-X main.version=$(VERSION)" -o bin/rwa ./cmd/rwa
 
 test:
 	$(GO) test ./...
+
+# Integration tests need PostgreSQL (make dev-db). Plain `make test` skips them when TEST_DATABASE_URL is unset.
+test-integration:
+	@test -n "$$TEST_DATABASE_URL" || { echo "TEST_DATABASE_URL is required, e.g. postgres://rwa:rwa@127.0.0.1:5433/rwa?sslmode=disable" >&2; exit 1; }
+	$(GO) test -count=1 ./internal/db/... ./internal/store/...
 
 lint:
 	@if command -v golangci-lint >/dev/null 2>&1; then golangci-lint run; \
@@ -21,7 +26,7 @@ dev-db-down:
 	docker compose -f docker-compose.dev.yml down
 
 migrate:
-	@echo "not implemented in phase 0"
+	$(GO) run ./cmd/rwa migrate up
 
 parity:
 	@echo "not implemented in phase 0"

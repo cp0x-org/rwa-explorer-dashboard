@@ -2,12 +2,17 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"io"
 	"os"
+	"os/signal"
 	"runtime/debug"
+	"strconv"
+	"syscall"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/config"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 )
 
 // version is set at build time: -ldflags "-X main.version=...".
@@ -22,7 +27,6 @@ type command struct {
 var stubs = []command{
 	{"api", "serve the HTTP API"},
 	{"collector", "run the scheduled data collector"},
-	{"migrate", "apply database migrations"},
 	{"import-v1", "import 1.x pipeline data into the database"},
 	{"run-once", "run one collection and exit"},
 	{"build", "recompute the export from stored snapshots"},
@@ -34,6 +38,7 @@ func usage(w io.Writer) {
 	for _, c := range stubs {
 		_, _ = fmt.Fprintf(w, "  %-10s %s\n", c.name, c.desc)
 	}
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "migrate", "database migrations: up | status | down-to <version> [--yes]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "version", "print the version")
 }
 
@@ -68,6 +73,9 @@ func run(args []string, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stdout, buildVersion())
 		return 0
 	}
+	if args[0] == "migrate" {
+		return runMigrate(args[1:], stdout, stderr)
+	}
 	for _, c := range stubs {
 		if c.name == args[0] {
 			_, _ = fmt.Fprintf(stderr, "rwa %s: not implemented\n", c.name)
@@ -77,4 +85,103 @@ func run(args []string, stdout, stderr io.Writer) int {
 	_, _ = fmt.Fprintf(stderr, "rwa: unknown command %q\n\n", args[0])
 	usage(stderr)
 	return 2
+}
+
+// runMigrate implements `rwa migrate up|status|down-to <version>`. Only DATABASE_URL is required.
+func runMigrate(args []string, stdout, stderr io.Writer) int {
+	const usageLine = "usage: rwa migrate up | status | down-to <version> [--yes]"
+	if len(args) == 0 {
+		_, _ = fmt.Fprintln(stderr, usageLine)
+		return 2
+	}
+	var version int64
+	var yes bool
+	if args[0] == "down-to" {
+		rest := make([]string, 0, len(args))
+		for _, a := range args {
+			if a == "--yes" || a == "-y" {
+				yes = true
+			} else {
+				rest = append(rest, a)
+			}
+		}
+		args = rest
+	}
+	switch args[0] {
+	case "up", "status":
+		if len(args) != 1 {
+			_, _ = fmt.Fprintln(stderr, usageLine)
+			return 2
+		}
+	case "down-to":
+		if len(args) != 2 {
+			_, _ = fmt.Fprintln(stderr, usageLine)
+			return 2
+		}
+		v, err := strconv.ParseInt(args[1], 10, 64)
+		if err != nil || v < 0 {
+			_, _ = fmt.Fprintf(stderr, "rwa migrate: invalid version %q\n", args[1])
+			return 2
+		}
+		version = v
+	default:
+		_, _ = fmt.Fprintf(stderr, "rwa migrate: unknown action %q\n%s\n", args[0], usageLine)
+		return 2
+	}
+
+	cfg, err := config.Load()
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa migrate:", err)
+		return 2
+	}
+	if cfg.DatabaseURL == "" {
+		_, _ = fmt.Fprintln(stderr, "rwa migrate: DATABASE_URL is required")
+		return 2
+	}
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
+
+	switch args[0] {
+	case "up":
+		err = db.Up(ctx, cfg.DatabaseURL)
+		if err == nil {
+			var v int64
+			if v, err = db.Version(ctx, cfg.DatabaseURL); err == nil {
+				_, _ = fmt.Fprintf(stdout, "migrations applied, current version %d\n", v)
+			}
+		}
+	case "down-to":
+		var cur int64
+		if cur, err = db.Version(ctx, cfg.DatabaseURL); err != nil {
+			break
+		}
+		if version >= cur {
+			_, _ = fmt.Fprintf(stdout, "already at version %d, nothing to roll back\n", cur)
+			break
+		}
+		if !yes {
+			_, _ = fmt.Fprintf(stderr, "rwa migrate: down-to %d would roll back from version %d and may destroy data; re-run with --yes\n", version, cur)
+			return 2
+		}
+		err = db.DownTo(ctx, cfg.DatabaseURL, version)
+		if err == nil {
+			_, _ = fmt.Fprintf(stdout, "rolled back to version %d\n", version)
+		}
+	case "status":
+		var st []db.MigrationStatus
+		if st, err = db.Status(ctx, cfg.DatabaseURL); err == nil {
+			for _, m := range st {
+				state := "pending"
+				if m.Applied {
+					state = "applied " + m.AppliedAt.UTC().Format("2006-01-02T15:04:05Z")
+				}
+				_, _ = fmt.Fprintf(stdout, "%04d  %-24s %s\n", m.Version, m.Source, state)
+			}
+		}
+	}
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa migrate:", err)
+		return 1
+	}
+	return 0
 }

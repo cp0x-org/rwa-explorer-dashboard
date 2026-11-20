@@ -2,9 +2,11 @@
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
 One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`
-(currently stubs; they exit with code 2).
+(`migrate` works; the others are stubs that exit with code 2).
 
 ## Build and test
+
+Requires Go 1.26 (`go.mod` pins `toolchain go1.26.4`).
 
 ```bash
 cd rwa-backend
@@ -46,3 +48,33 @@ make dev-db-down
 ```
 
 `config/assets.json` and `config/settings.json` are copies of the files in `../rwa-data-pipeline/config/`.
+
+## Migrations
+
+Schema changes are SQL files in `internal/db/migrations/` (`NNNN_<name>.sql`, goose format with `-- +goose Up` and
+`-- +goose Down`), embedded into the binary. The migration log is append-only: never edit an existing file, add a
+new one. Only `DATABASE_URL` is required.
+
+```bash
+rwa migrate up                # apply pending migrations (make migrate)
+rwa migrate status            # list migrations and whether they are applied
+rwa migrate down-to <version> --yes  # roll back until <version> is current (0 = everything); --yes is required
+```
+
+## Integration tests
+
+Tests under `internal/db` and `internal/store` run against a real PostgreSQL 16. Each test creates its own
+throwaway database (`rwa_test_<random>`), migrates it and drops it afterwards. They are skipped when
+`TEST_DATABASE_URL` is unset, so `make test` works without a database.
+
+```bash
+make dev-db
+export TEST_DATABASE_URL='postgres://rwa:rwa@127.0.0.1:5433/rwa?sslmode=disable'
+make test                # runs everything, integration tests included
+make test-integration    # only db + store; fails if TEST_DATABASE_URL is unset
+```
+
+The URL must point at a database the user may `CREATE DATABASE` in (the dev database does).
+
+Model tests that read 1.x files (`../rwa-interface/public/data/rwa.json`, `../rwa-data-pipeline/data/snapshots/`)
+are skipped when those files are absent.
