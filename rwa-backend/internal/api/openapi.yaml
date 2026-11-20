@@ -1,0 +1,1093 @@
+openapi: 3.1.0
+info:
+  title: RWA Explorer API
+  version: 1.0.0
+  summary: Read-only API of RWA Explorer 2.0.
+  description: |
+    JSON, UTF-8. All times are ISO 8601 UTC. Money, liquidity and APY values are decimal strings or `null` (as in the
+    1.x `rwa.json`); `null` means "not reported", never zero.
+
+    Current-build endpoints (`/export`, `/summary`, `/underlyings`, `/tokens`, `/issuers`, `/opportunities`) read the
+    same in-memory build and are consistent with each other; the build changes at most once per collector run.
+    Responses larger than 1 KB are gzipped when `Accept-Encoding: gzip` is sent.
+
+    Errors always use the envelope `{"error": {"code", "message", ...}}`.
+  license:
+    name: See repository LICENSE
+    url: https://github.com/cp0x-org/pi-rwa-interface
+servers:
+  - url: /
+    description: Same origin (behind the reverse proxy)
+security: []   # public read API; only the admin operations declare adminBearer
+
+tags:
+  - {name: Current build, description: 'Endpoints served from the in-memory current build.'}
+  - {name: Runs, description: 'Collection run history.'}
+  - {name: History, description: 'Time series of metrics.'}
+  - {name: Admin, description: 'Token-protected operations.'}
+  - {name: Service, description: 'Logos, health and the contract itself.'}
+
+paths:
+  /api/v1/export:
+    get:
+      tags: [Current build]
+      operationId: getExport
+      summary: Full export of the current build (rwa.json format)
+      description: |
+        The stored build bytes, verbatim (key order is significant). With `?build=<id>` the response is that build and
+        is immutable.
+      parameters:
+        - name: build
+          in: query
+          description: Build id; omit for the current build.
+          schema: {type: integer, format: int64, minimum: 1}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: The export document.
+          headers:
+            ETag: {$ref: '#/components/headers/ETag'}
+            Cache-Control:
+              description: |
+                `public, max-age=60, stale-while-revalidate=600` for the current build,
+                `public, max-age=31536000, immutable` with `?build=`.
+              schema: {type: string}
+            Vary: {description: Accept-Encoding, schema: {type: string}}
+            Content-Encoding: {description: gzip when accepted, schema: {type: string}}
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RwaExport'}
+        '304': {description: Not modified.}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/status:
+    get:
+      tags: [Current build]
+      operationId: getStatus
+      summary: Current build, last run and schedule
+      responses:
+        '200':
+          description: Status (Cache-Control no-store).
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Status'}
+        '500': {$ref: '#/components/responses/Internal'}
+
+  /api/v1/summary:
+    get:
+      tags: [Current build]
+      operationId: getSummary
+      summary: Summary and settings of the current build
+      parameters: [{$ref: '#/components/parameters/IfNoneMatch'}]
+      responses:
+        '200':
+          description: Summary.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/SummaryResponse'}
+        '304': {description: Not modified.}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/underlyings:
+    get:
+      tags: [Current build]
+      operationId: listUnderlyings
+      summary: All underlyings
+      parameters: [{$ref: '#/components/parameters/IfNoneMatch'}]
+      responses:
+        '200':
+          description: Underlyings.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items: {type: array, items: {$ref: '#/components/schemas/Underlying'}}
+        '304': {description: Not modified.}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/underlyings/{idOrTicker}:
+    get:
+      tags: [Current build]
+      operationId: getUnderlying
+      summary: One underlying with its tokens
+      parameters:
+        - name: idOrTicker
+          in: path
+          required: true
+          description: Underlying id (ISIN) or ticker (case-insensitive).
+          schema: {type: string}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: The underlying, its included tokens and its excluded tokens.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [underlying, tokens, excluded_tokens]
+                properties:
+                  underlying: {$ref: '#/components/schemas/Underlying'}
+                  tokens: {type: array, items: {$ref: '#/components/schemas/Token'}}
+                  excluded_tokens: {type: array, items: {$ref: '#/components/schemas/Token'}}
+        '304': {description: Not modified.}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/tokens:
+    get:
+      tags: [Current build]
+      operationId: listTokens
+      summary: Tokens (included and excluded), optionally filtered
+      parameters:
+        - {name: underlying, in: query, description: Underlying id or ticker., schema: {type: string}}
+        - {name: issuer, in: query, description: Issuer id., schema: {type: string}}
+        - name: kind
+          in: query
+          schema: {type: string, enum: [tokenized, wrapper, derivative, unclassified]}
+        - {name: in_defi, in: query, description: "true = only tokens with at least one eligible opportunity.", schema: {type: boolean}}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: Tokens.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items: {type: array, items: {$ref: '#/components/schemas/Token'}}
+        '304': {description: Not modified.}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/tokens/{id}:
+    get:
+      tags: [Current build]
+      operationId: getToken
+      summary: One token with its opportunities
+      parameters:
+        - {name: id, in: path, required: true, description: CMC id., schema: {type: integer, format: int64}}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: |
+            The token, its underlying and issuer, and every opportunity linked to it. `relation` is `null` for an
+            unconfirmed candidate.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [token, underlying, issuer, opportunities]
+                properties:
+                  token: {$ref: '#/components/schemas/Token'}
+                  underlying: {oneOf: [{$ref: '#/components/schemas/Underlying'}, {type: 'null'}]}
+                  issuer: {oneOf: [{$ref: '#/components/schemas/Issuer'}, {type: 'null'}]}
+                  opportunities:
+                    type: array
+                    items:
+                      type: object
+                      required: [opportunity, relation]
+                      properties:
+                        opportunity: {$ref: '#/components/schemas/Opportunity'}
+                        relation:
+                          oneOf: [{$ref: '#/components/schemas/Relation'}, {type: 'null'}]
+        '304': {description: Not modified.}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/issuers:
+    get:
+      tags: [Current build]
+      operationId: listIssuers
+      summary: All issuers
+      parameters: [{$ref: '#/components/parameters/IfNoneMatch'}]
+      responses:
+        '200':
+          description: Issuers.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items]
+                properties:
+                  items: {type: array, items: {$ref: '#/components/schemas/Issuer'}}
+        '304': {description: Not modified.}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/issuers/{id}:
+    get:
+      tags: [Current build]
+      operationId: getIssuer
+      summary: One issuer with its tokens
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: string}}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: The issuer and its tokens.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [issuer, tokens]
+                properties:
+                  issuer: {$ref: '#/components/schemas/Issuer'}
+                  tokens: {type: array, items: {$ref: '#/components/schemas/Token'}}
+        '304': {description: Not modified.}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/opportunities:
+    get:
+      tags: [Current build]
+      operationId: listOpportunities
+      summary: Opportunity rows (token x opportunity), paginated
+      description: |
+        One row per (token, opportunity) pair: confirmed relations (`relation` set) and unconfirmed candidates
+        (`relation` null). Rows are ordered by (opportunity.key, token_id). `cursor` is opaque; `next_cursor` is
+        `null` on the last page.
+      parameters:
+        - {name: underlying, in: query, description: Underlying id or ticker., schema: {type: string}}
+        - {name: issuer, in: query, schema: {type: string}}
+        - {name: network, in: query, schema: {type: string}}
+        - {name: category, in: query, schema: {type: string}}
+        - {name: platform, in: query, schema: {type: string}}
+        - {name: eligibility, in: query, schema: {type: string}}
+        - name: link
+          in: query
+          description: direct = relation depth 1, indirect = depth > 1, unconfirmed = no relation.
+          schema: {type: string, enum: [direct, indirect, unconfirmed]}
+        - {name: limit, in: query, schema: {type: integer, minimum: 1, maximum: 1000, default: 100}}
+        - {name: cursor, in: query, schema: {type: string}}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: A page of rows.
+          headers: {ETag: {$ref: '#/components/headers/ETag'}}
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, next_cursor]
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      required: [token_id, underlying_id, opportunity, relation]
+                      properties:
+                        token_id: {type: integer, format: int64}
+                        underlying_id: {type: string}
+                        opportunity: {$ref: '#/components/schemas/Opportunity'}
+                        relation:
+                          oneOf: [{$ref: '#/components/schemas/Relation'}, {type: 'null'}]
+                  next_cursor: {type: [string, 'null']}
+        '304': {description: Not modified.}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/runs:
+    get:
+      tags: [Runs]
+      operationId: listRuns
+      summary: Collection runs, newest first
+      parameters:
+        - {name: limit, in: query, schema: {type: integer, minimum: 1, maximum: 200, default: 50}}
+        - {name: cursor, in: query, schema: {type: string}}
+      responses:
+        '200':
+          description: A page of runs.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [items, next_cursor]
+                properties:
+                  items: {type: array, items: {$ref: '#/components/schemas/RunItem'}}
+                  next_cursor: {type: [string, 'null']}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '500': {$ref: '#/components/responses/Internal'}
+
+  /api/v1/runs/{id}:
+    get:
+      tags: [Runs]
+      operationId: getRun
+      summary: One run with warnings, per-underlying results and full changes
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: integer, format: int64}}
+      responses:
+        '200':
+          description: The run.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RunDetail'}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+
+  /api/v1/history/metrics:
+    get:
+      tags: [History]
+      operationId: getHistoryMetrics
+      summary: Chartable metrics per history entity
+      responses:
+        '200':
+          description: Metric catalog. The type is derived from the column name (`*_usd` money, `*_percent` percent, `*_score` score, otherwise count).
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [entities]
+                properties:
+                  entities:
+                    type: object
+                    required: [summary, underlyings, tokens, issuers, opportunities]
+                    properties:
+                      summary: {$ref: '#/components/schemas/MetricList'}
+                      underlyings: {$ref: '#/components/schemas/MetricList'}
+                      tokens: {$ref: '#/components/schemas/MetricList'}
+                      issuers: {$ref: '#/components/schemas/MetricList'}
+                      opportunities: {$ref: '#/components/schemas/MetricList'}
+
+  /api/v1/history/summary:
+    get:
+      tags: [History]
+      operationId: getSummaryHistory
+      summary: History of summary metrics
+      parameters:
+        - {$ref: '#/components/parameters/Metrics'}
+        - {$ref: '#/components/parameters/From'}
+        - {$ref: '#/components/parameters/To'}
+        - {$ref: '#/components/parameters/Step'}
+        - {$ref: '#/components/parameters/HistoryLimit'}
+      responses:
+        '200': {$ref: '#/components/responses/History'}
+        '400': {$ref: '#/components/responses/HistoryBadRequest'}
+        '500': {$ref: '#/components/responses/Internal'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/history/underlyings/{id}:
+    get:
+      tags: [History]
+      operationId: getUnderlyingHistory
+      summary: History of an underlying (id or ticker)
+      parameters:
+        - {name: id, in: path, required: true, description: 'Underlying id (ISIN) or ticker, case-insensitive. A ticker is resolved against the current build only; use the id for underlyings that were removed.', schema: {type: string}}
+        - {$ref: '#/components/parameters/Metrics'}
+        - {$ref: '#/components/parameters/From'}
+        - {$ref: '#/components/parameters/To'}
+        - {$ref: '#/components/parameters/Step'}
+        - {$ref: '#/components/parameters/HistoryLimit'}
+      responses:
+        '200': {$ref: '#/components/responses/History'}
+        '400': {$ref: '#/components/responses/HistoryBadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/history/tokens/{id}:
+    get:
+      tags: [History]
+      operationId: getTokenHistory
+      summary: History of a token (CMC id)
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: integer, format: int64}}
+        - {$ref: '#/components/parameters/Metrics'}
+        - {$ref: '#/components/parameters/From'}
+        - {$ref: '#/components/parameters/To'}
+        - {$ref: '#/components/parameters/Step'}
+        - {$ref: '#/components/parameters/HistoryLimit'}
+      responses:
+        '200': {$ref: '#/components/responses/History'}
+        '400': {$ref: '#/components/responses/HistoryBadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/history/issuers/{id}:
+    get:
+      tags: [History]
+      operationId: getIssuerHistory
+      summary: History of an issuer
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: string}}
+        - {$ref: '#/components/parameters/Metrics'}
+        - {$ref: '#/components/parameters/From'}
+        - {$ref: '#/components/parameters/To'}
+        - {$ref: '#/components/parameters/Step'}
+        - {$ref: '#/components/parameters/HistoryLimit'}
+      responses:
+        '200': {$ref: '#/components/responses/History'}
+        '400': {$ref: '#/components/responses/HistoryBadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/history/opportunities/{id}:
+    get:
+      tags: [History]
+      operationId: getOpportunityHistory
+      summary: History of an opportunity (position key)
+      parameters:
+        - {name: id, in: path, required: true, description: 'Opportunity key, e.g. arbitrum:0x...', schema: {type: string}}
+        - {$ref: '#/components/parameters/Metrics'}
+        - {$ref: '#/components/parameters/From'}
+        - {$ref: '#/components/parameters/To'}
+        - {$ref: '#/components/parameters/Step'}
+        - {$ref: '#/components/parameters/HistoryLimit'}
+      responses:
+        '200': {$ref: '#/components/responses/History'}
+        '400': {$ref: '#/components/responses/HistoryBadRequest'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '500': {$ref: '#/components/responses/Internal'}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/admin/runs:
+    post:
+      tags: [Admin]
+      operationId: createRunRequest
+      summary: Queue a manual collection run
+      description: 404 when the server has no ADMIN_TOKEN configured; the token is compared in constant time.
+      security: [{adminBearer: []}]
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              properties:
+                mode: {type: string, enum: [refresh, add, rebuild], default: refresh}
+                symbols:
+                  type: array
+                  description: Tickers; required for `add`; empty = all enabled.
+                  items: {type: string}
+      responses:
+        '202':
+          description: Queued; the collector picks it up on its next poll.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [request_id]
+                properties:
+                  request_id: {type: integer, format: int64}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '401': {$ref: '#/components/responses/Unauthorized'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '413': {description: Request body larger than 16 KB., content: {application/json: {schema: {$ref: '#/components/schemas/Error'}}}}
+
+  /api/v1/admin/runs/{id}:
+    get:
+      tags: [Admin]
+      operationId: getRunRequest
+      summary: State of a queued run request
+      security: [{adminBearer: []}]
+      parameters:
+        - {name: id, in: path, required: true, description: request_id from POST., schema: {type: integer, format: int64}}
+      responses:
+        '200':
+          description: The request row.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RunRequest'}
+        '400': {$ref: '#/components/responses/BadRequest'}
+        '401': {$ref: '#/components/responses/Unauthorized'}
+        '404': {$ref: '#/components/responses/NotFound'}
+
+  /logos/{kind}/{file}:
+    get:
+      tags: [Service]
+      operationId: getLogo
+      summary: Logo image
+      description: |
+        `{file}` is `<entityId>.<ext>`, the same path as the `logo` field of the export (`logos/tokens/36992.png`).
+        The extension must match the stored one, otherwise 404.
+      parameters:
+        - {name: kind, in: path, required: true, schema: {type: string, enum: [tokens, issuers, underlyings]}}
+        - {name: file, in: path, required: true, schema: {type: string}, example: 36992.png}
+        - $ref: '#/components/parameters/IfNoneMatch'
+      responses:
+        '200':
+          description: Image bytes.
+          headers:
+            ETag: {$ref: '#/components/headers/ETag'}
+            Cache-Control: {description: 'public, max-age=86400', schema: {type: string}}
+          content:
+            image/png: {schema: {type: string, format: binary}}
+            image/jpeg: {schema: {type: string, format: binary}}
+            image/svg+xml: {schema: {type: string, format: binary}}
+            image/webp: {schema: {type: string, format: binary}}
+            image/gif: {schema: {type: string, format: binary}}
+            image/x-icon: {schema: {type: string, format: binary}}
+        '304': {description: Not modified.}
+        '404': {$ref: '#/components/responses/NotFound'}
+
+  /healthz:
+    get:
+      tags: [Service]
+      operationId: healthz
+      summary: Liveness
+      responses:
+        '200':
+          description: The process is alive.
+          content:
+            application/json:
+              schema: {type: object, properties: {status: {type: string, const: ok}}}
+
+  /readyz:
+    get:
+      tags: [Service]
+      operationId: readyz
+      summary: Readiness (database reachable and a build loaded)
+      responses:
+        '200':
+          description: Ready.
+          content:
+            application/json:
+              schema: {type: object, properties: {status: {type: string, const: ready}}}
+        '503': {$ref: '#/components/responses/Unavailable'}
+
+  /api/v1/openapi.yaml:
+    get:
+      tags: [Service]
+      operationId: getOpenAPI
+      summary: This document
+      responses:
+        '200':
+          description: OpenAPI 3.1 document.
+          content:
+            application/yaml:
+              schema: {type: string}
+
+components:
+  securitySchemes:
+    adminBearer:
+      type: http
+      scheme: bearer
+      description: The ADMIN_TOKEN of the server.
+
+  headers:
+    ETag:
+      description: Quoted sha256 of the export (`W/` prefix on the narrow endpoints, which derive from the same build).
+      schema: {type: string}
+
+  parameters:
+    IfNoneMatch:
+      name: If-None-Match
+      in: header
+      schema: {type: string}
+    Metrics:
+      name: metrics
+      in: query
+      required: true
+      description: Comma-separated metric names (see /api/v1/history/metrics).
+      schema: {type: string}
+      example: market_cap_usd,eligible_opportunities_count
+    From:
+      name: from
+      in: query
+      description: Lower bound of observed_at (RFC 3339 or YYYY-MM-DD). Default now minus 365 days.
+      schema: {type: string}
+    To:
+      name: to
+      in: query
+      description: Upper bound of observed_at, inclusive; a plain date means the end of that day. Must not be before from.
+      schema: {type: string}
+    Step:
+      name: step
+      in: query
+      description: run = every run; day/week = the last observation of each UTC day / ISO week.
+      schema: {type: string, enum: [run, day, week], default: run}
+    HistoryLimit:
+      name: limit
+      in: query
+      description: Maximum number of points (default 1000, at most 5000; larger values are a 400). When more match, the newest are returned and `truncated` is true.
+      schema: {type: integer, minimum: 1, maximum: 5000, default: 1000}
+
+  responses:
+    History:
+      description: A series of points, ascending by time.
+      headers:
+        Cache-Control: {description: 'public, max-age=60', schema: {type: string}}
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/History'}
+    BadRequest:
+      description: Invalid parameter.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+    HistoryBadRequest:
+      description: Invalid parameter, or an unknown metric (`code` = unknown_metric, with `metric` and `allowed`).
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+    Unauthorized:
+      description: Missing or wrong admin token.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+    NotFound:
+      description: 'Not found (for admin endpoints also: ADMIN_TOKEN not configured).'
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+    Unavailable:
+      description: No build loaded yet, or the database is unreachable.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+    Internal:
+      description: Internal error.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Error'}
+
+  schemas:
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: {type: string, enum: [not_found, method_not_allowed, bad_request, payload_too_large, unknown_metric, unauthorized, unavailable, internal]}
+            message: {type: string}
+            metric: {type: string, description: Only for unknown_metric.}
+            allowed:
+              type: array
+              description: Only for unknown_metric; the valid metric names of the entity.
+              items: {type: string}
+
+    Decimal:
+      type: [string, 'null']
+      description: Exact decimal as a plain string (no exponent), or null when not reported.
+      examples: ['43702741.31']
+
+    RwaExport:
+      type: object
+      description: |
+        The 1.x `rwa.json` document plus `build_id` and `run_id`. Element shapes are the Underlying, Token, Issuer and
+        Opportunity schemas below. Unknown additional keys may appear in later schema versions.
+      additionalProperties: true
+      required: [schema_version, generated_at, score_version, settings, summary, underlyings, tokens, issuers, opportunities, build_id, run_id]
+      properties:
+        schema_version: {type: integer}
+        generated_at: {type: string, format: date-time}
+        score_version: {type: string}
+        settings: {$ref: '#/components/schemas/ExportSettings'}
+        summary: {$ref: '#/components/schemas/Summary'}
+        underlyings: {type: array, items: {$ref: '#/components/schemas/Underlying'}}
+        tokens: {type: array, items: {$ref: '#/components/schemas/Token'}}
+        issuers: {type: array, items: {$ref: '#/components/schemas/Issuer'}}
+        opportunities: {type: array, items: {$ref: '#/components/schemas/Opportunity'}}
+        build_id: {type: [integer, 'null'], format: int64}
+        run_id: {type: [integer, 'null'], format: int64}
+
+    ExportSettings:
+      type: object
+      properties:
+        min_eligible_liquidity_usd: {$ref: '#/components/schemas/Decimal'}
+        max_position_age_hours: {type: integer}
+        max_graph_depth: {type: integer}
+        yield_apy_review_threshold_percent: {$ref: '#/components/schemas/Decimal'}
+
+    SummaryResponse:
+      type: object
+      required: [generated_at, build_id, run_id, settings, summary]
+      properties:
+        generated_at: {type: string, format: date-time}
+        build_id: {type: integer, format: int64}
+        run_id: {type: integer, format: int64}
+        settings: {$ref: '#/components/schemas/ExportSettings'}
+        summary: {$ref: '#/components/schemas/Summary'}
+
+    OpportunityCounts:
+      type: object
+      properties:
+        raw_confirmed_opportunities_count: {type: integer}
+        eligible_opportunities_count: {type: integer}
+        unknown_liquidity_count: {type: integer}
+        direct_eligible_count: {type: integer}
+        indirect_eligible_count: {type: integer}
+        eligible_protocols_count: {type: integer}
+        eligible_networks_count: {type: integer}
+
+    YieldSummary:
+      type: object
+      properties:
+        yield_opportunities_count: {type: integer}
+        max_reported_apy_percent: {$ref: '#/components/schemas/Decimal'}
+        average_reported_apy_percent: {$ref: '#/components/schemas/Decimal'}
+        median_reported_apy_percent: {$ref: '#/components/schemas/Decimal'}
+
+    Summary:
+      allOf:
+        - $ref: '#/components/schemas/OpportunityCounts'
+        - $ref: '#/components/schemas/YieldSummary'
+        - type: object
+          properties:
+            underlyings_count: {type: integer}
+            tokens_count: {type: integer}
+            excluded_tokens_count: {type: integer}
+            issuers_count: {type: integer}
+            deployments_count: {type: integer}
+            indexed_deployments_count: {type: integer}
+            tokens_in_defi_count: {type: integer}
+            coverage: {type: string}
+            oldest_fetched_at: {type: [string, 'null']}
+            newest_fetched_at: {type: [string, 'null']}
+
+    Underlying:
+      allOf:
+        - $ref: '#/components/schemas/OpportunityCounts'
+        - $ref: '#/components/schemas/YieldSummary'
+        - type: object
+          properties:
+            id: {type: string}
+            ticker: {type: string}
+            name: {type: string}
+            isin: {type: [string, 'null']}
+            asset_type: {type: string}
+            status: {type: string}
+            fetched_at: {type: [string, 'null']}
+            cmc_rwa_id: {type: [integer, 'null']}
+            cmc_name: {type: [string, 'null']}
+            tokenized_market_cap_usd: {$ref: '#/components/schemas/Decimal'}
+            tokenized_volume_24h_usd: {$ref: '#/components/schemas/Decimal'}
+            average_tokenized_price_usd: {$ref: '#/components/schemas/Decimal'}
+            token_ids: {type: array, items: {type: integer, format: int64}}
+            excluded_token_ids: {type: array, items: {type: integer, format: int64}}
+            versions_count: {type: integer}
+            issuers_count: {type: integer}
+            tokens_in_defi_count: {type: integer}
+            eligible_platforms: {type: array, items: {type: string}}
+            coverage: {type: string}
+            search_terms: {type: array, items: {type: string}}
+            search_complete: {type: boolean}
+            website: {type: [string, 'null']}
+            logo: {type: [string, 'null'], description: 'Relative logo path, e.g. logos/underlyings/US67066G1040.png'}
+
+    Deployment:
+      type: object
+      properties:
+        cmc_network: {type: string}
+        network: {type: [string, 'null']}
+        address: {type: string}
+        key: {type: [string, 'null']}
+        status: {type: string}
+        portals_symbol: {type: [string, 'null']}
+        decimals: {type: [integer, 'null']}
+        portals_platform: {type: [string, 'null']}
+
+    Relation:
+      type: object
+      required: [key, depth, path]
+      properties:
+        key: {type: string, description: Opportunity key.}
+        depth: {type: integer, description: '1 = direct, more = indirect.'}
+        path: {type: array, items: {type: string}}
+
+    BreakdownCount:
+      type: object
+      properties:
+        raw: {type: integer}
+        eligible: {type: integer}
+
+    Breakdown:
+      type: object
+      description: Key to counts; the key order of the document is significant.
+      additionalProperties: {$ref: '#/components/schemas/BreakdownCount'}
+
+    YieldProfile:
+      allOf:
+        - $ref: '#/components/schemas/YieldSummary'
+        - type: object
+          properties:
+            status: {type: string, enum: [reported, no_reported_yield_in_coverage, unknown]}
+            max_reported_apy_key: {type: [string, 'null']}
+            top_keys: {type: array, items: {type: string}}
+            by_category: {type: object, additionalProperties: true}
+            missing_apy_count: {type: integer}
+            anomaly_count: {type: integer}
+
+    Token:
+      type: object
+      properties:
+        id: {type: integer, format: int64}
+        symbol: {type: [string, 'null']}
+        name: {type: [string, 'null']}
+        kind: {type: string, enum: [tokenized, wrapper, derivative, unclassified]}
+        excluded_reason: {type: [string, 'null']}
+        underlying_id: {type: string}
+        ticker: {type: string}
+        issuer_id: {type: [string, 'null']}
+        issuer_name: {type: [string, 'null']}
+        price_usd: {$ref: '#/components/schemas/Decimal'}
+        market_cap_usd: {$ref: '#/components/schemas/Decimal'}
+        volume_24h_usd: {$ref: '#/components/schemas/Decimal'}
+        cmc_slug: {type: [string, 'null']}
+        logo: {type: [string, 'null']}
+        deployments: {type: array, items: {$ref: '#/components/schemas/Deployment'}}
+        coverage: {type: string}
+        fetched_at: {type: [string, 'null']}
+        relations: {type: array, items: {$ref: '#/components/schemas/Relation'}}
+        unconfirmed_keys: {type: array, items: {type: string}}
+        counts:
+          allOf:
+            - $ref: '#/components/schemas/OpportunityCounts'
+            - type: object
+              properties:
+                unconfirmed_candidates_count: {type: integer}
+        usefulness_score: {type: integer}
+        rank_in_underlying: {type: integer, description: Omitted for excluded tokens.}
+        by_network: {$ref: '#/components/schemas/Breakdown'}
+        by_category: {$ref: '#/components/schemas/Breakdown'}
+        by_platform: {$ref: '#/components/schemas/Breakdown'}
+        yield: {$ref: '#/components/schemas/YieldProfile'}
+
+    Issuer:
+      allOf:
+        - $ref: '#/components/schemas/OpportunityCounts'
+        - $ref: '#/components/schemas/YieldSummary'
+        - type: object
+          properties:
+            id: {type: string}
+            name: {type: [string, 'null']}
+            cmc_label: {type: [string, 'null']}
+            website: {type: [string, 'null']}
+            logo: {type: [string, 'null']}
+            metadata_status: {type: string, enum: [cmc, unknown]}
+            roster_size: {type: [integer, 'null']}
+            underlying_ids: {type: array, items: {type: string}}
+            token_ids: {type: array, items: {type: integer, format: int64}}
+            basket_underlyings_count: {type: integer}
+            basket_tokens_count: {type: integer}
+            tokens_in_defi_count: {type: integer}
+            deployments_count: {type: integer}
+            supported_deployments_count: {type: integer}
+            unsupported_deployments_count: {type: integer}
+            issuer_usefulness_score: {type: integer}
+            eligible_platforms: {type: array, items: {type: string}}
+            best_reported_yield_keys: {type: array, items: {type: string}}
+            by_network: {$ref: '#/components/schemas/Breakdown'}
+            by_category: {$ref: '#/components/schemas/Breakdown'}
+            by_underlying: {type: object, additionalProperties: {type: integer}}
+            mean_opportunities_per_underlying: {$ref: '#/components/schemas/Decimal'}
+            mean_opportunities_per_token: {$ref: '#/components/schemas/Decimal'}
+            basket_relative_score: {$ref: '#/components/schemas/Decimal'}
+            compared_underlyings_count: {type: integer}
+            direct_pools_liquidity_usd: {$ref: '#/components/schemas/Decimal'}
+            basket_market_cap_usd: {$ref: '#/components/schemas/Decimal'}
+            coverage: {type: string}
+            oldest_fetched_at: {type: [string, 'null']}
+
+    Opportunity:
+      type: object
+      properties:
+        key: {type: string}
+        network: {type: string}
+        platform: {type: string}
+        platform_name: {type: string}
+        symbol: {type: [string, 'null']}
+        name: {type: [string, 'null']}
+        address: {type: string}
+        position_kind: {type: string, enum: [pool_id, contract]}
+        receipt_token_key: {type: [string, 'null']}
+        category: {type: string}
+        tags: {type: array, items: {type: string}}
+        components:
+          type: array
+          items:
+            type: object
+            properties:
+              key: {type: string}
+              symbol: {type: [string, 'null']}
+        liquidity_usd: {$ref: '#/components/schemas/Decimal'}
+        liquidity_semantics: {type: string, enum: [pool_tvl, vault_tvl, token_metric, unknown]}
+        apy_percent: {$ref: '#/components/schemas/Decimal'}
+        base_apy_percent: {$ref: '#/components/schemas/Decimal'}
+        reward_apy_percent: {$ref: '#/components/schemas/Decimal'}
+        borrow_apy_percent: {$ref: '#/components/schemas/Decimal'}
+        volume_usd_1d: {$ref: '#/components/schemas/Decimal'}
+        volume_usd_7d: {$ref: '#/components/schemas/Decimal'}
+        is_portable: {type: [boolean, 'null']}
+        updated_at: {type: [string, 'null']}
+        flags: {type: array, items: {type: string}}
+        eligibility: {type: string}
+
+    Status:
+      type: object
+      required: [current_build, last_run, next_run_at, schedule, collector_version, api_version]
+      properties:
+        current_build:
+          oneOf:
+            - type: object
+              required: [id, run_id, generated_at, score_version, export_sha256, schema_version]
+              properties:
+                id: {type: integer, format: int64}
+                run_id: {type: integer, format: int64}
+                generated_at: {type: string, format: date-time}
+                score_version: {type: string}
+                export_sha256: {type: string}
+                schema_version: {type: integer}
+            - type: 'null'
+        last_run:
+          oneOf:
+            - type: object
+              required: [id, run_key, mode, trigger, status, started_at, finished_at, completed_count, failed_count, error]
+              properties:
+                id: {type: integer, format: int64}
+                run_key: {type: string}
+                mode: {type: string}
+                trigger: {type: string}
+                status: {type: string, enum: [running, succeeded, partial, failed]}
+                started_at: {type: string, format: date-time}
+                finished_at: {type: [string, 'null'], format: date-time}
+                completed_count: {type: integer}
+                failed_count: {type: integer}
+                error: {type: [string, 'null']}
+            - type: 'null'
+        next_run_at:
+          type: [string, 'null']
+          format: date-time
+          description: |
+            Next scheduled start: the cron expression in UTC, or, for an interval, the last successful run start plus the
+            interval (null until there is one).
+        schedule:
+          type: object
+          required: [cron, interval]
+          properties:
+            cron: {type: [string, 'null'], description: COLLECT_CRON; null when an interval is configured.}
+            interval: {type: [string, 'null'], description: 'COLLECT_INTERVAL as a Go duration, e.g. 6h0m0s.'}
+        collector_version: {type: [string, 'null'], description: collector_version of the last run.}
+        api_version: {type: string}
+
+    RunChangesSummary:
+      type: object
+      required: [new_tokens_count, removed_tokens_count, new_positions_count, gone_positions_count, eligible_delta]
+      properties:
+        new_tokens_count: {type: integer}
+        removed_tokens_count: {type: integer}
+        new_positions_count: {type: integer}
+        gone_positions_count: {type: integer}
+        eligible_delta: {type: integer}
+
+    RunItem:
+      type: object
+      required: [id, run_key, mode, trigger, status, started_at, finished_at, duration_seconds, selected_count, completed_count, failed_count, cmc_requests, portals_requests, cmc_credits, warnings_count, error, build_id, changes]
+      properties:
+        id: {type: integer, format: int64}
+        run_key: {type: string}
+        mode: {type: string, enum: [refresh, add, import, rebuild]}
+        trigger: {type: string, enum: [schedule, startup, manual, import, cli]}
+        status: {type: string, enum: [running, succeeded, partial, failed]}
+        started_at: {type: string, format: date-time}
+        finished_at: {type: [string, 'null'], format: date-time}
+        duration_seconds: {type: [number, 'null']}
+        selected_count: {type: integer}
+        completed_count: {type: integer}
+        failed_count: {type: integer}
+        cmc_requests: {type: integer}
+        portals_requests: {type: integer}
+        cmc_credits: {type: integer}
+        warnings_count: {type: integer}
+        error: {type: [string, 'null']}
+        build_id: {type: [integer, 'null'], format: int64, description: Newest build produced from the run; null when none.}
+        changes:
+          oneOf:
+            - {$ref: '#/components/schemas/RunChangesSummary'}
+            - type: 'null'
+
+    RunDetail:
+      allOf:
+        - $ref: '#/components/schemas/RunItem'
+        - type: object
+          required: [warnings, underlyings, changes]
+          properties:
+            warnings: {type: array, items: {type: string}}
+            underlyings:
+              type: array
+              items:
+                type: object
+                required: [underlying_id, ticker, status, error, duration_seconds]
+                properties:
+                  underlying_id: {type: string}
+                  ticker: {type: string}
+                  status: {type: string}
+                  error: {type: [string, 'null']}
+                  duration_seconds: {type: [number, 'null']}
+            changes:
+              oneOf:
+                - type: object
+                  required: [new_tokens, removed_tokens, new_issuers, new_positions_count, gone_positions_count, eligible_delta, details]
+                  properties:
+                    new_tokens: {type: array, items: {type: integer}}
+                    removed_tokens: {type: array, items: {type: integer}}
+                    new_issuers: {type: array, items: {type: string}}
+                    new_positions_count: {type: integer}
+                    gone_positions_count: {type: integer}
+                    eligible_delta: {type: integer}
+                    details: {type: object, additionalProperties: true}
+                - type: 'null'
+
+    RunRequest:
+      type: object
+      required: [request_id, requested_at, requested_by, mode, symbols, taken_at, finished_at, outcome, error, run_id]
+      properties:
+        request_id: {type: integer, format: int64}
+        requested_at: {type: string, format: date-time}
+        requested_by: {type: string}
+        mode: {type: string, enum: [refresh, add, rebuild]}
+        symbols: {type: [array, 'null'], items: {type: string}, description: null = all enabled.}
+        taken_at: {type: [string, 'null'], format: date-time}
+        finished_at: {type: [string, 'null'], format: date-time}
+        outcome: {type: [string, 'null'], enum: [done, nothing_to_do, rejected, released, null]}
+        error: {type: [string, 'null']}
+        run_id: {type: [integer, 'null'], format: int64}
+
+    MetricList:
+      type: array
+      items:
+        type: object
+        required: [name, type]
+        properties:
+          name: {type: string}
+          type: {type: string, enum: [money, percent, count, score]}
+
+    History:
+      type: object
+      required: [entity, id, metrics, step, points, truncated]
+      properties:
+        entity: {type: string, enum: [summary, underlyings, tokens, issuers, opportunities]}
+        id: {type: [string, 'null'], description: null for the summary. For underlyings the resolved underlying id.}
+        metrics: {type: array, items: {type: string}}
+        step: {type: string, enum: [run, day, week]}
+        points:
+          type: array
+          items:
+            type: object
+            required: [run_id, observed_at, values]
+            properties:
+              run_id: {type: integer, format: int64}
+              observed_at: {type: string, format: date-time}
+              values:
+                type: object
+                description: Metric name to value. Money and APY are decimal strings, counts are numbers, null when not reported.
+                additionalProperties:
+                  type: [string, number, boolean, array, object, 'null']
+        truncated: {type: boolean, description: True when more points matched than limit; the newest limit points are returned.}

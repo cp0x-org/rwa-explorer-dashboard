@@ -2,7 +2,7 @@
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
 One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`
-(`api` is still a stub that exits with code 2; everything else works).
+
 
 ## Build and test
 
@@ -41,6 +41,44 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `ENV_FILE` | `.env` | all | path of the dotenv file to load |
 | `LOG_LEVEL` | `info` | all | `debug`, `info`, `warn` or `error` |
 | `LOG_FORMAT` | `json` | all | `json` or `text` |
+
+## API
+
+`rwa api` serves the read-only HTTP API (contract: `internal/api/openapi.yaml`, also served at `GET /api/v1/openapi.yaml`).
+It needs `DATABASE_URL` and only checks that migrations are applied (it never migrates; run `rwa migrate up` first).
+Environment: `HTTP_ADDR` (default `:8080`), `CORS_ORIGINS` (exact origins, for `pnpm start` against a remote API),
+`ADMIN_TOKEN` (enables the admin endpoints), `LOG_LEVEL`, `LOG_FORMAT`. `COLLECT_CRON`/`COLLECT_INTERVAL` are read only
+to report `next_run_at` in `/api/v1/status`.
+
+```bash
+DATABASE_URL=postgres://rwa:rwa@127.0.0.1:5433/rwa?sslmode=disable HTTP_ADDR=127.0.0.1:8080 rwa api
+curl localhost:8080/api/v1/status
+```
+
+| Endpoint | Notes |
+|---|---|
+| `GET /api/v1/export` | stored build bytes verbatim; `?build=<id>` for a specific build |
+| `GET /api/v1/{status,summary,underlyings[/{idOrTicker}],tokens[/{id}],issuers[/{id}],opportunities}` | narrow views over the same in-memory build; `opportunities` is cursor-paginated |
+| `GET /api/v1/runs`, `/runs/{id}` | run history with per-build changes |
+| `GET /api/v1/history/{summary,underlyings,tokens,issuers,opportunities}[/{id}]?metrics=` | time series; `GET /api/v1/history/metrics` lists the metrics |
+| `GET /logos/{kind}/{entityId}.{ext}` | logo bytes from the database |
+| `GET /healthz`, `GET /readyz` | liveness; readiness (database reachable and a build loaded, else 503) |
+| `POST /api/v1/admin/runs`, `GET /api/v1/admin/runs/{request_id}` | queue a manual run / read its state |
+
+Caching: the current build is held in memory (raw bytes, a precomputed gzip copy, indexes) and re-checked every 15 s.
+`/export` answers `ETag: "<export_sha256>"`, `Cache-Control: public, max-age=60, stale-while-revalidate=600` and 304 for
+`If-None-Match`; `?build=<id>` is `immutable` for a year. Narrow current-build endpoints use the weak `W/"<sha>"` and the
+same `Cache-Control`. `/status` is `no-store`. Other JSON bodies over 1 KB are gzipped on request. Until the first build
+exists `/readyz` and the current-build endpoints return 503.
+
+Admin: `POST /api/v1/admin/runs` with `Authorization: Bearer $ADMIN_TOKEN` and body
+`{"mode":"refresh|add|rebuild","symbols":["NVDA"]}` returns `202 {"request_id": N}`; the collector picks the request up on
+its next poll and `GET /api/v1/admin/runs/N` shows `taken_at`, `finished_at`, `outcome`, `error`, `run_id`. A missing or
+wrong token is 401 (constant-time comparison); without `ADMIN_TOKEN` the endpoints are 404. The API writes nothing else.
+
+Errors are `{"error":{"code","message"}}` with `not_found`, `bad_request`, `unknown_metric` (adds `metric` and
+`allowed`), `unauthorized`, `unavailable`, `internal`. Every response carries `X-Request-ID` (an incoming one is kept);
+the access log records method, path (no query), status, duration and the request id.
 
 ## Development database
 

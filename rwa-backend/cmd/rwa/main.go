@@ -24,13 +24,12 @@ type command struct {
 }
 
 // stubs are subcommands that are not implemented yet.
-var stubs = []command{
-	{"api", "serve the HTTP API"},
-}
+var stubs = []command{}
 
 func usage(w io.Writer) {
 	_, _ = fmt.Fprintln(w, "Usage: rwa <command> [flags]")
 	_, _ = fmt.Fprintln(w, "\nCommands:")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "api", "serve the HTTP API")
 	for _, c := range stubs {
 		_, _ = fmt.Fprintf(w, "  %-10s %s\n", c.name, c.desc)
 	}
@@ -82,6 +81,8 @@ func run(args []string, stdout, stderr io.Writer) int {
 		return runProbe(args[1:], stdout, stderr)
 	}
 	switch args[0] {
+	case "api":
+		return runAPI(args[1:], stdout, stderr)
 	case "collector":
 		return runCollector(args[1:], stdout, stderr)
 	case "run-once":

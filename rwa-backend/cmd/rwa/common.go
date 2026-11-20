@@ -14,7 +14,12 @@ import (
 func newLogger(cfg *config.Config, w io.Writer) *slog.Logger {
 	var level slog.Level
 	_ = level.UnmarshalText([]byte(cfg.LogLevel)) // validated by Config.Validate*
-	opts := &slog.HandlerOptions{Level: level}
+	opts := &slog.HandlerOptions{Level: level, ReplaceAttr: func(groups []string, a slog.Attr) slog.Attr {
+		if len(groups) == 0 && a.Key == slog.TimeKey && a.Value.Kind() == slog.KindTime {
+			a.Value = slog.TimeValue(a.Value.Time().UTC())
+		}
+		return a
+	}}
 	if cfg.LogFormat == "text" {
 		return slog.New(slog.NewTextHandler(w, opts))
 	}
