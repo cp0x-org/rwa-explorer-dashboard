@@ -1,0 +1,84 @@
+{
+ "url": "https://pro-api.coinmarketcap.com/v5/real-world-assets/info",
+ "params": {
+  "rwa_id": "2,3,86"
+ },
+ "status": 200,
+ "fetched_at": "2026-10-18T20:16:03Z",
+ "body": {
+  "data": {
+   "rwa_assets": [
+    {
+     "name": "Nvidia Corp",
+     "symbol": "NVDA",
+     "slug": "nvidia",
+     "website": "https://www.nvidia.com",
+     "employees": 36000,
+     "founded": "1993-04-04",
+     "industry": "Semiconductors & Related Devices",
+     "cik": "0001045810",
+     "about": {
+      "description": "###  What is NVIDIA, and when was it founded?\n\nNew investors often associate NVI",
+      "logo": null,
+      "website": "https://www.nvidia.com",
+      "date_added": "2025-07-17T06:35:44.000Z"
+     },
+     "rwa_id": 2,
+     "asset_type": "stock",
+     "rwa_rank": 2,
+     "has_tokens": true,
+     "primary_exchange": "Nasdaq"
+    },
+    {
+     "name": "Apple Inc.",
+     "symbol": "AAPL",
+     "slug": "apple",
+     "website": "https://www.apple.com",
+     "employees": 164000,
+     "founded": "1976-03-31",
+     "industry": "Electronic Computers",
+     "cik": "0000320193",
+     "about": {
+      "description": "### What is Apple Inc., and when was it founded?\n\nRetail investors often struggl",
+      "logo": null,
+      "website": "https://www.apple.com",
+      "date_added": "2025-07-17T06:38:59.000Z"
+     },
+     "rwa_id": 3,
+     "asset_type": "stock",
+     "rwa_rank": 3,
+     "has_tokens": true,
+     "primary_exchange": "Nasdaq"
+    },
+    {
+     "name": "SPDR S&P 500 ETF Trust",
+     "symbol": "SPY",
+     "slug": "spy",
+     "website": null,
+     "employees": null,
+     "founded": "1993-01-22",
+     "industry": null,
+     "cik": "0000884394",
+     "about": {
+      "description": null,
+      "logo": null,
+      "website": null,
+      "date_added": "2025-07-18T11:15:18.000Z"
+     },
+     "rwa_id": 86,
+     "asset_type": "etf",
+     "rwa_rank": 7811,
+     "has_tokens": true,
+     "primary_exchange": "NYSE Arca, Inc."
+    }
+   ]
+  },
+  "status": {
+   "timestamp": "2026-10-18T20:16:03.195Z",
+   "error_code": "0",
+   "error_message": "",
+   "elapsed": 3,
+   "credit_count": 1
+  }
+ }
+}

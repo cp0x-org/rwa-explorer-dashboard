@@ -61,6 +61,20 @@ rwa migrate status            # list migrations and whether they are applied
 rwa migrate down-to <version> --yes  # roll back until <version> is current (0 = everything); --yes is required
 ```
 
+## Probe (dev only)
+
+`rwa probe` makes a few live calls to check the API keys and the source clients (`internal/source/{httpx,cmc,portals}`).
+It needs `CMC_API_KEY`/`PORTALS_API_KEY` and `SETTINGS_PATH`, no database, and never prints keys.
+
+```bash
+ENV_FILE=../rwa-data-pipeline/.env SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider cmc --symbols NVDA
+ENV_FILE=../rwa-data-pipeline/.env SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider portals --symbols NVDA
+```
+
+`--provider cmc` prints the resolved `rwa_id`, tokens (symbol, issuer, `crypto_id`), requests and credits
+(`--type etf` for ETFs); `--provider portals` prints network/platform counts and search totals per term.
+Per-request progress goes to stderr. Source-client tests run on recorded responses in `testdata/raw/`.
+
 ## Integration tests
 
 Tests under `internal/db` and `internal/store` run against a real PostgreSQL 16. Each test creates its own

@@ -1,0 +1,369 @@
+{
+ "url": "https://api.portals.fi/v2/tokens",
+ "params": {
+  "ids": "arbitrum:0x0a85b6ebe3c150a1979a65656e304033d62b1e12,arbitrum:0x4dafffddea93ddf1e0e7b61e844331455053ce5c,arbitrum:0x93e62845c1dd5822ebc807ab71a5fb750decd15a,base:0xb20000000000000000000078ee7ce2fe4908108c,bsc:0x02fca66c1d1afb4e2a7884261eb00f63598a7436,bsc:0xa9ee28c80f960b889dfbd1902055218cba016f75,bsc:0xc845b2894dbddd03858fd2d643b4ef725fe0849d,ethereum:0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee,ethereum:0xc845b2894dbddd03858fd2d643b4ef725fe0849d,hyperevm:0xb989ad9b91886b1aaed8daadb26f028b29b40945,robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+  "limit": 250,
+  "page": 0
+ },
+ "status": 200,
+ "fetched_at": "2026-10-18T20:16:05Z",
+ "body": {
+  "pageItems": 10,
+  "totalItems": 10,
+  "more": false,
+  "page": 0,
+  "tokens": [
+   {
+    "key": "bsc:0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+    "name": "NVIDIA xStock",
+    "decimals": 18,
+    "symbol": "NVDAX",
+    "price": 211.73,
+    "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+    "addresses": {
+     "bsc": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d"
+    },
+    "platform": "xstocks",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:13:22.899Z",
+    "createdAt": "2025-07-11T10:30:09.107Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 8721921.732686361,
+    "image": "https://coin-images.coingecko.com/coins/images/55633/large/Ticker_NVDA__Company_Name_NVIDIA_Corp__size_200x200_2x.png?1746862704",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "nvidia-xstock"
+    },
+    "tokenId": "fb7368c5-07a0-431b-8e47-b3687ae9d3d7",
+    "totalSupply": "41193.603800530679932655",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "bsc:0x02fca66c1d1afb4e2a7884261eb00f63598a7436",
+    "name": "NVIDIA (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVDAB",
+    "price": 211.51,
+    "address": "0x02fca66c1d1afb4e2a7884261eb00f63598a7436",
+    "addresses": {
+     "bsc": "0x02fca66c1d1afb4e2a7884261eb00f63598a7436"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-06-12T00:18:11.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 42409922,
+    "image": "https://coin-images.coingecko.com/coins/images/102173743/large/nvidia-tokenized-bStocks-nvdab.png?1781196662",
+    "metrics": {
+     "volumeUsd1d": "6691881.312",
+     "volumeUsd7d": "119205218.088"
+    },
+    "metadata": {},
+    "tokenId": "865f3442-2825-4ad9-b7fa-37f3934e9bd1",
+    "totalSupply": "200517.85960051",
+    "circulatingSupply": "200517.85960051",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "ethereum:0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+    "name": "NVIDIA xStock",
+    "decimals": 18,
+    "symbol": "NVDAX",
+    "price": 211.73,
+    "address": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d",
+    "addresses": {
+     "ethereum": "0xc845b2894dbddd03858fd2d643b4ef725fe0849d"
+    },
+    "platform": "xstocks",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:13:12.533Z",
+    "createdAt": "2025-08-14T11:44:26.097Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 23328525.45919348,
+    "image": "https://coin-images.coingecko.com/coins/images/55633/large/Ticker_NVDA__Company_Name_NVIDIA_Corp__size_200x200_2x.png?1746862704",
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "paused": false,
+     "interface": "ERC20",
+     "coingeckoId": "nvidia-xstock"
+    },
+    "tokenId": "af21e48b-626b-4266-94d7-45516848154c",
+    "totalSupply": "110180.538701145229619549",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "bsc:0xa9ee28c80f960b889dfbd1902055218cba016f75",
+    "name": "NVIDIA (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVDAON",
+    "price": 211.74,
+    "address": "0xa9ee28c80f960b889dfbd1902055218cba016f75",
+    "addresses": {
+     "ethereum": "0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee",
+     "hyperevm": "0xb989ad9b91886b1aaed8daadb26f028b29b40945",
+     "bsc": "0xa9ee28c80f960b889dfbd1902055218cba016f75"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-10-15T12:49:32.599Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 32941866,
+    "image": "https://coin-images.coingecko.com/coins/images/68623/large/nvdaon_160x160.png?1756130268",
+    "metrics": {
+     "volumeUsd1d": "752664.99",
+     "volumeUsd7d": "8491345.359"
+    },
+    "metadata": {},
+    "tokenId": "79935b63-df52-4ab0-a595-f1fbef12a795",
+    "totalSupply": "155575.2067042837",
+    "circulatingSupply": "155575.2067042837",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "base:0xb20000000000000000000078ee7ce2fe4908108c",
+    "name": "NVIDIA Corporation",
+    "decimals": 8,
+    "symbol": "NVDAC",
+    "price": 213.99005182,
+    "address": "0xb20000000000000000000078ee7ce2fe4908108c",
+    "addresses": {
+     "base": "0xb20000000000000000000078ee7ce2fe4908108c"
+    },
+    "platform": "coinbase-tokenized-stocks",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/coinbase",
+     "https://icons.llamao.fi/icons/protocols/coinbase"
+    ],
+    "updatedAt": "2026-10-18T20:13:28.163Z",
+    "createdAt": "2026-08-18T16:21:26.781Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xb20000000000000000000078ee7ce2fe4908108c",
+    "liquidity": 7019225.852572431,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1305675.791"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "interface": "ERC20",
+     "multiplier": "1000537939576369481",
+     "pausedFeatures": []
+    },
+    "tokenId": "94b44485-3023-4beb-87da-439ea65b6411",
+    "totalSupply": "32801.64565069",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "hyperevm:0xb989ad9b91886b1aaed8daadb26f028b29b40945",
+    "name": "NVIDIA (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVDAON",
+    "price": 211.74,
+    "address": "0xb989ad9b91886b1aaed8daadb26f028b29b40945",
+    "addresses": {
+     "ethereum": "0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee",
+     "hyperevm": "0xb989ad9b91886b1aaed8daadb26f028b29b40945",
+     "bsc": "0xa9ee28c80f960b889dfbd1902055218cba016f75"
+    },
+    "platform": "basic",
+    "network": "hyperevm",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-05-09T05:04:20.866Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 32941866,
+    "image": "https://coin-images.coingecko.com/coins/images/68623/large/nvdaon_160x160.png?1756130268",
+    "metrics": {
+     "volumeUsd1d": "753004.665",
+     "volumeUsd7d": "8482394.478"
+    },
+    "metadata": {},
+    "tokenId": "79935b63-df52-4ab0-a595-f1fbef12a795",
+    "totalSupply": "155575.2067042837",
+    "circulatingSupply": "155575.2067042837",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "ethereum:0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee",
+    "name": "NVIDIA (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "NVDAON",
+    "price": 211.74,
+    "address": "0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee",
+    "addresses": {
+     "ethereum": "0x2d1f7226bd1f780af6b9a49dcc0ae00e8df4bdee",
+     "hyperevm": "0xb989ad9b91886b1aaed8daadb26f028b29b40945",
+     "bsc": "0xa9ee28c80f960b889dfbd1902055218cba016f75"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2025-08-26T12:17:00.381Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 32941866,
+    "image": "https://coin-images.coingecko.com/coins/images/68623/large/nvdaon_160x160.png?1756130268",
+    "metrics": {
+     "volumeUsd1d": "751361.647",
+     "volumeUsd7d": "8685358.55"
+    },
+    "metadata": {},
+    "tokenId": "79935b63-df52-4ab0-a595-f1fbef12a795",
+    "totalSupply": "155575.2067042837",
+    "circulatingSupply": "155575.2067042837",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+    "name": "NVIDIA • Robinhood Token",
+    "decimals": 18,
+    "symbol": "NVDA",
+    "price": 214.58620962,
+    "address": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+    "addresses": {
+     "robinhood": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec.png"
+    ],
+    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+    "liquidity": 19344530.719801284,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "28098310.639"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000915f477416294f5099a5e0e09f327ce5",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000775159164630595",
+     "currentMultiplier": "1.000775159164630595",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "d05205e0-c83c-4f04-a14c-f68cff3f42d6",
+    "totalSupply": "90148.06102432",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "arbitrum:0x4dafffddea93ddf1e0e7b61e844331455053ce5c",
+    "name": "Dinari NVDA dShares",
+    "decimals": 18,
+    "symbol": "NVDA",
+    "price": 213.83,
+    "address": "0x4dafffddea93ddf1e0e7b61e844331455053ce5c",
+    "addresses": {
+     "ethereum": "0x62ec03c917face0e6841afdafc166bf571e55e4f",
+     "arbitrum": "0x4dafffddea93ddf1e0e7b61e844331455053ce5c",
+     "avalanche": "0x4b16f5251cd4c853f28998809dca61cccbcb898b",
+     "hyperevm": "0x4b16f5251cd4c853f28998809dca61cccbcb898b",
+     "base": "0x92ecf64fdb76e60b76d78a29ad4bf9d38b7b1b97"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2023-11-15T14:42:09.718Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 979708,
+    "image": "https://coin-images.coingecko.com/coins/images/102174914/large/dinari-logo-green-with-margin.png?1785402544",
+    "metrics": {
+     "volumeUsd1d": "348.418",
+     "volumeUsd7d": "77498.436"
+    },
+    "metadata": {},
+    "tokenId": "3ad95344-6409-45a2-b51d-e76e7baaca43",
+    "totalSupply": "4581.602240248041",
+    "circulatingSupply": "4581.602240248041",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   {
+    "key": "arbitrum:0x0a85b6ebe3c150a1979a65656e304033d62b1e12",
+    "name": "Nvidia rStock",
+    "decimals": 18,
+    "symbol": "RNVDA",
+    "price": 213.47,
+    "address": "0x0a85b6ebe3c150a1979a65656e304033d62b1e12",
+    "addresses": {
+     "arbitrum": "0x0a85b6ebe3c150a1979a65656e304033d62b1e12"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2891514,
+    "image": "https://coin-images.coingecko.com/coins/images/102176982/large/6fbfd1a822f7bfdd58f92747b8acb518.png?1789116232",
+    "metrics": {
+     "volumeUsd1d": "1022.075",
+     "volumeUsd7d": "106390902.197"
+    },
+    "metadata": {},
+    "tokenId": "00579876-0101-4218-bf32-a38e04cf69d5",
+    "totalSupply": "13545.360532632",
+    "circulatingSupply": "13545.360532632",
+    "isClaimed": false,
+    "isPortable": true
+   }
+  ]
+ }
+}

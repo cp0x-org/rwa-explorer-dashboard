@@ -39,6 +39,7 @@ func usage(w io.Writer) {
 		_, _ = fmt.Fprintf(w, "  %-10s %s\n", c.name, c.desc)
 	}
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "migrate", "database migrations: up | status | down-to <version> [--yes]")
+	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "probe", "dev only: live check of a source client: --provider cmc|portals --symbols NVDA[,X]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "version", "print the version")
 }
 
@@ -75,6 +76,9 @@ func run(args []string, stdout, stderr io.Writer) int {
 	}
 	if args[0] == "migrate" {
 		return runMigrate(args[1:], stdout, stderr)
+	}
+	if args[0] == "probe" {
+		return runProbe(args[1:], stdout, stderr)
 	}
 	for _, c := range stubs {
 		if c.name == args[0] {

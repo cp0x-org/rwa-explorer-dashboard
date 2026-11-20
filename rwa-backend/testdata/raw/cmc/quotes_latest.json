@@ -1,0 +1,409 @@
+{
+ "url": "https://pro-api.coinmarketcap.com/v5/real-world-assets/quotes/latest",
+ "params": {
+  "symbol": "NVDA,SPY,AAPL"
+ },
+ "status": 200,
+ "fetched_at": "2026-10-18T20:14:54Z",
+ "body": {
+  "data": {
+   "rwa_assets": [
+    {
+     "name": "Nvidia Corp",
+     "symbol": "NVDA",
+     "slug": "nvidia",
+     "quotes": [
+      {
+       "symbol": "USD",
+       "crypto_id": 2781,
+       "average_tokenized_price": 211.65546361136143,
+       "tokenized_market_cap": 148973893.90937608,
+       "tokenized_volume_24h": 35193227.06001592,
+       "last_updated": "2026-10-18T20:14:02.000Z"
+      }
+     ],
+     "rwa_id": 2,
+     "asset_type": "stock",
+     "rwa_rank": 2,
+     "has_tokens": true,
+     "average_tokenized_price": 211.65546361136143,
+     "tokenized_market_cap": 148973893.90937608,
+     "tokenized_volume_24h": 35193227.06001592,
+     "last_updated": "2026-10-18T20:13:43.899Z",
+     "tokens": [
+      {
+       "symbol": "NVDAX",
+       "name": "NVIDIA tokenized stock (xStock)",
+       "price": 211.7537324392806,
+       "crypto_id": 36992,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 43702741.31,
+       "volume_24h": 6324666.38793052
+      },
+      {
+       "symbol": "NVDA.D",
+       "name": "NVIDIA tokenized stock (Dinari)",
+       "price": null,
+       "crypto_id": 28616,
+       "issuer_id": "688c6172abae9b5b9fb30359",
+       "issuer_name": "Dinari Assets",
+       "market_cap": null,
+       "volume_24h": null
+      },
+      {
+       "symbol": "NVDAon",
+       "name": "NVIDIA Tokenized Stock (Ondo)",
+       "price": 211.8371417088935,
+       "crypto_id": 38093,
+       "issuer_id": "688ca4ccabae9b5b9fb3167a",
+       "issuer_name": "Ondo Assets",
+       "market_cap": 32956607.11,
+       "volume_24h": 1457881.12858972
+      },
+      {
+       "symbol": "NVDA",
+       "name": "NVIDIA (Derivatives)",
+       "price": 211.48310626724276,
+       "crypto_id": 38153,
+       "issuer_id": "695e11f774b54210f3b95dc3",
+       "issuer_name": "NA (Derivatives)",
+       "market_cap": 0,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "NVDAB",
+       "name": "NVIDIA Tokenized bStocks",
+       "price": 211.28187406527414,
+       "crypto_id": 40215,
+       "issuer_id": "6a2aed5097c45356b1a5f710",
+       "issuer_name": "bStocks",
+       "market_cap": 42398767.09,
+       "volume_24h": 9208959.23341375
+      },
+      {
+       "symbol": "rNVDA",
+       "name": "NVIDIA Tokenized Stock (Reality)",
+       "price": 213.3867623129199,
+       "crypto_id": 40605,
+       "issuer_id": "6a43600c282e7240b76c8bbb",
+       "issuer_name": "Reality",
+       "market_cap": 2790925.96,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "NVDA",
+       "name": "NVIDIA Tokenized Stock (Robinhood)",
+       "price": 211.4736343304416,
+       "crypto_id": 40685,
+       "issuer_id": "6a465832fbe3004b1a0ea2dd",
+       "issuer_name": "Robinhood",
+       "market_cap": 19078715.68,
+       "volume_24h": 8077144.26531144
+      },
+      {
+       "symbol": "WNVDAX",
+       "name": "Wrapped NVIDIA Tokenized stock (xStock)",
+       "price": 211.67461218860745,
+       "crypto_id": 37270,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 1054181.82,
+       "volume_24h": 273740.18084263
+      },
+      {
+       "symbol": "NVDAc",
+       "name": "NVIDIA Corporation Tokenized Stock (Coinbase)",
+       "price": 211.79016699549067,
+       "crypto_id": 42461,
+       "issuer_id": "6a72fe7072996604d45c6733",
+       "issuer_name": "Coinbase",
+       "market_cap": 6947066.01,
+       "volume_24h": 9807489.12765176
+      }
+     ],
+     "tradfi_markets": [
+      {
+       "exchange": {
+        "slug": "binance",
+        "name": "Binance",
+        "exchange_id": 270
+       },
+       "ticker": "NVDA",
+       "market_url": "https://www.binance.com/en/stocks/EQ_NVDA"
+      }
+     ]
+    },
+    {
+     "name": "Apple Inc.",
+     "symbol": "AAPL",
+     "slug": "apple",
+     "quotes": [
+      {
+       "symbol": "USD",
+       "crypto_id": 2781,
+       "average_tokenized_price": 343.1628217766439,
+       "tokenized_market_cap": 34965974.805301964,
+       "tokenized_volume_24h": 17570398.49993805,
+       "last_updated": "2026-10-18T20:14:02.000Z"
+      }
+     ],
+     "rwa_id": 3,
+     "asset_type": "stock",
+     "rwa_rank": 3,
+     "has_tokens": true,
+     "average_tokenized_price": 343.1628217766439,
+     "tokenized_market_cap": 34965974.805301964,
+     "tokenized_volume_24h": 17570398.49993805,
+     "last_updated": "2026-10-18T20:13:45.507Z",
+     "tokens": [
+      {
+       "symbol": "AAPLX",
+       "name": "Apple tokenized stock (xStock)",
+       "price": 343.19178693061014,
+       "crypto_id": 36994,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 12513036.29,
+       "volume_24h": 5201126.07522759
+      },
+      {
+       "symbol": "AAPL.D",
+       "name": "AAPL tokenized stock (Dinari)",
+       "price": null,
+       "crypto_id": 28624,
+       "issuer_id": "688c6172abae9b5b9fb30359",
+       "issuer_name": "Dinari Assets",
+       "market_cap": null,
+       "volume_24h": null
+      },
+      {
+       "symbol": "AAPLon",
+       "name": "Apple Tokenized Stock (Ondo)",
+       "price": 344.7326466469859,
+       "crypto_id": 38037,
+       "issuer_id": "688ca4ccabae9b5b9fb3167a",
+       "issuer_name": "Ondo Assets",
+       "market_cap": 9506421.3,
+       "volume_24h": 1512279.89665958
+      },
+      {
+       "symbol": "AAPL",
+       "name": "Apple Inc (Derivatives)",
+       "price": 342.74252088658193,
+       "crypto_id": 39491,
+       "issuer_id": "695e11f774b54210f3b95dc3",
+       "issuer_name": "NA (Derivatives)",
+       "market_cap": 0,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "AAPL",
+       "name": "Apple Tokenized Stock (Hyperliquid)",
+       "price": 289.9561869110714,
+       "crypto_id": 39624,
+       "issuer_id": "699ed38db54c9320b15928e3",
+       "issuer_name": "Hyperliquid Assets",
+       "market_cap": 0,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "rAAPL",
+       "name": "Apple Tokenized Stock (Reality)",
+       "price": 342.650192439478,
+       "crypto_id": 40598,
+       "issuer_id": "6a43600c282e7240b76c8bbb",
+       "issuer_name": "Reality",
+       "market_cap": 629586.99,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "AAPL",
+       "name": "Apple Tokenized Stock (Robinhood)",
+       "price": 342.4063325749988,
+       "crypto_id": 40703,
+       "issuer_id": "6a465832fbe3004b1a0ea2dd",
+       "issuer_name": "Robinhood",
+       "market_cap": 4010304.81,
+       "volume_24h": 972241.35089056
+      },
+      {
+       "symbol": "AAPLB",
+       "name": "Apple Tokenized bStocks",
+       "price": 342.80934001298795,
+       "crypto_id": 40927,
+       "issuer_id": "6a2aed5097c45356b1a5f710",
+       "issuer_name": "bStocks",
+       "market_cap": 5498953.97,
+       "volume_24h": 6813302.56558129
+      },
+      {
+       "symbol": "WAAPLX",
+       "name": "Wrapped Apple Tokenized stock (xStock)",
+       "price": 343.0607247891997,
+       "crypto_id": 37269,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 250511.63,
+       "volume_24h": 15329.93278861
+      },
+      {
+       "symbol": "AAPLc",
+       "name": "Apple Inc. Tokenized Stock (Coinbase)",
+       "price": 343.238979170606,
+       "crypto_id": 42427,
+       "issuer_id": "6a72fe7072996604d45c6733",
+       "issuer_name": "Coinbase",
+       "market_cap": 2560259.53,
+       "volume_24h": 3151113.89136269
+      }
+     ],
+     "tradfi_markets": [
+      {
+       "exchange": {
+        "slug": "binance",
+        "name": "Binance",
+        "exchange_id": 270
+       },
+       "ticker": "AAPL",
+       "market_url": "https://www.binance.com/en/stocks/EQ_AAPL"
+      }
+     ]
+    },
+    {
+     "name": "SPDR S&P 500 ETF Trust",
+     "symbol": "SPY",
+     "slug": "spy",
+     "quotes": [
+      {
+       "symbol": "USD",
+       "crypto_id": 2781,
+       "average_tokenized_price": 761.1609121541746,
+       "tokenized_market_cap": 152330708.38908374,
+       "tokenized_volume_24h": 25620155.18652876,
+       "last_updated": "2026-10-18T20:14:02.000Z"
+      }
+     ],
+     "rwa_id": 86,
+     "asset_type": "etf",
+     "rwa_rank": 7811,
+     "has_tokens": true,
+     "average_tokenized_price": 761.1609121541746,
+     "tokenized_market_cap": 152330708.38908374,
+     "tokenized_volume_24h": 25620155.18652876,
+     "last_updated": "2026-10-18T20:13:41.535Z",
+     "tokens": [
+      {
+       "symbol": "SPYX",
+       "name": "SP500 tokenized ETF (xStock)",
+       "price": 762.9747580397287,
+       "crypto_id": 37006,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 66693245.11,
+       "volume_24h": 9471398.80556383
+      },
+      {
+       "symbol": "SPY.D",
+       "name": "SPY tokenized ETF (Dinari)",
+       "price": null,
+       "crypto_id": 28628,
+       "issuer_id": "688c6172abae9b5b9fb30359",
+       "issuer_name": "Dinari Assets",
+       "market_cap": null,
+       "volume_24h": null
+      },
+      {
+       "symbol": "SPYon",
+       "name": "SPDR S&P 500 Tokenized ETF (Ondo)",
+       "price": 766.7894575198587,
+       "crypto_id": 38067,
+       "issuer_id": "688ca4ccabae9b5b9fb3167a",
+       "issuer_name": "Ondo Assets",
+       "market_cap": 46109638.82,
+       "volume_24h": 1628151.8851387
+      },
+      {
+       "symbol": "SPY",
+       "name": "SPDR S&P 500 ETF Trust Tokenized ETF (Hyperliquid)",
+       "price": 775.4079875380514,
+       "crypto_id": 39621,
+       "issuer_id": "699ed38db54c9320b15928e3",
+       "issuer_name": "Hyperliquid Assets",
+       "market_cap": 0,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "SPY",
+       "name": "State Street SPDR S&P 500 ETF Trust (Derivatives)",
+       "price": 760.0479065567805,
+       "crypto_id": 39732,
+       "issuer_id": "695e11f774b54210f3b95dc3",
+       "issuer_name": "NA (Derivatives)",
+       "market_cap": 0,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "rSPY",
+       "name": "SPDR S&P 500 Tokenized Stock (Reality)",
+       "price": 760.2925356806629,
+       "crypto_id": 40625,
+       "issuer_id": "6a43600c282e7240b76c8bbb",
+       "issuer_name": "Reality",
+       "market_cap": 1654073.57,
+       "volume_24h": 0
+      },
+      {
+       "symbol": "SPY",
+       "name": "SPDR S&P 500 Trust Tokenized ETF (Robinhood)",
+       "price": 759.5026120676106,
+       "crypto_id": 40694,
+       "issuer_id": "6a465832fbe3004b1a0ea2dd",
+       "issuer_name": "Robinhood",
+       "market_cap": 20683380.98,
+       "volume_24h": 11998050.23753484
+      },
+      {
+       "symbol": "SPYB",
+       "name": "State Street SPDR S&P 500 ETF Tokenized bStocks",
+       "price": 758.9559656984043,
+       "crypto_id": 40790,
+       "issuer_id": "6a2aed5097c45356b1a5f710",
+       "issuer_name": "bStocks",
+       "market_cap": 17221564.4,
+       "volume_24h": 2188204.95943608
+      },
+      {
+       "symbol": "wSPYx",
+       "name": "Wrapped SP500 Tokenized ETF (xStock)",
+       "price": 764.0679350102392,
+       "crypto_id": 41525,
+       "issuer_id": "6878977dcbbf471de3366e85",
+       "issuer_name": "Backed Assets",
+       "market_cap": 0,
+       "volume_24h": 295060.98933926
+      }
+     ],
+     "tradfi_markets": [
+      {
+       "exchange": {
+        "slug": "binance",
+        "name": "Binance",
+        "exchange_id": 270
+       },
+       "ticker": "SPY",
+       "market_url": "https://www.binance.com/en/stocks/EQ_SPY"
+      }
+     ]
+    }
+   ]
+  },
+  "status": {
+   "timestamp": "2026-10-18T20:14:54.183Z",
+   "error_code": "0",
+   "error_message": "",
+   "elapsed": 25,
+   "credit_count": 1
+  }
+ }
+}

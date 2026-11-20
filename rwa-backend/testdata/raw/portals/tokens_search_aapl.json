@@ -1,0 +1,295 @@
+{
+ "url": "https://api.portals.fi/v2/tokens",
+ "params": {
+  "search": "AAPL",
+  "limit": 250,
+  "page": 0
+ },
+ "status": 200,
+ "fetched_at": "2026-10-18T20:16:08Z",
+ "body": {
+  "pageItems": 95,
+  "totalItems": 95,
+  "more": false,
+  "page": 0,
+  "tokens": [
+   {
+    "key": "robinhood:0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483",
+    "name": "Uniswap V4 LP SPCX/AAPL",
+    "decimals": 18,
+    "symbol": "SPCX/AAPL",
+    "price": 9007199254740990,
+    "address": "0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483",
+    "addresses": {
+     "robinhood": "0x25bd4876baa45bece6fe619b03c3c976ea52deab9279ec1161c8908293d6c483"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174129/large/0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea.png?1782444614",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.380Z",
+    "createdAt": "2026-08-07T16:03:48.486Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 3946.0975181634053,
+    "metrics": {
+     "apy": "23.176",
+     "baseApy": "23.176",
+     "volumeUsd1d": "716.094",
+     "volumeUsd7d": "7436.906"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "89dfa25f-3077-454c-86b2-3edd656ec7f4",
+    "reserves": [
+     "13.051228464044066887",
+     "5.975365122155500815"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   {
+    "key": "bsc:0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617",
+    "name": "Uniswap V4 LP AAPLB/USDT",
+    "decimals": 18,
+    "symbol": "AAPLB/USDT",
+    "price": 9007199254740990,
+    "address": "0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617",
+    "addresses": {
+     "bsc": "0x49fcb68f78a4b75fc3e2464bfd21ebd5a3349b3a4cf811acaf2a9975a2110617"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102175182/large/aaplb.png?1785455573",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-10-18T20:13:03.081Z",
+    "createdAt": "2026-09-28T10:43:09.429Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 35072.29341900507,
+    "metrics": {
+     "apy": "4.567",
+     "baseApy": "4.567",
+     "volumeUsd1d": "11579.484",
+     "volumeUsd7d": "1231882.724"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3,
+     "feePercentage": "0.0379"
+    },
+    "tokenId": "50a2d5de-db39-412c-a982-4647e17086e0",
+    "reserves": [
+     "38.495950737449666096",
+     "21887.880072215346372658"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   {
+    "key": "robinhood:0x256b72f2cb1f761082827129d63bb0cc884c25c1",
+    "name": "Uniswap V3 SPDR S&P 500 ETF Trust  Robinhood Token/Apple  Robinhood Token 0.05%",
+    "decimals": 18,
+    "symbol": "SPY/AAPL",
+    "price": 9007199254740990,
+    "address": "0x256b72f2cb1f761082827129d63bb0cc884c25c1",
+    "addresses": {
+     "robinhood": "0x256b72f2cb1f761082827129d63bb0cc884c25c1"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174115/large/0x117cc2133c37b721f49de2a7a74833232b3b4c0c.png?1782444578",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598"
+    ],
+    "updatedAt": "2026-10-18T20:13:02.579Z",
+    "createdAt": "2026-08-24T02:41:39.373Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9"
+    ],
+    "liquidity": 2102.900317576286,
+    "metrics": {
+     "apy": "1.504",
+     "baseApy": "1.504",
+     "volumeUsd1d": "173.276",
+     "volumeUsd7d": "21860.75"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.05"
+    },
+    "tokenId": "252562cb-0ef9-42d8-8bd2-f8f8ec7f2fe8",
+    "reserves": [
+     "2.570920406940804347",
+     "0.413190807098721643"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   {
+    "key": "bsc:0x8d39c7e9427edff441c63fc51861522cf02167c8",
+    "name": "Uniswap V3 Ethereum Token/Apple (Ondo Tokenized) 0.3%",
+    "decimals": 18,
+    "symbol": "ETH/AAPLON",
+    "price": 9007199254740990,
+    "address": "0x8d39c7e9427edff441c63fc51861522cf02167c8",
+    "addresses": {
+     "bsc": "0x8d39c7e9427edff441c63fc51861522cf02167c8"
+    },
+    "platform": "uniswap-v3",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68616/large/aaplon_160x160.png?1756130122",
+     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
+    ],
+    "updatedAt": "2026-10-18T20:13:22.879Z",
+    "createdAt": "2026-09-06T23:12:07.455Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+     "0x390a684ef9cade28a7ad0dfa61ab1eb3842618c4"
+    ],
+    "liquidity": 3697.714633763034,
+    "metrics": {
+     "apy": "36.166",
+     "baseApy": "36.166",
+     "volumeUsd1d": "1221.868",
+     "volumeUsd7d": "6629.813"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "8dfa9a2e-6076-48b9-a661-7fb5bd521a5b",
+    "reserves": [
+     "0.90414847707376988",
+     "4.59628633734047734"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   {
+    "key": "base:0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848",
+    "name": "Uniswap V4 LP USDC/AAPLc",
+    "decimals": 18,
+    "symbol": "USDC/AAPLC",
+    "price": 9007199254740990,
+    "address": "0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848",
+    "addresses": {
+     "base": "0xb0b0dd5480874688f210b934c1a5d3f10c2402bfe0c511a293cb77f392113848"
+    },
+    "platform": "uniswap-v4",
+    "network": "base",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+    ],
+    "updatedAt": "2026-10-18T20:12:56.074Z",
+    "createdAt": "2026-10-03T11:41:29.290Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000c2e324d24d7eecd1fb"
+    ],
+    "liquidity": 48230.918704168085,
+    "metrics": {
+     "apy": "8.607",
+     "baseApy": "8.607",
+     "volumeUsd1d": "437.83",
+     "volumeUsd7d": "9494.317"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 250,
+     "feePercentage": "2.5975"
+    },
+    "tokenId": "c3709d1f-19e7-4ce1-ad4d-8644c5b31b18",
+    "reserves": [
+     "29440.269527",
+     "54.69273236"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   {
+    "key": "robinhood:0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f",
+    "name": "Uniswap V4 LP AAPL/NVDA",
+    "decimals": 18,
+    "symbol": "AAPL/NVDA",
+    "price": 9007199254740990,
+    "address": "0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f",
+    "addresses": {
+     "robinhood": "0xfcb1ad7c577599cd1831ae239da38cced8a833ad488f924e080a8066ab3f469f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174123/large/0xaf3d76f1834a1d425780943c99ea8a608f8a93f9.png?1782444598",
+     "https://coin-images.coingecko.com/coins/images/102174110/large/0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec.png?1782444565"
+    ],
+    "updatedAt": "2026-10-18T20:13:07.221Z",
+    "createdAt": "2026-07-31T21:18:52.209Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+     "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    ],
+    "liquidity": 12504.895114530576,
+    "metrics": {
+     "apy": "12.345",
+     "baseApy": "12.345",
+     "volumeUsd1d": "1208.548",
+     "volumeUsd7d": "17285.254"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "0.3499"
+    },
+    "tokenId": "4317d691-7694-4787-b59c-5580929c566c",
+    "reserves": [
+     "11.515742251089295983",
+     "39.866747846035069074"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   }
+  ]
+ }
+}

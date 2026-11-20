@@ -77,6 +77,22 @@ func (c *Config) ValidateAPI() error {
 	return errors.Join(errs...)
 }
 
+// ValidateSources checks what the source clients need (logging and the API key of the given provider:
+// "cmc", "portals" or "" for both), without a database; used by the dev-only `probe` command.
+func (c *Config) ValidateSources(provider string) error {
+	errs := c.validateCommon()
+	if provider != "cmc" && provider != "portals" && provider != "" {
+		errs = append(errs, fmt.Errorf("unknown provider %q", provider))
+	}
+	if (provider == "" || provider == "cmc") && c.CMCAPIKey == "" {
+		errs = append(errs, errors.New("CMC_API_KEY is required"))
+	}
+	if (provider == "" || provider == "portals") && c.PortalsAPIKey == "" {
+		errs = append(errs, errors.New("PORTALS_API_KEY is required"))
+	}
+	return errors.Join(errs...)
+}
+
 // ValidateCollector checks the settings the collector role needs.
 func (c *Config) ValidateCollector() error {
 	errs := c.validateCommon()

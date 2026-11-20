@@ -107,6 +107,28 @@ func TestValidateLog(t *testing.T) {
 	}
 }
 
+func TestValidateSources(t *testing.T) {
+	clearEnv(t)
+	t.Setenv("CMC_API_KEY", "k")
+	c := mustLoad(t)
+	if err := c.ValidateSources("cmc"); err != nil {
+		t.Errorf("cmc-only probe needs only CMC_API_KEY: %v", err)
+	}
+	if err := c.ValidateSources("portals"); err == nil || !strings.Contains(err.Error(), "PORTALS_API_KEY") {
+		t.Errorf("portals: %v", err)
+	}
+	if err := c.ValidateSources(""); err == nil || !strings.Contains(err.Error(), "PORTALS_API_KEY") {
+		t.Errorf("both: %v", err)
+	}
+	if err := c.ValidateSources("nope"); err == nil || !strings.Contains(err.Error(), "unknown provider") {
+		t.Errorf("unknown: %v", err)
+	}
+	t.Setenv("PORTALS_API_KEY", "k")
+	if err := mustLoad(t).ValidateSources(""); err != nil {
+		t.Errorf("both keys: %v", err)
+	}
+}
+
 func TestBearerStripped(t *testing.T) {
 	for in, want := range map[string]string{
 		"Bearer tok": "tok", "bearer tok": "tok", "BEARER   tok": "tok", "Bearer\ttok": "tok",
