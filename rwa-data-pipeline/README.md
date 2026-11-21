@@ -1,11 +1,11 @@
 # rwa-data-pipeline
 
 Collects tokenized assets (on-chain tokens of stocks/ETFs) from CoinMarketCap, finds their DeFi usage in Portals,
-computes ratings for tokenized assets and issuers, and publishes one JSON file for `../pi-rwa-interface`.
+computes ratings for tokenized assets and issuers, and publishes one JSON file for `../rwa-interface`.
 The same data can be written as flat CSV/XLSX tables for manual analysis.
 
 ```
-config/assets.json ──► sync ──► data/snapshots/<ISIN>.json ──► build ──► pi-rwa-interface/public/data/rwa.json
+config/assets.json ──► sync ──► data/snapshots/<ISIN>.json ──► build ──► rwa-interface/public/data/rwa.json
                        (CMC + Portals)   (raw collected data)    (no network)  └► export ──► data/exports/rwa.xlsx, csv/*.csv
 ```
 
@@ -39,7 +39,7 @@ uv run rwa-pipeline build --format all            # sync/build also take --forma
 uv run pytest                                     # tests
 ```
 
-Options: `--data-dir` (default `data/`), `--frontend-dir` (default `../pi-rwa-interface`), `--format/-f` (`csv`, `xlsx`,
+Options: `--data-dir` (default `data/`), `--frontend-dir` (default `../rwa-interface`), `--format/-f` (`csv`, `xlsx`,
 `all`; `sync` and `build` write tables only when it is given, `export` defaults to `xlsx`).
 Exit codes: `0` success or nothing to add, `2` some underlyings failed (their previous snapshots are kept), `1` fatal
 (auth/config error, CMC unavailable).
@@ -83,7 +83,7 @@ data/
   exports/csv/<table>.csv      `export --format csv`: the same tables as CSV (UTF-8, header row)
 ```
 
-Logos are downloaded once and published to `pi-rwa-interface/public/logos/` by `build`; the site loads only local files.
+Logos are downloaded once and published to `rwa-interface/public/logos/` by `build`; the site loads only local files.
 An existing file is never overwritten, so to set a logo by hand (e.g. an issuer or an ETF without logo and website in
 CMC) put it at `data/logos/issuers/<issuer_id>.png` or `data/logos/underlyings/<ISIN>.png` and run `build`.
 

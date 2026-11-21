@@ -23,7 +23,7 @@ class TablesFormat(str, Enum):
 
 
 DataDir = Annotated[Path, typer.Option(help="Where snapshots, raw responses and run reports live")]
-FrontendDir = Annotated[Path, typer.Option(help="pi-rwa-interface root; JSON goes to public/data/rwa.json")]
+FrontendDir = Annotated[Path, typer.Option(help="rwa-interface root; JSON goes to public/data/rwa.json")]
 Verbose = Annotated[bool, typer.Option("--verbose", "-v", help="Log every HTTP request (provider, path, params, status, time)")]
 Format = Annotated[
     TablesFormat | None,
