@@ -95,7 +95,7 @@ minutes in Docker). Set `COLLECT_ON_START=false` in `.env` to skip it.
 | another run | `make run` (all assets) or `docker compose exec collector rwa run-once --symbols NVDA` |
 | database shell | `make psql` |
 
-**Stop / reset**: `make down` (keeps the database volume), `make reset` (asks, then deletes it: next start imports again).
+**Stop / reset**: `make down` (the database stays in `./pg-data`, or `PGDATA_DIR` from `.env`), `make reset` (asks, then deletes that folder: the next start imports again).
 
 The production stack (prebuilt images, nginx, backups) is in the private pi-infra repo, `stacks/rwa`; this compose
 builds from source and is for checking the code before a deploy.

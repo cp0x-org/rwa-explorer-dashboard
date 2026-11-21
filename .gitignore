@@ -8,6 +8,9 @@ Thumbs.db
 # logs
 *.log
 
+# database files of the local docker compose (PGDATA_DIR, default ./pg-data)
+/pg-data/
+
 # local env files (per-project .gitignore files keep the .env.example files)
 .env
 .env.*

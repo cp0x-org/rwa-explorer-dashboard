@@ -73,7 +73,7 @@ curl -X POST http://localhost:3302/api/v1/admin/runs -H "Authorization: Bearer d
   -H "Content-Type: application/json" -d '{"mode":"refresh","symbols":["NVDA"]}'
 ```
 
-Stop with `make down` (data stays in the `rwa-pgdata` volume); `make reset` also deletes the database and asks first.
+Stop with `make down` (the database stays in `./pg-data`, git-ignored; another folder: `PGDATA_DIR` in `.env`); `make reset` also deletes that folder and asks first.
 `make psql` opens a SQL shell.
 
 A full live run costs about 22 CMC credits (`COLLECT_ON_START=false` in `.env` skips the run on start). The keys stay in

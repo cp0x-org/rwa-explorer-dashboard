@@ -20,10 +20,13 @@ run:
 down:
 	docker compose down
 
-# deletes the database volume
+PGDATA_DIR ?= ./pg-data
+
+# stops the stack and deletes the database folder ($(PGDATA_DIR)); the next `make up` migrates and imports again
 reset:
-	@printf 'Delete the database volume (docker compose down -v)? [y/N] ' && read a && [ "$$a" = y ]
-	docker compose down -v
+	@printf 'Stop the stack and delete the database folder $(PGDATA_DIR)? [y/N] ' && read a && [ "$$a" = y ]
+	docker compose down
+	rm -rf "$(PGDATA_DIR)"
 
 psql:
 	docker compose exec postgres psql -U rwa rwa
