@@ -69,6 +69,8 @@ The `<head>` of every page comes from `src/utils/pageMeta.ts` (title, descriptio
 once the data and the dictionary of the URL's language are loaded. With `VITE_SITE_URL` (`.env.production`) the
 prerender also writes `dist/sitemap.xml` (every page in both languages with `xhtml:link` alternates, `lastmod` = newest
 data collection) and `dist/robots.txt` pointing to it.
+During in-app navigation, `documentHead` and `useDocumentHead` update the live `<head>` (canonical, hreflang, og:url,
+descriptions and JSON-LD) to match the destination page's prerendered metadata.
 
 - The data is baked in at build time: after `rwa-pipeline sync` rebuild, as before.
 - Serve `dist/` as plain static files, not as a single-page app: `serve dist -c ../serve.json` (Dockerfile), not

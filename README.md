@@ -89,7 +89,7 @@ The site is a Docker image with `dist/` served as plain static files (clean URLs
 
 ```bash
 cd rwa-interface
-./build.sh <version>            # multi-arch image cp0x/pi-rwa-interface:<version>, pushed to the registry
+./build.sh <version>            # pushes multi-arch cp0x/pi-rwa-interface:<version> and cp0x/pi-rwa-interface:latest
 docker compose up -d            # or run it locally on http://localhost:3301
 ```
 

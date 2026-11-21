@@ -291,7 +291,7 @@ def test_refresh_is_scoped_and_failure_keeps_last_snapshot(tmp_path, monkeypatch
     calls = []
     _patch_network(monkeypatch, calls, fail_search=True)
     code, report = collect.sync([NVDA, AAPL], SETTINGS, tmp_path, ["NVDA"], refresh=True)
-    assert code == 2 and "NVDA" in report["failed"]
+    assert code == 1 and "NVDA" in report["failed"]  # the only selected underlying failed: nothing was saved
     assert _digest(nvda_path) == nvda_before  # failed Portals search does not wipe positions
     assert _digest(aapl_path) == aapl_before
 

@@ -2,7 +2,7 @@
 
 import copy
 import json
-from datetime import date
+from datetime import UTC, date, datetime
 from pathlib import Path
 
 import pytest
@@ -466,15 +466,33 @@ def test_review_valid_days_defaults_to_180(tmp_path):
     assert export["summary"]["rights_review_valid_days"] == 180
 
 
-def test_the_shipped_profiles_are_valid_for_the_shipped_export():
-    """config/rights_profiles.json is edited through pull requests: a slip there must fail here, not on the site."""
+def test_the_shipped_profiles_hold_against_the_current_export():
+    """No reviewed profile is excluded against the export: a slip in config/rights_profiles.json, or a change in CMC data
+    such as a token now listed under another issuer, fails here, in pull requests and before the daily update publishes
+    anything. Tokens absent from the export (CMC stopped listing them, or their asset is disabled) are only warnings."""
     cfg = load_rights_profiles(CONFIG_DIR / "rights_profiles.json")
     assert cfg is not None and cfg["profiles"], "the repository ships reviewed profiles"
     export = read_json(DEFAULT_DATA_DIR / "exports" / "rwa.json")
-    reviewed = max(date.fromisoformat(p["reviewed_at"]) for p in cfg["profiles"])
-    warnings = attach_rights(export, cfg, reviewed)
-    assert export["summary"]["rights_excluded_profiles_count"] == 0, warnings
-    assert len(export["rights_profiles"]) == len(cfg["profiles"])
+    # first the count the build wrote with the real date of the build, then the config of this checkout against the
+    # export on today's date, as the build does it (a review dated in the future is excluded)
+    assert export["summary"]["rights_excluded_profiles_count"] == 0, "the committed export was built with excluded rights profiles"
+    warnings = attach_rights(export, cfg, datetime.now(UTC).date())
+    excluded = [w for w in warnings if ": excluded: " in w]
+    assert excluded == [], excluded
+
+
+@pytest.mark.shipped_data
+def test_every_bound_token_is_a_known_cmc_token():
+    """A mistyped token id binds nothing: every bound id must be a token of the export or of a kept snapshot, a disabled
+    asset included. The daily update skips this test (`-m "not shipped_data"`): CMC may stop listing a token, and the
+    next pull request then fails here until that token is removed from its profile."""
+    cfg = load_rights_profiles(CONFIG_DIR / "rights_profiles.json")
+    known = {t["id"] for t in read_json(DEFAULT_DATA_DIR / "exports" / "rwa.json")["tokens"]}
+    for path in sorted((DEFAULT_DATA_DIR / "snapshots").glob("*.json")):
+        rwa = ((read_json(path) or {}).get("cmc") or {}).get("rwa") or {}
+        known.update(t["crypto_id"] for t in rwa.get("tokens") or [] if t.get("crypto_id") is not None)
+    unknown = [f"{p['id']}: {token_id}" for p in cfg["profiles"] for token_id in p["token_ids"] if token_id not in known]
+    assert unknown == [], "fix the token ids, or remove a token that CMC no longer lists from its profile: " + "; ".join(unknown)
 
 
 # ---------- build wiring ----------

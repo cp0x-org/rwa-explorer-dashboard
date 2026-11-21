@@ -7,15 +7,31 @@ from pathlib import Path
 
 from rwa_pipeline.analyze import build, norm_key
 from rwa_pipeline.collect import snapshot_path
-from rwa_pipeline.config import CONFIG_DIR, Asset, now_iso, read_json, storage_id, write_json
+from rwa_pipeline.config import CONFIG_DIR, Asset, ConfigError, now_iso, read_json, storage_id, write_json
 from rwa_pipeline.curated import attach_links, load_links
-from rwa_pipeline.deals import DEALS_FILE
+from rwa_pipeline.deals import DEALS_FILE, clean_https_url
 from rwa_pipeline.logos import find_logo
 from rwa_pipeline.rights import attach_rights, load_rights_profiles
 
 EXPORT_RELATIVE_PATH = Path("public/data/rwa.json")
 PUBLIC_DIR = Path("public")
 LOGOS_PUBLIC_PATH = Path("logos")  # served as /logos/<kind>/<file>
+
+
+def load_issuer_overrides(path: Path = CONFIG_DIR / "issuers.json") -> dict:
+    """Load optional issuer websites used when CMC has no website."""
+    try:
+        raw = json.loads(path.read_text())
+    except FileNotFoundError:
+        return {}
+    except (ValueError, OSError) as e:
+        raise ConfigError(f"{path}: invalid issuers config: {e}") from e
+    if not isinstance(raw, dict) or raw.get("schema_version") != 1 or not isinstance(raw.get("issuers"), dict):
+        raise ConfigError(f"{path}: expected an object with schema_version 1 and an issuers object")
+    for issuer_id, entry in raw["issuers"].items():
+        if not isinstance(entry, dict) or set(entry) != {"website"} or not clean_https_url(entry["website"]):
+            raise ConfigError(f"{path}: issuers.{issuer_id}: expected an object containing only a clean HTTPS website")
+    return raw["issuers"]
 
 
 def raw_portals_records(snapshots: list[dict]) -> dict:
@@ -38,6 +54,7 @@ def build_export_with_warnings(assets: list[Asset], settings: dict, data_dir: Pa
     """Build the export and report unusable curated actions and rights profiles."""
     links = load_links(config_dir / "links.json")
     rights = load_rights_profiles(config_dir / "rights_profiles.json")
+    issuer_overrides = load_issuer_overrides(config_dir / "issuers.json")
     # Only enabled assets form the active basket; snapshots of disabled ones stay on disk as history.
     snapshots = [s for a in assets if a.enabled and (s := read_json(snapshot_path(data_dir, a)))]
     result = build(
@@ -45,7 +62,11 @@ def build_export_with_warnings(assets: list[Asset], settings: dict, data_dir: Pa
         read_json(data_dir / "issuers.json", {}),
         settings,
         read_json(data_dir / "portals_platforms.json", {}),
+        symbol_aliases={a.ticker: a.symbol_aliases for a in assets},
     )
+    for issuer in result["issuers"]:
+        if not issuer.get("website"):
+            issuer["website"] = issuer_overrides.get(issuer["id"], {}).get("website")
     # Logos point to local files only; the site never loads images from CMC or issuer websites.
     logos_dir = data_dir / "logos"
     rwa_info = read_json(data_dir / "rwa_info.json", {})

@@ -25,3 +25,6 @@ packages = ["src/rwa_pipeline"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = [
+    "shipped_data: checks the committed data against the config; the daily update skips it, because CMC may stop listing a token",
+]
