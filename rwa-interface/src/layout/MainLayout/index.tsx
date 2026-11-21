@@ -133,12 +133,21 @@ export default function MainLayout() {
   // top of the page on navigation, but not on the first render: a server-rendered page may already be scrolled when React takes over
   const firstPath = useRef(true);
   useEffect(() => {
-    if (firstPath.current) {
-      firstPath.current = false;
-      return;
-    }
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    const first = firstPath.current;
+    firstPath.current = false;
+    if (first && !location.hash) return;
+    const frame = requestAnimationFrame(() => {
+      let target: HTMLElement | null = null;
+      try {
+        target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      } catch {
+        // A malformed fragment has no matching target.
+      }
+      if (target) target.scrollIntoView();
+      else window.scrollTo(0, 0);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
     handlerDrawerOpen(!miniDrawer);

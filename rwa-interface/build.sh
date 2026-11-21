@@ -32,6 +32,7 @@ docker buildx build \
   --platform $PLATFORMS \
   --build-arg VITE_APP_VERSION="v$VERSION" \
   -t cp0x/pi-rwa-interface:$VERSION \
+  -t cp0x/pi-rwa-interface:latest \
   --push \
   .
 

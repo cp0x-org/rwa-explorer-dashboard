@@ -1,3 +1,4 @@
+import { safeUrl } from 'utils/links';
 import { useId, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -20,6 +21,7 @@ import { CopyableAddress } from 'components/CopyableAddress';
 import { Token } from 'types/rwa';
 import { categoryLabel, excludedReason, networkName } from 'utils/rwa';
 import { LocaleLink, useFormat, useT } from 'i18n';
+import RightsSummary from './components/RightsSummary';
 import DataTableContainer from './components/DataTableContainer';
 import BreakdownTable from './components/BreakdownTable';
 import DataGate, { NotFound } from './components/DataGate';
@@ -29,6 +31,7 @@ import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
 import MultiFilter from './components/MultiFilter';
 import OpportunityTable from './components/OpportunityTable';
+import { OutboundLink, ReferralLink } from './components/OutboundLinks';
 import { CoverageChip, DeploymentChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 import { stickyColumn } from './components/tableSx';
@@ -117,6 +120,28 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
             <CoverageChip coverage={token.coverage} rawCount={c.raw_confirmed_opportunities_count} />
           </>
         }
+        actions={
+          <>
+            {issuer?.app && (
+              <OutboundLink
+                url={issuer.app.url}
+                label={t('link.getToken', { symbol: token.symbol ?? title, label: issuer.app.label ?? issuer.name ?? title })}
+              />
+            )}
+            {token.links?.map((swap) => (
+              <OutboundLink
+                key={`${swap.network}:${swap.url}`}
+                url={swap.url}
+                label={t('link.swapOn', { dex: swap.label ?? '—', network: networkName(swap.network) })}
+              />
+            ))}
+            <ReferralLink
+              direct={!!safeUrl(issuer?.app?.url) || !!token.links?.some((swap) => safeUrl(swap.url))}
+              referral={issuer?.referral}
+              maxAgeDays={index.data.summary.links_deals_max_age_days}
+            />
+          </>
+        }
         stats={[
           { label: t('stat.usefulness'), value: f.num(token.usefulness_score), hint: t('stat.usefulness.hint') },
           { label: t('stat.rawConfirmed'), value: f.num(c.raw_confirmed_opportunities_count), hint: t('stat.rawConfirmed.hint') },
@@ -136,6 +161,7 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
           { label: t('stat.marketCap'), value: f.usd(token.market_cap_usd) }
         ]}
       />
+      <RightsSummary index={index} token={token} />
       <MethodNote data={index.data} />
 
       <Box sx={{ marginBottom: 4 }}>

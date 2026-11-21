@@ -1,3 +1,4 @@
+import { safeUrl } from 'utils/links';
 import { ReactNode, useId } from 'react';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
@@ -16,6 +17,7 @@ import { categoryLabel, DASH, eligibilityChip, flagLabel, networkName } from 'ut
 import { MessageId, useFormat, useT } from 'i18n';
 import { PositionTrends } from './Sparkline';
 import { EligibilityChip } from './StatusChip';
+import { PositionLink, ReferralLink } from './OutboundLinks';
 
 function Field({ label, children }: { label: string; children: ReactNode }) {
   return (
@@ -113,6 +115,10 @@ export default function OpportunityDialog({ index, row, onClose }: { index: RwaI
         <Typography variant="caption" color="text.secondary" sx={{ display: 'block', marginTop: 1 }}>
           {t('dialog.source')}
         </Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 1.5, marginTop: 2 }}>
+          <PositionLink opportunity={o} />
+          <ReferralLink direct={!!safeUrl(o.link?.url)} referral={o.referral} maxAgeDays={index.data.summary.links_deals_max_age_days} />
+        </Box>
       </DialogContent>
     </Dialog>
   );

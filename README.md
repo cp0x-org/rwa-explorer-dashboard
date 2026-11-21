@@ -159,6 +159,18 @@ The backend image runs `rwa api` and `rwa collector` (two containers). The stack
 secrets) lives in the private pi-infra repository, `stacks/rwa`. nginx there routes `/api/` and `/logos/` to the API and
 everything else to the site. A data refresh needs no rebuild or redeploy; images change only with code.
 
+## Automation (GitHub Actions)
+
+| Workflow | Runs | What it does |
+|----------|------|--------------|
+| [`backend.yml`](.github/workflows/backend.yml) | push / PR to `v2.0`, `rwa-backend/**` | Go build, vet, tests, golangci-lint |
+| [`frontend.yml`](.github/workflows/frontend.yml) | push / PR to `v2.0`, `rwa-interface/**` | site lint, unit tests, build, Playwright |
+| [`ci.yml`](.github/workflows/ci.yml) | every PR, push to `main` | 1.x checks: pipeline tests (`pytest`), site lint, tests, build, Playwright |
+| [`update-data.yml`](.github/workflows/update-data.yml) | daily 05:17 UTC on the default branch | **1.x data flow**: runs the Python pipeline with the `CMC_API_KEY` / `PORTALS_API_KEY` secrets and commits the refreshed data to `main` |
+
+In 2.0 the collector keeps the data in PostgreSQL, so `update-data.yml` has no role there: disable it when 2.0 replaces
+1.x on the default branch, otherwise it keeps committing pipeline data to git every day.
+
 ## 1.x (legacy)
 
 `rwa-data-pipeline/` is the Python pipeline of 1.x. The site no longer reads its output. It stays as the parity

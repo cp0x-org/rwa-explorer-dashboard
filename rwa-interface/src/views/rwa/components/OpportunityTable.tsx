@@ -23,6 +23,7 @@ import { EligibilityChip } from './StatusChip';
 import SortHeader, { useSort } from './SortHeader';
 import TablePager from './TablePager';
 import OpportunityDialog from './OpportunityDialog';
+import { PositionLink } from './OutboundLinks';
 
 type Field = 'apy' | 'liquidity' | 'updated';
 
@@ -71,7 +72,9 @@ export default function OpportunityTable({
     return [...rows].sort((a, b) => compareNullable(value(a), value(b), sortOrder) || a.opportunity.key.localeCompare(b.opportunity.key));
   }, [rows, sortField, sortOrder]);
 
-  const visible = sorted.slice((page - 1) * rowsPerPage, page * rowsPerPage);
+  const pageCount = Math.max(1, Math.ceil(rows.length / rowsPerPage));
+  const currentPage = Math.min(page, pageCount); // filters may shrink the list
+  const visible = sorted.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage);
   const handleSort = (fl: Field) => {
     onSort(fl);
     setPage(1);
@@ -101,12 +104,13 @@ export default function OpportunityTable({
               />
               <TableCell>{t('col.status')}</TableCell>
               <SortHeader field="updated" label={t('col.updated')} {...{ sortField, sortOrder }} onSort={handleSort} />
+              <TableCell>{t('col.open')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
-                <TableCell colSpan={showToken ? 10 : 9} sx={{ color: 'text.secondary' }}>
+                <TableCell colSpan={showToken ? 11 : 10} sx={{ color: 'text.secondary' }}>
                   {emptyText ?? t('positions.empty')}
                 </TableCell>
               </TableRow>
@@ -192,13 +196,16 @@ export default function OpportunityTable({
                   <TableCell>
                     <Age iso={o.updated_at} />
                   </TableCell>
+                  <TableCell>
+                    <PositionLink opportunity={o} iconOnly />
+                  </TableCell>
                 </TableRow>
               );
             })}
           </TableBody>
         </Table>
       </DataTableContainer>
-      <TablePager count={rows.length} page={page} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
+      <TablePager count={rows.length} page={currentPage} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
       <OpportunityDialog index={index} row={selected} onClose={() => setSelected(null)} />
     </Box>
   );

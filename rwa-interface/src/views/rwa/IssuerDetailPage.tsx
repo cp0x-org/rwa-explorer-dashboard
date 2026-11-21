@@ -1,3 +1,4 @@
+import { safeUrl } from 'utils/links';
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -14,6 +15,7 @@ import { TokenIcon } from 'components/TokenIcon';
 import { Issuer, RelationRow, Token } from 'types/rwa';
 import { compareNullable, num } from 'utils/rwa';
 import { LocaleLink, useFormat, useLocaleNavigate, useT } from 'i18n';
+import HolderRights from './components/HolderRights';
 import DataTableContainer from './components/DataTableContainer';
 import Age from './components/Age';
 import DataGate, { NotFound } from './components/DataGate';
@@ -27,6 +29,7 @@ import { compareTokens, NetworkChips, TokenSortField } from './components/Versio
 import { stickyColumn } from './components/tableSx';
 import RowLink from './components/RowLink';
 import ProtocolsCell from './components/ProtocolsCell';
+import { OutboundLink, ReferralLink } from './components/OutboundLinks';
 
 // Token columns sort by the token itself; "liquidity" and "updated" sort by the token's best reported-APY position.
 type Field = TokenSortField | 'liquidity' | 'updated';
@@ -91,6 +94,16 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
             {issuer.roster_size !== null && ` · ${t('issuer.roster', { n: issuer.roster_size })}`}
           </>
         }
+        actions={
+          <>
+            {issuer.app && <OutboundLink url={issuer.app.url} label={t('link.issuerApp', { label: issuer.app.label ?? name })} />}
+            <ReferralLink
+              direct={!!safeUrl(issuer.app?.url)}
+              referral={issuer.referral}
+              maxAgeDays={index.data.summary.links_deals_max_age_days}
+            />
+          </>
+        }
         stats={[
           { label: t('stat.score'), value: f.num(issuer.issuer_usefulness_score), hint: t('stat.score.hint') },
           { label: t('stat.rawConfirmed'), value: f.num(issuer.raw_confirmed_opportunities_count) },
@@ -110,6 +123,7 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
           { label: t('stat.directPools'), value: f.usd(issuer.direct_pools_liquidity_usd), hint: t('stat.directPools.hint') }
         ]}
       />
+      <HolderRights index={index} issuer={issuer} />
       <MethodNote data={index.data} />
 
       <Box sx={{ marginBottom: 4 }}>

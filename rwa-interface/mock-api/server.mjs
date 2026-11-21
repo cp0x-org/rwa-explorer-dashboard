@@ -33,6 +33,8 @@ const exportSha = createHash('sha256').update(exportBody).digest('hex');
 
 // ---- status and runs -------------------------------------------------------------------------------------------------
 const started = Date.parse(rwa.generated_at);
+// History clock: the date of the data (newest collection), not of the file's rebuild, so the series stay where the data is.
+const DATA_TIME = Date.parse(rwa.summary?.newest_fetched_at ?? rwa.generated_at);
 const iso = (ms) => new Date(ms).toISOString().replace(/\.\d{3}Z$/, 'Z');
 
 const okRows = (seconds, count = 3) =>
@@ -387,7 +389,7 @@ function history(entity, id, query) {
   const step = query.get('step') ?? 'run';
   if (!['run', 'day', 'week'].includes(step)) return bad('step must be run, day or week');
   // CLOCK: "now" of the mock history is the day after the export, so a range counted from the real today still holds its points
-  const clockShift = Date.now() - (Math.floor(Date.parse(rwa.generated_at) / DAY_MS) * DAY_MS + DAY_MS * 1.5);
+  const clockShift = Date.now() - (Math.floor(DATA_TIME / DAY_MS) * DAY_MS + DAY_MS * 1.5);
   const from = (query.get('from') ? Date.parse(query.get('from')) : Date.now() - 365 * DAY_MS) - clockShift; // default: a year back, like the API
   const to = query.get('to') ? Date.parse(query.get('to')) - clockShift : Infinity;
   if (Number.isNaN(from) || Number.isNaN(to)) return bad('from and to must be dates');
@@ -405,7 +407,7 @@ function history(entity, id, query) {
       return [m, walk];
     })
   );
-  const end = Math.floor(Date.parse(rwa.generated_at) / DAY_MS) * DAY_MS + DAY_MS / 2;
+  const end = Math.floor(DATA_TIME / DAY_MS) * DAY_MS + DAY_MS / 2;
   const points = [];
   for (let d = DAYS - 1; d >= 0; d -= step === 'week' ? 7 : 1) {
     const observed = end - d * DAY_MS;

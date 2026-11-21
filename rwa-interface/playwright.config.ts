@@ -41,6 +41,7 @@ export default defineConfig({
   ],
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'] } },
-    { name: 'mobile', use: { ...devices['Pixel 7'] }, testMatch: /a11y|i18n/ }
+    // the phone runs the layout-sensitive specs: accessibility, language, and the rights tables that scroll sideways
+    { name: 'mobile', use: { ...devices['Pixel 7'] }, testMatch: /a11y|i18n|rights/ }
   ]
 });

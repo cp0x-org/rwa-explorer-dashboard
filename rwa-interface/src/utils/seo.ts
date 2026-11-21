@@ -3,7 +3,7 @@
 // no ratings, prices or legal details, only what the page shows.
 import { RwaExport } from 'types/rwa';
 import { getFormat, localizePath, OG_LOCALE } from 'i18n';
-import { intlFor, PageMeta } from './pageMeta';
+import { intlFor, pageMeta, PageMeta } from './pageMeta';
 
 const ORGANIZATION = {
   '@type': 'Organization',
@@ -14,6 +14,36 @@ const ORGANIZATION = {
 };
 
 const ITEM_LIST_MAX = 100;
+
+// Everything the prerender writes into <head> for one page (scripts/prerender.mjs).
+export interface DocumentHead {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string | null;
+  hreflang: { lang: string; href: string }[];
+  ogLocale: string | null;
+  ogLocaleAlternates: string[];
+  noindex: boolean;
+  jsonLd: object | null;
+}
+
+export function documentHead(pathname: string, data: RwaExport, siteUrl: string | undefined): DocumentHead {
+  const meta = pageMeta(pathname, data);
+  const site = siteUrl?.replace(/\/+$/, '');
+  const links = site && meta.found ? headLinks(meta, site) : null;
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: links?.canonical ?? null,
+    hreflang: links?.hreflang ?? [],
+    ogLocale: links?.ogLocale ?? null,
+    ogLocaleAlternates: links?.ogLocaleAlternates ?? [],
+    noindex: !meta.found,
+    jsonLd: site ? jsonLd(meta, data, site) : null
+  };
+}
 
 export interface HeadLinks {
   canonical: string;

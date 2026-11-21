@@ -1,9 +1,9 @@
 ---
 name: verify
-description: Build, launch, and drive pi-rwa-interface (RWA Explorer, React 19 + Vite + MUI 7) to verify changes at the UI surface.
+description: Build, launch, and drive rwa-interface (RWA Explorer, React 19 + Vite + MUI 7) to verify changes at the UI surface.
 ---
 
-# Verify: pi-rwa-interface
+# Verify: rwa-interface
 
 ## Build & launch
 
