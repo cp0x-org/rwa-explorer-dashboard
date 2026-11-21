@@ -14,6 +14,7 @@ pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSO
 pnpm build         # tsc && vite build (dist/) && vite build --ssr (dist-ssr/); no prerender step any more
 pnpm mock:api      # mock API on http://localhost:8080: public/data/rwa.json as build 1, status, runs, history (--fail, --delay-ms)
 pnpm serve         # SSR server on http://localhost:4173 reading API_URL (default http://127.0.0.1:8080); needs pnpm build + the API
+pnpm dev:ssr       # pnpm build + pnpm serve (real API); pnpm mock:ssr = the same on the mock
 pnpm start         # dev server on http://localhost:3000, client render only, /api proxied to :8080 (or VITE_API_URL)
 ```
 

@@ -537,4 +537,4 @@ createServer((req, res) => {
     console.error(`${req.method} ${req.url}: ${e.stack ?? e}`);
     if (!res.headersSent) err(res, 500, 'internal', 'internal error');
   });
-}).listen(port, () => console.log(`mock API on http://localhost:${port}${fail ? ' (--fail: every /api/* answers 503)' : ''}`));
+}).listen(port, () => console.log(`MOCK API on http://localhost:${port} (frozen 1.x snapshot public/data/rwa.json, not the backend)${fail ? ' (--fail: every /api/* answers 503)' : ''}`));

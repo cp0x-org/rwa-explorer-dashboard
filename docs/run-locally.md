@@ -1,0 +1,115 @@
+# Run RWA Explorer locally (with the real backend)
+
+Two ways, both with the real Go backend and PostgreSQL. They use different ports and databases, so they can run side by side.
+
+| Mode | When | What runs where |
+|------|------|-----------------|
+| **A. Local** | coding, fast reload | PostgreSQL in Docker (:5433); `rwa api` (:8080) and the site (:3000 / :4173) on your machine |
+| **B. Docker** | before a deploy | everything in containers, built from this checkout: site :3301, API :3302 |
+
+> **Mock vs. backend.** `pnpm mock:api` and `pnpm mock:ssr` serve a *frozen* 1.x snapshot (`public/data/rwa.json`,
+> collected 2026-10-18) on port 8080. They never show new data. Stop them before starting `rwa api` (same port 8080).
+
+**Which data am I looking at?** The site footer says "Data collected …". The API tells the build and its date:
+
+```bash
+curl -s localhost:8080/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # A
+curl -s localhost:3302/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # B
+```
+
+Imported 1.x data is from 2026-10-18. Newer data appears only after a collection run (`run-once` or the collector).
+
+---
+
+## A. Local
+
+Prerequisites: Docker, Go 1.26, Node 22+ with pnpm (`corepack enable`), the CMC and Portals API keys.
+
+**1. Backend config (once)**
+
+```bash
+cd rwa-backend
+cp .env.example .env          # fill CMC_API_KEY and PORTALS_API_KEY (Portals key without "Bearer ")
+```
+
+**2. Database and API** (terminal 1)
+
+```bash
+cd rwa-backend
+make dev-db                   # PostgreSQL 16 on 127.0.0.1:5433 (rwa/rwa/rwa), data kept in a Docker volume
+make migrate                  # apply migrations (safe to repeat)
+go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # only for an EMPTY database: 1.x data as run 1
+go run ./cmd/rwa api          # API on http://127.0.0.1:8080, reads ./.env
+```
+
+On a database that already has data `import-v1` prints `import skipped` or refuses (exit 0 / 1), nothing changes; just go on.
+
+**3. Site** (terminal 2), one of:
+
+```bash
+cd rwa-interface && pnpm install
+pnpm start                    # dev server with hot reload: http://localhost:3000 (next free port if busy); /api → :8080
+pnpm dev:ssr                  # production-like server rendering: http://localhost:4173 (PORT=4174 pnpm dev:ssr if busy)
+```
+
+**4. Collect fresh data** (terminal 3) and watch it on `/updates` → the newest run → *Journal*
+
+```bash
+cd rwa-backend
+go run ./cmd/rwa run-once --symbols NVDA   # ~40 s, ~11 CMC credits: one asset, then publish and logos
+go run ./cmd/rwa run-once                  # all 125 assets: ~7 min, ~22 CMC credits
+```
+
+The site picks up the new build by itself within a minute (or reload). Instead of `run-once` you can run the scheduler,
+`go run ./cmd/rwa collector` (with `COLLECT_ON_START=false` in `.env` it waits for the schedule).
+
+**Stop / reset**
+
+```bash
+Ctrl-C in each terminal
+cd rwa-backend && make dev-db-down                                 # stop PostgreSQL, keep the data
+docker compose -f docker-compose.dev.yml down -v                   # delete the dev database completely
+```
+
+---
+
+## B. Docker (everything in containers)
+
+Mode A may keep running: Docker uses its own database and the ports 3301 / 3302.
+
+```bash
+cp .env.example .env          # in the REPOSITORY ROOT (not rwa-backend/.env.example): fill the two keys
+docker compose up --build     # or: make up   (first build takes a few minutes)
+```
+
+What happens, in order: `postgres` → `migrate` → `import` (1.x data, once; later starts print "skipped") → `api` and
+`web` → `collector` starts a **live collection at once** because the imported data is old (~22 CMC credits, 10–14
+minutes in Docker). Set `COLLECT_ON_START=false` in `.env` to skip it.
+
+| Look at | URL / command |
+|---------|---------------|
+| site | http://localhost:3301 (or the `WEB_PORT` you set) |
+| live run and its journal | `/updates` → the newest run |
+| API status | `curl -s localhost:3302/api/v1/status` (or the `API_PORT` you set) |
+| collector logs | `make logs` or `docker compose logs -f collector` |
+| another run | `make run` (all assets) or `docker compose exec collector rwa run-once --symbols NVDA` |
+| database shell | `make psql` |
+
+**Stop / reset**: `make down` (keeps the database volume), `make reset` (asks, then deletes it: next start imports again).
+
+The production stack (prebuilt images, nginx, backups) is in the private pi-infra repo, `stacks/rwa`; this compose
+builds from source and is for checking the code before a deploy.
+
+---
+
+## Troubleshooting
+
+| Symptom | Cause and fix |
+|---------|---------------|
+| site shows October data | you run the mock (`mock:api`/`mock:ssr`), or no collection ran yet: check `/api/v1/status`, then `run-once` |
+| `rwa api`: `address already in use` | the mock holds 8080: stop it (`lsof -iTCP:8080 -sTCP:LISTEN`) |
+| Docker site does not open, `web` logs `export refresh failed: fetch failed` | the `web` container started without its network (a host port was busy at start): `docker compose up -d --force-recreate web` |
+| `rwa api`: pending migration | `make migrate` |
+| `run-once`: `CMC_API_KEY ... required` | keys missing in `rwa-backend/.env` (mode A) or root `.env` (mode B) |
+| `run-once`: `another collector run is in progress` | a collector (or another run-once) is collecting; wait for it, see `/updates` |
+| `pnpm dev:ssr`: "Data unavailable" | `rwa api` is not running on 8080 (or set `API_URL=http://127.0.0.1:<port>`) |

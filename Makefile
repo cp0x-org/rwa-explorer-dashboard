@@ -1,6 +1,6 @@
 # Local stack shortcuts (see "Run everything with Docker" in README.md). Needs .env (cp .env.example .env).
-WEB_PORT ?= 3000
-API_PORT ?= 8080
+WEB_PORT ?= 3301
+API_PORT ?= 3302
 
 .PHONY: up logs run down reset psql
 

@@ -33,6 +33,8 @@ Portals ───────┘   (cron, default     snapshots                /
 
 Step by step, including manual runs: [docs/workflow.md](docs/workflow.md).
 
+**Short runbook for both ways (local and Docker, with the real backend): [docs/run-locally.md](docs/run-locally.md).**
+
 ## Run everything with Docker (local)
 
 Runs the whole project from source on your machine: database, import of the 1.x data, API, site and the collector, so
@@ -45,7 +47,7 @@ cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env 
 docker compose up --build       # first build takes a few minutes; `make up` does the same in the background
 ```
 
-Then open http://localhost:3000. If 3000 or 8080 is busy, set `WEB_PORT` / `API_PORT` in `.env`.
+Then open http://localhost:3301 (API on http://localhost:3302). Other ports: `WEB_PORT` / `API_PORT` in `.env`.
 
 What happens, in order:
 
@@ -58,8 +60,8 @@ What happens, in order:
 
 Where to look:
 
-- site: http://localhost:3000; `/updates` shows the runs (and, once the run journal ships, the journal of each run)
-- API status: http://localhost:8080/api/v1/status
+- site: http://localhost:3301; `/updates` shows the runs and the journal of each run
+- API status: http://localhost:3302/api/v1/status
 - the run itself: `docker compose logs -f collector` (or `make logs` for collector, api and web)
 
 Another run: `make run` (`docker compose exec collector rwa run-once`; a subset:
@@ -67,7 +69,7 @@ Another run: `make run` (`docker compose exec collector rwa run-once`; a subset:
 (`ADMIN_TOKEN`, default `devtoken`; the collector picks the request up within 30 s):
 
 ```bash
-curl -X POST http://localhost:8080/api/v1/admin/runs -H "Authorization: Bearer devtoken" \
+curl -X POST http://localhost:3302/api/v1/admin/runs -H "Authorization: Bearer devtoken" \
   -H "Content-Type: application/json" -d '{"mode":"refresh","symbols":["NVDA"]}'
 ```
 
@@ -106,7 +108,8 @@ pnpm start                                  # dev server, client render; /api an
 | Command (in `rwa-interface/`)       | What it does                                                                                  |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | `pnpm build && pnpm serve`          | production-like: client bundle and SSR bundle, then the SSR server on http://localhost:4173    |
-| `pnpm mock:api`                     | mock API on :8080 (serves `public/data/rwa.json` as build 1): work without the backend         |
+| `pnpm dev:ssr`                      | build, then the SSR server on :4173 against the real API on :8080 (`rwa api`)                  |
+| `pnpm mock:api` / `pnpm mock:ssr`   | MOCK API on :8080 with the frozen 1.x snapshot (`public/data/rwa.json`): no backend, old data  |
 | `pnpm test && pnpm lint`            | unit tests and eslint                                                                          |
 | `pnpm test:e2e`                     | Playwright; starts the mock API and the server itself (run `pnpm build` first)                 |
 

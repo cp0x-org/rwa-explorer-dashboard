@@ -1,5 +1,7 @@
 # Tokenized Stocks in DeFi by cp0x
 
+Running it with the backend, locally or in Docker: [../docs/run-locally.md](../docs/run-locally.md).
+
 Research site: tokenized assets (on-chain tokens of stocks/ETFs, CoinMarketCap) and their usage in DeFi (Portals), with
 ratings of tokenized assets and issuers. Based on the Berry MUI template (React 19 + Vite + MUI 7). Read-only: no wallet, no transactions.
 
@@ -55,10 +57,11 @@ CJK fonts (`themes/typography.tsx`), no extra font download.
 
 ```bash
 pnpm install
-pnpm mock:api     # mock API on http://localhost:8080 (or run rwa-backend there)
+pnpm mock:api     # MOCK API on http://localhost:8080: frozen 1.x snapshot, old data (or run rwa-backend there)
 pnpm start        # dev server, client render only; /api and /logos are proxied to VITE_API_URL, default http://localhost:8080
 pnpm build        # tsc + vite build (client, dist/) + vite build --ssr (server bundle, dist-ssr/)
 pnpm serve        # the SSR server on http://localhost:4173 (API_URL=http://127.0.0.1:8080 by default); pnpm build first
+pnpm dev:ssr      # pnpm build + pnpm serve against the real API (`rwa api`); pnpm mock:ssr does the same on the mock
 pnpm lint         # eslint
 pnpm test         # vitest: dictionaries (key and ICU-argument parity), locale paths, page metadata, JSON-LD, API types and keys
 pnpm test:e2e     # playwright: starts the mock API and the server itself (run `pnpm build` first): rendering, SEO tags, i18n, hydration, interactions, axe, API down

@@ -59,7 +59,7 @@ pnpm test          # vitest: dictionary parity, locale paths, page metadata, JSO
 pnpm build         # tsc + vite build + SSR bundle (pages are rendered per request by server/)
 pnpm test:e2e      # playwright: starts the mock API and the server itself (run pnpm build first): rendering, SEO tags, i18n, hydration, interactions, axe
 pnpm serve         # the SSR server like production, http://localhost:4173 (API_URL, default http://127.0.0.1:8080: run the backend or pnpm mock:api)
-pnpm mock:api      # mock API on :8080 serving public/data/rwa.json, to work without the backend
+pnpm mock:api      # MOCK API on :8080 serving the frozen public/data/rwa.json (old data), to work without the backend
 ```
 
 `pnpm test:e2e` needs Chromium for Playwright once: `npx playwright install chromium`.

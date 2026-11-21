@@ -1,7 +1,7 @@
 # Whole project from source, for local use: PostgreSQL -> migrate -> import of the 1.x data -> api + web + collector.
 #   cp .env.example .env     # put CMC_API_KEY and PORTALS_API_KEY into .env
 #   docker compose up --build
-#   open http://localhost:3000
+#   open http://localhost:3301 (API on http://localhost:3302; ports differ from the local `go run` mode, so both can run)
 # DEVELOPMENT ONLY: throwaway database credentials (rwa/rwa/rwa), everything is published on 127.0.0.1 only.
 # This is not the production stack. For just a database next to `go run` use rwa-backend/docker-compose.dev.yml.
 name: rwa-explorer
@@ -116,7 +116,7 @@ services:
       migrate:
         condition: service_completed_successfully
     ports:
-      - "127.0.0.1:${API_PORT:-8080}:8080"
+      - "127.0.0.1:${API_PORT:-3302}:8080"
     healthcheck:
       test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/readyz"]
       interval: 10s
@@ -136,10 +136,10 @@ services:
     logging: *logging
     environment:
       API_URL: http://api:8080
-      SITE_URL: http://localhost:${WEB_PORT:-3000}
+      SITE_URL: http://localhost:${WEB_PORT:-3301}
       PORT: "4173"
     ports:
-      - "127.0.0.1:${WEB_PORT:-3000}:4173"
+      - "127.0.0.1:${WEB_PORT:-3301}:4173"
     depends_on:
       api:
         condition: service_started
