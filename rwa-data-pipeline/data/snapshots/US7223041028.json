@@ -5,8 +5,8 @@
  "name": "PDD Holdings (ADR)",
  "isin": "US7223041028",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:17:16Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:12:46Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,35 +17,35 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 80.72437569743778,
-     "tokenized_market_cap": 13703812.389631614,
-     "tokenized_volume_24h": 2170845.0413704,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 83.61531764028221,
+     "tokenized_market_cap": 14406384.78792568,
+     "tokenized_volume_24h": 4022289.47828753,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 175,
    "asset_type": "stock",
-   "rwa_rank": 143,
+   "rwa_rank": 127,
    "has_tokens": true,
-   "average_tokenized_price": 80.72437569743778,
-   "tokenized_market_cap": 13703812.389631614,
-   "tokenized_volume_24h": 2170845.0413704,
-   "last_updated": "2026-10-18T20:14:28.079Z",
+   "average_tokenized_price": 83.61531764028221,
+   "tokenized_market_cap": 14406384.78792568,
+   "tokenized_volume_24h": 4022289.47828753,
+   "last_updated": "2026-11-21T14:10:11.178Z",
    "tokens": [
     {
      "symbol": "PDDon",
      "name": "PDD Holdings Tokenized Stock (Ondo)",
-     "price": 80.71958272671682,
+     "price": 83.49725333996312,
      "crypto_id": 39247,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 11857861.84,
-     "volume_24h": 878148.69153691
+     "market_cap": 10454005.49237865,
+     "volume_24h": 1915003.975825664
     },
     {
      "symbol": "PDD",
      "name": "PDD Holdings Inc (Derivatives)",
-     "price": 80.86192156654884,
+     "price": 83.83876435503518,
      "crypto_id": 39861,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -55,22 +55,32 @@
     {
      "symbol": "PDDB",
      "name": "PDD Holdings Tokenized bStocks",
-     "price": 80.7364774942845,
+     "price": 83.72705978087558,
      "crypto_id": 42383,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 1798442.16,
-     "volume_24h": 1291771.39818533
+     "market_cap": 3700614.8517327295,
+     "volume_24h": 2024931.631374787
     },
     {
      "symbol": "PDDc",
      "name": "PDD Holdings Inc. Tokenized Stock (Coinbase)",
-     "price": 84.26278561365542,
+     "price": 84.04096315951722,
      "crypto_id": 42585,
      "issuer_id": "6a72fe7072996604d45c6733",
      "issuer_name": "Coinbase",
-     "market_cap": 47355.69,
+     "market_cap": 33616.385263806886,
      "volume_24h": 0
+    },
+    {
+     "symbol": "PDDx",
+     "name": "PDD Holdings Inc tokenized stock (xStock)",
+     "price": 83.61317335090564,
+     "crypto_id": 42895,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 218148.05855122505,
+     "volume_24h": 82353.87108707556
     }
    ],
    "tradfi_markets": [
@@ -206,6 +216,59 @@
       }
      }
     ]
+   },
+   "42895": {
+    "id": 42895,
+    "symbol": "PDDx",
+    "name": "PDD Holdings Inc tokenized stock (xStock)",
+    "slug": "pdd-holdings-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42895.png",
+    "date_added": "2026-06-08T15:32:52.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0x5a0b3434151e0F2D23608c949505a62E436aaE86"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0x5a0b3434151e0F2D23608c949505a62E436aaE86",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0x5a0b3434151e0F2D23608c949505a62E436aaE86",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "XsSdwPGhuiTBir2bpJTiJkEhfMEn5bG75XevuePua1q",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -228,8 +291,10 @@
   ],
   "looked_up": [
    "base:0xb200000000000000000000c8a7223510467d8563",
+   "bsc:0x5a0b3434151e0f2d23608c949505a62e436aae86",
    "bsc:0x95b0409679b55c31772daa2fb4bee7b125b77521",
    "bsc:0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
+   "ethereum:0x5a0b3434151e0f2d23608c949505a62e436aae86",
    "ethereum:0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
   ],
   "exact": {
@@ -238,7 +303,7 @@
     "name": "PDD Holdings (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "PDDON",
-    "price": 80.74,
+    "price": 83.55,
     "address": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
     "addresses": {
      "bsc": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
@@ -246,49 +311,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T16:47:09.029Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 11863975,
+    "liquidity": 10460363,
     "image": "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129",
     "metrics": {
-     "volumeUsd1d": "480398.009",
-     "volumeUsd7d": "3629770.928"
+     "volumeUsd1d": "176660.203",
+     "volumeUsd7d": "5070412.481"
     },
     "metadata": {},
     "tokenId": "d14344e0-9aba-41f3-a9c6-3ff341d69550",
-    "totalSupply": "146901.92191136468",
-    "circulatingSupply": "146901.92191136468",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "base:0xb200000000000000000000c8a7223510467d8563": {
-    "key": "base:0xb200000000000000000000c8a7223510467d8563",
-    "name": "PDD Holdings Inc. (Coinbase Tokenized Stock)",
-    "decimals": 8,
-    "symbol": "PDDC",
-    "price": 84.12,
-    "address": "0xb200000000000000000000c8a7223510467d8563",
-    "addresses": {
-     "base": "0xb200000000000000000000c8a7223510467d8563"
-    },
-    "platform": "basic",
-    "network": "base",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-10-12T05:06:39.128Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 47274,
-    "image": "https://coin-images.coingecko.com/coins/images/102179413/large/PDDc-icon-200.png?1791736627",
-    "metrics": {
-     "volumeUsd1d": "3130.467",
-     "volumeUsd7d": "117561.038"
-    },
-    "metadata": {},
-    "tokenId": "704f5218-1293-4a72-9af2-ced8f937d3d1",
-    "totalSupply": "562",
-    "circulatingSupply": "562",
+    "totalSupply": "125201.78897160436",
+    "circulatingSupply": "125201.78897160436",
     "isClaimed": false,
     "isPortable": true
    },
@@ -297,7 +333,7 @@
     "name": "PDD Holdings (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "PDDON",
-    "price": 80.74,
+    "price": 83.55,
     "address": "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b",
     "addresses": {
      "bsc": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
@@ -305,20 +341,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T16:47:09.029Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 11863975,
+    "liquidity": 10460363,
     "image": "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129",
     "metrics": {
-     "volumeUsd1d": "482202.132",
-     "volumeUsd7d": "3624649.239"
+     "volumeUsd1d": "1559994.933",
+     "volumeUsd7d": "5165176.694"
     },
     "metadata": {},
     "tokenId": "d14344e0-9aba-41f3-a9c6-3ff341d69550",
-    "totalSupply": "146901.92191136468",
-    "circulatingSupply": "146901.92191136468",
+    "totalSupply": "125201.78897160436",
+    "circulatingSupply": "125201.78897160436",
     "isClaimed": false,
     "isPortable": true
    },
@@ -327,27 +363,27 @@
     "name": "PDD Holdings (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "PDDB",
-    "price": 80.74,
+    "price": 83.75,
     "address": "0x95b0409679b55c31772daa2fb4bee7b125b77521",
     "addresses": {
      "bsc": "0x95b0409679b55c31772daa2fb4bee7b125b77521"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1798807,
+    "liquidity": 3701682,
     "image": "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538",
     "metrics": {
-     "volumeUsd1d": "1140743.929",
-     "volumeUsd7d": "3917394.429"
+     "volumeUsd1d": "1751862.976",
+     "volumeUsd7d": "10257694.509"
     },
     "metadata": {},
     "tokenId": "3a626cac-0826-4501-9bf8-7e809b559198",
-    "totalSupply": "22275.45985573",
-    "circulatingSupply": "22275.45985573",
+    "totalSupply": "44198.5525518",
+    "circulatingSupply": "44198.5525518",
     "isClaimed": false,
     "isPortable": true
    }
@@ -378,19 +414,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538"
     ],
-    "updatedAt": "2026-10-18T20:13:03.044Z",
+    "updatedAt": "2026-11-21T14:08:41.014Z",
     "createdAt": "2026-10-01T03:12:05.702Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0x95b0409679b55c31772daa2fb4bee7b125b77521"
     ],
-    "liquidity": 57939.29015097915,
+    "liquidity": 59120.52977879617,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "66.069"
+     "volumeUsd7d": "111.109"
     },
     "metadata": {
      "tags": [
@@ -402,55 +438,149 @@
     },
     "tokenId": "80ede493-b0ed-40d4-a15e-2b455cb2555c",
     "reserves": [
-     "27089.063934669363900221",
-     "382.365897154133443763"
+     "27124.963971887794890588",
+     "382.386082413491809178"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "base:0x84608be6d655ee05032303fe7f0d6f3a51c2cf51": {
-    "key": "base:0x84608be6d655ee05032303fe7f0d6f3a51c2cf51",
-    "name": "Aerodrome SlipStream USD Coin/PDD Holdings Inc. 0.01%",
+   "ethereum:0xc804566833c50fd19cb2349ef52cad3cbbae0be4c64653d4cff2a9cbf3b205f9": {
+    "key": "ethereum:0xc804566833c50fd19cb2349ef52cad3cbbae0be4c64653d4cff2a9cbf3b205f9",
+    "name": "Uniswap V4 LP EE/PDDon",
     "decimals": 18,
-    "symbol": "USDC/PDDC",
+    "symbol": "EE/PDDON",
     "price": 9007199254740990,
-    "address": "0x84608be6d655ee05032303fe7f0d6f3a51c2cf51",
+    "address": "0xc804566833c50fd19cb2349ef52cad3cbbae0be4c64653d4cff2a9cbf3b205f9",
     "addresses": {
-     "base": "0x84608be6d655ee05032303fe7f0d6f3a51c2cf51"
+     "ethereum": "0xc804566833c50fd19cb2349ef52cad3cbbae0be4c64653d4cff2a9cbf3b205f9"
     },
-    "platform": "aerodrome-slipstream",
-    "network": "base",
+    "platform": "uniswap-v4",
+    "network": "ethereum",
     "images": [
-     "https://icons.llamao.fi/icons/protocols/aerodrome",
-     "https://coin-images.coingecko.com/coins/images/102179413/large/PDDc-icon-200.png?1791736627",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:22.334Z",
-    "createdAt": "2026-10-13T05:12:02.848Z",
+    "updatedAt": "2026-11-21T14:10:44.520Z",
+    "createdAt": "2026-11-07T15:59:37.155Z",
     "verifiedAt": null,
     "tokens": [
-     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-     "0xb200000000000000000000c8a7223510467d8563"
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
     ],
-    "liquidity": 51781.395986998476,
+    "liquidity": 50033.364832331215,
     "metrics": {
-     "apy": "0.109",
-     "baseApy": "0.109",
-     "rewardApy": "0",
-     "volumeUsd1d": "1549.773",
-     "volumeUsd7d": "31127.285"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
-     "feePercentage": "0.01",
-     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9979,
+     "feePercentage": "99.7909"
     },
-    "tokenId": "b19a3078-47e5-4888-817a-38a06c47053f",
+    "tokenId": "eefc13ce-f9d6-4299-9bb9-290732cec90a",
     "reserves": [
-     "25397.709067",
-     "313.69809683"
+     "49999.999999999999999984",
+     "0.349296697628813287"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xfe16d696aa684f0b0daf68c574c85d29c8bcf50eba8aad59675dc0d68fd2556c": {
+    "key": "arbitrum:0xfe16d696aa684f0b0daf68c574c85d29c8bcf50eba8aad59675dc0d68fd2556c",
+    "name": "Uniswap V4 LP wUSDC/rPDD",
+    "decimals": 18,
+    "symbol": "WUSDC/RPDD",
+    "price": 9007199254740990,
+    "address": "0xfe16d696aa684f0b0daf68c574c85d29c8bcf50eba8aad59675dc0d68fd2556c",
+    "addresses": {
+     "arbitrum": "0xfe16d696aa684f0b0daf68c574c85d29c8bcf50eba8aad59675dc0d68fd2556c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177066/large/6c76055b9272818bb7f64cac4c2c3a04.png?1789116721"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.176Z",
+    "createdAt": "2026-11-14T12:28:22.700Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7db0fb8a82a05929df12a952ee2fd55714d0f650"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "cbaf90e6-8bb8-4c36-aa23-fe3f5197459a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x32ebfa0c2e9b12504db49d306126c9e4fd9d81d2c16ca9983e721f333ed03d24": {
+    "key": "arbitrum:0x32ebfa0c2e9b12504db49d306126c9e4fd9d81d2c16ca9983e721f333ed03d24",
+    "name": "Uniswap V4 LP wUSDC/rPDD",
+    "decimals": 18,
+    "symbol": "WUSDC/RPDD",
+    "price": 9007199254740990,
+    "address": "0x32ebfa0c2e9b12504db49d306126c9e4fd9d81d2c16ca9983e721f333ed03d24",
+    "addresses": {
+     "arbitrum": "0x32ebfa0c2e9b12504db49d306126c9e4fd9d81d2c16ca9983e721f333ed03d24"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177066/large/6c76055b9272818bb7f64cac4c2c3a04.png?1789116721"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.267Z",
+    "createdAt": "2026-11-14T12:28:23.953Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7db0fb8a82a05929df12a952ee2fd55714d0f650"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "bc61b2d7-785f-40fc-8881-8241bd0b029e",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -460,7 +590,7 @@
     "name": "PDD Holdings (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "PDDON",
-    "price": 80.74,
+    "price": 83.55,
     "address": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
     "addresses": {
      "bsc": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
@@ -468,22 +598,69 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T16:47:09.029Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 11863975,
+    "liquidity": 10460363,
     "image": "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129",
     "metrics": {
-     "volumeUsd1d": "480398.009",
-     "volumeUsd7d": "3629770.928"
+     "volumeUsd1d": "176660.203",
+     "volumeUsd7d": "5070412.481"
     },
     "metadata": {},
     "tokenId": "d14344e0-9aba-41f3-a9c6-3ff341d69550",
-    "totalSupply": "146901.92191136468",
-    "circulatingSupply": "146901.92191136468",
+    "totalSupply": "125201.78897160436",
+    "circulatingSupply": "125201.78897160436",
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0x9c7b51e0bb9052ae7295665f90264cd48bb3f5a0f9bc80fa4fc88fec76ae94c5": {
+    "key": "arbitrum:0x9c7b51e0bb9052ae7295665f90264cd48bb3f5a0f9bc80fa4fc88fec76ae94c5",
+    "name": "Uniswap V4 LP wUSDC/rPDD",
+    "decimals": 18,
+    "symbol": "WUSDC/RPDD",
+    "price": 9007199254740990,
+    "address": "0x9c7b51e0bb9052ae7295665f90264cd48bb3f5a0f9bc80fa4fc88fec76ae94c5",
+    "addresses": {
+     "arbitrum": "0x9c7b51e0bb9052ae7295665f90264cd48bb3f5a0f9bc80fa4fc88fec76ae94c5"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177066/large/6c76055b9272818bb7f64cac4c2c3a04.png?1789116721"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.267Z",
+    "createdAt": "2026-11-14T12:28:23.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7db0fb8a82a05929df12a952ee2fd55714d0f650"
+    ],
+    "liquidity": 3568.7940834544725,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "0d72b817-d098-4dd6-9a2e-0b4364786979",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0xd0c2a4dc7c581db2660286660b703cf6883f29ba": {
     "key": "bsc:0xd0c2a4dc7c581db2660286660b703cf6883f29ba",
@@ -502,19 +679,19 @@
      "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:13:13.376Z",
+    "updatedAt": "2026-11-21T14:09:19.851Z",
     "createdAt": "2026-10-01T03:12:31.125Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0x95b0409679b55c31772daa2fb4bee7b125b77521"
     ],
-    "liquidity": 250535.07319737837,
+    "liquidity": 171841.98435486548,
     "metrics": {
-     "apy": "2.808",
-     "baseApy": "2.808",
-     "volumeUsd1d": "7710.955",
-     "volumeUsd7d": "201456.113"
+     "apy": "14.742",
+     "baseApy": "14.742",
+     "volumeUsd1d": "27762.599",
+     "volumeUsd7d": "440819.486"
     },
     "metadata": {
      "tags": [
@@ -524,8 +701,55 @@
     },
     "tokenId": "0cc981e6-a446-4203-94cc-27b3caeb7c5d",
     "reserves": [
-     "99146.394360405666778354",
-     "1876.011713019486552027"
+     "87988.164977700166153579",
+     "1002.401682646109121311"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xea9384ae94d17dcafa2acc555f44963c9f35af8f5ec8e1f1388a53d24a65e5e0": {
+    "key": "ethereum:0xea9384ae94d17dcafa2acc555f44963c9f35af8f5ec8e1f1388a53d24a65e5e0",
+    "name": "Uniswap V4 LP wUSDC/PDDon",
+    "decimals": 18,
+    "symbol": "WUSDC/PDDON",
+    "price": 9007199254740990,
+    "address": "0xea9384ae94d17dcafa2acc555f44963c9f35af8f5ec8e1f1388a53d24a65e5e0",
+    "addresses": {
+     "ethereum": "0xea9384ae94d17dcafa2acc555f44963c9f35af8f5ec8e1f1388a53d24a65e5e0"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
+    ],
+    "updatedAt": "2026-11-21T14:10:55.365Z",
+    "createdAt": "2026-11-07T15:59:36.987Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "6fc24200-de02-49f4-98f2-28ace0ed98d6",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -547,14 +771,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:12:49.808Z",
+    "updatedAt": "2026-11-21T14:10:55.691Z",
     "createdAt": "2026-09-28T10:37:14.786Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
     ],
-    "liquidity": 10019.63702076244,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -582,27 +806,27 @@
     "name": "PDD Holdings rStock",
     "decimals": 18,
     "symbol": "RPDD",
-    "price": 80.84,
+    "price": 83.62,
     "address": "0x7db0fb8a82a05929df12a952ee2fd55714d0f650",
     "addresses": {
      "arbitrum": "0x7db0fb8a82a05929df12a952ee2fd55714d0f650"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 606559,
+    "liquidity": 727764,
     "image": "https://coin-images.coingecko.com/coins/images/102177066/large/6c76055b9272818bb7f64cac4c2c3a04.png?1789116721",
     "metrics": {
-     "volumeUsd1d": "1002.68",
-     "volumeUsd7d": "132419.152"
+     "volumeUsd1d": "188371.065",
+     "volumeUsd7d": "616723.507"
     },
     "metadata": {},
     "tokenId": "b2d32777-7907-4fbd-bd75-625248bad860",
-    "totalSupply": "7490.849783941",
-    "circulatingSupply": "7503.110483941",
+    "totalSupply": "8702.978677216",
+    "circulatingSupply": "8702.978677216",
     "isClaimed": false,
     "isPortable": true
    },
@@ -611,7 +835,7 @@
     "name": "PancakeSwap LP PDDB/WBNB",
     "decimals": 18,
     "symbol": "PDDB/WBNB",
-    "price": 480.1896642952357,
+    "price": 431.8776900384618,
     "address": "0x6e57332778b0919476ebce09ffe58888d4cee9a7",
     "addresses": {
      "bsc": "0x6e57332778b0919476ebce09ffe58888d4cee9a7"
@@ -623,19 +847,19 @@
      "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538",
      "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
     ],
-    "updatedAt": "2026-10-18T20:13:15.778Z",
+    "updatedAt": "2026-11-21T14:09:29.479Z",
     "createdAt": "2026-10-13T05:27:45.040Z",
     "verifiedAt": null,
     "tokens": [
      "0x95b0409679b55c31772daa2fb4bee7b125b77521",
      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
     ],
-    "liquidity": 10537.950381483195,
+    "liquidity": 9477.72517172866,
     "metrics": {
-     "apy": "0.281",
-     "baseApy": "0.281",
-     "volumeUsd1d": "32.516",
-     "volumeUsd7d": "799.165"
+     "apy": "5.692",
+     "baseApy": "5.692",
+     "volumeUsd1d": "591.147",
+     "volumeUsd7d": "2389.245"
     },
     "metadata": {
      "tags": [
@@ -645,85 +869,9 @@
     "tokenId": "17602f3b-7e1a-47b7-bcf3-e20ecfba6f5e",
     "totalSupply": "21.945391925395819869",
     "reserves": [
-     "65.32870695243665096",
-     "7.462407426725071737"
+     "56.494998757986139297",
+     "8.651045583534900847"
     ],
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "base:0xd5ab4e868ad6455143f8f8ec6d5c51a018935627": {
-    "key": "base:0xd5ab4e868ad6455143f8f8ec6d5c51a018935627",
-    "name": "Aerodrome SlipStream USD Coin/PDD Holdings Inc. 0.05%",
-    "decimals": 18,
-    "symbol": "USDC/PDDC",
-    "price": 9007199254740990,
-    "address": "0xd5ab4e868ad6455143f8f8ec6d5c51a018935627",
-    "addresses": {
-     "base": "0xd5ab4e868ad6455143f8f8ec6d5c51a018935627"
-    },
-    "platform": "aerodrome-slipstream",
-    "network": "base",
-    "images": [
-     "https://icons.llamao.fi/icons/protocols/aerodrome",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
-     "https://coin-images.coingecko.com/coins/images/102179413/large/PDDc-icon-200.png?1791736627"
-    ],
-    "updatedAt": "2026-10-18T20:13:22.296Z",
-    "createdAt": "2026-10-15T14:20:31.449Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-     "0xb200000000000000000000c8a7223510467d8563"
-    ],
-    "liquidity": 17046.611769755284,
-    "metrics": {
-     "apy": "1.695",
-     "baseApy": "1.695",
-     "rewardApy": "0",
-     "volumeUsd1d": "1583.017",
-     "volumeUsd7d": "85844.268"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "0.05",
-     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
-    },
-    "tokenId": "78d01de5-6f71-4043-964f-6fbb25f25a66",
-    "reserves": [
-     "1193.358457",
-     "188.4625453"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "base:0xb200000000000000000000c8a7223510467d8563": {
-    "key": "base:0xb200000000000000000000c8a7223510467d8563",
-    "name": "PDD Holdings Inc. (Coinbase Tokenized Stock)",
-    "decimals": 8,
-    "symbol": "PDDC",
-    "price": 84.12,
-    "address": "0xb200000000000000000000c8a7223510467d8563",
-    "addresses": {
-     "base": "0xb200000000000000000000c8a7223510467d8563"
-    },
-    "platform": "basic",
-    "network": "base",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-10-12T05:06:39.128Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 47274,
-    "image": "https://coin-images.coingecko.com/coins/images/102179413/large/PDDc-icon-200.png?1791736627",
-    "metrics": {
-     "volumeUsd1d": "3130.467",
-     "volumeUsd7d": "117561.038"
-    },
-    "metadata": {},
-    "tokenId": "704f5218-1293-4a72-9af2-ced8f937d3d1",
-    "totalSupply": "562",
-    "circulatingSupply": "562",
     "isClaimed": false,
     "isPortable": true
    },
@@ -744,19 +892,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:13.681Z",
+    "updatedAt": "2026-11-21T14:09:20.732Z",
     "createdAt": "2026-09-09T09:50:45.099Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714"
     ],
-    "liquidity": 54101.58695260216,
+    "liquidity": 55363.572347250214,
     "metrics": {
-     "apy": "1.657",
-     "baseApy": "1.657",
-     "volumeUsd1d": "982.312",
-     "volumeUsd7d": "33524.668"
+     "apy": "20.275",
+     "baseApy": "20.275",
+     "volumeUsd1d": "12281.396",
+     "volumeUsd7d": "137742.316"
     },
     "metadata": {
      "tags": [
@@ -766,8 +914,8 @@
     },
     "tokenId": "893b9000-9000-4ac6-80ea-a62fc77019ff",
     "reserves": [
-     "35734.304727768849270696",
-     "227.846154078180154957"
+     "40151.944262810780088869",
+     "181.847157488561294318"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -777,7 +925,7 @@
     "name": "PDD Holdings (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "PDDON",
-    "price": 80.74,
+    "price": 83.55,
     "address": "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b",
     "addresses": {
      "bsc": "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714",
@@ -785,20 +933,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T16:47:09.029Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 11863975,
+    "liquidity": 10460363,
     "image": "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129",
     "metrics": {
-     "volumeUsd1d": "482202.132",
-     "volumeUsd7d": "3624649.239"
+     "volumeUsd1d": "1559994.933",
+     "volumeUsd7d": "5165176.694"
     },
     "metadata": {},
     "tokenId": "d14344e0-9aba-41f3-a9c6-3ff341d69550",
-    "totalSupply": "146901.92191136468",
-    "circulatingSupply": "146901.92191136468",
+    "totalSupply": "125201.78897160436",
+    "circulatingSupply": "125201.78897160436",
     "isClaimed": false,
     "isPortable": true
    },
@@ -807,83 +955,36 @@
     "name": "PDD Holdings (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "PDDB",
-    "price": 80.74,
+    "price": 83.75,
     "address": "0x95b0409679b55c31772daa2fb4bee7b125b77521",
     "addresses": {
      "bsc": "0x95b0409679b55c31772daa2fb4bee7b125b77521"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1798807,
+    "liquidity": 3701682,
     "image": "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538",
     "metrics": {
-     "volumeUsd1d": "1140743.929",
-     "volumeUsd7d": "3917394.429"
+     "volumeUsd1d": "1751862.976",
+     "volumeUsd7d": "10257694.509"
     },
     "metadata": {},
     "tokenId": "3a626cac-0826-4501-9bf8-7e809b559198",
-    "totalSupply": "22275.45985573",
-    "circulatingSupply": "22275.45985573",
+    "totalSupply": "44198.5525518",
+    "circulatingSupply": "44198.5525518",
     "isClaimed": false,
     "isPortable": true
-   },
-   "ethereum:0x0d7716b86e67306d7aacc1fd7697f3bdf4fcab469239476c6bfd87ae96c144c2": {
-    "key": "ethereum:0x0d7716b86e67306d7aacc1fd7697f3bdf4fcab469239476c6bfd87ae96c144c2",
-    "name": "Uniswap V4 LP EGP/PDDon",
-    "decimals": 18,
-    "symbol": "EGP/PDDON",
-    "price": 9007199254740990,
-    "address": "0x0d7716b86e67306d7aacc1fd7697f3bdf4fcab469239476c6bfd87ae96c144c2",
-    "addresses": {
-     "ethereum": "0x0d7716b86e67306d7aacc1fd7697f3bdf4fcab469239476c6bfd87ae96c144c2"
-    },
-    "platform": "uniswap-v4",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
-    ],
-    "updatedAt": "2026-10-18T20:12:53.959Z",
-    "createdAt": "2026-10-14T06:54:25.777Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
-    ],
-    "liquidity": 20058.75195439043,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "98.52"
-    },
-    "tokenId": "bae6915b-09c1-46eb-9ba1-cfed343afcf1",
-    "reserves": [
-     "20000",
-     "0.334707207836216685"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "bsc:0xc2916c7158e464129e38b45c2e2e58dd054f1f24": {
     "key": "bsc:0xc2916c7158e464129e38b45c2e2e58dd054f1f24",
     "name": "PancakeSwap LP WBNB/PDDon",
     "decimals": 18,
     "symbol": "WBNB/PDDON",
-    "price": 648.4918891949696,
+    "price": 583.6623754256912,
     "address": "0xc2916c7158e464129e38b45c2e2e58dd054f1f24",
     "addresses": {
      "bsc": "0xc2916c7158e464129e38b45c2e2e58dd054f1f24"
@@ -895,19 +996,19 @@
      "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:15.848Z",
+    "updatedAt": "2026-11-21T14:09:30.435Z",
     "createdAt": "2026-10-13T05:37:01.504Z",
     "verifiedAt": null,
     "tokens": [
      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
      "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714"
     ],
-    "liquidity": 10077.023856856616,
+    "liquidity": 9068.501416233645,
     "metrics": {
-     "apy": "0.587",
-     "baseApy": "0.587",
-     "volumeUsd1d": "64.78",
-     "volumeUsd7d": "689.09"
+     "apy": "5.832",
+     "baseApy": "5.832",
+     "volumeUsd1d": "579.541",
+     "volumeUsd7d": "2203.585"
     },
     "metadata": {
      "tags": [
@@ -915,10 +1016,10 @@
      ]
     },
     "tokenId": "079dfd5e-9e40-47ce-9e90-4f3d88ee7efb",
-    "totalSupply": "15.539167142654810401",
+    "totalSupply": "15.537238304284355761",
     "reserves": [
-     "7.151691005630423037",
-     "62.334216914483812335"
+     "8.275154658365729607",
+     "53.968062741825033466"
     ],
     "isClaimed": false,
     "isPortable": true
@@ -940,14 +1041,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:04.757Z",
+    "updatedAt": "2026-11-21T14:08:42.508Z",
     "createdAt": "2026-09-08T16:49:36.094Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714"
     ],
-    "liquidity": 19745.356861804074,
+    "liquidity": 20100.105560353735,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -970,48 +1071,49 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "bsc:0x7d14eaf20448b26fae44405e24703ac8ffeee4d54d89662ae17370208204e66b": {
-    "key": "bsc:0x7d14eaf20448b26fae44405e24703ac8ffeee4d54d89662ae17370208204e66b",
-    "name": "Uniswap V4 LP CRCLB/PDDB",
+   "ethereum:0xc7f4a19ccedb525cd4da9f4da4e4697caeaf5303586fed1580c65ee4f8cc777e": {
+    "key": "ethereum:0xc7f4a19ccedb525cd4da9f4da4e4697caeaf5303586fed1580c65ee4f8cc777e",
+    "name": "Uniswap V4 LP HRC/PDDon",
     "decimals": 18,
-    "symbol": "CRCLB/PDDB",
+    "symbol": "HRC/PDDON",
     "price": 9007199254740990,
-    "address": "0x7d14eaf20448b26fae44405e24703ac8ffeee4d54d89662ae17370208204e66b",
+    "address": "0xc7f4a19ccedb525cd4da9f4da4e4697caeaf5303586fed1580c65ee4f8cc777e",
     "addresses": {
-     "bsc": "0x7d14eaf20448b26fae44405e24703ac8ffeee4d54d89662ae17370208204e66b"
+     "ethereum": "0xc7f4a19ccedb525cd4da9f4da4e4697caeaf5303586fed1580c65ee4f8cc777e"
     },
     "platform": "uniswap-v4",
-    "network": "bsc",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/102173742/large/circle-internet-group-tokenized-bStocks-crclb.png?1781196448",
-     "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538"
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:04.907Z",
-    "createdAt": "2026-10-18T19:00:46.715Z",
+    "updatedAt": "2026-11-21T14:08:28.627Z",
+    "createdAt": "2026-11-07T15:59:37.155Z",
     "verifiedAt": null,
     "tokens": [
-     "0x80f3d493ebce97e343c53d29a137942416b4ffc0",
-     "0x95b0409679b55c31772daa2fb4bee7b125b77521"
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
     ],
-    "liquidity": 27524.86037062901,
+    "liquidity": 50017.69701287868,
     "metrics": {
-     "apy": "3.637",
-     "baseApy": "3.637",
-     "volumeUsd1d": "946.279"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 25,
-     "feePercentage": "0.2899"
+     "tickSpacing": 19883,
+     "feePercentage": "99.4169"
     },
-    "tokenId": "8900cd3e-d4fc-4111-8352-df69df52795a",
+    "tokenId": "93c2d9d8-3c44-491e-b85a-45691188501b",
     "reserves": [
-     "182.302909571383442358",
-     "158.536714943626044199"
+     "49999.999999999999999906",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1033,14 +1135,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:13:20.873Z",
+    "updatedAt": "2026-11-21T14:09:34.454Z",
     "createdAt": "2026-09-08T14:03:10.521Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xf3e82ea164cb344b2b11bad4c24b0ea4f7ba4714"
     ],
-    "liquidity": 10924.927680495302,
+    "liquidity": 10936.929853239508,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1080,19 +1182,19 @@
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
      "https://coin-images.coingecko.com/coins/images/71455/large/pddon_160x160.png?1767890129"
     ],
-    "updatedAt": "2026-10-18T20:12:55.454Z",
+    "updatedAt": "2026-11-21T14:08:28.629Z",
     "createdAt": "2026-01-27T05:16:19.269Z",
     "verifiedAt": null,
     "tokens": [
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
      "0xcc40965d3621362c3ee1dd946ba98d6a708ea86b"
     ],
-    "liquidity": 566.3298170619622,
+    "liquidity": 575.8322557660857,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "3.717"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1106,53 +1208,6 @@
     "reserves": [
      "321.57008",
      "3.032176631736960383"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "base:0xcaa69f5d571cc333fe3fe88d69c9833bf35ebac96e87fec63f36542e06214be6": {
-    "key": "base:0xcaa69f5d571cc333fe3fe88d69c9833bf35ebac96e87fec63f36542e06214be6",
-    "name": "Uniswap V4 LP USDC/PDDc",
-    "decimals": 18,
-    "symbol": "USDC/PDDC",
-    "price": 9007199254740990,
-    "address": "0xcaa69f5d571cc333fe3fe88d69c9833bf35ebac96e87fec63f36542e06214be6",
-    "addresses": {
-     "base": "0xcaa69f5d571cc333fe3fe88d69c9833bf35ebac96e87fec63f36542e06214be6"
-    },
-    "platform": "uniswap-v4",
-    "network": "base",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
-     "https://coin-images.coingecko.com/coins/images/102179413/large/PDDc-icon-200.png?1791736627"
-    ],
-    "updatedAt": "2026-10-18T20:12:57.006Z",
-    "createdAt": "2026-10-14T07:00:25.335Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-     "0xb200000000000000000000c8a7223510467d8563"
-    ],
-    "liquidity": 641.978215940799,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "26.054"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1000,
-     "feePercentage": "10.09"
-    },
-    "tokenId": "479d9f1f-d0af-4842-a008-1881d6d10e4c",
-    "reserves": [
-     "157.814621",
-     "5.75596956"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1174,14 +1229,14 @@
      "https://coin-images.coingecko.com/coins/images/102178980/large/42383.jpg?1790820538",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:13:23.208Z",
+    "updatedAt": "2026-11-21T14:10:24.896Z",
     "createdAt": "2026-10-01T03:12:20.932Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0x95b0409679b55c31772daa2fb4bee7b125b77521"
     ],
-    "liquidity": 655.1534125821594,
+    "liquidity": 667.910442657901,
     "metrics": {
      "apy": "0",
      "baseApy": "0",

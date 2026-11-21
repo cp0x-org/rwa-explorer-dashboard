@@ -5,8 +5,8 @@
  "name": "Super Micro Computer",
  "isin": "US86800U3023",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:17:49Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:13:23Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,45 +17,45 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 30.74535232886723,
-     "tokenized_market_cap": 3655235.113137084,
-     "tokenized_volume_24h": 2424337.62529298,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 22.239574611947223,
+     "tokenized_market_cap": 3375215.4900917755,
+     "tokenized_volume_24h": 2434322.16373003,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 127,
    "asset_type": "stock",
-   "rwa_rank": 584,
+   "rwa_rank": 694,
    "has_tokens": true,
-   "average_tokenized_price": 30.74535232886723,
-   "tokenized_market_cap": 3655235.113137084,
-   "tokenized_volume_24h": 2424337.62529298,
-   "last_updated": "2026-10-18T20:13:46.449Z",
+   "average_tokenized_price": 22.239574611947223,
+   "tokenized_market_cap": 3375215.4900917755,
+   "tokenized_volume_24h": 2434322.16373003,
+   "last_updated": "2026-11-21T14:10:11.208Z",
    "tokens": [
     {
      "symbol": "SMCIon",
      "name": "Super Micro Computer Tokenized Stock (Ondo)",
-     "price": 30.777513637661453,
+     "price": 22.269310246274404,
      "crypto_id": 37996,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 1484287.8,
-     "volume_24h": 1669242.75915375
+     "market_cap": 1471946.0047664193,
+     "volume_24h": 855234.111571856
     },
     {
      "symbol": "SMCIx",
      "name": "Super Micro Computer, Inc. tokenized stock (xStock)",
-     "price": 30.73229867354808,
+     "price": 22.05,
      "crypto_id": 40143,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
-     "market_cap": 746734.68,
-     "volume_24h": 0
+     "market_cap": 681350.5040488952,
+     "volume_24h": 5378.3071839
     },
     {
      "symbol": "SMCI",
      "name": "Super Micro Computer Inc (Derivatives)",
-     "price": 30.722934533330346,
+     "price": 22.26606197821841,
      "crypto_id": 40549,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -65,37 +65,37 @@
     {
      "symbol": "rSMCI",
      "name": "Super Micro Tokenized Stock (Reality)",
-     "price": 31.50864742073385,
+     "price": 22.144648767476035,
      "crypto_id": 40599,
      "issuer_id": "6a43600c282e7240b76c8bbb",
      "issuer_name": "Reality",
-     "market_cap": 141527.79,
-     "volume_24h": 0
+     "market_cap": 290185.37874536705,
+     "volume_24h": 404389.02780848544
     },
     {
      "symbol": "SMCI",
      "name": "Super Micro Computer Tokenized Stock (Robinhood)",
-     "price": 31.36446547496776,
+     "price": 22.167878099648508,
      "crypto_id": 40774,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 13917.28,
-     "volume_24h": 0
+     "market_cap": 11530.35444892229,
+     "volume_24h": 378.73926402898275
     },
     {
      "symbol": "SMCIB",
      "name": "Super Micro Computer Tokenized bStocks",
-     "price": 30.6823267635282,
+     "price": 22.25155363759615,
      "crypto_id": 40966,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 1268854.18,
-     "volume_24h": 747792.7882856
+     "market_cap": 920203.2480822772,
+     "volume_24h": 1168941.9779017537
     },
     {
      "symbol": "wSMCIx",
      "name": "Wrapped Super Micro Computer, Inc. Tokenized Stock (xStock)",
-     "price": 33.31276918749304,
+     "price": null,
      "crypto_id": 41508,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
@@ -413,31 +413,89 @@
    "robinhood:0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
   ],
   "exact": {
+   "robinhood:0xc01aa1fecec0605b13bc84874ff7256c0f5f562a": {
+    "key": "robinhood:0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "name": "Super Micro Computer • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SMCI",
+    "price": 22.235,
+    "address": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "addresses": {
+     "robinhood": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc01aa1fecec0605b13bc84874ff7256c0f5f562a.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:34.549Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "liquidity": 11565.2670959,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1051.822"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000000cfe41021541408ab92f19e6af2fa729",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "a1d07aeb-e76d-4718-aa46-eaa570fc9563",
+    "totalSupply": "520.13794",
+    "isClaimed": false,
+    "isPortable": true
+   },
    "bsc:0x387dea1d2772d716d081a29116f3effa0ffe1f36": {
     "key": "bsc:0x387dea1d2772d716d081a29116f3effa0ffe1f36",
     "name": "Super Micro Computer (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCIB",
-    "price": 30.73,
+    "price": 22.28,
     "address": "0x387dea1d2772d716d081a29116f3effa0ffe1f36",
     "addresses": {
      "bsc": "0x387dea1d2772d716d081a29116f3effa0ffe1f36"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-08-07T07:02:27.020Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 590139,
+    "liquidity": 1092314,
     "metrics": {
-     "volumeUsd1d": "30349.782",
-     "volumeUsd7d": "458353.832"
+     "volumeUsd1d": "91377.695",
+     "volumeUsd7d": "671145.699"
     },
     "metadata": {},
     "tokenId": "4154873b-28da-49da-b2ba-38bf557f8bce",
-    "totalSupply": "19200.98638726",
-    "circulatingSupply": "19200.98638726",
+    "totalSupply": "49025.87323194",
+    "circulatingSupply": "49025.87323194",
     "isClaimed": false,
     "isPortable": true
    },
@@ -446,7 +504,7 @@
     "name": "Super Micro Computer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCION",
-    "price": 30.88,
+    "price": 22.28,
     "address": "0xc142ba8ccd36d80c3a001342fb83e4c3d218a873",
     "addresses": {
      "ethereum": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
@@ -454,20 +512,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1488514,
+    "liquidity": 1472717,
     "image": "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
     "metrics": {
-     "volumeUsd1d": "484521.741",
-     "volumeUsd7d": "3584193.566"
+     "volumeUsd1d": "472764.435",
+     "volumeUsd7d": "3511852.445"
     },
     "metadata": {},
     "tokenId": "9842cb8b-3a62-4a13-b87a-8be37ed3b81a",
-    "totalSupply": "48226.37117250112",
-    "circulatingSupply": "48226.37117250112",
+    "totalSupply": "66097.5121585848",
+    "circulatingSupply": "66097.5121585848",
     "isClaimed": false,
     "isPortable": true
    },
@@ -476,7 +534,7 @@
     "name": "Super Micro Computer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCION",
-    "price": 30.88,
+    "price": 22.28,
     "address": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
     "addresses": {
      "ethereum": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
@@ -484,20 +542,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1488514,
+    "liquidity": 1472717,
     "image": "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
     "metrics": {
-     "volumeUsd1d": "481906.56",
-     "volumeUsd7d": "3585961.983"
+     "volumeUsd1d": "472435.934",
+     "volumeUsd7d": "3506285.249"
     },
     "metadata": {},
     "tokenId": "9842cb8b-3a62-4a13-b87a-8be37ed3b81a",
-    "totalSupply": "48226.37117250112",
-    "circulatingSupply": "48226.37117250112",
+    "totalSupply": "66097.5121585848",
+    "circulatingSupply": "66097.5121585848",
     "isClaimed": false,
     "isPortable": true
    },
@@ -506,70 +564,142 @@
     "name": "Super Micro Computer rStock",
     "decimals": 18,
     "symbol": "RSMCI",
-    "price": 31.52,
+    "price": 22.15,
     "address": "0xa81bb1f785d2fa02284bde4d01a057def801cdf8",
     "addresses": {
      "arbitrum": "0xa81bb1f785d2fa02284bde4d01a057def801cdf8"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 141574,
+    "liquidity": 290263,
     "image": "https://coin-images.coingecko.com/coins/images/102177019/large/c99e9147dd34b6410f45c3578082763b.png?1789116573",
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "198369.779"
+     "volumeUsd1d": "404499.589",
+     "volumeUsd7d": "4373830.402"
     },
     "metadata": {},
     "tokenId": "ff28b6eb-3c9b-4ddd-a54f-190b1f04f67f",
-    "totalSupply": "4491.712658062",
-    "circulatingSupply": "4491.712658062",
+    "totalSupply": "13104.085858064998",
+    "circulatingSupply": "13104.085858064998",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "SMCI": {
-    "total_items": 13,
+    "total_items": 22,
     "pages": 1,
-    "received": 13,
+    "received": 22,
     "complete": true
    }
   },
   "records": {
-   "arbitrum:0xfd38813a547b30155914383919cebe83a98435fa": {
-    "key": "arbitrum:0xfd38813a547b30155914383919cebe83a98435fa",
-    "name": "Super Micro Computer aStock",
+   "arbitrum:0xcb4892b8af888cf64310c77a62e1a75e403d65021df235fee842980b7ae28f47": {
+    "key": "arbitrum:0xcb4892b8af888cf64310c77a62e1a75e403d65021df235fee842980b7ae28f47",
+    "name": "Uniswap V4 LP wUSDC/rSMCI",
     "decimals": 18,
-    "symbol": "ASMCI",
-    "price": 31.53,
-    "address": "0xfd38813a547b30155914383919cebe83a98435fa",
+    "symbol": "WUSDC/RSMCI",
+    "price": 9007199254740990,
+    "address": "0xcb4892b8af888cf64310c77a62e1a75e403d65021df235fee842980b7ae28f47",
     "addresses": {
-     "base": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "arbitrum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "bsc": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "ethereum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "robinhood": "0xfd38813a547b30155914383919cebe83a98435fa"
+     "arbitrum": "0xcb4892b8af888cf64310c77a62e1a75e403d65021df235fee842980b7ae28f47"
     },
-    "platform": "basic",
+    "platform": "uniswap-v4",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-08-27T09:26:37.806Z",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177019/large/c99e9147dd34b6410f45c3578082763b.png?1789116573"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.267Z",
+    "createdAt": "2026-11-14T12:28:24.564Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 535.73,
-    "image": "https://coin-images.coingecko.com/coins/images/102175722/large/SMCI.png?1787292390",
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa81bb1f785d2fa02284bde4d01a057def801cdf8"
+    ],
+    "liquidity": 3568.7940834544725,
     "metrics": {
+     "apy": "0",
+     "baseApy": "0",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "2244873a-4c38-4c9b-9a87-bd86cab400d7",
-    "totalSupply": "16.993934788",
-    "circulatingSupply": "16.993934788",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "764aef95-e3a4-4c9e-b9ad-8398bfad29f9",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xc01aa1fecec0605b13bc84874ff7256c0f5f562a": {
+    "key": "robinhood:0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "name": "Super Micro Computer • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SMCI",
+    "price": 22.235,
+    "address": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "addresses": {
+     "robinhood": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xc01aa1fecec0605b13bc84874ff7256c0f5f562a.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:34.549Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a",
+    "liquidity": 11565.2670959,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "1051.822"
+    },
+    "metadata": {
+     "uid": "0x000000000000000000000000000000000cfe41021541408ab92f19e6af2fa729",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "a1d07aeb-e76d-4718-aa46-eaa570fc9563",
+    "totalSupply": "520.13794",
     "isClaimed": false,
     "isPortable": true
    },
@@ -590,14 +720,14 @@
      "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:01.348Z",
+    "updatedAt": "2026-11-21T14:10:55.350Z",
     "createdAt": "2026-09-28T10:37:32.204Z",
     "verifiedAt": null,
     "tokens": [
      "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -620,71 +750,237 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "robinhood:0xfd38813a547b30155914383919cebe83a98435fa": {
-    "key": "robinhood:0xfd38813a547b30155914383919cebe83a98435fa",
-    "name": "Super Micro Computer aStock",
+   "robinhood:0x038314bb011353f98165771adb456b32d37109a71f297a5f22e1516fd5d8b783": {
+    "key": "robinhood:0x038314bb011353f98165771adb456b32d37109a71f297a5f22e1516fd5d8b783",
+    "name": "Uniswap V4 LP USDG/SMCI",
     "decimals": 18,
-    "symbol": "ASMCI",
-    "price": 31.53,
-    "address": "0xfd38813a547b30155914383919cebe83a98435fa",
+    "symbol": "USDG/SMCI",
+    "price": 9007199254740990,
+    "address": "0x038314bb011353f98165771adb456b32d37109a71f297a5f22e1516fd5d8b783",
     "addresses": {
-     "base": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "arbitrum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "bsc": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "ethereum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "robinhood": "0xfd38813a547b30155914383919cebe83a98435fa"
+     "robinhood": "0x038314bb011353f98165771adb456b32d37109a71f297a5f22e1516fd5d8b783"
     },
-    "platform": "basic",
+    "platform": "uniswap-v4",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-08T09:29:14.254Z",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.959Z",
+    "createdAt": "2026-11-04T15:56:02.498Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 535.73,
-    "image": "https://coin-images.coingecko.com/coins/images/102175722/large/SMCI.png?1787292390",
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    ],
+    "liquidity": 50011.66075863216,
     "metrics": {
+     "apy": "0",
+     "baseApy": "0",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "2244873a-4c38-4c9b-9a87-bd86cab400d7",
-    "totalSupply": "16.993934788",
-    "circulatingSupply": "16.993934788",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9983,
+     "feePercentage": "99.83"
+    },
+    "tokenId": "a71c5b9a-393d-411c-9ab1-78bcfec3b6c6",
+    "reserves": [
+     "49999.999999999999999998",
+     "0.71576797136342467"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
    },
-   "bsc:0xfd38813a547b30155914383919cebe83a98435fa": {
-    "key": "bsc:0xfd38813a547b30155914383919cebe83a98435fa",
-    "name": "Super Micro Computer aStock",
+   "ethereum:0x0d2f87ac3015cb5e55ee78edea31ee3aec718dfce25e9178f694333750e64fce": {
+    "key": "ethereum:0x0d2f87ac3015cb5e55ee78edea31ee3aec718dfce25e9178f694333750e64fce",
+    "name": "Uniswap V4 LP SMCIon/HRC",
     "decimals": 18,
-    "symbol": "ASMCI",
-    "price": 31.53,
-    "address": "0xfd38813a547b30155914383919cebe83a98435fa",
+    "symbol": "SMCION/HRC",
+    "price": 9007199254740990,
+    "address": "0x0d2f87ac3015cb5e55ee78edea31ee3aec718dfce25e9178f694333750e64fce",
     "addresses": {
-     "base": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "arbitrum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "bsc": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "ethereum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "robinhood": "0xfd38813a547b30155914383919cebe83a98435fa"
+     "ethereum": "0x0d2f87ac3015cb5e55ee78edea31ee3aec718dfce25e9178f694333750e64fce"
     },
-    "platform": "basic",
-    "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-09T11:45:30.700Z",
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:10:56.121Z",
+    "createdAt": "2026-11-07T15:59:32.083Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 535.73,
-    "image": "https://coin-images.coingecko.com/coins/images/102175722/large/SMCI.png?1787292390",
+    "tokens": [
+     "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
+     "0x63db3eca126303755899a3436e34b174a1ef377b"
+    ],
+    "liquidity": 13504.782177916304,
     "metrics": {
+     "apy": "0",
+     "baseApy": "0",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "2244873a-4c38-4c9b-9a87-bd86cab400d7",
-    "totalSupply": "16.993934788",
-    "circulatingSupply": "16.993934788",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19686,
+     "feePercentage": "98.4303"
+    },
+    "tokenId": "911c4a54-8664-49e7-83e9-4a700cd394c7",
+    "reserves": [
+     "0.000178594310213099",
+     "13499.999999999999999983"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
+   },
+   "ethereum:0x88612bff293efb45bc54520d597f6e12ed7207a626877553c30007a257e79d7b": {
+    "key": "ethereum:0x88612bff293efb45bc54520d597f6e12ed7207a626877553c30007a257e79d7b",
+    "name": "Uniswap V4 LP SMCIon/EE",
+    "decimals": 18,
+    "symbol": "SMCION/EE",
+    "price": 9007199254740990,
+    "address": "0x88612bff293efb45bc54520d597f6e12ed7207a626877553c30007a257e79d7b",
+    "addresses": {
+     "ethereum": "0x88612bff293efb45bc54520d597f6e12ed7207a626877553c30007a257e79d7b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:11:23.538Z",
+    "createdAt": "2026-11-07T15:59:34.864Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a"
+    ],
+    "liquidity": 50020.0581153035,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9993,
+     "feePercentage": "99.9283"
+    },
+    "tokenId": "f774ff9b-8b2a-4f4b-8d3f-4cd0c10b2ff6",
+    "reserves": [
+     "0.711654955588291761",
+     "49999.999999999999999964"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8be6359df3df572ec846dd656464a493f1360007d660cf36cdac4afada48da78": {
+    "key": "robinhood:0x8be6359df3df572ec846dd656464a493f1360007d660cf36cdac4afada48da78",
+    "name": "Uniswap V4 LP MJDQ/SMCI",
+    "decimals": 18,
+    "symbol": "MJDQ/SMCI",
+    "price": 9007199254740990,
+    "address": "0x8be6359df3df572ec846dd656464a493f1360007d660cf36cdac4afada48da78",
+    "addresses": {
+     "robinhood": "0x8be6359df3df572ec846dd656464a493f1360007d660cf36cdac4afada48da78"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.260Z",
+    "createdAt": "2026-11-11T13:21:27.727Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    ],
+    "liquidity": 9999.141340538237,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19962,
+     "feePercentage": "99.8109"
+    },
+    "tokenId": "1b928f61-dcd3-4963-8fb9-bd3a5c864668",
+    "reserves": [
+     "9999.999999998269999969",
+     "0.00350437050229762"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xb8e34c7cf18ab073cc4d86b4f9dc307b293373dade5c0bb31e72dc6a1be2dade": {
+    "key": "robinhood:0xb8e34c7cf18ab073cc4d86b4f9dc307b293373dade5c0bb31e72dc6a1be2dade",
+    "name": "Uniswap V4 LP OLQD/SMCI",
+    "decimals": 18,
+    "symbol": "OLQD/SMCI",
+    "price": 9007199254740990,
+    "address": "0xb8e34c7cf18ab073cc4d86b4f9dc307b293373dade5c0bb31e72dc6a1be2dade",
+    "addresses": {
+     "robinhood": "0xb8e34c7cf18ab073cc4d86b4f9dc307b293373dade5c0bb31e72dc6a1be2dade"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.767Z",
+    "createdAt": "2026-11-06T15:59:39.907Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    ],
+    "liquidity": 9997.762559208408,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19699,
+     "feePercentage": "98.4966"
+    },
+    "tokenId": "f7ef8635-0852-4e79-8189-fa360dd0196c",
+    "reserves": [
+     "9999.999999998272010606",
+     "0.003610108303249"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0xf2f1f2eaa8c3109fa63434855d30d1853e92dc23": {
     "key": "bsc:0xf2f1f2eaa8c3109fa63434855d30d1853e92dc23",
@@ -702,19 +998,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/56052/large/NASF-logo.png?1748160573"
     ],
-    "updatedAt": "2026-10-18T20:15:55.128Z",
+    "updatedAt": "2026-11-21T14:10:33.494Z",
     "createdAt": "2026-09-10T20:16:38.872Z",
     "verifiedAt": null,
     "tokens": [
      "0x387dea1d2772d716d081a29116f3effa0ffe1f36",
      "0x7891d5f6c0eba5485d2fca5cc83b4c89a770f9a6"
     ],
-    "liquidity": 693.5336226765802,
+    "liquidity": 588.6594215060479,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "103.085"
+     "apy": "0.046",
+     "baseApy": "0.046",
+     "volumeUsd1d": "0.248",
+     "volumeUsd7d": "65.406"
     },
     "metadata": {
      "tags": [
@@ -724,21 +1020,21 @@
     },
     "tokenId": "547fdf13-451f-450b-bbc7-d359b97adf18",
     "reserves": [
-     "2.237675599578736475",
-     "196911.699084330681872397"
+     "4.843325210403574587",
+     "174583.971259748284423398"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0x5d484cf2de25b77051aab8f8af90167a44d23ce1561e2cdddc596ecdb8855ca0": {
-    "key": "ethereum:0x5d484cf2de25b77051aab8f8af90167a44d23ce1561e2cdddc596ecdb8855ca0",
-    "name": "Uniswap V4 LP SMCIon/EGP",
+   "ethereum:0xdb111590a1809c6939b382a7c107ec1a063a45efd248251554a4a5cd5c8e0f9c": {
+    "key": "ethereum:0xdb111590a1809c6939b382a7c107ec1a063a45efd248251554a4a5cd5c8e0f9c",
+    "name": "Uniswap V4 LP SMCIon/wUSDC",
     "decimals": 18,
-    "symbol": "SMCION/EGP",
+    "symbol": "SMCION/WUSDC",
     "price": 9007199254740990,
-    "address": "0x5d484cf2de25b77051aab8f8af90167a44d23ce1561e2cdddc596ecdb8855ca0",
+    "address": "0xdb111590a1809c6939b382a7c107ec1a063a45efd248251554a4a5cd5c8e0f9c",
     "addresses": {
-     "ethereum": "0x5d484cf2de25b77051aab8f8af90167a44d23ce1561e2cdddc596ecdb8855ca0"
+     "ethereum": "0xdb111590a1809c6939b382a7c107ec1a063a45efd248251554a4a5cd5c8e0f9c"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
@@ -747,14 +1043,14 @@
      "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:03.863Z",
-    "createdAt": "2026-10-14T06:54:29.589Z",
+    "updatedAt": "2026-11-21T14:12:04.204Z",
+    "createdAt": "2026-11-17T12:33:22.808Z",
     "verifiedAt": null,
     "tokens": [
      "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
     ],
-    "liquidity": 20066.722863262217,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -766,47 +1062,98 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "97.04"
+     "tickSpacing": 60,
+     "feePercentage": "50"
     },
-    "tokenId": "51bbfeff-8ded-4ddb-81cc-7e489f5bf9ed",
+    "tokenId": "43a7e843-3157-430b-87c6-7035f5573ce0",
     "reserves": [
-     "0.686646779234877161",
-     "19999.999999999999999986"
+     "0",
+     "10000"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "base:0xfd38813a547b30155914383919cebe83a98435fa": {
-    "key": "base:0xfd38813a547b30155914383919cebe83a98435fa",
-    "name": "Super Micro Computer aStock",
+   "robinhood:0x9a1a68e0ad9480a3e33c0b838465b76f62a85225d76728e74306259e2b3d7289": {
+    "key": "robinhood:0x9a1a68e0ad9480a3e33c0b838465b76f62a85225d76728e74306259e2b3d7289",
+    "name": "Uniswap V4 LP wUSDG/SMCI",
     "decimals": 18,
-    "symbol": "ASMCI",
-    "price": 31.53,
-    "address": "0xfd38813a547b30155914383919cebe83a98435fa",
+    "symbol": "WUSDG/SMCI",
+    "price": 9007199254740990,
+    "address": "0x9a1a68e0ad9480a3e33c0b838465b76f62a85225d76728e74306259e2b3d7289",
     "addresses": {
-     "base": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "arbitrum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "bsc": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "ethereum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "robinhood": "0xfd38813a547b30155914383919cebe83a98435fa"
+     "robinhood": "0x9a1a68e0ad9480a3e33c0b838465b76f62a85225d76728e74306259e2b3d7289"
     },
-    "platform": "basic",
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.645Z",
+    "createdAt": "2026-11-17T12:35:23.800Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    ],
+    "liquidity": 9998.16190333918,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "ee8c21ba-7738-4a47-ad0f-143d809aad9e",
+    "reserves": [
+     "9999.999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0x8518931497d2a8f07bc607d1d3295b398d065a65": {
+    "key": "base:0x8518931497d2a8f07bc607d1d3295b398d065a65",
+    "name": "Super Micro Computer, Inc. ST0x",
+    "decimals": 18,
+    "symbol": "TSMCI",
+    "price": 21.65,
+    "address": "0x8518931497d2a8f07bc607d1d3295b398d065a65",
+    "addresses": {
+     "base": "0x8518931497d2a8f07bc607d1d3295b398d065a65"
+    },
+    "platform": "st0x",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-08-27T09:26:37.806Z",
+    "images": [
+     "https://images.portals.fi/logos/st0x.png",
+     "https://images.portals.fi/logos/st0x.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:07.670Z",
+    "createdAt": "2026-11-11T13:20:18.373Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 535.73,
-    "image": "https://coin-images.coingecko.com/coins/images/102175722/large/SMCI.png?1787292390",
+    "poolAddress": "0x8518931497d2a8f07bc607d1d3295b398d065a65",
+    "liquidity": 866,
     "metrics": {
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "2244873a-4c38-4c9b-9a87-bd86cab400d7",
-    "totalSupply": "16.993934788",
-    "circulatingSupply": "16.993934788",
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "ticker": "SMCI",
+     "interface": "ERC20"
+    },
+    "tokenId": "ec443c9e-bd04-4187-8adf-0d7f986dd23c",
+    "totalSupply": "40",
     "isClaimed": false,
     "isPortable": true
    },
@@ -815,26 +1162,26 @@
     "name": "Super Micro Computer (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCIB",
-    "price": 30.71,
+    "price": 22.28,
     "address": "0x387dea1d2772d716d081a29116f3effa0ffe1f36",
     "addresses": {
      "bsc": "0x387dea1d2772d716d081a29116f3effa0ffe1f36"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-08-07T07:02:27.020Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 589729,
+    "liquidity": 1092314,
     "metrics": {
-     "volumeUsd1d": "30349.782",
-     "volumeUsd7d": "458353.832"
+     "volumeUsd1d": "91377.695",
+     "volumeUsd7d": "671145.699"
     },
     "metadata": {},
     "tokenId": "4154873b-28da-49da-b2ba-38bf557f8bce",
-    "totalSupply": "19200.98638726",
-    "circulatingSupply": "19200.98638726",
+    "totalSupply": "49025.87323194",
+    "circulatingSupply": "49025.87323194",
     "isClaimed": false,
     "isPortable": true
    },
@@ -843,7 +1190,7 @@
     "name": "Super Micro Computer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCION",
-    "price": 30.88,
+    "price": 22.28,
     "address": "0xc142ba8ccd36d80c3a001342fb83e4c3d218a873",
     "addresses": {
      "ethereum": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
@@ -851,80 +1198,48 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1487478,
+    "liquidity": 1472717,
     "image": "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
     "metrics": {
-     "volumeUsd1d": "484521.741",
-     "volumeUsd7d": "3584193.566"
+     "volumeUsd1d": "472764.435",
+     "volumeUsd7d": "3511852.445"
     },
     "metadata": {},
     "tokenId": "9842cb8b-3a62-4a13-b87a-8be37ed3b81a",
-    "totalSupply": "48226.37117250112",
-    "circulatingSupply": "48226.37117250112",
+    "totalSupply": "66097.5121585848",
+    "circulatingSupply": "66097.5121585848",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0xfd38813a547b30155914383919cebe83a98435fa": {
-    "key": "ethereum:0xfd38813a547b30155914383919cebe83a98435fa",
-    "name": "Super Micro Computer aStock",
+   "robinhood:0xcbc5164c76a22d18a8195ee1da318ae08a214f6b5ccf11e556f0289211a51cee": {
+    "key": "robinhood:0xcbc5164c76a22d18a8195ee1da318ae08a214f6b5ccf11e556f0289211a51cee",
+    "name": "Uniswap V4 LP USDG/SMCI",
     "decimals": 18,
-    "symbol": "ASMCI",
-    "price": 31.53,
-    "address": "0xfd38813a547b30155914383919cebe83a98435fa",
-    "addresses": {
-     "base": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "arbitrum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "bsc": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "ethereum": "0xfd38813a547b30155914383919cebe83a98435fa",
-     "robinhood": "0xfd38813a547b30155914383919cebe83a98435fa"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-08-27T09:26:37.806Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 535.73,
-    "image": "https://coin-images.coingecko.com/coins/images/102175722/large/SMCI.png?1787292390",
-    "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {},
-    "tokenId": "2244873a-4c38-4c9b-9a87-bd86cab400d7",
-    "totalSupply": "16.993934788",
-    "circulatingSupply": "16.993934788",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "bsc:0x4e681ed0dea91ffc7eaf7bc14af28448a118e3786f2641a0a01ccbad3b38e9c2": {
-    "key": "bsc:0x4e681ed0dea91ffc7eaf7bc14af28448a118e3786f2641a0a01ccbad3b38e9c2",
-    "name": "Uniswap V4 LP SMCIB/USDT",
-    "decimals": 18,
-    "symbol": "SMCIB/USDT",
+    "symbol": "USDG/SMCI",
     "price": 9007199254740990,
-    "address": "0x4e681ed0dea91ffc7eaf7bc14af28448a118e3786f2641a0a01ccbad3b38e9c2",
+    "address": "0xcbc5164c76a22d18a8195ee1da318ae08a214f6b5ccf11e556f0289211a51cee",
     "addresses": {
-     "bsc": "0x4e681ed0dea91ffc7eaf7bc14af28448a118e3786f2641a0a01ccbad3b38e9c2"
+     "robinhood": "0xcbc5164c76a22d18a8195ee1da318ae08a214f6b5ccf11e556f0289211a51cee"
     },
     "platform": "uniswap-v4",
-    "network": "bsc",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174158/large/0xc01aa1fecec0605b13bc84874ff7256c0f5f562a.png?1782444692"
     ],
-    "updatedAt": "2026-10-18T20:15:26.671Z",
-    "createdAt": "2026-08-14T12:55:34.510Z",
+    "updatedAt": "2026-11-21T14:12:39.253Z",
+    "createdAt": "2026-09-16T18:25:24.549Z",
     "verifiedAt": null,
     "tokens": [
-     "0x387dea1d2772d716d081a29116f3effa0ffe1f36",
-     "0x55d398326f99059ff775485246999027b3197955"
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
     ],
-    "liquidity": 512.7108944122941,
+    "liquidity": 1462.4481476538258,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -936,13 +1251,60 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 8000,
-     "feePercentage": "80.02"
+     "tickSpacing": 480,
+     "feePercentage": "4.8952"
     },
-    "tokenId": "9d96ed36-c37e-4673-a241-e01b519ee9e0",
+    "tokenId": "d6c0226b-4bfc-4b00-838d-f8a87a12237d",
     "reserves": [
-     "5.812786923318974504",
-     "334.487198013063652628"
+     "32.881018",
+     "64.293552041998007267"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x32fd59bb11cd782164835dc43ed79fa1f81d1d96c320a37c540b9aaedfdfc85f": {
+    "key": "arbitrum:0x32fd59bb11cd782164835dc43ed79fa1f81d1d96c320a37c540b9aaedfdfc85f",
+    "name": "Uniswap V4 LP wUSDC/rSMCI",
+    "decimals": 18,
+    "symbol": "WUSDC/RSMCI",
+    "price": 9007199254740990,
+    "address": "0x32fd59bb11cd782164835dc43ed79fa1f81d1d96c320a37c540b9aaedfdfc85f",
+    "addresses": {
+     "arbitrum": "0x32fd59bb11cd782164835dc43ed79fa1f81d1d96c320a37c540b9aaedfdfc85f"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177019/large/c99e9147dd34b6410f45c3578082763b.png?1789116573"
+    ],
+    "updatedAt": "2026-11-21T14:09:39.314Z",
+    "createdAt": "2026-11-14T12:28:23.953Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa81bb1f785d2fa02284bde4d01a057def801cdf8"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "d4d2c2fb-4210-4747-b120-cab7d0dff8a3",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -952,7 +1314,7 @@
     "name": "Super Micro Computer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SMCION",
-    "price": 30.88,
+    "price": 22.28,
     "address": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
     "addresses": {
      "ethereum": "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
@@ -960,49 +1322,233 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1487478,
+    "liquidity": 1472717,
     "image": "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
     "metrics": {
-     "volumeUsd1d": "481906.56",
-     "volumeUsd7d": "3585961.983"
+     "volumeUsd1d": "472435.934",
+     "volumeUsd7d": "3506285.249"
     },
     "metadata": {},
     "tokenId": "9842cb8b-3a62-4a13-b87a-8be37ed3b81a",
-    "totalSupply": "48226.37117250112",
-    "circulatingSupply": "48226.37117250112",
+    "totalSupply": "66097.5121585848",
+    "circulatingSupply": "66097.5121585848",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x61b40063b77caa6410a4f7ae8dbb41a4c013e3c525df04e6fce19f59be7d660d": {
+    "key": "robinhood:0x61b40063b77caa6410a4f7ae8dbb41a4c013e3c525df04e6fce19f59be7d660d",
+    "name": "Uniswap V4 LP wUSDG/SMCI",
+    "decimals": 18,
+    "symbol": "WUSDG/SMCI",
+    "price": 9007199254740990,
+    "address": "0x61b40063b77caa6410a4f7ae8dbb41a4c013e3c525df04e6fce19f59be7d660d",
+    "addresses": {
+     "robinhood": "0x61b40063b77caa6410a4f7ae8dbb41a4c013e3c525df04e6fce19f59be7d660d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:39.157Z",
+    "createdAt": "2026-11-06T15:59:39.011Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xc01aa1fecec0605b13bc84874ff7256c0f5f562a"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "05c967a1-bcc3-454a-b32b-b28381cc3961",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "base:0xa759fabbd866e6db8bf76613c35825dc2e380bf0": {
+    "key": "base:0xa759fabbd866e6db8bf76613c35825dc2e380bf0",
+    "name": "Wrapped Super Micro Computer, Inc. ST0x",
+    "decimals": 18,
+    "symbol": "WTSMCI",
+    "price": 21.65,
+    "address": "0xa759fabbd866e6db8bf76613c35825dc2e380bf0",
+    "addresses": {
+     "base": "0xa759fabbd866e6db8bf76613c35825dc2e380bf0"
+    },
+    "platform": "st0x",
+    "network": "base",
+    "images": [
+     "https://images.portals.fi/logos/st0x.png",
+     "https://images.portals.fi/logos/st0x.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:07.670Z",
+    "createdAt": "2026-11-11T13:20:18.373Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x8518931497d2a8f07bc607d1d3295b398d065a65"
+    ],
+    "poolAddress": "0xa759fabbd866e6db8bf76613c35825dc2e380bf0",
+    "liquidity": 866,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "ticker": "SMCI",
+     "interface": "ERC4626"
+    },
+    "tokenId": "dc02623b-e259-4c61-97df-c74a36eaee57",
+    "totalSupply": "40",
+    "reserves": [
+     "40"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x60e78e5044f32bd77e66eb6fe630f2de42822f841311781bac0e3b009af6b516": {
+    "key": "ethereum:0x60e78e5044f32bd77e66eb6fe630f2de42822f841311781bac0e3b009af6b516",
+    "name": "Uniswap V4 LP SMCIon/wUSDC",
+    "decimals": 18,
+    "symbol": "SMCION/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x60e78e5044f32bd77e66eb6fe630f2de42822f841311781bac0e3b009af6b516",
+    "addresses": {
+     "ethereum": "0x60e78e5044f32bd77e66eb6fe630f2de42822f841311781bac0e3b009af6b516"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68559/large/smcion_160x160.png?1756105887",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:24.687Z",
+    "createdAt": "2026-11-07T15:59:33.582Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x2ca12a3f9635fd69c21580def14f25c210ca9612",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "a55a69b9-15f1-420f-8f31-fecf9eec3d2d",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x0391384f7a4b558155a4b69d67e57763aa397cf34a23edaf0a0a162a772e7715": {
+    "key": "arbitrum:0x0391384f7a4b558155a4b69d67e57763aa397cf34a23edaf0a0a162a772e7715",
+    "name": "Uniswap V4 LP wUSDC/rSMCI",
+    "decimals": 18,
+    "symbol": "WUSDC/RSMCI",
+    "price": 9007199254740990,
+    "address": "0x0391384f7a4b558155a4b69d67e57763aa397cf34a23edaf0a0a162a772e7715",
+    "addresses": {
+     "arbitrum": "0x0391384f7a4b558155a4b69d67e57763aa397cf34a23edaf0a0a162a772e7715"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177019/large/c99e9147dd34b6410f45c3578082763b.png?1789116573"
+    ],
+    "updatedAt": "2026-11-21T14:09:39.460Z",
+    "createdAt": "2026-11-14T12:28:23.316Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa81bb1f785d2fa02284bde4d01a057def801cdf8"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "8923591e-cc2c-46f6-bc45-9d3aaa782bce",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "arbitrum:0xa81bb1f785d2fa02284bde4d01a057def801cdf8": {
     "key": "arbitrum:0xa81bb1f785d2fa02284bde4d01a057def801cdf8",
     "name": "Super Micro Computer rStock",
     "decimals": 18,
     "symbol": "RSMCI",
-    "price": 31.52,
+    "price": 22.15,
     "address": "0xa81bb1f785d2fa02284bde4d01a057def801cdf8",
     "addresses": {
      "arbitrum": "0xa81bb1f785d2fa02284bde4d01a057def801cdf8"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 141574,
+    "liquidity": 290263,
     "image": "https://coin-images.coingecko.com/coins/images/102177019/large/c99e9147dd34b6410f45c3578082763b.png?1789116573",
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "198369.779"
+     "volumeUsd1d": "404499.589",
+     "volumeUsd7d": "4373830.402"
     },
     "metadata": {},
     "tokenId": "ff28b6eb-3c9b-4ddd-a54f-190b1f04f67f",
-    "totalSupply": "4491.712658062",
-    "circulatingSupply": "4491.712658062",
+    "totalSupply": "13104.085858064998",
+    "circulatingSupply": "13104.085858064998",
     "isClaimed": false,
     "isPortable": true
    }

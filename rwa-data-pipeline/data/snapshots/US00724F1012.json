@@ -5,8 +5,8 @@
  "name": "Adobe",
  "isin": "US00724F1012",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:18:56Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:14:29Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,30 +17,30 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 242.7288337661155,
-     "tokenized_market_cap": 1988791.4900712953,
-     "tokenized_volume_24h": 2293967.1671386,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 219.34745845805796,
+     "tokenized_market_cap": 1581816.4459168713,
+     "tokenized_volume_24h": 1302407.60926818,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 138,
    "asset_type": "stock",
-   "rwa_rank": 173,
+   "rwa_rank": 187,
    "has_tokens": true,
-   "average_tokenized_price": 242.7288337661155,
-   "tokenized_market_cap": 1988791.4900712953,
-   "tokenized_volume_24h": 2293967.1671386,
-   "last_updated": "2026-10-18T20:14:23.201Z",
+   "average_tokenized_price": 219.34745845805796,
+   "tokenized_market_cap": 1581816.4459168713,
+   "tokenized_volume_24h": 1302407.60926818,
+   "last_updated": "2026-11-21T14:10:11.165Z",
    "tokens": [
     {
      "symbol": "ADBEon",
      "name": "Adobe Tokenized Stock (Ondo)",
-     "price": 243.02634019658177,
+     "price": 219.29182039502717,
      "crypto_id": 38024,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 866455.05,
-     "volume_24h": 2114341.0749194
+     "market_cap": 767413.6863465086,
+     "volume_24h": 1135781.0522496223
     },
     {
      "symbol": "ADBE.D",
@@ -65,12 +65,22 @@
     {
      "symbol": "ADBEB",
      "name": "Adobe Tokenized bStocks",
-     "price": 242.61419026504305,
+     "price": 219.71301276717338,
      "crypto_id": 42384,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 1123348.73,
-     "volume_24h": 167472.12802699
+     "market_cap": 814352.0077020592,
+     "volume_24h": 166626.55701855768
+    },
+    {
+     "symbol": "ADBEc",
+     "name": "Adobe Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42764,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
     }
    ],
    "tradfi_markets": [
@@ -249,6 +259,35 @@
       }
      }
     ]
+   },
+   "42764": {
+    "id": 42764,
+    "symbol": "ADBEc",
+    "name": "Adobe Inc. Tokenized Stock (Coinbase)",
+    "slug": "adobe-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42764.png",
+    "date_added": "2026-11-02T08:29:30.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB20000000000000000000034533Ed3961f222Cd4"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB20000000000000000000034533Ed3961f222Cd4",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -271,6 +310,7 @@
   ],
   "looked_up": [
    "arbitrum:0x289594b223ab31832726eb99871fa99adac583e5",
+   "base:0xb20000000000000000000034533ed3961f222cd4",
    "base:0xf20c96fffbda91b07f78592c1c887ba922ce9b7f",
    "bsc:0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57",
    "bsc:0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
@@ -283,7 +323,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0x5d7bb43885988eb8bfb9d854077e7ccfd6bf8c50",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -293,20 +333,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.554"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.832"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    },
@@ -315,28 +355,28 @@
     "name": "Adobe (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEON",
-    "price": 243.45,
+    "price": 219.29,
     "address": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
     "addresses": {
-     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
-     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
+     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 867948,
+    "liquidity": 767395,
     "image": "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258",
     "metrics": {
-     "volumeUsd1d": "792570.843",
-     "volumeUsd7d": "5730754.313"
+     "volumeUsd1d": "787287.322",
+     "volumeUsd7d": "5624657.169"
     },
     "metadata": {},
     "tokenId": "ca49f788-0b93-4709-a746-1dd2863b0e8f",
-    "totalSupply": "3565.2721718064986",
-    "circulatingSupply": "3565.2721718064986",
+    "totalSupply": "3499.5089418479333",
+    "circulatingSupply": "3499.5089418479333",
     "isClaimed": false,
     "isPortable": true
    },
@@ -345,27 +385,27 @@
     "name": "Adobe (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEB",
-    "price": 242.87,
+    "price": 219.86,
     "address": "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57",
     "addresses": {
      "bsc": "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1124516,
+    "liquidity": 814880,
     "image": "https://coin-images.coingecko.com/coins/images/102178976/large/bstocks_adbeb_64.jpg?1790819338",
     "metrics": {
-     "volumeUsd1d": "19163.73",
-     "volumeUsd7d": "531595.813"
+     "volumeUsd1d": "22958.505",
+     "volumeUsd7d": "386793.067"
     },
     "metadata": {},
     "tokenId": "8482cb87-21fa-489f-ab7f-cb28704efe24",
-    "totalSupply": "4630.18559877",
-    "circulatingSupply": "4630.18559877",
+    "totalSupply": "3706.43503289",
+    "circulatingSupply": "3706.43503289",
     "isClaimed": false,
     "isPortable": true
    },
@@ -374,7 +414,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0xf20c96fffbda91b07f78592c1c887ba922ce9b7f",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -384,20 +424,20 @@
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.542"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.727"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    },
@@ -406,28 +446,28 @@
     "name": "Adobe (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEON",
-    "price": 243.45,
+    "price": 219.29,
     "address": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
     "addresses": {
-     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
-     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
+     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-14T12:46:26.928Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 867948,
+    "liquidity": 767395,
     "image": "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258",
     "metrics": {
-     "volumeUsd1d": "792881.531",
-     "volumeUsd7d": "5739285.921"
+     "volumeUsd1d": "788550.168",
+     "volumeUsd7d": "5618728.907"
     },
     "metadata": {},
     "tokenId": "ca49f788-0b93-4709-a746-1dd2863b0e8f",
-    "totalSupply": "3565.2721718064986",
-    "circulatingSupply": "3565.2721718064986",
+    "totalSupply": "3499.5089418479333",
+    "circulatingSupply": "3499.5089418479333",
     "isClaimed": false,
     "isPortable": true
    },
@@ -436,7 +476,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0x289594b223ab31832726eb99871fa99adac583e5",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -446,29 +486,29 @@
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.54"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.737"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "ADBE": {
-    "total_items": 20,
+    "total_items": 30,
     "pages": 1,
-    "received": 20,
+    "received": 30,
     "complete": true
    }
   },
@@ -490,19 +530,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/102178976/large/bstocks_adbeb_64.jpg?1790819338"
     ],
-    "updatedAt": "2026-10-18T20:15:17.346Z",
+    "updatedAt": "2026-11-21T14:12:39.504Z",
     "createdAt": "2026-10-01T10:44:48.628Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57"
     ],
-    "liquidity": 5262.411296896698,
+    "liquidity": 4963.109906348835,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "29.974"
+     "apy": "0.043",
+     "baseApy": "0.043",
+     "volumeUsd1d": "0.115",
+     "volumeUsd7d": "55.302"
     },
     "metadata": {
      "tags": [
@@ -514,8 +554,8 @@
     },
     "tokenId": "857f9b83-2d09-44cb-aca4-73b13d58dfec",
     "reserves": [
-     "1690.070414027770689605",
-     "14.714830828361525938"
+     "1688.437148242934578217",
+     "14.903662075546120566"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -525,7 +565,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0x5d7bb43885988eb8bfb9d854077e7ccfd6bf8c50",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -535,22 +575,69 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.554"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.832"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0x1a53386bffb195ea057801b55fb7ccd8ebfc0e14f20f4e5c447a9077918d9566": {
+    "key": "arbitrum:0x1a53386bffb195ea057801b55fb7ccd8ebfc0e14f20f4e5c447a9077918d9566",
+    "name": "Uniswap V4 LP rADBE/wUSDC",
+    "decimals": 18,
+    "symbol": "RADBE/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x1a53386bffb195ea057801b55fb7ccd8ebfc0e14f20f4e5c447a9077918d9566",
+    "addresses": {
+     "arbitrum": "0x1a53386bffb195ea057801b55fb7ccd8ebfc0e14f20f4e5c447a9077918d9566"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177133/large/321910f2ebdd30605bb1e7fde9f26862.png?1789116933",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.367Z",
+    "createdAt": "2026-11-14T12:28:25.008Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0dab3b3909b6335f218d40fa25e29653727ec4dd",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 3568.5201908171716,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "1d7401f5-6ecd-4570-9477-4312a3c82fb6",
+    "reserves": [
+     "0",
+     "3000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0x49e97643ddea30fbb23b4207cb8206215432a3088b79baee925bf07cee35b872": {
     "key": "robinhood:0x49e97643ddea30fbb23b4207cb8206215432a3088b79baee925bf07cee35b872",
@@ -568,19 +655,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
     ],
-    "updatedAt": "2026-10-18T20:15:40.061Z",
+    "updatedAt": "2026-11-21T14:12:36.668Z",
     "createdAt": "2026-08-13T15:49:58.423Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x232b8ed6377be97813853b0ac104c4cda8378d1b"
     ],
-    "liquidity": 5561.6114188926895,
+    "liquidity": 2833.275231991661,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "827.545"
+     "apy": "3.264",
+     "baseApy": "3.264",
+     "volumeUsd1d": "4.908",
+     "volumeUsd7d": "301.851"
     },
     "metadata": {
      "tags": [
@@ -592,8 +679,147 @@
     },
     "tokenId": "3f30cbff-eb0f-4888-88ab-3668fd955f8e",
     "reserves": [
-     "0.84332181061771506",
-     "14.490945733740983769"
+     "1.441477572055099836",
+     "1.755679323231900792"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x828d07c2fd6f955cef1c87a0ceefb5e0fa25301e2977f237dfa74929495eca3e": {
+    "key": "robinhood:0x828d07c2fd6f955cef1c87a0ceefb5e0fa25301e2977f237dfa74929495eca3e",
+    "name": "Uniswap V4 LP wUSDG/ADBE",
+    "decimals": 18,
+    "symbol": "WUSDG/ADBE",
+    "price": 9007199254740990,
+    "address": "0x828d07c2fd6f955cef1c87a0ceefb5e0fa25301e2977f237dfa74929495eca3e",
+    "addresses": {
+     "robinhood": "0x828d07c2fd6f955cef1c87a0ceefb5e0fa25301e2977f237dfa74929495eca3e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.220Z",
+    "createdAt": "2026-11-06T15:59:39.593Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x232b8ed6377be97813853b0ac104c4cda8378d1b"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "0dd42ffe-77a8-45dc-a8d3-1104cbbea26a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xe0d0ddbc37d6966a508611f1a2e47dd4e1c6acf13a87ab5782fde0d7819e7ac3": {
+    "key": "ethereum:0xe0d0ddbc37d6966a508611f1a2e47dd4e1c6acf13a87ab5782fde0d7819e7ac3",
+    "name": "Uniswap V4 LP EE/ADBEon",
+    "decimals": 18,
+    "symbol": "EE/ADBEON",
+    "price": 9007199254740990,
+    "address": "0xe0d0ddbc37d6966a508611f1a2e47dd4e1c6acf13a87ab5782fde0d7819e7ac3",
+    "addresses": {
+     "ethereum": "0xe0d0ddbc37d6966a508611f1a2e47dd4e1c6acf13a87ab5782fde0d7819e7ac3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
+    ],
+    "updatedAt": "2026-11-21T14:11:33.770Z",
+    "createdAt": "2026-11-07T15:59:35.275Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+    ],
+    "liquidity": 50029.91376250132,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9938,
+     "feePercentage": "99.3755"
+    },
+    "tokenId": "232d6f90-c982-4a26-908a-ad4290617008",
+    "reserves": [
+     "49999.999999999999999965",
+     "0.117265171604944586"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd559cc446747ff97791d148d3bb5ff5b69db4754ea9007515d1635f45d7ce430": {
+    "key": "robinhood:0xd559cc446747ff97791d148d3bb5ff5b69db4754ea9007515d1635f45d7ce430",
+    "name": "Uniswap V4 LP MJDQ/ADBE",
+    "decimals": 18,
+    "symbol": "MJDQ/ADBE",
+    "price": 9007199254740990,
+    "address": "0xd559cc446747ff97791d148d3bb5ff5b69db4754ea9007515d1635f45d7ce430",
+    "addresses": {
+     "robinhood": "0xd559cc446747ff97791d148d3bb5ff5b69db4754ea9007515d1635f45d7ce430"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.180Z",
+    "createdAt": "2026-11-11T13:21:28.185Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x232b8ed6377be97813853b0ac104c4cda8378d1b"
+    ],
+    "liquidity": 9999.149952715878,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19993,
+     "feePercentage": "99.9696"
+    },
+    "tokenId": "9b8acdd4-1717-40ca-86b1-07618fcaaf60",
+    "reserves": [
+     "9999.99999999999999978",
+     "0.000389818245017502"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -615,14 +841,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
     ],
-    "updatedAt": "2026-10-18T20:15:03.480Z",
+    "updatedAt": "2026-11-21T14:12:03.473Z",
     "createdAt": "2026-09-28T10:38:16.959Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -645,31 +871,30 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0x6cf4fee9b18ea81aa7c6a331ef21cd65a6010e136c0869f78fbfc8240e542ef8": {
-    "key": "ethereum:0x6cf4fee9b18ea81aa7c6a331ef21cd65a6010e136c0869f78fbfc8240e542ef8",
-    "name": "Uniswap V4 LP ZQ/ADBEon",
+   "ethereum:0x450984fea6ccb60e48d21c374dbc1700ecb4201becb133d7435cf8071df9cd49": {
+    "key": "ethereum:0x450984fea6ccb60e48d21c374dbc1700ecb4201becb133d7435cf8071df9cd49",
+    "name": "Uniswap V4 LP ADBEx/HRC",
     "decimals": 18,
-    "symbol": "ZQ/ADBEON",
+    "symbol": "ADBEX/HRC",
     "price": 9007199254740990,
-    "address": "0x6cf4fee9b18ea81aa7c6a331ef21cd65a6010e136c0869f78fbfc8240e542ef8",
+    "address": "0x450984fea6ccb60e48d21c374dbc1700ecb4201becb133d7435cf8071df9cd49",
     "addresses": {
-     "ethereum": "0x6cf4fee9b18ea81aa7c6a331ef21cd65a6010e136c0869f78fbfc8240e542ef8"
+     "ethereum": "0x450984fea6ccb60e48d21c374dbc1700ecb4201becb133d7435cf8071df9cd49"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:03.364Z",
-    "createdAt": "2026-09-30T05:25:12.291Z",
+    "updatedAt": "2026-11-21T14:12:03.246Z",
+    "createdAt": "2026-11-07T15:59:33.654Z",
     "verifiedAt": null,
     "tokens": [
-     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
-     "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "0x16e0b579be45baae54ceddd52e742b6457a7fe12",
+     "0x63db3eca126303755899a3436e34b174a1ef377b"
     ],
-    "liquidity": 20002.54542477676,
+    "liquidity": 500.1769701287868,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -681,13 +906,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "55"
+     "tickSpacing": 19955,
+     "feePercentage": "99.7782"
     },
-    "tokenId": "de469076-b7b2-4cc4-9b72-93d7f2baefd1",
+    "tokenId": "4a203640-2051-47ec-99b1-e55a544f6df1",
     "reserves": [
-     "20000",
-     "0"
+     "0",
+     "499.999999999999999834"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -697,28 +922,28 @@
     "name": "Adobe (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEON",
-    "price": 243.45,
+    "price": 219.29,
     "address": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
     "addresses": {
-     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
-     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
+     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 867948,
+    "liquidity": 767395,
     "image": "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258",
     "metrics": {
-     "volumeUsd1d": "792570.843",
-     "volumeUsd7d": "5730754.313"
+     "volumeUsd1d": "787287.322",
+     "volumeUsd7d": "5624657.169"
     },
     "metadata": {},
     "tokenId": "ca49f788-0b93-4709-a746-1dd2863b0e8f",
-    "totalSupply": "3565.2721718064986",
-    "circulatingSupply": "3565.2721718064986",
+    "totalSupply": "3499.5089418479333",
+    "circulatingSupply": "3499.5089418479333",
     "isClaimed": false,
     "isPortable": true
    },
@@ -727,27 +952,27 @@
     "name": "Adobe (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEB",
-    "price": 242.87,
+    "price": 219.86,
     "address": "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57",
     "addresses": {
      "bsc": "0x65c0249d49e3231540fd0db0a1ae9259e6eaaf57"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1124516,
+    "liquidity": 814880,
     "image": "https://coin-images.coingecko.com/coins/images/102178976/large/bstocks_adbeb_64.jpg?1790819338",
     "metrics": {
-     "volumeUsd1d": "19163.73",
-     "volumeUsd7d": "531595.813"
+     "volumeUsd1d": "22958.505",
+     "volumeUsd7d": "386793.067"
     },
     "metadata": {},
     "tokenId": "8482cb87-21fa-489f-ab7f-cb28704efe24",
-    "totalSupply": "4630.18559877",
-    "circulatingSupply": "4630.18559877",
+    "totalSupply": "3706.43503289",
+    "circulatingSupply": "3706.43503289",
     "isClaimed": false,
     "isPortable": true
    },
@@ -767,19 +992,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:41.158Z",
+    "updatedAt": "2026-11-21T14:12:37.823Z",
     "createdAt": "2026-09-09T08:37:16.198Z",
     "verifiedAt": null,
     "tokens": [
      "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 4141.299707437744,
+    "liquidity": 922.8292038242513,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "1754.239"
+     "apy": "14.416",
+     "baseApy": "14.416",
+     "volumeUsd1d": "33.467",
+     "volumeUsd7d": "366.542"
     },
     "metadata": {
      "tags": [
@@ -791,8 +1016,8 @@
     },
     "tokenId": "08b285f4-7fd0-4385-ab1f-b32c5c516390",
     "reserves": [
-     "12.206809600862077223",
-     "1114.743335"
+     "2.500302954429458558",
+     "367.811954"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -802,18 +1027,18 @@
     "name": "Adobe xStock",
     "decimals": 18,
     "symbol": "ADBEX",
-    "price": 234.74,
+    "price": 224.56,
     "address": "0x16e0b579be45baae54ceddd52e742b6457a7fe12",
     "addresses": {
      "ethereum": "0x16e0b579be45baae54ceddd52e742b6457a7fe12"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:45.470Z",
+    "updatedAt": "2026-11-21T14:13:21.108Z",
     "createdAt": "2025-10-01T09:00:49.665Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6643142,
+    "liquidity": 6355048,
     "image": "https://coin-images.coingecko.com/coins/images/69626/large/Ticker_ADBEx__Company_Name_Adobe_Inc__size_200x200.png?1759233243",
     "metrics": {
      "volumeUsd1d": "0",
@@ -832,31 +1057,30 @@
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0xab5a7eec876639232e3e939468e66004855b1e107be22d85f217d2d56c88361c": {
-    "key": "ethereum:0xab5a7eec876639232e3e939468e66004855b1e107be22d85f217d2d56c88361c",
-    "name": "Uniswap V4 LP EGP/ADBEon",
+   "robinhood:0xe244e92622a6eaa31b44c5b303558978f0348bcbf7102a8c136e9ccd95a974f4": {
+    "key": "robinhood:0xe244e92622a6eaa31b44c5b303558978f0348bcbf7102a8c136e9ccd95a974f4",
+    "name": "Uniswap V4 LP ADBE/OLQD",
     "decimals": 18,
-    "symbol": "EGP/ADBEON",
+    "symbol": "ADBE/OLQD",
     "price": 9007199254740990,
-    "address": "0xab5a7eec876639232e3e939468e66004855b1e107be22d85f217d2d56c88361c",
+    "address": "0xe244e92622a6eaa31b44c5b303558978f0348bcbf7102a8c136e9ccd95a974f4",
     "addresses": {
-     "ethereum": "0xab5a7eec876639232e3e939468e66004855b1e107be22d85f217d2d56c88361c"
+     "robinhood": "0xe244e92622a6eaa31b44c5b303558978f0348bcbf7102a8c136e9ccd95a974f4"
     },
     "platform": "uniswap-v4",
-    "network": "ethereum",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:04.941Z",
-    "createdAt": "2026-10-14T06:54:51.637Z",
+    "updatedAt": "2026-11-21T14:12:38.234Z",
+    "createdAt": "2026-11-06T15:59:42.864Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
     ],
-    "liquidity": 20072.983706659237,
+    "liquidity": 9997.773563123066,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -868,13 +1092,246 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "95.01"
+     "tickSpacing": 19619,
+     "feePercentage": "98.099"
     },
-    "tokenId": "c5a70105-ed4a-4623-b3da-e65d5348c415",
+    "tokenId": "1fb4b3b7-3ff3-44c0-a584-31d60f761214",
     "reserves": [
-     "19999.999999999999999974",
-     "0.11281370277178516"
+     "0.000411184210525911",
+     "9999.999999999999999916"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xb9386a818e4194f4c2c7d9053e6a952693c6df7e6eccac660f9060f67253fa52": {
+    "key": "arbitrum:0xb9386a818e4194f4c2c7d9053e6a952693c6df7e6eccac660f9060f67253fa52",
+    "name": "Uniswap V4 LP rADBE/wUSDC",
+    "decimals": 18,
+    "symbol": "RADBE/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xb9386a818e4194f4c2c7d9053e6a952693c6df7e6eccac660f9060f67253fa52",
+    "addresses": {
+     "arbitrum": "0xb9386a818e4194f4c2c7d9053e6a952693c6df7e6eccac660f9060f67253fa52"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177133/large/321910f2ebdd30605bb1e7fde9f26862.png?1789116933",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:13:55.833Z",
+    "createdAt": "2026-11-14T12:28:24.676Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0dab3b3909b6335f218d40fa25e29653727ec4dd",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "8d8bbf9d-ed66-4b5d-8697-0d8983b89306",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x9f749de8ef84ca85ed972138b43d7041ed79885719fcd80bd28593952a84d266": {
+    "key": "robinhood:0x9f749de8ef84ca85ed972138b43d7041ed79885719fcd80bd28593952a84d266",
+    "name": "Uniswap V4 LP wUSDG/ADBE",
+    "decimals": 18,
+    "symbol": "WUSDG/ADBE",
+    "price": 9007199254740990,
+    "address": "0x9f749de8ef84ca85ed972138b43d7041ed79885719fcd80bd28593952a84d266",
+    "addresses": {
+     "robinhood": "0x9f749de8ef84ca85ed972138b43d7041ed79885719fcd80bd28593952a84d266"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:38.394Z",
+    "createdAt": "2026-11-05T15:57:27.414Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x232b8ed6377be97813853b0ac104c4cda8378d1b"
+    ],
+    "liquidity": 2999.448571301699,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "405d378a-bfc6-4f2c-9e8b-fdd98170b539",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5fe00d4141f46caa27c2c83c2985954ac16a90001a4aa816b95b3f6f17d5d08e": {
+    "key": "robinhood:0x5fe00d4141f46caa27c2c83c2985954ac16a90001a4aa816b95b3f6f17d5d08e",
+    "name": "Uniswap V4 LP ADBE/USDG",
+    "decimals": 18,
+    "symbol": "ADBE/USDG",
+    "price": 9007199254740990,
+    "address": "0x5fe00d4141f46caa27c2c83c2985954ac16a90001a4aa816b95b3f6f17d5d08e",
+    "addresses": {
+     "robinhood": "0x5fe00d4141f46caa27c2c83c2985954ac16a90001a4aa816b95b3f6f17d5d08e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:38.274Z",
+    "createdAt": "2026-11-04T15:56:08.545Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3"
+    ],
+    "liquidity": 50022.65764329264,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9952,
+     "feePercentage": "99.52"
+    },
+    "tokenId": "9081404f-f233-40d3-bcb7-4f72bd0c97c1",
+    "reserves": [
+     "0.121236082096297312",
+     "49999.999999999999999923"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfebc1b7d88d66627b6508f968f884a9df7e51471f8e095d4dcd81f7ce14e7eb9": {
+    "key": "ethereum:0xfebc1b7d88d66627b6508f968f884a9df7e51471f8e095d4dcd81f7ce14e7eb9",
+    "name": "Uniswap V4 LP HRC/ADBEon",
+    "decimals": 18,
+    "symbol": "HRC/ADBEON",
+    "price": 9007199254740990,
+    "address": "0xfebc1b7d88d66627b6508f968f884a9df7e51471f8e095d4dcd81f7ce14e7eb9",
+    "addresses": {
+     "ethereum": "0xfebc1b7d88d66627b6508f968f884a9df7e51471f8e095d4dcd81f7ce14e7eb9"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
+    ],
+    "updatedAt": "2026-11-21T14:12:16.258Z",
+    "createdAt": "2026-11-07T15:59:37.040Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+    ],
+    "liquidity": 13004.601223348456,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19955,
+     "feePercentage": "99.7784"
+    },
+    "tokenId": "f9028d01-9581-4b23-9b54-2941d925ee6f",
+    "reserves": [
+     "12999.999999999999999776",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7b4850bd0439c972ab7498b09d4f43ffbabb9507f139d1b90eff29bc66daeed1": {
+    "key": "ethereum:0x7b4850bd0439c972ab7498b09d4f43ffbabb9507f139d1b90eff29bc66daeed1",
+    "name": "Uniswap V4 LP wUSDC/ADBEon",
+    "decimals": 18,
+    "symbol": "WUSDC/ADBEON",
+    "price": 9007199254740990,
+    "address": "0x7b4850bd0439c972ab7498b09d4f43ffbabb9507f139d1b90eff29bc66daeed1",
+    "addresses": {
+     "ethereum": "0x7b4850bd0439c972ab7498b09d4f43ffbabb9507f139d1b90eff29bc66daeed1"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258"
+    ],
+    "updatedAt": "2026-11-21T14:12:17.991Z",
+    "createdAt": "2026-11-07T15:59:34.379Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "f62fb7dd-b728-4e33-b6bf-697c6dadf6f0",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -884,7 +1341,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0xf20c96fffbda91b07f78592c1c887ba922ce9b7f",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -894,20 +1351,20 @@
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.542"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.727"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    },
@@ -916,27 +1373,27 @@
     "name": "Adobe rStock",
     "decimals": 18,
     "symbol": "RADBE",
-    "price": 243.91,
+    "price": 218.71,
     "address": "0x0dab3b3909b6335f218d40fa25e29653727ec4dd",
     "addresses": {
      "arbitrum": "0x0dab3b3909b6335f218d40fa25e29653727ec4dd"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 42625,
+    "liquidity": 25401,
     "image": "https://coin-images.coingecko.com/coins/images/102177133/large/321910f2ebdd30605bb1e7fde9f26862.png?1789116933",
     "metrics": {
-     "volumeUsd1d": "1176.519",
-     "volumeUsd7d": "84521.589"
+     "volumeUsd1d": "3812.891",
+     "volumeUsd7d": "280340.011"
     },
     "metadata": {},
     "tokenId": "66b9dcff-d1b2-4c49-a63f-b82e3f4ffce2",
-    "totalSupply": "174.754598131",
-    "circulatingSupply": "174.754598131",
+    "totalSupply": "116.141881113",
+    "circulatingSupply": "116.141881113",
     "isClaimed": false,
     "isPortable": true
    },
@@ -956,18 +1413,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:05.687Z",
+    "updatedAt": "2026-11-21T14:12:17.799Z",
     "createdAt": "2026-10-18T18:58:16.869Z",
     "verifiedAt": null,
     "tokens": [
      "0x16e0b579be45baae54ceddd52e742b6457a7fe12",
      "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
     ],
-    "liquidity": 3529.098283706609,
+    "liquidity": 2718.648919412492,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
-     "volumeUsd1d": "0"
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1002,14 +1460,14 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:41.794Z",
+    "updatedAt": "2026-11-21T14:12:38.681Z",
     "createdAt": "2026-09-29T12:21:23.120Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x944d51407e60f7f3e13786b386d36c2926a9ba2e"
     ],
-    "liquidity": 2680.9654449986583,
+    "liquidity": 2680.9216618765718,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1037,18 +1495,18 @@
     "name": "Deadbeef coin",
     "decimals": 18,
     "symbol": "DEADBEEF",
-    "price": 0.00014094943129976134,
+    "price": 0.00014094500290586648,
     "address": "0x944d51407e60f7f3e13786b386d36c2926a9ba2e",
     "addresses": {
      "robinhood": "0x944d51407e60f7f3e13786b386d36c2926a9ba2e"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-29T11:45:40.964Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 140949.43129976135,
+    "liquidity": 140945.00290586648,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1076,19 +1534,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:42.186Z",
+    "updatedAt": "2026-11-21T14:12:39.302Z",
     "createdAt": "2026-09-09T23:55:00.370Z",
     "verifiedAt": null,
     "tokens": [
      "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 2833.8672237517994,
+    "liquidity": 1641.0457651936022,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "47.914"
+     "apy": "11.005",
+     "baseApy": "11.005",
+     "volumeUsd1d": "12.08",
+     "volumeUsd7d": "21.965"
     },
     "metadata": {
      "tags": [
@@ -1100,8 +1558,8 @@
     },
     "tokenId": "0497efae-0abe-40f3-9856-2a8f41eb1d78",
     "reserves": [
-     "9.285755943985638503",
-     "531.556895"
+     "6.915133805719443554",
+     "106.024363"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1111,7 +1569,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -1121,20 +1579,20 @@
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.493"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.744"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1143,28 +1601,28 @@
     "name": "Adobe (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "ADBEON",
-    "price": 243.45,
+    "price": 219.29,
     "address": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
     "addresses": {
-     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef",
-     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43"
+     "ethereum": "0x7042a8ffc7c7049684bfbc2fcb41b72380755a43",
+     "bsc": "0xcb22db0ecb6fe58b7b47db443dcfdfdfbf729cef"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-14T12:46:26.928Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 867948,
+    "liquidity": 767395,
     "image": "https://coin-images.coingecko.com/coins/images/68622/large/adbeon_160x160.png?1756130258",
     "metrics": {
-     "volumeUsd1d": "792881.531",
-     "volumeUsd7d": "5739285.921"
+     "volumeUsd1d": "788550.168",
+     "volumeUsd7d": "5618728.907"
     },
     "metadata": {},
     "tokenId": "ca49f788-0b93-4709-a746-1dd2863b0e8f",
-    "totalSupply": "3565.2721718064986",
-    "circulatingSupply": "3565.2721718064986",
+    "totalSupply": "3499.5089418479333",
+    "circulatingSupply": "3499.5089418479333",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1173,7 +1631,7 @@
     "name": "Dinari ADBE",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 244.42,
+    "price": 219.09,
     "address": "0x289594b223ab31832726eb99871fa99adac583e5",
     "addresses": {
      "avalanche": "0x09b787e54b4860fe33006dea526b42a8aaffb257",
@@ -1183,20 +1641,20 @@
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7528.97,
+    "liquidity": 6913.08,
     "image": "https://coin-images.coingecko.com/coins/images/102174951/large/dinari-logo-green-with-margin.png?1785402674",
     "metrics": {
-     "volumeUsd1d": "14.211",
-     "volumeUsd7d": "1594.54"
+     "volumeUsd1d": "9.772",
+     "volumeUsd7d": "98.737"
     },
     "metadata": {},
     "tokenId": "1e01ac2b-e9d6-4c2a-ab05-7623b9bb7755",
-    "totalSupply": "30.80346557372903",
-    "circulatingSupply": "30.80346557372903",
+    "totalSupply": "31.55311746372903",
+    "circulatingSupply": "31.55311746372903",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1205,7 +1663,7 @@
     "name": "Adobe • Robinhood Token",
     "decimals": 18,
     "symbol": "ADBE",
-    "price": 247.94,
+    "price": 221.98000000000002,
     "address": "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
     "addresses": {
      "robinhood": "0x232b8ed6377be97813853b0ac104c4cda8378d1b"
@@ -1216,15 +1674,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x232b8ed6377be97813853b0ac104c4cda8378d1b.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:10:43.944Z",
     "createdAt": "2026-08-07T03:19:27.134Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x232b8ed6377be97813853b0ac104c4cda8378d1b",
-    "liquidity": 25883.7012588,
+    "liquidity": 14856.903859600001,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "-14781.538"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000d44f85ce72274d6e867a54fa2f4009cb",
@@ -1254,9 +1712,56 @@
      }
     },
     "tokenId": "38e80d10-4015-441e-bc66-39a77ad14bec",
-    "totalSupply": "104.39502",
+    "totalSupply": "66.92902",
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0x102ca7f441bb7069c362f85ee2f8cdfeb881fb3831005ca13677568c6b02604c": {
+    "key": "arbitrum:0x102ca7f441bb7069c362f85ee2f8cdfeb881fb3831005ca13677568c6b02604c",
+    "name": "Uniswap V4 LP rADBE/wUSDC",
+    "decimals": 18,
+    "symbol": "RADBE/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x102ca7f441bb7069c362f85ee2f8cdfeb881fb3831005ca13677568c6b02604c",
+    "addresses": {
+     "arbitrum": "0x102ca7f441bb7069c362f85ee2f8cdfeb881fb3831005ca13677568c6b02604c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177133/large/321910f2ebdd30605bb1e7fde9f26862.png?1789116933",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:09:39.575Z",
+    "createdAt": "2026-11-14T12:28:25.008Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0dab3b3909b6335f218d40fa25e29653727ec4dd",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "004452b7-ec29-4441-928d-d4a01e395770",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    }
   }
  }

@@ -5,8 +5,8 @@
  "name": "Applied Optoelectronics",
  "isin": "US03823U1025",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:18:31Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:14:04Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,50 +17,50 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 72.41044291957279,
-     "tokenized_market_cap": 7545218.610576259,
-     "tokenized_volume_24h": 4751844.14070775,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 33.89280999761062,
+     "tokenized_market_cap": 5137104.339374206,
+     "tokenized_volume_24h": 5088770.41407245,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 191,
    "asset_type": "stock",
-   "rwa_rank": 1156,
+   "rwa_rank": 1661,
    "has_tokens": true,
-   "average_tokenized_price": 72.41044291957279,
-   "tokenized_market_cap": 7545218.610576259,
-   "tokenized_volume_24h": 4751844.14070775,
-   "last_updated": "2026-10-18T20:14:28.807Z",
+   "average_tokenized_price": 33.89280999761062,
+   "tokenized_market_cap": 5137104.339374206,
+   "tokenized_volume_24h": 5088770.41407245,
+   "last_updated": "2026-11-21T14:10:11.179Z",
    "tokens": [
     {
      "symbol": "rAAOI",
      "name": "Applied Optoelectronics Tokenized Stock (Reality)",
-     "price": 75.42518643978057,
+     "price": 33.93582559091571,
      "crypto_id": 40630,
      "issuer_id": "6a43600c282e7240b76c8bbb",
      "issuer_name": "Reality",
-     "market_cap": 584732.91,
-     "volume_24h": 0
+     "market_cap": 371280.35135857126,
+     "volume_24h": 623166.7674142417
     },
     {
      "symbol": "AAOI",
      "name": "Applied Optoelectronics Tokenized Stock (Robinhood)",
-     "price": 74.4916890676266,
+     "price": 33.811173876370454,
      "crypto_id": 40699,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 14571.54,
-     "volume_24h": 0
+     "market_cap": 7064.383935167672,
+     "volume_24h": 469.4147788607228
     },
     {
      "symbol": "AAOIB",
      "name": "Applied Optoelectronics Tokenized bStocks",
-     "price": 72.49302076886565,
+     "price": 33.88707237264628,
      "crypto_id": 40844,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 6953835.37,
-     "volume_24h": 4753460.95174135
+     "market_cap": 4637782.634947719,
+     "volume_24h": 4462305.976734773
     },
     {
      "symbol": "wAAOIx",
@@ -75,12 +75,12 @@
     {
      "symbol": "AAOIc",
      "name": "Applied Optoelectronics Inc Tokenized Stock (Coinbase)",
-     "price": null,
+     "price": 33.48106183615634,
      "crypto_id": 42552,
      "issuer_id": "6a72fe7072996604d45c6733",
      "issuer_name": "Coinbase",
-     "market_cap": null,
-     "volume_24h": null
+     "market_cap": 120976.96913267938,
+     "volume_24h": 2828.255144580994
     }
    ],
    "tradfi_markets": [
@@ -267,32 +267,90 @@
    "robinhood:0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
   ],
   "exact": {
+   "robinhood:0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e": {
+    "key": "robinhood:0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "name": "Applied Optoelectronics • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AAOI",
+    "price": 31.945,
+    "address": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "addresses": {
+     "robinhood": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:34.732Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "liquidity": 6674.47233965,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "566.834"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000a47bbc4c8a0b4f44a6d1aff3242b3088",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "53cfb148-ca18-46d4-bf9e-2bece4c4afd2",
+    "totalSupply": "208.93637",
+    "isClaimed": false,
+    "isPortable": true
+   },
    "bsc:0x10343ef7da3301493d7ecb647d68a288c6c1db2f": {
     "key": "bsc:0x10343ef7da3301493d7ecb647d68a288c6c1db2f",
     "name": "Applied Optoelectronics (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "AAOIB",
-    "price": 72.39,
+    "price": 33.89,
     "address": "0x10343ef7da3301493d7ecb647d68a288c6c1db2f",
     "addresses": {
      "bsc": "0x10343ef7da3301493d7ecb647d68a288c6c1db2f"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-16T02:44:57.251Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6943711,
+    "liquidity": 4638144,
     "image": "https://coin-images.coingecko.com/coins/images/102174590/large/aaoib-bstocks.png?1784150365",
     "metrics": {
-     "volumeUsd1d": "2823819.631",
-     "volumeUsd7d": "18154126.07"
+     "volumeUsd1d": "2580563.789",
+     "volumeUsd7d": "14818933.326"
     },
     "metadata": {},
     "tokenId": "3f3def99-92a6-4ad3-8f80-dd8caca32500",
-    "totalSupply": "95924.20481416999",
-    "circulatingSupply": "95924.20481416999",
+    "totalSupply": "136859.93832537",
+    "circulatingSupply": "136859.93832537",
     "isClaimed": false,
     "isPortable": true
    },
@@ -301,49 +359,143 @@
     "name": "Applied Optoelectronics rStock",
     "decimals": 18,
     "symbol": "RAAOI",
-    "price": 75.45,
+    "price": 33.94,
     "address": "0x09cef543943c8092a59c4191b434cf626c43a324",
     "addresses": {
      "arbitrum": "0x09cef543943c8092a59c4191b434cf626c43a324"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 584946,
+    "liquidity": 371379,
     "image": "https://coin-images.coingecko.com/coins/images/102177004/large/ed866d5629533fd2fd52f756bfa50656.png?1789116379",
     "metrics": {
-     "volumeUsd1d": "723.703",
-     "volumeUsd7d": "808537.877"
+     "volumeUsd1d": "623337.143",
+     "volumeUsd7d": "2558145.55"
     },
     "metadata": {},
     "tokenId": "e3bd9087-9832-4da0-9088-4d7ec70f2009",
-    "totalSupply": "7752.488755511",
-    "circulatingSupply": "7752.488755511",
+    "totalSupply": "10940.660640909",
+    "circulatingSupply": "10940.660640909",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "AAOI": {
-    "total_items": 9,
+    "total_items": 23,
     "pages": 1,
-    "received": 9,
+    "received": 23,
     "complete": true
    }
   },
   "records": {
-   "ethereum:0x71374b996776a766ded8a3804cdc12026dd3608745b24e423170cfb30cc916c1": {
-    "key": "ethereum:0x71374b996776a766ded8a3804cdc12026dd3608745b24e423170cfb30cc916c1",
-    "name": "Uniswap V4 LP EGP/AAOIon",
+   "arbitrum:0xeab2e46084bd1b40e23efdc72cce678bedeb734244060be8c32c445b4db23e64": {
+    "key": "arbitrum:0xeab2e46084bd1b40e23efdc72cce678bedeb734244060be8c32c445b4db23e64",
+    "name": "Uniswap V4 LP rAAOI/wUSDC",
     "decimals": 18,
-    "symbol": "EGP/AAOION",
+    "symbol": "RAAOI/WUSDC",
     "price": 9007199254740990,
-    "address": "0x71374b996776a766ded8a3804cdc12026dd3608745b24e423170cfb30cc916c1",
+    "address": "0xeab2e46084bd1b40e23efdc72cce678bedeb734244060be8c32c445b4db23e64",
     "addresses": {
-     "ethereum": "0x71374b996776a766ded8a3804cdc12026dd3608745b24e423170cfb30cc916c1"
+     "arbitrum": "0xeab2e46084bd1b40e23efdc72cce678bedeb734244060be8c32c445b4db23e64"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177004/large/ed866d5629533fd2fd52f756bfa50656.png?1789116379",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.176Z",
+    "createdAt": "2026-11-14T12:28:24.987Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x09cef543943c8092a59c4191b434cf626c43a324",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "b2cc655f-2a2e-4c70-8fb0-7d114d2adde1",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x560298c5c993176d69c303c42883d92d9c53b6cc26e6766517175d73631fffdf": {
+    "key": "robinhood:0x560298c5c993176d69c303c42883d92d9c53b6cc26e6766517175d73631fffdf",
+    "name": "Uniswap V4 LP wUSDG/AAOI",
+    "decimals": 18,
+    "symbol": "WUSDG/AAOI",
+    "price": 9007199254740990,
+    "address": "0x560298c5c993176d69c303c42883d92d9c53b6cc26e6766517175d73631fffdf",
+    "addresses": {
+     "robinhood": "0x560298c5c993176d69c303c42883d92d9c53b6cc26e6766517175d73631fffdf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174149/large/0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e.png?1782444667"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.023Z",
+    "createdAt": "2026-08-16T22:00:23.311Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 9998.159945699079,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "3a1808df-e122-4928-9741-0d7d1fb09cd6",
+    "reserves": [
+     "9999.998041",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x002fd16ed9f7f040bb8cc94fb751c762926ead1f6b41f4bf858e0bcea7fc1a96": {
+    "key": "ethereum:0x002fd16ed9f7f040bb8cc94fb751c762926ead1f6b41f4bf858e0bcea7fc1a96",
+    "name": "Uniswap V4 LP USDm/AAOIon",
+    "decimals": 18,
+    "symbol": "USDM/AAOION",
+    "price": 9007199254740990,
+    "address": "0x002fd16ed9f7f040bb8cc94fb751c762926ead1f6b41f4bf858e0bcea7fc1a96",
+    "addresses": {
+     "ethereum": "0x002fd16ed9f7f040bb8cc94fb751c762926ead1f6b41f4bf858e0bcea7fc1a96"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
@@ -352,14 +504,14 @@
      "https://images.portals.fi/unknown-token.png",
      "missing_large.png"
     ],
-    "updatedAt": "2026-10-18T20:15:02.599Z",
-    "createdAt": "2026-10-14T06:54:32.550Z",
+    "updatedAt": "2026-11-21T14:10:55.695Z",
+    "createdAt": "2026-11-07T15:59:31.990Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x3a0ff81672c45f233f8f2ad39044417b04aaa40e",
      "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
     ],
-    "liquidity": 20064.9925261308,
+    "liquidity": 7990.661357531799,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -372,12 +524,256 @@
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
      "tickSpacing": 1,
-     "feePercentage": "95.78"
+     "feePercentage": "99.1263"
     },
-    "tokenId": "c04047b6-ef30-4f38-b3b7-8afbd7288d37",
+    "tokenId": "907d4b3b-62be-4802-827a-edb295a713a1",
     "reserves": [
-     "19999.999999999999999995",
-     "0.257754009415709818"
+     "7999.031213634297444786",
+     "0.000390094987722864"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3877f41250733422b287d4e6761f6eb777a205112dc667b30a0709fcea904e97": {
+    "key": "robinhood:0x3877f41250733422b287d4e6761f6eb777a205112dc667b30a0709fcea904e97",
+    "name": "Uniswap V4 LP USDG/AAOI",
+    "decimals": 18,
+    "symbol": "USDG/AAOI",
+    "price": 9007199254740990,
+    "address": "0x3877f41250733422b287d4e6761f6eb777a205112dc667b30a0709fcea904e97",
+    "addresses": {
+     "robinhood": "0x3877f41250733422b287d4e6761f6eb777a205112dc667b30a0709fcea904e97"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.737Z",
+    "createdAt": "2026-11-04T15:56:08.936Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 50004.33854264489,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9912,
+     "feePercentage": "99.12"
+    },
+    "tokenId": "a51c3ba0-d308-48af-85d8-b6046bff1670",
+    "reserves": [
+     "49999.999999999999999977",
+     "0.268989978274704917"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e": {
+    "key": "robinhood:0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "name": "Applied Optoelectronics • Robinhood Token",
+    "decimals": 18,
+    "symbol": "AAOI",
+    "price": 31.945,
+    "address": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "addresses": {
+     "robinhood": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:34.732Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+    "liquidity": 6674.47233965,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "566.834"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000a47bbc4c8a0b4f44a6d1aff3242b3088",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "53cfb148-ca18-46d4-bf9e-2bece4c4afd2",
+    "totalSupply": "208.93637",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x49c00388555056b41e6a66de892405b3dc8e30c6e434c8e50eb9c1ed025b8a8c": {
+    "key": "ethereum:0x49c00388555056b41e6a66de892405b3dc8e30c6e434c8e50eb9c1ed025b8a8c",
+    "name": "Uniswap V4 LP wUSDC/AAOIon",
+    "decimals": 18,
+    "symbol": "WUSDC/AAOION",
+    "price": 9007199254740990,
+    "address": "0x49c00388555056b41e6a66de892405b3dc8e30c6e434c8e50eb9c1ed025b8a8c",
+    "addresses": {
+     "ethereum": "0x49c00388555056b41e6a66de892405b3dc8e30c6e434c8e50eb9c1ed025b8a8c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-11-21T14:11:29.669Z",
+    "createdAt": "2026-11-07T15:59:33.654Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "1a544daa-c2cb-42d1-97e0-c76168c1b9fd",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x86b3955c5274a6167b8b65fc1ba82d8b822d0b9b142ffe8cdb9503956ce6c80b": {
+    "key": "robinhood:0x86b3955c5274a6167b8b65fc1ba82d8b822d0b9b142ffe8cdb9503956ce6c80b",
+    "name": "Uniswap V4 LP wUSDG/AAOI",
+    "decimals": 18,
+    "symbol": "WUSDG/AAOI",
+    "price": 9007199254740990,
+    "address": "0x86b3955c5274a6167b8b65fc1ba82d8b822d0b9b142ffe8cdb9503956ce6c80b",
+    "addresses": {
+     "robinhood": "0x86b3955c5274a6167b8b65fc1ba82d8b822d0b9b142ffe8cdb9503956ce6c80b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.245Z",
+    "createdAt": "2026-11-04T15:56:18.296Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 9998.16190333918,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "bff2e447-efb4-4403-9d1d-eba4ed54f42e",
+    "reserves": [
+     "9999.999999",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x2f7c279f57c068fd18f2ccea2a394997c2d93a53153cb1adac4fcdc1cb20481a": {
+    "key": "ethereum:0x2f7c279f57c068fd18f2ccea2a394997c2d93a53153cb1adac4fcdc1cb20481a",
+    "name": "Uniswap V4 LP wUSDC/AAOIon",
+    "decimals": 18,
+    "symbol": "WUSDC/AAOION",
+    "price": 9007199254740990,
+    "address": "0x2f7c279f57c068fd18f2ccea2a394997c2d93a53153cb1adac4fcdc1cb20481a",
+    "addresses": {
+     "ethereum": "0x2f7c279f57c068fd18f2ccea2a394997c2d93a53153cb1adac4fcdc1cb20481a"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-11-21T14:11:58.883Z",
+    "createdAt": "2026-11-06T15:57:39.633Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "c3383877-eb68-4acc-ae88-2a2225bd964f",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -387,39 +783,39 @@
     "name": "Applied Optoelectronics (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "AAOIB",
-    "price": 72.39,
+    "price": 33.89,
     "address": "0x10343ef7da3301493d7ecb647d68a288c6c1db2f",
     "addresses": {
      "bsc": "0x10343ef7da3301493d7ecb647d68a288c6c1db2f"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-16T02:44:57.251Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6943711,
+    "liquidity": 4638144,
     "image": "https://coin-images.coingecko.com/coins/images/102174590/large/aaoib-bstocks.png?1784150365",
     "metrics": {
-     "volumeUsd1d": "2823819.631",
-     "volumeUsd7d": "18154126.07"
+     "volumeUsd1d": "2580563.789",
+     "volumeUsd7d": "14818933.326"
     },
     "metadata": {},
     "tokenId": "3f3def99-92a6-4ad3-8f80-dd8caca32500",
-    "totalSupply": "95924.20481416999",
-    "circulatingSupply": "95924.20481416999",
+    "totalSupply": "136859.93832537",
+    "circulatingSupply": "136859.93832537",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0x34de01cbb99a485f3366de862a802fe4a7ec2f6d3e67da07d2eb398d72030f3e": {
-    "key": "ethereum:0x34de01cbb99a485f3366de862a802fe4a7ec2f6d3e67da07d2eb398d72030f3e",
-    "name": "Uniswap V4 LP ZQ/AAOIon",
+   "ethereum:0x7f291fdfe7b2852d92ac50dda29473c23be67c63bf4819105346ab0ac04b8045": {
+    "key": "ethereum:0x7f291fdfe7b2852d92ac50dda29473c23be67c63bf4819105346ab0ac04b8045",
+    "name": "Uniswap V4 LP wUSDC/AAOIon",
     "decimals": 18,
-    "symbol": "ZQ/AAOION",
+    "symbol": "WUSDC/AAOION",
     "price": 9007199254740990,
-    "address": "0x34de01cbb99a485f3366de862a802fe4a7ec2f6d3e67da07d2eb398d72030f3e",
+    "address": "0x7f291fdfe7b2852d92ac50dda29473c23be67c63bf4819105346ab0ac04b8045",
     "addresses": {
-     "ethereum": "0x34de01cbb99a485f3366de862a802fe4a7ec2f6d3e67da07d2eb398d72030f3e"
+     "ethereum": "0x7f291fdfe7b2852d92ac50dda29473c23be67c63bf4819105346ab0ac04b8045"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
@@ -428,14 +824,14 @@
      "https://images.portals.fi/unknown-token.png",
      "missing_large.png"
     ],
-    "updatedAt": "2026-10-18T20:15:04.401Z",
-    "createdAt": "2026-09-30T05:25:12.291Z",
+    "updatedAt": "2026-11-21T14:12:04.398Z",
+    "createdAt": "2026-11-05T15:55:22.110Z",
     "verifiedAt": null,
     "tokens": [
-     "0x19c287e6fbc59654e7a0037e1b2c7d9b74599665",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
     ],
-    "liquidity": 20002.54542477676,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -447,13 +843,59 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "55"
+     "tickSpacing": 60,
+     "feePercentage": "50"
     },
-    "tokenId": "ed313132-0151-46be-8c7b-7ff5885cd06b",
+    "tokenId": "32159b70-06eb-4119-ae6d-7f84b8e64ff5",
     "reserves": [
-     "19999.999999999999999993",
+     "10000",
      "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x2750f3376810887b0688e012f728cf145ffe8292f64be3cc27f109e42f8b7be8": {
+    "key": "robinhood:0x2750f3376810887b0688e012f728cf145ffe8292f64be3cc27f109e42f8b7be8",
+    "name": "Uniswap V4 LP AAOI/OLQD",
+    "decimals": 18,
+    "symbol": "AAOI/OLQD",
+    "price": 9007199254740990,
+    "address": "0x2750f3376810887b0688e012f728cf145ffe8292f64be3cc27f109e42f8b7be8",
+    "addresses": {
+     "robinhood": "0x2750f3376810887b0688e012f728cf145ffe8292f64be3cc27f109e42f8b7be8"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.944Z",
+    "createdAt": "2026-11-06T15:59:36.338Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
+    ],
+    "liquidity": 9997.751016937384,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19457,
+     "feePercentage": "97.2873"
+    },
+    "tokenId": "3a0712b1-9e79-4b7c-8b8a-1bb6b3b43dd8",
+    "reserves": [
+     "0.002151462994835137",
+     "9999.999999999999999978"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -475,14 +917,14 @@
      "missing_large.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:04.250Z",
+    "updatedAt": "2026-11-21T14:12:14.853Z",
     "createdAt": "2026-09-28T10:37:10.215Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -505,31 +947,31 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0xed5308fc364e537193d26bdef6a67d5934171917e79d659a58c4ebe9e0ce2df6": {
-    "key": "ethereum:0xed5308fc364e537193d26bdef6a67d5934171917e79d659a58c4ebe9e0ce2df6",
-    "name": "Uniswap V4 LP AAOIon/USDT",
+   "ethereum:0x9be4b85420dc5e5923312b754bd368bd58ea42ea750ed33945da8009a61e8e02": {
+    "key": "ethereum:0x9be4b85420dc5e5923312b754bd368bd58ea42ea750ed33945da8009a61e8e02",
+    "name": "Uniswap V4 LP HRC/AAOIon",
     "decimals": 18,
-    "symbol": "AAOION/USDT",
+    "symbol": "HRC/AAOION",
     "price": 9007199254740990,
-    "address": "0xed5308fc364e537193d26bdef6a67d5934171917e79d659a58c4ebe9e0ce2df6",
+    "address": "0x9be4b85420dc5e5923312b754bd368bd58ea42ea750ed33945da8009a61e8e02",
     "addresses": {
-     "ethereum": "0xed5308fc364e537193d26bdef6a67d5934171917e79d659a58c4ebe9e0ce2df6"
+     "ethereum": "0x9be4b85420dc5e5923312b754bd368bd58ea42ea750ed33945da8009a61e8e02"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "missing_large.png",
-     "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
     ],
-    "updatedAt": "2026-10-18T20:15:05.457Z",
-    "createdAt": "2026-09-13T06:15:26.299Z",
+    "updatedAt": "2026-11-21T14:12:16.443Z",
+    "createdAt": "2026-11-07T15:59:35.280Z",
     "verifiedAt": null,
     "tokens": [
-     "0x99888f2ccd08258ed5f66e94ba59d7e75016900f",
-     "0xdac17f958d2ee523a2206206994597c13d831ec7"
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
     ],
-    "liquidity": 620.8737634116977,
+    "liquidity": 3001.0618207727207,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -541,13 +983,59 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 8800,
-     "feePercentage": "88"
+     "tickSpacing": 19931,
+     "feePercentage": "99.6556"
     },
-    "tokenId": "25434da1-cf14-4639-9171-ddddeceea45b",
+    "tokenId": "6b7d3e0a-af6f-4f06-85e3-d0322afde147",
     "reserves": [
-     "3.498622653073511239",
-     "356.859007"
+     "2999.999999999999999931",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x4376c727996a20e1f1ee6672600acb3418c1a2c339073b6e3d2f77e1b89c29cc": {
+    "key": "robinhood:0x4376c727996a20e1f1ee6672600acb3418c1a2c339073b6e3d2f77e1b89c29cc",
+    "name": "Uniswap V4 LP wUSDG/AAOI",
+    "decimals": 18,
+    "symbol": "WUSDG/AAOI",
+    "price": 9007199254740990,
+    "address": "0x4376c727996a20e1f1ee6672600acb3418c1a2c339073b6e3d2f77e1b89c29cc",
+    "addresses": {
+     "robinhood": "0x4376c727996a20e1f1ee6672600acb3418c1a2c339073b6e3d2f77e1b89c29cc"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:39.180Z",
+    "createdAt": "2026-11-06T15:59:37.663Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 9580.020861792487,
+    "metrics": {
+     "apy": "798.058",
+     "baseApy": "798.058",
+     "volumeUsd1d": "418.92",
+     "volumeUsd7d": "418.92"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "9fdc66fb-a73d-4fb8-a93c-27d8ddc61003",
+    "reserves": [
+     "9581.782085",
+     "0.000000000000000001"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -557,59 +1045,247 @@
     "name": "Applied Optoelectronics rStock",
     "decimals": 18,
     "symbol": "RAAOI",
-    "price": 75.45,
+    "price": 33.94,
     "address": "0x09cef543943c8092a59c4191b434cf626c43a324",
     "addresses": {
      "arbitrum": "0x09cef543943c8092a59c4191b434cf626c43a324"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 584946,
+    "liquidity": 371379,
     "image": "https://coin-images.coingecko.com/coins/images/102177004/large/ed866d5629533fd2fd52f756bfa50656.png?1789116379",
     "metrics": {
-     "volumeUsd1d": "723.703",
-     "volumeUsd7d": "808537.877"
+     "volumeUsd1d": "623337.143",
+     "volumeUsd7d": "2558145.55"
     },
     "metadata": {},
     "tokenId": "e3bd9087-9832-4da0-9088-4d7ec70f2009",
-    "totalSupply": "7752.488755511",
-    "circulatingSupply": "7752.488755511",
+    "totalSupply": "10940.660640909",
+    "circulatingSupply": "10940.660640909",
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0xc49cabb9fff3adc4f4266e591776d49d880c69afa20760ca96ff28aac0ec3e3b": {
+    "key": "arbitrum:0xc49cabb9fff3adc4f4266e591776d49d880c69afa20760ca96ff28aac0ec3e3b",
+    "name": "Uniswap V4 LP rAAOI/wUSDC",
+    "decimals": 18,
+    "symbol": "RAAOI/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xc49cabb9fff3adc4f4266e591776d49d880c69afa20760ca96ff28aac0ec3e3b",
+    "addresses": {
+     "arbitrum": "0xc49cabb9fff3adc4f4266e591776d49d880c69afa20760ca96ff28aac0ec3e3b"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177004/large/ed866d5629533fd2fd52f756bfa50656.png?1789116379",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:09:38.912Z",
+    "createdAt": "2026-11-14T12:28:24.564Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x09cef543943c8092a59c4191b434cf626c43a324",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 3568.7940834544725,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "40b1e82b-50f8-4270-b8f8-3839ad6928b1",
+    "reserves": [
+     "0",
+     "3000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x36b652d2f4bde8958638747d3e45fcb2089fbd2a3c298a17d0d5b458e25c3228": {
+    "key": "robinhood:0x36b652d2f4bde8958638747d3e45fcb2089fbd2a3c298a17d0d5b458e25c3228",
+    "name": "Uniswap V4 LP ETH/AAOI",
+    "decimals": 18,
+    "symbol": "ETH/AAOI",
+    "price": 9007199254740990,
+    "address": "0x36b652d2f4bde8958638747d3e45fcb2089fbd2a3c298a17d0d5b458e25c3228",
+    "addresses": {
+     "robinhood": "0x36b652d2f4bde8958638747d3e45fcb2089fbd2a3c298a17d0d5b458e25c3228"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174149/large/0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e.png?1782444667"
+    ],
+    "updatedAt": "2026-11-21T14:12:38.681Z",
+    "createdAt": "2026-09-08T14:37:40.673Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 1509.0422128433631,
+    "metrics": {
+     "apy": "27.361",
+     "baseApy": "27.361",
+     "volumeUsd1d": "22.153",
+     "volumeUsd7d": "330.668"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "5e464337-eeb1-470f-a4f0-cf07ac509a05",
+    "reserves": [
+     "0.13014632931474622",
+     "40.332510871149937219"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "ethereum:0x99888f2ccd08258ed5f66e94ba59d7e75016900f": {
     "key": "ethereum:0x99888f2ccd08258ed5f66e94ba59d7e75016900f",
     "name": "Applied Optoelectronics (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "AAOION",
-    "price": 75.55,
+    "price": 33.74,
     "address": "0x99888f2ccd08258ed5f66e94ba59d7e75016900f",
     "addresses": {
-     "bsc": "0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d",
-     "ethereum": "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
+     "ethereum": "0x99888f2ccd08258ed5f66e94ba59d7e75016900f",
+     "bsc": "0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-06-12T09:22:03.610Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 559090,
+    "liquidity": 134117,
     "image": "missing_large.png",
     "metrics": {
-     "volumeUsd1d": "449482.285",
-     "volumeUsd7d": "6555901.575"
+     "volumeUsd1d": "154627.304",
+     "volumeUsd7d": "1516441.632"
     },
     "metadata": {},
     "tokenId": "770edbb1-1211-44c7-95ea-5504174fd0c7",
-    "totalSupply": "7402.730662927909",
-    "circulatingSupply": "7402.730662927909",
+    "totalSupply": "3975.351687336225",
+    "circulatingSupply": "3975.351687336225",
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0xf02551413faefbcd8afeb5ae0e5d0961973498dc73cb20827074d7df0e7962f9": {
+    "key": "arbitrum:0xf02551413faefbcd8afeb5ae0e5d0961973498dc73cb20827074d7df0e7962f9",
+    "name": "Uniswap V4 LP rAAOI/wUSDC",
+    "decimals": 18,
+    "symbol": "RAAOI/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xf02551413faefbcd8afeb5ae0e5d0961973498dc73cb20827074d7df0e7962f9",
+    "addresses": {
+     "arbitrum": "0xf02551413faefbcd8afeb5ae0e5d0961973498dc73cb20827074d7df0e7962f9"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102177004/large/ed866d5629533fd2fd52f756bfa50656.png?1789116379",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:06:45.473Z",
+    "createdAt": "2026-11-14T12:28:22.892Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x09cef543943c8092a59c4191b434cf626c43a324",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "312505d2-be32-47cf-9de4-f4928c90b045",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd474d0f1a0c56e95bd8d2f6f34dcbf5d35294f2c8a634d843fd76f2d5ac9608c": {
+    "key": "ethereum:0xd474d0f1a0c56e95bd8d2f6f34dcbf5d35294f2c8a634d843fd76f2d5ac9608c",
+    "name": "Uniswap V4 LP EE/AAOIon",
+    "decimals": 18,
+    "symbol": "EE/AAOION",
+    "price": 9007199254740990,
+    "address": "0xd474d0f1a0c56e95bd8d2f6f34dcbf5d35294f2c8a634d843fd76f2d5ac9608c",
+    "addresses": {
+     "ethereum": "0xd474d0f1a0c56e95bd8d2f6f34dcbf5d35294f2c8a634d843fd76f2d5ac9608c"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "missing_large.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:22.460Z",
+    "createdAt": "2026-11-07T15:59:35.511Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
+    ],
+    "liquidity": 50013.20459175005,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9902,
+     "feePercentage": "99.0228"
+    },
+    "tokenId": "a70c68c0-a13e-4f08-b925-32ec8002a638",
+    "reserves": [
+     "49999.999999999999999986",
+     "0.268396743180495287"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0xd54a65c57506e369f6a02f328f1d46771329d39a690bb9c2c7308117057301f5": {
     "key": "bsc:0xd54a65c57506e369f6a02f328f1d46771329d39a690bb9c2c7308117057301f5",
@@ -628,14 +1304,14 @@
      "https://coin-images.coingecko.com/coins/images/102174590/large/aaoib-bstocks.png?1784150365",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:15:26.724Z",
+    "updatedAt": "2026-11-21T14:12:42.159Z",
     "createdAt": "2026-08-03T06:33:18.769Z",
     "verifiedAt": null,
     "tokens": [
      "0x10343ef7da3301493d7ecb647d68a288c6c1db2f",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 1005.5109600615584,
+    "liquidity": 927.7935238935052,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -658,33 +1334,79 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0x56c3de4fa9e70f8545d51af58b4754580339d0bfee77a4340331b6d67b64a1df": {
+    "key": "robinhood:0x56c3de4fa9e70f8545d51af58b4754580339d0bfee77a4340331b6d67b64a1df",
+    "name": "Uniswap V4 LP MJDQ/AAOI",
+    "decimals": 18,
+    "symbol": "MJDQ/AAOI",
+    "price": 9007199254740990,
+    "address": "0x56c3de4fa9e70f8545d51af58b4754580339d0bfee77a4340331b6d67b64a1df",
+    "addresses": {
+     "robinhood": "0x56c3de4fa9e70f8545d51af58b4754580339d0bfee77a4340331b6d67b64a1df"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:39.249Z",
+    "createdAt": "2026-11-11T13:21:24.012Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x521cf887e6531c6f667b5bc4d896e5d9bfe8eb2e"
+    ],
+    "liquidity": 9999.130770163058,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.9572"
+    },
+    "tokenId": "d1c2ef94-ee72-486a-ae04-f7e4915a354e",
+    "reserves": [
+     "9999.999999999999999914",
+     "0.002108289284983653"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "bsc:0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d": {
     "key": "bsc:0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d",
     "name": "Applied Optoelectronics (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "AAOION",
-    "price": 75.55,
+    "price": 33.74,
     "address": "0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d",
     "addresses": {
-     "bsc": "0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d",
-     "ethereum": "0x99888f2ccd08258ed5f66e94ba59d7e75016900f"
+     "ethereum": "0x99888f2ccd08258ed5f66e94ba59d7e75016900f",
+     "bsc": "0x149bda9e7251dc36f536d1fe7f92a5ea203f4f3d"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-06-12T09:22:03.610Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 559090,
+    "liquidity": 134117,
     "image": "missing_large.png",
     "metrics": {
-     "volumeUsd1d": "449150.903",
-     "volumeUsd7d": "6582768.141"
+     "volumeUsd1d": "154753.028",
+     "volumeUsd7d": "1520763.773"
     },
     "metadata": {},
     "tokenId": "770edbb1-1211-44c7-95ea-5504174fd0c7",
-    "totalSupply": "7402.730662927909",
-    "circulatingSupply": "7402.730662927909",
+    "totalSupply": "3975.351687336225",
+    "circulatingSupply": "3975.351687336225",
     "isClaimed": false,
     "isPortable": true
    }

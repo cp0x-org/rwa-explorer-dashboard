@@ -5,8 +5,8 @@
  "name": "Zoom Communications",
  "isin": "US98980L1017",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:20:29Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:16:08Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,25 +17,25 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 93.28418143564106,
-     "tokenized_market_cap": 629486.8659455556,
-     "tokenized_volume_24h": 1105489.99573631,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 81.80867485144037,
+     "tokenized_market_cap": 542726.4342884201,
+     "tokenized_volume_24h": 1108938.06051231,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 376,
    "asset_type": "stock",
-   "rwa_rank": 474,
+   "rwa_rank": 523,
    "has_tokens": true,
-   "average_tokenized_price": 93.28418143564106,
-   "tokenized_market_cap": 629486.8659455556,
-   "tokenized_volume_24h": 1105489.99573631,
-   "last_updated": "2026-10-18T20:13:45.373Z",
+   "average_tokenized_price": 81.80867485144037,
+   "tokenized_market_cap": 542726.4342884201,
+   "tokenized_volume_24h": 1108938.06051231,
+   "last_updated": "2026-11-21T14:10:11.205Z",
    "tokens": [
     {
      "symbol": "ZM",
      "name": "Zoom (Derivatives)",
-     "price": 94.60096288190836,
+     "price": 81.91350262868083,
      "crypto_id": 39954,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -45,12 +45,12 @@
     {
      "symbol": "ZM",
      "name": "Zoom Tokenized Stock (Robinhood)",
-     "price": 93.87094212781231,
+     "price": 80.65189672671445,
      "crypto_id": 40728,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 35970.16,
-     "volume_24h": 0
+     "market_cap": 28602.562056739975,
+     "volume_24h": 477.417224463257
     },
     {
      "symbol": "wZMx",
@@ -65,22 +65,32 @@
     {
      "symbol": "ZMx",
      "name": "Zoom Communications tokenized stock (xStock)",
-     "price": 94.34577382920517,
+     "price": 81.99948344310486,
      "crypto_id": 41891,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
-     "market_cap": 180098.58,
-     "volume_24h": 0
+     "market_cap": 161385.87982862117,
+     "volume_24h": 92.90394645712927
     },
     {
      "symbol": "ZMB",
      "name": "Zoom Tokenized bStocks",
-     "price": 93.26223007707142,
+     "price": 81.80915712723338,
      "crypto_id": 42388,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 413320.85,
-     "volume_24h": 1106147.86319073
+     "market_cap": 352737.9924028519,
+     "volume_24h": 1108367.739341388
+    },
+    {
+     "symbol": "ZMc",
+     "name": "Zoom Communications, Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42756,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
     }
    ],
    "tradfi_markets": [
@@ -305,6 +315,35 @@
       }
      }
     ]
+   },
+   "42756": {
+    "id": 42756,
+    "symbol": "ZMc",
+    "name": "Zoom Communications, Inc. Tokenized Stock (Coinbase)",
+    "slug": "zoom-communications-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42756.png",
+    "date_added": "2026-11-02T08:29:27.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB2000000000000000000000E63b7B0b6BC5B9213"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB2000000000000000000000E63b7B0b6BC5B9213",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -327,6 +366,7 @@
   ],
   "looked_up": [
    "arbitrum:0x979ce3d15b845e7471a667338b7122e12ab66b52",
+   "base:0xb2000000000000000000000e63b7b0b6bc5b9213",
    "bsc:0x979ce3d15b845e7471a667338b7122e12ab66b52",
    "bsc:0xf4ddb292fe88e476eddd9869d386705e6bfab7a2",
    "ethereum:0x979ce3d15b845e7471a667338b7122e12ab66b52",
@@ -338,7 +378,7 @@
     "name": "Zoom • Robinhood Token",
     "decimals": 18,
     "symbol": "ZM",
-    "price": 87,
+    "price": 77.745,
     "address": "0x44c4f142009036cf477ed2d09932051843137cf1",
     "addresses": {
      "robinhood": "0x44c4f142009036cf477ed2d09932051843137cf1"
@@ -349,15 +389,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x44c4f142009036cf477ed2d09932051843137cf1.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x44c4f142009036cf477ed2d09932051843137cf1",
-    "liquidity": 33337.29858,
+    "liquidity": 27571.65395175,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "6316.771"
+     "volumeUsd7d": "10356.367"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000da64fede272447a3b772423f0962a984",
@@ -387,7 +427,7 @@
      }
     },
     "tokenId": "dcdfca82-d3cf-4299-a283-487b6061aabc",
-    "totalSupply": "383.18734",
+    "totalSupply": "354.64215",
     "isClaimed": false,
     "isPortable": true
    },
@@ -396,36 +436,36 @@
     "name": "Zoom (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "ZMB",
-    "price": 93.26,
+    "price": 81.8,
     "address": "0xf4ddb292fe88e476eddd9869d386705e6bfab7a2",
     "addresses": {
      "bsc": "0xf4ddb292fe88e476eddd9869d386705e6bfab7a2"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 413313,
+    "liquidity": 352708,
     "image": "https://coin-images.coingecko.com/coins/images/102178978/large/bstocks_zmb_64.jpg?1790819933",
     "metrics": {
-     "volumeUsd1d": "1020874.507",
-     "volumeUsd7d": "3816316.839"
+     "volumeUsd1d": "1017999.24",
+     "volumeUsd7d": "7282333.555"
     },
     "metadata": {},
     "tokenId": "a2e420d9-6730-413b-b53c-8c3da9eeedee",
-    "totalSupply": "4431.81388176",
-    "circulatingSupply": "4431.81388176",
+    "totalSupply": "4311.7177194999995",
+    "circulatingSupply": "4311.7177194999995",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "ZM": {
-    "total_items": 17,
+    "total_items": 21,
     "pages": 1,
-    "received": 17,
+    "received": 21,
     "complete": true
    }
   },
@@ -435,7 +475,7 @@
     "name": "PancakeSwap LP BTCB/ZMN",
     "decimals": 18,
     "symbol": "BTCB/ZMN",
-    "price": 53.30959388884941,
+    "price": 39.43256457072306,
     "address": "0xbf169a44fba81d13528abb4e528200d350f2708d",
     "addresses": {
      "bsc": "0xbf169a44fba81d13528abb4e528200d350f2708d"
@@ -447,19 +487,19 @@
      "https://assets.coingecko.com/coins/images/14108/large/Binance-bitcoin.png?1696513829",
      "https://assets.coingecko.com/coins/images/2103/large/zmn.png?1696503070"
     ],
-    "updatedAt": "2026-10-18T20:15:50.519Z",
+    "updatedAt": "2026-11-21T14:13:42.742Z",
     "createdAt": "2024-02-29T09:06:58.792Z",
     "verifiedAt": null,
     "tokens": [
      "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
      "0xfcb8a4b1a0b645e08064e05b98e9cc6f48d2aa57"
     ],
-    "liquidity": 142338.21093425277,
+    "liquidity": 105286.12739479383,
     "metrics": {
-     "apy": "0.908",
-     "baseApy": "0.908",
-     "volumeUsd1d": "1417.556",
-     "volumeUsd7d": "2022.167"
+     "apy": "2.348",
+     "baseApy": "2.348",
+     "volumeUsd1d": "2721.701",
+     "volumeUsd7d": "11202.312"
     },
     "metadata": {
      "tags": [
@@ -469,8 +509,8 @@
     "tokenId": "61d8ad75-0232-4ebc-8c2d-0900f4781431",
     "totalSupply": "2670.029924276447495309",
     "reserves": [
-     "0.882484837663230173",
-     "8384337.833826629151385261"
+     "0.873250092949245139",
+     "8483492.104917873972489228"
     ],
     "isClaimed": false,
     "isPortable": true
@@ -480,7 +520,7 @@
     "name": "Zoom • Robinhood Token",
     "decimals": 18,
     "symbol": "ZM",
-    "price": 87,
+    "price": 77.745,
     "address": "0x44c4f142009036cf477ed2d09932051843137cf1",
     "addresses": {
      "robinhood": "0x44c4f142009036cf477ed2d09932051843137cf1"
@@ -491,15 +531,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x44c4f142009036cf477ed2d09932051843137cf1.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x44c4f142009036cf477ed2d09932051843137cf1",
-    "liquidity": 33337.29858,
+    "liquidity": 27571.65395175,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "6316.771"
+     "volumeUsd7d": "10356.367"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000da64fede272447a3b772423f0962a984",
@@ -529,7 +569,7 @@
      }
     },
     "tokenId": "dcdfca82-d3cf-4299-a283-487b6061aabc",
-    "totalSupply": "383.18734",
+    "totalSupply": "354.64215",
     "isClaimed": false,
     "isPortable": true
    },
@@ -538,22 +578,22 @@
     "name": "ZMINE",
     "decimals": 18,
     "symbol": "ZMN",
-    "price": 0.00847771,
+    "price": 0.00620186,
     "address": "0xfcb8a4b1a0b645e08064e05b98e9cc6f48d2aa57",
     "addresses": {
      "bsc": "0xfcb8a4b1a0b645e08064e05b98e9cc6f48d2aa57"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 990062,
+    "liquidity": 724350,
     "image": "https://assets.coingecko.com/coins/images/2103/large/zmn.png?1696503070",
     "metrics": {
-     "volumeUsd1d": "2796.458",
-     "volumeUsd7d": "3965.672"
+     "volumeUsd1d": "5622.91",
+     "volumeUsd7d": "22070.297"
     },
     "metadata": {},
     "tokenId": "3c9a984c-40b8-4822-81a2-41694f9a3316",
@@ -579,19 +619,19 @@
      "https://coin-images.coingecko.com/coins/images/102174191/large/0x44c4f142009036cf477ed2d09932051843137cf1.png?1782444779",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:40.384Z",
+    "updatedAt": "2026-11-21T14:14:43.669Z",
     "createdAt": "2026-09-09T10:52:51.621Z",
     "verifiedAt": null,
     "tokens": [
      "0x44c4f142009036cf477ed2d09932051843137cf1",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 763.1580176932758,
+    "liquidity": 594.6573227435193,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "37.054"
+     "apy": "92.85",
+     "baseApy": "92.85",
+     "volumeUsd1d": "29.69",
+     "volumeUsd7d": "112.305"
     },
     "metadata": {
      "tags": [
@@ -603,39 +643,151 @@
     },
     "tokenId": "8e2e04aa-6041-432b-846b-7a65a30d6ec5",
     "reserves": [
-     "4.724278732106619196",
-     "352.145768"
+     "5.432025606064947697",
+     "172.344492"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "arc:0x8d7f7f8a7b8d7f0bed06af60a879a8371e184477": {
-    "key": "arc:0x8d7f7f8a7b8d7f0bed06af60a879a8371e184477",
-    "name": "Lazy Memes",
+   "arbitrum:0xea01a7b32693e43db3307c001400dccc2885aecc28daf2c70f5668894ecda1c1": {
+    "key": "arbitrum:0xea01a7b32693e43db3307c001400dccc2885aecc28daf2c70f5668894ecda1c1",
+    "name": "Uniswap V4 LP wUSDC/rZM",
     "decimals": 18,
-    "symbol": "LAZM",
-    "price": 5.667233320464022e-06,
-    "address": "0x8d7f7f8a7b8d7f0bed06af60a879a8371e184477",
+    "symbol": "WUSDC/RZM",
+    "price": 9007199254740990,
+    "address": "0xea01a7b32693e43db3307c001400dccc2885aecc28daf2c70f5668894ecda1c1",
     "addresses": {
-     "arc": "0x8d7f7f8a7b8d7f0bed06af60a879a8371e184477"
+     "arbitrum": "0xea01a7b32693e43db3307c001400dccc2885aecc28daf2c70f5668894ecda1c1"
     },
-    "platform": "basic",
-    "network": "arc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2026-10-13T13:12:39.210Z",
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177635/large/fa1c39f5578dd3ce2ab5cd7defad999c.png?1789118555"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.375Z",
+    "createdAt": "2026-11-14T12:28:24.987Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 5667.233320464022,
-    "image": "https://images.portals.fi/unknown-token.png",
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9207af15921f8bcffde1ffa3f8aaadb39a18a209"
+    ],
+    "liquidity": 11895.067302723905,
     "metrics": {
-     "volumeUsd1d": "7.91",
-     "volumeUsd7d": "123.6"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "0dc63a0f-a025-480b-ab44-7a9903a09e5d",
-    "totalSupply": "1000000000",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "b6fce40d-8794-4a14-afe2-f90cdc496f78",
+    "reserves": [
+     "10000",
+     "0"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
+   },
+   "arbitrum:0x5af284f21bfaf4636cbaf6face116b73855b5dd33160b36f8c80bcee644b0738": {
+    "key": "arbitrum:0x5af284f21bfaf4636cbaf6face116b73855b5dd33160b36f8c80bcee644b0738",
+    "name": "Uniswap V4 LP wUSDC/rZM",
+    "decimals": 18,
+    "symbol": "WUSDC/RZM",
+    "price": 9007199254740990,
+    "address": "0x5af284f21bfaf4636cbaf6face116b73855b5dd33160b36f8c80bcee644b0738",
+    "addresses": {
+     "arbitrum": "0x5af284f21bfaf4636cbaf6face116b73855b5dd33160b36f8c80bcee644b0738"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177635/large/fa1c39f5578dd3ce2ab5cd7defad999c.png?1789118555"
+    ],
+    "updatedAt": "2026-11-21T14:14:09.992Z",
+    "createdAt": "2026-11-14T12:28:22.878Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9207af15921f8bcffde1ffa3f8aaadb39a18a209"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "6971b591-5ade-4ab8-930f-d55240cd0b1f",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x5d5bd51b40db9986477dbb951d91cad864532d1a01c81a74584bddf2bc2eac2f": {
+    "key": "robinhood:0x5d5bd51b40db9986477dbb951d91cad864532d1a01c81a74584bddf2bc2eac2f",
+    "name": "Uniswap V4 LP MJDQ/ZM",
+    "decimals": 18,
+    "symbol": "MJDQ/ZM",
+    "price": 9007199254740990,
+    "address": "0x5d5bd51b40db9986477dbb951d91cad864532d1a01c81a74584bddf2bc2eac2f",
+    "addresses": {
+     "robinhood": "0x5d5bd51b40db9986477dbb951d91cad864532d1a01c81a74584bddf2bc2eac2f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:43.884Z",
+    "createdAt": "2026-11-11T13:21:24.552Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x44c4f142009036cf477ed2d09932051843137cf1"
+    ],
+    "liquidity": 9998.971092579108,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19983,
+     "feePercentage": "99.9185"
+    },
+    "tokenId": "5435f162-24a2-47fe-a50b-19fc36ea8b68",
+    "reserves": [
+     "9999.999999997059999867",
+     "0.000921023651380485"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0x0f5d3df90d0bec8d692a8ef040b79f72ac1caec34cc651cee04fc0c3d9233a8f": {
     "key": "robinhood:0x0f5d3df90d0bec8d692a8ef040b79f72ac1caec34cc651cee04fc0c3d9233a8f",
@@ -654,14 +806,14 @@
      "https://coin-images.coingecko.com/coins/images/102174191/large/0x44c4f142009036cf477ed2d09932051843137cf1.png?1782444779",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:40.881Z",
+    "updatedAt": "2026-11-21T14:14:44.272Z",
     "createdAt": "2026-09-08T14:36:09.026Z",
     "verifiedAt": null,
     "tokens": [
      "0x44c4f142009036cf477ed2d09932051843137cf1",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 851.112222743715,
+    "liquidity": 760.5714914621853,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -684,78 +836,94 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "arbitrum:0x723ce01b57dfd7148785b90d66275005aa2edd17": {
-    "key": "arbitrum:0x723ce01b57dfd7148785b90d66275005aa2edd17",
-    "name": "LoungeM",
-    "decimals": 8,
-    "symbol": "LZM",
-    "price": 4.998e-05,
-    "address": "0x723ce01b57dfd7148785b90d66275005aa2edd17",
-    "addresses": {
-     "arbitrum": "0x723ce01b57dfd7148785b90d66275005aa2edd17"
-    },
-    "platform": "basic",
-    "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2025-04-14T09:16:03.383Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 8987.45,
-    "image": "https://coin-images.coingecko.com/coins/images/29068/large/_LoungeM_Logo.png?1696528034",
-    "metrics": {
-     "volumeUsd1d": "0.251",
-     "volumeUsd7d": "1.757"
-    },
-    "metadata": {},
-    "tokenId": "e504cdab-bec4-4ede-9468-885bccf7d603",
-    "totalSupply": "1000000000",
-    "circulatingSupply": "179822261",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "arc:0x80c1bf703e25c2c75c2666486fe67f9128b8b991a1cc230241dc367aceb96c39": {
-    "key": "arc:0x80c1bf703e25c2c75c2666486fe67f9128b8b991a1cc230241dc367aceb96c39",
-    "name": "Uniswap V4 LP USDC/LAZM",
+   "robinhood:0x246a00b613275c6e808c19662be922987767f9b02aa7cb5e6e0c69b70520ef06": {
+    "key": "robinhood:0x246a00b613275c6e808c19662be922987767f9b02aa7cb5e6e0c69b70520ef06",
+    "name": "Uniswap V4 LP ZM/OLQD",
     "decimals": 18,
-    "symbol": "USDC/LAZM",
+    "symbol": "ZM/OLQD",
     "price": 9007199254740990,
-    "address": "0x80c1bf703e25c2c75c2666486fe67f9128b8b991a1cc230241dc367aceb96c39",
+    "address": "0x246a00b613275c6e808c19662be922987767f9b02aa7cb5e6e0c69b70520ef06",
     "addresses": {
-     "arc": "0x80c1bf703e25c2c75c2666486fe67f9128b8b991a1cc230241dc367aceb96c39"
+     "robinhood": "0x246a00b613275c6e808c19662be922987767f9b02aa7cb5e6e0c69b70520ef06"
     },
     "platform": "uniswap-v4",
-    "network": "arc",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:16:00.068Z",
-    "createdAt": "2026-10-14T06:59:40.943Z",
+    "updatedAt": "2026-11-21T14:14:44.468Z",
+    "createdAt": "2026-11-06T15:59:36.339Z",
     "verifiedAt": null,
     "tokens": [
-     "0x0000000000000000000000000000000000000000",
-     "0x8d7f7f8a7b8d7f0bed06af60a879a8371e184477"
+     "0x44c4f142009036cf477ed2d09932051843137cf1",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
     ],
-    "liquidity": 5606.433026760732,
+    "liquidity": 9997.606066752956,
     "metrics": {
-     "apy": "0.566",
-     "baseApy": "0.566",
-     "volumeUsd1d": "7.911",
-     "volumeUsd7d": "104.097"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 200,
-     "feePercentage": "1.099"
+     "tickSpacing": 19874,
+     "feePercentage": "99.3742"
     },
-    "tokenId": "d7fcb3e6-03c8-4c86-8c95-2f4d35b3ec83",
+    "tokenId": "5bcd3647-10df-4219-921d-bbbea5335601",
     "reserves": [
-     "526.789412775443436406",
-     "896290696.22566094164597067"
+     "0.0011279043537108",
+     "9999.999999997065958521"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xf1bd0e909fb8fb2c2f3e38dcb76efefa79e6008115988490e247ea14c9aa6b4f": {
+    "key": "robinhood:0xf1bd0e909fb8fb2c2f3e38dcb76efefa79e6008115988490e247ea14c9aa6b4f",
+    "name": "Uniswap V4 LP USDG/ZM",
+    "decimals": 18,
+    "symbol": "USDG/ZM",
+    "price": 9007199254740990,
+    "address": "0xf1bd0e909fb8fb2c2f3e38dcb76efefa79e6008115988490e247ea14c9aa6b4f",
+    "addresses": {
+     "robinhood": "0xf1bd0e909fb8fb2c2f3e38dcb76efefa79e6008115988490e247ea14c9aa6b4f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:45.440Z",
+    "createdAt": "2026-11-04T15:56:20.859Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0x44c4f142009036cf477ed2d09932051843137cf1"
+    ],
+    "liquidity": 50018.727389738524,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9951,
+     "feePercentage": "99.51"
+    },
+    "tokenId": "f8d24a2d-c0a2-4663-a5f8-b5a43df7800b",
+    "reserves": [
+     "49999.999999999999999967",
+     "0.30614708718999555"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -765,22 +933,22 @@
     "name": "MetaZooMee",
     "decimals": 18,
     "symbol": "MZM",
-    "price": 8.96e-06,
+    "price": 7.46e-06,
     "address": "0x61b57bdc01e3072fab3e9e2f3c7b88d482734e05",
     "addresses": {
      "ethereum": "0x61b57bdc01e3072fab3e9e2f3c7b88d482734e05"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 8959.68,
+    "liquidity": 7459.38,
     "image": "https://assets.coingecko.com/coins/images/31708/large/MZM-200px_%281%29.png?1696530531",
     "metrics": {
-     "volumeUsd1d": "224.222",
-     "volumeUsd7d": "1569.554"
+     "volumeUsd1d": "1.529",
+     "volumeUsd7d": "10.703"
     },
     "metadata": {},
     "tokenId": "79ef9e16-ddda-4475-a87a-98b29168abbf",
@@ -806,19 +974,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/102178978/large/bstocks_zmb_64.jpg?1790819933"
     ],
-    "updatedAt": "2026-10-18T20:17:56.331Z",
+    "updatedAt": "2026-11-21T14:14:48.337Z",
     "createdAt": "2026-10-01T09:16:21.105Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xf4ddb292fe88e476eddd9869d386705e6bfab7a2"
     ],
-    "liquidity": 3516.6553268822972,
+    "liquidity": 2866.422636971873,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "49.23"
+     "apy": "6.536",
+     "baseApy": "6.536",
+     "volumeUsd1d": "10.089",
+     "volumeUsd7d": "131.766"
     },
     "metadata": {
      "tags": [
@@ -830,8 +998,8 @@
     },
     "tokenId": "ffde7162-730d-49b2-88e9-a063b30ee796",
     "reserves": [
-     "705.597253822449880036",
-     "30.148328702784822663"
+     "527.265552821882670599",
+     "28.60387756150508576"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -841,27 +1009,27 @@
     "name": "Zoom Communications rStock",
     "decimals": 18,
     "symbol": "RZM",
-    "price": 94.09,
+    "price": 81.34,
     "address": "0x9207af15921f8bcffde1ffa3f8aaadb39a18a209",
     "addresses": {
      "arbitrum": "0x9207af15921f8bcffde1ffa3f8aaadb39a18a209"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-11T09:32:28.444Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 552.77,
+    "liquidity": 861.17,
     "image": "https://coin-images.coingecko.com/coins/images/102177635/large/fa1c39f5578dd3ce2ab5cd7defad999c.png?1789118555",
     "metrics": {
-     "volumeUsd1d": "16.108",
-     "volumeUsd7d": "819.6"
+     "volumeUsd1d": "2131.27",
+     "volumeUsd7d": "12956.158"
     },
     "metadata": {},
     "tokenId": "9cafa1b0-8b59-467b-8f1b-e4d2cddb31ac",
-    "totalSupply": "6.03911365",
-    "circulatingSupply": "5.8747674",
+    "totalSupply": "10.586739601",
+    "circulatingSupply": "10.586739601",
     "isClaimed": false,
     "isPortable": true
    },
@@ -870,7 +1038,7 @@
     "name": "PancakeSwap LP WBNB/ZMN",
     "decimals": 18,
     "symbol": "WBNB/ZMN",
-    "price": 5.932488828255453,
+    "price": 4.4787104905314195,
     "address": "0xcd50c95f1caccbd949cd28e51d899f431411047b",
     "addresses": {
      "bsc": "0xcd50c95f1caccbd949cd28e51d899f431411047b"
@@ -882,19 +1050,19 @@
      "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
      "https://assets.coingecko.com/coins/images/2103/large/zmn.png?1696503070"
     ],
-    "updatedAt": "2026-10-18T20:15:48.800Z",
+    "updatedAt": "2026-11-21T14:13:52.646Z",
     "createdAt": "2024-02-29T09:06:58.818Z",
     "verifiedAt": null,
     "tokens": [
      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
      "0xfcb8a4b1a0b645e08064e05b98e9cc6f48d2aa57"
     ],
-    "liquidity": 46246.10473472931,
+    "liquidity": 34913.325657716385,
     "metrics": {
-     "apy": "2.763",
-     "baseApy": "2.763",
-     "volumeUsd1d": "1401.095",
-     "volumeUsd7d": "1996.18"
+     "apy": "7.014",
+     "baseApy": "7.014",
+     "volumeUsd1d": "2693.662",
+     "volumeUsd7d": "10422.561"
     },
     "metadata": {
      "tags": [
@@ -904,8 +1072,8 @@
     "tokenId": "8391d38d-a2c0-4ea8-b1ef-f9cd5108adaa",
     "totalSupply": "7795.396851733936927727",
     "reserves": [
-     "32.742340450831640843",
-     "2733261.573323368596246545"
+     "31.928687060609158059",
+     "2813115.101167664656781425"
     ],
     "isClaimed": false,
     "isPortable": true
@@ -915,7 +1083,7 @@
     "name": "Yuzu Money Yuzu mGLOBAL",
     "decimals": 18,
     "symbol": "YZMGLOBAL",
-    "price": 1.0278315828294886,
+    "price": 1.0378778985030979,
     "address": "0x7c5ed3b2dc8c353d685005b9e06e3250d47d839e",
     "addresses": {
      "ethereum": "0x7c5ed3b2dc8c353d685005b9e06e3250d47d839e"
@@ -926,16 +1094,16 @@
      "https://icons.llamao.fi/icons/protocols/yuzu-money",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:16:06.313Z",
+    "updatedAt": "2026-11-21T14:14:23.925Z",
     "createdAt": "2026-10-13T05:09:39.979Z",
     "verifiedAt": null,
     "tokens": [
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
     ],
-    "liquidity": 273875.65191176976,
+    "liquidity": 277055.57257518795,
     "metrics": {
-     "apy": "11.614",
-     "baseApy": "11.614",
+     "apy": "11.49",
+     "baseApy": "11.49",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
@@ -947,11 +1115,11 @@
      "interface": "ERC4626"
     },
     "tokenId": "d078c6f6-b9fa-4be7-9f57-08260093b88d",
-    "totalSupply": "266459.657872961278548867",
+    "totalSupply": "266944.28407693947518824",
     "reserves": [
-     "273940.301823"
+     "277231.337243"
     ],
-    "pricePerShare": "1.028074208342657382",
+    "pricePerShare": "1.038536330536658203",
     "isClaimed": false,
     "isPortable": true
    },
@@ -972,19 +1140,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://coin-images.coingecko.com/coins/images/102174191/large/0x44c4f142009036cf477ed2d09932051843137cf1.png?1782444779"
     ],
-    "updatedAt": "2026-10-18T20:15:41.951Z",
+    "updatedAt": "2026-11-21T14:14:46.282Z",
     "createdAt": "2026-07-23T13:51:05.792Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x44c4f142009036cf477ed2d09932051843137cf1"
     ],
-    "liquidity": 2129.726834328529,
+    "liquidity": 932.3780245749216,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "130.394"
+     "volumeUsd7d": "143.264"
     },
     "metadata": {
      "tags": [
@@ -996,8 +1164,8 @@
     },
     "tokenId": "984fde2c-a4f8-4c20-a438-8b9bff80e169",
     "reserves": [
-     "0.266121597160346552",
-     "17.338719850272090262"
+     "0.249975892737212404",
+     "6.542850162752605528"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1019,19 +1187,19 @@
      "https://coin-images.coingecko.com/coins/images/102174191/large/0x44c4f142009036cf477ed2d09932051843137cf1.png?1782444779",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:41.953Z",
+    "updatedAt": "2026-11-21T14:14:46.019Z",
     "createdAt": "2026-09-08T14:37:12.713Z",
     "verifiedAt": null,
     "tokens": [
      "0x44c4f142009036cf477ed2d09932051843137cf1",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 15523.36711296789,
+    "liquidity": 12107.527662273802,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "2157.255"
+     "apy": "1.102",
+     "baseApy": "1.102",
+     "volumeUsd1d": "11.801",
+     "volumeUsd7d": "4521.579"
     },
     "metadata": {
      "tags": [
@@ -1043,8 +1211,8 @@
     },
     "tokenId": "727e2dd0-4649-4b99-ba26-e278bbdea684",
     "reserves": [
-     "109.501193815722871363",
-     "5996.763251"
+     "149.756730378465532627",
+     "464.690659"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1066,19 +1234,19 @@
      "https://coin-images.coingecko.com/coins/images/102174191/large/0x44c4f142009036cf477ed2d09932051843137cf1.png?1782444779",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:42.003Z",
+    "updatedAt": "2026-11-21T14:14:46.080Z",
     "createdAt": "2026-09-08T15:09:09.271Z",
     "verifiedAt": null,
     "tokens": [
      "0x44c4f142009036cf477ed2d09932051843137cf1",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 3420.8813072280427,
+    "liquidity": 4625.703258932498,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "4319.654"
+     "apy": "6.172",
+     "baseApy": "6.172",
+     "volumeUsd1d": "71.173",
+     "volumeUsd7d": "3339.365"
     },
     "metadata": {
      "tags": [
@@ -1090,8 +1258,101 @@
     },
     "tokenId": "0c99e50f-2401-45bd-b65c-43888357ea87",
     "reserves": [
-     "22.019362496874052834",
-     "1505.19677"
+     "55.652407266480138708",
+     "299.006856"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x9982908281427a76f14d1387cebb88b6136a9b558dec11cee37e69b5df60b774": {
+    "key": "arbitrum:0x9982908281427a76f14d1387cebb88b6136a9b558dec11cee37e69b5df60b774",
+    "name": "Uniswap V4 LP wUSDC/rZM",
+    "decimals": 18,
+    "symbol": "WUSDC/RZM",
+    "price": 9007199254740990,
+    "address": "0x9982908281427a76f14d1387cebb88b6136a9b558dec11cee37e69b5df60b774",
+    "addresses": {
+     "arbitrum": "0x9982908281427a76f14d1387cebb88b6136a9b558dec11cee37e69b5df60b774"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177635/large/fa1c39f5578dd3ce2ab5cd7defad999c.png?1789118555"
+    ],
+    "updatedAt": "2026-11-21T14:14:01.525Z",
+    "createdAt": "2026-11-14T12:28:23.152Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9207af15921f8bcffde1ffa3f8aaadb39a18a209"
+    ],
+    "liquidity": 3568.5201908171716,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "3f0017c4-2ea3-4427-8a87-537667613871",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x353079aaf9f2a965777afcad4bc4dc4a08e19c37afe3b0a8e89ef2cd005a6f7c": {
+    "key": "robinhood:0x353079aaf9f2a965777afcad4bc4dc4a08e19c37afe3b0a8e89ef2cd005a6f7c",
+    "name": "Uniswap V4 LP wUSDG/ZM",
+    "decimals": 18,
+    "symbol": "WUSDG/ZM",
+    "price": 9007199254740990,
+    "address": "0x353079aaf9f2a965777afcad4bc4dc4a08e19c37afe3b0a8e89ef2cd005a6f7c",
+    "addresses": {
+     "robinhood": "0x353079aaf9f2a965777afcad4bc4dc4a08e19c37afe3b0a8e89ef2cd005a6f7c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:53.451Z",
+    "createdAt": "2026-11-06T15:59:37.331Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x44c4f142009036cf477ed2d09932051843137cf1"
+    ],
+    "liquidity": 9997.997985855658,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "febe6c94-d9fb-40a1-9442-c40dbfa9a935",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1101,27 +1362,27 @@
     "name": "Zoom (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "ZMB",
-    "price": 93.26,
+    "price": 81.8,
     "address": "0xf4ddb292fe88e476eddd9869d386705e6bfab7a2",
     "addresses": {
      "bsc": "0xf4ddb292fe88e476eddd9869d386705e6bfab7a2"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-10-01T02:17:41.409Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 413313,
+    "liquidity": 352708,
     "image": "https://coin-images.coingecko.com/coins/images/102178978/large/bstocks_zmb_64.jpg?1790819933",
     "metrics": {
-     "volumeUsd1d": "1020874.507",
-     "volumeUsd7d": "3816316.839"
+     "volumeUsd1d": "1017999.24",
+     "volumeUsd7d": "7282333.555"
     },
     "metadata": {},
     "tokenId": "a2e420d9-6730-413b-b53c-8c3da9eeedee",
-    "totalSupply": "4431.81388176",
-    "circulatingSupply": "4431.81388176",
+    "totalSupply": "4311.7177194999995",
+    "circulatingSupply": "4311.7177194999995",
     "isClaimed": false,
     "isPortable": true
    }

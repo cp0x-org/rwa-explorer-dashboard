@@ -5,8 +5,8 @@
  "name": "BitMine Immersion Technologies",
  "isin": "US09175A2069",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:17:10Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:12:40Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,35 +17,35 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 21.11938829321169,
-     "tokenized_market_cap": 15857124.269151814,
-     "tokenized_volume_24h": 3080683.09587138,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 13.777550153758465,
+     "tokenized_market_cap": 13653469.664124781,
+     "tokenized_volume_24h": 7978651.95320605,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 219,
    "asset_type": "stock",
-   "rwa_rank": 759,
+   "rwa_rank": 962,
    "has_tokens": true,
-   "average_tokenized_price": 21.11938829321169,
-   "tokenized_market_cap": 15857124.269151814,
-   "tokenized_volume_24h": 3080683.09587138,
-   "last_updated": "2026-10-18T20:14:21.581Z",
+   "average_tokenized_price": 13.777550153758465,
+   "tokenized_market_cap": 13653469.664124781,
+   "tokenized_volume_24h": 7978651.95320605,
+   "last_updated": "2026-11-21T14:10:11.162Z",
    "tokens": [
     {
      "symbol": "BMNRon",
      "name": "BitMine Immersion Technologies Tokenized Stock (Ondo)",
-     "price": 21.441008395211533,
+     "price": 13.821774208227106,
      "crypto_id": 39224,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 6548187.54,
-     "volume_24h": 1529656.2772831
+     "market_cap": 7146219.017670101,
+     "volume_24h": 3968948.0389796775
     },
     {
      "symbol": "BMNR",
      "name": "Bitmine Immersion Technologies (Derivatives)",
-     "price": 20.839789502549593,
+     "price": 13.743924533820351,
      "crypto_id": 39670,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -55,22 +55,22 @@
     {
      "symbol": "BMNRB",
      "name": "BitMine Immersion Technologies Tokenized bStocks",
-     "price": 20.79747771908509,
+     "price": 13.729303434298304,
      "crypto_id": 40964,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 9308081.54,
-     "volume_24h": 1479090.23631142
+     "market_cap": 6507250.646454657,
+     "volume_24h": 3787009.3209970077
     },
     {
      "symbol": "wBMNRx",
      "name": "Wrapped Bitmine Tokenized Stock (xStock)",
-     "price": 20.873418812502152,
+     "price": 13.809826653784278,
      "crypto_id": 41124,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
      "market_cap": 0,
-     "volume_24h": 71885.49917301
+     "volume_24h": 222694.59322935942
     },
     {
      "symbol": "BMNRc",
@@ -104,22 +104,22 @@
     "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/39224.png",
     "date_added": "2026-01-08T15:44:10.000Z",
     "platform": {
-     "id": "1027",
-     "name": "Ethereum",
-     "symbol": "ETH",
-     "slug": "ethereum",
-     "token_address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+     "id": "40670",
+     "name": "Robinhood",
+     "symbol": "-",
+     "slug": "robinhood-placeholder",
+     "token_address": "0x900F8970d2fAe8060D06bB29234F629C837c3383"
     },
     "contract_address": [
      {
-      "contract_address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+      "contract_address": "0x900F8970d2fAe8060D06bB29234F629C837c3383",
       "platform": {
-       "name": "Ethereum",
+       "name": "Robinhood Chain",
        "coin": {
-        "id": "1027",
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "slug": "ethereum"
+        "id": "40670",
+        "name": "Robinhood",
+        "symbol": "-",
+        "slug": "robinhood-placeholder"
        }
       }
      },
@@ -132,6 +132,18 @@
         "name": "Solana",
         "symbol": "SOL",
         "slug": "solana"
+       }
+      }
+     },
+     {
+      "contract_address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
        }
       }
      },
@@ -269,7 +281,8 @@
    "base:0xb200000000000000000000ea2df44a307cab279c",
    "bsc:0x3548da95a9effe481e8604664d75e95821e557f5",
    "bsc:0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
-   "ethereum:0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+   "ethereum:0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+   "robinhood:0x900f8970d2fae8060d06bb29234f629c837c3383"
   ],
   "exact": {
    "bsc:0x3548da95a9effe481e8604664d75e95821e557f5": {
@@ -277,26 +290,26 @@
     "name": "BitMine Immersion Technologies (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "BMNRB",
-    "price": 20.81,
+    "price": 13.77,
     "address": "0x3548da95a9effe481e8604664d75e95821e557f5",
     "addresses": {
      "bsc": "0x3548da95a9effe481e8604664d75e95821e557f5"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-08-07T06:42:28.871Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 9314547,
+    "liquidity": 6527539,
     "metrics": {
-     "volumeUsd1d": "403721.362",
-     "volumeUsd7d": "4785067.788"
+     "volumeUsd1d": "2262628.301",
+     "volumeUsd7d": "9816660.009"
     },
     "metadata": {},
     "tokenId": "73098567-dc15-4003-95f3-b0bbd46bbcb5",
-    "totalSupply": "447558.19286699",
-    "circulatingSupply": "447558.19286699",
+    "totalSupply": "473968.01138493",
+    "circulatingSupply": "473968.01138493",
     "isClaimed": false,
     "isPortable": true
    },
@@ -305,28 +318,60 @@
     "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
     "decimals": 18,
     "symbol": "BMNRON",
-    "price": 21.41,
+    "price": 13.51,
     "address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
     "addresses": {
-     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
-     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T14:23:39.139Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6539204,
+    "liquidity": 6987530,
     "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
     "metrics": {
-     "volumeUsd1d": "1104085.748",
-     "volumeUsd7d": "9613952.106"
+     "volumeUsd1d": "2071040.624",
+     "volumeUsd7d": "5378616.441"
     },
     "metadata": {},
     "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
-    "totalSupply": "305404.83092110994",
-    "circulatingSupply": "305404.83092110994",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x900f8970d2fae8060d06bb29234f629c837c3383": {
+    "key": "robinhood:0x900f8970d2fae8060d06bb29234f629c837c3383",
+    "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "BMNRON",
+    "price": 13.51,
+    "address": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+    "addresses": {
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
+    "createdAt": "2026-10-27T20:04:37.179Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6987530,
+    "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
+    "metrics": {
+     "volumeUsd1d": "2063535.623",
+     "volumeUsd7d": "5368717.152"
+    },
+    "metadata": {},
+    "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
     "isClaimed": false,
     "isPortable": true
    },
@@ -335,94 +380,66 @@
     "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
     "decimals": 18,
     "symbol": "BMNRON",
-    "price": 21.41,
+    "price": 13.51,
     "address": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
     "addresses": {
-     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
-     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T14:23:39.139Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6539204,
+    "liquidity": 6987530,
     "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
     "metrics": {
-     "volumeUsd1d": "1103534.946",
-     "volumeUsd7d": "9632814.568"
+     "volumeUsd1d": "2071100.61",
+     "volumeUsd7d": "5376362.84"
     },
     "metadata": {},
     "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
-    "totalSupply": "305404.83092110994",
-    "circulatingSupply": "305404.83092110994",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "BMNR": {
-    "total_items": 25,
+    "total_items": 46,
     "pages": 1,
-    "received": 25,
+    "received": 46,
     "complete": true
    }
   },
   "records": {
-   "bsc:0x3548da95a9effe481e8604664d75e95821e557f5": {
-    "key": "bsc:0x3548da95a9effe481e8604664d75e95821e557f5",
-    "name": "BitMine Immersion Technologies (bStocks Tokenized Stock)",
+   "robinhood:0x0efd8b148036437418a9ad294385eeb1d51895a2119b9e9df2a341de9719266b": {
+    "key": "robinhood:0x0efd8b148036437418a9ad294385eeb1d51895a2119b9e9df2a341de9719266b",
+    "name": "Uniswap V4 LP MJDQ/BMNR",
     "decimals": 18,
-    "symbol": "BMNRB",
-    "price": 20.81,
-    "address": "0x3548da95a9effe481e8604664d75e95821e557f5",
-    "addresses": {
-     "bsc": "0x3548da95a9effe481e8604664d75e95821e557f5"
-    },
-    "platform": "basic",
-    "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-08-07T06:42:28.871Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 9314547,
-    "metrics": {
-     "volumeUsd1d": "403721.362",
-     "volumeUsd7d": "4785067.788"
-    },
-    "metadata": {},
-    "tokenId": "73098567-dc15-4003-95f3-b0bbd46bbcb5",
-    "totalSupply": "447558.19286699",
-    "circulatingSupply": "447558.19286699",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0x5483f6a7f124a14208f3f348d78d97a85137eeb94ff639fe6552506dc85e47e9": {
-    "key": "ethereum:0x5483f6a7f124a14208f3f348d78d97a85137eeb94ff639fe6552506dc85e47e9",
-    "name": "Uniswap V4 LP BMNRon/EGP",
-    "decimals": 18,
-    "symbol": "BMNRON/EGP",
+    "symbol": "MJDQ/BMNR",
     "price": 9007199254740990,
-    "address": "0x5483f6a7f124a14208f3f348d78d97a85137eeb94ff639fe6552506dc85e47e9",
+    "address": "0x0efd8b148036437418a9ad294385eeb1d51895a2119b9e9df2a341de9719266b",
     "addresses": {
-     "ethereum": "0x5483f6a7f124a14208f3f348d78d97a85137eeb94ff639fe6552506dc85e47e9"
+     "robinhood": "0x0efd8b148036437418a9ad294385eeb1d51895a2119b9e9df2a341de9719266b"
     },
     "platform": "uniswap-v4",
-    "network": "ethereum",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:12:49.622Z",
-    "createdAt": "2026-10-14T06:54:28.904Z",
+    "updatedAt": "2026-11-21T14:08:36.868Z",
+    "createdAt": "2026-11-11T13:21:20.534Z",
     "verifiedAt": null,
     "tokens": [
-     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
     ],
-    "liquidity": 20056.126635522738,
+    "liquidity": 9998.884245555779,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -434,48 +451,264 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "96.4"
+     "tickSpacing": 19802,
+     "feePercentage": "99.0133"
     },
-    "tokenId": "8c528564-df82-4183-868b-b5f6b4b6195b",
+    "tokenId": "a8fd29af-8d85-4aff-b058-712381643fed",
     "reserves": [
-     "1.139604908594208929",
-     "19999.999999999999999991"
+     "9999.999999986789999994",
+     "0.005331801238961906"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "base:0xb213153e6e96071cd990ba2462a30ba3f2387ae0": {
-    "key": "base:0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
-    "name": "Bitmine Immersion Technologies (Dinari Tokenized Stock)",
+   "ethereum:0xc07c384715d70a8e3f6510fa345b68cd9fa8b849bb01bea1c91821610837d293": {
+    "key": "ethereum:0xc07c384715d70a8e3f6510fa345b68cd9fa8b849bb01bea1c91821610837d293",
+    "name": "Uniswap V4 LP wUSDC/BMNRx",
     "decimals": 18,
-    "symbol": "BMNR",
-    "price": 18.47,
-    "address": "0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
+    "symbol": "WUSDC/BMNRX",
+    "price": 9007199254740990,
+    "address": "0xc07c384715d70a8e3f6510fa345b68cd9fa8b849bb01bea1c91821610837d293",
     "addresses": {
-     "base": "0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
-     "ethereum": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "avalanche": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "arbitrum": "0x9d32f985bf0e46cb1bb98cb7647378653d543c1a"
+     "ethereum": "0xc07c384715d70a8e3f6510fa345b68cd9fa8b849bb01bea1c91821610837d293"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:10:56.382Z",
+    "createdAt": "2026-11-19T19:32:36.332Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "3910efe7-45ab-4087-90b4-4bf4be2372ca",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3548da95a9effe481e8604664d75e95821e557f5": {
+    "key": "bsc:0x3548da95a9effe481e8604664d75e95821e557f5",
+    "name": "BitMine Immersion Technologies (bStocks Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BMNRB",
+    "price": 13.77,
+    "address": "0x3548da95a9effe481e8604664d75e95821e557f5",
+    "addresses": {
+     "bsc": "0x3548da95a9effe481e8604664d75e95821e557f5"
     },
     "platform": "basic",
-    "network": "base",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-07-30T09:47:24.528Z",
+    "network": "bsc",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
+    "createdAt": "2026-08-07T06:42:28.871Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 587.78,
-    "image": "https://coin-images.coingecko.com/coins/images/102175158/large/dinari-logo-green-with-margin.png?1785403409",
+    "liquidity": 6527539,
     "metrics": {
-     "volumeUsd1d": "10.995",
-     "volumeUsd7d": "76.965"
+     "volumeUsd1d": "2262628.301",
+     "volumeUsd7d": "9816660.009"
     },
     "metadata": {},
-    "tokenId": "4bc4c481-4e90-4064-bc96-fb091a4eeba9",
-    "totalSupply": "31.828679910878",
-    "circulatingSupply": "31.82867991087799",
+    "tokenId": "73098567-dc15-4003-95f3-b0bbd46bbcb5",
+    "totalSupply": "473968.01138493",
+    "circulatingSupply": "473968.01138493",
     "isClaimed": false,
     "isPortable": true
+   },
+   "base:0x2512ec661f0ba089c275ea105e31bad6fcfcf319": {
+    "key": "base:0x2512ec661f0ba089c275ea105e31bad6fcfcf319",
+    "name": "Wrapped Bitmine Immersion Technologies, Inc ST0x",
+    "decimals": 18,
+    "symbol": "WTBMNR",
+    "price": 12.98,
+    "address": "0x2512ec661f0ba089c275ea105e31bad6fcfcf319",
+    "addresses": {
+     "base": "0x2512ec661f0ba089c275ea105e31bad6fcfcf319"
+    },
+    "platform": "st0x",
+    "network": "base",
+    "images": [
+     "https://images.portals.fi/logos/st0x.png",
+     "https://images.portals.fi/logos/st0x.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:07.670Z",
+    "createdAt": "2026-11-11T13:20:18.373Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xfbde45df60249203b12148452fc77c3b5f811eb2"
+    ],
+    "poolAddress": "0x2512ec661f0ba089c275ea105e31bad6fcfcf319",
+    "liquidity": 666.7668766209575,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "ticker": "BMNR",
+     "interface": "ERC4626"
+    },
+    "tokenId": "0f6d8bb1-b893-4170-a40e-7f3d56ce1f5c",
+    "totalSupply": "51.3687886456824",
+    "reserves": [
+     "51.3687886456824"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "base:0xfbde45df60249203b12148452fc77c3b5f811eb2": {
+    "key": "base:0xfbde45df60249203b12148452fc77c3b5f811eb2",
+    "name": "Bitmine Immersion Technologies, Inc ST0x",
+    "decimals": 18,
+    "symbol": "TBMNR",
+    "price": 12.98,
+    "address": "0xfbde45df60249203b12148452fc77c3b5f811eb2",
+    "addresses": {
+     "base": "0xfbde45df60249203b12148452fc77c3b5f811eb2"
+    },
+    "platform": "st0x",
+    "network": "base",
+    "images": [
+     "https://images.portals.fi/logos/st0x.png",
+     "https://images.portals.fi/logos/st0x.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:07.670Z",
+    "createdAt": "2026-11-11T13:20:18.373Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xfbde45df60249203b12148452fc77c3b5f811eb2",
+    "liquidity": 679.7468636409576,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#rwa"
+     ],
+     "ticker": "BMNR",
+     "interface": "ERC20"
+    },
+    "tokenId": "86ad40cb-c548-4780-a9e2-11bf7bde4287",
+    "totalSupply": "52.3687876456824",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc6fe38c813bee03dce2da925726494c3b738afd67261827dd13a81c051b812a4": {
+    "key": "robinhood:0xc6fe38c813bee03dce2da925726494c3b738afd67261827dd13a81c051b812a4",
+    "name": "Uniswap V4 LP wUSDG/BMNR",
+    "decimals": 18,
+    "symbol": "WUSDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0xc6fe38c813bee03dce2da925726494c3b738afd67261827dd13a81c051b812a4",
+    "addresses": {
+     "robinhood": "0xc6fe38c813bee03dce2da925726494c3b738afd67261827dd13a81c051b812a4"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:37.849Z",
+    "createdAt": "2026-11-06T15:59:40.504Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 9997.903175241787,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "57988371-e2b0-4eb0-8f0d-252ef4bbb7ef",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xbe57182e624465fef3d2d5133c3a4a8fc55fd947a78a95cdcffbe78ee05c86c8": {
+    "key": "bsc:0xbe57182e624465fef3d2d5133c3a4a8fc55fd947a78a95cdcffbe78ee05c86c8",
+    "name": "Uniswap V4 LP BMNRB/USDT",
+    "decimals": 18,
+    "symbol": "BMNRB/USDT",
+    "price": 9007199254740990,
+    "address": "0xbe57182e624465fef3d2d5133c3a4a8fc55fd947a78a95cdcffbe78ee05c86c8",
+    "addresses": {
+     "bsc": "0xbe57182e624465fef3d2d5133c3a4a8fc55fd947a78a95cdcffbe78ee05c86c8"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-11-21T14:08:40.799Z",
+    "createdAt": "2026-11-03T15:52:20.273Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3548da95a9effe481e8604664d75e95821e557f5",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 503.1736196433426,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9000,
+     "feePercentage": "90"
+    },
+    "tokenId": "29c892dc-39ca-46e3-9d17-18f40cf3a5d1",
+    "reserves": [
+     "15.834150000000000001",
+     "285.010061918883638089"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "ethereum:0xca4017f6dd81224f1b57110573d26c4a821b09467f0e719eac814f6be34200f7": {
     "key": "ethereum:0xca4017f6dd81224f1b57110573d26c4a821b09467f0e719eac814f6be34200f7",
@@ -494,19 +727,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134"
     ],
-    "updatedAt": "2026-10-18T20:12:49.700Z",
+    "updatedAt": "2026-11-21T14:10:55.652Z",
     "createdAt": "2026-09-09T06:40:19.271Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
     ],
-    "liquidity": 6954.8711369927105,
+    "liquidity": 3474.316697081681,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "563.379"
+     "apy": "13.556",
+     "baseApy": "13.556",
+     "volumeUsd1d": "15.956",
+     "volumeUsd7d": "15.956"
     },
     "metadata": {
      "tags": [
@@ -518,8 +751,55 @@
     },
     "tokenId": "a23f3380-e69e-4e6e-9ce0-55bfeb708690",
     "reserves": [
-     "1.36719036327650202",
-     "175.640909337135059949"
+     "1.154405325176225875",
+     "112.053875174030761208"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x47be9164757afa9ce78373706194cf460c43064c3a07fdfa1626ca20244a1af6": {
+    "key": "arbitrum:0x47be9164757afa9ce78373706194cf460c43064c3a07fdfa1626ca20244a1af6",
+    "name": "Uniswap V4 LP wUSDC/rBMNR",
+    "decimals": 18,
+    "symbol": "WUSDC/RBMNR",
+    "price": 9007199254740990,
+    "address": "0x47be9164757afa9ce78373706194cf460c43064c3a07fdfa1626ca20244a1af6",
+    "addresses": {
+     "arbitrum": "0x47be9164757afa9ce78373706194cf460c43064c3a07fdfa1626ca20244a1af6"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177191/large/e825e3b09c96bfdd8fb67e3cc86f9376.png?1789117111"
+    ],
+    "updatedAt": "2026-11-21T14:09:59.780Z",
+    "createdAt": "2026-11-14T12:28:24.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900"
+    ],
+    "liquidity": 3568.7940834544725,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "6bbaac84-dfc1-431b-be61-6ddea3edd185",
+    "reserves": [
+     "3000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -540,19 +820,19 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://coin-images.coingecko.com/coins/images/102176875/large/mstrb.png?1788940298"
     ],
-    "updatedAt": "2026-10-18T20:13:14.646Z",
+    "updatedAt": "2026-11-21T14:09:20.440Z",
     "createdAt": "2026-09-19T16:50:06.511Z",
     "verifiedAt": null,
     "tokens": [
      "0x3548da95a9effe481e8604664d75e95821e557f5",
      "0xe87afb3076aeb0f9b14e368de8145ae6a2826a14"
     ],
-    "liquidity": 8188.300612134732,
+    "liquidity": 10067.515199533671,
     "metrics": {
-     "apy": "22.516",
-     "baseApy": "22.516",
-     "volumeUsd1d": "2021.627",
-     "volumeUsd7d": "24166.304"
+     "apy": "195.585",
+     "baseApy": "195.585",
+     "volumeUsd1d": "21636.599",
+     "volumeUsd7d": "55690.112"
     },
     "metadata": {
      "tags": [
@@ -562,8 +842,194 @@
     },
     "tokenId": "dce217bf-7e7d-400b-b6a8-e6ae16e40b2b",
     "reserves": [
-     "282.383422754548502231",
-     "17.23627514062907443"
+     "198.030633400197162464",
+     "90.140008094026677562"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xc62c4cfafe61608e29373ea7d8b2669a2db4c0e2418a03db189e950a36b5de5c": {
+    "key": "arbitrum:0xc62c4cfafe61608e29373ea7d8b2669a2db4c0e2418a03db189e950a36b5de5c",
+    "name": "Uniswap V4 LP wUSDC/rBMNR",
+    "decimals": 18,
+    "symbol": "WUSDC/RBMNR",
+    "price": 9007199254740990,
+    "address": "0xc62c4cfafe61608e29373ea7d8b2669a2db4c0e2418a03db189e950a36b5de5c",
+    "addresses": {
+     "arbitrum": "0xc62c4cfafe61608e29373ea7d8b2669a2db4c0e2418a03db189e950a36b5de5c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177191/large/e825e3b09c96bfdd8fb67e3cc86f9376.png?1789117111"
+    ],
+    "updatedAt": "2026-11-21T14:09:36.464Z",
+    "createdAt": "2026-11-14T12:28:24.564Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "aa5d7bfe-97d7-48e1-956f-a2de2154e5ff",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbcb319b3dcbd85f195f20eb27c8e4551c023417fc1d2c1b7f0e58c13967f84c7": {
+    "key": "robinhood:0xbcb319b3dcbd85f195f20eb27c8e4551c023417fc1d2c1b7f0e58c13967f84c7",
+    "name": "Uniswap V4 LP wUSDG/BMNR",
+    "decimals": 18,
+    "symbol": "WUSDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0xbcb319b3dcbd85f195f20eb27c8e4551c023417fc1d2c1b7f0e58c13967f84c7",
+    "addresses": {
+     "robinhood": "0xbcb319b3dcbd85f195f20eb27c8e4551c023417fc1d2c1b7f0e58c13967f84c7"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:38.775Z",
+    "createdAt": "2026-10-29T20:11:46.263Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 9997.903175241787,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "0cbcac7a-3df7-42f1-8056-2f36b538325a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa72a33fb997f8162845b19a84cb7e48c438141eb34a5d5532ee064db4f1cc110": {
+    "key": "ethereum:0xa72a33fb997f8162845b19a84cb7e48c438141eb34a5d5532ee064db4f1cc110",
+    "name": "Uniswap V4 LP BMNRon/wUSDC",
+    "decimals": 18,
+    "symbol": "BMNRON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xa72a33fb997f8162845b19a84cb7e48c438141eb34a5d5532ee064db4f1cc110",
+    "addresses": {
+     "ethereum": "0xa72a33fb997f8162845b19a84cb7e48c438141eb34a5d5532ee064db4f1cc110"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:18.161Z",
+    "createdAt": "2026-11-07T15:59:34.283Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "7a5f92fa-8c9b-4f2b-a764-2f25810fee7b",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x918e687282c9bd2e58f7a208659e30df10391859b080118df761c9209565070c": {
+    "key": "robinhood:0x918e687282c9bd2e58f7a208659e30df10391859b080118df761c9209565070c",
+    "name": "Uniswap V4 LP USDG/BMNR",
+    "decimals": 18,
+    "symbol": "USDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0x918e687282c9bd2e58f7a208659e30df10391859b080118df761c9209565070c",
+    "addresses": {
+     "robinhood": "0x918e687282c9bd2e58f7a208659e30df10391859b080118df761c9209565070c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:08:38.443Z",
+    "createdAt": "2026-10-29T20:11:40.911Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 1826.7529309042206,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 1500,
+     "feePercentage": "15.085"
+    },
+    "tokenId": "2d68f78d-2587-4488-97c4-07c9e099ff6c",
+    "reserves": [
+     "714.804857",
+     "74.502383511170568854"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -573,112 +1039,225 @@
     "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
     "decimals": 18,
     "symbol": "BMNRON",
-    "price": 21.41,
+    "price": 13.51,
     "address": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
     "addresses": {
-     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
-     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T14:23:39.139Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6539204,
+    "liquidity": 6987530,
     "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
     "metrics": {
-     "volumeUsd1d": "1104085.748",
-     "volumeUsd7d": "9613952.106"
+     "volumeUsd1d": "2071040.624",
+     "volumeUsd7d": "5378616.441"
     },
     "metadata": {},
     "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
-    "totalSupply": "305404.83092110994",
-    "circulatingSupply": "305404.83092110994",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0xdad5623b32c81aeaa75478fcfe934e9e97018c58": {
-    "key": "ethereum:0xdad5623b32c81aeaa75478fcfe934e9e97018c58",
-    "name": "Wrapped Bitmine xStock",
+   "ethereum:0x9b2793936e9f4bf80fea951c9c8edd699c402103199fbdf5f184800354a85e68": {
+    "key": "ethereum:0x9b2793936e9f4bf80fea951c9c8edd699c402103199fbdf5f184800354a85e68",
+    "name": "Uniswap V4 LP BMNRon/EE",
     "decimals": 18,
-    "symbol": "WBMNRX",
-    "price": 21.31,
-    "address": "0xdad5623b32c81aeaa75478fcfe934e9e97018c58",
+    "symbol": "BMNRON/EE",
+    "price": 9007199254740990,
+    "address": "0x9b2793936e9f4bf80fea951c9c8edd699c402103199fbdf5f184800354a85e68",
     "addresses": {
-     "ethereum": "0xdad5623b32c81aeaa75478fcfe934e9e97018c58"
+     "ethereum": "0x9b2793936e9f4bf80fea951c9c8edd699c402103199fbdf5f184800354a85e68"
     },
-    "platform": "xstocks",
+    "platform": "uniswap-v4",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:13:12.533Z",
-    "createdAt": "2026-07-03T11:38:30.664Z",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:11:55.146Z",
+    "createdAt": "2026-11-07T15:59:35.280Z",
     "verifiedAt": null,
     "tokens": [
-     "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
+     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a"
     ],
-    "liquidity": 1682.891836345612,
-    "image": "https://xstocks-metadata.backed.fi/logos/tokens/BMNRx.png",
+    "liquidity": 50020.16301219606,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "429.439"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
-      "#rwa",
-      "#yield"
+      "#clp"
      ],
-     "paused": false,
-     "interface": "ERC4626"
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9965,
+     "feePercentage": "99.6457"
     },
-    "tokenId": "f83dece5-27ee-4a28-8a70-b1230126ef86",
-    "totalSupply": "78.971930377551015326",
+    "tokenId": "ad213d78-ba36-4754-97d3-527ea67312ee",
     "reserves": [
-     "78.971930377551015326"
+     "1.182969574517929684",
+     "49999.999999999999999999"
     ],
-    "pricePerShare": "1",
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
    },
-   "arbitrum:0x9d32f985bf0e46cb1bb98cb7647378653d543c1a": {
-    "key": "arbitrum:0x9d32f985bf0e46cb1bb98cb7647378653d543c1a",
-    "name": "Bitmine Immersion Technologies (Dinari Tokenized Stock)",
+   "arbitrum:0xc1fdf8c655d8ad5d8a5c158ddd444d061ed47f3a834362a7e876719c776de094": {
+    "key": "arbitrum:0xc1fdf8c655d8ad5d8a5c158ddd444d061ed47f3a834362a7e876719c776de094",
+    "name": "Uniswap V4 LP wUSDC/rBMNR",
     "decimals": 18,
-    "symbol": "BMNR",
-    "price": 18.47,
-    "address": "0x9d32f985bf0e46cb1bb98cb7647378653d543c1a",
+    "symbol": "WUSDC/RBMNR",
+    "price": 9007199254740990,
+    "address": "0xc1fdf8c655d8ad5d8a5c158ddd444d061ed47f3a834362a7e876719c776de094",
     "addresses": {
-     "base": "0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
-     "ethereum": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "avalanche": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "arbitrum": "0x9d32f985bf0e46cb1bb98cb7647378653d543c1a"
+     "arbitrum": "0xc1fdf8c655d8ad5d8a5c158ddd444d061ed47f3a834362a7e876719c776de094"
     },
-    "platform": "basic",
+    "platform": "uniswap-v4",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-07-30T09:47:24.528Z",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177191/large/e825e3b09c96bfdd8fb67e3cc86f9376.png?1789117111"
+    ],
+    "updatedAt": "2026-11-21T14:09:36.414Z",
+    "createdAt": "2026-11-14T12:28:24.564Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 587.78,
-    "image": "https://coin-images.coingecko.com/coins/images/102175158/large/dinari-logo-green-with-margin.png?1785403409",
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900"
+    ],
+    "liquidity": 11895.980278181574,
     "metrics": {
-     "volumeUsd1d": "10.995",
-     "volumeUsd7d": "76.965"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "4bc4c481-4e90-4064-bc96-fb091a4eeba9",
-    "totalSupply": "31.828679910878",
-    "circulatingSupply": "31.82867991087799",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "56266815-e06e-4486-b6d1-a989db6bc1a2",
+    "reserves": [
+     "10000",
+     "0"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
+   },
+   "ethereum:0x57c8052bcbd50d3a6d9b1fa5134d7526684d2d32f683e6be747846063cfde365": {
+    "key": "ethereum:0x57c8052bcbd50d3a6d9b1fa5134d7526684d2d32f683e6be747846063cfde365",
+    "name": "Uniswap V4 LP HRC/BMNRx",
+    "decimals": 18,
+    "symbol": "HRC/BMNRX",
+    "price": 9007199254740990,
+    "address": "0x57c8052bcbd50d3a6d9b1fa5134d7526684d2d32f683e6be747846063cfde365",
+    "addresses": {
+     "ethereum": "0x57c8052bcbd50d3a6d9b1fa5134d7526684d2d32f683e6be747846063cfde365"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:22.093Z",
+    "createdAt": "2026-11-07T15:59:34.088Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
+    ],
+    "liquidity": 9503.36243244695,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19801,
+     "feePercentage": "99.0062"
+    },
+    "tokenId": "0e8b0290-44c5-4f31-a91d-266753e67014",
+    "reserves": [
+     "9499.999999999999999961",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x88674042fd6935bfde01b02d32c449aa2a774eefb86b8b631464e433bf92f19b": {
+    "key": "ethereum:0x88674042fd6935bfde01b02d32c449aa2a774eefb86b8b631464e433bf92f19b",
+    "name": "Uniswap V4 LP BMNRon/wUSDC",
+    "decimals": 18,
+    "symbol": "BMNRON/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x88674042fd6935bfde01b02d32c449aa2a774eefb86b8b631464e433bf92f19b",
+    "addresses": {
+     "ethereum": "0x88674042fd6935bfde01b02d32c449aa2a774eefb86b8b631464e433bf92f19b"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:19.065Z",
+    "createdAt": "2026-11-17T12:33:22.055Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "50"
+    },
+    "tokenId": "e6c1352d-0439-4110-a9da-369ca01f3b96",
+    "reserves": [
+     "0",
+     "10000"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0x5544552cabacfbde8358ca77ae666938e4a59557": {
     "key": "bsc:0x5544552cabacfbde8358ca77ae666938e4a59557",
     "name": "PancakeSwap LP BMNRB/WBNB",
     "decimals": 18,
     "symbol": "BMNRB/WBNB",
-    "price": 244.52723162773827,
+    "price": 175.96935937576563,
     "address": "0x5544552cabacfbde8358ca77ae666938e4a59557",
     "addresses": {
      "bsc": "0x5544552cabacfbde8358ca77ae666938e4a59557"
@@ -689,19 +1268,19 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
     ],
-    "updatedAt": "2026-10-18T20:13:15.924Z",
+    "updatedAt": "2026-11-21T14:09:30.159Z",
     "createdAt": "2026-10-13T05:25:08.651Z",
     "verifiedAt": null,
     "tokens": [
      "0x3548da95a9effe481e8604664d75e95821e557f5",
      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
     ],
-    "liquidity": 17922.403174103565,
+    "liquidity": 12878.520575315719,
     "metrics": {
-     "apy": "1.005",
-     "baseApy": "1.005",
-     "volumeUsd1d": "197.599",
-     "volumeUsd7d": "3725.015"
+     "apy": "7.213",
+     "baseApy": "7.213",
+     "volumeUsd1d": "1018.029",
+     "volumeUsd7d": "3623.441"
     },
     "metadata": {
      "tags": [
@@ -709,13 +1288,107 @@
      ]
     },
     "tokenId": "f87bbe34-95b0-46e3-b7c1-6b7e4d89a775",
-    "totalSupply": "73.294099208501048404",
+    "totalSupply": "73.18615366334817159",
     "reserves": [
-     "430.499010801437712907",
-     "12.708906380634963293"
+     "466.354565566760123127",
+     "11.744768344048030727"
     ],
     "isClaimed": false,
     "isPortable": true
+   },
+   "bsc:0xd5a1e0c890354710ef46e6cdd43951cb93dc62e2": {
+    "key": "bsc:0xd5a1e0c890354710ef46e6cdd43951cb93dc62e2",
+    "name": "Euler EVK Vault eBMNRon-1",
+    "decimals": 18,
+    "symbol": "EBMNRON-1",
+    "price": 13.51,
+    "address": "0xd5a1e0c890354710ef46e6cdd43951cb93dc62e2",
+    "addresses": {
+     "bsc": "0xd5a1e0c890354710ef46e6cdd43951cb93dc62e2"
+    },
+    "platform": "euler",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/26149/large/Coingecko_logo_%281%29.png",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134"
+    ],
+    "updatedAt": "2026-11-21T14:10:46.398Z",
+    "createdAt": "2026-07-29T12:14:41.258Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
+    ],
+    "liquidity": 12159,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "borrowApy": "0",
+     "baseBorrowApy": "0",
+     "volumeUsd1d": "4281",
+     "volumeUsd7d": "8958"
+    },
+    "metadata": {
+     "tags": [
+      "#yield"
+     ],
+     "interface": "ERC4626",
+     "collateralCorrelation": "low"
+    },
+    "tokenId": "d46cb069-4515-4751-83ac-fd2570064fec",
+    "totalSupply": "900",
+    "totalBorrow": "0",
+    "reserves": [
+     "900"
+    ],
+    "pricePerShare": "1",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x2632f7211ab15ad5f3460594290a6ecbd554da45041af64a8a6016fd697ff8f3": {
+    "key": "ethereum:0x2632f7211ab15ad5f3460594290a6ecbd554da45041af64a8a6016fd697ff8f3",
+    "name": "Uniswap V4 LP wUSDC/BMNRx",
+    "decimals": 18,
+    "symbol": "WUSDC/BMNRX",
+    "price": 9007199254740990,
+    "address": "0x2632f7211ab15ad5f3460594290a6ecbd554da45041af64a8a6016fd697ff8f3",
+    "addresses": {
+     "ethereum": "0x2632f7211ab15ad5f3460594290a6ecbd554da45041af64a8a6016fd697ff8f3"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:21.188Z",
+    "createdAt": "2026-11-19T19:32:28.442Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "cad74804-1e3a-4018-8649-eb083a02dc78",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "ethereum:0x6d90f4d350443aca0486e4036fcdf7791f5336b564e35c81f177e668521a4bc1": {
     "key": "ethereum:0x6d90f4d350443aca0486e4036fcdf7791f5336b564e35c81f177e668521a4bc1",
@@ -734,14 +1407,14 @@
      "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:12:52.618Z",
+    "updatedAt": "2026-11-21T14:08:21.119Z",
     "createdAt": "2026-02-27T05:29:15.137Z",
     "verifiedAt": null,
     "tokens": [
      "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
     ],
-    "liquidity": 3356.724252846562,
+    "liquidity": 3097.1820328087656,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -764,32 +1437,78 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0xabb737b067c9323d3c98d9193ea419dcc23123988b6a8eaf5eec7914d67ba838": {
+    "key": "robinhood:0xabb737b067c9323d3c98d9193ea419dcc23123988b6a8eaf5eec7914d67ba838",
+    "name": "Uniswap V4 LP wUSDG/BMNR",
+    "decimals": 18,
+    "symbol": "WUSDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0xabb737b067c9323d3c98d9193ea419dcc23123988b6a8eaf5eec7914d67ba838",
+    "addresses": {
+     "robinhood": "0xabb737b067c9323d3c98d9193ea419dcc23123988b6a8eaf5eec7914d67ba838"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:39.340Z",
+    "createdAt": "2026-10-29T20:11:43.095Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 2999.370952572536,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "c95a1583-5340-4d53-aadc-e4ebb1397532",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "arbitrum:0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900": {
     "key": "arbitrum:0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900",
     "name": "Bitmine Immersion Technologies rStock",
     "decimals": 18,
     "symbol": "RBMNR",
-    "price": 21.6,
+    "price": 13.39,
     "address": "0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900",
     "addresses": {
      "arbitrum": "0x7e120a8ae6a6e14c13970adcf6fe8ad1df564900"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-09-11T09:10:27.949Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 654646,
+    "liquidity": 744936,
     "image": "https://coin-images.coingecko.com/coins/images/102177191/large/e825e3b09c96bfdd8fb67e3cc86f9376.png?1789117111",
     "metrics": {
-     "volumeUsd1d": "253.749",
-     "volumeUsd7d": "461365.063"
+     "volumeUsd1d": "772400.678",
+     "volumeUsd7d": "5376392.226"
     },
     "metadata": {},
     "tokenId": "c116125d-5c5b-426d-b3b9-ddfadc015a58",
-    "totalSupply": "30309.769635783",
-    "circulatingSupply": "30309.769635783",
+    "totalSupply": "55622.255119338",
+    "circulatingSupply": "55622.255119338",
     "isClaimed": false,
     "isPortable": true
    },
@@ -809,14 +1528,14 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
     ],
-    "updatedAt": "2026-10-18T20:13:20.772Z",
+    "updatedAt": "2026-11-21T14:09:33.175Z",
     "createdAt": "2026-08-28T08:22:40.491Z",
     "verifiedAt": null,
     "tokens": [
      "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
      "0x3548da95a9effe481e8604664d75e95821e557f5"
     ],
-    "liquidity": 3778.5081638085285,
+    "liquidity": 2511.5615700139633,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -839,37 +1558,126 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "avalanche:0xb7c153d774258588fbb978f3a2c4209dfd4944fb": {
-    "key": "avalanche:0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-    "name": "Bitmine Immersion Technologies (Dinari Tokenized Stock)",
+   "robinhood:0x5d79094dc442f44f2b7d08ab48e5e067b853ed5e": {
+    "key": "robinhood:0x5d79094dc442f44f2b7d08ab48e5e067b853ed5e",
+    "name": "Uniswap V3 WETH/BitMine Immersion Technologies  Robinhood Token 1%",
     "decimals": 18,
-    "symbol": "BMNR",
-    "price": 18.47,
-    "address": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
+    "symbol": "WETH/BMNR",
+    "price": 9007199254740990,
+    "address": "0x5d79094dc442f44f2b7d08ab48e5e067b853ed5e",
     "addresses": {
-     "base": "0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
-     "ethereum": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "avalanche": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "arbitrum": "0x9d32f985bf0e46cb1bb98cb7647378653d543c1a"
+     "robinhood": "0x5d79094dc442f44f2b7d08ab48e5e067b853ed5e"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-11-21T14:08:36.104Z",
+    "createdAt": "2026-10-29T20:11:23.107Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 223731.5223114508,
+    "metrics": {
+     "apy": "95.155",
+     "baseApy": "95.155",
+     "volumeUsd1d": "58204.327",
+     "volumeUsd7d": "235536.656"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "6ebc00a0-080d-4b3b-bf1f-cfbcd3d0450a",
+    "reserves": [
+     "13.399016678848709012",
+     "13461.148227852589228421"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x900f8970d2fae8060d06bb29234f629c837c3383": {
+    "key": "robinhood:0x900f8970d2fae8060d06bb29234f629c837c3383",
+    "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
+    "decimals": 18,
+    "symbol": "BMNRON",
+    "price": 13.51,
+    "address": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+    "addresses": {
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
     },
     "platform": "basic",
-    "network": "avalanche",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-07-30T09:47:24.528Z",
+    "network": "robinhood",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
+    "createdAt": "2026-10-27T20:04:37.179Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 587.78,
-    "image": "https://coin-images.coingecko.com/coins/images/102175158/large/dinari-logo-green-with-margin.png?1785403409",
+    "liquidity": 6987530,
+    "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
     "metrics": {
-     "volumeUsd1d": "10.995",
-     "volumeUsd7d": "76.965"
+     "volumeUsd1d": "2063535.623",
+     "volumeUsd7d": "5368717.152"
     },
     "metadata": {},
-    "tokenId": "4bc4c481-4e90-4064-bc96-fb091a4eeba9",
-    "totalSupply": "31.828679910878",
-    "circulatingSupply": "31.82867991087799",
+    "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
     "isClaimed": false,
     "isPortable": true
+   },
+   "bsc:0x1251094917dc275c1952c7c3c705daac1de8f0917623d7ec482b7bd488d14d02": {
+    "key": "bsc:0x1251094917dc275c1952c7c3c705daac1de8f0917623d7ec482b7bd488d14d02",
+    "name": "Uniswap V4 LP BMNRB/USDT",
+    "decimals": 18,
+    "symbol": "BMNRB/USDT",
+    "price": 9007199254740990,
+    "address": "0x1251094917dc275c1952c7c3c705daac1de8f0917623d7ec482b7bd488d14d02",
+    "addresses": {
+     "bsc": "0x1251094917dc275c1952c7c3c705daac1de8f0917623d7ec482b7bd488d14d02"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-11-21T14:08:43.628Z",
+    "createdAt": "2026-08-24T14:16:53.981Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x3548da95a9effe481e8604664d75e95821e557f5",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 508.7575366390655,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "355364f3-b8a7-4dcd-aaba-ec47948e26e0",
+    "reserves": [
+     "15.329706481711216344",
+     "297.5706233519400619"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0x48f9fa8125ffebd32c94a977810d46f4609fb068": {
     "key": "bsc:0x48f9fa8125ffebd32c94a977810d46f4609fb068",
@@ -887,19 +1695,19 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
     ],
-    "updatedAt": "2026-10-18T20:13:13.797Z",
+    "updatedAt": "2026-11-21T14:09:24.647Z",
     "createdAt": "2026-09-01T04:03:24.864Z",
     "verifiedAt": null,
     "tokens": [
      "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
      "0x3548da95a9effe481e8604664d75e95821e557f5"
     ],
-    "liquidity": 7682.662958729206,
+    "liquidity": 17930.361813153577,
     "metrics": {
-     "apy": "24.651",
-     "baseApy": "24.651",
-     "volumeUsd1d": "2076.514",
-     "volumeUsd7d": "32091.712"
+     "apy": "116.041",
+     "baseApy": "116.041",
+     "volumeUsd1d": "22800.637",
+     "volumeUsd7d": "136995.886"
     },
     "metadata": {
      "tags": [
@@ -909,8 +1717,8 @@
     },
     "tokenId": "934b14b0-0b05-4db2-a649-63b36ea7efda",
     "reserves": [
-     "0.490440591800908629",
-     "314.094056253816746572"
+     "0.695343003615211477",
+     "1213.482145608416636542"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -920,28 +1728,29 @@
     "name": "BitMine Immersion Technologies (Ondo Tokenized Stocks)",
     "decimals": 18,
     "symbol": "BMNRON",
-    "price": 21.41,
+    "price": 13.51,
     "address": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
     "addresses": {
-     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9",
-     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+     "robinhood": "0x900f8970d2fae8060d06bb29234f629c837c3383",
+     "ethereum": "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "bsc": "0x52ad57a7ea642e99a892afc79e937b383f1b59e9"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-01-08T14:23:39.139Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6539204,
+    "liquidity": 6987530,
     "image": "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
     "metrics": {
-     "volumeUsd1d": "1103534.946",
-     "volumeUsd7d": "9632814.568"
+     "volumeUsd1d": "2071100.61",
+     "volumeUsd7d": "5376362.84"
     },
     "metadata": {},
     "tokenId": "a0088156-8206-46ce-88dd-f150ca66bb65",
-    "totalSupply": "305404.83092110994",
-    "circulatingSupply": "305404.83092110994",
+    "totalSupply": "517026.17261801823",
+    "circulatingSupply": "517026.17261801823",
     "isClaimed": false,
     "isPortable": true
    },
@@ -961,19 +1770,19 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
     ],
-    "updatedAt": "2026-10-18T20:13:13.797Z",
+    "updatedAt": "2026-11-21T14:09:24.513Z",
     "createdAt": "2026-08-26T04:19:05.241Z",
     "verifiedAt": null,
     "tokens": [
      "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
      "0x3548da95a9effe481e8604664d75e95821e557f5"
     ],
-    "liquidity": 708.5551687888468,
+    "liquidity": 575.9333908867304,
     "metrics": {
-     "apy": "5.148",
-     "baseApy": "5.148",
-     "volumeUsd1d": "9.999",
-     "volumeUsd7d": "36088.954"
+     "apy": "10.96",
+     "baseApy": "10.96",
+     "volumeUsd1d": "17.288",
+     "volumeUsd7d": "42.92"
     },
     "metadata": {
      "tags": [
@@ -983,8 +1792,8 @@
     },
     "tokenId": "69e0fd0a-c808-489e-a4f8-6970306c8502",
     "reserves": [
-     "0.118672777519251758",
-     "20.719223698212269461"
+     "0.140333446500132664",
+     "24.414309044036557467"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1005,19 +1814,19 @@
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:13:13.797Z",
+    "updatedAt": "2026-11-21T14:09:24.513Z",
     "createdAt": "2026-09-02T03:35:18.357Z",
     "verifiedAt": null,
     "tokens": [
      "0x3548da95a9effe481e8604664d75e95821e557f5",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 70502.33862878068,
+    "liquidity": 90368.28024647702,
     "metrics": {
-     "apy": "13.498",
-     "baseApy": "13.498",
-     "volumeUsd1d": "10427.754",
-     "volumeUsd7d": "194827.836"
+     "apy": "32.054",
+     "baseApy": "32.054",
+     "volumeUsd1d": "31744.078",
+     "volumeUsd7d": "296972.39"
     },
     "metadata": {
      "tags": [
@@ -1027,43 +1836,103 @@
     },
     "tokenId": "c9bdcb00-2203-4be6-8b7b-8d8cf058f630",
     "reserves": [
-     "2362.019843886196445628",
-     "21366.054914099183141684"
+     "6222.468664581660897622",
+     "4503.707198031705778083"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0xb7c153d774258588fbb978f3a2c4209dfd4944fb": {
-    "key": "ethereum:0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-    "name": "Bitmine Immersion Technologies (Dinari Tokenized Stock)",
+   "robinhood:0x2c83c0bfad1718d285e922a2527419d877b48fc7a7e1bedc18258435ff00eb08": {
+    "key": "robinhood:0x2c83c0bfad1718d285e922a2527419d877b48fc7a7e1bedc18258435ff00eb08",
+    "name": "Uniswap V4 LP wUSDG/BMNR",
     "decimals": 18,
-    "symbol": "BMNR",
-    "price": 18.47,
-    "address": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
+    "symbol": "WUSDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0x2c83c0bfad1718d285e922a2527419d877b48fc7a7e1bedc18258435ff00eb08",
     "addresses": {
-     "base": "0xb213153e6e96071cd990ba2462a30ba3f2387ae0",
-     "ethereum": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "avalanche": "0xb7c153d774258588fbb978f3a2c4209dfd4944fb",
-     "arbitrum": "0x9d32f985bf0e46cb1bb98cb7647378653d543c1a"
+     "robinhood": "0x2c83c0bfad1718d285e922a2527419d877b48fc7a7e1bedc18258435ff00eb08"
     },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
-    "createdAt": "2026-07-30T09:47:24.528Z",
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:39.892Z",
+    "createdAt": "2026-10-29T20:11:39.604Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 587.78,
-    "image": "https://coin-images.coingecko.com/coins/images/102175158/large/dinari-logo-green-with-margin.png?1785403409",
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 9997.903175241787,
     "metrics": {
-     "volumeUsd1d": "10.995",
-     "volumeUsd7d": "76.965"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "4bc4c481-4e90-4064-bc96-fb091a4eeba9",
-    "totalSupply": "31.828679910878",
-    "circulatingSupply": "31.82867991087799",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "b05c0eee-5103-4f57-80d2-e7a63aa7934e",
+    "reserves": [
+     "10000",
+     "0"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
+   },
+   "robinhood:0x1e2541cb7214dfbd2612bea6138a4dab0fd25ae3d5c5e3349fec9c88278a1d24": {
+    "key": "robinhood:0x1e2541cb7214dfbd2612bea6138a4dab0fd25ae3d5c5e3349fec9c88278a1d24",
+    "name": "Uniswap V4 LP USDG/BMNR",
+    "decimals": 18,
+    "symbol": "USDG/BMNR",
+    "price": 9007199254740990,
+    "address": "0x1e2541cb7214dfbd2612bea6138a4dab0fd25ae3d5c5e3349fec9c88278a1d24",
+    "addresses": {
+     "robinhood": "0x1e2541cb7214dfbd2612bea6138a4dab0fd25ae3d5c5e3349fec9c88278a1d24"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:39.772Z",
+    "createdAt": "2026-11-04T15:56:05.189Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 50016.22100183456,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9973,
+     "feePercentage": "99.73"
+    },
+    "tokenId": "f6687d8b-3670-4cf5-9f0f-9f8af9dd4c4c",
+    "reserves": [
+     "49999.999999999999999998",
+     "1.45856732109830109"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0x4370199e1685e1408f379d8b865de63727b3ffad97b738c15a42cdee444d5634": {
     "key": "bsc:0x4370199e1685e1408f379d8b865de63727b3ffad97b738c15a42cdee444d5634",
@@ -1081,14 +1950,14 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:13:04.978Z",
+    "updatedAt": "2026-11-21T14:08:42.865Z",
     "createdAt": "2026-08-14T02:14:12.451Z",
     "verifiedAt": null,
     "tokens": [
      "0x3548da95a9effe481e8604664d75e95821e557f5",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 1332.681399659514,
+    "liquidity": 1882.6242286858983,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1105,8 +1974,55 @@
     },
     "tokenId": "7c5d9b58-b241-4871-a2c0-ee1720c74605",
     "reserves": [
-     "31.11079275544032521",
-     "685.822690443440814826"
+     "54.673434820592894332",
+     "1129.508828933014518757"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x25459c2b190fa03a47e2685b3c8cbd041d153adbf78c3e53788f918a70c24b1e": {
+    "key": "ethereum:0x25459c2b190fa03a47e2685b3c8cbd041d153adbf78c3e53788f918a70c24b1e",
+    "name": "Uniswap V4 LP BMNRon/HRC",
+    "decimals": 18,
+    "symbol": "BMNRON/HRC",
+    "price": 9007199254740990,
+    "address": "0x25459c2b190fa03a47e2685b3c8cbd041d153adbf78c3e53788f918a70c24b1e",
+    "addresses": {
+     "ethereum": "0x25459c2b190fa03a47e2685b3c8cbd041d153adbf78c3e53788f918a70c24b1e"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:26.702Z",
+    "createdAt": "2026-11-07T15:59:32.264Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
+     "0x63db3eca126303755899a3436e34b174a1ef377b"
+    ],
+    "liquidity": 50017.74439341955,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19800,
+     "feePercentage": "99.0046"
+    },
+    "tokenId": "aef72e10-a5d0-48e2-8542-dc8a02556d2d",
+    "reserves": [
+     "0.003514876919025418",
+     "49999.99999999999999997"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1128,19 +2044,19 @@
      "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134",
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
     ],
-    "updatedAt": "2026-10-18T20:12:55.050Z",
+    "updatedAt": "2026-11-21T14:08:28.706Z",
     "createdAt": "2026-09-28T10:37:10.962Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
     ],
-    "liquidity": 101757.68213220622,
+    "liquidity": 51042.5874386623,
     "metrics": {
-     "apy": "27.657",
-     "baseApy": "27.657",
-     "volumeUsd1d": "1518.1",
-     "volumeUsd7d": "191352.828"
+     "apy": "20.583",
+     "baseApy": "20.583",
+     "volumeUsd1d": "567.556",
+     "volumeUsd7d": "2564.889"
     },
     "metadata": {
      "tags": [
@@ -1152,8 +2068,8 @@
     },
     "tokenId": "723f570d-e40d-402a-b27f-c413e4731eb7",
     "reserves": [
-     "15.814301718864704173",
-     "3026.99862658245656237"
+     "2.897917798213070671",
+     "3420.148974540935017541"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1175,14 +2091,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134"
     ],
-    "updatedAt": "2026-10-18T20:12:55.070Z",
+    "updatedAt": "2026-11-21T14:08:28.051Z",
     "createdAt": "2026-09-28T10:37:32.126Z",
     "verifiedAt": null,
     "tokens": [
      "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7",
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
     ],
-    "liquidity": 10019.63702076244,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1205,48 +2121,106 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "bsc:0x39b9a2a4f11ea1f03145a50dad4f06c7c84f8bc8646d4a6127810fae0b92efa4": {
-    "key": "bsc:0x39b9a2a4f11ea1f03145a50dad4f06c7c84f8bc8646d4a6127810fae0b92efa4",
-    "name": "PancakeSwap Infinity LP ETH/BMNRB",
+   "robinhood:0x9a7842eded60b0fe1e03eec342c82a397c821ed0": {
+    "key": "robinhood:0x9a7842eded60b0fe1e03eec342c82a397c821ed0",
+    "name": "BitMine Immersion Technologies • Robinhood Token",
     "decimals": 18,
-    "symbol": "ETH/BMNRB",
-    "price": 9007199254740990,
-    "address": "0x39b9a2a4f11ea1f03145a50dad4f06c7c84f8bc8646d4a6127810fae0b92efa4",
+    "symbol": "BMNR",
+    "price": 14.925,
+    "address": "0x9a7842eded60b0fe1e03eec342c82a397c821ed0",
     "addresses": {
-     "bsc": "0x39b9a2a4f11ea1f03145a50dad4f06c7c84f8bc8646d4a6127810fae0b92efa4"
+     "robinhood": "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
     },
-    "platform": "pancakeswap-infinity",
-    "network": "bsc",
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
     "images": [
-     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
-     "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x9a7842eded60b0fe1e03eec342c82a397c821ed0.png"
     ],
-    "updatedAt": "2026-10-18T20:13:20.774Z",
-    "createdAt": "2026-08-29T12:21:18.392Z",
+    "updatedAt": "2026-11-21T14:08:02.737Z",
+    "createdAt": "2026-10-28T20:06:35.307Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x9a7842eded60b0fe1e03eec342c82a397c821ed0",
+    "liquidity": 242734.31522175,
+    "metrics": {
+     "volumeUsd1d": "64809.738",
+     "volumeUsd7d": "146196.836"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000af62cef6d31544d1a0da8953101a42a2",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "a219c7e7-58ea-41ff-ab73-e39e67d570cf",
+    "totalSupply": "16263.60571",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x05b9590e72348b9b9eaa617a056d631bc367dbba41255e13b749d6cc67395adc": {
+    "key": "ethereum:0x05b9590e72348b9b9eaa617a056d631bc367dbba41255e13b749d6cc67395adc",
+    "name": "Uniswap V4 LP UDS/BMNRx",
+    "decimals": 18,
+    "symbol": "UDS/BMNRX",
+    "price": 9007199254740990,
+    "address": "0x05b9590e72348b9b9eaa617a056d631bc367dbba41255e13b749d6cc67395adc",
+    "addresses": {
+     "ethereum": "0x05b9590e72348b9b9eaa617a056d631bc367dbba41255e13b749d6cc67395adc"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:28.313Z",
+    "createdAt": "2026-10-25T20:01:39.415Z",
     "verifiedAt": null,
     "tokens": [
-     "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
-     "0x3548da95a9effe481e8604664d75e95821e557f5"
+     "0x2162fdb116bc95d85b898bdae77e053ef0c36eaa",
+     "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
     ],
-    "liquidity": 609.3424350642307,
+    "liquidity": 500.6307853449342,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "5373.188"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "1.5"
+     "tickSpacing": 2500,
+     "feePercentage": "25"
     },
-    "tokenId": "bff1c5e4-d7fa-4c5e-b9b4-6b1e69ebda89",
+    "tokenId": "ef6455f8-f169-4e8d-9a4b-a6de3ca0cd20",
     "reserves": [
-     "0.117985830753181774",
-     "16.028832030039815691"
+     "499.999999999999999998",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1267,18 +2241,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:12:56.033Z",
+    "updatedAt": "2026-11-21T14:08:28.671Z",
     "createdAt": "2026-10-18T18:58:00.628Z",
     "verifiedAt": null,
     "tokens": [
      "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
      "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
     ],
-    "liquidity": 3526.670229039823,
+    "liquidity": 2720.384384479424,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
-     "volumeUsd1d": "0"
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1286,12 +2261,58 @@
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
      "tickSpacing": 1,
-     "feePercentage": "78"
+     "feePercentage": "78.022"
     },
     "tokenId": "96d30213-9b8a-438b-bc98-10136ffb9970",
     "reserves": [
-     "3999.999999999999999999",
-     "0"
+     "3999.63177399176502016",
+     "0.147748093510345001"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x068af57ce4a3a5f701b07b87bfa3f2c5e0c67f939c2954d66d70d04ae5d4697f": {
+    "key": "robinhood:0x068af57ce4a3a5f701b07b87bfa3f2c5e0c67f939c2954d66d70d04ae5d4697f",
+    "name": "Uniswap V4 LP OLQD/BMNR",
+    "decimals": 18,
+    "symbol": "OLQD/BMNR",
+    "price": 9007199254740990,
+    "address": "0x068af57ce4a3a5f701b07b87bfa3f2c5e0c67f939c2954d66d70d04ae5d4697f",
+    "addresses": {
+     "robinhood": "0x068af57ce4a3a5f701b07b87bfa3f2c5e0c67f939c2954d66d70d04ae5d4697f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:40.043Z",
+    "createdAt": "2026-11-06T15:59:35.837Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0x9a7842eded60b0fe1e03eec342c82a397c821ed0"
+    ],
+    "liquidity": 9997.503171752938,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19802,
+     "feePercentage": "99.0133"
+    },
+    "tokenId": "4af6d899-8b95-40c7-96af-2c4693cc0e63",
+    "reserves": [
+     "9999.999999986790801061",
+     "0.0053333333333333"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1312,14 +2333,14 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716"
     ],
-    "updatedAt": "2026-10-18T20:13:05.495Z",
+    "updatedAt": "2026-11-21T14:08:42.991Z",
     "createdAt": "2026-08-27T15:48:30.521Z",
     "verifiedAt": null,
     "tokens": [
      "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
      "0x3548da95a9effe481e8604664d75e95821e557f5"
     ],
-    "liquidity": 16404.6067353684,
+    "liquidity": 11873.752704964367,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1347,18 +2368,18 @@
     "name": "Bitmine xStock",
     "decimals": 18,
     "symbol": "BMNRX",
-    "price": 21.31,
+    "price": 13.44,
     "address": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed",
     "addresses": {
      "ethereum": "0xaeb681b69e5094e04d11bcef51a71358a374c3ed"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:13:13.007Z",
+    "updatedAt": "2026-11-21T14:09:30.411Z",
     "createdAt": "2025-10-01T09:00:49.665Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7479810,
+    "liquidity": 4717440,
     "image": "https://coin-images.coingecko.com/coins/images/69618/large/Ticker_BMNRx__Company_Name_Bitmine_xStock__size_200x200.png?1759233186",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1376,6 +2397,53 @@
     "totalSupply": "351000",
     "isClaimed": false,
     "isPortable": true
+   },
+   "ethereum:0xed2c30051cfc52347f8c60a9c96e4cff58746afae3c1eedeed39f14a3ca312df": {
+    "key": "ethereum:0xed2c30051cfc52347f8c60a9c96e4cff58746afae3c1eedeed39f14a3ca312df",
+    "name": "Uniswap V4 LP ETH/BMNRon",
+    "decimals": 18,
+    "symbol": "ETH/BMNRON",
+    "price": 9007199254740990,
+    "address": "0xed2c30051cfc52347f8c60a9c96e4cff58746afae3c1eedeed39f14a3ca312df",
+    "addresses": {
+     "ethereum": "0xed2c30051cfc52347f8c60a9c96e4cff58746afae3c1eedeed39f14a3ca312df"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/71411/large/bmnron_160x160.png?1767879134"
+    ],
+    "updatedAt": "2026-11-21T14:08:29.423Z",
+    "createdAt": "2026-10-24T20:00:01.155Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x33483a58079b4225b10e57958ca28ad7b9cdbaf7"
+    ],
+    "liquidity": 9885.160844110515,
+    "metrics": {
+     "apy": "190.416",
+     "baseApy": "190.416",
+     "volumeUsd1d": "1673.804",
+     "volumeUsd7d": "8749.286"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 299,
+     "feePercentage": "3.0871"
+    },
+    "tokenId": "6c36b2d7-cfdf-4666-877c-8999bfdcfbe8",
+    "reserves": [
+     "0.285330898848414773",
+     "697.245228975161996322"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    }
   }
  }
