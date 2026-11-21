@@ -95,6 +95,35 @@ docker compose up -d            # or run it locally on http://localhost:3301
 
 Rebuild the image after every `rwa-pipeline sync`, because the data is part of the build.
 
+## Automation
+
+[`ci.yml`](.github/workflows/ci.yml) runs on every pull request and every push to `main` with read-only
+repository permissions. It installs locked dependencies, runs the Python pipeline tests, and checks the site
+with lint, unit tests, a production build and Chromium Playwright tests. A failed run uploads the Playwright
+report and test results as an artifact.
+
+[`update-data.yml`](.github/workflows/update-data.yml) runs daily at 05:17 UTC and can also be started manually
+with `workflow_dispatch`. Updates run one at a time on the default branch. Add repository Actions secrets
+`CMC_API_KEY` and `PORTALS_API_KEY` to enable `uv run rwa-pipeline sync --refresh --format all`. If either key
+is missing, the job only logs a notice and skips the update and publishing steps successfully. Exit codes 0
+and 2 are accepted: a partial refresh keeps the previous snapshots for assets that could not be updated.
+Before committing or publishing, the workflow runs the Python pipeline tests except those marked `shipped_data`,
+which compare committed data with the config and run on pull requests. It also runs site unit tests, a production
+build and Chromium Playwright e2e tests against the refreshed data. Any failed check stops the job before
+data is committed or an image is published.
+Changed pipeline data (excluding `data/raw`) and frontend public files are committed by `github-actions[bot]`
+to the default branch with the message `data: daily update <YYYY-MM-DD>`. Before committing, the workflow fetches
+the latest default branch. If it moved during the update, nothing is committed or published; the next run
+will refresh data using the new code.
+
+To publish the Docker image, also add `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN`. After the data refresh, the
+workflow builds `rwa-interface` for `linux/amd64` and `linux/arm64` and pushes
+`cp0x/pi-rwa-interface:<YYYY-MM-DD>` (the UTC run date) and `cp0x/pi-rwa-interface:latest`. Missing Docker Hub
+credentials only produce a notice and skip image publishing; the data update still completes.
+
+For the live site to update, the server must pull and restart the `latest` image, for example with Watchtower
+or a timer that runs `docker compose pull && docker compose up -d` in the deployment directory.
+
 ## Links
 
 - Website: [rwa.cp0x.com](https://rwa.cp0x.com/)
