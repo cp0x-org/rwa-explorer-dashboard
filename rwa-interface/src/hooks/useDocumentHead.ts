@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import { useT } from 'i18n';
 import { RwaExport } from 'types/rwa';
+import { trackPageView } from 'utils/analytics';
 import { SITE_NAME } from 'utils/pageMeta';
 import { documentHead } from 'utils/seo';
 
@@ -31,13 +32,14 @@ function syncMeta(attribute: 'name' | 'property', key: string, values: string[])
   );
 }
 
-// Keep the live head in sync with the prerender, only after hydration.
+// Keep the live head in sync with the prerender, only after hydration; then send the page view (utils/analytics).
 export function useDocumentHead(data?: RwaExport) {
   const { pathname } = useLocation();
   const t = useT();
   useEffect(() => {
     if (!data) {
       document.title = `${t('notFound.page')} | ${SITE_NAME}`;
+      trackPageView();
       return;
     }
 
@@ -71,5 +73,8 @@ export function useDocumentHead(data?: RwaExport) {
       'script[type="application/ld+json"]',
       head.jsonLd === null ? [] : [{ attributes: { type: 'application/ld+json' }, textContent: JSON.stringify(head.jsonLd) }]
     );
+
+    // After the title and head are current: the page view carries this title.
+    trackPageView();
   }, [pathname, data, t]);
 }
