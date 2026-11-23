@@ -76,7 +76,7 @@ func TestDecideStatus(t *testing.T) {
 		{"auth failure mid-run", 2, 1, true, false, RunPartial},
 		{"auth failure on the first underlying", 0, 1, true, false, RunFailed},
 		{"interrupted", 2, 0, false, true, RunFailed},
-		{"all underlyings failed, no fatal", 0, 3, false, false, RunPartial},
+		{"all underlyings failed, no fatal", 0, 3, false, false, RunFailed},
 	} {
 		t.Run(tc.name, func(t *testing.T) {
 			assert.Equal(t, tc.want, DecideStatus(tc.completed, tc.failed, tc.fatal, tc.interrupted))

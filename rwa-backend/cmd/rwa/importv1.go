@@ -52,6 +52,11 @@ func runImportV1(args []string, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "rwa import-v1:", err)
 		return 2
 	}
+	cur, err := loadCurated(cfg)
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa import-v1:", err)
+		return 2
+	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -67,7 +72,7 @@ func runImportV1(args []string, stdout, stderr io.Writer) int {
 	defer pool.Close()
 
 	log := newLogger(cfg, stderr)
-	res, err := importer.New(pool, assets, settings, settingsJSON, buildVersion(), log).WithForce(*force).Import(ctx, *dataDir)
+	res, err := importer.New(pool, assets, settings, settingsJSON, buildVersion(), log).WithCurated(cur).WithForce(*force).Import(ctx, *dataDir)
 	if err != nil {
 		_, _ = fmt.Fprintln(stderr, "rwa import-v1:", err)
 		return 1

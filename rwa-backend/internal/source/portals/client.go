@@ -5,7 +5,6 @@ package portals
 import (
 	"context"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"net/url"
 	"slices"
@@ -65,32 +64,41 @@ type SearchMeta struct {
 
 // FetchNetworks lists the supported network slugs.
 func (c *Client) FetchNetworks(ctx context.Context) ([]string, error) {
-	var items []any
-	if err := c.api.GetJSON(ctx, "/v1/networks", nil, &items); err != nil {
-		var ae *httpx.APIError
-		if errors.As(err, &ae) && ae.Status == 200 {
-			return []string{}, nil // not an array: 1.x returns []
-		}
+	_, body, err := c.api.Get(ctx, "/v1/networks", nil)
+	if err != nil {
 		return nil, fmt.Errorf("portals networks: %w", err)
 	}
+	// The network list drives every lookup: anything but a nonempty list of nonempty strings is a failure, not "no networks".
+	var items []any
 	out := []string{}
-	for _, it := range items {
-		if s, ok := it.(string); ok {
+	if json.Unmarshal(body, &items) == nil {
+		for _, it := range items {
+			s, ok := it.(string)
+			if !ok || strings.TrimSpace(s) == "" {
+				out = nil
+				break
+			}
 			out = append(out, s)
 		}
+	}
+	if len(items) == 0 || out == nil {
+		return nil, fmt.Errorf("portals networks: %w", &httpx.APIError{Provider: "portals",
+			Message: "invalid networks response: expected a nonempty list of nonempty strings"})
 	}
 	return out, nil
 }
 
 // FetchPlatformNames maps platform slug to display name (the slug when unnamed).
 func (c *Client) FetchPlatformNames(ctx context.Context) (map[string]string, error) {
-	var items []json.RawMessage
-	if err := c.api.GetJSON(ctx, "/v2/platforms", nil, &items); err != nil {
-		var ae *httpx.APIError
-		if errors.As(err, &ae) && ae.Status == 200 {
-			return map[string]string{}, nil // not an array: 1.x returns {}
-		}
+	// Get already fails a non-JSON 2xx body (an HTML page), which like Python is an error. A valid JSON body that is
+	// not an array gives {} (portals.py::fetch_platform_names).
+	_, body, err := c.api.Get(ctx, "/v2/platforms", nil)
+	if err != nil {
 		return nil, fmt.Errorf("portals platforms: %w", err)
+	}
+	var items []json.RawMessage
+	if json.Unmarshal(body, &items) != nil {
+		return map[string]string{}, nil
 	}
 	out := map[string]string{}
 	for _, raw := range items {
@@ -156,9 +164,22 @@ func (c *Client) Lookup(ctx context.Context, keys []string, limit int) (map[stri
 	found := map[string]json.RawMessage{}
 	for start := 0; start < len(unique); start += LookupBatch {
 		batch := unique[start:min(start+LookupBatch, len(unique))]
-		items, _, err := c.paginate(ctx, url.Values{"ids": {strings.Join(batch, ",")}}, limit)
+		items, meta, err := c.paginate(ctx, url.Values{"ids": {strings.Join(batch, ",")}}, limit)
 		if err != nil {
 			return nil, fmt.Errorf("portals lookup: %w", err)
+		}
+		// An exact lookup that misses records would report indexed contracts as not indexed: refuse it.
+		reported := "None"
+		if meta.TotalItems != nil {
+			reported = strconv.Itoa(*meta.TotalItems)
+		}
+		switch {
+		case meta.TotalItems != nil && meta.Received < *meta.TotalItems:
+			return nil, fmt.Errorf("portals lookup: %w", &httpx.APIError{Provider: "portals",
+				Message: fmt.Sprintf("incomplete lookup (count_mismatch): received %d, reported %s", meta.Received, reported)})
+		case !meta.Complete:
+			return nil, fmt.Errorf("portals lookup: %w", &httpx.APIError{Provider: "portals",
+				Message: fmt.Sprintf("incomplete lookup (MAX_PAGES reached): received %d, reported %s", meta.Received, reported)})
 		}
 		for k, v := range items {
 			found[k] = v

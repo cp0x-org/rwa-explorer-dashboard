@@ -10,6 +10,7 @@ import (
 	"math/big"
 	"slices"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/shopspring/decimal"
@@ -83,6 +84,9 @@ type Side struct {
 	Issuers map[string]IssuerMeta
 	// PortalsNetworks is portals.networks of the newest snapshot that has a Portals part.
 	PortalsNetworks []string
+	// PositionMetadata holds the string-valued metadata of the raw Portals record of every position (the newest
+	// snapshot wins, like the raw records of export.py::raw_portals_records); link templates read it.
+	PositionMetadata map[string]map[string]string
 }
 
 // Result is the output of Build: the export without the parts Finalize adds (schema_version, generated_at,
@@ -92,10 +96,52 @@ type Result struct {
 	Side   Side
 }
 
+// BuildOption tunes Build.
+type BuildOption func(*buildOptions)
+
+type buildOptions struct{ symbolAliases map[string][]string }
+
+// WithSymbolAliases passes the symbol_aliases of config/assets.json, keyed by ticker (analyze.build symbol_aliases).
+func WithSymbolAliases(aliases map[string][]string) BuildOption {
+	return func(o *buildOptions) { o.symbolAliases = aliases }
+}
+
+// SymbolAliases collects the aliases of the assets by ticker, the argument of WithSymbolAliases.
+func SymbolAliases(assets []model.Asset) map[string][]string {
+	out := make(map[string][]string, len(assets))
+	for _, a := range assets {
+		out[a.Ticker] = a.SymbolAliases
+	}
+	return out
+}
+
+// symbolSearched is analyze.py::_symbol_searched: Portals searches substrings, so a searched term must occur in the
+// token symbol (case-insensitive, by Python's str.casefold).
+func symbolSearched(symbol *string, searches map[string]model.PortalsSearch) bool {
+	s := casefold(deref(symbol))
+	for term := range searches {
+		if strings.Contains(s, casefold(term)) {
+			return true
+		}
+	}
+	return false
+}
+
+// casefold approximates Python's str.casefold. Lower-casing the upper-cased text folds the long s and the final
+// sigma; Go has only simple case mappings, so ß (full folding: ss) is replaced explicitly. The remaining differences
+// (a few exotic ligatures) do not occur in token symbols.
+func casefold(s string) string {
+	return strings.ReplaceAll(strings.ToLower(strings.ToUpper(s)), "ß", "ss")
+}
+
 // Build is analyze.py::build. snapshots are the latest snapshot of every enabled underlying (input order breaks
 // fetched_at ties, so pass them in assets.json order); issuers is the issuers.json cache; platformNames maps a
 // Portals platform slug to a protocol name.
-func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings *model.Settings, platformNames map[string]string) (*Result, error) {
+func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings *model.Settings, platformNames map[string]string, opts ...BuildOption) (*Result, error) {
+	var o buildOptions
+	for _, opt := range opts {
+		opt(&o)
+	}
 	if err := validateSettings(settings); err != nil {
 		return nil, err
 	}
@@ -104,6 +150,7 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 	side := Side{
 		PositionFetchedAt: map[string]time.Time{},
 		PositionCreatedAt: map[string]string{},
+		PositionMetadata:  map[string]map[string]string{},
 		DeploymentRaw:     map[DeploymentID]string{},
 		TokenInfo:         map[TokenKey]TokenInfo{},
 		Issuers:           map[string]IssuerMeta{},
@@ -120,6 +167,10 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 	for _, snap := range snaps {
 		var info map[string]model.CMCInfo
 		var rwa *model.CMCRwa
+		var searches map[string]model.PortalsSearch
+		if snap.Portals != nil {
+			searches = snap.Portals.Searches
+		}
 		if snap.CMC != nil {
 			info, rwa = snap.CMC.Info, snap.CMC.RWA
 		}
@@ -135,7 +186,7 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 			if v, ok := info[strconv.FormatInt(cid, 10)]; ok {
 				tokenInfo = &v
 			}
-			kind, excludedReason := ClassifyToken(t, snap.Ticker)
+			kind, excludedReason := ClassifyToken(t, snap.Ticker, o.symbolAliases[snap.Ticker]...)
 			tk := TokenKey{cid, snap.UnderlyingID}
 			parsed := ParseDeployments(tokenInfo, settings.ChainMapping)
 			deployments := make([]model.Deployment, len(parsed))
@@ -151,21 +202,25 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 				deployments[i] = d.Deployment
 				side.DeploymentRaw[DeploymentID{tk, d.CMCNetwork, d.Address}] = d.AddressRaw
 			}
+			coverage := TokenCoverage(deployments, tokenInfo != nil)
+			if coverage == "search" && !symbolSearched(t.Symbol, searches) {
+				coverage = "partial"
+			}
 			token := model.Token{
 				ID:             cid,
 				Symbol:         t.Symbol,
-				Name:           t.Name,
+				Name:           model.NormalizeName(t.Name),
 				Kind:           kind,
 				ExcludedReason: excludedReason,
 				UnderlyingID:   snap.UnderlyingID,
 				Ticker:         snap.Ticker,
 				IssuerID:       t.IssuerID,
-				IssuerName:     t.IssuerName,
+				IssuerName:     model.NormalizeName(t.IssuerName),
 				PriceUSD:       t.Price.Decimal,
 				MarketCapUSD:   t.MarketCap.Decimal,
 				Volume24hUSD:   t.Volume24h.Decimal,
 				Deployments:    deployments,
-				Coverage:       TokenCoverage(deployments, tokenInfo != nil),
+				Coverage:       coverage,
 				FetchedAt:      timePtr(snap.FetchedAt),
 			}
 			if tokenInfo != nil {
@@ -204,6 +259,11 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 				opp.Eligibility = Eligibility(&opp, snap.FetchedAt, settings)
 				opps[opp.Key] = &opp
 				side.PositionFetchedAt[opp.Key] = snap.FetchedAt
+				if md := records[name].Metadata; md != nil && len(md.Strings) > 0 {
+					side.PositionMetadata[opp.Key] = md.Strings
+				} else {
+					delete(side.PositionMetadata, opp.Key)
+				}
 				if c := records[name].CreatedAt; c != nil {
 					side.PositionCreatedAt[opp.Key] = *c
 				} else {
@@ -328,16 +388,19 @@ func Build(snapshots []*model.Snapshot, issuers map[string]IssuerMeta, settings 
 		for _, m := range searches {
 			searchComplete = searchComplete && m.Complete
 		}
+		for _, t := range included {
+			searchComplete = searchComplete && symbolSearched(t.Symbol, searches)
+		}
 		u := model.Underlying{
 			ID:                       snap.UnderlyingID,
 			Ticker:                   snap.Ticker,
-			Name:                     snap.Name,
+			Name:                     model.CollapseSpace(snap.Name),
 			ISIN:                     snap.ISIN,
 			AssetType:                snap.AssetType,
 			Status:                   snap.Status,
 			FetchedAt:                timePtr(snap.FetchedAt),
 			CMCRwaID:                 rwa.RwaID,
-			CMCName:                  rwa.Name,
+			CMCName:                  model.NormalizeName(rwa.Name),
 			TokenizedMarketCapUSD:    rwa.TokenizedMarketCap.Decimal,
 			TokenizedVolume24hUSD:    rwa.TokenizedVolume24h.Decimal,
 			AverageTokenizedPriceUSD: rwa.AverageTokenizedPrice.Decimal,
@@ -580,6 +643,7 @@ func buildIssuers(tokens []model.Token, opps map[string]*Opp, cache map[string]I
 		if truthy(m.Name) {
 			name = m.Name
 		}
+		name = model.NormalizeName(name)
 		status := "unknown"
 		if known {
 			status = "cmc"

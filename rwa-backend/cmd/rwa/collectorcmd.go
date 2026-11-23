@@ -54,6 +54,11 @@ func runCollector(args []string, _, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "rwa collector:", err)
 		return 2
 	}
+	cur, err := loadCurated(cfg)
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa collector:", err)
+		return 2
+	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 	log, jh := newJournalLogger(cfg, stderr)
@@ -82,10 +87,10 @@ func runCollector(args []string, _, stderr io.Writer) int {
 		return 1
 	}
 
-	pub := publish.New(pool, settings, assets, log)
+	pub := publish.New(pool, settings, assets, log).WithCurated(cur)
 	version := buildVersion()
 	collect.Version = version
-	runner := collect.NewRunner(pool, *cfg, settings, assets, log)
+	runner := collect.NewRunner(pool, *cfg, settings, assets, log).WithCurated(cur)
 	fetcher := logos.NewFetcher(pool, log, nil)
 	deps := scheduler.Deps{
 		// One collection run: snapshots into the database; publishing is the next step of the job.

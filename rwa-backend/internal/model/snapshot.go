@@ -138,7 +138,33 @@ type PortalsMetrics struct {
 	VolumeUSD7d LenientDecimal `json:"volumeUsd7d"`
 }
 
-// PortalsMetadata holds position tags.
+// PortalsMetadata holds position tags and the string-valued metadata fields (link templates read them as
+// "{meta.<key>}"; other value types never resolve there).
 type PortalsMetadata struct {
-	Tags []string `json:"tags"`
+	Tags    []string          `json:"tags"`
+	Strings map[string]string `json:"-"`
+}
+
+// UnmarshalJSON reads the tags and keeps every string-valued field.
+func (m *PortalsMetadata) UnmarshalJSON(b []byte) error {
+	var raw map[string]json.RawMessage
+	if err := json.Unmarshal(b, &raw); err != nil {
+		return err
+	}
+	*m = PortalsMetadata{}
+	if t, ok := raw["tags"]; ok {
+		if err := json.Unmarshal(t, &m.Tags); err != nil {
+			return err
+		}
+	}
+	for k, v := range raw {
+		var s string
+		if len(v) > 0 && v[0] == '"' && json.Unmarshal(v, &s) == nil {
+			if m.Strings == nil {
+				m.Strings = map[string]string{}
+			}
+			m.Strings[k] = s
+		}
+	}
+	return nil
 }

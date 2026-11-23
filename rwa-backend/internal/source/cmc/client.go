@@ -102,28 +102,27 @@ type RWAInfo struct {
 // JSON value; error_code a string or a number. A missing error_code means success; null or "" does not
 // (Python compares str(code) != "0"). It returns the raw "data" value.
 func (c *Client) checked(body []byte) (json.RawMessage, error) {
-	var env struct {
-		Data   json.RawMessage `json:"data"`
-		Status json.RawMessage `json:"status"`
-	}
-	if err := json.Unmarshal(body, &env); err != nil {
-		return nil, &httpx.APIError{Provider: provider, Status: 200, Message: "invalid JSON body: " + httpx.ErrorMessage(body), Err: err}
+	invalid := &httpx.APIError{Provider: provider, Message: "invalid response: expected an object with status object"}
+	var env map[string]json.RawMessage
+	if json.Unmarshal(body, &env) != nil || env == nil {
+		return nil, invalid
 	}
 	var st map[string]json.RawMessage
-	if json.Unmarshal(env.Status, &st) != nil || st == nil {
-		return env.Data, nil
+	if json.Unmarshal(env["status"], &st) != nil || st == nil {
+		return nil, invalid
 	}
 	c.api.AddCredits(lenientInt(st["credit_count"]))
-	rawCode, present := st["error_code"]
-	if !present {
-		return env.Data, nil
+	if rawCode, present := st["error_code"]; present {
+		if code := pyStr(rawCode); code != "0" {
+			status, _ := strconv.Atoi(code)
+			return nil, &httpx.APIError{Provider: provider, Status: status, Message: pyStr(st["error_message"])}
+		}
 	}
-	code := pyStr(rawCode)
-	if code == "0" {
-		return env.Data, nil
+	data, ok := env["data"]
+	if !ok {
+		return nil, &httpx.APIError{Provider: provider, Message: "invalid response: expected a data key"}
 	}
-	status, _ := strconv.Atoi(code)
-	return nil, &httpx.APIError{Provider: provider, Status: status, Message: pyStr(st["error_message"])}
+	return data, nil
 }
 
 // pyStr renders a JSON value like Python str(): strings unquoted, null as "None", others as raw JSON text.

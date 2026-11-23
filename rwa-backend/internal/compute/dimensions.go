@@ -90,7 +90,9 @@ func DimensionRows(res *Result, runID int64, settings *model.Settings, platformN
 	known := map[string]bool{}
 	for _, is := range exp.Issuers {
 		known[is.ID] = true
-		d.Issuers = append(d.Issuers, issuerRow(is.ID, is.Name, is.CMCLabel, is.Website, is.RosterSize, is.MetadataStatus))
+		// The website stored is the CMC value of the cache, never the exported one: curated.Apply may have replaced
+		// the exported website with the config/issuers.json override, which must affect the export only.
+		d.Issuers = append(d.Issuers, issuerRow(is.ID, is.Name, is.CMCLabel, side.Issuers[is.ID].Website, is.RosterSize, is.MetadataStatus))
 	}
 	// tokens.issuer_id is a foreign key: issuers whose tokens are all excluded (derivatives) are not in the export
 	// but must have a row. Stubs mirror what build_issuers would have written.

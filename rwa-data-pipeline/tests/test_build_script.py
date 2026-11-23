@@ -31,7 +31,8 @@ def _tags(words):
 
 
 def test_the_image_is_pushed_with_its_version_and_latest(tmp_path):
-    result, calls = _run(tmp_path, "1.2.3")
+    # --allow-dirty: build.sh refuses a dirty working tree, and a test run must not depend on uncommitted edits
+    result, calls = _run(tmp_path, "--allow-dirty", "1.2.3")
     assert result.returncode == 0, result.stderr
     assert len(calls) == 1, calls  # one multi-arch build that pushes both tags
     words = calls[0].split()

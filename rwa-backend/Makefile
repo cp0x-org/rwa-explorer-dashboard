@@ -28,7 +28,8 @@ dev-db-down:
 migrate:
 	$(GO) run ./cmd/rwa migrate up
 
-# Compares the Go compute with the 1.x export over the 1.x data (rwa-data-pipeline/data, or RWA_V1_DATA_DIR).
+# Compares the Go compute with the Python export (testdata/golden/rwa.json) over the pipeline data (rwa-data-pipeline/data,
+# or RWA_V1_DATA_DIR), built at the golden's generated_at with the curated config of config/.
 parity:
 	$(GO) test -tags parity -count=1 -run TestParity ./internal/compute/ -v
 

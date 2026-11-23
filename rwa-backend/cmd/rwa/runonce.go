@@ -27,7 +27,7 @@ import (
 // runOnce implements `rwa run-once [--mode refresh|add] [--symbols NVDA,TSLA] [--raw-dir DIR] [--no-publish]`: one
 // scheduler job without the scheduler — collection run, then publish (export + history), then missing logos (with a
 // rebuild when new logos arrived). --no-publish stops after the snapshots. Exit code: 0 succeeded, 2 partial (some
-// underlyings failed or flag/config error), 1 failed (fatal error, nothing completed, publish error).
+// underlyings failed, a published export excluded rights profiles, or flag/config error), 1 failed (fatal error, nothing completed, publish error).
 func runOnce(args []string, stdout, stderr io.Writer) int {
 	fs := flag.NewFlagSet("run-once", flag.ContinueOnError)
 	fs.SetOutput(stderr)
@@ -59,6 +59,11 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 		return 2
 	}
 	assets, err := model.LoadAssets(cfg.AssetsPath)
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa run-once:", err)
+		return 2
+	}
+	cur, err := loadCurated(cfg)
 	if err != nil {
 		_, _ = fmt.Fprintln(stderr, "rwa run-once:", err)
 		return 2
@@ -96,7 +101,7 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 	defer jh.Close()
 	var journalRun int64
 	defer func() { runlog.CloseRun(log, journalRun) }() // the last event of the run; runs before jh.Close
-	res, err := collect.NewRunner(pool, *cfg, settings, assets, log).Run(ctx, collect.Options{Mode: *mode, Symbols: syms, Trigger: "cli"})
+	res, err := collect.NewRunner(pool, *cfg, settings, assets, log).WithCurated(cur).Run(ctx, collect.Options{Mode: *mode, Symbols: syms, Trigger: "cli"})
 	if res != nil {
 		journalRun = res.RunID
 	}
@@ -134,7 +139,7 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 		return code
 	}
 	st := store.New(pool)
-	pub := publish.New(pool, settings, assets, log)
+	pub := publish.New(pool, settings, assets, log).WithCurated(cur)
 	pubRes, err := pub.Publish(ctx, res.RunID, *mode)
 	if err != nil {
 		if merr := st.MarkRunPublishFailed(ctx, res.RunID, err); merr != nil {
@@ -149,7 +154,7 @@ func runOnce(args []string, stdout, stderr io.Writer) int {
 		log.Error("logos step failed", "run_id", res.RunID, "step", "logos", "err", err)
 		_, _ = fmt.Fprintln(stderr, "rwa run-once: logos:", err)
 	}
-	return code
+	return publishExit(stdout, code, pubRes)
 }
 
 func printPublish(w io.Writer, res *publish.Result) {

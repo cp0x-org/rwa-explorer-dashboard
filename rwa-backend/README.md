@@ -1,8 +1,8 @@
 # rwa-backend
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
-One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`, `probe`
-and `version`. All subcommands are implemented. Part of the root [README](../README.md); the 2.0 flow is in [docs/workflow.md](../docs/workflow.md).
+One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`, `deals`,
+`probe` and `version`. All subcommands are implemented. Part of the root [README](../README.md); the 2.0 flow is in [docs/workflow.md](../docs/workflow.md).
 
 ## Build and test
 
@@ -13,7 +13,7 @@ cd rwa-backend
 make build        # bin/rwa, version from git describe
 make test
 make lint         # golangci-lint (config v2, .golangci.yml) if installed, otherwise go vet
-make parity       # Go compute vs the 1.x export (rwa-interface/public/data/rwa.json), needs ../rwa-data-pipeline/data
+make parity       # Go compute vs the Python export (testdata/golden/rwa.json), needs ../rwa-data-pipeline/data
 ./bin/rwa --help
 ```
 
@@ -28,7 +28,7 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `CMC_API_KEY` | required for collector | collector | CoinMarketCap key |
 | `PORTALS_API_KEY` | required for collector | collector | Portals key (a leading `Bearer ` is stripped) |
 | `ASSETS_PATH` | `/config/assets.json` | collector | underlyings list |
-| `SETTINGS_PATH` | `/config/settings.json` | collector | rating settings |
+| `SETTINGS_PATH` | `/config/settings.json` | collector | rating settings; its directory is also where the curated config files below are read from |
 | `COLLECT_CRON` | `0 6 * * *` | collector | cron schedule, always UTC; a `CRON_TZ=`/`TZ=` prefix is rejected, as is a schedule that never fires |
 | `COLLECT_INTERVAL` | empty | collector | alternative to cron, e.g. `12h`; setting both is an error |
 | `COLLECT_ON_START` | `true` | collector | run on start if the last successful run is older than the interval (cron: older than 24 h) |
@@ -44,6 +44,23 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `ENV_FILE` | `.env` | all | path of the dotenv file to load |
 | `LOG_LEVEL` | `info` | all | `debug`, `info`, `warn` or `error` |
 | `LOG_FORMAT` | `json` | all | `json` or `text` |
+
+### Config files
+
+All files live in `config/` (Docker: `/config/`); the curated ones are read from the directory of `SETTINGS_PATH`. They are
+copies of `../rwa-data-pipeline/config/` and must stay identical to it (the parity test loads them from here).
+
+| File | Required | Purpose |
+|---|---|---|
+| `assets.json` | yes | underlyings; `symbol_aliases` lets a token whose symbol lacks the ticker (SPCX: `SPACEX`) count as a version |
+| `settings.json` | yes | rating settings, rate limits, `chain_mapping` (Mantle and Monad are known networks Portals does not index) |
+| `issuers.json` | no | issuer website used when CMC has none (`schema_version` 1, `issuers.<id>.website`, clean HTTPS) |
+| `links.json` | no | outbound links: position routes per platform and network (each with a `verified` record), issuer apps, swap links, cp0x referrals (`deal` slugs, `deals_max_age_days`, default 14) |
+| `rights_profiles.json` | no | reviewed holder rights per token id (`review_valid_days`, default 180); a profile that fails validation is excluded with a warning, the rest is published |
+
+A missing optional file turns its feature off (no links, no profiles, no website overrides); an invalid file is a config
+error and the command exits `2`. Warnings of links and rights (an unusable URL, an excluded or stale profile, an
+unavailable referral) are appended to the run and to the run journal; they never fail a publish.
 
 ## API
 
@@ -141,7 +158,7 @@ make dev-db        # postgres:16 on 127.0.0.1:5433, user/password/db: rwa (dev o
 make dev-db-down
 ```
 
-`config/assets.json` and `config/settings.json` are copies of the files in `../rwa-data-pipeline/config/`.
+The files in `config/` are copies of the files in `../rwa-data-pipeline/config/`.
 
 ## Migrations
 
@@ -160,18 +177,26 @@ rwa migrate down-to <version> --yes  # roll back until <version> is current (0 =
 ```
 rwa import-v1 --data-dir ../rwa-data-pipeline/data [--force]   # needs DATABASE_URL, ASSETS_PATH, SETTINGS_PATH; migrations applied
 rwa build [--run <id>]                               # recompute the export from stored snapshots, no network, no history
+rwa deals [--no-build]                               # fetch the cp0x deals now, store them, then rebuild (like the Python `deals`)
 rwa publish --run <id>                               # publish an existing collection run (no build yet) with history
 rwa collector                                        # long-running scheduler
 ```
 
 `import-v1` loads the 1.x pipeline data as one run (`mode=import`, `run_key` = the newest `data/runs/*.json` run id)
 in a single transaction: the snapshot documents verbatim (their `fetched_at` starts the history at the 1.x
-date), `issuers.json`, `rwa_info.json`, `portals_platforms.json`, `data/logos/**`, then a published build. It is
+date), `issuers.json`, `rwa_info.json`, `portals_platforms.json`, `cp0x_deals.json`, `data/logos/**`, then a published build. It is
 idempotent: when a run with that `run_key` exists it prints "import skipped" and exits 0. Without `data/runs/*.json` the
 `run_key` is the `run_id` of the newest snapshot. It is meant for an empty database: when `collection_runs` already has
 rows it refuses unless `--force` is given. It holds the collector advisory lock, so it fails while a collector run is in
 progress. Logo files keep the case of their extension (`X.PNG` is stored as `PNG`); unknown extensions are stored as
 `application/octet-stream`. The stored export matches the 1.x `rwa.json` structurally (`TestImportV1Parity`).
+
+`deals` fetches `https://cp0x.com/api/v1/deals`, keeps only the deals `links.json` names and stores them as the newest
+row of `cp0x_deals` (migration `0004_cp0x_deals.sql`: `id`, `fetched_at`, `payload` = `{fetched_at, deals}`). Publish
+reads the newest row; referrals appear only while it is at most `deals_max_age_days` old (and not more than an hour in
+the future). A failed fetch keeps the previous row and exits `1` without a rebuild. The collector does the same fetch once
+per run after the Portals step (`step=collect.deals`); there a failure is a run warning, never fatal. `import-v1` imports
+`data/cp0x_deals.json` as the first row.
 
 `build` creates a run with `mode=rebuild` and a new current build from the latest stored snapshot of every enabled
 underlying. A rebuild is not a new observation, so it writes **no history rows**; `--run <id>` must name an existing
@@ -236,7 +261,11 @@ rwa run-once --no-publish             # snapshots only; publish later with `rwa 
 
 Steps and per-underlying progress (elapsed, ETA) are logged to stderr with `log/slog`; per-request lines appear at
 `LOG_LEVEL=debug`. The report goes to stdout. Exit code: `0` succeeded, `2` partial (some underlyings failed, or a
-usage/config error), `1` failed (fatal error such as a 401, interruption, another run in progress). A logos problem after a successful publish is logged and does not change the exit code; a publish error exits `1` and is recorded on the run. The whole command is bounded by `RUN_TIMEOUT`. A run holds the
+usage/config error), `1` failed (fatal error such as a 401, interruption, another run in progress, or every selected underlying failed).
+A fresh snapshot without tokens never replaces one that had tokens: the underlying fails with
+`<status>: previous snapshot with N tokens kept` and the old snapshot stays. The Portals clients are strict: a 2xx
+answer that is not JSON, a CMC answer without a `status` object or a `data` key, an empty `/v1/networks` list and an
+incomplete exact lookup (fewer records than reported, or the page cap reached) are errors, not empty data. A logos problem after a successful publish is logged and does not change the exit code; a publish error exits `1` and is recorded on the run. The whole command is bounded by `RUN_TIMEOUT`. A run holds the
 PostgreSQL advisory lock `hashtext('rwa-collector-run')`, so only one collector run exists at a time.
 
 `internal/logos` (`FetchMissing`) downloads missing token, issuer and underlying logos into the `logos` table (CMC

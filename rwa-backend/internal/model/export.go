@@ -16,9 +16,43 @@ type Export struct {
 	Issuers       []Issuer       `json:"issuers"`
 	Opportunities []Opportunity  `json:"opportunities"`
 
+	// Holder rights (rights.py::attach_rights): the profiles as published (key order of the config file, so raw JSON)
+	// and the schema of the facts. rights_profiles is always written, rights_schema once rights are attached.
+	RightsProfiles []json.RawMessage `json:"rights_profiles"`
+	RightsSchema   json.RawMessage   `json:"rights_schema,omitempty"`
+
 	// 2.0 additions; null when unknown (e.g. an export built in memory).
 	BuildID *int64 `json:"build_id"`
 	RunID   *int64 `json:"run_id"`
+}
+
+// Referral is a cp0x deal offered next to a position or an issuer app (curated.py::attach_links).
+type Referral struct {
+	URL     string  `json:"url"`
+	Deal    string  `json:"deal"`
+	Bonus   any     `json:"bonus"` // string in practice; whatever the deals cache holds
+	PageURL *string `json:"page_url"`
+	AsOf    string  `json:"as_of"`
+}
+
+// PositionLink is where a position can be opened: its own page ("position") or the platform home ("home").
+type PositionLink struct {
+	URL  string `json:"url"`
+	Kind string `json:"kind"`
+}
+
+// IssuerApp is the app of an issuer.
+type IssuerApp struct {
+	URL   string  `json:"url"`
+	Label *string `json:"label"`
+}
+
+// SwapLink is a verified swap route of a token on one network.
+type SwapLink struct {
+	Kind    string  `json:"kind"` // swap
+	Label   *string `json:"label"`
+	URL     string  `json:"url"`
+	Network string  `json:"network"`
 }
 
 // ExportSettings is export.settings: the subset of settings.json that affects the numbers.
@@ -115,6 +149,17 @@ type Summary struct {
 	Coverage        string  `json:"coverage"`
 	OldestFetchedAt *string `json:"oldest_fetched_at"`
 	NewestFetchedAt *string `json:"newest_fetched_at"`
+
+	// Outbound links (curated.py::attach_links) and holder rights (rights.py::attach_rights).
+	LinksDealsFetchedAt  *string  `json:"links_deals_fetched_at"`
+	LinksDealsMaxAgeDays *float64 `json:"links_deals_max_age_days"`
+	LinksWarningsCount   int      `json:"links_warnings_count"`
+
+	RightsProfilesCount         int `json:"rights_profiles_count"`
+	RightsReviewedTokensCount   int `json:"rights_reviewed_tokens_count"`
+	RightsReviewValidDays       int `json:"rights_review_valid_days"`
+	RightsExcludedProfilesCount int `json:"rights_excluded_profiles_count"`
+	RightsWarningsCount         int `json:"rights_warnings_count"`
 }
 
 // Underlying is one stock/ETF.
@@ -182,6 +227,10 @@ type Token struct {
 	ByCategory       Breakdown    `json:"by_category"`
 	ByPlatform       Breakdown    `json:"by_platform"`
 	Yield            YieldProfile `json:"yield"`
+
+	// Swap routes and the reviewed holder-rights profile; both are written after rank_in_underlying (tokenOut).
+	Links           []SwapLink `json:"links"`
+	RightsProfileID *string    `json:"rights_profile_id"`
 }
 
 // tokenAlias drops Token's methods to avoid recursion in MarshalJSON.
@@ -190,12 +239,15 @@ type tokenAlias Token
 // tokenOut shadows rank_in_underlying with an omit-when-nil field (the shallower field wins in encoding/json).
 type tokenOut struct {
 	tokenAlias
-	RankInUnderlying *int `json:"rank_in_underlying,omitempty"`
+	RankInUnderlying *int       `json:"rank_in_underlying,omitempty"`
+	Links            []SwapLink `json:"links"`
+	RightsProfileID  *string    `json:"rights_profile_id"`
 }
 
 // MarshalJSON omits rank_in_underlying when nil.
 func (t Token) MarshalJSON() ([]byte, error) {
-	return json.Marshal(tokenOut{tokenAlias: tokenAlias(t), RankInUnderlying: t.RankInUnderlying})
+	return json.Marshal(tokenOut{tokenAlias: tokenAlias(t), RankInUnderlying: t.RankInUnderlying, Links: nonNil(t.Links),
+		RightsProfileID: t.RightsProfileID})
 }
 
 // Issuer is a tokenization issuer with its basket-level scores.
@@ -237,6 +289,11 @@ type Issuer struct {
 	BasketMarketCapUSD             Decimal `json:"basket_market_cap_usd"`
 	Coverage                       string  `json:"coverage"`
 	OldestFetchedAt                *string `json:"oldest_fetched_at"`
+
+	App                       *IssuerApp `json:"app"`
+	Referral                  *Referral  `json:"referral"`
+	RightsProfileIDs          []string   `json:"rights_profile_ids"`
+	RightsReviewedTokensCount int        `json:"rights_reviewed_tokens_count"`
 }
 
 // Component is one child position/token of a composite position.
@@ -271,6 +328,9 @@ type Opportunity struct {
 	UpdatedAt         *string     `json:"updated_at"`
 	Flags             []string    `json:"flags"`
 	Eligibility       string      `json:"eligibility"`
+
+	Link     *PositionLink `json:"link"`
+	Referral *Referral     `json:"referral"`
 }
 
 func nonNil[T any](s []T) []T {
@@ -288,6 +348,7 @@ func (e *Export) Normalize() {
 	e.Tokens = nonNil(e.Tokens)
 	e.Issuers = nonNil(e.Issuers)
 	e.Opportunities = nonNil(e.Opportunities)
+	e.RightsProfiles = nonNil(e.RightsProfiles)
 	for i := range e.Underlyings {
 		u := &e.Underlyings[i]
 		u.TokenIDs = nonNil(u.TokenIDs)
@@ -304,6 +365,7 @@ func (e *Export) Normalize() {
 		}
 		t.UnconfirmedKeys = nonNil(t.UnconfirmedKeys)
 		t.Yield.TopKeys = nonNil(t.Yield.TopKeys)
+		t.Links = nonNil(t.Links)
 	}
 	for i := range e.Issuers {
 		is := &e.Issuers[i]
@@ -311,6 +373,7 @@ func (e *Export) Normalize() {
 		is.TokenIDs = nonNil(is.TokenIDs)
 		is.EligiblePlatforms = nonNil(is.EligiblePlatforms)
 		is.BestReportedYieldKeys = nonNil(is.BestReportedYieldKeys)
+		is.RightsProfileIDs = nonNil(is.RightsProfileIDs)
 	}
 	for i := range e.Opportunities {
 		o := &e.Opportunities[i]

@@ -11,11 +11,11 @@ import (
 	"sort"
 	"strings"
 	"testing"
-	"time"
 
 	"github.com/stretchr/testify/require"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/v1files"
 )
@@ -58,12 +58,26 @@ func TestParity(t *testing.T) {
 	rwaInfo, err := v1files.LoadRwaInfo(filepath.Join(dataDir, "rwa_info.json"))
 	require.NoError(t, err)
 
-	res, err := compute.Build(snaps, issuers, settings, platforms)
-	require.NoError(t, err)
-	exp := compute.Finalize(res, time.Now(), rwaInfo, fsLogos{filepath.Join(dataDir, "logos")})
-	got, err := json.Marshal(exp)
-	require.NoError(t, err)
 	want, err := os.ReadFile(filepath.Join("..", "..", "testdata", "golden", "rwa.json"))
+	require.NoError(t, err)
+	// The curated rules (freshness of the deals, stale reviews) depend on the clock: build at the golden's instant.
+	var goldenHead struct {
+		GeneratedAt string `json:"generated_at"`
+	}
+	require.NoError(t, json.Unmarshal(want, &goldenHead))
+	now, ok := compute.ParseTime(goldenHead.GeneratedAt)
+	require.True(t, ok, "golden generated_at")
+	cfg, err := curated.Load(filepath.Join("..", "..", "config"))
+	require.NoError(t, err)
+	dealsJSON, err := os.ReadFile(filepath.Join(dataDir, curated.DealsFile))
+	require.NoError(t, err)
+
+	res, err := compute.Build(snaps, issuers, settings, platforms, compute.WithSymbolAliases(compute.SymbolAliases(assets)))
+	require.NoError(t, err)
+	exp := compute.Finalize(res, now, rwaInfo, fsLogos{filepath.Join(dataDir, "logos")})
+	warnings := curated.Apply(exp, cfg, curated.ParseDealsCache(dealsJSON), res.Side.PositionMetadata, now)
+	require.Empty(t, warnings, "the golden has links_warnings_count and rights_warnings_count 0")
+	got, err := json.Marshal(exp)
 	require.NoError(t, err)
 
 	// build_id and run_id are 2.0-only fields (absent from the 1.x export); compute leaves them null.

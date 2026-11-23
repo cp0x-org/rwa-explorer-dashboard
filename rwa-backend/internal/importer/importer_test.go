@@ -2,6 +2,7 @@ package importer_test
 
 import (
 	"context"
+	"encoding/json"
 	"log/slog"
 	"os"
 	"path/filepath"
@@ -12,6 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/importer"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
@@ -38,7 +40,17 @@ func TestImportV1Parity(t *testing.T) {
 
 	pool, _ := testdb.Migrated(t)
 	ctx := context.Background()
-	im := importer.New(pool, assets, settings, settingsJSON, "test", slog.New(slog.DiscardHandler))
+	// The curated rules (deals freshness, stale reviews) depend on the build time: publish at the golden's instant.
+	var head struct {
+		GeneratedAt string `json:"generated_at"`
+	}
+	require.NoError(t, json.Unmarshal(want, &head))
+	now, ok := compute.ParseTime(head.GeneratedAt)
+	require.True(t, ok)
+	curCfg, err := curated.Load(cfg)
+	require.NoError(t, err)
+	im := importer.New(pool, assets, settings, settingsJSON, "test", slog.New(slog.DiscardHandler)).
+		WithCurated(curCfg).WithPublishClock(func() time.Time { return now })
 
 	res, err := im.Import(ctx, dataDir)
 	require.NoError(t, err)
@@ -57,6 +69,15 @@ func TestImportV1Parity(t *testing.T) {
 		t.Log(d)
 	}
 	require.Empty(t, diffs, "differences against the 1.x export")
+
+	// The deals cache of the 1.x data is imported as the newest deals row.
+	payload, err := st.LatestDeals(ctx)
+	require.NoError(t, err)
+	var cache struct {
+		FetchedAt string `json:"fetched_at"`
+	}
+	require.NoError(t, json.Unmarshal(payload, &cache))
+	require.Equal(t, "2026-11-14T01:07:38Z", cache.FetchedAt)
 
 	run, err := st.GetRun(ctx, res.RunID)
 	require.NoError(t, err)

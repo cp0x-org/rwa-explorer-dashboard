@@ -240,7 +240,10 @@ func TestRawCaptureNonJSON(t *testing.T) {
 		_, _ = w.Write([]byte("plain text"))
 	}), func(cfg *Config) { cfg.RawDir = dir })
 	_, _, err := c.Get(context.Background(), "/x", nil)
-	require.NoError(t, err)
+	var ae *APIError
+	require.ErrorAs(t, err, &ae, "a 2xx non-JSON body is a failure, but it is still captured")
+	assert.Equal(t, 200, ae.Status)
+	assert.Equal(t, "non-JSON body", ae.Message)
 	b, err := os.ReadFile(filepath.Join(dir, "test", "0001_x.json"))
 	require.NoError(t, err)
 	assert.Contains(t, string(b), `"_non_json_body": "plain text"`)
@@ -261,7 +264,36 @@ func TestGetJSONInvalid(t *testing.T) {
 	err := c.GetJSON(context.Background(), "/x", nil, &v)
 	var ae *APIError
 	require.ErrorAs(t, err, &ae)
-	assert.Contains(t, ae.Message, "invalid JSON")
+	assert.Equal(t, "non-JSON body", ae.Message)
+}
+
+func TestGetNonJSONBodyIsAPIErrorOn2xxOnly(t *testing.T) {
+	for _, status := range []int{200, 201, 204} {
+		c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.WriteHeader(status)
+			_, _ = w.Write([]byte("<html>maintenance</html>"))
+		}), nil)
+		_, _, err := c.Get(context.Background(), "/x", nil)
+		var ae *APIError
+		require.ErrorAs(t, err, &ae, status)
+		assert.Equal(t, status, ae.Status)
+		assert.Equal(t, "non-JSON body", ae.Message)
+	}
+	// An error status keeps its own message, not "non-JSON body".
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusBadRequest)
+		_, _ = w.Write([]byte("bad request"))
+	}), nil)
+	_, _, err := c.Get(context.Background(), "/x", nil)
+	var ae *APIError
+	require.ErrorAs(t, err, &ae)
+	assert.Equal(t, "bad request", ae.Message)
+
+	// Valid JSON of a wrong shape still fails in GetJSON with the decode message.
+	c, _ = testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte("[1]")) }), nil)
+	var v map[string]any
+	require.ErrorAs(t, c.GetJSON(context.Background(), "/x", nil, &v), &ae)
+	assert.Contains(t, ae.Message, "invalid JSON body")
 }
 
 func keys(m map[string]json.RawMessage) []string {

@@ -22,10 +22,12 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/config"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/cmc"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/deals"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/httpx"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/source/portals"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
@@ -79,6 +81,9 @@ type Runner struct {
 
 	cmcBase, portalsBase string
 	httpClient           *http.Client
+
+	curated *curated.Config // links.json names the deals to fetch; nil skips the deals step
+	deals   *deals.Client
 }
 
 // NewRunner creates a Runner. log may be nil.
@@ -98,6 +103,19 @@ func (r *Runner) WithBaseURLs(cmcURL, portalsURL string) *Runner {
 	if portalsURL != "" {
 		r.portalsBase = portalsURL
 	}
+	return r
+}
+
+// WithCurated gives the runner the curated config: links.json names the cp0x deals the run fetches (collect.deals).
+// Without it the deals step is skipped.
+func (r *Runner) WithCurated(c *curated.Config) *Runner {
+	r.curated = c
+	return r
+}
+
+// WithDealsClient overrides the cp0x deals client (tests).
+func (r *Runner) WithDealsClient(c *deals.Client) *Runner {
+	r.deals = c
 	return r
 }
 
@@ -324,6 +342,12 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 	if !ok {
 		return
 	}
+	previousTokens, err := rn.store.LatestSnapshotTokenCounts(ctx)
+	if err != nil {
+		rn.stop(ctx, err)
+		return
+	}
+	rn.collectDeals(ctx)
 	rn.log.Info("Portals per underlying: exact lookup, then text search per term", "step", "collect.underlying", "to_go", len(todo))
 	loopStarted := time.Now()
 	width := len(strconv.Itoa(len(todo)))
@@ -340,6 +364,9 @@ func (rn *run) execute(ctx context.Context, todo []model.Asset) {
 		reqBefore := rn.portalsHTTP.Requests()
 		payload, status, err := collectAsset(ctx, ulog, asset, res.rwa, res.reason, sh, rn.portals, rn.settings, rn.key, rn.now)
 		ru := store.RunUnderlying{RunID: rn.id, UnderlyingID: asset.ID(), StartedAt: &startedAt}
+		if err == nil {
+			err = rn.guardEmptySnapshot(asset, status, payload, previousTokens[asset.ID()])
+		}
 		if err == nil {
 			err = rn.save(ctx, asset, res, status, payload)
 		}
@@ -393,6 +420,81 @@ func (rn *run) skipUnprocessed(ctx context.Context, todo []model.Asset) {
 		}
 		rn.recordUnderlying(ctx, store.RunUnderlying{RunID: rn.id, UnderlyingID: a.ID(), Status: "skipped"})
 	}
+}
+
+// guardEmptySnapshot is the guard of collect.py::sync: a snapshot with no tokens never replaces one that had tokens
+// (a CMC hiccup would otherwise empty an underlying). The failure is recorded like any failed underlying.
+func (rn *run) guardEmptySnapshot(asset model.Asset, status string, payload []byte, previous int) error {
+	if previous == 0 {
+		return nil
+	}
+	snap, err := model.ParseSnapshot(payload)
+	if err != nil {
+		return fmt.Errorf("own payload: %w", err)
+	}
+	if snapshotTokens(snap) > 0 {
+		return nil
+	}
+	return fmt.Errorf("%s: previous snapshot with %d tokens kept", status, previous)
+}
+
+// snapshotTokens counts the tokens with a crypto_id (collect.py::_token_count).
+func snapshotTokens(s *model.Snapshot) int {
+	if s.CMC == nil || s.CMC.RWA == nil {
+		return 0
+	}
+	n := 0
+	for _, t := range s.CMC.RWA.Tokens {
+		if t.CryptoID != nil && *t.CryptoID != 0 {
+			n++
+		}
+	}
+	return n
+}
+
+// collectDeals is the step collect.deals: fetch the cp0x deals once per run and store them for publish. It is never
+// fatal: a failure is a warning and the previous deals stay. Without a links config there is nothing to refer to.
+func (rn *run) collectDeals(ctx context.Context) {
+	if rn.curated == nil || rn.curated.Links == nil {
+		rn.log.Debug("no links config: deals not fetched", "step", "collect.deals")
+		return
+	}
+	client := rn.deals
+	if client == nil {
+		client = deals.New(rn.httpClient)
+	}
+	rn.log.Info("cp0x deals", "step", "collect.deals")
+	cache, warning, err := client.Refresh(ctx, rn.curated.Links.ReferencedDeals())
+	if err != nil {
+		if ctx.Err() == nil {
+			rn.warnAt("collect.deals", "%v", err)
+		}
+		return
+	}
+	if err := StoreDeals(ctx, rn.store, cache); err != nil {
+		rn.warnAt("collect.deals", "deals: %v", err)
+		return
+	}
+	rn.log.Info("deals cached", "step", "collect.deals", "deals", len(cache.Deals), "fetched_at", cache.FetchedAt)
+	if warning != "" {
+		rn.warnAt("collect.deals", "%s", warning)
+	}
+}
+
+// StoreDeals stores a freshly fetched deals cache as the newest deals row.
+func StoreDeals(ctx context.Context, st *store.Store, cache *deals.Cache) error {
+	at, err := time.Parse(timeFormat, cache.FetchedAt)
+	if err != nil {
+		return fmt.Errorf("fetched_at %q: %w", cache.FetchedAt, err)
+	}
+	payload, err := cache.JSON()
+	if err != nil {
+		return err
+	}
+	if _, err := st.InsertDeals(ctx, at, payload); err != nil {
+		return err
+	}
+	return nil
 }
 
 // save inserts the snapshot and the CMC facts of the underlying in one transaction. website, logo and industry are

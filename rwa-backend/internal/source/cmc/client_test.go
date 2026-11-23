@@ -246,7 +246,6 @@ func TestStatusBlockLenient(t *testing.T) {
 		{"numeric message", `{"error_code":5,"error_message":123}`, 0, "123", 5},
 		{"object message", `{"error_code":"7","error_message":{"a":1}}`, 0, `{"a":1}`, 7},
 		{"null message", `{"error_code":"7","error_message":null}`, 0, "None", 7},
-		{"status not an object", `"weird"`, 0, "", 0},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
@@ -266,6 +265,39 @@ func TestStatusBlockLenient(t *testing.T) {
 			assert.Equal(t, tc.wantStatus, ae.Status)
 		})
 	}
+}
+
+// The envelope is strict like the pipeline's _checked: status must be an object and data must be present.
+func TestEnvelopeStrict(t *testing.T) {
+	for _, tc := range []struct{ name, body, want string }{
+		{"status not an object", `{"data":{},"status":"weird"}`, "invalid response: expected an object with status object"},
+		{"status null", `{"data":{},"status":null}`, "invalid response: expected an object with status object"},
+		{"no status", `{"data":{}}`, "invalid response: expected an object with status object"},
+		{"body is a list", `[1]`, "invalid response: expected an object with status object"},
+		{"no data key", `{"status":{"error_code":"0"}}`, "invalid response: expected a data key"},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(tc.body)) })
+			_, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
+			var ae *httpx.APIError
+			require.ErrorAs(t, err, &ae)
+			assert.Equal(t, tc.want, ae.Message)
+			assert.Zero(t, ae.Status)
+		})
+	}
+	// An error code wins over a missing data key; a null data value is present.
+	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		_, _ = w.Write([]byte(`{"status":{"error_code":1010,"error_message":"plan limit"}}`))
+	})
+	_, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
+	var ae *httpx.APIError
+	require.ErrorAs(t, err, &ae)
+	assert.Equal(t, "plan limit", ae.Message)
+	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		_, _ = w.Write([]byte(`{"data":null,"status":{"error_code":"0"}}`))
+	})
+	_, err = c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
+	require.NoError(t, err)
 }
 
 func TestRWAInfoEmptyWebsiteIsNil(t *testing.T) {

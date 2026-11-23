@@ -5,11 +5,21 @@ import (
 	"fmt"
 	"io"
 	"log/slog"
+	"path/filepath"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/config"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/publish"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
 )
+
+// loadCurated reads the curated configs (links.json, rights_profiles.json, issuers.json) from the directory of
+// SETTINGS_PATH, so the Docker /config/ and a local config/ both work. A missing file disables its feature; an
+// invalid one is an error.
+func loadCurated(cfg *config.Config) (*curated.Config, error) {
+	return curated.Load(filepath.Dir(cfg.SettingsPath))
+}
 
 // newLogger builds the process logger (LOG_LEVEL, LOG_FORMAT) writing to w: JSON unless LOG_FORMAT=text.
 func newLogger(cfg *config.Config, w io.Writer) *slog.Logger {
@@ -53,4 +63,22 @@ func ensureMigrated(ctx context.Context, dbURL string) error {
 		}
 	}
 	return nil
+}
+
+// exitRightsExcluded is the exit code of a successful publish whose export excluded rights profiles (Python `_build`
+// exits 2 as well): the build is published, but a curated profile needs fixing.
+const exitRightsExcluded = 2
+
+// publishExit is the exit code of a publish that succeeded, given the code the command would otherwise return: a
+// stronger failure code (nonzero) wins, then excluded rights profiles give 2. It prints the count to w.
+func publishExit(w io.Writer, code int, res *publish.Result) int {
+	n := res.Summary.RightsExcludedProfilesCount
+	if n <= 0 {
+		return code
+	}
+	_, _ = fmt.Fprintf(w, "  %d rights profiles excluded (see warnings and the run journal)\n", n)
+	if code != 0 {
+		return code
+	}
+	return exitRightsExcluded
 }

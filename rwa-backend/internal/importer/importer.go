@@ -22,6 +22,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/publish"
@@ -57,6 +58,20 @@ type Importer struct {
 	log          *slog.Logger
 	now          func() time.Time
 	force        bool
+	curated      *curated.Config
+	publishClock func() time.Time
+}
+
+// WithCurated sets the curated config the published build is made with (links, rights, issuer websites).
+func (im *Importer) WithCurated(c *curated.Config) *Importer {
+	im.curated = c
+	return im
+}
+
+// WithPublishClock overrides the clock of the publish step (tests: the build time of the curated freshness rules).
+func (im *Importer) WithPublishClock(now func() time.Time) *Importer {
+	im.publishClock = now
+	return im
 }
 
 // ErrNotEmpty is returned when the database already has collection runs and the import was not forced.
@@ -209,6 +224,9 @@ type inputs struct {
 	issuers   map[string]compute.IssuerMeta
 	rwaInfo   map[string]compute.RwaInfo
 	platforms map[string]string
+	// deals is data/cp0x_deals.json as read, nil when absent; dealsAt is its fetched_at.
+	deals   []byte
+	dealsAt time.Time
 }
 
 func loadInputs(dataDir string) (*inputs, error) {
@@ -222,6 +240,18 @@ func loadInputs(dataDir string) (*inputs, error) {
 	}
 	if in.platforms, err = v1files.LoadPlatformNames(filepath.Join(dataDir, "portals_platforms.json")); err != nil {
 		return nil, fmt.Errorf("importer: %w", err)
+	}
+	if b, err := os.ReadFile(filepath.Join(dataDir, curated.DealsFile)); err == nil { //nolint:gosec // operator-provided data dir
+		var doc struct {
+			FetchedAt string `json:"fetched_at"`
+		}
+		if err := json.Unmarshal(b, &doc); err == nil {
+			if t, ok := curated.ParseTimestamp(doc.FetchedAt); ok {
+				in.deals, in.dealsAt = b, t
+			}
+		}
+	} else if !errors.Is(err, os.ErrNotExist) {
+		return nil, fmt.Errorf("importer: read %s: %w", curated.DealsFile, err)
 	}
 	return in, nil
 }
@@ -268,6 +298,11 @@ func (im *Importer) importTx(ctx context.Context, tx pgx.Tx, in *inputs, v1 *v1R
 	if res.Logos, err = importLogos(ctx, st, in.dataDir); err != nil {
 		return err
 	}
+	if in.deals != nil {
+		if _, err := st.InsertDeals(ctx, in.dealsAt, in.deals); err != nil {
+			return fmt.Errorf("importer: %w", err)
+		}
+	}
 
 	var warnings []string
 	counters := store.RunCounters{Selected: res.Snapshots, Completed: res.Snapshots}
@@ -279,7 +314,11 @@ func (im *Importer) importTx(ctx context.Context, tx pgx.Tx, in *inputs, v1 *v1R
 		return fmt.Errorf("importer: %w", err)
 	}
 	// Publish last: it appends its own warnings to the run and reads the snapshots written above.
-	build, err := publish.New(im.pool, im.settings, im.assets, im.log).PublishTx(ctx, tx, runID, publish.Options{WriteHistory: true})
+	pub := publish.New(im.pool, im.settings, im.assets, im.log).WithCurated(im.curated)
+	if im.publishClock != nil {
+		pub.WithClock(im.publishClock)
+	}
+	build, err := pub.PublishTx(ctx, tx, runID, publish.Options{WriteHistory: true})
 	if err != nil {
 		return fmt.Errorf("importer: %w", err)
 	}

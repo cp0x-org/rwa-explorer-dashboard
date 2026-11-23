@@ -217,12 +217,62 @@ func TestMinimalTerms(t *testing.T) {
 	assert.Empty(t, MinimalTerms(nil))
 }
 
-func TestNonArrayBodiesGiveEmpty(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`{"error":"x"}`)) })
+// /v1/networks must be a nonempty list of nonempty strings: an empty or odd answer would silently turn every
+// contract into "unsupported network", so it is an error (1.x returned an empty list).
+func TestNetworksStrict(t *testing.T) {
+	for _, tc := range []struct{ name, body string }{
+		{"object", `{"error":"x"}`},
+		{"empty list", `[]`},
+		{"non-string item", `["ethereum", 5]`},
+		{"empty string", `["ethereum", ""]`},
+		{"blank string", `["ethereum", "  "]`},
+		{"null", `null`},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(tc.body)) })
+			nets, err := c.FetchNetworks(context.Background())
+			var ae *httpx.APIError
+			require.ErrorAs(t, err, &ae)
+			assert.Equal(t, "invalid networks response: expected a nonempty list of nonempty strings", ae.Message)
+			assert.Nil(t, nets)
+		})
+	}
+	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`["ethereum","base"]`)) })
 	nets, err := c.FetchNetworks(context.Background())
 	require.NoError(t, err)
-	assert.NotNil(t, nets)
-	assert.Empty(t, nets)
+	assert.Equal(t, []string{"ethereum", "base"}, nets)
+}
+
+// An exact lookup that did not return everything Portals reports (or hit the page cap) would turn indexed contracts
+// into "not indexed": it fails instead.
+func TestLookupIncomplete(t *testing.T) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		_, _ = w.Write([]byte(tokensPage([]string{"a:1"}, 3, false, 0)))
+	})
+	_, err := c.Lookup(context.Background(), []string{"a:1", "a:2", "a:3"}, 10)
+	var ae *httpx.APIError
+	require.ErrorAs(t, err, &ae)
+	assert.Equal(t, "incomplete lookup (count_mismatch): received 1, reported 3", ae.Message)
+
+	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		page, _ := strconv.Atoi(r.URL.Query().Get("page"))
+		_, _ = w.Write([]byte(`{"more":true,"tokens":[{"key":"k:` + strconv.Itoa(page) + `"}]}`))
+	})
+	_, err = c.Lookup(context.Background(), []string{"a:1"}, 1)
+	require.ErrorAs(t, err, &ae)
+	assert.Equal(t, "incomplete lookup (MAX_PAGES reached): received 100, reported None", ae.Message)
+
+	// More records than reported (duplicates, a moving index) is not incomplete.
+	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		_, _ = w.Write([]byte(tokensPage([]string{"a:1", "a:2"}, 1, false, 0)))
+	})
+	got, err := c.Lookup(context.Background(), []string{"a:1", "a:2"}, 10)
+	require.NoError(t, err)
+	assert.Len(t, got, 2)
+}
+
+func TestNonArrayPlatformsGiveEmpty(t *testing.T) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`{"error":"x"}`)) })
 	names, err := c.FetchPlatformNames(context.Background())
 	require.NoError(t, err)
 	assert.NotNil(t, names)
@@ -237,4 +287,11 @@ func TestEmptyResultsAreNotNil(t *testing.T) {
 	items, _, err := c.Search(context.Background(), "X", 10)
 	require.NoError(t, err)
 	assert.NotNil(t, items)
+}
+
+func TestHTMLPlatformsBodyIsAnError(t *testing.T) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`<html>maintenance</html>`)) })
+	_, err := c.FetchPlatformNames(context.Background())
+	require.Error(t, err)
+	assert.Contains(t, err.Error(), "non-JSON body")
 }

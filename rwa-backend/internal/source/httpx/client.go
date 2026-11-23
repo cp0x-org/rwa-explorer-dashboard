@@ -233,6 +233,10 @@ func (c *Client) Get(ctx context.Context, path string, params url.Values) (int, 
 			}
 			return status, body, &APIError{Provider: c.cfg.Provider, Status: status, Message: msg}
 		}
+		if !json.Valid(body) {
+			// Every provider endpoint answers JSON: a 2xx page of HTML (a proxy, a maintenance page) is a failure, not data.
+			return status, body, &APIError{Provider: c.cfg.Provider, Status: status, Message: "non-JSON body"}
+		}
 		return status, body, nil
 	}
 }

@@ -2,7 +2,7 @@ services:
   web:
     build:
       context: .
-    image: cp0x/pi-rwa-interface:${VERSION:?set VERSION}
+    image: cp0x/pi-rwa-interface:${VERSION:-latest}
     # The server runs Linux on x86_64: build and run linux/amd64 even on an Apple Silicon Mac (emulated there).
     platform: linux/amd64
     ports:

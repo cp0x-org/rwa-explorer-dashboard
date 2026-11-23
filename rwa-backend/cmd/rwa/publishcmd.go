@@ -49,6 +49,11 @@ func runPublish(args []string, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "rwa publish:", err)
 		return 2
 	}
+	cur, err := loadCurated(cfg)
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa publish:", err)
+		return 2
+	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 	if err := ensureMigrated(ctx, cfg.DatabaseURL); err != nil {
@@ -80,7 +85,7 @@ func runPublish(args []string, stdout, stderr io.Writer) int {
 		return 1
 	}
 	defer runlog.CloseRun(log, run.ID) // the last event of the run; runs before jh.Close
-	res, err := publish.New(pool, settings, assets, log).PublishWith(ctx, run.ID, publish.Options{WriteHistory: true})
+	res, err := publish.New(pool, settings, assets, log).WithCurated(cur).PublishWith(ctx, run.ID, publish.Options{WriteHistory: true})
 	if err != nil {
 		if merr := st.MarkRunPublishFailed(ctx, run.ID, err); merr != nil {
 			log.Error("recording the publish failure on the run failed", "run_id", run.ID, "err", merr)
@@ -93,7 +98,7 @@ func runPublish(args []string, stdout, stderr io.Writer) int {
 	}
 	printPublish(stdout, res)
 	_, _ = fmt.Fprintf(stdout, "  run %d, %d bytes, sha256 %s\n", run.ID, res.ExportBytes, res.ExportSHA256)
-	return 0
+	return publishExit(stdout, 0, res)
 }
 
 // checkPublishable reports why a run cannot be published with history, or nil.

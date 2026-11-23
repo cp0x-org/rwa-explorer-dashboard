@@ -11,7 +11,8 @@ func NormalizeAddress(address string) string { return model.NormalizeAddress(add
 
 // ClassifyToken is analyze.py::classify_token. It returns (kind, excluded_reason); derivatives and tokens of
 // another share class stay out of rankings.
-func ClassifyToken(token model.CMCToken, ticker string) (kind string, excludedReason *string) {
+// The symbol must contain the ticker or one of the asset's symbol aliases (config/assets.json symbol_aliases).
+func ClassifyToken(token model.CMCToken, ticker string, aliases ...string) (kind string, excludedReason *string) {
 	reason := func(s string) *string { return &s }
 	name := strings.ToLower(deref(token.Name))
 	issuer := strings.ToLower(deref(token.IssuerName))
@@ -21,7 +22,12 @@ func ClassifyToken(token model.CMCToken, ticker string) (kind string, excludedRe
 	if strings.Contains(name, "(derivatives)") || strings.Contains(issuer, "(derivatives)") {
 		return "derivative", reason("derivative")
 	}
-	if !strings.Contains(norm(*token.Symbol), norm(ticker)) {
+	symbol := norm(*token.Symbol)
+	matches := strings.Contains(symbol, norm(ticker))
+	for _, alias := range aliases {
+		matches = matches || strings.Contains(symbol, norm(alias))
+	}
+	if !matches {
 		return "unclassified", reason("symbol_does_not_match_ticker")
 	}
 	if strings.HasPrefix(name, "wrapped") {

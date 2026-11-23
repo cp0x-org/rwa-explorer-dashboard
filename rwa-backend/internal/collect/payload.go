@@ -168,7 +168,7 @@ func collectAsset(ctx context.Context, log *slog.Logger, asset model.Asset, rwa 
 				keys = append(keys, *d.Key)
 			}
 		}
-		if kind, _ := compute.ClassifyToken(t, asset.Ticker); !compute.ExcludedKinds[kind] {
+		if kind, _ := compute.ClassifyToken(t, asset.Ticker, asset.SymbolAliases...); !compute.ExcludedKinds[kind] {
 			included = append(included, t)
 			if t.Symbol != nil && *t.Symbol != "" {
 				includedSymbols = append(includedSymbols, *t.Symbol)

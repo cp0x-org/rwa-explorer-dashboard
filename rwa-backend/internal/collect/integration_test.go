@@ -47,6 +47,7 @@ type fakes struct {
 	cmcCalls           atomic.Int64
 	portalsCalls       atomic.Int64
 	rwaInfoStatus      atomic.Int64 // when non-zero, /v5/real-world-assets/info answers with this HTTP status
+	emptyQuotes        atomic.Bool  // when set, CMC knows no tokenized assets (rwa_assets is empty)
 }
 
 func startFakes(t *testing.T, portalsHook func(w http.ResponseWriter, r *http.Request) bool) *fakes {
@@ -60,6 +61,10 @@ func startFakes(t *testing.T, portalsHook func(w http.ResponseWriter, r *http.Re
 		f.cmcCalls.Add(1)
 		switch r.URL.Path {
 		case "/v5/real-world-assets/quotes/latest":
+			if f.emptyQuotes.Load() {
+				writeJSON(w, 200, map[string]any{"data": map[string]any{"rwa_assets": []any{}}, "status": map[string]any{"error_code": "0"}})
+				return
+			}
 			writeJSON(w, 200, quotes)
 		case "/v2/cryptocurrency/info":
 			var all struct {

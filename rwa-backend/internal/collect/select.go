@@ -71,18 +71,18 @@ const (
 	RunFailed    = "failed"
 )
 
-// DecideStatus maps the outcome of a run to its final status: a fatal error or interruption with nothing
-// completed is failed (an interruption is failed even after some underlyings completed), some failed
-// underlyings make it partial, otherwise succeeded. Like 1.x, a fatal error after some underlyings completed
-// (authentication failed mid-run) is partial.
+// DecideStatus maps the outcome of a run to its final status (collect.py: failed underlyings or a fatal error make
+// the run partial when something completed and failed when nothing did). An interruption is failed even after some
+// underlyings completed.
 func DecideStatus(completed, failed int, fatal, interrupted bool) string {
 	switch {
 	case interrupted:
 		return RunFailed
-	case fatal && completed == 0:
-		return RunFailed
 	case fatal || failed > 0:
-		return RunPartial
+		if completed > 0 {
+			return RunPartial
+		}
+		return RunFailed
 	}
 	return RunSucceeded
 }

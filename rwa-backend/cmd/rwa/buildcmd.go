@@ -54,6 +54,11 @@ func runBuild(args []string, stdout, stderr io.Writer) int {
 		_, _ = fmt.Fprintln(stderr, "rwa build:", err)
 		return 2
 	}
+	cur, err := loadCurated(cfg)
+	if err != nil {
+		_, _ = fmt.Fprintln(stderr, "rwa build:", err)
+		return 2
+	}
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
@@ -82,7 +87,7 @@ func runBuild(args []string, stdout, stderr io.Writer) int {
 		suffix = "-of-" + strconv.FormatInt(src.ID, 10)
 		log.Info("rebuilding", "source_run_id", src.ID, "source_run_key", src.RunKey)
 	}
-	runID, res, err := publish.New(pool, settings, assets, log).Rebuild(ctx, publish.RebuildParams{
+	runID, res, err := publish.New(pool, settings, assets, log).WithCurated(cur).Rebuild(ctx, publish.RebuildParams{
 		Trigger: "cli", KeySuffix: suffix, CollectorVersion: buildVersion(), SettingsJSON: settingsJSON})
 	if err != nil {
 		_, _ = fmt.Fprintln(stderr, "rwa build:", err)
@@ -93,5 +98,5 @@ func runBuild(args []string, stdout, stderr io.Writer) int {
 	for _, w := range res.Warnings {
 		_, _ = fmt.Fprintln(stdout, "  warning:", w)
 	}
-	return 0
+	return publishExit(stdout, 0, res)
 }

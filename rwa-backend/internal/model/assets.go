@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"regexp"
+	"slices"
 	"strings"
 )
 
@@ -15,6 +16,8 @@ type Asset struct {
 	AssetType string // stock | etf
 	ISIN      *string
 	Enabled   bool
+	// SymbolAliases are extra substrings (upper case) a token symbol may contain instead of the ticker.
+	SymbolAliases []string
 }
 
 // ID is the underlying id: the ISIN, or "<type>:ticker:<TICKER>" for assets without one.
@@ -71,6 +74,8 @@ type rawAsset struct {
 	AssetType string  `json:"asset_type"`
 	ISIN      *string `json:"isin"`
 	Enabled   *bool   `json:"enabled"`
+	// SymbolAliases stays raw: config.py rejects anything but a list of nonempty strings.
+	SymbolAliases json.RawMessage `json:"symbol_aliases"`
 }
 
 // LoadAssets reads assets.json with the validation of the 1.x pipeline: ticker required (uppercased),
@@ -107,7 +112,11 @@ func LoadAssets(path string) ([]Asset, error) {
 		if name == "" {
 			name = ticker
 		}
-		a := Asset{Ticker: ticker, Name: name, AssetType: item.AssetType, ISIN: isin, Enabled: item.Enabled == nil || *item.Enabled}
+		aliases, err := parseAliases(ticker, item.SymbolAliases)
+		if err != nil {
+			return nil, err
+		}
+		a := Asset{Ticker: ticker, Name: name, AssetType: item.AssetType, ISIN: isin, Enabled: item.Enabled == nil || *item.Enabled, SymbolAliases: aliases}
 		if seenIDs[a.ID()] || seenTickers[ticker] {
 			return nil, fmt.Errorf("model: %s: duplicate ticker or ISIN", ticker)
 		}
@@ -116,4 +125,29 @@ func LoadAssets(path string) ([]Asset, error) {
 		assets = append(assets, a)
 	}
 	return assets, nil
+}
+
+// parseAliases is the symbol_aliases validation of config.py::load_assets: a list of nonempty strings, trimmed,
+// upper-cased and de-duplicated in order. A missing key (or an empty list) means no aliases.
+func parseAliases(ticker string, raw json.RawMessage) ([]string, error) {
+	if len(raw) == 0 {
+		return nil, nil
+	}
+	var items []any
+	bad := fmt.Errorf("model: %s: symbol_aliases must be a list of nonempty strings", ticker)
+	if err := json.Unmarshal(raw, &items); err != nil || items == nil {
+		return nil, bad
+	}
+	var out []string
+	for _, it := range items {
+		s, ok := it.(string)
+		if !ok || strings.TrimSpace(s) == "" {
+			return nil, bad
+		}
+		a := strings.ToUpper(strings.TrimSpace(s))
+		if !slices.Contains(out, a) {
+			out = append(out, a)
+		}
+	}
+	return out, nil
 }

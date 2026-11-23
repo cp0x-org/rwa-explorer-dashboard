@@ -19,6 +19,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/compute"
+	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/curated"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/db"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/model"
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/runlog"
@@ -49,6 +50,11 @@ type Result struct {
 	Summary      model.Summary
 }
 
+// ExcludedProfilesWarning is the run warning of a build that excluded n rights profiles.
+func ExcludedProfilesWarning(n int) string {
+	return fmt.Sprintf("%d rights profiles excluded (see journal)", n)
+}
+
 // Line is the 1.x style one-line summary printed by `rwa build`.
 func (r *Result) Line() string {
 	s := r.Summary
@@ -63,6 +69,7 @@ type Publisher struct {
 	assets   []model.Asset // assets.json order: breaks fetched_at ties like 1.x
 	log      *slog.Logger
 	now      func() time.Time
+	curated  *curated.Config // links, referrals and holder rights; nil = none of the files exist
 
 	afterPublish func() // test seam: called by Rebuild right after its publish committed
 }
@@ -73,6 +80,20 @@ func New(pool *pgxpool.Pool, settings *model.Settings, assets []model.Asset, log
 		log = slog.Default()
 	}
 	return &Publisher{pool: pool, settings: settings, assets: assets, log: log, now: time.Now}
+}
+
+// WithCurated sets the curated config (links.json, rights_profiles.json, issuers.json). Without it the export carries
+// no links and no rights profiles, as if the files did not exist.
+func (p *Publisher) WithCurated(c *curated.Config) *Publisher {
+	p.curated = c
+	return p
+}
+
+// WithClock overrides the clock: the build time is generated_at, the instant links freshness is judged at and,
+// by its UTC date, "today" for rights reviews (tests, parity).
+func (p *Publisher) WithClock(now func() time.Time) *Publisher {
+	p.now = now
+	return p
 }
 
 // Publish publishes a build for runID in its own transaction. mode is the run mode: a rebuild writes no history.
@@ -150,11 +171,21 @@ func (p *Publisher) PublishTx(ctx context.Context, tx pgx.Tx, runID int64, opts 
 		rwaInfo[strconv.Itoa(r.CMCRwaID)] = compute.RwaInfo{Website: r.Website, Logo: r.CMCLogoURL, Industry: r.Industry}
 	}
 
-	result, err := compute.Build(snaps, issuerCache(issuerRows), p.settings, platformNames)
+	// Same order as export.py::build_export_with_warnings: build, finalize, links, rights; one instant for all.
+	now := p.now()
+	result, err := compute.Build(snaps, issuerCache(issuerRows), p.settings, platformNames, compute.WithSymbolAliases(compute.SymbolAliases(p.assets)))
 	if err != nil {
 		return nil, fmt.Errorf("publish: compute: %w", err)
 	}
-	exp := compute.Finalize(result, p.now(), rwaInfo, compute.MapLogos(logoExts))
+	exp := compute.Finalize(result, now, rwaInfo, compute.MapLogos(logoExts))
+	var deals *curated.DealsCache
+	switch payload, err := st.LatestDeals(ctx); {
+	case err == nil:
+		deals = curated.ParseDealsCache(payload)
+	case !errors.Is(err, store.ErrNotFound):
+		return nil, fmt.Errorf("publish: %w", err)
+	}
+	curatedWarnings := curated.Apply(exp, p.curated, deals, result.Side.PositionMetadata, now)
 	exp.RunID = &runID
 	// The export names its own build: reserve the id now, insert the build with it below.
 	buildID, err := st.ReserveBuildID(ctx)
@@ -175,6 +206,16 @@ func (p *Publisher) PublishTx(ctx context.Context, tx pgx.Tx, runID int64, opts 
 		return nil, fmt.Errorf("publish: %w", err)
 	}
 	warnings := slices.Clone(dims.Warnings)
+	for _, w := range curatedWarnings {
+		if !slices.Contains(warnings, w) {
+			warnings = append(warnings, w)
+		}
+	}
+
+	if n := exp.Summary.RightsExcludedProfilesCount; n > 0 {
+		// The per-profile reasons are in the journal (the rights warnings); the run carries one summary line.
+		warnings = append(warnings, ExcludedProfilesWarning(n))
+	}
 
 	if err := writeDimensions(ctx, st, runID, dims); err != nil {
 		return nil, err
