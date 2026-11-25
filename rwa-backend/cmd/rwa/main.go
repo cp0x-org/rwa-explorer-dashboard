@@ -161,6 +161,7 @@ func runMigrate(args []string, stdout, stderr io.Writer) int {
 
 	switch args[0] {
 	case "up":
+		migrateBanner(ctx, stderr, cfg)
 		err = db.Up(ctx, cfg.DatabaseURL)
 		if err == nil {
 			var v int64

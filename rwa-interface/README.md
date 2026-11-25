@@ -70,6 +70,8 @@ pnpm test:e2e     # playwright: starts the mock API and the server itself (run `
 `pnpm test:e2e` needs a Chromium for Playwright once: `npx playwright install chromium`.
 Server environment: `PORT` (4173), `API_URL` (`http://127.0.0.1:8080`), `SITE_URL` (public address for canonical links
 and the sitemap; default `VITE_SITE_URL` from `.env.production`). Docker: `docker-compose.yml` passes `API_URL` and `SITE_URL`.
+On start the server prints a framed summary (port, public URL, API it reads, refresh interval, proxied paths), the
+same frame as the backend services; `STARTUP_BANNER=false` turns it off, `APP_VERSION` is the version it shows.
 
 ## Server rendering
 

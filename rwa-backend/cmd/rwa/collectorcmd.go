@@ -78,6 +78,7 @@ func runCollector(args []string, _, stderr io.Writer) int {
 		return 1
 	}
 	defer closePool(pool, log)
+	collectorBanner(ctx, stderr, cfg, assets)
 	st := store.New(pool)
 	jh.SetSink(st)
 	defer jh.Close() // runs before closePool: the last events are written while the pool is open

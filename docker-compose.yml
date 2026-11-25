@@ -94,6 +94,7 @@ services:
     environment:
       DATABASE_URL: *database-url
       HTTP_ADDR: ":8080"
+      PUBLIC_URL: http://localhost:${API_PORT:-3302}   # shown in the startup banner only
       # Dev token for the admin endpoints (manual run request); never use it outside localhost.
       ADMIN_TOKEN: ${ADMIN_TOKEN:-devtoken}
       COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}   # same as the collector: api computes next_run_at in /status from it

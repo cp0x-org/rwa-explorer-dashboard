@@ -43,6 +43,8 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 | `ENV_FILE` | `.env` | all | path of the dotenv file to load |
 | `LOG_LEVEL` | `info` | all | `debug`, `info`, `warn` or `error` |
 | `LOG_FORMAT` | `json` | all | `json` or `text` |
+| `STARTUP_BANNER` | `true` | api, collector, migrate up | print the framed startup summary to stderr: version, host, listen address, database (password masked) and schema state, tables read and written, external services, schedule, config files; secrets only as set / not set |
+| `PUBLIC_URL` | — | api | where the API is reachable from outside (e.g. the published Docker port); shown in the banner only |
 
 ### Config files
 

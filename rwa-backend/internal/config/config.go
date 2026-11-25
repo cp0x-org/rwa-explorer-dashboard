@@ -41,6 +41,12 @@ type Config struct {
 	LogLevel  string `env:"LOG_LEVEL" envDefault:"info"`
 	LogFormat string `env:"LOG_FORMAT" envDefault:"json"`
 
+	// PublicURL is where the service is reachable from outside (e.g. the published Docker port); informational,
+	// printed in the startup banner only.
+	PublicURL string `env:"PUBLIC_URL"`
+	// StartupBanner prints the framed startup summary to stderr before the first log line.
+	StartupBanner bool `env:"STARTUP_BANNER" envDefault:"true"`
+
 	// cronExplicit records whether COLLECT_CRON was set by the operator: it has a
 	// default, which must not conflict with COLLECT_INTERVAL.
 	cronExplicit bool
@@ -160,14 +166,17 @@ func mask(s string) string {
 func (c Config) String() string {
 	return fmt.Sprintf("Config{DatabaseURL:%s CMCAPIKey:%s PortalsAPIKey:%s AssetsPath:%s SettingsPath:%s "+
 		"CollectCron:%q CollectInterval:%s CollectOnStart:%t SnapshotRetentionDays:%d RunTimeout:%s RawCaptureDir:%s MigrateOnStart:%t "+
-		"HTTPAddr:%s CORSOrigins:%v AdminToken:%s LogLevel:%s LogFormat:%s RunEventsLevel:%s RunEventsRetentionDays:%d}",
+		"HTTPAddr:%s CORSOrigins:%v AdminToken:%s LogLevel:%s LogFormat:%s RunEventsLevel:%s RunEventsRetentionDays:%d PublicURL:%s StartupBanner:%t}",
 		maskDSN(c.DatabaseURL), mask(c.CMCAPIKey), mask(c.PortalsAPIKey), c.AssetsPath, c.SettingsPath,
 		c.CollectCron, c.CollectInterval, c.CollectOnStart, c.SnapshotRetentionDays, c.RunTimeout, c.RawCaptureDir, c.MigrateOnStart,
-		c.HTTPAddr, c.CORSOrigins, mask(c.AdminToken), c.LogLevel, c.LogFormat, c.RunEventsLevel, c.RunEventsRetentionDays)
+		c.HTTPAddr, c.CORSOrigins, mask(c.AdminToken), c.LogLevel, c.LogFormat, c.RunEventsLevel, c.RunEventsRetentionDays, c.PublicURL, c.StartupBanner)
 }
 
 // LogValue makes slog print the masked form regardless of the handler.
 func (c Config) LogValue() slog.Value { return slog.StringValue(c.String()) }
+
+// MaskedDatabaseURL is DATABASE_URL with the password masked, safe to print.
+func (c Config) MaskedDatabaseURL() string { return maskDSN(c.DatabaseURL) }
 
 // maskDSN masks credentials in a postgres:// URL. Anything that is not a
 // postgres URL (e.g. a keyword DSN "host=... password=...") is replaced entirely.

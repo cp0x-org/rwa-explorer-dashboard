@@ -1,13 +1,27 @@
 # Local stack shortcuts (see "Run everything with Docker" in README.md). Needs .env (cp .env.example .env).
+# Ports and paths come from .env when set there (the same values docker compose uses).
+-include .env
 WEB_PORT ?= 3301
 API_PORT ?= 3302
+PGDATA_DIR ?= ./pg-data
+COLLECT_INTERVAL ?= 24h
+COLLECT_ON_START ?= true
 
-.PHONY: up logs run down reset psql
+.PHONY: up info logs run down reset psql
 
 up:
 	docker compose up --build -d
-	@echo "Site:   http://localhost:$(WEB_PORT)"
-	@echo "Status: http://localhost:$(API_PORT)/api/v1/status"
+	@$(MAKE) --no-print-directory info
+
+# where everything is: host ports, containers, database; each service prints its own banner at the top of its log
+info:
+	@echo "RWA Explorer, local stack (docker compose project rwa-explorer)"
+	@printf "  %-10s %-34s %s\n" "web" "http://localhost:$(WEB_PORT)" "Node SSR site, container :4173 -> api:8080"
+	@printf "  %-10s %-34s %s\n" "api" "http://localhost:$(API_PORT)" "Go API, container :8080; /api/v1/status, /api/v1/openapi.yaml"
+	@printf "  %-10s %-34s %s\n" "postgres" "127.0.0.1:5433 (rwa/rwa, db rwa)" "container postgres:5432; files in $(PGDATA_DIR); make psql"
+	@printf "  %-10s %-34s %s\n" "collector" "no port" "every $(COLLECT_INTERVAL), on start: $(COLLECT_ON_START); CMC + Portals -> postgres"
+	@printf "  %-10s %-34s %s\n" "migrate" "one-shot" "applies the schema, then exits"
+	@echo "Details of one service (ports, connections, tables, config): docker compose logs <service> | head -40"
 	@echo "Follow the collection: make logs"
 
 logs:
@@ -19,8 +33,6 @@ run:
 
 down:
 	docker compose down
-
-PGDATA_DIR ?= ./pg-data
 
 # stops the stack and deletes the database folder ($(PGDATA_DIR)); the next `make up` migrates and collects again
 reset:

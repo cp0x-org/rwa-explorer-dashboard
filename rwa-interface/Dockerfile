@@ -21,6 +21,9 @@ RUN pnpm run build && rm -rf dist/data dist/logos
 FROM node:22.21.0-alpine
 
 WORKDIR /app
+ARG VITE_APP_VERSION
+# shown in the startup banner of the server
+ENV APP_VERSION=${VITE_APP_VERSION:-v2.0.0}
 
 # server/ is plain Node (no dependencies): the app bundle in dist-ssr/ already contains everything it renders with
 COPY --from=builder /app/dist ./dist

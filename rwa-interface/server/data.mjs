@@ -2,8 +2,8 @@
 // The export is refreshed every REFRESH_MS with If-None-Match (an unchanged build costs a 304); until the first success
 // it is retried every RETRY_MS. After that a failing API changes nothing: the cached export keeps being served.
 
-const REFRESH_MS = 60_000;
-const RETRY_MS = 10_000;
+export const REFRESH_MS = 60_000;
+export const RETRY_MS = 10_000;
 const TIMEOUT_MS = 15_000;
 const STATUS_TTL_MS = 60_000;
 

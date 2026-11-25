@@ -62,6 +62,10 @@ What happens, in order:
 
 Where to look:
 
+- `make info` (also printed by `make up`): every service with its host port, container port and database
+- each service starts its log with a framed summary: what it listens on, what it connects to (database, API, CMC,
+  Portals), which tables it reads and writes, its schedule and config files. `docker compose logs api | head -40`
+  (or `migrate`, `collector`, `web`); `STARTUP_BANNER=false` turns it off
 - site: http://localhost:3301; `/updates` shows the runs and the journal of each run
 - API status: http://localhost:3302/api/v1/status
 - the run itself: `docker compose logs -f collector` (or `make logs` for collector, api and web)

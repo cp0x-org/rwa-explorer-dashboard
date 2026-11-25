@@ -44,6 +44,7 @@ func runAPI(args []string, _, stderr io.Writer) int {
 		return 1
 	}
 	defer closePool(pool, log)
+	apiBanner(ctx, stderr, cfg)
 
 	if err := ensureMigrated(ctx, cfg.DatabaseURL); err != nil {
 		log.Error("database schema check failed", "err", err)

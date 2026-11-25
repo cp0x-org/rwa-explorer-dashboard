@@ -11,7 +11,8 @@ import { pipeline } from 'node:stream';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { createDataStore } from './data.mjs';
+import { printBanner } from './banner.mjs';
+import { createDataStore, REFRESH_MS, RETRY_MS } from './data.mjs';
 import { etagOf, notModified, sendBuffer, TYPES } from './http.mjs';
 import { createRenderer } from './render.mjs';
 import { createSitemap } from './sitemap.mjs';
@@ -124,7 +125,10 @@ const server = createServer((req, res) => {
   });
 });
 
-server.listen(port, () => console.log(`rwa-interface on http://localhost:${port}, API ${apiUrl}${renderer.site ? `, site ${renderer.site}` : ''}`));
+server.listen(port, () => {
+  printBanner({ port, apiUrl, siteUrl: renderer.site, refreshMs: REFRESH_MS, retryMs: RETRY_MS, templateVersion: renderer.version.slice(0, 8) });
+  console.log(`rwa-interface on http://localhost:${port}, API ${apiUrl}${renderer.site ? `, site ${renderer.site}` : ''}`);
+});
 store.start();
 
 
