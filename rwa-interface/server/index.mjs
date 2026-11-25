@@ -37,7 +37,13 @@ function proxy(req, res, url) {
   const headers = {};
   for (const name of FORWARD_REQUEST) if (req.headers[name]) headers[name] = req.headers[name];
   const upstream = (target.protocol === 'https:' ? httpsRequest : httpRequest)(target, { method: req.method, headers, timeout: 30_000 });
+  // the browser may go away before the API answers (a closed tab, a cancelled fetch): drop the upstream request and
+  // never pipe into the closed response, which would throw outside any handler and stop the whole server
+  res.on('close', () => {
+    if (!res.writableFinished) upstream.destroy();
+  });
   const fail = (err) => {
+    if (res.destroyed) return;
     if (res.headersSent) return res.destroy();
     res.writeHead(502, { 'content-type': TYPES['.json'] });
     res.end(JSON.stringify({ error: { code: 'unavailable', message: `API unreachable: ${err.message}` } }));
@@ -45,6 +51,7 @@ function proxy(req, res, url) {
   upstream.on('timeout', () => upstream.destroy(new Error('timeout')));
   upstream.on('error', fail);
   upstream.on('response', (up) => {
+    if (res.destroyed) return up.destroy();
     const out = {};
     for (const name of FORWARD_RESPONSE) if (up.headers[name]) out[name] = up.headers[name];
     res.writeHead(up.statusCode ?? 502, out);
