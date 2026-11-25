@@ -1,7 +1,7 @@
 # rwa-backend
 
 Go service for RWA Explorer 2.0: a collector (CoinMarketCap + Portals) and an HTTP API over PostgreSQL.
-One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `import-v1`, `run-once`, `build`, `publish`, `deals`,
+One binary, `rwa`, with subcommands `api`, `collector`, `migrate`, `run-once`, `build`, `publish`, `deals`,
 `probe` and `version`. All subcommands are implemented. Part of the root [README](../README.md); the 2.0 flow is in [docs/workflow.md](../docs/workflow.md).
 
 ## Build and test
@@ -13,7 +13,6 @@ cd rwa-backend
 make build        # bin/rwa, version from git describe
 make test
 make lint         # golangci-lint (config v2, .golangci.yml) if installed, otherwise go vet
-make parity       # Go compute vs the Python export (testdata/golden/rwa.json), needs ../rwa-data-pipeline/data
 ./bin/rwa --help
 ```
 
@@ -47,8 +46,8 @@ Copy `.env.example` to `.env`. Keys are never logged: the config masks secrets i
 
 ### Config files
 
-All files live in `config/` (Docker: `/config/`); the curated ones are read from the directory of `SETTINGS_PATH`. They are
-copies of `../rwa-data-pipeline/config/` and must stay identical to it (the parity test loads them from here).
+All files live in `config/` (Docker: `/config/`); the curated ones are read from the directory of `SETTINGS_PATH`. They are the
+only copy: edit them here.
 
 | File | Required | Purpose |
 |---|---|---|
@@ -158,8 +157,6 @@ make dev-db        # postgres:16 on 127.0.0.1:5433, user/password/db: rwa (dev o
 make dev-db-down
 ```
 
-The files in `config/` are copies of the files in `../rwa-data-pipeline/config/`.
-
 ## Migrations
 
 Schema changes are SQL files in `internal/db/migrations/` (`NNNN_<name>.sql`, goose format with `-- +goose Up` and
@@ -172,31 +169,20 @@ rwa migrate status            # list migrations and whether they are applied
 rwa migrate down-to <version> --yes  # roll back until <version> is current (0 = everything); --yes is required
 ```
 
-## Import, rebuild and the collector
+## Rebuild and the collector
 
 ```
-rwa import-v1 --data-dir ../rwa-data-pipeline/data [--force]   # needs DATABASE_URL, ASSETS_PATH, SETTINGS_PATH; migrations applied
 rwa build [--run <id>]                               # recompute the export from stored snapshots, no network, no history
-rwa deals [--no-build]                               # fetch the cp0x deals now, store them, then rebuild (like the Python `deals`)
+rwa deals [--no-build]                               # fetch the cp0x deals now, store them, then rebuild
 rwa publish --run <id>                               # publish an existing collection run (no build yet) with history
 rwa collector                                        # long-running scheduler
 ```
-
-`import-v1` loads the 1.x pipeline data as one run (`mode=import`, `run_key` = the newest `data/runs/*.json` run id)
-in a single transaction: the snapshot documents verbatim (their `fetched_at` starts the history at the 1.x
-date), `issuers.json`, `rwa_info.json`, `portals_platforms.json`, `cp0x_deals.json`, `data/logos/**`, then a published build. It is
-idempotent: when a run with that `run_key` exists it prints "import skipped" and exits 0. Without `data/runs/*.json` the
-`run_key` is the `run_id` of the newest snapshot. It is meant for an empty database: when `collection_runs` already has
-rows it refuses unless `--force` is given. It holds the collector advisory lock, so it fails while a collector run is in
-progress. Logo files keep the case of their extension (`X.PNG` is stored as `PNG`); unknown extensions are stored as
-`application/octet-stream`. The stored export matches the 1.x `rwa.json` structurally (`TestImportV1Parity`).
 
 `deals` fetches `https://cp0x.com/api/v1/deals`, keeps only the deals `links.json` names and stores them as the newest
 row of `cp0x_deals` (migration `0004_cp0x_deals.sql`: `id`, `fetched_at`, `payload` = `{fetched_at, deals}`). Publish
 reads the newest row; referrals appear only while it is at most `deals_max_age_days` old (and not more than an hour in
 the future). A failed fetch keeps the previous row and exits `1` without a rebuild. The collector does the same fetch once
-per run after the Portals step (`step=collect.deals`); there a failure is a run warning, never fatal. `import-v1` imports
-`data/cp0x_deals.json` as the first row.
+per run after the Portals step (`step=collect.deals`); there a failure is a run warning, never fatal.
 
 `build` creates a run with `mode=rebuild` and a new current build from the latest stored snapshot of every enabled
 underlying. A rebuild is not a new observation, so it writes **no history rows**; `--run <id>` must name an existing
@@ -219,7 +205,7 @@ context and the process waits up to 30 s for it, then at most 5 s for the pool t
 `stop_grace_period` must therefore be at least 40 s; the compose value of 45 s covers 30 s scheduler + 5 s journal + 5 s
 pool.** At start, after the migrations, runs left `running` by a crashed process are marked
 `failed` with `error='abandoned'` (only when the collector lock is free). `COLLECT_ON_START` counts only `refresh` and
-`import` runs that have a published build, so an `add` run over a few symbols or a run that failed to publish does not
+`import` runs (the latter exist only in databases filled by the removed 1.x import) that have a published build, so an `add` run over a few symbols or a run that failed to publish does not
 make the basket look fresh.
 
 A manual request (`run_requests`) always ends visibly: `outcome` is `done` (the run is linked in `run_id`; `error` holds
@@ -235,8 +221,8 @@ reach get a `run_underlyings` row with status `skipped`; `selected_count` is the
 It needs `CMC_API_KEY`/`PORTALS_API_KEY` and `SETTINGS_PATH`, no database, and never prints keys.
 
 ```bash
-ENV_FILE=../rwa-data-pipeline/.env SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider cmc --symbols NVDA
-ENV_FILE=../rwa-data-pipeline/.env SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider portals --symbols NVDA
+SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider cmc --symbols NVDA
+SETTINGS_PATH=./config/settings.json go run ./cmd/rwa probe --provider portals --symbols NVDA
 ```
 
 `--provider cmc` prints the resolved `rwa_id`, tokens (symbol, issuer, `crypto_id`), requests and credits
@@ -274,7 +260,7 @@ publishing.
 
 ## Integration tests
 
-Tests under `internal/db`, `internal/store`, `internal/collect`, `internal/logos`, `internal/publish` and `internal/importer` run against a real PostgreSQL 16. Each test creates its own
+Tests under `internal/db`, `internal/store`, `internal/collect`, `internal/logos`, and `internal/publish` run against a real PostgreSQL 16. Each test creates its own
 throwaway database (`rwa_test_<random>`), migrates it and drops it afterwards. They are skipped when
 `TEST_DATABASE_URL` is unset, so `make test` works without a database.
 
@@ -287,5 +273,6 @@ make test-integration    # only db + store; fails if TEST_DATABASE_URL is unset
 
 The URL must point at a database the user may `CREATE DATABASE` in (the dev database does).
 
-Model tests that read 1.x files (`../rwa-interface/public/data/rwa.json`, `../rwa-data-pipeline/data/snapshots/`)
-are skipped when those files are absent.
+Tests that need 1.x documents read `testdata/golden/rwa.json` (a 1.x export) and `testdata/snapshots/v1/` (four 1.x
+snapshots: NVDA, AAPL, TSLA, IWM). The model round-trip of `../rwa-interface/public/data/rwa.json` is skipped when that
+file is absent.

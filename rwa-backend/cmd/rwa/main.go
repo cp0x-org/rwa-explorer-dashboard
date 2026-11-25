@@ -35,7 +35,6 @@ func usage(w io.Writer) {
 	}
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "collector", "run the scheduled data collector (cron/interval, run requests)")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "run-once", "one collection job: collect, publish, logos: --mode refresh|add --symbols NVDA[,X] --raw-dir DIR --no-publish")
-	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "import-v1", "import 1.x pipeline data into the database: --data-dir <path> [--force]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "deals", "fetch the cp0x deals now and store them, then rebuild the export: [--no-build]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "build", "recompute the export from stored snapshots, no history: [--run <id>]")
 	_, _ = fmt.Fprintf(w, "  %-10s %s\n", "publish", "publish an existing collection run with history (no build yet): --run <id>")
@@ -88,8 +87,6 @@ func run(args []string, stdout, stderr io.Writer) int {
 		return runCollector(args[1:], stdout, stderr)
 	case "run-once":
 		return runOnce(args[1:], stdout, stderr)
-	case "import-v1":
-		return runImportV1(args[1:], stdout, stderr)
 	case "build":
 		return runBuild(args[1:], stdout, stderr)
 	case "deals":

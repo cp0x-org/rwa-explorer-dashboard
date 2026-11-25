@@ -22,7 +22,7 @@ down:
 
 PGDATA_DIR ?= ./pg-data
 
-# stops the stack and deletes the database folder ($(PGDATA_DIR)); the next `make up` migrates and imports again
+# stops the stack and deletes the database folder ($(PGDATA_DIR)); the next `make up` migrates and collects again
 reset:
 	@printf 'Stop the stack and delete the database folder $(PGDATA_DIR)? [y/N] ' && read a && [ "$$a" = y ]
 	docker compose down

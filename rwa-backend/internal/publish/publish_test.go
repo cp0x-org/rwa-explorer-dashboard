@@ -21,7 +21,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/testdb"
 )
 
-const snapshotsDir = "../../../rwa-data-pipeline/data/snapshots"
+const snapshotsDir = "../../testdata/snapshots/v1"
 
 func isin(s string) *string { return &s }
 
@@ -39,9 +39,6 @@ type env struct {
 
 func newEnv(t *testing.T) *env {
 	t.Helper()
-	if _, err := os.Stat(snapshotsDir); err != nil {
-		t.Skipf("1.x snapshots not found: %v", err)
-	}
 	pool, _ := testdb.Migrated(t)
 	settings, err := model.LoadSettings(filepath.Join("..", "..", "config", "settings.json"))
 	require.NoError(t, err)

@@ -123,7 +123,7 @@ are made to resolve links or fetch deal terms.
 
 ## Holder rights
 
-Holder rights come from manually reviewed legal profiles (`rwa-data-pipeline/config/rights_profiles.json`, published
+Holder rights come from manually reviewed legal profiles (`rwa-backend/config/rights_profiles.json`, published
 in the export), including the
 ordered fact schema and source documents. Each token's `rights_profile_id` selects its own profile; profiles of
 other tokens from the same issuer never apply automatically. Older exports without rights fields remain supported.

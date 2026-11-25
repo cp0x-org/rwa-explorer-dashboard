@@ -11,7 +11,6 @@ on a Node server from that API. History of every number is kept and shown as cha
 |--------------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------|
 | [`rwa-backend/`](rwa-backend/)             | Collector (CMC + Portals, scheduled), ratings, history, logos, HTTP API             | Go 1.26, PostgreSQL 16                 |
 | [`rwa-interface/`](rwa-interface/)         | The site: server-side rendering from the API, English and Chinese                   | React 19, Vite, MUI 7, Node SSR server |
-| [`rwa-data-pipeline/`](rwa-data-pipeline/) | Legacy 1.x pipeline; used for `rwa import-v1` and the parity test (`make parity`)   | Python 3.12, uv                        |
 | [`docs/`](docs/)                           | Cross-project documentation: the workflow and design notes                          |                                        |
 
 ## How it works
@@ -37,8 +36,8 @@ Step by step, including manual runs: [docs/workflow.md](docs/workflow.md).
 
 ## Run everything with Docker (local)
 
-Runs the whole project from source on your machine: database, import of the 1.x data, API, site and the collector, so
-you can watch a collection run, the parsing and the result on the site. Not the production stack.
+Runs the whole project from source on your machine: database, API, site and the collector, so you can watch a
+collection run, the parsing and the result on the site. Not the production stack.
 
 Prerequisites: Docker Desktop (Compose v2), a CoinMarketCap and a Portals API key.
 
@@ -52,11 +51,14 @@ Then open http://localhost:3301 (API on http://localhost:3302). Other ports: `WE
 What happens, in order:
 
 1. `postgres` starts; `migrate` applies the migrations and exits.
-2. `import` loads the 1.x data from `rwa-data-pipeline/data` as the first run (about 125 snapshots, no keys needed).
-   It is idempotent: the next `up` prints "import skipped".
-3. `api` and `web` come up; the site already shows the October data.
-4. `collector` starts a live run at once, because the imported data is stale (`COLLECT_ON_START=true`). It takes about
-   7 minutes; the site then switches to the new build.
+2. `api` and `web` come up. On an empty database there is no build yet: the site shows no data and `/readyz` answers
+   503 until the first run is published.
+3. `collector` starts a live run at once, because there is no successful run yet (`COLLECT_ON_START=true`). It fetches
+   every underlying from CoinMarketCap and Portals (10–15 minutes in Docker), publishes the first build, then
+   downloads the logos and rebuilds. The site shows the data as soon as the build is published.
+4. After that the collector repeats the run every `COLLECT_INTERVAL` (default `24h`) while it is up. On a restart
+   (`make down && make up`) it collects at once only when the last successful run is older than the interval; the
+   next run is then one interval after the start.
 
 Where to look:
 
@@ -93,7 +95,7 @@ Prerequisites: Go 1.26, Docker (for the dev database), Node.js 22 with pnpm (`co
 cd rwa-backend
 make dev-db && make migrate                 # PostgreSQL 16 on 127.0.0.1:5433
 cp .env.example .env                        # put CMC_API_KEY and PORTALS_API_KEY into .env (never commit it)
-go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # load the 1.x data: no keys needed
+go run ./cmd/rwa run-once                   # first live run into the empty database (10–15 min; --symbols NVDA for a quick one)
 go run ./cmd/rwa api                        # API on http://localhost:8080 (HTTP_ADDR)
 
 # 2. site (second terminal)
@@ -124,7 +126,6 @@ One binary, `rwa`. Run from `rwa-backend/` with `go run ./cmd/rwa <command>` or 
 | `rwa run-once [--mode add] [--symbols NVDA,TSLA] [--no-publish]` | one collection job without the scheduler: collect, publish, logos. Exit 0 succeeded, 2 partial or usage error, 1 failed |
 | `rwa publish --run <id>`                 | publish an existing collection run (the way to finish `run-once --no-publish`)                     |
 | `rwa build [--run <id>]`                 | recompute the export from stored snapshots, no network, no history rows                            |
-| `rwa import-v1 --data-dir <path> [--force]` | load 1.x pipeline data into an empty database; skips when already imported (exit 0)             |
 | `rwa collector`                          | long-running scheduler (`COLLECT_CRON` or `COLLECT_INTERVAL`) and poller of manual run requests    |
 | `rwa migrate up \| status \| down-to <v> --yes` | database migrations                                                                         |
 | `rwa probe --provider cmc\|portals --symbols NVDA` | dev only: live check of the API keys and source clients                                  |
@@ -165,17 +166,9 @@ everything else to the site. A data refresh needs no rebuild or redeploy; images
 |----------|------|--------------|
 | [`backend.yml`](.github/workflows/backend.yml) | push / PR to `v2.0`, `rwa-backend/**` | Go build, vet, tests, golangci-lint |
 | [`frontend.yml`](.github/workflows/frontend.yml) | push / PR to `v2.0`, `rwa-interface/**` | site lint, unit tests, build, Playwright |
-| [`ci.yml`](.github/workflows/ci.yml) | every PR, push to `main` | 1.x checks: pipeline tests (`pytest`), site lint, tests, build, Playwright |
-| [`update-data.yml`](.github/workflows/update-data.yml) | daily 05:17 UTC on the default branch | **1.x data flow**: runs the Python pipeline with the `CMC_API_KEY` / `PORTALS_API_KEY` secrets and commits the refreshed data to `main` |
+| [`ci.yml`](.github/workflows/ci.yml) | every PR, push to `main` | site lint, tests, build, Playwright |
 
-In 2.0 the collector keeps the data in PostgreSQL, so `update-data.yml` has no role there: disable it when 2.0 replaces
-1.x on the default branch, otherwise it keeps committing pipeline data to git every day.
-
-## 1.x (legacy)
-
-`rwa-data-pipeline/` is the Python pipeline of 1.x. The site no longer reads its output. It stays as the parity
-reference (`make parity` in `rwa-backend/` compares the Go compute with `rwa-interface/public/data/rwa.json`) and as the
-source for `rwa import-v1`. It will be removed in 2.1. Its own README: [rwa-data-pipeline/README.md](rwa-data-pipeline/README.md).
+Data is not refreshed by GitHub Actions: the collector keeps it in PostgreSQL and runs on its own schedule.
 
 ## Links
 

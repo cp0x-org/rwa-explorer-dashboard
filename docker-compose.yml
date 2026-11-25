@@ -1,4 +1,6 @@
-# Whole project from source, for local use: PostgreSQL -> migrate -> import of the 1.x data -> api + web + collector.
+# Whole project from source, for local use: PostgreSQL -> migrate -> api + web + collector.
+# On an empty database the collector starts a live run at once (CMC + Portals, ~10-15 min), then repeats it every
+# COLLECT_INTERVAL (24h). The site shows "no data yet" until the first run is published.
 #   cp .env.example .env     # put CMC_API_KEY and PORTALS_API_KEY into .env
 #   docker compose up --build
 #   open http://localhost:3301 (API on http://localhost:3302; ports differ from the local `go run` mode, so both can run)
@@ -35,7 +37,7 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-rwa}
     volumes:
       # Database files in a folder next to this file (git-ignored). Another folder: PGDATA_DIR in .env.
-      # Delete the folder (make reset) to start from scratch: the next `up` migrates and imports again.
+      # Delete the folder (make reset) to start from scratch: the next `up` migrates and collects again.
       - ${PGDATA_DIR:-./pg-data}:/var/lib/postgresql/data
     # Not published. To connect from the host (psql, a GUI) uncomment:
     ports:
@@ -61,23 +63,6 @@ services:
     healthcheck:
       disable: true
 
-  # One-shot: loads the 1.x data as the first run. Idempotent: the next `up` prints "import skipped" and exits 0.
-  import:
-    <<: *backend
-    command: ["import-v1", "--data-dir", "/import"]
-    restart: "no"
-    environment:
-      DATABASE_URL: *database-url
-      LOG_FORMAT: text
-      LOG_LEVEL: ${LOG_LEVEL:-info}
-    volumes:
-      - ./rwa-data-pipeline/data:/import:ro
-    depends_on:
-      migrate:
-        condition: service_completed_successfully
-    healthcheck:
-      disable: true
-
   collector:
     <<: *backend
     command: ["collector"]
@@ -89,7 +74,7 @@ services:
       MIGRATE_ON_START: "false"
       CMC_API_KEY: ${CMC_API_KEY:?set it in .env}
       PORTALS_API_KEY: ${PORTALS_API_KEY:?set it in .env}
-      # A live run starts right away when the last successful run is older than the interval (the imported 1.x data is).
+      # A live run starts right away when there is no successful run yet or the last one is older than the interval.
       # A live run costs about 22 CMC credits; set COLLECT_ON_START=false in .env to skip it.
       COLLECT_ON_START: ${COLLECT_ON_START:-true}
       COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}
@@ -97,7 +82,7 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-info}
       RUN_EVENTS_LEVEL: debug   # new variable of the run journal; older builds ignore unknown variables
     depends_on:
-      import:
+      migrate:
         condition: service_completed_successfully
     healthcheck:
       disable: true   # no HTTP server; the image HEALTHCHECK belongs to api
@@ -124,7 +109,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-      # /readyz is 503 until the import has published the first build
+      # /readyz is 503 until the first live run has published a build (~10-15 min on an empty database)
       start_period: 120s
       start_interval: 3s
 

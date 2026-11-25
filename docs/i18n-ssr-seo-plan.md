@@ -11,7 +11,7 @@ Plan and record of the work on `rwa-interface`. Written before the implementatio
 - React 19 + Vite 6 + MUI 7, React Router 7 (data routers), `react-intl` already a dependency (Berry template, unused for
   app text). Package manager pnpm. No test framework, no CI config in the repo.
 - Data: one static file `public/data/rwa.json` (3.5 MB; 125 underlyings, 647 tokens, 10 issuers, 2 059 positions)
-  written by `../rwa-data-pipeline`. The browser never calls external APIs.
+  written by the 1.x Python pipeline (since removed). The browser never calls external APIs.
 - Rendering: **build-time prerender (SSG)**, not CSR-only. `pnpm build` runs `tsc`, `vite build`, `vite build --ssr
   src/entry-server.tsx`, then `scripts/prerender.mjs` renders every route with `renderToString` + emotion critical CSS
   into `dist/<path>/index.html` (230 pages). `src/index.tsx` loads the JSON and hydrates the page when it was rendered

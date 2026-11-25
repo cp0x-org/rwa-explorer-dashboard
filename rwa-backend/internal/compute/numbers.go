@@ -1,7 +1,7 @@
-// Package compute is a line-by-line Go port of rwa-data-pipeline/src/rwa_pipeline/analyze.py (and the logic of
-// export.py that matters): classification, composition graph, eligibility and scores over saved snapshots.
+// Package compute is a line-by-line Go port of the 1.x Python pipeline's analyze.py (and the logic of
+// export.py that matters; the pipeline itself is removed from the repository): classification, composition graph, eligibility and scores over saved snapshots.
 // It is pure: no I/O, no clock. Every function names its Python original; semantics (None != 0, ROUND_HALF_EVEN,
-// sort orders, "newest snapshot wins") are preserved exactly, because make parity compares against the 1.x export.
+// sort orders, "newest snapshot wins") are preserved exactly, because the tests compare against the 1.x export (testdata/golden).
 package compute
 
 import (

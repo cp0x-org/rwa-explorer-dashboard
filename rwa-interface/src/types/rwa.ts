@@ -1,4 +1,4 @@
-// Shape of GET /api/v1/export (rwa-backend; the 1.x public/data/rwa.json of rwa-data-pipeline plus build_id and run_id).
+// Shape of GET /api/v1/export (rwa-backend; the 1.x public/data/rwa.json shape plus build_id and run_id).
 // Money, APY and liquidity are decimal strings; null means "not reported", never zero.
 
 export type Decimal = string | null;

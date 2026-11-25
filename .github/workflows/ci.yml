@@ -9,17 +9,6 @@ permissions:
   contents: read
 
 jobs:
-  pipeline:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: rwa-data-pipeline
-    steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
-      - run: uv sync --frozen
-      - run: uv run pytest -q
-
   site:
     runs-on: ubuntu-latest
     defaults:

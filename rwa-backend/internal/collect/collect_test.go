@@ -6,7 +6,6 @@ import (
 	"errors"
 	"log/slog"
 	"os"
-	"path/filepath"
 	"slices"
 	"sort"
 	"testing"
@@ -264,17 +263,10 @@ func TestCollectAssetSourceErrorStoresNothing(t *testing.T) {
 	assert.Nil(t, payload)
 }
 
-// With the 1.x data directory at hand (RWA_V1_DATA_DIR, default ../rwa-data-pipeline/data relative to the
-// repository), the field set of a current 1.x snapshot equals ours at every level.
+// The field set of a 1.x snapshot (testdata/snapshots/v1) equals ours at every level.
 func TestFieldSetMatchesCurrentV1Snapshot(t *testing.T) {
-	dir := os.Getenv("RWA_V1_DATA_DIR")
-	if dir == "" {
-		dir = "../../../rwa-data-pipeline/data"
-	}
-	b, err := os.ReadFile(filepath.Join(dir, "snapshots", "US67066G1040.json"))
-	if err != nil {
-		t.Skipf("1.x snapshot not available: %v", err)
-	}
+	b, err := os.ReadFile("../../testdata/snapshots/v1/US67066G1040.json")
+	require.NoError(t, err)
 	var want map[string]any
 	require.NoError(t, json.Unmarshal(b, &want))
 	rwa, sh, api := fromSnapshot(t, b)

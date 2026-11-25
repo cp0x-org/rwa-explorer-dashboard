@@ -126,11 +126,11 @@ func (p *Publisher) PublishWith(ctx context.Context, runID int64, opts Options) 
 	return res, nil
 }
 
-// PublishTx publishes inside the caller's transaction, which also sees the caller's uncommitted writes (the
-// importer stores its snapshots and publishes in one transaction). The caller commits or rolls back.
+// PublishTx publishes inside the caller's transaction, which also sees the caller's uncommitted writes. The caller
+// commits or rolls back.
 //
-// It first takes the transaction-scoped advisory lock hashtext('rwa-publish'): publishes (collector, `rwa build`,
-// import) are serialized, so the previous export read below is the one this build replaces.
+// It first takes the transaction-scoped advisory lock hashtext('rwa-publish'): publishes (collector, `rwa build`)
+// are serialized, so the previous export read below is the one this build replaces.
 func (p *Publisher) PublishTx(ctx context.Context, tx pgx.Tx, runID int64, opts Options) (*Result, error) {
 	st := store.New(tx)
 	if _, err := tx.Exec(ctx, `SELECT pg_advisory_xact_lock(hashtext('rwa-publish'))`); err != nil {

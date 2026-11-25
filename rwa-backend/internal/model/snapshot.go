@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// Snapshot is the 1.x per-underlying snapshot document (rwa-data-pipeline data/snapshots/<id>.json).
+// Snapshot is the 1.x per-underlying snapshot document (1.x data/snapshots/<id>.json; samples in testdata/snapshots/v1).
 // Only the fields analyze.py reads are modelled; the rest of the document stays in the database payload.
 // Numeric fields are LenientDecimal (lenient like 1.x dec()): CMC sends JSON numbers, Portals metrics are strings.
 type Snapshot struct {

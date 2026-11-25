@@ -1,15 +1,15 @@
 # Contributing
 
 Thank you for your interest in RWA Explorer. This file covers the projects in the repository: the backend
-(`rwa-backend/`, Go), the site (`rwa-interface/`, TypeScript/React) and the legacy 1.x pipeline (`rwa-data-pipeline/`, Python).
+(`rwa-backend/`, Go) and the site (`rwa-interface/`, TypeScript/React).
 
 ## Prerequisites
 
 - Go 1.26 (`go.mod` pins the toolchain)
 - Docker, for the development database (`make dev-db`)
 - Node.js 22 and pnpm: run `corepack enable` once, the pnpm version comes from `package.json`
-- API keys for CoinMarketCap and Portals, only to collect new data; the 1.x data in `rwa-data-pipeline/data` can be
-  imported without keys (`rwa import-v1`)
+- API keys for CoinMarketCap and Portals, to collect data (`rwa run-once` or the collector); without them the site
+  runs on the mock API (`pnpm mock:api` in `rwa-interface/`)
 
 ## Setup
 
@@ -26,7 +26,7 @@ The full local run is in the root [README.md](README.md#quick-start-development)
 2. Make the change together with its tests and documentation (the READMEs describe behaviour, keep them true).
 3. Run the checks of every project you touched (below).
 4. Open a pull request with a short description of what changed and why. Keep data refreshes
-   (data imports, `config/assets.json`) in separate commits from code changes, so the diff of the code stays readable.
+   (`config/assets.json` and the other curated config) in separate commits from code changes, so the diff of the code stays readable.
 
 Commit messages: one line in the imperative, e.g. `Add ProtocolsCell to the tokenized assets table`.
 
@@ -39,15 +39,14 @@ make lint          # golangci-lint (config v2 in .golangci.yml); go vet only if 
 make dev-db        # PostgreSQL 16 on 127.0.0.1:5433
 export TEST_DATABASE_URL='postgres://rwa:rwa@127.0.0.1:5433/rwa?sslmode=disable'
 make test-integration   # db and store tests against the dev database
-make parity        # Go compute vs the 1.x export: must report 0 differences
 ```
 
 Conventions:
 
 - **Migrations are append-only.** SQL files in `internal/db/migrations/` (`NNNN_<name>.sql`). One new file per schema
   change; never edit a file that has been applied anywhere.
-- **Compute changes keep parity.** A change to ratings or the export must keep `make parity` at 0 differences. Until 2.1
-  removes the 1.x pipeline, a deliberate difference needs an explanation in the pull request.
+- **Compute changes are explained.** A change to ratings or the export shape changes the golden export
+  (`testdata/golden/rwa.json`) the tests compare with; say in the pull request why the numbers move.
 - **Secrets only through the environment** (`.env`, git-ignored). Keys must never reach logs, snapshots, exports or
   test fixtures; the config masks them and a test enforces it.
 
@@ -79,16 +78,10 @@ Conventions:
   (`pnpm install --frozen-lockfile` in the Dockerfile).
 - **Data.** The site reads only our API (`/api/v1/...`, `/logos/...`); never call external APIs from the browser. `public/data/rwa.json` is the mock API's fixture, not a data source.
 
-## Legacy pipeline (1.x)
-
-`rwa-data-pipeline/` is kept only for `rwa import-v1` and `make parity` and will be removed in 2.1. Do not add features
-to it; its tests (`uv run pytest`) must keep passing while it exists.
-
 ## Documentation
 
 - `README.md` (root): overview and quick start
 - `rwa-backend/README.md`, `rwa-interface/README.md`: each project in detail
-- `rwa-data-pipeline/README.md`: the legacy 1.x pipeline
 - `docs/workflow.md`: the 2.0 flow from collection to the published site
 - `docs/i18n-ssr-seo-plan.md`: i18n, SEO and accessibility design notes and audit (history; the prerender part was replaced by the SSR server)
 

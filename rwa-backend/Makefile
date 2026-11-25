@@ -1,7 +1,7 @@
 VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
 GO ?= go
 
-.PHONY: docker build test test-integration lint dev-db dev-db-down migrate parity
+.PHONY: docker build test test-integration lint dev-db dev-db-down migrate
 
 build:
 	$(GO) build -ldflags "-X main.version=$(VERSION)" -o bin/rwa ./cmd/rwa
@@ -27,11 +27,6 @@ dev-db-down:
 
 migrate:
 	$(GO) run ./cmd/rwa migrate up
-
-# Compares the Go compute with the Python export (testdata/golden/rwa.json) over the pipeline data (rwa-data-pipeline/data,
-# or RWA_V1_DATA_DIR), built at the golden's generated_at with the curated config of config/.
-parity:
-	$(GO) test -tags parity -count=1 -run TestParity ./internal/compute/ -v
 
 # Local single-arch image, not pushed (release images: ./build.sh <version>).
 docker:

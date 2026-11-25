@@ -17,7 +17,8 @@ curl -s localhost:8080/api/v1/status | jq '.current_build | {id, generated_at}, 
 curl -s localhost:3302/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # B
 ```
 
-Imported 1.x data is from 2026-10-18. Newer data appears only after a collection run (`run-once` or the collector).
+An empty database has no build: the site has no data until the first collection run (`run-once` or the collector) is
+published.
 
 ---
 
@@ -38,11 +39,10 @@ cp .env.example .env          # fill CMC_API_KEY and PORTALS_API_KEY (Portals ke
 cd rwa-backend
 make dev-db                   # PostgreSQL 16 on 127.0.0.1:5433 (rwa/rwa/rwa), data kept in a Docker volume
 make migrate                  # apply migrations (safe to repeat)
-go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # only for an EMPTY database: 1.x data as run 1
 go run ./cmd/rwa api          # API on http://127.0.0.1:8080, reads ./.env
 ```
 
-On a database that already has data `import-v1` prints `import skipped` or refuses (exit 0 / 1), nothing changes; just go on.
+On an empty database the API answers `/readyz` with 503 and the site has no data until step 4 publishes the first build.
 
 **3. Site** (terminal 2), one of:
 
@@ -82,9 +82,10 @@ cp .env.example .env          # in the REPOSITORY ROOT (not rwa-backend/.env.exa
 docker compose up --build     # or: make up   (first build takes a few minutes)
 ```
 
-What happens, in order: `postgres` → `migrate` → `import` (1.x data, once; later starts print "skipped") → `api` and
-`web` → `collector` starts a **live collection at once** because the imported data is old (~22 CMC credits, 10–14
-minutes in Docker). Set `COLLECT_ON_START=false` in `.env` to skip it.
+What happens, in order: `postgres` → `migrate` → `api` and `web` → `collector` starts a **live collection at once**
+because the database has no successful run yet (~22 CMC credits, 10–15 minutes in Docker). The site shows the data
+when that run is published; until then it has no data. After that the collector runs again every `COLLECT_INTERVAL`
+(default `24h`). Set `COLLECT_ON_START=false` in `.env` to skip the run on start.
 
 | Look at | URL / command |
 |---------|---------------|
@@ -95,7 +96,7 @@ minutes in Docker). Set `COLLECT_ON_START=false` in `.env` to skip it.
 | another run | `make run` (all assets) or `docker compose exec collector rwa run-once --symbols NVDA` |
 | database shell | `make psql` |
 
-**Stop / reset**: `make down` (the database stays in `./pg-data`, or `PGDATA_DIR` from `.env`), `make reset` (asks, then deletes that folder: the next start imports again).
+**Stop / reset**: `make down` (the database stays in `./pg-data`, or `PGDATA_DIR` from `.env`), `make reset` (asks, then deletes that folder: the next start collects from scratch).
 
 The production stack (prebuilt images, nginx, backups) is in the private pi-infra repo, `stacks/rwa`; this compose
 builds from source and is for checking the code before a deploy.

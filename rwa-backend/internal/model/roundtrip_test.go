@@ -15,6 +15,9 @@ import (
 
 const repoRoot = "../../.."
 
+// v1Snapshots holds a few verbatim 1.x snapshot documents (NVDA, AAPL, TSLA and the IWM ETF).
+const v1Snapshots = "../../testdata/snapshots/v1"
+
 var numericString = regexp.MustCompile(`^-?\d+(\.\d+)?$`)
 
 // normalize rewrites decimal-looking strings into a canonical form so that "10.5030" equals "10.503".
@@ -105,10 +108,8 @@ func TestExportRoundTrip(t *testing.T) {
 
 func readSnapshot(t *testing.T, name string) (*Snapshot, []byte) {
 	t.Helper()
-	b, err := os.ReadFile(filepath.Join(repoRoot, "rwa-data-pipeline/data/snapshots", name)) //nolint:gosec // test fixture path
-	if err != nil {
-		t.Skipf("1.x snapshots not available: %v", err)
-	}
+	b, err := os.ReadFile(filepath.Join(v1Snapshots, name)) //nolint:gosec // test fixture path
+	require.NoError(t, err)
 	s, err := ParseSnapshot(b)
 	require.NoError(t, err, name)
 	return s, b
@@ -176,10 +177,8 @@ func TestSnapshotNVDA(t *testing.T) {
 }
 
 func TestSnapshotETFAndStatuses(t *testing.T) {
-	entries, err := os.ReadDir(filepath.Join(repoRoot, "rwa-data-pipeline/data/snapshots"))
-	if err != nil {
-		t.Skipf("1.x snapshots not available: %v", err)
-	}
+	entries, err := os.ReadDir(filepath.Join(v1Snapshots))
+	require.NoError(t, err)
 	statuses := map[string]int{}
 	var sawETF bool
 	for _, e := range entries {

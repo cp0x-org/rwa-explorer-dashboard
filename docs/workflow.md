@@ -81,7 +81,7 @@ curl -s https://rwa.cp0x.com/api/v1/runs
 
 ```bash
 cd rwa-backend && make dev-db && make migrate
-go run ./cmd/rwa import-v1 --data-dir ../rwa-data-pipeline/data   # 1.x data as the first run
+go run ./cmd/rwa run-once                                         # first live run into the empty database
 go run ./cmd/rwa api                                              # needs DATABASE_URL in .env
 cd ../rwa-interface && pnpm install && pnpm start                 # /api proxied to localhost:8080
 ```
@@ -89,11 +89,5 @@ cd ../rwa-interface && pnpm install && pnpm start                 # /api proxied
 `go run ./cmd/rwa run-once` collects for real and needs `CMC_API_KEY` and `PORTALS_API_KEY` in `rwa-backend/.env`
 (about 4–5 s per underlying, so a full refresh takes minutes). Without the backend: `pnpm mock:api` in `rwa-interface/` (frozen 1.x data). Step by step: [run-locally.md](run-locally.md).
 
-To run the whole stack from source in Docker (database, import, api, site, collector) use the root `docker-compose.yml`:
+To run the whole stack from source in Docker (database, api, site, collector) use the root `docker-compose.yml`:
 see "Run everything with Docker (local)" in the root README.
-
-## Legacy (1.x)
-
-The Python pipeline in `rwa-data-pipeline/` wrote `public/data/rwa.json` for a static site. It is not part of the 2.0
-flow. It stays for `rwa import-v1` and `make parity` (in `rwa-backend/`) and will be removed in 2.1. Its commands are in
-[rwa-data-pipeline/README.md](../rwa-data-pipeline/README.md).
