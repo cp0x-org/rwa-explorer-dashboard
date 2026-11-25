@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 // @ts-expect-error plain ESM without types: the mock API's metric list
 import { COLUMNS, metricType } from '../../mock-api/metrics.mjs';
 
-// The mock must accept every numeric column of the backend's *_history tables, and nothing else.
+// The mock must accept every numeric column of the backend's history_* tables, and nothing else.
 const sql = readFileSync(new URL('../../../rwa-backend/internal/db/migrations/0001_init.sql', import.meta.url), 'utf8');
 const KEYS = new Set(['run_id', 'token_id']);
 
@@ -19,11 +19,11 @@ function numericColumns(table: string): string[] {
 
 describe('mock API history metrics', () => {
   const tables: Record<string, string> = {
-    summary: 'summary_history',
-    underlyings: 'underlying_history',
-    tokens: 'token_history',
-    issuers: 'issuer_history',
-    opportunities: 'position_history'
+    summary: 'history_summary',
+    underlyings: 'history_underlyings',
+    tokens: 'history_tokens',
+    issuers: 'history_issuers',
+    opportunities: 'history_positions'
   };
   for (const [entity, table] of Object.entries(tables)) {
     it(`${entity} = numeric columns of ${table}`, () => {
