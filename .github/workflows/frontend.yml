@@ -24,8 +24,11 @@ jobs:
         working-directory: rwa-interface
     steps:
       - uses: actions/checkout@v4
-      # pnpm version comes from "packageManager" in package.json
-      - run: corepack enable
+      # pnpm version comes from "packageManager" in package.json; pnpm/action-setup (not corepack) so that setup-node's
+      # pnpm cache path exists when the job saves it
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: rwa-interface/package.json
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -26,7 +26,10 @@ jobs:
       - run: go build ./...
       - run: go vet ./...
       - run: go test ./...
+      # built from source with the toolchain above: the release binaries of v2.5 are built with Go 1.25 and refuse
+      # a module that targets Go 1.26 ("the Go language version used to build golangci-lint is lower")
       - uses: golangci/golangci-lint-action@v8
         with:
-          version: v2.5
+          version: v2.5.0
+          install-mode: goinstall
           working-directory: rwa-backend
