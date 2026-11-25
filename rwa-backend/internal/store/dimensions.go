@@ -17,9 +17,9 @@ import (
 // with a stale row. It returns the number of listed assets.
 func (s *Store) SyncUnderlyings(ctx context.Context, assets []model.Asset) (int, error) {
 	b := &pgx.Batch{}
-	b.Queue(`UPDATE underlyings SET enabled = FALSE WHERE enabled`)
+	b.Queue(`UPDATE catalog_underlyings SET enabled = FALSE WHERE enabled`)
 	for _, a := range assets {
-		b.Queue(`INSERT INTO underlyings (id, ticker, name, isin, asset_type, enabled) VALUES ($1, $2, $3, $4, $5, $6)
+		b.Queue(`INSERT INTO catalog_underlyings (id, ticker, name, isin, asset_type, enabled) VALUES ($1, $2, $3, $4, $5, $6)
 			ON CONFLICT (id) DO UPDATE SET ticker = EXCLUDED.ticker, name = EXCLUDED.name, isin = EXCLUDED.isin,
 				asset_type = EXCLUDED.asset_type, enabled = EXCLUDED.enabled, updated_at = now()`,
 			a.ID(), a.Ticker, a.Name, a.ISIN, a.AssetType, a.Enabled)
@@ -49,7 +49,7 @@ type UnderlyingFactsRow struct {
 func (s *Store) UpsertUnderlyingFacts(ctx context.Context, rows []UnderlyingFactsRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`UPDATE underlyings SET cmc_rwa_id = $2, cmc_name = $3,
+		b.Queue(`UPDATE catalog_underlyings SET cmc_rwa_id = $2, cmc_name = $3,
 			website = CASE WHEN $9 THEN website ELSE $4 END, cmc_logo_url = CASE WHEN $9 THEN cmc_logo_url ELSE $5 END,
 			industry = CASE WHEN $9 THEN industry ELSE $6 END, status = $7, last_run_id = $8, updated_at = now() WHERE id = $1`,
 			r.ID, r.CMCRwaID, r.CMCName, r.Website, r.CMCLogoURL, r.Industry, r.Status, r.LastRunID, r.KeepInfo)
@@ -85,7 +85,7 @@ type IssuerRow struct {
 func (s *Store) UpsertIssuers(ctx context.Context, rows []IssuerRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO issuers (id, name, cmc_label, website, cmc_logo_url, roster_size, roster, metadata_status, fetched_at)
+		b.Queue(`INSERT INTO catalog_issuers (id, name, cmc_label, website, cmc_logo_url, roster_size, roster, metadata_status, fetched_at)
 			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
 			ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, cmc_label = EXCLUDED.cmc_label, website = EXCLUDED.website,
 				cmc_logo_url = EXCLUDED.cmc_logo_url, roster_size = EXCLUDED.roster_size, roster = EXCLUDED.roster,
@@ -114,7 +114,7 @@ type TokenRow struct {
 func (s *Store) UpsertTokens(ctx context.Context, runID int64, rows []TokenRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO tokens (id, underlying_id, issuer_id, symbol, name, cmc_slug, kind, excluded_reason, cmc_logo_url,
+		b.Queue(`INSERT INTO catalog_tokens (id, underlying_id, issuer_id, symbol, name, cmc_slug, kind, excluded_reason, cmc_logo_url,
 				date_added, coverage, first_seen_run_id, last_seen_run_id, active)
 			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $12, TRUE)
 			ON CONFLICT (id) DO UPDATE SET underlying_id = EXCLUDED.underlying_id, issuer_id = EXCLUDED.issuer_id,
@@ -129,7 +129,7 @@ func (s *Store) UpsertTokens(ctx context.Context, runID int64, rows []TokenRow) 
 
 // DeactivateMissingTokens marks tokens not seen in runID inactive and returns how many changed.
 func (s *Store) DeactivateMissingTokens(ctx context.Context, runID int64) (int64, error) {
-	return s.deactivate(ctx, "tokens", runID)
+	return s.deactivate(ctx, "catalog_tokens", runID)
 }
 
 // DeploymentRow is a deployments row.
@@ -150,7 +150,7 @@ type DeploymentRow struct {
 func (s *Store) UpsertDeployments(ctx context.Context, runID int64, rows []DeploymentRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO deployments (token_id, cmc_network, address, address_raw, network, position_key, status,
+		b.Queue(`INSERT INTO catalog_deployments (token_id, cmc_network, address, address_raw, network, position_key, status,
 				portals_symbol, decimals, portals_platform, first_seen_run_id, last_seen_run_id, active)
 			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $11, TRUE)
 			ON CONFLICT (token_id, cmc_network, address) DO UPDATE SET address_raw = EXCLUDED.address_raw,
@@ -165,7 +165,7 @@ func (s *Store) UpsertDeployments(ctx context.Context, runID int64, rows []Deplo
 
 // DeactivateMissingDeployments marks deployments not seen in runID inactive and returns how many changed.
 func (s *Store) DeactivateMissingDeployments(ctx context.Context, runID int64) (int64, error) {
-	return s.deactivate(ctx, "deployments", runID)
+	return s.deactivate(ctx, "catalog_deployments", runID)
 }
 
 // PlatformRow is a platforms row (Portals /v2/platforms).
@@ -178,7 +178,7 @@ type PlatformRow struct {
 func (s *Store) UpsertPlatforms(ctx context.Context, rows []PlatformRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO platforms (slug, name) VALUES ($1, $2)
+		b.Queue(`INSERT INTO catalog_platforms (slug, name) VALUES ($1, $2)
 			ON CONFLICT (slug) DO UPDATE SET name = EXCLUDED.name, updated_at = now()`, r.Slug, r.Name)
 	}
 	return s.execBatch(ctx, b, "upsert platforms")
@@ -194,7 +194,7 @@ type NetworkRow struct {
 func (s *Store) UpsertNetworks(ctx context.Context, runID int64, rows []NetworkRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO networks (slug, cmc_names, last_seen_run_id, active) VALUES ($1, $2, $3, TRUE)
+		b.Queue(`INSERT INTO catalog_networks (slug, cmc_names, last_seen_run_id, active) VALUES ($1, $2, $3, TRUE)
 			ON CONFLICT (slug) DO UPDATE SET cmc_names = EXCLUDED.cmc_names, last_seen_run_id = EXCLUDED.last_seen_run_id, active = TRUE`,
 			r.Slug, strs(r.CMCNames), runID)
 	}
@@ -203,7 +203,7 @@ func (s *Store) UpsertNetworks(ctx context.Context, runID int64, rows []NetworkR
 
 // DeactivateMissingNetworks marks networks not seen in runID inactive and returns how many changed.
 func (s *Store) DeactivateMissingNetworks(ctx context.Context, runID int64) (int64, error) {
-	return s.deactivate(ctx, "networks", runID)
+	return s.deactivate(ctx, "catalog_networks", runID)
 }
 
 // PositionRow is a positions row: a Portals position that made it into the export, with its latest metrics.
@@ -238,7 +238,7 @@ type PositionRow struct {
 func (s *Store) UpsertPositions(ctx context.Context, runID int64, rows []PositionRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO positions (key, network, platform, symbol, name, address, position_kind, receipt_token_key, category,
+		b.Queue(`INSERT INTO catalog_positions (key, network, platform, symbol, name, address, position_kind, receipt_token_key, category,
 				tags, components, liquidity_semantics, is_portable, portals_created_at, liquidity_usd, apy_percent,
 				base_apy_percent, reward_apy_percent, borrow_apy_percent, volume_usd_1d, volume_usd_7d, source_updated_at,
 				flags, eligibility, first_seen_run_id, last_seen_run_id, active)
@@ -266,10 +266,10 @@ func (s *Store) UpsertPositions(ctx context.Context, runID int64, rows []Positio
 
 // DeactivateMissingPositions marks positions not seen in runID inactive and returns how many changed.
 func (s *Store) DeactivateMissingPositions(ctx context.Context, runID int64) (int64, error) {
-	return s.deactivate(ctx, "positions", runID)
+	return s.deactivate(ctx, "catalog_positions", runID)
 }
 
-// TokenPositionRow is a token_positions row (relations 1.x plus unconfirmed candidates).
+// TokenPositionRow is a catalog_token_positions row (relations 1.x plus unconfirmed candidates).
 type TokenPositionRow struct {
 	TokenID     int64
 	PositionKey string
@@ -283,7 +283,7 @@ type TokenPositionRow struct {
 func (s *Store) UpsertTokenPositions(ctx context.Context, runID int64, rows []TokenPositionRow) error {
 	b := &pgx.Batch{}
 	for _, r := range rows {
-		b.Queue(`INSERT INTO token_positions (token_id, position_key, link, depth, path, first_seen_run_id, last_seen_run_id, active)
+		b.Queue(`INSERT INTO catalog_token_positions (token_id, position_key, link, depth, path, first_seen_run_id, last_seen_run_id, active)
 			VALUES ($1, $2, $3, $4, $5, $6, $6, TRUE)
 			ON CONFLICT (token_id, position_key) DO UPDATE SET link = EXCLUDED.link, depth = EXCLUDED.depth, path = EXCLUDED.path,
 				last_seen_run_id = EXCLUDED.last_seen_run_id, active = TRUE`,
@@ -294,7 +294,7 @@ func (s *Store) UpsertTokenPositions(ctx context.Context, runID int64, rows []To
 
 // DeactivateMissingTokenPositions marks links not seen in runID inactive and returns how many changed.
 func (s *Store) DeactivateMissingTokenPositions(ctx context.Context, runID int64) (int64, error) {
-	return s.deactivate(ctx, "token_positions", runID)
+	return s.deactivate(ctx, "catalog_token_positions", runID)
 }
 
 // deactivate flips active for rows of a current-state table that the run did not see. The table name is

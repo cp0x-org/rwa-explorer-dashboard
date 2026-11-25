@@ -69,7 +69,7 @@ func scanBuildMeta(row pgx.Row, extra ...any) (*BuildMeta, error) {
 // inserted. Sequences are not transactional: an id reserved by a rolled-back transaction is simply never used.
 func (s *Store) ReserveBuildID(ctx context.Context) (int64, error) {
 	var id int64
-	if err := s.q.QueryRow(ctx, `SELECT nextval(pg_get_serial_sequence('builds', 'id'))`).Scan(&id); err != nil {
+	if err := s.q.QueryRow(ctx, `SELECT nextval(pg_get_serial_sequence('build_exports', 'id'))`).Scan(&id); err != nil {
 		return 0, fmt.Errorf("store: reserve build id: %w", err)
 	}
 	return id, nil
@@ -84,8 +84,8 @@ func (s *Store) InsertBuild(ctx context.Context, tx pgx.Tx, b BuildRow) (int64, 
 	if b.ID != 0 {
 		preset = &b.ID
 	}
-	err := tx.QueryRow(ctx, `INSERT INTO builds (id, run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256)
-		VALUES (COALESCE($1, nextval(pg_get_serial_sequence('builds', 'id'))), $2, $3, $4, $5, $6, $7, $8, $9) RETURNING id`,
+	err := tx.QueryRow(ctx, `INSERT INTO build_exports (id, run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256)
+		VALUES (COALESCE($1, nextval(pg_get_serial_sequence('build_exports', 'id'))), $2, $3, $4, $5, $6, $7, $8, $9) RETURNING id`,
 		preset, b.RunID, b.GeneratedAt, b.SchemaVersion, b.ScoreVersion, jsonOr(b.Settings, "{}"), jsonOr(b.Summary, "{}"), b.Export, b.ExportSHA256).Scan(&id)
 	if err != nil {
 		return 0, fmt.Errorf("store: insert build: %w", err)
@@ -99,10 +99,10 @@ func (s *Store) SetCurrentBuild(ctx context.Context, tx pgx.Tx, id int64) error 
 	if _, err := tx.Exec(ctx, `SELECT pg_advisory_xact_lock(hashtext('rwa-set-current-build'))`); err != nil {
 		return fmt.Errorf("store: set current build: lock: %w", err)
 	}
-	if _, err := tx.Exec(ctx, `UPDATE builds SET is_current = FALSE WHERE is_current AND id <> $1`, id); err != nil {
+	if _, err := tx.Exec(ctx, `UPDATE build_exports SET is_current = FALSE WHERE is_current AND id <> $1`, id); err != nil {
 		return fmt.Errorf("store: set current build: clear: %w", err)
 	}
-	tag, err := tx.Exec(ctx, `UPDATE builds SET is_current = TRUE WHERE id = $1`, id)
+	tag, err := tx.Exec(ctx, `UPDATE build_exports SET is_current = TRUE WHERE id = $1`, id)
 	if err != nil {
 		return fmt.Errorf("store: set current build %d: %w", id, err)
 	}
@@ -143,7 +143,7 @@ func (s *Store) BuildByID(ctx context.Context, id int64) (*Build, error) {
 
 func (s *Store) build(ctx context.Context, where string, args ...any) (*Build, error) {
 	var export []byte
-	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+`, export FROM builds `+where+` LIMIT 1`, args...), &export)
+	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+`, export FROM build_exports `+where+` LIMIT 1`, args...), &export)
 	if err != nil {
 		return nil, fmt.Errorf("store: get build: %w", notFound(err))
 	}
@@ -152,7 +152,7 @@ func (s *Store) build(ctx context.Context, where string, args ...any) (*Build, e
 
 // CurrentBuildMeta returns the current build without its export (for /status), or ErrNotFound.
 func (s *Store) CurrentBuildMeta(ctx context.Context) (*BuildMeta, error) {
-	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+` FROM builds WHERE is_current`))
+	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+` FROM build_exports WHERE is_current`))
 	if err != nil {
 		return nil, fmt.Errorf("store: current build meta: %w", notFound(err))
 	}
@@ -161,7 +161,7 @@ func (s *Store) CurrentBuildMeta(ctx context.Context) (*BuildMeta, error) {
 
 // BuildMetaByID returns a build without its export, or ErrNotFound.
 func (s *Store) BuildMetaByID(ctx context.Context, id int64) (*BuildMeta, error) {
-	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+` FROM builds WHERE id = $1`, id))
+	m, err := scanBuildMeta(s.q.QueryRow(ctx, `SELECT `+buildMetaColumns+` FROM build_exports WHERE id = $1`, id))
 	if err != nil {
 		return nil, fmt.Errorf("store: build meta %d: %w", id, notFound(err))
 	}

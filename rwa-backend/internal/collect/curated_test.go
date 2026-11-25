@@ -48,7 +48,7 @@ func TestEmptySnapshotNeverReplacesOneWithTokens(t *testing.T) {
 	assert.Equal(t, RunFailed, res.Status, "the only underlying failed and nothing completed")
 	assert.Zero(t, res.Completed)
 	assert.Equal(t, 1, res.Failed)
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM snapshots`), "the previous snapshot is the only one")
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`), "the previous snapshot is the only one")
 
 	run, err := store.New(pool).GetRun(ctx, res.RunID)
 	require.NoError(t, err)
@@ -64,7 +64,7 @@ func TestEmptySnapshotNeverReplacesOneWithTokens(t *testing.T) {
 	res, err = r.Run(ctx, Options{Mode: ModeRefresh, Symbols: []string{"NVDA"}})
 	require.NoError(t, err)
 	assert.Equal(t, RunSucceeded, res.Status)
-	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 }
 
 // A snapshot that had no tokens may be replaced by another one without tokens, and an underlying that was never
@@ -85,7 +85,7 @@ func TestEmptySnapshotMayReplaceAnEmptyOne(t *testing.T) {
 	res, err = r.Run(ctx, Options{Mode: ModeRefresh})
 	require.NoError(t, err)
 	assert.Equal(t, RunSucceeded, res.Status)
-	assert.Equal(t, 4, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Equal(t, 4, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 }
 
 func linksWithDeals(t *testing.T, slugs ...string) *curated.Config {
@@ -148,7 +148,7 @@ func TestRunFetchesDealsOncePerRun(t *testing.T) {
 	assert.Len(t, cache.Deals, 1, "only deals the links config names; the unusable one is skipped")
 	assert.Contains(t, cache.Deals, "backpack")
 	assert.NotContains(t, cache.Deals, "other")
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM cp0x_deals`))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_cp0x_deals`))
 
 	events, _, err := st.ListRunEvents(ctx, res.RunID, 0, "debug", 2000)
 	require.NoError(t, err)
@@ -162,7 +162,7 @@ func TestRunFetchesDealsOncePerRun(t *testing.T) {
 	assert.Equal(t, RunSucceeded, res.Status)
 	assert.Equal(t, 2, res.Completed)
 	assert.Equal(t, []string{"deals: HTTP 503"}, res.Warnings)
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM cp0x_deals`))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_cp0x_deals`))
 	run, err := st.GetRun(ctx, res.RunID)
 	require.NoError(t, err)
 	assert.Contains(t, string(run.Warnings), "deals: HTTP 503")
@@ -182,7 +182,7 @@ func TestRunWithoutLinksConfigDoesNotFetchDeals(t *testing.T) {
 		assert.Equal(t, RunSucceeded, res.Status)
 	}
 	assert.Zero(t, hits.Load())
-	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM cp0x_deals`))
+	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM raw_cp0x_deals`))
 }
 
 type recordingPortals struct{ terms []string }

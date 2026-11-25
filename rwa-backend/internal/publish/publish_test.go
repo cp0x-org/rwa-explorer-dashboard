@@ -92,11 +92,11 @@ func TestPublishTwiceAndFailure(t *testing.T) {
 	require.Equal(t, run1, *exp.RunID)
 	require.Contains(t, res1.Line(), "2 underlyings")
 
-	for _, table := range []string{"summary_history", "underlying_history", "token_history", "issuer_history", "position_history"} {
+	for _, table := range []string{"history_summary", "history_underlyings", "history_tokens", "history_issuers", "history_positions"} {
 		require.Positive(t, e.count(t, "SELECT count(*) FROM "+table+" WHERE run_id = $1", run1), table)
 	}
-	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM summary_history"))
-	require.Equal(t, len(exp.Tokens), e.count(t, "SELECT count(*) FROM tokens"))
+	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM history_summary"))
+	require.Equal(t, len(exp.Tokens), e.count(t, "SELECT count(*) FROM catalog_tokens"))
 
 	var firstBuild bool
 	require.NoError(t, e.pool.QueryRow(ctx, `SELECT (details->>'first_build')::boolean FROM build_changes WHERE build_id = $1`, res1.BuildID).Scan(&firstBuild))
@@ -109,23 +109,23 @@ func TestPublishTwiceAndFailure(t *testing.T) {
 	cur, err = e.st.CurrentBuild(ctx)
 	require.NoError(t, err)
 	require.Equal(t, res2.BuildID, cur.ID)
-	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM builds"))
-	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM builds WHERE is_current"))
+	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM build_exports"))
+	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM build_exports WHERE is_current"))
 	var ch store.BuildChangesRow
 	require.NoError(t, e.pool.QueryRow(ctx, `SELECT previous_build_id, new_tokens, new_positions_count FROM build_changes WHERE build_id = $1`, res2.BuildID).
 		Scan(&ch.PreviousBuildID, &ch.NewTokens, &ch.NewPositionsCount))
 	require.NotNil(t, ch.PreviousBuildID)
 	require.Equal(t, res1.BuildID, *ch.PreviousBuildID)
 	require.NotEmpty(t, ch.NewTokens)
-	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM summary_history"))
+	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM history_summary"))
 
 	// A rebuild writes a build but no history.
 	run3 := e.addRun(t, "r3", "rebuild")
 	res3, err := e.pub.Publish(ctx, run3, "rebuild")
 	require.NoError(t, err)
-	require.Equal(t, 0, e.count(t, "SELECT count(*) FROM summary_history WHERE run_id = $1", run3))
-	require.Equal(t, 0, e.count(t, "SELECT count(*) FROM token_history WHERE run_id = $1", run3))
-	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM summary_history"))
+	require.Equal(t, 0, e.count(t, "SELECT count(*) FROM history_summary WHERE run_id = $1", run3))
+	require.Equal(t, 0, e.count(t, "SELECT count(*) FROM history_tokens WHERE run_id = $1", run3))
+	require.Equal(t, 2, e.count(t, "SELECT count(*) FROM history_summary"))
 
 	// Failure: a run id that does not exist violates a foreign key; the previous build stays current.
 	_, err = e.pub.Publish(ctx, 999999, "refresh")
@@ -133,7 +133,7 @@ func TestPublishTwiceAndFailure(t *testing.T) {
 	cur, err = e.st.CurrentBuild(ctx)
 	require.NoError(t, err)
 	require.Equal(t, res3.BuildID, cur.ID)
-	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM builds"))
+	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM build_exports"))
 
 	// Cancelled context: nothing changes either.
 	cctx, cancel := context.WithCancel(ctx)
@@ -156,7 +156,7 @@ func TestExportCarriesItsBuildID(t *testing.T) {
 		var buildID int64
 		var stored []byte
 		var sha string
-		require.NoError(t, e.pool.QueryRow(ctx, `SELECT id, export, export_sha256 FROM builds WHERE id = $1`, res.BuildID).Scan(&buildID, &stored, &sha))
+		require.NoError(t, e.pool.QueryRow(ctx, `SELECT id, export, export_sha256 FROM build_exports WHERE id = $1`, res.BuildID).Scan(&buildID, &stored, &sha))
 		var exp model.Export
 		require.NoError(t, json.Unmarshal(stored, &exp))
 		require.NotNil(t, exp.BuildID, "export %d has build_id null", i)
@@ -180,13 +180,13 @@ func TestPublishRollsBackDimensionsAndHistory(t *testing.T) {
 
 	_, err = e.pub.Publish(ctx, run, "refresh")
 	require.ErrorContains(t, err, "injected failure")
-	for _, table := range []string{"summary_history", "underlying_history", "token_history", "issuer_history", "position_history",
-		"tokens", "deployments", "positions", "token_positions", "issuers", "builds", "build_changes"} {
+	for _, table := range []string{"history_summary", "history_underlyings", "history_tokens", "history_issuers", "history_positions",
+		"catalog_tokens", "catalog_deployments", "catalog_positions", "catalog_token_positions", "catalog_issuers", "build_exports", "build_changes"} {
 		require.Zero(t, e.count(t, "SELECT count(*) FROM "+table), table)
 	}
-	require.Zero(t, e.count(t, `SELECT count(*) FROM underlyings WHERE last_run_id IS NOT NULL`), "dimension updates rolled back")
+	require.Zero(t, e.count(t, `SELECT count(*) FROM catalog_underlyings WHERE last_run_id IS NOT NULL`), "dimension updates rolled back")
 	var warnings string
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings::text FROM collection_runs WHERE id = $1`, run).Scan(&warnings))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings::text FROM runs WHERE id = $1`, run).Scan(&warnings))
 	require.JSONEq(t, "[]", warnings)
 
 	// Without the fault the same run publishes.
@@ -194,8 +194,8 @@ func TestPublishRollsBackDimensionsAndHistory(t *testing.T) {
 	require.NoError(t, err)
 	_, err = e.pub.Publish(ctx, run, "refresh")
 	require.NoError(t, err)
-	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM builds"))
-	require.Positive(t, e.count(t, "SELECT count(*) FROM token_history"))
+	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM build_exports"))
+	require.Positive(t, e.count(t, "SELECT count(*) FROM history_tokens"))
 }
 
 func TestConcurrentPublishesAreSerialized(t *testing.T) {
@@ -215,8 +215,8 @@ func TestConcurrentPublishesAreSerialized(t *testing.T) {
 	for _, err := range errs {
 		require.NoError(t, err)
 	}
-	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM builds"))
-	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM builds WHERE is_current"))
+	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM build_exports"))
+	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM build_exports WHERE is_current"))
 	// Each build's previous_build_id is the build that was current before it: a chain, no two builds share a parent.
 	require.Equal(t, 1, e.count(t, "SELECT count(*) FROM build_changes WHERE previous_build_id IS NULL"))
 	require.Equal(t, 3, e.count(t, "SELECT count(DISTINCT coalesce(previous_build_id, 0)) FROM build_changes"))
@@ -232,7 +232,7 @@ func TestRebuildKeysDoNotCollideWithinASecond(t *testing.T) {
 		_, _, err := e.pub.Rebuild(ctx, publish.RebuildParams{Trigger: "cli", CollectorVersion: "test", SettingsJSON: []byte("{}")})
 		require.NoError(t, err)
 	}
-	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM collection_runs WHERE mode = 'rebuild'"))
+	require.Equal(t, 3, e.count(t, "SELECT count(*) FROM runs WHERE mode = 'rebuild'"))
 }
 
 // The publish committed, then the caller's context ended: the rebuild run must still be finished.
@@ -249,7 +249,7 @@ func TestRebuildFinishesRunAfterContextCancel(t *testing.T) {
 	require.NoError(t, err)
 	require.NotNil(t, res)
 	var status string
-	require.NoError(t, e.pool.QueryRow(context.Background(), `SELECT status FROM collection_runs WHERE id = $1`, runID).Scan(&status))
+	require.NoError(t, e.pool.QueryRow(context.Background(), `SELECT status FROM runs WHERE id = $1`, runID).Scan(&status))
 	require.Equal(t, "succeeded", status)
 }
 
@@ -283,23 +283,23 @@ func TestHistoryOnlyForRefreshedUnderlyings(t *testing.T) {
 	require.NoError(t, err)
 
 	uh := func(id string) int {
-		return e.count(t, "SELECT count(*) FROM underlying_history WHERE underlying_id = $1", id)
+		return e.count(t, "SELECT count(*) FROM history_underlyings WHERE underlying_id = $1", id)
 	}
 	require.Equal(t, 2, uh(assets[0].ID()))
 	require.Equal(t, 1, uh(assets[1].ID()))
-	require.Zero(t, e.count(t, "SELECT count(*) FROM underlying_history WHERE run_id = $1 AND underlying_id = $2", runB, assets[1].ID()))
+	require.Zero(t, e.count(t, "SELECT count(*) FROM history_underlyings WHERE run_id = $1 AND underlying_id = $2", runB, assets[1].ID()))
 
 	// Tokens and positions of the refreshed underlying get a second point, the others do not.
-	require.Positive(t, e.count(t, "SELECT count(*) FROM token_history WHERE run_id = $1", runB))
-	require.Positive(t, e.count(t, "SELECT count(*) FROM position_history WHERE run_id = $1", runB))
-	require.Less(t, e.count(t, "SELECT count(*) FROM token_history WHERE run_id = $1", runB), e.count(t, "SELECT count(*) FROM token_history WHERE run_id = $1", runA))
-	require.Zero(t, e.count(t, `SELECT count(*) FROM (SELECT token_id, observed_at FROM token_history GROUP BY 1, 2 HAVING count(*) > 1) d`), "no duplicate points")
-	require.Zero(t, e.count(t, `SELECT count(*) FROM (SELECT position_key, observed_at FROM position_history GROUP BY 1, 2 HAVING count(*) > 1) d`), "no duplicate points")
+	require.Positive(t, e.count(t, "SELECT count(*) FROM history_tokens WHERE run_id = $1", runB))
+	require.Positive(t, e.count(t, "SELECT count(*) FROM history_positions WHERE run_id = $1", runB))
+	require.Less(t, e.count(t, "SELECT count(*) FROM history_tokens WHERE run_id = $1", runB), e.count(t, "SELECT count(*) FROM history_tokens WHERE run_id = $1", runA))
+	require.Zero(t, e.count(t, `SELECT count(*) FROM (SELECT token_id, observed_at FROM history_tokens GROUP BY 1, 2 HAVING count(*) > 1) d`), "no duplicate points")
+	require.Zero(t, e.count(t, `SELECT count(*) FROM (SELECT position_key, observed_at FROM history_positions GROUP BY 1, 2 HAVING count(*) > 1) d`), "no duplicate points")
 
 	// Aggregates: one row per run.
 	for _, run := range []int64{runA, runB} {
-		require.Equal(t, 1, e.count(t, "SELECT count(*) FROM summary_history WHERE run_id = $1", run))
-		require.Positive(t, e.count(t, "SELECT count(*) FROM issuer_history WHERE run_id = $1", run))
+		require.Equal(t, 1, e.count(t, "SELECT count(*) FROM history_summary WHERE run_id = $1", run))
+		require.Positive(t, e.count(t, "SELECT count(*) FROM history_issuers WHERE run_id = $1", run))
 	}
-	require.Equal(t, e.count(t, "SELECT count(*) FROM issuer_history WHERE run_id = $1", runA), e.count(t, "SELECT count(*) FROM issuer_history WHERE run_id = $1", runB))
+	require.Equal(t, e.count(t, "SELECT count(*) FROM history_issuers WHERE run_id = $1", runA), e.count(t, "SELECT count(*) FROM history_issuers WHERE run_id = $1", runB))
 }

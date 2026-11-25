@@ -12,7 +12,7 @@ import (
 )
 
 // Dimensions are the current-state rows of one build, ready for the store's Upsert* methods
-// (order matters for foreign keys: issuers, tokens, deployments, platforms, positions, token_positions).
+// (order matters for foreign keys: catalog_issuers, _tokens, _deployments, _platforms, _positions, _token_positions).
 type Dimensions struct {
 	UnderlyingFacts []store.UnderlyingFactsRow
 	Issuers         []store.IssuerRow
@@ -27,7 +27,7 @@ type Dimensions struct {
 }
 
 // dedupeTokens implements the policy for a CMC id listed more than once (under two underlyings, or twice in
-// one RWA record): the export keeps every copy as 1.x did, but the tokens table and token_history are keyed by id,
+// one RWA record): the export keeps every copy as 1.x did, but catalog_tokens and history_tokens are keyed by id,
 // so the store rows keep only the occurrence from the NEWEST snapshot (ties: the first in the export, which is the
 // sorted snapshot order). keep[i] tells whether exp.Tokens[i] is kept; warnings describe the dropped ones.
 func dedupeTokens(exp *model.Export) (keep []bool, warnings []string) {

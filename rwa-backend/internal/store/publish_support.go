@@ -10,7 +10,7 @@ import (
 // LogoExts returns the extension of every stored logo keyed "kind/entity_id" (the key format of
 // compute.MapLogos), without loading the image bytes.
 func (s *Store) LogoExts(ctx context.Context) (map[string]string, error) {
-	rows, err := s.q.Query(ctx, `SELECT kind, entity_id, ext FROM logos`)
+	rows, err := s.q.Query(ctx, `SELECT kind, entity_id, ext FROM catalog_logos`)
 	if err != nil {
 		return nil, fmt.Errorf("store: logo exts: %w", err)
 	}
@@ -32,7 +32,7 @@ func (s *Store) LogoExts(ctx context.Context) (map[string]string, error) {
 // ListIssuers returns every issuers row.
 func (s *Store) ListIssuers(ctx context.Context) ([]IssuerRow, error) {
 	rows, err := s.q.Query(ctx, `SELECT id, name, cmc_label, website, cmc_logo_url, roster_size, roster, metadata_status, fetched_at
-		FROM issuers ORDER BY id`)
+		FROM catalog_issuers ORDER BY id`)
 	if err != nil {
 		return nil, fmt.Errorf("store: list issuers: %w", err)
 	}
@@ -53,7 +53,7 @@ func (s *Store) ListIssuers(ctx context.Context) ([]IssuerRow, error) {
 
 // ListPlatformNames returns the platforms table as slug -> name.
 func (s *Store) ListPlatformNames(ctx context.Context) (map[string]string, error) {
-	rows, err := s.q.Query(ctx, `SELECT slug, name FROM platforms`)
+	rows, err := s.q.Query(ctx, `SELECT slug, name FROM catalog_platforms`)
 	if err != nil {
 		return nil, fmt.Errorf("store: list platforms: %w", err)
 	}
@@ -82,7 +82,7 @@ type UnderlyingInfo struct {
 
 // ListUnderlyingInfo returns the RWA metadata of every underlying that has a cmc_rwa_id.
 func (s *Store) ListUnderlyingInfo(ctx context.Context) ([]UnderlyingInfo, error) {
-	rows, err := s.q.Query(ctx, `SELECT cmc_rwa_id, website, cmc_logo_url, industry FROM underlyings
+	rows, err := s.q.Query(ctx, `SELECT cmc_rwa_id, website, cmc_logo_url, industry FROM catalog_underlyings
 		WHERE cmc_rwa_id IS NOT NULL ORDER BY cmc_rwa_id, id`)
 	if err != nil {
 		return nil, fmt.Errorf("store: list underlying info: %w", err)
@@ -102,7 +102,7 @@ func (s *Store) ListUnderlyingInfo(ctx context.Context) ([]UnderlyingInfo, error
 	return out, nil
 }
 
-// AppendRunWarnings appends warnings to collection_runs.warnings (a JSON array of strings).
+// AppendRunWarnings appends warnings to runs.warnings (a JSON array of strings).
 func (s *Store) AppendRunWarnings(ctx context.Context, runID int64, warnings []string) error {
 	if len(warnings) == 0 {
 		return nil
@@ -111,7 +111,7 @@ func (s *Store) AppendRunWarnings(ctx context.Context, runID int64, warnings []s
 	if err != nil {
 		return fmt.Errorf("store: append run warnings: %w", err)
 	}
-	tag, err := s.q.Exec(ctx, `UPDATE collection_runs SET warnings = warnings || $2::jsonb WHERE id = $1`, runID, b)
+	tag, err := s.q.Exec(ctx, `UPDATE runs SET warnings = warnings || $2::jsonb WHERE id = $1`, runID, b)
 	if err != nil {
 		return fmt.Errorf("store: append run warnings %d: %w", runID, err)
 	}
@@ -124,7 +124,7 @@ func (s *Store) AppendRunWarnings(ctx context.Context, runID int64, warnings []s
 // RunIDByKey returns the id of the run with run_key, or ErrNotFound.
 func (s *Store) RunIDByKey(ctx context.Context, runKey string) (int64, error) {
 	var id int64
-	if err := s.q.QueryRow(ctx, `SELECT id FROM collection_runs WHERE run_key = $1`, runKey).Scan(&id); err != nil {
+	if err := s.q.QueryRow(ctx, `SELECT id FROM runs WHERE run_key = $1`, runKey).Scan(&id); err != nil {
 		return 0, fmt.Errorf("store: run by key %s: %w", runKey, notFound(err))
 	}
 	return id, nil
@@ -136,9 +136,9 @@ func (s *Store) RunIDByKey(ctx context.Context, runKey string) (int64, error) {
 // COLLECT_ON_START.
 func (s *Store) LastSuccessfulRunStart(ctx context.Context) (time.Time, error) {
 	var t time.Time
-	err := s.q.QueryRow(ctx, `SELECT r.started_at FROM collection_runs r
+	err := s.q.QueryRow(ctx, `SELECT r.started_at FROM runs r
 		WHERE r.status IN ('succeeded', 'partial') AND r.mode IN ('refresh', 'import')
-		  AND EXISTS (SELECT 1 FROM builds b WHERE b.run_id = r.id)
+		  AND EXISTS (SELECT 1 FROM build_exports b WHERE b.run_id = r.id)
 		ORDER BY r.started_at DESC, r.id DESC LIMIT 1`).Scan(&t)
 	if err != nil {
 		return time.Time{}, fmt.Errorf("store: last successful run: %w", notFound(err))

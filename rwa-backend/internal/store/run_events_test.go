@@ -82,7 +82,7 @@ func TestRunEventsInsertListAndCounts(t *testing.T) {
 	assert.Equal(t, 1, d.ErrorsCount)
 
 	// deleting the run deletes its events
-	_, err = e.pool.Exec(ctx, `DELETE FROM collection_runs WHERE id = $1`, run)
+	_, err = e.pool.Exec(ctx, `DELETE FROM runs WHERE id = $1`, run)
 	require.NoError(t, err)
 	total, _, err = st.RunEventCounts(ctx, run)
 	require.NoError(t, err)
@@ -103,7 +103,7 @@ func TestDeleteRunEventsOlderThanKeepsWholeRuns(t *testing.T) {
 	require.NoError(t, st.InsertRunEvents(ctx, []store.RunEvent{
 		ev(oldRun, old, "info", "old"), ev(oldRun, now, "info", "recent of old run"),
 		ev(currentRun, old, "info", "old of current"), ev(oldest, now, "info", "a"), ev(n2, now, "info", "b"), ev(n3, now, "info", "c")}))
-	_, err := e.pool.Exec(ctx, `INSERT INTO builds (run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256, is_current)
+	_, err := e.pool.Exec(ctx, `INSERT INTO build_exports (run_id, generated_at, schema_version, score_version, settings, summary, export, export_sha256, is_current)
 		VALUES ($1, now(), 1, 'v', '{}', '{}', '\x7b7d', 'x', TRUE)`, currentRun)
 	require.NoError(t, err)
 

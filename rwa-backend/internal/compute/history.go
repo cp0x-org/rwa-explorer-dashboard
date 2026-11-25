@@ -176,7 +176,7 @@ func HistoryRows(exp *model.Export, side *Side, runID int64) (*History, error) {
 	for i := range exp.Tokens {
 		t := &exp.Tokens[i]
 		if !keep[i] {
-			continue // token_history is keyed by (token_id, run_id)
+			continue // history_tokens is keyed by (token_id, run_id)
 		}
 		indexed := 0
 		for _, d := range t.Deployments {

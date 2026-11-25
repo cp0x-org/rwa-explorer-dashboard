@@ -11,7 +11,7 @@ import (
 
 // RebuildParams describes the run row a rebuild creates.
 type RebuildParams struct {
-	Trigger          string // collection_runs.trigger: cli | manual
+	Trigger          string // runs.trigger: cli | manual
 	KeySuffix        string // appended to the run_key, e.g. "-of-12"; may be empty
 	CollectorVersion string
 	SettingsJSON     []byte // settings.json recorded on the run

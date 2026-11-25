@@ -184,12 +184,12 @@ func TestUpsertUnderlyingFactsKeepInfo(t *testing.T) {
 	require.NoError(t, st.UpsertUnderlyingFacts(ctx, []store.UnderlyingFactsRow{{ID: nvdaID, Website: &site, Industry: &industry, LastRunID: runID}}))
 	require.NoError(t, st.UpsertUnderlyingFacts(ctx, []store.UnderlyingFactsRow{{ID: nvdaID, LastRunID: runID, KeepInfo: true}}))
 	var got, ind *string
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT website, industry FROM underlyings WHERE id = $1`, nvdaID).Scan(&got, &ind))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT website, industry FROM catalog_underlyings WHERE id = $1`, nvdaID).Scan(&got, &ind))
 	require.NotNil(t, got)
 	assert.Equal(t, site, *got)
 	require.NotNil(t, ind)
 	assert.Equal(t, industry, *ind)
 	require.NoError(t, st.UpsertUnderlyingFacts(ctx, []store.UnderlyingFactsRow{{ID: nvdaID, LastRunID: runID}}))
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT website FROM underlyings WHERE id = $1`, nvdaID).Scan(&got))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT website FROM catalog_underlyings WHERE id = $1`, nvdaID).Scan(&got))
 	assert.Nil(t, got, "without KeepInfo the facts are overwritten (publish, import)")
 }

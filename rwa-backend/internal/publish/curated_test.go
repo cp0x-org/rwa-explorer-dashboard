@@ -54,7 +54,7 @@ func TestPublishAttachesCuratedData(t *testing.T) {
 	assert.Positive(t, exp.Summary.LinksWarningsCount, "no deals: the referral platforms warn")
 	var runWarnings []string
 	var raw []byte
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings FROM collection_runs WHERE id = $1`, run1).Scan(&raw))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings FROM runs WHERE id = $1`, run1).Scan(&raw))
 	require.NoError(t, json.Unmarshal(raw, &runWarnings))
 	assert.ElementsMatch(t, res.Warnings, runWarnings)
 
@@ -162,7 +162,7 @@ func TestIssuerWebsiteOverrideNeverReachesTheStoredIssuers(t *testing.T) {
 		return out
 	}
 	stored := func() int {
-		return e.count(t, `SELECT count(*) FROM issuers WHERE website LIKE 'https://override-%'`)
+		return e.count(t, `SELECT count(*) FROM catalog_issuers WHERE website LIKE 'https://override-%'`)
 	}
 
 	first := byID(publishWith("r2", "https://override-one.example"))
@@ -196,10 +196,10 @@ func TestExcludedRightsProfilesLeaveARunWarning(t *testing.T) {
 	assert.Equal(t, 2, res.Summary.RightsExcludedProfilesCount)
 	assert.Contains(t, res.Warnings, "2 rights profiles excluded (see journal)")
 	var raw []byte
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings FROM collection_runs WHERE id = $1`, run).Scan(&raw))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT warnings FROM runs WHERE id = $1`, run).Scan(&raw))
 	assert.Contains(t, string(raw), "2 rights profiles excluded (see journal)")
 	var status string
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT status FROM collection_runs WHERE id = $1`, run).Scan(&status))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT status FROM runs WHERE id = $1`, run).Scan(&status))
 	assert.NotEqual(t, "failed", status)
 }
 

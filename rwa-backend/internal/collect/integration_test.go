@@ -196,11 +196,11 @@ func TestRunStoresSnapshots(t *testing.T) {
 	assert.NotEmpty(t, built.Export.Tokens)
 
 	// Dimensions learned along the way.
-	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM underlyings WHERE enabled AND cmc_rwa_id IS NOT NULL AND status = 'ok' AND last_run_id = $1`, res.RunID))
-	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM issuers WHERE metadata_status = 'cmc'`))
-	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM platforms`))
-	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM networks WHERE active AND last_seen_run_id = $1`, res.RunID))
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM underlyings WHERE ticker = 'NVDA' AND website IS NOT NULL AND industry IS NOT NULL`))
+	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM catalog_underlyings WHERE enabled AND cmc_rwa_id IS NOT NULL AND status = 'ok' AND last_run_id = $1`, res.RunID))
+	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM catalog_issuers WHERE metadata_status = 'cmc'`))
+	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM catalog_platforms`))
+	assert.Positive(t, countRows(t, pool, `SELECT count(*) FROM catalog_networks WHERE active AND last_seen_run_id = $1`, res.RunID))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM catalog_underlyings WHERE ticker = 'NVDA' AND website IS NOT NULL AND industry IS NOT NULL`))
 
 	// The advisory lock was released: a second run works (a later clock gives it a new run key).
 	r.WithClock(func() time.Time { return time.Now().Add(time.Hour) })
@@ -209,11 +209,11 @@ func TestRunStoresSnapshots(t *testing.T) {
 	assert.Equal(t, 1, res2.Completed)
 
 	// add: both underlyings have snapshots now -> nothing to do, no run row.
-	runs := countRows(t, pool, `SELECT count(*) FROM collection_runs`)
+	runs := countRows(t, pool, `SELECT count(*) FROM runs`)
 	res3, err := r.Run(ctx, Options{Mode: ModeAdd, Trigger: "cli"})
 	require.NoError(t, err)
 	assert.True(t, res3.NothingToDo)
-	assert.Equal(t, runs, countRows(t, pool, `SELECT count(*) FROM collection_runs`))
+	assert.Equal(t, runs, countRows(t, pool, `SELECT count(*) FROM runs`))
 
 	_, err = r.Run(ctx, Options{Mode: ModeRefresh, Symbols: []string{"NOPE"}})
 	require.ErrorContains(t, err, "unknown or disabled symbols: NOPE")
@@ -235,7 +235,7 @@ func TestRunInProgress(t *testing.T) {
 
 	_, err = r.Run(ctx, Options{Mode: ModeRefresh})
 	require.ErrorIs(t, err, ErrRunInProgress)
-	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM collection_runs`))
+	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM runs`))
 }
 
 func TestRunAddOnlyMissing(t *testing.T) {
@@ -253,9 +253,9 @@ func TestRunAddOnlyMissing(t *testing.T) {
 	require.NoError(t, err)
 	assert.Equal(t, 1, res.Completed, "only AAPL is new")
 	assert.Equal(t, 2, res.Selected, "selected_count is the number of selected tickers, not of fetched ones")
-	assert.Equal(t, 2, countRows(t, pool, `SELECT selected_count FROM collection_runs WHERE id = $1`, res.RunID))
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM snapshots WHERE run_id = $1`, res.RunID))
-	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Equal(t, 2, countRows(t, pool, `SELECT selected_count FROM runs WHERE id = $1`, res.RunID))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_snapshots WHERE run_id = $1`, res.RunID))
+	assert.Equal(t, 2, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 }
 
 func TestRunAuthFailureFailsRun(t *testing.T) {
@@ -273,7 +273,7 @@ func TestRunAuthFailureFailsRun(t *testing.T) {
 	require.Error(t, res.Err)
 	assert.ErrorContains(t, res.Err, "401")
 	assert.Zero(t, res.Completed)
-	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 
 	run, err := store.New(pool).GetRun(ctx, res.RunID)
 	require.NoError(t, err)
@@ -317,9 +317,9 @@ func TestRunOneUnderlyingFailsRunPartial(t *testing.T) {
 	assert.Equal(t, "failed", aapl.Status)
 	require.NotNil(t, aapl.Error)
 	assert.Contains(t, *aapl.Error, "500")
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM snapshots`))
-	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM snapshots WHERE underlying_id = 'US0378331005'`))
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM underlyings WHERE id = 'US0378331005' AND status IS NULL`), "failed underlying keeps its status")
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
+	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM raw_snapshots WHERE underlying_id = 'US0378331005'`))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM catalog_underlyings WHERE id = 'US0378331005' AND status IS NULL`), "failed underlying keeps its status")
 }
 
 func TestRunInterrupted(t *testing.T) {
@@ -341,10 +341,10 @@ func TestRunInterrupted(t *testing.T) {
 	assert.Equal(t, RunFailed, res.Status)
 
 	var status, errText string
-	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM collection_runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
+	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
 	assert.Equal(t, "failed", status)
 	assert.Equal(t, "interrupted", errText)
-	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Zero(t, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 }
 
 func runUnderlyingStatuses(t *testing.T, pool *pgxpool.Pool, runID int64) map[string]string {
@@ -384,14 +384,14 @@ func TestRunInterruptedAfterSomeCompleted(t *testing.T) {
 
 	var status, errText string
 	var selected, completed int
-	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error, selected_count, completed_count FROM collection_runs WHERE id = $1`, res.RunID).
+	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error, selected_count, completed_count FROM runs WHERE id = $1`, res.RunID).
 		Scan(&status, &errText, &selected, &completed))
 	assert.Equal(t, "failed", status)
 	assert.Equal(t, "interrupted", errText)
 	assert.Equal(t, 3, selected)
 	assert.Equal(t, 1, completed)
 	assert.Equal(t, map[string]string{"US67066G1040": "ok", "US0378331005": "skipped", "etf:ticker:ARKK": "skipped"}, runUnderlyingStatuses(t, pool, res.RunID))
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM snapshots`))
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM raw_snapshots`))
 }
 
 // A deadline ends the run as failed with error "timeout", not "interrupted".
@@ -416,7 +416,7 @@ func TestRunTimeout(t *testing.T) {
 	require.NotNil(t, res)
 	assert.Equal(t, RunFailed, res.Status)
 	var status, errText string
-	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM collection_runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
+	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
 	assert.Equal(t, "failed", status)
 	assert.Equal(t, "timeout", errText)
 	assert.Equal(t, map[string]string{"US67066G1040": "skipped", "US0378331005": "skipped"}, runUnderlyingStatuses(t, pool, res.RunID))
@@ -434,7 +434,7 @@ func TestRunRWAInfoFailureKeepsStoredInfo(t *testing.T) {
 	require.NoError(t, err)
 	var website, logo, industry *string
 	read := func() {
-		require.NoError(t, pool.QueryRow(ctx, `SELECT website, cmc_logo_url, industry FROM underlyings WHERE ticker = 'NVDA'`).Scan(&website, &logo, &industry))
+		require.NoError(t, pool.QueryRow(ctx, `SELECT website, cmc_logo_url, industry FROM catalog_underlyings WHERE ticker = 'NVDA'`).Scan(&website, &logo, &industry))
 	}
 	read()
 	require.NotNil(t, website)
@@ -454,7 +454,7 @@ func TestRunRWAInfoFailureKeepsStoredInfo(t *testing.T) {
 	assert.Equal(t, wantLogo, logo, "logo kept")
 	require.NotNil(t, industry)
 	assert.Equal(t, wantIndustry, *industry, "industry kept")
-	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM underlyings WHERE ticker = 'NVDA' AND last_run_id = $1`, res.RunID), "other facts are still updated")
+	assert.Equal(t, 1, countRows(t, pool, `SELECT count(*) FROM catalog_underlyings WHERE ticker = 'NVDA' AND last_run_id = $1`, res.RunID), "other facts are still updated")
 }
 
 // A panic inside the run finishes the run as failed instead of leaving it running.
@@ -473,7 +473,7 @@ func TestRunPanicFinishesRun(t *testing.T) {
 	require.NotNil(t, res)
 	assert.NotZero(t, res.RunID)
 	var status, errText string
-	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM collection_runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
+	require.NoError(t, pool.QueryRow(context.Background(), `SELECT status, error FROM runs WHERE id = $1`, res.RunID).Scan(&status, &errText))
 	assert.Equal(t, "failed", status)
 	assert.Equal(t, "panic: clock exploded", errText)
 	// The advisory lock was released too.

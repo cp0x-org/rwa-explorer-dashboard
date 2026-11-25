@@ -1,7 +1,14 @@
 -- +goose Up
 
--- ---------- запуски ----------
-CREATE TABLE collection_runs (
+-- Table groups (the prefix says what a table is for):
+--   runs, run_*     the collection process: runs, per-underlying results, manual requests, the run journal
+--   raw_*           source responses as fetched: snapshots (CMC + Portals per underlying), cp0x deals
+--   catalog_*       every entity ever seen with its latest facts (active flag); history rows reference them
+--   history_*       one row per entity and run: the charts
+--   build_*         the published export (is_current = what the API and the site serve) and its changes
+
+-- ---------- запуски сбора: runs, run_* ----------
+CREATE TABLE runs (
     id                BIGSERIAL PRIMARY KEY,
     run_key           TEXT NOT NULL UNIQUE,                 -- 20261018T201453Z, как run_id в 1.x
     mode              TEXT NOT NULL CHECK (mode IN ('refresh', 'add', 'import', 'rebuild')),
@@ -20,10 +27,10 @@ CREATE TABLE collection_runs (
     collector_version TEXT NOT NULL,
     settings          JSONB NOT NULL                        -- settings.json, с которым шёл run
 );
-CREATE INDEX collection_runs_started_at_idx ON collection_runs (started_at DESC);
+CREATE INDEX runs_started_at_idx ON runs (started_at DESC);
 
 CREATE TABLE run_underlyings (
-    run_id            BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
+    run_id            BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
     underlying_id     TEXT NOT NULL,
     status            TEXT NOT NULL,   -- ok | no_tracked_tokens | not_in_cmc | rwa_id_changed | ambiguous_cmc_match | failed | skipped
     error             TEXT,
@@ -41,12 +48,30 @@ CREATE TABLE run_requests (
     mode          TEXT NOT NULL DEFAULT 'refresh' CHECK (mode IN ('refresh', 'add', 'rebuild')),
     symbols       TEXT[],                                   -- NULL = все enabled
     taken_at      TIMESTAMPTZ,
-    run_id        BIGINT REFERENCES collection_runs (id)
+    run_id        BIGINT REFERENCES runs (id),
+    finished_at   TIMESTAMPTZ,
+    -- done | nothing_to_do (mode add, every selected underlying has a snapshot) | rejected (invalid, never retried)
+    -- | released (given back: another run in progress, shutdown, transient error; pending again)
+    outcome       TEXT CHECK (outcome IN ('done', 'nothing_to_do', 'rejected', 'released')),
+    error         TEXT                                      -- post-run problem of a done request, e.g. a failed publish
 );
 CREATE INDEX run_requests_pending_idx ON run_requests (requested_at) WHERE taken_at IS NULL;
 
--- ---------- текущее состояние ----------
-CREATE TABLE underlyings (
+-- Per-run journal: the steps, per-underlying results, provider requests (debug), publish, logos and retention of a run.
+CREATE TABLE run_events (
+    id        BIGSERIAL PRIMARY KEY,
+    run_id    BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    ts        TIMESTAMPTZ NOT NULL,
+    level     TEXT NOT NULL CHECK (level IN ('debug', 'info', 'warn', 'error')),
+    step      TEXT NOT NULL,            -- collect.cmc | collect.portals | collect.underlying | publish | logos | retention | scheduler | run
+    message   TEXT NOT NULL,
+    attrs     JSONB NOT NULL DEFAULT '{}'::jsonb   -- underlying, provider, path, status, duration_ms, count, ...
+);
+CREATE INDEX run_events_run_idx ON run_events (run_id, id);
+CREATE INDEX run_events_ts_idx ON run_events (ts);
+
+-- ---------- справочник сущностей (последние известные факты): catalog_* ----------
+CREATE TABLE catalog_underlyings (
     id            TEXT PRIMARY KEY,                         -- ISIN или stock:ticker:XXX
     ticker        TEXT NOT NULL,                            -- unique among enabled rows only (see underlyings_ticker_enabled_idx)
     name          TEXT NOT NULL,
@@ -56,18 +81,18 @@ CREATE TABLE underlyings (
     cmc_rwa_id    INT,
     cmc_name      TEXT,
     website       TEXT,                                     -- rwa_info.website (CMC)
-    cmc_logo_url  TEXT,                                     -- rwa_info.logo (источник для logos)
+    cmc_logo_url  TEXT,                                     -- rwa_info.logo (источник для catalog_logos)
     industry      TEXT,
     status        TEXT,                                     -- статус последнего снапшота
-    last_run_id   BIGINT REFERENCES collection_runs (id),
+    last_run_id   BIGINT REFERENCES runs (id),
     created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
 -- A ticker may move between ids (ISIN added or corrected, tickers swapped); only enabled rows must be unique.
-CREATE UNIQUE INDEX underlyings_ticker_enabled_idx ON underlyings (ticker) WHERE enabled;
+CREATE UNIQUE INDEX catalog_underlyings_ticker_enabled_idx ON catalog_underlyings (ticker) WHERE enabled;
 
-CREATE TABLE issuers (
+CREATE TABLE catalog_issuers (
     id              TEXT PRIMARY KEY,                       -- CMC issuer_id
     name            TEXT,
     cmc_label       TEXT,                                   -- issuer_name из quotes
@@ -81,10 +106,10 @@ CREATE TABLE issuers (
     updated_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE TABLE tokens (
+CREATE TABLE catalog_tokens (
     id                 INT PRIMARY KEY,                     -- CMC crypto_id
-    underlying_id      TEXT NOT NULL REFERENCES underlyings (id),
-    issuer_id          TEXT REFERENCES issuers (id),
+    underlying_id      TEXT NOT NULL REFERENCES catalog_underlyings (id),
+    issuer_id          TEXT REFERENCES catalog_issuers (id),
     symbol             TEXT,
     name               TEXT,
     cmc_slug           TEXT,
@@ -93,17 +118,17 @@ CREATE TABLE tokens (
     cmc_logo_url       TEXT,
     date_added         TIMESTAMPTZ,
     coverage           TEXT NOT NULL,
-    first_seen_run_id  BIGINT NOT NULL REFERENCES collection_runs (id),
-    last_seen_run_id   BIGINT NOT NULL REFERENCES collection_runs (id),
+    first_seen_run_id  BIGINT NOT NULL REFERENCES runs (id),
+    last_seen_run_id   BIGINT NOT NULL REFERENCES runs (id),
     active             BOOLEAN NOT NULL DEFAULT TRUE,
     created_at         TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at         TIMESTAMPTZ NOT NULL DEFAULT now()
 );
-CREATE INDEX tokens_underlying_idx ON tokens (underlying_id);
-CREATE INDEX tokens_issuer_idx ON tokens (issuer_id);
+CREATE INDEX catalog_tokens_underlying_idx ON catalog_tokens (underlying_id);
+CREATE INDEX catalog_tokens_issuer_idx ON catalog_tokens (issuer_id);
 
-CREATE TABLE deployments (
-    token_id           INT NOT NULL REFERENCES tokens (id) ON DELETE CASCADE,
+CREATE TABLE catalog_deployments (
+    token_id           INT NOT NULL REFERENCES catalog_tokens (id) ON DELETE CASCADE,
     cmc_network        TEXT NOT NULL,
     address            TEXT NOT NULL,                       -- нормализованный (EVM в нижнем регистре)
     address_raw        TEXT NOT NULL,
@@ -113,27 +138,27 @@ CREATE TABLE deployments (
     portals_symbol     TEXT,
     decimals           INT,
     portals_platform   TEXT,
-    first_seen_run_id  BIGINT NOT NULL REFERENCES collection_runs (id),
-    last_seen_run_id   BIGINT NOT NULL REFERENCES collection_runs (id),
+    first_seen_run_id  BIGINT NOT NULL REFERENCES runs (id),
+    last_seen_run_id   BIGINT NOT NULL REFERENCES runs (id),
     active             BOOLEAN NOT NULL DEFAULT TRUE,
     PRIMARY KEY (token_id, cmc_network, address)
 );
-CREATE INDEX deployments_position_key_idx ON deployments (position_key) WHERE position_key IS NOT NULL;
+CREATE INDEX catalog_deployments_position_key_idx ON catalog_deployments (position_key) WHERE position_key IS NOT NULL;
 
-CREATE TABLE platforms (                                    -- Portals /v2/platforms
+CREATE TABLE catalog_platforms (                            -- Portals /v2/platforms
     slug        TEXT PRIMARY KEY,
     name        TEXT NOT NULL,
     updated_at  TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE TABLE networks (                                     -- Portals /v1/networks + chain_mapping
+CREATE TABLE catalog_networks (                             -- Portals /v1/networks + chain_mapping
     slug              TEXT PRIMARY KEY,
     cmc_names         TEXT[] NOT NULL DEFAULT '{}',
-    last_seen_run_id  BIGINT REFERENCES collection_runs (id),
+    last_seen_run_id  BIGINT REFERENCES runs (id),
     active            BOOLEAN NOT NULL DEFAULT TRUE
 );
 
-CREATE TABLE positions (                                    -- позиции Portals, попавшие в экспорт (confirmed + unconfirmed)
+CREATE TABLE catalog_positions (                            -- позиции Portals, попавшие в экспорт (confirmed + unconfirmed)
     key                  TEXT PRIMARY KEY,                  -- network:address, нормализованный
     network              TEXT NOT NULL,
     platform             TEXT NOT NULL,
@@ -148,7 +173,7 @@ CREATE TABLE positions (                                    -- позиции Po
     liquidity_semantics  TEXT NOT NULL,
     is_portable          BOOLEAN,
     portals_created_at   TIMESTAMPTZ,
-    -- последние метрики (денормализация для списков; история — в position_history)
+    -- последние метрики (денормализация для списков; история — в history_positions)
     liquidity_usd        NUMERIC,
     apy_percent          NUMERIC,
     base_apy_percent     NUMERIC,
@@ -159,45 +184,45 @@ CREATE TABLE positions (                                    -- позиции Po
     source_updated_at    TIMESTAMPTZ,
     flags                TEXT[] NOT NULL DEFAULT '{}',
     eligibility          TEXT NOT NULL,
-    first_seen_run_id    BIGINT NOT NULL REFERENCES collection_runs (id),
-    last_seen_run_id     BIGINT NOT NULL REFERENCES collection_runs (id),
+    first_seen_run_id    BIGINT NOT NULL REFERENCES runs (id),
+    last_seen_run_id     BIGINT NOT NULL REFERENCES runs (id),
     active               BOOLEAN NOT NULL DEFAULT TRUE,
     updated_at           TIMESTAMPTZ NOT NULL DEFAULT now()   -- row modification time; export updated_at = source_updated_at
 );
-CREATE INDEX positions_network_idx  ON positions (network);
-CREATE INDEX positions_platform_idx ON positions (platform);
-CREATE INDEX positions_category_idx ON positions (category);
+CREATE INDEX catalog_positions_network_idx  ON catalog_positions (network);
+CREATE INDEX catalog_positions_platform_idx ON catalog_positions (platform);
+CREATE INDEX catalog_positions_category_idx ON catalog_positions (category);
 
-CREATE TABLE token_positions (                              -- relations 1.x (direct/indirect) + unconfirmed_keys
-    token_id           INT NOT NULL REFERENCES tokens (id) ON DELETE CASCADE,
-    position_key       TEXT NOT NULL REFERENCES positions (key) ON DELETE CASCADE,
+CREATE TABLE catalog_token_positions (                      -- relations 1.x (direct/indirect) + unconfirmed_keys
+    token_id           INT NOT NULL REFERENCES catalog_tokens (id) ON DELETE CASCADE,
+    position_key       TEXT NOT NULL REFERENCES catalog_positions (key) ON DELETE CASCADE,
     link               TEXT NOT NULL CHECK (link IN ('direct', 'indirect', 'unconfirmed')),
     depth              INT,                                 -- 1 direct, >1 indirect, NULL unconfirmed
     path               TEXT[],                              -- root → LP → vault
-    first_seen_run_id  BIGINT NOT NULL REFERENCES collection_runs (id),
-    last_seen_run_id   BIGINT NOT NULL REFERENCES collection_runs (id),
+    first_seen_run_id  BIGINT NOT NULL REFERENCES runs (id),
+    last_seen_run_id   BIGINT NOT NULL REFERENCES runs (id),
     active             BOOLEAN NOT NULL DEFAULT TRUE,
     PRIMARY KEY (token_id, position_key)
 );
-CREATE INDEX token_positions_position_idx ON token_positions (position_key);
+CREATE INDEX catalog_token_positions_position_idx ON catalog_token_positions (position_key);
 
-CREATE TABLE logos (
+CREATE TABLE catalog_logos (
     kind          TEXT NOT NULL CHECK (kind IN ('tokens', 'issuers', 'underlyings')),
     entity_id     TEXT NOT NULL,                            -- tokens: crypto_id; issuers: issuer_id; underlyings: storage_id(ISIN)
     ext           TEXT NOT NULL,                            -- png | jpg | svg | webp | ico | gif
     content_type  TEXT NOT NULL,
     bytes         BYTEA NOT NULL,
     sha256        TEXT NOT NULL,
-    source        TEXT NOT NULL,                            -- URL источника или 'manual' / 'import-v1'
+    source        TEXT NOT NULL,                            -- URL источника или 'manual'
     fetched_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
     PRIMARY KEY (kind, entity_id)
 );
 
--- ---------- сырые факты ----------
-CREATE TABLE snapshots (
+-- ---------- сырые ответы источников: raw_* ----------
+CREATE TABLE raw_snapshots (
     id             BIGSERIAL PRIMARY KEY,
-    run_id         BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
-    underlying_id  TEXT NOT NULL REFERENCES underlyings (id),
+    run_id         BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    underlying_id  TEXT NOT NULL REFERENCES catalog_underlyings (id),
     fetched_at     TIMESTAMPTZ NOT NULL,
     status         TEXT NOT NULL,
     schema_version INT NOT NULL DEFAULT 1,
@@ -205,12 +230,21 @@ CREATE TABLE snapshots (
     payload_bytes  INT NOT NULL,
     UNIQUE (run_id, underlying_id)
 );
-ALTER TABLE snapshots ALTER COLUMN payload SET COMPRESSION lz4;
-CREATE INDEX snapshots_underlying_fetched_idx ON snapshots (underlying_id, fetched_at DESC);
+ALTER TABLE raw_snapshots ALTER COLUMN payload SET COMPRESSION lz4;
+CREATE INDEX raw_snapshots_underlying_fetched_idx ON raw_snapshots (underlying_id, fetched_at DESC);
 
--- ---------- история (append-only) ----------
-CREATE TABLE summary_history (
-    run_id                              BIGINT PRIMARY KEY REFERENCES collection_runs (id) ON DELETE CASCADE,
+-- cp0x deals cache (the 1.x data/cp0x_deals.json): one row per successful fetch, payload = {fetched_at, deals}.
+-- Publish reads the newest row; a failed fetch leaves the previous row in place.
+CREATE TABLE raw_cp0x_deals (
+    id         BIGSERIAL PRIMARY KEY,
+    fetched_at TIMESTAMPTZ NOT NULL,
+    payload    JSONB NOT NULL
+);
+CREATE INDEX raw_cp0x_deals_fetched_idx ON raw_cp0x_deals (fetched_at DESC, id DESC);
+
+-- ---------- история для графиков (append-only): history_* ----------
+CREATE TABLE history_summary (
+    run_id                              BIGINT PRIMARY KEY REFERENCES runs (id) ON DELETE CASCADE,
     observed_at                         TIMESTAMPTZ NOT NULL,   -- newest_fetched_at
     underlyings_count                   INT NOT NULL,
     tokens_count                        INT NOT NULL,
@@ -234,11 +268,11 @@ CREATE TABLE summary_history (
     tokenized_volume_24h_usd            NUMERIC,            -- новое в 2.0
     eligible_liquidity_usd              NUMERIC             -- новое в 2.0: сумма liquidity eligible-позиций
 );
-CREATE INDEX summary_history_observed_idx ON summary_history (observed_at);
+CREATE INDEX history_summary_observed_idx ON history_summary (observed_at);
 
-CREATE TABLE underlying_history (
-    run_id                              BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
-    underlying_id                       TEXT NOT NULL REFERENCES underlyings (id),
+CREATE TABLE history_underlyings (
+    run_id                              BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    underlying_id                       TEXT NOT NULL REFERENCES catalog_underlyings (id),
     observed_at                         TIMESTAMPTZ NOT NULL,
     status                              TEXT NOT NULL,
     tokenized_market_cap_usd            NUMERIC,
@@ -261,11 +295,11 @@ CREATE TABLE underlying_history (
     eligible_liquidity_usd              NUMERIC,
     PRIMARY KEY (underlying_id, run_id)
 );
-CREATE INDEX underlying_history_observed_idx ON underlying_history (underlying_id, observed_at);
+CREATE INDEX history_underlyings_observed_idx ON history_underlyings (underlying_id, observed_at);
 
-CREATE TABLE token_history (
-    run_id                              BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
-    token_id                            INT NOT NULL REFERENCES tokens (id),
+CREATE TABLE history_tokens (
+    run_id                              BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    token_id                            INT NOT NULL REFERENCES catalog_tokens (id),
     observed_at                         TIMESTAMPTZ NOT NULL,
     price_usd                           NUMERIC,
     market_cap_usd                      NUMERIC,
@@ -290,11 +324,11 @@ CREATE TABLE token_history (
     breakdowns                          JSONB NOT NULL,     -- {by_network, by_category, by_platform}
     PRIMARY KEY (token_id, run_id)
 );
-CREATE INDEX token_history_observed_idx ON token_history (token_id, observed_at);
+CREATE INDEX history_tokens_observed_idx ON history_tokens (token_id, observed_at);
 
-CREATE TABLE issuer_history (
-    run_id                              BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
-    issuer_id                           TEXT NOT NULL REFERENCES issuers (id),
+CREATE TABLE history_issuers (
+    run_id                              BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    issuer_id                           TEXT NOT NULL REFERENCES catalog_issuers (id),
     observed_at                         TIMESTAMPTZ NOT NULL,
     issuer_usefulness_score             INT NOT NULL,
     basket_relative_score               NUMERIC,
@@ -322,11 +356,11 @@ CREATE TABLE issuer_history (
     breakdowns                          JSONB NOT NULL,     -- {by_network, by_category, by_underlying}
     PRIMARY KEY (issuer_id, run_id)
 );
-CREATE INDEX issuer_history_observed_idx ON issuer_history (issuer_id, observed_at);
+CREATE INDEX history_issuers_observed_idx ON history_issuers (issuer_id, observed_at);
 
-CREATE TABLE position_history (
-    run_id              BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
-    position_key        TEXT NOT NULL REFERENCES positions (key),
+CREATE TABLE history_positions (
+    run_id              BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
+    position_key        TEXT NOT NULL REFERENCES catalog_positions (key),
     observed_at         TIMESTAMPTZ NOT NULL,
     liquidity_usd       NUMERIC,
     apy_percent         NUMERIC,
@@ -340,12 +374,12 @@ CREATE TABLE position_history (
     flags               TEXT[] NOT NULL DEFAULT '{}',
     PRIMARY KEY (position_key, run_id)
 );
-CREATE INDEX position_history_observed_idx ON position_history (position_key, observed_at);
+CREATE INDEX history_positions_observed_idx ON history_positions (position_key, observed_at);
 
--- ---------- результат расчёта ----------
-CREATE TABLE builds (
+-- ---------- результат расчёта, его читают API и сайт: build_* ----------
+CREATE TABLE build_exports (
     id              BIGSERIAL PRIMARY KEY,
-    run_id          BIGINT NOT NULL REFERENCES collection_runs (id) ON DELETE CASCADE,
+    run_id          BIGINT NOT NULL REFERENCES runs (id) ON DELETE CASCADE,
     generated_at    TIMESTAMPTZ NOT NULL,
     schema_version  INT NOT NULL,
     score_version   TEXT NOT NULL,
@@ -357,13 +391,13 @@ CREATE TABLE builds (
     export_sha256   TEXT NOT NULL,                          -- ETag
     is_current      BOOLEAN NOT NULL DEFAULT FALSE
 );
-ALTER TABLE builds ALTER COLUMN export SET COMPRESSION lz4;
-CREATE UNIQUE INDEX builds_current_idx ON builds (is_current) WHERE is_current;
-CREATE INDEX builds_run_idx ON builds (run_id);
+ALTER TABLE build_exports ALTER COLUMN export SET COMPRESSION lz4;
+CREATE UNIQUE INDEX build_exports_current_idx ON build_exports (is_current) WHERE is_current;
+CREATE INDEX build_exports_run_idx ON build_exports (run_id);
 
 CREATE TABLE build_changes (                                -- что изменилось относительно предыдущего build (страница «Обновления»)
-    build_id            BIGINT PRIMARY KEY REFERENCES builds (id) ON DELETE CASCADE,
-    previous_build_id   BIGINT REFERENCES builds (id),
+    build_id            BIGINT PRIMARY KEY REFERENCES build_exports (id) ON DELETE CASCADE,
+    previous_build_id   BIGINT REFERENCES build_exports (id),
     new_tokens          INT[] NOT NULL DEFAULT '{}',
     removed_tokens      INT[] NOT NULL DEFAULT '{}',
     new_issuers         TEXT[] NOT NULL DEFAULT '{}',
@@ -374,6 +408,6 @@ CREATE TABLE build_changes (                                -- что измен
 );
 
 -- +goose Down
-DROP TABLE IF EXISTS build_changes, builds, position_history, issuer_history, token_history, underlying_history,
-    summary_history, snapshots, logos, token_positions, positions, networks, platforms, deployments, tokens, issuers,
-    underlyings, run_requests, run_underlyings, collection_runs;
+DROP TABLE IF EXISTS raw_cp0x_deals, run_events, build_changes, build_exports, history_positions, history_issuers, history_tokens, history_underlyings,
+    history_summary, raw_snapshots, catalog_logos, catalog_token_positions, catalog_positions, catalog_networks, catalog_platforms, catalog_deployments, catalog_tokens, catalog_issuers,
+    catalog_underlyings, run_requests, run_underlyings, runs;

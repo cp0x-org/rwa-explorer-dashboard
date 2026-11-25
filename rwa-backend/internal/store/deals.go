@@ -9,7 +9,7 @@ import (
 // InsertDeals stores a deals cache document ({fetched_at, deals}) fetched at fetchedAt and returns its id.
 func (s *Store) InsertDeals(ctx context.Context, fetchedAt time.Time, payload []byte) (int64, error) {
 	var id int64
-	err := s.q.QueryRow(ctx, `INSERT INTO cp0x_deals (fetched_at, payload) VALUES ($1, $2::jsonb) RETURNING id`,
+	err := s.q.QueryRow(ctx, `INSERT INTO raw_cp0x_deals (fetched_at, payload) VALUES ($1, $2::jsonb) RETURNING id`,
 		fetchedAt, payload).Scan(&id)
 	if err != nil {
 		return 0, fmt.Errorf("store: insert deals: %w", err)
@@ -20,7 +20,7 @@ func (s *Store) InsertDeals(ctx context.Context, fetchedAt time.Time, payload []
 // LatestDeals returns the payload of the newest deals row, or ErrNotFound when there is none.
 func (s *Store) LatestDeals(ctx context.Context) ([]byte, error) {
 	var payload []byte
-	err := s.q.QueryRow(ctx, `SELECT payload FROM cp0x_deals ORDER BY fetched_at DESC, id DESC LIMIT 1`).Scan(&payload)
+	err := s.q.QueryRow(ctx, `SELECT payload FROM raw_cp0x_deals ORDER BY fetched_at DESC, id DESC LIMIT 1`).Scan(&payload)
 	if err != nil {
 		return nil, fmt.Errorf("store: latest deals: %w", notFound(err))
 	}
@@ -35,7 +35,7 @@ func (s *Store) LatestSnapshotTokenCounts(ctx context.Context) (map[string]int, 
 				THEN payload #> '{cmc,rwa,tokens}' ELSE '[]'::jsonb END) t
 			WHERE jsonb_typeof(t) = 'object' AND coalesce(t ->> 'crypto_id', '') NOT IN ('', '0', 'false')
 		)::int
-		FROM (SELECT DISTINCT ON (underlying_id) underlying_id, payload FROM snapshots
+		FROM (SELECT DISTINCT ON (underlying_id) underlying_id, payload FROM raw_snapshots
 			ORDER BY underlying_id, fetched_at DESC, id DESC) latest`)
 	if err != nil {
 		return nil, fmt.Errorf("store: latest token counts: %w", err)

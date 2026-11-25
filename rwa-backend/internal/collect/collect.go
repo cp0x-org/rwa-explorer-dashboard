@@ -33,7 +33,7 @@ import (
 	"github.com/cp0x-org/pi-rwa-interface/rwa-backend/internal/store"
 )
 
-// Version is the collector version recorded in collection_runs; main sets it.
+// Version is the collector version recorded in runs; main sets it.
 var Version = "dev"
 
 // ErrRunInProgress is returned when another collector run holds the advisory lock. No run row is created.

@@ -21,7 +21,7 @@ type Logo struct {
 // InsertLogoIfAbsent stores a logo unless one exists for (kind, entity_id); an existing logo is never
 // overwritten. It reports whether a row was inserted.
 func (s *Store) InsertLogoIfAbsent(ctx context.Context, l Logo) (bool, error) {
-	tag, err := s.q.Exec(ctx, `INSERT INTO logos (kind, entity_id, ext, content_type, bytes, sha256, source)
+	tag, err := s.q.Exec(ctx, `INSERT INTO catalog_logos (kind, entity_id, ext, content_type, bytes, sha256, source)
 		VALUES ($1, $2, $3, $4, $5, $6, $7) ON CONFLICT (kind, entity_id) DO NOTHING`,
 		l.Kind, l.EntityID, l.Ext, l.ContentType, l.Bytes, l.SHA256, l.Source)
 	if err != nil {
@@ -34,7 +34,7 @@ func (s *Store) InsertLogoIfAbsent(ctx context.Context, l Logo) (bool, error) {
 func (s *Store) GetLogo(ctx context.Context, kind, entityID string) (*Logo, error) {
 	var l Logo
 	err := s.q.QueryRow(ctx, `SELECT kind, entity_id, ext, content_type, bytes, sha256, source, fetched_at
-		FROM logos WHERE kind = $1 AND entity_id = $2`, kind, entityID).
+		FROM catalog_logos WHERE kind = $1 AND entity_id = $2`, kind, entityID).
 		Scan(&l.Kind, &l.EntityID, &l.Ext, &l.ContentType, &l.Bytes, &l.SHA256, &l.Source, &l.FetchedAt)
 	if err != nil {
 		return nil, fmt.Errorf("store: get logo %s/%s: %w", kind, entityID, notFound(err))
@@ -45,7 +45,7 @@ func (s *Store) GetLogo(ctx context.Context, kind, entityID string) (*Logo, erro
 // HasLogo reports whether a logo exists.
 func (s *Store) HasLogo(ctx context.Context, kind, entityID string) (bool, error) {
 	var ok bool
-	if err := s.q.QueryRow(ctx, `SELECT EXISTS (SELECT 1 FROM logos WHERE kind = $1 AND entity_id = $2)`, kind, entityID).Scan(&ok); err != nil {
+	if err := s.q.QueryRow(ctx, `SELECT EXISTS (SELECT 1 FROM catalog_logos WHERE kind = $1 AND entity_id = $2)`, kind, entityID).Scan(&ok); err != nil {
 		return false, fmt.Errorf("store: has logo %s/%s: %w", kind, entityID, err)
 	}
 	return ok, nil

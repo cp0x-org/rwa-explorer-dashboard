@@ -7,12 +7,12 @@ import (
 
 // UnderlyingsWithSnapshot returns the ids of underlyings that have at least one snapshot (any status).
 func (s *Store) UnderlyingsWithSnapshot(ctx context.Context) (map[string]bool, error) {
-	return s.idSet(ctx, "underlyings with snapshot", `SELECT DISTINCT underlying_id FROM snapshots`)
+	return s.idSet(ctx, "underlyings with snapshot", `SELECT DISTINCT underlying_id FROM raw_snapshots`)
 }
 
 // KnownIssuerIDs returns the ids of issuers whose metadata came from CMC (metadata_status 'cmc').
 func (s *Store) KnownIssuerIDs(ctx context.Context) (map[string]bool, error) {
-	return s.idSet(ctx, "known issuers", `SELECT id FROM issuers WHERE metadata_status = 'cmc'`)
+	return s.idSet(ctx, "known issuers", `SELECT id FROM catalog_issuers WHERE metadata_status = 'cmc'`)
 }
 
 func (s *Store) idSet(ctx context.Context, what, query string) (map[string]bool, error) {
@@ -40,7 +40,7 @@ func (s *Store) idSet(ctx context.Context, what, query string) (map[string]bool,
 func (s *Store) LatestKnownRWAIDs(ctx context.Context) (map[string]int, error) {
 	rows, err := s.q.Query(ctx, `SELECT underlying_id, rwa_id FROM (
 			SELECT DISTINCT ON (underlying_id) underlying_id, (payload #>> '{cmc,rwa,rwa_id}')::int AS rwa_id
-			FROM snapshots ORDER BY underlying_id, fetched_at DESC, id DESC
+			FROM raw_snapshots ORDER BY underlying_id, fetched_at DESC, id DESC
 		) latest WHERE rwa_id IS NOT NULL`)
 	if err != nil {
 		return nil, fmt.Errorf("store: latest rwa ids: %w", err)
@@ -64,7 +64,7 @@ func (s *Store) LatestKnownRWAIDs(ctx context.Context) (map[string]int, error) {
 // PlatformCount returns the number of rows in platforms.
 func (s *Store) PlatformCount(ctx context.Context) (int, error) {
 	var n int
-	if err := s.q.QueryRow(ctx, `SELECT count(*) FROM platforms`).Scan(&n); err != nil {
+	if err := s.q.QueryRow(ctx, `SELECT count(*) FROM catalog_platforms`).Scan(&n); err != nil {
 		return 0, fmt.Errorf("store: platform count: %w", err)
 	}
 	return n, nil
@@ -82,16 +82,16 @@ type LogoJob struct {
 // Disabled underlyings, underlyings without a CMC record and inactive tokens are skipped.
 func (s *Store) LogoJobsMissing(ctx context.Context) ([]LogoJob, error) {
 	rows, err := s.q.Query(ctx, `
-		SELECT 'tokens' AS kind, t.id::text AS entity_id, t.cmc_logo_url AS logo, NULL::text AS website FROM tokens t
-			WHERE t.active AND NOT EXISTS (SELECT 1 FROM logos l WHERE l.kind = 'tokens' AND l.entity_id = t.id::text)
+		SELECT 'tokens' AS kind, t.id::text AS entity_id, t.cmc_logo_url AS logo, NULL::text AS website FROM catalog_tokens t
+			WHERE t.active AND NOT EXISTS (SELECT 1 FROM catalog_logos l WHERE l.kind = 'tokens' AND l.entity_id = t.id::text)
 		UNION ALL
-		SELECT 'issuers', i.id, i.cmc_logo_url, i.website FROM issuers i
-			WHERE NOT EXISTS (SELECT 1 FROM logos l WHERE l.kind = 'issuers' AND l.entity_id = i.id)
+		SELECT 'issuers', i.id, i.cmc_logo_url, i.website FROM catalog_issuers i
+			WHERE NOT EXISTS (SELECT 1 FROM catalog_logos l WHERE l.kind = 'issuers' AND l.entity_id = i.id)
 		UNION ALL
 		SELECT 'underlyings', sid, logo, website FROM (
 			SELECT regexp_replace(u.id, '[^A-Za-z0-9_.-]', '_', 'g') AS sid, u.cmc_logo_url AS logo, u.website AS website
-			FROM underlyings u WHERE u.enabled AND u.cmc_rwa_id IS NOT NULL
-		) us WHERE NOT EXISTS (SELECT 1 FROM logos l WHERE l.kind = 'underlyings' AND l.entity_id = us.sid)
+			FROM catalog_underlyings u WHERE u.enabled AND u.cmc_rwa_id IS NOT NULL
+		) us WHERE NOT EXISTS (SELECT 1 FROM catalog_logos l WHERE l.kind = 'underlyings' AND l.entity_id = us.sid)
 		ORDER BY 1, 2`)
 	if err != nil {
 		return nil, fmt.Errorf("store: logo jobs: %w", err)

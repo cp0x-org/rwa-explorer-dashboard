@@ -93,7 +93,7 @@ func TestFullCycle(t *testing.T) {
 	require.Len(t, latest, 2)
 	assert.JSONEq(t, string(snapshotJSON(aaplID)), string(latest[0].Payload))
 	var bytes int
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT payload_bytes FROM snapshots WHERE underlying_id = $1`, nvdaID).Scan(&bytes))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT payload_bytes FROM raw_snapshots WHERE underlying_id = $1`, nvdaID).Scan(&bytes))
 	assert.Equal(t, len(snapshotJSON(nvdaID)), bytes)
 
 	// dimensions
@@ -122,7 +122,7 @@ func TestFullCycle(t *testing.T) {
 	// NUMERIC values keep their exact digits; nil decimals are NULL, not zero.
 	var liq, vol string
 	var base *string
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT liquidity_usd::text, volume_usd_1d::text, base_apy_percent::text FROM positions WHERE key = $1`, posKey).Scan(&liq, &vol, &base))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT liquidity_usd::text, volume_usd_1d::text, base_apy_percent::text FROM catalog_positions WHERE key = $1`, posKey).Scan(&liq, &vol, &base))
 	assert.Equal(t, "1151.2302119347073", liq)
 	assert.Equal(t, "0.0000001", vol)
 	assert.Nil(t, base)
@@ -219,15 +219,15 @@ func TestSetCurrentBuild(t *testing.T) {
 	require.NoError(t, err)
 	assert.False(t, first.IsCurrent)
 	var n int
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT count(*) FROM builds WHERE is_current`).Scan(&n))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT count(*) FROM build_exports WHERE is_current`).Scan(&n))
 	assert.Equal(t, 1, n)
 
 	// the partial unique index forbids a second current build
-	_, err = e.pool.Exec(ctx, `UPDATE builds SET is_current = true WHERE id = $1`, b1)
+	_, err = e.pool.Exec(ctx, `UPDATE build_exports SET is_current = true WHERE id = $1`, b1)
 	var pgErr *pgconn.PgError
 	require.ErrorAs(t, err, &pgErr)
 	assert.Equal(t, "23505", pgErr.Code)
-	assert.Equal(t, "builds_current_idx", pgErr.ConstraintName)
+	assert.Equal(t, "build_exports_current_idx", pgErr.ConstraintName)
 
 	// a failed transaction leaves the current build untouched
 	boom := fmt.Errorf("boom")
@@ -268,7 +268,7 @@ func TestRetentionKeepsLatestSnapshot(t *testing.T) {
 	ins(r2, aaplID, day(10, 7), "not_in_cmc")
 
 	count := func() (n int) {
-		require.NoError(t, e.pool.QueryRow(ctx, `SELECT count(*) FROM snapshots`).Scan(&n))
+		require.NoError(t, e.pool.QueryRow(ctx, `SELECT count(*) FROM raw_snapshots`).Scan(&n))
 		return n
 	}
 	deleted, err := st.DeleteSnapshotsOlderThan(ctx, day(25, 0))
@@ -408,7 +408,7 @@ func TestDeactivateMissing(t *testing.T) {
 	require.NoError(t, err)
 	assert.EqualValues(t, 1, n)
 	active := func() map[int64]bool {
-		rows, err := e.pool.Query(ctx, `SELECT id, active FROM tokens`)
+		rows, err := e.pool.Query(ctx, `SELECT id, active FROM catalog_tokens`)
 		require.NoError(t, err)
 		defer rows.Close()
 		out := map[int64]bool{}
@@ -423,7 +423,7 @@ func TestDeactivateMissing(t *testing.T) {
 	assert.Equal(t, map[int64]bool{1: false, 2: true, 3: true}, active())
 
 	var first int64
-	require.NoError(t, e.pool.QueryRow(ctx, `SELECT first_seen_run_id FROM tokens WHERE id = 2`).Scan(&first))
+	require.NoError(t, e.pool.QueryRow(ctx, `SELECT first_seen_run_id FROM catalog_tokens WHERE id = 2`).Scan(&first))
 	assert.Equal(t, r1, first, "first_seen_run_id is kept on update")
 
 	// reappearing reactivates
@@ -460,17 +460,17 @@ func TestDeactivateMissing(t *testing.T) {
 		require.NoError(t, err)
 		assert.EqualValues(t, 1, n)
 	}
-	assert.True(t, flag("deployments", "address = 'a'"))
-	assert.False(t, flag("deployments", "address = 'b'"))
-	assert.True(t, flag("networks", "slug = 'ethereum'"))
-	assert.False(t, flag("networks", "slug = 'bsc'"))
-	assert.True(t, flag("positions", "key = 'p1'"))
-	assert.False(t, flag("positions", "key = 'p2'"))
-	assert.True(t, flag("token_positions", "position_key = 'p1'"))
-	assert.False(t, flag("token_positions", "position_key = 'p2'"))
+	assert.True(t, flag("catalog_deployments", "address = 'a'"))
+	assert.False(t, flag("catalog_deployments", "address = 'b'"))
+	assert.True(t, flag("catalog_networks", "slug = 'ethereum'"))
+	assert.False(t, flag("catalog_networks", "slug = 'bsc'"))
+	assert.True(t, flag("catalog_positions", "key = 'p1'"))
+	assert.False(t, flag("catalog_positions", "key = 'p2'"))
+	assert.True(t, flag("catalog_token_positions", "position_key = 'p1'"))
+	assert.False(t, flag("catalog_token_positions", "position_key = 'p2'"))
 
 	// rows with a NULL last_seen_run_id (networks allows it) are deactivated too
-	exec(`UPDATE networks SET last_seen_run_id = NULL WHERE slug = 'ethereum'`)
+	exec(`UPDATE catalog_networks SET last_seen_run_id = NULL WHERE slug = 'ethereum'`)
 	n, err = st.DeactivateMissingNetworks(ctx, r3)
 	require.NoError(t, err)
 	assert.EqualValues(t, 1, n)
@@ -638,7 +638,7 @@ func TestSyncUnderlyingsTickerChanges(t *testing.T) {
 	e := newEnv(t)
 	ctx, st := e.ctx, e.st
 	tickers := func() map[string]string { // enabled id -> ticker
-		rows, err := e.pool.Query(ctx, `SELECT id, ticker FROM underlyings WHERE enabled`)
+		rows, err := e.pool.Query(ctx, `SELECT id, ticker FROM catalog_underlyings WHERE enabled`)
 		require.NoError(t, err)
 		defer rows.Close()
 		out := map[string]string{}

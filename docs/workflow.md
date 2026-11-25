@@ -15,9 +15,9 @@ CMC + Portals ──► collector ──► snapshots ──► publish ──�
 The `rwa collector` container runs one job per schedule tick (`COLLECT_CRON`, default `0 6 * * *`, UTC, or
 `COLLECT_INTERVAL`). On start it also runs once when the last successful run is stale (`COLLECT_ON_START`). A job:
 
-1. collect every enabled underlying from CoinMarketCap and Portals into `snapshots` (a failed underlying keeps its
+1. collect every enabled underlying from CoinMarketCap and Portals into `raw_snapshots` (a failed underlying keeps its
    previous snapshot);
-2. publish: compute ratings, store the export as a new build, update the current-state tables, add history rows;
+2. publish: compute ratings, store the export as a new build (`build_exports`), update the `catalog_*` tables, add `history_*` rows;
 3. fetch missing logos (a rebuild of the export follows when new logos arrived);
 4. delete snapshots older than `SNAPSHOT_RETENTION_DAYS`.
 

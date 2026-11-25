@@ -23,7 +23,7 @@ func (s *Store) BuildChangesForRuns(ctx context.Context, runIDs []int64) (map[in
 			c.previous_build_id, COALESCE(c.new_tokens, '{}'), COALESCE(c.removed_tokens, '{}'), COALESCE(c.new_issuers, '{}'),
 			COALESCE(c.new_positions_count, 0), COALESCE(c.gone_positions_count, 0), COALESCE(c.eligible_delta, 0),
 			COALESCE(c.details, '{}'::jsonb)
-		FROM builds b LEFT JOIN build_changes c ON c.build_id = b.id
+		FROM build_exports b LEFT JOIN build_changes c ON c.build_id = b.id
 		WHERE b.run_id = ANY($1) ORDER BY b.run_id, b.id DESC`, runIDs)
 	if err != nil {
 		return nil, fmt.Errorf("store: build changes for runs: %w", err)

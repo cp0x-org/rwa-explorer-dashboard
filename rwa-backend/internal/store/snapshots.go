@@ -20,7 +20,7 @@ type SnapshotRow struct {
 // InsertSnapshot stores one snapshot payload; payload_bytes is len(payload).
 func (s *Store) InsertSnapshot(ctx context.Context, runID int64, underlyingID string, fetchedAt time.Time, status string, payload []byte) (int64, error) {
 	var id int64
-	err := s.q.QueryRow(ctx, `INSERT INTO snapshots (run_id, underlying_id, fetched_at, status, payload, payload_bytes)
+	err := s.q.QueryRow(ctx, `INSERT INTO raw_snapshots (run_id, underlying_id, fetched_at, status, payload, payload_bytes)
 		VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
 		runID, underlyingID, fetchedAt, status, payload, len(payload)).Scan(&id)
 	if err != nil {
@@ -36,7 +36,7 @@ func (s *Store) LatestSnapshotsForEnabled(ctx context.Context) ([]SnapshotRow, e
 	rows, err := s.q.Query(ctx, `SELECT id, run_id, underlying_id, fetched_at, status, schema_version, payload FROM (
 			SELECT DISTINCT ON (sn.underlying_id) sn.id, sn.run_id, sn.underlying_id, sn.fetched_at, sn.status,
 				sn.schema_version, sn.payload
-			FROM snapshots sn JOIN underlyings u ON u.id = sn.underlying_id
+			FROM raw_snapshots sn JOIN catalog_underlyings u ON u.id = sn.underlying_id
 			WHERE u.enabled ORDER BY sn.underlying_id, sn.fetched_at DESC, sn.id DESC
 		) latest ORDER BY fetched_at, underlying_id`)
 	if err != nil {
@@ -61,10 +61,10 @@ func (s *Store) LatestSnapshotsForEnabled(ctx context.Context) ([]SnapshotRow, e
 // an underlying (whatever its status), which compute reads. It also keeps the latest status 'ok' snapshot of
 // each underlying, so the last good data survives a streak of non-ok snapshots.
 func (s *Store) DeleteSnapshotsOlderThan(ctx context.Context, cutoff time.Time) (int64, error) {
-	tag, err := s.q.Exec(ctx, `DELETE FROM snapshots WHERE fetched_at < $1 AND id NOT IN (
-			SELECT DISTINCT ON (underlying_id) id FROM snapshots ORDER BY underlying_id, fetched_at DESC, id DESC
+	tag, err := s.q.Exec(ctx, `DELETE FROM raw_snapshots WHERE fetched_at < $1 AND id NOT IN (
+			SELECT DISTINCT ON (underlying_id) id FROM raw_snapshots ORDER BY underlying_id, fetched_at DESC, id DESC
 		) AND id NOT IN (
-			SELECT DISTINCT ON (underlying_id) id FROM snapshots WHERE status = 'ok' ORDER BY underlying_id, fetched_at DESC, id DESC
+			SELECT DISTINCT ON (underlying_id) id FROM raw_snapshots WHERE status = 'ok' ORDER BY underlying_id, fetched_at DESC, id DESC
 		)`, cutoff)
 	if err != nil {
 		return 0, fmt.Errorf("store: delete old snapshots: %w", err)

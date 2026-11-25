@@ -33,7 +33,7 @@ type HistoryYield struct {
 	MedianReportedAPYPercent  model.Decimal
 }
 
-// SummaryHistoryRow is a summary_history row.
+// SummaryHistoryRow is a history_summary row.
 type SummaryHistoryRow struct {
 	RunID                   int64
 	ObservedAt              time.Time
@@ -54,7 +54,7 @@ type SummaryHistoryRow struct {
 	EligibleLiquidityUSD      model.Decimal
 }
 
-// UnderlyingHistoryRow is an underlying_history row.
+// UnderlyingHistoryRow is a history_underlyings row.
 type UnderlyingHistoryRow struct {
 	RunID                    int64
 	UnderlyingID             string
@@ -71,7 +71,7 @@ type UnderlyingHistoryRow struct {
 	EligibleLiquidityUSD model.Decimal
 }
 
-// TokenHistoryRow is a token_history row.
+// TokenHistoryRow is a history_tokens row.
 type TokenHistoryRow struct {
 	RunID            int64
 	TokenID          int64
@@ -90,7 +90,7 @@ type TokenHistoryRow struct {
 	Breakdowns              []byte // JSON {by_network, by_category, by_platform}
 }
 
-// IssuerHistoryRow is an issuer_history row.
+// IssuerHistoryRow is a history_issuers row.
 type IssuerHistoryRow struct {
 	RunID                       int64
 	IssuerID                    string
@@ -112,7 +112,7 @@ type IssuerHistoryRow struct {
 	Breakdowns              []byte // JSON {by_network, by_category, by_underlying}
 }
 
-// PositionHistoryRow is a position_history row.
+// PositionHistoryRow is a history_positions row.
 type PositionHistoryRow struct {
 	RunID            int64
 	PositionKey      string
@@ -187,7 +187,7 @@ func (s *Store) InsertSummaryHistory(ctx context.Context, rows []SummaryHistoryR
 			HistoryYield{r.YieldOpportunitiesCount, r.MaxReportedAPYPercent, r.AverageReportedAPYPercent, r.MedianReportedAPYPercent}.values(),
 			[]any{numeric(r.TokenizedMarketCapUSD), numeric(r.TokenizedVolume24hUSD), numeric(r.EligibleLiquidityUSD)}))
 	}
-	return s.copyRows(ctx, "summary_history", columns, data)
+	return s.copyRows(ctx, "history_summary", columns, data)
 }
 
 // InsertUnderlyingHistory appends underlying rows.
@@ -202,7 +202,7 @@ func (s *Store) InsertUnderlyingHistory(ctx context.Context, rows []UnderlyingHi
 				numeric(r.AverageTokenizedPriceUSD), r.VersionsCount, r.IssuersCount, r.TokensInDefiCount},
 			r.HistoryCounts.values(), r.HistoryYield.values(), []any{numeric(r.EligibleLiquidityUSD)}))
 	}
-	return s.copyRows(ctx, "underlying_history", columns, data)
+	return s.copyRows(ctx, "history_underlyings", columns, data)
 }
 
 // InsertTokenHistory appends token rows.
@@ -218,7 +218,7 @@ func (s *Store) InsertTokenHistory(ctx context.Context, rows []TokenHistoryRow) 
 			r.HistoryCounts.values(), []any{r.UnconfirmedCandidatesCount}, r.HistoryYield.values(),
 			[]any{r.DeploymentsCount, r.IndexedDeploymentsCount, numeric(r.EligibleLiquidityUSD), jsonOr(r.Breakdowns, "{}")}))
 	}
-	return s.copyRows(ctx, "token_history", columns, data)
+	return s.copyRows(ctx, "history_tokens", columns, data)
 }
 
 // InsertIssuerHistory appends issuer rows.
@@ -236,7 +236,7 @@ func (s *Store) InsertIssuerHistory(ctx context.Context, rows []IssuerHistoryRow
 			r.HistoryCounts.values(), r.HistoryYield.values(),
 			[]any{numeric(r.DirectPoolsLiquidityUSD), numeric(r.BasketMarketCapUSD), r.RosterSize, jsonOr(r.Breakdowns, "{}")}))
 	}
-	return s.copyRows(ctx, "issuer_history", columns, data)
+	return s.copyRows(ctx, "history_issuers", columns, data)
 }
 
 // InsertPositionHistory appends position rows.
@@ -249,7 +249,7 @@ func (s *Store) InsertPositionHistory(ctx context.Context, rows []PositionHistor
 			numeric(r.BaseAPYPercent), numeric(r.RewardAPYPercent), numeric(r.BorrowAPYPercent), numeric(r.VolumeUSD1d),
 			numeric(r.VolumeUSD7d), r.SourceUpdatedAt, r.Eligibility, strs(r.Flags)})
 	}
-	return s.copyRows(ctx, "position_history", columns, data)
+	return s.copyRows(ctx, "history_positions", columns, data)
 }
 
 // ---------- queries ----------
@@ -260,7 +260,7 @@ const (
 	EntityUnderlying = "underlyings"
 	EntityToken      = "tokens"
 	EntityIssuer     = "issuers"
-	EntityPosition   = "opportunities" // position_history, addressed by opportunity key
+	EntityPosition   = "opportunities" // history_positions, addressed by opportunity key
 )
 
 // History steps accepted by QueryHistory.
@@ -339,24 +339,24 @@ var (
 // (keys and run_id/observed_at are returned separately). Metric names are interpolated into SQL only
 // after matching this map.
 var historyEntities = map[string]historyEntity{
-	EntitySummary: {"summary_history", "", metricSet(countMetrics, yieldMetrics,
+	EntitySummary: {"history_summary", "", metricSet(countMetrics, yieldMetrics,
 		kinds(kindInt, "underlyings_count", "tokens_count", "excluded_tokens_count", "issuers_count", "deployments_count",
 			"indexed_deployments_count", "tokens_in_defi_count"),
 		kinds(kindNumeric, "tokenized_market_cap_usd", "tokenized_volume_24h_usd", "eligible_liquidity_usd"))},
-	EntityUnderlying: {"underlying_history", "underlying_id", metricSet(countMetrics, yieldMetrics,
+	EntityUnderlying: {"history_underlyings", "underlying_id", metricSet(countMetrics, yieldMetrics,
 		kinds(kindText, "status"),
 		kinds(kindNumeric, "tokenized_market_cap_usd", "tokenized_volume_24h_usd", "average_tokenized_price_usd", "eligible_liquidity_usd"),
 		kinds(kindInt, "versions_count", "issuers_count", "tokens_in_defi_count"))},
-	EntityToken: {"token_history", "token_id", metricSet(countMetrics, yieldMetrics,
+	EntityToken: {"history_tokens", "token_id", metricSet(countMetrics, yieldMetrics,
 		kinds(kindNumeric, "price_usd", "market_cap_usd", "volume_24h_usd", "eligible_liquidity_usd"),
 		kinds(kindInt, "usefulness_score", "rank_in_underlying", "unconfirmed_candidates_count", "deployments_count", "indexed_deployments_count"),
 		kinds(kindJSON, "breakdowns"))},
-	EntityIssuer: {"issuer_history", "issuer_id", metricSet(countMetrics, yieldMetrics,
+	EntityIssuer: {"history_issuers", "issuer_id", metricSet(countMetrics, yieldMetrics,
 		kinds(kindInt, "issuer_usefulness_score", "compared_underlyings_count", "basket_underlyings_count", "basket_tokens_count",
 			"tokens_in_defi_count", "deployments_count", "supported_deployments_count", "unsupported_deployments_count", "roster_size"),
 		kinds(kindNumeric, "basket_relative_score", "direct_pools_liquidity_usd", "basket_market_cap_usd"),
 		kinds(kindJSON, "breakdowns"))},
-	EntityPosition: {"position_history", "position_key", metricSet(
+	EntityPosition: {"history_positions", "position_key", metricSet(
 		kinds(kindNumeric, "liquidity_usd", "apy_percent", "base_apy_percent", "reward_apy_percent", "borrow_apy_percent",
 			"volume_usd_1d", "volume_usd_7d"),
 		kinds(kindTime, "source_updated_at"), kinds(kindText, "eligibility"), kinds(kindTextArray, "flags"))},

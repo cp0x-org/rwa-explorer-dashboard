@@ -169,6 +169,21 @@ rwa migrate status            # list migrations and whether they are applied
 rwa migrate down-to <version> --yes  # roll back until <version> is current (0 = everything); --yes is required
 ```
 
+### Tables
+
+The prefix says what a table is for (schema: `internal/db/migrations/0001_init.sql`).
+
+| Group | Tables | What they hold |
+|---|---|---|
+| `run*`: the collection process | `runs`, `run_underlyings`, `run_requests`, `run_events` | one row per collection run; its per-underlying results; the queue of manual run requests; the run journal |
+| `raw_*`: source responses as fetched | `raw_snapshots`, `raw_cp0x_deals` | the CMC + Portals document per underlying and run (input of every build); the cp0x deals cache |
+| `catalog_*`: every entity ever seen | `catalog_underlyings`, `catalog_issuers`, `catalog_tokens`, `catalog_deployments`, `catalog_positions`, `catalog_token_positions`, `catalog_platforms`, `catalog_networks`, `catalog_logos` | latest known facts with `active` and `first/last_seen_run_id`; history rows reference them; logos are served from `catalog_logos` |
+| `history_*`: the charts | `history_summary`, `history_underlyings`, `history_tokens`, `history_issuers`, `history_positions` | one row per entity and run (`observed_at` + numeric metrics) |
+| `build_*`: what the site shows | `build_exports`, `build_changes` | the export document of every build (`is_current` is the one the API serves); what changed against the previous build |
+
+Configuration is not in the database: it lives in `config/*.json`. Runs and builds keep a copy of the settings they
+used (`runs.settings`, `build_exports.settings`), and `catalog_underlyings.enabled` mirrors `assets.json`.
+
 ## Rebuild and the collector
 
 ```
@@ -179,7 +194,7 @@ rwa collector                                        # long-running scheduler
 ```
 
 `deals` fetches `https://cp0x.com/api/v1/deals`, keeps only the deals `links.json` names and stores them as the newest
-row of `cp0x_deals` (migration `0004_cp0x_deals.sql`: `id`, `fetched_at`, `payload` = `{fetched_at, deals}`). Publish
+row of `raw_cp0x_deals` (`id`, `fetched_at`, `payload` = `{fetched_at, deals}`). Publish
 reads the newest row; referrals appear only while it is at most `deals_max_age_days` old (and not more than an hour in
 the future). A failed fetch keeps the previous row and exits `1` without a rebuild. The collector does the same fetch once
 per run after the Portals step (`step=collect.deals`); there a failure is a run warning, never fatal.
@@ -232,7 +247,7 @@ Per-request progress goes to stderr. Source-client tests run on recorded respons
 ## Run once
 
 `rwa run-once` performs one scheduler job without the scheduler: a collection run (port of 1.x `sync`, one snapshot
-per underlying in `snapshots`), then the publish (export, current-state tables, history rows), then missing logos
+per underlying in `raw_snapshots`), then the publish (export, `catalog_*` tables, history rows), then missing logos
 (with a rebuild of the export when new logos arrived). `--no-publish` stops after the snapshots (publish later with `rwa publish --run <id>`). It needs the
 collector configuration (`DATABASE_URL`, `CMC_API_KEY`, `PORTALS_API_KEY`, `ASSETS_PATH`, `SETTINGS_PATH`) and an
 up-to-date schema (it fails if a migration is pending).
@@ -254,7 +269,7 @@ answer that is not JSON, a CMC answer without a `status` object or a `data` key,
 incomplete exact lookup (fewer records than reported, or the page cap reached) are errors, not empty data. A logos problem after a successful publish is logged and does not change the exit code; a publish error exits `1` and is recorded on the run. The whole command is bounded by `RUN_TIMEOUT`. A run holds the
 PostgreSQL advisory lock `hashtext('rwa-collector-run')`, so only one collector run exists at a time.
 
-`internal/logos` (`FetchMissing`) downloads missing token, issuer and underlying logos into the `logos` table (CMC
+`internal/logos` (`FetchMissing`) downloads missing token, issuer and underlying logos into the `catalog_logos` table (CMC
 logo, then Google favicon service for the website, then the site's `<link rel=icon>`); the scheduler calls it after
 publishing.
 

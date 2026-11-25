@@ -28,7 +28,7 @@ const (
 	StaleAfterCron = 24 * time.Hour
 )
 
-// Run triggers, as stored in collection_runs.trigger.
+// Run triggers, as stored in runs.trigger.
 const (
 	TriggerSchedule = "schedule"
 	TriggerStartup  = "startup"

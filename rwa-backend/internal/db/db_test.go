@@ -41,7 +41,7 @@ func TestMigrateUpStatusDownUp(t *testing.T) {
 	require.NoError(t, err)
 	defer pool.Close()
 	var n int
-	require.NoError(t, pool.QueryRow(ctx, `SELECT count(*) FROM information_schema.tables WHERE table_schema='public' AND table_name IN ('collection_runs','builds','snapshots','position_history')`).Scan(&n))
+	require.NoError(t, pool.QueryRow(ctx, `SELECT count(*) FROM information_schema.tables WHERE table_schema='public' AND table_name IN ('runs','build_exports','raw_snapshots','history_positions')`).Scan(&n))
 	assert.Equal(t, 4, n)
 
 	require.NoError(t, db.DownTo(ctx, u, 0))
@@ -61,13 +61,13 @@ func TestWithTx(t *testing.T) {
 	ctx := context.Background()
 	pool, _ := testdb.Migrated(t)
 	insert := func(tx pgx.Tx, key string) error {
-		_, err := tx.Exec(ctx, `INSERT INTO collection_runs (run_key, mode, trigger, status, started_at, collector_version, settings)
+		_, err := tx.Exec(ctx, `INSERT INTO runs (run_key, mode, trigger, status, started_at, collector_version, settings)
 			VALUES ($1, 'refresh', 'cli', 'running', now(), 'test', '{}')`, key)
 		return err
 	}
 	count := func() int {
 		var n int
-		require.NoError(t, pool.QueryRow(ctx, `SELECT count(*) FROM collection_runs`).Scan(&n))
+		require.NoError(t, pool.QueryRow(ctx, `SELECT count(*) FROM runs`).Scan(&n))
 		return n
 	}
 

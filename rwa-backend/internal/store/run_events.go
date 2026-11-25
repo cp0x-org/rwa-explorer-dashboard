@@ -53,7 +53,7 @@ func (s *Store) InsertRunEvents(ctx context.Context, rows []RunEvent) error {
 		SELECT e.run_id, e.ts, e.level, e.step, e.message, e.attrs::jsonb
 		FROM unnest($1::bigint[], $2::timestamptz[], $3::text[], $4::text[], $5::text[], $6::text[])
 			WITH ORDINALITY AS e(run_id, ts, level, step, message, attrs, n)
-		WHERE EXISTS (SELECT 1 FROM collection_runs r WHERE r.id = e.run_id)
+		WHERE EXISTS (SELECT 1 FROM runs r WHERE r.id = e.run_id)
 		ORDER BY e.n`, runIDs, ts, levels, steps, msgs, attrs)
 	if err != nil {
 		return fmt.Errorf("store: insert run events: %w", err)
@@ -110,9 +110,9 @@ const journalStaleAfter = 15 * time.Minute
 // never split). The events of the RunEventsKeepNewest newest runs and of the run behind the current build are kept.
 func (s *Store) DeleteRunEventsOlderThan(ctx context.Context, cutoff time.Time) (int64, error) {
 	tag, err := s.q.Exec(ctx, `DELETE FROM run_events WHERE run_id IN (
-			SELECT id FROM collection_runs WHERE started_at < $1
-				AND id NOT IN (SELECT id FROM collection_runs ORDER BY started_at DESC, id DESC LIMIT $2)
-				AND id NOT IN (SELECT run_id FROM builds WHERE is_current))`, cutoff, RunEventsKeepNewest)
+			SELECT id FROM runs WHERE started_at < $1
+				AND id NOT IN (SELECT id FROM runs ORDER BY started_at DESC, id DESC LIMIT $2)
+				AND id NOT IN (SELECT run_id FROM build_exports WHERE is_current))`, cutoff, RunEventsKeepNewest)
 	if err != nil {
 		return 0, fmt.Errorf("store: delete old run events: %w", err)
 	}
@@ -122,7 +122,7 @@ func (s *Store) DeleteRunEventsOlderThan(ctx context.Context, cutoff time.Time) 
 // RunStatus returns the status of a run (ErrNotFound when it does not exist): one cheap query, unlike GetRun.
 func (s *Store) RunStatus(ctx context.Context, id int64) (string, error) {
 	var status string
-	if err := s.q.QueryRow(ctx, `SELECT status FROM collection_runs WHERE id = $1`, id).Scan(&status); err != nil {
+	if err := s.q.QueryRow(ctx, `SELECT status FROM runs WHERE id = $1`, id).Scan(&status); err != nil {
 		return "", fmt.Errorf("store: run %d status: %w", id, notFound(err))
 	}
 	return status, nil
