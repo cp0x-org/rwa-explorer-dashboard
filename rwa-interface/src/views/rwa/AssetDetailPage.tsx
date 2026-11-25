@@ -78,16 +78,15 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
       />
       <MethodNote data={index.data} />
 
-      <Box sx={{ marginBottom: 4 }}>
-        <HistoryChart
-          key={`underlyings:${u.id}`}
-          entity="underlyings"
-          id={u.ticker}
-          metrics={ASSET_HISTORY_METRICS}
-          title={t('history.asset.title')}
-          subtitle={t('history.subtitle')}
-        />
-      </Box>
+      <HistoryChart
+        key={`underlyings:${u.id}`}
+        entity="underlyings"
+        id={u.ticker}
+        metrics={ASSET_HISTORY_METRICS}
+        title={t('history.asset.title')}
+        subtitle={t('history.subtitle')}
+        gutterBottom
+      />
 
       <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
         {t('asset.tokenizedAssets')}

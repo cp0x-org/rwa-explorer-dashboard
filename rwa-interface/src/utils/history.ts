@@ -57,6 +57,14 @@ const toNumber = (v: string | number | null | undefined): number | null => {
 };
 
 // Points in time order with the values of the requested metrics as numbers (decimal strings parsed).
+// A chart is worth showing once its points span at least this many different UTC days: points of one day are not a trend.
+export const MIN_HISTORY_DAYS = 2;
+
+// Number of different UTC days among the points.
+export function historyDays(points: { iso: string }[]): number {
+  return new Set(points.map((p) => p.iso.slice(0, 10))).size;
+}
+
 export function chartPoints(points: HistoryPoint[], metrics: string[]): ChartPoint[] {
   return points
     .map((p) => ({ time: Date.parse(p.observed_at), iso: p.observed_at, run: p.run_id, values: metrics.map((m) => toNumber(p.values[m])) }))

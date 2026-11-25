@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { makeFormat } from 'i18n';
-import { chartPoints, formatMetric, metricTypeByName, niceScale, rangeFrom, seriesStats } from './history';
+import { chartPoints, formatMetric, historyDays, metricTypeByName, niceScale, rangeFrom, seriesStats } from './history';
 
 describe('history helpers', () => {
   it('rangeFrom is a UTC date, stable within a day, and open for "all"', () => {
@@ -59,5 +59,11 @@ describe('history helpers', () => {
     expect(f.duration(4.2)).toBe('4.2s');
     expect(f.duration(540)).toBe('9m 0s');
     expect(f.duration(null)).toBe('—');
+  });
+
+  it('historyDays counts different UTC days', () => {
+    expect(historyDays([])).toBe(0);
+    expect(historyDays([{ iso: '2026-11-25T21:59:30Z' }, { iso: '2026-11-25T22:00:41Z' }])).toBe(1);
+    expect(historyDays([{ iso: '2026-11-25T21:59:30Z' }, { iso: '2026-11-26T06:00:00Z' }])).toBe(2);
   });
 });

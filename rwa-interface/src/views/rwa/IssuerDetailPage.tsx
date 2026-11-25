@@ -126,16 +126,15 @@ function IssuerDetailView({ index, issuer }: { index: RwaIndex; issuer: Issuer }
       <HolderRights index={index} issuer={issuer} />
       <MethodNote data={index.data} />
 
-      <Box sx={{ marginBottom: 4 }}>
-        <HistoryChart
-          key={`issuers:${issuer.id}`}
-          entity="issuers"
-          id={issuer.id}
-          metrics={ISSUER_HISTORY_METRICS}
-          title={t('history.issuer.title')}
-          subtitle={t('history.subtitle')}
-        />
-      </Box>
+      <HistoryChart
+        key={`issuers:${issuer.id}`}
+        entity="issuers"
+        id={issuer.id}
+        metrics={ISSUER_HISTORY_METRICS}
+        title={t('history.issuer.title')}
+        subtitle={t('history.subtitle')}
+        gutterBottom
+      />
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
         <Typography variant="h3" component="h2">

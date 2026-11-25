@@ -18,6 +18,8 @@ import {
   formatMetric,
   HISTORY_RANGES,
   HistoryRangeOption,
+  historyDays,
+  MIN_HISTORY_DAYS,
   metricLabel,
   metricTypeResolver,
   niceScale,
@@ -311,6 +313,30 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
   );
 }
 
+// ==============================|| VISIBILITY ||============================== //
+
+// Whether a history block should be hidden: its history (at the default range) spans fewer than MIN_HISTORY_DAYS days,
+// which includes no history at all. Until the answer is in (server render, loading, an error) nothing is hidden, and once
+// a block has been shown it stays (a narrower range may hold one day only). The request is the same as the chart's first
+// one, so SWR shares it.
+export function useHistoryHidden(
+  entity: HistoryEntity,
+  id: string | number | null,
+  metrics: string[],
+  defaultRange: HistoryRangeOption = 90,
+  step: HistoryStep = 'day'
+): boolean {
+  const hydrated = useHydrated();
+  const from = useMemo(() => rangeFrom(defaultRange), [defaultRange]);
+  const { data, error } = useHistory(entity, id, metrics, { from, step });
+  const days = hydrated && data !== undefined && !error ? historyDays(chartPoints(data.points, metrics)) : null;
+  const [shownOnce, setShownOnce] = useState(false);
+  useEffect(() => {
+    if (days !== null && days >= MIN_HISTORY_DAYS) setShownOnce(true);
+  }, [days]);
+  return days !== null && days < MIN_HISTORY_DAYS && !shownOnce;
+}
+
 // ==============================|| CARD ||============================== //
 
 export interface HistoryChartProps {
@@ -322,6 +348,7 @@ export interface HistoryChartProps {
   defaultRange?: HistoryRangeOption;
   step?: HistoryStep;
   level?: 'h2' | 'h3';
+  gutterBottom?: boolean; // space below the card (kept out of the page when the card is hidden)
 }
 
 // Line chart of one to three metrics of an entity over time, with a range selector and, when there are several metrics,
@@ -335,7 +362,8 @@ export default function HistoryChart({
   subtitle,
   defaultRange = 90,
   step = 'day',
-  level = 'h2'
+  level = 'h2',
+  gutterBottom = false
 }: HistoryChartProps) {
   const t = useT();
   const f = useFormat();
@@ -347,6 +375,7 @@ export default function HistoryChart({
   const { data, error, isValidating } = useHistory(entity, id, metrics, { from, step });
   const { data: meta } = useHistoryMetrics();
   const typeOf = useMemo(() => metricTypeResolver(meta, entity), [meta, entity]);
+  const hidden = useHistoryHidden(entity, id, metrics, defaultRange, step);
 
   const all: Series[] = metrics.map((metric, index) => ({
     metric,
@@ -404,7 +433,9 @@ export default function HistoryChart({
     body = <LineChart title={title} points={points} series={shown} t={t} f={f} />;
   }
 
-  return (
+  if (hidden) return null;
+
+  const card = (
     <ChartCard
       title={title}
       subtitle={subtitle}
@@ -482,4 +513,5 @@ export default function HistoryChart({
       </Box>
     </ChartCard>
   );
+  return gutterBottom ? <Box sx={{ marginBottom: 4 }}>{card}</Box> : card;
 }

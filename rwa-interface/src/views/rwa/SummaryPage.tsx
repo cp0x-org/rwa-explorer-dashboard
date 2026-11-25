@@ -37,7 +37,7 @@ import {
 import DataTableContainer from './components/DataTableContainer';
 import DataGate from './components/DataGate';
 import Legend from './components/Legend';
-import HistoryChart from './components/HistoryChart';
+import HistoryChart, { useHistoryHidden } from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
 import { SparklineStats } from './components/Sparkline';
 import { StatGrid } from './components/StatGrid';
@@ -832,6 +832,8 @@ function SummaryView({ index }: { index: RwaIndex }) {
   const series = useSeriesColors();
   const stats = useMemo(() => buildStats(index, series), [index, series]);
   const { summary, settings: s } = index.data;
+  // trends of a single day say nothing: the whole section waits for a second day of history
+  const trendsHidden = useHistoryHidden('summary', null, SUMMARY_HISTORY_METRICS);
   const thresholds = {
     liquidity: f.usd(s.min_eligible_liquidity_usd),
     hours: s.max_position_age_hours,
@@ -911,22 +913,24 @@ function SummaryView({ index }: { index: RwaIndex }) {
         />
       </Box>
 
-      <Box component="section" aria-labelledby="trends-title" sx={{ marginBottom: 4 }}>
-        <Typography variant="h3" component="h2" id="trends-title" gutterBottom sx={{ marginBottom: 2 }}>
-          {t('history.stats.title')}
-        </Typography>
-        <Box sx={{ marginBottom: 2 }}>
-          <SparklineStats entity="summary" id={null} items={trendItems} requestMetrics={SUMMARY_HISTORY_METRICS} />
+      {!trendsHidden && (
+        <Box component="section" aria-labelledby="trends-title" sx={{ marginBottom: 4 }}>
+          <Typography variant="h3" component="h2" id="trends-title" gutterBottom sx={{ marginBottom: 2 }}>
+            {t('history.stats.title')}
+          </Typography>
+          <Box sx={{ marginBottom: 2 }}>
+            <SparklineStats entity="summary" id={null} items={trendItems} requestMetrics={SUMMARY_HISTORY_METRICS} />
+          </Box>
+          <HistoryChart
+            entity="summary"
+            id={null}
+            level="h3"
+            metrics={SUMMARY_HISTORY_METRICS}
+            title={t('history.summary.title')}
+            subtitle={t('history.summary.subtitle')}
+          />
         </Box>
-        <HistoryChart
-          entity="summary"
-          id={null}
-          level="h3"
-          metrics={SUMMARY_HISTORY_METRICS}
-          title={t('history.summary.title')}
-          subtitle={t('history.summary.subtitle')}
-        />
-      </Box>
+      )}
 
       <IssuersSection stats={stats} />
       <YieldSection index={index} stats={stats} />

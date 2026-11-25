@@ -125,27 +125,28 @@ test.describe('history charts', () => {
     await expect(issuer.getByRole('button', { name: '发行方评分' })).toBeVisible();
   });
 
-  test('one point: a dot and "history starts on", no line', async ({ page }) => {
+  test('one day of history: no card, and no Trends section on /summary', async ({ page }) => {
     await limitPoints(page, 1);
     await page.goto(`/tokens/${SAMPLE.token}`);
     await hydrated(page);
-    const card = page.getByRole('region', { name: 'History', exact: true });
-    await expect(card.getByText(/^History starts on .+\. More points appear with every update\.$/)).toBeVisible();
-    await expect(card.locator('[data-history-state]')).toHaveAttribute('data-history-state', 'single');
-    await expect(card.locator('svg[data-history-chart]')).toHaveCount(0);
-    await expect(card.getByText(/^Market cap: \$.+ on .+\.$/)).toBeAttached();
+    await expect(page.getByRole('region', { name: 'History', exact: true })).toHaveCount(0);
+    await expect(page.getByText(/^History starts on/)).toHaveCount(0);
+
+    await page.goto('/summary');
+    await hydrated(page);
+    await expect(page.getByRole('region', { name: 'History', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Trends' })).toHaveCount(0);
   });
 
-  test('no points: "No history yet."', async ({ page }) => {
+  test('no history at all: no card either, in Chinese too', async ({ page }) => {
     await limitPoints(page, 0);
     await page.goto('/zh/summary');
     await hydrated(page);
-    const card = page.getByRole('region', { name: '历史', exact: true });
-    await expect(card.getByText('暂无历史数据。')).toBeVisible();
-    await expect(card.locator('svg[data-history-chart]')).toHaveCount(0);
-    await page.goto(`/tokens/${SAMPLE.token}`);
+    await expect(page.getByRole('region', { name: '历史', exact: true })).toHaveCount(0);
+    await page.goto(`/assets/${SAMPLE.ticker}`);
     await hydrated(page);
-    await expect(page.getByRole('region', { name: 'History', exact: true }).getByText('No history yet.')).toBeVisible();
+    await expect(page.getByRole('region', { name: 'History', exact: true })).toHaveCount(0);
+    await expect(page.getByText('No history yet.')).toHaveCount(0);
   });
 
   test('a failed range switch shows the error, not the previous range under the new button', async ({ page }) => {

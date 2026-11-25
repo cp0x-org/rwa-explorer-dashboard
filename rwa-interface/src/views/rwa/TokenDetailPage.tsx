@@ -164,16 +164,15 @@ function TokenDetailView({ index, token }: { index: RwaIndex; token: Token }) {
       <RightsSummary index={index} token={token} />
       <MethodNote data={index.data} />
 
-      <Box sx={{ marginBottom: 4 }}>
-        <HistoryChart
-          key={`tokens:${token.id}`}
-          entity="tokens"
-          id={token.id}
-          metrics={TOKEN_HISTORY_METRICS}
-          title={t('history.token.title')}
-          subtitle={t('history.subtitle')}
-        />
-      </Box>
+      <HistoryChart
+        key={`tokens:${token.id}`}
+        entity="tokens"
+        id={token.id}
+        metrics={TOKEN_HISTORY_METRICS}
+        title={t('history.token.title')}
+        subtitle={t('history.subtitle')}
+        gutterBottom
+      />
 
       {token.excluded_reason && (
         <Typography variant="body1" color="warning.main" sx={{ marginBottom: 3 }}>
