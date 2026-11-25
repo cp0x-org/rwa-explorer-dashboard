@@ -256,7 +256,9 @@ func asInt(v slog.Value) (int64, bool) {
 	case slog.KindInt64:
 		return v.Int64(), true
 	case slog.KindUint64:
-		return int64(v.Uint64()), true
+		if u := v.Uint64(); u <= math.MaxInt64 {
+			return int64(u), true
+		}
 	}
 	return 0, false
 }

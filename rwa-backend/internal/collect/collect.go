@@ -424,7 +424,7 @@ func (rn *run) skipUnprocessed(ctx context.Context, todo []model.Asset) {
 
 // guardEmptySnapshot is the guard of collect.py::sync: a snapshot with no tokens never replaces one that had tokens
 // (a CMC hiccup would otherwise empty an underlying). The failure is recorded like any failed underlying.
-func (rn *run) guardEmptySnapshot(asset model.Asset, status string, payload []byte, previous int) error {
+func (rn *run) guardEmptySnapshot(_ model.Asset, status string, payload []byte, previous int) error {
 	if previous == 0 {
 		return nil
 	}

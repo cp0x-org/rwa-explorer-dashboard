@@ -111,7 +111,7 @@ func TestForwardsAndJournalsOnlyRunRecords(t *testing.T) {
 
 func TestLevelFilterAndStdoutLevelIndependent(t *testing.T) {
 	// events at info: debug is neither stored nor printed
-	log, h, sink, out := newTest(t, Options{Level: slog.LevelInfo, Interval: time.Hour})
+	log, h, sink, _ := newTest(t, Options{Level: slog.LevelInfo, Interval: time.Hour})
 	log.Debug("d", "run_id", 1)
 	log.Info("i", "run_id", 1)
 	log.Error("e", "run_id", 1)
@@ -122,7 +122,7 @@ func TestLevelFilterAndStdoutLevelIndependent(t *testing.T) {
 	assert.Equal(t, "error", ev[1].Level)
 
 	// events at debug while stdout stays at info: debug is stored, not printed
-	log, h, sink, out = newTest(t, Options{Level: slog.LevelDebug, Interval: time.Hour})
+	log, h, sink, out := newTest(t, Options{Level: slog.LevelDebug, Interval: time.Hour})
 	log.Debug("d", "run_id", 1)
 	log.Info("i", "run_id", 1)
 	log.Debug("no run")

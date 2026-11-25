@@ -108,7 +108,7 @@ func checkPublishable(ctx context.Context, st *store.Store, run *store.Run) erro
 		return errors.New("is a rebuild: it has no observation to publish (use `rwa build`)")
 	case run.Status == "running":
 		return errors.New("is still running")
-	case run.Status == "failed" && !(run.Error != nil && strings.HasPrefix(*run.Error, "publish:")):
+	case run.Status == "failed" && (run.Error == nil || !strings.HasPrefix(*run.Error, "publish:")):
 		return errors.New("failed during collection and has no complete data to publish")
 	}
 	has, err := st.RunHasBuild(ctx, run.ID)

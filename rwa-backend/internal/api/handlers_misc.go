@@ -15,7 +15,7 @@ import (
 //go:embed openapi.yaml
 var openAPISpec []byte
 
-func (s *Server) handleOpenAPI(w http.ResponseWriter, r *http.Request) {
+func (s *Server) handleOpenAPI(w http.ResponseWriter, _ *http.Request) {
 	h := w.Header()
 	h.Set("Content-Type", "application/yaml; charset=utf-8")
 	h.Set("Cache-Control", "public, max-age=300")

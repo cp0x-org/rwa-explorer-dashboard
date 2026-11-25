@@ -212,12 +212,6 @@ func HistoryRows(exp *model.Export, side *Side, runID int64) (*History, error) {
 	}
 
 	for _, is := range exp.Issuers {
-		var own []*model.Token
-		for _, t := range included {
-			if t.IssuerID != nil && *t.IssuerID == is.ID {
-				own = append(own, t)
-			}
-		}
 		breakdowns, err := json.Marshal(struct {
 			ByNetwork    model.Breakdown       `json:"by_network"`
 			ByCategory   model.Breakdown       `json:"by_category"`

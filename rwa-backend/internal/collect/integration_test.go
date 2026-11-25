@@ -397,7 +397,7 @@ func TestRunInterruptedAfterSomeCompleted(t *testing.T) {
 // A deadline ends the run as failed with error "timeout", not "interrupted".
 func TestRunTimeout(t *testing.T) {
 	pool, _ := testdb.Migrated(t)
-	f := startFakes(t, func(w http.ResponseWriter, r *http.Request) bool {
+	f := startFakes(t, func(_ http.ResponseWriter, r *http.Request) bool {
 		if r.URL.Path == "/v2/tokens" {
 			select { // a slow Portals
 			case <-r.Context().Done():

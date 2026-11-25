@@ -86,7 +86,7 @@ func (f *fakeStore) LastSuccessfulRunStart(context.Context) (time.Time, error) {
 func (f *fakeStore) ListRuns(_ context.Context, limit int, cur *store.RunCursor) ([]store.Run, error) {
 	var out []store.Run
 	for _, r := range f.runs { // newest first
-		if cur != nil && !(r.StartedAt.Before(cur.StartedAt) || (r.StartedAt.Equal(cur.StartedAt) && r.ID < cur.ID)) {
+		if cur != nil && !r.StartedAt.Before(cur.StartedAt) && (!r.StartedAt.Equal(cur.StartedAt) || r.ID >= cur.ID) {
 			continue
 		}
 		out = append(out, r)
@@ -603,7 +603,7 @@ func TestHistory(t *testing.T) {
 	var gotMetrics []string
 	var gotLimit int
 	var gotID string
-	f.history = func(entity, id string, metrics []string, step string, limit int) (*store.HistoryResult, error) {
+	f.history = func(entity, id string, metrics []string, _ string, limit int) (*store.HistoryResult, error) {
 		gotMetrics, gotLimit, gotID = metrics, limit, id
 		for _, m := range metrics {
 			if m == "nope" {

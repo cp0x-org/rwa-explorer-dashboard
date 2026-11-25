@@ -64,7 +64,7 @@ func runProbe(args []string, stdout, stderr io.Writer) int {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
-	hook := func(p, path string, params url.Values, status int, d time.Duration) {
+	hook := func(p, path string, _ url.Values, status int, d time.Duration) {
 		_, _ = fmt.Fprintf(stderr, "  %s GET %s -> %d (%s)\n", p, path, status, d.Round(time.Millisecond))
 	}
 	switch *provider {

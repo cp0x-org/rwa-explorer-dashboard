@@ -87,7 +87,7 @@ func TestNetworksAndPlatforms(t *testing.T) {
 }
 
 func TestPlatformNameFallsBackToSlug(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`[{"platform":"a"},{"platform":"b","name":"B"},{"name":"no slug"},"junk"]`))
 	})
 	// Non-object elements are skipped, like in 1.x.
@@ -95,7 +95,7 @@ func TestPlatformNameFallsBackToSlug(t *testing.T) {
 	require.NoError(t, err)
 	assert.Equal(t, map[string]string{"a": "a", "b": "B"}, got)
 
-	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ = newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`[{"platform":"a"},{"platform":"b","name":"B"},{"name":"no slug"}]`))
 	})
 	names, err := c.FetchPlatformNames(context.Background())
@@ -104,7 +104,7 @@ func TestPlatformNameFallsBackToSlug(t *testing.T) {
 }
 
 func TestLookupRecorded(t *testing.T) {
-	c, _, qs := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write(fixture(t, "tokens_lookup")) })
+	c, _, qs := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write(fixture(t, "tokens_lookup")) })
 	keys := []string{"bsc:0xc845b2894dbddd03858fd2d643b4ef725fe0849d", "base:0xb20000000000000000000078ee7ce2fe4908108c"}
 	got, err := c.Lookup(context.Background(), keys, 250)
 	require.NoError(t, err)
@@ -165,7 +165,7 @@ func TestSearchPaginationMoreThenDone(t *testing.T) {
 }
 
 func TestSearchRecordedSinglePage(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write(fixture(t, "tokens_search_aapl")) })
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write(fixture(t, "tokens_search_aapl")) })
 	got, meta, err := c.Search(context.Background(), "AAPL", 250)
 	require.NoError(t, err)
 	assert.Len(t, got, 6)
@@ -189,7 +189,7 @@ func TestSearchMaxPages(t *testing.T) {
 }
 
 func TestSearchSkipsKeylessTokens(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"totalItems":2,"more":false,"tokens":[{"key":"a:1"},{"symbol":"nokey"},"junk"]}`))
 	})
 	got, meta, err := c.Search(context.Background(), "X", 10)
@@ -199,7 +199,7 @@ func TestSearchSkipsKeylessTokens(t *testing.T) {
 }
 
 func TestAuthError(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusUnauthorized)
 		_, _ = w.Write([]byte(`{"message":"Unauthorized"}`))
 	})
@@ -229,7 +229,7 @@ func TestNetworksStrict(t *testing.T) {
 		{"null", `null`},
 	} {
 		t.Run(tc.name, func(t *testing.T) {
-			c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(tc.body)) })
+			c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(tc.body)) })
 			nets, err := c.FetchNetworks(context.Background())
 			var ae *httpx.APIError
 			require.ErrorAs(t, err, &ae)
@@ -237,7 +237,7 @@ func TestNetworksStrict(t *testing.T) {
 			assert.Nil(t, nets)
 		})
 	}
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`["ethereum","base"]`)) })
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(`["ethereum","base"]`)) })
 	nets, err := c.FetchNetworks(context.Background())
 	require.NoError(t, err)
 	assert.Equal(t, []string{"ethereum", "base"}, nets)
@@ -246,7 +246,7 @@ func TestNetworksStrict(t *testing.T) {
 // An exact lookup that did not return everything Portals reports (or hit the page cap) would turn indexed contracts
 // into "not indexed": it fails instead.
 func TestLookupIncomplete(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(tokensPage([]string{"a:1"}, 3, false, 0)))
 	})
 	_, err := c.Lookup(context.Background(), []string{"a:1", "a:2", "a:3"}, 10)
@@ -263,7 +263,7 @@ func TestLookupIncomplete(t *testing.T) {
 	assert.Equal(t, "incomplete lookup (MAX_PAGES reached): received 100, reported None", ae.Message)
 
 	// More records than reported (duplicates, a moving index) is not incomplete.
-	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ = newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(tokensPage([]string{"a:1", "a:2"}, 1, false, 0)))
 	})
 	got, err := c.Lookup(context.Background(), []string{"a:1", "a:2"}, 10)
@@ -272,7 +272,7 @@ func TestLookupIncomplete(t *testing.T) {
 }
 
 func TestNonArrayPlatformsGiveEmpty(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`{"error":"x"}`)) })
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(`{"error":"x"}`)) })
 	names, err := c.FetchPlatformNames(context.Background())
 	require.NoError(t, err)
 	assert.NotNil(t, names)
@@ -280,7 +280,7 @@ func TestNonArrayPlatformsGiveEmpty(t *testing.T) {
 }
 
 func TestEmptyResultsAreNotNil(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`{"tokens":[],"more":false}`)) })
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(`{"tokens":[],"more":false}`)) })
 	found, err := c.Lookup(context.Background(), nil, 10)
 	require.NoError(t, err)
 	assert.NotNil(t, found)
@@ -290,7 +290,7 @@ func TestEmptyResultsAreNotNil(t *testing.T) {
 }
 
 func TestHTMLPlatformsBodyIsAnError(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(`<html>maintenance</html>`)) })
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(`<html>maintenance</html>`)) })
 	_, err := c.FetchPlatformNames(context.Background())
 	require.Error(t, err)
 	assert.Contains(t, err.Error(), "non-JSON body")

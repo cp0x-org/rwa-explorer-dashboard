@@ -58,7 +58,7 @@ func newClient(t *testing.T, h func(w http.ResponseWriter, r *http.Request)) (*C
 }
 
 func TestFetchRWAQuotes(t *testing.T) {
-	c, api, rec := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write(fixture(t, "quotes_latest")) })
+	c, api, rec := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write(fixture(t, "quotes_latest")) })
 	got, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA", "AAPL", "SPY"})
 	require.NoError(t, err)
 	assert.Equal(t, "NVDA,AAPL,SPY", rec.reqs[0].URL.Query().Get("symbol"))
@@ -148,7 +148,7 @@ func TestFetchCryptoInfoBatches(t *testing.T) {
 }
 
 func TestFetchCryptoInfoOtherErrorPropagates(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte(`{"status":{"error_code":400,"error_message":"Invalid value for 'id': '777'"}}`))
 	})
@@ -160,7 +160,7 @@ func TestFetchCryptoInfoOtherErrorPropagates(t *testing.T) {
 }
 
 func TestFetchIssuer(t *testing.T) {
-	c, api, rec := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write(fixture(t, "issuer_small")) })
+	c, api, rec := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write(fixture(t, "issuer_small")) })
 	is, err := c.FetchIssuer(context.Background(), "6a0be4e680ee5978ec4455ce")
 	require.NoError(t, err)
 	assert.Equal(t, "6a0be4e680ee5978ec4455ce", rec.reqs[0].URL.Query().Get("issuer_id"))
@@ -175,7 +175,7 @@ func TestFetchIssuer(t *testing.T) {
 }
 
 func TestFetchIssuerRosterSizeFallback(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":{"name":"I","tokens":[{"crypto_id":1,"symbol":"A","rwa_id":2},{"crypto_id":3,"symbol":"B","rwa_id":4}]},"status":{"error_code":"0"}}`))
 	})
 	is, err := c.FetchIssuer(context.Background(), "x")
@@ -184,7 +184,7 @@ func TestFetchIssuerRosterSizeFallback(t *testing.T) {
 }
 
 func TestFetchRWAInfo(t *testing.T) {
-	c, _, rec := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write(fixture(t, "rwa_info")) })
+	c, _, rec := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write(fixture(t, "rwa_info")) })
 	got, err := c.FetchRWAInfo(context.Background(), []int{86, 2, 3, 2})
 	require.NoError(t, err)
 	assert.Equal(t, "2,3,86", rec.reqs[0].URL.Query().Get("rwa_id"))
@@ -197,7 +197,7 @@ func TestFetchRWAInfo(t *testing.T) {
 }
 
 func TestFetchRWAInfoWebsiteFromAbout(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":{"rwa_assets":[{"rwa_id":9,"name":"N","website":"","industry":"I","about":{"website":"https://a.example","logo":"https://l.example/x.png"}}]},"status":{"error_code":"0"}}`))
 	})
 	got, err := c.FetchRWAInfo(context.Background(), []int{9})
@@ -208,7 +208,7 @@ func TestFetchRWAInfoWebsiteFromAbout(t *testing.T) {
 
 func TestErrorInsideHTTP200(t *testing.T) {
 	for _, code := range []string{`"1010"`, `1010`} {
-		c, api, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+		c, api, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 			_, _ = fmt.Fprintf(w, `{"status":{"error_code":%s,"error_message":"plan limit","credit_count":0}}`, code)
 		})
 		_, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
@@ -222,7 +222,7 @@ func TestErrorInsideHTTP200(t *testing.T) {
 }
 
 func TestAuthError(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusUnauthorized)
 		_, _ = w.Write([]byte(`{"status":{"error_code":1002,"error_message":"API key missing."}}`))
 	})
@@ -249,7 +249,7 @@ func TestStatusBlockLenient(t *testing.T) {
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
-			c, api, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+			c, api, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 				_, _ = fmt.Fprintf(w, `{"data":{"rwa_assets":[]},"status":%s}`, tc.status)
 			})
 			got, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
@@ -277,7 +277,7 @@ func TestEnvelopeStrict(t *testing.T) {
 		{"no data key", `{"status":{"error_code":"0"}}`, "invalid response: expected a data key"},
 	} {
 		t.Run(tc.name, func(t *testing.T) {
-			c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte(tc.body)) })
+			c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte(tc.body)) })
 			_, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
 			var ae *httpx.APIError
 			require.ErrorAs(t, err, &ae)
@@ -286,14 +286,14 @@ func TestEnvelopeStrict(t *testing.T) {
 		})
 	}
 	// An error code wins over a missing data key; a null data value is present.
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"status":{"error_code":1010,"error_message":"plan limit"}}`))
 	})
 	_, err := c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
 	var ae *httpx.APIError
 	require.ErrorAs(t, err, &ae)
 	assert.Equal(t, "plan limit", ae.Message)
-	c, _, _ = newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ = newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":null,"status":{"error_code":"0"}}`))
 	})
 	_, err = c.FetchRWAQuotes(context.Background(), []string{"NVDA"})
@@ -301,7 +301,7 @@ func TestEnvelopeStrict(t *testing.T) {
 }
 
 func TestRWAInfoEmptyWebsiteIsNil(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":{"rwa_assets":[{"rwa_id":9,"website":"","about":{"website":""}}]},"status":{"error_code":"0"}}`))
 	})
 	got, err := c.FetchRWAInfo(context.Background(), []int{9})
@@ -311,7 +311,7 @@ func TestRWAInfoEmptyWebsiteIsNil(t *testing.T) {
 }
 
 func TestEmptyResultsAreNotNil(t *testing.T) {
-	c, _, _ := newClient(t, func(w http.ResponseWriter, r *http.Request) {
+	c, _, _ := newClient(t, func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":{},"status":{"error_code":"0"}}`))
 	})
 	info, invalid, err := c.FetchCryptoInfo(context.Background(), nil)

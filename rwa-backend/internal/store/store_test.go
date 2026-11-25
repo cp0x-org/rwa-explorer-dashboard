@@ -27,7 +27,7 @@ const (
 )
 
 // qh is QueryHistory returning just the points.
-func qh(st *store.Store, ctx context.Context, entity, id string, metrics []string, from, to *time.Time, step string, limit int) ([]store.HistoryPoint, error) {
+func qh(ctx context.Context, st *store.Store, entity, id string, metrics []string, from, to *time.Time, step string, limit int) ([]store.HistoryPoint, error) {
 	r, err := st.QueryHistory(ctx, entity, id, metrics, from, to, step, limit)
 	if err != nil {
 		return nil, err
@@ -495,7 +495,7 @@ func TestQueryHistory(t *testing.T) {
 	require.NoError(t, st.InsertUnderlyingHistory(ctx, []store.UnderlyingHistoryRow{{RunID: runs[0], UnderlyingID: aaplID, ObservedAt: day(18, 6),
 		Status: "ok", TokenizedMarketCapUSD: dec("1"), VersionsCount: 1}}))
 
-	pts, err := qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd", "versions_count", "status"}, nil, nil, store.StepRun, 0)
+	pts, err := qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd", "versions_count", "status"}, nil, nil, store.StepRun, 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 4)
 	assert.Equal(t, "100", pts[0].Values["tokenized_market_cap_usd"])
@@ -505,56 +505,56 @@ func TestQueryHistory(t *testing.T) {
 	assert.Equal(t, runs[0], pts[0].RunID)
 	assert.True(t, pts[0].ObservedAt.Equal(day(18, 6)))
 
-	pts, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd"}, nil, nil, store.StepDay, 0)
+	pts, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd"}, nil, nil, store.StepDay, 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 2)
 	assert.Equal(t, "120", pts[0].Values["tokenized_market_cap_usd"], "last run of the day")
 	assert.Equal(t, runs[2], pts[0].RunID)
 	assert.Equal(t, "130", pts[1].Values["tokenized_market_cap_usd"])
 
-	pts, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd"}, nil, nil, store.StepWeek, 0)
+	pts, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"tokenized_market_cap_usd"}, nil, nil, store.StepWeek, 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 2, "Sunday 18 and Monday 19 October 2026 are in different ISO weeks")
 	assert.Equal(t, "120", pts[0].Values["tokenized_market_cap_usd"], "last observation of the week")
 	assert.Equal(t, "130", pts[1].Values["tokenized_market_cap_usd"])
 
 	from, to := day(18, 12), day(18, 20)
-	pts, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"versions_count"}, &from, &to, store.StepRun, 0)
+	pts, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"versions_count"}, &from, &to, store.StepRun, 0)
 	require.NoError(t, err)
 	assert.Len(t, pts, 2)
-	pts, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"versions_count"}, nil, nil, store.StepRun, 1)
+	pts, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"versions_count"}, nil, nil, store.StepRun, 1)
 	require.NoError(t, err)
 	assert.Len(t, pts, 1, "limit")
 
-	_, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"versions_count", "payload; DROP TABLE builds"}, nil, nil, store.StepRun, 0)
+	_, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"versions_count", "payload; DROP TABLE builds"}, nil, nil, store.StepRun, 0)
 	require.ErrorIs(t, err, store.ErrUnknownMetric)
 	var um *store.UnknownMetricError
 	require.ErrorAs(t, err, &um)
 	assert.Equal(t, "payload; DROP TABLE builds", um.Metric)
-	_, err = qh(st, ctx, store.EntityUnderlying, nvdaID, []string{"price_usd"}, nil, nil, "", 0)
+	_, err = qh(ctx, st, store.EntityUnderlying, nvdaID, []string{"price_usd"}, nil, nil, "", 0)
 	assert.ErrorIs(t, err, store.ErrUnknownMetric, "metric of another entity")
-	_, err = qh(st, ctx, "bogus", "x", nil, nil, nil, "", 0)
+	_, err = qh(ctx, st, "bogus", "x", nil, nil, nil, "", 0)
 	assert.ErrorIs(t, err, store.ErrUnknownEntity)
-	_, err = qh(st, ctx, store.EntityUnderlying, nvdaID, nil, nil, nil, "month", 0)
+	_, err = qh(ctx, st, store.EntityUnderlying, nvdaID, nil, nil, nil, "month", 0)
 	assert.ErrorIs(t, err, store.ErrUnknownStep)
 
 	// all metrics when none are named; token ids are numeric strings
 	require.NoError(t, st.UpsertTokens(ctx, runs[0], []store.TokenRow{{ID: tokenID, UnderlyingID: nvdaID, Kind: "tokenized", Coverage: "search"}}))
 	require.NoError(t, st.InsertTokenHistory(ctx, []store.TokenHistoryRow{{RunID: runs[0], TokenID: tokenID, ObservedAt: day(18, 6),
 		PriceUSD: dec("211.75"), UsefulnessScore: 2, Breakdowns: []byte(`{"by_network":{"ethereum":{"raw":1,"eligible":0}}}`)}}))
-	pts, err = qh(st, ctx, store.EntityToken, "36992", nil, nil, nil, store.StepDay, 0)
+	pts, err = qh(ctx, st, store.EntityToken, "36992", nil, nil, nil, store.StepDay, 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 1)
 	assert.Equal(t, "211.75", pts[0].Values["price_usd"])
 	assert.Nil(t, pts[0].Values["market_cap_usd"])
 	assert.Nil(t, pts[0].Values["rank_in_underlying"])
 	assert.IsType(t, map[string]any{}, pts[0].Values["breakdowns"])
-	_, err = qh(st, ctx, store.EntityToken, "abc", nil, nil, nil, "", 0)
+	_, err = qh(ctx, st, store.EntityToken, "abc", nil, nil, nil, "", 0)
 	assert.Error(t, err)
 
 	// summary has no id; positions return arrays
 	require.NoError(t, st.InsertSummaryHistory(ctx, []store.SummaryHistoryRow{{RunID: runs[0], ObservedAt: day(18, 6), UnderlyingsCount: 125}}))
-	pts, err = qh(st, ctx, store.EntitySummary, "", []string{"underlyings_count"}, nil, nil, "", 0)
+	pts, err = qh(ctx, st, store.EntitySummary, "", []string{"underlyings_count"}, nil, nil, "", 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 1)
 	assert.EqualValues(t, 125, pts[0].Values["underlyings_count"])
@@ -564,7 +564,7 @@ func TestQueryHistory(t *testing.T) {
 		PositionKind: "contract", Category: "vault", LiquiditySemantics: "vault_tvl", Eligibility: "eligible"}}))
 	require.NoError(t, st.InsertPositionHistory(ctx, []store.PositionHistoryRow{{RunID: runs[0], PositionKey: pk, ObservedAt: day(18, 6),
 		LiquidityUSD: dec("25000"), Eligibility: "eligible", Flags: []string{"apy_missing"}}}))
-	pts, err = qh(st, ctx, store.EntityPosition, pk, []string{"liquidity_usd", "flags", "eligibility", "apy_percent"}, nil, nil, "", 0)
+	pts, err = qh(ctx, st, store.EntityPosition, pk, []string{"liquidity_usd", "flags", "eligibility", "apy_percent"}, nil, nil, "", 0)
 	require.NoError(t, err)
 	require.Len(t, pts, 1)
 	assert.Equal(t, "25000", pts[0].Values["liquidity_usd"])
@@ -573,7 +573,7 @@ func TestQueryHistory(t *testing.T) {
 
 	// every whitelisted metric of every entity is a real column
 	for _, ent := range []string{store.EntitySummary, store.EntityUnderlying, store.EntityToken, store.EntityIssuer, store.EntityPosition} {
-		_, err := qh(st, ctx, ent, "1", nil, nil, nil, store.StepRun, 1)
+		_, err := qh(ctx, st, ent, "1", nil, nil, nil, store.StepRun, 1)
 		require.NoError(t, err, ent)
 	}
 }
@@ -720,7 +720,7 @@ func TestTimesAreUTC(t *testing.T) {
 	assert.Equal(t, time.UTC, run.StartedAt.Location())
 	assert.True(t, run.StartedAt.Equal(day(18, 20)))
 	require.NoError(t, e.st.InsertUnderlyingHistory(ctx, []store.UnderlyingHistoryRow{{RunID: r, UnderlyingID: nvdaID, ObservedAt: day(18, 20), Status: "ok"}}))
-	pts, err := qh(e.st, ctx, store.EntityUnderlying, nvdaID, []string{"status"}, nil, nil, "", 0)
+	pts, err := qh(ctx, e.st, store.EntityUnderlying, nvdaID, []string{"status"}, nil, nil, "", 0)
 	require.NoError(t, err)
 	assert.Equal(t, time.UTC, pts[0].ObservedAt.Location())
 }

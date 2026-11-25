@@ -110,7 +110,7 @@ func New(cfg Config) *Client {
 		hc:     hc,
 		now:    time.Now,
 		sleep:  sleepCtx,
-		jitter: func() time.Duration { return time.Duration(rand.Float64() * float64(time.Second)) },
+		jitter: func() time.Duration { return time.Duration(rand.Float64() * float64(time.Second)) }, //nolint:gosec // retry jitter, not a secret
 	}
 	if cfg.RequestsPerMinute > 0 {
 		c.interval = time.Minute / time.Duration(cfg.RequestsPerMinute)

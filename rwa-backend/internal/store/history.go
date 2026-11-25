@@ -183,7 +183,7 @@ func (s *Store) InsertSummaryHistory(ctx context.Context, rows []SummaryHistoryR
 		data = append(data, concat(
 			[]any{r.RunID, r.ObservedAt, r.UnderlyingsCount, r.TokensCount, r.ExcludedTokensCount, r.IssuersCount,
 				r.DeploymentsCount, r.IndexedDeploymentsCount, r.TokensInDefiCount},
-			r.HistoryCounts.values(),
+			r.HistoryCounts.values(), //nolint:staticcheck // QF1008: name the embedded part, as the other rows do
 			HistoryYield{r.YieldOpportunitiesCount, r.MaxReportedAPYPercent, r.AverageReportedAPYPercent, r.MedianReportedAPYPercent}.values(),
 			[]any{numeric(r.TokenizedMarketCapUSD), numeric(r.TokenizedVolume24hUSD), numeric(r.EligibleLiquidityUSD)}))
 	}

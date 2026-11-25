@@ -65,7 +65,7 @@ func (l *lockedWriter) String() string {
 func TestNULIsStripped(t *testing.T) {
 	l, h, sink, _ := newTest(t, Options{})
 	l.Info("bad\x00message", "run_id", 1, "s", "a\x00b", "k\x00ey", "v",
-		"list", []string{"x\x00y"}, "m", map[string]any{"a\x00": "b\x00"}, "e", errors.New("boom\x00"), "any", fmt.Sprint("z\x00"))
+		"list", []string{"x\x00y"}, "m", map[string]any{"a\x00": "b\x00"}, "e", errors.New("boom\x00"), "any", "z\x00")
 	require.NoError(t, h.Flush(context.Background()))
 	ev := sink.all()
 	require.Len(t, ev, 1)

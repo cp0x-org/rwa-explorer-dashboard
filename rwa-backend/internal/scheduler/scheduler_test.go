@@ -65,7 +65,7 @@ func (f *fake) deps() Deps {
 			f.mu.Unlock()
 			return nil
 		},
-		Retention: func(_ context.Context, cutoff time.Time) (int64, error) {
+		Retention: func(_ context.Context, _ time.Time) (int64, error) {
 			f.step("retention")
 			return 0, nil
 		},

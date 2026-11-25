@@ -90,10 +90,10 @@ func TestRefreshBuildsTheCacheAndKeepsOnlyNamedSlugs(t *testing.T) {
 
 func TestFetchTurnsEveryFailureIntoADealsError(t *testing.T) {
 	for name, h := range map[string]http.HandlerFunc{
-		"status":   func(w http.ResponseWriter, r *http.Request) { http.Error(w, "down", http.StatusServiceUnavailable) },
+		"status":   func(w http.ResponseWriter, _ *http.Request) { http.Error(w, "down", http.StatusServiceUnavailable) },
 		"redirect": func(w http.ResponseWriter, r *http.Request) { http.Redirect(w, r, "/x", http.StatusFound) },
-		"not json": func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte("<html>")) },
-		"empty":    func(w http.ResponseWriter, r *http.Request) {},
+		"not json": func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte("<html>")) },
+		"empty":    func(http.ResponseWriter, *http.Request) {},
 	} {
 		c := serve(t, h)
 		cache, warning, err := c.Refresh(context.Background(), nil)
@@ -101,7 +101,7 @@ func TestFetchTurnsEveryFailureIntoADealsError(t *testing.T) {
 		assert.Nil(t, cache, name)
 		assert.Empty(t, warning, name)
 	}
-	c := serve(t, func(w http.ResponseWriter, r *http.Request) { http.Error(w, "down", http.StatusServiceUnavailable) })
+	c := serve(t, func(w http.ResponseWriter, _ *http.Request) { http.Error(w, "down", http.StatusServiceUnavailable) })
 	_, _, err := c.Refresh(context.Background(), nil)
 	assert.EqualError(t, err, "deals: HTTP 503")
 

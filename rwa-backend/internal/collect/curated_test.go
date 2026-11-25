@@ -109,7 +109,7 @@ const dealsBody = `{"deals":[
 
 func dealsServer(t *testing.T, status *atomic.Int64, hits *atomic.Int64) *deals.Client {
 	t.Helper()
-	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		hits.Add(1)
 		if st := int(status.Load()); st != 200 {
 			http.Error(w, "down", st)

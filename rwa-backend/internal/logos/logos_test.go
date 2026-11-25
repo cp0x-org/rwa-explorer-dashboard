@@ -30,7 +30,7 @@ func serve(t *testing.T, h http.HandlerFunc) *httptest.Server {
 	return srv
 }
 
-func image_(w http.ResponseWriter, contentType string, body []byte) {
+func imageFile(w http.ResponseWriter, contentType string, body []byte) {
 	w.Header().Set("Content-Type", contentType)
 	_, _ = w.Write(body)
 }
@@ -40,23 +40,23 @@ func TestDownload(t *testing.T) {
 		switch r.URL.Path {
 		case "/logo.png":
 			assert.Contains(t, r.Header.Get("User-Agent"), "Mozilla/5.0")
-			image_(w, "image/png; charset=binary", pngBytes)
+			imageFile(w, "image/png; charset=binary", pngBytes)
 		case "/logo.jpeg":
-			image_(w, "image/jpeg", pngBytes)
+			imageFile(w, "image/jpeg", pngBytes)
 		case "/vector":
-			image_(w, "image/svg+xml", []byte("<svg/>"))
+			imageFile(w, "image/svg+xml", []byte("<svg/>"))
 		case "/no-ext-type.avif":
-			image_(w, "image/avif", pngBytes) // not in the table: extension from the URL path, else png
+			imageFile(w, "image/avif", pngBytes) // not in the table: extension from the URL path, else png
 		case "/odd":
-			image_(w, "image/avif", pngBytes)
+			imageFile(w, "image/avif", pngBytes)
 		case "/big.png":
-			image_(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes+1))
+			imageFile(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes+1))
 		case "/exact.png":
-			image_(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes))
+			imageFile(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes))
 		case "/empty.png":
-			image_(w, "image/png", nil)
+			imageFile(w, "image/png", nil)
 		case "/page":
-			image_(w, "text/html", []byte("<html/>"))
+			imageFile(w, "text/html", []byte("<html/>"))
 		case "/missing":
 			http.NotFound(w, r)
 		}
@@ -136,7 +136,7 @@ func TestFetchOrder(t *testing.T) {
 		case "/site":
 			_, _ = fmt.Fprint(w, `<link rel="icon" sizes="64x64" href="/declared.png">`)
 		case "/declared.png":
-			image_(w, "image/png", pngBytes)
+			imageFile(w, "image/png", pngBytes)
 		}
 	})
 	f := newFetcher(nil, discard(), srv.Client())
@@ -149,7 +149,7 @@ func TestFetchOrder(t *testing.T) {
 }
 
 func TestFetchNothingWorks(t *testing.T) {
-	srv := serve(t, func(w http.ResponseWriter, r *http.Request) { http.Error(w, "no", http.StatusInternalServerError) })
+	srv := serve(t, func(w http.ResponseWriter, _ *http.Request) { http.Error(w, "no", http.StatusInternalServerError) })
 	f := newFetcher(nil, discard(), srv.Client())
 	f.faviconFmt = srv.URL + "/f?domain=%s"
 	img, _ := f.fetch(context.Background(), srv.URL+"/a", srv.URL+"/b")
@@ -166,21 +166,21 @@ func TestFetchMissingIntegration(t *testing.T) {
 	srv := serve(t, func(w http.ResponseWriter, r *http.Request) {
 		switch r.URL.Path {
 		case "/token.png":
-			image_(w, "image/png", pngBytes)
+			imageFile(w, "image/png", pngBytes)
 		case "/oversize.png":
-			image_(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes+1))
+			imageFile(w, "image/png", bytes.Repeat([]byte{1}, MaxBytes+1))
 		case "/html-logo":
-			image_(w, "text/html", []byte("<html/>"))
+			imageFile(w, "text/html", []byte("<html/>"))
 		case "/favicons":
 			if r.URL.Query().Get("domain") == "issuer-a.test" {
-				image_(w, "image/x-icon", []byte("ICO"))
+				imageFile(w, "image/x-icon", []byte("ICO"))
 				return
 			}
 			http.NotFound(w, r)
 		case "/issuer-b":
 			_, _ = fmt.Fprint(w, `<link rel="icon" sizes="48x48" href="/b.webp">`)
 		case "/b.webp":
-			image_(w, "image/webp", []byte("WEBP"))
+			imageFile(w, "image/webp", []byte("WEBP"))
 		default:
 			http.NotFound(w, r)
 		}

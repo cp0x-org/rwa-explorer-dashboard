@@ -57,7 +57,7 @@ func TestGetOK(t *testing.T) {
 
 func TestRetryAfterHonoured(t *testing.T) {
 	var n atomic.Int32
-	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		if n.Add(1) == 1 {
 			w.Header().Set("Retry-After", "7")
 			w.WriteHeader(http.StatusTooManyRequests)
@@ -73,7 +73,7 @@ func TestRetryAfterHonoured(t *testing.T) {
 
 func TestRetry500ThenOK(t *testing.T) {
 	var n atomic.Int32
-	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		if n.Add(1) <= 2 {
 			w.WriteHeader(http.StatusInternalServerError)
 			return
@@ -89,7 +89,7 @@ func TestRetry500ThenOK(t *testing.T) {
 
 func TestRetriesExhausted503(t *testing.T) {
 	var n atomic.Int32
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		n.Add(1)
 		w.WriteHeader(http.StatusServiceUnavailable)
 		_, _ = w.Write([]byte(`{"message":"overloaded"}`))
@@ -107,7 +107,7 @@ func TestRetriesExhausted503(t *testing.T) {
 
 func TestAuthErrors(t *testing.T) {
 	for _, code := range []int{401, 403} {
-		c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 			w.WriteHeader(code)
 			_, _ = w.Write([]byte(`{"status":{"error_code":1002,"error_message":"API key missing."}}`))
 		}), nil)
@@ -121,7 +121,7 @@ func TestAuthErrors(t *testing.T) {
 }
 
 func TestNonJSONBody(t *testing.T) {
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte("<html>bad request</html>"))
 	}), nil)
@@ -145,7 +145,7 @@ func TestErrorMessage(t *testing.T) {
 
 func TestRateLimiterSpacing(t *testing.T) {
 	now := time.Unix(1000, 0)
-	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, sleeps := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{}`))
 	}), func(cfg *Config) { cfg.RequestsPerMinute = 20 }) // 3s interval
 	c.now = func() time.Time { return now }
@@ -158,7 +158,7 @@ func TestRateLimiterSpacing(t *testing.T) {
 }
 
 func TestRateLimiterRealClock(t *testing.T) {
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{}`))
 	}), func(cfg *Config) { cfg.RequestsPerMinute = 600 }) // 100ms interval
 	c.sleep = sleepCtx
@@ -171,7 +171,7 @@ func TestRateLimiterRealClock(t *testing.T) {
 }
 
 func TestContextCancelDuringBackoff(t *testing.T) {
-	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusServiceUnavailable)
 	}))
 	defer srv.Close()
@@ -196,7 +196,7 @@ func TestTransportErrorRetriedThenFails(t *testing.T) {
 	base := srv.URL
 	srv.Close() // connection refused
 	c := New(Config{Provider: "test", BaseURL: base, Timeout: time.Second, MaxRetries: 2})
-	c.sleep = func(ctx context.Context, d time.Duration) error { return nil }
+	c.sleep = func(context.Context, time.Duration) error { return nil }
 	_, _, err := c.Get(context.Background(), "/p", url.Values{"k": {"v"}})
 	var ae *APIError
 	require.ErrorAs(t, err, &ae)
@@ -210,7 +210,7 @@ func TestRawCaptureAndHook(t *testing.T) {
 	dir := t.TempDir()
 	var hookPath string
 	var hookStatus int
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte(`{"data":[1,2]}`))
 	}), func(cfg *Config) {
 		cfg.RawDir = dir
@@ -236,7 +236,7 @@ func TestRawCaptureAndHook(t *testing.T) {
 
 func TestRawCaptureNonJSON(t *testing.T) {
 	dir := t.TempDir()
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte("plain text"))
 	}), func(cfg *Config) { cfg.RawDir = dir })
 	_, _, err := c.Get(context.Background(), "/x", nil)
@@ -250,14 +250,14 @@ func TestRawCaptureNonJSON(t *testing.T) {
 }
 
 func TestCredits(t *testing.T) {
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}), nil)
+	c, _ := testClient(t, http.HandlerFunc(func(http.ResponseWriter, *http.Request) {}), nil)
 	c.AddCredits(2)
 	c.AddCredits(1)
 	assert.EqualValues(t, 3, c.Credits())
 }
 
 func TestGetJSONInvalid(t *testing.T) {
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		_, _ = w.Write([]byte("not json"))
 	}), nil)
 	var v map[string]any
@@ -269,7 +269,7 @@ func TestGetJSONInvalid(t *testing.T) {
 
 func TestGetNonJSONBodyIsAPIErrorOn2xxOnly(t *testing.T) {
 	for _, status := range []int{200, 201, 204} {
-		c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 			w.WriteHeader(status)
 			_, _ = w.Write([]byte("<html>maintenance</html>"))
 		}), nil)
@@ -280,7 +280,7 @@ func TestGetNonJSONBodyIsAPIErrorOn2xxOnly(t *testing.T) {
 		assert.Equal(t, "non-JSON body", ae.Message)
 	}
 	// An error status keeps its own message, not "non-JSON body".
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		_, _ = w.Write([]byte("bad request"))
 	}), nil)
@@ -290,7 +290,7 @@ func TestGetNonJSONBodyIsAPIErrorOn2xxOnly(t *testing.T) {
 	assert.Equal(t, "bad request", ae.Message)
 
 	// Valid JSON of a wrong shape still fails in GetJSON with the decode message.
-	c, _ = testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { _, _ = w.Write([]byte("[1]")) }), nil)
+	c, _ = testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) { _, _ = w.Write([]byte("[1]")) }), nil)
 	var v map[string]any
 	require.ErrorAs(t, c.GetJSON(context.Background(), "/x", nil, &v), &ae)
 	assert.Contains(t, ae.Message, "invalid JSON body")
@@ -347,7 +347,7 @@ func TestHookAndCaptureOnlyForFinalAnswer(t *testing.T) {
 	dir := t.TempDir()
 	var n atomic.Int32
 	var hooks int
-	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	c, _ := testClient(t, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		if n.Add(1) == 1 {
 			w.WriteHeader(http.StatusServiceUnavailable)
 			return
@@ -383,7 +383,7 @@ func TestRedirectNotFollowed(t *testing.T) {
 	hc := &http.Client{}
 	c := New(Config{Provider: "test", BaseURL: first.URL, Headers: map[string]string{"X-Key": "secret-value"},
 		Timeout: time.Second, MaxRetries: 3, HTTPClient: hc})
-	c.sleep = func(ctx context.Context, d time.Duration) error { return nil }
+	c.sleep = func(context.Context, time.Duration) error { return nil }
 	status, _, err := c.Get(context.Background(), "/p", nil)
 	var ae *APIError
 	require.ErrorAs(t, err, &ae)
