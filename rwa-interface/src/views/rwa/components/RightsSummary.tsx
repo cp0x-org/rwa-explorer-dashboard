@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography';
 import type { RwaIndex } from 'api/rwa';
 import { LocaleLink, useT } from 'i18n';
 import type { Token } from 'types/rwa';
-import { SUMMARY_FACTS, tokenRights } from 'utils/rights';
-import { RightsFactValue, RightsReview } from './HolderRights';
+import { tokenRights } from 'utils/rights';
+import { KeyFacts, RightsReview, ToneLegend } from './HolderRights';
 
 export default function RightsSummary({ index, token }: { index: RwaIndex; token: Token }) {
   const t = useT();
@@ -20,18 +20,8 @@ export default function RightsSummary({ index, token }: { index: RwaIndex; token
       </Typography>
       {profile ? (
         <>
-          <Box component="dl" sx={{ margin: 0, display: 'grid', gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' }, gap: 2 }}>
-            {SUMMARY_FACTS.map((key) => (
-              <div key={key}>
-                <Typography component="dt" sx={{ fontWeight: 600 }}>
-                  {t(`rights.fact.${key}`)}
-                </Typography>
-                <Box component="dd" sx={{ margin: 0, marginTop: 0.5 }}>
-                  <RightsFactValue factKey={key} fact={profile.facts[key]} compact />
-                </Box>
-              </div>
-            ))}
-          </Box>
+          <KeyFacts profile={profile} />
+          <ToneLegend sx={{ marginTop: 1.5 }} />
           <RightsReview index={index} profile={profile} />
           <Link component={LocaleLink} to={`/issuers/${profile.issuer_id}#rights-${profile.id}`} underline="always">
             {t('rights.fullProfile')}

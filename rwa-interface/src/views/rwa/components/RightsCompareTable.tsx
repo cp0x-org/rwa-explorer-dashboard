@@ -13,7 +13,7 @@ import { LocaleLink, useT } from 'i18n';
 import type { Token } from 'types/rwa';
 import { COMPARE_FACTS, tokenRights } from 'utils/rights';
 import DataTableContainer from './DataTableContainer';
-import { RightsFactValue, RightsReview, SuggestCorrection } from './HolderRights';
+import { RightsFactValue, RightsReview, SuggestCorrection, ToneLegend } from './HolderRights';
 import TableCaption from './TableCaption';
 import { compareTokens } from './VersionsTable';
 import { stickyColumn } from './tableSx';
@@ -26,43 +26,46 @@ export default function RightsCompareTable({ index, tokens }: { index: RwaIndex;
     // the title is the tab label on the asset page
     <Box sx={{ '& a': { display: 'inline-flex', minHeight: 24, alignItems: 'center' } }}>
       {reviewed.length ? (
-        <DataTableContainer sx={stickyColumn(1)}>
-          <Table sx={{ minWidth: 1000 }}>
-            <TableCaption>{t('rights.compare.caption')}</TableCaption>
-            <TableHead>
-              <TableRow>
-                <TableCell>{t('col.token')}</TableCell>
-                {COMPARE_FACTS.map((key) => (
-                  <TableCell key={key}>{t(`rights.fact.${key}`)}</TableCell>
-                ))}
-                <TableCell>{t('rights.col.reviewed')}</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {reviewed.map((token) => {
-                const profile = tokenRights(index, token)!;
-                return (
-                  <TableRow key={token.id}>
-                    <TableCell component="th" scope="row">
-                      <Link component={LocaleLink} to={`/issuers/${profile.issuer_id}#rights-${profile.id}`} underline="always">
-                        {token.symbol ?? token.name ?? String(token.id)}
-                      </Link>
-                      <Typography variant="body2">{token.issuer_name ?? t('common.unknownIssuer')}</Typography>
-                    </TableCell>
-                    {COMPARE_FACTS.map((key) => (
-                      <TableCell key={key} sx={{ verticalAlign: 'top' }}>
-                        <RightsFactValue factKey={key} fact={profile.facts[key]} compact />
+        <>
+          <ToneLegend sx={{ marginBottom: 1.5 }} />
+          <DataTableContainer sx={stickyColumn(1)}>
+            <Table sx={{ minWidth: 1000 }}>
+              <TableCaption>{t('rights.compare.caption')}</TableCaption>
+              <TableHead>
+                <TableRow>
+                  <TableCell>{t('col.token')}</TableCell>
+                  {COMPARE_FACTS.map((key) => (
+                    <TableCell key={key}>{t(`rights.fact.${key}`)}</TableCell>
+                  ))}
+                  <TableCell>{t('rights.col.reviewed')}</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {reviewed.map((token) => {
+                  const profile = tokenRights(index, token)!;
+                  return (
+                    <TableRow key={token.id}>
+                      <TableCell component="th" scope="row">
+                        <Link component={LocaleLink} to={`/issuers/${profile.issuer_id}#rights-${profile.id}`} underline="always">
+                          {token.symbol ?? token.name ?? String(token.id)}
+                        </Link>
+                        <Typography variant="body2">{token.issuer_name ?? t('common.unknownIssuer')}</Typography>
                       </TableCell>
-                    ))}
-                    <TableCell>
-                      <RightsReview index={index} profile={profile} />
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </DataTableContainer>
+                      {COMPARE_FACTS.map((key) => (
+                        <TableCell key={key} sx={{ verticalAlign: 'top' }}>
+                          <RightsFactValue factKey={key} fact={profile.facts[key]} compact plain />
+                        </TableCell>
+                      ))}
+                      <TableCell>
+                        <RightsReview index={index} profile={profile} />
+                      </TableCell>
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
+          </DataTableContainer>
+        </>
       ) : (
         <Box>
           <Typography>{t('rights.compare.none')}</Typography>

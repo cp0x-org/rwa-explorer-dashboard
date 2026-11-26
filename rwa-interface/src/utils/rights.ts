@@ -68,3 +68,48 @@ export function reviewRecheckDelay(reviewedAt: string | null | undefined, validD
   const firstStale = (Math.floor(Date.parse(reviewedAt) / 86400000) + Math.floor(validDays) + 1) * 86400000;
   return Math.min(2_147_483_647, Math.max(1, firstStale - now.getTime()));
 }
+
+// How a fact reads for a holder who bought the token on-chain: in their favour, with limits, against them, or neutral
+// (a fact that only names something, like the governing law). Not established facts have their own tone.
+export type FactTone = 'positive' | 'caution' | 'negative' | 'neutral' | 'unknown';
+
+const TONES: Record<string, Record<string, FactTone>> = {
+  instrument: {
+    share: 'positive',
+    beneficial_interest: 'positive',
+    secured_debt: 'positive',
+    unsecured_debt: 'caution',
+    contractual_claim: 'caution',
+    derivative: 'caution',
+    no_claim: 'negative'
+  },
+  backing: { full_1to1: 'positive', full: 'positive', partial: 'caution', none: 'negative' },
+  asset_protection: { pledged_to_holders: 'positive', trust_or_segregated: 'positive', none: 'negative' },
+  primary_access: { available: 'positive' },
+  redemption: { available: 'positive', at_events_only: 'caution', not_redeemable: 'negative' },
+  claim_scope: { has_claim: 'positive', no_claim: 'negative' },
+  restricted: { none_stated: 'positive', listed: 'neutral' },
+  transfer: { free: 'positive', blocklist: 'caution', allowlist: 'caution' },
+  dividends: { paid_out: 'positive', reinvested: 'positive', none: 'caution' },
+  voting: { pass_through: 'positive', discretionary: 'caution', none: 'caution' },
+  reserves_proof: { published: 'positive', none: 'negative' },
+  governing_law: { stated: 'neutral' }
+};
+for (const key of ['freeze', 'cancellation', 'pause', 'upgrade', 'forced_redemption']) TONES[key] = { yes: 'caution', no: 'positive' };
+for (const key of ['loss_exploit', 'loss_lost_tokens', 'loss_issuer_insolvency', 'loss_custodian_failure'])
+  TONES[key] = {
+    claim_on_assets: 'positive',
+    compensation_stated: 'positive',
+    replacement_possible: 'positive',
+    unsecured_claim: 'caution',
+    holder_bears: 'negative',
+    not_addressed: 'unknown'
+  };
+
+export function factTone(key: string, fact: RightsFact | undefined): FactTone {
+  if (factState(fact) !== 'value') return 'unknown';
+  if (fact!.who === 'nobody') return 'negative';
+  const tone = TONES[key]?.[fact!.value] ?? 'neutral';
+  // a right that only some holders have (KYC, approved clients) is a right with limits for anyone else
+  return tone === 'positive' && fact!.who && fact!.who !== 'anyone' ? 'caution' : tone;
+}

@@ -10,6 +10,7 @@ import {
   COMPARE_FACTS,
   countryName,
   factState,
+  factTone,
   placesOf,
   reviewIsStale,
   reviewRecheckDelay,
@@ -269,5 +270,30 @@ describe('countryName', () => {
     for (const code of used) {
       if (code) expect(REGION_NAMES.en[code], `en ${code}`).toBeTruthy();
     }
+  });
+});
+
+describe('factTone', () => {
+  it.skipIf(!schema)('gives every value of the schema a tone; only facts that just name something stay neutral', () => {
+    const neutral = ['restricted.listed', 'governing_law.stated'];
+    for (const fact of schema!.facts)
+      for (const value of fact.values.filter((v) => v !== 'unknown')) {
+        const tone = factTone(fact.key, { value });
+        if (neutral.includes(`${fact.key}.${value}`)) expect(tone, `${fact.key}.${value}`).toBe('neutral');
+        else expect(['positive', 'caution', 'negative', 'unknown'], `${fact.key}.${value}`).toContain(tone);
+      }
+  });
+
+  it('a right that only some holders have is a right with limits; a right of nobody is against the holder', () => {
+    expect(factTone('redemption', { value: 'available', who: 'anyone' })).toBe('positive');
+    expect(factTone('redemption', { value: 'available', who: 'verified' })).toBe('caution');
+    expect(factTone('claim_scope', { value: 'has_claim', who: 'nobody' })).toBe('negative');
+    expect(factTone('loss_exploit', { value: 'holder_bears' })).toBe('negative');
+    expect(factTone('freeze', { value: 'yes' })).toBe('caution');
+  });
+
+  it('a fact that is missing or not established has its own tone', () => {
+    expect(factTone('backing', undefined)).toBe('unknown');
+    expect(factTone('backing', { value: 'unknown' })).toBe('unknown');
   });
 });
