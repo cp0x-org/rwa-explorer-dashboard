@@ -10,9 +10,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 
-import { isReportedYield, logoUrl, relationRows, RwaIndex, tokenProtocols } from 'api/rwa';
+import { bestYieldByToken, logoUrl, relationRows, RwaIndex, tokenProtocols } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
-import { Issuer, RelationRow, Token } from 'types/rwa';
+import { Issuer, Token } from 'types/rwa';
 import { compareNullable, num } from 'utils/rwa';
 import { LocaleLink, useFormat, useLocaleNavigate, useT } from 'i18n';
 import HolderRights from './components/HolderRights';
@@ -33,16 +33,6 @@ import { OutboundLink, ReferralLink } from './components/OutboundLinks';
 
 // Token columns sort by the token itself; "liquidity" and "updated" sort by the token's best reported-APY position.
 type Field = TokenSortField | 'liquidity' | 'updated';
-
-// Highest reported APY position of each token (same rule as the pipeline's yield profile).
-function bestYieldByToken(rows: RelationRow[]): Map<number, RelationRow> {
-  const best = new Map<number, RelationRow>();
-  rows.filter(isReportedYield).forEach((r) => {
-    const current = best.get(r.token.id);
-    if (!current || Number(r.opportunity.apy_percent) > Number(current.opportunity.apy_percent)) best.set(r.token.id, r);
-  });
-  return best;
-}
 
 const ISSUER_HISTORY_METRICS = ['issuer_usefulness_score', 'basket_relative_score', 'tokens_in_defi_count'];
 

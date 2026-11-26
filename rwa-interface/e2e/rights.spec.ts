@@ -192,7 +192,7 @@ test.describe('holder rights', () => {
         await expect(valueOf(full, 'governing_law')).toContainText(law.countries?.length ? `${law.zones[0]} (` : law.zones[0]);
     }
 
-    await page.goto(`/assets/${reviewed!.ticker}`);
+    await page.goto(`/assets/${reviewed!.ticker}#rights`);
     await hydrated(page);
     const table = page.getByRole('table', { name: en['rights.compare.caption'] });
     await expect(table).toBeVisible();
@@ -207,7 +207,7 @@ test.describe('holder rights', () => {
     )[0];
     test.skip(!compared, 'no compared fact has a note');
     const token = data.tokens.find((t) => t.id === compared.p.token_ids[0])!;
-    await page.goto(`/assets/${token.ticker}`);
+    await page.goto(`/assets/${token.ticker}#rights`);
     await hydrated(page);
     const table = page.getByRole('table', { name: en['rights.compare.caption'] });
     const row = table.locator('tbody tr', { has: page.locator(`a[href$="/issuers/${compared.p.issuer_id}#rights-${compared.p.id}"]`) });
@@ -239,7 +239,7 @@ test.describe('holder rights', () => {
     )[0];
     test.skip(!unresolved, 'no compared fact is unresolved with a note');
     const token = data.tokens.find((t) => t.id === unresolved.p.token_ids[0])!;
-    await page.goto(`/assets/${token.ticker}`);
+    await page.goto(`/assets/${token.ticker}#rights`);
     await hydrated(page);
     const table = page.getByRole('table', { name: en['rights.compare.caption'] });
     const row = table.locator('tbody tr', { has: page.locator(`a[href$="/issuers/${unresolved.p.issuer_id}#rights-${unresolved.p.id}"]`) });
@@ -273,7 +273,7 @@ test.describe('holder rights', () => {
     await expect(page.locator(`#rights-${profile!.id}`).getByRole('heading', { name: /Holder rights/ })).toBeInViewport();
 
     // and from another page of the site
-    await page.goto(`/assets/${reviewed!.ticker}`);
+    await page.goto(`/assets/${reviewed!.ticker}#rights`);
     await hydrated(page);
     await page
       .getByRole('table', { name: en['rights.compare.caption'] })
@@ -309,7 +309,11 @@ test.describe('holder rights', () => {
     await page.goto(`/assets/${reviewed!.ticker}`);
     await hydrated(page);
 
+    // the comparison is the second tab: hidden at first, opened by its tab, which puts #rights into the address
     const table = page.getByRole('table', { name: en['rights.compare.caption'] });
+    await expect(table).toBeHidden();
+    await page.getByRole('tab', { name: en['rights.compare.title'] }).click();
+    await expect(page).toHaveURL(/#rights$/);
     await expect(table).toBeVisible();
     for (const key of COMPARE) {
       await expect(table.getByRole('columnheader', { name: messages[`rights.fact.${key}`], exact: true })).toBeVisible();
@@ -390,7 +394,7 @@ test.describe('holder rights', () => {
 
   test('on a phone the token stays in sight while the comparison scrolls sideways', async ({ page, isMobile }) => {
     test.skip(!isMobile, 'phone layout only');
-    await page.goto(`/assets/${reviewed!.ticker}`);
+    await page.goto(`/assets/${reviewed!.ticker}#rights`);
     await hydrated(page);
     const table = page.getByRole('table', { name: en['rights.compare.caption'] });
     const name = table.locator(`a[href$="/issuers/${profile!.issuer_id}#rights-${profile!.id}"]`);

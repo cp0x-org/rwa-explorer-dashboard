@@ -53,7 +53,7 @@ test.describe('language', () => {
     await page.goto(`/zh/assets/${SAMPLE.ticker}`);
     await hydrated(page);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(SAMPLE.ticker);
-    await expect(page.getByRole('heading', { level: 2, name: '代币化资产' })).toBeVisible();
+    await expect(page.getByRole('tab', { name: '代币化资产', selected: true })).toBeVisible();
     // client-side navigation through the section nav
     await page.getByRole('navigation', { name: '栏目' }).getByRole('link', { name: '发行方' }).click();
     await page.waitForURL('**/zh/issuers');

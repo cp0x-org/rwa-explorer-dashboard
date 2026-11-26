@@ -166,6 +166,8 @@ const zh: Record<MessageId, string> = {
   'col.rankInAsset': '资产内排名',
   'col.liquidity': '流动性',
   'col.liquidity.hintBest': '最佳头寸的流动性',
+  'col.bestPosition': '最佳头寸',
+  'col.bestPosition.hint': '报告 APY 最高的符合条件头寸；点击查看详情',
   'col.maxApy': '最高 APY',
   'col.maxApy.hint': '符合条件头寸中的最高报告 APY。单个头寸的 APY，不代表预期收益',
   'col.updated.hintBest': '最佳头寸的源数据时间戳',
@@ -255,10 +257,9 @@ const zh: Record<MessageId, string> = {
 
   // ---------- asset detail ----------
   'asset.isin': 'ISIN',
+  'asset.sections': '代币化资产与持有人权利',
   'asset.tokenizedAssets': '代币化资产',
-  'asset.highestApy': '最高报告 APY',
   'asset.allPositions': '全部 {ticker} 头寸 →',
-  'asset.noYield': '没有报告 APY 的符合条件头寸',
   'asset.excluded': '排除在排名之外',
 
   // ---------- tokenized assets page ----------
@@ -270,6 +271,8 @@ const zh: Record<MessageId, string> = {
   'tokenized.filtered': '（已筛选）',
   'tokenized.empty': '没有符合筛选条件的代币化资产',
   'tokenized.emptyUnderlying': 'CMC 未追踪该标的的任何代币化资产',
+  'tokenized.showBestPosition': '显示最佳头寸',
+  'tokenized.noBestPosition': '无报告 APY',
   'legend.tokenized.underlying': '标的股票或 ETF 的代码。打开某行查看代币详情；其在同一标的各代币化资产中的排名见标的页与发行方页。',
   'legend.tokenized.token': '代币化资产在 CoinMarketCap 的符号；完整名称见悬浮提示。“封装代币”表示其为另一代币的封装版本。',
   'legend.tokenized.issuer': '代币的发行方，依据 CoinMarketCap 标签（未经核实的法律实体）。',

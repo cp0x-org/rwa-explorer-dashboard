@@ -1,3 +1,4 @@
+import { SyntheticEvent, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
@@ -7,9 +8,11 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 
-import { isReportedYield, relationRows, RwaIndex } from 'api/rwa';
+import { RwaIndex } from 'api/rwa';
 import { Token } from 'types/rwa';
 import { excludedReason, underlyingStatusLabel } from 'utils/rwa';
 import { LocaleLink, useFormat, useT } from 'i18n';
@@ -18,7 +21,6 @@ import DataGate, { NotFound } from './components/DataGate';
 import DetailHeader from './components/StatGrid';
 import HistoryChart from './components/HistoryChart';
 import MethodNote from './components/MethodNote';
-import OpportunityTable from './components/OpportunityTable';
 import { CoverageChip } from './components/StatusChip';
 import TableCaption from './components/TableCaption';
 import VersionsTable from './components/VersionsTable';
@@ -33,15 +35,35 @@ const ASSET_HISTORY_METRICS = [
   'issuers_count'
 ];
 
+// The tokens table and the rights comparison share one slot; #rights opens the second tab, so it can be linked.
+type TabId = 'tokens' | 'rights';
+const tabFromHash = (): TabId => (typeof window !== 'undefined' && window.location.hash === '#rights' ? 'rights' : 'tokens');
+
+function useHashTab(): [TabId, (tab: TabId) => void] {
+  const [tab, setTab] = useState<TabId>('tokens'); // the server render and hydration always start on the first tab
+  useEffect(() => {
+    const sync = () => setTab(tabFromHash());
+    sync();
+    window.addEventListener('hashchange', sync);
+    return () => window.removeEventListener('hashchange', sync);
+  }, []);
+  const select = (next: TabId) => {
+    setTab(next);
+    const { pathname, search } = window.location;
+    window.history.replaceState(window.history.state, '', next === 'rights' ? `${pathname}${search}#rights` : `${pathname}${search}`);
+  };
+  return [tab, select];
+}
+
 function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string }) {
   const t = useT();
   const f = useFormat();
+  const [tab, setTab] = useHashTab();
   const u = index.underlyingByTicker.get(ticker.toUpperCase());
   if (!u) return <NotFound id="notFound.asset" values={{ ticker }} />;
 
   const tokens = u.token_ids.map((id) => index.tokenById.get(id)).filter((tk): tk is Token => !!tk);
   const excluded = u.excluded_token_ids.map((id) => index.tokenById.get(id)).filter((tk): tk is Token => !!tk);
-  const yieldRows = relationRows(index, tokens).filter(isReportedYield);
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -88,27 +110,35 @@ function AssetDetailView({ index, ticker }: { index: RwaIndex; ticker: string })
         gutterBottom
       />
 
-      <Typography variant="h3" component="h2" gutterBottom sx={{ marginBottom: 2 }}>
-        {t('asset.tokenizedAssets')}
-      </Typography>
-      <VersionsTable index={index} tokens={tokens} />
-      <RightsCompareTable index={index} tokens={tokens} />
-
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 1, marginBottom: 2 }}>
-        <Typography variant="h3" component="h2">
-          {t('asset.highestApy')}
-        </Typography>
-        <Link component={LocaleLink} to={`/opportunities?underlying=${u.ticker}`} underline="always">
-          {t('asset.allPositions', { ticker: u.ticker })}
-        </Link>
+      <Box component="section" aria-label={t('asset.sections')} sx={{ marginBottom: 4 }}>
+        <Tabs
+          value={tab}
+          onChange={(_: SyntheticEvent, next: TabId) => setTab(next)}
+          aria-label={t('asset.sections')}
+          variant="scrollable"
+          allowScrollButtonsMobile
+          sx={{ marginBottom: 2, borderBottom: 1, borderColor: 'divider' }}
+        >
+          <Tab value="tokens" id="asset-tab-tokens" aria-controls="asset-panel-tokens" label={t('asset.tokenizedAssets')} />
+          <Tab value="rights" id="asset-tab-rights" aria-controls="asset-panel-rights" label={t('rights.compare.title')} />
+        </Tabs>
+        {/* both panels stay rendered (and in the static HTML); the inactive one is only hidden, so it keeps its sort and switch */}
+        <div role="tabpanel" id="asset-panel-tokens" aria-labelledby="asset-tab-tokens" hidden={tab !== 'tokens'}>
+          <VersionsTable
+            index={index}
+            tokens={tokens}
+            positionColumns
+            toolbarEnd={
+              <Link component={LocaleLink} to={`/opportunities?underlying=${u.ticker}`} underline="always">
+                {t('asset.allPositions', { ticker: u.ticker })}
+              </Link>
+            }
+          />
+        </div>
+        <div role="tabpanel" id="asset-panel-rights" aria-labelledby="asset-tab-rights" hidden={tab !== 'rights'}>
+          <RightsCompareTable index={index} tokens={tokens} />
+        </div>
       </Box>
-      <OpportunityTable
-        index={index}
-        rows={yieldRows}
-        showToken
-        emptyText={t('asset.noYield')}
-        caption={`${t('asset.highestApy')}: ${u.ticker}`}
-      />
 
       {excluded.length > 0 && (
         <Box sx={{ marginTop: 4 }}>

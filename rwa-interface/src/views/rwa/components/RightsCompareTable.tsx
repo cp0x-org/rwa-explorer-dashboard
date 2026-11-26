@@ -23,10 +23,8 @@ export default function RightsCompareTable({ index, tokens }: { index: RwaIndex;
   const reviewed = tokens.filter((token) => tokenRights(index, token)).sort((a, b) => compareTokens(a, b, 'score', 'desc') || a.id - b.id);
   const unreviewed = tokens.filter((token) => !tokenRights(index, token));
   return (
-    <Box component="section" sx={{ marginBottom: 4, '& a': { display: 'inline-flex', minHeight: 24, alignItems: 'center' } }}>
-      <Typography variant="h3" component="h2" gutterBottom>
-        {t('rights.compare.title')}
-      </Typography>
+    // the title is the tab label on the asset page
+    <Box sx={{ '& a': { display: 'inline-flex', minHeight: 24, alignItems: 'center' } }}>
       {reviewed.length ? (
         <DataTableContainer sx={stickyColumn(1)}>
           <Table sx={{ minWidth: 1000 }}>

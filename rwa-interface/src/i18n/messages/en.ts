@@ -168,6 +168,8 @@ const en = {
   'col.rankInAsset': 'Rank in asset',
   'col.liquidity': 'Liquidity',
   'col.liquidity.hintBest': 'Liquidity of the best position',
+  'col.bestPosition': 'Best position',
+  'col.bestPosition.hint': 'Eligible position with the highest reported APY; open it for the details',
   'col.maxApy': 'Max APY',
   'col.maxApy.hint': 'Highest reported APY over eligible positions. APY of one position, not an expected return',
   'col.updated.hintBest': 'Source timestamp of the best position',
@@ -260,10 +262,9 @@ const en = {
 
   // ---------- asset detail ----------
   'asset.isin': 'ISIN',
+  'asset.sections': 'Tokenized assets and holder rights',
   'asset.tokenizedAssets': 'Tokenized Assets',
-  'asset.highestApy': 'Highest Reported APY',
   'asset.allPositions': 'All {ticker} positions →',
-  'asset.noYield': 'No eligible positions with reported APY',
   'asset.excluded': 'Excluded From Ranking',
 
   // ---------- tokenized assets page ----------
@@ -275,6 +276,8 @@ const en = {
   'tokenized.filtered': ' (filtered)',
   'tokenized.empty': 'No tokenized assets match the filters',
   'tokenized.emptyUnderlying': 'CMC tracks no tokenized assets for this underlying',
+  'tokenized.showBestPosition': 'Show best position',
+  'tokenized.noBestPosition': 'No reported APY',
   'legend.tokenized.underlying':
     'Ticker of the underlying stock or ETF. Open a row for the token details; its rank among tokenized assets of the same underlying ' +
     'is shown on the underlying and issuer pages.',

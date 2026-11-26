@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { ReactNode, useMemo, useState } from 'react';
 import Box from '@mui/material/Box';
+import ButtonBase from '@mui/material/ButtonBase';
 import Chip from '@mui/material/Chip';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,19 +12,21 @@ import TableRow from '@mui/material/TableRow';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { logoUrl, RwaIndex, tokenProtocols } from 'api/rwa';
+import { bestYieldByToken, logoUrl, relationRows, RwaIndex, tokenProtocols } from 'api/rwa';
 import { TokenIcon } from 'components/TokenIcon';
 import VisuallyHidden from 'ui-component/VisuallyHidden';
 import DataTableContainer from './DataTableContainer';
 import TableCaption from './TableCaption';
 import { stickyColumn } from './tableSx';
 import RowLink from './RowLink';
-import { Token } from 'types/rwa';
+import { RelationRow, Token } from 'types/rwa';
 import { compareNullable, deploymentChip, networkName, num } from 'utils/rwa';
 import { useFormat, useLocaleNavigate, useT } from 'i18n';
 import SortHeader, { HeaderCell, SortOrder, useSort } from './SortHeader';
 import TablePager from './TablePager';
 import ProtocolsCell from './ProtocolsCell';
+import Age from './Age';
+import OpportunityDialog from './OpportunityDialog';
 
 export type TokenSortField = 'ticker' | 'score' | 'raw' | 'protocols' | 'apy' | 'mcap';
 type Field = TokenSortField;
@@ -86,16 +91,33 @@ interface VersionsTableProps {
   showUnderlying?: boolean; // one table for many underlyings
   underlyingLogos?: Map<string, string | null>; // ticker -> logo path, for showUnderlying
   paginate?: boolean;
+  positionColumns?: boolean; // a switch above the table adds the columns of each token's best reported-APY position
+  toolbarEnd?: ReactNode; // shown on the right of that switch
 }
 
 // Comparison of tokenized versions, ranked by usefulness score.
-export default function VersionsTable({ index, tokens, showUnderlying = false, underlyingLogos, paginate = false }: VersionsTableProps) {
+export default function VersionsTable({
+  index,
+  tokens,
+  showUnderlying = false,
+  underlyingLogos,
+  paginate = false,
+  positionColumns = false,
+  toolbarEnd
+}: VersionsTableProps) {
   const t = useT();
   const f = useFormat();
   const navigate = useLocaleNavigate();
   const { sortField, sortOrder, onSort } = useSort<Field>('score');
   const [page, setPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(25);
+  const [showPositions, setShowPositions] = useState(false);
+  const [selected, setSelected] = useState<RelationRow | null>(null);
+  const withPositions = positionColumns && showPositions;
+  const best = useMemo(
+    () => (withPositions ? bestYieldByToken(relationRows(index, tokens)) : new Map<number, RelationRow>()),
+    [withPositions, index, tokens]
+  );
 
   const sorted = [...tokens].sort((a, b) => compareTokens(a, b, sortField, sortOrder) || a.id - b.id);
   const pageCount = Math.max(1, Math.ceil(sorted.length / rowsPerPage));
@@ -111,6 +133,25 @@ export default function VersionsTable({ index, tokens, showUnderlying = false, u
 
   return (
     <>
+      {(positionColumns || toolbarEnd) && (
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 1, marginBottom: 1 }}>
+          {positionColumns ? (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={showPositions}
+                  onChange={(e) => setShowPositions(e.target.checked)}
+                  slotProps={{ input: { role: 'switch' } }}
+                />
+              }
+              label={t('tokenized.showBestPosition')}
+            />
+          ) : (
+            <span />
+          )}
+          {toolbarEnd}
+        </Box>
+      )}
       <DataTableContainer sx={[{ marginBottom: paginate ? 2 : 4 }, stickyColumn(2)]}>
         <Table sx={{ minWidth: 650, '& .MuiTableCell-root': { paddingX: 1.5 } }}>
           <TableCaption>{t('table.tokenized')}</TableCaption>
@@ -126,12 +167,19 @@ export default function VersionsTable({ index, tokens, showUnderlying = false, u
               <HeaderCell label={t('col.directIndirect')} />
               {header('apy', t('col.apyMaxMedian'), t('col.apyMaxMedian.hint'))}
               {header('mcap', t('col.mcapCmc'))}
+              {withPositions && (
+                <>
+                  <HeaderCell label={t('col.bestPosition')} hint={t('col.bestPosition.hint')} />
+                  <HeaderCell label={t('col.liquidity')} hint={t('col.liquidity.hintBest')} />
+                  <HeaderCell label={t('col.updated')} hint={t('col.updated.hintBest')} />
+                </>
+              )}
             </TableRow>
           </TableHead>
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
-                <TableCell colSpan={10} sx={{ color: 'text.secondary' }}>
+                <TableCell colSpan={withPositions ? 13 : 10} sx={{ color: 'text.secondary' }}>
                   {showUnderlying ? t('tokenized.empty') : t('tokenized.emptyUnderlying')}
                 </TableCell>
               </TableRow>
@@ -195,6 +243,7 @@ export default function VersionsTable({ index, tokens, showUnderlying = false, u
                   </Typography>
                 </TableCell>
                 <TableCell>{f.usd(tk.market_cap_usd)}</TableCell>
+                {withPositions && <PositionCells row={best.get(tk.id)} onOpen={setSelected} />}
               </TableRow>
             ))}
           </TableBody>
@@ -203,6 +252,58 @@ export default function VersionsTable({ index, tokens, showUnderlying = false, u
       {paginate && (
         <TablePager count={sorted.length} page={currentPage} rowsPerPage={rowsPerPage} onPage={setPage} onRowsPerPage={setRowsPerPage} />
       )}
+      {positionColumns && <OpportunityDialog index={index} row={selected} onClose={() => setSelected(null)} />}
+    </>
+  );
+}
+
+// Best reported-APY position of a token: the name opens the position details, the row click still opens the token.
+function PositionCells({ row, onOpen }: { row: RelationRow | undefined; onOpen: (row: RelationRow) => void }) {
+  const t = useT();
+  const f = useFormat();
+  if (!row)
+    return (
+      <>
+        <TableCell sx={{ color: 'text.secondary' }}>{t('tokenized.noBestPosition')}</TableCell>
+        <TableCell>—</TableCell>
+        <TableCell>—</TableCell>
+      </>
+    );
+  const o = row.opportunity;
+  return (
+    <>
+      <TableCell>
+        <ButtonBase
+          onClick={(e) => {
+            e.stopPropagation();
+            onOpen(row);
+          }}
+          aria-haspopup="dialog"
+          title={o.name ?? undefined}
+          sx={{
+            display: 'block',
+            textAlign: 'left',
+            borderRadius: '4px',
+            '&:focus-visible': { outline: '2px solid', outlineColor: 'secondary.main', outlineOffset: 2 }
+          }}
+        >
+          <Typography variant="body2" sx={{ fontWeight: 500, whiteSpace: 'nowrap' }}>
+            {o.platform_name} · {networkName(o.network)}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ maxWidth: 220, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+          >
+            {o.symbol ?? o.key}
+          </Typography>
+          <VisuallyHidden>. {t('common.details')}</VisuallyHidden>
+        </ButtonBase>
+      </TableCell>
+      <TableCell>{f.usd(o.liquidity_usd)}</TableCell>
+      <TableCell>
+        <Age iso={o.updated_at} />
+      </TableCell>
     </>
   );
 }

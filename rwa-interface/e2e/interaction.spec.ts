@@ -44,6 +44,39 @@ test.describe('hydrated pages keep working', () => {
     expect(errors).toEqual([]);
   });
 
+  test('the asset tokens table shows the best positions on demand and opens one', async ({ page }) => {
+    const errors = watchErrors(page);
+    await page.goto(`/assets/${SAMPLE.ticker}`);
+    await hydrated(page);
+    const table = page.getByRole('table', { name: 'Tokenized assets ranked by eligible DeFi positions' });
+    await expect(table).toBeVisible();
+    const bestHeader = table.getByRole('columnheader', { name: /^Best position/ });
+    await expect(bestHeader).toHaveCount(0);
+
+    await page.getByRole('switch', { name: 'Show best position' }).click();
+    await expect(bestHeader).toBeVisible();
+    await expect(table.getByRole('columnheader', { name: /^Liquidity/ })).toBeVisible();
+
+    // the position opens its details without leaving for the token page
+    await table
+      .locator('tbody')
+      .getByRole('button', { name: /Details$/ })
+      .first()
+      .click();
+    const dialog = page.getByRole('dialog');
+    await expect(dialog).toBeVisible();
+    await expect(page).toHaveURL(new RegExp(`/assets/${SAMPLE.ticker}$`));
+    await page.keyboard.press('Escape');
+    await expect(dialog).toBeHidden();
+
+    // the switch survives a trip to the other tab
+    await page.getByRole('tab', { name: 'Holder rights compared' }).click();
+    await page.getByRole('tab', { name: 'Tokenized Assets' }).click();
+    await expect(bestHeader).toBeVisible();
+    await expect(page).toHaveURL(new RegExp(`/assets/${SAMPLE.ticker}$`));
+    expect(errors).toEqual([]);
+  });
+
   test('charts on the summary page work by keyboard and link to pages', async ({ page }) => {
     const errors = watchErrors(page);
     await page.goto('/summary');

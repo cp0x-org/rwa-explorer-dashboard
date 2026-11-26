@@ -147,3 +147,13 @@ export const isReportedYield = (row: RelationRow): boolean =>
   row.opportunity.eligibility === 'eligible' &&
   Number(row.opportunity.apy_percent ?? 0) > 0 &&
   !row.opportunity.flags.includes('apy_anomaly');
+
+// Highest reported APY position of each token (same rule as the pipeline's yield profile).
+export function bestYieldByToken(rows: RelationRow[]): Map<number, RelationRow> {
+  const best = new Map<number, RelationRow>();
+  rows.filter(isReportedYield).forEach((r) => {
+    const current = best.get(r.token.id);
+    if (!current || Number(r.opportunity.apy_percent) > Number(current.opportunity.apy_percent)) best.set(r.token.id, r);
+  });
+  return best;
+}
