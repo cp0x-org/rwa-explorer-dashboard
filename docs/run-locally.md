@@ -5,7 +5,7 @@ Two ways, both with the real Go backend and PostgreSQL. They use different ports
 | Mode | When | What runs where |
 |------|------|-----------------|
 | **A. Local** | coding, fast reload | PostgreSQL in Docker (:5433); `rwa api` (:8080) and the site (:3000 / :4173) on your machine |
-| **B. Docker** | before a deploy | everything in containers, built from this checkout: site :3301, API :3302 |
+| **B. Docker** | before a deploy | everything in containers, built from this checkout: site :3301, API :3303 |
 
 > **Mock vs. backend.** `pnpm mock:api` and `pnpm mock:ssr` serve a *frozen* 1.x snapshot (`public/data/rwa.json`,
 > collected 2026-10-18) on port 8080. They never show new data. Stop them before starting `rwa api` (same port 8080).
@@ -14,7 +14,7 @@ Two ways, both with the real Go backend and PostgreSQL. They use different ports
 
 ```bash
 curl -s localhost:8080/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # A
-curl -s localhost:3302/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # B
+curl -s localhost:3303/api/v1/status | jq '.current_build | {id, generated_at}, .last_run | {id, mode, status, finished_at}'   # B
 ```
 
 An empty database has no build: the site has no data until the first collection run (`run-once` or the collector) is
@@ -75,7 +75,7 @@ docker compose -f docker-compose.dev.yml down -v                   # delete the 
 
 ## B. Docker (everything in containers)
 
-Mode A may keep running: Docker uses its own database and the ports 3301 / 3302.
+Mode A may keep running: Docker uses its own database and the ports 3301 / 3303.
 
 ```bash
 cp .env.example .env          # in the REPOSITORY ROOT (not rwa-backend/.env.example): fill the two keys
@@ -91,7 +91,7 @@ when that run is published; until then it has no data. After that the collector 
 |---------|---------------|
 | site | http://localhost:3301 (or the `WEB_PORT` you set) |
 | live run and its journal | `/updates` → the newest run |
-| API status | `curl -s localhost:3302/api/v1/status` (or the `API_PORT` you set) |
+| API status | `curl -s localhost:3303/api/v1/status` (or the `API_PORT` you set) |
 | collector logs | `make logs` or `docker compose logs -f collector` |
 | another run | `make run` (all assets) or `docker compose exec collector rwa run-once --symbols NVDA` |
 | database shell | `make psql` |

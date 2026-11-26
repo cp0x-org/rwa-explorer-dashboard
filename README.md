@@ -48,7 +48,7 @@ cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env 
 make up                         # builds and starts in the background; first build takes a few minutes
 ```
 
-Then open http://localhost:3301 (API on http://localhost:3302). Other ports: `WEB_PORT` / `API_PORT` in `.env`.
+Then open http://localhost:3301 (API on http://localhost:3303). Other ports: `WEB_PORT` / `API_PORT` in `.env`.
 
 What happens, in order:
 
@@ -69,7 +69,7 @@ Where to look:
   Portals), which tables it reads and writes, its schedule and config files. `docker compose logs api | head -40`
   (or `migrate`, `collector`, `web`); `STARTUP_BANNER=false` turns it off
 - site: http://localhost:3301; `/updates` shows the runs and the journal of each run
-- API status: http://localhost:3302/api/v1/status
+- API status: http://localhost:3303/api/v1/status
 - the run itself: `docker compose logs -f collector` (or `make logs` for collector, api and web)
 
 Another run: `make run` (`docker compose exec collector rwa run-once`; a subset:
@@ -77,7 +77,7 @@ Another run: `make run` (`docker compose exec collector rwa run-once`; a subset:
 (`ADMIN_TOKEN`, default `devtoken`; the collector picks the request up within 30 s):
 
 ```bash
-curl -X POST http://localhost:3302/api/v1/admin/runs -H "Authorization: Bearer devtoken" \
+curl -X POST http://localhost:3303/api/v1/admin/runs -H "Authorization: Bearer devtoken" \
   -H "Content-Type: application/json" -d '{"mode":"refresh","symbols":["NVDA"]}'
 ```
 
@@ -168,16 +168,16 @@ The root `docker-compose.yml` has no build step, so a server can run it from a p
 (the keys, a random `ADMIN_TOKEN`, `POSTGRES_PASSWORD`, `SITE_URL=https://rwa.cp0x.com`, optionally `RWA_VERSION`), then
 `make deploy` (`docker compose pull && docker compose up -d`). Containers: `cp0x-pi-rwa-interface`,
 `cp0x-pi-rwa-backend-api`, `cp0x-pi-rwa-backend-collector`, `cp0x-pi-rwa-backend-migrate`, `cp0x-pi-rwa-postgres`; the
-site on 127.0.0.1:3301 and the API on 127.0.0.1:3302, for nginx in front.
+site on 127.0.0.1:3301 and the API on 127.0.0.1:3303, for nginx in front.
 
 nginx in front, configs in [`deploy/nginx/`](deploy/nginx/):
 
 | Domain | Config | Routes |
 |--------|--------|--------|
-| `rwa.cp0x.com` | `rwa.cp0x.com.conf.snippet`, inside the site's server block | `/` → site (3301); `/api/`, `/logos/` → API (3302) for the browser, same origin |
-| `rwa-api.cp0x.com` | `rwa-api.cp0x.com.conf`, a server block of its own | `/api/`, `/logos/` → API (3302) for programs and agents, `Access-Control-Allow-Origin: *`; `/` → OpenAPI |
+| `rwa.cp0x.com` | `rwa.cp0x.com.conf.snippet`, inside the site's server block | `/` → site (3301); `/api/`, `/logos/` → API (3303) for the browser, same origin |
+| `rwa-api.cp0x.com` | `rwa-api.cp0x.com.conf`, a server block of its own | `/api/`, `/logos/` → API (3303) for programs and agents, `Access-Control-Allow-Origin: *`; `/` → OpenAPI |
 
-Both close `/api/v1/admin/` (404); admin calls go to 127.0.0.1:3302 on the server. The API domain needs a DNS record and
+Both close `/api/v1/admin/` (404); admin calls go to 127.0.0.1:3303 on the server. The API domain needs a DNS record and
 a certificate (`sudo certbot --nginx -d rwa-api.cp0x.com`); the steps are at the top of its config. The site names the
 API by `API_PUBLIC_URL` (default `https://rwa-api.cp0x.com`) in llms.txt, JSON-LD, `<link rel="service-desc">`, and the
 OpenAPI document lists it in `servers`; the browser keeps calling the site's own `/api/`.

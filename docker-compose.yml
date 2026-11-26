@@ -5,7 +5,7 @@
 # On an empty database the collector starts a live run at once (CMC + Portals, ~10-15 min), then repeats it every
 # COLLECT_INTERVAL (24h). The site shows "no data yet" until the first run is published.
 #   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD
-#   open http://localhost:3301 (API on http://localhost:3302). Every port is published on 127.0.0.1 only: on a server
+#   open http://localhost:3301 (API on http://localhost:3303). Every port is published on 127.0.0.1 only: on a server
 #   nginx in front sends /api/ and /logos/ to the API port and everything else to the site port.
 name: rwa-explorer
 
@@ -108,7 +108,7 @@ services:
       migrate:
         condition: service_completed_successfully
     ports:
-      - "127.0.0.1:${API_PORT:-3302}:8080"
+      - "127.0.0.1:${API_PORT:-3303}:8080"
     healthcheck:
       test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/readyz"]
       interval: 10s

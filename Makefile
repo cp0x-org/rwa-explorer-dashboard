@@ -4,7 +4,7 @@
 SHELL := /bin/bash
 .SHELLFLAGS := -eo pipefail -c
 WEB_PORT ?= 3301
-API_PORT ?= 3302
+API_PORT ?= 3303
 PGDATA_DIR ?= ./pg-data
 COLLECT_INTERVAL ?= 24h
 COLLECT_ON_START ?= true
