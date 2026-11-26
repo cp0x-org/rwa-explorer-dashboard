@@ -276,7 +276,7 @@ const en = {
   'tokenized.filtered': ' (filtered)',
   'tokenized.empty': 'No tokenized assets match the filters',
   'tokenized.emptyUnderlying': 'CMC tracks no tokenized assets for this underlying',
-  'tokenized.showBestPosition': 'Show best position',
+  'tokenized.moreColumns': 'More columns',
   'tokenized.noBestPosition': 'No reported APY',
   'legend.tokenized.underlying':
     'Ticker of the underlying stock or ETF. Open a row for the token details; its rank among tokenized assets of the same underlying ' +

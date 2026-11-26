@@ -271,7 +271,7 @@ const zh: Record<MessageId, string> = {
   'tokenized.filtered': '（已筛选）',
   'tokenized.empty': '没有符合筛选条件的代币化资产',
   'tokenized.emptyUnderlying': 'CMC 未追踪该标的的任何代币化资产',
-  'tokenized.showBestPosition': '显示最佳头寸',
+  'tokenized.moreColumns': '更多列',
   'tokenized.noBestPosition': '无报告 APY',
   'legend.tokenized.underlying': '标的股票或 ETF 的代码。打开某行查看代币详情；其在同一标的各代币化资产中的排名见标的页与发行方页。',
   'legend.tokenized.token': '代币化资产在 CoinMarketCap 的符号；完整名称见悬浮提示。“封装代币”表示其为另一代币的封装版本。',

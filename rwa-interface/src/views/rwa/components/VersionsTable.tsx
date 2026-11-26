@@ -91,7 +91,7 @@ interface VersionsTableProps {
   showUnderlying?: boolean; // one table for many underlyings
   underlyingLogos?: Map<string, string | null>; // ticker -> logo path, for showUnderlying
   paginate?: boolean;
-  positionColumns?: boolean; // a switch above the table adds the columns of each token's best reported-APY position
+  positionColumns?: boolean; // a switch above the table shows Raw, Direct / Indirect and each token's best reported-APY position
   toolbarEnd?: ReactNode; // shown on the right of that switch
 }
 
@@ -108,12 +108,17 @@ export default function VersionsTable({
   const t = useT();
   const f = useFormat();
   const navigate = useLocaleNavigate();
-  const { sortField, sortOrder, onSort } = useSort<Field>('score');
+  const { sortField, sortOrder, onSort, reset: resetSort } = useSort<Field>('score');
   const [page, setPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(25);
   const [showPositions, setShowPositions] = useState(false);
   const [selected, setSelected] = useState<RelationRow | null>(null);
   const withPositions = positionColumns && showPositions;
+  const withCounts = !positionColumns || showPositions; // without the switch these columns are always shown
+  const toggleColumns = (on: boolean) => {
+    setShowPositions(on);
+    if (!on && sortField === 'raw') resetSort(); // no sort by a column that is no longer shown
+  };
   const best = useMemo(
     () => (withPositions ? bestYieldByToken(relationRows(index, tokens)) : new Map<number, RelationRow>()),
     [withPositions, index, tokens]
@@ -140,11 +145,11 @@ export default function VersionsTable({
               control={
                 <Switch
                   checked={showPositions}
-                  onChange={(e) => setShowPositions(e.target.checked)}
+                  onChange={(e) => toggleColumns(e.target.checked)}
                   slotProps={{ input: { role: 'switch' } }}
                 />
               }
-              label={t('tokenized.showBestPosition')}
+              label={t('tokenized.moreColumns')}
             />
           ) : (
             <span />
@@ -162,9 +167,9 @@ export default function VersionsTable({
               <TableCell>{t('col.issuer')}</TableCell>
               <TableCell>{t('col.networks')}</TableCell>
               {header('score', t('col.score'), t('col.score.hint'))}
-              {header('raw', t('col.raw'))}
+              {withCounts && header('raw', t('col.raw'))}
               {header('protocols', t('col.protocols'))}
-              <HeaderCell label={t('col.directIndirect')} />
+              {withCounts && <HeaderCell label={t('col.directIndirect')} />}
               {header('apy', t('col.apyMaxMedian'), t('col.apyMaxMedian.hint'))}
               {header('mcap', t('col.mcapCmc'))}
               {withPositions && (
@@ -179,7 +184,7 @@ export default function VersionsTable({
           <TableBody>
             {visible.length === 0 && (
               <TableRow>
-                <TableCell colSpan={withPositions ? 13 : 10} sx={{ color: 'text.secondary' }}>
+                <TableCell colSpan={8 + (withCounts ? 2 : 0) + (withPositions ? 3 : 0)} sx={{ color: 'text.secondary' }}>
                   {showUnderlying ? t('tokenized.empty') : t('tokenized.emptyUnderlying')}
                 </TableCell>
               </TableRow>
@@ -229,13 +234,15 @@ export default function VersionsTable({
                     {tk.usefulness_score}
                   </Typography>
                 </TableCell>
-                <TableCell>{tk.counts.raw_confirmed_opportunities_count}</TableCell>
+                {withCounts && <TableCell>{tk.counts.raw_confirmed_opportunities_count}</TableCell>}
                 <TableCell>
                   <ProtocolsCell count={tk.counts.eligible_protocols_count} names={tokenProtocols(index, tk)} />
                 </TableCell>
-                <TableCell>
-                  {tk.counts.direct_eligible_count} / {tk.counts.indirect_eligible_count}
-                </TableCell>
+                {withCounts && (
+                  <TableCell>
+                    {tk.counts.direct_eligible_count} / {tk.counts.indirect_eligible_count}
+                  </TableCell>
+                )}
                 <TableCell>
                   {f.pct(tk.yield.max_reported_apy_percent)}
                   <Typography variant="body2" color="text.secondary">

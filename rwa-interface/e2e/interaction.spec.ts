@@ -44,17 +44,23 @@ test.describe('hydrated pages keep working', () => {
     expect(errors).toEqual([]);
   });
 
-  test('the asset tokens table shows the best positions on demand and opens one', async ({ page }) => {
+  test('the asset tokens table shows the extra columns on demand and opens a best position', async ({ page }) => {
     const errors = watchErrors(page);
     await page.goto(`/assets/${SAMPLE.ticker}`);
     await hydrated(page);
     const table = page.getByRole('table', { name: 'Tokenized assets ranked by eligible DeFi positions' });
     await expect(table).toBeVisible();
     const bestHeader = table.getByRole('columnheader', { name: /^Best position/ });
+    const rawHeader = table.getByRole('columnheader', { name: /^Raw/ });
+    const directHeader = table.getByRole('columnheader', { name: 'Direct / Indirect' });
     await expect(bestHeader).toHaveCount(0);
+    await expect(rawHeader).toHaveCount(0);
+    await expect(directHeader).toHaveCount(0);
 
-    await page.getByRole('switch', { name: 'Show best position' }).click();
+    await page.getByRole('switch', { name: 'More columns' }).click();
     await expect(bestHeader).toBeVisible();
+    await expect(rawHeader).toBeVisible();
+    await expect(directHeader).toBeVisible();
     await expect(table.getByRole('columnheader', { name: /^Liquidity/ })).toBeVisible();
 
     // the position opens its details without leaving for the token page
@@ -68,6 +74,15 @@ test.describe('hydrated pages keep working', () => {
     await expect(page).toHaveURL(new RegExp(`/assets/${SAMPLE.ticker}$`));
     await page.keyboard.press('Escape');
     await expect(dialog).toBeHidden();
+
+    // a sort by Raw does not outlive the column: switching it off brings back the sort by score
+    const scoreHeader = table.getByRole('columnheader', { name: /^Score/ });
+    await rawHeader.getByRole('button').click();
+    await expect(rawHeader).toHaveAttribute('aria-sort', 'descending');
+    await page.getByRole('switch', { name: 'More columns' }).click();
+    await expect(rawHeader).toHaveCount(0);
+    await expect(scoreHeader).toHaveAttribute('aria-sort', 'descending');
+    await page.getByRole('switch', { name: 'More columns' }).click();
 
     // the switch survives a trip to the other tab
     await page.getByRole('tab', { name: 'Holder rights compared' }).click();

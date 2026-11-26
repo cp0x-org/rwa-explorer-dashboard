@@ -17,7 +17,11 @@ export function useSort<F extends string>(defaultField: F, defaultOrder: SortOrd
     setSortOrder(sortField === field && sortOrder === 'desc' ? 'asc' : 'desc');
     setSortField(field);
   };
-  return { sortField, sortOrder, onSort };
+  const reset = () => {
+    setSortField(defaultField);
+    setSortOrder(defaultOrder);
+  };
+  return { sortField, sortOrder, onSort, reset };
 }
 
 interface SortHeaderProps<F extends string> {
