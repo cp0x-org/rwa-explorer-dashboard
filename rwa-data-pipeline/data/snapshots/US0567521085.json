@@ -5,8 +5,8 @@
  "name": "Baidu (ADR)",
  "isin": "US0567521085",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:20:37Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:16:16Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,40 +17,60 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 80.16964498695957,
-     "tokenized_market_cap": 1092017.065123895,
-     "tokenized_volume_24h": 1193752.68602013,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 62.73452472965539,
+     "tokenized_market_cap": 851684.7216456882,
+     "tokenized_volume_24h": 1155015.48586548,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 197,
    "asset_type": "stock",
-   "rwa_rank": 476,
+   "rwa_rank": 555,
    "has_tokens": true,
-   "average_tokenized_price": 80.16964498695957,
-   "tokenized_market_cap": 1092017.065123895,
-   "tokenized_volume_24h": 1193752.68602013,
-   "last_updated": "2026-10-18T20:14:29.058Z",
+   "average_tokenized_price": 62.73452472965539,
+   "tokenized_market_cap": 851684.7216456882,
+   "tokenized_volume_24h": 1155015.48586548,
+   "last_updated": "2026-11-21T14:10:11.180Z",
    "tokens": [
     {
      "symbol": "BIDUon",
      "name": "Baidu Tokenized Stock (Ondo)",
-     "price": 80.1302901670559,
+     "price": 62.73289230107357,
      "crypto_id": 38071,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 1050104.41,
-     "volume_24h": 1179761.1521069
+     "market_cap": 793910.5126783751,
+     "volume_24h": 1146415.0670842635
     },
     {
      "symbol": "BIDUc",
      "name": "Baidu, Inc. Tokenized Stock (Coinbase)",
-     "price": 81.83497776586549,
+     "price": 62.09118435075485,
      "crypto_id": 42544,
      "issuer_id": "6a72fe7072996604d45c6733",
      "issuer_name": "Coinbase",
-     "market_cap": 41735.84,
-     "volume_24h": 12623.73615567
+     "market_cap": 25146.929662055714,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "BIDU",
+     "name": "Baidu Inc (Derivatives)",
+     "price": 63.6097653653878,
+     "crypto_id": 42734,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "BIDUx",
+     "name": "Baidu Inc tokenized stock (xStock)",
+     "price": 62.952123519870874,
+     "crypto_id": 42796,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 32627.279304939973,
+     "volume_24h": 8600.418781219954
     }
    ],
    "tradfi_markets": [
@@ -147,6 +167,69 @@
       }
      }
     ]
+   },
+   "42734": {
+    "id": 42734,
+    "symbol": "BIDU",
+    "name": "Baidu Inc (Derivatives)",
+    "slug": "baidu-inc-derivatives",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42734.png",
+    "date_added": "2026-09-23T04:34:25.000Z",
+    "platform": null,
+    "contract_address": null
+   },
+   "42796": {
+    "id": 42796,
+    "symbol": "BIDUx",
+    "name": "Baidu Inc tokenized stock (xStock)",
+    "slug": "baidu-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42796.png",
+    "date_added": "2026-06-08T15:32:52.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xE630aa1cd9AE37C789F3E4f44104dC99bBb482De"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xE630aa1cd9AE37C789F3E4f44104dC99bBb482De",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xE630aa1cd9AE37C789F3E4f44104dC99bBb482De",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "XsnStpqwfPD5mC1KRVrJ3w6kxEYVkUQivDHBSEr4uxf",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -170,44 +253,17 @@
   "looked_up": [
    "base:0xb200000000000000000000d2b7d9aee52f6c6bef",
    "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
-   "ethereum:0x9d4c6ad12b55e4645b585209f90cc26614061e91"
+   "bsc:0xe630aa1cd9ae37c789f3e4f44104dc99bbb482de",
+   "ethereum:0x9d4c6ad12b55e4645b585209f90cc26614061e91",
+   "ethereum:0xe630aa1cd9ae37c789f3e4f44104dc99bbb482de"
   ],
   "exact": {
-   "base:0xb200000000000000000000d2b7d9aee52f6c6bef": {
-    "key": "base:0xb200000000000000000000d2b7d9aee52f6c6bef",
-    "name": "Baidu, Inc. (Coinbase Tokenized Stock)",
-    "decimals": 8,
-    "symbol": "BIDUC",
-    "price": 81.47,
-    "address": "0xb200000000000000000000d2b7d9aee52f6c6bef",
-    "addresses": {
-     "base": "0xb200000000000000000000d2b7d9aee52f6c6bef"
-    },
-    "platform": "basic",
-    "network": "base",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2026-10-12T05:06:39.128Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 41537,
-    "image": "https://coin-images.coingecko.com/coins/images/102179407/large/BIDUc-icon-200.png?1791735788",
-    "metrics": {
-     "volumeUsd1d": "12526.353",
-     "volumeUsd7d": "97400.358"
-    },
-    "metadata": {},
-    "tokenId": "27198357-2c3a-4cf1-8803-7e1f7547672d",
-    "totalSupply": "510",
-    "circulatingSupply": "510",
-    "isClaimed": false,
-    "isPortable": true
-   },
    "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c": {
     "key": "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
     "name": "Baidu (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "BIDUON",
-    "price": 80.2,
+    "price": 62.73,
     "address": "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
     "addresses": {
      "ethereum": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
@@ -215,20 +271,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-10-14T12:46:26.928Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1050539,
+    "liquidity": 793895,
     "image": "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
     "metrics": {
-     "volumeUsd1d": "805428.578",
-     "volumeUsd7d": "5763784.722"
+     "volumeUsd1d": "792799.193",
+     "volumeUsd7d": "5804052.328"
     },
     "metadata": {},
     "tokenId": "c0b7a600-c1f5-4b52-86d9-d44ee301a6ba",
-    "totalSupply": "13104.962068222294",
-    "circulatingSupply": "13104.962068222294",
+    "totalSupply": "12655.410639575894",
+    "circulatingSupply": "12655.410639575894",
     "isClaimed": false,
     "isPortable": true
    },
@@ -237,7 +293,7 @@
     "name": "Baidu (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "BIDUON",
-    "price": 80.2,
+    "price": 62.73,
     "address": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
     "addresses": {
      "ethereum": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
@@ -245,33 +301,127 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1050539,
+    "liquidity": 793895,
     "image": "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
     "metrics": {
-     "volumeUsd1d": "805777.45",
-     "volumeUsd7d": "5755068.844"
+     "volumeUsd1d": "795466.899",
+     "volumeUsd7d": "5799061.516"
     },
     "metadata": {},
     "tokenId": "c0b7a600-c1f5-4b52-86d9-d44ee301a6ba",
-    "totalSupply": "13104.962068222294",
-    "circulatingSupply": "13104.962068222294",
+    "totalSupply": "12655.410639575894",
+    "circulatingSupply": "12655.410639575894",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "BIDU": {
-    "total_items": 12,
+    "total_items": 14,
     "pages": 1,
-    "received": 12,
+    "received": 14,
     "complete": true
    }
   },
   "records": {
+   "ethereum:0x786dcfb84a77155e8bccdb0995e7b9cc5458e53f1226dadc3038f1803b6bdb40": {
+    "key": "ethereum:0x786dcfb84a77155e8bccdb0995e7b9cc5458e53f1226dadc3038f1803b6bdb40",
+    "name": "Uniswap V4 LP wUSDC/BIDUon",
+    "decimals": 18,
+    "symbol": "WUSDC/BIDUON",
+    "price": 9007199254740990,
+    "address": "0x786dcfb84a77155e8bccdb0995e7b9cc5458e53f1226dadc3038f1803b6bdb40",
+    "addresses": {
+     "ethereum": "0x786dcfb84a77155e8bccdb0995e7b9cc5458e53f1226dadc3038f1803b6bdb40"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824"
+    ],
+    "updatedAt": "2026-11-21T14:14:26.189Z",
+    "createdAt": "2026-11-07T15:59:36.231Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x9d4c6ad12b55e4645b585209f90cc26614061e91"
+    ],
+    "liquidity": 9934.171615493578,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "1414fdc5-d307-43b8-aaec-84db90431720",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x863e06ecdcf25ceee628134a0cb9441db87b2aad3a3167754c12c68cefc6d794": {
+    "key": "bsc:0x863e06ecdcf25ceee628134a0cb9441db87b2aad3a3167754c12c68cefc6d794",
+    "name": "Uniswap V4 LP BIDUon/USDT",
+    "decimals": 18,
+    "symbol": "BIDUON/USDT",
+    "price": 9007199254740990,
+    "address": "0x863e06ecdcf25ceee628134a0cb9441db87b2aad3a3167754c12c68cefc6d794",
+    "addresses": {
+     "bsc": "0x863e06ecdcf25ceee628134a0cb9441db87b2aad3a3167754c12c68cefc6d794"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-11-21T14:14:46.966Z",
+    "createdAt": "2026-11-20T19:37:07.080Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 28351.50074461401,
+    "metrics": {
+     "apy": "508.081",
+     "baseApy": "508.081",
+     "volumeUsd1d": "7917.863",
+     "volumeUsd7d": "7917.863"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 490,
+     "feePercentage": "4.9951"
+    },
+    "tokenId": "47d2e1f2-b9cb-4ebb-ab31-e79ae011662b",
+    "reserves": [
+     "339.929692620300892939",
+     "7036.253137851887043118"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "bsc:0x2c0b391a80adad16de15da07eb414a4a9c9a241a2db263776c99f3f8a8334de4": {
     "key": "bsc:0x2c0b391a80adad16de15da07eb414a4a9c9a241a2db263776c99f3f8a8334de4",
     "name": "Uniswap V4 LP BIDUon/USDT",
@@ -289,19 +439,19 @@
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:17:55.487Z",
+    "updatedAt": "2026-11-21T14:14:47.250Z",
     "createdAt": "2026-09-08T16:49:36.094Z",
     "verifiedAt": null,
     "tokens": [
      "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 17474.233466144815,
+    "liquidity": 8903.605781687835,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "16595.852"
+     "apy": "0.417",
+     "baseApy": "0.417",
+     "volumeUsd1d": "2.548",
+     "volumeUsd7d": "520.935"
     },
     "metadata": {
      "tags": [
@@ -313,8 +463,8 @@
     },
     "tokenId": "bbf11255-f145-44e5-8c5c-f753cf912d1a",
     "reserves": [
-     "175.30825166924846994",
-     "3417.296779146092561394"
+     "88.273307494816308222",
+     "3370.312762231356354328"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -336,19 +486,19 @@
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:15:52.865Z",
+    "updatedAt": "2026-11-21T14:13:44.865Z",
     "createdAt": "2026-10-08T07:24:11.775Z",
     "verifiedAt": null,
     "tokens": [
      "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 781.7853629026062,
+    "liquidity": 702.0181479557037,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "0.352"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -362,100 +512,6 @@
     "reserves": [
      "4.573239153947064908",
      "415.596826791135706376"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "base:0x6707a3524360c50d7ef8b6849a3bb4ed16dfc58d": {
-    "key": "base:0x6707a3524360c50d7ef8b6849a3bb4ed16dfc58d",
-    "name": "Aerodrome SlipStream USD Coin/Baidu, Inc. 0.05%",
-    "decimals": 18,
-    "symbol": "USDC/BIDUC",
-    "price": 9007199254740990,
-    "address": "0x6707a3524360c50d7ef8b6849a3bb4ed16dfc58d",
-    "addresses": {
-     "base": "0x6707a3524360c50d7ef8b6849a3bb4ed16dfc58d"
-    },
-    "platform": "aerodrome-slipstream",
-    "network": "base",
-    "images": [
-     "https://icons.llamao.fi/icons/protocols/aerodrome",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
-     "https://coin-images.coingecko.com/coins/images/102179407/large/BIDUc-icon-200.png?1791735788"
-    ],
-    "updatedAt": "2026-10-18T20:15:54.592Z",
-    "createdAt": "2026-10-15T14:20:59.733Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-     "0xb200000000000000000000d2b7d9aee52f6c6bef"
-    ],
-    "liquidity": 11302.211747511845,
-    "metrics": {
-     "apy": "31.21",
-     "baseApy": "31.21",
-     "rewardApy": "0",
-     "volumeUsd1d": "12700.661",
-     "volumeUsd7d": "66125.52"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "0.05",
-     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
-    },
-    "tokenId": "84dca1b4-9c13-4056-8f71-1f5e8df0e1ea",
-    "reserves": [
-     "1328.904421",
-     "122.46587608"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "base:0xd47b8f13ffc3198148b138d3f07cc89c92042950": {
-    "key": "base:0xd47b8f13ffc3198148b138d3f07cc89c92042950",
-    "name": "Aerodrome SlipStream USD Coin/Baidu, Inc. 0.01%",
-    "decimals": 18,
-    "symbol": "USDC/BIDUC",
-    "price": 9007199254740990,
-    "address": "0xd47b8f13ffc3198148b138d3f07cc89c92042950",
-    "addresses": {
-     "base": "0xd47b8f13ffc3198148b138d3f07cc89c92042950"
-    },
-    "platform": "aerodrome-slipstream",
-    "network": "base",
-    "images": [
-     "https://icons.llamao.fi/icons/protocols/aerodrome",
-     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
-     "https://coin-images.coingecko.com/coins/images/102179407/large/BIDUc-icon-200.png?1791735788"
-    ],
-    "updatedAt": "2026-10-18T20:15:54.592Z",
-    "createdAt": "2026-10-12T05:10:18.822Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-     "0xb200000000000000000000d2b7d9aee52f6c6bef"
-    ],
-    "liquidity": 51203.715075713626,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "rewardApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "30077.816"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "0.01",
-     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
-    },
-    "tokenId": "2f1a82da-a254-45cf-9af1-ca6bdba9f08c",
-    "reserves": [
-     "25397.571566",
-     "316.94667653"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -477,19 +533,19 @@
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:17:55.717Z",
+    "updatedAt": "2026-11-21T14:14:48.091Z",
     "createdAt": "2026-10-13T05:12:56.409Z",
     "verifiedAt": null,
     "tokens": [
      "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 29909.294192441084,
+    "liquidity": 570.609843348472,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "4687.373"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -501,8 +557,8 @@
     },
     "tokenId": "9c0987b0-587d-41ab-ad7e-4c707db7aae5",
     "reserves": [
-     "270.558233952570258175",
-     "8217.220864449474102681"
+     "7.051075451118824243",
+     "128.451820810251883336"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -524,14 +580,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824"
     ],
-    "updatedAt": "2026-10-18T20:16:56.472Z",
+    "updatedAt": "2026-11-21T14:14:30.295Z",
     "createdAt": "2026-09-28T10:37:11.160Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x9d4c6ad12b55e4645b585209f90cc26614061e91"
     ],
-    "liquidity": 10021.088080122907,
+    "liquidity": 9934.171615493578,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -571,14 +627,14 @@
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:17:55.892Z",
+    "updatedAt": "2026-11-21T14:14:48.541Z",
     "createdAt": "2026-09-08T16:49:36.094Z",
     "verifiedAt": null,
     "tokens": [
      "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 2942.3570698213352,
+    "liquidity": 2613.429442068144,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -601,103 +657,62 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "base:0xb200000000000000000000d2b7d9aee52f6c6bef": {
-    "key": "base:0xb200000000000000000000d2b7d9aee52f6c6bef",
-    "name": "Baidu, Inc. (Coinbase Tokenized Stock)",
-    "decimals": 8,
-    "symbol": "BIDUC",
-    "price": 81.47,
-    "address": "0xb200000000000000000000d2b7d9aee52f6c6bef",
-    "addresses": {
-     "base": "0xb200000000000000000000d2b7d9aee52f6c6bef"
-    },
-    "platform": "basic",
-    "network": "base",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2026-10-12T05:06:39.128Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 41537,
-    "image": "https://coin-images.coingecko.com/coins/images/102179407/large/BIDUc-icon-200.png?1791735788",
-    "metrics": {
-     "volumeUsd1d": "12526.353",
-     "volumeUsd7d": "97400.358"
-    },
-    "metadata": {},
-    "tokenId": "27198357-2c3a-4cf1-8803-7e1f7547672d",
-    "totalSupply": "510",
-    "circulatingSupply": "510",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "arbitrum:0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69": {
-    "key": "arbitrum:0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69",
-    "name": "Baidu rStock",
+   "bsc:0x15579f22d005ad0e29293e35a3f04ff1e5e40ccf5887d1c94f035fd7b07abfe0": {
+    "key": "bsc:0x15579f22d005ad0e29293e35a3f04ff1e5e40ccf5887d1c94f035fd7b07abfe0",
+    "name": "Uniswap V4 LP BIDUon/USDT",
     "decimals": 18,
-    "symbol": "RBIDU",
-    "price": 79.92,
-    "address": "0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69",
-    "addresses": {
-     "arbitrum": "0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69"
-    },
-    "platform": "basic",
-    "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2026-09-11T08:57:27.903Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 24010,
-    "image": "https://coin-images.coingecko.com/coins/images/102177135/large/ea424396cf5b472b951e53f1f1ede1fe.png?1789116940",
-    "metrics": {
-     "volumeUsd1d": "1516.14",
-     "volumeUsd7d": "20543.424"
-    },
-    "metadata": {},
-    "tokenId": "35135e19-d88a-45b2-bcaf-cb80483b1d7d",
-    "totalSupply": "300.427960126",
-    "circulatingSupply": "300.427960126",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c": {
-    "key": "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
-    "name": "Baidu (Ondo Tokenized Stock)",
-    "decimals": 18,
-    "symbol": "BIDUON",
-    "price": 80.2,
-    "address": "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
-    "addresses": {
-     "ethereum": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
-     "bsc": "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c"
-    },
-    "platform": "basic",
-    "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
-    "createdAt": "2025-10-14T12:46:26.928Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 1050539,
-    "image": "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
-    "metrics": {
-     "volumeUsd1d": "805428.578",
-     "volumeUsd7d": "5763784.722"
-    },
-    "metadata": {},
-    "tokenId": "c0b7a600-c1f5-4b52-86d9-d44ee301a6ba",
-    "totalSupply": "13104.962068222294",
-    "circulatingSupply": "13104.962068222294",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0x4f2b264631863d17fcd8e3fa9324f20b23b7c40e47f424d23ceafd02607518ba": {
-    "key": "ethereum:0x4f2b264631863d17fcd8e3fa9324f20b23b7c40e47f424d23ceafd02607518ba",
-    "name": "Uniswap V4 LP EGP/BIDUon",
-    "decimals": 18,
-    "symbol": "EGP/BIDUON",
+    "symbol": "BIDUON/USDT",
     "price": 9007199254740990,
-    "address": "0x4f2b264631863d17fcd8e3fa9324f20b23b7c40e47f424d23ceafd02607518ba",
+    "address": "0x15579f22d005ad0e29293e35a3f04ff1e5e40ccf5887d1c94f035fd7b07abfe0",
     "addresses": {
-     "ethereum": "0x4f2b264631863d17fcd8e3fa9324f20b23b7c40e47f424d23ceafd02607518ba"
+     "bsc": "0x15579f22d005ad0e29293e35a3f04ff1e5e40ccf5887d1c94f035fd7b07abfe0"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-11-21T14:14:48.644Z",
+    "createdAt": "2026-10-22T19:56:07.048Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 8576.174642712134,
+    "metrics": {
+     "apy": "267.837",
+     "baseApy": "267.837",
+     "volumeUsd1d": "1660.478",
+     "volumeUsd7d": "50003.29"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 370,
+     "feePercentage": "3.7963"
+    },
+    "tokenId": "e2a58253-d852-43b3-93e0-0dd3ecf9c3c4",
+    "reserves": [
+     "95.195200965709290897",
+     "2607.745489157026483731"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xf274f16a7b27e3fd8999d7ecfe850cb6bfc21abcb972948c12e8c8eb4e965aa6": {
+    "key": "ethereum:0xf274f16a7b27e3fd8999d7ecfe850cb6bfc21abcb972948c12e8c8eb4e965aa6",
+    "name": "Uniswap V4 LP HRC/BIDUon",
+    "decimals": 18,
+    "symbol": "HRC/BIDUON",
+    "price": 9007199254740990,
+    "address": "0xf274f16a7b27e3fd8999d7ecfe850cb6bfc21abcb972948c12e8c8eb4e965aa6",
+    "addresses": {
+     "ethereum": "0xf274f16a7b27e3fd8999d7ecfe850cb6bfc21abcb972948c12e8c8eb4e965aa6"
     },
     "platform": "uniswap-v4",
     "network": "ethereum",
@@ -706,14 +721,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824"
     ],
-    "updatedAt": "2026-10-18T20:17:49.925Z",
-    "createdAt": "2026-10-14T06:54:48.701Z",
+    "updatedAt": "2026-11-21T14:14:34.764Z",
+    "createdAt": "2026-11-07T15:59:36.714Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
      "0x9d4c6ad12b55e4645b585209f90cc26614061e91"
     ],
-    "liquidity": 20061.57372951527,
+    "liquidity": 3488.270032951802,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -725,13 +740,166 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "99.61"
+     "tickSpacing": 19885,
+     "feePercentage": "99.4259"
     },
-    "tokenId": "83018fc2-b5d0-4769-8703-a0171f01756d",
+    "tokenId": "b5328167-b3fe-4f8a-b6f6-5d18a19a6b3d",
     "reserves": [
-     "19999.999999999999999997",
-     "0.335972683769086956"
+     "3499.999999999999999866",
+     "0.000092291458035926"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69": {
+    "key": "arbitrum:0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69",
+    "name": "Baidu rStock",
+    "decimals": 18,
+    "symbol": "RBIDU",
+    "price": 62.86,
+    "address": "0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69",
+    "addresses": {
+     "arbitrum": "0xa0ed17be45e59ee1dc8b3268348d2a65d54e8a69"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
+    "createdAt": "2026-09-11T08:57:27.903Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 16737.54,
+    "image": "https://coin-images.coingecko.com/coins/images/102177135/large/ea424396cf5b472b951e53f1f1ede1fe.png?1789116940",
+    "metrics": {
+     "volumeUsd1d": "187.99",
+     "volumeUsd7d": "276943.473"
+    },
+    "metadata": {},
+    "tokenId": "35135e19-d88a-45b2-bcaf-cb80483b1d7d",
+    "totalSupply": "266.268170086",
+    "circulatingSupply": "266.268170086",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "bsc:0xc5937ff53eb68cd172b7efd893f3bea467726092efa832970c53ad6509d2ef7f": {
+    "key": "bsc:0xc5937ff53eb68cd172b7efd893f3bea467726092efa832970c53ad6509d2ef7f",
+    "name": "Uniswap V4 LP BIDUon/USDT",
+    "decimals": 18,
+    "symbol": "BIDUON/USDT",
+    "price": 9007199254740990,
+    "address": "0xc5937ff53eb68cd172b7efd893f3bea467726092efa832970c53ad6509d2ef7f",
+    "addresses": {
+     "bsc": "0xc5937ff53eb68cd172b7efd893f3bea467726092efa832970c53ad6509d2ef7f"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
+    ],
+    "updatedAt": "2026-11-21T14:14:48.551Z",
+    "createdAt": "2026-11-19T19:30:58.337Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
+     "0x55d398326f99059ff775485246999027b3197955"
+    ],
+    "liquidity": 719.3483760550489,
+    "metrics": {
+     "apy": "510.435",
+     "baseApy": "510.435",
+     "volumeUsd1d": "347.712",
+     "volumeUsd7d": "897.392"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 280,
+     "feePercentage": "2.8972"
+    },
+    "tokenId": "99924eb6-708b-4177-a406-1764455ad02b",
+    "reserves": [
+     "5.641034806324116629",
+     "365.930502284110003362"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c": {
+    "key": "bsc:0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
+    "name": "Baidu (Ondo Tokenized Stock)",
+    "decimals": 18,
+    "symbol": "BIDUON",
+    "price": 62.73,
+    "address": "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c",
+    "addresses": {
+     "ethereum": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
+     "bsc": "0x467e59ce5d5fe01686d4a80dd1e1dae13549aa6c"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
+    "createdAt": "2025-10-14T12:46:26.928Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 793895,
+    "image": "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
+    "metrics": {
+     "volumeUsd1d": "792799.193",
+     "volumeUsd7d": "5804052.328"
+    },
+    "metadata": {},
+    "tokenId": "c0b7a600-c1f5-4b52-86d9-d44ee301a6ba",
+    "totalSupply": "12655.410639575894",
+    "circulatingSupply": "12655.410639575894",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0xc56bda21b25e4d962eae9f46c3fc7a6467edfa471d31d8b5f31f5ef60e43bf13": {
+    "key": "ethereum:0xc56bda21b25e4d962eae9f46c3fc7a6467edfa471d31d8b5f31f5ef60e43bf13",
+    "name": "Uniswap V4 LP EE/BIDUon",
+    "decimals": 18,
+    "symbol": "EE/BIDUON",
+    "price": 9007199254740990,
+    "address": "0xc56bda21b25e4d962eae9f46c3fc7a6467edfa471d31d8b5f31f5ef60e43bf13",
+    "addresses": {
+     "ethereum": "0xc56bda21b25e4d962eae9f46c3fc7a6467edfa471d31d8b5f31f5ef60e43bf13"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824"
+    ],
+    "updatedAt": "2026-11-21T14:14:36.786Z",
+    "createdAt": "2026-11-07T15:59:33.928Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x9d4c6ad12b55e4645b585209f90cc26614061e91"
+    ],
+    "liquidity": 49838.36301164612,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9942,
+     "feePercentage": "99.4248"
+    },
+    "tokenId": "796995ce-7964-41d6-a4fd-f56dcd687588",
+    "reserves": [
+     "49999.999999999999999969",
+     "0.350113542015862258"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -741,7 +909,7 @@
     "name": "Baidu (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "BIDUON",
-    "price": 80.2,
+    "price": 62.73,
     "address": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
     "addresses": {
      "ethereum": "0x9d4c6ad12b55e4645b585209f90cc26614061e91",
@@ -749,20 +917,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1050539,
+    "liquidity": 793895,
     "image": "https://coin-images.coingecko.com/coins/images/68591/large/biduon_160x160.png?1756129824",
     "metrics": {
-     "volumeUsd1d": "805777.45",
-     "volumeUsd7d": "5755068.844"
+     "volumeUsd1d": "795466.899",
+     "volumeUsd7d": "5799061.516"
     },
     "metadata": {},
     "tokenId": "c0b7a600-c1f5-4b52-86d9-d44ee301a6ba",
-    "totalSupply": "13104.962068222294",
-    "circulatingSupply": "13104.962068222294",
+    "totalSupply": "12655.410639575894",
+    "circulatingSupply": "12655.410639575894",
     "isClaimed": false,
     "isPortable": true
    }

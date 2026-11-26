@@ -5,8 +5,8 @@
  "name": "Walt Disney",
  "isin": "US2546871060",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:19:06Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:14:39Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,20 +17,20 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 111.63205070013649,
-     "tokenized_market_cap": 1118881.995103488,
-     "tokenized_volume_24h": 258174.54950775,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 120.34719150511711,
+     "tokenized_market_cap": 1119065.8604093308,
+     "tokenized_volume_24h": 256585.62401669,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 110,
    "asset_type": "stock",
-   "rwa_rank": 81,
+   "rwa_rank": 68,
    "has_tokens": true,
-   "average_tokenized_price": 111.63205070013649,
-   "tokenized_market_cap": 1118881.995103488,
-   "tokenized_volume_24h": 258174.54950775,
-   "last_updated": "2026-10-18T20:13:40.031Z",
+   "average_tokenized_price": 120.34719150511711,
+   "tokenized_market_cap": 1119065.8604093308,
+   "tokenized_volume_24h": 256585.62401669,
+   "last_updated": "2026-11-21T14:10:11.195Z",
    "tokens": [
     {
      "symbol": "DIS.D",
@@ -45,17 +45,17 @@
     {
      "symbol": "DISon",
      "name": "Disney Tokenized Stock (Ondo)",
-     "price": 111.54490928408774,
+     "price": 120.34719150511711,
      "crypto_id": 38080,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 1118008.58,
-     "volume_24h": 257805.65356773
+     "market_cap": 1119065.8604091294,
+     "volume_24h": 256585.62401668605
     },
     {
      "symbol": "DIS",
      "name": "Walt Disney Co (Derivatives)",
-     "price": 110.6885515188129,
+     "price": 118.21866027561654,
      "crypto_id": 39998,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -69,6 +69,16 @@
      "crypto_id": 41231,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "DISc",
+     "name": "The Walt Disney Company Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42666,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
      "market_cap": null,
      "volume_24h": null
     }
@@ -206,6 +216,35 @@
       }
      }
     ]
+   },
+   "42666": {
+    "id": 42666,
+    "symbol": "DISc",
+    "name": "The Walt Disney Company Tokenized Stock (Coinbase)",
+    "slug": "the-walt-disney-company-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42666.png",
+    "date_added": "2026-10-26T10:57:05.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xb2000000000000000000000bD75bF439A38bF7DF"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xb2000000000000000000000bD75bF439A38bF7DF",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -228,6 +267,7 @@
   ],
   "looked_up": [
    "arbitrum:0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
+   "base:0xb2000000000000000000000bd75bf439a38bf7df",
    "bsc:0xeee9eee593cb8f7946260b4066cba7907f40acfa",
    "ethereum:0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
   ],
@@ -237,28 +277,28 @@
     "name": "Disney (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "DISON",
-    "price": 111.69,
+    "price": 120.72,
     "address": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
     "addresses": {
-     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
-     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
+     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-14T12:46:26.928Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1119265,
+    "liquidity": 1122502,
     "image": "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
     "metrics": {
-     "volumeUsd1d": "163365.452",
-     "volumeUsd7d": "1349791.655"
+     "volumeUsd1d": "163439.465",
+     "volumeUsd7d": "1185720.718"
     },
     "metadata": {},
     "tokenId": "72cc9520-0336-4c56-98ad-70d18f3e2d9f",
-    "totalSupply": "10022.945812478696",
-    "circulatingSupply": "10022.945812478696",
+    "totalSupply": "9298.645414268329",
+    "circulatingSupply": "9298.645414268329",
     "isClaimed": false,
     "isPortable": true
    },
@@ -267,31 +307,31 @@
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-11-15T14:42:09.718Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "194.974"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4278.021"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
    },
@@ -300,37 +340,37 @@
     "name": "Disney (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "DISON",
-    "price": 111.69,
+    "price": 120.72,
     "address": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
     "addresses": {
-     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
-     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
+     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1119265,
+    "liquidity": 1122502,
     "image": "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
     "metrics": {
-     "volumeUsd1d": "163244.02",
-     "volumeUsd7d": "1348190.846"
+     "volumeUsd1d": "163578.351",
+     "volumeUsd7d": "1186626.261"
     },
     "metadata": {},
     "tokenId": "72cc9520-0336-4c56-98ad-70d18f3e2d9f",
-    "totalSupply": "10022.945812478696",
-    "circulatingSupply": "10022.945812478696",
+    "totalSupply": "9298.645414268329",
+    "circulatingSupply": "9298.645414268329",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "DIS": {
-    "total_items": 74,
+    "total_items": 89,
     "pages": 1,
-    "received": 74,
+    "received": 89,
     "complete": true
    }
   },
@@ -340,21 +380,21 @@
     "name": "Crypto Paradise",
     "decimals": 18,
     "symbol": "SEAL",
-    "price": 0.00245043,
+    "price": 0.00209921,
     "address": "0xdf608a65311f36242a5cc5fa056b9ae43db55ea1",
     "addresses": {
      "robinhood": "0xdf608a65311f36242a5cc5fa056b9ae43db55ea1"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-08-06T11:24:27.293Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 245049,
+    "liquidity": 209921,
     "metrics": {
-     "volumeUsd1d": "814.254",
-     "volumeUsd7d": "9120.618"
+     "volumeUsd1d": "2196.33",
+     "volumeUsd7d": "16869.105"
     },
     "metadata": {},
     "tokenId": "1eb62068-8b45-42ed-aeb3-e96b074c5d9a",
@@ -368,7 +408,7 @@
     "name": "Sandisk Corporation • Robinhood Token",
     "decimals": 18,
     "symbol": "SNDK",
-    "price": 1286.13515,
+    "price": 651.16,
     "address": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
     "addresses": {
      "robinhood": "0xb90a19ff0af67f7779aff50a882a9cff42446400"
@@ -379,15 +419,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xb90a19ff0af67f7779aff50a882a9cff42446400.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:12:34.813Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
-    "liquidity": 1378271.917220572,
+    "liquidity": 837717.18127975,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "404503.095"
+     "volumeUsd1d": "27423.935",
+     "volumeUsd7d": "-212638.425"
     },
     "metadata": {
      "uid": "0x0000000000000000000000000000000046e46cc63fe842ebbdfe6187bda403d6",
@@ -398,8 +438,8 @@
      "chainId": 4663,
      "interface": "ERC20",
      "oraclePaused": false,
-     "uiMultiplier": "1000000000000000000",
-     "currentMultiplier": "1.000000000000000000",
+     "uiMultiplier": "8000000000000000000",
+     "currentMultiplier": "8.000000000000000000",
      "pendingMultiplier": "",
      "tradingCapabilities": {
       "market": {
@@ -417,39 +457,131 @@
      }
     },
     "tokenId": "5289f48d-763c-44fc-a8e6-488d0ebab3c4",
-    "totalSupply": "1071.63848",
+    "totalSupply": "1286.49975625",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x89b6085dab3e229bb1b5a8fe888e30c2ca49e99a5c3da8fd065c9fbbef8b9670": {
+    "key": "robinhood:0x89b6085dab3e229bb1b5a8fe888e30c2ca49e99a5c3da8fd065c9fbbef8b9670",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0x89b6085dab3e229bb1b5a8fe888e30c2ca49e99a5c3da8fd065c9fbbef8b9670",
+    "addresses": {
+     "robinhood": "0x89b6085dab3e229bb1b5a8fe888e30c2ca49e99a5c3da8fd065c9fbbef8b9670"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.125Z",
+    "createdAt": "2026-10-29T20:11:40.982Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 544.41131901973,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "4.096"
+    },
+    "tokenId": "97fe2314-d826-4da3-945e-7750d0dffd5a",
+    "reserves": [
+     "2.466148991399761458",
+     "254.712797"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xeeac4fc8648c6c7fdb5ce70626f0c6863b4978d73a6ea21808b55b95048567b3": {
+    "key": "robinhood:0xeeac4fc8648c6c7fdb5ce70626f0c6863b4978d73a6ea21808b55b95048567b3",
+    "name": "Uniswap V4 LP DIS/OLQD",
+    "decimals": 18,
+    "symbol": "DIS/OLQD",
+    "price": 9007199254740990,
+    "address": "0xeeac4fc8648c6c7fdb5ce70626f0c6863b4978d73a6ea21808b55b95048567b3",
+    "addresses": {
+     "robinhood": "0xeeac4fc8648c6c7fdb5ce70626f0c6863b4978d73a6ea21808b55b95048567b3"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.023Z",
+    "createdAt": "2026-11-06T15:59:42.072Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
+    ],
+    "liquidity": 9997.78346846689,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19833,
+     "feePercentage": "99.167"
+    },
+    "tokenId": "cc6f9602-1e52-4737-a4c7-c61ce687fbfc",
+    "reserves": [
+     "0.0008613264427217",
+     "9999.999999997649682701"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "avalanche:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759": {
     "key": "avalanche:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
     "name": "Novo Nordisk (Dinari Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVO",
-    "price": 39.21,
+    "price": 37.88,
     "address": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
     "addresses": {
-     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
      "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 4132.9,
+    "liquidity": 4268.59,
     "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
     "metrics": {
-     "volumeUsd1d": "51.45",
-     "volumeUsd7d": "4146.546"
+     "volumeUsd1d": "24.902",
+     "volumeUsd7d": "324.02"
     },
     "metadata": {},
     "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
-    "totalSupply": "105.395748223",
-    "circulatingSupply": "105.395748223",
+    "totalSupply": "112.688966913",
+    "circulatingSupply": "112.688966913",
     "isClaimed": false,
     "isPortable": true
    },
@@ -458,22 +590,22 @@
     "name": "Distracted Dudes",
     "decimals": 18,
     "symbol": "DUDE",
-    "price": 1.71e-06,
+    "price": 1.02e-06,
     "address": "0xcb2861a1ec1d0392afb9e342d5aa539e4f75b633",
     "addresses": {
      "base": "0xcb2861a1ec1d0392afb9e342d5aa539e4f75b633"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2024-04-09T07:54:11.913Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 17086.27,
+    "liquidity": 10215.42,
     "image": "https://assets.coingecko.com/coins/images/36860/large/dudelogo.png?1712642712",
     "metrics": {
-     "volumeUsd1d": "52.356",
-     "volumeUsd7d": "83.671"
+     "volumeUsd1d": "2.565",
+     "volumeUsd7d": "17.957"
     },
     "metadata": {},
     "tokenId": "e5989dce-e61d-4890-8335-079bead7c683",
@@ -482,27 +614,73 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "robinhood:0xf07b4d5041d198c0f242bc82ef223046b7102978946f5aacbbb8e36e55098245": {
+    "key": "robinhood:0xf07b4d5041d198c0f242bc82ef223046b7102978946f5aacbbb8e36e55098245",
+    "name": "Uniswap V4 LP wUSDG/DIS",
+    "decimals": 18,
+    "symbol": "WUSDG/DIS",
+    "price": 9007199254740990,
+    "address": "0xf07b4d5041d198c0f242bc82ef223046b7102978946f5aacbbb8e36e55098245",
+    "addresses": {
+     "robinhood": "0xf07b4d5041d198c0f242bc82ef223046b7102978946f5aacbbb8e36e55098245"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.344Z",
+    "createdAt": "2026-10-29T20:11:44.830Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    ],
+    "liquidity": 2999.448571301699,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "f44445c2-3d16-44a3-bad0-ba3766d2a790",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0xb63efbc28860c8097e341de1fcf59456161e9d98": {
     "key": "ethereum:0xb63efbc28860c8097e341de1fcf59456161e9d98",
     "name": "Sandisk Corporation xStock",
     "decimals": 18,
     "symbol": "SNDKX",
-    "price": 1255.96,
+    "price": 81.4,
     "address": "0xb63efbc28860c8097e341de1fcf59456161e9d98",
     "addresses": {
      "ethereum": "0xb63efbc28860c8097e341de1fcf59456161e9d98"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:44.869Z",
+    "updatedAt": "2026-11-21T14:13:24.446Z",
     "createdAt": "2026-04-15T23:24:03.752Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 11303640,
+    "liquidity": 20408285.409511045,
     "image": "https://coin-images.coingecko.com/coins/images/102172849/large/sndkx.png?1776231942",
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
+     "volumeUsd7d": "16925749.072"
     },
     "metadata": {
      "tags": [
@@ -513,7 +691,7 @@
      "coingeckoId": "sandisk-corporation-xstock"
     },
     "tokenId": "d71c7cdb-13d7-409d-83f2-c17dceba8df0",
-    "totalSupply": "9000",
+    "totalSupply": "250716.03697188014856",
     "isClaimed": false,
     "isPortable": true
    },
@@ -534,19 +712,19 @@
      "https://coin-images.coingecko.com/coins/images/102173744/large/sandisk-tokenized-bStocks-sndkb.png?1781196896",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:15:46.554Z",
+    "updatedAt": "2026-11-21T14:13:42.375Z",
     "createdAt": "2026-06-24T18:38:51.126Z",
     "verifiedAt": null,
     "tokens": [
      "0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb",
      "0x55d398326f99059ff775485246999027b3197955"
     ],
-    "liquidity": 116997.78117042912,
+    "liquidity": 11592.797996816797,
     "metrics": {
-     "apy": "25.473",
-     "baseApy": "25.473",
-     "volumeUsd1d": "32691.834",
-     "volumeUsd7d": "400114.255"
+     "apy": "61.446",
+     "baseApy": "61.446",
+     "volumeUsd1d": "7988.677",
+     "volumeUsd7d": "506117.947"
     },
     "metadata": {
      "tags": [
@@ -556,8 +734,8 @@
     },
     "tokenId": "0fa9e512-07b9-48b1-8fb2-2a2a1e1078c8",
     "reserves": [
-     "72.899121080852754504",
-     "25613.007189738265165667"
+     "92.169798354564611483",
+     "4176.347566557922618306"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -579,14 +757,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.903Z",
+    "updatedAt": "2026-11-21T14:13:44.865Z",
     "createdAt": "2026-08-19T18:24:41.402Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 755.8249122538946,
+    "liquidity": 526.8034872808119,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -614,28 +792,28 @@
     "name": "Novo Nordisk (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVOON",
-    "price": 39.97,
+    "price": 39.42,
     "address": "0x08a513779f46ffb7a34f16094a94016d010128a8",
     "addresses": {
-     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
-     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8",
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2100256,
+    "liquidity": 1982024,
     "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
     "metrics": {
-     "volumeUsd1d": "1083220.965",
-     "volumeUsd7d": "7730589.965"
+     "volumeUsd1d": "512825.567",
+     "volumeUsd7d": "3449103.463"
     },
     "metadata": {},
     "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
-    "totalSupply": "52560.77182835847",
-    "circulatingSupply": "52560.77182835847",
+    "totalSupply": "50283.18073043649",
+    "circulatingSupply": "50283.18073043649",
     "isClaimed": false,
     "isPortable": true
    },
@@ -656,14 +834,14 @@
      "https://assets.coingecko.com/coins/images/33910/large/oswap-logo-transparent.png?1703309075",
      "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
     ],
-    "updatedAt": "2026-10-18T20:15:57.836Z",
+    "updatedAt": "2026-11-21T14:10:40.059Z",
     "createdAt": "2026-03-03T06:04:40.589Z",
     "verifiedAt": null,
     "tokens": [
      "0x8ab2ff0116a279a99950c66a12298962d152b83c",
      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
     ],
-    "liquidity": 1131.558107543074,
+    "liquidity": 823.0088199890789,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -700,19 +878,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:15:46.045Z",
+    "updatedAt": "2026-11-21T14:13:32.072Z",
     "createdAt": "2026-09-05T20:19:42.455Z",
     "verifiedAt": null,
     "tokens": [
      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
      "0xb200000000000000000000397293cb8cda9a10c5"
     ],
-    "liquidity": 2416.938770186112,
+    "liquidity": 5323.781905423992,
     "metrics": {
-     "apy": "38.616",
-     "baseApy": "38.616",
-     "volumeUsd1d": "255.708",
-     "volumeUsd7d": "1726.883"
+     "apy": "71.826",
+     "baseApy": "71.826",
+     "volumeUsd1d": "1047.629",
+     "volumeUsd7d": "12699.987"
     },
     "metadata": {
      "tags": [
@@ -722,8 +900,8 @@
     },
     "tokenId": "0d4fec46-fabe-42f3-b581-f3f6f54a7706",
     "reserves": [
-     "437.037008",
-     "1.53607828"
+     "837.772212",
+     "6.90832231"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -733,27 +911,72 @@
     "name": "SanDisk (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "SNDKB",
-    "price": 1253.88,
+    "price": 80.52,
     "address": "0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb",
     "addresses": {
      "bsc": "0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-06-12T00:18:11.866Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 63469926,
+    "liquidity": 5796767,
     "image": "https://coin-images.coingecko.com/coins/images/102173744/large/sandisk-tokenized-bStocks-sndkb.png?1781196896",
     "metrics": {
-     "volumeUsd1d": "51170720.635",
-     "volumeUsd7d": "267734052.424"
+     "volumeUsd1d": "10948739.77",
+     "volumeUsd7d": "124345547.782"
     },
     "metadata": {},
     "tokenId": "252900ee-11d6-46f0-b93a-674408d27173",
-    "totalSupply": "50620.70442773",
-    "circulatingSupply": "50620.70442773",
+    "totalSupply": "71989.05650609",
+    "circulatingSupply": "71989.05650609",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "ethereum:0x09873982620101982db03519c8db132ccfb8d187": {
+    "key": "ethereum:0x09873982620101982db03519c8db132ccfb8d187",
+    "name": "UniswapV2 LP WETH/DISK",
+    "decimals": 18,
+    "symbol": "WETH/DISK",
+    "price": 527.2046921360943,
+    "address": "0x09873982620101982db03519c8db132ccfb8d187",
+    "addresses": {
+     "ethereum": "0x09873982620101982db03519c8db132ccfb8d187"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:27.412Z",
+    "createdAt": "2025-09-03T07:02:04.882Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xfc55b12896c090aac7922d447d9b80821b983bdc"
+    ],
+    "liquidity": 5115.439070462979,
+    "metrics": {
+     "apy": "0.025",
+     "baseApy": "0.025",
+     "volumeUsd1d": "1.166",
+     "volumeUsd7d": "28.809"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "ccb94751-da67-47e6-a0e8-7806536fd049",
+    "totalSupply": "9.702946780948723083",
+    "reserves": [
+     "1.503897519812266302",
+     "72889824880.69448421"
+    ],
     "isClaimed": false,
     "isPortable": true
    },
@@ -774,19 +997,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:21.478Z",
+    "updatedAt": "2026-11-21T14:12:39.665Z",
     "createdAt": "2026-07-31T13:24:00.330Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 1727.8644579133713,
+    "liquidity": 1177.8907262836483,
     "metrics": {
-     "apy": "115.797",
-     "baseApy": "115.797",
-     "volumeUsd1d": "30.824",
-     "volumeUsd7d": "87.346"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "519.572"
     },
     "metadata": {
      "tags": [
@@ -798,8 +1021,8 @@
     },
     "tokenId": "405a4346-a20f-4427-bc07-ede5c2ac86a1",
     "reserves": [
-     "1011.668511659740484893",
-     "1007749.220485749146367998"
+     "803.979132142268894569",
+     "3210190.245329129775720235"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -809,7 +1032,7 @@
     "name": "Sandisk Corporation",
     "decimals": 8,
     "symbol": "SNDKC",
-    "price": 1289,
+    "price": 649.44,
     "address": "0xb200000000000000000000397293cb8cda9a10c5",
     "addresses": {
      "base": "0xb200000000000000000000397293cb8cda9a10c5"
@@ -820,54 +1043,26 @@
      "https://icons.llamao.fi/icons/protocols/coinbase",
      "https://icons.llamao.fi/icons/protocols/coinbase"
     ],
-    "updatedAt": "2026-10-18T20:15:59.759Z",
+    "updatedAt": "2026-11-21T14:10:42.297Z",
     "createdAt": "2026-08-21T12:37:48.897Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xb200000000000000000000397293cb8cda9a10c5",
-    "liquidity": 1515435.00124587,
+    "liquidity": 2162660.2272679536,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "330412.306"
+     "volumeUsd7d": "413751.926"
     },
     "metadata": {
      "tags": [
       "#rwa"
      ],
      "interface": "ERC20",
-     "multiplier": "1000000000000000000",
+     "multiplier": "8000000000000000000",
      "pausedFeatures": []
     },
     "tokenId": "a4ce30d2-1334-4973-9c45-e386ca993fba",
-    "totalSupply": "1175.66718483",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "robinhood:0x7e711196bec84abecc23b1136c5ce946061e5aa1": {
-    "key": "robinhood:0x7e711196bec84abecc23b1136c5ce946061e5aa1",
-    "name": "HOODISEUS",
-    "decimals": 18,
-    "symbol": "HOODISEUS",
-    "price": 4.7346703204238465e-06,
-    "address": "0x7e711196bec84abecc23b1136c5ce946061e5aa1",
-    "addresses": {
-     "robinhood": "0x7e711196bec84abecc23b1136c5ce946061e5aa1"
-    },
-    "platform": "basic",
-    "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-08-03T19:11:24.822Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 4734.6703204238465,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "274.51",
-     "volumeUsd7d": "1443.27"
-    },
-    "metadata": {},
-    "tokenId": "426954b9-d8d7-4f43-bcf7-10402c9fc902",
-    "totalSupply": "1000000000",
+    "totalSupply": "3330.03853669",
     "isClaimed": false,
     "isPortable": true
    },
@@ -888,14 +1083,14 @@
      "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:46.556Z",
+    "updatedAt": "2026-11-21T14:13:39.715Z",
     "createdAt": "2025-09-09T10:51:48.908Z",
     "verifiedAt": null,
     "tokens": [
      "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 26684.59074771248,
+    "liquidity": 5209.248706001664,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -921,27 +1116,27 @@
     "name": "Disney rStock",
     "decimals": 18,
     "symbol": "RDIS",
-    "price": 112.16,
+    "price": 120.1,
     "address": "0x12f47c193c9dadf6c0234ffbc1b09d7e4d6a9117",
     "addresses": {
      "arbitrum": "0x12f47c193c9dadf6c0234ffbc1b09d7e4d6a9117"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T09:10:27.949Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 4204.54,
+    "liquidity": 3314.83,
     "image": "https://coin-images.coingecko.com/coins/images/102177210/large/236e39a1d04d56565cf1e9efaf7b5963.png?1789117172",
     "metrics": {
-     "volumeUsd1d": "49.95",
-     "volumeUsd7d": "14340.58"
+     "volumeUsd1d": "9.9",
+     "volumeUsd7d": "4701.742"
     },
     "metadata": {},
     "tokenId": "4ebd9f40-e015-4ad9-9e4b-81e4bfd571d0",
-    "totalSupply": "37.485364280000006",
-    "circulatingSupply": "37.485364280000006",
+    "totalSupply": "27.387164579999997",
+    "circulatingSupply": "27.600264860000003",
     "isClaimed": false,
     "isPortable": true
    },
@@ -953,13 +1148,13 @@
     "price": 0.00653509,
     "address": "0xeca139be1214322752b4e427b1800fd3e8037bf8",
     "addresses": {
-     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "base": "0xeca139be1214322752b4e427b1800fd3e8037bf8",
+     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "ethereum": "0xb841f365d5221bed66d60e69094418d8c2aa5a44"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-22T05:14:34.116Z",
     "verifiedAt": null,
     "tokens": [],
@@ -976,36 +1171,82 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "robinhood:0x7134529ff9feb5a8f13d4d1d9fabca8893e8edcc55acbdf64f59aaa3f958bd1c": {
+    "key": "robinhood:0x7134529ff9feb5a8f13d4d1d9fabca8893e8edcc55acbdf64f59aaa3f958bd1c",
+    "name": "Uniswap V4 LP wUSDG/DIS",
+    "decimals": 18,
+    "symbol": "WUSDG/DIS",
+    "price": 9007199254740990,
+    "address": "0x7134529ff9feb5a8f13d4d1d9fabca8893e8edcc55acbdf64f59aaa3f958bd1c",
+    "addresses": {
+     "robinhood": "0x7134529ff9feb5a8f13d4d1d9fabca8893e8edcc55acbdf64f59aaa3f958bd1c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.103Z",
+    "createdAt": "2026-11-06T15:59:37.707Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "ec65c692-6171-4d08-8322-ec68c2ddaa2c",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "hyperevm:0x7f7a731e180f7dd4497c751afcee4f4009d9c046": {
     "key": "hyperevm:0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "hyperevm",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "194.209"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4277.977"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1025,20 +1266,20 @@
      "https://icons.llamao.fi/icons/protocols/aerodrome",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:15:54.592Z",
+    "updatedAt": "2026-11-21T14:10:03.806Z",
     "createdAt": "2026-09-03T21:11:46.439Z",
     "verifiedAt": null,
     "tokens": [
      "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
      "0xb200000000000000000000397293cb8cda9a10c5"
     ],
-    "liquidity": 1034033.6051288829,
+    "liquidity": 36403.40420752447,
     "metrics": {
-     "apy": "80.642",
-     "baseApy": "80.642",
+     "apy": "41.067",
+     "baseApy": "41.067",
      "rewardApy": "0",
-     "volumeUsd1d": "6092123.395",
-     "volumeUsd7d": "67268615.466"
+     "volumeUsd1d": "81917.164",
+     "volumeUsd7d": "525940.225"
     },
     "metadata": {
      "tags": [
@@ -1049,8 +1290,8 @@
     },
     "tokenId": "cfdcaeb1-b1c0-4067-b131-5b567358953e",
     "reserves": [
-     "236282.304352",
-     "618.93488239"
+     "13882.787333",
+     "34.69014639"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1072,19 +1313,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.899Z",
+    "updatedAt": "2026-11-21T14:13:42.517Z",
     "createdAt": "2026-08-22T08:33:23.958Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 11163.11341156029,
+    "liquidity": 8021.407109513159,
     "metrics": {
-     "apy": "0.504",
-     "baseApy": "0.504",
-     "volumeUsd1d": "1.735",
-     "volumeUsd7d": "1.9"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1096,8 +1337,8 @@
     },
     "tokenId": "729b5476-84a9-4169-a58a-208f86e808f5",
     "reserves": [
-     "7414.293279941174639384",
-     "5277466.931703049442782173"
+     "7414.281349220986773076",
+     "5275833.783930714043826301"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1107,22 +1348,22 @@
     "name": "district0x",
     "decimals": 18,
     "symbol": "DNT",
-    "price": 0.00866144,
+    "price": 0.0057982,
     "address": "0x0abdace70d3790235af448c88547603b945604ea",
     "addresses": {
      "ethereum": "0x0abdace70d3790235af448c88547603b945604ea"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 8661507,
+    "liquidity": 5798202,
     "image": "https://assets.coingecko.com/coins/images/849/large/district0x.png?1696501985",
     "metrics": {
-     "volumeUsd1d": "124609.187",
-     "volumeUsd7d": "1909533.197"
+     "volumeUsd1d": "109677.183",
+     "volumeUsd7d": "233260.601"
     },
     "metadata": {},
     "tokenId": "9b1655ce-bfc2-4a21-97c9-f7f2606fb2eb",
@@ -1148,14 +1389,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.899Z",
+    "updatedAt": "2026-11-21T14:13:42.517Z",
     "createdAt": "2026-09-28T16:00:31.926Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 1377.1597904260668,
+    "liquidity": 857.4716414324282,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1183,32 +1424,124 @@
     "name": "Novo Nordisk (Dinari Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVO",
-    "price": 39.21,
+    "price": 37.88,
     "address": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
     "addresses": {
-     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
      "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 4132.9,
+    "liquidity": 4268.59,
     "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
     "metrics": {
-     "volumeUsd1d": "51.45",
-     "volumeUsd7d": "4146.996"
+     "volumeUsd1d": "24.902",
+     "volumeUsd7d": "324.02"
     },
     "metadata": {},
     "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
-    "totalSupply": "105.395748223",
-    "circulatingSupply": "105.395748223",
+    "totalSupply": "112.688966913",
+    "circulatingSupply": "112.688966913",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x978437d48e32f016610e27fadf275b40071b339fb7541f94d07e40c07993b967": {
+    "key": "robinhood:0x978437d48e32f016610e27fadf275b40071b339fb7541f94d07e40c07993b967",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0x978437d48e32f016610e27fadf275b40071b339fb7541f94d07e40c07993b967",
+    "addresses": {
+     "robinhood": "0x978437d48e32f016610e27fadf275b40071b339fb7541f94d07e40c07993b967"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.147Z",
+    "createdAt": "2026-10-29T20:11:42.013Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 566.8847707104314,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 320,
+     "feePercentage": "3.2968"
+    },
+    "tokenId": "521501d1-c0dd-4739-a1c3-84bbb18c9679",
+    "reserves": [
+     "2.904091765645964044",
+     "225.741111"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x90db7a63e2256123e96aead6fae8b750fb55b5e95ba3c66f7f34ed65e6ac23fa": {
+    "key": "robinhood:0x90db7a63e2256123e96aead6fae8b750fb55b5e95ba3c66f7f34ed65e6ac23fa",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0x90db7a63e2256123e96aead6fae8b750fb55b5e95ba3c66f7f34ed65e6ac23fa",
+    "addresses": {
+     "robinhood": "0x90db7a63e2256123e96aead6fae8b750fb55b5e95ba3c66f7f34ed65e6ac23fa"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.245Z",
+    "createdAt": "2026-10-29T20:11:40.911Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 4620.644928011209,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "da9e8852-0d59-4d15-a1b9-ca8dd3e94bbe",
+    "reserves": [
+     "18.592184600418912036",
+     "2436.621003"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "ethereum:0xd058ada5deabec2076d2170cc0894db965ebc67fbe7f5c35d293289db0efe585": {
     "key": "ethereum:0xd058ada5deabec2076d2170cc0894db965ebc67fbe7f5c35d293289db0efe585",
@@ -1227,14 +1560,14 @@
      "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
      "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
     ],
-    "updatedAt": "2026-10-18T20:15:03.276Z",
+    "updatedAt": "2026-11-21T14:11:55.144Z",
     "createdAt": "2025-09-26T08:45:50.015Z",
     "verifiedAt": null,
     "tokens": [
      "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
      "0xdac17f958d2ee523a2206206994597c13d831ec7"
     ],
-    "liquidity": 839.3469665271596,
+    "liquidity": 867.4442327795317,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1251,8 +1584,8 @@
     },
     "tokenId": "d2776e6c-638e-40c7-b043-d7658b5db5b9",
     "reserves": [
-     "2.746114884254683542",
-     "533.090787"
+     "2.851762704321812146",
+     "524.247518"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1262,18 +1595,18 @@
     "name": "Novo Nordisk xStock",
     "decimals": 18,
     "symbol": "NVOX",
-    "price": 38.86,
+    "price": 39.95,
     "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
     "addresses": {
      "bsc": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
     },
     "platform": "xstocks",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "updatedAt": "2026-11-21T14:10:09.272Z",
     "createdAt": "2025-07-11T10:30:09.107Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 5705149.590725768,
+    "liquidity": 5865175.66004875,
     "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1292,27 +1625,120 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "base:0x195804f675b3cff6179f29887043ea5a741c775c": {
+    "key": "base:0x195804f675b3cff6179f29887043ea5a741c775c",
+    "name": "Aerodrome SlipStream Dispatch/Delivery Guy 1%",
+    "decimals": 18,
+    "symbol": "DSP/DGUY",
+    "price": 9007199254740990,
+    "address": "0x195804f675b3cff6179f29887043ea5a741c775c",
+    "addresses": {
+     "base": "0x195804f675b3cff6179f29887043ea5a741c775c"
+    },
+    "platform": "aerodrome-slipstream",
+    "network": "base",
+    "images": [
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://coin-images.coingecko.com/coins/images/102179785/large/dispatch-app-icon-blue-1024.png?1792999004",
+     "https://coin-images.coingecko.com/coins/images/102178440/large/logonew.png?1789568452"
+    ],
+    "updatedAt": "2026-11-21T14:10:00.851Z",
+    "createdAt": "2026-10-26T20:04:20.162Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0039d6a1773888cbe38addeeb2054fe145333dfb",
+     "0xe34356dcd3d7bb991248f322e4ec31b5d60bc54e"
+    ],
+    "liquidity": 26945.816743498803,
+    "metrics": {
+     "apy": "25.375",
+     "baseApy": "25.375",
+     "rewardApy": "0",
+     "volumeUsd1d": "1873.264",
+     "volumeUsd7d": "8395.049"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1",
+     "factoryAddress": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef"
+    },
+    "tokenId": "fab17c0d-564a-477d-8ced-d4761364af0e",
+    "reserves": [
+     "306253991.733495320122901165",
+     "25086347.789526849689467605"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xa099c8b441445df5c095a7d9d4041287b039abf8704f5c58ded1e0f44d459455": {
+    "key": "robinhood:0xa099c8b441445df5c095a7d9d4041287b039abf8704f5c58ded1e0f44d459455",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0xa099c8b441445df5c095a7d9d4041287b039abf8704f5c58ded1e0f44d459455",
+    "addresses": {
+     "robinhood": "0xa099c8b441445df5c095a7d9d4041287b039abf8704f5c58ded1e0f44d459455"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.323Z",
+    "createdAt": "2026-10-29T20:11:41.693Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 531.0410747709943,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 111,
+     "feePercentage": "8.092"
+    },
+    "tokenId": "5f6b6f20-9f43-4c85-b23d-7952cfd98b8e",
+    "reserves": [
+     "2.525401709125686094",
+     "234.382136"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "base:0x70737489dfdf1a29b7584d40500d3561bd4fe196": {
     "key": "base:0x70737489dfdf1a29b7584d40500d3561bd4fe196",
     "name": "Edison BORED",
     "decimals": 18,
     "symbol": "BORED",
-    "price": 0.0004886,
+    "price": 0.00034444,
     "address": "0x70737489dfdf1a29b7584d40500d3561bd4fe196",
     "addresses": {
      "base": "0x70737489dfdf1a29b7584d40500d3561bd4fe196"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2024-04-15T09:29:10.614Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1534456,
+    "liquidity": 1082096,
     "image": "https://assets.coingecko.com/coins/images/37050/large/bored.jpeg?1713166470",
     "metrics": {
-     "volumeUsd1d": "14.398",
-     "volumeUsd7d": "76.79"
+     "volumeUsd1d": "4.417",
+     "volumeUsd7d": "362.299"
     },
     "metadata": {},
     "tokenId": "08994242-c20e-4c54-beb8-9c093d83e6e4",
@@ -1321,35 +1747,125 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "robinhood:0x75f7109eb00eab50426f19b00fb05783bd1a0501": {
+    "key": "robinhood:0x75f7109eb00eab50426f19b00fb05783bd1a0501",
+    "name": "Uniswap V3 Disney  Robinhood Token/Global Dollar 0.3%",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0x75f7109eb00eab50426f19b00fb05783bd1a0501",
+    "addresses": {
+     "robinhood": "0x75f7109eb00eab50426f19b00fb05783bd1a0501"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:35.039Z",
+    "createdAt": "2026-10-29T20:11:23.715Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 3469.2062463832617,
+    "metrics": {
+     "apy": "108.53",
+     "baseApy": "108.53",
+     "volumeUsd1d": "3438.485",
+     "volumeUsd7d": "52533.896"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "f8ae2012-2eab-4eea-9f96-b23f41131ccf",
+    "reserves": [
+     "19.015273579494863715",
+     "1235.482059"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x8889b911aff7c7c002e21bbeea274ad5e0fec86af9c704c27d349a662e7eaa10": {
+    "key": "robinhood:0x8889b911aff7c7c002e21bbeea274ad5e0fec86af9c704c27d349a662e7eaa10",
+    "name": "Uniswap V4 LP USDG/DIS",
+    "decimals": 18,
+    "symbol": "USDG/DIS",
+    "price": 9007199254740990,
+    "address": "0x8889b911aff7c7c002e21bbeea274ad5e0fec86af9c704c27d349a662e7eaa10",
+    "addresses": {
+     "robinhood": "0x8889b911aff7c7c002e21bbeea274ad5e0fec86af9c704c27d349a662e7eaa10"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.287Z",
+    "createdAt": "2026-11-04T15:56:07.871Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    ],
+    "liquidity": 50026.38663514274,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9979,
+     "feePercentage": "99.79"
+    },
+    "tokenId": "bc6c1ee8-1db1-4838-91fc-5d01698ace27",
+    "reserves": [
+     "49999.999999999999999986",
+     "0.260840873021563837"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759": {
     "key": "ethereum:0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
     "name": "Novo Nordisk (Dinari Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVO",
-    "price": 39.21,
+    "price": 37.88,
     "address": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
     "addresses": {
-     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
      "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 4132.9,
+    "liquidity": 4268.59,
     "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
     "metrics": {
-     "volumeUsd1d": "51.45",
-     "volumeUsd7d": "4148.151"
+     "volumeUsd1d": "24.902",
+     "volumeUsd7d": "324.02"
     },
     "metadata": {},
     "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
-    "totalSupply": "105.395748223",
-    "circulatingSupply": "105.395748223",
+    "totalSupply": "112.688966913",
+    "circulatingSupply": "112.688966913",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1358,28 +1874,28 @@
     "name": "Disney (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "DISON",
-    "price": 111.69,
+    "price": 120.72,
     "address": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
     "addresses": {
-     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
-     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
+     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-14T12:46:26.928Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1119265,
+    "liquidity": 1122502,
     "image": "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
     "metrics": {
-     "volumeUsd1d": "163365.452",
-     "volumeUsd7d": "1349791.655"
+     "volumeUsd1d": "163439.465",
+     "volumeUsd7d": "1185720.718"
     },
     "metadata": {},
     "tokenId": "72cc9520-0336-4c56-98ad-70d18f3e2d9f",
-    "totalSupply": "10022.945812478696",
-    "circulatingSupply": "10022.945812478696",
+    "totalSupply": "9298.645414268329",
+    "circulatingSupply": "9298.645414268329",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1400,19 +1916,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
     ],
-    "updatedAt": "2026-10-18T20:15:46.995Z",
+    "updatedAt": "2026-11-21T14:13:41.475Z",
     "createdAt": "2026-08-03T16:54:34.965Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     ],
-    "liquidity": 56975.897162369096,
+    "liquidity": 52558.15690559739,
     "metrics": {
-     "apy": "18.514",
-     "baseApy": "18.514",
-     "volumeUsd1d": "11558.234",
-     "volumeUsd7d": "185137.877"
+     "apy": "12.158",
+     "baseApy": "12.158",
+     "volumeUsd1d": "7003.039",
+     "volumeUsd7d": "70779.073"
     },
     "metadata": {
      "tags": [
@@ -1422,53 +1938,8 @@
     },
     "tokenId": "6bfacde1-79ee-4875-a948-0178e028f89d",
     "reserves": [
-     "42902.933007903321589346",
-     "126.329795603783284539"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "bsc:0xb68beea809718a727b9b04cde8b599547e707bb7": {
-    "key": "bsc:0xb68beea809718a727b9b04cde8b599547e707bb7",
-    "name": "PancakeSwap V3 Sandisk Corporation/Wrapped BNB 0.25%",
-    "decimals": 18,
-    "symbol": "SNDKB/WBNB",
-    "price": 9007199254740990,
-    "address": "0xb68beea809718a727b9b04cde8b599547e707bb7",
-    "addresses": {
-     "bsc": "0xb68beea809718a727b9b04cde8b599547e707bb7"
-    },
-    "platform": "pancakeswap-v3",
-    "network": "bsc",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
-     "https://coin-images.coingecko.com/coins/images/102173744/large/sandisk-tokenized-bStocks-sndkb.png?1781196896",
-     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
-    ],
-    "updatedAt": "2026-10-18T20:15:47.535Z",
-    "createdAt": "2026-08-18T03:37:09.921Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb",
-     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
-    ],
-    "liquidity": 2436.8598538581377,
-    "metrics": {
-     "apy": "15.156",
-     "baseApy": "15.156",
-     "volumeUsd1d": "405.227",
-     "volumeUsd7d": "14249.888"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "0.25"
-    },
-    "tokenId": "0b3f9a52-45d3-4852-93a3-1c046175468f",
-    "reserves": [
-     "1.883488532385536456",
-     "0.106661824059239815"
+     "46873.231052268516314108",
+     "47.562427181612192832"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1478,31 +1949,31 @@
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-11-15T14:42:09.718Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "194.974"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4278.021"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1523,19 +1994,19 @@
      "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
      "https://coin-images.coingecko.com/coins/images/102174113/large/0xb90a19ff0af67f7779aff50a882a9cff42446400.png?1782444573"
     ],
-    "updatedAt": "2026-10-18T20:15:14.169Z",
+    "updatedAt": "2026-11-21T14:12:34.862Z",
     "createdAt": "2026-09-03T10:20:08.676Z",
     "verifiedAt": null,
     "tokens": [
      "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
      "0xb90a19ff0af67f7779aff50a882a9cff42446400"
     ],
-    "liquidity": 11135.372876412112,
+    "liquidity": 4419.778751645176,
     "metrics": {
-     "apy": "5.624",
-     "baseApy": "5.624",
-     "volumeUsd1d": "571.917",
-     "volumeUsd7d": "54511.256"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1545,8 +2016,8 @@
     },
     "tokenId": "d89f88b9-3e1b-4b74-9167-bb81b32756a8",
     "reserves": [
-     "0.177360653409253241",
-     "8.335897137222094282"
+     "0.083385063637297232",
+     "6.570195419379192833"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1568,19 +2039,19 @@
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:15:23.199Z",
+    "updatedAt": "2026-11-21T14:12:40.248Z",
     "createdAt": "2026-10-10T07:27:16.938Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 3530.9445024863335,
+    "liquidity": 1298.857806837868,
     "metrics": {
-     "apy": "2053.535",
-     "baseApy": "2053.535",
-     "volumeUsd1d": "4710.17",
-     "volumeUsd7d": "10555.878"
+     "apy": "22.942",
+     "baseApy": "22.942",
+     "volumeUsd1d": "19.367",
+     "volumeUsd7d": "14402.773"
     },
     "metadata": {
      "tags": [
@@ -1592,8 +2063,8 @@
     },
     "tokenId": "c63ee86d-a2dd-447a-96e6-5e303a0f819c",
     "reserves": [
-     "1927.0841720944271683",
-     "2256361.139219399139692514"
+     "974.52321186484995666",
+     "2787426.931887296075427099"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1610,67 +2081,86 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-03T08:51:46.128Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 101234,
+    "liquidity": 101539,
     "metrics": {
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
     "metadata": {},
     "tokenId": "0c2f78d6-d358-4046-bcc3-545ee3985d61",
-    "totalSupply": "101234.16",
-    "circulatingSupply": "101234.16",
+    "totalSupply": "101538.96",
+    "circulatingSupply": "101538.96",
     "isClaimed": false,
     "isPortable": true
    },
-   "robinhood:0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9": {
-    "key": "robinhood:0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
-    "name": "RedistribOfBillionByInstitutingNewHighObligationsOverlookedDebt",
+   "ethereum:0x305ad17fe325d5f4e1e28482cb2a8fbb0e1b53d78798180dc5454d8db2dba755": {
+    "key": "ethereum:0x305ad17fe325d5f4e1e28482cb2a8fbb0e1b53d78798180dc5454d8db2dba755",
+    "name": "Uniswap V4 LP EE/DISon",
     "decimals": 18,
-    "symbol": "ROBINHOOD",
-    "price": 6.638685418073569e-06,
-    "address": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+    "symbol": "EE/DISON",
+    "price": 9007199254740990,
+    "address": "0x305ad17fe325d5f4e1e28482cb2a8fbb0e1b53d78798180dc5454d8db2dba755",
     "addresses": {
-     "robinhood": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9"
+     "ethereum": "0x305ad17fe325d5f4e1e28482cb2a8fbb0e1b53d78798180dc5454d8db2dba755"
     },
-    "platform": "basic",
-    "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-08T15:02:29.296Z",
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
+    ],
+    "updatedAt": "2026-11-21T14:12:05.211Z",
+    "createdAt": "2026-11-07T15:59:32.439Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 6638.685418073568,
-    "image": "https://images.portals.fi/unknown-token.png",
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+    ],
+    "liquidity": 50036.60643642162,
     "metrics": {
-     "volumeUsd1d": "0.11",
-     "volumeUsd7d": "0.77"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "08e7e51d-30c2-42b5-aa7f-12752e576571",
-    "totalSupply": "1000000000",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9915,
+     "feePercentage": "99.1513"
+    },
+    "tokenId": "0683d662-d720-4d79-ba2a-b91fb44f6790",
+    "reserves": [
+     "49999.99999999999999997",
+     "0.26895606484153897"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
    },
    "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e": {
     "key": "ethereum:0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
     "name": "Novo Nordisk xStock",
     "decimals": 18,
     "symbol": "NVOX",
-    "price": 38.86,
+    "price": 39.95,
     "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
     "addresses": {
      "ethereum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:45.079Z",
+    "updatedAt": "2026-11-21T14:13:21.108Z",
     "createdAt": "2025-08-14T11:44:26.097Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7780496.140272811,
+    "liquidity": 7998734.451978868,
     "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1706,14 +2196,14 @@
      "https://coin-images.coingecko.com/coins/images/55327/large/districts_%282%29.jpg?1745430528",
      "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790"
     ],
-    "updatedAt": "2026-10-18T20:15:54.579Z",
+    "updatedAt": "2026-11-21T14:10:04.787Z",
     "createdAt": "2025-10-29T22:16:37.223Z",
     "verifiedAt": null,
     "tokens": [
      "0x4200000000000000000000000000000000000006",
      "0xeca139be1214322752b4e427b1800fd3e8037bf8"
     ],
-    "liquidity": 23120.79130804612,
+    "liquidity": 23088.538391200833,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1753,14 +2243,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.958Z",
+    "updatedAt": "2026-11-21T14:13:42.424Z",
     "createdAt": "2026-10-02T19:26:05.720Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 1503.3576972715118,
+    "liquidity": 955.8306673633182,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1800,14 +2290,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.958Z",
+    "updatedAt": "2026-11-21T14:13:42.424Z",
     "createdAt": "2026-09-28T11:20:57.822Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 1136.305320628395,
+    "liquidity": 758.6665744507064,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1847,19 +2337,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.958Z",
+    "updatedAt": "2026-11-21T14:13:42.424Z",
     "createdAt": "2026-10-10T07:27:33.657Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 6169.094021371706,
+    "liquidity": 874.7322963915225,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "775.943"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1871,7 +2361,7 @@
     },
     "tokenId": "58785bd0-0ba7-454d-b9da-9e7935ff7f9d",
     "reserves": [
-     "840.00000000000000001",
+     "0.00000000000000001",
      "7490428.980917301203360983"
     ],
     "isClaimed": false,
@@ -1882,140 +2372,112 @@
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "195.63"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4285.866"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
-   },
-   "bsc:0x5e11afc27540ee9ea1507ac72fe6c5b56aa606bdd1ea3a6d7e27719d9fe7d1ab": {
-    "key": "bsc:0x5e11afc27540ee9ea1507ac72fe6c5b56aa606bdd1ea3a6d7e27719d9fe7d1ab",
-    "name": "PancakeSwap Infinity LP USDT/CUDIS",
-    "decimals": 18,
-    "symbol": "USDT/CUDIS",
-    "price": 9007199254740990,
-    "address": "0x5e11afc27540ee9ea1507ac72fe6c5b56aa606bdd1ea3a6d7e27719d9fe7d1ab",
-    "addresses": {
-     "bsc": "0x5e11afc27540ee9ea1507ac72fe6c5b56aa606bdd1ea3a6d7e27719d9fe7d1ab"
-    },
-    "platform": "pancakeswap-infinity",
-    "network": "bsc",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
-     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
-     "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
-    ],
-    "updatedAt": "2026-10-18T20:15:52.953Z",
-    "createdAt": "2026-10-18T18:59:32.052Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x55d398326f99059ff775485246999027b3197955",
-     "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
-    ],
-    "liquidity": 699.3994,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "29.7062"
-    },
-    "tokenId": "237e3057-0d69-4720-a68d-cfaba7fd640d",
-    "reserves": [
-     "700",
-     "0"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "base:0x942e2d29f05309938ea806defa1758a019dddb70": {
     "key": "base:0x942e2d29f05309938ea806defa1758a019dddb70",
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0x942e2d29f05309938ea806defa1758a019dddb70",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "194.983"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4278.028"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0xe8da37f7dbb1bc904b004930317d98c2ca50bd2d": {
-    "key": "ethereum:0xe8da37f7dbb1bc904b004930317d98c2ca50bd2d",
-    "name": "DiscoverTix Token",
+   "robinhood:0x7eb8a3144ac884ee7c542818696015493a46dec4fa934cd9ea3860be794fe38a": {
+    "key": "robinhood:0x7eb8a3144ac884ee7c542818696015493a46dec4fa934cd9ea3860be794fe38a",
+    "name": "Uniswap V4 LP ETH/DIS",
     "decimals": 18,
-    "symbol": "DTIX",
-    "price": 0.05490365316881174,
-    "address": "0xe8da37f7dbb1bc904b004930317d98c2ca50bd2d",
+    "symbol": "ETH/DIS",
+    "price": 9007199254740990,
+    "address": "0x7eb8a3144ac884ee7c542818696015493a46dec4fa934cd9ea3860be794fe38a",
     "addresses": {
-     "ethereum": "0xe8da37f7dbb1bc904b004930317d98c2ca50bd2d"
+     "robinhood": "0x7eb8a3144ac884ee7c542818696015493a46dec4fa934cd9ea3860be794fe38a"
     },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-06-26T21:20:51.000Z",
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.994Z",
+    "createdAt": "2026-10-29T20:11:40.748Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 27451826.58440587,
-    "image": "https://images.portals.fi/unknown-token.png",
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    ],
+    "liquidity": 520.6808387008812,
     "metrics": {
-     "volumeUsd1d": "341.56",
-     "volumeUsd7d": "4312.44"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "73a44f9d-cee4-4ca8-99d7-db4bea6479ee",
-    "totalSupply": "500000000",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "4c052270-f3db-4a7d-a23f-c025da0cb01d",
+    "reserves": [
+     "0.296531237934693956",
+     "0.153315570708487692"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
    },
    "robinhood:0xa1e1c9519cd5ae47e9a935645e1a7b935b944559": {
     "key": "robinhood:0xa1e1c9519cd5ae47e9a935645e1a7b935b944559",
@@ -2034,19 +2496,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174113/large/0xb90a19ff0af67f7779aff50a882a9cff42446400.png?1782444573"
     ],
-    "updatedAt": "2026-10-18T20:15:17.199Z",
+    "updatedAt": "2026-11-21T14:12:34.916Z",
     "createdAt": "2026-07-31T21:31:12.218Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xb90a19ff0af67f7779aff50a882a9cff42446400"
     ],
-    "liquidity": 36166.44316315171,
+    "liquidity": 18245.586143461915,
     "metrics": {
-     "apy": "24.919",
-     "baseApy": "24.919",
-     "volumeUsd1d": "2469.138",
-     "volumeUsd7d": "40199.256"
+     "apy": "64.294",
+     "baseApy": "64.294",
+     "volumeUsd1d": "3213.917",
+     "volumeUsd7d": "59161.784"
     },
     "metadata": {
      "tags": [
@@ -2056,8 +2518,8 @@
     },
     "tokenId": "595a38fa-93a6-48b6-9b5d-1d79b37e32ab",
     "reserves": [
-     "2398.635077",
-     "26.255256367226808218"
+     "2625.925423",
+     "23.987438909733270172"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2078,19 +2540,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/102174431/large/ba178407-dda3-4969-a7e3-071cec79c121.png?1783670771"
     ],
-    "updatedAt": "2026-10-18T20:15:17.328Z",
+    "updatedAt": "2026-11-21T14:12:35.461Z",
     "createdAt": "2026-08-06T15:58:54.182Z",
     "verifiedAt": null,
     "tokens": [
      "0x96765066f6a040a21eb027167d2315b707c82633",
      "0xdf608a65311f36242a5cc5fa056b9ae43db55ea1"
     ],
-    "liquidity": 5892.475893514942,
+    "liquidity": 3885.2497934292796,
     "metrics": {
-     "apy": "13.421",
-     "baseApy": "13.421",
-     "volumeUsd1d": "214.846",
-     "volumeUsd7d": "1613.622"
+     "apy": "9.034",
+     "baseApy": "9.034",
+     "volumeUsd1d": "96.159",
+     "volumeUsd7d": "1593.803"
     },
     "metadata": {
      "tags": [
@@ -2100,8 +2562,55 @@
     },
     "tokenId": "ac1fd231-feff-4606-ac9b-5df71c754e2c",
     "reserves": [
-     "636820.734824985246984589",
-     "1217842.008753096774442234"
+     "844355.67515030209228667",
+     "937188.26712078784921367"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x7666873b0ec0a128399f587a003351deba6d8714826787f282d040c4ef901117": {
+    "key": "ethereum:0x7666873b0ec0a128399f587a003351deba6d8714826787f282d040c4ef901117",
+    "name": "Uniswap V4 LP wUSDC/DISon",
+    "decimals": 18,
+    "symbol": "WUSDC/DISON",
+    "price": 9007199254740990,
+    "address": "0x7666873b0ec0a128399f587a003351deba6d8714826787f282d040c4ef901117",
+    "addresses": {
+     "ethereum": "0x7666873b0ec0a128399f587a003351deba6d8714826787f282d040c4ef901117"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
+    ],
+    "updatedAt": "2026-11-21T14:12:16.443Z",
+    "createdAt": "2026-11-07T15:59:36.231Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "651de117-89f2-4b65-b423-f2215097fdf5",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2111,22 +2620,22 @@
     "name": "Aimedis (NEW)",
     "decimals": 18,
     "symbol": "AIMX",
-    "price": 0.00030568,
+    "price": 0.0002723,
     "address": "0x33b6d77c607ea499ab5db7e2201c5a516a78a5db",
     "addresses": {
      "polygon": "0x33b6d77c607ea499ab5db7e2201c5a516a78a5db"
     },
     "platform": "basic",
     "network": "polygon",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 161400,
+    "liquidity": 143772,
     "image": "https://assets.coingecko.com/coins/images/29252/large/Aimedis_Logo_tg.png?1696528207",
     "metrics": {
-     "volumeUsd1d": "229.519",
-     "volumeUsd7d": "2307.609"
+     "volumeUsd1d": "3050.258",
+     "volumeUsd7d": "4152.158"
     },
     "metadata": {},
     "tokenId": "40cde99b-f410-49d4-81fc-10d0eb21a1db",
@@ -2147,7 +2656,7 @@
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T09:23:28.703Z",
     "verifiedAt": null,
     "tokens": [],
@@ -2169,22 +2678,22 @@
     "name": "Ordiswap",
     "decimals": 18,
     "symbol": "ORDS",
-    "price": 0.00015524,
+    "price": 0.00011037,
     "address": "0x8ab2ff0116a279a99950c66a12298962d152b83c",
     "addresses": {
      "ethereum": "0x8ab2ff0116a279a99950c66a12298962d152b83c"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-12-29T10:09:14.179Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 155161,
+    "liquidity": 110319,
     "image": "https://assets.coingecko.com/coins/images/33910/large/oswap-logo-transparent.png?1703309075",
     "metrics": {
-     "volumeUsd1d": "1.686",
-     "volumeUsd7d": "248.216"
+     "volumeUsd1d": "4.999",
+     "volumeUsd7d": "119.719"
     },
     "metadata": {},
     "tokenId": "9098936c-8645-444c-951c-0211574d4fbf",
@@ -2193,31 +2702,30 @@
     "isClaimed": false,
     "isPortable": true
    },
-   "bsc:0xd9b64fb4729d81919d201a1f2e9baf0960b4dc88cd2c0a1503a60de8544f3fa7": {
-    "key": "bsc:0xd9b64fb4729d81919d201a1f2e9baf0960b4dc88cd2c0a1503a60de8544f3fa7",
-    "name": "Uniswap V4 LP USDT/CUDIS",
+   "robinhood:0xfc31d9883bd1385ac376c401faf1c74f1403fa628777b8790a07368beaef15f7": {
+    "key": "robinhood:0xfc31d9883bd1385ac376c401faf1c74f1403fa628777b8790a07368beaef15f7",
+    "name": "Uniswap V4 LP wUSDG/DIS",
     "decimals": 18,
-    "symbol": "USDT/CUDIS",
+    "symbol": "WUSDG/DIS",
     "price": 9007199254740990,
-    "address": "0xd9b64fb4729d81919d201a1f2e9baf0960b4dc88cd2c0a1503a60de8544f3fa7",
+    "address": "0xfc31d9883bd1385ac376c401faf1c74f1403fa628777b8790a07368beaef15f7",
     "addresses": {
-     "bsc": "0xd9b64fb4729d81919d201a1f2e9baf0960b4dc88cd2c0a1503a60de8544f3fa7"
+     "robinhood": "0xfc31d9883bd1385ac376c401faf1c74f1403fa628777b8790a07368beaef15f7"
     },
     "platform": "uniswap-v4",
-    "network": "bsc",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
-     "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:25.121Z",
-    "createdAt": "2026-10-15T14:23:02.285Z",
+    "updatedAt": "2026-11-21T14:12:39.101Z",
+    "createdAt": "2026-10-29T20:11:45.087Z",
     "verifiedAt": null,
     "tokens": [
-     "0x55d398326f99059ff775485246999027b3197955",
-     "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
     ],
-    "liquidity": 799.4084914032975,
+    "liquidity": 9998.161904338996,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -2229,13 +2737,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "99.22"
+     "tickSpacing": 60,
+     "feePercentage": "90"
     },
-    "tokenId": "61ce13bd-1d1c-45bd-a598-b9f4fe94a1ed",
+    "tokenId": "1ea6f003-539e-433a-b58e-2f9bb4431f4b",
     "reserves": [
-     "800",
-     "133.358728546786384247"
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2245,75 +2753,148 @@
     "name": "SanDisk (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "SNDKON",
-    "price": 1268.49,
+    "price": 646.95,
     "address": "0xb8927cff399e23328eec0e457e75c709dcfcf382",
     "addresses": {
-     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4",
      "ethereum": "0x71e2400cf1cb83204f33794ed326636a71a9aafc",
-     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382"
+     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382",
+     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4"
     },
     "platform": "basic",
     "network": "hyperevm",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-05-09T05:04:20.866Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 5255967,
+    "liquidity": 2343341,
     "image": "https://coin-images.coingecko.com/coins/images/102172440/large/sndkon_160x160.png?1773419692",
     "metrics": {
-     "volumeUsd1d": "1994492.95",
-     "volumeUsd7d": "19553902.795"
+     "volumeUsd1d": "167165.708",
+     "volumeUsd7d": "4677645.608"
     },
     "metadata": {},
     "tokenId": "4e072459-76a7-43a6-a106-ac8045310d36",
-    "totalSupply": "4143.499268350219",
-    "circulatingSupply": "4143.499268350219",
+    "totalSupply": "3622.1276885456077",
+    "circulatingSupply": "3622.1276885456077",
     "isClaimed": false,
     "isPortable": true
    },
-   "bsc:0xf8f525df24398f878688a72fd0592613c8b87d18e77e16c65af003f17caf1959": {
-    "key": "bsc:0xf8f525df24398f878688a72fd0592613c8b87d18e77e16c65af003f17caf1959",
-    "name": "PancakeSwap Infinity LP USDT/CUDIS",
+   "base:0x2836e062a3fe75943a7f4a552e2365b98e414e75": {
+    "key": "base:0x2836e062a3fe75943a7f4a552e2365b98e414e75",
+    "name": "Aerodrome SlipStream USD Coin/Sandisk Corporation 0.0738%",
     "decimals": 18,
-    "symbol": "USDT/CUDIS",
+    "symbol": "USDC/SNDKC",
     "price": 9007199254740990,
-    "address": "0xf8f525df24398f878688a72fd0592613c8b87d18e77e16c65af003f17caf1959",
+    "address": "0x2836e062a3fe75943a7f4a552e2365b98e414e75",
     "addresses": {
-     "bsc": "0xf8f525df24398f878688a72fd0592613c8b87d18e77e16c65af003f17caf1959"
+     "base": "0x2836e062a3fe75943a7f4a552e2365b98e414e75"
     },
-    "platform": "pancakeswap-infinity",
-    "network": "bsc",
+    "platform": "aerodrome-slipstream",
+    "network": "base",
     "images": [
-     "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
-     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
-     "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
+     "https://icons.llamao.fi/icons/protocols/aerodrome",
+     "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:15:52.955Z",
-    "createdAt": "2026-10-17T14:23:47.930Z",
+    "updatedAt": "2026-11-21T14:10:17.347Z",
+    "createdAt": "2026-11-11T13:20:05.598Z",
     "verifiedAt": null,
     "tokens": [
-     "0x55d398326f99059ff775485246999027b3197955",
-     "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
+     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+     "0xb200000000000000000000397293cb8cda9a10c5"
     ],
-    "liquidity": 1347.072440536402,
+    "liquidity": 1370104.535484557,
     "metrics": {
-     "apy": "795.858",
-     "baseApy": "795.858",
-     "volumeUsd1d": "229.836",
-     "volumeUsd7d": "532.076"
+     "apy": "3336.267",
+     "baseApy": "126.687",
+     "rewardApy": "3209.581",
+     "volumeUsd1d": "21517852.137",
+     "volumeUsd7d": "169497697.84"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.1229",
+     "factoryAddress": "0x9cb220581b91b0c83223012fe69688b92ad07a76"
+    },
+    "tokenId": "a830d44b-06e9-4033-a259-41a78b33c496",
+    "reserves": [
+     "286708.208332",
+     "1668.47274484"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xfc55b12896c090aac7922d447d9b80821b983bdc": {
+    "key": "ethereum:0xfc55b12896c090aac7922d447d9b80821b983bdc",
+    "name": "retard.COMPUTER",
+    "decimals": 9,
+    "symbol": "DISK",
+    "price": 3.4971684908085595e-08,
+    "address": "0xfc55b12896c090aac7922d447d9b80821b983bdc",
+    "addresses": {
+     "ethereum": "0xfc55b12896c090aac7922d447d9b80821b983bdc"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2025-09-02T06:58:26.173Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3847.238592760529,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "1.16",
+     "volumeUsd7d": "56.54"
+    },
+    "metadata": {},
+    "tokenId": "a775a68e-371a-4e35-8059-ab263ae5e6ec",
+    "totalSupply": "110010101111",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xeab7b7c7e1ad808a538c5a64d500adf40753da7d77f0c5dc2a28ef9704d4b261": {
+    "key": "robinhood:0xeab7b7c7e1ad808a538c5a64d500adf40753da7d77f0c5dc2a28ef9704d4b261",
+    "name": "Uniswap V4 LP wUSDG/DIS",
+    "decimals": 18,
+    "symbol": "WUSDG/DIS",
+    "price": 9007199254740990,
+    "address": "0xeab7b7c7e1ad808a538c5a64d500adf40753da7d77f0c5dc2a28ef9704d4b261",
+    "addresses": {
+     "robinhood": "0xeab7b7c7e1ad808a538c5a64d500adf40753da7d77f0c5dc2a28ef9704d4b261"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:38.611Z",
+    "createdAt": "2026-10-29T20:11:43.367Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "12.7766"
+     "tickSpacing": 60,
+     "feePercentage": "60"
     },
-    "tokenId": "3c34b7ba-03d2-44e9-9a32-f0210e9a2b24",
+    "tokenId": "18c55cd9-f2b4-47e4-b238-bf78d1764f39",
     "reserves": [
-     "36.344943955477401878",
-     "1842117.462641892037034719"
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2326,13 +2907,13 @@
     "price": 0.00653509,
     "address": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
     "addresses": {
-     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "base": "0xeca139be1214322752b4e427b1800fd3e8037bf8",
+     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "ethereum": "0xb841f365d5221bed66d60e69094418d8c2aa5a44"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-04-24T09:42:17.119Z",
     "verifiedAt": null,
     "tokens": [],
@@ -2349,31 +2930,30 @@
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0x6eee0a773ae94da7099d204b84c84f7ab00437af21357825c8ccce64b69aede7": {
-    "key": "ethereum:0x6eee0a773ae94da7099d204b84c84f7ab00437af21357825c8ccce64b69aede7",
-    "name": "Uniswap V4 LP EGP/DISon",
+   "robinhood:0x673090e727c805297f6cfa07116bb0c4b1cda901ab84644d5399cfe9c251ead8": {
+    "key": "robinhood:0x673090e727c805297f6cfa07116bb0c4b1cda901ab84644d5399cfe9c251ead8",
+    "name": "Uniswap V4 LP MJDQ/DIS",
     "decimals": 18,
-    "symbol": "EGP/DISON",
+    "symbol": "MJDQ/DIS",
     "price": 9007199254740990,
-    "address": "0x6eee0a773ae94da7099d204b84c84f7ab00437af21357825c8ccce64b69aede7",
+    "address": "0x673090e727c805297f6cfa07116bb0c4b1cda901ab84644d5399cfe9c251ead8",
     "addresses": {
-     "ethereum": "0x6eee0a773ae94da7099d204b84c84f7ab00437af21357825c8ccce64b69aede7"
+     "robinhood": "0x673090e727c805297f6cfa07116bb0c4b1cda901ab84644d5399cfe9c251ead8"
     },
     "platform": "uniswap-v4",
-    "network": "ethereum",
+    "network": "robinhood",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:05.603Z",
-    "createdAt": "2026-10-14T06:54:32.550Z",
+    "updatedAt": "2026-11-21T14:12:38.249Z",
+    "createdAt": "2026-11-11T13:21:24.850Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
     ],
-    "liquidity": 20074.23168587783,
+    "liquidity": 9999.164596753732,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -2385,13 +2965,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "95.04"
+     "tickSpacing": 19833,
+     "feePercentage": "99.167"
     },
-    "tokenId": "73f17e59-9e16-48ba-aa9b-5f8713dc6f3d",
+    "tokenId": "b0825975-e97d-487a-a11f-657222bd3f55",
     "reserves": [
-     "19999.999999999999999999",
-     "0.257072926478486298"
+     "9999.999999997649999953",
+     "0.000861291344455633"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2413,14 +2993,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:52.955Z",
+    "updatedAt": "2026-11-21T14:13:42.520Z",
     "createdAt": "2026-08-19T11:04:40.143Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 742.1241539063586,
+    "liquidity": 513.6857405176743,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -2443,38 +3023,32 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0xc435b3c41ae56d9bc57b8525f4d522c978f168e8": {
-    "key": "ethereum:0xc435b3c41ae56d9bc57b8525f4d522c978f168e8",
-    "name": "Warner Bros. Discovery xStock",
+   "base:0x0039d6a1773888cbe38addeeb2054fe145333dfb": {
+    "key": "base:0x0039d6a1773888cbe38addeeb2054fe145333dfb",
+    "name": "Dispatch",
     "decimals": 18,
-    "symbol": "WBDX",
-    "price": 26.75,
-    "address": "0xc435b3c41ae56d9bc57b8525f4d522c978f168e8",
+    "symbol": "DSP",
+    "price": 5.205e-05,
+    "address": "0x0039d6a1773888cbe38addeeb2054fe145333dfb",
     "addresses": {
-     "ethereum": "0xc435b3c41ae56d9bc57b8525f4d522c978f168e8"
+     "base": "0x0039d6a1773888cbe38addeeb2054fe145333dfb"
     },
-    "platform": "xstocks",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:46.783Z",
-    "createdAt": "2025-10-01T09:00:49.665Z",
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-10-26T20:02:35.739Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 9362500,
-    "image": "https://coin-images.coingecko.com/coins/images/69650/large/Ticker_WBDx__Company_Name_Warner_Bros._Discovery__size_200x200.png?1759233784",
+    "liquidity": 50818,
+    "image": "https://coin-images.coingecko.com/coins/images/102179785/large/dispatch-app-icon-blue-1024.png?1792999004",
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
+     "volumeUsd1d": "1980.787",
+     "volumeUsd7d": "8500.285"
     },
-    "metadata": {
-     "tags": [
-      "#rwa"
-     ],
-     "paused": false,
-     "interface": "ERC20",
-     "coingeckoId": "warner-bros-discovery-xstock"
-    },
-    "tokenId": "07e62b1f-5890-4cd5-a4f6-b0806680cd8c",
-    "totalSupply": "350000",
+    "metadata": {},
+    "tokenId": "13018247-7d9d-40a2-a7bb-d76c26308a21",
+    "totalSupply": "976332494.6812041",
+    "circulatingSupply": "976332494.6812041",
     "isClaimed": false,
     "isPortable": true
    },
@@ -2483,75 +3057,30 @@
     "name": "Disney (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "DISON",
-    "price": 111.69,
+    "price": 120.72,
     "address": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
     "addresses": {
-     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa",
-     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+     "ethereum": "0xc3d93b45249e8e06cfeb01d25a96337e8893265d",
+     "bsc": "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1119265,
+    "liquidity": 1122502,
     "image": "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
     "metrics": {
-     "volumeUsd1d": "163244.02",
-     "volumeUsd7d": "1348190.846"
+     "volumeUsd1d": "163578.351",
+     "volumeUsd7d": "1186626.261"
     },
     "metadata": {},
     "tokenId": "72cc9520-0336-4c56-98ad-70d18f3e2d9f",
-    "totalSupply": "10022.945812478696",
-    "circulatingSupply": "10022.945812478696",
+    "totalSupply": "9298.645414268329",
+    "circulatingSupply": "9298.645414268329",
     "isClaimed": false,
     "isPortable": true
-   },
-   "robinhood:0x2ac725cad997626b2fb9a44cf6de5b9dcf3c0976": {
-    "key": "robinhood:0x2ac725cad997626b2fb9a44cf6de5b9dcf3c0976",
-    "name": "Uniswap V3 WETH/HOODISEUS 1%",
-    "decimals": 18,
-    "symbol": "WETH/HOODISEUS",
-    "price": 9007199254740990,
-    "address": "0x2ac725cad997626b2fb9a44cf6de5b9dcf3c0976",
-    "addresses": {
-     "robinhood": "0x2ac725cad997626b2fb9a44cf6de5b9dcf3c0976"
-    },
-    "platform": "uniswap-v3",
-    "network": "robinhood",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:17.621Z",
-    "createdAt": "2026-08-03T19:15:56.497Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
-     "0x7e711196bec84abecc23b1136c5ce946061e5aa1"
-    ],
-    "liquidity": 4609.797982021617,
-    "metrics": {
-     "apy": "21.907",
-     "baseApy": "21.907",
-     "volumeUsd1d": "276.82",
-     "volumeUsd7d": "1154.778"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "1"
-    },
-    "tokenId": "7645b808-71a5-4b2d-b369-5a00283fb5ca",
-    "reserves": [
-     "0.303737632018723641",
-     "823778908.021305740721836996"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "bsc:0x8fd3a84895fc1c2115d36e1841913bd8e455962789178e5bb6458ffe83562566": {
     "key": "bsc:0x8fd3a84895fc1c2115d36e1841913bd8e455962789178e5bb6458ffe83562566",
@@ -2570,19 +3099,19 @@
      "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575"
     ],
-    "updatedAt": "2026-10-18T20:15:26.728Z",
+    "updatedAt": "2026-11-21T14:12:41.953Z",
     "createdAt": "2026-09-08T19:47:59.319Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xeee9eee593cb8f7946260b4066cba7907f40acfa"
     ],
-    "liquidity": 1220.240389111049,
+    "liquidity": 647.0981373434865,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "56.442"
+     "volumeUsd7d": "23.391"
     },
     "metadata": {
      "tags": [
@@ -2594,8 +3123,8 @@
     },
     "tokenId": "b401bde4-9326-49e4-8bbb-03a1a8ffb9f3",
     "reserves": [
-     "418.174350398310626893",
-     "7.184392804238338451"
+     "297.472638250256637006",
+     "2.899155367219923624"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2617,14 +3146,14 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:26.754Z",
+    "updatedAt": "2026-11-21T14:12:41.660Z",
     "createdAt": "2026-08-20T04:56:55.790Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 998.2753720239913,
+    "liquidity": 729.4569317338326,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -2647,15 +3176,62 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "bsc:0xe038be6c0ec3862b73886312a5bb49729e7b75ef4b62aad3ba05e9e262e6b34a": {
-    "key": "bsc:0xe038be6c0ec3862b73886312a5bb49729e7b75ef4b62aad3ba05e9e262e6b34a",
+   "ethereum:0xada4ef7a28b8d4e76e72e8e6d2a23bfc3a64298173c6cf9adf14b865487bc186": {
+    "key": "ethereum:0xada4ef7a28b8d4e76e72e8e6d2a23bfc3a64298173c6cf9adf14b865487bc186",
+    "name": "Uniswap V4 LP HRC/DISon",
+    "decimals": 18,
+    "symbol": "HRC/DISON",
+    "price": 9007199254740990,
+    "address": "0xada4ef7a28b8d4e76e72e8e6d2a23bfc3a64298173c6cf9adf14b865487bc186",
+    "addresses": {
+     "ethereum": "0xada4ef7a28b8d4e76e72e8e6d2a23bfc3a64298173c6cf9adf14b865487bc186"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
+    ],
+    "updatedAt": "2026-11-21T14:12:22.496Z",
+    "createdAt": "2026-11-07T15:59:35.401Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
+    ],
+    "liquidity": 500.1769701287868,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19830,
+     "feePercentage": "99.1539"
+    },
+    "tokenId": "8d8a9529-858a-49ab-abb7-bccb278f4a76",
+    "reserves": [
+     "499.999999999999999942",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0xe745d1f292b8d5cef9c9c6ad7b5002afe4740633abf58afd851bb24ba3cd0a67": {
+    "key": "bsc:0xe745d1f292b8d5cef9c9c6ad7b5002afe4740633abf58afd851bb24ba3cd0a67",
     "name": "PancakeSwap Infinity LP USDT/CUDIS",
     "decimals": 18,
     "symbol": "USDT/CUDIS",
     "price": 9007199254740990,
-    "address": "0xe038be6c0ec3862b73886312a5bb49729e7b75ef4b62aad3ba05e9e262e6b34a",
+    "address": "0xe745d1f292b8d5cef9c9c6ad7b5002afe4740633abf58afd851bb24ba3cd0a67",
     "addresses": {
-     "bsc": "0xe038be6c0ec3862b73886312a5bb49729e7b75ef4b62aad3ba05e9e262e6b34a"
+     "bsc": "0xe745d1f292b8d5cef9c9c6ad7b5002afe4740633abf58afd851bb24ba3cd0a67"
     },
     "platform": "pancakeswap-infinity",
     "network": "bsc",
@@ -2664,18 +3240,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
     ],
-    "updatedAt": "2026-10-18T20:15:53.118Z",
-    "createdAt": "2026-10-18T18:59:36.841Z",
+    "updatedAt": "2026-11-21T14:13:42.411Z",
+    "createdAt": "2026-11-19T19:30:43.122Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     ],
-    "liquidity": 12876.814006565917,
+    "liquidity": 599.2728,
     "metrics": {
-     "apy": "47.024",
-     "baseApy": "47.024",
-     "volumeUsd1d": "331.881"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -2683,12 +3260,12 @@
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
      "tickSpacing": 1,
-     "feePercentage": "4.9982"
+     "feePercentage": "24.6746"
     },
-    "tokenId": "9b25eab1-a80a-4a34-a9e9-294e29207efa",
+    "tokenId": "4ca36010-c92d-4e47-896b-8bfcddd1b74f",
     "reserves": [
-     "12357.426714735728042199",
-     "744838.681682850010402328"
+     "600",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2698,31 +3275,31 @@
     "name": "Dinari DIS dShares",
     "decimals": 18,
     "symbol": "DIS",
-    "price": 111.49,
+    "price": 118.17,
     "address": "0xeac2887725a9782440606eb655bc14047ee57cd6",
     "addresses": {
-     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046",
+     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
      "arbitrum": "0x3c9f23db4ddc5655f7be636358d319a3de1ff0c4",
      "base": "0x942e2d29f05309938ea806defa1758a019dddb70",
-     "ethereum": "0xeac2887725a9782440606eb655bc14047ee57cd6",
-     "hyperevm": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
+     "avalanche": "0x7f7a731e180f7dd4497c751afcee4f4009d9c046"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2981.09,
+    "liquidity": 4255.33,
     "image": "https://coin-images.coingecko.com/coins/images/102174909/large/dinari-logo-green-with-margin.png?1785402527",
     "metrics": {
-     "volumeUsd1d": "5.028",
-     "volumeUsd7d": "194.972"
+     "volumeUsd1d": "3.911",
+     "volumeUsd7d": "4280.531"
     },
     "metadata": {},
     "tokenId": "93a11bae-f9f3-4e05-980e-cbdcb24fb950",
-    "totalSupply": "26.7386254196965",
-    "circulatingSupply": "26.7386254196965",
+    "totalSupply": "36.01165322858924",
+    "circulatingSupply": "36.01165322858924",
     "isClaimed": false,
     "isPortable": true
    },
@@ -2743,14 +3320,14 @@
      "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:06.667Z",
+    "updatedAt": "2026-11-21T14:12:21.541Z",
     "createdAt": "2026-09-28T10:37:10.901Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -2778,28 +3355,28 @@
     "name": "Novo Nordisk (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVOON",
-    "price": 39.97,
+    "price": 39.42,
     "address": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
     "addresses": {
-     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3",
-     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8"
+     "bsc": "0x08a513779f46ffb7a34f16094a94016d010128a8",
+     "ethereum": "0x28151f5888833d3d767c4d6945a0ee50d1b193e3"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2100256,
+    "liquidity": 1982024,
     "image": "https://coin-images.coingecko.com/coins/images/68554/large/nvoon_160x160.png?1756105715",
     "metrics": {
-     "volumeUsd1d": "1084288.793",
-     "volumeUsd7d": "7723084.284"
+     "volumeUsd1d": "513489.862",
+     "volumeUsd7d": "3453564.573"
     },
     "metadata": {},
     "tokenId": "d0130232-e7d2-48d0-adaf-08ee003d9f8f",
-    "totalSupply": "52560.77182835847",
-    "circulatingSupply": "52560.77182835847",
+    "totalSupply": "50283.18073043649",
+    "circulatingSupply": "50283.18073043649",
     "isClaimed": false,
     "isPortable": true
    },
@@ -2808,60 +3385,210 @@
     "name": "SanDisk (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "SNDKON",
-    "price": 1268.49,
+    "price": 646.95,
     "address": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4",
     "addresses": {
-     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4",
      "ethereum": "0x71e2400cf1cb83204f33794ed326636a71a9aafc",
-     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382"
+     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382",
+     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-03-14T13:06:25.338Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 5255967,
+    "liquidity": 2343341,
     "image": "https://coin-images.coingecko.com/coins/images/102172440/large/sndkon_160x160.png?1773419692",
     "metrics": {
-     "volumeUsd1d": "1976396.537",
-     "volumeUsd7d": "19558907.89"
+     "volumeUsd1d": "167102.531",
+     "volumeUsd7d": "4677444.673"
     },
     "metadata": {},
     "tokenId": "4e072459-76a7-43a6-a106-ac8045310d36",
-    "totalSupply": "4143.499268350219",
-    "circulatingSupply": "4143.499268350219",
+    "totalSupply": "3622.1276885456077",
+    "circulatingSupply": "3622.1276885456077",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0xbbf1f6d96cc0f9024e6d123547c9259dba520e7cb67eae35567c19ad107cc77b": {
+    "key": "robinhood:0xbbf1f6d96cc0f9024e6d123547c9259dba520e7cb67eae35567c19ad107cc77b",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0xbbf1f6d96cc0f9024e6d123547c9259dba520e7cb67eae35567c19ad107cc77b",
+    "addresses": {
+     "robinhood": "0xbbf1f6d96cc0f9024e6d123547c9259dba520e7cb67eae35567c19ad107cc77b"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:39.249Z",
+    "createdAt": "2026-10-29T20:11:42.873Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 1046.5333006129058,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 685,
+     "feePercentage": "6.9432"
+    },
+    "tokenId": "0c301bc1-1e16-4dac-8e00-cbb58b4f44b4",
+    "reserves": [
+     "4.946899434859162365",
+     "465.421024"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x78d4b224e269d505a9d684fd1fec41ff936e82e1cad2de65f85571114ac2e1b6": {
+    "key": "robinhood:0x78d4b224e269d505a9d684fd1fec41ff936e82e1cad2de65f85571114ac2e1b6",
+    "name": "Uniswap V4 LP DIS/USDG",
+    "decimals": 18,
+    "symbol": "DIS/USDG",
+    "price": 9007199254740990,
+    "address": "0x78d4b224e269d505a9d684fd1fec41ff936e82e1cad2de65f85571114ac2e1b6",
+    "addresses": {
+     "robinhood": "0x78d4b224e269d505a9d684fd1fec41ff936e82e1cad2de65f85571114ac2e1b6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:12:39.302Z",
+    "createdAt": "2026-10-29T20:11:41.138Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 2432.332783651048,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 3200,
+     "feePercentage": "16.084"
+    },
+    "tokenId": "1a1b41d9-f93b-41f1-87c6-d0764cb547f3",
+    "reserves": [
+     "9.245402823282947634",
+     "1346.275314"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "ethereum:0x71e2400cf1cb83204f33794ed326636a71a9aafc": {
     "key": "ethereum:0x71e2400cf1cb83204f33794ed326636a71a9aafc",
     "name": "SanDisk (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "SNDKON",
-    "price": 1268.49,
+    "price": 646.95,
     "address": "0x71e2400cf1cb83204f33794ed326636a71a9aafc",
     "addresses": {
-     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4",
      "ethereum": "0x71e2400cf1cb83204f33794ed326636a71a9aafc",
-     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382"
+     "hyperevm": "0xb8927cff399e23328eec0e457e75c709dcfcf382",
+     "bsc": "0x4fd67cb8cfedc718bac984b5936abe3330d0a2a4"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-03-14T13:06:25.338Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 5255967,
+    "liquidity": 2343341,
     "image": "https://coin-images.coingecko.com/coins/images/102172440/large/sndkon_160x160.png?1773419692",
     "metrics": {
-     "volumeUsd1d": "1934434.461",
-     "volumeUsd7d": "19542264.028"
+     "volumeUsd1d": "167039.812",
+     "volumeUsd7d": "4668226.352"
     },
     "metadata": {},
     "tokenId": "4e072459-76a7-43a6-a106-ac8045310d36",
-    "totalSupply": "4143.499268350219",
-    "circulatingSupply": "4143.499268350219",
+    "totalSupply": "3622.1276885456077",
+    "circulatingSupply": "3622.1276885456077",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x501b1b3b79750313ad2c4cccd08586c4c17d7283": {
+    "key": "robinhood:0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+    "name": "Disney • Robinhood Token",
+    "decimals": 18,
+    "symbol": "DIS",
+    "price": 117.47,
+    "address": "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+    "addresses": {
+     "robinhood": "0x501b1b3b79750313ad2c4cccd08586c4c17d7283"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0x501b1b3b79750313ad2c4cccd08586c4c17d7283.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:34.744Z",
+    "createdAt": "2026-10-28T20:06:35.307Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0x501b1b3b79750313ad2c4cccd08586c4c17d7283",
+    "liquidity": 79974.7871157,
+    "metrics": {
+     "volumeUsd1d": "7400.56",
+     "volumeUsd7d": "-11321.266"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000bda958e5aa084da28243c0c4178f0ae4",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "ab08948e-bf45-429f-b5bd-28492fa0c9d5",
+    "totalSupply": "680.81031",
     "isClaimed": false,
     "isPortable": true
    },
@@ -2870,18 +3597,18 @@
     "name": "Novo Nordisk xStock",
     "decimals": 18,
     "symbol": "NVOX",
-    "price": 38.86,
+    "price": 39.95,
     "address": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e",
     "addresses": {
      "arbitrum": "0xf9523e369c5f55ad72dbaa75b0a9b92b3d8b147e"
     },
     "platform": "xstocks",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:15:48.602Z",
+    "updatedAt": "2026-11-21T14:13:58.427Z",
     "createdAt": "2025-05-10T10:17:53.793Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 8416280.164120287,
+    "liquidity": 8652351.841394892,
     "image": "https://coin-images.coingecko.com/coins/images/55652/large/Ticker_NOVO_B__Company_Name_SP500__size_200x200_2x.png?1746864314",
     "metrics": {
      "volumeUsd1d": "0",
@@ -2905,27 +3632,27 @@
     "name": "SanDisk rStock",
     "decimals": 18,
     "symbol": "RSNDK",
-    "price": 1290.45,
+    "price": 80.23,
     "address": "0xc78c5a7be0e8d72cdda205e53d1147aaacf5a075",
     "addresses": {
      "arbitrum": "0xc78c5a7be0e8d72cdda205e53d1147aaacf5a075"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 10870726,
+    "liquidity": 1183243,
     "image": "https://coin-images.coingecko.com/coins/images/102177003/large/5a8bb26bd86226bdd9489b628b367aa5.png?1789116376",
     "metrics": {
-     "volumeUsd1d": "105.266",
-     "volumeUsd7d": "6224174.022"
+     "volumeUsd1d": "5909546.356",
+     "volumeUsd7d": "28117746.288"
     },
     "metadata": {},
     "tokenId": "04542767-031b-44d4-a48a-05242c34369b",
-    "totalSupply": "8423.969124665",
-    "circulatingSupply": "8423.969124665",
+    "totalSupply": "14747.538760548001",
+    "circulatingSupply": "14747.538760548001",
     "isClaimed": false,
     "isPortable": true
    },
@@ -2946,19 +3673,19 @@
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
      "https://coin-images.coingecko.com/coins/images/68587/large/dison_160x160.png?1756129802"
     ],
-    "updatedAt": "2026-10-18T20:15:06.694Z",
+    "updatedAt": "2026-11-21T14:12:24.436Z",
     "createdAt": "2025-09-26T08:45:52.397Z",
     "verifiedAt": null,
     "tokens": [
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
      "0xc3d93b45249e8e06cfeb01d25a96337e8893265d"
     ],
-    "liquidity": 536.584027596535,
+    "liquidity": 559.1974166473855,
     "metrics": {
-     "apy": "2.388",
-     "baseApy": "2.388",
-     "volumeUsd1d": "0.121",
-     "volumeUsd7d": "0.121"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -2970,8 +3697,8 @@
     },
     "tokenId": "9251c98a-7cef-4800-ac3d-f887b38ce5cc",
     "reserves": [
-     "314.206681",
-     "1.991686806099480246"
+     "328.033553",
+     "1.919047409967090344"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -2981,30 +3708,30 @@
     "name": "Novo Nordisk (Dinari Tokenized Stock)",
     "decimals": 18,
     "symbol": "NVO",
-    "price": 39.21,
+    "price": 37.88,
     "address": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
     "addresses": {
-     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "base": "0xf3feeabcc3a4a80ee6327c37d6ca58ef19662a3f",
      "arbitrum": "0x1fc9b77d1bfd7b4b7da10a83204eabf069add42c",
+     "ethereum": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759",
      "avalanche": "0xaf4f3936db16c6ca761c5801c44293c0a8b1b759"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 4132.9,
+    "liquidity": 4268.59,
     "image": "https://coin-images.coingecko.com/coins/images/102175078/large/dinari-logo-green-with-margin.png?1785403126",
     "metrics": {
-     "volumeUsd1d": "51.45",
-     "volumeUsd7d": "4147.85"
+     "volumeUsd1d": "24.902",
+     "volumeUsd7d": "324.02"
     },
     "metadata": {},
     "tokenId": "dbb5e8c1-ebd6-413b-8f7e-fbfef55afa41",
-    "totalSupply": "105.395748223",
-    "circulatingSupply": "105.395748223",
+    "totalSupply": "112.688966913",
+    "circulatingSupply": "112.688966913",
     "isClaimed": false,
     "isPortable": true
    },
@@ -3013,22 +3740,22 @@
     "name": "WAV3 Agentic Music Discovery by Virtuals",
     "decimals": 18,
     "symbol": "WAV3",
-    "price": 2.261e-05,
+    "price": 1.455e-05,
     "address": "0x8b12bf09b7c6d73735c6a824f1d74a8b5c1aa5ca",
     "addresses": {
      "base": "0x8b12bf09b7c6d73735c6a824f1d74a8b5c1aa5ca"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-09T09:24:16.263Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 22613,
+    "liquidity": 14545.07,
     "image": "https://coin-images.coingecko.com/coins/images/69900/large/WAV.3_Logo_Light.png?1759986335",
     "metrics": {
-     "volumeUsd1d": "1.879",
-     "volumeUsd7d": "13.153"
+     "volumeUsd1d": "1.301",
+     "volumeUsd7d": "9.107"
     },
     "metadata": {},
     "tokenId": "000f3a83-a32a-4499-ab5c-6c85723f01cc",
@@ -3045,13 +3772,13 @@
     "price": 0.00653509,
     "address": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
     "addresses": {
-     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "base": "0xeca139be1214322752b4e427b1800fd3e8037bf8",
+     "bsc": "0xb841f365d5221bed66d60e69094418d8c2aa5a44",
      "ethereum": "0xb841f365d5221bed66d60e69094418d8c2aa5a44"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-04-24T09:42:17.119Z",
     "verifiedAt": null,
     "tokens": [],
@@ -3068,27 +3795,74 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "bsc:0x2ca930d6e1ac78ba7adf52003f39268de8d9218e0377fae2b8ef3fbed8ebfb54": {
+    "key": "bsc:0x2ca930d6e1ac78ba7adf52003f39268de8d9218e0377fae2b8ef3fbed8ebfb54",
+    "name": "Uniswap V4 LP USDT/CUDIS",
+    "decimals": 18,
+    "symbol": "USDT/CUDIS",
+    "price": 9007199254740990,
+    "address": "0x2ca930d6e1ac78ba7adf52003f39268de8d9218e0377fae2b8ef3fbed8ebfb54",
+    "addresses": {
+     "bsc": "0x2ca930d6e1ac78ba7adf52003f39268de8d9218e0377fae2b8ef3fbed8ebfb54"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219"
+    ],
+    "updatedAt": "2026-11-21T14:12:42.391Z",
+    "createdAt": "2026-11-16T12:32:38.698Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
+    ],
+    "liquidity": 3373.5933284104717,
+    "metrics": {
+     "apy": "32.038",
+     "baseApy": "32.038",
+     "volumeUsd1d": "70.582",
+     "volumeUsd7d": "1660.392"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 410,
+     "feePercentage": "4.1959"
+    },
+    "tokenId": "9427d9b4-4828-4c0c-b978-32d94c816f50",
+    "reserves": [
+     "3154.302565430054722565",
+     "1910547.848002380821370974"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "bsc:0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1": {
     "key": "bsc:0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1",
     "name": "Cudis",
     "decimals": 18,
     "symbol": "CUDIS",
-    "price": 0.00071155,
+    "price": 0.00011678,
     "address": "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1",
     "addresses": {
      "bsc": "0xc1353d3ee02fdbd4f65f92eee543cfd709049cb1"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-06-06T09:02:08.566Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 176107,
+    "liquidity": 28904,
     "image": "https://coin-images.coingecko.com/coins/images/66296/large/cudis.jpg?1749115219",
     "metrics": {
-     "volumeUsd1d": "31440.367",
-     "volumeUsd7d": "559776.845"
+     "volumeUsd1d": "67045.636",
+     "volumeUsd7d": "1515063.491"
     },
     "metadata": {},
     "tokenId": "059949c8-0f63-470c-bcab-76dc5f7ab95d",
@@ -3102,27 +3876,27 @@
     "name": "Novo Nordisk A/S rStock",
     "decimals": 18,
     "symbol": "RNVO",
-    "price": 38.7,
+    "price": 37.8,
     "address": "0x0e49db0b454608762c05f28249b8e162692b0ece",
     "addresses": {
      "arbitrum": "0x0e49db0b454608762c05f28249b8e162692b0ece"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 295228,
+    "liquidity": 261617,
     "image": "https://coin-images.coingecko.com/coins/images/102177061/large/a14ddaa9de79c3720bf617e16ce708ac.png?1789116705",
     "metrics": {
-     "volumeUsd1d": "193.428",
-     "volumeUsd7d": "76968.709"
+     "volumeUsd1d": "152.613",
+     "volumeUsd7d": "24888.761"
     },
     "metadata": {},
     "tokenId": "76944f57-690a-470d-87ea-c271fdd92147",
-    "totalSupply": "7629.486901642999",
-    "circulatingSupply": "7629.486901642999",
+    "totalSupply": "6921.132451118",
+    "circulatingSupply": "6921.132451118",
     "isClaimed": false,
     "isPortable": true
    }

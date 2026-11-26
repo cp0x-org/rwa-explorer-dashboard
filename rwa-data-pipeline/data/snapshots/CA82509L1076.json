@@ -5,8 +5,8 @@
  "name": "Shopify",
  "isin": "CA82509L1076",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:19:59Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:15:38Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,50 +17,60 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 168.62537563548318,
-     "tokenized_market_cap": 947202.8785311028,
-     "tokenized_volume_24h": 1574741.21567631,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 126.19112853841014,
+     "tokenized_market_cap": 782651.8390129025,
+     "tokenized_volume_24h": 1518030.84625066,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 132,
    "asset_type": "stock",
-   "rwa_rank": 69,
+   "rwa_rank": 91,
    "has_tokens": true,
-   "average_tokenized_price": 168.62537563548318,
-   "tokenized_market_cap": 947202.8785311028,
-   "tokenized_volume_24h": 1574741.21567631,
-   "last_updated": "2026-10-18T20:14:29.151Z",
+   "average_tokenized_price": 126.19112853841014,
+   "tokenized_market_cap": 782651.8390129025,
+   "tokenized_volume_24h": 1518030.84625066,
+   "last_updated": "2026-11-21T14:10:11.180Z",
    "tokens": [
     {
      "symbol": "SHOPon",
      "name": "Shopify Tokenized Stock (Ondo)",
-     "price": 168.57172297898524,
+     "price": 126.1886850180571,
      "crypto_id": 38026,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 865686.4,
-     "volume_24h": 1572858.5525269
+     "market_cap": 644687.7619336165,
+     "volume_24h": 1503665.5135192496
     },
     {
      "symbol": "SHOP",
      "name": "Shopify Tokenized Stock (Robinhood)",
-     "price": 169.59879890899433,
+     "price": 126.62565141452674,
      "crypto_id": 40727,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 81336.41,
-     "volume_24h": 3701.97539742
+     "market_cap": 57605.85318324516,
+     "volume_24h": 11312.751680063562
     },
     {
      "symbol": "SHOP",
      "name": "Shopify Inc (Derivatives)",
-     "price": 170.12647011775982,
+     "price": 126.34465081384802,
      "crypto_id": 41871,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
      "market_cap": 0,
      "volume_24h": 0
+    },
+    {
+     "symbol": "SHOPx",
+     "name": "Shopify Inc. tokenized stock (xStock)",
+     "price": 125.7844523232434,
+     "crypto_id": 42844,
+     "issuer_id": "6878977dcbbf471de3366e85",
+     "issuer_name": "Backed Assets",
+     "market_cap": 80358.22389659371,
+     "volume_24h": 3052.5810513453603
     }
    ],
    "tradfi_markets": [
@@ -167,6 +177,59 @@
     "date_added": "2026-06-23T11:23:49.000Z",
     "platform": null,
     "contract_address": null
+   },
+   "42844": {
+    "id": 42844,
+    "symbol": "SHOPx",
+    "name": "Shopify Inc. tokenized stock (xStock)",
+    "slug": "shopify-inc-tokenized-stock-xstock",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42844.png",
+    "date_added": "2026-06-08T15:32:52.000Z",
+    "platform": {
+     "id": "1027",
+     "name": "Ethereum",
+     "symbol": "ETH",
+     "slug": "ethereum",
+     "token_address": "0xD3F90F9f3C67052578508EC08Da683F4332a7C3C"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xD3F90F9f3C67052578508EC08Da683F4332a7C3C",
+      "platform": {
+       "name": "Ethereum",
+       "coin": {
+        "id": "1027",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "slug": "ethereum"
+       }
+      }
+     },
+     {
+      "contract_address": "0xD3F90F9f3C67052578508EC08Da683F4332a7C3C",
+      "platform": {
+       "name": "BNB Smart Chain (BEP20)",
+       "coin": {
+        "id": "1839",
+        "name": "BNB",
+        "symbol": "BNB",
+        "slug": "bnb"
+       }
+      }
+     },
+     {
+      "contract_address": "XsRN7n3AZDs577pgQSGbrbgznY5T9xERcjr4dK6vHnX",
+      "platform": {
+       "name": "Solana",
+       "coin": {
+        "id": "5426",
+        "name": "Solana",
+        "symbol": "SOL",
+        "slug": "solana"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -189,7 +252,9 @@
   ],
   "looked_up": [
    "bsc:0x43d0b380c33cd004a6a69abd61843881a2de4113",
+   "bsc:0xd3f90f9f3c67052578508ec08da683f4332a7c3c",
    "ethereum:0x908266c1192628371cff7ad2f5eba4de061a0ac5",
+   "ethereum:0xd3f90f9f3c67052578508ec08da683f4332a7c3c",
    "robinhood:0xf53f66751b1eff985311b693531e3290f600c410"
   ],
   "exact": {
@@ -198,7 +263,7 @@
     "name": "Shopify (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SHOPON",
-    "price": 170.23,
+    "price": 126.32,
     "address": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
     "addresses": {
      "ethereum": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
@@ -206,20 +271,78 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 874210,
+    "liquidity": 645386,
     "image": "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783",
     "metrics": {
-     "volumeUsd1d": "1209406.387",
-     "volumeUsd7d": "8606532.183"
+     "volumeUsd1d": "1154527.54",
+     "volumeUsd7d": "7984842.789"
     },
     "metadata": {},
     "tokenId": "41d5096c-a165-4bc6-880e-27e2e6dc3368",
-    "totalSupply": "5135.418823162538",
-    "circulatingSupply": "5135.418823162538",
+    "totalSupply": "5108.918932322373",
+    "circulatingSupply": "5108.918932322373",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf53f66751b1eff985311b693531e3290f600c410": {
+    "key": "robinhood:0xf53f66751b1eff985311b693531e3290f600c410",
+    "name": "Shopify • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SHOP",
+    "price": 142.975,
+    "address": "0xf53f66751b1eff985311b693531e3290f600c410",
+    "addresses": {
+     "robinhood": "0xf53f66751b1eff985311b693531e3290f600c410"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xf53f66751b1eff985311b693531e3290f600c410.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:20.527Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xf53f66751b1eff985311b693531e3290f600c410",
+    "liquidity": 65043.668221,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-436.626"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000b82496d605ca4b019c9200daa049f52f",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "50cc5b00-3136-4e45-bde2-9b4ec49b0836",
+    "totalSupply": "454.93036",
     "isClaimed": false,
     "isPortable": true
    },
@@ -228,7 +351,7 @@
     "name": "Shopify (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SHOPON",
-    "price": 170.23,
+    "price": 126.32,
     "address": "0x43d0b380c33cd004a6a69abd61843881a2de4113",
     "addresses": {
      "ethereum": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
@@ -236,33 +359,80 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 874210,
+    "liquidity": 645386,
     "image": "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783",
     "metrics": {
-     "volumeUsd1d": "1209475.046",
-     "volumeUsd7d": "8603575.926"
+     "volumeUsd1d": "1149109.214",
+     "volumeUsd7d": "7998189.567"
     },
     "metadata": {},
     "tokenId": "41d5096c-a165-4bc6-880e-27e2e6dc3368",
-    "totalSupply": "5135.418823162538",
-    "circulatingSupply": "5135.418823162538",
+    "totalSupply": "5108.918932322373",
+    "circulatingSupply": "5108.918932322373",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "SHOP": {
-    "total_items": 32,
+    "total_items": 44,
     "pages": 1,
-    "received": 32,
+    "received": 44,
     "complete": true
    }
   },
   "records": {
+   "robinhood:0x3edfbf6a3c6ef62b822be53c749bab2e52006866ffaa2566b4936823e2c94683": {
+    "key": "robinhood:0x3edfbf6a3c6ef62b822be53c749bab2e52006866ffaa2566b4936823e2c94683",
+    "name": "Uniswap V4 LP USDG/SHOP",
+    "decimals": 18,
+    "symbol": "USDG/SHOP",
+    "price": 9007199254740990,
+    "address": "0x3edfbf6a3c6ef62b822be53c749bab2e52006866ffaa2566b4936823e2c94683",
+    "addresses": {
+     "robinhood": "0x3edfbf6a3c6ef62b822be53c749bab2e52006866ffaa2566b4936823e2c94683"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174182/large/0xf53f66751b1eff985311b693531e3290f600c410.png?1782444755"
+    ],
+    "updatedAt": "2026-11-21T14:14:42.909Z",
+    "createdAt": "2026-09-08T14:39:26.320Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 4251.272571470904,
+    "metrics": {
+     "apy": "13.701",
+     "baseApy": "13.701",
+     "volumeUsd1d": "259.555",
+     "volumeUsd7d": "1146.789"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 52,
+     "feePercentage": "0.6148"
+    },
+    "tokenId": "cb8e7442-cc34-4580-9f22-c2761e30a966",
+    "reserves": [
+     "1718.496601",
+     "17.714817069214229553"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "arbitrum:0x873e9081d563c216cc7de7ee7b0a1073438a2ca281792daeba1bb4d0973bb784": {
     "key": "arbitrum:0x873e9081d563c216cc7de7ee7b0a1073438a2ca281792daeba1bb4d0973bb784",
     "name": "Uniswap V4 LP WBTC/Unishop.ai",
@@ -280,14 +450,14 @@
      "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:51.698Z",
+    "updatedAt": "2026-11-21T14:13:53.319Z",
     "createdAt": "2026-02-02T05:20:56.828Z",
     "verifiedAt": null,
     "tokens": [
      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 5948.01205651,
+    "liquidity": 4457.96685447,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -315,7 +485,7 @@
     "name": "UniswapV2 LP XSHOP/WETH",
     "decimals": 18,
     "symbol": "XSHOP/WETH",
-    "price": 15400.39565976891,
+    "price": 9629.743750548872,
     "address": "0x7ef7b7626bd33d6e61ec198c1e05ec41306bfece",
     "addresses": {
      "ethereum": "0x7ef7b7626bd33d6e61ec198c1e05ec41306bfece"
@@ -327,19 +497,19 @@
      "https://images.portals.fi/unknown-token.png",
      "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
     ],
-    "updatedAt": "2026-10-18T20:17:51.245Z",
+    "updatedAt": "2026-11-21T14:14:37.762Z",
     "createdAt": "2025-09-04T07:05:09.960Z",
     "verifiedAt": null,
     "tokens": [
      "0x18925c88372c0958b0eaa33ffbe6a9e5d2ff563e",
      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
     ],
-    "liquidity": 13663.892022225298,
+    "liquidity": 8543.921969026416,
     "metrics": {
-     "apy": "0.549",
-     "baseApy": "0.549",
-     "volumeUsd1d": "68.599",
-     "volumeUsd7d": "11403.651"
+     "apy": "0.884",
+     "baseApy": "0.884",
+     "volumeUsd1d": "69.227",
+     "volumeUsd7d": "69.227"
     },
     "metadata": {
      "tags": [
@@ -349,8 +519,8 @@
     "tokenId": "2534aa0f-d0bd-444c-9f6b-c98f3007d2df",
     "totalSupply": "0.887242920512753372",
     "reserves": [
-     "314093815.722075073",
-     "2.923349317802756237"
+     "363935517.534264554",
+     "2.524096685160578954"
     ],
     "isClaimed": false,
     "isPortable": true
@@ -372,19 +542,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:51.749Z",
+    "updatedAt": "2026-11-21T14:13:53.319Z",
     "createdAt": "2026-06-06T18:06:11.487Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 3056.720586057185,
+    "liquidity": 2217.4316842083813,
     "metrics": {
-     "apy": "369.131",
-     "baseApy": "369.131",
-     "volumeUsd1d": "154.096",
-     "volumeUsd7d": "267.592"
+     "apy": "105.234",
+     "baseApy": "105.234",
+     "volumeUsd1d": "31.933",
+     "volumeUsd7d": "227.844"
     },
     "metadata": {
      "tags": [
@@ -396,8 +566,55 @@
     },
     "tokenId": "9bcd85ac-6ae7-4f25-9c8c-6774fb584063",
     "reserves": [
-     "0.656389793051578244",
-     "2501.769196573439349499"
+     "0.621189428200397905",
+     "3052.537374365303062959"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x791cf171b72cefc53950009f13752cfd3705a5a1e9dcade98a5e92c31f2adff6": {
+    "key": "arbitrum:0x791cf171b72cefc53950009f13752cfd3705a5a1e9dcade98a5e92c31f2adff6",
+    "name": "Uniswap V4 LP Unishop.ai/USD0",
+    "decimals": 18,
+    "symbol": "UNISHOP.AI/USD0",
+    "price": 9007199254740990,
+    "address": "0x791cf171b72cefc53950009f13752cfd3705a5a1e9dcade98a5e92c31f2adff6",
+    "addresses": {
+     "arbitrum": "0x791cf171b72cefc53950009f13752cfd3705a5a1e9dcade98a5e92c31f2adff6"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.367Z",
+    "createdAt": "2026-10-27T20:06:22.803Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x999999990237e901c537bbd768e09562be02efa5",
+     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
+    ],
+    "liquidity": 21812.140793710274,
+    "metrics": {
+     "apy": "0.189",
+     "baseApy": "0.189",
+     "volumeUsd1d": "5.377",
+     "volumeUsd7d": "8.895"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 400,
+     "feePercentage": "2.098"
+    },
+    "tokenId": "7e744c85-4bce-44be-ab83-5a967c6f9f0a",
+    "reserves": [
+     "57055.556488134089481275",
+     "48.007186"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -419,14 +636,14 @@
      "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:51.749Z",
+    "updatedAt": "2026-11-21T14:13:53.367Z",
     "createdAt": "2026-07-24T06:53:33.070Z",
     "verifiedAt": null,
     "tokens": [
      "0x999999990237e901c537bbd768e09562be02efa5",
      "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
     ],
-    "liquidity": 5567.402472614443,
+    "liquidity": 3485.379547979937,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -454,7 +671,7 @@
     "name": "Shopify (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SHOPON",
-    "price": 170.23,
+    "price": 126.32,
     "address": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
     "addresses": {
      "ethereum": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
@@ -462,20 +679,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 874210,
+    "liquidity": 645386,
     "image": "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783",
     "metrics": {
-     "volumeUsd1d": "1209406.387",
-     "volumeUsd7d": "8606532.183"
+     "volumeUsd1d": "1154527.54",
+     "volumeUsd7d": "7984842.789"
     },
     "metadata": {},
     "tokenId": "41d5096c-a165-4bc6-880e-27e2e6dc3368",
-    "totalSupply": "5135.418823162538",
-    "circulatingSupply": "5135.418823162538",
+    "totalSupply": "5108.918932322373",
+    "circulatingSupply": "5108.918932322373",
     "isClaimed": false,
     "isPortable": true
    },
@@ -496,19 +713,19 @@
      "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:51.968Z",
+    "updatedAt": "2026-11-21T14:13:53.429Z",
     "createdAt": "2026-03-07T09:34:01.448Z",
     "verifiedAt": null,
     "tokens": [
      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 767.0536027986951,
+    "liquidity": 513.5312581538509,
     "metrics": {
-     "apy": "13.908",
-     "baseApy": "13.908",
-     "volumeUsd1d": "2.897",
-     "volumeUsd7d": "5.804"
+     "apy": "103.949",
+     "baseApy": "103.949",
+     "volumeUsd1d": "14.523",
+     "volumeUsd7d": "21.77"
     },
     "metadata": {
      "tags": [
@@ -520,8 +737,8 @@
     },
     "tokenId": "3f5bd48c-7983-4878-b01f-855bb80dd85d",
     "reserves": [
-     "0.00275628",
-     "894.036469834181687184"
+     "0.00275852",
+     "909.11300699429605513"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -543,19 +760,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/102175867/large/en_hd_logo.jpg.jpeg?1787818512"
     ],
-    "updatedAt": "2026-10-18T20:15:46.821Z",
+    "updatedAt": "2026-11-21T14:13:44.150Z",
     "createdAt": "2026-08-27T09:29:24.437Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xca56094722450016f280c4fd6a333e5c36903827"
     ],
-    "liquidity": 216238.35969202642,
+    "liquidity": 2143.1778436950826,
     "metrics": {
-     "apy": "29.82",
-     "baseApy": "29.82",
-     "volumeUsd1d": "70702.535",
-     "volumeUsd7d": "1084643.857"
+     "apy": "1.679",
+     "baseApy": "1.679",
+     "volumeUsd1d": "39.341",
+     "volumeUsd7d": "992.211"
     },
     "metadata": {
      "tags": [
@@ -565,8 +782,8 @@
     },
     "tokenId": "7a84d8a0-5bd1-41f3-8a8c-de53f9b8ff64",
     "reserves": [
-     "53710.497250882632767902",
-     "2879249.540375904265400549"
+     "1154.473892101288688836",
+     "54914208.205824781371775829"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -576,18 +793,18 @@
     "name": "Sweatshop",
     "decimals": 18,
     "symbol": "SWEAT",
-    "price": 5.316203323232488,
+    "price": 5.31613301300814,
     "address": "0x0adf1994b2b7ac4bf11631d1f54856b7786e6894",
     "addresses": {
      "robinhood": "0x0adf1994b2b7ac4bf11631d1f54856b7786e6894"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-08T15:02:29.296Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 5316203323.232488,
+    "liquidity": 5316133013.00814,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
      "volumeUsd1d": "0",
@@ -599,27 +816,168 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "robinhood:0xe08cfd7f282f19fbbee78995148456a057b1483a598279b7a278b0ba065341db": {
+    "key": "robinhood:0xe08cfd7f282f19fbbee78995148456a057b1483a598279b7a278b0ba065341db",
+    "name": "Uniswap V4 LP ETH/SHOP",
+    "decimals": 18,
+    "symbol": "ETH/SHOP",
+    "price": 9007199254740990,
+    "address": "0xe08cfd7f282f19fbbee78995148456a057b1483a598279b7a278b0ba065341db",
+    "addresses": {
+     "robinhood": "0xe08cfd7f282f19fbbee78995148456a057b1483a598279b7a278b0ba065341db"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+     "https://coin-images.coingecko.com/coins/images/102174182/large/0xf53f66751b1eff985311b693531e3290f600c410.png?1782444755"
+    ],
+    "updatedAt": "2026-11-21T14:14:43.459Z",
+    "createdAt": "2026-07-27T19:07:35.959Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0000000000000000000000000000000000000000",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 643.7161413961878,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "36.39"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "9567336c-fc5d-42dd-b098-b0b7c5785af3",
+    "reserves": [
+     "0.077438961387398272",
+     "3.584253545191645545"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x5d3a27227e22f931248af3acb2d784ba1fe6f38d20f1c553e2c572cb7ce25fed": {
+    "key": "ethereum:0x5d3a27227e22f931248af3acb2d784ba1fe6f38d20f1c553e2c572cb7ce25fed",
+    "name": "Uniswap V4 LP wUSDC/SHOPon",
+    "decimals": 18,
+    "symbol": "WUSDC/SHOPON",
+    "price": 9007199254740990,
+    "address": "0x5d3a27227e22f931248af3acb2d784ba1fe6f38d20f1c553e2c572cb7ce25fed",
+    "addresses": {
+     "ethereum": "0x5d3a27227e22f931248af3acb2d784ba1fe6f38d20f1c553e2c572cb7ce25fed"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783"
+    ],
+    "updatedAt": "2026-11-21T14:14:29.864Z",
+    "createdAt": "2026-11-07T15:59:33.582Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x908266c1192628371cff7ad2f5eba4de061a0ac5"
+    ],
+    "liquidity": 9934.171615493578,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "882833af-1d46-4087-be64-e0712102dc09",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xea8804aa027f10541ea7ea17a1e6c15fdff4d05531b18ee84c18b48170a27d38": {
+    "key": "robinhood:0xea8804aa027f10541ea7ea17a1e6c15fdff4d05531b18ee84c18b48170a27d38",
+    "name": "Uniswap V4 LP USDG/SHOP",
+    "decimals": 18,
+    "symbol": "USDG/SHOP",
+    "price": 9007199254740990,
+    "address": "0xea8804aa027f10541ea7ea17a1e6c15fdff4d05531b18ee84c18b48170a27d38",
+    "addresses": {
+     "robinhood": "0xea8804aa027f10541ea7ea17a1e6c15fdff4d05531b18ee84c18b48170a27d38"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174182/large/0xf53f66751b1eff985311b693531e3290f600c410.png?1782444755"
+    ],
+    "updatedAt": "2026-11-21T14:14:44.801Z",
+    "createdAt": "2026-09-08T14:43:04.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 2502.7177085309904,
+    "metrics": {
+     "apy": "58.197",
+     "baseApy": "58.197",
+     "volumeUsd1d": "78.32",
+     "volumeUsd7d": "233.536"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 500,
+     "feePercentage": "5.095"
+    },
+    "tokenId": "d961ec18-ecf2-4232-8639-3bd20ecfa2d2",
+    "reserves": [
+     "355.396807",
+     "15.018855754719288092"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "base:0xda761a290e01c69325d12d82ac402e5a73d62e81": {
     "key": "base:0xda761a290e01c69325d12d82ac402e5a73d62e81",
     "name": "Base Pro Shops",
     "decimals": 18,
     "symbol": "BPS",
-    "price": 2.356e-05,
+    "price": 2.286e-05,
     "address": "0xda761a290e01c69325d12d82ac402e5a73d62e81",
     "addresses": {
      "base": "0xda761a290e01c69325d12d82ac402e5a73d62e81"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2024-04-09T07:54:11.913Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 23560,
+    "liquidity": 22857,
     "image": "https://assets.coingecko.com/coins/images/36855/large/BPS_2.png?1712634757",
     "metrics": {
-     "volumeUsd1d": "4.18",
-     "volumeUsd7d": "1680.567"
+     "volumeUsd1d": "5.398",
+     "volumeUsd7d": "171.21"
     },
     "metadata": {},
     "tokenId": "5300b0b3-7000-41ec-bcdb-38646acb9670",
@@ -633,97 +991,50 @@
     "name": "Unishop.ai",
     "decimals": 18,
     "symbol": "UNISHOP.AI",
-    "price": 0.6093028112924214,
+    "price": 0.38121746194717526,
     "address": "0x999999990237e901c537bbd768e09562be02efa5",
     "addresses": {
      "arbitrum": "0x999999990237e901c537bbd768e09562be02efa5"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-08-19T09:34:40.764Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1070423.0717427817,
+    "liquidity": 669954.3238282157,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
-     "volumeUsd1d": "2367.05",
-     "volumeUsd7d": "5348.25"
+     "volumeUsd1d": "532.06",
+     "volumeUsd7d": "2042.78"
     },
     "metadata": {},
     "tokenId": "86cc0cee-417f-47e6-97d0-b4c21dd8de7b",
-    "totalSupply": "1756799.824166666666661879",
+    "totalSupply": "1757407.229999999999994905",
     "isClaimed": false,
     "isPortable": true
-   },
-   "arbitrum:0x12399fe4986327f2687063c85e4c5108f5e93ec046e2813ee0b2a915171874db": {
-    "key": "arbitrum:0x12399fe4986327f2687063c85e4c5108f5e93ec046e2813ee0b2a915171874db",
-    "name": "Uniswap V4 LP AI/Unishop.ai",
-    "decimals": 18,
-    "symbol": "AI/UNISHOP.AI",
-    "price": 9007199254740990,
-    "address": "0x12399fe4986327f2687063c85e4c5108f5e93ec046e2813ee0b2a915171874db",
-    "addresses": {
-     "arbitrum": "0x12399fe4986327f2687063c85e4c5108f5e93ec046e2813ee0b2a915171874db"
-    },
-    "platform": "uniswap-v4",
-    "network": "arbitrum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:52.861Z",
-    "createdAt": "2026-06-26T09:07:08.927Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x9999955f3dd86230d90c545f7c9b239514ecb999",
-     "0x999999990237e901c537bbd768e09562be02efa5"
-    ],
-    "liquidity": 157708.08110914464,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 19800,
-     "feePercentage": "99"
-    },
-    "tokenId": "472b67d5-1534-43cd-bf52-77871cfef1f9",
-    "reserves": [
-     "157934",
-     "0"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "bsc:0xa6c59de838f1eeb82d86f5af0750f5f656439999": {
     "key": "bsc:0xa6c59de838f1eeb82d86f5af0750f5f656439999",
     "name": "ShopNext Loyalty Token",
     "decimals": 18,
     "symbol": "NEXT",
-    "price": 0.00071702,
+    "price": 0.00057443,
     "address": "0xa6c59de838f1eeb82d86f5af0750f5f656439999",
     "addresses": {
      "bsc": "0xa6c59de838f1eeb82d86f5af0750f5f656439999"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-04-01T22:42:54.624Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 71698,
+    "liquidity": 57440,
     "image": "https://coin-images.coingecko.com/coins/images/28681/large/shopnex.jpg?1696527665",
     "metrics": {
-     "volumeUsd1d": "5.393",
-     "volumeUsd7d": "37.751"
+     "volumeUsd1d": "32.653",
+     "volumeUsd7d": "228.571"
     },
     "metadata": {},
     "tokenId": "659b0de9-c500-49c5-a468-56f370859913",
@@ -749,19 +1060,19 @@
      "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
      "https://coin-images.coingecko.com/coins/images/28681/large/shopnex.jpg?1696527665"
     ],
-    "updatedAt": "2026-10-18T20:15:47.529Z",
+    "updatedAt": "2026-11-21T14:13:37.086Z",
     "createdAt": "2026-04-03T22:54:50.980Z",
     "verifiedAt": null,
     "tokens": [
      "0x55d398326f99059ff775485246999027b3197955",
      "0xa6c59de838f1eeb82d86f5af0750f5f656439999"
     ],
-    "liquidity": 4652.448048437862,
+    "liquidity": 4154.228334753906,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "0.052"
+     "volumeUsd7d": "0.01"
     },
     "metadata": {
      "tags": [
@@ -771,8 +1082,8 @@
     },
     "tokenId": "91aa3723-c820-4f13-b3a3-511616c038b5",
     "reserves": [
-     "2280.860632224393987739",
-     "3310290.360988419291333712"
+     "2035.251404277655820307",
+     "3693128.240478795256003245"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -782,60 +1093,197 @@
     "name": "Shopify rStock",
     "decimals": 18,
     "symbol": "RSHOP",
-    "price": 169.3,
+    "price": 126.8,
     "address": "0x3b735796658e6f1e4d8abf98c281015e2ebc1c09",
     "addresses": {
      "arbitrum": "0x3b735796658e6f1e4d8abf98c281015e2ebc1c09"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1233.23,
+    "liquidity": 1649.48,
     "image": "https://coin-images.coingecko.com/coins/images/102177079/large/03d6d3471cb640e1807fe2c88aaf4eb0.png?1789116762",
     "metrics": {
-     "volumeUsd1d": "169.234",
-     "volumeUsd7d": "902.632"
+     "volumeUsd1d": "1388.744",
+     "volumeUsd7d": "7341.666"
     },
     "metadata": {},
     "tokenId": "e3fb9699-8f5d-4d80-a19e-0f8d4f029b65",
-    "totalSupply": "7.2841095529999995",
-    "circulatingSupply": "7.2841095529999995",
+    "totalSupply": "13.008085574",
+    "circulatingSupply": "13.008085574",
     "isClaimed": false,
     "isPortable": true
    },
-   "bsc:0xe434c0485ae4f71c90cd8025fda78daeb977605a": {
-    "key": "bsc:0xe434c0485ae4f71c90cd8025fda78daeb977605a",
-    "name": "PancakeSwap V3 Wrapped BNB/ShopinX Token 0.01%",
+   "robinhood:0xaf170b6b8d60bac69341af4f2842275fb7674e4e0c5aa09a40588c181843d921": {
+    "key": "robinhood:0xaf170b6b8d60bac69341af4f2842275fb7674e4e0c5aa09a40588c181843d921",
+    "name": "Uniswap V4 LP USDG/SHOP",
     "decimals": 18,
-    "symbol": "WBNB/SPX",
+    "symbol": "USDG/SHOP",
     "price": 9007199254740990,
-    "address": "0xe434c0485ae4f71c90cd8025fda78daeb977605a",
+    "address": "0xaf170b6b8d60bac69341af4f2842275fb7674e4e0c5aa09a40588c181843d921",
     "addresses": {
-     "bsc": "0xe434c0485ae4f71c90cd8025fda78daeb977605a"
+     "robinhood": "0xaf170b6b8d60bac69341af4f2842275fb7674e4e0c5aa09a40588c181843d921"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:44.798Z",
+    "createdAt": "2026-11-04T15:56:14.926Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 50019.99716117706,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9925,
+     "feePercentage": "99.25"
+    },
+    "tokenId": "7fad3984-f0dd-44c4-95dd-8e752aa055f8",
+    "reserves": [
+     "49999.999999999999999979",
+     "0.175353570429239916"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x788484c5c630720db943fa0b5cc165fff6bed862fb692a54c9d6763f3f270049": {
+    "key": "ethereum:0x788484c5c630720db943fa0b5cc165fff6bed862fb692a54c9d6763f3f270049",
+    "name": "Uniswap V4 LP EE/SHOPon",
+    "decimals": 18,
+    "symbol": "EE/SHOPON",
+    "price": 9007199254740990,
+    "address": "0x788484c5c630720db943fa0b5cc165fff6bed862fb692a54c9d6763f3f270049",
+    "addresses": {
+     "ethereum": "0x788484c5c630720db943fa0b5cc165fff6bed862fb692a54c9d6763f3f270049"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783"
+    ],
+    "updatedAt": "2026-11-21T14:14:34.759Z",
+    "createdAt": "2026-11-07T15:59:36.231Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x908266c1192628371cff7ad2f5eba4de061a0ac5"
+    ],
+    "liquidity": 49840.04160743321,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9962,
+     "feePercentage": "99.6196"
+    },
+    "tokenId": "92797ded-7f14-4807-a57c-b5da55af1e50",
+    "reserves": [
+     "49999.999999999999999949",
+     "0.167519936994383574"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xbfe97661e5e83a2ae82f8f84ac76da62329d42b5": {
+    "key": "robinhood:0xbfe97661e5e83a2ae82f8f84ac76da62329d42b5",
+    "name": "Uniswap V3 WETH/Shopify  Robinhood Token 0.3%",
+    "decimals": 18,
+    "symbol": "WETH/SHOP",
+    "price": 9007199254740990,
+    "address": "0xbfe97661e5e83a2ae82f8f84ac76da62329d42b5",
+    "addresses": {
+     "robinhood": "0xbfe97661e5e83a2ae82f8f84ac76da62329d42b5"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
+    ],
+    "updatedAt": "2026-11-21T14:14:41.288Z",
+    "createdAt": "2026-11-08T16:03:04.244Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 8914.614959435035,
+    "metrics": {
+     "apy": "57.165",
+     "baseApy": "57.165",
+     "volumeUsd1d": "4658.432",
+     "volumeUsd7d": "20566.476"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "0.3"
+    },
+    "tokenId": "dc12263f-bd6e-4ea5-be0b-0f8ed93e324e",
+    "reserves": [
+     "3.722562635035166135",
+     "18.219328684572679416"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3079ae2e87dc2e0c75c9b98d65bc622ad10f326c": {
+    "key": "bsc:0x3079ae2e87dc2e0c75c9b98d65bc622ad10f326c",
+    "name": "PancakeSwap V3 ShopinX/Wrapped BNB 0.01%",
+    "decimals": 18,
+    "symbol": "SHOPINX/WBNB",
+    "price": 9007199254740990,
+    "address": "0x3079ae2e87dc2e0c75c9b98d65bc622ad10f326c",
+    "addresses": {
+     "bsc": "0x3079ae2e87dc2e0c75c9b98d65bc622ad10f326c"
     },
     "platform": "pancakeswap-v3",
     "network": "bsc",
     "images": [
      "https://assets.coingecko.com/coins/images/12632/large/pancakeswap-cake-logo_%281%29.png",
-     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401",
-     "https://coin-images.coingecko.com/coins/images/102175867/large/en_hd_logo.jpg.jpeg?1787818512"
+     "https://coin-images.coingecko.com/coins/images/102179741/large/shopinx.png?1792799385",
+     "https://assets.coingecko.com/coins/images/12591/large/binance-coin-logo.png?1696512401"
     ],
-    "updatedAt": "2026-10-18T20:15:47.529Z",
-    "createdAt": "2026-09-15T17:22:34.587Z",
+    "updatedAt": "2026-11-21T14:13:44.515Z",
+    "createdAt": "2026-10-24T19:59:44.373Z",
     "verifiedAt": null,
     "tokens": [
-     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-     "0xca56094722450016f280c4fd6a333e5c36903827"
+     "0x4f0ed1f48beaa4797a62202a21804cadc2170d6b",
+     "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
     ],
-    "liquidity": 16829.972589782705,
+    "liquidity": 90287.49355925944,
     "metrics": {
-     "apy": "2.495",
-     "baseApy": "2.495",
-     "volumeUsd1d": "11517.243",
-     "volumeUsd7d": "759525.516"
+     "apy": "9.209",
+     "baseApy": "9.209",
+     "volumeUsd1d": "229704.255",
+     "volumeUsd7d": "767255.675"
     },
     "metadata": {
      "tags": [
@@ -843,10 +1291,55 @@
      ],
      "feePercentage": "0.01"
     },
-    "tokenId": "ec741dc9-3457-48dd-8a01-040bb8affd18",
+    "tokenId": "6fedd16d-63e9-4fb7-82e9-a9238ff2564d",
     "reserves": [
-     "11.103829945897646754",
-     "159434.819875002812864912"
+     "3064190.046597267425489388",
+     "61.045351227943619152"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x18a1afa849a6940870c2163b7ecbcc85d455ad99": {
+    "key": "robinhood:0x18a1afa849a6940870c2163b7ecbcc85d455ad99",
+    "name": "Uniswap V3 Global Dollar/Shopify  Robinhood Token 1%",
+    "decimals": 18,
+    "symbol": "USDG/SHOP",
+    "price": 9007199254740990,
+    "address": "0x18a1afa849a6940870c2163b7ecbcc85d455ad99",
+    "addresses": {
+     "robinhood": "0x18a1afa849a6940870c2163b7ecbcc85d455ad99"
+    },
+    "platform": "uniswap-v3",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174182/large/0xf53f66751b1eff985311b693531e3290f600c410.png?1782444755"
+    ],
+    "updatedAt": "2026-11-21T14:14:41.608Z",
+    "createdAt": "2026-07-19T04:41:18.678Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 6718.61368407709,
+    "metrics": {
+     "apy": "29.415",
+     "baseApy": "29.415",
+     "volumeUsd1d": "541.438",
+     "volumeUsd7d": "5135.732"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "feePercentage": "1"
+    },
+    "tokenId": "23da4d42-3581-42fd-a9af-b9c06dcf7252",
+    "reserves": [
+     "1377.873979",
+     "37.354360588054483063"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -868,19 +1361,19 @@
      "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:47.703Z",
+    "updatedAt": "2026-11-21T14:13:41.056Z",
     "createdAt": "2025-08-20T12:02:08.781Z",
     "verifiedAt": null,
     "tokens": [
      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 352406.7591683666,
+    "liquidity": 287202.71038048505,
     "metrics": {
-     "apy": "0.234",
-     "baseApy": "0.234",
-     "volumeUsd1d": "225.595",
-     "volumeUsd7d": "547.469"
+     "apy": "0.182",
+     "baseApy": "0.182",
+     "volumeUsd1d": "143.709",
+     "volumeUsd7d": "215.519"
     },
     "metadata": {
      "tags": [
@@ -890,8 +1383,8 @@
     },
     "tokenId": "a8ea8e5b-5836-49dc-add9-00239aa219bd",
     "reserves": [
-     "3.10790704",
-     "166990.20188845950248351"
+     "3.69718575",
+     "167041.157993725059908748"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -913,14 +1406,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
     ],
-    "updatedAt": "2026-10-18T20:15:52.493Z",
+    "updatedAt": "2026-11-21T14:13:55.833Z",
     "createdAt": "2025-12-17T14:04:36.118Z",
     "verifiedAt": null,
     "tokens": [
      "0x999999990237e901c537bbd768e09562be02efa5",
      "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
     ],
-    "liquidity": 1491.4566706478809,
+    "liquidity": 933.7015967897638,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -960,19 +1453,19 @@
      "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:52.530Z",
+    "updatedAt": "2026-11-21T14:13:55.952Z",
     "createdAt": "2026-02-13T05:25:41.950Z",
     "verifiedAt": null,
     "tokens": [
      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 10858.180947156068,
+    "liquidity": 6918.968637355485,
     "metrics": {
-     "apy": "19.389",
-     "baseApy": "19.389",
-     "volumeUsd1d": "23.004",
-     "volumeUsd7d": "23.004"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -984,8 +1477,100 @@
     },
     "tokenId": "424ec31c-d0cc-4613-ab7e-70d2b9c32786",
     "reserves": [
-     "0.01146652",
-     "16302.350017412858927074"
+     "0.01143549",
+     "16326.18335058391901548"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xd36aa1c80c2e6c9a6f8dba28ba982449cc8e2dcea56024e0b0a4da1568e1b46c": {
+    "key": "robinhood:0xd36aa1c80c2e6c9a6f8dba28ba982449cc8e2dcea56024e0b0a4da1568e1b46c",
+    "name": "Uniswap V4 LP MJDQ/SHOP",
+    "decimals": 18,
+    "symbol": "MJDQ/SHOP",
+    "price": 9007199254740990,
+    "address": "0xd36aa1c80c2e6c9a6f8dba28ba982449cc8e2dcea56024e0b0a4da1568e1b46c",
+    "addresses": {
+     "robinhood": "0xd36aa1c80c2e6c9a6f8dba28ba982449cc8e2dcea56024e0b0a4da1568e1b46c"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:46.474Z",
+    "createdAt": "2026-11-11T13:21:28.888Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 9998.99880916334,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19789,
+     "feePercentage": "98.9488"
+    },
+    "tokenId": "87bb14cd-7d9f-4ac5-8473-61d8174cc858",
+    "reserves": [
+     "9999.999999999999999959",
+     "0.0006946778462689"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xafa8851957f2c0ebcf97ee4b9bc646b37a27d644047d4f513427f157d01d2ad6": {
+    "key": "robinhood:0xafa8851957f2c0ebcf97ee4b9bc646b37a27d644047d4f513427f157d01d2ad6",
+    "name": "Uniswap V4 LP OLQD/SHOP",
+    "decimals": 18,
+    "symbol": "OLQD/SHOP",
+    "price": 9007199254740990,
+    "address": "0xafa8851957f2c0ebcf97ee4b9bc646b37a27d644047d4f513427f157d01d2ad6",
+    "addresses": {
+     "robinhood": "0xafa8851957f2c0ebcf97ee4b9bc646b37a27d644047d4f513427f157d01d2ad6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:46.363Z",
+    "createdAt": "2026-11-06T15:59:41.558Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 9997.617700513398,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19789,
+     "feePercentage": "98.9488"
+    },
+    "tokenId": "d8510810-4d0f-44d6-8539-07243651ba35",
+    "reserves": [
+     "9999.999999999999999902",
+     "0.000694685654740993"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1007,19 +1592,19 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/53705/large/usdt0.jpg?1737086183"
     ],
-    "updatedAt": "2026-10-18T20:15:48.105Z",
+    "updatedAt": "2026-11-21T14:13:41.611Z",
     "createdAt": "2025-08-19T11:59:04.633Z",
     "verifiedAt": null,
     "tokens": [
      "0x999999990237e901c537bbd768e09562be02efa5",
      "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"
     ],
-    "liquidity": 263177.0467700033,
+    "liquidity": 181733.3658655867,
     "metrics": {
-     "apy": "3.034",
-     "baseApy": "3.034",
-     "volumeUsd1d": "2187.806",
-     "volumeUsd7d": "4308.96"
+     "apy": "0.816",
+     "baseApy": "0.816",
+     "volumeUsd1d": "406.533",
+     "volumeUsd7d": "1353.05"
     },
     "metadata": {
      "tags": [
@@ -1029,105 +1614,41 @@
     },
     "tokenId": "0977afdc-e4b5-4c3d-92e8-74e99f66fd07",
     "reserves": [
-     "74863.037463286989792126",
-     "217792.581913"
+     "76049.02366466229823219",
+     "152963.36466"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0x130f89ef6f5633c53dd22d7774b94190cd25828314ebb54310912c134b311c79": {
-    "key": "ethereum:0x130f89ef6f5633c53dd22d7774b94190cd25828314ebb54310912c134b311c79",
-    "name": "Uniswap V4 LP EGP/SHOPon",
+   "base:0x4a7634d050cefe28748f03f6f47e157506a1d0ef": {
+    "key": "base:0x4a7634d050cefe28748f03f6f47e157506a1d0ef",
+    "name": "Bucket Shop",
     "decimals": 18,
-    "symbol": "EGP/SHOPON",
-    "price": 9007199254740990,
-    "address": "0x130f89ef6f5633c53dd22d7774b94190cd25828314ebb54310912c134b311c79",
+    "symbol": "BUCKET",
+    "price": 0.00035496,
+    "address": "0x4a7634d050cefe28748f03f6f47e157506a1d0ef",
     "addresses": {
-     "ethereum": "0x130f89ef6f5633c53dd22d7774b94190cd25828314ebb54310912c134b311c79"
+     "robinhood": "0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad",
+     "base": "0x4a7634d050cefe28748f03f6f47e157506a1d0ef"
     },
-    "platform": "uniswap-v4",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783"
-    ],
-    "updatedAt": "2026-10-18T20:17:49.443Z",
-    "createdAt": "2026-10-14T06:54:25.777Z",
+    "platform": "basic",
+    "network": "base",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
+    "createdAt": "2026-11-02T14:46:37.571Z",
     "verifiedAt": null,
-    "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0x908266c1192628371cff7ad2f5eba4de061a0ac5"
-    ],
-    "liquidity": 20062.031743584663,
+    "tokens": [],
+    "liquidity": 345249,
+    "image": "https://coin-images.coingecko.com/coins/images/102175842/large/cg-logo-200.png?1787733433",
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
+     "volumeUsd1d": "48360.707",
+     "volumeUsd7d": "81140.34"
     },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "96.95"
-    },
-    "tokenId": "7fc378a0-d60a-4871-a61e-26d8be8e7666",
-    "reserves": [
-     "19999.999999999999999983",
-     "0.160976463065704731"
-    ],
+    "metadata": {},
+    "tokenId": "f9051244-defb-4db9-934c-b72864574bea",
+    "totalSupply": "972832883.8608623",
+    "circulatingSupply": "972832883.8608623",
     "isClaimed": false,
-    "isPortable": false
-   },
-   "arbitrum:0x99713537a6146bd1b5e6774e9af675031f0e9ed6ea0763f3e889a4a1db5c3be9": {
-    "key": "arbitrum:0x99713537a6146bd1b5e6774e9af675031f0e9ed6ea0763f3e889a4a1db5c3be9",
-    "name": "Uniswap V4 LP AI/Unishop.ai",
-    "decimals": 18,
-    "symbol": "AI/UNISHOP.AI",
-    "price": 9007199254740990,
-    "address": "0x99713537a6146bd1b5e6774e9af675031f0e9ed6ea0763f3e889a4a1db5c3be9",
-    "addresses": {
-     "arbitrum": "0x99713537a6146bd1b5e6774e9af675031f0e9ed6ea0763f3e889a4a1db5c3be9"
-    },
-    "platform": "uniswap-v4",
-    "network": "arbitrum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:52.866Z",
-    "createdAt": "2026-06-26T09:11:10.732Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x9999955f3dd86230d90c545f7c9b239514ecb999",
-     "0x999999990237e901c537bbd768e09562be02efa5"
-    ],
-    "liquidity": 3288.8321462065214,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 18000,
-     "feePercentage": "90"
-    },
-    "tokenId": "2cb3dbcf-0f34-46cb-bac0-d76cf3325741",
-    "reserves": [
-     "717.658202099757180667",
-     "4221.408172693839871332"
-    ],
-    "isClaimed": false,
-    "isPortable": false
+    "isPortable": true
    },
    "ethereum:0x2c669639c18b5b61805a3645e8855c54da40137b472d86909ad8342893346522": {
     "key": "ethereum:0x2c669639c18b5b61805a3645e8855c54da40137b472d86909ad8342893346522",
@@ -1146,14 +1667,14 @@
      "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783",
      "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661"
     ],
-    "updatedAt": "2026-10-18T20:17:49.875Z",
+    "updatedAt": "2026-11-21T14:14:36.369Z",
     "createdAt": "2025-09-26T08:45:50.081Z",
     "verifiedAt": null,
     "tokens": [
      "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
      "0xdac17f958d2ee523a2206206994597c13d831ec7"
     ],
-    "liquidity": 615.5210583419934,
+    "liquidity": 561.0018292665932,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1176,32 +1697,120 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "bsc:0x4f0ed1f48beaa4797a62202a21804cadc2170d6b": {
+    "key": "bsc:0x4f0ed1f48beaa4797a62202a21804cadc2170d6b",
+    "name": "ShopinX",
+    "decimals": 18,
+    "symbol": "SHOPINX",
+    "price": 0.0185722,
+    "address": "0x4f0ed1f48beaa4797a62202a21804cadc2170d6b",
+    "addresses": {
+     "bsc": "0x4f0ed1f48beaa4797a62202a21804cadc2170d6b"
+    },
+    "platform": "basic",
+    "network": "bsc",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
+    "createdAt": "2026-10-24T19:58:34.507Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 4643904,
+    "image": "https://coin-images.coingecko.com/coins/images/102179741/large/shopinx.png?1792799385",
+    "metrics": {
+     "volumeUsd1d": "500970.724",
+     "volumeUsd7d": "2741131.762"
+    },
+    "metadata": {},
+    "tokenId": "59678fb7-3da4-462b-87cd-bea421ee0b2e",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "250000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xf53f66751b1eff985311b693531e3290f600c410": {
+    "key": "robinhood:0xf53f66751b1eff985311b693531e3290f600c410",
+    "name": "Shopify • Robinhood Token",
+    "decimals": 18,
+    "symbol": "SHOP",
+    "price": 142.975,
+    "address": "0xf53f66751b1eff985311b693531e3290f600c410",
+    "addresses": {
+     "robinhood": "0xf53f66751b1eff985311b693531e3290f600c410"
+    },
+    "platform": "robinhood-stocks",
+    "network": "robinhood",
+    "images": [
+     "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
+     "https://cdn.robinhood.com/ncw_assets/logos/0xf53f66751b1eff985311b693531e3290f600c410.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:20.527Z",
+    "createdAt": "2026-07-16T20:06:53.602Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "poolAddress": "0xf53f66751b1eff985311b693531e3290f600c410",
+    "liquidity": 65043.668221,
+    "metrics": {
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "-436.626"
+    },
+    "metadata": {
+     "uid": "0x00000000000000000000000000000000b82496d605ca4b019c9200daa049f52f",
+     "tags": [
+      "#rwa"
+     ],
+     "status": "ASSET_STATUS_ACTIVE",
+     "chainId": 4663,
+     "interface": "ERC20",
+     "oraclePaused": false,
+     "uiMultiplier": "1000000000000000000",
+     "currentMultiplier": "1.000000000000000000",
+     "pendingMultiplier": "",
+     "tradingCapabilities": {
+      "market": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "extended": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      },
+      "overnight": {
+       "whole": "TRADING_STATUS_TRADABLE",
+       "fractional": "TRADING_STATUS_TRADABLE"
+      }
+     }
+    },
+    "tokenId": "50cc5b00-3136-4e45-bde2-9b4ec49b0836",
+    "totalSupply": "454.93036",
+    "isClaimed": false,
+    "isPortable": true
+   },
    "robinhood:0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad": {
     "key": "robinhood:0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad",
     "name": "Bucket Shop",
     "decimals": 18,
     "symbol": "BUCKET",
-    "price": 0.001955,
+    "price": 0.00035496,
     "address": "0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad",
     "addresses": {
-     "robinhood": "0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad"
+     "robinhood": "0xbc9e7b1c5c0081f4ae85e71ec95703d3dec9ffad",
+     "base": "0x4a7634d050cefe28748f03f6f47e157506a1d0ef"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-08-09T17:12:24.510Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1912674,
+    "liquidity": 345249,
     "image": "https://coin-images.coingecko.com/coins/images/102175842/large/cg-logo-200.png?1787733433",
     "metrics": {
-     "volumeUsd1d": "46788.78",
-     "volumeUsd7d": "376251.973"
+     "volumeUsd1d": "48297.787",
+     "volumeUsd7d": "81228.745"
     },
     "metadata": {},
     "tokenId": "f9051244-defb-4db9-934c-b72864574bea",
-    "totalSupply": "978538147.2872976",
-    "circulatingSupply": "978538147.2872976",
+    "totalSupply": "972832883.8608623",
+    "circulatingSupply": "972832883.8608623",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1222,19 +1831,19 @@
      "https://coin-images.coingecko.com/coins/images/39810/large/weth.png?1724139790",
      "https://assets.coingecko.com/coins/images/36855/large/BPS_2.png?1712634757"
     ],
-    "updatedAt": "2026-10-18T20:15:47.159Z",
+    "updatedAt": "2026-11-21T14:13:37.281Z",
     "createdAt": "2025-07-23T11:00:59.002Z",
     "verifiedAt": null,
     "tokens": [
      "0x4200000000000000000000000000000000000006",
      "0xda761a290e01c69325d12d82ac402e5a73d62e81"
     ],
-    "liquidity": 14758.271322020395,
+    "liquidity": 12483.628373995574,
     "metrics": {
-     "apy": "0.104",
-     "baseApy": "0.104",
-     "volumeUsd1d": "4.228",
-     "volumeUsd7d": "1897.127"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "38.472"
     },
     "metadata": {
      "tags": [
@@ -1244,8 +1853,8 @@
     },
     "tokenId": "a4ba4b1d-7d96-434e-914f-c790ebe17e3a",
     "reserves": [
-     "3.087627177667874979",
-     "323109938.782148250592763894"
+     "3.644785624793753501",
+     "275544069.934735121862878616"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1267,14 +1876,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783"
     ],
-    "updatedAt": "2026-10-18T20:17:49.661Z",
+    "updatedAt": "2026-11-21T14:14:36.274Z",
     "createdAt": "2026-09-28T10:39:18.722Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x908266c1192628371cff7ad2f5eba4de061a0ac5"
     ],
-    "liquidity": 10021.088080122907,
+    "liquidity": 9933.677069306297,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1297,27 +1906,73 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0x2565af96d70069eb8aa92142d550b2785378a14e4ed79099cb215557ba3df4a9": {
+    "key": "robinhood:0x2565af96d70069eb8aa92142d550b2785378a14e4ed79099cb215557ba3df4a9",
+    "name": "Uniswap V4 LP wUSDG/SHOP",
+    "decimals": 18,
+    "symbol": "WUSDG/SHOP",
+    "price": 9007199254740990,
+    "address": "0x2565af96d70069eb8aa92142d550b2785378a14e4ed79099cb215557ba3df4a9",
+    "addresses": {
+     "robinhood": "0x2565af96d70069eb8aa92142d550b2785378a14e4ed79099cb215557ba3df4a9"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:46.848Z",
+    "createdAt": "2026-11-06T15:59:36.339Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 9997.997985855658,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "76ebbd25-31e5-4e4e-9377-9454293d795d",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x213c53c96a01a89e6dcc5683cf16473203e17513": {
     "key": "ethereum:0x213c53c96a01a89e6dcc5683cf16473203e17513",
     "name": "Defi Shopping Stake",
     "decimals": 18,
     "symbol": "DSS",
-    "price": 0.0134756,
+    "price": 0.01043326,
     "address": "0x213c53c96a01a89e6dcc5683cf16473203e17513",
     "addresses": {
      "ethereum": "0x213c53c96a01a89e6dcc5683cf16473203e17513"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 300507,
+    "liquidity": 232668,
     "image": "https://assets.coingecko.com/coins/images/12602/large/DSS.png?1696512411",
     "metrics": {
-     "volumeUsd1d": "10.99",
-     "volumeUsd7d": "124.172"
+     "volumeUsd1d": "222.947",
+     "volumeUsd7d": "414.569"
     },
     "metadata": {},
     "tokenId": "440cf31b-4605-4380-b9da-793307bcc81e",
@@ -1331,22 +1986,22 @@
     "name": "X Shop",
     "decimals": 9,
     "symbol": "XSHOP",
-    "price": 2.1738697493182783e-05,
+    "price": 1.1718755480373944e-05,
     "address": "0x18925c88372c0958b0eaa33ffbe6a9e5d2ff563e",
     "addresses": {
      "ethereum": "0x18925c88372c0958b0eaa33ffbe6a9e5d2ff563e"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-09-02T06:58:26.173Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21738.697493182783,
+    "liquidity": 11718.755480373942,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
-     "volumeUsd1d": "67.75",
-     "volumeUsd7d": "40733.32"
+     "volumeUsd1d": "69.76",
+     "volumeUsd7d": "69.76"
     },
     "metadata": {},
     "tokenId": "61b6e7d9-f85e-416e-9eab-b69fd019c995",
@@ -1371,14 +2026,14 @@
      "https://coin-images.coingecko.com/coins/images/39532/large/wbtc.png?1722810336",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:52.961Z",
+    "updatedAt": "2026-11-21T14:14:01.073Z",
     "createdAt": "2026-06-06T18:06:11.487Z",
     "verifiedAt": null,
     "tokens": [
      "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
      "0x999999990237e901c537bbd768e09562be02efa5"
     ],
-    "liquidity": 7749.665640591469,
+    "liquidity": 4851.549041094608,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1401,72 +2056,27 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "arbitrum:0xed78f90a2dba1d8e47b4df5261b4342b25a6e6c1": {
-    "key": "arbitrum:0xed78f90a2dba1d8e47b4df5261b4342b25a6e6c1",
-    "name": "Uniswap V3 Ai/Unishop.ai 1%",
-    "decimals": 18,
-    "symbol": "AI/UNISHOP.AI",
-    "price": 9007199254740990,
-    "address": "0xed78f90a2dba1d8e47b4df5261b4342b25a6e6c1",
-    "addresses": {
-     "arbitrum": "0xed78f90a2dba1d8e47b4df5261b4342b25a6e6c1"
-    },
-    "platform": "uniswap-v3",
-    "network": "arbitrum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:47.644Z",
-    "createdAt": "2026-06-19T22:11:11.339Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x9999955f3dd86230d90c545f7c9b239514ecb999",
-     "0x999999990237e901c537bbd768e09562be02efa5"
-    ],
-    "liquidity": 5112.051918701022,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "1"
-    },
-    "tokenId": "8742a36b-fdfb-4daa-aaa0-a1be8a30fb66",
-    "reserves": [
-     "5119.375000000000000002",
-     "0"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
    "bsc:0xca56094722450016f280c4fd6a333e5c36903827": {
     "key": "bsc:0xca56094722450016f280c4fd6a333e5c36903827",
     "name": "ShopinX",
     "decimals": 18,
     "symbol": "SPX",
-    "price": 0.05674,
+    "price": 1.803e-05,
     "address": "0xca56094722450016f280c4fd6a333e5c36903827",
     "addresses": {
      "bsc": "0xca56094722450016f280c4fd6a333e5c36903827"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-08-27T09:26:37.806Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 14184986,
+    "liquidity": 4507.74,
     "image": "https://coin-images.coingecko.com/coins/images/102175867/large/en_hd_logo.jpg.jpeg?1787818512",
     "metrics": {
-     "volumeUsd1d": "83402.275",
-     "volumeUsd7d": "1877072.252"
+     "volumeUsd1d": "39.77",
+     "volumeUsd7d": "1097.787"
     },
     "metadata": {},
     "tokenId": "5c9a01f7-b682-408d-b8f9-cae771feaad3",
@@ -1475,23 +2085,70 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "robinhood:0x8baff387b51c50e2747e85bcddf87da78fee6efb45629743e1af4dfb07ad13ee": {
+    "key": "robinhood:0x8baff387b51c50e2747e85bcddf87da78fee6efb45629743e1af4dfb07ad13ee",
+    "name": "Uniswap V4 LP USDG/SHOP",
+    "decimals": 18,
+    "symbol": "USDG/SHOP",
+    "price": 9007199254740990,
+    "address": "0x8baff387b51c50e2747e85bcddf87da78fee6efb45629743e1af4dfb07ad13ee",
+    "addresses": {
+     "robinhood": "0x8baff387b51c50e2747e85bcddf87da78fee6efb45629743e1af4dfb07ad13ee"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
+     "https://coin-images.coingecko.com/coins/images/102174182/large/0xf53f66751b1eff985311b693531e3290f600c410.png?1782444755"
+    ],
+    "updatedAt": "2026-11-21T14:14:46.313Z",
+    "createdAt": "2026-09-08T14:42:57.115Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+     "0xf53f66751b1eff985311b693531e3290f600c410"
+    ],
+    "liquidity": 5689.021266913817,
+    "metrics": {
+     "apy": "38.617",
+     "baseApy": "38.617",
+     "volumeUsd1d": "547.677",
+     "volumeUsd7d": "2150.148"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "1.099"
+    },
+    "tokenId": "ba1ca6ae-85f3-40e0-a05d-97583e25640e",
+    "reserves": [
+     "2375.500058",
+     "23.17552865125943285"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "robinhood:0x22ce16962f51ac19c34616efacffb1fee2efe6b1": {
     "key": "robinhood:0x22ce16962f51ac19c34616efacffb1fee2efe6b1",
     "name": "Robinhood Market",
     "decimals": 18,
     "symbol": "HOODSHOP",
-    "price": 3.599544375632985e-06,
+    "price": 3.599496769332546e-06,
     "address": "0x22ce16962f51ac19c34616efacffb1fee2efe6b1",
     "addresses": {
      "robinhood": "0x22ce16962f51ac19c34616efacffb1fee2efe6b1"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-08T15:02:29.296Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 3599.544375632985,
+    "liquidity": 3599.496769332546,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1508,7 +2165,7 @@
     "name": "Shopify (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SHOPON",
-    "price": 170.23,
+    "price": 126.32,
     "address": "0x43d0b380c33cd004a6a69abd61843881a2de4113",
     "addresses": {
      "ethereum": "0x908266c1192628371cff7ad2f5eba4de061a0ac5",
@@ -1516,20 +2173,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 874210,
+    "liquidity": 645386,
     "image": "https://coin-images.coingecko.com/coins/images/68584/large/shopon_160x160.png?1756129783",
     "metrics": {
-     "volumeUsd1d": "1209475.046",
-     "volumeUsd7d": "8603575.926"
+     "volumeUsd1d": "1149109.214",
+     "volumeUsd7d": "7998189.567"
     },
     "metadata": {},
     "tokenId": "41d5096c-a165-4bc6-880e-27e2e6dc3368",
-    "totalSupply": "5135.418823162538",
-    "circulatingSupply": "5135.418823162538",
+    "totalSupply": "5108.918932322373",
+    "circulatingSupply": "5108.918932322373",
     "isClaimed": false,
     "isPortable": true
    }

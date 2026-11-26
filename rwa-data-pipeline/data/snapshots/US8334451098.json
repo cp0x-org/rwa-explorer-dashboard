@@ -5,8 +5,8 @@
  "name": "Snowflake",
  "isin": "US8334451098",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:19:33Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:15:12Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,35 +17,35 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 304.2468370720161,
-     "tokenized_market_cap": 1767871.9327736567,
-     "tokenized_volume_24h": 850848.34779954,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 259.6283325246804,
+     "tokenized_market_cap": 1217446.0387418836,
+     "tokenized_volume_24h": 831303.04234311,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 135,
    "asset_type": "stock",
-   "rwa_rank": 153,
+   "rwa_rank": 174,
    "has_tokens": true,
-   "average_tokenized_price": 304.2468370720161,
-   "tokenized_market_cap": 1767871.9327736567,
-   "tokenized_volume_24h": 850848.34779954,
-   "last_updated": "2026-10-18T20:13:38.339Z",
+   "average_tokenized_price": 259.6283325246804,
+   "tokenized_market_cap": 1217446.0387418836,
+   "tokenized_volume_24h": 831303.04234311,
+   "last_updated": "2026-11-21T14:10:11.192Z",
    "tokens": [
     {
      "symbol": "SNOWon",
      "name": "Snowflake Tokenized Stock (Ondo)",
-     "price": 304.2976928967933,
+     "price": 259.6283325246804,
      "crypto_id": 38063,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 1768167.44,
-     "volume_24h": 850664.70562975
+     "market_cap": 1217446.038742591,
+     "volume_24h": 831303.0423431112
     },
     {
      "symbol": "SNOW",
      "name": "Snowflake Inc (Derivatives)",
-     "price": 300.0077885851251,
+     "price": 259.8127312988926,
      "crypto_id": 40843,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -59,6 +59,16 @@
      "crypto_id": 41585,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
+     "market_cap": null,
+     "volume_24h": null
+    },
+    {
+     "symbol": "SNOWc",
+     "name": "Snowflake Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42742,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
      "market_cap": null,
      "volume_24h": null
     }
@@ -167,6 +177,35 @@
       }
      }
     ]
+   },
+   "42742": {
+    "id": 42742,
+    "symbol": "SNOWc",
+    "name": "Snowflake Inc. Tokenized Stock (Coinbase)",
+    "slug": "snowflake-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42742.png",
+    "date_added": "2026-11-02T08:29:22.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB2000000000000000000004AcDC9A922FCfBCc7f"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB2000000000000000000004AcDC9A922FCfBCc7f",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -188,6 +227,7 @@
    "arc"
   ],
   "looked_up": [
+   "base:0xb2000000000000000000004acdc9a922fcfbcc7f",
    "bsc:0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
    "ethereum:0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
   ],
@@ -197,7 +237,7 @@
     "name": "Snowflake (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SNOWON",
-    "price": 304.84,
+    "price": 259.92,
     "address": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
     "addresses": {
      "bsc": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
@@ -205,20 +245,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1771491,
+    "liquidity": 1218804,
     "image": "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
     "metrics": {
-     "volumeUsd1d": "478038.647",
-     "volumeUsd7d": "3366672.409"
+     "volumeUsd1d": "472019.278",
+     "volumeUsd7d": "3430896.291"
     },
     "metadata": {},
     "tokenId": "cff3653e-c41e-412c-924c-11914ee180dc",
-    "totalSupply": "5810.650160857303",
-    "circulatingSupply": "5810.650160857303",
+    "totalSupply": "4689.187912982725",
+    "circulatingSupply": "4689.187912982725",
     "isClaimed": false,
     "isPortable": true
    },
@@ -227,7 +267,7 @@
     "name": "Snowflake (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SNOWON",
-    "price": 304.84,
+    "price": 259.92,
     "address": "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f",
     "addresses": {
      "bsc": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
@@ -235,20 +275,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1771491,
+    "liquidity": 1218804,
     "image": "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
     "metrics": {
-     "volumeUsd1d": "476935.823",
-     "volumeUsd7d": "3369947.813"
+     "volumeUsd1d": "471974.691",
+     "volumeUsd7d": "3433798.859"
     },
     "metadata": {},
     "tokenId": "cff3653e-c41e-412c-924c-11914ee180dc",
-    "totalSupply": "5810.650160857303",
-    "circulatingSupply": "5810.650160857303",
+    "totalSupply": "4689.187912982725",
+    "circulatingSupply": "4689.187912982725",
     "isClaimed": false,
     "isPortable": true
    }
@@ -279,14 +319,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024"
     ],
-    "updatedAt": "2026-10-18T20:14:34.402Z",
+    "updatedAt": "2026-11-21T14:10:44.565Z",
     "createdAt": "2026-09-30T08:55:59.843Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -309,6 +349,52 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0x110fb2b6b43a6b451cdb6f450eda400950cf700949b917febeb8d5ca7409f444": {
+    "key": "robinhood:0x110fb2b6b43a6b451cdb6f450eda400950cf700949b917febeb8d5ca7409f444",
+    "name": "Uniswap V4 LP wUSDG/SNOW",
+    "decimals": 18,
+    "symbol": "WUSDG/SNOW",
+    "price": 9007199254740990,
+    "address": "0x110fb2b6b43a6b451cdb6f450eda400950cf700949b917febeb8d5ca7409f444",
+    "addresses": {
+     "robinhood": "0x110fb2b6b43a6b451cdb6f450eda400950cf700949b917febeb8d5ca7409f444"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.138Z",
+    "createdAt": "2026-11-05T15:57:22.448Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+    ],
+    "liquidity": 2999.448571301699,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "b68faa83-d7df-4e44-97d2-5c15966d5d48",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0xa59caeb23667b4ac9af269dd09339582767ae54ea7275b521e714581606213df": {
     "key": "ethereum:0xa59caeb23667b4ac9af269dd09339582767ae54ea7275b521e714581606213df",
     "name": "Uniswap V4 LP wUSDC/SNOWon",
@@ -326,14 +412,14 @@
      "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:14:34.658Z",
+    "updatedAt": "2026-11-21T14:10:54.908Z",
     "createdAt": "2026-09-28T10:39:18.722Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -373,19 +459,19 @@
      "https://images.portals.fi/unknown-token.png",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:15:01.323Z",
+    "updatedAt": "2026-11-21T14:10:55.127Z",
     "createdAt": "2026-09-29T12:58:07.313Z",
     "verifiedAt": null,
     "tokens": [
      "0x9ddd01dba11cbdc9fdbdd97a1e5243f6a9ca1dbb",
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
     ],
-    "liquidity": 2001.2384922346273,
+    "liquidity": 1274.1445220832409,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "29.246"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -397,18 +483,63 @@
     },
     "tokenId": "d44b7cb1-4c69-4546-8e97-6bb3697d6a8b",
     "reserves": [
-     "17224240.428172919013641948",
+     "10898423.757487076887983359",
      "1173.280015"
     ],
     "isClaimed": false,
     "isPortable": false
+   },
+   "ethereum:0xe4f8f3cb9b33247789e4984a457bb69a1a621df3": {
+    "key": "ethereum:0xe4f8f3cb9b33247789e4984a457bb69a1a621df3",
+    "name": "UniswapV2 LP WETH/SNOW",
+    "decimals": 18,
+    "symbol": "WETH/SNOW",
+    "price": 23.688846199781306,
+    "address": "0xe4f8f3cb9b33247789e4984a457bb69a1a621df3",
+    "addresses": {
+     "ethereum": "0xe4f8f3cb9b33247789e4984a457bb69a1a621df3"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:26.524Z",
+    "createdAt": "2026-11-13T14:26:32.086Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "0xfe9a29ab92522d14fc65880d817214261d8479ae"
+    ],
+    "liquidity": 3668.2005721130213,
+    "metrics": {
+     "apy": "0.04",
+     "baseApy": "0.04",
+     "volumeUsd1d": "1.324",
+     "volumeUsd7d": "2.509"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "51b36957-2a23-476d-adc9-3bc517ac3970",
+    "totalSupply": "154.849271305872449957",
+    "reserves": [
+     "1.07842116123092115",
+     "92179.649160575186939115"
+    ],
+    "isClaimed": false,
+    "isPortable": true
    },
    "bsc:0x138ed6833ff4e8811e1fea0d005e13726c8886f9": {
     "key": "bsc:0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
     "name": "Snowflake (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SNOWON",
-    "price": 304.84,
+    "price": 259.92,
     "address": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
     "addresses": {
      "bsc": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
@@ -416,111 +547,22 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1771491,
+    "liquidity": 1218804,
     "image": "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
     "metrics": {
-     "volumeUsd1d": "478038.647",
-     "volumeUsd7d": "3366672.409"
+     "volumeUsd1d": "472019.278",
+     "volumeUsd7d": "3430896.291"
     },
     "metadata": {},
     "tokenId": "cff3653e-c41e-412c-924c-11914ee180dc",
-    "totalSupply": "5810.650160857303",
-    "circulatingSupply": "5810.650160857303",
+    "totalSupply": "4689.187912982725",
+    "circulatingSupply": "4689.187912982725",
     "isClaimed": false,
     "isPortable": true
-   },
-   "ethereum:0x23add66fa7628300844efd766392152821734f3b": {
-    "key": "ethereum:0x23add66fa7628300844efd766392152821734f3b",
-    "name": "UniswapV2 LP SNOWY/WETH",
-    "decimals": 18,
-    "symbol": "SNOWY/WETH",
-    "price": 78149.66355821556,
-    "address": "0x23add66fa7628300844efd766392152821734f3b",
-    "addresses": {
-     "ethereum": "0x23add66fa7628300844efd766392152821734f3b"
-    },
-    "platform": "uniswapv2",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
-    ],
-    "updatedAt": "2026-10-18T20:15:08.600Z",
-    "createdAt": "2026-08-18T19:50:25.809Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x59c12610dcb3060c045301baa79a8e320b2ee612",
-     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
-    ],
-    "liquidity": 10998.877490570208,
-    "metrics": {
-     "apy": "0.002",
-     "baseApy": "0.002",
-     "volumeUsd1d": "0.183",
-     "volumeUsd7d": "0.183"
-    },
-    "metadata": {
-     "tags": [
-      "#pool"
-     ]
-    },
-    "tokenId": "4135440d-552a-4105-8575-fe1b55d612dc",
-    "totalSupply": "0.140741200790671101",
-    "reserves": [
-     "8771156.415190851",
-     "2.354169352478304328"
-    ],
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "robinhood:0xe0ca1dfc1161500fb410c8181f7cc33860ffb16b": {
-    "key": "robinhood:0xe0ca1dfc1161500fb410c8181f7cc33860ffb16b",
-    "name": "Uniswap V3 Global Dollar/Snowflake  Robinhood Token 0.3%",
-    "decimals": 18,
-    "symbol": "USDG/SNOW",
-    "price": 9007199254740990,
-    "address": "0xe0ca1dfc1161500fb410c8181f7cc33860ffb16b",
-    "addresses": {
-     "robinhood": "0xe0ca1dfc1161500fb410c8181f7cc33860ffb16b"
-    },
-    "platform": "uniswap-v3",
-    "network": "robinhood",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
-    ],
-    "updatedAt": "2026-10-18T20:15:14.174Z",
-    "createdAt": "2026-09-09T13:24:36.919Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
-     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
-    ],
-    "liquidity": 939.1147324338525,
-    "metrics": {
-     "apy": "39.984",
-     "baseApy": "39.984",
-     "volumeUsd1d": "342.914",
-     "volumeUsd7d": "10380.585"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "feePercentage": "0.3"
-    },
-    "tokenId": "393f34d4-8c00-4a05-ba81-32209b690c6b",
-    "reserves": [
-     "148.674818",
-     "2.610478754384493255"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "ethereum:0xbd3d3495c2c7e0cb9407a98dc7217b4b7cdb69e271737e2b66fcc48d6f8c3bef": {
     "key": "ethereum:0xbd3d3495c2c7e0cb9407a98dc7217b4b7cdb69e271737e2b66fcc48d6f8c3bef",
@@ -539,19 +581,19 @@
      "https://images.portals.fi/unknown-token.png",
      "https://assets.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
     ],
-    "updatedAt": "2026-10-18T20:14:54.115Z",
+    "updatedAt": "2026-11-21T14:10:54.885Z",
     "createdAt": "2026-09-28T19:27:19.404Z",
     "verifiedAt": null,
     "tokens": [
      "0x9ddd01dba11cbdc9fdbdd97a1e5243f6a9ca1dbb",
      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
     ],
-    "liquidity": 4300.037591767121,
+    "liquidity": 3371.8798732306523,
     "metrics": {
-     "apy": "0.18",
-     "baseApy": "0.18",
-     "volumeUsd1d": "0.21",
-     "volumeUsd7d": "80.146"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -563,8 +605,8 @@
     },
     "tokenId": "f86514b0-1e7a-4e41-8df0-ad655e246cda",
     "reserves": [
-     "21677944.40427448782076226",
-     "3258.412841"
+     "12416666.805836813155599452",
+     "3258.114994"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -574,58 +616,30 @@
     "name": "Dinari SNOW",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 369.2,
+    "price": 259.48,
     "address": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
     "addresses": {
-     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
      "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
+     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
+     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
      "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6971.79,
+    "liquidity": 2972.44,
     "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
     "metrics": {
-     "volumeUsd1d": "25.675",
-     "volumeUsd7d": "179.725"
+     "volumeUsd1d": "1854.422",
+     "volumeUsd7d": "3832.101"
     },
     "metadata": {},
     "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
-    "totalSupply": "18.883359648",
-    "circulatingSupply": "18.883359648",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0x59c12610dcb3060c045301baa79a8e320b2ee612": {
-    "key": "ethereum:0x59c12610dcb3060c045301baa79a8e320b2ee612",
-    "name": "Snowy Inu",
-    "decimals": 9,
-    "symbol": "SNOWY",
-    "price": 0.0006269193969860328,
-    "address": "0x59c12610dcb3060c045301baa79a8e320b2ee612",
-    "addresses": {
-     "ethereum": "0x59c12610dcb3060c045301baa79a8e320b2ee612"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-08-18T18:41:23.378Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 6269.193969860327,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "0.18",
-     "volumeUsd7d": "0.18"
-    },
-    "metadata": {},
-    "tokenId": "1f01747f-3d94-44ee-9d24-8e5163ebd778",
-    "totalSupply": "10000000",
+    "totalSupply": "11.455552589",
+    "circulatingSupply": "11.455552589",
     "isClaimed": false,
     "isPortable": true
    },
@@ -634,22 +648,22 @@
     "name": "Snowmoon",
     "decimals": 18,
     "symbol": "SNOWMOON",
-    "price": 4.808545112755508e-05,
+    "price": 9.28491366177538e-06,
     "address": "0x9ddd01dba11cbdc9fdbdd97a1e5243f6a9ca1dbb",
     "addresses": {
      "ethereum": "0x9ddd01dba11cbdc9fdbdd97a1e5243f6a9ca1dbb"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-28T19:25:49.827Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 48085.45112755508,
+    "liquidity": 9284.91366177538,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
-     "volumeUsd1d": "25.49",
-     "volumeUsd7d": "301.41"
+     "volumeUsd1d": "0.08",
+     "volumeUsd7d": "0.56"
     },
     "metadata": {},
     "tokenId": "994b59bb-aab3-4723-a1c1-284ae929bade",
@@ -657,34 +671,173 @@
     "isClaimed": false,
     "isPortable": true
    },
+   "arbitrum:0xda57fe824f7a53bfff90e32ff8cc3aae114531f1809284e164ed12430b22b105": {
+    "key": "arbitrum:0xda57fe824f7a53bfff90e32ff8cc3aae114531f1809284e164ed12430b22b105",
+    "name": "Uniswap V4 LP wUSDC/rSNOW",
+    "decimals": 18,
+    "symbol": "WUSDC/RSNOW",
+    "price": 9007199254740990,
+    "address": "0xda57fe824f7a53bfff90e32ff8cc3aae114531f1809284e164ed12430b22b105",
+    "addresses": {
+     "arbitrum": "0xda57fe824f7a53bfff90e32ff8cc3aae114531f1809284e164ed12430b22b105"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177076/large/ceeca1bc3093e7e52d1e95e687db2a62.png?1789116753"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.375Z",
+    "createdAt": "2026-11-14T12:28:23.713Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9772f39128352142e90e11eb522e151296f3ccb3"
+    ],
+    "liquidity": 3568.5201908171716,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "e9fec544-3dc2-42af-b4d3-72c23602312d",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x60cd5360a8f8e6fcd4e32d77e6d11cdead6437f61f6d8b58d2391677c608943d": {
+    "key": "robinhood:0x60cd5360a8f8e6fcd4e32d77e6d11cdead6437f61f6d8b58d2391677c608943d",
+    "name": "Uniswap V4 LP MJDQ/SNOW",
+    "decimals": 18,
+    "symbol": "MJDQ/SNOW",
+    "price": 9007199254740990,
+    "address": "0x60cd5360a8f8e6fcd4e32d77e6d11cdead6437f61f6d8b58d2391677c608943d",
+    "addresses": {
+     "robinhood": "0x60cd5360a8f8e6fcd4e32d77e6d11cdead6437f61f6d8b58d2391677c608943d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.693Z",
+    "createdAt": "2026-11-11T13:21:25.010Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+    ],
+    "liquidity": 9999.149922876286,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19949,
+     "feePercentage": "99.7455"
+    },
+    "tokenId": "bba125fe-e593-4788-8b4b-617ebc1f6106",
+    "reserves": [
+     "9999.999999980339999902",
+     "0.00034029793699909"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "bsc:0x36f2fd027f5f27c59b8c6d64df64bcc8e8c97777": {
     "key": "bsc:0x36f2fd027f5f27c59b8c6d64df64bcc8e8c97777",
     "name": "雪球 (Snowball)",
     "decimals": 18,
     "symbol": "雪球",
-    "price": 0.00370411,
+    "price": 0.00360985,
     "address": "0x36f2fd027f5f27c59b8c6d64df64bcc8e8c97777",
     "addresses": {
      "bsc": "0x36f2fd027f5f27c59b8c6d64df64bcc8e8c97777"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-01-13T22:25:24.517Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 629850,
+    "liquidity": 586521,
     "image": "https://coin-images.coingecko.com/coins/images/71548/large/IMG_4363.jpeg?1768298233",
     "metrics": {
-     "volumeUsd1d": "94009.502",
-     "volumeUsd7d": "686098.996"
+     "volumeUsd1d": "257564.111",
+     "volumeUsd7d": "835268.36"
     },
     "metadata": {},
     "tokenId": "4e14e6cd-7c85-41e5-b070-b658299f81ee",
-    "totalSupply": "170037020.43573874",
-    "circulatingSupply": "170037020.43573874",
+    "totalSupply": "162477688.9839586",
+    "circulatingSupply": "162477688.9839586",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x69f8ffa825cf6b9fc467f1c58716e2cb4fb337e8be2a55dd8db2e5a7bd0fbecf": {
+    "key": "robinhood:0x69f8ffa825cf6b9fc467f1c58716e2cb4fb337e8be2a55dd8db2e5a7bd0fbecf",
+    "name": "Uniswap V4 LP OLQD/SNOW",
+    "decimals": 18,
+    "symbol": "OLQD/SNOW",
+    "price": 9007199254740990,
+    "address": "0x69f8ffa825cf6b9fc467f1c58716e2cb4fb337e8be2a55dd8db2e5a7bd0fbecf",
+    "addresses": {
+     "robinhood": "0x69f8ffa825cf6b9fc467f1c58716e2cb4fb337e8be2a55dd8db2e5a7bd0fbecf"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.830Z",
+    "createdAt": "2026-11-06T15:59:38.365Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+    ],
+    "liquidity": 9997.775485499273,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19563,
+     "feePercentage": "97.8197"
+    },
+    "tokenId": "74390484-b706-4bc8-8148-d63e50c134aa",
+    "reserves": [
+     "9999.999999980343615876",
+     "0.0003666361136571"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0xca758b760abd280cac86a9057feacad2e95131c420bdf087fb6868c28570fd50": {
     "key": "robinhood:0xca758b760abd280cac86a9057feacad2e95131c420bdf087fb6868c28570fd50",
@@ -702,19 +855,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:40.726Z",
+    "updatedAt": "2026-11-21T14:12:37.220Z",
     "createdAt": "2026-09-09T13:24:56.446Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
     ],
-    "liquidity": 1514.730626315891,
+    "liquidity": 1274.6043238678471,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "257.504"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -726,8 +879,8 @@
     },
     "tokenId": "3824d24a-66f9-4a83-94a0-e6da913d7c4e",
     "reserves": [
-     "12.291278",
-     "4.961902766940970575"
+     "13.313664",
+     "4.961901925167085283"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -737,39 +890,188 @@
     "name": "Snowbank",
     "decimals": 9,
     "symbol": "SB",
-    "price": 223.73,
+    "price": 245.49,
     "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
     "addresses": {
      "avalanche": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 35716089,
+    "liquidity": 39189575,
     "image": "https://assets.coingecko.com/coins/images/19947/large/sb.png?1696519364",
     "metrics": {
-     "volumeUsd1d": "62.205",
-     "volumeUsd7d": "319.528"
+     "volumeUsd1d": "140.635",
+     "volumeUsd7d": "1125.759"
     },
     "metadata": {},
     "tokenId": "0ac6fe66-ce41-40e5-ba2a-0a3534e0f7c6",
-    "totalSupply": "159640027327531",
+    "totalSupply": "159640.027327531",
     "circulatingSupply": "159640.027327531",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0x24540f059d70bc9ade0fd6b40498ab881bd861ad": {
-    "key": "ethereum:0x24540f059d70bc9ade0fd6b40498ab881bd861ad",
-    "name": "UniswapV2 LP SNOWBALL/WETH",
-    "decimals": 18,
-    "symbol": "SNOWBALL/WETH",
-    "price": 6661.346293378133,
-    "address": "0x24540f059d70bc9ade0fd6b40498ab881bd861ad",
+   "ethereum:0x4b93b933d36fd45498de88d42b228765d54a5389": {
+    "key": "ethereum:0x4b93b933d36fd45498de88d42b228765d54a5389",
+    "name": "Snowmoon",
+    "decimals": 9,
+    "symbol": "SNOWMOON",
+    "price": 6.327788193141061e-06,
+    "address": "0x4b93b933d36fd45498de88d42b228765d54a5389",
     "addresses": {
-     "ethereum": "0x24540f059d70bc9ade0fd6b40498ab881bd861ad"
+     "ethereum": "0x4b93b933d36fd45498de88d42b228765d54a5389"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-09-28T06:11:15.910Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 6327.788193141061,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "150.85",
+     "volumeUsd7d": "416.36"
+    },
+    "metadata": {},
+    "tokenId": "6ab06b4d-788f-4aaa-9fdc-c9f5818dfdfe",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x322e02d21c688d83b8dfd2e607a1d434f165db2fe6ddce6c77d83d3512c47a53": {
+    "key": "arbitrum:0x322e02d21c688d83b8dfd2e607a1d434f165db2fe6ddce6c77d83d3512c47a53",
+    "name": "Uniswap V4 LP wUSDC/rSNOW",
+    "decimals": 18,
+    "symbol": "WUSDC/RSNOW",
+    "price": 9007199254740990,
+    "address": "0x322e02d21c688d83b8dfd2e607a1d434f165db2fe6ddce6c77d83d3512c47a53",
+    "addresses": {
+     "arbitrum": "0x322e02d21c688d83b8dfd2e607a1d434f165db2fe6ddce6c77d83d3512c47a53"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177076/large/ceeca1bc3093e7e52d1e95e687db2a62.png?1789116753"
+    ],
+    "updatedAt": "2026-11-21T14:09:35.981Z",
+    "createdAt": "2026-11-14T12:28:23.953Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9772f39128352142e90e11eb522e151296f3ccb3"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "223d4a91-a39c-4448-8575-39f794189787",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc": {
+    "key": "ethereum:0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc",
+    "name": "Snowmoon",
+    "decimals": 18,
+    "symbol": "SNOWMOON",
+    "price": 0.0001017457910782093,
+    "address": "0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc",
+    "addresses": {
+     "ethereum": "0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc"
+    },
+    "platform": "basic",
+    "network": "ethereum",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-09-28T06:11:15.910Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 101745.7910782093,
+    "image": "https://images.portals.fi/unknown-token.png",
+    "metrics": {
+     "volumeUsd1d": "581.99",
+     "volumeUsd7d": "3224.65"
+    },
+    "metadata": {},
+    "tokenId": "d9459868-d84b-4206-b93f-577c77667c22",
+    "totalSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0x6d3190d3d07968844036bf8740aba7f9b3292d489b3a62315ec273e7521c1f6d": {
+    "key": "robinhood:0x6d3190d3d07968844036bf8740aba7f9b3292d489b3a62315ec273e7521c1f6d",
+    "name": "Uniswap V4 LP wUSDG/SNOW",
+    "decimals": 18,
+    "symbol": "WUSDG/SNOW",
+    "price": 9007199254740990,
+    "address": "0x6d3190d3d07968844036bf8740aba7f9b3292d489b3a62315ec273e7521c1f6d",
+    "addresses": {
+     "robinhood": "0x6d3190d3d07968844036bf8740aba7f9b3292d489b3a62315ec273e7521c1f6d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.323Z",
+    "createdAt": "2026-11-06T15:59:38.752Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "e7ed4945-c897-4f15-9e08-3897eb8d6c06",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xffd41513dff8f09edf8dec08790a1f41c1e6e8ee": {
+    "key": "ethereum:0xffd41513dff8f09edf8dec08790a1f41c1e6e8ee",
+    "name": "UniswapV2 LP SNOWMOON/WETH",
+    "decimals": 18,
+    "symbol": "SNOWMOON/WETH",
+    "price": 4.276754986516792,
+    "address": "0xffd41513dff8f09edf8dec08790a1f41c1e6e8ee",
+    "addresses": {
+     "ethereum": "0xffd41513dff8f09edf8dec08790a1f41c1e6e8ee"
     },
     "platform": "uniswapv2",
     "network": "ethereum",
@@ -778,88 +1080,31 @@
      "https://images.portals.fi/unknown-token.png",
      "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332"
     ],
-    "updatedAt": "2026-10-18T20:15:10.208Z",
-    "createdAt": "2025-09-03T07:02:04.409Z",
+    "updatedAt": "2026-11-21T14:12:28.355Z",
+    "createdAt": "2026-10-30T20:11:25.133Z",
     "verifiedAt": null,
     "tokens": [
-     "0x23e1cee87aa203e8d55c48b2eaa74f388842799b",
+     "0xa314a620827b87a08ec21941ada465066585b5b8",
      "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
     ],
-    "liquidity": 5845.307649647963,
+    "liquidity": 129049.66423568905,
     "metrics": {
-     "apy": "15.919",
-     "baseApy": "15.919",
-     "volumeUsd1d": "849.919",
-     "volumeUsd7d": "952.946"
+     "apy": "35.39",
+     "baseApy": "35.39",
+     "volumeUsd1d": "41854.025",
+     "volumeUsd7d": "482390.366"
     },
     "metadata": {
      "tags": [
       "#pool"
      ]
     },
-    "tokenId": "6af9d128-bec9-4293-977c-461e6dcb5ea9",
-    "totalSupply": "0.877496438739212206",
+    "tokenId": "f63baec1-5e99-4ff9-b60d-49e0a6b65a93",
+    "totalSupply": "30174.668561219988845805",
     "reserves": [
-     "681896238.896719228",
-     "1.251113501028260815"
+     "29067730.159837031376966318",
+     "37.874458146789723748"
     ],
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc": {
-    "key": "ethereum:0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc",
-    "name": "Snowmoon",
-    "decimals": 18,
-    "symbol": "SNOWMOON",
-    "price": 0.00015777992554745187,
-    "address": "0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc",
-    "addresses": {
-     "ethereum": "0x9f14215dd4c57b5eae0c6f69a5bf74fcaf13cccc"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-28T06:11:15.910Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 157779.92554745186,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "5676.65",
-     "volumeUsd7d": "64568.42"
-    },
-    "metadata": {},
-    "tokenId": "d9459868-d84b-4206-b93f-577c77667c22",
-    "totalSupply": "1000000000",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "bsc:0x1f39dd2bf5a27e2d4ed691dcf933077371777cb0": {
-    "key": "bsc:0x1f39dd2bf5a27e2d4ed691dcf933077371777cb0",
-    "name": "SnowCrash",
-    "decimals": 18,
-    "symbol": "NORA",
-    "price": 0.00012415,
-    "address": "0x1f39dd2bf5a27e2d4ed691dcf933077371777cb0",
-    "addresses": {
-     "bsc": "0x1f39dd2bf5a27e2d4ed691dcf933077371777cb0"
-    },
-    "platform": "basic",
-    "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2023-10-12T14:08:09.479Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 12713.24,
-    "image": "https://assets.coingecko.com/coins/images/17993/large/Nora-200x200.png?1696517510",
-    "metrics": {
-     "volumeUsd1d": "2.506",
-     "volumeUsd7d": "17.542"
-    },
-    "metadata": {},
-    "tokenId": "bdc6a6d9-e487-4d87-a4d9-cbc87169724a",
-    "totalSupply": "102400000",
-    "circulatingSupply": "0",
     "isClaimed": false,
     "isPortable": true
    },
@@ -868,7 +1113,7 @@
     "name": "Snowflake (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "SNOWON",
-    "price": 304.84,
+    "price": 259.92,
     "address": "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f",
     "addresses": {
      "bsc": "0x138ed6833ff4e8811e1fea0d005e13726c8886f9",
@@ -876,65 +1121,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-26T12:17:00.381Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 1771491,
+    "liquidity": 1218804,
     "image": "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
     "metrics": {
-     "volumeUsd1d": "476935.823",
-     "volumeUsd7d": "3369947.813"
+     "volumeUsd1d": "471974.691",
+     "volumeUsd7d": "3433798.859"
     },
     "metadata": {},
     "tokenId": "cff3653e-c41e-412c-924c-11914ee180dc",
-    "totalSupply": "5810.650160857303",
-    "circulatingSupply": "5810.650160857303",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0xb69ea54d402bd4589ab98dec68bfe29d586b6906": {
-    "key": "ethereum:0xb69ea54d402bd4589ab98dec68bfe29d586b6906",
-    "name": "UniswapV2 LP WETH/SNOW",
-    "decimals": 18,
-    "symbol": "WETH/SNOW",
-    "price": 0.0013186712595412787,
-    "address": "0xb69ea54d402bd4589ab98dec68bfe29d586b6906",
-    "addresses": {
-     "ethereum": "0xb69ea54d402bd4589ab98dec68bfe29d586b6906"
-    },
-    "platform": "uniswapv2",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:10.218Z",
-    "createdAt": "2025-09-02T06:59:37.353Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-     "0xd1f3d2f5c12a205fc912358878b089eae48a557f"
-    ],
-    "liquidity": 38922.029207286265,
-    "metrics": {
-     "apy": "0.002",
-     "baseApy": "0.002",
-     "volumeUsd1d": "0.761",
-     "volumeUsd7d": "286.428"
-    },
-    "metadata": {
-     "tags": [
-      "#pool"
-     ]
-    },
-    "tokenId": "78bf4bee-b144-4fa5-ac21-31583b858d3f",
-    "totalSupply": "29516097.302997209234552451",
-    "reserves": [
-     "8.330763605160264464",
-     "289218084279391.511449087483771527"
-    ],
+    "totalSupply": "4689.187912982725",
+    "circulatingSupply": "4689.187912982725",
     "isClaimed": false,
     "isPortable": true
    },
@@ -943,162 +1143,181 @@
     "name": "雪球人生 (A Snowball Life)",
     "decimals": 18,
     "symbol": "雪球人生",
-    "price": 0.00014349,
+    "price": 0.00011542,
     "address": "0x1a0d665ff8582fe135a8867bfd38b5e48baf7777",
     "addresses": {
      "bsc": "0x1a0d665ff8582fe135a8867bfd38b5e48baf7777"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-01-23T08:29:14.874Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 62591,
+    "liquidity": 49425,
     "image": "https://coin-images.coingecko.com/coins/images/71730/large/1000078901.jpg?1769098589",
     "metrics": {
-     "volumeUsd1d": "2373.993",
-     "volumeUsd7d": "31464.679"
+     "volumeUsd1d": "3033.812",
+     "volumeUsd7d": "5227.249"
     },
     "metadata": {},
     "tokenId": "e00ef769-9419-4264-8509-ada0fc23fb12",
-    "totalSupply": "436144542.1454785",
-    "circulatingSupply": "436144542.1454785",
+    "totalSupply": "428219457.79827",
+    "circulatingSupply": "428219457.79827",
     "isClaimed": false,
     "isPortable": true
    },
-   "arbitrum:0x1ae31840d492993a58baf558180b5ee83ce2f8ce": {
-    "key": "arbitrum:0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-    "name": "Dinari SNOW",
+   "ethereum:0x87278be6959faa13aa46e62402adfdea61b9856d0c0cafcd0b44fdbff64fb205": {
+    "key": "ethereum:0x87278be6959faa13aa46e62402adfdea61b9856d0c0cafcd0b44fdbff64fb205",
+    "name": "Uniswap V4 LP wUSDC/SNOWon",
     "decimals": 18,
-    "symbol": "SNOW",
-    "price": 369.2,
-    "address": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-    "addresses": {
-     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
-     "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
-     "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
-    },
-    "platform": "basic",
-    "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-02-25T08:34:16.549Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 6971.79,
-    "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
-    "metrics": {
-     "volumeUsd1d": "25.675",
-     "volumeUsd7d": "179.725"
-    },
-    "metadata": {},
-    "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
-    "totalSupply": "18.883359648",
-    "circulatingSupply": "18.883359648",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0xd1f3d2f5c12a205fc912358878b089eae48a557f": {
-    "key": "ethereum:0xd1f3d2f5c12a205fc912358878b089eae48a557f",
-    "name": "Snowman",
-    "decimals": 18,
-    "symbol": "SNOW",
-    "price": 6.728065756122166e-11,
-    "address": "0xd1f3d2f5c12a205fc912358878b089eae48a557f",
-    "addresses": {
-     "ethereum": "0xd1f3d2f5c12a205fc912358878b089eae48a557f"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-09-02T06:58:26.173Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 59805.02894330808,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "173",
-     "volumeUsd7d": "470.28"
-    },
-    "metadata": {},
-    "tokenId": "708f27af-964d-434f-813e-11269fbe0d5c",
-    "totalSupply": "888888888888888",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "robinhood:0x9ba5b3c17b4a8a838ef2c5cfdac49854419fdc6cda28bddce49714145a4cdddc": {
-    "key": "robinhood:0x9ba5b3c17b4a8a838ef2c5cfdac49854419fdc6cda28bddce49714145a4cdddc",
-    "name": "Uniswap V4 LP ETH/SNOW",
-    "decimals": 18,
-    "symbol": "ETH/SNOW",
+    "symbol": "WUSDC/SNOWON",
     "price": 9007199254740990,
-    "address": "0x9ba5b3c17b4a8a838ef2c5cfdac49854419fdc6cda28bddce49714145a4cdddc",
+    "address": "0x87278be6959faa13aa46e62402adfdea61b9856d0c0cafcd0b44fdbff64fb205",
     "addresses": {
-     "robinhood": "0x9ba5b3c17b4a8a838ef2c5cfdac49854419fdc6cda28bddce49714145a4cdddc"
+     "ethereum": "0x87278be6959faa13aa46e62402adfdea61b9856d0c0cafcd0b44fdbff64fb205"
     },
     "platform": "uniswap-v4",
-    "network": "robinhood",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024"
     ],
-    "updatedAt": "2026-10-18T20:15:41.424Z",
-    "createdAt": "2026-08-13T16:14:42.981Z",
+    "updatedAt": "2026-11-21T14:12:03.194Z",
+    "createdAt": "2026-11-07T15:59:34.864Z",
     "verifiedAt": null,
     "tokens": [
-     "0x0000000000000000000000000000000000000000",
-     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
     ],
-    "liquidity": 2388.6120807191846,
+    "liquidity": 9971.121622900975,
     "metrics": {
-     "apy": "15.095",
-     "baseApy": "15.095",
-     "volumeUsd1d": "19.389",
-     "volumeUsd7d": "116.649"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 500,
-     "feePercentage": "5.095"
+     "tickSpacing": 100,
+     "feePercentage": "50"
     },
-    "tokenId": "6366f98d-ba49-4229-bda0-2edb608cba18",
+    "tokenId": "5e3cce37-5e93-47c9-84cd-8f4a11a738b5",
     "reserves": [
-     "0.076312414566081397",
-     "7.300191588496552004"
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0xfe9a29ab92522d14fc65880d817214261d8479ae": {
-    "key": "ethereum:0xfe9a29ab92522d14fc65880d817214261d8479ae",
-    "name": "Snowswap",
+   "arbitrum:0x1ae31840d492993a58baf558180b5ee83ce2f8ce": {
+    "key": "arbitrum:0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
+    "name": "Dinari SNOW",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 0.02909165,
-    "address": "0xfe9a29ab92522d14fc65880d817214261d8479ae",
+    "price": 259.48,
+    "address": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
     "addresses": {
-     "ethereum": "0xfe9a29ab92522d14fc65880d817214261d8479ae"
+     "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
+     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
+     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
+     "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
+    },
+    "platform": "basic",
+    "network": "arbitrum",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2025-02-25T08:34:16.549Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 2972.44,
+    "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
+    "metrics": {
+     "volumeUsd1d": "1854.422",
+     "volumeUsd7d": "3837.479"
+    },
+    "metadata": {},
+    "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
+    "totalSupply": "11.455552589",
+    "circulatingSupply": "11.455552589",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "robinhood:0xc0e37a75f241ff201516f5f84137ef853505f7df664415ca36e81e40e5ccdf72": {
+    "key": "robinhood:0xc0e37a75f241ff201516f5f84137ef853505f7df664415ca36e81e40e5ccdf72",
+    "name": "Uniswap V4 LP USDG/SNOW",
+    "decimals": 18,
+    "symbol": "USDG/SNOW",
+    "price": 9007199254740990,
+    "address": "0xc0e37a75f241ff201516f5f84137ef853505f7df664415ca36e81e40e5ccdf72",
+    "addresses": {
+     "robinhood": "0xc0e37a75f241ff201516f5f84137ef853505f7df664415ca36e81e40e5ccdf72"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:38.026Z",
+    "createdAt": "2026-11-04T15:56:12.838Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
+    ],
+    "liquidity": 50016.92752556543,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9981,
+     "feePercentage": "99.81"
+    },
+    "tokenId": "1375c372-df79-44dc-80b3-1bfcfbbf51b6",
+    "reserves": [
+     "49999.999999999999999893",
+     "0.083329207012448089"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xa314a620827b87a08ec21941ada465066585b5b8": {
+    "key": "ethereum:0xa314a620827b87a08ec21941ada465066585b5b8",
+    "name": "SNOWMOON",
+    "decimals": 18,
+    "symbol": "SNOWMOON",
+    "price": 0.00222008,
+    "address": "0xa314a620827b87a08ec21941ada465066585b5b8",
+    "addresses": {
+     "ethereum": "0xa314a620827b87a08ec21941ada465066585b5b8"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2023-10-12T14:08:09.479Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-10-30T20:10:34.287Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 14417.9,
-    "image": "https://assets.coingecko.com/coins/images/12751/large/uQBJL3A.png?1696512549",
+    "liquidity": 1514096,
+    "image": "https://coin-images.coingecko.com/coins/images/102180110/large/1000070888.jpg?1793928340",
     "metrics": {
-     "volumeUsd1d": "10.029",
-     "volumeUsd7d": "70.203"
+     "volumeUsd1d": "46072.709",
+     "volumeUsd7d": "507009.965"
     },
     "metadata": {},
-    "tokenId": "cdbeb199-e47a-4f04-b155-b2134a25220e",
-    "totalSupply": "500000",
-    "circulatingSupply": "495602.8518618262",
+    "tokenId": "60c51f1d-11c0-42f3-9d39-7dc193744781",
+    "totalSupply": "681999999",
+    "circulatingSupply": "681999999",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1107,22 +1326,22 @@
     "name": "SnowOn",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 0.00015100733842366798,
+    "price": 0.00010646836694483691,
     "address": "0xb851cebcbcf1dc5f07d9f0a8276cae8d953b3713",
     "addresses": {
      "robinhood": "0xb851cebcbcf1dc5f07d9f0a8276cae8d953b3713"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-08-14T22:38:28.701Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 151007.33842366797,
+    "liquidity": 106468.36694483692,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
-     "volumeUsd1d": "53.19",
-     "volumeUsd7d": "2887.32"
+     "volumeUsd1d": "0.13",
+     "volumeUsd7d": "1389.15"
     },
     "metadata": {},
     "tokenId": "47fa91e0-00af-4356-8383-6aaa44e23907",
@@ -1135,72 +1354,27 @@
     "name": "Snowflake rStock",
     "decimals": 18,
     "symbol": "RSNOW",
-    "price": 323.27,
+    "price": 259.01,
     "address": "0x9772f39128352142e90e11eb522e151296f3ccb3",
     "addresses": {
      "arbitrum": "0x9772f39128352142e90e11eb522e151296f3ccb3"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 50430,
+    "liquidity": 53638,
     "image": "https://coin-images.coingecko.com/coins/images/102177076/large/ceeca1bc3093e7e52d1e95e687db2a62.png?1789116753",
     "metrics": {
-     "volumeUsd1d": "32.121",
-     "volumeUsd7d": "6217.186"
+     "volumeUsd1d": "33662.324",
+     "volumeUsd7d": "163545.562"
     },
     "metadata": {},
     "tokenId": "a9d5f680-2385-4b64-a2e7-65b793558773",
-    "totalSupply": "156.000349138",
-    "circulatingSupply": "156.000349138",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0xe4f8f3cb9b33247789e4984a457bb69a1a621df3": {
-    "key": "ethereum:0xe4f8f3cb9b33247789e4984a457bb69a1a621df3",
-    "name": "UniswapV2 LP WETH/SNOW",
-    "decimals": 18,
-    "symbol": "WETH/SNOW",
-    "price": 33.59199543603401,
-    "address": "0xe4f8f3cb9b33247789e4984a457bb69a1a621df3",
-    "addresses": {
-     "ethereum": "0xe4f8f3cb9b33247789e4984a457bb69a1a621df3"
-    },
-    "platform": "uniswapv2",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
-     "https://assets.coingecko.com/coins/images/12751/large/uQBJL3A.png?1696512549"
-    ],
-    "updatedAt": "2026-10-18T20:15:11.997Z",
-    "createdAt": "2024-04-12T03:04:03.792Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-     "0xfe9a29ab92522d14fc65880d817214261d8479ae"
-    ],
-    "liquidity": 5201.69601498006,
-    "metrics": {
-     "apy": "0.016",
-     "baseApy": "0.016",
-     "volumeUsd1d": "0.763",
-     "volumeUsd7d": "0.618"
-    },
-    "metadata": {
-     "tags": [
-      "#pool"
-     ]
-    },
-    "tokenId": "a62fd83d-fb24-434b-a9eb-888c214f4dd3",
-    "totalSupply": "154.849271305872449957",
-    "reserves": [
-     "1.07500195563421451",
-     "92471.832845929603227903"
-    ],
+    "totalSupply": "207.093749128",
+    "circulatingSupply": "207.093749128",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1221,19 +1395,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:41.840Z",
+    "updatedAt": "2026-11-21T14:12:38.234Z",
     "createdAt": "2026-08-14T22:49:13.935Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0xb851cebcbcf1dc5f07d9f0a8276cae8d953b3713"
     ],
-    "liquidity": 224864.35700905492,
+    "liquidity": 160881.51738285576,
     "metrics": {
-     "apy": "0.023",
-     "baseApy": "0.023",
-     "volumeUsd1d": "48.601",
-     "volumeUsd7d": "2690.567"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0.144",
+     "volumeUsd7d": "914.111"
     },
     "metadata": {
      "tags": [
@@ -1245,86 +1419,11 @@
     },
     "tokenId": "3580309b-be05-4e33-bb94-c42f9c45cc6d",
     "reserves": [
-     "47.886158611444625337",
-     "748802010.369722108395753459"
+     "47.19397258580851467",
+     "759659542.035390723107507764"
     ],
     "isClaimed": false,
     "isPortable": false
-   },
-   "ethereum:0xfac6b61b30fc017283185c7bf9dddea5e220f6c17385a00b4d79fced295abce7": {
-    "key": "ethereum:0xfac6b61b30fc017283185c7bf9dddea5e220f6c17385a00b4d79fced295abce7",
-    "name": "Uniswap V4 LP EGP/SNOWon",
-    "decimals": 18,
-    "symbol": "EGP/SNOWON",
-    "price": 9007199254740990,
-    "address": "0xfac6b61b30fc017283185c7bf9dddea5e220f6c17385a00b4d79fced295abce7",
-    "addresses": {
-     "ethereum": "0xfac6b61b30fc017283185c7bf9dddea5e220f6c17385a00b4d79fced295abce7"
-    },
-    "platform": "uniswap-v4",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024"
-    ],
-    "updatedAt": "2026-10-18T20:15:05.434Z",
-    "createdAt": "2026-10-14T06:54:38.394Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
-    ],
-    "liquidity": 20068.553772387266,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "95.85"
-    },
-    "tokenId": "c80c72d8-21ae-4aa8-aaf4-f111781a8717",
-    "reserves": [
-     "19999.999999999999999965",
-     "0.075562792506955599"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "ethereum:0x23e1cee87aa203e8d55c48b2eaa74f388842799b": {
-    "key": "ethereum:0x23e1cee87aa203e8d55c48b2eaa74f388842799b",
-    "name": "Snowball",
-    "decimals": 9,
-    "symbol": "SNOWBALL",
-    "price": 4.285576748141069e-06,
-    "address": "0x23e1cee87aa203e8d55c48b2eaa74f388842799b",
-    "addresses": {
-     "ethereum": "0x23e1cee87aa203e8d55c48b2eaa74f388842799b"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-09-03T07:01:19.628Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 4285.5767481410685,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "838.26",
-     "volumeUsd7d": "1051.88"
-    },
-    "metadata": {},
-    "tokenId": "c8078575-a1ed-45e0-9047-34c3dd77cf8f",
-    "totalSupply": "1000000000",
-    "isClaimed": false,
-    "isPortable": true
    },
    "robinhood:0xed1eafb0cd40476ae13bff42792aec757a1ad172bfe37fcdb2c0818723f8827b": {
     "key": "robinhood:0xed1eafb0cd40476ae13bff42792aec757a1ad172bfe37fcdb2c0818723f8827b",
@@ -1343,14 +1442,14 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:41.847Z",
+    "updatedAt": "2026-11-21T14:12:38.488Z",
     "createdAt": "2026-10-04T12:33:03.433Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x6321652a74d131db483bff0ec88b98b523e283b8"
     ],
-    "liquidity": 2618.299693183284,
+    "liquidity": 2618.2974804670334,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1373,137 +1472,174 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "avalanche:0x636562a564d9a925f680c4a7008f4e39dd441f0b": {
-    "key": "avalanche:0x636562a564d9a925f680c4a7008f4e39dd441f0b",
-    "name": "Dinari SNOW",
+   "ethereum:0xb6d95f78deeb392f7f199978a3de6a4cf9ac9aa5a4e4bb96a499a86407f388a9": {
+    "key": "ethereum:0xb6d95f78deeb392f7f199978a3de6a4cf9ac9aa5a4e4bb96a499a86407f388a9",
+    "name": "Uniswap V4 LP EE/SNOWon",
     "decimals": 18,
-    "symbol": "SNOW",
-    "price": 369.2,
-    "address": "0x636562a564d9a925f680c4a7008f4e39dd441f0b",
-    "addresses": {
-     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
-     "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
-     "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
-    },
-    "platform": "basic",
-    "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-07-30T09:47:24.528Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 6971.79,
-    "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
-    "metrics": {
-     "volumeUsd1d": "25.675",
-     "volumeUsd7d": "179.725"
-    },
-    "metadata": {},
-    "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
-    "totalSupply": "18.883359648",
-    "circulatingSupply": "18.883359648",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "ethereum:0x8a3fc31a58a55098118dd1795ae5bfbcd531df59": {
-    "key": "ethereum:0x8a3fc31a58a55098118dd1795ae5bfbcd531df59",
-    "name": "SNOWBALL",
-    "decimals": 9,
-    "symbol": "SBALL",
-    "price": 3.011231341223784e-07,
-    "address": "0x8a3fc31a58a55098118dd1795ae5bfbcd531df59",
-    "addresses": {
-     "ethereum": "0x8a3fc31a58a55098118dd1795ae5bfbcd531df59"
-    },
-    "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-11-07T14:25:13.016Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 3011.231341223784,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "830.97",
-     "volumeUsd7d": "830.97"
-    },
-    "metadata": {},
-    "tokenId": "f95a1d80-a160-441e-ac0f-923759822910",
-    "totalSupply": "10000000000",
-    "isClaimed": false,
-    "isPortable": true
-   },
-   "robinhood:0x306b1874e8bf77bb0105b3c6c5b85b1552255b1cc72e71b45f98227668a834c8": {
-    "key": "robinhood:0x306b1874e8bf77bb0105b3c6c5b85b1552255b1cc72e71b45f98227668a834c8",
-    "name": "Uniswap V4 LP ETH/Snowball",
-    "decimals": 18,
-    "symbol": "ETH/SNOWBALL",
+    "symbol": "EE/SNOWON",
     "price": 9007199254740990,
-    "address": "0x306b1874e8bf77bb0105b3c6c5b85b1552255b1cc72e71b45f98227668a834c8",
+    "address": "0xb6d95f78deeb392f7f199978a3de6a4cf9ac9aa5a4e4bb96a499a86407f388a9",
     "addresses": {
-     "robinhood": "0x306b1874e8bf77bb0105b3c6c5b85b1552255b1cc72e71b45f98227668a834c8"
+     "ethereum": "0xb6d95f78deeb392f7f199978a3de6a4cf9ac9aa5a4e4bb96a499a86407f388a9"
     },
     "platform": "uniswap-v4",
-    "network": "robinhood",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
-     "https://images.portals.fi/unknown-token.png"
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024"
     ],
-    "updatedAt": "2026-10-18T20:15:41.852Z",
-    "createdAt": "2026-10-18T19:03:07.812Z",
+    "updatedAt": "2026-11-21T14:12:16.115Z",
+    "createdAt": "2026-11-07T15:59:36.452Z",
     "verifiedAt": null,
     "tokens": [
-     "0x0000000000000000000000000000000000000000",
-     "0x1efa2609e6449d6d0fe7488974700f5dc85507ce"
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f"
     ],
-    "liquidity": 1510.1203503873726,
+    "liquidity": 50024.68925111281,
     "metrics": {
-     "apy": "24746.008",
-     "baseApy": "24746.008",
-     "volumeUsd1d": "102414.921"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 200,
-     "feePercentage": "1"
+     "tickSpacing": 9927,
+     "feePercentage": "99.2708"
     },
-    "tokenId": "5a02f25d-fcdd-4a5a-9ae2-03544cddcd23",
+    "tokenId": "1cebd7c1-2238-4d1e-bcf7-a8eb237692ed",
     "reserves": [
-     "0.244612132573478938",
-     "3115769.10657765146520804"
+     "49999.99999999999999997",
+     "0.078835080604613806"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0x99e1a8b2dbb3e6456c2ad9cf68d709bbf327e2ac": {
-    "key": "ethereum:0x99e1a8b2dbb3e6456c2ad9cf68d709bbf327e2ac",
-    "name": "Viola Snow",
-    "decimals": 9,
-    "symbol": "VIOLA",
-    "price": 0.0006785817695737452,
-    "address": "0x99e1a8b2dbb3e6456c2ad9cf68d709bbf327e2ac",
+   "avalanche:0x636562a564d9a925f680c4a7008f4e39dd441f0b": {
+    "key": "avalanche:0x636562a564d9a925f680c4a7008f4e39dd441f0b",
+    "name": "Dinari SNOW",
+    "decimals": 18,
+    "symbol": "SNOW",
+    "price": 259.48,
+    "address": "0x636562a564d9a925f680c4a7008f4e39dd441f0b",
     "addresses": {
-     "ethereum": "0x99e1a8b2dbb3e6456c2ad9cf68d709bbf327e2ac"
+     "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
+     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
+     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
+     "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
     },
     "platform": "basic",
-    "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-09-02T06:58:26.173Z",
+    "network": "avalanche",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6785.817695737452,
-    "image": "https://images.portals.fi/unknown-token.png",
+    "liquidity": 2972.44,
+    "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
     "metrics": {
-     "volumeUsd1d": "27.49",
-     "volumeUsd7d": "697.34"
+     "volumeUsd1d": "1854.422",
+     "volumeUsd7d": "3831.946"
     },
     "metadata": {},
-    "tokenId": "38c2ab51-5110-40c4-a1e1-58450c3e8258",
-    "totalSupply": "10000000",
+    "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
+    "totalSupply": "11.455552589",
+    "circulatingSupply": "11.455552589",
+    "isClaimed": false,
+    "isPortable": true
+   },
+   "arbitrum:0x183323120714168df2e9370b10cf1752209e3b0a2b34ca9d2086c1f1689ba525": {
+    "key": "arbitrum:0x183323120714168df2e9370b10cf1752209e3b0a2b34ca9d2086c1f1689ba525",
+    "name": "Uniswap V4 LP wUSDC/rSNOW",
+    "decimals": 18,
+    "symbol": "WUSDC/RSNOW",
+    "price": 9007199254740990,
+    "address": "0x183323120714168df2e9370b10cf1752209e3b0a2b34ca9d2086c1f1689ba525",
+    "addresses": {
+     "arbitrum": "0x183323120714168df2e9370b10cf1752209e3b0a2b34ca9d2086c1f1689ba525"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177076/large/ceeca1bc3093e7e52d1e95e687db2a62.png?1789116753"
+    ],
+    "updatedAt": "2026-11-21T14:09:38.927Z",
+    "createdAt": "2026-11-14T12:28:25.008Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9772f39128352142e90e11eb522e151296f3ccb3"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "57bb8a90-ea0e-4495-8e4d-72b9fe95b421",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x234d4c30506bb026821a6d1d7a23464ffe67a407": {
+    "key": "ethereum:0x234d4c30506bb026821a6d1d7a23464ffe67a407",
+    "name": "UniswapV2 LP Snowmoon/WETH",
+    "decimals": 18,
+    "symbol": "SNOWMOON/WETH",
+    "price": 7030.446350350537,
+    "address": "0x234d4c30506bb026821a6d1d7a23464ffe67a407",
+    "addresses": {
+     "ethereum": "0x234d4c30506bb026821a6d1d7a23464ffe67a407"
+    },
+    "platform": "uniswapv2",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://assets.coingecko.com/coins/images/2518/large/weth.png?1696503332",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:29.566Z",
+    "createdAt": "2026-09-28T10:37:31.558Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x4b93b933d36fd45498de88d42b228765d54a5389",
+     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    ],
+    "liquidity": 4038.683949271323,
+    "metrics": {
+     "apy": "0.084",
+     "baseApy": "0.084",
+     "volumeUsd1d": "3.084",
+     "volumeUsd7d": "151.695"
+    },
+    "metadata": {
+     "tags": [
+      "#pool"
+     ]
+    },
+    "tokenId": "f78bcef7-13fb-434f-93d3-bbf2533f4b8b",
+    "totalSupply": "0.574456264653801865",
+    "reserves": [
+     "318044933.802930264",
+     "1.187340263651119649"
+    ],
     "isClaimed": false,
     "isPortable": true
    },
@@ -1512,18 +1648,18 @@
     "name": "Snowline",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 6.091677298113592e-06,
+    "price": 6.091485907865985e-06,
     "address": "0x6321652a74d131db483bff0ec88b98b523e283b8",
     "addresses": {
      "robinhood": "0x6321652a74d131db483bff0ec88b98b523e283b8"
     },
     "platform": "basic",
     "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-28T06:11:15.910Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6090.866095742157,
+    "liquidity": 6090.6747309811635,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1540,22 +1676,22 @@
     "name": "暴力雪球 (Violent Snowball)",
     "decimals": 18,
     "symbol": "暴力雪球",
-    "price": 1.665e-05,
+    "price": 1.303e-05,
     "address": "0x55b69bca0e6749ed67e03b16c95a29e963777777",
     "addresses": {
      "bsc": "0x55b69bca0e6749ed67e03b16c95a29e963777777"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-01-17T19:24:42.501Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 8504.87,
+    "liquidity": 6657.29,
     "image": "https://coin-images.coingecko.com/coins/images/71636/large/1000078169.jpg?1768642017",
     "metrics": {
-     "volumeUsd1d": "3.442",
-     "volumeUsd7d": "14.889"
+     "volumeUsd1d": "1.098",
+     "volumeUsd7d": "7.686"
     },
     "metadata": {},
     "tokenId": "67dda177-0e99-49f7-8a96-e974bbcd67d6",
@@ -1564,31 +1700,31 @@
     "isClaimed": false,
     "isPortable": true
    },
-   "robinhood:0xb19f5a6e22f9057980b08ff05b7f5a6878ab0c8a": {
-    "key": "robinhood:0xb19f5a6e22f9057980b08ff05b7f5a6878ab0c8a",
-    "name": "snowball capital",
+   "ethereum:0xfe9a29ab92522d14fc65880d817214261d8479ae": {
+    "key": "ethereum:0xfe9a29ab92522d14fc65880d817214261d8479ae",
+    "name": "SnowSwap",
     "decimals": 18,
-    "symbol": "SNOWBALL",
-    "price": 0.0002279739276049636,
-    "address": "0xb19f5a6e22f9057980b08ff05b7f5a6878ab0c8a",
+    "symbol": "SNOW",
+    "price": 0.01982981081342594,
+    "address": "0xfe9a29ab92522d14fc65880d817214261d8479ae",
     "addresses": {
-     "robinhood": "0xb19f5a6e22f9057980b08ff05b7f5a6878ab0c8a"
+     "ethereum": "0xfe9a29ab92522d14fc65880d817214261d8479ae"
     },
     "platform": "basic",
-    "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-08T15:02:29.296Z",
+    "network": "ethereum",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-11-13T14:24:33.192Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 227973.9276049636,
+    "liquidity": 9914.905406712971,
     "image": "https://images.portals.fi/unknown-token.png",
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0.04"
+     "volumeUsd1d": "1.32",
+     "volumeUsd7d": "5.66"
     },
     "metadata": {},
-    "tokenId": "91eb52ec-1668-4dd4-a8b1-0b3ffe5fd396",
-    "totalSupply": "1000000000",
+    "tokenId": "1b208efe-f994-498b-81d9-7a0c2c8a76ae",
+    "totalSupply": "500000",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1597,30 +1733,30 @@
     "name": "Dinari SNOW",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 369.2,
+    "price": 259.48,
     "address": "0xb0e5552292b277f8a9b36326971553545bb55be5",
     "addresses": {
-     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
-     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
      "base": "0xb0e5552292b277f8a9b36326971553545bb55be5",
+     "ethereum": "0x3482968ed0e10bf7446706a6680e8a8f486f61b0",
+     "arbitrum": "0x1ae31840d492993a58baf558180b5ee83ce2f8ce",
      "avalanche": "0x636562a564d9a925f680c4a7008f4e39dd441f0b"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 6971.79,
+    "liquidity": 2972.44,
     "image": "https://coin-images.coingecko.com/coins/images/102174987/large/dinari-logo-green-with-margin.png?1785402804",
     "metrics": {
-     "volumeUsd1d": "25.675",
-     "volumeUsd7d": "179.725"
+     "volumeUsd1d": "1854.422",
+     "volumeUsd7d": "3841.282"
     },
     "metadata": {},
     "tokenId": "cf9cb516-1a4c-46ce-88d6-dc3f9042b5a9",
-    "totalSupply": "18.883359648",
-    "circulatingSupply": "18.883359648",
+    "totalSupply": "11.455552589",
+    "circulatingSupply": "11.455552589",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1640,19 +1776,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:42.173Z",
+    "updatedAt": "2026-11-21T14:12:38.786Z",
     "createdAt": "2026-09-08T14:42:57.115Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
     ],
-    "liquidity": 37032.935092334475,
+    "liquidity": 27894.25083761404,
     "metrics": {
-     "apy": "8.534",
-     "baseApy": "8.534",
-     "volumeUsd1d": "787.851",
-     "volumeUsd7d": "42825.215"
+     "apy": "10.335",
+     "baseApy": "10.335",
+     "volumeUsd1d": "718.656",
+     "volumeUsd7d": "6651.041"
     },
     "metadata": {
      "tags": [
@@ -1664,46 +1800,65 @@
     },
     "tokenId": "a66bf574-6c05-48f2-83db-a4723a34b6b5",
     "reserves": [
-     "3434.227819",
-     "110.961895914181140292"
+     "3882.586847",
+     "94.461590474297451668"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "ethereum:0x14f7f613351e97330beafa7bd79bdafb23a3a223": {
-    "key": "ethereum:0x14f7f613351e97330beafa7bd79bdafb23a3a223",
-    "name": "Frosty The Snowman",
-    "decimals": 9,
-    "symbol": "FROSTY",
-    "price": 2.4645395044309725e-07,
-    "address": "0x14f7f613351e97330beafa7bd79bdafb23a3a223",
+   "ethereum:0x91578b81cf77b1ea2e126d187826c9f88dac7423329dafa4e27d5ece8953834f": {
+    "key": "ethereum:0x91578b81cf77b1ea2e126d187826c9f88dac7423329dafa4e27d5ece8953834f",
+    "name": "Uniswap V4 LP SNOWon/HRC",
+    "decimals": 18,
+    "symbol": "SNOWON/HRC",
+    "price": 9007199254740990,
+    "address": "0x91578b81cf77b1ea2e126d187826c9f88dac7423329dafa4e27d5ece8953834f",
     "addresses": {
-     "ethereum": "0x14f7f613351e97330beafa7bd79bdafb23a3a223"
+     "ethereum": "0x91578b81cf77b1ea2e126d187826c9f88dac7423329dafa4e27d5ece8953834f"
     },
-    "platform": "basic",
+    "platform": "uniswap-v4",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2025-09-02T06:58:26.173Z",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68605/large/snowon_160x160.png?1756130024",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:21.496Z",
+    "createdAt": "2026-11-07T15:59:35.070Z",
     "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 1700.5322580573709,
-    "image": "https://images.portals.fi/unknown-token.png",
+    "tokens": [
+     "0x5d1a9a9b118ff19721e0111f094f2360b6ef7a2f",
+     "0x63db3eca126303755899a3436e34b174a1ef377b"
+    ],
+    "liquidity": 500.1769701287868,
     "metrics": {
-     "volumeUsd1d": "21.05",
-     "volumeUsd7d": "21.05"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
-    "metadata": {},
-    "tokenId": "17aade2d-d7aa-4f19-90e5-3787bc3ece72",
-    "totalSupply": "6900000000",
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19948,
+     "feePercentage": "99.7425"
+    },
+    "tokenId": "219f4499-723e-44aa-baea-fba0cdab83bf",
+    "reserves": [
+     "0",
+     "499.999999999999999752"
+    ],
     "isClaimed": false,
-    "isPortable": true
+    "isPortable": false
    },
    "robinhood:0xba0cab75495255d0cb58e22b648bfed4ecd1f47e": {
     "key": "robinhood:0xba0cab75495255d0cb58e22b648bfed4ecd1f47e",
     "name": "Snowflake • Robinhood Token",
     "decimals": 18,
     "symbol": "SNOW",
-    "price": 302.79499999999996,
+    "price": 254.195,
     "address": "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e",
     "addresses": {
      "robinhood": "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e"
@@ -1714,15 +1869,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xba0cab75495255d0cb58e22b648bfed4ecd1f47e.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:12:34.770Z",
     "createdAt": "2026-08-09T15:37:24.217Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xba0cab75495255d0cb58e22b648bfed4ecd1f47e",
-    "liquidity": 96201.17507109999,
+    "liquidity": 73412.685297,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "25797.031"
+     "volumeUsd7d": "-520.83"
     },
     "metadata": {
      "uid": "0x000000000000000000000000000000002087239447ce4fcb8c6194c8941d287c",
@@ -1752,7 +1907,7 @@
      }
     },
     "tokenId": "b01e3f6d-53b3-40db-b4b5-7d08a41bf4ca",
-    "totalSupply": "317.71058",
+    "totalSupply": "288.8046",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1761,22 +1916,22 @@
     "name": "Snowtomb",
     "decimals": 18,
     "symbol": "STOMB",
-    "price": 0.076228,
+    "price": 0.04265035,
     "address": "0x9e6832d13b29d0b1c1c3465242681039b31c7a05",
     "addresses": {
      "avalanche": "0x9e6832d13b29d0b1c1c3465242681039b31c7a05"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-10-12T14:08:09.479Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 18460.94,
+    "liquidity": 10329.02,
     "image": "https://assets.coingecko.com/coins/images/23304/large/200stomb.png?1696522522",
     "metrics": {
-     "volumeUsd1d": "7.743",
-     "volumeUsd7d": "54.201"
+     "volumeUsd1d": "12.469",
+     "volumeUsd7d": "157.059"
     },
     "metadata": {},
     "tokenId": "03bce157-2db8-4434-91ea-1c52259f5374",

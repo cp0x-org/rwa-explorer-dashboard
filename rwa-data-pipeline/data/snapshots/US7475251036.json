@@ -5,8 +5,8 @@
  "name": "Qualcomm",
  "isin": "US7475251036",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:17:28Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:13:02Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,35 +17,35 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 170.2292632331149,
-     "tokenized_market_cap": 6524683.034853771,
-     "tokenized_volume_24h": 2391332.79409166,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 154.3222153863148,
+     "tokenized_market_cap": 5363196.786227975,
+     "tokenized_volume_24h": 5256952.94841474,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 103,
    "asset_type": "stock",
-   "rwa_rank": 84,
+   "rwa_rank": 90,
    "has_tokens": true,
-   "average_tokenized_price": 170.2292632331149,
-   "tokenized_market_cap": 6524683.034853771,
-   "tokenized_volume_24h": 2391332.79409166,
-   "last_updated": "2026-10-18T20:13:44.451Z",
+   "average_tokenized_price": 154.3222153863148,
+   "tokenized_market_cap": 5363196.786227975,
+   "tokenized_volume_24h": 5256952.94841474,
+   "last_updated": "2026-11-21T14:10:11.203Z",
    "tokens": [
     {
      "symbol": "QCOMon",
      "name": "Qualcomm Tokenized Stock (Ondo)",
-     "price": 172.64308136901693,
+     "price": 156.94513658902898,
      "crypto_id": 38048,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 2541085.15,
-     "volume_24h": 879810.71898224
+     "market_cap": 2214476.4052425814,
+     "volume_24h": 924460.1642174337
     },
     {
      "symbol": "QCOM",
      "name": "Qualcomm (Derivatives)",
-     "price": 169.61482519006444,
+     "price": 154.14285361254133,
      "crypto_id": 39932,
      "issuer_id": "695e11f774b54210f3b95dc3",
      "issuer_name": "NA (Derivatives)",
@@ -55,32 +55,32 @@
     {
      "symbol": "rQCOM",
      "name": "Qualcomm Tokenized Stock (Reality)",
-     "price": 171.7659287688914,
+     "price": 153.73458147952925,
      "crypto_id": 40649,
      "issuer_id": "6a43600c282e7240b76c8bbb",
      "issuer_name": "Reality",
-     "market_cap": 510826.43,
-     "volume_24h": 0
+     "market_cap": 342603.7442463043,
+     "volume_24h": 568028.1331229844
     },
     {
      "symbol": "QCOM",
      "name": "Qualcomm Tokenized Stock (Robinhood)",
-     "price": 170.0774440038967,
+     "price": 153.78185828399558,
      "crypto_id": 40749,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 76051.69,
-     "volume_24h": 0
+     "market_cap": 32392.13698419554,
+     "volume_24h": 6508.962248839572
     },
     {
      "symbol": "QCOMB",
      "name": "Qualcomm Tokenized bStocks",
-     "price": 169.089900150021,
+     "price": 153.77690099423566,
      "crypto_id": 40792,
      "issuer_id": "6a2aed5097c45356b1a5f710",
      "issuer_name": "bStocks",
-     "market_cap": 2600181.46,
-     "volume_24h": 1494508.74668687
+     "market_cap": 2087567.4850214326,
+     "volume_24h": 3692045.738256964
     },
     {
      "symbol": "wQCOMx",
@@ -95,12 +95,22 @@
     {
      "symbol": "QCOMx",
      "name": "Qualcomm tokenized stock (xStock)",
-     "price": 169.33423823371302,
+     "price": 153.19718444859046,
      "crypto_id": 41907,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
-     "market_cap": 803352.01,
-     "volume_24h": 13209.80774846
+     "market_cap": 686157.0147340106,
+     "volume_24h": 65909.9505685329
+    },
+    {
+     "symbol": "QCOMc",
+     "name": "Qualcomm Incorporated Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42746,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
     }
    ],
    "tradfi_markets": [
@@ -407,6 +417,35 @@
       }
      }
     ]
+   },
+   "42746": {
+    "id": 42746,
+    "symbol": "QCOMc",
+    "name": "Qualcomm Incorporated Tokenized Stock (Coinbase)",
+    "slug": "qualcomm-incorporated-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42746.png",
+    "date_added": "2026-11-02T08:29:24.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB2000000000000000000005672D78eFF30D24665"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB2000000000000000000005672D78eFF30D24665",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -430,6 +469,7 @@
   "looked_up": [
    "arbitrum:0x2d73ed3b4f20bd8f9abe92786740ba79e9fa0ef6",
    "arbitrum:0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba",
+   "base:0xb2000000000000000000005672d78eff30d24665",
    "bsc:0x2d73ed3b4f20bd8f9abe92786740ba79e9fa0ef6",
    "bsc:0x5f7a56e877b9130608bf8be962621011182fefe1",
    "bsc:0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
@@ -443,7 +483,7 @@
     "name": "Qualcomm (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMON",
-    "price": 172.36,
+    "price": 156.98,
     "address": "0xe3419710c1f77d44b4dab02316d3f048818c4e59",
     "addresses": {
      "bsc": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
@@ -451,20 +491,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2537601,
+    "liquidity": 2215000,
     "image": "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020",
     "metrics": {
-     "volumeUsd1d": "496577.506",
-     "volumeUsd7d": "4792208.889"
+     "volumeUsd1d": "483831.561",
+     "volumeUsd7d": "3455448.69"
     },
     "metadata": {},
     "tokenId": "89f5c8a8-ee71-4678-81ca-06d9aaae711d",
-    "totalSupply": "14718.719880265318",
-    "circulatingSupply": "14718.719880265318",
+    "totalSupply": "14109.875930984288",
+    "circulatingSupply": "14109.875930984288",
     "isClaimed": false,
     "isPortable": true
    },
@@ -473,27 +513,27 @@
     "name": "Qualcomm (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMB",
-    "price": 170.15,
+    "price": 154.37,
     "address": "0x5f7a56e877b9130608bf8be962621011182fefe1",
     "addresses": {
      "bsc": "0x5f7a56e877b9130608bf8be962621011182fefe1"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-07-07T20:52:38.333Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2606632,
+    "liquidity": 2087552,
     "image": "https://coin-images.coingecko.com/coins/images/102174371/large/qcomb-bstocks.png?1783454170",
     "metrics": {
-     "volumeUsd1d": "752139.476",
-     "volumeUsd7d": "5903050.411"
+     "volumeUsd1d": "2112469.363",
+     "volumeUsd7d": "9025162.366"
     },
     "metadata": {},
     "tokenId": "937e3aff-b2f2-47be-9c6a-515a6d5236a1",
-    "totalSupply": "15319.229688520001",
-    "circulatingSupply": "15319.229688520001",
+    "totalSupply": "13522.96657526",
+    "circulatingSupply": "13522.96657526",
     "isClaimed": false,
     "isPortable": true
    },
@@ -502,27 +542,27 @@
     "name": "Qualcomm rStock",
     "decimals": 18,
     "symbol": "RQCOM",
-    "price": 171.83,
+    "price": 153.78,
     "address": "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba",
     "addresses": {
      "arbitrum": "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 511007,
+    "liquidity": 342710,
     "image": "https://coin-images.coingecko.com/coins/images/102177072/large/c1c122f53687c8345967e9ecba35c32a.png?1789116740",
     "metrics": {
-     "volumeUsd1d": "999.107",
-     "volumeUsd7d": "119039.111"
+     "volumeUsd1d": "568179.62",
+     "volumeUsd7d": "1584622.319"
     },
     "metadata": {},
     "tokenId": "52598a88-87a3-40a3-ba5b-76614c699f0d",
-    "totalSupply": "2973.9683387910004",
-    "circulatingSupply": "2973.9683387910004",
+    "totalSupply": "2228.540520612",
+    "circulatingSupply": "2228.540520612",
     "isClaimed": false,
     "isPortable": true
    },
@@ -531,7 +571,7 @@
     "name": "Qualcomm (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMON",
-    "price": 172.36,
+    "price": 156.98,
     "address": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
     "addresses": {
      "bsc": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
@@ -539,20 +579,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2537601,
+    "liquidity": 2215000,
     "image": "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020",
     "metrics": {
-     "volumeUsd1d": "496089.132",
-     "volumeUsd7d": "5211059.864"
+     "volumeUsd1d": "483569.561",
+     "volumeUsd7d": "3456221.38"
     },
     "metadata": {},
     "tokenId": "89f5c8a8-ee71-4678-81ca-06d9aaae711d",
-    "totalSupply": "14718.719880265318",
-    "circulatingSupply": "14718.719880265318",
+    "totalSupply": "14109.875930984288",
+    "circulatingSupply": "14109.875930984288",
     "isClaimed": false,
     "isPortable": true
    },
@@ -561,7 +601,7 @@
     "name": "Qualcomm • Robinhood Token",
     "decimals": 18,
     "symbol": "QCOM",
-    "price": 171.82576429342836,
+    "price": 153.24797647497098,
     "address": "0x0f17206447090e464c277571124dd2688e48aea9",
     "addresses": {
      "robinhood": "0x0f17206447090e464c277571124dd2688e48aea9"
@@ -572,15 +612,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x0f17206447090e464c277571124dd2688e48aea9.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:08:02.737Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x0f17206447090e464c277571124dd2688e48aea9",
-    "liquidity": 76739.21924182927,
+    "liquidity": 32240.08697856236,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "5696.659"
+     "volumeUsd1d": "1570.437",
+     "volumeUsd7d": "4806.685"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000ad4edb65cfed4b93a3f768502f7ac2b2",
@@ -610,20 +650,66 @@
      }
     },
     "tokenId": "27d7c513-5c19-4452-ac66-62ea391d6ee3",
-    "totalSupply": "446.61066725",
+    "totalSupply": "210.37854933",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "QCOM": {
-    "total_items": 18,
+    "total_items": 25,
     "pages": 1,
-    "received": 18,
+    "received": 25,
     "complete": true
    }
   },
   "records": {
+   "robinhood:0x24c309aa0a4885af68405479c70d68423ea04fc651b48b7c760847961aaf512d": {
+    "key": "robinhood:0x24c309aa0a4885af68405479c70d68423ea04fc651b48b7c760847961aaf512d",
+    "name": "Uniswap V4 LP QCOM/USDG",
+    "decimals": 18,
+    "symbol": "QCOM/USDG",
+    "price": 9007199254740990,
+    "address": "0x24c309aa0a4885af68405479c70d68423ea04fc651b48b7c760847961aaf512d",
+    "addresses": {
+     "robinhood": "0x24c309aa0a4885af68405479c70d68423ea04fc651b48b7c760847961aaf512d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:37.196Z",
+    "createdAt": "2026-11-04T15:56:04.902Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0f17206447090e464c277571124dd2688e48aea9",
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3"
+    ],
+    "liquidity": 50020.428434823094,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9914,
+     "feePercentage": "99.14"
+    },
+    "tokenId": "ba115e20-17d6-4f6a-9c48-beca57fbb9de",
+    "reserves": [
+     "0.169506644416730925",
+     "49999.999999999999999978"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x1ec37d7cc0056df643a61e1e9598e7c7116c2a8b50d1387adffbb557d5da0ca3": {
     "key": "ethereum:0x1ec37d7cc0056df643a61e1e9598e7c7116c2a8b50d1387adffbb557d5da0ca3",
     "name": "Uniswap V4 LP wUSDC/QCOMon",
@@ -641,14 +727,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020"
     ],
-    "updatedAt": "2026-10-18T20:12:49.150Z",
+    "updatedAt": "2026-11-21T14:10:55.068Z",
     "createdAt": "2026-09-28T10:37:10.901Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0xe3419710c1f77d44b4dab02316d3f048818c4e59"
     ],
-    "liquidity": 10019.63702076244,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -688,14 +774,14 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635"
     ],
-    "updatedAt": "2026-10-18T20:13:07.060Z",
+    "updatedAt": "2026-11-21T14:08:37.116Z",
     "createdAt": "2026-07-19T04:41:11.979Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 847.1764807400493,
+    "liquidity": 819.4788698823934,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -735,14 +821,14 @@
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:13:06.947Z",
+    "updatedAt": "2026-11-21T14:08:37.849Z",
     "createdAt": "2026-08-14T20:16:30.045Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x0ff7a742b035504118a9d435c8264619a8428e1c"
     ],
-    "liquidity": 10096.696526128102,
+    "liquidity": 9997.903174374389,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -770,7 +856,7 @@
     "name": "Qualcomm (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMON",
-    "price": 172.36,
+    "price": 156.98,
     "address": "0xe3419710c1f77d44b4dab02316d3f048818c4e59",
     "addresses": {
      "bsc": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
@@ -778,145 +864,97 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2537601,
+    "liquidity": 2215000,
     "image": "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020",
     "metrics": {
-     "volumeUsd1d": "496577.506",
-     "volumeUsd7d": "4792208.889"
+     "volumeUsd1d": "483831.561",
+     "volumeUsd7d": "3455448.69"
     },
     "metadata": {},
     "tokenId": "89f5c8a8-ee71-4678-81ca-06d9aaae711d",
-    "totalSupply": "14718.719880265318",
-    "circulatingSupply": "14718.719880265318",
+    "totalSupply": "14109.875930984288",
+    "circulatingSupply": "14109.875930984288",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x5ec1aa746355975d135b619c4058d47093229e9ec3ef6bbfb07b379f54e52e6d": {
+    "key": "robinhood:0x5ec1aa746355975d135b619c4058d47093229e9ec3ef6bbfb07b379f54e52e6d",
+    "name": "Uniswap V4 LP QCOM/USDG",
+    "decimals": 18,
+    "symbol": "QCOM/USDG",
+    "price": 9007199254740990,
+    "address": "0x5ec1aa746355975d135b619c4058d47093229e9ec3ef6bbfb07b379f54e52e6d",
+    "addresses": {
+     "robinhood": "0x5ec1aa746355975d135b619c4058d47093229e9ec3ef6bbfb07b379f54e52e6d"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+    ],
+    "updatedAt": "2026-11-21T14:08:38.054Z",
+    "createdAt": "2026-11-07T16:01:39.830Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0f17206447090e464c277571124dd2688e48aea9",
+     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    ],
+    "liquidity": 5952.258789989538,
+    "metrics": {
+     "apy": "78.952",
+     "baseApy": "78.952",
+     "volumeUsd1d": "343.668",
+     "volumeUsd7d": "1055.387"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 365,
+     "feePercentage": "3.7464"
+    },
+    "tokenId": "55a45e3e-0473-4759-98ad-388d195a6fb6",
+    "reserves": [
+     "38.840653879444088311",
+     "0.007178"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "bsc:0x5f7a56e877b9130608bf8be962621011182fefe1": {
     "key": "bsc:0x5f7a56e877b9130608bf8be962621011182fefe1",
     "name": "Qualcomm (bStocks Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMB",
-    "price": 170.15,
+    "price": 154.37,
     "address": "0x5f7a56e877b9130608bf8be962621011182fefe1",
     "addresses": {
      "bsc": "0x5f7a56e877b9130608bf8be962621011182fefe1"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-07-07T20:52:38.333Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2606632,
+    "liquidity": 2087552,
     "image": "https://coin-images.coingecko.com/coins/images/102174371/large/qcomb-bstocks.png?1783454170",
     "metrics": {
-     "volumeUsd1d": "752139.476",
-     "volumeUsd7d": "5903050.411"
+     "volumeUsd1d": "2112469.363",
+     "volumeUsd7d": "9025162.366"
     },
     "metadata": {},
     "tokenId": "937e3aff-b2f2-47be-9c6a-515a6d5236a1",
-    "totalSupply": "15319.229688520001",
-    "circulatingSupply": "15319.229688520001",
+    "totalSupply": "13522.96657526",
+    "circulatingSupply": "13522.96657526",
     "isClaimed": false,
     "isPortable": true
-   },
-   "robinhood:0x4efcc1ed4127a1feebe124d0d6663f045644f028a3882147fa94e7b9f51fb7e7": {
-    "key": "robinhood:0x4efcc1ed4127a1feebe124d0d6663f045644f028a3882147fa94e7b9f51fb7e7",
-    "name": "Uniswap V4 LP QCOM/MM",
-    "decimals": 18,
-    "symbol": "QCOM/MM",
-    "price": 9007199254740990,
-    "address": "0x4efcc1ed4127a1feebe124d0d6663f045644f028a3882147fa94e7b9f51fb7e7",
-    "addresses": {
-     "robinhood": "0x4efcc1ed4127a1feebe124d0d6663f045644f028a3882147fa94e7b9f51fb7e7"
-    },
-    "platform": "uniswap-v4",
-    "network": "robinhood",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:13:08.146Z",
-    "createdAt": "2026-08-14T14:53:45.183Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x0f17206447090e464c277571124dd2688e48aea9",
-     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
-    ],
-    "liquidity": 3830.0148015322825,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 9975,
-     "feePercentage": "99.7503"
-    },
-    "tokenId": "0a963867-9fd6-4440-a914-b796ae120842",
-    "reserves": [
-     "0.072066509398947995",
-     "3818.541928039306246417"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "robinhood:0x12acf07f77ff82917965dad7b14860777a17204beab9749a9283b92cb0194ee2": {
-    "key": "robinhood:0x12acf07f77ff82917965dad7b14860777a17204beab9749a9283b92cb0194ee2",
-    "name": "Uniswap V4 LP QCOM/USDG",
-    "decimals": 18,
-    "symbol": "QCOM/USDG",
-    "price": 9007199254740990,
-    "address": "0x12acf07f77ff82917965dad7b14860777a17204beab9749a9283b92cb0194ee2",
-    "addresses": {
-     "robinhood": "0x12acf07f77ff82917965dad7b14860777a17204beab9749a9283b92cb0194ee2"
-    },
-    "platform": "uniswap-v4",
-    "network": "robinhood",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
-     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
-    ],
-    "updatedAt": "2026-10-18T20:13:07.431Z",
-    "createdAt": "2026-09-08T14:36:20.723Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x0f17206447090e464c277571124dd2688e48aea9",
-     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
-    ],
-    "liquidity": 693.7420865491412,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "11.113"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 690,
-     "feePercentage": "6.9931"
-    },
-    "tokenId": "fa10590c-1db0-4bd5-b3d7-8ce4791db638",
-    "reserves": [
-     "2.789985166197081175",
-     "214.350753"
-    ],
-    "isClaimed": false,
-    "isPortable": false
    },
    "robinhood:0x106af997d180cf37a574c42c04179f267b9245cf221b1c57fb3e491137915de6": {
     "key": "robinhood:0x106af997d180cf37a574c42c04179f267b9245cf221b1c57fb3e491137915de6",
@@ -935,19 +973,19 @@
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:13:07.232Z",
+    "updatedAt": "2026-11-21T14:08:38.452Z",
     "createdAt": "2026-09-08T14:36:39.604Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 59647.33740366446,
+    "liquidity": 13684.484811574432,
     "metrics": {
-     "apy": "2.218",
-     "baseApy": "2.218",
-     "volumeUsd1d": "884.44",
-     "volumeUsd7d": "91681.752"
+     "apy": "64.229",
+     "baseApy": "64.229",
+     "volumeUsd1d": "5876.119",
+     "volumeUsd7d": "35999.582"
     },
     "metadata": {
      "tags": [
@@ -959,8 +997,8 @@
     },
     "tokenId": "c255f8bd-e3eb-487c-968d-1084782b3cef",
     "reserves": [
-     "317.538605598690258969",
-     "5086.023804"
+     "69.883918188789648048",
+     "2974.915761"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -970,55 +1008,55 @@
     "name": "Qualcomm rStock",
     "decimals": 18,
     "symbol": "RQCOM",
-    "price": 171.83,
+    "price": 153.78,
     "address": "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba",
     "addresses": {
      "arbitrum": "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 511007,
+    "liquidity": 342710,
     "image": "https://coin-images.coingecko.com/coins/images/102177072/large/c1c122f53687c8345967e9ecba35c32a.png?1789116740",
     "metrics": {
-     "volumeUsd1d": "999.107",
-     "volumeUsd7d": "119039.111"
+     "volumeUsd1d": "568179.62",
+     "volumeUsd7d": "1584622.319"
     },
     "metadata": {},
     "tokenId": "52598a88-87a3-40a3-ba5b-76614c699f0d",
-    "totalSupply": "2973.9683387910004",
-    "circulatingSupply": "2973.9683387910004",
+    "totalSupply": "2228.540520612",
+    "circulatingSupply": "2228.540520612",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0x15de3016e7361920e4c6ce65df166bd4ee3bbbf0e143cb42721178d55eea3698": {
-    "key": "ethereum:0x15de3016e7361920e4c6ce65df166bd4ee3bbbf0e143cb42721178d55eea3698",
-    "name": "Uniswap V4 LP EGP/QCOMon",
+   "arbitrum:0x36f47c77084a9bcf5c4ce4d548d58fb588b44cd0ece6e63705f4745b8060f7d7": {
+    "key": "arbitrum:0x36f47c77084a9bcf5c4ce4d548d58fb588b44cd0ece6e63705f4745b8060f7d7",
+    "name": "Uniswap V4 LP wUSDC/rQCOM",
     "decimals": 18,
-    "symbol": "EGP/QCOMON",
+    "symbol": "WUSDC/RQCOM",
     "price": 9007199254740990,
-    "address": "0x15de3016e7361920e4c6ce65df166bd4ee3bbbf0e143cb42721178d55eea3698",
+    "address": "0x36f47c77084a9bcf5c4ce4d548d58fb588b44cd0ece6e63705f4745b8060f7d7",
     "addresses": {
-     "ethereum": "0x15de3016e7361920e4c6ce65df166bd4ee3bbbf0e143cb42721178d55eea3698"
+     "arbitrum": "0x36f47c77084a9bcf5c4ce4d548d58fb588b44cd0ece6e63705f4745b8060f7d7"
     },
     "platform": "uniswap-v4",
-    "network": "ethereum",
+    "network": "arbitrum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020"
+     "https://coin-images.coingecko.com/coins/images/102177072/large/c1c122f53687c8345967e9ecba35c32a.png?1789116740"
     ],
-    "updatedAt": "2026-10-18T20:12:51.549Z",
-    "createdAt": "2026-10-14T06:54:25.448Z",
+    "updatedAt": "2026-11-21T14:09:35.981Z",
+    "createdAt": "2026-11-14T12:28:23.953Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0xe3419710c1f77d44b4dab02316d3f048818c4e59"
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba"
     ],
-    "liquidity": 20058.96969037021,
+    "liquidity": 11895.980278181574,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1030,13 +1068,152 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "97.09"
+     "tickSpacing": 60,
+     "feePercentage": "90"
     },
-    "tokenId": "4b555041-12b6-4427-8f5f-06e169b1ae0d",
+    "tokenId": "8af96c45-d2a6-4f15-b024-610db2434212",
     "reserves": [
-     "19999.999999999999999992",
-     "0.158052888956100329"
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x4dad2eb876ac1e746e5dd3e29c9d41568d6f395334dabec1fbe42e97e778b37a": {
+    "key": "robinhood:0x4dad2eb876ac1e746e5dd3e29c9d41568d6f395334dabec1fbe42e97e778b37a",
+    "name": "Uniswap V4 LP QCOM/OLQD",
+    "decimals": 18,
+    "symbol": "QCOM/OLQD",
+    "price": 9007199254740990,
+    "address": "0x4dad2eb876ac1e746e5dd3e29c9d41568d6f395334dabec1fbe42e97e778b37a",
+    "addresses": {
+     "robinhood": "0x4dad2eb876ac1e746e5dd3e29c9d41568d6f395334dabec1fbe42e97e778b37a"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:38.147Z",
+    "createdAt": "2026-11-06T15:59:40.820Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0f17206447090e464c277571124dd2688e48aea9",
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
+    ],
+    "liquidity": 9997.519258175022,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19763,
+     "feePercentage": "98.8182"
+    },
+    "tokenId": "99c996c6-9862-40ad-a589-6d9376bd582d",
+    "reserves": [
+     "0.0006243894621409",
+     "9999.999999987268253345"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "bsc:0x3400f9acef48285f617cb77c7b22ced54a3913dd7f48b86d6ac1c8dbe2d08501": {
+    "key": "bsc:0x3400f9acef48285f617cb77c7b22ced54a3913dd7f48b86d6ac1c8dbe2d08501",
+    "name": "Uniswap V4 LP USDT/QCOMB",
+    "decimals": 18,
+    "symbol": "USDT/QCOMB",
+    "price": 9007199254740990,
+    "address": "0x3400f9acef48285f617cb77c7b22ced54a3913dd7f48b86d6ac1c8dbe2d08501",
+    "addresses": {
+     "bsc": "0x3400f9acef48285f617cb77c7b22ced54a3913dd7f48b86d6ac1c8dbe2d08501"
+    },
+    "platform": "uniswap-v4",
+    "network": "bsc",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/35021/large/USDT.png?1707233575",
+     "https://coin-images.coingecko.com/coins/images/102174371/large/qcomb-bstocks.png?1783454170"
+    ],
+    "updatedAt": "2026-11-21T14:08:41.225Z",
+    "createdAt": "2026-08-03T16:54:24.740Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x55d398326f99059ff775485246999027b3197955",
+     "0x5f7a56e877b9130608bf8be962621011182fefe1"
+    ],
+    "liquidity": 743.4256333604435,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 8000,
+     "feePercentage": "80.02"
+    },
+    "tokenId": "f2744da4-c66e-416e-af58-725d03895ef9",
+    "reserves": [
+     "366.331302848250436255",
+     "2.444898683471493166"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x6a3b4c48cb63c4b4a054627fcd0929784827b80b023dfe4910edcb6c744000b2": {
+    "key": "robinhood:0x6a3b4c48cb63c4b4a054627fcd0929784827b80b023dfe4910edcb6c744000b2",
+    "name": "Uniswap V4 LP QCOM/wUSDG",
+    "decimals": 18,
+    "symbol": "QCOM/WUSDG",
+    "price": 9007199254740990,
+    "address": "0x6a3b4c48cb63c4b4a054627fcd0929784827b80b023dfe4910edcb6c744000b2",
+    "addresses": {
+     "robinhood": "0x6a3b4c48cb63c4b4a054627fcd0929784827b80b023dfe4910edcb6c744000b2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:38.486Z",
+    "createdAt": "2026-11-06T15:59:38.365Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0f17206447090e464c277571124dd2688e48aea9",
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c"
+    ],
+    "liquidity": 9997.903175241787,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "65838464-212a-47e4-ac56-815bcc296016",
+    "reserves": [
+     "0",
+     "10000"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1058,14 +1235,14 @@
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:13:08.086Z",
+    "updatedAt": "2026-11-21T14:08:38.563Z",
     "createdAt": "2026-09-16T03:59:03.379Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 660.7714623105289,
+    "liquidity": 596.6516239317924,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1088,6 +1265,100 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "ethereum:0xd10dc25732cac322d04e90f946e529a78a995af397193f9650e1b4b3367ba4b5": {
+    "key": "ethereum:0xd10dc25732cac322d04e90f946e529a78a995af397193f9650e1b4b3367ba4b5",
+    "name": "Uniswap V4 LP wUSDC/QCOMon",
+    "decimals": 18,
+    "symbol": "WUSDC/QCOMON",
+    "price": 9007199254740990,
+    "address": "0xd10dc25732cac322d04e90f946e529a78a995af397193f9650e1b4b3367ba4b5",
+    "addresses": {
+     "ethereum": "0xd10dc25732cac322d04e90f946e529a78a995af397193f9650e1b4b3367ba4b5"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020"
+    ],
+    "updatedAt": "2026-11-21T14:08:20.063Z",
+    "createdAt": "2026-11-07T15:59:35.511Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0xe3419710c1f77d44b4dab02316d3f048818c4e59"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "cbe85ba1-b7a6-4b45-a73b-98c2d3757d11",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x6466805bc964d7fb7d9b4a91a7538ff161bc74f451e95949cdac9797174e2416": {
+    "key": "arbitrum:0x6466805bc964d7fb7d9b4a91a7538ff161bc74f451e95949cdac9797174e2416",
+    "name": "Uniswap V4 LP wUSDC/rQCOM",
+    "decimals": 18,
+    "symbol": "WUSDC/RQCOM",
+    "price": 9007199254740990,
+    "address": "0x6466805bc964d7fb7d9b4a91a7538ff161bc74f451e95949cdac9797174e2416",
+    "addresses": {
+     "arbitrum": "0x6466805bc964d7fb7d9b4a91a7538ff161bc74f451e95949cdac9797174e2416"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177072/large/c1c122f53687c8345967e9ecba35c32a.png?1789116740"
+    ],
+    "updatedAt": "2026-11-21T14:09:36.913Z",
+    "createdAt": "2026-11-14T12:28:23.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba"
+    ],
+    "liquidity": 3568.7940834544725,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "56209614-2b14-4b01-8c53-b592d058d21a",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "robinhood:0x4a05a03123572a54a046ead54e288509268969efb9baa5bd769aeedaca67c9b7": {
     "key": "robinhood:0x4a05a03123572a54a046ead54e288509268969efb9baa5bd769aeedaca67c9b7",
     "name": "Uniswap V4 LP QCOM/OLQD",
@@ -1105,14 +1376,14 @@
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:13:08.457Z",
+    "updatedAt": "2026-11-21T14:08:38.990Z",
     "createdAt": "2026-08-14T05:16:26.485Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x627a3240d8aa299bc7b621112c9613c61afd8a09"
     ],
-    "liquidity": 945.614875152512,
+    "liquidity": 944.3910444136968,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1152,19 +1423,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635"
     ],
-    "updatedAt": "2026-10-18T20:13:08.271Z",
+    "updatedAt": "2026-11-21T14:08:38.732Z",
     "createdAt": "2026-07-23T21:06:52.949Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x0f17206447090e464c277571124dd2688e48aea9"
     ],
-    "liquidity": 1955.428667730438,
+    "liquidity": 1303.6974134318286,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "15.434"
+     "volumeUsd7d": "18.585"
     },
     "metadata": {
      "tags": [
@@ -1176,55 +1447,8 @@
     },
     "tokenId": "0b6625e1-e610-4926-b6c6-a00256b2297a",
     "reserves": [
-     "0.414690133549725132",
-     "5.741383519824344041"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "robinhood:0x60f2dfb0ad83add505637b26e4b14568af837b5803708a09ee98297743ddbb7b": {
-    "key": "robinhood:0x60f2dfb0ad83add505637b26e4b14568af837b5803708a09ee98297743ddbb7b",
-    "name": "Uniswap V4 LP QCOM/USDG",
-    "decimals": 18,
-    "symbol": "QCOM/USDG",
-    "price": 9007199254740990,
-    "address": "0x60f2dfb0ad83add505637b26e4b14568af837b5803708a09ee98297743ddbb7b",
-    "addresses": {
-     "robinhood": "0x60f2dfb0ad83add505637b26e4b14568af837b5803708a09ee98297743ddbb7b"
-    },
-    "platform": "uniswap-v4",
-    "network": "robinhood",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
-     "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635"
-    ],
-    "updatedAt": "2026-10-18T20:13:08.479Z",
-    "createdAt": "2026-10-09T07:28:36.194Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x0f17206447090e464c277571124dd2688e48aea9",
-     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
-    ],
-    "liquidity": 6563.979246331638,
-    "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 385,
-     "feePercentage": "3.85"
-    },
-    "tokenId": "09b51d36-c2c6-42fa-b072-bb89bc3e6a94",
-    "reserves": [
-     "37.479056681710548646",
-     "124.111687"
+     "0.372515008322181913",
+     "4.364250999147126937"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1234,7 +1458,7 @@
     "name": "Qualcomm (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "QCOMON",
-    "price": 172.36,
+    "price": 156.98,
     "address": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
     "addresses": {
      "bsc": "0xfbd4d681c92ead6af0e49950c8b2e47eeacbb2db",
@@ -1242,20 +1466,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:12:19.608Z",
+    "updatedAt": "2026-11-21T14:10:27.519Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 2537601,
+    "liquidity": 2215000,
     "image": "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020",
     "metrics": {
-     "volumeUsd1d": "496089.132",
-     "volumeUsd7d": "5211059.864"
+     "volumeUsd1d": "483569.561",
+     "volumeUsd7d": "3456221.38"
     },
     "metadata": {},
     "tokenId": "89f5c8a8-ee71-4678-81ca-06d9aaae711d",
-    "totalSupply": "14718.719880265318",
-    "circulatingSupply": "14718.719880265318",
+    "totalSupply": "14109.875930984288",
+    "circulatingSupply": "14109.875930984288",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1276,19 +1500,19 @@
      "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:13:08.804Z",
+    "updatedAt": "2026-11-21T14:08:39.661Z",
     "createdAt": "2026-09-09T07:57:18.143Z",
     "verifiedAt": null,
     "tokens": [
      "0x0f17206447090e464c277571124dd2688e48aea9",
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
     ],
-    "liquidity": 12273.371713076747,
+    "liquidity": 8355.519283807238,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0"
+     "apy": "0.606",
+     "baseApy": "0.606",
+     "volumeUsd1d": "2.723",
+     "volumeUsd7d": "3.881"
     },
     "metadata": {
      "tags": [
@@ -1300,37 +1524,37 @@
     },
     "tokenId": "2d21f4b3-24e8-4fb3-912a-73ebb5bbf6dd",
     "reserves": [
-     "50.387958753912428758",
-     "3615.422189"
+     "31.013699437548405074",
+     "3602.732602"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "robinhood:0x96fd2b0b749446dced37f8b7982d99bbefdf431971ccaf3e1018f97db7169cfe": {
-    "key": "robinhood:0x96fd2b0b749446dced37f8b7982d99bbefdf431971ccaf3e1018f97db7169cfe",
-    "name": "Uniswap V4 LP QCOM/MM",
+   "ethereum:0x7bb77515f7efff4946510c213f9426913eed3939e9024c95a774c30892ba5e4b": {
+    "key": "ethereum:0x7bb77515f7efff4946510c213f9426913eed3939e9024c95a774c30892ba5e4b",
+    "name": "Uniswap V4 LP HRC/QCOMon",
     "decimals": 18,
-    "symbol": "QCOM/MM",
+    "symbol": "HRC/QCOMON",
     "price": 9007199254740990,
-    "address": "0x96fd2b0b749446dced37f8b7982d99bbefdf431971ccaf3e1018f97db7169cfe",
+    "address": "0x7bb77515f7efff4946510c213f9426913eed3939e9024c95a774c30892ba5e4b",
     "addresses": {
-     "robinhood": "0x96fd2b0b749446dced37f8b7982d99bbefdf431971ccaf3e1018f97db7169cfe"
+     "ethereum": "0x7bb77515f7efff4946510c213f9426913eed3939e9024c95a774c30892ba5e4b"
     },
     "platform": "uniswap-v4",
-    "network": "robinhood",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/102174137/large/0x0f17206447090e464c277571124dd2688e48aea9.png?1782444635",
-     "https://images.portals.fi/unknown-token.png"
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020"
     ],
-    "updatedAt": "2026-10-18T20:13:08.890Z",
-    "createdAt": "2026-08-14T14:53:47.760Z",
+    "updatedAt": "2026-11-21T14:08:26.601Z",
+    "createdAt": "2026-11-07T15:59:34.379Z",
     "verifiedAt": null,
     "tokens": [
-     "0x0f17206447090e464c277571124dd2688e48aea9",
-     "0x835f8dc4de4684ee10dd0fb1e1656b6e065ba104"
+     "0x63db3eca126303755899a3436e34b174a1ef377b",
+     "0xe3419710c1f77d44b4dab02316d3f048818c4e59"
     ],
-    "liquidity": 20095.232547708685,
+    "liquidity": 50017.69701287868,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1342,13 +1566,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 9933,
-     "feePercentage": "99.33"
+     "tickSpacing": 19749,
+     "feePercentage": "98.7493"
     },
-    "tokenId": "6ec76b95-c81c-4765-b38e-775916a8abe3",
+    "tokenId": "cd195603-3eef-4a4b-b564-d623e0046a23",
     "reserves": [
-     "0.000131797948028066",
-     "20099.999999999883622111"
+     "49999.999999999999999901",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1358,7 +1582,7 @@
     "name": "Qualcomm • Robinhood Token",
     "decimals": 18,
     "symbol": "QCOM",
-    "price": 171.82576429342836,
+    "price": 153.24797647497098,
     "address": "0x0f17206447090e464c277571124dd2688e48aea9",
     "addresses": {
      "robinhood": "0x0f17206447090e464c277571124dd2688e48aea9"
@@ -1369,15 +1593,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x0f17206447090e464c277571124dd2688e48aea9.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:08:02.737Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x0f17206447090e464c277571124dd2688e48aea9",
-    "liquidity": 76739.21924182927,
+    "liquidity": 32240.08697856236,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "5696.659"
+     "volumeUsd1d": "1570.437",
+     "volumeUsd7d": "4806.685"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000ad4edb65cfed4b93a3f768502f7ac2b2",
@@ -1407,9 +1631,149 @@
      }
     },
     "tokenId": "27d7c513-5c19-4452-ac66-62ea391d6ee3",
-    "totalSupply": "446.61066725",
+    "totalSupply": "210.37854933",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x406c57e697448666a90272d3f5fb2c72e9dfc8a376b5cbe75805e1fd0f53ba93": {
+    "key": "robinhood:0x406c57e697448666a90272d3f5fb2c72e9dfc8a376b5cbe75805e1fd0f53ba93",
+    "name": "Uniswap V4 LP QCOM/MJDQ",
+    "decimals": 18,
+    "symbol": "QCOM/MJDQ",
+    "price": 9007199254740990,
+    "address": "0x406c57e697448666a90272d3f5fb2c72e9dfc8a376b5cbe75805e1fd0f53ba93",
+    "addresses": {
+     "robinhood": "0x406c57e697448666a90272d3f5fb2c72e9dfc8a376b5cbe75805e1fd0f53ba93"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:08:39.792Z",
+    "createdAt": "2026-11-11T13:21:22.985Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0f17206447090e464c277571124dd2688e48aea9",
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7"
+    ],
+    "liquidity": 9998.891482705205,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19970,
+     "feePercentage": "99.852"
+    },
+    "tokenId": "2ab48549-5f44-4f8c-ac67-dfd8006c7ecc",
+    "reserves": [
+     "0.000566495456880134",
+     "9999.999999987259999964"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x2067584beb6158474584a6e3245cbe38efdea410b7e57efc0af8565d4888f6b1": {
+    "key": "arbitrum:0x2067584beb6158474584a6e3245cbe38efdea410b7e57efc0af8565d4888f6b1",
+    "name": "Uniswap V4 LP wUSDC/rQCOM",
+    "decimals": 18,
+    "symbol": "WUSDC/RQCOM",
+    "price": 9007199254740990,
+    "address": "0x2067584beb6158474584a6e3245cbe38efdea410b7e57efc0af8565d4888f6b1",
+    "addresses": {
+     "arbitrum": "0x2067584beb6158474584a6e3245cbe38efdea410b7e57efc0af8565d4888f6b1"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177072/large/c1c122f53687c8345967e9ecba35c32a.png?1789116740"
+    ],
+    "updatedAt": "2026-11-21T14:06:45.473Z",
+    "createdAt": "2026-11-14T12:28:21.580Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x9382ed4f9024ee0dd3d48fbd474b2735b8e2dbba"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "485aea47-f1ba-4d60-94bb-232f51e189f3",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xd2adc12622921073050c0e1356ffa07418e0fd6f35a5cd575a2cbae291a6960f": {
+    "key": "ethereum:0xd2adc12622921073050c0e1356ffa07418e0fd6f35a5cd575a2cbae291a6960f",
+    "name": "Uniswap V4 LP EE/QCOMon",
+    "decimals": 18,
+    "symbol": "EE/QCOMON",
+    "price": 9007199254740990,
+    "address": "0xd2adc12622921073050c0e1356ffa07418e0fd6f35a5cd575a2cbae291a6960f",
+    "addresses": {
+     "ethereum": "0xd2adc12622921073050c0e1356ffa07418e0fd6f35a5cd575a2cbae291a6960f"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/68563/large/qcomon_160x160.png?1756106020"
+    ],
+    "updatedAt": "2026-11-21T14:08:29.050Z",
+    "createdAt": "2026-11-07T15:59:35.511Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0xe3419710c1f77d44b4dab02316d3f048818c4e59"
+    ],
+    "liquidity": 50030.067346883465,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9984,
+     "feePercentage": "99.8441"
+    },
+    "tokenId": "825603cc-2e52-46b5-8567-ecbb2cd06c57",
+    "reserves": [
+     "49999.999999999999999966",
+     "0.16482810340110367"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    }
   }
  }

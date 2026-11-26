@@ -5,8 +5,8 @@
  "name": "Pfizer",
  "isin": "US7170811035",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:17:59Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:13:33Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,20 +17,20 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 29.47,
-     "tokenized_market_cap": 4113198.81429649,
-     "tokenized_volume_24h": 887.9888612,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 27.2944444811395,
+     "tokenized_market_cap": 385224.5675599185,
+     "tokenized_volume_24h": 326350.22029255,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 92,
    "asset_type": "stock",
-   "rwa_rank": 97,
+   "rwa_rank": 98,
    "has_tokens": true,
-   "average_tokenized_price": 29.47,
-   "tokenized_market_cap": 4113198.81429649,
-   "tokenized_volume_24h": 887.9888612,
-   "last_updated": "2026-10-18T20:13:39.203Z",
+   "average_tokenized_price": 27.2944444811395,
+   "tokenized_market_cap": 385224.5675599185,
+   "tokenized_volume_24h": 326350.22029255,
+   "last_updated": "2026-11-21T14:10:11.194Z",
    "tokens": [
     {
      "symbol": "PFE.D",
@@ -45,22 +45,22 @@
     {
      "symbol": "PFEon",
      "name": "Pfizer Tokenized Stock (Ondo)",
-     "price": 31.332821835648403,
+     "price": 29.40479334674506,
      "crypto_id": 38000,
      "issuer_id": "688ca4ccabae9b5b9fb3167a",
      "issuer_name": "Ondo Assets",
-     "market_cap": 3759374.99,
-     "volume_24h": 0
+     "market_cap": 48721.41407695901,
+     "volume_24h": 475.9963763989396
     },
     {
      "symbol": "PFEX",
      "name": "Pfizer tokenized stock (xStock)",
-     "price": 29.47,
+     "price": 27.291361947022814,
      "crypto_id": 37063,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
-     "market_cap": 352412.25,
-     "volume_24h": 887.9888612
+     "market_cap": 336503.1534829709,
+     "volume_24h": 325874.22391614557
     },
     {
      "symbol": "WPFEX",
@@ -75,11 +75,21 @@
     {
      "symbol": "PFEc",
      "name": "Pfizer Inc Tokenized Stock (Coinbase)",
-     "price": 143.07060085674166,
+     "price": null,
      "crypto_id": 42456,
      "issuer_id": "6a72fe7072996604d45c6733",
      "issuer_name": "Coinbase",
-     "market_cap": 1411.57,
+     "market_cap": 1412.39,
+     "volume_24h": 0
+    },
+    {
+     "symbol": "PFE",
+     "name": "Pfizer Inc (Derivative)",
+     "price": 27.505411105716988,
+     "crypto_id": 42699,
+     "issuer_id": "695e11f774b54210f3b95dc3",
+     "issuer_name": "NA (Derivatives)",
+     "market_cap": 0,
      "volume_24h": 0
     }
    ],
@@ -336,6 +346,16 @@
       }
      }
     ]
+   },
+   "42699": {
+    "id": 42699,
+    "symbol": "PFE",
+    "name": "Pfizer Inc (Derivative)",
+    "slug": "pfizer-inc-derivative",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42699.png",
+    "date_added": "2026-10-29T11:02:46.000Z",
+    "platform": null,
+    "contract_address": null
    }
   },
   "invalid_ids": []
@@ -372,7 +392,7 @@
     "name": "Pfizer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "PFEON",
-    "price": 31.28,
+    "price": 29.43,
     "address": "0x8a83c31d6751833b4940b6e871c48d9a15a07b46",
     "addresses": {
      "ethereum": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
@@ -380,20 +400,20 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 3753125,
+    "liquidity": 48760,
     "image": "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
     "metrics": {
-     "volumeUsd1d": "5.509",
-     "volumeUsd7d": "3551.833"
+     "volumeUsd1d": "476.198",
+     "volumeUsd7d": "3498018.155"
     },
     "metadata": {},
     "tokenId": "48604bdb-55a0-400f-8efc-06f6cc3a8945",
-    "totalSupply": "119982.0116075802",
-    "circulatingSupply": "119982.0116075802",
+    "totalSupply": "1656.9208122781174",
+    "circulatingSupply": "1656.9208122781174",
     "isClaimed": false,
     "isPortable": true
    },
@@ -402,7 +422,7 @@
     "name": "Pfizer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "PFEON",
-    "price": 31.28,
+    "price": 29.43,
     "address": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
     "addresses": {
      "ethereum": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
@@ -410,20 +430,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 3753125,
+    "liquidity": 48760,
     "image": "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
     "metrics": {
-     "volumeUsd1d": "5.509",
-     "volumeUsd7d": "3557.987"
+     "volumeUsd1d": "475.768",
+     "volumeUsd7d": "3509254.109"
     },
     "metadata": {},
     "tokenId": "48604bdb-55a0-400f-8efc-06f6cc3a8945",
-    "totalSupply": "119982.0116075802",
-    "circulatingSupply": "119982.0116075802",
+    "totalSupply": "1656.9208122781174",
+    "circulatingSupply": "1656.9208122781174",
     "isClaimed": false,
     "isPortable": true
    },
@@ -432,18 +452,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.29,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "bsc": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "updatedAt": "2026-11-21T14:10:08.548Z",
     "createdAt": "2025-07-11T10:30:09.107Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7016597.20988488,
+    "liquidity": 6736728.61216318,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -458,7 +478,7 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "0acbeffd-b062-4232-a68f-c942712d4ed3",
-    "totalSupply": "244395.583764711943134161",
+    "totalSupply": "246857.039654202238723647",
     "isClaimed": false,
     "isPortable": true
    },
@@ -467,18 +487,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.29,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "arbitrum": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:15:48.287Z",
+    "updatedAt": "2026-11-21T14:09:34.354Z",
     "createdAt": "2025-05-10T10:17:53.793Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 10922041.41836369,
+    "liquidity": 10486397.711794715,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -493,7 +513,7 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "865b06f9-8005-453f-8984-39a2386c9345",
-    "totalSupply": "380426.381691525260695291",
+    "totalSupply": "384257.886104606616697308",
     "isClaimed": false,
     "isPortable": true
    },
@@ -502,30 +522,30 @@
     "name": "Dinari PFE dShares",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.63,
+    "price": 27.47,
     "address": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
     "addresses": {
      "ethereum": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
-     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
      "avalanche": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
-     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd"
+     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
+     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-11-15T14:42:09.718Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21129,
+    "liquidity": 20283,
     "image": "https://coin-images.coingecko.com/coins/images/102174915/large/dinari-logo-green-with-margin.png?1785402549",
     "metrics": {
-     "volumeUsd1d": "1.002",
-     "volumeUsd7d": "591.062"
+     "volumeUsd1d": "381.843",
+     "volumeUsd7d": "983.006"
     },
     "metadata": {},
     "tokenId": "844c92f9-f486-4488-9a50-e7377e170176",
-    "totalSupply": "713.178171477347",
-    "circulatingSupply": "713.178171477347",
+    "totalSupply": "738.4741289476909",
+    "circulatingSupply": "738.4741289476909",
     "isClaimed": false,
     "isPortable": true
    },
@@ -534,18 +554,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.27,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "ethereum": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:46.451Z",
+    "updatedAt": "2026-11-21T14:09:26.344Z",
     "createdAt": "2025-08-14T11:44:26.097Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 12001193.741905138,
+    "liquidity": 11514061.768317277,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -560,16 +580,16 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "6a98f370-2251-4994-81be-ec9b6d35686d",
-    "totalSupply": "418014.41107297590581639",
+    "totalSupply": "422224.487287028834963747",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "PFE": {
-    "total_items": 29,
+    "total_items": 38,
     "pages": 1,
-    "received": 29,
+    "received": 38,
     "complete": true
    }
   },
@@ -579,7 +599,7 @@
     "name": "Pfizer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "PFEON",
-    "price": 31.28,
+    "price": 29.43,
     "address": "0x8a83c31d6751833b4940b6e871c48d9a15a07b46",
     "addresses": {
      "ethereum": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
@@ -587,22 +607,68 @@
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-10-15T12:49:32.599Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 3753125,
+    "liquidity": 48760,
     "image": "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
     "metrics": {
-     "volumeUsd1d": "5.509",
-     "volumeUsd7d": "3551.833"
+     "volumeUsd1d": "476.198",
+     "volumeUsd7d": "3498018.155"
     },
     "metadata": {},
     "tokenId": "48604bdb-55a0-400f-8efc-06f6cc3a8945",
-    "totalSupply": "119982.0116075802",
-    "circulatingSupply": "119982.0116075802",
+    "totalSupply": "1656.9208122781174",
+    "circulatingSupply": "1656.9208122781174",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x04e18f57fe42989387024cca5d8750a155df50c167ffeabc1ac9ef6c4a57d5e1": {
+    "key": "robinhood:0x04e18f57fe42989387024cca5d8750a155df50c167ffeabc1ac9ef6c4a57d5e1",
+    "name": "Uniswap V4 LP wUSDG/PFE",
+    "decimals": 18,
+    "symbol": "WUSDG/PFE",
+    "price": 9007199254740990,
+    "address": "0x04e18f57fe42989387024cca5d8750a155df50c167ffeabc1ac9ef6c4a57d5e1",
+    "addresses": {
+     "robinhood": "0x04e18f57fe42989387024cca5d8750a155df50c167ffeabc1ac9ef6c4a57d5e1"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.099Z",
+    "createdAt": "2026-11-06T15:59:35.523Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+    ],
+    "liquidity": 9998.161904338996,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "0f1438c3-4e49-40e9-b250-6963e0c018e1",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0xea3df09de366160b67dd0a8c6f178bfc3c06f6a5f411f88e9b8aa73231d5c9dd": {
     "key": "robinhood:0xea3df09de366160b67dd0a8c6f178bfc3c06f6a5f411f88e9b8aa73231d5c9dd",
@@ -620,19 +686,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
     ],
-    "updatedAt": "2026-10-18T20:15:38.820Z",
+    "updatedAt": "2026-11-21T14:12:36.125Z",
     "createdAt": "2026-09-09T08:13:47.368Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 12351.438354063033,
+    "liquidity": 7820.544683735193,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "5118.499"
+     "apy": "42.205",
+     "baseApy": "42.205",
+     "volumeUsd1d": "175.57",
+     "volumeUsd7d": "200.011"
     },
     "metadata": {
      "tags": [
@@ -644,8 +710,101 @@
     },
     "tokenId": "34c1891b-dd25-42a2-a998-637dd0e1c7c8",
     "reserves": [
-     "2.882828640030637423",
-     "189.308089651386081477"
+     "3.270072048029982389",
+     "81.504792958958399508"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xebc80a0256f1f5a3d819d48b59f45f0f2a6bdda4948d5f6e21ec6813ffbe2430": {
+    "key": "arbitrum:0xebc80a0256f1f5a3d819d48b59f45f0f2a6bdda4948d5f6e21ec6813ffbe2430",
+    "name": "Uniswap V4 LP wUSDC/rPFE",
+    "decimals": 18,
+    "symbol": "WUSDC/RPFE",
+    "price": 9007199254740990,
+    "address": "0xebc80a0256f1f5a3d819d48b59f45f0f2a6bdda4948d5f6e21ec6813ffbe2430",
+    "addresses": {
+     "arbitrum": "0xebc80a0256f1f5a3d819d48b59f45f0f2a6bdda4948d5f6e21ec6813ffbe2430"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177356/large/PFE.png?1789117648"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.267Z",
+    "createdAt": "2026-11-14T12:28:24.987Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xd862585a025e1db5116306aae7aaf2e6376615f2"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "6347859d-07de-4de6-8dd9-ba233e0fa850",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x4c6357bef48b8d48c9fb0dde4879ecc6889314b5a105c007846de61f687c65be": {
+    "key": "ethereum:0x4c6357bef48b8d48c9fb0dde4879ecc6889314b5a105c007846de61f687c65be",
+    "name": "Uniswap V4 LP PFEx/wUSDC",
+    "decimals": 18,
+    "symbol": "PFEX/WUSDC",
+    "price": 9007199254740990,
+    "address": "0x4c6357bef48b8d48c9fb0dde4879ecc6889314b5a105c007846de61f687c65be",
+    "addresses": {
+     "ethereum": "0x4c6357bef48b8d48c9fb0dde4879ecc6889314b5a105c007846de61f687c65be"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:10:55.233Z",
+    "createdAt": "2026-11-19T19:32:40.536Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "97e07c73-666e-41c0-b964-517a65e463a5",
+    "reserves": [
+     "0",
+     "10000"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -666,19 +825,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:14.174Z",
+    "updatedAt": "2026-11-21T14:12:35.269Z",
     "createdAt": "2026-09-08T09:34:47.871Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 39176.63399718786,
+    "liquidity": 11238.976664616206,
     "metrics": {
-     "apy": "7.841",
-     "baseApy": "7.841",
-     "volumeUsd1d": "2805.397",
-     "volumeUsd7d": "87015.883"
+     "apy": "25.691",
+     "baseApy": "25.691",
+     "volumeUsd1d": "2636.952",
+     "volumeUsd7d": "17347.183"
     },
     "metadata": {
      "tags": [
@@ -688,8 +847,147 @@
     },
     "tokenId": "162d0df2-c9da-4114-b16f-fd7c29d76b97",
     "reserves": [
-     "25003.200472",
-     "477.300337605248677431"
+     "2716.789169",
+     "305.02109993108396546"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x07f77c0e2270ec51b73fa5d14dc03b3c075828d67741b54b08fe8665d5d97322": {
+    "key": "robinhood:0x07f77c0e2270ec51b73fa5d14dc03b3c075828d67741b54b08fe8665d5d97322",
+    "name": "Uniswap V4 LP MJDQ/PFE",
+    "decimals": 18,
+    "symbol": "MJDQ/PFE",
+    "price": 9007199254740990,
+    "address": "0x07f77c0e2270ec51b73fa5d14dc03b3c075828d67741b54b08fe8665d5d97322",
+    "addresses": {
+     "robinhood": "0x07f77c0e2270ec51b73fa5d14dc03b3c075828d67741b54b08fe8665d5d97322"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.730Z",
+    "createdAt": "2026-11-11T13:21:20.905Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+    ],
+    "liquidity": 9999.156531552384,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19994,
+     "feePercentage": "99.9726"
+    },
+    "tokenId": "02d48b26-2f3c-4e07-9b57-f1b0497b2544",
+    "reserves": [
+     "9999.999999989939999909",
+     "0.003332563185816987"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x76d8c1ed2804c1d6ebecf422a66ecab77e85bba81d394867cd3700351177cea2": {
+    "key": "robinhood:0x76d8c1ed2804c1d6ebecf422a66ecab77e85bba81d394867cd3700351177cea2",
+    "name": "Uniswap V4 LP OLQD/PFE",
+    "decimals": 18,
+    "symbol": "OLQD/PFE",
+    "price": 9007199254740990,
+    "address": "0x76d8c1ed2804c1d6ebecf422a66ecab77e85bba81d394867cd3700351177cea2",
+    "addresses": {
+     "robinhood": "0x76d8c1ed2804c1d6ebecf422a66ecab77e85bba81d394867cd3700351177cea2"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:36.509Z",
+    "createdAt": "2026-11-06T15:59:39.033Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+    ],
+    "liquidity": 9997.776530349965,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19675,
+     "feePercentage": "98.3793"
+    },
+    "tokenId": "b33fdad6-58c3-4ebb-b84d-f815178694d7",
+    "reserves": [
+     "9999.999999989943017706",
+     "0.0033730506932204"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0xd68cd743931d000c0a6ee38e142e6349baff5d56c5d05ee16d146d49f8d899eb": {
+    "key": "arbitrum:0xd68cd743931d000c0a6ee38e142e6349baff5d56c5d05ee16d146d49f8d899eb",
+    "name": "Uniswap V4 LP wUSDC/rPFE",
+    "decimals": 18,
+    "symbol": "WUSDC/RPFE",
+    "price": 9007199254740990,
+    "address": "0xd68cd743931d000c0a6ee38e142e6349baff5d56c5d05ee16d146d49f8d899eb",
+    "addresses": {
+     "arbitrum": "0xd68cd743931d000c0a6ee38e142e6349baff5d56c5d05ee16d146d49f8d899eb"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177356/large/PFE.png?1789117648"
+    ],
+    "updatedAt": "2026-11-21T14:09:41.301Z",
+    "createdAt": "2026-11-14T12:28:23.713Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xd862585a025e1db5116306aae7aaf2e6376615f2"
+    ],
+    "liquidity": 3568.7940834544725,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "2d33c714-9503-4fdd-927c-1495a8e924fc",
+    "reserves": [
+     "3000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -699,7 +997,7 @@
     "name": "Pfizer • Robinhood Token",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.695,
+    "price": 27.93966547737746,
     "address": "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e",
     "addresses": {
      "robinhood": "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
@@ -710,15 +1008,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0x7066a64c24e4206cd62e83bf198c1e7eb361f51e.png"
     ],
-    "updatedAt": "2026-10-18T20:13:31.201Z",
+    "updatedAt": "2026-11-21T14:12:34.770Z",
     "createdAt": "2026-08-09T19:02:28.788Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e",
-    "liquidity": 272813.06214675,
+    "liquidity": 179053.57090093158,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "-16747.871"
+     "volumeUsd1d": "-3496.451",
+     "volumeUsd7d": "-32631.956"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000fb3ae5faa7f7465a95815518c4cd7a8b",
@@ -729,8 +1027,8 @@
      "chainId": 4663,
      "interface": "ERC20",
      "oraclePaused": false,
-     "uiMultiplier": "1000000000000000000",
-     "currentMultiplier": "1.000000000000000000",
+     "uiMultiplier": "1010110827092460624",
+     "currentMultiplier": "1.010110827092460624",
      "pendingMultiplier": "",
      "tradingCapabilities": {
       "market": {
@@ -748,52 +1046,53 @@
      }
     },
     "tokenId": "c0693096-98ae-4dcc-85ae-2e2df6bf10ba",
-    "totalSupply": "9187.17165",
+    "totalSupply": "6408.57962476",
     "isClaimed": false,
     "isPortable": true
    },
-   "robinhood:0xd250bed35cb53a2242120ad41fa43c160044418f9b75968b2a7edae4b2fca24e": {
-    "key": "robinhood:0xd250bed35cb53a2242120ad41fa43c160044418f9b75968b2a7edae4b2fca24e",
-    "name": "Uniswap V4 LP USDG/PFE",
+   "ethereum:0x6b5e58bc6776ef11d82da7d1d539378082c174a1b09440666d46740a4e139b89": {
+    "key": "ethereum:0x6b5e58bc6776ef11d82da7d1d539378082c174a1b09440666d46740a4e139b89",
+    "name": "Uniswap V4 LP PFEon/wUSDC",
     "decimals": 18,
-    "symbol": "USDG/PFE",
+    "symbol": "PFEON/WUSDC",
     "price": 9007199254740990,
-    "address": "0xd250bed35cb53a2242120ad41fa43c160044418f9b75968b2a7edae4b2fca24e",
+    "address": "0x6b5e58bc6776ef11d82da7d1d539378082c174a1b09440666d46740a4e139b89",
     "addresses": {
-     "robinhood": "0xd250bed35cb53a2242120ad41fa43c160044418f9b75968b2a7edae4b2fca24e"
+     "ethereum": "0x6b5e58bc6776ef11d82da7d1d539378082c174a1b09440666d46740a4e139b89"
     },
     "platform": "uniswap-v4",
-    "network": "robinhood",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+     "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:40.155Z",
-    "createdAt": "2026-09-09T07:57:20.668Z",
+    "updatedAt": "2026-11-21T14:10:55.305Z",
+    "createdAt": "2026-11-07T15:59:37.622Z",
     "verifiedAt": null,
     "tokens": [
-     "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
-     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+     "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
     ],
-    "liquidity": 753.3615390027363,
+    "liquidity": 9971.121622900975,
     "metrics": {
-     "apy": "2.49",
-     "baseApy": "2.49",
-     "volumeUsd1d": "5.715",
-     "volumeUsd7d": "514.228"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 80,
-     "feePercentage": "0.8992"
+     "tickSpacing": 100,
+     "feePercentage": "50"
     },
-    "tokenId": "d0ba587d-ac30-4981-8c80-49093f0d9742",
+    "tokenId": "91be9698-82d0-4cef-b654-393240c46d39",
     "reserves": [
-     "571.412586",
-     "6.127258898896659424"
+     "0",
+     "10000"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -814,19 +1113,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/102174136/large/0x6330d8c3178a418788df01a47479c0ce7ccf450b.png?1782444632"
     ],
-    "updatedAt": "2026-10-18T20:15:40.180Z",
+    "updatedAt": "2026-11-21T14:12:36.639Z",
     "createdAt": "2026-10-12T05:12:08.583Z",
     "verifiedAt": null,
     "tokens": [
      "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 4940.501108461451,
+    "liquidity": 567.682354682955,
     "metrics": {
-     "apy": "2.48",
-     "baseApy": "2.48",
-     "volumeUsd1d": "33.605",
-     "volumeUsd7d": "3027.27"
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -838,11 +1137,40 @@
     },
     "tokenId": "2a9bcd67-0a6f-4aee-89b8-bbd2dbfd6deb",
     "reserves": [
-     "22.70299958404144529",
-     "34.682924065004602448"
+     "5.292098886918757461",
+     "1.0104721786218538"
     ],
     "isClaimed": false,
     "isPortable": false
+   },
+   "robinhood:0x1a95c10e4839033686225eaad3ac348f0d8edc4f": {
+    "key": "robinhood:0x1a95c10e4839033686225eaad3ac348f0d8edc4f",
+    "name": "PFEAGLE",
+    "decimals": 18,
+    "symbol": "PFEAGLE",
+    "price": 3.32e-06,
+    "address": "0x1a95c10e4839033686225eaad3ac348f0d8edc4f",
+    "addresses": {
+     "robinhood": "0x1a95c10e4839033686225eaad3ac348f0d8edc4f"
+    },
+    "platform": "basic",
+    "network": "robinhood",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
+    "createdAt": "2026-10-19T18:56:36.722Z",
+    "verifiedAt": null,
+    "tokens": [],
+    "liquidity": 3319.8,
+    "image": "https://coin-images.coingecko.com/coins/images/102179601/large/1ba3fe9b-7b88-4020-8094-50727333dfc0.png?1792394978",
+    "metrics": {
+     "volumeUsd1d": "4.051",
+     "volumeUsd7d": "28.56"
+    },
+    "metadata": {},
+    "tokenId": "8786970a-a013-459d-83a8-880a8d116850",
+    "totalSupply": "1000000000",
+    "circulatingSupply": "1000000000",
+    "isClaimed": false,
+    "isPortable": true
    },
    "robinhood:0x7925f3cef0057a18b840ed41d20521914b0d465f7ac8460031874be813a1105e": {
     "key": "robinhood:0x7925f3cef0057a18b840ed41d20521914b0d465f7ac8460031874be813a1105e",
@@ -860,14 +1188,14 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:40.497Z",
+    "updatedAt": "2026-11-21T14:12:37.024Z",
     "createdAt": "2026-10-16T14:26:15.930Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 1029.6156360035895,
+    "liquidity": 970.5936580602507,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -884,8 +1212,8 @@
     },
     "tokenId": "f7292484-9041-4a64-acf1-97d443c0ed65",
     "reserves": [
-     "14.281971",
-     "34.192074928560010393"
+     "1.849825",
+     "34.672706938622275131"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -906,14 +1234,14 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:52.746Z",
+    "updatedAt": "2026-11-21T14:09:35.981Z",
     "createdAt": "2026-10-16T14:24:06.460Z",
     "verifiedAt": null,
     "tokens": [
      "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
      "0xad88b13ad32c099c75fa18b8f0700cde8bcd3aad"
     ],
-    "liquidity": 1999.524976005723,
+    "liquidity": 1998.8467349160208,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -936,40 +1264,12 @@
     "isClaimed": false,
     "isPortable": false
    },
-   "robinhood:0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79": {
-    "key": "robinhood:0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79",
-    "name": "PARE Principal PFE-DEC27",
-    "decimals": 18,
-    "symbol": "PPFE-DEC27",
-    "price": 27.241499421156057,
-    "address": "0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79",
-    "addresses": {
-     "robinhood": "0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79"
-    },
-    "platform": "basic",
-    "network": "robinhood",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
-    "createdAt": "2026-09-19T08:15:34.145Z",
-    "verifiedAt": null,
-    "tokens": [],
-    "liquidity": 14387.356268199666,
-    "image": "https://images.portals.fi/unknown-token.png",
-    "metrics": {
-     "volumeUsd1d": "0.11",
-     "volumeUsd7d": "25520.88"
-    },
-    "metadata": {},
-    "tokenId": "9a2654c8-e108-424f-a291-8fde1e9b93a7",
-    "totalSupply": "528.141129303120625283",
-    "isClaimed": false,
-    "isPortable": true
-   },
    "ethereum:0x06954faa913fa14c28eb1b2e459594f22f33f3de": {
     "key": "ethereum:0x06954faa913fa14c28eb1b2e459594f22f33f3de",
     "name": "Pfizer (Ondo Tokenized Stock)",
     "decimals": 18,
     "symbol": "PFEON",
-    "price": 31.28,
+    "price": 29.43,
     "address": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
     "addresses": {
      "ethereum": "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
@@ -977,20 +1277,20 @@
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2025-08-25T12:14:19.677Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 3753125,
+    "liquidity": 48760,
     "image": "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
     "metrics": {
-     "volumeUsd1d": "5.509",
-     "volumeUsd7d": "3557.987"
+     "volumeUsd1d": "475.768",
+     "volumeUsd7d": "3509254.109"
     },
     "metadata": {},
     "tokenId": "48604bdb-55a0-400f-8efc-06f6cc3a8945",
-    "totalSupply": "119982.0116075802",
-    "circulatingSupply": "119982.0116075802",
+    "totalSupply": "1656.9208122781174",
+    "circulatingSupply": "1656.9208122781174",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1010,19 +1310,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:14.304Z",
+    "updatedAt": "2026-11-21T14:12:34.627Z",
     "createdAt": "2026-08-20T07:17:34.322Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 2192.123852519044,
+    "liquidity": 2211.8016651771886,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "1393.128"
+     "apy": "14.654",
+     "baseApy": "14.654",
+     "volumeUsd1d": "88.799",
+     "volumeUsd7d": "1936.628"
     },
     "metadata": {
      "tags": [
@@ -1032,8 +1332,54 @@
     },
     "tokenId": "30e21061-268e-4507-8286-19bff556f41f",
     "reserves": [
-     "1420.860414",
-     "25.972838475131972598"
+     "132.647869",
+     "74.415844307823363785"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xce9c25b70956688969f0a43eb495bc29b1745dc9f09da56b21acdc09ab49fe40": {
+    "key": "ethereum:0xce9c25b70956688969f0a43eb495bc29b1745dc9f09da56b21acdc09ab49fe40",
+    "name": "Uniswap V4 LP PFEx/wUSDC",
+    "decimals": 18,
+    "symbol": "PFEX/WUSDC",
+    "price": 9007199254740990,
+    "address": "0xce9c25b70956688969f0a43eb495bc29b1745dc9f09da56b21acdc09ab49fe40",
+    "addresses": {
+     "ethereum": "0xce9c25b70956688969f0a43eb495bc29b1745dc9f09da56b21acdc09ab49fe40"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:11:52.196Z",
+    "createdAt": "2026-11-19T19:32:34.255Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
+    ],
+    "liquidity": 9971.121622900975,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "219b88eb-02bd-40e5-944f-7f103e411ae5",
+    "reserves": [
+     "0",
+     "10000"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1043,27 +1389,27 @@
     "name": "Pfizer rStock",
     "decimals": 18,
     "symbol": "RPFE",
-    "price": 29.57,
+    "price": 27.41,
     "address": "0xd862585a025e1db5116306aae7aaf2e6376615f2",
     "addresses": {
      "arbitrum": "0xd862585a025e1db5116306aae7aaf2e6376615f2"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-09-11T09:23:28.703Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 30189,
+    "liquidity": 23508,
     "image": "https://coin-images.coingecko.com/coins/images/102177356/large/PFE.png?1789117648",
     "metrics": {
-     "volumeUsd1d": "119.524",
-     "volumeUsd7d": "42520.462"
+     "volumeUsd1d": "45217.577",
+     "volumeUsd7d": "538247.603"
     },
     "metadata": {},
     "tokenId": "c4efe73f-1ff9-4179-b9b0-ba331ada28fa",
-    "totalSupply": "1020.870393224",
-    "circulatingSupply": "1020.870393224",
+    "totalSupply": "857.545993224",
+    "circulatingSupply": "857.545993224",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1072,18 +1418,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.29,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "bsc": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:15:53.287Z",
+    "updatedAt": "2026-11-21T14:10:08.548Z",
     "createdAt": "2025-07-11T10:30:09.107Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7016597.20988488,
+    "liquidity": 6736728.61216318,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1098,7 +1444,7 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "0acbeffd-b062-4232-a68f-c942712d4ed3",
-    "totalSupply": "244395.583764711943134161",
+    "totalSupply": "246857.039654202238723647",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1118,18 +1464,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:03.377Z",
+    "updatedAt": "2026-11-21T14:12:10.186Z",
     "createdAt": "2026-10-18T18:58:14.336Z",
     "verifiedAt": null,
     "tokens": [
      "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
      "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752"
     ],
-    "liquidity": 3529.098283706609,
+    "liquidity": 2718.648919412492,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
-     "volumeUsd1d": "0"
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -1147,44 +1494,136 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0x04b76f6842714c7eb644ff5345f6b0d8e09221eb46f30bd4f296228e6282e3be": {
+    "key": "robinhood:0x04b76f6842714c7eb644ff5345f6b0d8e09221eb46f30bd4f296228e6282e3be",
+    "name": "Uniswap V4 LP wUSDG/PFE",
+    "decimals": 18,
+    "symbol": "WUSDG/PFE",
+    "price": 9007199254740990,
+    "address": "0x04b76f6842714c7eb644ff5345f6b0d8e09221eb46f30bd4f296228e6282e3be",
+    "addresses": {
+     "robinhood": "0x04b76f6842714c7eb644ff5345f6b0d8e09221eb46f30bd4f296228e6282e3be"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.510Z",
+    "createdAt": "2026-11-05T15:57:22.690Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+    ],
+    "liquidity": 2999.448571301699,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "0e874423-81d3-4539-bef1-7c453f76c0e9",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x32e739c725ff09ca5b97ce69f28bc3aec120c736": {
     "key": "ethereum:0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
     "name": "Dinari PFE dShares",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.63,
+    "price": 27.47,
     "address": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
     "addresses": {
      "ethereum": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
-     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
      "avalanche": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
-     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd"
+     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
+     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21129,
+    "liquidity": 20283,
     "image": "https://coin-images.coingecko.com/coins/images/102174915/large/dinari-logo-green-with-margin.png?1785402549",
     "metrics": {
-     "volumeUsd1d": "1.002",
-     "volumeUsd7d": "591.32"
+     "volumeUsd1d": "381.85",
+     "volumeUsd7d": "982.67"
     },
     "metadata": {},
     "tokenId": "844c92f9-f486-4488-9a50-e7377e170176",
-    "totalSupply": "713.178171477347",
-    "circulatingSupply": "713.178171477347",
+    "totalSupply": "738.4741289476909",
+    "circulatingSupply": "738.4741289476909",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0xc41c00d1c5037bd04e3a3cc3e6cbb29e96873d2b01b2aba0d3f54c9ceabe8aa7": {
+    "key": "robinhood:0xc41c00d1c5037bd04e3a3cc3e6cbb29e96873d2b01b2aba0d3f54c9ceabe8aa7",
+    "name": "Uniswap V4 LP USDG/PFE",
+    "decimals": 18,
+    "symbol": "USDG/PFE",
+    "price": 9007199254740990,
+    "address": "0xc41c00d1c5037bd04e3a3cc3e6cbb29e96873d2b01b2aba0d3f54c9ceabe8aa7",
+    "addresses": {
+     "robinhood": "0xc41c00d1c5037bd04e3a3cc3e6cbb29e96873d2b01b2aba0d3f54c9ceabe8aa7"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:12:37.728Z",
+    "createdAt": "2026-11-04T15:56:11.493Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+    ],
+    "liquidity": 50025.20611930242,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9956,
+     "feePercentage": "99.56"
+    },
+    "tokenId": "657db0b2-4362-48f9-86c2-5211b7e64d7a",
+    "reserves": [
+     "49999.999999999999999996",
+     "1.054431433238653931"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0x7611d8e8d7d551d325b11c93b714565953710ea9": {
     "key": "robinhood:0x7611d8e8d7d551d325b11c93b714565953710ea9",
     "name": "Beefy CLM PFE-USDG",
     "decimals": 18,
     "symbol": "COWUNISWAPROBINHOODUSDG-PFE",
-    "price": 28.869615506713444,
+    "price": 28.127663444615873,
     "address": "0x7611d8e8d7d551d325b11c93b714565953710ea9",
     "addresses": {
      "robinhood": "0x7611d8e8d7d551d325b11c93b714565953710ea9"
@@ -1195,7 +1634,7 @@
      "https://assets.coingecko.com/coins/images/12704/large/token.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "updatedAt": "2026-11-21T14:10:04.965Z",
     "createdAt": "2026-09-28T13:41:33.886Z",
     "verifiedAt": null,
     "tokens": [
@@ -1203,10 +1642,10 @@
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
     "poolAddress": "0xc7d573fcda6d2107c97fb582ae18411f9db32e7f",
-    "liquidity": 1201.7278249926528,
+    "liquidity": 675.0601830050381,
     "metrics": {
-     "apy": "0.396",
-     "baseApy": "0.396",
+     "apy": "30.079",
+     "baseApy": "30.079",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
@@ -1230,43 +1669,90 @@
      ]
     },
     "tokenId": "20ab5811-e16f-43e3-bfef-bf941f05fc5c",
-    "totalSupply": "41.626041909467021374",
+    "totalSupply": "23.999867046697629141",
     "reserves": [
-     "1033.221956",
-     "5.674553594633871014"
+     "57.044583",
+     "22.119649231499950781"
     ],
     "isClaimed": false,
     "isPortable": true
+   },
+   "arbitrum:0x702d2774ec9640c37f738327020cf98d24f4ca2124d0a167dc96dc700fdd1772": {
+    "key": "arbitrum:0x702d2774ec9640c37f738327020cf98d24f4ca2124d0a167dc96dc700fdd1772",
+    "name": "Uniswap V4 LP wUSDC/rPFE",
+    "decimals": 18,
+    "symbol": "WUSDC/RPFE",
+    "price": 9007199254740990,
+    "address": "0x702d2774ec9640c37f738327020cf98d24f4ca2124d0a167dc96dc700fdd1772",
+    "addresses": {
+     "arbitrum": "0x702d2774ec9640c37f738327020cf98d24f4ca2124d0a167dc96dc700fdd1772"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177356/large/PFE.png?1789117648"
+    ],
+    "updatedAt": "2026-11-21T14:09:37.434Z",
+    "createdAt": "2026-11-14T12:28:23.406Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xd862585a025e1db5116306aae7aaf2e6376615f2"
+    ],
+    "liquidity": 11895.980278181574,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "4c1927e8-7e4f-4e68-a6f8-0f23e7aa1e16",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "base:0xdddfb67063b57a834257e0db3b9aab39329fd4bd": {
     "key": "base:0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
     "name": "Dinari PFE dShares",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.63,
+    "price": 27.47,
     "address": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
     "addresses": {
      "ethereum": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
-     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
      "avalanche": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
-     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd"
+     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
+     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21129,
+    "liquidity": 20283,
     "image": "https://coin-images.coingecko.com/coins/images/102174915/large/dinari-logo-green-with-margin.png?1785402549",
     "metrics": {
-     "volumeUsd1d": "1.002",
-     "volumeUsd7d": "590.711"
+     "volumeUsd1d": "381.846",
+     "volumeUsd7d": "983.107"
     },
     "metadata": {},
     "tokenId": "844c92f9-f486-4488-9a50-e7377e170176",
-    "totalSupply": "713.178171477347",
-    "circulatingSupply": "713.178171477347",
+    "totalSupply": "738.4741289476909",
+    "circulatingSupply": "738.4741289476909",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1286,61 +1772,14 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/102175796/large/dopam_400x400.jpg?1787582848"
     ],
-    "updatedAt": "2026-10-18T20:15:41.388Z",
+    "updatedAt": "2026-11-21T14:12:37.860Z",
     "createdAt": "2026-09-08T14:37:20.033Z",
     "verifiedAt": null,
     "tokens": [
      "0x2e8e2dbf58b5f141f9a3d04dba0812b416574e83",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 35645.95087299021,
-    "metrics": {
-     "apy": "3.522",
-     "baseApy": "3.522",
-     "volumeUsd1d": "164.224",
-     "volumeUsd7d": "991.702"
-    },
-    "metadata": {
-     "tags": [
-      "#clp"
-     ],
-     "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 200,
-     "feePercentage": "2.098"
-    },
-    "tokenId": "c00a5498-385a-4b5c-bb00-582c3afd4bc9",
-    "reserves": [
-     "33047819.252318",
-     "52.837936661223207335"
-    ],
-    "isClaimed": false,
-    "isPortable": false
-   },
-   "ethereum:0xbb181c330c71ed6bfdd72ad1369bf1edfca9523ddd820aab64daf6a72e70dfc4": {
-    "key": "ethereum:0xbb181c330c71ed6bfdd72ad1369bf1edfca9523ddd820aab64daf6a72e70dfc4",
-    "name": "Uniswap V4 LP PFEon/EGP",
-    "decimals": 18,
-    "symbol": "PFEON/EGP",
-    "price": 9007199254740990,
-    "address": "0xbb181c330c71ed6bfdd72ad1369bf1edfca9523ddd820aab64daf6a72e70dfc4",
-    "addresses": {
-     "ethereum": "0xbb181c330c71ed6bfdd72ad1369bf1edfca9523ddd820aab64daf6a72e70dfc4"
-    },
-    "platform": "uniswap-v4",
-    "network": "ethereum",
-    "images": [
-     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
-     "https://images.portals.fi/unknown-token.png"
-    ],
-    "updatedAt": "2026-10-18T20:15:04.185Z",
-    "createdAt": "2026-10-13T13:13:59.589Z",
-    "verifiedAt": null,
-    "tokens": [
-     "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305"
-    ],
-    "liquidity": 20074.294096722646,
+    "liquidity": 19022.011177312925,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1352,13 +1791,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "98.99"
+     "tickSpacing": 200,
+     "feePercentage": "2.098"
     },
-    "tokenId": "5319606b-1568-4fe5-a435-7089085d0c7a",
+    "tokenId": "c00a5498-385a-4b5c-bb00-582c3afd4bc9",
     "reserves": [
-     "0.919913235396421376",
-     "19999.999999999999999999"
+     "34669820.672425",
+     "7.919236658343285147"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1368,30 +1807,30 @@
     "name": "Dinari PFE dShares",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.63,
+    "price": 27.47,
     "address": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
     "addresses": {
      "ethereum": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
-     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
      "avalanche": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
-     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd"
+     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
+     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21129,
+    "liquidity": 20283,
     "image": "https://coin-images.coingecko.com/coins/images/102174915/large/dinari-logo-green-with-margin.png?1785402549",
     "metrics": {
-     "volumeUsd1d": "1.002",
-     "volumeUsd7d": "590.899"
+     "volumeUsd1d": "381.838",
+     "volumeUsd7d": "982.957"
     },
     "metadata": {},
     "tokenId": "844c92f9-f486-4488-9a50-e7377e170176",
-    "totalSupply": "713.178171477347",
-    "circulatingSupply": "713.178171477347",
+    "totalSupply": "738.4741289476909",
+    "circulatingSupply": "738.4741289476909",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1412,14 +1851,14 @@
      "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:05.434Z",
+    "updatedAt": "2026-11-21T14:12:25.627Z",
     "createdAt": "2026-09-28T10:37:07.915Z",
     "verifiedAt": null,
     "tokens": [
      "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f"
     ],
-    "liquidity": 10026.535376675458,
+    "liquidity": 9971.121622900975,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -1447,18 +1886,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.29,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "arbitrum": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:15:48.287Z",
+    "updatedAt": "2026-11-21T14:09:34.354Z",
     "createdAt": "2025-05-10T10:17:53.793Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 10922041.41836369,
+    "liquidity": 10486397.711794715,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1473,51 +1912,52 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "865b06f9-8005-453f-8984-39a2386c9345",
-    "totalSupply": "380426.381691525260695291",
+    "totalSupply": "384257.886104606616697308",
     "isClaimed": false,
     "isPortable": true
    },
-   "robinhood:0x074d4ac450a88efc26c2dab28a5144a1f56f626c": {
-    "key": "robinhood:0x074d4ac450a88efc26c2dab28a5144a1f56f626c",
-    "name": "Uniswap V3 PARE Principal PFE-DEC27/Global Dollar 0.3%",
+   "ethereum:0xa8aa62da32afef6c75e3abdca844f5deeeaa676fcf30ea1869349a2e43150bad": {
+    "key": "ethereum:0xa8aa62da32afef6c75e3abdca844f5deeeaa676fcf30ea1869349a2e43150bad",
+    "name": "Uniswap V4 LP PFEx/HRC",
     "decimals": 18,
-    "symbol": "PPFE-DEC27/USDG",
+    "symbol": "PFEX/HRC",
     "price": 9007199254740990,
-    "address": "0x074d4ac450a88efc26c2dab28a5144a1f56f626c",
+    "address": "0xa8aa62da32afef6c75e3abdca844f5deeeaa676fcf30ea1869349a2e43150bad",
     "addresses": {
-     "robinhood": "0x074d4ac450a88efc26c2dab28a5144a1f56f626c"
+     "ethereum": "0xa8aa62da32afef6c75e3abdca844f5deeeaa676fcf30ea1869349a2e43150bad"
     },
-    "platform": "uniswap-v3",
-    "network": "robinhood",
+    "platform": "uniswap-v4",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
+     "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:24.223Z",
-    "createdAt": "2026-09-28T12:03:48.088Z",
+    "updatedAt": "2026-11-21T14:12:21.558Z",
+    "createdAt": "2026-11-07T15:59:34.283Z",
     "verifiedAt": null,
     "tokens": [
-     "0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79",
-     "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+     "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
+     "0x63db3eca126303755899a3436e34b174a1ef377b"
     ],
-    "liquidity": 30980.011552988602,
+    "liquidity": 500.1769701287868,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
-     "volumeUsd1d": "0.107",
-     "volumeUsd7d": "24335.427"
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
-     "feePercentage": "0.3"
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19960,
+     "feePercentage": "99.8"
     },
-    "tokenId": "5fc6d30f-dd86-4418-b9c4-4953f8b9558d",
+    "tokenId": "8f316c65-dac3-47d4-b1c1-559f1e254dbf",
     "reserves": [
-     "229.35132047600989237",
-     "24732.137689"
+     "0",
+     "499.999999999999999922"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1527,7 +1967,7 @@
     "name": "Beefy CLM PFE-USDG Reward Pool",
     "decimals": 18,
     "symbol": "RCOWUNISWAPROBINHOODUSDG-PFE",
-    "price": 28.869615506713444,
+    "price": 28.127663444615873,
     "address": "0xeebd4785b6960447af5dca4f85fb90a11f976fde",
     "addresses": {
      "robinhood": "0xeebd4785b6960447af5dca4f85fb90a11f976fde"
@@ -1538,17 +1978,17 @@
      "https://assets.coingecko.com/coins/images/12704/large/token.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "updatedAt": "2026-11-21T14:10:23.332Z",
     "createdAt": "2026-09-28T13:41:33.886Z",
     "verifiedAt": null,
     "tokens": [
      "0x7611d8e8d7d551d325b11c93b714565953710ea9"
     ],
     "poolAddress": "0x7611d8e8d7d551d325b11c93b714565953710ea9",
-    "liquidity": 1201.7278249926528,
+    "liquidity": 675.060183005038,
     "metrics": {
-     "apy": "0.396",
-     "baseApy": "0.396",
+     "apy": "30.079",
+     "baseApy": "30.079",
      "volumeUsd1d": "0",
      "volumeUsd7d": "0"
     },
@@ -1573,9 +2013,9 @@
      ]
     },
     "tokenId": "6a43d640-ae90-45cd-90b1-caa75d8ba4d2",
-    "totalSupply": "41.626041909467020374",
+    "totalSupply": "23.999867046697628141",
     "reserves": [
-     "41.626041909467020374"
+     "23.999867046697628141"
     ],
     "pricePerShare": "1",
     "isClaimed": false,
@@ -1586,30 +2026,30 @@
     "name": "Dinari PFE dShares",
     "decimals": 18,
     "symbol": "PFE",
-    "price": 29.63,
+    "price": 27.47,
     "address": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
     "addresses": {
      "ethereum": "0x32e739c725ff09ca5b97ce69f28bc3aec120c736",
-     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe",
      "avalanche": "0x2cf96cc07ae6ada66bf92a8c49aaafecd945c04c",
-     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd"
+     "base": "0xdddfb67063b57a834257e0db3b9aab39329fd4bd",
+     "arbitrum": "0xf1f18f765f118c3598cc54dcac1d0e12066263fe"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:14:19.480Z",
+    "updatedAt": "2026-11-21T14:12:26.020Z",
     "createdAt": "2023-11-15T14:42:09.718Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 21129,
+    "liquidity": 20283,
     "image": "https://coin-images.coingecko.com/coins/images/102174915/large/dinari-logo-green-with-margin.png?1785402549",
     "metrics": {
-     "volumeUsd1d": "1.002",
-     "volumeUsd7d": "591.062"
+     "volumeUsd1d": "381.843",
+     "volumeUsd7d": "983.006"
     },
     "metadata": {},
     "tokenId": "844c92f9-f486-4488-9a50-e7377e170176",
-    "totalSupply": "713.178171477347",
-    "circulatingSupply": "713.178171477347",
+    "totalSupply": "738.4741289476909",
+    "circulatingSupply": "738.4741289476909",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1618,18 +2058,18 @@
     "name": "Pfizer xStock",
     "decimals": 18,
     "symbol": "PFEX",
-    "price": 28.71,
+    "price": 27.27,
     "address": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e",
     "addresses": {
      "ethereum": "0x1ac765b5bea23184802c7d2d497f7c33f1444a9e"
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:46.451Z",
+    "updatedAt": "2026-11-21T14:09:26.344Z",
     "createdAt": "2025-08-14T11:44:26.097Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 12001193.741905138,
+    "liquidity": 11514061.768317277,
     "image": "https://coin-images.coingecko.com/coins/images/55635/large/Ticker_PFE__Company_Name_pfizer__size_200x200_2x.png?1746863254",
     "metrics": {
      "volumeUsd1d": "0",
@@ -1644,7 +2084,7 @@
      "coingeckoId": "pfizer-xstock"
     },
     "tokenId": "6a98f370-2251-4994-81be-ec9b6d35686d",
-    "totalSupply": "418014.41107297590581639",
+    "totalSupply": "422224.487287028834963747",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1664,19 +2104,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:43.016Z",
+    "updatedAt": "2026-11-21T14:12:38.952Z",
     "createdAt": "2026-09-09T05:45:06.475Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
     ],
-    "liquidity": 15465.179555026929,
+    "liquidity": 4673.774560032974,
     "metrics": {
-     "apy": "12.447",
-     "baseApy": "12.447",
-     "volumeUsd1d": "2993.042",
-     "volumeUsd7d": "73656.218"
+     "apy": "3.214",
+     "baseApy": "3.214",
+     "volumeUsd1d": "233.584",
+     "volumeUsd7d": "8743.1"
     },
     "metadata": {
      "tags": [
@@ -1688,8 +2128,8 @@
     },
     "tokenId": "7695c5c1-0eec-4c32-adbe-ed7e97ada133",
     "reserves": [
-     "10197.888678",
-     "177.379723085601254034"
+     "2535.360581",
+     "76.536849761656278088"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -1710,19 +2150,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://coin-images.coingecko.com/coins/images/102174121/large/0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5.png?1782444593"
     ],
-    "updatedAt": "2026-10-18T20:15:42.663Z",
+    "updatedAt": "2026-11-21T14:12:38.998Z",
     "createdAt": "2026-09-22T19:08:08.278Z",
     "verifiedAt": null,
     "tokens": [
      "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e",
      "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5"
     ],
-    "liquidity": 22089.509990323997,
+    "liquidity": 13457.92781652643,
     "metrics": {
-     "apy": "3.512",
-     "baseApy": "3.512",
-     "volumeUsd1d": "212.713",
-     "volumeUsd7d": "15037.627"
+     "apy": "9.537",
+     "baseApy": "9.537",
+     "volumeUsd1d": "351.952",
+     "volumeUsd7d": "1628.005"
     },
     "metadata": {
      "tags": [
@@ -1734,52 +2174,55 @@
     },
     "tokenId": "1a6e0eb5-478d-46b3-b97c-a675afa7045e",
     "reserves": [
-     "200.8623630911231404",
-     "196.083202022655761129"
+     "18.509111161757500113",
+     "265.125782470463668426"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "robinhood:0xaae222e92441323c602247d5b0c9be1554ad68f8": {
-    "key": "robinhood:0xaae222e92441323c602247d5b0c9be1554ad68f8",
-    "name": "Uniswap V3 PARE Principal PFE-DEC27/Pfizer  Robinhood Token 0.05%",
+   "ethereum:0x847a6c73f368f58c120f9d857d44de7c4adc00f8f097cc0672ac96e1134d162e": {
+    "key": "ethereum:0x847a6c73f368f58c120f9d857d44de7c4adc00f8f097cc0672ac96e1134d162e",
+    "name": "Uniswap V4 LP PFEon/EE",
     "decimals": 18,
-    "symbol": "PPFE-DEC27/PFE",
+    "symbol": "PFEON/EE",
     "price": 9007199254740990,
-    "address": "0xaae222e92441323c602247d5b0c9be1554ad68f8",
+    "address": "0x847a6c73f368f58c120f9d857d44de7c4adc00f8f097cc0672ac96e1134d162e",
     "addresses": {
-     "robinhood": "0xaae222e92441323c602247d5b0c9be1554ad68f8"
+     "ethereum": "0x847a6c73f368f58c120f9d857d44de7c4adc00f8f097cc0672ac96e1134d162e"
     },
-    "platform": "uniswap-v3",
-    "network": "robinhood",
+    "platform": "uniswap-v4",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://coin-images.coingecko.com/coins/images/68549/large/pfeon_160x160.png?1756105512",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:15:25.665Z",
-    "createdAt": "2026-09-28T14:49:57.966Z",
+    "updatedAt": "2026-11-21T14:12:23.790Z",
+    "createdAt": "2026-11-07T15:59:34.864Z",
     "verifiedAt": null,
     "tokens": [
-     "0x2574d6e64bc2c4326cb35d8a2b2126fd300a7f79",
-     "0x7066a64c24e4206cd62e83bf198c1e7eb361f51e"
+     "0x06954faa913fa14c28eb1b2e459594f22f33f3de",
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a"
     ],
-    "liquidity": 12036.887056738185,
+    "liquidity": 50032.27842017453,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "20460.333"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
-     "feePercentage": "0.05"
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9940,
+     "feePercentage": "99.4019"
     },
-    "tokenId": "48fb9490-5f2e-440a-8f56-681f89da52ab",
+    "tokenId": "2a38e077-46be-4dd0-97db-cd731a0271d6",
     "reserves": [
-     "290.936605433963998241",
-     "138.452186840065539454"
+     "0.955041703949819148",
+     "49999.999999999999999994"
     ],
     "isClaimed": false,
     "isPortable": false

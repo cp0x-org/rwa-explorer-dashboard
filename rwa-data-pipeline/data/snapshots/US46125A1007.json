@@ -5,8 +5,8 @@
  "name": "Intuitive Machines",
  "isin": "US46125A1007",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:20:41Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:16:20Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,40 +17,50 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 10.66601618111274,
-     "tokenized_market_cap": 3435048.1670278357,
-     "tokenized_volume_24h": 155.2363993,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 9.132350554389133,
+     "tokenized_market_cap": 2938355.7524643387,
+     "tokenized_volume_24h": 3012.26441084,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 1847,
    "asset_type": "stock",
-   "rwa_rank": 2073,
+   "rwa_rank": 2064,
    "has_tokens": true,
-   "average_tokenized_price": 10.66601618111274,
-   "tokenized_market_cap": 3435048.1670278357,
-   "tokenized_volume_24h": 155.2363993,
-   "last_updated": "2026-10-18T20:13:40.637Z",
+   "average_tokenized_price": 9.132350554389133,
+   "tokenized_market_cap": 2938355.7524643387,
+   "tokenized_volume_24h": 3012.26441084,
+   "last_updated": "2026-11-21T14:10:11.196Z",
    "tokens": [
     {
      "symbol": "LUNR",
      "name": "Intuitive Machines Tokenized Stock (Robinhood)",
-     "price": 11.089114323105386,
+     "price": 12.125666764876382,
      "crypto_id": 40771,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 9269.11,
+     "market_cap": 5169.198539590352,
      "volume_24h": 0
     },
     {
      "symbol": "LUNRx",
      "name": "Intuitive Machines tokenized stock (xStock)",
-     "price": 10.667342864124494,
+     "price": 9.132350554389133,
      "crypto_id": 42539,
      "issuer_id": "6878977dcbbf471de3366e85",
      "issuer_name": "Backed Assets",
-     "market_cap": 3426205.17,
-     "volume_24h": 155.25570825
+     "market_cap": 2933186.5539247426,
+     "volume_24h": 3012.2644108428813
+    },
+    {
+     "symbol": "LUNRc",
+     "name": "Intuitive Machines, Inc. Tokenized Stock (Coinbase)",
+     "price": null,
+     "crypto_id": 42663,
+     "issuer_id": "6a72fe7072996604d45c6733",
+     "issuer_name": "Coinbase",
+     "market_cap": null,
+     "volume_24h": null
     }
    ],
    "tradfi_markets": [
@@ -231,6 +241,35 @@
       }
      }
     ]
+   },
+   "42663": {
+    "id": 42663,
+    "symbol": "LUNRc",
+    "name": "Intuitive Machines, Inc. Tokenized Stock (Coinbase)",
+    "slug": "intuitive-machines-inc-tokenized-stock-coinbase",
+    "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/42663.png",
+    "date_added": "2026-10-26T10:57:02.000Z",
+    "platform": {
+     "id": "27716",
+     "name": "Base",
+     "symbol": "-",
+     "slug": "base",
+     "token_address": "0xB200000000000000000000674E1325DBdF06B309"
+    },
+    "contract_address": [
+     {
+      "contract_address": "0xB200000000000000000000674E1325DBdF06B309",
+      "platform": {
+       "name": "Base",
+       "coin": {
+        "id": "27716",
+        "name": "Base",
+        "symbol": "-",
+        "slug": "base"
+       }
+      }
+     }
+    ]
    }
   },
   "invalid_ids": []
@@ -253,6 +292,7 @@
   ],
   "looked_up": [
    "arbitrum:0x7d4be24d0abd9c82081137ef6cd69e655db87382",
+   "base:0xb200000000000000000000674e1325dbdf06b309",
    "bsc:0x7d4be24d0abd9c82081137ef6cd69e655db87382",
    "ethereum:0x7d4be24d0abd9c82081137ef6cd69e655db87382",
    "optimism:0x7d4be24d0abd9c82081137ef6cd69e655db87382",
@@ -264,7 +304,7 @@
     "name": "Intuitive Machines • Robinhood Token",
     "decimals": 18,
     "symbol": "LUNR",
-    "price": 10.175,
+    "price": 8.715,
     "address": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
     "addresses": {
      "robinhood": "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
@@ -275,15 +315,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
-    "liquidity": 8505.02741275,
+    "liquidity": 3715.22376015,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "198.718"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000c8fa21fd16c744c9ac5c7f5a60ca433a",
@@ -313,20 +353,160 @@
      }
     },
     "tokenId": "178d1188-c184-43fd-a3f8-a5f982ef3da6",
-    "totalSupply": "835.87493",
+    "totalSupply": "426.30221",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "LUNR": {
-    "total_items": 9,
+    "total_items": 17,
     "pages": 1,
-    "received": 9,
+    "received": 17,
     "complete": true
    }
   },
   "records": {
+   "arbitrum:0x0fb58530d421585d119c98aee3ead1794b340fbba5e5c4a7dce3783455c9f918": {
+    "key": "arbitrum:0x0fb58530d421585d119c98aee3ead1794b340fbba5e5c4a7dce3783455c9f918",
+    "name": "Uniswap V4 LP wUSDC/rLUNR",
+    "decimals": 18,
+    "symbol": "WUSDC/RLUNR",
+    "price": 9007199254740990,
+    "address": "0x0fb58530d421585d119c98aee3ead1794b340fbba5e5c4a7dce3783455c9f918",
+    "addresses": {
+     "arbitrum": "0x0fb58530d421585d119c98aee3ead1794b340fbba5e5c4a7dce3783455c9f918"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177046/large/69715a510afc89a85528c503971bc7f6.png?1789116658"
+    ],
+    "updatedAt": "2026-11-21T14:14:02.155Z",
+    "createdAt": "2026-11-14T12:28:23.316Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "82c65f74-19ad-4e83-a0e8-732086b04122",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x3f62cd7b41e69ab39e0a5207d7d7199f746b6b0cd9e3a32b507a3e79db8a39d6": {
+    "key": "robinhood:0x3f62cd7b41e69ab39e0a5207d7d7199f746b6b0cd9e3a32b507a3e79db8a39d6",
+    "name": "Uniswap V4 LP OLQD/LUNR",
+    "decimals": 18,
+    "symbol": "OLQD/LUNR",
+    "price": 9007199254740990,
+    "address": "0x3f62cd7b41e69ab39e0a5207d7d7199f746b6b0cd9e3a32b507a3e79db8a39d6",
+    "addresses": {
+     "robinhood": "0x3f62cd7b41e69ab39e0a5207d7d7199f746b6b0cd9e3a32b507a3e79db8a39d6"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:42.940Z",
+    "createdAt": "2026-11-06T15:59:36.852Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+    ],
+    "liquidity": 9997.617075453654,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19910,
+     "feePercentage": "99.5502"
+    },
+    "tokenId": "a2a79196-ca5a-410b-88f0-cdfad8e6b92d",
+    "reserves": [
+     "9999.999999999999999957",
+     "0.011325028312570077"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0xb88703958e88d7c4ad948f2d1206bb139cd2b8b31675f6ab29717ba50fe29110": {
+    "key": "ethereum:0xb88703958e88d7c4ad948f2d1206bb139cd2b8b31675f6ab29717ba50fe29110",
+    "name": "Uniswap V4 LP EE/LUNRon",
+    "decimals": 18,
+    "symbol": "EE/LUNRON",
+    "price": 9007199254740990,
+    "address": "0xb88703958e88d7c4ad948f2d1206bb139cd2b8b31675f6ab29717ba50fe29110",
+    "addresses": {
+     "ethereum": "0xb88703958e88d7c4ad948f2d1206bb139cd2b8b31675f6ab29717ba50fe29110"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077"
+    ],
+    "updatedAt": "2026-11-21T14:14:28.709Z",
+    "createdAt": "2026-11-07T15:59:36.057Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x562508df93366a310655cdfbfff444ed0b57eb9a",
+     "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
+    ],
+    "liquidity": 49841.559857916225,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9946,
+     "feePercentage": "99.4597"
+    },
+    "tokenId": "32f04e16-997c-4858-9fa8-bf1ce028cc5a",
+    "reserves": [
+     "50003.252144263918562793",
+     "2.145585562450273587"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "robinhood:0xc7bc5aa29ea0cadc01d6015d409cafea9364fab2234b793ca41be0d728d78a9b": {
     "key": "robinhood:0xc7bc5aa29ea0cadc01d6015d409cafea9364fab2234b793ca41be0d728d78a9b",
     "name": "Uniswap V4 LP USDG/LUNR",
@@ -344,14 +524,14 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174177/large/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png?1782444742"
     ],
-    "updatedAt": "2026-10-18T20:15:40.292Z",
+    "updatedAt": "2026-11-21T14:14:43.370Z",
     "createdAt": "2026-09-23T05:39:17.677Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
     ],
-    "liquidity": 781.3670285457998,
+    "liquidity": 671.7867498456218,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -368,55 +548,55 @@
     },
     "tokenId": "e2c664bf-d199-441d-aef7-f1551fdd06fc",
     "reserves": [
-     "17.670015",
-     "75.056217547498752848"
+     "17.674536",
+     "75.055905203169458266"
     ],
     "isClaimed": false,
     "isPortable": false
    },
-   "robinhood:0x63bd80045294eb0e8283d29de4f54a7861825c4f933c07f383ac9eb58c5911bd": {
-    "key": "robinhood:0x63bd80045294eb0e8283d29de4f54a7861825c4f933c07f383ac9eb58c5911bd",
-    "name": "Uniswap V4 LP ETH/LUNR",
+   "ethereum:0x1ccba29d467a5cdd6972e8361ac2189b2f576fb37a9ca0f8d4fc56fc1e4dd466": {
+    "key": "ethereum:0x1ccba29d467a5cdd6972e8361ac2189b2f576fb37a9ca0f8d4fc56fc1e4dd466",
+    "name": "Uniswap V4 LP wUSDC/LUNRon",
     "decimals": 18,
-    "symbol": "ETH/LUNR",
+    "symbol": "WUSDC/LUNRON",
     "price": 9007199254740990,
-    "address": "0x63bd80045294eb0e8283d29de4f54a7861825c4f933c07f383ac9eb58c5911bd",
+    "address": "0x1ccba29d467a5cdd6972e8361ac2189b2f576fb37a9ca0f8d4fc56fc1e4dd466",
     "addresses": {
-     "robinhood": "0x63bd80045294eb0e8283d29de4f54a7861825c4f933c07f383ac9eb58c5911bd"
+     "ethereum": "0x1ccba29d467a5cdd6972e8361ac2189b2f576fb37a9ca0f8d4fc56fc1e4dd466"
     },
     "platform": "uniswap-v4",
-    "network": "robinhood",
+    "network": "ethereum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
-     "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
-     "https://coin-images.coingecko.com/coins/images/102174177/large/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png?1782444742"
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077"
     ],
-    "updatedAt": "2026-10-18T20:15:40.727Z",
-    "createdAt": "2026-07-30T16:55:17.935Z",
+    "updatedAt": "2026-11-21T14:14:29.381Z",
+    "createdAt": "2026-11-06T15:57:38.546Z",
     "verifiedAt": null,
     "tokens": [
-     "0x0000000000000000000000000000000000000000",
-     "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
     ],
-    "liquidity": 1879.2506791479348,
+    "liquidity": 9934.171615493578,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "129.714"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 500,
-     "feePercentage": "5.095"
+     "tickSpacing": 60,
+     "feePercentage": "50"
     },
-    "tokenId": "e1de8421-bd85-4dae-9145-d9ffd8d10107",
+    "tokenId": "ae47fe98-b56a-4d8b-8fe0-ae4ca2f554fa",
     "reserves": [
-     "0.014558569697639529",
-     "181.35271191886900761"
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -426,7 +606,7 @@
     "name": "Intuitive Machines • Robinhood Token",
     "decimals": 18,
     "symbol": "LUNR",
-    "price": 10.175,
+    "price": 8.715,
     "address": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
     "addresses": {
      "robinhood": "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
@@ -437,15 +617,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xa5d4968421ba94814be3b136b15cf422101ac1a3",
-    "liquidity": 8505.02741275,
+    "liquidity": 3715.22376015,
     "metrics": {
      "volumeUsd1d": "0",
-     "volumeUsd7d": "198.718"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000c8fa21fd16c744c9ac5c7f5a60ca433a",
@@ -475,35 +655,35 @@
      }
     },
     "tokenId": "178d1188-c184-43fd-a3f8-a5f982ef3da6",
-    "totalSupply": "835.87493",
+    "totalSupply": "426.30221",
     "isClaimed": false,
     "isPortable": true
    },
-   "ethereum:0x6ffa95c841026f7d167befd0180563d10298af5373c118ac0708248b9a27b6b2": {
-    "key": "ethereum:0x6ffa95c841026f7d167befd0180563d10298af5373c118ac0708248b9a27b6b2",
-    "name": "Uniswap V4 LP EGP/LUNRon",
+   "arbitrum:0x731addd36b3d327e4a7a2e043abd084bf4d3d5372085038409551233180b5dff": {
+    "key": "arbitrum:0x731addd36b3d327e4a7a2e043abd084bf4d3d5372085038409551233180b5dff",
+    "name": "Uniswap V4 LP wUSDC/rLUNR",
     "decimals": 18,
-    "symbol": "EGP/LUNRON",
+    "symbol": "WUSDC/RLUNR",
     "price": 9007199254740990,
-    "address": "0x6ffa95c841026f7d167befd0180563d10298af5373c118ac0708248b9a27b6b2",
+    "address": "0x731addd36b3d327e4a7a2e043abd084bf4d3d5372085038409551233180b5dff",
     "addresses": {
-     "ethereum": "0x6ffa95c841026f7d167befd0180563d10298af5373c118ac0708248b9a27b6b2"
+     "arbitrum": "0x731addd36b3d327e4a7a2e043abd084bf4d3d5372085038409551233180b5dff"
     },
     "platform": "uniswap-v4",
-    "network": "ethereum",
+    "network": "arbitrum",
     "images": [
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png",
-     "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077"
+     "https://coin-images.coingecko.com/coins/images/102177046/large/69715a510afc89a85528c503971bc7f6.png?1789116658"
     ],
-    "updatedAt": "2026-10-18T20:16:57.292Z",
-    "createdAt": "2026-10-14T06:54:32.550Z",
+    "updatedAt": "2026-11-21T14:13:54.847Z",
+    "createdAt": "2026-11-14T12:28:21.725Z",
     "verifiedAt": null,
     "tokens": [
-     "0x3eb1205afe5dd386aabdbf2ea9374e031d929305",
-     "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f"
     ],
-    "liquidity": 20056.484733784466,
+    "liquidity": 3568.5201908171716,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -515,13 +695,13 @@
       "#clp"
      ],
      "hookAddress": "0x0000000000000000000000000000000000000000",
-     "tickSpacing": 1,
-     "feePercentage": "98.3"
+     "tickSpacing": 60,
+     "feePercentage": "30"
     },
-    "tokenId": "07944e39-7925-48a1-8338-0927e79758df",
+    "tokenId": "770e1648-a809-42ff-aa56-15c913790777",
     "reserves": [
-     "19999.99999999999999999",
-     "2.058005038368770718"
+     "3000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -531,28 +711,28 @@
     "name": "Intuitive Machines (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "LUNRON",
-    "price": 10.62,
+    "price": 9.06,
     "address": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15",
     "addresses": {
-     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
-     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15"
+     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15",
+     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
     },
     "platform": "basic",
     "network": "bsc",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-03-13T13:03:26.806Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 103661,
+    "liquidity": 99465,
     "image": "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077",
     "metrics": {
-     "volumeUsd1d": "154114.352",
-     "volumeUsd7d": "1095533.342"
+     "volumeUsd1d": "152133.627",
+     "volumeUsd7d": "1034725.544"
     },
     "metadata": {},
     "tokenId": "d46be704-b8f3-4f32-9a42-814e76f1b998",
-    "totalSupply": "9723.503805172779",
-    "circulatingSupply": "9723.503805172779",
+    "totalSupply": "10980.70546915729",
+    "circulatingSupply": "10980.70546915729",
     "isClaimed": false,
     "isPortable": true
    },
@@ -561,27 +741,27 @@
     "name": "Intuitive Machines rStock",
     "decimals": 18,
     "symbol": "RLUNR",
-    "price": 10.77,
+    "price": 9.16,
     "address": "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f",
     "addresses": {
      "arbitrum": "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 41714,
+    "liquidity": 49501,
     "image": "https://coin-images.coingecko.com/coins/images/102177046/large/69715a510afc89a85528c503971bc7f6.png?1789116658",
     "metrics": {
-     "volumeUsd1d": "55.262",
-     "volumeUsd7d": "8035.334"
+     "volumeUsd1d": "17402.244",
+     "volumeUsd7d": "131981.51"
     },
     "metadata": {},
     "tokenId": "dc97aff4-ff08-4867-aa35-0985d541cd4d",
-    "totalSupply": "3869.1507469020003",
-    "circulatingSupply": "3874.050746902",
+    "totalSupply": "5402.2549449260005",
+    "circulatingSupply": "5402.2549449260005",
     "isClaimed": false,
     "isPortable": true
    },
@@ -602,14 +782,14 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077"
     ],
-    "updatedAt": "2026-10-18T20:17:49.292Z",
+    "updatedAt": "2026-11-21T14:14:35.421Z",
     "createdAt": "2026-09-28T10:38:50.748Z",
     "verifiedAt": null,
     "tokens": [
      "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
      "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
     ],
-    "liquidity": 10021.088080122907,
+    "liquidity": 9933.677069306297,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -632,35 +812,267 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0xe3e81074fe1196e949d84abf100f595242a0449a9639f5524e0a79821b98609e": {
+    "key": "robinhood:0xe3e81074fe1196e949d84abf100f595242a0449a9639f5524e0a79821b98609e",
+    "name": "Uniswap V4 LP wUSDG/LUNR",
+    "decimals": 18,
+    "symbol": "WUSDG/LUNR",
+    "price": 9007199254740990,
+    "address": "0xe3e81074fe1196e949d84abf100f595242a0449a9639f5524e0a79821b98609e",
+    "addresses": {
+     "robinhood": "0xe3e81074fe1196e949d84abf100f595242a0449a9639f5524e0a79821b98609e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:45.806Z",
+    "createdAt": "2026-11-06T15:59:41.598Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+    ],
+    "liquidity": 9997.997985855658,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "66dd80d4-cb68-4bf2-8ddc-d6ac22041f6a",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x58a2edf0169ede82904e47a0e2a3a4008edebb60": {
     "key": "ethereum:0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
     "name": "Intuitive Machines (Ondo Tokenized)",
     "decimals": 18,
     "symbol": "LUNRON",
-    "price": 10.62,
+    "price": 9.06,
     "address": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
     "addresses": {
-     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60",
-     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15"
+     "bsc": "0xa3b7b7cfeb023a6c4f444f5ca9a3fc85809ece15",
+     "ethereum": "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-03-13T13:03:26.806Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 103661,
+    "liquidity": 99465,
     "image": "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077",
     "metrics": {
-     "volumeUsd1d": "154244.065",
-     "volumeUsd7d": "1091189.462"
+     "volumeUsd1d": "152058.353",
+     "volumeUsd7d": "1034744.856"
     },
     "metadata": {},
     "tokenId": "d46be704-b8f3-4f32-9a42-814e76f1b998",
-    "totalSupply": "9723.503805172779",
-    "circulatingSupply": "9723.503805172779",
+    "totalSupply": "10980.70546915729",
+    "circulatingSupply": "10980.70546915729",
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x623fe693b6144bd48b2b6633f429605ed2e6540a3e2827ba6dc316edff41921f": {
+    "key": "robinhood:0x623fe693b6144bd48b2b6633f429605ed2e6540a3e2827ba6dc316edff41921f",
+    "name": "Uniswap V4 LP USDG/LUNR",
+    "decimals": 18,
+    "symbol": "USDG/LUNR",
+    "price": 9007199254740990,
+    "address": "0x623fe693b6144bd48b2b6633f429605ed2e6540a3e2827ba6dc316edff41921f",
+    "addresses": {
+     "robinhood": "0x623fe693b6144bd48b2b6633f429605ed2e6540a3e2827ba6dc316edff41921f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:45.631Z",
+    "createdAt": "2026-11-04T15:56:08.545Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+    ],
+    "liquidity": 50013.16743231701,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9961,
+     "feePercentage": "99.61"
+    },
+    "tokenId": "df89de5b-4970-47ab-8e9d-e0198b4c2887",
+    "reserves": [
+     "49999.999999999999999986",
+     "2.093109337013391698"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x4fa8cf5f88969df3d24f8ba566ddca72f0f247607e81b99c3556cccae2e7c234": {
+    "key": "arbitrum:0x4fa8cf5f88969df3d24f8ba566ddca72f0f247607e81b99c3556cccae2e7c234",
+    "name": "Uniswap V4 LP wUSDC/rLUNR",
+    "decimals": 18,
+    "symbol": "WUSDC/RLUNR",
+    "price": 9007199254740990,
+    "address": "0x4fa8cf5f88969df3d24f8ba566ddca72f0f247607e81b99c3556cccae2e7c234",
+    "addresses": {
+     "arbitrum": "0x4fa8cf5f88969df3d24f8ba566ddca72f0f247607e81b99c3556cccae2e7c234"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177046/large/69715a510afc89a85528c503971bc7f6.png?1789116658"
+    ],
+    "updatedAt": "2026-11-21T14:14:01.225Z",
+    "createdAt": "2026-11-14T12:28:24.092Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xa651e444f39594c1f5718fbc5c4d6bf11e5cb15f"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "8e87c677-9f26-43ad-93ff-db40e913879f",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0x2fc0830eb0ea90a3716a6be9b94f3a1c3fea5026adaef1174d85cc1e3d07dd1f": {
+    "key": "robinhood:0x2fc0830eb0ea90a3716a6be9b94f3a1c3fea5026adaef1174d85cc1e3d07dd1f",
+    "name": "Uniswap V4 LP MJDQ/LUNR",
+    "decimals": 18,
+    "symbol": "MJDQ/LUNR",
+    "price": 9007199254740990,
+    "address": "0x2fc0830eb0ea90a3716a6be9b94f3a1c3fea5026adaef1174d85cc1e3d07dd1f",
+    "addresses": {
+     "robinhood": "0x2fc0830eb0ea90a3716a6be9b94f3a1c3fea5026adaef1174d85cc1e3d07dd1f"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:45.845Z",
+    "createdAt": "2026-11-11T13:21:22.979Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
+    ],
+    "liquidity": 9998.998168291093,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19910,
+     "feePercentage": "99.5502"
+    },
+    "tokenId": "6a483376-89db-4ad7-a2af-f40ffd7f221a",
+    "reserves": [
+     "9999.999999999999999982",
+     "0.011323085808513904"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "ethereum:0x3db6129f473279fefd70849cc057a5866f19f0ed2a57c852a15577325284801d": {
+    "key": "ethereum:0x3db6129f473279fefd70849cc057a5866f19f0ed2a57c852a15577325284801d",
+    "name": "Uniswap V4 LP wUSDC/LUNRon",
+    "decimals": 18,
+    "symbol": "WUSDC/LUNRON",
+    "price": 9007199254740990,
+    "address": "0x3db6129f473279fefd70849cc057a5866f19f0ed2a57c852a15577325284801d",
+    "addresses": {
+     "ethereum": "0x3db6129f473279fefd70849cc057a5866f19f0ed2a57c852a15577325284801d"
+    },
+    "platform": "uniswap-v4",
+    "network": "ethereum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102172416/large/lunron_160x160.png?1773393077"
+    ],
+    "updatedAt": "2026-11-21T14:14:36.777Z",
+    "createdAt": "2026-11-07T15:59:33.148Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x334e98d8590ea829710ba2c8d7de2a3a0285734f",
+     "0x58a2edf0169ede82904e47a0e2a3a4008edebb60"
+    ],
+    "liquidity": 9933.677069306297,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "4a6e6f9e-6fd3-45e8-8605-c772c09dcd24",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0x64c666e35449dbea049b32af52acbf62cab208a8058ac707b423c3a7578bc084": {
     "key": "robinhood:0x64c666e35449dbea049b32af52acbf62cab208a8058ac707b423c3a7578bc084",
@@ -679,19 +1091,19 @@
      "https://images.portals.fi/unknown-token.png",
      "https://coin-images.coingecko.com/coins/images/102174177/large/0xa5d4968421ba94814be3b136b15cf422101ac1a3.png?1782444742"
     ],
-    "updatedAt": "2026-10-18T20:15:42.936Z",
+    "updatedAt": "2026-11-21T14:14:46.531Z",
     "createdAt": "2026-08-16T07:43:55.141Z",
     "verifiedAt": null,
     "tokens": [
      "0x0ff7a742b035504118a9d435c8264619a8428e1c",
      "0xa5d4968421ba94814be3b136b15cf422101ac1a3"
     ],
-    "liquidity": 10137.642412475248,
+    "liquidity": 9726.893838925593,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "0.003"
+     "apy": "0.276",
+     "baseApy": "0.276",
+     "volumeUsd1d": "0.245",
+     "volumeUsd7d": "0.495"
     },
     "metadata": {
      "tags": [
@@ -703,8 +1115,8 @@
     },
     "tokenId": "409816b1-baf7-4132-8146-288eae7e1526",
     "reserves": [
-     "9691.99167",
-     "34.564031554192997544"
+     "9638.244911",
+     "10.393404267290709954"
     ],
     "isClaimed": false,
     "isPortable": false

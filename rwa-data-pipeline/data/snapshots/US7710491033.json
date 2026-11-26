@@ -5,8 +5,8 @@
  "name": "Roblox",
  "isin": "US7710491033",
  "asset_type": "stock",
- "run_id": "20261018T201453Z",
- "fetched_at": "2026-10-18T20:20:23Z",
+ "run_id": "20261121T141022Z",
+ "fetched_at": "2026-11-21T14:16:02Z",
  "status": "ok",
  "cmc": {
   "rwa": {
@@ -17,30 +17,30 @@
     {
      "symbol": "USD",
      "crypto_id": 2781,
-     "average_tokenized_price": 48.90079364955177,
-     "tokenized_market_cap": 655127.1344489487,
-     "tokenized_volume_24h": 30085.82185464,
-     "last_updated": "2026-10-18T20:14:02.000Z"
+     "average_tokenized_price": 47.65092470674212,
+     "tokenized_market_cap": 420932.95432866836,
+     "tokenized_volume_24h": 85280.1869831,
+     "last_updated": "2026-11-21T14:09:03.000Z"
     }
    ],
    "rwa_id": 365,
    "asset_type": "stock",
-   "rwa_rank": 408,
+   "rwa_rank": 399,
    "has_tokens": true,
-   "average_tokenized_price": 48.90079364955177,
-   "tokenized_market_cap": 655127.1344489487,
-   "tokenized_volume_24h": 30085.82185464,
-   "last_updated": "2026-10-18T20:13:39.392Z",
+   "average_tokenized_price": 47.65092470674212,
+   "tokenized_market_cap": 420932.95432866836,
+   "tokenized_volume_24h": 85280.1869831,
+   "last_updated": "2026-11-21T14:10:11.194Z",
    "tokens": [
     {
      "symbol": "RBLX",
      "name": "Roblox Tokenized Stock (Robinhood)",
-     "price": 48.89979787722273,
+     "price": 47.65092470674212,
      "crypto_id": 40702,
      "issuer_id": "6a465832fbe3004b1a0ea2dd",
      "issuer_name": "Robinhood",
-     "market_cap": 564082.67,
-     "volume_24h": 30062.69443522
+     "market_cap": 420932.95432866836,
+     "volume_24h": 85280.18698309711
     },
     {
      "symbol": "wRBLXx",
@@ -55,12 +55,12 @@
     {
      "symbol": "RBLXc",
      "name": "Roblox Corporation Tokenized Stock (Coinbase)",
-     "price": 80.06418252849723,
+     "price": null,
      "crypto_id": 42451,
      "issuer_id": "6a72fe7072996604d45c6733",
      "issuer_name": "Coinbase",
-     "market_cap": 91032.98,
-     "volume_24h": 13090.63655222
+     "market_cap": 2192.65,
+     "volume_24h": 0
     }
    ],
    "tradfi_markets": [
@@ -192,7 +192,7 @@
     "name": "Roblox • Robinhood Token",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 50.31,
+    "price": 48.075,
     "address": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
     "addresses": {
      "robinhood": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
@@ -203,15 +203,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
-    "liquidity": 580350.0315015,
+    "liquidity": 424679.09917575,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "115577.45"
+     "volumeUsd1d": "-9971.775",
+     "volumeUsd7d": "-17249.214"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000eed533334fe84ce08253d5b1dcff7373",
@@ -241,20 +241,114 @@
      }
     },
     "tokenId": "17c61892-82fa-451c-ab20-70f093581fe9",
-    "totalSupply": "11535.48065",
+    "totalSupply": "8833.67861",
     "isClaimed": false,
     "isPortable": true
    }
   },
   "searches": {
    "RBLX": {
-    "total_items": 18,
+    "total_items": 26,
     "pages": 1,
-    "received": 18,
+    "received": 26,
     "complete": true
    }
   },
   "records": {
+   "arbitrum:0xa5cec2ca4b7633bf05ac724003e025ecb26e5d1a937b3c04b34ceebeecb1448c": {
+    "key": "arbitrum:0xa5cec2ca4b7633bf05ac724003e025ecb26e5d1a937b3c04b34ceebeecb1448c",
+    "name": "Uniswap V4 LP wUSDC/rRBLX",
+    "decimals": 18,
+    "symbol": "WUSDC/RRBLX",
+    "price": 9007199254740990,
+    "address": "0xa5cec2ca4b7633bf05ac724003e025ecb26e5d1a937b3c04b34ceebeecb1448c",
+    "addresses": {
+     "arbitrum": "0xa5cec2ca4b7633bf05ac724003e025ecb26e5d1a937b3c04b34ceebeecb1448c"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177123/large/2b7cff814458bb7913c8b4d7fe7f8dbe.png?1789116901"
+    ],
+    "updatedAt": "2026-11-21T14:14:02.155Z",
+    "createdAt": "2026-11-14T12:28:22.713Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x93c1fd913ece21efe1dd353072a2a4403382c921"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "60"
+    },
+    "tokenId": "7ef91946-ab0a-4d3a-b50f-d7942ddee8ce",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xe949ee36f40d37a65d198b6f9f4c22bd323978b30ad7ff77666c9391e0e637b5": {
+    "key": "robinhood:0xe949ee36f40d37a65d198b6f9f4c22bd323978b30ad7ff77666c9391e0e637b5",
+    "name": "Uniswap V4 LP TQian/RBLX",
+    "decimals": 18,
+    "symbol": "TQIAN/RBLX",
+    "price": 9007199254740990,
+    "address": "0xe949ee36f40d37a65d198b6f9f4c22bd323978b30ad7ff77666c9391e0e637b5",
+    "addresses": {
+     "robinhood": "0xe949ee36f40d37a65d198b6f9f4c22bd323978b30ad7ff77666c9391e0e637b5"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
+    ],
+    "updatedAt": "2026-11-21T14:14:43.012Z",
+    "createdAt": "2026-08-24T14:19:19.088Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x1fcad5008a489be58cdee8b473f20479bd9e7028",
+     "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
+    ],
+    "liquidity": 2290.0109464574984,
+    "metrics": {
+     "apy": "50.935",
+     "baseApy": "50.935",
+     "volumeUsd1d": "103.105",
+     "volumeUsd7d": "650.353"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 300,
+     "feePercentage": "3.097"
+    },
+    "tokenId": "2f1539d8-1e9e-49a4-b8cb-5e854a8de0a1",
+    "reserves": [
+     "1455.045064188194646427",
+     "16.688088282607059884"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x9f3e8e8518edbc13a8269b7de5222fbbd126bfbe320b1ab4758399ae70a2216e": {
     "key": "ethereum:0x9f3e8e8518edbc13a8269b7de5222fbbd126bfbe320b1ab4758399ae70a2216e",
     "name": "Uniswap V4 LP USDT/RBLXx",
@@ -271,18 +365,19 @@
      "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
      "https://images.portals.fi/unknown-token.png"
     ],
-    "updatedAt": "2026-10-18T20:16:55.840Z",
+    "updatedAt": "2026-11-21T14:14:40.860Z",
     "createdAt": "2026-10-18T18:58:37.131Z",
     "verifiedAt": null,
     "tokens": [
      "0x3173dc3af3981c6e98bb63799b9cbeb5526ff752",
      "0x5d8da1417e3565eb02c9ca8cc588be5d8f65b1c5"
     ],
-    "liquidity": 3527.180966887563,
+    "liquidity": 2708.5744161109087,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
-     "volumeUsd1d": "0"
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -300,35 +395,128 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0xf597b71170cf079bd76bb4c6f290ab059c76a414bb675af2d244207f8b1f4362": {
+    "key": "robinhood:0xf597b71170cf079bd76bb4c6f290ab059c76a414bb675af2d244207f8b1f4362",
+    "name": "Uniswap V4 LP MJDQ/RBLX",
+    "decimals": 18,
+    "symbol": "MJDQ/RBLX",
+    "price": 9007199254740990,
+    "address": "0xf597b71170cf079bd76bb4c6f290ab059c76a414bb675af2d244207f8b1f4362",
+    "addresses": {
+     "robinhood": "0xf597b71170cf079bd76bb4c6f290ab059c76a414bb675af2d244207f8b1f4362"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:43.425Z",
+    "createdAt": "2026-11-11T13:21:29.653Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x124597e2d8bbe472825c4918a36de246ed0c92f7",
+     "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
+    ],
+    "liquidity": 9998.993607135497,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19991,
+     "feePercentage": "99.9564"
+    },
+    "tokenId": "39d8a03a-3e15-45e7-94c6-ea7d074ab029",
+    "reserves": [
+     "9999.999999999999999956",
+     "0.001957764684879655"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x872cbc19330382bdd89d32b957fda90cd3843d8a965dfbb7ca56811fd95b1542": {
+    "key": "arbitrum:0x872cbc19330382bdd89d32b957fda90cd3843d8a965dfbb7ca56811fd95b1542",
+    "name": "Uniswap V4 LP wUSDC/rRBLX",
+    "decimals": 18,
+    "symbol": "WUSDC/RRBLX",
+    "price": 9007199254740990,
+    "address": "0x872cbc19330382bdd89d32b957fda90cd3843d8a965dfbb7ca56811fd95b1542",
+    "addresses": {
+     "arbitrum": "0x872cbc19330382bdd89d32b957fda90cd3843d8a965dfbb7ca56811fd95b1542"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177123/large/2b7cff814458bb7913c8b4d7fe7f8dbe.png?1789116901"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.319Z",
+    "createdAt": "2026-11-14T12:28:23.279Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x93c1fd913ece21efe1dd353072a2a4403382c921"
+    ],
+    "liquidity": 3568.5201908171716,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "30"
+    },
+    "tokenId": "2ec20dbc-971f-4609-adae-87025734f4d7",
+    "reserves": [
+     "3000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "ethereum:0x461ad31f69e694e2e20b2070d8be1105626110c3": {
     "key": "ethereum:0x461ad31f69e694e2e20b2070d8be1105626110c3",
     "name": "Dinari RBLX",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 49.95,
+    "price": 48.1,
     "address": "0x461ad31f69e694e2e20b2070d8be1105626110c3",
     "addresses": {
+     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "avalanche": "0x7562a0076091db742fd4d328327669d2b8d644f9",
      "base": "0xb51c78989fb8d1bf2c957dd0522235c92d0443a5",
-     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "ethereum": "0x461ad31f69e694e2e20b2070d8be1105626110c3"
     },
     "platform": "basic",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7338.57,
+    "liquidity": 6824.28,
     "image": "https://coin-images.coingecko.com/coins/images/102174989/large/dinari-logo-green-with-margin.png?1785402812",
     "metrics": {
-     "volumeUsd1d": "3.278",
-     "volumeUsd7d": "8672.438"
+     "volumeUsd1d": "107.258",
+     "volumeUsd7d": "213.718"
     },
     "metadata": {},
     "tokenId": "8ebf6f94-0cc7-43f2-a4e2-e1b47e2a4108",
-    "totalSupply": "146.92192619633204",
-    "circulatingSupply": "146.92192619633204",
+    "totalSupply": "141.89040557633203",
+    "circulatingSupply": "141.89040557633203",
     "isClaimed": false,
     "isPortable": true
    },
@@ -349,14 +537,14 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:39.957Z",
+    "updatedAt": "2026-11-21T14:14:43.466Z",
     "createdAt": "2026-09-08T14:35:54.126Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 621.1146567918676,
+    "liquidity": 605.9733681824495,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
@@ -379,12 +567,58 @@
     "isClaimed": false,
     "isPortable": false
    },
+   "robinhood:0x15c8dc87f05ac475e40176c85caa69e33e2fa542293304ddb3f0f8a982d71e81": {
+    "key": "robinhood:0x15c8dc87f05ac475e40176c85caa69e33e2fa542293304ddb3f0f8a982d71e81",
+    "name": "Uniswap V4 LP wUSDG/RBLX",
+    "decimals": 18,
+    "symbol": "WUSDG/RBLX",
+    "price": 9007199254740990,
+    "address": "0x15c8dc87f05ac475e40176c85caa69e33e2fa542293304ddb3f0f8a982d71e81",
+    "addresses": {
+     "robinhood": "0x15c8dc87f05ac475e40176c85caa69e33e2fa542293304ddb3f0f8a982d71e81"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:43.466Z",
+    "createdAt": "2026-11-06T15:59:35.905Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
+    ],
+    "liquidity": 9997.997985855658,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 100,
+     "feePercentage": "50"
+    },
+    "tokenId": "e0022756-fad6-42b7-88a9-fb8f562ec911",
+    "reserves": [
+     "10000",
+     "0"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
    "robinhood:0x965fb567dfe6f8af3c021857f2eec95ef1619f5a": {
     "key": "robinhood:0x965fb567dfe6f8af3c021857f2eec95ef1619f5a",
     "name": "Beefy CLM RBLX-USDG Reward Pool",
     "decimals": 18,
     "symbol": "RCOWUNISWAPROBINHOODRBLX-USDG",
-    "price": 45.45689719019146,
+    "price": 44.778944814448344,
     "address": "0x965fb567dfe6f8af3c021857f2eec95ef1619f5a",
     "addresses": {
      "robinhood": "0x965fb567dfe6f8af3c021857f2eec95ef1619f5a"
@@ -396,19 +630,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "updatedAt": "2026-11-21T14:14:06.656Z",
     "createdAt": "2026-09-07T14:01:59.412Z",
     "verifiedAt": null,
     "tokens": [
      "0x0ed02734598dfffae5e4f4902918f94da01f562b"
     ],
     "poolAddress": "0x0ed02734598dfffae5e4f4902918f94da01f562b",
-    "liquidity": 6408.097778749665,
+    "liquidity": 4379.340122689295,
     "metrics": {
-     "apy": "8.609",
-     "baseApy": "8.609",
+     "apy": "425.265",
+     "baseApy": "425.265",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "1989.664"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -431,9 +665,9 @@
      ]
     },
     "tokenId": "24f2f5c1-3bb1-4ee7-9460-40be7b39527d",
-    "totalSupply": "140.970857556295832221",
+    "totalSupply": "97.799091533667840393",
     "reserves": [
-     "140.970857556295832221"
+     "97.799091533667840393"
     ],
     "pricePerShare": "1",
     "isClaimed": false,
@@ -456,19 +690,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:40.159Z",
+    "updatedAt": "2026-11-21T14:14:42.994Z",
     "createdAt": "2026-09-08T14:43:04.825Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 14112.595354980047,
+    "liquidity": 7509.161283217423,
     "metrics": {
-     "apy": "10.321",
-     "baseApy": "10.321",
-     "volumeUsd1d": "3344.996",
-     "volumeUsd7d": "94403.857"
+     "apy": "33.468",
+     "baseApy": "33.468",
+     "volumeUsd1d": "5771.49",
+     "volumeUsd7d": "41100.059"
     },
     "metadata": {
      "tags": [
@@ -480,8 +714,55 @@
     },
     "tokenId": "c6a9e77d-4b37-483e-9c6a-c6cc85521dc9",
     "reserves": [
-     "9744.980777",
-     "86.814044483801353339"
+     "4438.315048",
+     "63.876156738791956165"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "arbitrum:0x77969f188a9ae03f2cdb1176d114fb75b98fe31d6710a56c3fc2f026d4db8011": {
+    "key": "arbitrum:0x77969f188a9ae03f2cdb1176d114fb75b98fe31d6710a56c3fc2f026d4db8011",
+    "name": "Uniswap V4 LP wUSDC/rRBLX",
+    "decimals": 18,
+    "symbol": "WUSDC/RRBLX",
+    "price": 9007199254740990,
+    "address": "0x77969f188a9ae03f2cdb1176d114fb75b98fe31d6710a56c3fc2f026d4db8011",
+    "addresses": {
+     "arbitrum": "0x77969f188a9ae03f2cdb1176d114fb75b98fe31d6710a56c3fc2f026d4db8011"
+    },
+    "platform": "uniswap-v4",
+    "network": "arbitrum",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png",
+     "https://coin-images.coingecko.com/coins/images/102177123/large/2b7cff814458bb7913c8b4d7fe7f8dbe.png?1789116901"
+    ],
+    "updatedAt": "2026-11-21T14:13:53.429Z",
+    "createdAt": "2026-11-14T12:28:21.725Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x0ff7a742b035504118a9d435c8264619a8428e1c",
+     "0x93c1fd913ece21efe1dd353072a2a4403382c921"
+    ],
+    "liquidity": 11895.067302723905,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 60,
+     "feePercentage": "90"
+    },
+    "tokenId": "de1327fb-3590-479f-870d-c11b062bbf05",
+    "reserves": [
+     "10000",
+     "0"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -491,27 +772,27 @@
     "name": "Roblox rStock",
     "decimals": 18,
     "symbol": "RRBLX",
-    "price": 49.15,
+    "price": 47.94,
     "address": "0x93c1fd913ece21efe1dd353072a2a4403382c921",
     "addresses": {
      "arbitrum": "0x93c1fd913ece21efe1dd353072a2a4403382c921"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-09-11T08:57:27.903Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 965318,
+    "liquidity": 1663678,
     "image": "https://coin-images.coingecko.com/coins/images/102177123/large/2b7cff814458bb7913c8b4d7fe7f8dbe.png?1789116901",
     "metrics": {
-     "volumeUsd1d": "82.325",
-     "volumeUsd7d": "24703.378"
+     "volumeUsd1d": "122.045",
+     "volumeUsd7d": "1239.786"
     },
     "metadata": {},
     "tokenId": "0efa19f2-f0f4-489c-bd32-c46a8b6d03b8",
-    "totalSupply": "19639.677583317",
-    "circulatingSupply": "19639.677583317",
+    "totalSupply": "34700.809739217",
+    "circulatingSupply": "34700.809739217",
     "isClaimed": false,
     "isPortable": true
    },
@@ -520,30 +801,30 @@
     "name": "Dinari RBLX",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 49.95,
+    "price": 48.1,
     "address": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
     "addresses": {
+     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "avalanche": "0x7562a0076091db742fd4d328327669d2b8d644f9",
      "base": "0xb51c78989fb8d1bf2c957dd0522235c92d0443a5",
-     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "ethereum": "0x461ad31f69e694e2e20b2070d8be1105626110c3"
     },
     "platform": "basic",
     "network": "arbitrum",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7338.57,
+    "liquidity": 6824.28,
     "image": "https://coin-images.coingecko.com/coins/images/102174989/large/dinari-logo-green-with-margin.png?1785402812",
     "metrics": {
-     "volumeUsd1d": "3.278",
-     "volumeUsd7d": "8672.446"
+     "volumeUsd1d": "107.258",
+     "volumeUsd7d": "213.352"
     },
     "metadata": {},
     "tokenId": "8ebf6f94-0cc7-43f2-a4e2-e1b47e2a4108",
-    "totalSupply": "146.92192619633204",
-    "circulatingSupply": "146.92192619633204",
+    "totalSupply": "141.89040557633203",
+    "circulatingSupply": "141.89040557633203",
     "isClaimed": false,
     "isPortable": true
    },
@@ -552,7 +833,7 @@
     "name": "Beefy CLM RBLX-USDG",
     "decimals": 18,
     "symbol": "COWUNISWAPROBINHOODRBLX-USDG",
-    "price": 45.45689719019146,
+    "price": 44.778944814448344,
     "address": "0x0ed02734598dfffae5e4f4902918f94da01f562b",
     "addresses": {
      "robinhood": "0x0ed02734598dfffae5e4f4902918f94da01f562b"
@@ -564,7 +845,7 @@
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808",
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111"
     ],
-    "updatedAt": "2026-10-18T20:15:55.895Z",
+    "updatedAt": "2026-11-21T14:14:06.656Z",
     "createdAt": "2026-09-07T14:01:59.412Z",
     "verifiedAt": null,
     "tokens": [
@@ -572,12 +853,12 @@
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
     "poolAddress": "0x1bdb8e3a79cb1a7f228808739311e23098d33d43",
-    "liquidity": 6408.097778749665,
+    "liquidity": 4379.340122689295,
     "metrics": {
-     "apy": "8.609",
-     "baseApy": "8.609",
+     "apy": "425.265",
+     "baseApy": "425.265",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "1989.664"
+     "volumeUsd7d": "0"
     },
     "metadata": {
      "tags": [
@@ -599,13 +880,59 @@
      ]
     },
     "tokenId": "b393b1f9-300b-4214-a6b6-d06106c2e4f9",
-    "totalSupply": "140.970857556295833221",
+    "totalSupply": "97.799091533667841393",
     "reserves": [
-     "3559.78698",
-     "56.61520172430262848"
+     "1810.908738",
+     "53.425509821930199831"
     ],
     "isClaimed": false,
     "isPortable": true
+   },
+   "robinhood:0x1a61d1ad43236d371f632ee99923e2d7cb4d8b413b8a8b02488ac57acbfc492e": {
+    "key": "robinhood:0x1a61d1ad43236d371f632ee99923e2d7cb4d8b413b8a8b02488ac57acbfc492e",
+    "name": "Uniswap V4 LP USDG/RBLX",
+    "decimals": 18,
+    "symbol": "USDG/RBLX",
+    "price": 9007199254740990,
+    "address": "0x1a61d1ad43236d371f632ee99923e2d7cb4d8b413b8a8b02488ac57acbfc492e",
+    "addresses": {
+     "robinhood": "0x1a61d1ad43236d371f632ee99923e2d7cb4d8b413b8a8b02488ac57acbfc492e"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:44.005Z",
+    "createdAt": "2026-11-04T15:56:08.848Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x386c702c290a954d1c0ba0efc12d51373e02d3f3",
+     "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
+    ],
+    "liquidity": 50024.18929193457,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 9939,
+     "feePercentage": "99.39"
+    },
+    "tokenId": "0cdc869c-32ca-4e03-9ac3-459f852d0209",
+    "reserves": [
+     "49999.99999999999999997",
+     "0.608701143830089434"
+    ],
+    "isClaimed": false,
+    "isPortable": false
    },
    "robinhood:0x2ef5945cd5664876b6481fdacfaa2942995a4da8": {
     "key": "robinhood:0x2ef5945cd5664876b6481fdacfaa2942995a4da8",
@@ -624,19 +951,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:17:54.512Z",
+    "updatedAt": "2026-11-21T14:14:41.532Z",
     "createdAt": "2026-07-17T23:42:00.436Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 101970.75578374359,
+    "liquidity": 72206.04789591861,
     "metrics": {
-     "apy": "12.493",
-     "baseApy": "12.493",
-     "volumeUsd1d": "3490.223",
-     "volumeUsd7d": "100446.42"
+     "apy": "77.521",
+     "baseApy": "77.521",
+     "volumeUsd1d": "15335.487",
+     "volumeUsd7d": "91819.209"
     },
     "metadata": {
      "tags": [
@@ -646,8 +973,8 @@
     },
     "tokenId": "01fc7df5-aec8-4414-9226-97d6703837f1",
     "reserves": [
-     "68467.727882",
-     "665.931780992716848829"
+     "38507.395425",
+     "700.960009795499153323"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -669,19 +996,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:40.738Z",
+    "updatedAt": "2026-11-21T14:14:44.801Z",
     "createdAt": "2026-08-01T09:06:40.881Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 11177.939450910295,
+    "liquidity": 851.9427130113718,
     "metrics": {
-     "apy": "13.642",
-     "baseApy": "13.642",
-     "volumeUsd1d": "380.147",
-     "volumeUsd7d": "8786.734"
+     "apy": "1.019",
+     "baseApy": "1.019",
+     "volumeUsd1d": "2.165",
+     "volumeUsd7d": "84.198"
     },
     "metadata": {
      "tags": [
@@ -693,8 +1020,8 @@
     },
     "tokenId": "603b4f0e-a3d6-467d-b5fb-7de15cce62db",
     "reserves": [
-     "9495.234933",
-     "33.446720689928346237"
+     "475.416534",
+     "7.8320578057487633"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -716,19 +1043,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:17:55.005Z",
+    "updatedAt": "2026-11-21T14:14:41.510Z",
     "createdAt": "2026-08-31T17:16:24.365Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 57709.35114139089,
+    "liquidity": 30636.395474709792,
     "metrics": {
-     "apy": "24.55",
-     "baseApy": "24.55",
-     "volumeUsd1d": "12938.478",
-     "volumeUsd7d": "379353.158"
+     "apy": "98.131",
+     "baseApy": "98.131",
+     "volumeUsd1d": "27455.457",
+     "volumeUsd7d": "130746.808"
     },
     "metadata": {
      "tags": [
@@ -738,8 +1065,8 @@
     },
     "tokenId": "b0af480c-d31f-4c3a-8a8c-a0d7c0886f70",
     "reserves": [
-     "29837.357211",
-     "554.005047314468221348"
+     "13624.713654",
+     "353.857136156209944986"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -749,30 +1076,30 @@
     "name": "Dinari RBLX",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 49.95,
+    "price": 48.1,
     "address": "0x7562a0076091db742fd4d328327669d2b8d644f9",
     "addresses": {
+     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "avalanche": "0x7562a0076091db742fd4d328327669d2b8d644f9",
      "base": "0xb51c78989fb8d1bf2c957dd0522235c92d0443a5",
-     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "ethereum": "0x461ad31f69e694e2e20b2070d8be1105626110c3"
     },
     "platform": "basic",
     "network": "avalanche",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2026-07-30T09:47:24.528Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7338.57,
+    "liquidity": 6824.28,
     "image": "https://coin-images.coingecko.com/coins/images/102174989/large/dinari-logo-green-with-margin.png?1785402812",
     "metrics": {
-     "volumeUsd1d": "3.278",
-     "volumeUsd7d": "8672.449"
+     "volumeUsd1d": "107.258",
+     "volumeUsd7d": "213.765"
     },
     "metadata": {},
     "tokenId": "8ebf6f94-0cc7-43f2-a4e2-e1b47e2a4108",
-    "totalSupply": "146.92192619633204",
-    "circulatingSupply": "146.92192619633204",
+    "totalSupply": "141.89040557633203",
+    "circulatingSupply": "141.89040557633203",
     "isClaimed": false,
     "isPortable": true
    },
@@ -781,7 +1108,7 @@
     "name": "Roblox • Robinhood Token",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 50.31,
+    "price": 48.075,
     "address": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
     "addresses": {
      "robinhood": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
@@ -792,15 +1119,15 @@
      "https://icons.llamao.fi/icons/chains/rsz_robinhood.jpg",
      "https://cdn.robinhood.com/ncw_assets/logos/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png"
     ],
-    "updatedAt": "2026-10-18T20:16:03.412Z",
+    "updatedAt": "2026-11-21T14:14:20.527Z",
     "createdAt": "2026-07-16T20:06:53.602Z",
     "verifiedAt": null,
     "tokens": [],
     "poolAddress": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
-    "liquidity": 580350.0315015,
+    "liquidity": 424679.09917575,
     "metrics": {
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "115577.45"
+     "volumeUsd1d": "-9971.775",
+     "volumeUsd7d": "-17249.214"
     },
     "metadata": {
      "uid": "0x00000000000000000000000000000000eed533334fe84ce08253d5b1dcff7373",
@@ -830,7 +1157,7 @@
      }
     },
     "tokenId": "17c61892-82fa-451c-ab20-70f093581fe9",
-    "totalSupply": "11535.48065",
+    "totalSupply": "8833.67861",
     "isClaimed": false,
     "isPortable": true
    },
@@ -846,7 +1173,7 @@
     },
     "platform": "xstocks",
     "network": "ethereum",
-    "updatedAt": "2026-10-18T20:15:45.470Z",
+    "updatedAt": "2026-11-21T14:13:21.108Z",
     "createdAt": "2025-10-01T09:00:49.665Z",
     "verifiedAt": null,
     "tokens": [],
@@ -886,19 +1213,19 @@
      "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:41.286Z",
+    "updatedAt": "2026-11-21T14:14:45.244Z",
     "createdAt": "2026-07-24T23:11:21.376Z",
     "verifiedAt": null,
     "tokens": [
      "0x0000000000000000000000000000000000000000",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 7463.986376082916,
+    "liquidity": 835.1084554146855,
     "metrics": {
-     "apy": "0",
-     "baseApy": "0",
-     "volumeUsd1d": "0",
-     "volumeUsd7d": "649.272"
+     "apy": "14.638",
+     "baseApy": "14.638",
+     "volumeUsd1d": "6.574",
+     "volumeUsd7d": "13.261"
     },
     "metadata": {
      "tags": [
@@ -910,8 +1237,8 @@
     },
     "tokenId": "af04d214-12a4-4ca3-ba95-5fb31bf3f74c",
     "reserves": [
-     "1.003028424851267834",
-     "101.817263934642798937"
+     "0.222909816238333826",
+     "9.511820594634102943"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -933,19 +1260,19 @@
      "https://coin-images.coingecko.com/coins/images/51281/large/GDN_USDG_Token_200x200.png?1730484111",
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808"
     ],
-    "updatedAt": "2026-10-18T20:15:41.688Z",
+    "updatedAt": "2026-11-21T14:14:45.380Z",
     "createdAt": "2026-07-31T14:53:42.302Z",
     "verifiedAt": null,
     "tokens": [
      "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 632.4474095783987,
+    "liquidity": 624.5256919001773,
     "metrics": {
      "apy": "0",
      "baseApy": "0",
      "volumeUsd1d": "0",
-     "volumeUsd7d": "80.25"
+     "volumeUsd7d": "137.113"
     },
     "metadata": {
      "tags": [
@@ -957,8 +1284,8 @@
     },
     "tokenId": "1c77e267-a5d0-4e4b-bff1-22723e2df365",
     "reserves": [
-     "380.962684",
-     "4.998702555722495176"
+     "341.793529",
+     "5.8810642308929245"
     ],
     "isClaimed": false,
     "isPortable": false
@@ -968,30 +1295,30 @@
     "name": "Dinari RBLX",
     "decimals": 18,
     "symbol": "RBLX",
-    "price": 49.95,
+    "price": 48.1,
     "address": "0xb51c78989fb8d1bf2c957dd0522235c92d0443a5",
     "addresses": {
+     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "avalanche": "0x7562a0076091db742fd4d328327669d2b8d644f9",
      "base": "0xb51c78989fb8d1bf2c957dd0522235c92d0443a5",
-     "arbitrum": "0x6468cd2aa21a87b4e52d89b8dd123fbb5db101ed",
      "ethereum": "0x461ad31f69e694e2e20b2070d8be1105626110c3"
     },
     "platform": "basic",
     "network": "base",
-    "updatedAt": "2026-10-18T20:16:23.287Z",
+    "updatedAt": "2026-11-21T14:14:26.735Z",
     "createdAt": "2025-02-25T08:34:16.549Z",
     "verifiedAt": null,
     "tokens": [],
-    "liquidity": 7338.57,
+    "liquidity": 6824.28,
     "image": "https://coin-images.coingecko.com/coins/images/102174989/large/dinari-logo-green-with-margin.png?1785402812",
     "metrics": {
-     "volumeUsd1d": "3.278",
-     "volumeUsd7d": "8672.446"
+     "volumeUsd1d": "107.258",
+     "volumeUsd7d": "213.528"
     },
     "metadata": {},
     "tokenId": "8ebf6f94-0cc7-43f2-a4e2-e1b47e2a4108",
-    "totalSupply": "146.92192619633204",
-    "circulatingSupply": "146.92192619633204",
+    "totalSupply": "141.89040557633203",
+    "circulatingSupply": "141.89040557633203",
     "isClaimed": false,
     "isPortable": true
    },
@@ -1012,19 +1339,19 @@
      "https://coin-images.coingecko.com/coins/images/102174202/large/0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8.png?1782444808",
      "https://coin-images.coingecko.com/coins/images/102174283/large/weth-robinhood.jpeg?1782924507"
     ],
-    "updatedAt": "2026-10-18T20:17:55.041Z",
+    "updatedAt": "2026-11-21T14:14:41.879Z",
     "createdAt": "2026-09-08T09:33:36.976Z",
     "verifiedAt": null,
     "tokens": [
      "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
      "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
     ],
-    "liquidity": 202976.8676877369,
+    "liquidity": 12697.62497458384,
     "metrics": {
-     "apy": "5.279",
-     "baseApy": "5.279",
-     "volumeUsd1d": "9786.227",
-     "volumeUsd7d": "182234.197"
+     "apy": "73.1",
+     "baseApy": "73.1",
+     "volumeUsd1d": "8482.615",
+     "volumeUsd7d": "65630.767"
     },
     "metadata": {
      "tags": [
@@ -1034,8 +1361,54 @@
     },
     "tokenId": "b01d1792-c7ca-4c5e-9d98-ff962273f483",
     "reserves": [
-     "56.342132609214247067",
-     "1418.561787859261481556"
+     "3.865369335949153365",
+     "127.839055722171280067"
+    ],
+    "isClaimed": false,
+    "isPortable": false
+   },
+   "robinhood:0xde6e49b84e17cb935a2ef7fa78113b4d137a795e69c2dafcbf81ec2162fb3978": {
+    "key": "robinhood:0xde6e49b84e17cb935a2ef7fa78113b4d137a795e69c2dafcbf81ec2162fb3978",
+    "name": "Uniswap V4 LP OLQD/RBLX",
+    "decimals": 18,
+    "symbol": "OLQD/RBLX",
+    "price": 9007199254740990,
+    "address": "0xde6e49b84e17cb935a2ef7fa78113b4d137a795e69c2dafcbf81ec2162fb3978",
+    "addresses": {
+     "robinhood": "0xde6e49b84e17cb935a2ef7fa78113b4d137a795e69c2dafcbf81ec2162fb3978"
+    },
+    "platform": "uniswap-v4",
+    "network": "robinhood",
+    "images": [
+     "https://assets.coingecko.com/coins/images/12504/large/uniswap-uni.png",
+     "https://images.portals.fi/unknown-token.png"
+    ],
+    "updatedAt": "2026-11-21T14:14:45.845Z",
+    "createdAt": "2026-11-06T15:59:41.127Z",
+    "verifiedAt": null,
+    "tokens": [
+     "0x627a3240d8aa299bc7b621112c9613c61afd8a09",
+     "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8"
+    ],
+    "liquidity": 9997.619844695566,
+    "metrics": {
+     "apy": "0",
+     "baseApy": "0",
+     "volumeUsd1d": "0",
+     "volumeUsd7d": "0"
+    },
+    "metadata": {
+     "tags": [
+      "#clp"
+     ],
+     "hookAddress": "0x0000000000000000000000000000000000000000",
+     "tickSpacing": 19444,
+     "feePercentage": "97.224"
+    },
+    "tokenId": "c14a9836-a4f9-4de6-a02b-f148702dac3b",
+    "reserves": [
+     "9999.999999999999999961",
+     "0.002110595187837251"
     ],
     "isClaimed": false,
     "isPortable": false
