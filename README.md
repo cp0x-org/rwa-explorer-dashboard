@@ -170,6 +170,17 @@ The root `docker-compose.yml` has no build step, so a server can run it from a p
 `cp0x-pi-rwa-backend-api`, `cp0x-pi-rwa-backend-collector`, `cp0x-pi-rwa-backend-migrate`, `cp0x-pi-rwa-postgres`; the
 site on 127.0.0.1:3301 and the API on 127.0.0.1:3302, for nginx in front.
 
+To start the server with the collected data instead of an empty database (no full collection on start):
+
+```bash
+make db-dump                                   # here: backups/rwa-<UTC time>.sql.gz (git-ignored)
+scp backups/rwa-<time>.sql.gz <server>:<repo>/backups/
+make db-restore FILE=backups/rwa-<time>.sql.gz # on the server, into the still empty database (refuses otherwise)
+make deploy                                    # migrate finds the schema up to date, the collector goes on from the last run
+```
+
+The dump has no owners or grants, so the server's own `POSTGRES_USER` / `POSTGRES_PASSWORD` apply.
+
 The pi-infra stack (private repository, `stacks/rwa`) is the other way to run it. nginx there routes `/api/` and `/logos/` to the API and
 everything else to the site. A data refresh needs no rebuild or redeploy; images change only with code.
 
