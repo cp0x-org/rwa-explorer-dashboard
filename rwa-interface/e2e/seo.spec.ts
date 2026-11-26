@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test';
 import { ROUTES } from './helpers';
 
 const SITE = 'https://rwa.cp0x.com';
+const API = 'https://rwa-api.cp0x.com'; // API_PUBLIC_URL of playwright.config.ts
 
 const attr = (html: string, re: RegExp) => Array.from(html.matchAll(new RegExp(re.source, 'g')), (m) => m[1]);
 
@@ -89,14 +90,20 @@ test.describe('for crawlers and AI agents', () => {
     expect(res.headers()['content-type']).toMatch(/^text\/plain/);
     const text = await res.text();
     expect(text.split('\n')[0]).toBe('# RWA Explorer');
-    expect(text).toContain(`(${SITE}/api/v1/export)`);
-    expect(text).toContain(`(${SITE}/api/v1/openapi.yaml)`);
+    expect(text).toContain(`(${API}/api/v1/export)`);
+    expect(text).toContain(`(${API}/api/v1/openapi.yaml)`);
     for (const route of ROUTES.filter((r) => /^\/(assets|issuers)\/./.test(r))) expect(text).toContain(`(${SITE}${route})`);
   });
 
-  test('pages name the API description, and /favicon.ico is the icon they link', async ({ request }) => {
+  test('pages name the API at its public address, and /favicon.ico is the icon they link', async ({ request }) => {
     const html = await (await request.get('/assets')).text();
-    expect(html).toContain('<link rel="service-desc" type="application/yaml" href="/api/v1/openapi.yaml"');
+    // programs and agents are sent to the API's own address; the browser keeps using this site's /api/ (the preload)
+    expect(html).toContain(`<link rel="service-desc" type="application/yaml" href="${API}/api/v1/openapi.yaml"`);
+    expect(html).toContain(`<link rel="alternate" type="application/json" href="${API}/api/v1/export"`);
+    expect(html).toMatch(/<link rel="preload" as="fetch" href="\/api\/v1\/export\?build=\d+"/);
+    const ld = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)![1]);
+    const dataset = ld['@graph'].find((n: { '@type': string }) => n['@type'] === 'Dataset');
+    expect(dataset.distribution[0].contentUrl).toBe(`${API}/api/v1/export`);
     expect(html).not.toContain('This HTML file is a template');
     const icon = await request.get('/favicon.ico');
     expect(icon.status()).toBe(200);

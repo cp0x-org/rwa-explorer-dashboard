@@ -69,7 +69,10 @@ pnpm test:e2e     # playwright: starts the mock API and the server itself (run `
 
 `pnpm test:e2e` needs a Chromium for Playwright once: `npx playwright install chromium`.
 Server environment: `PORT` (4173), `API_URL` (`http://127.0.0.1:8080`), `SITE_URL` (public address for canonical links,
-the sitemap and llms.txt; default `VITE_SITE_URL` from `.env.production`). Docker: `docker-compose.yml` passes `API_URL` and
+the sitemap and llms.txt; default `VITE_SITE_URL` from `.env.production`). `API_PUBLIC_URL`: public address of the API given to programs and
+agents in llms.txt, the JSON-LD dataset download and the `<head>` links to the export and the OpenAPI document (default
+`VITE_API_PUBLIC_URL`, `https://rwa-api.cp0x.com`; without either the site's address); the browser always calls this
+server's `/api/`. Docker: `docker-compose.yml` passes `API_URL` and
 `SITE_URL` (default `https://rwa.cp0x.com` there too, so a server never advertises localhost).
 On start the server prints a framed summary (port, public URL, API it reads, refresh interval, proxied paths), the
 same frame as the backend services; `STARTUP_BANNER=false` turns it off, `APP_VERSION` is the version it shows.

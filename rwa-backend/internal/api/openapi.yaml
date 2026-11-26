@@ -16,8 +16,10 @@ info:
     name: See repository LICENSE
     url: https://github.com/cp0x-org/pi-rwa-interface
 servers:
+  - url: https://rwa-api.cp0x.com
+    description: Public API (programs and agents)
   - url: /
-    description: Same origin (behind the reverse proxy)
+    description: Same origin (the site rwa.cp0x.com proxies /api/ and /logos/ to the API)
 security: []   # public read API; only the admin operations declare adminBearer
 
 tags:

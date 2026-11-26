@@ -43,7 +43,7 @@ export function useDocumentHead(data?: RwaExport) {
       return;
     }
 
-    const head = documentHead(pathname, data, import.meta.env.VITE_SITE_URL);
+    const head = documentHead(pathname, data, import.meta.env.VITE_SITE_URL, import.meta.env.VITE_API_PUBLIC_URL);
     document.title = head.title;
     syncHeadElements('title', 'title', [{ attributes: {}, textContent: head.title }]);
     syncMeta('name', 'title', [head.title]);

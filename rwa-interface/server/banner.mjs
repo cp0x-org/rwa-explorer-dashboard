@@ -51,7 +51,7 @@ export function renderBanner(title, subtitle, sections) {
   return out.join('\n');
 }
 
-export function printBanner({ port, apiUrl, siteUrl, refreshMs, retryMs, templateVersion }) {
+export function printBanner({ port, apiUrl, siteUrl, apiPublicUrl, refreshMs, retryMs, templateVersion }) {
   if (process.env.STARTUP_BANNER === 'false') return;
   const version = process.env.APP_VERSION || 'dev';
   const sections = [
@@ -69,7 +69,8 @@ export function printBanner({ port, apiUrl, siteUrl, refreshMs, retryMs, templat
       rows: [
         ['http', `:${port} (PORT)`],
         ['public', siteUrl ? `${siteUrl} (SITE_URL: canonical links, sitemap.xml, robots.txt)` : 'not set (SITE_URL): links use the build default'],
-        ['pages', 'every page rendered on the server, English and Chinese; /sitemap.xml, /robots.txt'],
+        ['public api', apiPublicUrl ? `${apiPublicUrl} (API_PUBLIC_URL: named in llms.txt, JSON-LD and <head>)` : 'not set: the site\'s own /api/'],
+        ['pages', 'every page rendered on the server, English and Chinese; /sitemap.xml, /robots.txt, /llms.txt'],
         ['static', 'dist/: hashed /assets/* cached for a year, the rest for an hour'],
         ['health', '/healthz: 503 until the first export is loaded']
       ]

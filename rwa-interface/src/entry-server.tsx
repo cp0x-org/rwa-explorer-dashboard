@@ -31,10 +31,16 @@ registerMessages('zh-CN', zh);
 // server/ overrides it with its SITE_URL variable (the `site` argument of render() and sitemapHeads()).
 export const siteUrl: string | undefined = import.meta.env.VITE_SITE_URL?.replace(/\/+$/, '');
 
+// Public address of the API for programs and agents (VITE_API_PUBLIC_URL, https://rwa-api.cp0x.com): llms.txt, the dataset
+// download in JSON-LD, the API links in <head>. The browser keeps calling the site's own /api/ (same origin). server/ overrides
+// it with API_PUBLIC_URL; without either the site's address is used.
+export const apiPublicUrl: string | undefined = import.meta.env.VITE_API_PUBLIC_URL?.replace(/\/+$/, '') || undefined;
+
 export { LOCALES };
 
 // /llms.txt of the current export (server/index.mjs)
-export const llms = (data: RwaExport, site: string | undefined = siteUrl) => (site ? llmsText(data, site) : null);
+export const llms = (data: RwaExport, site: string | undefined = siteUrl, api: string | undefined = apiPublicUrl) =>
+  site ? llmsText(data, site, api) : null;
 
 // API data a page needs besides the export, which the server fetches and passes to render() as an SWR fallback (the client
 // hydrates from the same values, embedded in the page): the list of runs on /updates. Locale-free paths.
@@ -96,7 +102,8 @@ export async function render(
   path: string,
   data: RwaExport,
   site: string | undefined = siteUrl,
-  fallback: Record<string, unknown> = {}
+  fallback: Record<string, unknown> = {},
+  api: string | undefined = apiPublicUrl
 ): Promise<RenderedPage> {
   const handler = createStaticHandler(routes, { basename: import.meta.env.VITE_APP_BASE_NAME });
   const context = await handler.query(new Request(new URL(path, 'http://ssr.local')));
@@ -130,6 +137,6 @@ export async function render(
     lang: meta.locale,
     noscript: intl.formatMessage({ id: 'site.noscript', defaultMessage: ENGLISH['site.noscript'] }),
     head: site && meta.found && !meta.noindex ? headLinks(meta, site) : null,
-    jsonLd: site ? jsonLd(meta, data, site) : null
+    jsonLd: site ? jsonLd(meta, data, site, api ?? site) : null
   };
 }

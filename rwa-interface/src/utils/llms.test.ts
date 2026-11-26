@@ -21,9 +21,17 @@ describe('llmsText', () => {
   it('links every underlying asset and issuer with an absolute address', () => {
     for (const u of data.underlyings) expect(text).toContain(`](${SITE}/assets/${encodeURIComponent(u.ticker)})`);
     for (const i of data.issuers) expect(text).toContain(`](${SITE}/issuers/${encodeURIComponent(i.id)})`);
-    expect(text).toContain(`(${SITE}/api/v1/openapi.yaml)`);
+    expect(text).toContain(`(${SITE}/api/v1/openapi.yaml)`); // no API address given: the site's own /api/
     const links = Array.from(text.matchAll(/\]\(([^)]*)\)/g), (m) => m[1]);
     for (const href of links) expect(href.startsWith(`${SITE}/`), href).toBe(true);
+  });
+
+  it('sends programs to the public address of the API when there is one', () => {
+    const withApi = llmsText(data, SITE, 'https://rwa-api.cp0x.com/');
+    expect(withApi).toContain('(https://rwa-api.cp0x.com/api/v1/export)');
+    expect(withApi).toContain('(https://rwa-api.cp0x.com/api/v1/openapi.yaml)');
+    expect(withApi).not.toContain(`${SITE}/api/`);
+    expect(withApi).toContain(`(${SITE}/assets)`);
   });
 
   it('fills every placeholder', () => {

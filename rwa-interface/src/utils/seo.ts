@@ -28,9 +28,11 @@ export interface DocumentHead {
   jsonLd: object | null;
 }
 
-export function documentHead(pathname: string, data: RwaExport, siteUrl: string | undefined): DocumentHead {
+// `apiUrl`: public address of the API (https://rwa-api.cp0x.com), named as the dataset's download; the site itself without one
+export function documentHead(pathname: string, data: RwaExport, siteUrl: string | undefined, apiUrl?: string): DocumentHead {
   const meta = pageMeta(pathname, data);
   const site = siteUrl?.replace(/\/+$/, '');
+  const api = apiUrl?.replace(/\/+$/, '') || site;
   const links = site && meta.found ? headLinks(meta, site) : null;
   return {
     title: meta.title,
@@ -41,7 +43,7 @@ export function documentHead(pathname: string, data: RwaExport, siteUrl: string 
     ogLocale: links?.ogLocale ?? null,
     ogLocaleAlternates: links?.ogLocaleAlternates ?? [],
     noindex: !meta.found,
-    jsonLd: site ? jsonLd(meta, data, site) : null
+    jsonLd: site ? jsonLd(meta, data, site, api) : null
   };
 }
 
@@ -64,7 +66,7 @@ export function headLinks(meta: PageMeta, siteUrl: string): HeadLinks {
 }
 
 // JSON-LD graph of a page. Listing pages describe the data set and list their rows; detail pages carry breadcrumbs.
-export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string): object | null {
+export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string, apiUrl: string = siteUrl): object | null {
   if (!meta.found || meta.noindex) return null;
   const { locale, path } = meta;
   const url = (p: string) => siteUrl + localizePath(p, locale);
@@ -122,7 +124,7 @@ export function jsonLd(meta: PageMeta, data: RwaExport, siteUrl: string): object
       dateModified: modified,
       keywords: meta.keywords.split(',').map((k) => k.trim()),
       isAccessibleForFree: true,
-      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${siteUrl}/api/v1/export` }],
+      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${apiUrl}/api/v1/export` }],
       variableMeasured: ['eligible DeFi positions', 'reported APY', 'liquidity (USD)', 'market cap (USD)']
     };
     graph.push(dataset);

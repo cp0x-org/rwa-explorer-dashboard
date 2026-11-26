@@ -11,14 +11,16 @@ const escapeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
 
 const CACHE_PAGES = 100; // rendered pages kept for the current build (a page is about 300 KB)
 
-export async function createRenderer({ root, siteUrl }) {
+export async function createRenderer({ root, siteUrl, apiPublicUrl }) {
   const entry = await import(pathToFileURL(path.join(root, 'dist-ssr', 'entry-server.mjs')).href);
   const { render, prerenderPaths, sitemapHeads, llms, NOT_FOUND_PATH, LOCALES, UNAVAILABLE, SSR_API } = entry;
   const site = siteUrl ?? entry.siteUrl;
+  // the API's public address for programs and agents (https://rwa-api.cp0x.com); the site's own /api/ without one
+  const api = apiPublicUrl ?? entry.apiPublicUrl ?? site;
   const template = await readFile(path.join(root, 'dist', 'index.html'), 'utf8');
   // identifies the frontend build (the template names the hashed bundles) and the site address: part of every page's ETag,
   // so a new image never answers 304 to a browser that holds HTML pointing at deleted bundles
-  const version = createHash('sha1').update(template).update(site ?? '').digest('base64url');
+  const version = createHash('sha1').update(template).update(site ?? '').update(api ?? '').digest('base64url');
 
   // The preload is same-origin like the client's pinned fetch (VITE_API_URL empty). With VITE_API_URL set the client calls
   // the absolute URL, so the preload would go unused: that setup is for the dev server, which renders no server markup.
@@ -57,6 +59,8 @@ export async function createRenderer({ root, siteUrl }) {
     ],
     [/(<meta name="keywords" content=")[^"]*"/, ({ meta }, open) => `${open}${escapeHtml(meta.keywords)}"`],
     ['<!--ssr-head-->', (page, _open, _route, buildId, fallback) => headTags(page, buildId, fallback) + page.styles],
+    // the dataset and API description links of <head> name the API's public address
+    [/(<link rel="(?:alternate" type="application\/json|service-desc" type="application\/yaml)" href=")\/api\//g, (_page, open) => `${open}${api ?? ''}/api/`],
     [/<noscript>[^<]*<\/noscript>/, ({ noscript }) => `<noscript>${escapeHtml(noscript)}</noscript>`],
     ['<div id="root"></div>', ({ html }, _open, route) => `<div id="root" data-path="${escapeHtml(route)}">${html}</div>`]
   ];
@@ -91,7 +95,7 @@ export async function createRenderer({ root, siteUrl }) {
       const live = Object.keys(fallback).length > 0;
       if (live) {
         const route = routeOf(pathname);
-        const page = await render(route, data, site, fallback);
+        const page = await render(route, data, site, fallback, api);
         return { status: page.meta.found ? 200 : 404, html: fill(page, route, data.build_id, fallback) };
       }
       if (cacheBuild !== data.build_id) {
@@ -103,13 +107,13 @@ export async function createRenderer({ root, siteUrl }) {
       let result;
       try {
         const route = routeOf(pathname);
-        const page = await render(route, data, site);
+        const page = await render(route, data, site, {}, api);
         result = { status: page.meta.found ? 200 : 404, html: fill(page, route, data.build_id) };
       } catch (err) {
         // only a malformed percent escape is the caller's mistake (404); any other error is ours and becomes a 500
         if (!(err instanceof URIError)) throw err;
         const route = prefix(pathname) + NOT_FOUND_PATH;
-        result = { status: 404, html: fill(await render(route, data, site), route, data.build_id) };
+        result = { status: 404, html: fill(await render(route, data, site, {}, api), route, data.build_id) };
       }
       if (cache.size >= CACHE_PAGES) cache.delete(cache.keys().next().value);
       cache.set(pathname, result);
@@ -118,10 +122,11 @@ export async function createRenderer({ root, siteUrl }) {
 
     // pages of both languages with their hreflang alternates, for sitemap.xml
     sitemapHeads: (data) => sitemapHeads(data, site),
-    llms: (data) => llms(data, site),
+    llms: (data) => llms(data, site, api),
     icon,
     pageCount: (data) => prerenderPaths(data).length,
     site,
+    api,
     version,
     unavailable: (pathname) => unavailablePage(pathname, UNAVAILABLE),
     locales: LOCALES

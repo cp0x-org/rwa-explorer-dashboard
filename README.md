@@ -170,6 +170,18 @@ The root `docker-compose.yml` has no build step, so a server can run it from a p
 `cp0x-pi-rwa-backend-api`, `cp0x-pi-rwa-backend-collector`, `cp0x-pi-rwa-backend-migrate`, `cp0x-pi-rwa-postgres`; the
 site on 127.0.0.1:3301 and the API on 127.0.0.1:3302, for nginx in front.
 
+nginx in front, configs in [`deploy/nginx/`](deploy/nginx/):
+
+| Domain | Config | Routes |
+|--------|--------|--------|
+| `rwa.cp0x.com` | `rwa.cp0x.com.conf.snippet`, inside the site's server block | `/` → site (3301); `/api/`, `/logos/` → API (3302) for the browser, same origin |
+| `rwa-api.cp0x.com` | `rwa-api.cp0x.com.conf`, a server block of its own | `/api/`, `/logos/` → API (3302) for programs and agents, `Access-Control-Allow-Origin: *`; `/` → OpenAPI |
+
+Both close `/api/v1/admin/` (404); admin calls go to 127.0.0.1:3302 on the server. The API domain needs a DNS record and
+a certificate (`sudo certbot --nginx -d rwa-api.cp0x.com`); the steps are at the top of its config. The site names the
+API by `API_PUBLIC_URL` (default `https://rwa-api.cp0x.com`) in llms.txt, JSON-LD, `<link rel="service-desc">`, and the
+OpenAPI document lists it in `servers`; the browser keeps calling the site's own `/api/`.
+
 To start the server with the collected data instead of an empty database (no full collection on start):
 
 ```bash

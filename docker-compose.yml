@@ -96,7 +96,8 @@ services:
     environment:
       DATABASE_URL: *database-url
       HTTP_ADDR: ":8080"
-      PUBLIC_URL: ${PUBLIC_URL:-http://localhost:${API_PORT:-3302}}   # shown in the startup banner only
+      # public address of the API (nginx: deploy/nginx/rwa-api.cp0x.com.conf); shown in the startup banner only
+      PUBLIC_URL: ${API_PUBLIC_URL:-https://rwa-api.cp0x.com}
       # Token of the admin endpoints (manual run request). Required: on a server /api/ is public, a known token would
       # let anyone start runs that spend CMC credits. `devtoken` from .env.example is for localhost only.
       ADMIN_TOKEN: ${ADMIN_TOKEN:?set it in .env}
@@ -128,6 +129,9 @@ services:
       # the production address, so a server that forgets it never tells search engines its pages live on localhost; set
       # SITE_URL=http://localhost:3301 in .env only to click through the sitemap locally.
       SITE_URL: ${SITE_URL:-https://rwa.cp0x.com}
+      # public address of the API that llms.txt, JSON-LD and <head> give to programs and agents; the browser keeps calling
+      # the site's own /api/ (nginx sends it to the same API container), so no CORS is needed
+      API_PUBLIC_URL: ${API_PUBLIC_URL:-https://rwa-api.cp0x.com}
       PORT: "4173"
     ports:
       - "127.0.0.1:${WEB_PORT:-3301}:4173"

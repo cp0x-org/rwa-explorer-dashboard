@@ -7,8 +7,10 @@ import { intlFor } from './pageMeta';
 // a Markdown link text: brackets would end it early
 const label = (s: string) => s.replace(/[[\]]/g, '');
 
-export function llmsText(data: RwaExport, siteUrl: string): string {
+// `apiUrl`: public address of the API (https://rwa-api.cp0x.com); the site's own /api/ without one
+export function llmsText(data: RwaExport, siteUrl: string, apiUrl?: string): string {
   const site = siteUrl.replace(/\/+$/, '');
+  const api = apiUrl?.replace(/\/+$/, '') || site;
   const intl = intlFor('en');
   const t = (id: MessageId, values?: Record<string, string | number>) => intl.formatMessage({ id, defaultMessage: ENGLISH[id] }, values);
   const f = getFormat('en');
@@ -59,9 +61,9 @@ export function llmsText(data: RwaExport, siteUrl: string): string {
     '',
     '## Data for programs',
     '',
-    `- [Dataset (JSON)](${site}/api/v1/export): everything behind the pages: underlying assets, tokenized assets, issuers, DeFi positions, holder rights`,
-    `- [API description (OpenAPI 3)](${site}/api/v1/openapi.yaml): the dataset, collection status and runs, history of metrics per asset, token and issuer`,
-    `- [Collection status](${site}/api/v1/status): the last run and the next scheduled one`,
+    `- [Dataset (JSON)](${api}/api/v1/export): everything behind the pages: underlying assets, tokenized assets, issuers, DeFi positions, holder rights`,
+    `- [API description (OpenAPI 3)](${api}/api/v1/openapi.yaml): the dataset, collection status and runs, history of metrics per asset, token and issuer`,
+    `- [Collection status](${api}/api/v1/status): the last run and the next scheduled one`,
     '',
     '## Sections',
     '',

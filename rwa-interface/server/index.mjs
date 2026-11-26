@@ -2,6 +2,8 @@
 //   PORT      listen port, default 4173
 //   API_URL   base URL of the API the export is read from, default http://127.0.0.1:8080
 //   SITE_URL  public address of the site (canonical links, sitemap.xml, robots.txt); default: VITE_SITE_URL of the build
+//   API_PUBLIC_URL  public address of the API for programs and agents (llms.txt, JSON-LD, API links in <head>);
+//             default: VITE_API_PUBLIC_URL of the build, else SITE_URL (the browser always calls this server's /api/)
 // Needs `pnpm build` first: dist/ (client bundle and HTML template) and dist-ssr/ (server bundle).
 // In production a reverse proxy sends /api/ and /logos/ to the API; this server forwards them itself when asked
 // (e2e tests, `pnpm serve`), so the browser always talks to one origin.
@@ -22,9 +24,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const port = Number(process.env.PORT ?? 4173);
 const apiUrl = (process.env.API_URL ?? 'http://127.0.0.1:8080').replace(/\/+$/, '');
 const siteUrl = process.env.SITE_URL?.replace(/\/+$/, '') || undefined;
+const apiPublicUrl = process.env.API_PUBLIC_URL?.replace(/\/+$/, '') || undefined;
 
 const store = createDataStore({ apiUrl });
-const renderer = await createRenderer({ root, siteUrl });
+const renderer = await createRenderer({ root, siteUrl, apiPublicUrl });
 const sitemap = createSitemap({ renderer });
 const serveStatic = createStatic({ root });
 
@@ -148,7 +151,7 @@ const server = createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  printBanner({ port, apiUrl, siteUrl: renderer.site, refreshMs: REFRESH_MS, retryMs: RETRY_MS, templateVersion: renderer.version.slice(0, 8) });
+  printBanner({ port, apiUrl, siteUrl: renderer.site, apiPublicUrl: renderer.api, refreshMs: REFRESH_MS, retryMs: RETRY_MS, templateVersion: renderer.version.slice(0, 8) });
   console.log(`rwa-interface on http://localhost:${port}, API ${apiUrl}${renderer.site ? `, site ${renderer.site}` : ''}`);
 });
 store.start();
