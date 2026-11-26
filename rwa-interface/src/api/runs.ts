@@ -13,7 +13,9 @@ export const runsKey = (limit = 50) => apiUrl(`runs?limit=${limit}`);
 export const runKey = (id: number) => apiUrl(`runs/${id}`);
 
 export const useStatus = () => useSWR<StatusResponse>(clientKey(statusKey()), fetchJson, SWR_OPTIONS);
-export const useRuns = (limit = 50) => useSWR<RunsResponse>(clientKey(runsKey(limit)), fetchJson, SWR_OPTIONS);
+// The list of runs is also rendered by the server: it fetches it and hands it over as an SWR fallback (entry-server.tsx SSR_API),
+// so the key is the same on both sides. Without a fallback the server render has no data (SWR never fetches there).
+export const useRuns = (limit = 50) => useSWR<RunsResponse>(runsKey(limit), fetchJson, SWR_OPTIONS);
 export const RUN_POLL_MS = 5000;
 
 // 4xx is the caller's mistake (an unknown run stays unknown, a bad parameter stays bad): do not retry it.

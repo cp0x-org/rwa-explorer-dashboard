@@ -5,7 +5,13 @@ export function createSitemap({ renderer }) {
   let cached = null; // { buildId, xml }
 
   return {
-    robots: () => (renderer.site ? `User-agent: *\nAllow: /\n\nSitemap: ${renderer.site}/sitemap.xml\n` : null),
+    // every crawler, search engines and AI agents alike, may read every page and the public API; only the admin API is
+    // closed (nginx answers it with 404 anyway). /llms.txt is the map of the site for language models.
+    robots: () =>
+      renderer.site
+        ? `# RWA Explorer by cp0x. A map of the site for language models: ${renderer.site}/llms.txt\n` +
+          `User-agent: *\nAllow: /\nDisallow: /api/v1/admin/\n\nSitemap: ${renderer.site}/sitemap.xml\n`
+        : null,
 
     // every page in both languages with its alternates; lastmod = newest data collection
     xml(data) {

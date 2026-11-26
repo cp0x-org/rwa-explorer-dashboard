@@ -8,14 +8,18 @@ const API_PORT = Number(process.env.E2E_API_PORT ?? 8180);
 // asset), 2 mock-refresh (succeeded, new tokens, new issuer, details), 1 import-1x (import).
 
 test.describe('/updates', () => {
-  test('the server renders the page shell and a busy placeholder, no runs (they are loaded in the browser)', async ({ request }) => {
+  test('the server renders the runs table and hands the same list to the client for hydration', async ({ request }) => {
     const res = await request.get('/updates');
     expect(res.status()).toBe(200);
     const html = await res.text();
     expect(html).toMatch(/<h1[^>]*>Data updates<\/h1>/);
-    expect(html).toContain('aria-busy="true"');
-    expect(html).not.toContain('<table');
-    expect(html).not.toMatch(/mock-partial|mock-refresh/);
+    // crawlers and agents read the runs without JavaScript: the table, each date a link to its run, rebuilds hidden
+    expect(html).not.toContain('aria-busy="true"');
+    expect(html).toContain('<table');
+    expect(html).toMatch(/<a [^>]*href="\/updates\/3"/);
+    expect(html).not.toContain('Rebuild · manual');
+    const fallback = JSON.parse(html.match(/<script id="swr-fallback" type="application\/json">(.*?)<\/script>/s)![1]);
+    expect(fallback['/api/v1/runs?limit=50'].items).toHaveLength(4);
     expect(html).toContain('application/ld+json');
     expect(html).not.toMatch(/name="robots"/);
     expect(html).toContain('rel="canonical" href="https://rwa.cp0x.com/updates"');
@@ -23,6 +27,10 @@ test.describe('/updates', () => {
     expect(html).toMatch(/<a [^>]*href="\/updates"[^>]*>Update history<\/a>/);
     expect(html).toContain('Data collected');
     expect(html).not.toContain('next collection');
+    // a page with an API answer changes without a new build: its ETag follows the answer, a repeat request revalidates
+    const etag = res.headers()['etag'];
+    expect(etag).toBeTruthy();
+    expect((await request.get('/updates', { headers: { 'if-none-match': etag } })).status()).toBe(304);
   });
 
   test('lists the runs after hydration, hides rebuilds until asked, and links each date to its page', async ({ page }) => {
@@ -184,13 +192,26 @@ test.describe('/updates/:id', () => {
   });
 
   test('the run list answers an API failure with a message, not an empty table', async ({ page }) => {
+    // reached in the browser, so there is no server-rendered list to fall back on
+    await page.goto('/assets');
+    await hydrated(page);
+    await page.route('**/api/v1/runs?*', (route) =>
+      route.fulfill({ status: 503, json: { error: { code: 'unavailable', message: 'down' } } })
+    );
+    await page.getByRole('contentinfo').getByRole('link', { name: 'Update history' }).click();
+    await page.waitForURL('**/updates');
+    await expect(page.getByRole('alert').filter({ hasText: 'The update history could not be loaded.' })).toBeVisible();
+    await expect(page.getByRole('table')).toHaveCount(0);
+  });
+
+  test('a failed refresh in the browser keeps the list the server rendered', async ({ page }) => {
     await page.route('**/api/v1/runs?*', (route) =>
       route.fulfill({ status: 503, json: { error: { code: 'unavailable', message: 'down' } } })
     );
     await page.goto('/updates');
     await hydrated(page);
-    await expect(page.getByRole('alert').filter({ hasText: 'The update history could not be loaded.' })).toBeVisible();
-    await expect(page.getByRole('table')).toHaveCount(0);
+    await expect(page.getByRole('table', { name: 'Data collection runs' }).locator('tbody tr')).toHaveCount(3);
+    await expect(page.getByRole('alert')).toHaveCount(0);
   });
 });
 

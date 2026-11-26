@@ -5,6 +5,7 @@ import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import createEmotionServer from '@emotion/server/create-instance';
 import { Provider } from 'react-redux';
+import { SWRConfig } from 'swr';
 import { createStaticHandler, createStaticRouter, StaticRouterProvider } from 'react-router-dom';
 
 // project imports
@@ -16,6 +17,8 @@ import { store } from 'store';
 import { RwaExport } from 'types/rwa';
 import { intlFor, pageMeta, PageMeta } from 'utils/pageMeta';
 import { HeadLinks, headLinks, jsonLd } from 'utils/seo';
+import { llmsText } from 'utils/llms';
+import { runsKey } from 'api/runs';
 import { ENGLISH, Locale, LOCALES, localizePath, registerMessages } from 'i18n';
 import zh from 'i18n/messages/zh';
 
@@ -29,6 +32,13 @@ registerMessages('zh-CN', zh);
 export const siteUrl: string | undefined = import.meta.env.VITE_SITE_URL?.replace(/\/+$/, '');
 
 export { LOCALES };
+
+// /llms.txt of the current export (server/index.mjs)
+export const llms = (data: RwaExport, site: string | undefined = siteUrl) => (site ? llmsText(data, site) : null);
+
+// API data a page needs besides the export, which the server fetches and passes to render() as an SWR fallback (the client
+// hydrates from the same values, embedded in the page): the list of runs on /updates. Locale-free paths.
+export const SSR_API: Record<string, string> = { '/updates': runsKey() };
 
 // Strings of the static "Data unavailable" page (server/render.mjs), the same as the data gate shows in the app.
 const unavailable = (lang: string, m: Record<string, string>) => ({
@@ -82,7 +92,12 @@ export function sitemapHeads(data: RwaExport, site: string | undefined = siteUrl
 // HTML of one page with the data already in place, its critical CSS and <head> metadata. Used by server/render.mjs.
 // `meta.found` is false for an address that is not a page (unknown ticker, token or issuer, unknown path): the server
 // answers it with HTTP 404. `meta.noindex` marks a page that exists but is not for search engines (/updates/:id).
-export async function render(path: string, data: RwaExport, site: string | undefined = siteUrl): Promise<RenderedPage> {
+export async function render(
+  path: string,
+  data: RwaExport,
+  site: string | undefined = siteUrl,
+  fallback: Record<string, unknown> = {}
+): Promise<RenderedPage> {
   const handler = createStaticHandler(routes, { basename: import.meta.env.VITE_APP_BASE_NAME });
   const context = await handler.query(new Request(new URL(path, 'http://ssr.local')));
   if (context instanceof Response) throw new Error(`${path}: redirects, nothing to render`);
@@ -97,7 +112,9 @@ export async function render(path: string, data: RwaExport, site: string | undef
       <Provider store={store}>
         <ConfigProvider>
           <RwaDataContext value={data}>
-            <App router={<StaticRouterProvider router={router} context={context} hydrate={false} />} />
+            <SWRConfig value={{ fallback }}>
+              <App router={<StaticRouterProvider router={router} context={context} hydrate={false} />} />
+            </SWRConfig>
           </RwaDataContext>
         </ConfigProvider>
       </Provider>

@@ -13,7 +13,7 @@ const CACHE_PAGES = 100; // rendered pages kept for the current build (a page is
 
 export async function createRenderer({ root, siteUrl }) {
   const entry = await import(pathToFileURL(path.join(root, 'dist-ssr', 'entry-server.mjs')).href);
-  const { render, prerenderPaths, sitemapHeads, NOT_FOUND_PATH, LOCALES, UNAVAILABLE } = entry;
+  const { render, prerenderPaths, sitemapHeads, llms, NOT_FOUND_PATH, LOCALES, UNAVAILABLE, SSR_API } = entry;
   const site = siteUrl ?? entry.siteUrl;
   const template = await readFile(path.join(root, 'dist', 'index.html'), 'utf8');
   // identifies the frontend build (the template names the hashed bundles) and the site address: part of every page's ETag,
@@ -23,7 +23,7 @@ export async function createRenderer({ root, siteUrl }) {
   // The preload is same-origin like the client's pinned fetch (VITE_API_URL empty). With VITE_API_URL set the client calls
   // the absolute URL, so the preload would go unused: that setup is for the dev server, which renders no server markup.
   // <head> additions of one page: build pin, canonical, hreflang pairs, Open Graph URL and locale, robots, JSON-LD.
-  const headTags = (page, buildId) => {
+  const headTags = (page, buildId, fallback) => {
     const tags = [
       `<meta name="rwa-build" content="${buildId}" />`,
       `<link rel="preload" as="fetch" href="/api/v1/export?build=${buildId}" crossorigin />`
@@ -38,6 +38,8 @@ export async function createRenderer({ root, siteUrl }) {
     }
     if (!page.meta.found || page.meta.noindex) tags.push('<meta name="robots" content="noindex" />');
     if (page.jsonLd) tags.push(`<script type="application/ld+json">${escapeJson(page.jsonLd)}</script>`);
+    // the API answers the page was rendered with, for the client's first render (src/index.tsx)
+    if (Object.keys(fallback).length) tags.push(`<script id="swr-fallback" type="application/json">${escapeJson(fallback)}</script>`);
     return tags.join('\n        ');
   };
 
@@ -54,7 +56,7 @@ export async function createRenderer({ root, siteUrl }) {
       ({ meta }, open) => `${open}${escapeHtml(meta.description)}"`
     ],
     [/(<meta name="keywords" content=")[^"]*"/, ({ meta }, open) => `${open}${escapeHtml(meta.keywords)}"`],
-    ['<!--ssr-head-->', (page, _open, _route, buildId) => headTags(page, buildId) + page.styles],
+    ['<!--ssr-head-->', (page, _open, _route, buildId, fallback) => headTags(page, buildId, fallback) + page.styles],
     [/<noscript>[^<]*<\/noscript>/, ({ noscript }) => `<noscript>${escapeHtml(noscript)}</noscript>`],
     ['<div id="root"></div>', ({ html }, _open, route) => `<div id="root" data-path="${escapeHtml(route)}">${html}</div>`]
   ];
@@ -63,8 +65,8 @@ export async function createRenderer({ root, siteUrl }) {
       throw new Error(`dist/index.html has no ${pattern}: run \`pnpm build\` (the template was not built from index.html)`);
     }
   }
-  const fill = (page, route, buildId) =>
-    slots.reduce((html, [pattern, value]) => html.replace(pattern, (_match, open) => value(page, open, route, buildId)), template);
+  const fill = (page, route, buildId, fallback = {}) =>
+    slots.reduce((html, [pattern, value]) => html.replace(pattern, (_match, open) => value(page, open, route, buildId, fallback)), template);
 
   // rendered pages of the current build only
   let cacheBuild = null;
@@ -74,9 +76,24 @@ export async function createRenderer({ root, siteUrl }) {
   const routeOf = (pathname) => (pathname === '/' ? '/assets' : pathname === '/zh' ? '/zh/assets' : pathname);
   const prefix = (pathname) => (/^\/zh(\/|$)/.test(pathname) ? '/zh' : '');
 
+  const icon = template.match(/<link rel="icon" href="([^"]+)"/)?.[1];
+
   return {
-    // { status, html } of a page; 404 when it is not a page of the current data
-    async page(pathname, data) {
+    // API paths a page renders with besides the export (fetched by the caller and passed to page() as `fallback`)
+    apiFor: (pathname) => {
+      const key = SSR_API[pathname.replace(/^\/zh(?=\/|$)/, '') || '/'];
+      return key ? [key] : [];
+    },
+
+    // { status, html } of a page; 404 when it is not a page of the current data. A page with a fallback (API answers
+    // other than the export) changes without a new build, so it is rendered every time instead of cached.
+    async page(pathname, data, fallback = {}) {
+      const live = Object.keys(fallback).length > 0;
+      if (live) {
+        const route = routeOf(pathname);
+        const page = await render(route, data, site, fallback);
+        return { status: page.meta.found ? 200 : 404, html: fill(page, route, data.build_id, fallback) };
+      }
       if (cacheBuild !== data.build_id) {
         cache.clear();
         cacheBuild = data.build_id;
@@ -101,6 +118,8 @@ export async function createRenderer({ root, siteUrl }) {
 
     // pages of both languages with their hreflang alternates, for sitemap.xml
     sitemapHeads: (data) => sitemapHeads(data, site),
+    llms: (data) => llms(data, site),
+    icon,
     pageCount: (data) => prerenderPaths(data).length,
     site,
     version,

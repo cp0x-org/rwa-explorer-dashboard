@@ -69,3 +69,37 @@ test.describe('metadata', () => {
     }
   });
 });
+
+test.describe('for crawlers and AI agents', () => {
+  test('robots.txt lets every crawler read the site, closes only the admin API and names the sitemap and llms.txt', async ({ request }) => {
+    const res = await request.get('/robots.txt');
+    expect(res.status()).toBe(200);
+    const robots = await res.text();
+    expect(robots).toMatch(/^User-agent: \*$/m);
+    expect(robots).toMatch(/^Allow: \/$/m);
+    expect(robots).toMatch(/^Disallow: \/api\/v1\/admin\/$/m);
+    expect(robots).not.toMatch(/^Disallow: \/$/m);
+    expect(robots).toContain(`Sitemap: ${SITE}/sitemap.xml`);
+    expect(robots).toContain(`${SITE}/llms.txt`);
+  });
+
+  test('llms.txt maps the data, the API and every asset and issuer page with absolute links', async ({ request }) => {
+    const res = await request.get('/llms.txt');
+    expect(res.status()).toBe(200);
+    expect(res.headers()['content-type']).toMatch(/^text\/plain/);
+    const text = await res.text();
+    expect(text.split('\n')[0]).toBe('# RWA Explorer');
+    expect(text).toContain(`(${SITE}/api/v1/export)`);
+    expect(text).toContain(`(${SITE}/api/v1/openapi.yaml)`);
+    for (const route of ROUTES.filter((r) => /^\/(assets|issuers)\/./.test(r))) expect(text).toContain(`(${SITE}${route})`);
+  });
+
+  test('pages name the API description, and /favicon.ico is the icon they link', async ({ request }) => {
+    const html = await (await request.get('/assets')).text();
+    expect(html).toContain('<link rel="service-desc" type="application/yaml" href="/api/v1/openapi.yaml"');
+    expect(html).not.toContain('This HTML file is a template');
+    const icon = await request.get('/favicon.ico');
+    expect(icon.status()).toBe(200);
+    expect(icon.headers()['content-type']).toBe('image/png');
+  });
+});

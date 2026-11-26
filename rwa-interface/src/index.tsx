@@ -2,6 +2,7 @@ import { createRoot, hydrateRoot } from 'react-dom/client';
 
 // third party
 import { Provider } from 'react-redux';
+import { SWRConfig } from 'swr';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // project imports
@@ -41,12 +42,24 @@ const router = createBrowserRouter(routes, {
   basename: import.meta.env.VITE_APP_BASE_NAME
 });
 
+// API answers the server rendered the page with (server/render.mjs embeds them): the first client render uses the same ones
+const readFallback = (): Record<string, unknown> => {
+  try {
+    return JSON.parse(document.getElementById('swr-fallback')?.textContent ?? '{}');
+  } catch {
+    return {};
+  }
+};
+const fallback = readFallback();
+
 // same provider tree as the server render in entry-server.tsx, except for the router
 const app = (data?: RwaExport) => (
   <Provider store={store}>
     <ConfigProvider>
       <RwaDataContext value={data}>
-        <App router={<RouterProvider router={router} />} />
+        <SWRConfig value={{ fallback }}>
+          <App router={<RouterProvider router={router} />} />
+        </SWRConfig>
       </RwaDataContext>
     </ConfigProvider>
   </Provider>

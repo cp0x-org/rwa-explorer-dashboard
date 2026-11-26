@@ -92,7 +92,7 @@ test.describe('server-rendered HTML', () => {
   test('robots.txt and sitemap.xml cover both languages', async ({ request }) => {
     const robots = await (await request.get('/robots.txt')).text();
     expect(robots).toContain('Sitemap: https://rwa.cp0x.com/sitemap.xml');
-    expect(robots).not.toMatch(/Disallow: \//);
+    expect(robots).not.toMatch(/^Disallow: \/$/m); // only the admin API is closed (seo.spec.ts)
     const res = await request.get('/sitemap.xml');
     expect(res.status()).toBe(200);
     const xml = await res.text();

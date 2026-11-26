@@ -68,8 +68,9 @@ pnpm test:e2e     # playwright: starts the mock API and the server itself (run `
 ```
 
 `pnpm test:e2e` needs a Chromium for Playwright once: `npx playwright install chromium`.
-Server environment: `PORT` (4173), `API_URL` (`http://127.0.0.1:8080`), `SITE_URL` (public address for canonical links
-and the sitemap; default `VITE_SITE_URL` from `.env.production`). Docker: `docker-compose.yml` passes `API_URL` and `SITE_URL`.
+Server environment: `PORT` (4173), `API_URL` (`http://127.0.0.1:8080`), `SITE_URL` (public address for canonical links,
+the sitemap and llms.txt; default `VITE_SITE_URL` from `.env.production`). Docker: `docker-compose.yml` passes `API_URL` and
+`SITE_URL` (default `https://rwa.cp0x.com` there too, so a server never advertises localhost).
 On start the server prints a framed summary (port, public URL, API it reads, refresh interval, proxied paths), the
 same frame as the backend services; `STARTUP_BANNER=false` turns it off, `APP_VERSION` is the version it shows.
 
@@ -80,15 +81,23 @@ src/entry-server.tsx` bundles the app for Node into `dist-ssr/`; `server/index.m
 renders each page with the export it keeps in memory and fills the template `dist/index.html`:
 
 - `server/data.mjs` — cache of `/api/v1/export` (`If-None-Match`, refreshed every 60 s, retried every 10 s until the
-  first success, the cached export keeps being served when the API fails later) and, lazily with a 60 s TTL, of `/api/v1/status`.
+  first success, the cached export keeps being served when the API fails later) and, lazily with a 60 s TTL, of `/api/v1/status`;
+  other API answers a page renders with (`SSR_API` in `entry-server.tsx`: the runs on `/updates`) with a 30 s TTL.
 - `server/render.mjs` — `render(path, data)` from the bundle; the `<head>` gets `<meta name="rwa-build" content="N">`
   and `<link rel="preload" as="fetch" href="/api/v1/export?build=N">` (same-origin; with `VITE_API_URL` set the client calls an absolute URL and the preload goes unused, which is fine for the dev server). The page ETag covers the build id, the template (bundle hashes) and `SITE_URL`. A page that is not found (unknown ticker, token,
   issuer or path) is rendered in the language of the URL with HTTP 404 and `noindex`. Before the first export loads,
   every page is a plain "Data unavailable" page with HTTP 503 (`Retry-After: 10`); no restart is needed afterwards.
+  `/updates` is rendered with the list of runs: the server fetches it, renders the table and embeds the same answer as
+  `<script id="swr-fallback" type="application/json">`, the client's SWR fallback for hydration; its ETag covers that list,
+  and it is rendered on every request (the list changes without a new build). Without an answer it renders the placeholder.
 - `server/static.mjs` — `dist/assets/**` with `Cache-Control: public, max-age=31536000, immutable`, other files of `dist/`
   with a short cache; `dist/index.html` is never served for an unknown path.
 - `server/sitemap.mjs` — `/sitemap.xml` (every page in both languages with `xhtml:link` alternates, `lastmod` = newest
-  data collection) and `/robots.txt`, regenerated when the build id changes.
+  data collection) and `/robots.txt` (everything allowed except `/api/v1/admin/`), regenerated when the build id changes.
+- `/llms.txt` — a Markdown map of the site for language models and AI agents (https://llmstxt.org): what the data is, how
+  the rating works, the API (`/api/v1/export`, `/api/v1/openapi.yaml`), the sections and every asset and issuer page with
+  its counts (`src/utils/llms.ts`, English strings of the dictionary). Pages also link the API description with
+  `<link rel="service-desc">`. `/favicon.ico` answers with the icon the pages link.
 - `/healthz` — 200 once an export is cached, 503 before. `/api/*` and `/logos/*` are forwarded to `API_URL` (in
   production a reverse proxy sends them to the API directly; the forwarding makes the server usable on its own).
 

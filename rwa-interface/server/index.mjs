@@ -89,6 +89,9 @@ async function handle(req, res) {
   }
   if (await serveStatic(req, res, pathname)) return;
 
+  // browsers and crawlers ask for /favicon.ico whatever the page links: the same icon the pages name
+  if (raw === '/favicon.ico' && renderer.icon && (await serveStatic(req, res, renderer.icon))) return;
+
   if (raw === '/robots.txt') {
     const robots = sitemap.robots();
     if (robots) return text(res, 200, TYPES['.txt'], robots, { 'cache-control': 'public, max-age=3600' });
@@ -98,6 +101,11 @@ async function handle(req, res) {
   if (!data) {
     // no export yet: a plain page with a 503, the client (and crawlers) retry later
     return text(res, 503, TYPES['.html'], renderer.unavailable(raw), { 'cache-control': 'no-store', 'retry-after': '10' });
+  }
+
+  if (raw === '/llms.txt') {
+    const llms = renderer.llms(data);
+    if (llms) return text(res, 200, TYPES['.txt'], llms, { 'cache-control': 'public, max-age=300' });
   }
 
   if (raw === '/sitemap.xml') {
@@ -112,10 +120,17 @@ async function handle(req, res) {
     return res.end();
   }
 
-  const { status, html } = await renderer.page(raw, data);
+  // API answers the page needs besides the export (the runs on /updates); a page renders without them when the API fails
+  const fallback = {};
+  for (const key of renderer.apiFor(raw)) {
+    const body = await store.getApi(key);
+    if (body !== undefined) fallback[key] = body;
+  }
+  const { status, html } = await renderer.page(raw, data, fallback);
   const headers = { 'cache-control': 'no-cache' };
   if (status === 200) {
-    headers.etag = etagOf(`${renderer.version}:${data.build_id}:${raw}`);
+    const api = Object.keys(fallback).length ? etagOf(JSON.stringify(fallback)) : '';
+    headers.etag = etagOf(`${renderer.version}:${data.build_id}:${raw}:${api}`);
     if (notModified(req, headers.etag)) {
       res.writeHead(304, headers);
       return res.end();

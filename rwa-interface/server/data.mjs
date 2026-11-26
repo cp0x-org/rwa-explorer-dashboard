@@ -1,4 +1,5 @@
-// Cache of the API data the server renders from: the current export (with its ETag); the status on demand.
+// Cache of the API data the server renders from: the current export (with its ETag); the status and other API answers a
+// page renders with (the list of runs on /updates) on demand.
 // The export is refreshed every REFRESH_MS with If-None-Match (an unchanged build costs a 304); until the first success
 // it is retried every RETRY_MS. After that a failing API changes nothing: the cached export keeps being served.
 
@@ -6,9 +7,11 @@ export const REFRESH_MS = 60_000;
 export const RETRY_MS = 10_000;
 const TIMEOUT_MS = 15_000;
 const STATUS_TTL_MS = 60_000;
+const API_TTL_MS = 30_000;
 
 export function createDataStore({ apiUrl, log = console }) {
   const state = { export: null, etag: null, buildId: null, loadedAt: null, status: null, statusAt: 0 };
+  const answers = new Map(); // path -> { at, body }
   let timer;
   let stopped = false;
 
@@ -58,6 +61,22 @@ export function createDataStore({ apiUrl, log = console }) {
         // keep the previous value
       }
       return state.status;
+    },
+    // a GET of the API (a path like /api/v1/runs?limit=50), cached for API_TTL_MS; the last known answer when the API fails,
+    // undefined when there never was one. A failure is remembered for the same time, so a hanging API does not hold up
+    // every page that asks.
+    async getApi(path) {
+      const hit = answers.get(path);
+      if (hit && Date.now() - hit.at < API_TTL_MS) return hit.body;
+      let body = hit?.body;
+      try {
+        const res = await get(path);
+        if (res.ok) body = await res.json();
+      } catch {
+        // keep the previous value
+      }
+      answers.set(path, { at: Date.now(), body });
+      return body;
     },
     start() {
       return tick();

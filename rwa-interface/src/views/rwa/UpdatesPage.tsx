@@ -27,9 +27,9 @@ function signed(value: number, format: (n: number) => string): string {
   return value > 0 ? `+${format(value)}` : format(value);
 }
 
-// The runs come from the API and the server renders no runs (the export has none), so the table exists in the browser
-// only: before hydration, and while the request is under way, the server-rendered markup and the first client render are
-// the same busy placeholder of a fixed height; the table replaces it afterwards.
+// The runs come from the API, not from the export. The server fetches them and renders the table (crawlers and agents read it
+// without JavaScript); the client hydrates from the same list, embedded in the page as an SWR fallback. When the server could
+// not get them, the server markup and the first client render are the same busy placeholder; the table replaces it afterwards.
 function RunsTable({ showRebuilds }: { showRebuilds: boolean }) {
   const t = useT();
   const f = useFormat();
@@ -37,7 +37,7 @@ function RunsTable({ showRebuilds }: { showRebuilds: boolean }) {
   const hydrated = useHydrated();
   const { data, error } = useRuns(RUNS_LIMIT);
 
-  if (!hydrated || (!data && !error)) {
+  if (!data && (!hydrated || !error)) {
     return (
       <Box aria-busy="true" sx={{ minHeight: PLACEHOLDER_HEIGHT }}>
         <Typography variant="body2" color="text.secondary" role="status" aria-live="polite">

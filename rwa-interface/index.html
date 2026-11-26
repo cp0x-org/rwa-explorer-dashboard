@@ -22,6 +22,8 @@
         <meta name="author" content="cp0x" />
         <!-- the whole dataset behind every page -->
         <link rel="alternate" type="application/json" href="/api/v1/export" title="Dataset (JSON)" />
+        <!-- for programs and AI agents: the API description (RFC 8631); the site map for language models is /llms.txt -->
+        <link rel="service-desc" type="application/yaml" href="/api/v1/openapi.yaml" title="API description (OpenAPI)" />
         <!-- Google Analytics, off on localhost -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G824LXXGBP"></script>
         <script>
@@ -39,16 +41,6 @@
     <body>
         <noscript>JavaScript is off: this is a static snapshot of the page. Sorting, filters and paging need JavaScript.</noscript>
         <div id="root"></div>
-        <!--
-          This HTML file is a template.
-          If you open it directly in the browser, you will see an empty page.
-
-          You can add webfonts, meta tags, or analytics to this file.
-          The build step will place the bundled scripts into the <body> tag.
-
-          To begin the development, run `npm start` or `yarn start`.
-          To create a production bundle, use `npm run build` or `yarn build`.
-        -->
         <script type="module" src="/src/index.tsx"></script>
     </body>
 </html>
