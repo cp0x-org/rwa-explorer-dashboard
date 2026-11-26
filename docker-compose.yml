@@ -4,7 +4,7 @@
 # tag RWA_VERSION from .env (default latest). Local build from this checkout: docker-compose.build.yml (`make up`).
 # On an empty database the collector starts a live run at once (CMC + Portals, ~10-15 min), then repeats it every
 # COLLECT_INTERVAL (24h). The site shows "no data yet" until the first run is published.
-#   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD, SITE_URL
+#   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD
 #   open http://localhost:3301 (API on http://localhost:3302). Every port is published on 127.0.0.1 only: on a server
 #   nginx in front sends /api/ and /logos/ to the API port and everything else to the site port.
 name: rwa-explorer
@@ -124,8 +124,10 @@ services:
     logging: *logging
     environment:
       API_URL: http://api:8080
-      # public address of the site: canonical links, hreflang, sitemap.xml, robots.txt (https://rwa.cp0x.com on the server)
-      SITE_URL: ${SITE_URL:-http://localhost:${WEB_PORT:-3301}}
+      # public address of the site: canonical links, hreflang, og:url, JSON-LD, sitemap.xml, robots.txt, llms.txt. Defaults to
+      # the production address, so a server that forgets it never tells search engines its pages live on localhost; set
+      # SITE_URL=http://localhost:3301 in .env only to click through the sitemap locally.
+      SITE_URL: ${SITE_URL:-https://rwa.cp0x.com}
       PORT: "4173"
     ports:
       - "127.0.0.1:${WEB_PORT:-3301}:4173"
