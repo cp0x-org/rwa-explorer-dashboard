@@ -36,14 +36,16 @@ Step by step, including manual runs: [docs/workflow.md](docs/workflow.md).
 
 ## Run everything with Docker (local)
 
-Runs the whole project from source on your machine: database, API, site and the collector, so you can watch a
-collection run, the parsing and the result on the site. Not the production stack.
+Runs the whole project on your machine, built from this checkout: database, API, site and the collector, so you can
+watch a collection run, the parsing and the result on the site. `docker-compose.yml` itself only references the
+images; the local build is in `docker-compose.build.yml`, which `make up` adds (a server pulls the images instead, see
+[Deployment](#deployment)).
 
 Prerequisites: Docker Desktop (Compose v2), a CoinMarketCap and a Portals API key.
 
 ```bash
 cp .env.example .env            # put CMC_API_KEY and PORTALS_API_KEY into .env (ignored by Git, never commit it)
-docker compose up --build       # first build takes a few minutes; `make up` does the same in the background
+make up                         # builds and starts in the background; first build takes a few minutes
 ```
 
 Then open http://localhost:3301 (API on http://localhost:3302). Other ports: `WEB_PORT` / `API_PORT` in `.env`.
@@ -86,7 +88,7 @@ A full live run costs about 22 CMC credits (`COLLECT_ON_START=false` in `.env` s
 `.env`, which Git ignores. The database credentials (`rwa`/`rwa`) are for local use only, and the ports are bound to
 127.0.0.1.
 
-Which file to use: this root `docker-compose.yml` runs everything; `rwa-backend/docker-compose.dev.yml` is only a
+Which file to use: this root `docker-compose.yml` runs everything (with `docker-compose.build.yml` for a local build); `rwa-backend/docker-compose.dev.yml` is only a
 PostgreSQL on 127.0.0.1:5433 for working on the code with `go run` and `pnpm start` (see below).
 
 ## Quick start (development)
@@ -160,8 +162,15 @@ cd rwa-backend && ./build.sh <version>      # multi-arch image cp0x/pi-rwa-backe
 cd rwa-interface && ./build.sh <version>    # multi-arch image cp0x/pi-rwa-interface:<version>, pushed to the registry
 ```
 
-The backend image runs `rwa api` and `rwa collector` (two containers). The stack (compose files, reverse proxy,
-secrets) lives in the private pi-infra repository, `stacks/rwa`. nginx there routes `/api/` and `/logos/` to the API and
+Both scripts also tag `latest`. The backend image runs `rwa migrate`, `rwa api` and `rwa collector`.
+
+The root `docker-compose.yml` has no build step, so a server can run it from a plain checkout: put `.env` next to it
+(the keys, a random `ADMIN_TOKEN`, `POSTGRES_PASSWORD`, `SITE_URL=https://rwa.cp0x.com`, optionally `RWA_VERSION`), then
+`make deploy` (`docker compose pull && docker compose up -d`). Containers: `cp0x-pi-rwa-interface`,
+`cp0x-pi-rwa-backend-api`, `cp0x-pi-rwa-backend-collector`, `cp0x-pi-rwa-backend-migrate`, `cp0x-pi-rwa-postgres`; the
+site on 127.0.0.1:3301 and the API on 127.0.0.1:3302, for nginx in front.
+
+The pi-infra stack (private repository, `stacks/rwa`) is the other way to run it. nginx there routes `/api/` and `/logos/` to the API and
 everything else to the site. A data refresh needs no rebuild or redeploy; images change only with code.
 
 ## Automation (GitHub Actions)

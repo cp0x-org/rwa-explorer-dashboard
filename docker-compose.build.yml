@@ -1,0 +1,24 @@
+# Local build from this checkout, on top of docker-compose.yml (not loaded automatically, so a server never builds):
+#   docker compose -f docker-compose.yml -f docker-compose.build.yml up --build -d     # or: make up
+# Images get the :dev tag, so a local build never replaces a pulled release. Releases for the server are built and
+# pushed by rwa-backend/build.sh and rwa-interface/build.sh (multi-arch).
+
+x-backend-build: &backend-build
+  build:
+    context: ./rwa-backend
+    args:
+      VERSION: dev
+  image: cp0x/pi-rwa-backend:dev
+  pull_policy: build
+
+services:
+  migrate: *backend-build
+  collector: *backend-build
+  api: *backend-build
+  web:
+    build:
+      context: ./rwa-interface
+      args:
+        VITE_APP_VERSION: v2.0.0-dev
+    image: cp0x/pi-rwa-interface:dev
+    pull_policy: build

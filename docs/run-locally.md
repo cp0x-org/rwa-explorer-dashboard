@@ -79,7 +79,7 @@ Mode A may keep running: Docker uses its own database and the ports 3301 / 3302.
 
 ```bash
 cp .env.example .env          # in the REPOSITORY ROOT (not rwa-backend/.env.example): fill the two keys
-docker compose up --build     # or: make up   (first build takes a few minutes)
+make up                       # builds this checkout and starts it (first build takes a few minutes)
 ```
 
 What happens, in order: `postgres` → `migrate` → `api` and `web` → `collector` starts a **live collection at once**
@@ -98,8 +98,9 @@ when that run is published; until then it has no data. After that the collector 
 
 **Stop / reset**: `make down` (the database stays in `./pg-data`, or `PGDATA_DIR` from `.env`), `make reset` (asks, then deletes that folder: the next start collects from scratch).
 
-The production stack (prebuilt images, nginx, backups) is in the private pi-infra repo, `stacks/rwa`; this compose
-builds from source and is for checking the code before a deploy.
+`make up` is `docker compose -f docker-compose.yml -f docker-compose.build.yml up --build -d`: the build part is only in
+`docker-compose.build.yml`. A server runs the same `docker-compose.yml` from prebuilt images with `make deploy` (see the
+README, "Deployment").
 
 ---
 

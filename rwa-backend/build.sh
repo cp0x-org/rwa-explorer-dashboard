@@ -32,6 +32,7 @@ docker buildx build \
   --platform $PLATFORMS \
   --build-arg VERSION="$VERSION" \
   -t cp0x/pi-rwa-backend:$VERSION \
+  -t cp0x/pi-rwa-backend:latest \
   --push \
   .
 

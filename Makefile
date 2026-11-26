@@ -7,15 +7,25 @@ PGDATA_DIR ?= ./pg-data
 COLLECT_INTERVAL ?= 24h
 COLLECT_ON_START ?= true
 
-.PHONY: up info logs run down reset psql
+# local build from this checkout (docker-compose.build.yml); the server only pulls images (make deploy)
+BUILD_COMPOSE = docker compose -f docker-compose.yml -f docker-compose.build.yml
+
+.PHONY: up deploy info logs run down reset psql
 
 up:
-	docker compose up --build -d
+	$(BUILD_COMPOSE) up --build -d
+	@$(MAKE) --no-print-directory info
+
+# on the server: pull cp0x/pi-rwa-backend and cp0x/pi-rwa-interface (tag RWA_VERSION from .env, default latest), restart
+deploy:
+	docker compose pull
+	docker compose up -d
 	@$(MAKE) --no-print-directory info
 
 # where everything is: host ports, containers, database; each service prints its own banner at the top of its log
 info:
 	@echo "RWA Explorer, local stack (docker compose project rwa-explorer)"
+	@echo "Containers: cp0x-pi-rwa-interface, cp0x-pi-rwa-backend-{api,collector,migrate}, cp0x-pi-rwa-postgres"
 	@printf "  %-10s %-34s %s\n" "web" "http://localhost:$(WEB_PORT)" "Node SSR site, container :4173 -> api:8080"
 	@printf "  %-10s %-34s %s\n" "api" "http://localhost:$(API_PORT)" "Go API, container :8080; /api/v1/status, /api/v1/openapi.yaml"
 	@printf "  %-10s %-34s %s\n" "postgres" "127.0.0.1:5433 (rwa/rwa, db rwa)" "container postgres:5432; files in $(PGDATA_DIR); make psql"

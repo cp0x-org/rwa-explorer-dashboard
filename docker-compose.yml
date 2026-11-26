@@ -1,16 +1,18 @@
-# Whole project from source, for local use: PostgreSQL -> migrate -> api + web + collector.
+# Whole project from prebuilt images: PostgreSQL -> migrate -> api + web + collector. Nothing is built here, so the
+# same file runs on the server: `docker compose pull && docker compose up -d` (or `make deploy`).
+# Images (pushed by rwa-backend/build.sh and rwa-interface/build.sh): cp0x/pi-rwa-backend, cp0x/pi-rwa-interface,
+# tag RWA_VERSION from .env (default latest). Local build from this checkout: docker-compose.build.yml (`make up`).
 # On an empty database the collector starts a live run at once (CMC + Portals, ~10-15 min), then repeats it every
 # COLLECT_INTERVAL (24h). The site shows "no data yet" until the first run is published.
-#   cp .env.example .env     # put CMC_API_KEY and PORTALS_API_KEY into .env
-#   docker compose up --build
-#   open http://localhost:3301 (API on http://localhost:3302; ports differ from the local `go run` mode, so both can run)
-# DEVELOPMENT ONLY: throwaway database credentials (rwa/rwa/rwa), everything is published on 127.0.0.1 only.
-# This is not the production stack. For just a database next to `go run` use rwa-backend/docker-compose.dev.yml.
+#   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD, SITE_URL
+#   open http://localhost:3301 (API on http://localhost:3302). Every port is published on 127.0.0.1 only: on a server
+#   nginx in front sends /api/ and /logos/ to the API port and everything else to the site port.
 name: rwa-explorer
 
-# Built from POSTGRES_* (defaults rwa/rwa/rwa are for local use only).
+# Built from POSTGRES_* (the defaults rwa/rwa/rwa are for local use only; set POSTGRES_PASSWORD on a server).
 x-database-url: &database-url postgres://${POSTGRES_USER:-rwa}:${POSTGRES_PASSWORD:-rwa}@postgres:5432/${POSTGRES_DB:-rwa}?sslmode=disable
 
+# Log rotation of every container: at most 3 files of 10 MB each (Docker keeps json-file logs forever by default).
 x-logging: &logging
   driver: json-file
   options:
@@ -19,16 +21,13 @@ x-logging: &logging
 
 # One image, several commands (the ENTRYPOINT is `rwa`).
 x-backend: &backend
-  build:
-    context: ./rwa-backend
-    args:
-      VERSION: dev
-  image: rwa-backend:dev
+  image: cp0x/pi-rwa-backend:${RWA_VERSION:-latest}
   logging: *logging
 
 services:
   postgres:
     image: postgres:16.10
+    container_name: cp0x-pi-rwa-postgres
     restart: unless-stopped
     logging: *logging
     environment:
@@ -51,6 +50,7 @@ services:
   # One-shot: applies migrations and exits.
   migrate:
     <<: *backend
+    container_name: cp0x-pi-rwa-backend-migrate
     command: ["migrate", "up"]
     restart: "no"
     environment:
@@ -65,6 +65,7 @@ services:
 
   collector:
     <<: *backend
+    container_name: cp0x-pi-rwa-backend-collector
     command: ["collector"]
     restart: unless-stopped
     # The collector waits up to 30 s for a running job on SIGTERM, plus 5 s for the pool.
@@ -89,14 +90,16 @@ services:
 
   api:
     <<: *backend
+    container_name: cp0x-pi-rwa-backend-api
     command: ["api"]
     restart: unless-stopped
     environment:
       DATABASE_URL: *database-url
       HTTP_ADDR: ":8080"
-      PUBLIC_URL: http://localhost:${API_PORT:-3302}   # shown in the startup banner only
-      # Dev token for the admin endpoints (manual run request); never use it outside localhost.
-      ADMIN_TOKEN: ${ADMIN_TOKEN:-devtoken}
+      PUBLIC_URL: ${PUBLIC_URL:-http://localhost:${API_PORT:-3302}}   # shown in the startup banner only
+      # Token of the admin endpoints (manual run request). Required: on a server /api/ is public, a known token would
+      # let anyone start runs that spend CMC credits. `devtoken` from .env.example is for localhost only.
+      ADMIN_TOKEN: ${ADMIN_TOKEN:?set it in .env}
       COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}   # same as the collector: api computes next_run_at in /status from it
       LOG_FORMAT: text
       LOG_LEVEL: ${LOG_LEVEL:-info}
@@ -115,16 +118,14 @@ services:
       start_interval: 3s
 
   web:
-    build:
-      context: ./rwa-interface
-      args:
-        VITE_APP_VERSION: v2.0.0-dev
-    image: rwa-interface:dev
+    image: cp0x/pi-rwa-interface:${RWA_VERSION:-latest}
+    container_name: cp0x-pi-rwa-interface
     restart: unless-stopped
     logging: *logging
     environment:
       API_URL: http://api:8080
-      SITE_URL: http://localhost:${WEB_PORT:-3301}
+      # public address of the site: canonical links, hreflang, sitemap.xml, robots.txt (https://rwa.cp0x.com on the server)
+      SITE_URL: ${SITE_URL:-http://localhost:${WEB_PORT:-3301}}
       PORT: "4173"
     ports:
       - "127.0.0.1:${WEB_PORT:-3301}:4173"
