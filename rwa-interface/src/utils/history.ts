@@ -141,3 +141,46 @@ export function describeSeries(t: T, f: Format, label: string, type: MetricType,
         max: fmt(st.max)
       });
 }
+
+// ==============================|| CHANGE MODE ||============================== //
+// "Change, %": every line is its change against its own first value in the range, so lines of any unit share one axis.
+
+export type HistoryMode = 'values' | 'change';
+
+// First value of every series in the points (null when a series has none).
+export function seriesBases(points: ChartPoint[], count: number): (number | null)[] {
+  return Array.from({ length: count }, (_, i) => points.find((p) => p.values[i] !== null)?.values[i] ?? null);
+}
+
+// Change of `value` against `base` in percent; null when either is missing or the base is zero (no ratio to it).
+export function changePercent(value: number | null, base: number | null): number | null {
+  if (value === null || base === null || base === 0) return null;
+  return ((value - base) / Math.abs(base)) * 100;
+}
+
+// "+12.5%", "−3%", "0%": a change with its sign; whole numbers above 10 points, one decimal below.
+export function formatChange(f: Format, value: number | null, digits?: number): string {
+  if (value === null) return f.pct(null);
+  const d = digits ?? (Math.abs(value) >= 10 ? 0 : 1);
+  const rounded = Number(value.toFixed(d));
+  if (rounded === 0) return f.pct(0, 0);
+  return `${rounded > 0 ? '+' : '−'}${f.pct(Math.abs(rounded), d)}`;
+}
+
+// Selection of metrics after a click: off when on (the last one stays), else on; as values at most `max` lines, so one
+// more switches the chart to the change mode. Returns the new selection (in the order of the clicks) and mode.
+export function toggleMetric(
+  selected: string[],
+  metric: string,
+  mode: HistoryMode,
+  max: number
+): { selected: string[]; mode: HistoryMode } {
+  if (selected.includes(metric)) return { selected: selected.length > 1 ? selected.filter((m) => m !== metric) : selected, mode };
+  const next = [...selected, metric];
+  return { selected: next, mode: mode === 'values' && next.length > max ? 'change' : mode };
+}
+
+// Selection when the mode changes: back to values keeps the `max` metrics picked last.
+export function selectionForMode(selected: string[], mode: HistoryMode, max: number): string[] {
+  return mode === 'values' && selected.length > max ? selected.slice(-max) : selected;
+}

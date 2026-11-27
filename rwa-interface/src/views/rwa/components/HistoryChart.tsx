@@ -11,19 +11,25 @@ import useHydrated from 'hooks/useHydrated';
 import { HistoryEntity, HistoryStep, MetricType } from 'types/api';
 import VisuallyHidden from 'ui-component/VisuallyHidden';
 import {
+  changePercent,
   ChartPoint,
   chartPoints,
   dayTicks,
   describeSeries,
+  formatChange,
   formatMetric,
   HISTORY_RANGES,
+  HistoryMode,
   HistoryRangeOption,
   historyDays,
   MIN_HISTORY_DAYS,
   metricLabel,
   metricTypeResolver,
   niceScale,
-  rangeFrom
+  rangeFrom,
+  selectionForMode,
+  seriesBases,
+  toggleMetric
 } from 'utils/history';
 import { Format, MessageId, T, useFormat, useT } from 'i18n';
 import { ChartCard, LegendKey, useSeriesColors } from './Charts';
@@ -34,7 +40,7 @@ import { ChartCard, LegendKey, useSeriesColors } from './Charts';
 
 const CHART_H = 240; // height of the drawing area; every state of the card keeps at least this height
 const MARGIN = { top: 12, right: 16, bottom: 28 };
-const MAX_SERIES = 3;
+const MAX_SERIES = 3; // lines as values, each on a scale of its own; more are drawn as change in % on one axis
 const DEFAULT_W = 640;
 const DOT_LIMIT = 60; // above this many points the dots are shown only for the active one
 
@@ -54,11 +60,13 @@ interface LineChartProps {
   title: string;
   points: ChartPoint[];
   series: Series[];
+  mode: HistoryMode;
+  bases: (number | null)[]; // first value of every metric in the range (by Series.index): the 0% of the change mode
   t: T;
   f: Format;
 }
 
-function LineChart({ title, points, series, t, f }: LineChartProps) {
+function LineChart({ title, points, series, mode, bases, t, f }: LineChartProps) {
   const theme = useTheme();
   const wrapRef = useRef<HTMLDivElement>(null);
   const groups = useRef<(SVGGElement | null)[]>([]);
@@ -92,12 +100,25 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
   const tMax = points[n - 1].time;
   const x = (time: number) => left + (tMax === tMin ? plotW / 2 : ((time - tMin) / (tMax - tMin)) * plotW);
 
-  // one scale per line (or the shared one of a single line), as a function of the value
-  const scales = series.map((s) => {
-    const values = points.map((p) => p.values[s.index]).filter((v): v is number => v !== null);
+  const change = mode === 'change';
+  // the drawn value: the metric itself, or its change in % against the first value of the range
+  const plotted = (p: ChartPoint, s: Series) => (change ? changePercent(p.values[s.index], bases[s.index]) : p.values[s.index]);
+  const toScale = (values: number[]) => {
     const scale = values.length ? niceScale(Math.min(...values), Math.max(...values)) : { ticks: [0, 1], min: 0, max: 1 };
     return { ...scale, y: (v: number) => MARGIN.top + plotH - ((v - scale.min) / (scale.max - scale.min)) * plotH };
-  });
+  };
+  const valuesOf = (s: Series) => points.map((p) => plotted(p, s)).filter((v): v is number => v !== null);
+  // values: one scale per line (the first has the axis); change: one axis for every line, 0% always on it
+  const shared = change ? toScale([0, ...series.flatMap(valuesOf)]) : null;
+  const scales = series.map((s) => shared ?? toScale(valuesOf(s)));
+  const axisDigits = change && scales[0].ticks.some((v) => !Number.isInteger(v)) ? 1 : 0;
+  const axisLabel = (tick: number) => (change ? formatChange(f, tick, axisDigits) : formatMetric(f, series[0].type, tick));
+  // "$1.2M" or "$1.2M (+12%)"
+  const shownValue = (p: ChartPoint, s: Series) => {
+    const v = formatMetric(f, s.type, p.values[s.index]);
+    const c = change ? plotted(p, s) : null;
+    return c === null ? v : `${v} (${formatChange(f, c)})`;
+  };
 
   const lastIndex = n - 1;
   const inRange = (i: number | null) => (i !== null && i < n ? i : null);
@@ -112,8 +133,7 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
     return newYear ? f.day(iso) : f.monthDay(iso);
   };
 
-  const valueText = (p: ChartPoint) =>
-    series.map((s) => t('history.value', { metric: s.label, value: formatMetric(f, s.type, p.values[s.index]) })).join(', ');
+  const valueText = (p: ChartPoint) => series.map((s) => t('history.value', { metric: s.label, value: shownValue(p, s) })).join(', ');
 
   const onMove = (e: MouseEvent<SVGSVGElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -134,7 +154,7 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
     let d = '';
     let pen = false;
     for (const p of points) {
-      const v = p.values[s.index];
+      const v = plotted(p, s);
       if (v === null) {
         pen = false;
         continue;
@@ -165,7 +185,13 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
         {/* grid and y axis of the first line */}
         {scales[0].ticks.map((tick) => (
           <g key={tick}>
-            <line x1={left} x2={width - MARGIN.right} y1={scales[0].y(tick)} y2={scales[0].y(tick)} stroke={theme.palette.divider} />
+            <line
+              x1={left}
+              x2={width - MARGIN.right}
+              y1={scales[0].y(tick)}
+              y2={scales[0].y(tick)}
+              stroke={change && tick === 0 ? theme.palette.text.secondary : theme.palette.divider}
+            />
             <text
               x={left - 8}
               y={scales[0].y(tick)}
@@ -176,7 +202,7 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
               style={tabular}
               aria-hidden="true"
             >
-              {formatMetric(f, series[0].type, tick)}
+              {axisLabel(tick)}
             </text>
           </g>
         ))}
@@ -255,7 +281,7 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
                 />
               )}
               {series.map((s, k) => {
-                const v = p.values[s.index];
+                const v = plotted(p, s);
                 if (v === null) return null;
                 const isActive = active === i;
                 if (!isActive && n > DOT_LIMIT) return null;
@@ -303,7 +329,7 @@ function LineChart({ title, points, series, t, f }: LineChartProps) {
             <Box key={s.metric} sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
               <Box sx={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: s.color }} />
               <Typography variant="body2" component="span">
-                {s.label}: <strong>{formatMetric(f, s.type, activePoint.values[s.index])}</strong>
+                {s.label}: <strong>{shownValue(activePoint, s)}</strong>
               </Typography>
             </Box>
           ))}
@@ -342,7 +368,7 @@ export function useHistoryHidden(
 export interface HistoryChartProps {
   entity: HistoryEntity;
   id: string | number | null; // null for the summary
-  metrics: string[]; // metrics offered (up to 3 can be shown together); the first is shown at first
+  metrics: string[]; // metrics offered; the first is shown at first. Up to 3 as values, any number as change in %
   title: string;
   subtitle?: string;
   defaultRange?: HistoryRangeOption;
@@ -351,9 +377,11 @@ export interface HistoryChartProps {
   gutterBottom?: boolean; // space below the card (kept out of the page when the card is hidden)
 }
 
-// Line chart of one to three metrics of an entity over time, with a range selector and, when there are several metrics,
-// toggle chips. Text alternatives: every update is a focusable point with a full label, and a hidden summary gives the
-// first and last value, the lowest and the highest.
+// Line chart of the metrics of an entity over time, with a range selector and, when there are several metrics, toggle
+// chips and a mode: values (up to three lines, each on a scale of its own) or change in % since the start of the range
+// (any number of lines on one axis; a fourth metric switches to it, back to values keeps the three picked last). Text
+// alternatives: every update is a focusable point with a full label, and a hidden summary gives the
+// first and last value, the lowest and the highest (and, as change, the change over the range).
 export default function HistoryChart({
   entity,
   id,
@@ -370,7 +398,8 @@ export default function HistoryChart({
   const hydrated = useHydrated();
   const colors = useSeriesColors();
   const [range, setRange] = useState<HistoryRangeOption>(defaultRange);
-  const [selected, setSelected] = useState<string[]>(() => metrics.slice(0, 1));
+  const [selected, setSelected] = useState<string[]>(() => metrics.slice(0, 1)); // in the order of the clicks
+  const [mode, setMode] = useState<HistoryMode>('values');
   const from = useMemo(() => rangeFrom(range), [range]);
   const { data, error, isValidating } = useHistory(entity, id, metrics, { from, step });
   const { data: meta } = useHistoryMetrics();
@@ -387,21 +416,35 @@ export default function HistoryChart({
   const shown = all.filter((s) => selected.includes(s.metric));
   const points = useMemo(() => (data ? chartPoints(data.points, metrics) : []), [data, metrics]);
 
-  const toggle = (metric: string) =>
-    setSelected((current) =>
-      current.includes(metric)
-        ? current.length > 1
-          ? current.filter((m) => m !== metric)
-          : current
-        : current.length < MAX_SERIES
-          ? [...current, metric]
-          : current
-    );
+  const bases = useMemo(() => seriesBases(points, metrics.length), [points, metrics.length]);
+
+  const toggle = (metric: string) => {
+    const next = toggleMetric(selected, metric, mode, MAX_SERIES);
+    setSelected(next.selected);
+    setMode(next.mode);
+  };
+  const changeMode = (next: HistoryMode) => {
+    setMode(next);
+    setSelected((current) => selectionForMode(current, next, MAX_SERIES));
+  };
+  const change = mode === 'change';
+  const noBase = change ? shown.filter((s) => bases[s.index] === null || bases[s.index] === 0) : [];
 
   // an error belongs to the request of the current range: the previous range's data is not drawn under it
   const failed = hydrated && !!error;
   const ready = hydrated && data !== undefined && !error;
-  const summaries = ready ? shown.map((s) => describeSeries(t, f, s.label, s.type, points, s.index)).filter(Boolean) : [];
+  const summaries = ready
+    ? shown
+        .map((s) => {
+          const text = describeSeries(t, f, s.label, s.type, points, s.index);
+          const last = [...points].reverse().find((p) => p.values[s.index] !== null);
+          const total = change && last ? changePercent(last.values[s.index], bases[s.index]) : null;
+          return text && total !== null
+            ? `${text} ${t('history.summary.change', { metric: s.label, change: formatChange(f, total) })}`
+            : text;
+        })
+        .filter(Boolean)
+    : [];
 
   let body;
   if (!ready) {
@@ -430,7 +473,7 @@ export default function HistoryChart({
       </Box>
     );
   } else {
-    body = <LineChart title={title} points={points} series={shown} t={t} f={f} />;
+    body = <LineChart title={title} points={points} series={shown} mode={mode} bases={bases} t={t} f={f} />;
   }
 
   if (hidden) return null;
@@ -463,28 +506,46 @@ export default function HistoryChart({
         }
       >
         {metrics.length > 1 && (
-          <Box role="group" aria-label={t('history.metrics.label')} sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', marginBottom: 2 }}>
-            {all.map((s) => {
-              const on = selected.includes(s.metric);
-              return (
-                <Chip
-                  key={s.metric}
-                  label={s.label}
-                  size="small"
-                  clickable
-                  variant={on ? 'filled' : 'outlined'}
-                  aria-pressed={on}
-                  onClick={() => toggle(s.metric)}
-                  icon={
-                    <Box
-                      aria-hidden="true"
-                      sx={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: s.color, ml: '8px !important' }}
-                    />
-                  }
-                  sx={{ '&.Mui-focusVisible': { outline: '2px solid', outlineColor: 'secondary.main', outlineOffset: 2 } }}
-                />
-              );
-            })}
+          <Box
+            sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 2 }}
+          >
+            <Box role="group" aria-label={t('history.metrics.label')} sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', flex: '1 1 auto' }}>
+              {all.map((s) => {
+                const on = selected.includes(s.metric);
+                return (
+                  <Chip
+                    key={s.metric}
+                    label={s.label}
+                    size="small"
+                    clickable
+                    variant={on ? 'filled' : 'outlined'}
+                    aria-pressed={on}
+                    onClick={() => toggle(s.metric)}
+                    icon={
+                      <Box
+                        aria-hidden="true"
+                        sx={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: s.color, ml: '8px !important' }}
+                      />
+                    }
+                    sx={{ '&.Mui-focusVisible': { outline: '2px solid', outlineColor: 'secondary.main', outlineOffset: 2 } }}
+                  />
+                );
+              })}
+            </Box>
+            <ToggleButtonGroup
+              exclusive
+              size="small"
+              value={mode}
+              onChange={(_e, value: HistoryMode | null) => value !== null && changeMode(value)}
+              aria-label={t('history.mode.label')}
+            >
+              <ToggleButton value="values" sx={{ textTransform: 'none', px: 1.5 }}>
+                {t('history.mode.values')}
+              </ToggleButton>
+              <ToggleButton value="change" sx={{ textTransform: 'none', px: 1.5 }}>
+                {t('history.mode.change')}
+              </ToggleButton>
+            </ToggleButtonGroup>
           </Box>
         )}
         <Box sx={{ minHeight: CHART_H }}>{body}</Box>
@@ -500,9 +561,16 @@ export default function HistoryChart({
             </li>
           ))}
         </Box>
-        {ready && shown.length > 1 && points.length > 1 && (
+        {ready && points.length > 1 && !change && shown.length > 1 && (
           <Typography variant="caption" color="text.secondary" component="p" sx={{ marginTop: 0.5 }}>
             {t('history.leftAxis', { metric: shown[0].label })}
+            {shown.length === MAX_SERIES && metrics.length > MAX_SERIES && ` ${t('history.limit', { max: MAX_SERIES })}`}
+          </Typography>
+        )}
+        {ready && points.length > 1 && change && (
+          <Typography variant="caption" color="text.secondary" component="p" sx={{ marginTop: 0.5 }} data-history-mode-note="">
+            {t('history.changeAxis', { date: f.day(points[0].iso) })}
+            {noBase.length > 0 && ` ${t('history.change.noBase', { metrics: noBase.map((s) => s.label).join(', ') })}`}
           </Typography>
         )}
         {ready && data?.truncated && (

@@ -59,6 +59,45 @@ test.describe('history charts', () => {
     expect(errors).toEqual([]);
   });
 
+  test('/summary: a fourth metric switches to change in % on one axis, back to values keeps the last three', async ({ page }) => {
+    const errors = watchErrors(page);
+    await page.goto('/summary');
+    await hydrated(page);
+    const card = page.getByRole('region', { name: 'History', exact: true });
+    const chart = card.locator('svg[data-history-chart]');
+    await expect(chart).toBeVisible();
+    const mode = card.getByRole('group', { name: 'Show as' });
+    const legend = card.getByRole('list', { name: 'Legend' }).getByRole('listitem');
+    await expect(mode.getByRole('button', { name: 'Values' })).toHaveAttribute('aria-pressed', 'true');
+
+    for (const name of ['Tokenized market cap', 'Eligible liquidity']) await card.getByRole('button', { name }).click();
+    await expect(legend).toHaveCount(3);
+    await expect(card.getByText(/one more switches the chart to the change in %/)).toBeVisible();
+
+    await card.getByRole('button', { name: 'Median reported APY' }).click();
+    await expect(mode.getByRole('button', { name: 'Change, %' })).toHaveAttribute('aria-pressed', 'true');
+    await expect(legend).toHaveCount(4);
+    await expect(card.getByText(/^Change since .+, the first update in the range/)).toBeVisible();
+    await expect(card.getByText(/^Left axis:/)).toHaveCount(0);
+    // one axis in %, 0% on it; the points give the value and its change
+    await expect(chart.locator('text').filter({ hasText: /^0%$/ })).toHaveCount(1);
+    await expect(
+      chart
+        .locator('text')
+        .filter({ hasText: /^[+−]\d+(\.\d)?%$/ })
+        .first()
+    ).toBeAttached();
+    await expect(chart.locator('[role="img"][tabindex="0"]')).toHaveAttribute('aria-label', /Eligible positions [\d,]+ \([+−]?[\d.]+%\)/);
+    await expect(card.getByText(/Eligible positions: [+−]?[\d.]+% over the range\./)).toBeAttached();
+
+    // back to values: the three picked last stay
+    await mode.getByRole('button', { name: 'Values' }).click();
+    await expect(legend).toHaveText(['Tokenized market cap', 'Median reported APY', 'Eligible liquidity']);
+    await expect(card.getByRole('button', { name: 'Eligible positions' })).toHaveAttribute('aria-pressed', 'false');
+    await expect(card.getByText(/^Left axis: Tokenized market cap\./)).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+
   test('the range toggle changes the request', async ({ page }) => {
     await page.goto('/summary');
     await hydrated(page);
