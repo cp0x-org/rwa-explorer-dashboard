@@ -197,15 +197,16 @@ The dump has no owners or grants, so the server's own `POSTGRES_USER` / `POSTGRE
 The pi-infra stack (private repository, `stacks/rwa`) is the other way to run it. nginx there routes `/api/` and `/logos/` to the API and
 everything else to the site. A data refresh needs no rebuild or redeploy; images change only with code.
 
-## Automation (GitHub Actions)
+## Checks before a release
 
-| Workflow | Runs | What it does |
-|----------|------|--------------|
-| [`backend.yml`](.github/workflows/backend.yml) | push / PR to `v2.0`, `rwa-backend/**` | Go build, vet, tests, golangci-lint |
-| [`frontend.yml`](.github/workflows/frontend.yml) | push / PR to `v2.0`, `rwa-interface/**` | site lint, unit tests, build, Playwright |
-| [`ci.yml`](.github/workflows/ci.yml) | every PR, push to `main` | site lint, tests, build, Playwright |
+There is no CI: images are built and pushed by hand (`build.sh`), so the checks are run locally before that:
 
-Data is not refreshed by GitHub Actions: the collector keeps it in PostgreSQL and runs on its own schedule.
+```bash
+cd rwa-backend && make lint test                                     # go vet, golangci-lint, go test
+cd rwa-interface && pnpm lint && pnpm test && pnpm build && pnpm test:e2e   # eslint, vitest, build, Playwright
+```
+
+Data is refreshed by the collector on its own schedule (PostgreSQL), not by a pipeline.
 
 ## Links
 
