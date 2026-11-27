@@ -12,7 +12,7 @@ COLLECT_ON_START ?= true
 # local build from this checkout (docker-compose.build.yml); the server only pulls images (make deploy)
 BUILD_COMPOSE = docker compose -f docker-compose.yml -f docker-compose.build.yml
 
-.PHONY: up deploy info logs run down reset psql db-dump db-restore
+.PHONY: up deploy info logs run collect down reset psql db-dump db-restore
 
 up:
 	$(BUILD_COMPOSE) up --build -d
@@ -39,8 +39,9 @@ info:
 logs:
 	docker compose logs -f collector api web
 
-# one more live run now; a subset: docker compose exec collector rwa run-once --symbols NVDA
-run:
+# one more live run now, besides the schedule (~10-15 min, ~22 CMC credits); a subset:
+# docker compose exec collector rwa run-once --symbols NVDA. The collector itself runs every COLLECT_INTERVAL.
+run collect:
 	docker compose exec collector rwa run-once
 
 down:

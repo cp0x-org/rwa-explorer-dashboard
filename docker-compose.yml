@@ -2,8 +2,8 @@
 # same file runs on the server: `docker compose pull && docker compose up -d` (or `make deploy`).
 # Images (pushed by rwa-backend/build.sh and rwa-interface/build.sh): cp0x/pi-rwa-backend, cp0x/pi-rwa-interface,
 # tag RWA_VERSION from .env (default latest). Local build from this checkout: docker-compose.build.yml (`make up`).
-# On an empty database the collector starts a live run at once (CMC + Portals, ~10-15 min), then repeats it every
-# COLLECT_INTERVAL (24h). The site shows "no data yet" until the first run is published.
+# On an empty database (or when the last successful run is older than COLLECT_INTERVAL, 24h) the collector starts a live
+# run at once (CMC + Portals, ~10-15 min), then repeats it COLLECT_INTERVAL after the last run, across restarts too. The site shows "no data yet" until the first run is published.
 #   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD
 #   open http://localhost:3301 (API on http://localhost:3303). Every port is published on 127.0.0.1 only: on a server
 #   nginx in front sends /api/ and /logos/ to the API port and everything else to the site port.

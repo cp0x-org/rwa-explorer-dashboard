@@ -225,6 +225,19 @@ func TestOnStartLogic(t *testing.T) {
 	}
 }
 
+// A restart soon after a run keeps its rhythm: the next scheduled run is a full interval after that run, not after
+// the restart (with the restart as the anchor this test would wait an hour).
+func TestIntervalAnchoredToRecentRun(t *testing.T) {
+	now := time.Date(2026, 6, 10, 12, 0, 0, 0, time.UTC)
+	last := now.Add(-time.Hour + 20*time.Millisecond)
+	f := &fake{now: now, last: func() (time.Time, bool, error) { return last, true, nil }}
+	stop := start(t, Config{Interval: time.Hour, OnStart: true}, f)
+	require.Eventually(t, func() bool { c, _ := f.snapshot(); return len(c) == 1 }, 2*time.Second, 5*time.Millisecond)
+	require.NoError(t, stop())
+	calls, _ := f.snapshot()
+	require.Equal(t, call{"refresh", nil, TriggerSchedule}, calls[0])
+}
+
 func TestRequestPollingUsesRequestModeAndSymbols(t *testing.T) {
 	f := &fake{requests: []*store.RunRequest{{ID: 42, Mode: "add", Symbols: []string{"NVDA", "AAPL"}, RequestedBy: "admin-api"}}}
 	stop := start(t, Config{Cron: "0 0 1 1 *", PollInterval: 10 * time.Millisecond, RetentionDays: 90}, f)

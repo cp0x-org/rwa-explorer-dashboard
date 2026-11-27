@@ -120,7 +120,7 @@ func apiBanner(ctx context.Context, w io.Writer, cfg *config.Config) {
 func collectorBanner(ctx context.Context, w io.Writer, cfg *config.Config, assets []model.Asset) {
 	schedule := []banner.Row{}
 	if cfg.CollectInterval > 0 {
-		schedule = append(schedule, banner.Rf("every", "%s from the collector start (COLLECT_INTERVAL)", shortDuration(cfg.CollectInterval)))
+		schedule = append(schedule, banner.Rf("every", "%s after the last run, also across restarts (COLLECT_INTERVAL)", shortDuration(cfg.CollectInterval)))
 	} else {
 		schedule = append(schedule, banner.Rf("cron", "%q UTC (COLLECT_CRON)", cfg.CollectCron))
 	}
