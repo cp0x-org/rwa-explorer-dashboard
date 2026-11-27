@@ -57,7 +57,7 @@ export function llmsText(data: RwaExport, siteUrl: string, apiUrl?: string): str
     `${t('method.how')}: ${method}`,
     '',
     'Every page is server-rendered HTML, in English and in Simplified Chinese (the same path under /zh). ' +
-      'A collection runs daily; the pages and the dataset change together after each one.',
+      `Collections run on a schedule (${api}/api/v1/status gives the last and the next one); the pages and the dataset change together after each.`,
     '',
     '## Data for programs',
     '',
