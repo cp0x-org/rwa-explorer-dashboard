@@ -238,6 +238,26 @@ func TestIntervalAnchoredToRecentRun(t *testing.T) {
 	require.Equal(t, call{"refresh", nil, TriggerSchedule}, calls[0])
 }
 
+// COLLECT_ON_START=false: no run on start, the schedule stays on the grid of the last run.
+func TestIntervalAnchoredWithoutOnStart(t *testing.T) {
+	now := time.Date(2026, 6, 10, 12, 0, 0, 0, time.UTC)
+	last := now.Add(-time.Hour + 20*time.Millisecond)
+	f := &fake{now: now, last: func() (time.Time, bool, error) { return last, true, nil }}
+	stop := start(t, Config{Interval: time.Hour, OnStart: false}, f)
+	require.Eventually(t, func() bool { c, _ := f.snapshot(); return len(c) == 1 }, 2*time.Second, 5*time.Millisecond)
+	require.NoError(t, stop())
+	calls, _ := f.snapshot()
+	require.Equal(t, call{"refresh", nil, TriggerSchedule}, calls[0])
+}
+
+func TestIntervalSlot(t *testing.T) {
+	last := time.Date(2026, 6, 10, 6, 0, 0, 0, time.UTC)
+	at := func(h, m int) time.Time { return time.Date(2026, 6, 10, h, m, 0, 0, time.UTC) }
+	require.Equal(t, at(12, 0), intervalSlot(last, 6*time.Hour, at(7, 0)))   // next slot
+	require.Equal(t, at(18, 0), intervalSlot(last, 6*time.Hour, at(13, 30))) // one slot missed
+	require.Equal(t, at(18, 0), intervalSlot(last, 6*time.Hour, at(12, 0)))  // exactly on a slot: the next one
+}
+
 func TestRequestPollingUsesRequestModeAndSymbols(t *testing.T) {
 	f := &fake{requests: []*store.RunRequest{{ID: 42, Mode: "add", Symbols: []string{"NVDA", "AAPL"}, RequestedBy: "admin-api"}}}
 	stop := start(t, Config{Cron: "0 0 1 1 *", PollInterval: 10 * time.Millisecond, RetentionDays: 90}, f)

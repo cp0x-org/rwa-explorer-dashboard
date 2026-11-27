@@ -163,16 +163,18 @@ func (s *Scheduler) staleAfter() time.Duration {
 // returns nil, or an error when the job did not finish in time.
 func (s *Scheduler) Run(ctx context.Context) error {
 	s.log.Info("scheduler started", "interval", s.cfg.Interval, "cron", s.cfg.Cron, "on_start", s.cfg.OnStart)
-	var fresh time.Time // start of the recent successful run that made the on-start run unnecessary
+	last, haveLast := s.lastRun(ctx)
+	ranOnStart := false
 	if s.cfg.OnStart {
-		fresh = s.onStart(ctx)
+		ranOnStart = s.onStart(ctx, last, haveLast)
 	}
 	fireAt := s.next(s.deps.Now())
-	if s.cfg.Interval > 0 && !fresh.IsZero() {
+	if s.cfg.Interval > 0 && haveLast && !ranOnStart {
 		// keep the rhythm of the last run across restarts and deploys: a restart 20 h after a run fires 4 h later,
-		// not 24 h after the restart
-		fireAt = s.next(fresh)
+		// not 24 h after the restart. With COLLECT_ON_START=false and a missed slot, the next slot of the same grid.
+		fireAt = intervalSlot(last, s.cfg.Interval, s.deps.Now())
 	}
+	s.log.Info("next scheduled run", "at", fireAt)
 	timer := time.NewTimer(max(fireAt.Sub(s.deps.Now()), 0))
 	defer timer.Stop()
 	poll := time.NewTicker(s.cfg.PollInterval)
@@ -202,21 +204,39 @@ func maxTime(a, b time.Time) time.Time {
 	return a
 }
 
-// onStart starts a run unless the last successful one is recent; it returns that run's start when it skips, else zero.
-func (s *Scheduler) onStart(ctx context.Context) time.Time {
-	if s.deps.LastRun != nil {
-		last, ok, err := s.deps.LastRun(ctx)
-		if err != nil {
-			s.log.Error("on-start check: last run lookup failed, running anyway", "err", err)
-		} else if ok && s.deps.Now().Sub(last) < s.staleAfter() {
-			s.log.Info("on-start run not needed: the last successful run is recent", "last_run_at", last, "stale_after", s.staleAfter())
-			return last
-		}
+// lastRun is the start of the last successful run; false when there is none or the lookup failed.
+func (s *Scheduler) lastRun(ctx context.Context) (time.Time, bool) {
+	if s.deps.LastRun == nil {
+		return time.Time{}, false
+	}
+	last, ok, err := s.deps.LastRun(ctx)
+	if err != nil {
+		s.log.Error("last run lookup failed", "err", err)
+		return time.Time{}, false
+	}
+	return last, ok
+}
+
+// onStart starts a run unless the last successful one is recent (a failed lookup runs anyway); true when it started one.
+func (s *Scheduler) onStart(ctx context.Context, last time.Time, haveLast bool) bool {
+	if haveLast && s.deps.Now().Sub(last) < s.staleAfter() {
+		s.log.Info("on-start run not needed: the last successful run is recent", "last_run_at", last, "stale_after", s.staleAfter())
+		return false
 	}
 	if !s.tryStart(ctx, job{mode: "refresh", trigger: TriggerStartup}) {
 		s.log.Warn("on-start run skipped: a job is running")
+		return false
 	}
-	return time.Time{}
+	return true
+}
+
+// intervalSlot is the first moment after now on the grid last + k*iv (k >= 1).
+func intervalSlot(last time.Time, iv time.Duration, now time.Time) time.Time {
+	next := last.Add(iv)
+	if next.After(now) {
+		return next
+	}
+	return next.Add((now.Sub(next)/iv + 1) * iv)
 }
 
 // pollRequests claims one pending run request when no job is running and starts it. The scheduler's own mutex is

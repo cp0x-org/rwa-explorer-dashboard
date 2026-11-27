@@ -12,17 +12,22 @@ COLLECT_ON_START ?= true
 # local build from this checkout (docker-compose.build.yml); the server only pulls images (make deploy)
 BUILD_COMPOSE = docker compose -f docker-compose.yml -f docker-compose.build.yml
 
-.PHONY: up deploy info logs run collect down reset psql db-dump db-restore
+.PHONY: up deploy deploy-web info logs run collect down reset psql db-dump db-restore
 
 up:
 	$(BUILD_COMPOSE) up --build -d
 	@$(MAKE) --no-print-directory info
 
-# on the server: pull cp0x/pi-rwa-backend and cp0x/pi-rwa-interface (tag RWA_VERSION from .env, default latest), restart
+# on the server: pull cp0x/pi-rwa-backend and cp0x/pi-rwa-interface (tags BACKEND_VERSION / WEB_VERSION, else RWA_VERSION, from .env), restart
 deploy:
 	docker compose pull
 	docker compose up -d
 	@$(MAKE) --no-print-directory info
+
+# on the server: only the site (WEB_VERSION in .env); api, collector and postgres are not touched
+deploy-web:
+	docker compose pull web
+	docker compose up -d --no-deps web
 
 # where everything is: host ports, containers, database; each service prints its own banner at the top of its log
 info:

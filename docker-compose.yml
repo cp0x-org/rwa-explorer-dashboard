@@ -1,7 +1,8 @@
 # Whole project from prebuilt images: PostgreSQL -> migrate -> api + web + collector. Nothing is built here, so the
 # same file runs on the server: `docker compose pull && docker compose up -d` (or `make deploy`).
 # Images (pushed by rwa-backend/build.sh and rwa-interface/build.sh): cp0x/pi-rwa-backend, cp0x/pi-rwa-interface,
-# tag RWA_VERSION from .env (default latest). Local build from this checkout: docker-compose.build.yml (`make up`).
+# tags BACKEND_VERSION and WEB_VERSION from .env, each defaulting to RWA_VERSION (default latest): a site release
+# changes WEB_VERSION only, so the collector is not recreated. Local build from this checkout: docker-compose.build.yml (`make up`).
 # On an empty database (or when the last successful run is older than COLLECT_INTERVAL, 24h) the collector starts a live
 # run at once (CMC + Portals, ~10-15 min), then repeats it COLLECT_INTERVAL after the last run, across restarts too. The site shows "no data yet" until the first run is published.
 #   cp .env.example .env     # CMC_API_KEY, PORTALS_API_KEY, ADMIN_TOKEN; on a server also POSTGRES_PASSWORD
@@ -21,7 +22,7 @@ x-logging: &logging
 
 # One image, several commands (the ENTRYPOINT is `rwa`).
 x-backend: &backend
-  image: cp0x/pi-rwa-backend:${RWA_VERSION:-latest}
+  image: cp0x/pi-rwa-backend:${BACKEND_VERSION:-${RWA_VERSION:-latest}}
   logging: *logging
 
 services:
@@ -75,8 +76,9 @@ services:
       MIGRATE_ON_START: "false"
       CMC_API_KEY: ${CMC_API_KEY:?set it in .env}
       PORTALS_API_KEY: ${PORTALS_API_KEY:?set it in .env}
-      # A live run starts right away when there is no successful run yet or the last one is older than the interval.
-      # A live run costs about 22 CMC credits; set COLLECT_ON_START=false in .env to skip it.
+      # true: a live run starts right away when there is no successful run yet or the last one is older than the
+      # interval. false: never on start, only on the schedule (COLLECT_INTERVAL after the last run, across restarts).
+      # A live run costs about 22 CMC credits.
       COLLECT_ON_START: ${COLLECT_ON_START:-true}
       COLLECT_INTERVAL: ${COLLECT_INTERVAL:-24h}
       LOG_FORMAT: text
@@ -119,7 +121,7 @@ services:
       start_interval: 3s
 
   web:
-    image: cp0x/pi-rwa-interface:${RWA_VERSION:-latest}
+    image: cp0x/pi-rwa-interface:${WEB_VERSION:-${RWA_VERSION:-latest}}
     container_name: cp0x-pi-rwa-interface
     restart: unless-stopped
     logging: *logging

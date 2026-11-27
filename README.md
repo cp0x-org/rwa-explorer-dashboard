@@ -165,8 +165,9 @@ cd rwa-interface && ./build.sh <version>    # multi-arch image cp0x/pi-rwa-inter
 Both scripts also tag `latest`. The backend image runs `rwa migrate`, `rwa api` and `rwa collector`.
 
 The root `docker-compose.yml` has no build step, so a server can run it from a plain checkout: put `.env` next to it
-(the keys, a random `ADMIN_TOKEN`, `POSTGRES_PASSWORD`, `SITE_URL=https://rwa.cp0x.com`, optionally `RWA_VERSION`), then
-`make deploy` (`docker compose pull && docker compose up -d`). Containers: `cp0x-pi-rwa-interface`,
+(the keys, a random `ADMIN_TOKEN`, `POSTGRES_PASSWORD`, `SITE_URL=https://rwa.cp0x.com`, optionally `RWA_VERSION`, or
+`BACKEND_VERSION` and `WEB_VERSION` separately), then `make deploy` (`docker compose pull && docker compose up -d`); a
+site release alone: `make deploy-web` (api and collector are not restarted). Containers: `cp0x-pi-rwa-interface`,
 `cp0x-pi-rwa-backend-api`, `cp0x-pi-rwa-backend-collector`, `cp0x-pi-rwa-backend-migrate`, `cp0x-pi-rwa-postgres`; the
 site on 127.0.0.1:3301 and the API on 127.0.0.1:3303, for nginx in front.
 
